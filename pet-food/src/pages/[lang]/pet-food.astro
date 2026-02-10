@@ -1,0 +1,18 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import PetFood from '../../components/tools/PetFood/PetFood.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+  ];
+}
+
+const { lang } = Astro.params;
+---
+
+<MainLayout title="Pet Food" lang={lang as string}>
+  <PetFood lang={lang as string} />
+</MainLayout>
