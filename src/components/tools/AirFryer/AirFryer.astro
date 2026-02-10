@@ -2,7 +2,7 @@
 export interface Props { lang: string; }
 const { lang } = Astro.props;
 
-const t = {
+const translations = {
   it: {
     title: "Friggitrice ad Aria",
     subtitle: "Smart",
@@ -50,8 +50,35 @@ const t = {
       { name: "Kit", icon: "🥘", link: "#kit" }
     ],
     alert_cap: "⚠️ Capped at 200°C"
+  },
+  es: {
+    title: "Freidora de Aire",
+    subtitle: "Smart",
+    tab_conv: "Convertidor",
+    tab_food: "Alimentos y Tiempos",
+    placeholder: "Pega aquí la receta (ej: 'Cocinar a 200°C durante 40 minutos')...",
+    btn_action: "Convertir Ahora",
+    label_temp: "Temperatura",
+    label_time: "Tiempo",
+    eco_label: "Ahorro estimado: ~",
+    ad_title: "Consejo del Chef",
+    ad_link: "Ver en Amazon",
+    manual_temp: "TEMP. HORNO",
+    manual_time: "MINUTOS HORNO",
+    error_msg: "⚠️ ¡Falta algo! Introduce Temperatura y Tiempo.",
+    legal_privacy: "🔒 Privacidad: Cálculos locales. Sin envío de datos.",
+    legal_disclaimer: "⚠️ AVISO: Resultados estimados (-20°C / -20%). Revisa SIEMPRE la cocción. El autor no se hace responsable.",
+    shop_items: [
+      { name: "Papel Horno", icon: "📄", link: "#carta" },
+      { name: "Aceite Spray", icon: "🧴", link: "#olio" },
+      { name: "Kit Accesorios", icon: "🥘", link: "#kit" }
+    ],
+    alert_cap: "⚠️ Temp limitada a 200°C"
   }
-}[lang] || { title: "Air Fryer" };
+};
+
+// Logica di Fallback per evitare l'errore undefined.map() durante la build di Vercel
+const t = translations[lang as keyof typeof translations] || translations.it;
 ---
 
 <div class="max-w-[480px] mx-auto space-y-8">
@@ -170,8 +197,7 @@ const t = {
     ))}
   </div>
 
-  <div class="
-   mx-auto text-center space-y-4 px-4 pb-8">
+  <div class="mx-auto text-center space-y-4 px-4 pb-8">
     <p class="text-[11px] text-slate-400 leading-relaxed font-medium">{t.legal_privacy}</p>
     <div class="border-t border-slate-700 w-1/2 mx-auto"></div>
     <p class="text-[10px] text-slate-400 leading-relaxed">{t.legal_disclaimer}</p>
