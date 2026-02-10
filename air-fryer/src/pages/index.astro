@@ -1,17 +1,12 @@
 ---
-import MainLayout from '../../layouts/MainLayout.astro';
-import AirFryer from '../../components/tools/AirFryer/AirFryer.astro';
+import MainLayout from '../layouts/MainLayout.astro';
+import AirFryer from '../components/tools/AirFryer/AirFryer.astro';
 
-export function getStaticPaths() {
-  return [
-    { params: { lang: 'it' } },
-    { params: { lang: 'en' } },
-    { params: { lang: 'es' } },
-  ];
-}
-const { lang } = Astro.params;
+// Rimuoviamo getStaticPaths perché siamo nella home fissa
+// Impostiamo manualmente la lingua su 'it'
+const lang = "it";
 ---
 
-<MainLayout title="Air Fryer Converter" lang={lang as string}>
-  <AirFryer lang={lang as string} />
+<MainLayout title="Convertitore Friggitrice ad Aria" lang={lang}>
+  <AirFryer lang={lang} />
 </MainLayout>
