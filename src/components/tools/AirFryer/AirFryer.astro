@@ -1,0 +1,326 @@
+---
+export interface Props { lang: string; }
+const { lang } = Astro.props;
+
+const t = {
+  it: {
+    title: "Friggitrice ad Aria",
+    subtitle: "Smart",
+    tab_conv: "Convertitore",
+    tab_food: "Cibi & Tempi",
+    placeholder: "Incolla qui la ricetta (es: 'Cuocere a 200°C per 40 minuti')...",
+    btn_action: "Converti Ora",
+    label_temp: "Temperatura",
+    label_time: "Tempo",
+    eco_label: "Risparmio stimato: ~",
+    ad_title: "Consiglio dello Chef",
+    ad_link: "Vedi su Amazon",
+    manual_temp: "TEMP. FORNO",
+    manual_time: "MINUTI FORNO",
+    error_msg: "⚠️ Manca qualcosa! Inserisci Temperatura e Tempo.",
+    legal_privacy: "🔒 Privacy First: Calcoli locali. Nessun dato inviato.",
+    legal_disclaimer: "⚠️ DISCLAIMER: Risultati stimati su base matematica standard (-20°C / -20%). Controlla SEMPRE la cottura. L'autore declina responsabilità.",
+    shop_items: [
+      { name: "Carta Forno", icon: "📄", link: "#carta" },
+      { name: "Olio Spray", icon: "🧴", link: "#olio" },
+      { name: "Kit Accessori", icon: "🥘", link: "#kit" }
+    ],
+    alert_cap: "⚠️ Temp limitata a 200°C"
+  },
+  en: {
+    title: "Air Fryer",
+    subtitle: "Smart",
+    tab_conv: "Converter",
+    tab_food: "Foods & Times",
+    placeholder: "Paste recipe here...",
+    btn_action: "Convert Now",
+    label_temp: "Temperature",
+    label_time: "Time",
+    eco_label: "Est. Savings: ~",
+    ad_title: "Chef's Tip",
+    ad_link: "View on Amazon",
+    manual_temp: "OVEN TEMP.",
+    manual_time: "OVEN MINUTES",
+    error_msg: "⚠️ Missing inputs.",
+    legal_privacy: "🔒 Privacy First: Local calculations.",
+    legal_disclaimer: "⚠️ DISCLAIMER: Estimated results. ALWAYS check food. Not responsible for errors.",
+    shop_items: [
+      { name: "Liners", icon: "📄", link: "#carta" },
+      { name: "Sprayer", icon: "🧴", link: "#olio" },
+      { name: "Kit", icon: "🥘", link: "#kit" }
+    ],
+    alert_cap: "⚠️ Capped at 200°C"
+  }
+}[lang] || { title: "Air Fryer" };
+---
+
+<div class="max-w-[480px] mx-auto space-y-8">
+  
+  <div class="bg-[#0B1120] border border-slate-800 rounded-[32px] shadow-2xl overflow-hidden font-sans text-white p-6 relative">
+    
+    <div class="text-center mb-6">
+      <h2 class="text-xl font-bold text-slate-100">
+        {t.title} <span class="text-[#F59E0B]">{t.subtitle}</span>
+      </h2>
+    </div>
+
+    <div class="flex p-1 bg-[#1E293B] rounded-xl mb-6">
+      <button id="tab-conv" class="flex-1 py-2.5 rounded-lg text-sm font-bold bg-[#F59E0B] text-[#0B1120] shadow-md transition-all">
+        {t.tab_conv}
+      </button>
+      <button id="tab-food" class="flex-1 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:text-white transition-all">
+        {t.tab_food}
+      </button>
+    </div>
+
+    <div id="view-converter" class="space-y-6 animate-fade-in">
+      <div class="relative group">
+        <textarea 
+          id="recipe-input"
+          class="w-full h-32 p-4 bg-[#1E293B]/50 border border-slate-700 rounded-2xl focus:border-[#F59E0B] focus:bg-[#1E293B] outline-none transition-all resize-none text-slate-200 text-sm leading-relaxed placeholder:text-slate-500"
+          placeholder={t.placeholder}
+        ></textarea>
+      </div>
+
+      <div id="error-box" class="hidden bg-red-500/10 border border-red-500/50 text-red-400 px-4 py-3 rounded-xl text-xs font-bold text-center animate-pulse">
+        {t.error_msg}
+      </div>
+      <div id="cap-alert" class="hidden bg-yellow-500/10 border border-yellow-500/50 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold text-center">
+        {t.alert_cap}
+      </div>
+
+      <button id="btn-convert" class="w-full py-4 bg-[#F59E0B] hover:bg-[#D97706] text-[#0B1120] rounded-xl font-bold text-lg shadow-[0_4px_14px_0_rgba(245,158,11,0.39)] transition-transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        {t.btn_action}
+      </button>
+    </div>
+    
+    <div id="view-presets" class="hidden space-y-6 animate-fade-in py-8">
+      <div class="flex gap-4">
+        <div class="flex-1">
+          <label class="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_temp}</label>
+          <div class="relative">
+            <input type="number" id="manual-temp" class="w-full p-4 pl-10 bg-[#1E293B] border border-slate-700 rounded-xl font-bold text-xl text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
+            <span class="absolute left-3 top-4 text-slate-500">🌡️</span>
+            <span class="absolute right-3 top-5 text-[10px] text-slate-500 font-bold">°C</span>
+          </div>
+        </div>
+        <div class="flex-1">
+          <label class="text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_time}</label>
+          <div class="relative">
+            <input type="number" id="manual-time" class="w-full p-4 pl-10 bg-[#1E293B] border border-slate-700 rounded-xl font-bold text-xl text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
+            <span class="absolute left-3 top-4 text-slate-500">⏱️</span>
+            <span class="absolute right-3 top-5 text-[10px] text-slate-500 font-bold tracking-wider">MIN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-6 border-t border-slate-800/50 relative">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-[#1E293B] p-4 rounded-2xl flex flex-col items-center justify-center relative min-h-[100px] border border-slate-700/50">
+          <span class="text-[11px] text-slate-400 uppercase font-bold mb-1">{t.label_temp}</span>
+          <div class="flex items-baseline gap-1">
+            <span id="res-temp" class="text-4xl font-black text-white">--</span>
+            <span class="text-xl font-bold text-[#F59E0B]">°C</span>
+          </div>
+          <svg class="absolute right-2 bottom-2 w-8 h-8 text-slate-700 opacity-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+        </div>
+        <div class="bg-[#1E293B] p-4 rounded-2xl flex flex-col items-center justify-center relative min-h-[100px] border border-slate-700/50">
+          <span class="text-[11px] text-slate-400 uppercase font-bold mb-1">{t.label_time}</span>
+          <div class="flex items-baseline gap-1">
+            <span id="res-time" class="text-4xl font-black text-white">--</span>
+            <span class="text-xl font-bold text-[#F59E0B]">m</span>
+          </div>
+          <svg class="absolute right-2 bottom-2 w-8 h-8 text-slate-700 opacity-20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+      </div>
+
+      <div class="flex justify-center -mt-2">
+        <div class="bg-[#064E3B] border border-[#059669]/30 px-4 py-1.5 rounded-full flex items-center gap-2 shadow-lg backdrop-blur-sm">
+          <span class="text-xs font-bold text-[#34D399] uppercase tracking-wide">
+            {t.eco_label} <span id="res-eco">0.00€</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="mt-4 bg-[#271A0C] border border-[#F59E0B]/20 rounded-xl p-4 flex gap-4 items-start transition-all hover:border-[#F59E0B]/50 cursor-pointer group">
+        <div class="p-2 bg-[#F59E0B]/10 rounded-lg text-[#F59E0B] group-hover:bg-[#F59E0B] group-hover:text-[#0B1120] transition-colors">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" y1="17" x2="18" y2="17"/></svg>
+        </div>
+        <div>
+          <h4 class="text-[#F59E0B] font-bold text-xs uppercase mb-1">{t.ad_title}</h4>
+          <p id="ad-text" class="text-slate-300 text-xs leading-relaxed">
+            Il segreto per cucinare tutto in metà tempo? Questo set di accessori universali.
+          </p>
+          <a id="ad-link" href="#" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#F59E0B] mt-2 hover:underline group-hover:text-white transition-colors">
+            {t.ad_link} ->
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-3 max-w-[480px] mx-auto">
+    {t.shop_items.map(item => (
+      <a href={item.link} class="bg-white border-2 border-slate-100 rounded-xl p-3 text-center hover:border-[#F59E0B] hover:shadow-lg transition-all group">
+        <div class="text-2xl mb-1 group-hover:scale-110 transition-transform">{item.icon}</div>
+        <div class="text-[10px] font-bold text-slate-600 group-hover:text-[#F59E0B] leading-tight">{item.name}</div>
+      </a>
+    ))}
+  </div>
+
+  <div class="
+   mx-auto text-center space-y-4 px-4 pb-8">
+    <p class="text-[11px] text-slate-400 leading-relaxed font-medium">{t.legal_privacy}</p>
+    <div class="border-t border-slate-700 w-1/2 mx-auto"></div>
+    <p class="text-[10px] text-slate-400 leading-relaxed">{t.legal_disclaimer}</p>
+  </div>
+</div>
+
+<script>
+  // --- DATABASE ---
+  const ads = [
+    { k: ['patat', 'fries', 'chips', 'surgelat', 'frozen'], t: "Per patatine croccanti e non unte, questo spray è fondamentale.", l: "#link-olio-spray" },
+    { k: ['pollo', 'chicken', 'wings', 'alette', 'carne', 'meat'], t: "Non sporcare il cestello! Usa le teglie in carta forno per Air Fryer.", l: "#link-carta-forno" },
+    { k: ['pesce', 'fish', 'salmone'], t: "Cucina il pesce senza odori persistenti con i tappetini in silicone.", l: "#link-tappetini" },
+    { k: ['dolc', 'cake', 'muffin', 'verdur', 'veggie'], t: "Set di stampi in silicone per cotture delicate e uniformi.", l: "#link-stampi" }
+  ];
+  
+  const defaultAd = { t: "Il kit definitivo per sfruttare al 100% la tua friggitrice.", l: "#link-kit-universale" };
+  
+  // --- CALCOLO CORE ---
+  const convert = (temp: number, time: number, isF: boolean) => {
+    let t = isF ? (temp - 32) * (5/9) : temp;
+    let finalTemp = Math.round(t - 20);
+    let finalTime = time * 0.8;
+    
+    const MAX_TEMP = 200; 
+    let isCapped = false;
+    if (finalTemp > MAX_TEMP) {
+      isCapped = true;
+      const diff = finalTemp - MAX_TEMP;
+      finalTemp = MAX_TEMP;
+      finalTime = finalTime * (1 + (diff * 0.015));
+    }
+    finalTime = Math.round(finalTime);
+
+    const ovenCost = 2.0 * (time / 60);
+    const fryerCost = 1.4 * (finalTime / 60);
+    const saved = ((ovenCost - fryerCost) * 0.30).toFixed(2);
+    
+    return { temp: finalTemp, time: finalTime, saved: saved, isCapped: isCapped };
+  };
+
+  const updateUI = (res: { temp: number | string, time: number | string, saved: string, isCapped: boolean }, keyword: string = '') => {
+    const resTemp = document.getElementById('res-temp');
+    const resTime = document.getElementById('res-time');
+    const resEco = document.getElementById('res-eco');
+    const errorBox = document.getElementById('error-box');
+    const capAlert = document.getElementById('cap-alert');
+    const adText = document.getElementById('ad-text');
+    const adLink = document.getElementById('ad-link') as HTMLAnchorElement | null;
+
+    if (resTemp) resTemp.innerText = res.temp.toString();
+    if (resTime) resTime.innerText = res.time.toString();
+    if (resEco) resEco.innerText = res.saved + "€";
+    if (errorBox) errorBox.classList.add('hidden');
+    
+    if (capAlert) {
+      if (res.isCapped) capAlert.classList.remove('hidden');
+      else capAlert.classList.add('hidden');
+    }
+
+    const textLower = keyword.toLowerCase();
+    const ad = ads.find(a => a.k.some(kw => textLower.includes(kw))) || defaultAd;
+    
+    if (adText) adText.innerText = ad.t;
+    if (adLink) adLink.href = ad.l;
+  };
+
+  const resetUI = () => {
+    const resTemp = document.getElementById('res-temp');
+    const resTime = document.getElementById('res-time');
+    const resEco = document.getElementById('res-eco');
+    const errorBox = document.getElementById('error-box');
+    const capAlert = document.getElementById('cap-alert');
+
+    if (resTemp) resTemp.innerText = "--";
+    if (resTime) resTime.innerText = "--";
+    if (resEco) resEco.innerText = "0.00€";
+    if (errorBox) errorBox.classList.add('hidden');
+    if (capAlert) capAlert.classList.add('hidden');
+  };
+
+  // --- EVENTI ---
+  const runParser = () => {
+    const inputEl = document.getElementById('recipe-input') as HTMLTextAreaElement | null;
+    if (!inputEl) return;
+    const text = inputEl.value;
+    const tMatch = text.match(/(\d{3})\s?[°º]?\s?([CFcf]?)/);
+    const mMatch = text.match(/(\d{1,3})\s?(m|min|minutes|minuti)/i);
+
+    if (tMatch && mMatch) {
+      const tempVal = parseInt(tMatch[1]);
+      const isF = tMatch[2].toUpperCase() === 'F';
+      const timeVal = parseInt(mMatch[1]);
+      const res = convert(tempVal, timeVal, isF);
+      updateUI(res, text);
+    } else {
+      const errorBox = document.getElementById('error-box');
+      if (errorBox) errorBox.classList.remove('hidden');
+    }
+  };
+
+  const runManual = () => {
+    const tInput = document.getElementById('manual-temp') as HTMLInputElement | null;
+    const mInput = document.getElementById('manual-time') as HTMLInputElement | null;
+    if (!tInput || !mInput) return;
+    const t = parseInt(tInput.value || "0");
+    const m = parseInt(mInput.value || "0");
+    if (t > 0 && m > 0) {
+      const res = convert(t, m, false);
+      updateUI(res, "");
+    } else {
+      resetUI();
+    }
+  };
+
+  // Setup Listeners
+  document.getElementById('btn-convert')?.addEventListener('click', runParser);
+  
+  const recipeInput = document.getElementById('recipe-input') as HTMLTextAreaElement | null;
+  recipeInput?.addEventListener('input', (e) => {
+    const target = e.target as HTMLTextAreaElement;
+    if (target.value.trim() === "") resetUI();
+    else document.getElementById('error-box')?.classList.add('hidden');
+  });
+  
+  document.getElementById('manual-temp')?.addEventListener('input', runManual);
+  document.getElementById('manual-time')?.addEventListener('input', runManual);
+
+  // Tabs
+  const btnConv = document.getElementById('tab-conv');
+  const btnFood = document.getElementById('tab-food');
+  const viewConv = document.getElementById('view-converter');
+  const viewFood = document.getElementById('view-presets');
+
+  if(btnConv && btnFood && viewConv && viewFood) {
+    const switchTo = (mode: 'conv' | 'food') => {
+      resetUI();
+      if(mode === 'conv') {
+        viewConv.classList.remove('hidden');
+        viewFood.classList.add('hidden');
+        btnConv.className = "flex-1 py-2.5 rounded-lg text-sm font-bold bg-[#F59E0B] text-[#0B1120] shadow-md transition-all";
+        btnFood.className = "flex-1 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:text-white transition-all";
+      } else {
+        viewConv.classList.add('hidden');
+        viewFood.classList.remove('hidden');
+        btnFood.className = "flex-1 py-2.5 rounded-lg text-sm font-bold bg-[#F59E0B] text-[#0B1120] shadow-md transition-all";
+        btnConv.className = "flex-1 py-2.5 rounded-lg text-sm font-medium text-slate-400 hover:text-white transition-all";
+      }
+    };
+    btnConv.addEventListener('click', () => switchTo('conv'));
+    btnFood.addEventListener('click', () => switchTo('food'));
+  }
+</script>

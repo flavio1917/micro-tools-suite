@@ -1,0 +1,150 @@
+---
+export interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+
+// Definiamo un'interfaccia rigorosa per le traduzioni
+interface Translation {
+  dog: string;
+  cat: string;
+  rabbit: string;
+  weight: string;
+  age: string;
+  morphology: string;
+  result_title: string;
+  rabbit_note: string;
+}
+
+const translations: Record<string, Translation> = {
+  it: { 
+    dog: "Cane", cat: "Gatto", rabbit: "Coniglio",
+    weight: "Peso (kg)", age: "Età / Stato", morphology: "Morfologia",
+    result_title: "Fabbisogno Stimato",
+    rabbit_note: "Il fieno deve essere sempre disponibile illimitatamente."
+  },
+  en: { 
+    dog: "Dog", cat: "Cat", rabbit: "Rabbit",
+    weight: "Weight (kg)", age: "Age / Status", morphology: "Morphology",
+    result_title: "Estimated Intake",
+    rabbit_note: "Hay must always be available unlimitedly."
+  }
+};
+
+// Selezioniamo il dizionario, cadendo su 'en' se la lingua non è mappata
+const t = translations[lang] || translations.en;
+
+// Definiamo i tipi delle chiavi per le tab
+const petKeys = ['dog', 'cat', 'rabbit'] as const;
+type PetType = typeof petKeys[number];
+---
+
+<div class="flex bg-slate-50 p-2 gap-2">
+  {petKeys.map((pet) => (
+    <button 
+      data-pet={pet} 
+      class="pet-tab flex-1 py-3 px-4 rounded-2xl text-sm font-bold transition-all hover:bg-white"
+    >
+      {t[pet]} </button>
+  ))}
+</div>
+
+  <div class="p-8 space-y-6">
+    <div>
+      <label class="block text-xs font-black text-slate-400 uppercase tracking-widest mb-2">{t.weight}</label>
+      <input type="number" id="p-weight" class="w-full p-4 bg-slate-50 border-2 border-slate-50 rounded-2xl focus:border-indigo-500 outline-none transition-all text-xl font-bold" placeholder="0.0" />
+    </div>
+
+    <div id="fields-dog" class="pet-fields space-y-4">
+      <select id="dog-age" class="w-full p-4 bg-slate-50 rounded-2xl outline-none font-semibold">
+        <option value="3.0">Puppy</option>
+        <option value="1.8" selected>Adult</option>
+        <option value="1.4">Senior</option>
+        <option value="1.2">Geriatric</option>
+      </select>
+      <div class="flex gap-2">
+        {['lean', 'normal', 'robust'].map(m => (
+          <button data-morph={m} class="morph-btn flex-1 p-3 border-2 rounded-xl text-xs font-bold uppercase">{m}</button>
+        ))}
+      </div>
+    </div>
+
+    <div id="fields-cat" class="pet-fields hidden space-y-4">
+      <select id="cat-status" class="w-full p-4 bg-slate-50 rounded-2xl outline-none font-semibold">
+        <option value="1.4">Intero (Whole)</option>
+        <option value="1.2" selected>Sterilizzato (Neutered)</option>
+        <option value="1.0">Sedentario / Obeso</option>
+      </select>
+    </div>
+
+    <div id="fields-rabbit" class="pet-fields hidden">
+      <p class="text-sm text-slate-500 italic">{t.rabbit_note}</p>
+    </div>
+
+    <div class="bg-indigo-600 rounded-[24px] p-6 text-white shadow-lg">
+      <span class="text-indigo-200 text-xs font-bold uppercase tracking-widest">{t.result_title}</span>
+      <div id="p-result" class="text-3xl font-black mt-1">--</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let currentPet = 'dog';
+  let selectedMorph = 'normal';
+
+  const updateUI = () => {
+    document.querySelectorAll('.pet-fields').forEach(f => f.classList.add('hidden'));
+    document.getElementById(`fields-${currentPet}`)?.classList.remove('hidden');
+    
+    document.querySelectorAll('.pet-tab').forEach(btn => {
+      const b = btn as HTMLElement;
+      if(b.dataset.pet === currentPet) {
+        b.classList.add('bg-white', 'shadow-md', 'text-indigo-600');
+      } else {
+        b.classList.remove('bg-white', 'shadow-md', 'text-indigo-600');
+      }
+    });
+    calculate();
+  };
+
+  const calculate = () => {
+    const w = parseFloat((document.getElementById('p-weight') as HTMLInputElement).value || "0");
+    const res = document.getElementById('p-result');
+    if (!res || w <= 0) return;
+
+    if (currentPet === 'dog') {
+      let f = parseFloat((document.getElementById('dog-age') as HTMLSelectElement).value);
+      if (selectedMorph === 'robust' && f === 1.8) f = 1.4;
+      const kcal = Math.round(70 * Math.pow(w, 0.75) * f);
+      res.textContent = `${kcal} kcal/die`;
+    } 
+    else if (currentPet === 'cat') {
+      const f = parseFloat((document.getElementById('cat-status') as HTMLSelectElement).value);
+      const kcal = Math.round(70 * Math.pow(w, 0.67) * f); // Gatti usano esponente 0.67
+      res.textContent = `${kcal} kcal/die`;
+    }
+    else if (currentPet === 'rabbit') {
+      const veg = Math.round(w * 150); // 150g di verdure per kg
+      res.textContent = `Verdure: ~${veg}g/die`;
+    }
+  };
+
+  // Events
+  document.querySelectorAll('.pet-tab').forEach(t => t.addEventListener('click', (e) => {
+    currentPet = (e.target as HTMLElement).dataset.pet || 'dog';
+    updateUI();
+  }));
+
+  document.querySelectorAll('.morph-btn').forEach(b => b.addEventListener('click', (e) => {
+    selectedMorph = (e.target as HTMLElement).dataset.morph || 'normal';
+    calculate();
+  }));
+
+  document.getElementById('p-weight')?.addEventListener('input', calculate);
+  document.getElementById('dog-age')?.addEventListener('change', calculate);
+  document.getElementById('cat-status')?.addEventListener('change', calculate);
+
+  // Init
+  updateUI();
+</script>
