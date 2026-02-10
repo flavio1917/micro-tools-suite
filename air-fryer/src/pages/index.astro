@@ -1,15 +1,13 @@
 ---
 // Reindirizza immediatamente l'utente alla versione italiana del tool
 return Astro.redirect('/it/air-fryer');
----
+// Forza il redirect verso la pagina del tool che esiste davvero
 
 <html lang="it">
   <head>
-    <meta charset="utf-8" />
     <meta http-equiv="refresh" content="0;url=/it/air-fryer" />
-    <title>Reindirizzamento...</title>
   </head>
   <body>
-    <p>Se non vieni reindirizzato, <a href="/it/air-fryer">clicca qui</a>.</p>
+    <p>Redirect in corso... <a href="/it/air-fryer">clicca qui</a></p>
   </body>
 </html>
