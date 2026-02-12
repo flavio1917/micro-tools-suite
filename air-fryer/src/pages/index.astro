@@ -1,12 +1,137 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 import AirFryer from '../components/tools/AirFryer/AirFryer.astro';
-
-// Rimuoviamo getStaticPaths perché siamo nella home fissa
-// Impostiamo manualmente la lingua su 'it'
-const lang = "it";
 ---
 
-<MainLayout title="Convertitore Friggitrice ad Aria" lang={lang}>
-  <AirFryer lang={lang} />
+<MainLayout title="Convertitore Friggitrice ad Aria - Tempi e Gradi Forno">
+  
+  <AirFryer />
+
+  <section class="max-w-3xl mx-auto mt-16 px-4 pb-12 text-slate-300 space-y-12">
+    
+    <article class="space-y-6">
+      <h2 class="text-3xl font-bold text-white tracking-tight">
+        Guida alla Conversione: Forno vs Friggitrice ad Aria
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-400">
+        Hai trovato una ricetta perfetta per il forno ma vuoi cucinarla nella tua friggitrice ad aria per risparmiare tempo ed energia? 
+        Il nostro <strong>convertitore per friggitrice ad aria</strong> applica l'algoritmo standard per adattare qualsiasi pietanza: riducendo la temperatura di circa <strong>20°C</strong> e il tempo di cottura del <strong>20%</strong>.
+      </p>
+    </article>
+
+    <article class="space-y-4">
+      <h3 class="text-xl font-semibold text-blue-200">Tabella Rapida Temperature (Forno Statico → Air Fryer)</h3>
+      <div class="overflow-hidden rounded-xl border border-slate-700 shadow-2xl">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-slate-800 text-white font-semibold">
+            <tr>
+              <th class="p-4">Forno Tradizionale</th>
+              <th class="p-4">Friggitrice ad Aria</th>
+              <th class="p-4 hidden sm:table-cell">Note</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-700 bg-slate-900/50">
+            <tr class="hover:bg-slate-800/50 transition-colors">
+              <td class="p-4 font-mono text-orange-300">180°C</td>
+              <td class="p-4 font-mono text-blue-300 font-bold">160°C</td>
+              <td class="p-4 text-slate-500 hidden sm:table-cell">Ideale per dolci e torte</td>
+            </tr>
+            <tr class="hover:bg-slate-800/50 transition-colors">
+              <td class="p-4 font-mono text-orange-300">200°C</td>
+              <td class="p-4 font-mono text-blue-300 font-bold">180°C</td>
+              <td class="p-4 text-slate-500 hidden sm:table-cell">Perfetto per pollo e patatine</td>
+            </tr>
+            <tr class="hover:bg-slate-800/50 transition-colors">
+              <td class="p-4 font-mono text-orange-300">220°C</td>
+              <td class="p-4 font-mono text-blue-300 font-bold">200°C</td>
+              <td class="p-4 text-slate-500 hidden sm:table-cell">Per gratinature croccanti</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <article class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
+        <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <span class="text-blue-400">⚡</span> Forno Ventilato o Statico?
+        </h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          La friggitrice ad aria funziona come un <strong>forno super-ventilato</strong> molto compatto. 
+          Se la tua ricetta originale prevede il forno <em>statico</em>, devi abbassare la temperatura di 20°C. 
+          Se la ricetta è già per forno <em>ventilato</em>, spesso basta ridurre solo il tempo, ma abbassare leggermente i gradi aiuta a non seccare il cibo.
+        </p>
+      </article>
+
+      <article class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
+        <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <span class="text-blue-400">🍟</span> Patatine e Surgelati
+        </h3>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Per i cibi surgelati (patatine fritte, crocchette, bastoncini), la regola cambia leggermente: spesso puoi mantenere la <strong>stessa temperatura</strong> indicata sulla confezione per il forno ventilato, ma riducendo il tempo del 20-30%. Ricordati di scuotere il cestello a metà cottura!
+        </p>
+      </article>
+    </div>
+
+    <article class="space-y-6 pt-8 border-t border-slate-800">
+      <h3 class="text-2xl font-bold text-white">Domande Frequenti</h3>
+      
+      <div class="space-y-4">
+        <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-medium text-slate-200 group-hover:text-blue-300 transition-colors">
+            Devo preriscaldare la friggitrice ad aria?
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+            A differenza del forno tradizionale, la maggior parte delle air fryer moderne raggiunge la temperatura in 2-3 minuti. Preriscaldare è consigliato solo per carne (come bistecche) o dolci lievitati, per garantire lo shock termico immediato.
+          </p>
+        </details>
+
+        <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex justify-between items-center font-medium text-slate-200 group-hover:text-blue-300 transition-colors">
+            Posso usare la carta forno o alluminio?
+            <span class="transition group-open:rotate-180">
+              <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+            </span>
+          </summary>
+          <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+            Sì, ma con attenzione. La carta forno (o teglie in silicone) deve essere forata se vuoi che l'aria circoli sotto il cibo. Non mettere MAI la carta forno durante il preriscaldamento senza cibo sopra: il flusso d'aria potente potrebbe sollevarla contro la resistenza e farla bruciare.
+          </p>
+        </details>
+      </div>
+    </article>
+
+  </section>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Come convertire i gradi del forno per la friggitrice ad aria?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La regola generale è sottrarre 20°C alla temperatura del forno statico e ridurre il tempo di cottura del 20%. Ad esempio, 180°C in forno diventano 160°C in friggitrice ad aria."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Devo preriscaldare la friggitrice ad aria?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Solitamente non è necessario preriscaldare a lungo come il forno. Bastano 2-3 minuti a vuoto per ricette che richiedono calore immediato come carne o dolci."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Posso mettere la carta forno nella friggitrice ad aria?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sì, ma assicurati di mettere il cibo sopra per tenerla ferma, altrimenti l'aria potrebbe spingerla contro la resistenza e bruciarla."
+        }
+      }]
+    }
+  </script>
+
 </MainLayout>
