@@ -1,0 +1,74 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Cookie Policy - Convertitore Friggitrice ad Aria">
+  <div class="max-w-3xl mx-auto space-y-8 text-slate-300 leading-relaxed font-sans">
+    
+    <header class="border-b border-slate-700 pb-8 mb-8">
+      <h1 class="text-3xl font-bold text-white mb-2">Cookie Policy</h1>
+      <p class="text-slate-400 text-sm">Cosa sono e come li utilizziamo</p>
+    </header>
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold text-white">Cosa sono i Cookie?</h2>
+      <p>
+        I cookie sono piccoli file di testo che i siti visitati inviano al terminale dell'utente, dove vengono memorizzati, per poi essere ritrasmessi agli stessi siti alla visita successiva. Servono per autenticazioni informatiche, monitoraggio di sessioni e memorizzazione di informazioni specifiche riguardanti gli utenti.
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold text-white">Quali Cookie utilizza questo sito?</h2>
+      
+      <div class="grid gap-6">
+        <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+          <h3 class="text-lg font-medium text-blue-300 mb-2">1. Cookie Tecnici (Necessari)</h3>
+          <p class="text-sm text-slate-400">
+            Sono indispensabili per il corretto funzionamento del sito web. Senza di questi, alcune operazioni non potrebbero essere compiute o sarebbero meno sicure. Per l'installazione di tali cookie non è richiesto il preventivo consenso degli utenti.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+          <h3 class="text-lg font-medium text-orange-300 mb-2">2. Cookie di Terze Parti (Amazon)</h3>
+          <p class="text-sm text-slate-400 mb-2">
+            Questo sito ospita link di affiliazione verso Amazon. Quando clicchi su uno di questi link/pulsanti:
+          </p>
+          <ul class="list-disc pl-5 text-sm text-slate-400 space-y-1">
+            <li>Vieni reindirizzato ai server di Amazon.</li>
+            <li>Amazon potrebbe installare un cookie tecnico per tracciare la provenienza ("Referral").</li>
+            <li>Questo cookie permette ad Amazon di riconoscere che l'acquisto proviene da questo sito.</li>
+          </ul>
+          <p class="text-xs text-slate-500 mt-3 italic">
+            Nota: La gestione delle informazioni raccolte da "terze parti" è disciplinata dalle relative informative cui si prega di fare riferimento.
+            <a href="https://www.amazon.it/gp/help/customer/display.html?nodeId=201909010" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline ml-1">Privacy Policy Amazon</a>.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+          <h3 class="text-lg font-medium text-green-300 mb-2">3. Analytics (Statistiche)</h3>
+          <p class="text-sm text-slate-400">
+            Questo sito utilizza servizi di analisi (come Vercel Analytics) configurati in modalità anonima (senza profilazione IP diretta) per contare il numero di visite e migliorare le prestazioni del sito.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold text-white">Come disabilitare i Cookie</h2>
+      <p>
+        L'utente può decidere se accettare o meno i cookie utilizzando le impostazioni del proprio browser. Attenzione: la disabilitazione totale o parziale dei cookie tecnici può compromettere l'utilizzo delle funzionalità del sito.
+      </p>
+      <ul class="list-disc pl-5 text-sm text-blue-400 space-y-1">
+        <li><a href="https://support.google.com/chrome/answer/95647?hl=it" target="_blank" class="hover:underline">Chrome</a></li>
+        <li><a href="https://support.mozilla.org/it/kb/Gestione%20dei%20cookie" target="_blank" class="hover:underline">Firefox</a></li>
+        <li><a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank" class="hover:underline">Safari</a></li>
+        <li><a href="https://support.microsoft.com/it-it/edge" target="_blank" class="hover:underline">Edge</a></li>
+      </ul>
+    </section>
+
+    <div class="pt-8 border-t border-slate-800 mt-12 text-center">
+      <a href="/" class="text-blue-400 hover:text-white transition-colors underline underline-offset-4">← Torna al Convertitore</a>
+    </div>
+
+  </div>
+</MainLayout>

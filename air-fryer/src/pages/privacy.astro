@@ -1,0 +1,80 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Privacy Policy - Convertitore Friggitrice ad Aria">
+  <div class="max-w-3xl mx-auto space-y-8 text-slate-300 leading-relaxed font-sans">
+    
+    <header class="border-b border-slate-700 pb-8 mb-8">
+      <h1 class="text-3xl font-bold text-white mb-2">Privacy Policy</h1>
+      <p class="text-slate-400 text-sm">Ultimo aggiornamento: {new Date().toLocaleDateString('it-IT')}</p>
+    </header>
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold text-white">1. Titolare del Trattamento</h2>
+      <p>
+        Il presente sito web (ConvertitoreFriggitrice.it) è gestito a titolo personale. Poiché il sito non prevede registrazione utenti, newsletter o moduli di contatto che salvano dati in database, non vengono trattati dati personali identificativi (come nome, cognome o indirizzo) in modo diretto.
+      </p>
+      <p>
+        Per qualsiasi comunicazione legale o richiesta di informazioni, puoi contattare l'amministrazione all'indirizzo email: <span class="text-blue-400 bg-blue-900/30 px-2 py-1 rounded">info@convertitorefriggitrice.it</span> </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold text-white">2. Tipologia di Dati Raccolti</h2>
+      <ul class="list-disc pl-5 space-y-2 text-slate-400">
+        <li>
+          <strong class="text-slate-200">Dati di Navigazione (Log Files):</strong> I sistemi informatici preposti al funzionamento di questo sito acquisiscono, nel corso del loro normale esercizio, alcuni dati la cui trasmissione è implicita nell'uso dei protocolli di comunicazione di Internet (es. indirizzi IP, orari delle richieste). Questi dati vengono utilizzati al solo fine di ricavare informazioni statistiche anonime e per controllare il corretto funzionamento del sito.
+        </li>
+        <li>
+          <strong class="text-slate-200">Cookie:</strong> Vedi la Cookie Policy specifica qui sotto.
+        </li>
+      </ul>
+    </section>
+
+    <section class="space-y-4 bg-blue-950/40 p-6 rounded-xl border border-blue-800/50">
+      <h2 class="text-xl font-semibold text-blue-200 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        3. Affiliazione Commerciale (Amazon)
+      </h2>
+      <p class="text-blue-100/90 text-sm leading-relaxed">
+        <strong>Dichiarazione obbligatoria ai sensi dell'Accordo Operativo Amazon:</strong><br><br>
+        ConvertitoreFriggitrice.it partecipa al <strong>Programma Affiliazione Amazon EU</strong>, un programma di affiliazione che consente ai siti di percepire una commissione pubblicitaria pubblicizzando e fornendo link al sito Amazon.it.
+      </p>
+      <p class="text-blue-100/90 text-sm leading-relaxed">
+        In qualità di <strong>Affiliato Amazon</strong>, il proprietario di questo sito riceve un guadagno dagli acquisti idonei effettuati tramite i link presenti sul portale.
+      </p>
+      <p class="text-blue-100/90 text-sm leading-relaxed">
+        Quando l'utente clicca su un link che reindirizza ad Amazon, Amazon potrebbe installare un cookie di tracciamento (della durata solitamente di 24 ore) sul browser dell'utente. Questo serve esclusivamente ad Amazon per riconoscere che il visitatore proviene da questo sito e assegnare la corretta commissione. Il titolare di questo sito non ha accesso ai dati di acquisto specifici dell'utente (non vediamo chi sei o il tuo numero di carta di credito).
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold text-white">4. Finalità del Trattamento</h2>
+      <p>I dati tecnici raccolti vengono utilizzati per:</p>
+      <ul class="list-disc pl-5 space-y-2 text-slate-400">
+        <li>Garantire il funzionamento tecnico dello strumento di conversione.</li>
+        <li>Difesa da attacchi informatici (es. DDoS).</li>
+        <li>Adempimento degli obblighi contrattuali verso i partner di affiliazione (Amazon).</li>
+      </ul>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold text-white">5. Luogo del Trattamento e Hosting</h2>
+      <p>
+        Questo sito è ospitato sull'infrastruttura di <strong>Vercel Inc.</strong>, che garantisce elevati standard di sicurezza. I dati di log potrebbero essere elaborati su server situati anche al di fuori dello Spazio Economico Europeo, nel rispetto delle Clausole Contrattuali Standard (SCC) approvate dalla Commissione Europea.
+      </p>
+    </section>
+
+    <section class="space-y-4">
+      <h2 class="text-xl font-semibold text-white">6. Diritti dell'Utente</h2>
+      <p>
+        In conformità al Regolamento UE 2016/679 (GDPR), hai il diritto di chiedere l'accesso, la rettifica, la cancellazione dei dati o la limitazione del trattamento. Dato che questo sito non conserva dati personali diretti, tali richieste sono generalmente non applicabili ai dati tecnici anonimi, ma restiamo a disposizione all'email indicata sopra.
+      </p>
+    </section>
+
+    <div class="pt-8 border-t border-slate-800 mt-12 text-center">
+      <a href="/" class="text-blue-400 hover:text-white transition-colors underline underline-offset-4">← Torna al Convertitore</a>
+    </div>
+
+  </div>
+</MainLayout>
