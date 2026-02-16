@@ -2,7 +2,7 @@
   {
     "slug": "focaccine-mirtilli-zenzero",
     "title": "Focaccine Di Mirtilli Allo Zenzero",
-    "emoji": "\uD83EuDDP1",
+    "emoji": "uD83EuDDP1",
     "temp": 175,
     "time": "12",
     "ingredients": [
@@ -21,7 +21,7 @@
   {
     "slug": "uovo-in-vaso-cotto",
     "title": "Uovo In Vaso Cotto",
-    "emoji": "\uD83C\uDF73",
+    "emoji": "uD83CuDF73",
     "temp": 175,
     "time": "14",
     "ingredients": [
@@ -38,7 +38,7 @@
   {
     "slug": "patatine-fritte-fatte-in-casa",
     "title": "Patatine Fritte Fatte In Casa",
-    "emoji": "\uD83C\uDF5F",
+    "emoji": "uD83CuDF5F",
     "temp": 190,
     "time": "25-28",
     "ingredients": [
@@ -55,7 +55,7 @@
   {
     "slug": "empanadas-di-manzo",
     "title": "Empanadas Di Manzo",
-    "emoji": "\uD83E\uDD5F",
+    "emoji": "uD83EuDD5F",
     "temp": 200,
     "time": "20",
     "ingredients": [
@@ -72,7 +72,7 @@
   {
     "slug": "patate-arrosto-maionese-piccante",
     "title": "Patate Arrosto Con Maionese Piccante",
-    "emoji": "\uD83E\uDD54",
+    "emoji": "uD83EuDD54",
     "temp": 180,
     "time": "30",
     "ingredients": [
@@ -90,7 +90,7 @@
   {
     "slug": "pollo-arrosto-aglio-erbe",
     "title": "Pollo Arrosto Con Aglio & Erbe",
-    "emoji": "\uD83C\uDF57",
+    "emoji": "uD83CuDF57",
     "temp": 195,
     "time": "20",
     "ingredients": [
@@ -106,7 +106,7 @@
   {
     "slug": "bocconcini-cavolfiore-salsa-ranch",
     "title": "Bocconcini Di Cavolfiore Con Salsa Ranch",
-    "emoji": "\uD83E\uDD66",
+    "emoji": "uD83EuDD66",
     "temp": 170,
     "time": "27",
     "ingredients": [
@@ -124,7 +124,7 @@
   {
     "slug": "bistecca-new-york-chimichurri",
     "title": "Bistecca Di New York Con Chimichurri",
-    "emoji": "\uD83E\uDD69",
+    "emoji": "uD83EuDD69",
     "temp": 205,
     "time": "6-8",
     "ingredients": [
@@ -143,7 +143,7 @@
   {
     "slug": "kofta-manzo-coriandolo",
     "title": "Kofta Di Manzo Con Coriandolo",
-    "emoji": "\uD83C\uDF62",
+    "emoji": "uD83CuDF62",
     "temp": 180,
     "time": "8",
     "ingredients": [
@@ -160,7 +160,7 @@
   {
     "slug": "gamberetti-stile-cajun",
     "title": "Gamberetti Stile Cajun",
-    "emoji": "\uD83E\uDD90",
+    "emoji": "uD83EuDD90",
     "temp": 190,
     "time": "5",
     "ingredients": [
@@ -178,7 +178,7 @@
   {
     "slug": "melanzane-ripiene-mozzarella",
     "title": "Melanzane Ripiene Di Mozzarella",
-    "emoji": "\uD83C\uDF46",
+    "emoji": "uD83CuDF46",
     "temp": 190,
     "time": "30",
     "ingredients": [
@@ -196,7 +196,7 @@
   {
     "slug": "tofu-croccante",
     "title": "Tofu Croccante",
-    "emoji": "\uD83E\uDDC2",
+    "emoji": "uD83EuDDC2",
     "temp": 190,
     "time": "18",
     "ingredients": [
@@ -213,7 +213,7 @@
   {
     "slug": "mini-pizze",
     "title": "Mini Pizze",
-    "emoji": "\uD83C\uDF55",
+    "emoji": "uD83CuDF55",
     "temp": 170,
     "time": "8",
     "ingredients": [
@@ -229,7 +229,7 @@
   {
     "slug": "crocchette-pollo-salsa-senape",
     "title": "Crocchette Di Pollo Con Salsa Di Senape",
-    "emoji": "\uD83C\uDF57",
+    "emoji": "uD83CuDF57",
     "temp": 180,
     "time": "20",
     "ingredients": [
@@ -246,7 +246,7 @@
   {
     "slug": "pollo-limone-miele",
     "title": "Pollo Al Limone Miele",
-    "emoji": "\uD83C\uDF4B",
+    "emoji": "uD83CuDF4B",
     "temp": 195,
     "time": "15",
     "ingredients": [
@@ -263,7 +263,7 @@
   {
     "slug": "samosa-vegetali",
     "title": "Samosa Vegetali",
-    "emoji": "\uD83E\uDD5F",
+    "emoji": "uD83EuDD5F",
     "temp": 170,
     "time": "15",
     "ingredients": [
@@ -280,7 +280,7 @@
   {
     "slug": "hamburger-deluxe",
     "title": "Hamburger Deluxe",
-    "emoji": "\uD83C\uDF54",
+    "emoji": "uD83CuDF54",
     "temp": 200,
     "time": "8-12",
     "ingredients": [
@@ -297,7 +297,7 @@
   {
     "slug": "muffin-gocce-cioccolato",
     "title": "Muffin Con Gocce Di Cioccolato",
-    "emoji": "\uD83E\uDDC1",
+    "emoji": "uD83EuDDC1",
     "temp": 170,
     "time": "20",
     "ingredients": [
@@ -315,7 +315,7 @@
   {
     "slug": "bastoncini-french-toast",
     "title": "Bastoncini Di French Toast",
-    "emoji": "\uD83C\uDF5E",
+    "emoji": "uD83CuDF5E",
     "temp": 175,
     "time": "10",
     "ingredients": [
@@ -332,7 +332,7 @@
   {
     "slug": "gamberi-croccanti-curry",
     "title": "Gamberi Croccanti Al Curry",
-    "emoji": "\uD83C\uDF64",
+    "emoji": "uD83CuDF64",
     "temp": 170,
     "time": "10",
     "ingredients": [
@@ -349,7 +349,7 @@
   {
     "slug": "focaccine-alla-fragola",
     "title": "Focaccine Alla Fragola",
-    "emoji": "\uD83EuDDP1",
+    "emoji": "uD83EuDDP1",
     "temp": 175,
     "time": "12",
     "ingredients": [
@@ -367,7 +367,7 @@
   {
     "slug": "muffin-caffe-streusel",
     "title": "Muffin Al Caffè Streusel",
-    "emoji": "\uD83E\uDDC1",
+    "emoji": "uD83EuDDC1",
     "temp": 175,
     "time": "12",
     "ingredients": [
@@ -385,7 +385,7 @@
   {
     "slug": "pizza-da-colazione",
     "title": "Pizza Da Colazione",
-    "emoji": "\uD83C\uDF55",
+    "emoji": "uD83CuDF55",
     "temp": 175,
     "time": "8",
     "ingredients": [
@@ -402,7 +402,7 @@
   {
     "slug": "toast-farcito-francese",
     "title": "Toast Farcito Alla Francese",
-    "emoji": "\uD83C\uDF5E",
+    "emoji": "uD83CuDF5E",
     "temp": 175,
     "time": "10",
     "ingredients": [
@@ -420,7 +420,7 @@
   {
     "slug": "bistecca-costata-santa-maria",
     "title": "Bistecca Costata Santa Maria",
-    "emoji": "\uD83E\uDD69",
+    "emoji": "uD83EuDD69",
     "temp": 205,
     "time": "6",
     "ingredients": [
@@ -437,7 +437,7 @@
   {
     "slug": "polpette-italiane",
     "title": "Polpette Italiane",
-    "emoji": "\uD83C\uDF5D",
+    "emoji": "uD83CuDF5D",
     "temp": 205,
     "time": "8",
     "ingredients": [
@@ -455,7 +455,7 @@
   {
     "slug": "maiale-katsu",
     "title": "Cotoletta Di Maiale Katsu",
-    "emoji": "\uD83C\uDF71",
+    "emoji": "uD83CuDF71",
     "temp": 180,
     "time": "14",
     "ingredients": [
@@ -472,7 +472,7 @@
   {
     "slug": "involtini-maiale-prosciutto",
     "title": "Involtini Di Maiale Nel Prosciutto",
-    "emoji": "\uD83E\uDD53",
+    "emoji": "uD83EuDD53",
     "temp": 205,
     "time": "9",
     "ingredients": [
@@ -489,7 +489,7 @@
   {
     "slug": "bastoncini-halloumi",
     "title": "Bastoncini Di Halloumi",
-    "emoji": "\uD83E\uDDC0",
+    "emoji": "uD83EuDDC0",
     "temp": 200,
     "time": "18",
     "ingredients": [
@@ -506,7 +506,7 @@
   {
     "slug": "merluzzo-crosta-panko",
     "title": "Merluzzo In Crosta Di Panko",
-    "emoji": "\uD83DaDC1F",
+    "emoji": "uD83DaDC1F",
     "temp": 170,
     "time": "10",
     "ingredients": [
@@ -523,7 +523,7 @@
   {
     "slug": "quesadillas-fajita-pollo",
     "title": "Quesadillas Fajita Di Pollo",
-    "emoji": "\uD83C\uDF2E",
+    "emoji": "uD83CuDF2E",
     "temp": 200,
     "time": "20",
     "ingredients": [
@@ -541,7 +541,7 @@
   {
     "slug": "sfogliatine-mele",
     "title": "Sfogliatine Di Mele",
-    "emoji": "\uD83E\uDD67",
+    "emoji": "uD83EuDD67",
     "temp": 180,
     "time": "16",
     "ingredients": [
@@ -558,7 +558,7 @@
   {
     "slug": "torta-banana-mascarpone",
     "title": "Torta Alla Banana E Mascarpone",
-    "emoji": "\uD83C\uDF70",
+    "emoji": "uD83CuDF70",
     "temp": 160,
     "time": "35",
     "ingredients": [
@@ -576,7 +576,7 @@
   {
     "slug": "involtini-primavera-pollo",
     "title": "Involtini Primavera Di Pollo",
-    "emoji": "\uD83C\uDF59",
+    "emoji": "uD83CuDF59",
     "temp": 160,
     "time": "20",
     "ingredients": [
@@ -593,7 +593,7 @@
   {
     "slug": "falafel",
     "title": "Falafel",
-    "emoji": "\uD83E\uDDC6",
+    "emoji": "uD83EuDDC6",
     "temp": 170,
     "time": "15",
     "ingredients": [
@@ -610,7 +610,7 @@
   {
     "slug": "spiedini-manzo-teriyaki",
     "title": "Spiedini Di Manzo Teriyaki",
-    "emoji": "\uD83C\uDF62",
+    "emoji": "uD83CuDF62",
     "temp": 180,
     "time": "6",
     "ingredients": [
@@ -626,7 +626,7 @@
   {
     "slug": "fish-and-chips",
     "title": "Fish & Chips Fatti In Casa",
-    "emoji": "\uD83DaDC1F",
+    "emoji": "uD83DaDC1F",
     "temp": 180,
     "time": "12",
     "ingredients": [
@@ -643,7 +643,7 @@
   {
     "slug": "hot-dog-newyorkese",
     "title": "Hot Dog Alla Newyorkese",
-    "emoji": "\uD83C\uDF2D",
+    "emoji": "uD83CuDF2D",
     "temp": 170,
     "time": "5",
     "ingredients": [
@@ -660,7 +660,7 @@
   {
     "slug": "orata-griglia-pomodori",
     "title": "Orata Alla Griglia",
-    "emoji": "\uD83DaDC1F",
+    "emoji": "uD83DaDC1F",
     "temp": 200,
     "time": "7",
     "ingredients": [
@@ -677,7 +677,7 @@
   {
     "slug": "sigari-alle-mandorle",
     "title": "Sigari Alle Mandorle",
-    "emoji": "\uD83C\uDF6F",
+    "emoji": "uD83CuDF6F",
     "temp": 180,
     "time": "11",
     "ingredients": [
@@ -694,7 +694,7 @@
   {
     "slug": "polpette-agnello-mediterraneo",
     "title": "Polpette Di Agnello Mediterraneo",
-    "emoji": "\uD83E\uDDC6",
+    "emoji": "uD83EuDDC6",
     "temp": 205,
     "time": "10",
     "ingredients": [
@@ -711,7 +711,7 @@
   {
     "slug": "cosce-pollo-aglio-limone",
     "title": "Cosce Di Pollo Aglio E Limone",
-    "emoji": "\uD83C\uDF57",
+    "emoji": "uD83CuDF57",
     "temp": 195,
     "time": "20",
     "ingredients": [
@@ -728,7 +728,7 @@
   {
     "slug": "parmigiana-di-pollo",
     "title": "Parmigiana Di Pollo",
-    "emoji": "\uD83C\uDF5D",
+    "emoji": "uD83CuDF5D",
     "temp": 180,
     "time": "12",
     "ingredients": [
@@ -745,7 +745,7 @@
   {
     "slug": "tacos-pesce-griglia",
     "title": "Tacos Di Pesce Alla Griglia",
-    "emoji": "\uD83C\uDF2E",
+    "emoji": "uD83CuDF2E",
     "temp": 175,
     "time": "7",
     "ingredients": [
@@ -762,7 +762,7 @@
   {
     "slug": "torte-di-granchio",
     "title": "Torte Di Granchio (Crab Cakes)",
-    "emoji": "\uD83E\uDD80",
+    "emoji": "uD83EuDD80",
     "temp": 205,
     "time": "8",
     "ingredients": [
@@ -779,7 +779,7 @@
   {
     "slug": "cajun-di-pollo",
     "title": "Cajun Di Pollo (Tenders)",
-    "emoji": "\uD83C\uDF36",
+    "emoji": "uD83CuDF36",
     "temp": 205,
     "time": "10",
     "ingredients": [
@@ -796,7 +796,7 @@
   {
     "slug": "stromboli",
     "title": "Stromboli",
-    "emoji": "\uD83C\uDF2F",
+    "emoji": "uD83CuDF2F",
     "temp": 175,
     "time": "20",
     "ingredients": [
@@ -813,7 +813,7 @@
   {
     "slug": "cheeseburger-sliders",
     "title": "Cheeseburger Sliders",
-    "emoji": "\uD83C\uDF54",
+    "emoji": "uD83CuDF54",
     "temp": 205,
     "time": "8",
     "ingredients": [
@@ -830,7 +830,7 @@
   {
     "slug": "asparagi-avvolti-prosciutto",
     "title": "Asparagi Avvolti Nel Prosciutto",
-    "emoji": "\uD83E\uDD66",
+    "emoji": "uD83EuDD66",
     "temp": 150,
     "time": "10",
     "ingredients": [
@@ -846,7 +846,7 @@
   {
     "slug": "funghi-ripieni-salsiccia",
     "title": "Funghi Ripieni Di Salsiccia",
-    "emoji": "\uD83C\uDF44",
+    "emoji": "uD83CuDF44",
     "temp": 160,
     "time": "12",
     "ingredients": [
@@ -863,7 +863,7 @@
   {
     "slug": "jalapenos-ripieni-bacon",
     "title": "Jalapeños Ripieni Di Bacon",
-    "emoji": "\uD83C\uDF36",
+    "emoji": "uD83CuDF36",
     "temp": 160,
     "time": "16",
     "ingredients": [
@@ -879,7 +879,7 @@
   {
     "slug": "uovo-allo-scotch",
     "title": "Uovo Allo Scotch",
-    "emoji": "\uD83E\udd5a",
+    "emoji": "uD83Eudd5a",
     "temp": 175,
     "time": "15",
     "ingredients": [
@@ -896,7 +896,7 @@
   {
     "slug": "spiedini-agnello-shawarma",
     "title": "Spiedini Di Agnello Shawarma",
-    "emoji": "\uD83C\uDF62",
+    "emoji": "uD83CuDF62",
     "temp": 205,
     "time": "8",
     "ingredients": [
@@ -912,7 +912,7 @@
   {
     "slug": "avocado-fritti",
     "title": "Avocado Fritti",
-    "emoji": "\uD83E\uDD51",
+    "emoji": "uD83EuDD51",
     "temp": 205,
     "time": "10",
     "ingredients": [
@@ -929,7 +929,7 @@
   {
     "slug": "carote-arrosto-miele",
     "title": "Carote Arrosto Al Miele",
-    "emoji": "\uD83E\uDD55",
+    "emoji": "uD83EuDD55",
     "temp": 205,
     "time": "12",
     "ingredients": [
@@ -945,7 +945,7 @@
   {
     "slug": "filetto-maiale-verdure",
     "title": "Filetto Di Maiale Con Verdure",
-    "emoji": "\uD83E\uDD53",
+    "emoji": "uD83EuDD53",
     "temp": 190,
     "time": "35",
     "ingredients": [
@@ -962,7 +962,7 @@
   {
     "slug": "bistecche-tofu-verdure",
     "title": "Bistecche Di Tofu Con Verdure",
-    "emoji": "\uD83E\uDD66",
+    "emoji": "uD83EuDD66",
     "temp": 180,
     "time": "14",
     "ingredients": [
@@ -979,7 +979,7 @@
   {
     "slug": "costolette-agnello-limone",
     "title": "Costolette Di Agnello Al Limone",
-    "emoji": "\uD83C\uDF56",
+    "emoji": "uD83CuDF56",
     "temp": 200,
     "time": "10",
     "ingredients": [
@@ -995,7 +995,7 @@
   {
     "slug": "bagel-vegetariani",
     "title": "Bagel Vegetariani",
-    "emoji": "\uD83E\uDD6F",
+    "emoji": "uD83EuDD6F",
     "temp": 200,
     "time": "17",
     "ingredients": [
@@ -1012,7 +1012,7 @@
   {
     "slug": "radici-arrosto-sciroppo-acero",
     "title": "Radici Arrosto Sciroppo D'Acero",
-    "emoji": "\uD83E\uDD54",
+    "emoji": "uD83EuDD54",
     "temp": 200,
     "time": "30",
     "ingredients": [
