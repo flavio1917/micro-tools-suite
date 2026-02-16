@@ -2,7 +2,6 @@
 // src/components/recipes/RecipeCard.astro
 const { recipe } = Astro.props;
 
-// Percorso immagine (presuppone che le hai salvate come slug.webp)
 const imagePath = `/images/recipes/${recipe.slug}.webp`;
 
 // Preparazione sicura stringa ingredienti per la ricerca
@@ -13,44 +12,37 @@ const ingredientsString = recipe.ingredients && Array.isArray(recipe.ingredients
 
 <a 
   href={`/ricette/${recipe.slug}`} 
-  class="recipe-card group relative block overflow-hidden rounded-2xl bg-slate-800 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20"
+  class="recipe-card group relative block overflow-hidden rounded-2xl bg-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20"
   data-title={recipe.title.toLowerCase()} 
-  data-emoji={recipe.emoji}
   data-ingredients={ingredientsString}
 >
   
-  <div class="aspect-w-16 aspect-h-10 w-full overflow-hidden bg-slate-700 relative h-48">
+  <div class="aspect-w-16 aspect-h-10 w-full overflow-hidden bg-slate-800 relative h-56">
+    
     <img 
       src={imagePath} 
       alt={recipe.title}
-      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-      onerror="this.style.display='none'; this.nextElementSibling.style.opacity='1';" 
+      class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90"
+      onerror="this.style.display='none';" 
     />
     
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity pointer-events-none"></div>
+    <div class="absolute inset-0 bg-black/40 bg-gradient-to-t from-black via-black/80 to-transparent transition-opacity"></div>
   </div>
 
-  <div class="absolute inset-0 flex flex-col justify-end p-5 pointer-events-none">
+  <div class="absolute inset-0 flex flex-col justify-end p-5">
     
-    <div class="absolute top-4 right-4">
-      <span class="inline-flex items-center rounded-full bg-black/50 px-2 py-1 text-xs font-medium text-white backdrop-blur-md border border-white/10 shadow-sm">
-        {recipe.source}
-      </span>
-    </div>
-
-    <div class="mb-2">
-      <span class="text-3xl drop-shadow-md mb-2 block">{recipe.emoji}</span>
-      <h3 class="text-lg font-bold text-white leading-tight group-hover:text-blue-400 transition-colors line-clamp-2 drop-shadow-lg">
+    <div class="mb-3 relative z-10">
+      <h3 class="text-xl font-bold text-white leading-tight group-hover:text-blue-300 transition-colors line-clamp-2 drop-shadow-[0_3px_3px_rgba(0,0,0,0.9)]">
         {recipe.title}
       </h3>
     </div>
 
-    <div class="flex items-center gap-2 text-sm text-slate-300 mt-1">
-      <span class="flex items-center gap-1 bg-slate-900/60 px-2 py-1 rounded-md backdrop-blur-sm border border-slate-600/50 shadow-sm">
-        🔥 <span class="font-mono font-bold text-orange-300">{recipe.temp}°C</span>
+    <div class="flex items-center gap-2 text-sm text-slate-200 mt-1 relative z-10">
+      <span class="flex items-center gap-1.5 bg-black/70 px-2.5 py-1.5 rounded-lg backdrop-blur-md border border-white/10 shadow-lg font-medium">
+        🔥 <span class="text-orange-300 font-bold">{recipe.temp}°C</span>
       </span>
-      <span class="flex items-center gap-1 bg-slate-900/60 px-2 py-1 rounded-md backdrop-blur-sm border border-slate-600/50 shadow-sm">
-        ⏱️ <span class="font-mono font-bold text-blue-300">{recipe.time}'</span>
+      <span class="flex items-center gap-1.5 bg-black/70 px-2.5 py-1.5 rounded-lg backdrop-blur-md border border-white/10 shadow-lg font-medium">
+        ⏱️ <span class="text-blue-300 font-bold">{recipe.time}'</span>
       </span>
     </div>
   </div>
