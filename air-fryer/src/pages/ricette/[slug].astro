@@ -1,6 +1,7 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
 import recipes from '../../data/recipes.json';
+import AmazonProduct from '../../components/ads/AmazonProduct.astro'; // <--- 1. MANCAVA QUESTO IMPORT
 
 export async function getStaticPaths() {
   return recipes.map((recipe) => {
@@ -20,26 +21,20 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
 <MainLayout title={`${recipe.title} - Ricetta Friggitrice ad Aria`}>
   
   <div class="relative h-[50vh] min-h-[400px] w-full overflow-hidden bg-slate-900">
-    
     <img 
       src={imagePath} 
       alt={recipe.title} 
       class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-1000 hover:scale-105"
       onerror="this.style.opacity='0'" 
     />
-    
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
-    
     <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-16 items-center text-center z-10">
-      
       <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
         {recipe.title}
       </h1>
-      
       <p class="text-lg md:text-xl text-slate-200 max-w-2xl font-medium drop-shadow-md border-t border-white/20 pt-4 mt-2">
         {recipe.description}
       </p>
-
     </div>
   </div>
 
@@ -86,13 +81,14 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
 
       <div class="lg:col-span-2 space-y-8">
         
+        <AmazonProduct recipe={recipe} />
+
         <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-8 shadow-xl">
           <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
             <span class="text-3xl">👨‍🍳</span> Procedimento
           </h3>
           
           <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
-            
             <div class="flex gap-6 relative">
               <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">1</div>
               <div class="pt-1">
