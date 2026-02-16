@@ -2,18 +2,15 @@
 import MainLayout from '../../layouts/MainLayout.astro';
 import recipes from '../../data/recipes.json';
 
-// QUESTA È LA FUNZIONE FONDAMENTALE CHE MANCAVA O ERA ERRATA
 export async function getStaticPaths() {
-  // Astro cicla su tutte le ricette del JSON e crea una pagina per ognuna
   return recipes.map((recipe) => {
     return {
-      params: { slug: recipe.slug }, // Dice ad Astro che URL generare (es. /ricette/pollo)
-      props: { recipe }, // Passa i dati della ricetta alla pagina
+      params: { slug: recipe.slug },
+      props: { recipe },
     };
   });
 }
 
-// Recupera i dati passati dalla funzione sopra
 const { recipe } = Astro.props;
 
 // Gestione immagine
@@ -22,104 +19,115 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
 
 <MainLayout title={`${recipe.title} - Ricetta Friggitrice ad Aria`}>
   
-  <div class="relative h-[40vh] min-h-[300px] w-full overflow-hidden">
+  <div class="relative h-[50vh] min-h-[400px] w-full overflow-hidden bg-slate-900">
+    
     <img 
       src={imagePath} 
       alt={recipe.title} 
-      class="absolute inset-0 h-full w-full object-cover blur-sm opacity-50"
+      class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-1000 hover:scale-105"
       onerror="this.style.opacity='0'" 
     />
-    <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
     
-    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-      <span class="text-6xl md:text-8xl mb-4 animate-bounce-slow">{recipe.emoji}</span>
-      <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">{recipe.title}</h1>
-      <p class="text-lg text-slate-300 max-w-2xl">{recipe.description}</p>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
+    
+    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-16 items-center text-center z-10">
       
-      <div class="mt-6 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 text-sm">
-        <span>Fonte Ufficiale: <strong>{recipe.source}</strong></span>
-      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
+        {recipe.title}
+      </h1>
+      
+      <p class="text-lg md:text-xl text-slate-200 max-w-2xl font-medium drop-shadow-md border-t border-white/20 pt-4 mt-2">
+        {recipe.description}
+      </p>
+
     </div>
   </div>
 
-  <div class="max-w-4xl mx-auto px-4 -mt-10 relative z-10 pb-20">
+  <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 pb-20">
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-      <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 text-center shadow-lg">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-6 text-center shadow-2xl hover:border-blue-500 transition-colors">
         <span class="block text-slate-400 text-xs uppercase tracking-wider font-bold mb-1">Temperatura</span>
-        <div class="text-4xl font-mono font-bold text-orange-400">{recipe.temp}°C</div>
+        <div class="text-5xl font-mono font-bold text-orange-400">{recipe.temp}°C</div>
       </div>
-      <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 text-center shadow-lg">
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-6 text-center shadow-2xl hover:border-blue-500 transition-colors">
         <span class="block text-slate-400 text-xs uppercase tracking-wider font-bold mb-1">Tempo</span>
-        <div class="text-4xl font-mono font-bold text-blue-400">{recipe.time} <span class="text-xl">min</span></div>
+        <div class="text-5xl font-mono font-bold text-blue-400">{recipe.time} <span class="text-2xl">min</span></div>
       </div>
-      <div class="bg-slate-800 border border-slate-700 rounded-xl p-6 text-center shadow-lg">
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-6 text-center shadow-2xl hover:border-blue-500 transition-colors">
         <span class="block text-slate-400 text-xs uppercase tracking-wider font-bold mb-1">Difficoltà</span>
-        <div class="text-4xl font-bold text-green-400">
+        <div class="text-5xl font-bold text-green-400">
           {recipe.ingredients && recipe.ingredients.length <= 5 ? 'Facile' : 'Media'}
         </div>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
       
       <div class="lg:col-span-1">
-        <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 sticky top-8">
-          <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
-            🛒 Ingredienti
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sticky top-8 shadow-lg">
+          <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3 border-b border-slate-800 pb-4">
+            <span class="text-2xl">🛒</span> Ingredienti
           </h3>
-          <ul class="space-y-3">
+          <ul class="space-y-4">
             {recipe.ingredients && recipe.ingredients.length > 0 ? (
               recipe.ingredients.map((ing) => (
-                <li class="flex items-start gap-3 text-slate-300 text-sm">
-                  <input type="checkbox" class="mt-1 w-4 h-4 rounded border-slate-600 bg-slate-700 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer">
-                  <span class="leading-snug">{ing}</span>
+                <li class="flex items-start gap-3 text-slate-300 group">
+                  <input type="checkbox" class="mt-1.5 w-5 h-5 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500">
+                  <span class="leading-relaxed group-hover:text-white transition-colors">{ing}</span>
                 </li>
               ))
             ) : (
-              <li class="text-slate-500 italic text-sm">Nessun ingrediente specifico elencato.</li>
+              <li class="text-slate-500 italic text-sm">Vedi descrizione per i dettagli.</li>
             )}
           </ul>
         </div>
       </div>
 
-      <div class="lg:col-span-2 space-y-6">
+      <div class="lg:col-span-2 space-y-8">
         
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-          <h3 class="text-2xl font-bold text-white mb-6">👨‍🍳 Procedimento Rapido</h3>
+        <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-8 shadow-xl">
+          <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+            <span class="text-3xl">👨‍🍳</span> Procedimento
+          </h3>
           
-          <div class="space-y-6">
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white">1</div>
-              <div>
-                <h4 class="text-white font-bold mb-1">Preparazione</h4>
-                <p class="text-slate-400">Unisci gli ingredienti elencati. Se previsto dalla ricetta, impana o condisci il cibo in una ciotola prima di inserirlo nel cestello.</p>
-              </div>
-            </div>
-
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white">2</div>
-              <div>
-                <h4 class="text-white font-bold mb-1">Cottura Air Fryer</h4>
-                <p class="text-slate-400">
-                  Imposta la friggitrice a <strong class="text-white">{recipe.temp}°C</strong>. 
-                  Inserisci il cibo nel cestello (non sovrapporre troppo) e cuoci per <strong class="text-white">{recipe.time} minuti</strong>.
+          <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
+            
+            <div class="flex gap-6 relative">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">1</div>
+              <div class="pt-1">
+                <h4 class="text-lg font-bold text-white mb-2">Preparazione</h4>
+                <p class="text-slate-400 leading-relaxed">
+                  Prepara tutti gli ingredienti sul piano di lavoro. Se necessario, ungi leggermente il cibo con un filo d'olio spray o condiscilo in una ciotola per distribuire uniformemente le spezie.
                 </p>
               </div>
             </div>
 
-             <div class="flex gap-4">
-              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-bold text-black">💡</div>
-              <div>
-                <h4 class="text-amber-400 font-bold mb-1">Il Consiglio dell'Esperto</h4>
-                <p class="text-slate-300 italic">"{recipe.tip}"</p>
+            <div class="flex gap-6 relative">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">2</div>
+              <div class="pt-1">
+                <h4 class="text-lg font-bold text-white mb-2">Cottura</h4>
+                <p class="text-slate-400 leading-relaxed">
+                  Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded">{recipe.temp}°C</strong>. 
+                  Inserisci il cibo nel cestello cercando di non sovrapporlo troppo per far circolare l'aria. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">{recipe.time} minuti</strong>.
+                </p>
+              </div>
+            </div>
+
+             <div class="flex gap-6 relative">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-bold text-black shadow-lg shadow-amber-500/20 ring-4 ring-slate-900 z-10">💡</div>
+              <div class="pt-1">
+                <h4 class="text-amber-400 font-bold mb-2">Il Segreto dello Chef</h4>
+                <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
+                  <p class="text-amber-100 italic">"{recipe.tip}"</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="text-center pt-8">
-          <a href="/#ricettario" class="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+        <div class="text-center pt-8 border-t border-slate-800">
+          <a href="/#ricettario" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-all font-medium">
             ← Cerca un'altra ricetta
           </a>
         </div>
@@ -128,13 +136,3 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
     </div>
   </div>
 </MainLayout>
-
-<style>
-  .animate-bounce-slow {
-    animation: bounce 3s infinite;
-  }
-  @keyframes bounce {
-    0%, 100% { transform: translateY(-5%); }
-    50% { transform: translateY(0); }
-  }
-</style>
