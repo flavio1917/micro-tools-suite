@@ -1,5 +1,4 @@
 ---
-// PERCORSO RELATIVO: Risale di un livello (..) e entra in styles
 import "../styles/global.css";
 
 export interface Props {
@@ -15,9 +14,7 @@ const { title, lang = "it" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    
     <link rel="icon" type="image/png" href="/favicon.png" />
-    
     <meta name="generator" content={Astro.generator} />
     
     <title>{title}</title>
@@ -46,6 +43,8 @@ const { title, lang = "it" } = Astro.props;
         </div>
 
         <div class="flex justify-center gap-4 text-[11px] text-slate-400 font-medium tracking-wide">
+          <a href="/info" class="hover:text-blue-400 transition-colors hover:underline">Chi Siamo</a>
+          <span>•</span>
           <a href="/privacy" class="hover:text-blue-400 transition-colors hover:underline">Privacy Policy</a>
           <span>•</span>
           <a href="/cookies" class="hover:text-blue-400 transition-colors hover:underline">Cookie Policy</a>

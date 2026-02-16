@@ -1,64 +1,45 @@
 ---
 const { recipe } = Astro.props;
 
-// LOGICA CLUSTER BEST-SELLER
+// LOGICA CLUSTER CON LINK REALI FORNITI
 const products = {
-  // CLUSTER 1: CARNE & ARROSTI -> Termometro
   meat: {
     keywords: ['pollo', 'manzo', 'bistecca', 'carne', 'agnello', 'salsiccia', 'hamburger', 'costine', 'arrosto', 'maiale'],
     title: "Mai Più Carne Secca o Cruda",
     name: "ThermoPro TP02S Termometro Digitale",
-    desc: "Il segreto per arrosti succosi? La temperatura al cuore. Lettura in 4 secondi.",
+    desc: "Il segreto per arrosti succosi? La temperatura al cuore. Lettura istantanea e precisa.",
     image: "/images/ads/thermopro.jpg", 
-    link: "https://amzn.to/TUO_LINK_THERMOPRO", // Sostituisci con il tuo link
-    price: "€11,99",
-    rating: "⭐ 4.7/5"
+    link: "https://www.amazon.it/dp/B07CB8JG21" 
   },
-  
-  // CLUSTER 2: FRITTO & CROCCANTE -> Spruzzino Olio
   crispy: {
     keywords: ['patatine', 'crocchette', 'fritto', 'cotoletta', 'panatura', 'bastoncini', 'arancini', 'olive', 'pesce'],
     title: "Il Fritto Perfetto (Senza Gas)",
     name: "Nebulizzatore Olio Spray Vetro",
-    desc: "Non usare spray chimici che rovinano il cestello! Usa il tuo olio EVO per una crosticina dorata.",
+    desc: "Nebulizza il tuo olio preferito per una doratura uniforme senza appesantire il cibo.",
     image: "/images/ads/oil-spray.jpg",
-    link: "https://amzn.to/TUO_LINK_SPRAY", // Sostituisci con il tuo link
-    price: "€13,99",
-    rating: "⭐ 4.5/5"
+    link: "https://www.amazon.it/dp/B0F2DJV6SZ"
   },
-  
-  // CLUSTER 3: DOLCI & FORMATI -> Teglia Silicone
   baking: {
     keywords: ['muffin', 'torta', 'dolce', 'pane', 'focaccia', 'soufflé', 'tortino', 'uova', 'frittata'],
-    title: "Proteggi il Tuo Cestello",
-    name: "Teglia in Silicone Riutilizzabile",
-    desc: "Ideale per dolci e frittate. Niente incrostazioni, lavabile in lavastoviglie ed ecologico.",
+    title: "Cucina Senza Sporcare",
+    name: "Contenitore in Silicone Riutilizzabile",
+    desc: "Perfetto per dolci e sformati. Protegge il cestello e si lava in lavastoviglie.",
     image: "/images/ads/silicone-pot.jpg",
-    link: "https://amzn.to/TUO_LINK_SILICONE", // Sostituisci con il tuo link
-    price: "€15,90",
-    rating: "⭐ 4.6/5"
+    link: "https://www.amazon.it/dp/B0D9CSGYYP"
   },
-  
-  // CLUSTER 4: GENERICO / VERDURE -> Carta Forno (Volume Alto)
   generic: {
-    keywords: [], // Fallback per tutto il resto
+    keywords: [], 
     title: "Odi Pulire la Friggitrice?",
-    name: "100pz Carta Forno Monouso Air Fryer",
-    desc: "La soluzione n.1: Cucini, mangi e butti via la carta. Cestello sempre pulito e zero grasso.",
+    name: "Carta Forno Monouso Air Fryer (100pz)",
+    desc: "Mantieni il cestello come nuovo. Cucini, mangi e butti via la carta. Zero grasso.",
     image: "/images/ads/paper-liner.jpg",
-    link: "https://amzn.to/TUO_LINK_CARTA", // Sostituisci con il tuo link
-    price: "€12,99",
-    rating: "⭐ 4.8/5"
+    link: "https://www.amazon.it/dp/B0D3VCV459"
   }
 };
 
-// LOGICA DI SELEZIONE SMART
-// Uniamo titolo e ingredienti per cercare le keyword
 const searchText = (recipe.title + " " + (recipe.ingredients || []).join(" ")).toLowerCase();
+let selectedProduct = products.generic;
 
-let selectedProduct = products.generic; // Default: Carta Forno (perché serve a tutti)
-
-// Ordine di priorità: Carne > Dolci > Fritto > Generico
 if (products.meat.keywords.some(k => searchText.includes(k))) {
   selectedProduct = products.meat;
 } else if (products.baking.keywords.some(k => searchText.includes(k))) {
@@ -68,43 +49,23 @@ if (products.meat.keywords.some(k => searchText.includes(k))) {
 }
 ---
 
-<div class="my-10 mx-auto max-w-2xl">
+<div class="my-10 mx-auto max-w-2xl px-4">
   <a href={selectedProduct.link} target="_blank" rel="nofollow noopener" class="group block relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-800 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.3)] transition-all duration-300">
-    
     <div class="absolute inset-0 bg-gradient-to-r from-slate-800 via-slate-800 to-slate-900 group-hover:via-slate-800/80 transition-all"></div>
-
     <div class="relative flex flex-row items-center p-4 sm:p-5 gap-5">
-      
       <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 bg-white rounded-xl p-2 shadow-inner flex items-center justify-center">
-        <img 
-          src={selectedProduct.image} 
-          alt={selectedProduct.name} 
-          class="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500"
-          loading="lazy"
-        />
+        <img src={selectedProduct.image} alt={selectedProduct.name} class="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" loading="lazy" />
       </div>
-
-      <div class="flex-1 min-w-0">
+      <div class="flex-1 min-w-0 text-left">
         <div class="flex items-center gap-2 mb-1.5">
-          <span class="bg-orange-500/10 text-orange-400 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-orange-500/20">
-            Consigliato per te
-          </span>
-          <span class="text-slate-500 text-xs hidden sm:block">{selectedProduct.rating}</span>
+          <span class="bg-orange-500/10 text-orange-400 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-orange-500/20">Consigliato per te</span>
         </div>
-
-        <h3 class="text-white font-bold text-lg leading-tight mb-1 group-hover:text-blue-300 transition-colors">
-          {selectedProduct.title}
-        </h3>
-        
-        <p class="text-slate-400 text-sm leading-snug mb-3 line-clamp-2">
-          {selectedProduct.desc}
-        </p>
-
-        <div class="flex items-center justify-between mt-auto">
-          <div class="text-white font-bold text-lg">{selectedProduct.price}</div>
+        <h3 class="text-white font-bold text-lg leading-tight mb-1 group-hover:text-blue-300 transition-colors">{selectedProduct.title}</h3>
+        <p class="text-slate-400 text-sm leading-snug mb-3 line-clamp-2">{selectedProduct.desc}</p>
+        <div class="flex items-center justify-end">
           <button class="bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm font-bold py-2 px-4 rounded-full transition-colors shadow-lg shadow-orange-900/20 flex items-center gap-1">
-            Vedi su Amazon
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            Scopri su Amazon
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           </button>
         </div>
       </div>
