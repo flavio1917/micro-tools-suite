@@ -1,11 +1,16 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 import AirFryer from '../components/tools/AirFryer/AirFryer.astro';
+import RecipeSearch from '../components/recipes/RecipeSearch.astro'; // Importa il nuovo componente
 ---
 
-<MainLayout title="Convertitore Friggitrice ad Aria - Tempi e Gradi Forno">
+<MainLayout title="Convertitore Friggitrice ad Aria & Ricettario Completo">
   
   <AirFryer />
+
+  <div class="mt-16 border-t border-slate-800/50">
+    <RecipeSearch />
+  </div>
 
   <section class="max-w-3xl mx-auto mt-16 px-4 pb-12 text-slate-300 space-y-12">
     
