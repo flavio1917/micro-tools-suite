@@ -6,7 +6,7 @@
     "temp": 195,
     "time": "28",
     "ingredients": [
-      "2 patate ruggine a bastoncini",
+      "2 patate fresche tagliate a bastoncini",
       "Olio vegetale",
       "Aglio in polvere e paprika",
       "56 g di formaggio feta sbriciolato",
@@ -25,35 +25,9 @@
     "ingredients": [
       "700 g di patatine a spirale surgelate"
     ],
-    "description": "Patatine dalla forma divertente a spirale, croccantissime con la funzione Max Crisp.",
+    "description": "Patatine dalla forma divertente a spirale, croccantissime.",
     "source": "Ninja",
     "tip": "Scuoti il cestello più volte durante la cottura per separare le spirali."
-  },
-  {
-    "slug": "patatine-spirale-surgelate",
-    "title": "Patatine A Spirale (Surgelate)",
-    "emoji": "🍟",
-    "temp": 210,
-    "time": "18-20",
-    "ingredients": [
-      "700 g di patatine a spirale surgelate"
-    ],
-    "description": "Patatine dalla forma divertente a spirale, croccantissime con la funzione Max Crisp.",
-    "source": "Ninja",
-    "tip": "Scuoti il cestello più volte durante la cottura per separare le spirali."
-  },
-  {
-    "slug": "patatine-buccia-surgelate",
-    "title": "Patatine Con Buccia (Surgelate)",
-    "emoji": "🍟",
-    "temp": 200,
-    "time": "18-20",
-    "ingredients": [
-      "500 g di patatine con buccia surgelate"
-    ],
-    "description": "Patatine rustiche con la buccia, dal sapore più intenso.",
-    "source": "Ninja",
-    "tip": "Disponile in un unico strato se possibile per la massima croccantezza."
   },
   {
     "slug": "patatine-buccia-surgelate",
@@ -121,7 +95,7 @@
     "title": "Patatine Fritte Cajun",
     "emoji": "🍟",
     "temp": 195,
-    "time": "28",
+    "time": "20",
     "ingredients": [
       "2 patate rosse a bastoncini",
       "7 g di condimento Cajun",
@@ -136,8 +110,8 @@
     "slug": "patatine-fritte-cajun",
     "title": "Patatine Fritte Cajun",
     "emoji": "🍟",
-    "temp": 195,
-    "time": "28",
+    "temp": 190,
+    "time": "20-22",
     "ingredients": [
       "2 patate rosse a bastoncini",
       "7 g di condimento Cajun",
@@ -146,7 +120,7 @@
     ],
     "description": "Patatine fritte con un tocco piccante del sud degli Stati Uniti.",
     "source": "Cosori",
-    "tip": "Aggiungi il condimento Cajun solo alla fine della cottura per non bruciare le spezie."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Aggiungi il condimento Cajun solo alla fine della cottura per non bruciare le spezie."
   },
   {
     "slug": "patatine-fritte-fatte-in-casa",
@@ -163,7 +137,7 @@
     ],
     "description": "Il classico contorno amato da tutti: bastoncini di patate dorati e croccanti come al ristorante.",
     "source": "Cosori, Ninja & Tefal",
-    "tip": "Metti in ammollo le patate in acqua fredda per 15-30 minuti prima di condirle per rimuovere l'amido."
+    "tip": "Metti in ammollo le patate in acqua fredda per 15-30 minuti prima di condirle per rimuovere l'amido.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "patatine-ondulate-surgelate",
@@ -183,7 +157,7 @@
     "title": "Pollo Fritto Al Latticello",
     "emoji": "🍗",
     "temp": 195,
-    "time": "25",
+    "time": "23-26",
     "ingredients": [
       "2 cosce di pollo (zampe e sovracosce)",
       "224 ml di latticello",
@@ -193,7 +167,7 @@
     ],
     "description": "Il vero pollo fritto del sud, marinato nel latticello per renderlo tenero e con una panatura spessa.",
     "source": "Cosori",
-    "tip": "Lascia riposare il pollo impanato su una griglia per 15 minuti prima di cuocerlo per far aderire la panatura."
+    "tip": "Lascia riposare il pollo impanato su una griglia per 15 minuti prima di cuocerlo per far aderire la panatura.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "zucchine-fritte",
@@ -226,7 +200,7 @@
     ],
     "description": "Ali di pollo saporite con una panatura asciutta di formaggio e aglio.",
     "source": "Cosori",
-    "tip": "Cospargi con il mix di parmigiano avanzato subito dopo la cottura per farlo aderire."
+    "tip": "Cospargi con il mix di parmigiano avanzato subito dopo la cottura per farlo aderire.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto."
   },
   {
     "slug": "ali-pollo-rub-secco",
@@ -261,7 +235,7 @@
     ],
     "description": "Ali di pollo appiccicose e saporite con una salsa dolce e piccante allo zenzero.",
     "source": "Cosori",
-    "tip": "Cuoci la salsa in un pentolino finché non si addensa prima di condire le ali cotte."
+    "tip": "Cuoci la salsa in un pentolino finché non si addensa prima di condire le ali cotte.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "ali-pollo-jerk",
@@ -278,7 +252,7 @@
     ],
     "description": "Ali di pollo dal sapore caraibico complesso e speziato, servite con succo di lime fresco.",
     "source": "Cosori",
-    "tip": "Massaggia bene la marinata sulle ali per far penetrare il sapore delle spezie Jerk."
+    "tip": "Massaggia bene la marinata sulle ali per far penetrare il sapore delle spezie Jerk.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "ali-pollo-ketchup-senape",
@@ -295,7 +269,7 @@
     ],
     "description": "Ali di pollo saporite marinate in una salsa ricca a base di ketchup e senape.",
     "source": "Tefal",
-    "tip": "Lascia marinare le ali per 12 ore per un sapore intenso e una carne tenera."
+    "tip": "Lascia marinare le ali per 12 ore per un sapore intenso e una carne tenera.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "ali-pollo-ketchup-senape",
@@ -312,7 +286,7 @@
     ],
     "description": "Ali di pollo saporite marinate in una salsa ricca a base di ketchup e senape.",
     "source": "Tefal",
-    "tip": "Lascia marinare le ali per 12 ore per un sapore intenso e una carne tenera."
+    "tip": "Lascia marinare le ali per 12 ore per un sapore intenso e una carne tenera.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "ali-miele-sriracha",
@@ -329,7 +303,7 @@
     ],
     "description": "Ali di pollo croccanti ricoperte da una salsa dolce e piccante fatta in casa.",
     "source": "Cosori",
-    "tip": "Mescola le ali cotte nella salsa calda appena escono dalla friggitrice."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Mescola le ali cotte nella salsa calda appena escono dalla friggitrice."
   },
   {
     "slug": "bacchette-pollo-tikka",
@@ -346,7 +320,7 @@
     ],
     "description": "Fusi di pollo marinati in spezie indiane e latte di cocco, molto aromatici.",
     "source": "Cosori",
-    "tip": "Servi con riso basmati al vapore per un pasto completo."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Servi con riso basmati al vapore per un pasto completo."
   },
   {
     "slug": "cajun-di-pollo",
@@ -363,7 +337,7 @@
     ],
     "description": "Filetti di pollo marinati nel latticello e fritti ad aria con una panatura speziata Cajun.",
     "source": "Cosori",
-    "tip": "Spruzza abbondante olio spray sulla panatura per ottenere la massima croccantezza."
+    "tip": "Spruzza abbondante olio spray sulla panatura per ottenere la massima croccantezza.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cosce-pollo-aglio-limone",
@@ -380,7 +354,7 @@
     ],
     "description": "Cosce di pollo succose con una marinatura classica e fresca al limone e aglio.",
     "source": "Cosori",
-    "tip": "Lascia marinare il pollo per 30 minuti prima della cottura per un sapore più intenso."
+    "tip": "Lascia marinare il pollo per 30 minuti prima della cottura per un sapore più intenso.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cosce-pollo-senape",
@@ -397,7 +371,7 @@
     ],
     "description": "Cosce di pollo con pelle croccante glassate con un mix dolce-piccante di senape e acero.",
     "source": "Cosori",
-    "tip": "Usa la glassa rimasta per spennellare il pollo a metà cottura per massimizzare il sapore."
+    "tip": "Usa la glassa rimasta per spennellare il pollo a metà cottura per massimizzare il sapore.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cosce-pollo-yogurt-rosmarino",
@@ -414,7 +388,7 @@
     ],
     "description": "Cosce di pollo tenere marinate nello yogurt greco ed erbe aromatiche.",
     "source": "Tefal",
-    "tip": "Rimuovi la pelle dalle cosce prima di marinarle per far penetrare meglio i sapori."
+    "tip": "Rimuovi la pelle dalle cosce prima di marinarle per far penetrare meglio i sapori.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cosce-pollo-yogurt-rosmarino",
@@ -431,7 +405,7 @@
     ],
     "description": "Cosce di pollo tenere marinate nello yogurt greco ed erbe aromatiche.",
     "source": "Tefal",
-    "tip": "Rimuovi la pelle dalle cosce prima di marinarle per far penetrare meglio i sapori."
+    "tip": "Rimuovi la pelle dalle cosce prima di marinarle per far penetrare meglio i sapori.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "maiale-katsu",
@@ -448,7 +422,7 @@
     ],
     "description": "Cotoletta di maiale in stile giapponese, super croccante grazie alla panatura Panko.",
     "source": "Cosori",
-    "tip": "Spruzza entrambi i lati della cotoletta con olio per garantire una doratura uniforme."
+    "tip": "Spruzza entrambi i lati della cotoletta con olio per garantire una doratura uniforme.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cotoletta-melanzane",
@@ -465,7 +439,7 @@
     ],
     "description": "Fette di melanzana impanate croccanti, ottime come contorno o base per parmigiana.",
     "source": "Cosori",
-    "tip": "Immergi le fette due volte nell'uovo e nel pangrattato per una crosta più spessa."
+    "tip": "Immergi le fette due volte nell'uovo e nel pangrattato per una crosta più spessa. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cotoletta-melanzane",
@@ -482,7 +456,7 @@
     ],
     "description": "Fette di melanzana impanate croccanti, ottime come contorno o base per parmigiana.",
     "source": "Cosori",
-    "tip": "Immergi le fette due volte nell'uovo e nel pangrattato per una crosta più spessa."
+    "tip": "Immergi le fette due volte nell'uovo e nel pangrattato per una crosta più spessa. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "crocchette-pesce-fritte",
@@ -499,7 +473,7 @@
     ],
     "description": "Bastoncini di pesce fatti in casa, più sani e croccanti di quelli surgelati.",
     "source": "Cosori",
-    "tip": "Servi con salsa tartara e una spruzzata di limone."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Servi con salsa tartara e una spruzzata di limone."
   },
   {
     "slug": "crocchette-pollo-salsa-senape",
@@ -516,7 +490,7 @@
     ],
     "description": "Bocconcini di pollo super croccanti grazie alla panatura di corn flakes.",
     "source": "Ninja",
-    "tip": "Usa una pinza con punta in silicone per girare le crocchette delicatamente."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto.  Usa una pinza con punta in silicone per girare le crocchette delicatamente."
   },
   {
     "slug": "funghi-ripieni-salsiccia",
@@ -533,7 +507,7 @@
     ],
     "description": "Cappelle di funghi ripiene di un gustoso mix di salsiccia e formaggi filanti.",
     "source": "Cosori",
-    "tip": "Cuoci prima il ripieno di salsiccia in padella per un risultato migliore."
+    "tip": "Cuoci prima il ripieno di salsiccia in padella per un risultato migliore.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "involtini-primavera-pollo",
@@ -550,7 +524,7 @@
     ],
     "description": "Involtini croccanti fatti in casa ripieni di pollo e verdure, più leggeri di quelli fritti.",
     "source": "Tefal",
-    "tip": "Spennella gli involtini con olio e distanziali bene nel cestello per non farli attaccare."
+    "tip": "Spennella gli involtini con olio e distanziali bene nel cestello per non farli attaccare. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "maiali-in-coperta",
@@ -565,7 +539,7 @@
     ],
     "description": "Salsicce avvolte in pasta sfoglia dorata, un classico finger food per le feste.",
     "source": "Cosori",
-    "tip": "Sigilla bene la pasta sfoglia con un po' d'acqua per evitare che si apra in cottura."
+    "tip": "Sigilla bene la pasta sfoglia con un po' d'acqua per evitare che si apra in cottura. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "parmigiana-di-pollo",
@@ -582,7 +556,7 @@
     ],
     "description": "Petti di pollo impanati croccanti, gratinati con mozzarella fusa e salsa di pomodoro.",
     "source": "Cosori",
-    "tip": "Aggiungi la fetta di mozzarella solo negli ultimi 2 minuti di cottura."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Aggiungi la fetta di mozzarella solo negli ultimi 2 minuti di cottura."
   },
   {
     "slug": "petti-pollo-semplici",
@@ -596,7 +570,7 @@
     ],
     "description": "Petti di pollo semplici e leggeri, cotti in modo da restare succosi.",
     "source": "Ninja",
-    "tip": "Spennella con olio prima di cuocere per evitare che la carne si asciughi."
+    "tip": "Spennella con olio prima di cuocere per evitare che la carne si asciughi.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "petti-pollo-semplici",
@@ -610,7 +584,7 @@
     ],
     "description": "Petti di pollo semplici e leggeri, cotti in modo da restare succosi.",
     "source": "Ninja",
-    "tip": "Spennella con olio prima di cuocere per evitare che la carne si asciughi."
+    "tip": "Spennella con olio prima di cuocere per evitare che la carne si asciughi.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "pollo-barbecue-cosori",
@@ -628,7 +602,7 @@
     ],
     "description": "Mix di cosce e ali di pollo con un rub di spezie secche, glassate con salsa BBQ durante la cottura.",
     "source": "Cosori",
-    "tip": "Spennella la salsa barbecue sulla carne ogni 5 minuti per una glassatura spessa e lucida."
+    "tip": "Spennella la salsa barbecue sulla carne ogni 5 minuti per una glassatura spessa e lucida.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "pollo-limone-miele",
@@ -645,7 +619,7 @@
     ],
     "description": "Pollo glassato con una salsa agrodolce al miele e limone.",
     "source": "Cosori",
-    "tip": "Spennella il pollo con la marinata rimasta negli ultimi 5 minuti di cottura."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Spennella il pollo con la marinata rimasta negli ultimi 5 minuti di cottura."
   },
   {
     "slug": "pollo-cinque-spezie",
@@ -663,7 +637,7 @@
     ],
     "description": "Cosce di pollo glassate con una ricca salsa asiatica aromatica alle cinque spezie.",
     "source": "Cosori",
-    "tip": "Spennella il pollo con la salsa rimasta a metà cottura per una glassatura lucida."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Spennella il pollo con la salsa rimasta a metà cottura per una glassatura lucida."
   },
   {
     "slug": "pollo-arrosto-aglio-erbe",
@@ -679,7 +653,7 @@
     ],
     "description": "Cosce di pollo succose e aromatiche con una pelle croccante alle erbe.",
     "source": "Cosori",
-    "tip": "Lascia marinare il pollo con le spezie per 30 minuti prima di cuocere per più sapore."
+    "tip": "Lascia marinare il pollo con le spezie per 30 minuti prima di cuocere per più sapore.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "pollo-intero-aglio",
@@ -694,7 +668,7 @@
     ],
     "description": "Pollo arrosto classico profumato con aglio tritato e olio d'oliva.",
     "source": "Tefal",
-    "tip": "Buca il petto con un coltello; se il succo esce chiaro, il pollo è cotto."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Buca il petto con un coltello; se il succo esce chiaro, il pollo è cotto."
   },
   {
     "slug": "pollo-intero-aglio",
@@ -709,7 +683,7 @@
     ],
     "description": "Pollo arrosto classico profumato con aglio tritato e olio d'oliva.",
     "source": "Tefal",
-    "tip": "Buca il petto con un coltello; se il succo esce chiaro, il pollo è cotto."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Buca il petto con un coltello; se il succo esce chiaro, il pollo è cotto."
   },
   {
     "slug": "pollo-intero-barbecue",
@@ -759,7 +733,7 @@
     ],
     "description": "Classiche polpette di carne morbide e saporite, ottime da sole o col sugo.",
     "source": "Cosori",
-    "tip": "Spruzza le polpette con un po' di olio spray per renderle dorate esternamente."
+    "tip": "Spruzza le polpette con un po' di olio spray per renderle dorate esternamente.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "quesadillas-fajita-pollo",
@@ -777,7 +751,7 @@
     ],
     "description": "Tortillas ripiene di pollo speziato e formaggio fuso, cotte fino a doratura.",
     "source": "Ninja",
-    "tip": "Cuoci prima il ripieno di pollo e verdure, poi assembla la quesadilla per l'ultima fase."
+    "tip": "Cuoci prima il ripieno di pollo e verdure, poi assembla la quesadilla per l'ultima fase.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "samosa-vegetali",
@@ -794,7 +768,7 @@
     ],
     "description": "Triangoli croccanti ripieni di verdure al curry e formaggio feta.",
     "source": "Tefal",
-    "tip": "Spennella i samosa con olio prima di cuocere per renderli dorati e croccanti."
+    "tip": "Spennella i samosa con olio prima di cuocere per renderli dorati e croccanti.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "spalla-agnello-greca",
@@ -811,7 +785,7 @@
     ],
     "description": "Arrosto di agnello saporito cotto direttamente sopra un letto di patate al limone.",
     "source": "Ninja",
-    "tip": "Lascia riposare la carne avvolta nella stagnola dopo la cottura per mantenerla succosa."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Lascia riposare la carne avvolta nella stagnola dopo la cottura per mantenerla succosa."
   },
   {
     "slug": "spiedini-pollo-yogurt",
@@ -828,7 +802,7 @@
     ],
     "description": "Pollo marinato nello yogurt greco e spezie per una tenerezza incredibile.",
     "source": "Cosori",
-    "tip": "Usa spiedini di legno tagliati a metà per farli entrare comodamente nel cestello."
+    "tip": "Usa spiedini di legno tagliati a metà per farli entrare comodamente nel cestello.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "stromboli",
@@ -845,7 +819,7 @@
     ],
     "description": "Un rotolo di pasta per pizza ripieno di salumi e formaggi, cotto fino a doratura.",
     "source": "Cosori",
-    "tip": "Spennella la superficie con uovo e fai dei tagli per far uscire il vapore."
+    "tip": "Spennella la superficie con uovo e fai dei tagli per far uscire il vapore.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "arrosto-filetto-maiale",
@@ -859,7 +833,7 @@
     ],
     "description": "Filetti interi cotti arrosto, ideali per essere affettati e serviti con contorni.",
     "source": "Ninja",
-    "tip": "Usa un termometro per carne per verificare la cottura interna senza tagliare il filetto."
+    "tip": "Usa un termometro per carne per verificare la cottura interna senza tagliare il filetto.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "bistecca-mostarda-balsamica",
@@ -875,7 +849,7 @@
     ],
     "description": "Bistecca marinata in salsa balsamica e senape, saporita e caramellata.",
     "source": "Cosori",
-    "tip": "Taglia la carne controfibra dopo la cottura per la massima tenerezza."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Taglia la carne controfibra dopo la cottura per la massima tenerezza."
   },
   {
     "slug": "bistecca-costata-santa-maria",
@@ -892,7 +866,7 @@
     ],
     "description": "Bistecca succulenta con una crosta di spezie aromatiche, cotta rapidamente ad alta temperatura.",
     "source": "Cosori",
-    "tip": "Lascia riposare la carne per 10 minuti dopo la cottura per ridistribuire i succhi."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Lascia riposare la carne per 10 minuti dopo la cottura per ridistribuire i succhi."
   },
   {
     "slug": "bistecca-new-york-chimichurri",
@@ -911,7 +885,7 @@
     ],
     "description": "Succosa bistecca servita con una salsa verde fresca e aromatica a base di erbe.",
     "source": "Cosori",
-    "tip": "Lascia riposare la carne per 5 minuti dopo la cottura prima di tagliarla."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Lascia riposare la carne per 5 minuti dopo la cottura prima di tagliarla."
   },
   {
     "slug": "braciole-maiale-osso",
@@ -925,7 +899,7 @@
     ],
     "description": "Braciole succose con l'osso che mantiene la carne tenera durante la cottura.",
     "source": "Ninja",
-    "tip": "Spennella la carne con olio per favorire la reazione di Maillard e la doratura."
+    "tip": "Spennella la carne con olio per favorire la reazione di Maillard e la doratura.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "braciole-maiale-north-carolina",
@@ -942,7 +916,7 @@
     ],
     "description": "Braciole con una crosta speziata dolce e affumicata tipica del sud degli USA.",
     "source": "Cosori",
-    "tip": "Massaggia bene le spezie sulla carne per creare una crosticina saporita."
+    "tip": "Massaggia bene le spezie sulla carne per creare una crosticina saporita.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cheeseburger-sliders",
@@ -959,7 +933,7 @@
     ],
     "description": "Mini hamburger succosi e saporiti, ideali per feste o aperitivi.",
     "source": "Cosori",
-    "tip": "Aggiungi il formaggio sull'hamburger nell'ultimo minuto di cottura per farlo sciogliere."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Aggiungi il formaggio sull'hamburger nell'ultimo minuto di cottura per farlo sciogliere."
   },
   {
     "slug": "costolette-agnello-limone",
@@ -975,7 +949,7 @@
     ],
     "description": "Costolette tenere marinate con aglio e limone, grigliate alla perfezione.",
     "source": "Tefal",
-    "tip": "Lascia marinare la carne per 4 ore per intenerirla e insaporirla a fondo."
+    "tip": "Lascia marinare la carne per 4 ore per intenerirla e insaporirla a fondo.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "empanadas-di-manzo",
@@ -992,7 +966,7 @@
     ],
     "description": "Fagottini di pasta ripieni di carne speziata, un classico antipasto latino-americano.",
     "source": "Tefal",
-    "tip": "Spennella le empanadas con tuorlo d'uovo mescolato ad acqua prima di infornare."
+    "tip": "Spennella le empanadas con tuorlo d'uovo mescolato ad acqua prima di infornare.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "filetto-maiale-verdure",
@@ -1009,7 +983,7 @@
     ],
     "description": "Un pasto completo: arrosto di maiale succoso cotto insieme a un letto di verdure miste.",
     "source": "Ninja",
-    "tip": "Marina la carne per almeno 2 ore prima di cuocerla insieme alle verdure."
+    "tip": "Marina la carne per almeno 2 ore prima di cuocerla insieme alle verdure.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "hamburger-classico",
@@ -1121,7 +1095,7 @@
     ],
     "description": "Peperoncini piccanti ripieni di carne e formaggio, avvolti nel bacon croccante.",
     "source": "Cosori",
-    "tip": "Rimuovi bene i semi dai jalapeños per ridurre la piccantezza."
+    "tip": "Rimuovi bene i semi dai jalapeños per ridurre la piccantezza. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "kofta-manzo-coriandolo",
@@ -1172,7 +1146,7 @@
     ],
     "description": "Polpette di manzo dal sapore umami grazie al miso e alla salsa di soia dolce.",
     "source": "Cosori",
-    "tip": "Spennella le polpette con la salsa glassata ogni 2 minuti durante la cottura."
+    "tip": "Spennella le polpette con la salsa glassata ogni 2 minuti durante la cottura. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "salsicce-intere-arrostite",
@@ -1198,7 +1172,7 @@
     ],
     "description": "Salsicce cotte intere, perfette per hot dog o come secondo veloce.",
     "source": "Ninja",
-    "tip": "Non bucare le salsicce per mantenere i succhi all'interno durante la cottura."
+    "tip": "Non bucare le salsicce per mantenere i succhi all'interno durante la cottura. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "salsiccia-griglia-spirale",
@@ -1214,7 +1188,7 @@
     ],
     "description": "Salsiccia intera arrotolata a spirale, glassata con senape e miele.",
     "source": "Tefal",
-    "tip": "Infilza la spirale con due spiedini incrociati per mantenerne la forma durante la cottura."
+    "tip": "Infilza la spirale con due spiedini incrociati per mantenerne la forma durante la cottura. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "sandwich-bistecca-rafano",
@@ -1232,7 +1206,7 @@
     ],
     "description": "Panino gourmet con bistecca a fette e una crema piccante al rafano e panna acida.",
     "source": "Cosori",
-    "tip": "Lascia riposare la carne 5-10 minuti prima di affettarla per il panino."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Lascia riposare la carne 5-10 minuti prima di affettarla per il panino."
   },
   {
     "slug": "spiedini-agnello-shawarma",
@@ -1248,7 +1222,7 @@
     ],
     "description": "Spiedini di carne macinata speziata dal sapore mediorientale intenso.",
     "source": "Cosori",
-    "tip": "Servili accompagnati da una salsa fresca allo yogurt e limone."
+    "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Servili accompagnati da una salsa fresca allo yogurt e limone."
   },
   {
     "slug": "spiedini-maiale-teriyaki-cosori",
@@ -1393,7 +1367,7 @@
     ],
     "description": "I classici bastoncini di pesce pronti in pochi minuti, senza bisogno di olio aggiuntivo.",
     "source": "Ninja",
-    "tip": "Cuocili direttamente da surgelati; non serve scongelarli prima."
+    "tip": "Cuocili direttamente da surgelati; non serve scongelarli prima. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cipolla-fiorita",
@@ -1508,7 +1482,7 @@
     ],
     "description": "Gamberi giganti speziati avvolti in pancetta croccante, un antipasto di sicuro successo.",
     "source": "Cosori",
-    "tip": "Usa stuzzicadenti per fissare la pancetta ai gamberi ed evitare che si srotoli."
+    "tip": "Usa stuzzicadenti per fissare la pancetta ai gamberi ed evitare che si srotoli. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "gamberi-al-cocco",
@@ -1525,7 +1499,7 @@
     ],
     "description": "Gamberi dolci e croccanti avvolti in una panatura tropicale al cocco.",
     "source": "Cosori",
-    "tip": "Premi bene i fiocchi di cocco sui gamberi per garantire una copertura uniforme e croccante."
+    "tip": "Premi bene i fiocchi di cocco sui gamberi per garantire una copertura uniforme e croccante. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "gamberi-croccanti-curry",
@@ -1542,7 +1516,7 @@
     ],
     "description": "Gamberi con una doppia panatura aromatica al curry e farina di mais.",
     "source": "Tefal",
-    "tip": "Lascia scolare bene i gamberi tra un passaggio e l'altro dell'impanatura."
+    "tip": "Lascia scolare bene i gamberi tra un passaggio e l'altro dell'impanatura.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "merluzzo-al-curry",
@@ -1558,7 +1532,7 @@
     ],
     "description": "Filetti di merluzzo spennellati di pasta di curry, serviti con una salsa al cocco.",
     "source": "Tefal",
-    "tip": "Usa un quadrato di carta da forno sotto il pesce per non sporcare il cestello con la salsa."
+    "tip": "Usa un quadrato di carta da forno sotto il pesce per non sporcare il cestello con la salsa. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "merluzzo-crosta-panko",
@@ -1575,7 +1549,7 @@
     ],
     "description": "Filetti di pesce teneri ricoperti da una crosticina aromatica al limone ed erbe.",
     "source": "Ninja",
-    "tip": "Premi bene la panatura sul lato superiore del pesce per farla aderire perfettamente."
+    "tip": "Premi bene la panatura sul lato superiore del pesce per farla aderire perfettamente. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "mini-torta-mele",
@@ -1592,7 +1566,7 @@
     ],
     "description": "Tortine monoporzione ripiene di mele speziate calde.",
     "source": "Cosori",
-    "tip": "Fai un piccolo taglio sulla superficie della pasta per far uscire il vapore durante la cottura."
+    "tip": "Fai un piccolo taglio sulla superficie della pasta per far uscire il vapore durante la cottura. "
   },
   {
     "slug": "morsi-mozzarella-fritti",
@@ -1609,7 +1583,7 @@
     ],
     "description": "Snack di formaggio filante con doppia impanatura croccante.",
     "source": "Cosori",
-    "tip": "Congela i pezzi impanati prima di friggerli per evitare che il formaggio esca troppo presto."
+    "tip": "Congela i pezzi impanati prima di friggerli per evitare che il formaggio esca troppo presto. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "muffin-caffe-streusel",
@@ -1662,7 +1636,7 @@
     ],
     "description": "Filetti di pesce leggeri e saporiti serviti con una fresca salsa di pomodori e olive.",
     "source": "Tefal",
-    "tip": "Preriscalda bene la griglia per ottenere le caratteristiche righe di cottura sul pesce."
+    "tip": "Preriscalda bene la friggitrice ad aria per ottenere le caratteristiche righe di cottura sul pesce."
   },
   {
     "slug": "pane-banana-noci",
@@ -2132,7 +2106,7 @@
     ],
     "description": "Cimette di cavolfiore impanate e croccanti, un'alternativa vegetariana sfiziosa.",
     "source": "Ninja",
-    "tip": "A fine cottura, agita i bocconcini nella salsa Buffalo per ricoprirli uniformemente."
+    "tip": "A fine cottura, agita i bocconcini nella salsa Buffalo per ricoprirli uniformemente.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "broccoli-arrosto-aglio",
@@ -2164,7 +2138,7 @@
     ],
     "description": "Carote tenere glassate con un mix dolce e salato di miele e soia.",
     "source": "Cosori",
-    "tip": "Usa carote di dimensioni simili per garantire che si caramellino allo stesso tempo."
+    "tip": "Usa carote di dimensioni simili per garantire che si caramellino allo stesso tempo.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "carote-arrosto-miele",
@@ -2196,7 +2170,7 @@
     ],
     "description": "Cimette di cavolfiore dorate e salutari, colorate e insaporite dalla curcuma.",
     "source": "Cosori",
-    "tip": "Massaggia bene le spezie e l'olio sul cavolfiore per un colore giallo uniforme."
+    "tip": "Massaggia bene le spezie e l'olio sul cavolfiore per un colore giallo uniforme. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cavolfiore-salsa-tahina",
@@ -2212,7 +2186,7 @@
     ],
     "description": "Cimette di cavolfiore arrosto servite con una salsa cremosa al sesamo e limone.",
     "source": "Tefal",
-    "tip": "Mescola il cavolfiore a metà cottura per garantire una doratura uniforme."
+    "tip": "Mescola il cavolfiore a metà cottura per garantire una doratura uniforme.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "cavolfiore-salsa-tahina",
@@ -2228,14 +2202,14 @@
     ],
     "description": "Cimette di cavolfiore arrosto servite con una salsa cremosa al sesamo e limone.",
     "source": "Tefal",
-    "tip": "Mescola il cavolfiore a metà cottura per garantire una doratura uniforme."
+    "tip": "Mescola il cavolfiore a metà cottura per garantire una doratura uniforme.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "chips-patate-croccanti",
     "title": "Chips Di Patate Croccanti",
     "emoji": "🥔",
     "temp": 165,
-    "time": "25",
+    "time": "23-26",
     "ingredients": [
       "2 patate grandi a fette sottili",
       "Olio d'oliva",
@@ -2243,14 +2217,14 @@
     ],
     "description": "Sfogliatine di patate sottilissime fatte in casa, croccanti come quelle in busta.",
     "source": "Cosori",
-    "tip": "Usa una mandolina per ottenere fette di 1,5 mm e mettile in ammollo prima di cuocere."
+    "tip": "Usa una mandolina per ottenere fette di 1,5 mm e mettile in ammollo prima di cuocere. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "chips-patate-croccanti",
     "title": "Chips Di Patate Croccanti",
     "emoji": "🥔",
     "temp": 165,
-    "time": "25",
+    "time": "23-26",
     "ingredients": [
       "2 patate grandi a fette sottili",
       "Olio d'oliva",
@@ -2258,7 +2232,7 @@
     ],
     "description": "Sfogliatine di patate sottilissime fatte in casa, croccanti come quelle in busta.",
     "source": "Cosori",
-    "tip": "Usa una mandolina per ottenere fette di 1,5 mm e mettile in ammollo prima di cuocere."
+    "tip": "Usa una mandolina per ottenere fette di 1,5 mm e mettile in ammollo prima di cuocere.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "funghi-arrostiti",
@@ -2272,7 +2246,7 @@
     ],
     "description": "Funghi freschi tagliati in quarti e arrostiti, ideali come contorno leggero.",
     "source": "Ninja",
-    "tip": "Non lavarli sotto l'acqua corrente, puliscili con un panno umido o spazzolina."
+    "tip": "Non lavarli sotto l'acqua corrente, puliscili con un panno umido o spazzolina. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "funghi-arrostiti",
@@ -2286,7 +2260,7 @@
     ],
     "description": "Funghi freschi tagliati in quarti e arrostiti, ideali come contorno leggero.",
     "source": "Ninja",
-    "tip": "Non lavarli sotto l'acqua corrente, puliscili con un panno umido o spazzolina."
+    "tip": "Non lavarli sotto l'acqua corrente, puliscili con un panno umido o spazzolina.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "funghi-panati",
@@ -2299,7 +2273,7 @@
     ],
     "description": "Funghi interi o a pezzi con panatura croccante, ideali come antipasto.",
     "source": "Ninja",
-    "tip": "Non serve scongelare; cuocili direttamente da surgelati."
+    "tip": "Non serve scongelare; cuocili direttamente da surgelati. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "melanzane-arrostite-semplici",
@@ -2356,13 +2330,13 @@
     "title": "Patate A Spicchi (Surgelate)",
     "emoji": "🥔",
     "temp": 190,
-    "time": "20",
+    "time": "20-22",
     "ingredients": [
       "650 g di patate a spicchi surgelate"
     ],
     "description": "Spicchi di patate pronti, morbidi dentro e dorati fuori.",
     "source": "Ninja",
-    "tip": "Non aggiungere olio se il prodotto è già pre-fritto."
+    "tip": "Non aggiungere olio se il prodotto è già pre-fritto. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "patate-spicchi-surgelate",
@@ -2375,7 +2349,7 @@
     ],
     "description": "Spicchi di patate pronti, morbidi dentro e dorati fuori.",
     "source": "Ninja",
-    "tip": "Non aggiungere olio se il prodotto è già pre-fritto."
+    "tip": "Non aggiungere olio se il prodotto è già pre-fritto.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "patate-a-spicchi",
@@ -2391,7 +2365,7 @@
     ],
     "description": "Spicchi di patate rustici conditi con parmigiano e spezie.",
     "source": "Cosori",
-    "tip": "Taglia le patate in spicchi della stessa dimensione per una cottura uniforme."
+    "tip": "Taglia le patate in spicchi della stessa dimensione per una cottura uniforme.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "patate-al-forno-intere",
@@ -2405,7 +2379,7 @@
     ],
     "description": "Patate intere con la buccia cotte alla perfezione, morbide dentro e croccanti fuori.",
     "source": "Ninja",
-    "tip": "Buca la patata con una forchetta più volte prima di cuocerla per far uscire il vapore."
+    "tip": "Buca la patata con una forchetta più volte prima di cuocerla per far uscire il vapore.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "patate-arrosto-maionese-piccante",
@@ -2469,7 +2443,7 @@
     ],
     "description": "Patate novelle classiche profumate alle erbe, un contorno versatile per ogni piatto.",
     "source": "Cosori",
-    "tip": "Taglia le patate a metà per esporre la parte interna e renderla croccante."
+    "tip": "Taglia le patate a metà per esporre la parte interna e renderla croccante. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "peperoni-arrostiti-interi",
@@ -2499,7 +2473,7 @@
     ],
     "description": "Mix di ortaggi invernali dolci e glassati, profumati all'arancia.",
     "source": "Tefal",
-    "tip": "Taglia tutte le verdure a cubetti della stessa dimensione per una cottura omogenea."
+    "tip": "Taglia tutte le verdure a cubetti della stessa dimensione per una cottura omogenea.Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "anelli-cipolla",
@@ -2516,7 +2490,7 @@
     ],
     "description": "Anelli di cipolla fatti in casa con una panatura croccante e dorata.",
     "source": "Cosori",
-    "tip": "Congela brevemente gli anelli impanati prima di cuocerli per mantenere la panatura intatta."
+    "tip": "Congela brevemente gli anelli impanati prima di cuocerli per mantenere la panatura intatta. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "bbq-bacon",
@@ -2547,7 +2521,7 @@
     ],
     "description": "Barbabietole cotte intere per mantenere tutto il loro sapore dolce e terroso.",
     "source": "Ninja",
-    "tip": "Cuocile intere; la buccia verrà via facilmente una volta cotte."
+    "tip": "Cuocile intere; la buccia verrà via facilmente una volta cotte. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "bastoncini-halloumi",
@@ -2580,7 +2554,7 @@
     ],
     "description": "Bistecche con una crosta dolce e piccante, cotte ad altissima temperatura per sigillare i succhi.",
     "source": "Ninja",
-    "tip": "Usa la funzione Max Crisp per ottenere una crosticina esterna perfetta in pochi minuti."
+    "tip": "Preriscalda la friggitrice ottenere una crosticina esterna perfetta in pochi minuti."
   },
   {
     "slug": "cavoletti-bruxelles-pancetta",
@@ -2597,7 +2571,7 @@
     ],
     "description": "Cavoletti arrostiti resi golosi dalla pancetta croccante e dal parmigiano.",
     "source": "Cosori",
-    "tip": "Taglia i cavoletti a metà per cuocerli più velocemente e renderli croccanti al centro."
+    "tip": "Taglia i cavoletti a metà per cuocerli più velocemente e renderli croccanti al centro. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "chips-cavolo-nero",
@@ -2612,7 +2586,7 @@
     ],
     "description": "Sfogliatine di verdura super croccanti e leggere, un'alternativa sana alle patatine.",
     "source": "Ninja",
-    "tip": "Rimuovi i gambi duri e assicurati che le foglie siano ben asciutte prima di cuocere."
+    "tip": "Rimuovi i gambi duri e assicurati che le foglie siano ben asciutte prima di cuocere. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "chips-di-mela",
@@ -2626,7 +2600,7 @@
     ],
     "description": "Fettine di mela disidratate croccanti, uno spuntino sano e naturale.",
     "source": "Tefal",
-    "tip": "Usa una mandolina per ottenere fette sottili e uniformi che si essiccheranno allo stesso tempo."
+    "tip": "Usa una mandolina per ottenere fette sottili e uniformi che si essiccheranno allo stesso tempo. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "crostata-pere-rustica",
@@ -2657,7 +2631,7 @@
     ],
     "description": "Fagiolini freschi cotti velocemente ad alta temperatura per mantenerli croccanti.",
     "source": "Ninja",
-    "tip": "Taglia le estremità dei fagiolini prima di condirli e cuocerli."
+    "tip": "Taglia le estremità dei fagiolini prima di condirli e cuocerli. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "falafel",
@@ -2674,7 +2648,7 @@
     ],
     "description": "Polpette di ceci speziate tipiche della cucina mediorientale, croccanti fuori e morbide dentro.",
     "source": "Tefal",
-    "tip": "Aggiungi qualche goccia d'olio sulle palline prima di cuocere per una doratura migliore."
+    "tip": "Aggiungi qualche goccia d'olio sulle palline prima di cuocere per una doratura migliore. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "grilled-cheese",
@@ -2838,7 +2812,7 @@
     ],
     "description": "Cubetti di tofu marinati e impanati nell'amido per una crosticina irresistibile.",
     "source": "Cosori",
-    "tip": "Scola bene il tofu dalla marinata prima di passarlo nell'amido di mais."
+    "tip": "Scola bene il tofu dalla marinata prima di passarlo nell'amido di mais. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "tonno-chipotle-melt",
@@ -2887,7 +2861,7 @@
     ],
     "description": "Cubetti di zucca teneri e caramellati, profumati con timo fresco.",
     "source": "Cosori",
-    "tip": "Non sovrapporre troppo i cubetti nel cestello per permettere all'aria di circolare bene."
+    "tip": "Non sovrapporre troppo i cubetti nel cestello per permettere all'aria di circolare bene. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "zucca-gialla-arrostita",
@@ -2901,7 +2875,7 @@
     ],
     "description": "Pezzi di zucca gialla arrostiti fino a diventare teneri e caramellati.",
     "source": "Ninja",
-    "tip": "Taglia la zucca a pezzi di 2,5 cm per una cottura uniforme."
+    "tip": "Taglia la zucca a pezzi di 2,5 cm per una cottura uniforme. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   },
   {
     "slug": "zucca-gialla-arrostita",
@@ -2915,6 +2889,6 @@
     ],
     "description": "Pezzi di zucca gialla arrostiti fino a diventare teneri e caramellati.",
     "source": "Ninja",
-    "tip": "Taglia la zucca a pezzi di 2,5 cm per una cottura uniforme."
+    "tip": "Taglia la zucca a pezzi di 2,5 cm per una cottura uniforme. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. "
   }
 ]
