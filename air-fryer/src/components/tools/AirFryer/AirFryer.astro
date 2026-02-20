@@ -21,9 +21,9 @@ const translations = {
     legal_privacy: "🔒 Privacy First: Calcoli locali. Nessun dato inviato.",
     legal_disclaimer: "⚠️ DISCLAIMER: Risultati stimati su base matematica standard (-20°C / -20%). Controlla SEMPRE la cottura. L'autore declina responsabilità.",
     shop_items: [
-      { name: "Carta Forno", icon: "📄", link: "#carta" },
-      { name: "Olio Spray", icon: "🧴", link: "#olio" },
-      { name: "Kit Accessori", icon: "🥘", link: "#kit" }
+      { name: "Carta Forno", icon: "📄", link: "https://www.amazon.it/dp/B0FP284FKG" },
+      { name: "Olio Spray", icon: "🧴", link: "https://www.amazon.it/dp/B0GC74RM68" },
+      { name: "Magneti Ricette", icon: "🧲", link: "https://www.amazon.it/dp/B08J3B1VXZ" } // Sostituito con un link generico ai magneti per friggitrice
     ],
     alert_cap: "Temp max raggiungibile da friggitrice ad aria a 200°C"
   },
@@ -45,9 +45,9 @@ const translations = {
     legal_privacy: "🔒 Privacy First: Local calculations.",
     legal_disclaimer: "⚠️ DISCLAIMER: Estimated results. ALWAYS check food. Not responsible for errors.",
     shop_items: [
-      { name: "Liners", icon: "📄", link: "#carta" },
-      { name: "Sprayer", icon: "🧴", link: "#olio" },
-      { name: "Kit", icon: "🥘", link: "#kit" }
+      { name: "Liners", icon: "📄", link: "https://www.amazon.it/dp/B0FP284FKG" },
+      { name: "Sprayer", icon: "🧴", link: "https://www.amazon.it/dp/B0GC74RM68" },
+      { name: "Cheat Sheet", icon: "🧲", link: "https://www.amazon.it/dp/B08J3B1VXZ" }
     ],
     alert_cap: "⚠️ Capped at 200°C"
   },
@@ -69,9 +69,9 @@ const translations = {
     legal_privacy: "🔒 Privacidad: Cálculos locales. Sin envío de datos.",
     legal_disclaimer: "⚠️ AVISO: Resultados estimados (-20°C / -20%). Revisa SIEMPRE la cocción. El autor no se hace responsable.",
     shop_items: [
-      { name: "Papel Horno", icon: "📄", link: "#carta" },
-      { name: "Aceite Spray", icon: "🧴", link: "#olio" },
-      { name: "Kit Accesorios", icon: "🥘", link: "#kit" }
+      { name: "Papel Horno", icon: "📄", link: "https://www.amazon.it/dp/B0FP284FKG" },
+      { name: "Aceite Spray", icon: "🧴", link: "https://www.amazon.it/dp/B0GC74RM68" },
+      { name: "Imanes Tiempos", icon: "🧲", link: "https://www.amazon.it/dp/B08J3B1VXZ" }
     ],
     alert_cap: "⚠️ Temp limitada a 200°C"
   }
@@ -169,26 +169,27 @@ const t = translations[lang as keyof typeof translations] || translations.it;
         </div>
       </div>
 
-      <div class="mt-4 bg-[#271A0C] border border-[#F59E0B]/20 rounded-xl p-4 flex gap-4 items-start transition-all hover:border-[#F59E0B]/50 cursor-pointer group">
+      <a id="ad-link" href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria" target="_blank" rel="nofollow noopener" class="mt-4 bg-[#271A0C] border border-[#F59E0B]/20 rounded-xl p-4 flex gap-4 items-start transition-all hover:border-[#F59E0B]/50 cursor-pointer group block">
         <div class="p-2 bg-[#F59E0B]/10 rounded-lg text-[#F59E0B] group-hover:bg-[#F59E0B] group-hover:text-[#0B1120] transition-colors">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" y1="17" x2="18" y2="17"/></svg>
         </div>
-        <div>
+        <div class="flex-1">
           <h4 class="text-[#F59E0B] font-bold text-xs uppercase mb-1">{t.ad_title}</h4>
           <p id="ad-text" class="text-slate-300 text-xs leading-relaxed">
             Il segreto per cucinare tutto in metà tempo? Questo set di accessori universali.
           </p>
-          <a id="ad-link" href="#" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#F59E0B] mt-2 hover:underline group-hover:text-white transition-colors">
-            {t.ad_link} ->
-          </a>
+          <div class="inline-flex items-center gap-1 text-[11px] font-bold text-[#F59E0B] mt-2 group-hover:text-white transition-colors">
+            {t.ad_link}
+            <svg class="w-3 h-3 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 
   <div class="grid grid-cols-3 gap-3 max-w-[480px] mx-auto">
     {t.shop_items.map(item => (
-      <a href={item.link} class="bg-white border-2 border-slate-100 rounded-xl p-3 text-center hover:border-[#F59E0B] hover:shadow-lg transition-all group">
+      <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-white border-2 border-slate-100 rounded-xl p-3 text-center hover:border-[#F59E0B] hover:shadow-lg transition-all group block">
         <div class="text-2xl mb-1 group-hover:scale-110 transition-transform">{item.icon}</div>
         <div class="text-[10px] font-bold text-slate-600 group-hover:text-[#F59E0B] leading-tight">{item.name}</div>
       </a>
@@ -205,13 +206,13 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 <script>
   // --- DATABASE ---
   const ads = [
-    { k: ['patat', 'fries', 'chips', 'surgelat', 'frozen'], t: "Per patatine croccanti e non unte, questo spray è fondamentale.", l: "#link-olio-spray" },
-    { k: ['pollo', 'chicken', 'wings', 'alette', 'carne', 'meat'], t: "Non sporcare il cestello! Usa le teglie in carta forno per Air Fryer.", l: "#link-carta-forno" },
-    { k: ['pesce', 'fish', 'salmone'], t: "Cucina il pesce senza odori persistenti con i tappetini in silicone.", l: "#link-tappetini" },
-    { k: ['dolc', 'cake', 'muffin', 'verdur', 'veggie'], t: "Set di stampi in silicone per cotture delicate e uniformi.", l: "#link-stampi" }
+    { k: ['patat', 'fries', 'chips', 'surgelat', 'frozen'], t: "Per patatine croccanti e non unte, questo spray è fondamentale.", l: "https://www.amazon.it/dp/B0GC74RM68" },
+    { k: ['pollo', 'chicken', 'wings', 'alette', 'carne', 'meat'], t: "Non sporcare il cestello! Usa le teglie in carta forno per Air Fryer.", l: "https://www.amazon.it/dp/B0FP284FKG" },
+    { k: ['pesce', 'fish', 'salmone'], t: "Cucina il pesce senza odori persistenti con i tappetini in silicone.", l: "https://www.amazon.it/dp/B0FVM478YZ" },
+    { k: ['dolc', 'cake', 'muffin', 'verdur', 'veggie'], t: "Set di stampi in silicone per cotture delicate e uniformi.", l: "https://www.amazon.it/s?k=stampi+silicone+friggitrice+ad+aria" }
   ];
   
-  const defaultAd = { t: "Il kit definitivo per sfruttare al 100% la tua friggitrice.", l: "#link-kit-universale" };
+  const defaultAd = { t: "Il kit definitivo per sfruttare al 100% la tua friggitrice.", l: "https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria" };
   
   // --- CALCOLO CORE ---
   const convert = (temp: number, time: number, isF: boolean) => {
