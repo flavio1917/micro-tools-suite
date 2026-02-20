@@ -21,9 +21,9 @@ const translations = {
     legal_privacy: "🔒 Privacy First: Calcoli locali. Nessun dato inviato.",
     legal_disclaimer: "⚠️ DISCLAIMER: Risultati stimati su base matematica standard (-20°C / -20%). Controlla SEMPRE la cottura. L'autore declina responsabilità.",
     shop_items: [
-      { name: "Carta Forno", icon: "📄", link: "https://www.amazon.it/dp/B0FP284FKG" },
-      { name: "Olio Spray", icon: "🧴", link: "https://www.amazon.it/dp/B0GC74RM68" },
-      { name: "Magneti Ricette", icon: "🧲", link: "https://www.amazon.it/dp/B08J3B1VXZ" } // Sostituito con un link generico ai magneti per friggitrice
+      { name: "Carta Forno", image: "/images/ads/paper-liner-main-page.png", link: "https://www.amazon.it/dp/B0FP284FKG" },
+      { name: "Olio Spray", image: "/images/ads/oil-spray-main.png", link: "https://www.amazon.it/dp/B0GC74RM68" },
+      { name: "Magneti Tempi", image: "/images/ads/magnets-main-page.png", link: "https://www.amazon.it/dp/B08J3B1VXZ" }
     ],
     alert_cap: "Temp max raggiungibile da friggitrice ad aria a 200°C"
   },
@@ -45,9 +45,9 @@ const translations = {
     legal_privacy: "🔒 Privacy First: Local calculations.",
     legal_disclaimer: "⚠️ DISCLAIMER: Estimated results. ALWAYS check food. Not responsible for errors.",
     shop_items: [
-      { name: "Liners", icon: "📄", link: "https://www.amazon.it/dp/B0FP284FKG" },
-      { name: "Sprayer", icon: "🧴", link: "https://www.amazon.it/dp/B0GC74RM68" },
-      { name: "Cheat Sheet", icon: "🧲", link: "https://www.amazon.it/dp/B08J3B1VXZ" }
+      { name: "Liners", image: "/images/ads/paper-liner-main-page.png", link: "https://www.amazon.it/dp/B0FP284FKG" },
+      { name: "Sprayer", image: "/images/ads/oil-spray-main.png", link: "https://www.amazon.it/dp/B0GC74RM68" },
+      { name: "Cheat Sheet", image: "/images/ads/magnets-main-page.png", link: "https://www.amazon.it/dp/B08J3B1VXZ" }
     ],
     alert_cap: "⚠️ Capped at 200°C"
   },
@@ -69,9 +69,9 @@ const translations = {
     legal_privacy: "🔒 Privacidad: Cálculos locales. Sin envío de datos.",
     legal_disclaimer: "⚠️ AVISO: Resultados estimados (-20°C / -20%). Revisa SIEMPRE la cocción. El autor no se hace responsable.",
     shop_items: [
-      { name: "Papel Horno", icon: "📄", link: "https://www.amazon.it/dp/B0FP284FKG" },
-      { name: "Aceite Spray", icon: "🧴", link: "https://www.amazon.it/dp/B0GC74RM68" },
-      { name: "Imanes Tiempos", icon: "🧲", link: "https://www.amazon.it/dp/B08J3B1VXZ" }
+      { name: "Papel Horno", image: "/images/ads/paper-liner-main-page.png", link: "https://www.amazon.it/dp/B0FP284FKG" },
+      { name: "Aceite Spray", image: "/images/ads/oil-spray-main.png", link: "https://www.amazon.it/dp/B0GC74RM68" },
+      { name: "Imanes Tiempos", image: "/images/ads/magnets-main-page.png", link: "https://www.amazon.it/dp/B08J3B1VXZ" }
     ],
     alert_cap: "⚠️ Temp limitada a 200°C"
   }
@@ -190,8 +190,8 @@ const t = translations[lang as keyof typeof translations] || translations.it;
   <div class="grid grid-cols-3 gap-3 max-w-[480px] mx-auto">
     {t.shop_items.map(item => (
       <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-white border-2 border-slate-100 rounded-xl p-3 text-center hover:border-[#F59E0B] hover:shadow-lg transition-all group block">
-        <div class="text-2xl mb-1 group-hover:scale-110 transition-transform">{item.icon}</div>
-        <div class="text-[10px] font-bold text-slate-600 group-hover:text-[#F59E0B] leading-tight">{item.name}</div>
+        <img src={item.image} alt={item.name} class="w-10 h-10 mx-auto mb-2 object-contain group-hover:scale-110 transition-transform" />
+        <div class="text-[10px] font-bold text-slate-800 group-hover:text-[#F59E0B] leading-tight">{item.name}</div>
       </a>
     ))}
   </div>
