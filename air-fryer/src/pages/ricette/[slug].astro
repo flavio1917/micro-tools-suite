@@ -1,7 +1,7 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
 import recipes from '../../data/recipes.json';
-import AmazonProduct from '../../components/ads/AmazonProduct.astro'; // <--- 1. MANCAVA QUESTO IMPORT
+import AmazonProduct from '../../components/ads/AmazonProduct.astro';
 
 export async function getStaticPaths() {
   return recipes.map((recipe) => {
@@ -40,19 +40,26 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
 
   <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 pb-20">
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-6 text-center shadow-2xl hover:border-blue-500 transition-colors">
-        <span class="block text-slate-400 text-xs uppercase tracking-wider font-bold mb-1">Temperatura</span>
-        <div class="text-5xl font-mono font-bold text-orange-400">{recipe.temp}°C</div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
+        <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">Temperatura</span>
+        <div class="text-3xl md:text-4xl font-mono font-bold text-orange-400 mt-1">{recipe.temp}°C</div>
       </div>
-      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-6 text-center shadow-2xl hover:border-blue-500 transition-colors">
-        <span class="block text-slate-400 text-xs uppercase tracking-wider font-bold mb-1">Tempo</span>
-        <div class="text-5xl font-mono font-bold text-blue-400">{recipe.time} <span class="text-2xl">min</span></div>
+      
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
+        <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">Cottura</span>
+        <div class="text-3xl md:text-4xl font-mono font-bold text-blue-400 mt-1">{recipe.time} <span class="text-lg md:text-xl">min</span></div>
       </div>
-      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-6 text-center shadow-2xl hover:border-blue-500 transition-colors">
-        <span class="block text-slate-400 text-xs uppercase tracking-wider font-bold mb-1">Difficoltà</span>
-        <div class="text-5xl font-bold text-green-400">
-          {recipe.ingredients && recipe.ingredients.length <= 5 ? 'Facile' : 'Media'}
+      
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
+        <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">Preparazione</span>
+        <div class="text-xl md:text-2xl font-bold text-green-400 mt-2">{recipe.prep_time || 'N/D'}</div>
+      </div>
+
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
+        <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">Porzioni</span>
+        <div class="text-2xl md:text-3xl font-bold text-purple-400 mt-1">
+          {recipe.portions || 'N/D'} {recipe.portions && <span class="text-sm">pers.</span>}
         </div>
       </div>
     </div>
@@ -68,7 +75,7 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
             {recipe.ingredients && recipe.ingredients.length > 0 ? (
               recipe.ingredients.map((ing) => (
                 <li class="flex items-start gap-3 text-slate-300 group">
-                  <input type="checkbox" class="mt-1.5 w-5 h-5 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500">
+                  <input type="checkbox" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500">
                   <span class="leading-relaxed group-hover:text-white transition-colors">{ing}</span>
                 </li>
               ))
@@ -83,42 +90,64 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
         
         <AmazonProduct recipe={recipe} />
 
-        <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-8 shadow-xl">
+        <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl">
           <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
             <span class="text-3xl">👨‍🍳</span> Procedimento
           </h3>
           
           <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
-            <div class="flex gap-6 relative">
-              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">1</div>
-              <div class="pt-1">
-                <h4 class="text-lg font-bold text-white mb-2">Preparazione</h4>
-                <p class="text-slate-400 leading-relaxed">
-                  Prepara tutti gli ingredienti sul piano di lavoro. Se necessario, ungi leggermente il cibo con un filo d'olio spray o condiscilo in una ciotola per distribuire uniformemente le spezie.
-                </p>
-              </div>
-            </div>
+            
+            {/* RENDER DINAMICO DELLE ISTRUZIONI */}
+            {recipe.instructions && Array.isArray(recipe.instructions) ? (
+              recipe.instructions.map((step, index) => (
+                <div class="flex gap-6 relative">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
+                  <div class="pt-1 pb-2">
+                    <p class="text-slate-300 leading-relaxed text-lg">
+                      {step}
+                    </p>
+                  </div>
+                </div>
+              ))
+            ) : (
+              /* FALLBACK PER VECCHIE RICETTE NON ANCORA AGGIORNATE */
+              <>
+                <div class="flex gap-6 relative">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">1</div>
+                  <div class="pt-1">
+                    <h4 class="text-lg font-bold text-white mb-2">Preparazione</h4>
+                    <p class="text-slate-400 leading-relaxed">
+                      Prepara tutti gli ingredienti sul piano di lavoro. Se necessario, ungi leggermente il cibo con un filo d'olio spray o condiscilo in una ciotola per distribuire uniformemente le spezie.
+                    </p>
+                  </div>
+                </div>
 
-            <div class="flex gap-6 relative">
-              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">2</div>
-              <div class="pt-1">
-                <h4 class="text-lg font-bold text-white mb-2">Cottura</h4>
-                <p class="text-slate-400 leading-relaxed">
-                  Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded">{recipe.temp}°C</strong>. 
-                  Inserisci il cibo nel cestello cercando di non sovrapporlo troppo per far circolare l'aria. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">{recipe.time} minuti</strong>.
-                </p>
-              </div>
-            </div>
+                <div class="flex gap-6 relative">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">2</div>
+                  <div class="pt-1">
+                    <h4 class="text-lg font-bold text-white mb-2">Cottura</h4>
+                    <p class="text-slate-400 leading-relaxed">
+                      Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded">{recipe.temp}°C</strong>. 
+                      Inserisci il cibo nel cestello e cuoci per <strong class="text-white bg-slate-700 px-1 rounded">{recipe.time} minuti</strong>.
+                    </p>
+                  </div>
+                </div>
+              </>
+            )}
 
-             <div class="flex gap-6 relative">
-              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-bold text-black shadow-lg shadow-amber-500/20 ring-4 ring-slate-900 z-10">💡</div>
-              <div class="pt-1">
-                <h4 class="text-amber-400 font-bold mb-2">Il Segreto dello Chef</h4>
-                <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
-                  <p class="text-amber-100 italic">"{recipe.tip}"</p>
+            {/* BOX TIP (Sempre alla fine della linea) */}
+            {recipe.tip && (
+              <div class="flex gap-6 relative">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-bold text-black shadow-lg shadow-amber-500/20 ring-4 ring-slate-900 z-10">💡</div>
+                <div class="pt-1 w-full">
+                  <h4 class="text-amber-400 font-bold mb-2">Il Segreto dello Chef</h4>
+                  <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
+                    <p class="text-amber-100 italic leading-relaxed">"{recipe.tip}"</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
+
           </div>
         </div>
 
