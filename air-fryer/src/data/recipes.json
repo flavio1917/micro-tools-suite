@@ -1011,33 +1011,6 @@
         "tip": "Cuoci prima il ripieno di pollo e verdure da solo, poi assembla la quesadilla per gratinarla velocemente nella fase finale."
       },
       {
-        "slug": "samosa-vegetali",
-        "title": "Samosa Croccanti alle Verdure e Curry",
-        "emoji": "🥟",
-        "temp": 170,
-        "time": "15",
-        "prep_time": "20 minuti",
-        "portions": "4",
-        "ingredients": [
-          "6 fogli rotondi di pasta sfoglia sottile (o pasta fillo)",
-          "100 g di formaggio feta sbriciolato",
-          "150 g di piselli dolci",
-          "260 g di cimette di cavolfiore pulito",
-          "1 cucchiaino di curry in polvere profumato",
-          "1 tuorlo d'uovo per spennellare"
-        ],
-        "description": "Un viaggio sensoriale in India con questi deliziosi triangoli farciti e saporiti. Una volta in friggitrice, la pasta sottilissima sfoglia perfettamente diventando croccante e leggera, totalmente priva di unto in eccesso.",
-        "instructions": [
-          "Taglia il cavolfiore a pezzetti minuscoli e cuocilo insieme ai piselli a vapore o sbollentato in acqua finché le verdure non risulteranno molto tenere.",
-          "Scolale in un grande recipiente, unisci il formaggio feta, la polvere di curry fragrante, un pizzico di sale e pepe.",
-          "Schiaccia grossolanamente tutto il composto con i rebbi di una forchetta per creare una purea rustica.",
-          "Taglia a metà i fogli di pasta, metti una noce di ripieno a un'estremità e ripiega a triangolo seguendo i bordi; sigilla la chiusura spennellando con il tuorlo d'uovo sbattuto.",
-          "Spennella la superficie esterna dei samosa con pochissimo olio e cuocili a 170°C per 15 minuti, svoltandoli a metà tempo."
-        ],
-        "source": "Tefal",
-        "tip": "Spennella i fagottini con un goccio di olio prima di cuocerli per renderli estremamente dorati e croccanti in superficie."
-      },
-      {
         "slug": "spalla-agnello-greca",
         "title": "Spalla d'Agnello Arrosto su Letto di Patate",
         "emoji": "🍖",
@@ -5199,13 +5172,12 @@
           "250 g di cavolfiore crudo in cimette",
           "150 g di piselli dolci (anche surgelati)",
           "100 g di formaggio feta",
-          "5 g di curry giallo in polvere",
           "1 tuorlo d'uovo per spennellare e olio d'oliva"
         ],
         "description": "Fagottini triangolari di chiara ispirazione orientale, ripieni di verdure dolci e formaggio sapido, sigillati in un foglio di pasta che diventerà scricchiolante al morso.",
         "instructions": [
           "Sciacqua il cavolfiore a cimette, uniscilo ai piselli e ammorbidisci preventivamente le verdure usando la funzione vapore o in una semplice padella.",
-          "Trasferisci le verdure cotte in una terrina e schiacciale assieme alla feta sbriciolata, al curry, sale e pepe fino a ricavare un impasto rustico a grana grossa.",
+          "Trasferisci le verdure cotte in una terrina e schiacciale assieme alla feta sbriciolata, al sale e pepe fino a ricavare un impasto rustico a grana grossa.",
           "Taglia a metà i fogli di pasta brick, metti una cucchiaiata colma di verdure su un lato e piega a ripetizione incrociando a triangolo per sigillare il ripieno.",
           "Usa il tuorlo d'uovo leggermente sbattuto per incollare l'ultimo lembo di pasta, poi spennella ogni triangolo con l'olio.",
           "Cuocili adagiati nel cestello per 15 minuti a 170°C, voltandoli a metà del tempo per dorarli sotto e sopra."
@@ -5444,41 +5416,15 @@
         "tip": "Spalma la crema bianca densa agliata e grassosa generosamente in copiosi e sfacciati spessori coprenti sulla fetta antecedendo l'infornata giacché l'infocamento vi colerà fondendolo tra i meandri assorbenti spugnosi in modo perfetto scrocchiarello."
       },
       {
-        "slug": "panini-cannella",
-        "title": "Rotoli Dolci Glassati alla Cannella",
-        "emoji": "🥯",
-        "temp": 165,
-        "time": "15",
-        "prep_time": "30 minuti",
-        "portions": "4",
-        "ingredients": [
-          "1 rotolo pronto o casalingo di gonfio impasto lievitato zuccherino (brioche o affine)",
-          "50 g di liquido ed aureo burro dolce fuso ma non scottante in coppa",
-          "60 g di ruvidi scricchiolanti e bruni granuli saccarinici scuri e terrosi canna",
-          "2 abbondanti ammonticchiati fini polverosi di macinato rossiccio legnoso in cannella aromatica",
-          "Generose fette di stucchevoli candide spatolate in crema casearia morbida dolce glassata in finitura"
-        ],
-        "description": "Gli originali ed enormemente fragranti spessi e morbidi cilindri avvolti e farciti di sapori natalizi che emaneranno deliziosi echi per i corridoi e s'arricchiranno per addolcimenti sfrenati grazie alla fredda glassatura laccata di contrasto.",
-        "instructions": [
-          "Bagna intimamente ma senza annegarle le pareti lisce stese d'impasto morbido riversandovi verniciate il giallo ed emolliente burro dolcissimo.",
-          "Nebulizza ovunque le superfici gettandovi le ceneri aromatiche zuccherate mistate aspramente a legnose coloriture cannella rossicce e saporitissime miscele sfregate e sparse manuali.",
-          "Attorciglia arrotolando il telo panificato su se stesso ricavandone grasso salame spugnoso per inciderlo a cadenza regolare d'asportarne cilindri rotolati in fette (girelle) uguali larghe fittissime.",
-          "Attendi mezz'ora piazzandole a dormiente riposo arieggiato per lievito prima della fornace a secco che avvierai ai medi centosessantacinque stabili, per sfinire sfregolanti per quindici d'orologio fino a bruna tonalizzazione imbrunita espansa in aria calda soffiante rotonda morbide.",
-          "Esibiscili estraendoli scroscianti versandovi caldi sopra il ghiacciato denso preparato bianco caseario glassante stucchevole fuso che coli negli infossati rotoli golosi scuri fragranti e pronti d'assaporare golosi."
-        ],
-        "source": "Cosori",
-        "tip": "Assicurati grandemente ad impiegar una minuziosa lievitazione al quieto per mezz'ora d'anticipo dell'avvio, questo permetterà indubbiamente ed infallibilmente il rigonfiamento miracoloso e sfogliato morbidissimo senza indurimenti asciutti da pietre indigeste per denti esposti e stressati e cotti fiammanti diretti all'immediato scuro."
-      },
-      {
         "slug": "pannocchie-mais-ninja",
-        "title": "Cilindri Ambrati Naturali in Spiga",
+        "title": "Pannocchie",
         "emoji": "🌽",
         "temp": 200,
         "time": "12-15",
         "prep_time": "5 minuti",
         "portions": "4",
         "ingredients": [
-          "4 integrali e turgide grandi spighe giallo limone originarie (pannocchie intatte)",
+          "4 Pannocchie",
           "1 o poco più colmo liscio e dorato d'olio franto spennellabile d'olivo",
           "Granuli in scaglie o rustici di sale roccioso grosso appoggiato in quantitativo a puro piacere"
         ],
@@ -5519,33 +5465,6 @@
         "tip": "Aggiungi rigorosamente i complessi bagnati dei condimenti di colorazione succosa e filanti mescolanze in copertura negli ultimi decisivi 5 minuti scarsi terminali e non prima al calore, pena il miserabile avvizzimento intriso pastoso ammollato dell'intiera base bianca panificata."
       },
       {
-        "slug": "tempeh-glassato-acero",
-        "title": "Tempeh Glassato all'Acero",
-        "emoji": "🧆",
-        "temp": 190,
-        "time": "12",
-        "prep_time": "15 minuti",
-        "portions": "2",
-        "ingredients": [
-          "200 g di tempeh tagliato a fette spesse",
-          "30 ml di sciroppo d'acero puro",
-          "15 ml di salsa di soia a basso contenuto di sale",
-          "10 ml di olio di semi di sesamo",
-          "1 spicchio d'aglio grattugiato",
-          "Semi di sesamo per guarnire"
-        ],
-        "description": "Un'alternativa vegetale ricca di proteine. La marinata dolce e salata caramella meravigliosamente sulla superficie ruvida del tempeh grazie alla circolazione dell'aria rovente.",
-        "instructions": [
-          "In una ciotola bassa, sbatti lo sciroppo d'acero, la salsa di soia, l'olio di sesamo e l'aglio grattugiato per creare la glassa.",
-          "Immergi le fette di tempeh e lasciale marinare per almeno 10 minuti per far assorbire i sapori.",
-          "Posiziona le fette nel cestello preriscaldato a 190°C, conservando la marinata avanzata.",
-          "Cuoci per 12 minuti totali. A metà cottura, gira le fette e spennellale abbondantemente con la glassa residua.",
-          "Servi il tempeh caldissimo spolverato con semi di sesamo tostati."
-        ],
-        "source": "Cosori",
-        "tip": "Non saltare il tempo di marinatura: il tempeh ha una consistenza compatta e ha bisogno di tempo per assorbire bene i liquidi aromatizzati."
-      },
-      {
         "slug": "burger-ceci-spinaci",
         "title": "Medaglioni di Ceci e Spinaci",
         "emoji": "🍔",
@@ -5571,33 +5490,6 @@
         ],
         "source": "Tefal",
         "tip": "Strizza benissimo gli spinaci prima di frullarli: l'eccesso di acqua renderebbe l'impasto troppo molle e impossibile da compattare."
-      },
-      {
-        "slug": "polpette-lenticchie-speziate",
-        "title": "Polpette Rustiche di Lenticchie",
-        "emoji": "🧆",
-        "temp": 190,
-        "time": "15",
-        "prep_time": "10 minuti",
-        "portions": "4",
-        "ingredients": [
-          "500 g di lenticchie in scatola sciacquate e scolate",
-          "1 carota piccola grattugiata finemente",
-          "1 spicchio d'aglio e mezza cipolla tritati",
-          "50 g di farina d'avena o pangrattato",
-          "20 ml di concentrato di pomodoro",
-          "Prezzemolo fresco, sale e pepe"
-        ],
-        "description": "Sfiziose polpettine vegetali dall'anima morbida e dal guscio sodo. Ottime da tuffare in una salsa al pomodoro caldo o da gustare fredde come aperitivo.",
-        "instructions": [
-          "Schiaccia grossolanamente le lenticchie in una terrina usando i rebbi di una forchetta.",
-          "Aggiungi la carota grattugiata, la cipolla e l'aglio tritati, il concentrato di pomodoro e il prezzemolo.",
-          "Incorpora la farina d'avena (o il pangrattato), regolando di sale e pepe, e impasta bene tutto.",
-          "Forma delle polpettine della dimensione di una noce e lasciale riposare 5 minuti.",
-          "Posizionale distanziate nel cassetto a 190°C e rosolale per 15 minuti, scuotendole a metà cottura."
-        ],
-        "source": "Cosori",
-        "tip": "Se l'impasto dovesse risultare troppo appiccicoso, aggiungi un ulteriore cucchiaio di farina d'avena e lascia riposare qualche minuto in più."
       },
       {
         "slug": "barchette-zucchine-ricotta",
