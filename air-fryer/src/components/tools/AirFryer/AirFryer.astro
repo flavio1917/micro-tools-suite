@@ -1,6 +1,12 @@
 ---
+import recipes from '../../data/recipes.json';
+
 export interface Props { lang: string; }
 const { lang } = Astro.props;
+
+// Calcolo dinamico del numero (es. 155 diventa 150)
+const totalRecipes = recipes.length;
+const roundedCount = Math.floor(totalRecipes / 10) * 10;
 
 const translations = {
   it: {
@@ -28,7 +34,7 @@ const translations = {
     ],
     alert_cap: "Temp max raggiungibile da friggitrice ad aria a 200°C",
     cta_recipes_top: "Non sai cosa cucinare?",
-    cta_recipes_bottom: "Esplora le nostre 180+ Ricette"
+    cta_recipes_bottom: `Esplora le nostre ${roundedCount}+ Ricette`
   },
   en: {
     title: "Air Fryer",
@@ -55,7 +61,7 @@ const translations = {
     ],
     alert_cap: "⚠️ Capped at 200°C",
     cta_recipes_top: "Don't know what to cook?",
-    cta_recipes_bottom: "Explore 180+ Recipes"
+    cta_recipes_bottom: `Explore ${roundedCount}+ Recipes`
   },
   es: {
     title: "Freidora de Aire",
@@ -82,7 +88,7 @@ const translations = {
     ],
     alert_cap: "⚠️ Temp limitada a 200°C",
     cta_recipes_top: "¿No sabes qué cocinar?",
-    cta_recipes_bottom: "Explora 180+ Recetas"
+    cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`
   }
 };
 

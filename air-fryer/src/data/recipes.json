@@ -635,33 +635,6 @@
         "tip": "Immergi le fette due volte nell'uovo e nel pangrattato per una crosta più spessa. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto."
       },
       {
-        "slug": "crocchette-pesce-fritte",
-        "title": "Bastoncini di Pesce Dorati Fatti in Casa",
-        "emoji": "🐟",
-        "temp": 175,
-        "time": "6",
-        "prep_time": "6 minuti",
-        "portions": "4",
-        "ingredients": [
-          "450 g di pesce bianco tagliato a striscioline",
-          "30 g di farina 00",
-          "8 g di condimento speziato per pesce (tipo Old Bay)",
-          "2 uova sbattute",
-          "180 g di pangrattato",
-          "Olio spray antiaderente"
-        ],
-        "description": "Un grande classico che piace a tutta la famiglia, riproposto in una versione genuina e leggerissima. Grazie alla friggitrice ad aria, la panatura diventa incredibilmente scricchiolante in soli 6 minuti.",
-        "instructions": [
-          "Taglia i filetti di pesce fresco in bastoncini regolari e asciugali bene con della carta assorbente.",
-          "In un recipiente mescola la farina con le spezie; a parte prepara le uova sbattute e una ciotola con il pangrattato.",
-          "Passa ogni pezzo di pesce prima nel mix di farina, poi tuffalo nell'uovo e infine ricoprilo interamente con il pangrattato.",
-          "Distribuisci i bastoncini nel cestello ben caldo della friggitrice e spruzzali con un velo uniforme di olio spray.",
-          "Cuoci rapidamente a 175°C per 6 minuti, scuotendo o girando con cura a metà cottura per un colore dorato."
-        ],
-        "source": "Cosori",
-        "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Servi con salsa tartara e una spruzzata di limone."
-      },
-      {
         "slug": "crocchette-pollo-salsa-senape",
         "title": "Bocconcini di Pollo ai Cereali",
         "emoji": "🍗",
