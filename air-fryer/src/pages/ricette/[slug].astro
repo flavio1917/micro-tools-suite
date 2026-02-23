@@ -27,16 +27,15 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
       class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-1000 hover:scale-105"
       onerror="this.style.opacity='0'" 
     />
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"><a href="/#ricettario" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md text-slate-200 hover:text-white transition-all border border-white/10 text-xs md:text-sm font-medium shadow-lg">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-      Torna al Ricettario
-    </a>
-  </div>
-    <a href="/#ricettario" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-black/40 hover:bg-black/70 backdrop-blur-md text-slate-200 hover:text-white transition-all border border-white/10 text-xs md:text-sm font-medium shadow-lg">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
+    
+    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-16 items-center text-center z-10">
+      
+      <a href="/#ricettario" class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-slate-800/60 hover:bg-slate-700/80 backdrop-blur-md text-slate-300 hover:text-white transition-all border border-slate-600/50 text-xs md:text-sm font-medium shadow-lg group">
+        <svg class="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         Torna al Ricettario
       </a>
-    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-16 items-center text-center z-10">
+
       <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
         {recipe.title}
       </h1>
