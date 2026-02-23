@@ -28,9 +28,9 @@ const translations = {
     legal_privacy: "🔒 Privacy First: Calcoli locali. Nessun dato inviato.",
     legal_disclaimer: "⚠️ DISCLAIMER: Risultati stimati su base matematica standard (-20°C / -20%). Controlla SEMPRE la cottura. L'autore declina responsabilità.",
     shop_items: [
-      { name: "Carta Forno", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.it/dp/B0FP284FKG" },
-      { name: "Magneti Carta Forno", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.it/dp/B0FJRJP94B" },
-      { name: "Olio Spray", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.it/dp/B0GC74RM68" }
+      { name: "Carta Forno", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.it/dp/B0FP284FKG?tag=convfriggit-21" },
+      { name: "Magneti Carta Forno", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.it/dp/B0FJRJP94B?tag=convfriggit-21" },
+      { name: "Olio Spray", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.it/dp/B0GC74RM68?tag=convfriggit-21" }
     ],
     alert_cap: "Temp max raggiungibile da friggitrice ad aria a 200°C",
     cta_recipes_top: "Non sai cosa cucinare?",
@@ -55,9 +55,9 @@ const translations = {
     legal_privacy: "🔒 Privacy First: Local calculations.",
     legal_disclaimer: "⚠️ DISCLAIMER: Estimated results. ALWAYS check food. Not responsible for errors.",
     shop_items: [
-      { name: "Liners", image: "/images/ads/paper-liner-main-page.png", link: "https://www.amazon.it/dp/B0FP284FKG" },
-      { name: "Sprayer", image: "/images/ads/oil-spray-main.png", link: "https://www.amazon.it/dp/B0GC74RM68" },
-      { name: "Cheat Sheet", image: "/images/ads/magnets-main-page.png", link: "https://www.amazon.it/dp/B08J3B1VXZ" }
+      { name: "Liners", image: "/images/ads/paper-liner-main-page.png", link: "https://www.amazon.it/dp/B0FP284FKG?tag=convfriggit-21" },
+      { name: "Sprayer", image: "/images/ads/oil-spray-main.png", link: "https://www.amazon.it/dp/B0GC74RM68?tag=convfriggit-21" },
+      { name: "Cheat Sheet", image: "/images/ads/magnets-main-page.png", link: "https://www.amazon.it/dp/B08J3B1VXZ?tag=convfriggit-21" }
     ],
     alert_cap: "⚠️ Capped at 200°C",
     cta_recipes_top: "Don't know what to cook?",
@@ -82,9 +82,9 @@ const translations = {
     legal_privacy: "🔒 Privacidad: Cálculos locales. Sin envío de datos.",
     legal_disclaimer: "⚠️ AVISO: Resultados estimados (-20°C / -20%). Revisa SIEMPRE la cocción. El autor no se hace responsable.",
     shop_items: [
-      { name: "Papel Horno", image: "/images/ads/paper-liner-main-page.png", link: "https://www.amazon.it/dp/B0FP284FKG" },
-      { name: "Aceite Spray", image: "/images/ads/oil-spray-main.png", link: "https://www.amazon.it/dp/B0GC74RM68" },
-      { name: "Imanes Tiempos", image: "/images/ads/magnets-main-page.png", link: "https://www.amazon.it/dp/B08J3B1VXZ" }
+      { name: "Papel Horno", image: "/images/ads/paper-liner-main-page.png", link: "https://www.amazon.it/dp/B0FP284FKG?tag=convfriggit-21" },
+      { name: "Aceite Spray", image: "/images/ads/oil-spray-main.png", link: "https://www.amazon.it/dp/B0GC74RM68?tag=convfriggit-21" },
+      { name: "Imanes Tiempos", image: "/images/ads/magnets-main-page.png", link: "https://www.amazon.it/dp/B08J3B1VXZ?tag=convfriggit-21" }
     ],
     alert_cap: "⚠️ Temp limitada a 200°C",
     cta_recipes_top: "¿No sabes qué cocinar?",
@@ -188,7 +188,7 @@ const t = translations[lang as keyof typeof translations] || translations.it;
         </div>
       </div>
 
-      <a id="ad-link" href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria" target="_blank" rel="nofollow noopener" class="mt-4 bg-[#271A0C] border border-[#F59E0B]/20 rounded-xl p-4 flex gap-4 items-start transition-all hover:border-[#F59E0B]/50 cursor-pointer group block">
+      <a id="ad-link" href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="mt-4 bg-[#271A0C] border border-[#F59E0B]/20 rounded-xl p-4 flex gap-4 items-start transition-all hover:border-[#F59E0B]/50 cursor-pointer group block">
         <div class="p-2 bg-[#F59E0B]/10 rounded-lg text-[#F59E0B] group-hover:bg-[#F59E0B] group-hover:text-[#0B1120] transition-colors">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" y1="17" x2="18" y2="17"/></svg>
         </div>
@@ -235,13 +235,13 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 <script>
   // --- DATABASE ---
   const ads = [
-    { k: ['patat', 'fries', 'chips', 'surgelat', 'frozen'], t: "Per patatine croccanti e non unte, questo spray è fondamentale.", l: "https://www.amazon.it/dp/B0GC74RM68" },
-    { k: ['pollo', 'chicken', 'wings', 'alette', 'carne', 'meat'], t: "Non sporcare il cestello! Usa le teglie in carta forno per Air Fryer.", l: "https://www.amazon.it/dp/B0FP284FKG" },
-    { k: ['pesce', 'fish', 'salmone'], t: "Cucina il pesce senza odori persistenti con i tappetini in silicone.", l: "https://www.amazon.it/dp/B0FVM478YZ" },
-    { k: ['dolc', 'cake', 'muffin', 'verdur', 'veggie'], t: "Set di stampi in silicone per cotture delicate e uniformi.", l: "https://www.amazon.it/s?k=stampi+silicone+friggitrice+ad+aria" }
+    { k: ['patat', 'fries', 'chips', 'surgelat', 'frozen'], t: "Per patatine croccanti e non unte, questo spray è fondamentale.", l: "https://www.amazon.it/dp/B0GC74RM68?tag=convfriggit-21" },
+    { k: ['pollo', 'chicken', 'wings', 'alette', 'carne', 'meat'], t: "Non sporcare il cestello! Usa le teglie in carta forno per Air Fryer.", l: "https://www.amazon.it/dp/B0FP284FKG?tag=convfriggit-21" },
+    { k: ['pesce', 'fish', 'salmone'], t: "Cucina il pesce senza odori persistenti con i tappetini in silicone.", l: "https://www.amazon.it/dp/B0FVM478YZ?tag=convfriggit-21" },
+    { k: ['dolc', 'cake', 'muffin', 'verdur', 'veggie'], t: "Set di stampi in silicone per cotture delicate e uniformi.", l: "https://www.amazon.it/s?k=stampi+silicone+friggitrice+ad+aria&tag=convfriggit-21" }
   ];
   
-  const defaultAd = { t: "Il kit definitivo per sfruttare al 100% la tua friggitrice.", l: "https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria" };
+  const defaultAd = { t: "Il kit definitivo per sfruttare al 100% la tua friggitrice.", l: "https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" };
   
   // --- CALCOLO CORE ---
   const convert = (temp: number, time: number, isF: boolean) => {
