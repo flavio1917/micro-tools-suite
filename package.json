@@ -1,8 +1,10 @@
 {
+  "name": "micro-tools-suite",
+  "version": "0.0.1",
+  "type": "module",
   "dependencies": {
     "@astrojs/sitemap": "^3.7.0",
-    "puppeteer": "^24.37.2",
-    "type": "module"
+    "@vercel/analytics": "^1.6.1",
+    "puppeteer": "^24.37.2"
   }
 }
-
