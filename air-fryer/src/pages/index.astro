@@ -8,11 +8,19 @@ import RecipeSearch from '../components/recipes/RecipeSearch.astro';
   
   <AirFryer />
 
-  <div class="mt-16 border-t border-slate-800/50 pt-16">
+  <div class="max-w-4xl mx-auto my-16 relative flex items-center justify-center px-4">
+    <div class="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent opacity-50"></div>
+    <div class="absolute inset-x-1/4 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent shadow-[0_0_12px_rgba(59,130,246,0.8)]"></div>
+    <div class="relative bg-[#0B1120] px-6 py-2 rounded-full border border-slate-700/80 text-xs font-semibold text-blue-300 uppercase tracking-widest shadow-xl flex items-center gap-2">
+      <span>🍽️</span> Esplora il Ricettario
+    </div>
+  </div>
+
+  <div class="mb-20">
     <RecipeSearch />
   </div>
 
-  <section class="max-w-3xl mx-auto mt-16 px-4 pb-12 text-slate-300 space-y-12">
+  <section class="max-w-3xl mx-auto px-4 pb-12 text-slate-300 space-y-12">
     
     <article class="space-y-6">
       <h2 class="text-3xl font-bold text-white tracking-tight">
@@ -57,7 +65,7 @@ import RecipeSearch from '../components/recipes/RecipeSearch.astro';
     </article>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <article class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
+      <article class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50 hover:border-slate-600 transition-colors">
         <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
           <span class="text-blue-400">⚡</span> Forno Ventilato o Statico?
         </h3>
@@ -68,7 +76,7 @@ import RecipeSearch from '../components/recipes/RecipeSearch.astro';
         </p>
       </article>
 
-      <article class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
+      <article class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50 hover:border-slate-600 transition-colors">
         <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
           <span class="text-blue-400">🍟</span> Patatine e Surgelati
         </h3>
@@ -78,41 +86,41 @@ import RecipeSearch from '../components/recipes/RecipeSearch.astro';
       </article>
     </div>
 
-    <article class="space-y-6 pt-8 border-t border-slate-800">
+    <article class="space-y-6 pt-12 border-t border-slate-800">
       <h3 class="text-2xl font-bold text-white">Domande Frequenti</h3>
       
       <div class="space-y-4">
-        <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+        <details class="group bg-slate-900/80 border border-slate-800 rounded-xl p-5 cursor-pointer [&_summary::-webkit-details-marker]:hidden hover:border-slate-700 transition-colors">
           <summary class="flex justify-between items-center font-medium text-slate-200 group-hover:text-blue-300 transition-colors">
             Devo preriscaldare la friggitrice ad aria?
-            <span class="transition group-open:rotate-180">
+            <span class="transition group-open:rotate-180 text-slate-500 group-hover:text-blue-400">
               <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+          <p class="text-slate-400 mt-4 text-sm leading-relaxed border-t border-slate-800 pt-4">
             A differenza del forno tradizionale, la maggior parte delle air fryer moderne raggiunge la temperatura in 2-3 minuti. Preriscaldare è consigliato solo per carne (come bistecche) o dolci lievitati, per garantire lo shock termico immediato.
           </p>
         </details>
 
-        <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+        <details class="group bg-slate-900/80 border border-slate-800 rounded-xl p-5 cursor-pointer [&_summary::-webkit-details-marker]:hidden hover:border-slate-700 transition-colors">
           <summary class="flex justify-between items-center font-medium text-slate-200 group-hover:text-blue-300 transition-colors">
             Posso usare la carta forno o alluminio?
-            <span class="transition group-open:rotate-180">
+            <span class="transition group-open:rotate-180 text-slate-500 group-hover:text-blue-400">
               <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+          <p class="text-slate-400 mt-4 text-sm leading-relaxed border-t border-slate-800 pt-4">
             Sì, ma con attenzione. La carta forno (o teglie in silicone) deve essere forata se vuoi che l'aria circoli sotto il cibo. Non mettere MAI la carta forno durante il preriscaldamento senza cibo sopra: il flusso d'aria potente potrebbe sollevarla contro la resistenza e farla bruciare.
           </p>
         </details>
       </div>
     </article>
 
-    <footer class="pt-12 border-t border-slate-800 text-center space-y-4">
-      <a href="/info" class="text-blue-400 hover:text-blue-300 font-medium transition-colors">
+    <footer class="pt-12 text-center space-y-4">
+      <a href="/info" class="text-blue-400 hover:text-blue-300 font-medium transition-colors border-b border-blue-400/30 hover:border-blue-400 pb-1">
         Chi Siamo & Contatti
       </a>
-      <p class="text-xs text-slate-500 max-w-xl mx-auto leading-relaxed">
+      <p class="text-xs text-slate-600 max-w-xl mx-auto leading-relaxed mt-4">
         In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. Le immagini e i consigli sono a scopo informativo.
       </p>
     </footer>
