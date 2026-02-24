@@ -5,9 +5,16 @@ import Analytics from '@vercel/analytics/astro';
 export interface Props {
   title: string;
   lang?: string;
+  description?: string;
+  ogImage?: string;
 }
 
-const { title, lang = "it" } = Astro.props;
+const { 
+  title, 
+  lang = "it",
+  description = "Converti le ricette da forno tradizionale a friggitrice ad aria in un click. Calcola Tempi, Gradi e risparmia bolletta.",
+  ogImage = "https://www.convertitorefriggitrice.it/og-image.jpg"
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -17,14 +24,23 @@ const { title, lang = "it" } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
+    
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
+    
     <title>{title}</title>
-    <meta name="description" content="Converti le ricette da forno tradizionale a friggitrice ad aria in un click." />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content="Convertitore Friggitrice ad Aria: Calcola Tempi e Gradi e risparmia bolletta." />
-    <meta property="og:image" content="https://www.convertitorefriggitrice.it/og-image.jpg" />
+    <meta name="description" content={description} />
+    
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.convertitorefriggitrice.it" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.convertitorefriggitrice.it" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
   </head>
   
   <body class="bg-[#0B1120] text-slate-300 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white">
