@@ -43,32 +43,32 @@ const {
     <meta property="twitter:image" content={ogImage} />
   </head>
   
-  <body class="bg-zinc-100 text-zinc-800 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white">
+  <body class="bg-[#0B1120] text-slate-300 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white">
     
     <main class="flex-grow w-full px-4 py-8">
       <slot />
     </main>
 
-    <footer class="bg-white border-t border-zinc-200 mt-auto py-10 text-center font-sans">
+    <footer class="bg-[#0F172A] border-t border-slate-800 mt-auto py-10 text-center font-sans">
       <div class="max-w-[480px] mx-auto px-6 space-y-6">
         
-        <div class="p-4 bg-zinc-50 rounded-xl border border-zinc-200 shadow-sm">
-          <p class="text-[10px] text-zinc-500 leading-relaxed text-justify">
+        <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-800">
+          <p class="text-[10px] text-slate-500 leading-relaxed text-justify">
             <strong>Disclaimer Affiliazione:</strong> In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. 
             Le immagini dei piatti presenti sul sito sono a scopo illustrativo e sono state generate mediante tecnologie di intelligenza artificiale.
             Il logo Amazon e il logo Amazon Prime sono marchi di Amazon.com, Inc. o delle sue affiliate.
           </p>
         </div>
 
-        <div class="flex justify-center gap-4 text-[11px] text-zinc-500 font-medium tracking-wide">
-          <a href="/info" class="hover:text-blue-600 transition-colors hover:underline">Chi Siamo</a>
+        <div class="flex justify-center gap-4 text-[11px] text-slate-400 font-medium tracking-wide">
+          <a href="/info" class="hover:text-blue-400 transition-colors hover:underline">Chi Siamo</a>
           <span>•</span>
-          <a href="/privacy" class="hover:text-blue-600 transition-colors hover:underline">Privacy Policy</a>
+          <a href="/privacy" class="hover:text-blue-400 transition-colors hover:underline">Privacy Policy</a>
           <span>•</span>
-          <a href="/cookies" class="hover:text-blue-600 transition-colors hover:underline">Cookie Policy</a>
+          <a href="/cookies" class="hover:text-blue-400 transition-colors hover:underline">Cookie Policy</a>
         </div>
 
-        <p class="text-[10px] text-zinc-400 font-mono">
+        <p class="text-[10px] text-slate-600 font-mono">
           © {new Date().getFullYear()} ConvertitoreFriggitrice.it
         </p>
       </div>
