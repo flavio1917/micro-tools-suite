@@ -36,7 +36,7 @@
         "slug": "patatine-spirale-surgelate",
         "title": "Spirali di Patate Dorate",
         "emoji": "🍟",
-        "temp": 210,
+        "temp": 200,
         "time": "18-20",
         "prep_time": "Non presente",
         "portions": "4",
@@ -47,7 +47,7 @@
         "instructions": [
           "Versa le patatine ancora surgelate direttamente nel cestello della friggitrice ad aria.",
           "Non è necessario aggiungere olio.",
-          "Cuoci a 210°C per 18-20 minuti.",
+          "Cuoci a 200°C per 18-20 minuti.",
           "Scuoti il cestello più volte durante la cottura per separare le spirali e garantire che cuociano uniformemente su tutti i lati."
         ],
         "source": "RicetteFriggitriceAria_2.pdf",
@@ -104,8 +104,8 @@
         "slug": "patatine-dolci-fritte",
         "title": "Stick di Patata Dolce alla Paprika",
         "emoji": "🍠",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "30 minuti",
         "portions": "4",
         "ingredients": [
@@ -123,7 +123,7 @@
           "Preriscalda la friggitrice ad aria.",
           "In una ciotola capiente, condisci le patate con l'olio mescolando bene.",
           "Aggiungi sale, pepe, paprika, aglio e cipolla in polvere, mescolando per distribuire le spezie.",
-          "Inserisci le patate nel cestello preriscaldato e cuoci per 10 minuti a 205°C.",
+          "Inserisci le patate nel cestello preriscaldato e cuoci per 11 minuti a 200°C.",
           "Scuoti il cestello a metà cottura per una doratura uniforme."
         ],
         "source": "RicetteFriggitriceAria_1.pdf",
@@ -191,7 +191,7 @@
         "slug": "patatine-ondulate-surgelate",
         "title": "Patatine Ondulate Croccanti",
         "emoji": "🍟",
-        "temp": 210,
+        "temp": 200,
         "time": "18-20",
         "prep_time": "Non presente",
         "portions": "2",
@@ -202,7 +202,7 @@
         "instructions": [
           "Versa le patatine surgelate nel cestello.",
           "Non aggiungere olio.",
-          "Imposta la temperatura a 210°C e cuoci per 18-20 minuti.",
+          "Imposta la temperatura a 200°C e cuoci per 18-20 minuti.",
           "Scuoti il cestello di tanto in tanto durante la cottura per separarle."
         ],
         "source": "RicetteFriggitriceAria_2.pdf",
@@ -469,8 +469,8 @@
         "slug": "cajun-di-pollo",
         "title": "Tenders di Pollo Cajun",
         "emoji": "🌶",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "5 ore 15 minuti",
         "portions": "4",
         "ingredients": [
@@ -488,7 +488,7 @@
           "Marina il pollo in latticello e salsa piccante per 4 ore.",
           "Mescola farina e spezie.",
           "Scola il pollo e passalo nella farina (crea dei grumi con un po' di marinata per una crosta extra).",
-          "Preriscalda a 205°C.",
+          "Preriscalda a 200°C.",
           "Spruzza olio sui filetti e cuoci per 10 minuti."
         ],
         "source": "RicetteFriggitriceAria_1.pdf",
@@ -609,9 +609,9 @@
         "slug": "cotoletta-melanzane",
         "title": "Medaglioni di Melanzana Impanati",
         "emoji": "🍆",
-        "temp": 205,
-        "time": "8",
-        "prep_time": "8 minuti",
+        "temp": 200,
+        "time": "9",
+        "prep_time": "9 minuti",
         "portions": "2",
         "ingredients": [
           "1 melanzana lunga tagliata a fette",
@@ -629,7 +629,7 @@
           "Infarina leggermente ogni fetta, passala nel composto di uova e poi ricoprila con il pangrattato.",
           "Ripeti il passaggio nell'uovo e nel pane per ottenere una crosta ancora più spessa e golosa.",
           "Spennella la superficie con un velo d'olio e disponi le fette in un unico strato nel cestello.",
-          "Cuoci a 205°C per 8 minuti, ricordandoti di capovolgerle a metà tempo."
+          "Cuoci a 200°C per 8 minuti, ricordandoti di capovolgerle a metà tempo."
         ],
         "source": "Cosori",
         "tip": "Immergi le fette due volte nell'uovo e nel pangrattato per una crosta più spessa. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto."
@@ -750,8 +750,8 @@
         "slug": "maiali-in-coperta",
         "title": "Rustici di Sfoglia ai Wurstel",
         "emoji": "🌭",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "5 minuti",
         "portions": "4",
         "ingredients": [
@@ -765,7 +765,7 @@
           "Avvolgi a spirale ogni piccola salsiccia con una striscia di pasta, sovrapponendo leggermente i lembi.",
           "Sigilla bene la chiusura inumidendola con una goccia d'acqua per evitare che si aprano e perdano la forma.",
           "Spennella la parte superiore della sfoglia con il latte per favorire una splendida doratura lucida.",
-          "Posizionali nel cestello della friggitrice con la chiusura rivolta verso il basso e cuoci a 205°C per 10 minuti."
+          "Posizionali nel cestello della friggitrice con la chiusura rivolta verso il basso e cuoci a 200°C per 11 minuti."
         ],
         "source": "Cosori",
         "tip": "Sigilla bene la pasta sfoglia con un po' d'acqua per evitare che si apra in cottura. Ricordati di scuotere o girare gli alimenti a metà cottura."
@@ -958,8 +958,8 @@
         "slug": "polpette-italiane",
         "title": "Polpette Casalinghe al Parmigiano",
         "emoji": "🍝",
-        "temp": 205,
-        "time": "8",
+        "temp": 200,
+        "time": "9",
         "prep_time": "15 minuti",
         "portions": "4",
         "ingredients": [
@@ -977,7 +977,7 @@
           "Impasta vigorosamente con le mani o con una forchetta fino a far amalgamare tutti gli ingredienti in un composto sodo e omogeneo.",
           "Modella delle polpette di grandezza media arrotolandole nei palmi delle mani.",
           "Riponile in frigorifero per una decina di minuti affinché si rassodino bene mantenendo la forma sferica.",
-          "Spruzzale con poco olio spray, sistemale nel cestello ben distanziate e cuocile a 205°C per 8 minuti, ricordandoti di svoltare a metà cottura."
+          "Spruzzale con poco olio spray, sistemale nel cestello ben distanziate e cuocile a 200°C per 9 minuti, ricordandoti di svoltare a metà cottura."
         ],
         "source": "Cosori",
         "tip": "Spruzza le polpette con un po' di olio spray prima di cuocerle per simulare alla perfezione l'effetto della frittura esterna."
@@ -1041,8 +1041,8 @@
         "slug": "spiedini-pollo-yogurt",
         "title": "Spiedini Morbidissimi di Pollo allo Yogurt",
         "emoji": "🍢",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "4 ore e 10 minuti",
         "portions": "4",
         "ingredients": [
@@ -1060,7 +1060,7 @@
           "Aggiungi l'aglio sminuzzato, il mix di spezie colorate, il sale e il pepe per completare la marinata cremosa.",
           "Immergi i bocconcini di pollo e rimescola con vigore per rivestirli interamente con questa salsa bianca aromatica.",
           "Copri bene il recipiente e lascia riposare il tutto in frigorifero per un minimo di 4 ore.",
-          "Infilza la carne sgocciolata sugli stecchini di legno e sistemali nella macchina ben preriscaldata, cuocendoli a 205°C per 10 minuti e ricordandoti di girarli a metà tempo."
+          "Infilza la carne sgocciolata sugli stecchini di legno e sistemali nella macchina ben preriscaldata, cuocendoli a 200°C per 11 minuti e ricordandoti di girarli a metà tempo."
         ],
         "source": "Cosori",
         "tip": "Usa piccoli spiedini di legno tagliati a metà oppure immergili in acqua prima dell'uso per non farli bruciare nel cestello."
@@ -1122,8 +1122,8 @@
         "slug": "bistecca-mostarda-balsamica",
         "title": "Bistecca di Manzo all'Aceto Balsamico",
         "emoji": "🥩",
-        "temp": 205,
-        "time": "6",
+        "temp": 200,
+        "time": "7",
         "prep_time": "2 ore 10 minuti",
         "portions": "4",
         "ingredients": [
@@ -1139,7 +1139,7 @@
           "In un recipiente capiente, emulsiona energicamente l'olio d'oliva con l'aceto balsamico e la senape di Digione.",
           "Immergi la bistecca in questa profumata marinata, copri accuratamente con pellicola trasparente e lascia riposare in frigorifero per circa due ore.",
           "Estrai la carne dal frigo e lasciala tornare a temperatura ambiente prima di procedere alla cottura.",
-          "Inseriscila nello scomparto ben caldo della friggitrice e avvia il programma bistecca per 6 minuti.",
+          "Inseriscila nello scomparto ben caldo della friggitrice e avvia il programma bistecca per 7 minuti.",
           "A cottura ultimata, taglia a fette trasversali, aggiusta di sale e pepe e guarnisci con le foglioline di basilico."
         ],
         "source": "Cosori",
@@ -1149,8 +1149,8 @@
         "slug": "bistecca-costata-santa-maria",
         "title": "Costata di Manzo alle Erbe Aromatiche",
         "emoji": "🥩",
-        "temp": 205,
-        "time": "6",
+        "temp": 200,
+        "time": "7",
         "prep_time": "Non presente",
         "portions": "2",
         "ingredients": [
@@ -1166,7 +1166,7 @@
           "Prepara un mix aromatico mescolando l'aglio in polvere, la cipolla, l'origano, il rosmarino, la salvia e la punta di pepe di Caienna in una ciotolina.",
           "Spennella uniformemente il taglio di carne con l'olio d'oliva su ambo i lati per favorire l'adesione delle spezie.",
           "Ricopri l'intera superficie della costata con la miscela aromatica, pressando delicatamente con i palmi delle mani per farla aderire.",
-          "Trasferisci la carne nel cestello preriscaldato a 205°C.",
+          "Trasferisci la carne nel cestello preriscaldato a 200°C.",
           "Cuocila rapidamente ad altissima temperatura per sigillarne i succhi interni, quindi tagliala a fette dopo un breve riposo."
         ],
         "source": "Cosori",
@@ -1176,8 +1176,8 @@
         "slug": "bistecca-new-york-chimichurri",
         "title": "Controfiletto di Manzo con Salsa Verde Fresca",
         "emoji": "🥩",
-        "temp": 205,
-        "time": "6-8",
+        "temp": 200,
+        "time": "7-9",
         "prep_time": "15 minuti",
         "portions": "4",
         "ingredients": [
@@ -1193,8 +1193,8 @@
         "instructions": [
           "Prepara la salsa verde frullando insieme il basilico, il coriandolo, il prezzemolo, le acciughe, lo scalogno e l'aglio sbucciato; incorpora poi a filo l'olio e il succo di limone.",
           "Ungi leggermente la superficie delle bistecche con olio neutro e condiscile generosamente con sale e pepe nero.",
-          "Posiziona la carne nello scomparto rovente già preriscaldato a 205°C.",
-          "Avvia la cottura per 6-8 minuti, a seconda del grado di cottura che preferisci ottenere.",
+          "Posiziona la carne nello scomparto rovente già preriscaldato a 200°C.",
+          "Avvia la cottura per 7-9 minuti, a seconda del grado di cottura che preferisci ottenere.",
           "Fai riposare la carne per qualche istante prima di affettarla, poi servila coperta con l'emulsione verde preparata."
         ],
         "source": "Cosori",
@@ -1228,8 +1228,8 @@
         "slug": "braciole-maiale-north-carolina",
         "title": "Braciole di Maiale Dolci e Speziate",
         "emoji": "🍖",
-        "temp": 205,
-        "time": "10",
+        "temp": 0,
+        "time": "11",
         "prep_time": "5 minuti",
         "portions": "2",
         "ingredients": [
@@ -1245,8 +1245,8 @@
           "Unisci e mescola bene in una ciotola lo zucchero di canna, la paprika, la senape in polvere, l'aglio, la cipolla, il sale e il pepe.",
           "Ricopri interamente le braciole disossate massaggiandole abbondantemente con l'olio vegetale.",
           "Impana la carne facendola rotolare nella miscela asciutta di spezie, premendo con le dita affinché aderisca in modo uniforme.",
-          "Inserisci le fette nel cestello caldissimo e preriscaldato a 205°C.",
-          "Cuoci per 10 minuti, dopodiché estrai le braciole e lasciale riposare un paio di minuti prima di servirle."
+          "Inserisci le fette nel cestello caldissimo e preriscaldato a 200°C.",
+          "Cuoci per 11 minuti, dopodiché estrai le braciole e lasciale riposare un paio di minuti prima di servirle."
         ],
         "source": "Cosori",
         "tip": "Massaggia bene le spezie sulla carne per creare una crosticina saporita. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto."
@@ -1255,8 +1255,8 @@
         "slug": "cheeseburger-sliders",
         "title": "Mini Panini Farciti con Medaglioni e Formaggio",
         "emoji": "🍔",
-        "temp": 205,
-        "time": "8",
+        "temp": 200,
+        "time": "9",
         "prep_time": "1 ora 5 minuti",
         "portions": "4",
         "ingredients": [
@@ -1272,7 +1272,7 @@
         "instructions": [
           "Impasta la carne trita in una ciotola con la salsa Worcestershire, la senape, la cipolla finemente grattugiata, l'uovo, sale e pepe.",
           "Modella l'impasto formando dei piccoli medaglioni di uguale dimensione e lasciali rassodare in frigorifero per circa un'ora.",
-          "Spennella i mini burger con l'olio d'oliva e sistemali ordinatamente nella friggitrice preriscaldata a 205°C.",
+          "Spennella i mini burger con l'olio d'oliva e sistemali ordinatamente nella friggitrice preriscaldata a 200°C.",
           "Fai cuocere svoltandoli a metà del processo per garantire un colore abbrustolito perfetto.",
           "Nell'ultimo minuto, aggiungi la fetta di formaggio per farla fondere morbidamente, poi assembla i panini e portali in tavola."
         ],
@@ -1413,8 +1413,8 @@
         "slug": "hamburger-tacchino-asiatico",
         "title": "Medaglioni di Tacchino con Insalata Croccante",
         "emoji": "🍔",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "35 minuti",
         "portions": "4",
         "ingredients": [
@@ -1430,7 +1430,7 @@
           "Incorpora il pangrattato e lavora vigorosamente l'impasto con le dita fino al completo assorbimento degli elementi umidi.",
           "Suddividi l'impasto speziato creando dei dischi compatti e regolari.",
           "Riponili in frigorifero a compattarsi per un po' affinché non si deformino durante la cottura.",
-          "Cuocili a 205°C rigirandoli a metà tempo, per poi servirli all'interno di un buon panino e accompagnati con la vivace insalata di cavolo (slaw)."
+          "Cuocili a 200°C rigirandoli a metà tempo, per poi servirli all'interno di un buon panino e accompagnati con la vivace insalata di cavolo (slaw)."
         ],
         "source": "Cosori",
         "tip": "Fai raffreddare i tortini in frigo prima di cuocerli per mantenerne la forma."
@@ -1465,8 +1465,8 @@
         "slug": "involtini-maiale-prosciutto",
         "title": "Involtini di Carne Avvolti nel Prosciutto Crudo",
         "emoji": "🥓",
-        "temp": 205,
-        "time": "9",
+        "temp": 200,
+        "time": "10",
         "prep_time": "10 minuti",
         "portions": "4",
         "ingredients": [
@@ -1482,7 +1482,7 @@
           "Accavalla le fette di prosciutto crudo su un piano di lavoro e appoggiaci sopra il filetto di maiale battuto.",
           "Crea una striscia centrale posizionandovi le foglie di spinacio crudo, il formaggio filante spezzettato e i pomodori saporiti.",
           "Arrotola strettamente l'intera preparazione per formare un cilindro compatto, eventualmente legandolo con dello spago.",
-          "Spennellalo con una quantità infinitesimale di olio e cuocilo nel cestello rovente a 205°C finché l'involucro esterno non diventerà molto croccante."
+          "Spennellalo con una quantità infinitesimale di olio e cuocilo nel cestello rovente a 200°C finché l'involucro esterno non diventerà molto croccante."
         ],
         "source": "Cosori",
         "tip": "Usa dello spago da cucina per tenere ben chiusi gli involtini durante la cottura."
@@ -1543,8 +1543,8 @@
         "slug": "polpette-agnello-mediterraneo",
         "title": "Polpettine di Agnello alla Menta",
         "emoji": "🧆",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "35 minuti",
         "portions": "4",
         "ingredients": [
@@ -1560,7 +1560,7 @@
           "Aggiungi tutta l'erba aromatica sminuzzata, i liquidi (il limone, l'olio e la salsa rossa) e la polvere di cumino profumato.",
           "Spremi e impasta con enorme foga gli elementi servendoti delle mani, affinché i sapori si infondano meravigliosamente tra le fibre della carne.",
           "Modella agilmente tante sferette rotondeggianti e sistemale in frigorifero a raffreddare rassodandosi per non meno di trenta minuti.",
-          "Pennella la carne con un ultimo tocco oleoso e inseriscile per dieci velocissimi minuti nel calore sferzante della macchina."
+          "Pennella la carne con un ultimo tocco oleoso e inseriscile per undici velocissimi minuti nel calore sferzante della macchina."
         ],
         "source": "Cosori",
         "tip": "Servi con una salsa allo yogurt o tzatziki per bilanciare le spezie."
@@ -1569,8 +1569,8 @@
         "slug": "polpette-giapponesi",
         "title": "Polpettine Glassate alla Soia e Miso",
         "emoji": "🍡",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "15 minuti",
         "portions": "4",
         "ingredients": [
@@ -1644,8 +1644,8 @@
         "slug": "sandwich-bistecca-rafano",
         "title": "Panino Gourmet con Bistecca e Rafano",
         "emoji": "🥩",
-        "temp": 205,
-        "time": "6",
+        "temp": 200,
+        "time": "7",
         "prep_time": "5 minuti",
         "portions": "2",
         "ingredients": [
@@ -1662,7 +1662,7 @@
         "description": "Un lussuoso panino caldo farcito con carne arrostita alla perfezione. La salsa pungente al rafano taglia la ricchezza della bistecca creando un equilibrio di sapori da vero ristorante.",
         "instructions": [
           "Massaggia la bistecca con l'olio d'oliva, il sale e il pepe per insaporirla bene su ogni lato.",
-          "Preriscalda la macchina a 205°C, inserisci la carne e cuocila per circa 6 minuti (per una cottura al sangue o media).",
+          "Preriscalda la macchina a 200°C, inserisci la carne e cuocila per circa 6 minuti (per una cottura al sangue o media).",
           "Nel frattempo, mescola la panna acida, il rafano, l'erba cipollina, lo scalogno tritato finissimo e il succo di limone per creare la salsa.",
           "Terminata la cottura, estrai la bistecca e falla riposare su un tagliere per 5-10 minuti prima di affettarla controfibra.",
           "Tosta leggermente i panini, spalma la crema di rafano, aggiungi la rucola fresca e le fette di carne calda."
@@ -1674,8 +1674,8 @@
         "slug": "spiedini-agnello-shawarma",
         "title": "Spiedini Orientali di Agnello",
         "emoji": "🍢",
-        "temp": 205,
-        "time": "8",
+        "temp": 200,
+        "time": "9",
         "prep_time": "12 minuti",
         "portions": "2",
         "ingredients": [
@@ -1694,7 +1694,7 @@
           "Impasta energicamente con le mani per distribuire bene i sapori all'interno del macinato.",
           "Dividi il composto e compatta la carne attorno a degli stecchini di legno, formando dei cilindri allungati.",
           "Falli riposare in frigorifero per 10 minuti per farli rassodare perfettamente.",
-          "Preriscalda la friggitrice a 205°C e cuocili per 8 minuti, rigirandoli a metà tempo."
+          "Preriscalda la friggitrice a 200°C e cuocili per 9 minuti, rigirandoli a metà tempo."
         ],
         "source": "Cosori",
         "tip": "Servi questi spiedini profumati accompagnandoli con una salsa fresca allo yogurt e foglie di menta."
@@ -1703,8 +1703,8 @@
         "slug": "spiedini-maiale-teriyaki-cosori",
         "title": "Spiedini di Maiale Glassati",
         "emoji": "🍢",
-        "temp": 205,
-        "time": "8",
+        "temp": 200,
+        "time": "9",
         "prep_time": "35 minuti",
         "portions": "4",
         "ingredients": [
@@ -1720,8 +1720,8 @@
         "instructions": [
           "Sciogli l'amido di mais nell'acqua fredda, poi versalo in un pentolino assieme alla soia, allo zucchero, all'aglio e allo zenzero. Cuoci per 5 minuti finché la salsa teriyaki si addensa.",
           "Infila i cubetti di maiale sugli spiedini di legno e immergili nella salsa ormai tiepida, lasciandoli marinare per 30 minuti.",
-          "Preriscalda la macchina a 205°C e adagia gli spiedini nel cestello, spruzzandoli leggermente d'olio.",
-          "Cuoci per 8 minuti in totale.",
+          "Preriscalda la macchina a 200°C e adagia gli spiedini nel cestello, spruzzandoli leggermente d'olio.",
+          "Cuoci per 9 minuti in totale.",
           "Spennella generosamente gli spiedini con ulteriore salsa teriyaki ogni 2 minuti durante la cottura per formare la tipica glassa."
         ],
         "source": "Cosori",
@@ -1731,8 +1731,8 @@
         "slug": "spiedini-manzo-coreano",
         "title": "Spiedini Piccanti alla Coreana",
         "emoji": "🍢",
-        "temp": 205,
-        "time": "6",
+        "temp": 200,
+        "time": "7",
         "prep_time": "1 ora 5 minuti",
         "portions": "4",
         "ingredients": [
@@ -1748,8 +1748,8 @@
           "All'interno di una capiente scodella, mescola le paste coreane (ssamjang e gochujang), la soia, l'olio di sesamo, il miele e l'aceto per creare una marinata densa.",
           "Immergi i cubetti di manzo, rigirali bene per ungerli su ogni lato e falli marinare per un'ora in frigo.",
           "Infilza i pezzi di carne sugli spiedini tagliati a misura del tuo cestello.",
-          "Preriscalda la macchina a 205°C.",
-          "Adagia la carne nel cassetto e cuoci rapidamente per soli 6 minuti per far imbrunire la salsa senza asciugare l'interno."
+          "Preriscalda la macchina a 200°C.",
+          "Adagia la carne nel cassetto e cuoci rapidamente per soli 7 minuti per far imbrunire la salsa senza asciugare l'interno."
         ],
         "source": "Cosori",
         "tip": "Usa spiedini di legno pre-ammollati in acqua per una decina di minuti, così non bruceranno durante l'esposizione al calore."
@@ -1836,8 +1836,8 @@
         "slug": "avocado-fritti",
         "title": "Spicchi di Avocado Dorati",
         "emoji": "🥑",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "Non presente",
         "portions": "2",
         "ingredients": [
@@ -1853,8 +1853,8 @@
           "Taglia gli avocado a metà, rimuovi il grosso nocciolo, privali della buccia scura e affettali ottenendo degli spicchi di ugual misura.",
           "Allestisci la postazione per impanare: un piatto con la farina salata, uno con le uova battute e uno con il pangrattato mescolato alle spezie vivaci.",
           "Infarina bene ogni singolo spicchio verde, tuffalo nell'uovo e rotolalo nella miscela di pangrattato premendo sui bordi.",
-          "Posiziona gli spicchi nel cassetto preriscaldato a 205°C e spruzzali copiosamente con l'olio in formato spray.",
-          "Avvia la frittura per 10 minuti complessivi, girando gli spicchi a metà processo per omogeneizzare la cottura."
+          "Posiziona gli spicchi nel cassetto preriscaldato a 200°C e spruzzali copiosamente con l'olio in formato spray.",
+          "Avvia la frittura per 11 minuti complessivi, girando gli spicchi a metà processo per omogeneizzare la cottura."
         ],
         "source": "Cosori",
         "tip": "Scegli rigorosamente avocado maturi ma che risultino ancora molto sodi al tatto, così non si spappoleranno durante le fasi di preparazione."
@@ -1912,7 +1912,7 @@
         "slug": "cipolla-fiorita",
         "title": "Fiore di Cipolla Croccante",
         "emoji": "🧅",
-        "temp": 205,
+        "temp": 200,
         "time": "25",
         "prep_time": "2 ore 15 minuti",
         "portions": "4",
@@ -1930,7 +1930,7 @@
           "Immergi i grandi bulbi in acqua gelida per oltre 2 ore per farli aprire visivamente come dei grandi fiori.",
           "Sbatti la farina, le spezie vive, il sale e l'acqua per ottenere una pastella molto liscia e vellutata.",
           "Scola il fiore, rivesti ogni suo strato con questa pastella e poi spolvera la cima e le fessure di pangrattato sbriciolato.",
-          "Spruzza d'olio, adagia nella macchina e cuoci inizialmente a 205°C per 10 minuti, proseguendo a 175°C per gli ultimi 15 minuti."
+          "Spruzza d'olio, adagia nella macchina e cuoci inizialmente a 200°C per 10 minuti, proseguendo a 175°C per gli ultimi 15 minuti."
         ],
         "source": "Cosori",
         "tip": "Rispetta sempre il tempo di immersione in acqua ghiacciata per un paio d'ore, è il segreto essenziale per far 'fiorire' splendidamente i petali."
@@ -3038,8 +3038,8 @@
         "slug": "carote-soia-miele",
         "title": "Bastoncini di Carote Laccati",
         "emoji": "🥕",
-        "temp": 205,
-        "time": "12",
+        "temp": 200,
+        "time": "13",
         "prep_time": "5 minuti",
         "portions": "4",
         "ingredients": [
@@ -3053,7 +3053,7 @@
           "Priva le radici delle asperità più terrose avendole sfregate intensamente tra fiumi d'acqua, dopo ripassale asciugandole finemente e con dedizione.",
           "Spargile ed impasta delicatamente per velarle servendoti delle parti e sciroppi liquidi con la soia e l'intenso mieloso uniti al blando olio neutro protettivo.",
           "Conficcale dentro il cestello caldo premurandoti non ci formino alte barricate sovrapposte ed isolanti.",
-          "Palesa le virtù del forte calore spingendo il ciclo sui 205°C intensi ed assicurando il compimento alla soglia del dodicesimo minuto avvolgente.",
+          "Palesa le virtù del forte calore spingendo il ciclo sui 200°C intensi ed assicurando il compimento alla soglia del dodicesimo minuto avvolgente.",
           "Per palesare un risultato esteticamente incandescente intervieni scuotendo irruentemente nel mezzo del turbinio termico in modo abile ed accorto."
         ],
         "source": "Cosori",
@@ -3063,8 +3063,8 @@
         "slug": "carote-arrosto-miele",
         "title": "Mazzetti Dolci Colorati al Forno",
         "emoji": "🥕",
-        "temp": 205,
-        "time": "12",
+        "temp": 200,
+        "time": "13",
         "prep_time": "5 minuti",
         "portions": "4",
         "ingredients": [
@@ -3189,7 +3189,7 @@
         "slug": "melanzane-arrostite-semplici",
         "title": "Melanzane Arrostite Speziate",
         "emoji": "🍆",
-        "temp": 205,
+        "temp": 200,
         "time": "10",
         "prep_time": "5 minuti",
         "portions": "2",
@@ -3207,7 +3207,7 @@
           "In una ciotola capiente, mescola l'olio d'oliva con l'aglio, la cipolla, il cumino, il sale e il pepe.",
           "Aggiungi le fette di melanzana nella ciotola e mescola con le mani per ungere ogni fetta in modo omogeneo.",
           "Disponi le fette nel cestello della friggitrice preriscaldata, evitando di sovrapporle troppo.",
-          "Cuoci a 205°C per 10 minuti, ricordandoti di girarle a metà cottura."
+          "Cuoci a 200°C per 10 minuti, ricordandoti di girarle a metà cottura."
         ],
         "source": "Cosori",
         "tip": "Taglia le fette tutte dello stesso spessore per evitare che le più sottili brucino mentre le altre sono ancora crude."
@@ -3539,8 +3539,8 @@
         "slug": "cavoletti-bruxelles-pancetta",
         "title": "Cavoletti Invernali alla Pancetta",
         "emoji": "🥬",
-        "temp": 205,
-        "time": "8",
+        "temp": 200,
+        "time": "9",
         "prep_time": "5 minuti",
         "portions": "4",
         "ingredients": [
@@ -3555,7 +3555,7 @@
           "Inserisci all'interno di una profonda terrina i cavoletti squartati unendovi i pezzi irregolari di pancetta.",
           "Annaffia i componenti servendoti dell'olio fluido e insaporiscili abbondantemente per caduta con l'aglio odoroso in polvere, sale fine e polvere scura di pepe.",
           "Travasa tutto l'insieme disordinatamente all'interno dello scomparto d'aerazione ardente.",
-          "Attiva una rosolatura energica a 205°C limitandoti ad otto serratissimi minuti (smuovi la vaschetta a meta via per non bruciare le foglioline sottili sfuggite).",
+          "Attiva una rosolatura energica a 200°C limitandoti a nove to serratissimi minuti (smuovi la vaschetta a meta via per non bruciare le foglioline sottili sfuggite).",
           "Versa le sfere verdeggianti fumanti in una coppa coprendole d'immediato con le candide e saporitissime scaglie del formaggio."
         ],
         "source": "Cosori",
@@ -3714,7 +3714,7 @@
         "slug": "patatine-spirale-surgelate",
         "title": "Patatine a Spirale Super Croccanti",
         "emoji": "🍟",
-        "temp": 210,
+        "temp": 200,
         "time": "18-20",
         "prep_time": "Non presente",
         "portions": "4",
@@ -3725,7 +3725,7 @@
         "instructions": [
           "Preleva le patatine a spirale ancora completamente surgelate e sistemale nel cestello della friggitrice ad aria.",
           "Non è necessario aggiungere alcun tipo di olio superficiale, poiché il prodotto industriale è già pre-fritto e bilanciato.",
-          "Avvia la cottura impostando la temperatura altissima a 210°C per un tempo compreso tra i 18 e i 20 minuti a seconda della croccantezza che ami.",
+          "Avvia la cottura impostando la temperatura altissima a 200°C per un tempo compreso tra i 18 e i 20 minuti a seconda della croccantezza che ami.",
           "A metà cottura, estrai il cassetto e scuotilo energicamente per separare le spirali incastrate e garantire una meravigliosa doratura uniforme.",
           "Servile caldissime, magari accompagnate da un ricco assortimento di salse a piacere."
         ],
@@ -3860,7 +3860,7 @@
         "slug": "patatine-ondulate-surgelate",
         "title": "Patatine Zigzag",
         "emoji": "🍟",
-        "temp": 210,
+        "temp": 200,
         "time": "18-20",
         "prep_time": "Non presente",
         "portions": "4",
@@ -3881,8 +3881,8 @@
         "slug": "pollo-fritto-latticello",
         "title": "Filetti di Pollo Fritto al Latticello",
         "emoji": "🍗",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "5 ore 15 minuti",
         "portions": "4",
         "ingredients": [
@@ -4113,8 +4113,8 @@
         "slug": "cajun-di-pollo",
         "title": "Filetti di Pollo Croccanti al Cajun",
         "emoji": "🌶",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "5 ore e 15 minuti",
         "portions": "4",
         "ingredients": [
@@ -4130,8 +4130,8 @@
           "In una busta ermetica o ciotola, immergi il pollo nel latticello e salsa piccante, lasciandolo riposare in frigo per almeno 4 ore (o tutta la notte).",
           "Unisci la farina, l'amido e le spezie; versa un cucchiaio della marinata liquida nelle polveri stropicciandole con le dita per creare dei piccoli grumi.",
           "Preleva il pollo, passalo accuratamente in questa farina grumosa e sistemalo su una griglia a riposare per 1 ora (il rivestimento diventerà saldo).",
-          "Preriscalda la macchina a 205°C e spruzza i filetti con abbondante olio spray su ambo i lati.",
-          "Friggi ad aria per 10 minuti fino a ottenere una crosta incredibilmente dorata e scricchiolante."
+          "Preriscalda la macchina a 200°C e spruzza i filetti con abbondante olio spray su ambo i lati.",
+          "Friggi ad aria per 11 minuti fino a ottenere una crosta incredibilmente dorata e scricchiolante."
         ],
         "source": "Cosori",
         "tip": "Non saltare il riposo di un'ora della carne impanata: è vitale per far idratare la farina e impedire che si stacchi col getto d'aria rovente."
@@ -4247,8 +4247,8 @@
         "slug": "cotoletta-melanzane",
         "title": "Cotolette di Melanzane",
         "emoji": "🍆",
-        "temp": 205,
-        "time": "8",
+        "temp": 0,
+        "time": "9",
         "prep_time": "8 minuti",
         "portions": "2",
         "ingredients": [
@@ -4265,7 +4265,7 @@
           "Cospargi i tondi di melanzana con la farina in modo leggero, poi immergili nel mix di uovo e passali nel pane.",
           "Per una corazza extra impenetrabile, ripassali un'altra volta nell'uovo e nel pane.",
           "Spennella delicatamente ma generosamente l'olio d'oliva su ambedue le facce.",
-          "Disponile separate nel cestello caldissimo a 205°C e cuocile 8 minuti rovesciandole a metà percorso."
+          "Disponile separate nel cestello caldissimo a 200°C e cuocile 9 minuti rovesciandole a metà percorso."
         ],
         "source": "Cosori",
         "tip": "Eseguire la doppia impanatura (uovo-pane-uovo-pane) sigilla all'interno l'umidità della melanzana rendendo la polpa morbidissima."
@@ -4381,7 +4381,7 @@
         "slug": "maiali-in-coperta",
         "title": "Salsicce in Sfoglia",
         "emoji": "🌭",
-        "temp": 205,
+        "temp": 200,
         "time": "10",
         "prep_time": "5 minuti",
         "portions": "4",
@@ -4392,7 +4392,7 @@
         ],
         "description": "Un rustico da festa semplicissimo, conosciuto globalmente come 'Pigs in a Blanket'. La sfoglia sboccia incamerando bolle d'aria per uno sfizio burroso fenomenale.",
         "instructions": [
-          "Preriscalda accuratamente la tua friggitrice ad aria impostando il calore massimo a 205°C.",
+          "Preriscalda accuratamente la tua friggitrice ad aria impostando il calore massimo a 200°C.",
           "Servendoti di una rotella, ricava dalla pasta sfoglia fredda delle lunghe e sottili striscioline.",
           "Avvolgi ogni striscia morbidamente a spirale attorno alle minuscole salsicce e chiudi i lembi bagnandoli con un po' d'acqua per sigillarli.",
           "Spennella la sommità della sfoglia increspata con il latte o il tuorlo e appoggiali nel cestello caldo con la giuntura verso il fondo.",
@@ -4638,8 +4638,8 @@
         "slug": "cajun-di-pollo",
         "title": "Filetti di Pollo Croccanti al Cajun",
         "emoji": "🌶",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "5 ore e 15 minuti",
         "portions": "4",
         "ingredients": [
@@ -4655,8 +4655,8 @@
           "In una busta ermetica o ciotola, immergi il pollo nel latticello e salsa piccante, lasciandolo riposare in frigo per almeno 4 ore (o tutta la notte).",
           "Unisci la farina, l'amido e le spezie; versa un cucchiaio della marinata liquida nelle polveri stropicciandole con le dita per creare dei piccoli grumi.",
           "Preleva il pollo sgocciolato, passalo accuratamente in questa farina grumosa e sistemalo su una griglia a riposare per 1 ora (il rivestimento diventerà saldo).",
-          "Preriscalda la macchina a 205°C e spruzza i filetti con abbondante olio spray su ambo i lati.",
-          "Friggi ad aria per 10 minuti fino a ottenere una crosta incredibilmente dorata e scricchiolante."
+          "Preriscalda la macchina a 200°C e spruzza i filetti con abbondante olio spray su ambo i lati.",
+          "Friggi ad aria per 11 minuti fino a ottenere una crosta incredibilmente dorata e scricchiolante."
         ],
         "source": "Cosori",
         "tip": "Non saltare il riposo di un'ora della carne impanata: è vitale per far idratare la farina e impedire che si stacchi col potente getto d'aria rovente."
@@ -4772,8 +4772,8 @@
         "slug": "cotoletta-melanzane",
         "title": "Cotolette di Melanzane Croccanti",
         "emoji": "🍆",
-        "temp": 205,
-        "time": "8",
+        "temp": 200,
+        "time": "9",
         "prep_time": "8 minuti",
         "portions": "2",
         "ingredients": [
@@ -4790,7 +4790,7 @@
           "Cospargi i tondi di melanzana con la farina in modo leggero, poi immergili nel mix di uovo e passali nel pane.",
           "Per una corazza extra impenetrabile, ripassali un'altra volta nell'uovo e nel pane (doppia impanatura).",
           "Spennella delicatamente ma generosamente l'olio d'oliva su ambedue le facce.",
-          "Disponile separate nel cestello caldissimo a 205°C e cuocile 8 minuti rovesciandole a metà percorso."
+          "Disponile separate nel cestello caldissimo a 200°C e cuocile 8 minuti rovesciandole a metà percorso."
         ],
         "source": "Cosori",
         "tip": "Eseguire la doppia impanatura sigilla all'interno l'umidità della melanzana rendendo la polpa morbidissima come fosse una crema."
@@ -4879,8 +4879,8 @@
         "slug": "maiali-in-coperta",
         "title": "Rustici di Sfoglia e Wurstel",
         "emoji": "🌭",
-        "temp": 205,
-        "time": "10",
+        "temp": 200,
+        "time": "11",
         "prep_time": "5 minuti",
         "portions": "4",
         "ingredients": [
@@ -4890,11 +4890,11 @@
         ],
         "description": "Un rustico da festa semplicissimo, un grande classico da buffet. La sfoglia sboccia incamerando bolle d'aria per uno sfizio burroso e rapidissimo fenomenale.",
         "instructions": [
-          "Preriscalda accuratamente la tua friggitrice ad aria impostando il calore massimo a 205°C.",
+          "Preriscalda accuratamente la tua friggitrice ad aria impostando il calore massimo a 200°C.",
           "Servendoti di una rotella per pizza, ricava dalla pasta sfoglia fredda delle lunghe e sottili striscioline.",
           "Avvolgi ogni striscia morbidamente a spirale attorno alle minuscole salsicce e chiudi i lembi bagnandoli con un po' d'acqua per sigillarli fermamente.",
           "Spennella la sommità della sfoglia increspata con il latte o il tuorlo e appoggiali nel cestello caldo con la giuntura verso il fondo.",
-          "Cuoci brevemente per circa 10 minuti o finché la foggia non sarà gonfissima e brillantemente dorata."
+          "Cuoci brevemente per circa 11 minuti o finché la foggia non sarà gonfissima e brillantemente dorata."
         ],
         "source": "Cosori",
         "tip": "Lavora sempre la pasta sfoglia freddissima di frigorifero, altrimenti i grassi interni si scioglieranno prima di infornarla e comprometterai la sfogliatura."
@@ -5079,8 +5079,8 @@
         "slug": "polpette-italiane",
         "title": "Polpette Italiane Classiche",
         "emoji": "🍝",
-        "temp": 205,
-        "time": "8",
+        "temp": 0,
+        "time": "8-10",
         "prep_time": "15 minuti",
         "portions": "2",
         "ingredients": [
@@ -5098,8 +5098,8 @@
           "Unisci all'interno di una terrina la carne macinata, il pangrattato, il latte, l'uovo, le spezie in polvere e il parmigiano, impastando molto bene con le mani.",
           "Ricava dal composto ottenuto delle palline di carne di medie dimensioni, cercando di renderle tutte uguali.",
           "Riponi le polpette in frigorifero a compattarsi e riposare per circa 10 minuti.",
-          "Preriscalda l'apparecchio a 205°C. Spruzza il cestello con dell'olio spray, inserisci le polpette e vaporizzaci sopra altro olio per farle dorare bene.",
-          "Cuoci per 8 minuti e servile calde tuffandole nella salsa marinara."
+          "Preriscalda l'apparecchio a 200°C. Spruzza il cestello con dell'olio spray, inserisci le polpette e vaporizzaci sopra altro olio per farle dorare bene.",
+          "Cuoci per 8-10 minuti e servile calde tuffandole nella salsa marinara."
         ],
         "source": "Cosori",
         "tip": "Spruzza le polpette con un po' di olio spray per renderle squisitamente dorate esternamente. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto."
@@ -5189,7 +5189,7 @@
         "slug": "spiedini-pollo-yogurt",
         "title": "Spiedini Tenerissimi allo Yogurt",
         "emoji": "🍢",
-        "temp": 205,
+        "temp": 200,
         "time": "10",
         "prep_time": "4 ore 10 minuti",
         "portions": "4",
@@ -5206,7 +5206,7 @@
           "Frusta in una grande ciotola lo yogurt con l'olio d'oliva, l'aglio macinato, il succo e la buccia di limone e tutte le spezie in polvere.",
           "Inzuppa completamente il pollo sminuzzato in questo bagno candido e coprilo per farlo marinare vigorosamente in frigorifero per 4 ore.",
           "Trascorso il tempo, modella gli spiedini infilzando la carne sui legnetti (abbi cura di dimezzare la lunghezza dei legnetti per farli stare nella macchina).",
-          "Scalda l'apparecchio preventivamente a 205°C e deposita la carne all'interno, oliandone appena la superficie in vista.",
+          "Scalda l'apparecchio preventivamente a 200°C e deposita la carne all'interno, oliandone appena la superficie in vista.",
           "Cuoci caldamente per 10 minuti fino a quando la crema si asciugherà abbrustolendosi e creando una splendida maculatura marrone."
         ],
         "source": "Cosori",
@@ -5315,7 +5315,7 @@
         "slug": "mais-tostato-burro",
         "title": "Chicchi Arrostiti in Pannocchia",
         "emoji": "🌽",
-        "temp": 205,
+        "temp": 200,
         "time": "10",
         "prep_time": "2 minuti",
         "portions": "2",
@@ -5328,7 +5328,7 @@
         "instructions": [
           "Priva violentemente il cono giallo dei verdi scudi erbacei estraendo anche i filamenti biancastri e recidilo a colpo netto in mezzo formando due comodi ed eguali monconi cilindrici.",
           "Ungi sontuosamente ed estesamente i duri gialli incastonati chicchi spennellandovi ovunque denso l'aureo fuso burroso assieme all'aggiunta di finissimo sale.",
-          "Trasloca l'elemento vegetale nell'incavo e avvia fiduciosamente una fiammante procedura di rosolatura decisa a ben 205 gradi.",
+          "Trasloca l'elemento vegetale nell'incavo e avvia fiduciosamente una fiammante procedura di rosolatura decisa a ben 200 gradi.",
           "Tira le cuociture al lungo di dieci serrati minuti ricordandoti d'obbligo d'investire il quinto svoltandone la faccia spessa sui legni caldi, godendo alfine sgranocchiando il doratissimo frutto ambrato."
         ],
         "source": "Cosori",
@@ -5832,7 +5832,7 @@
         "emoji": "🫒",
         "temp": 200,
         "time": "10-12",
-        "prep_time": "Non presente",
+        "prep_time": "60 minuti",
         "portions": "4",
         "ingredients": [
           "400 g di olive ascolane ripiene (surgelate di qualità o fresche)",
