@@ -9,9 +9,9 @@ import RecipeSearch from '../components/recipes/RecipeSearch.astro';
   <AirFryer />
 
   <div class="max-w-4xl mx-auto my-12 relative flex items-center justify-center px-4">
-    <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-slate-300 to-transparent"></div>
-    <div class="absolute inset-x-1/4 h-[3px] bg-gradient-to-r from-transparent via-blue-500 to-transparent shadow-[0_0_15px_rgba(59,130,246,0.6)]"></div>
-    <div class="relative bg-blue-600 px-8 py-2.5 rounded-full border-2 border-white text-sm font-bold text-white uppercase tracking-widest shadow-md flex items-center gap-2">
+    <div class="absolute inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+    <div class="absolute inset-x-1/4 h-[3px] bg-gradient-to-r from-transparent via-blue-500 to-transparent shadow-[0_0_15px_rgba(59,130,246,0.8)]"></div>
+    <div class="relative bg-[#1e293b] px-8 py-2.5 rounded-full border-2 border-slate-600 text-sm font-bold text-blue-300 uppercase tracking-widest shadow-lg flex items-center gap-2">
       <span>🍽️</span> Esplora il Ricettario
     </div>
   </div>
@@ -20,43 +20,43 @@ import RecipeSearch from '../components/recipes/RecipeSearch.astro';
     <RecipeSearch />
   </div>
 
-  <section class="max-w-3xl mx-auto mt-12 px-4 pb-12 text-slate-800 space-y-12">
+  <section class="max-w-3xl mx-auto mt-12 px-4 pb-12 text-slate-300 space-y-12">
     
     <article class="space-y-6">
-      <h2 class="text-3xl font-bold text-slate-900 tracking-tight">
+      <h2 class="text-3xl font-bold text-white tracking-tight">
         Guida alla Conversione: Forno vs Friggitrice ad Aria
       </h2>
-      <p class="text-lg leading-relaxed text-slate-600">
+      <p class="text-lg leading-relaxed text-slate-400">
         Hai trovato una ricetta perfetta per il forno ma vuoi cucinarla nella tua friggitrice ad aria per risparmiare tempo ed energia? 
         Il nostro <strong>convertitore per friggitrice ad aria</strong> applica l'algoritmo standard per adattare qualsiasi pietanza: riducendo la temperatura di circa <strong>20°C</strong> e il tempo di cottura del <strong>20%</strong>.
       </p>
     </article>
 
     <article class="space-y-4">
-      <h3 class="text-xl font-semibold text-blue-600">Tabella Rapida Temperature (Forno Statico → Air Fryer)</h3>
-      <div class="overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+      <h3 class="text-xl font-semibold text-blue-400">Tabella Rapida Temperature (Forno Statico → Air Fryer)</h3>
+      <div class="overflow-hidden rounded-xl border border-slate-700 shadow-2xl">
         <table class="w-full text-left text-sm">
-          <thead class="bg-slate-100 text-slate-700 font-semibold">
+          <thead class="bg-slate-800 text-white font-semibold">
             <tr>
               <th class="p-4">Forno Tradizionale</th>
               <th class="p-4">Friggitrice ad Aria</th>
               <th class="p-4 hidden sm:table-cell">Note</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-slate-100 bg-white">
-            <tr class="hover:bg-slate-50 transition-colors">
-              <td class="p-4 font-mono text-orange-600">180°C</td>
-              <td class="p-4 font-mono text-blue-600 font-bold">160°C</td>
+          <tbody class="divide-y divide-slate-700 bg-slate-900/50">
+            <tr class="hover:bg-slate-800/50 transition-colors">
+              <td class="p-4 font-mono text-orange-300">180°C</td>
+              <td class="p-4 font-mono text-blue-300 font-bold">160°C</td>
               <td class="p-4 text-slate-500 hidden sm:table-cell">Ideale per dolci e torte</td>
             </tr>
-            <tr class="hover:bg-slate-50 transition-colors">
-              <td class="p-4 font-mono text-orange-600">200°C</td>
-              <td class="p-4 font-mono text-blue-600 font-bold">180°C</td>
+            <tr class="hover:bg-slate-800/50 transition-colors">
+              <td class="p-4 font-mono text-orange-300">200°C</td>
+              <td class="p-4 font-mono text-blue-300 font-bold">180°C</td>
               <td class="p-4 text-slate-500 hidden sm:table-cell">Perfetto per pollo e patatine</td>
             </tr>
-            <tr class="hover:bg-slate-50 transition-colors">
-              <td class="p-4 font-mono text-orange-600">220°C</td>
-              <td class="p-4 font-mono text-blue-600 font-bold">200°C</td>
+            <tr class="hover:bg-slate-800/50 transition-colors">
+              <td class="p-4 font-mono text-orange-300">220°C</td>
+              <td class="p-4 font-mono text-blue-300 font-bold">200°C</td>
               <td class="p-4 text-slate-500 hidden sm:table-cell">Per gratinature croccanti</td>
             </tr>
           </tbody>
@@ -65,65 +65,56 @@ import RecipeSearch from '../components/recipes/RecipeSearch.astro';
     </article>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <article class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-lg font-bold text-slate-800 mb-3 flex items-center gap-2">
-          <span class="text-blue-500">⚡</span> Forno Ventilato o Statico?
+      <article class="bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50 hover:border-slate-600 transition-colors">
+        <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <span class="text-blue-400">⚡</span> Forno Ventilato o Statico?
         </h3>
-        <p class="text-sm text-slate-600 leading-relaxed">
+        <p class="text-sm text-slate-400 leading-relaxed">
           La friggitrice ad aria funziona come un <strong>forno super-ventilato</strong> molto compatto. 
           Se la tua ricetta originale prevede il forno <em>statico</em>, devi abbassare la temperatura di 20°C. 
           Se la ricetta è già per forno <em>ventilato</em>, spesso basta ridurre solo il tempo, ma abbassare leggermente i gradi aiuta a non seccare il cibo.
         </p>
       </article>
 
-      <article class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-        <h3 class="text-lg font-bold text-slate-800 mb-3 flex items-center gap-2">
-          <span class="text-blue-500">🍟</span> Patatine e Surgelati
+      <article class="bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50 hover:border-slate-600 transition-colors">
+        <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
+          <span class="text-blue-400">🍟</span> Patatine e Surgelati
         </h3>
-        <p class="text-sm text-slate-600 leading-relaxed">
+        <p class="text-sm text-slate-400 leading-relaxed">
           Per i cibi surgelati (patatine fritte, crocchette, bastoncini), la regola cambia leggermente: spesso puoi mantenere la <strong>stessa temperatura</strong> indicata sulla confezione per il forno ventilato, ma riducendo il tempo del 20-30%. Ricordati di scuotere il cestello a metà cottura!
         </p>
       </article>
     </div>
 
-    <article class="space-y-6 pt-12 border-t border-slate-200">
-      <h3 class="text-2xl font-bold text-slate-900">Domande Frequenti</h3>
+    <article class="space-y-6 pt-12 border-t border-slate-800">
+      <h3 class="text-2xl font-bold text-white">Domande Frequenti</h3>
       
       <div class="space-y-4">
-        <details class="group bg-white border border-slate-200 rounded-xl p-5 cursor-pointer [&_summary::-webkit-details-marker]:hidden hover:border-slate-300 transition-colors shadow-sm">
-          <summary class="flex justify-between items-center font-medium text-slate-800 group-hover:text-blue-600 transition-colors">
+        <details class="group bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 cursor-pointer [&_summary::-webkit-details-marker]:hidden hover:border-slate-600 transition-colors">
+          <summary class="flex justify-between items-center font-medium text-slate-200 group-hover:text-blue-300 transition-colors">
             Devo preriscaldare la friggitrice ad aria?
-            <span class="transition group-open:rotate-180 text-slate-400 group-hover:text-blue-500">
+            <span class="transition group-open:rotate-180 text-slate-500 group-hover:text-blue-400">
               <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-slate-600 mt-4 text-sm leading-relaxed border-t border-slate-100 pt-4">
+          <p class="text-slate-400 mt-4 text-sm leading-relaxed border-t border-slate-700/50 pt-4">
             A differenza del forno tradizionale, la maggior parte delle air fryer moderne raggiunge la temperatura in 2-3 minuti. Preriscaldare è consigliato solo per carne (come bistecche) o dolci lievitati, per garantire lo shock termico immediato.
           </p>
         </details>
 
-        <details class="group bg-white border border-slate-200 rounded-xl p-5 cursor-pointer [&_summary::-webkit-details-marker]:hidden hover:border-slate-300 transition-colors shadow-sm">
-          <summary class="flex justify-between items-center font-medium text-slate-800 group-hover:text-blue-600 transition-colors">
+        <details class="group bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 cursor-pointer [&_summary::-webkit-details-marker]:hidden hover:border-slate-600 transition-colors">
+          <summary class="flex justify-between items-center font-medium text-slate-200 group-hover:text-blue-300 transition-colors">
             Posso usare la carta forno o alluminio?
-            <span class="transition group-open:rotate-180 text-slate-400 group-hover:text-blue-500">
+            <span class="transition group-open:rotate-180 text-slate-500 group-hover:text-blue-400">
               <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
             </span>
           </summary>
-          <p class="text-slate-600 mt-4 text-sm leading-relaxed border-t border-slate-100 pt-4">
+          <p class="text-slate-400 mt-4 text-sm leading-relaxed border-t border-slate-700/50 pt-4">
             Sì, ma con attenzione. La carta forno (o teglie in silicone) deve essere forata se vuoi che l'aria circoli sotto il cibo. Non mettere MAI la carta forno durante il preriscaldamento senza cibo sopra: il flusso d'aria potente potrebbe sollevarla contro la resistenza e farla bruciare.
           </p>
         </details>
       </div>
     </article>
-
-    <footer class="pt-12 text-center space-y-4">
-      <a href="/info" class="text-blue-600 hover:text-blue-500 font-medium transition-colors border-b border-blue-600/30 hover:border-blue-600 pb-1">
-        Chi Siamo & Contatti
-      </a>
-      <p class="text-xs text-slate-500 max-w-xl mx-auto leading-relaxed mt-4">
-        In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. Le immagini e i consigli sono a scopo informativo.
-      </p>
-    </footer>
 
   </section>
 
