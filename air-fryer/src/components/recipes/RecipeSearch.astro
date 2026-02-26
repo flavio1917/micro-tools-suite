@@ -20,7 +20,7 @@ import RecipeCard from './RecipeCard.astro';
           <input 
             type="text" 
             id="recipe-search-input" 
-            placeholder="🔍 Cerca per titolo o categoria (es. 'pollo', 'frittura')..." 
+            placeholder="🔍 Cerca per titolo o categoria (es. 'frittura gamberi')..." 
             class="block w-full p-4 pl-6 text-lg bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent outline-none shadow-xl transition-all"
           >
         </div>
@@ -54,7 +54,7 @@ import RecipeCard from './RecipeCard.astro';
     const noResults = document.getElementById('no-results');
     const resetBtn = document.getElementById('reset-search');
     
-    // Ora peschiamo i wrapper che contengono i dati
+    // Peschiamo i wrapper che contengono i dati
     const wrappers = document.querySelectorAll('.recipe-wrapper');
 
     function filterRecipes(query) {
@@ -68,13 +68,14 @@ import RecipeCard from './RecipeCard.astro';
           return;
         }
 
-        // Recuperiamo Titolo, Slug e le nuove KEYWORDS
         const title = (wrapper.getAttribute('data-title') || '').toLowerCase();
         const slug = (wrapper.getAttribute('data-slug') || '').toLowerCase();
         const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
         
-        // La ricerca ora copre anche le parole chiave nascoste (es. "frittura")
-        const isVisible = searchTerms.some(term => {
+        // LA MAGIA È QUI: Sostituito .some() con .every() (Logica AND invece di OR)
+        // Ora OGNI parola cercata deve essere presente per mostrare la ricetta
+        const isVisible = searchTerms.every(term => {
+          // Tronca l'ultima lettera se la parola è più lunga di 4 caratteri (per gestire plurali/singolari base)
           const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
           return title.includes(root) || slug.includes(root) || keywords.includes(root);
         });
