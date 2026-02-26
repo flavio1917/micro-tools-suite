@@ -21,7 +21,7 @@ import RecipeCard from './RecipeCard.astro';
           <input 
             type="text" 
             id="recipe-search-input" 
-            placeholder="🔍 Cerca 'Pollo', 'Patatine', 'Dolce'..." 
+            placeholder="🔍 Cerca per titolo o URL (es. 'pollo', 'patatine')..." 
             class="block w-full p-4 pl-6 text-lg bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none shadow-xl transition-all"
           >
         </div>
@@ -37,7 +37,7 @@ import RecipeCard from './RecipeCard.astro';
     <div id="no-results" class="hidden text-center py-12">
       <span class="text-6xl block mb-4">😕</span>
       <h3 class="text-xl font-bold text-white">Nessuna ricetta trovata</h3>
-      <p class="text-slate-400 mt-2">Prova a cercare qualcosa di più generico come "carne" o "verdure".</p>
+      <p class="text-slate-400 mt-2">Prova a cercare un titolo diverso o usa parole più semplici.</p>
       <button id="reset-search" class="mt-6 text-blue-400 hover:text-blue-300 underline underline-offset-4 cursor-pointer">
         Mostra tutte le ricette
       </button>
@@ -55,8 +55,8 @@ import RecipeCard from './RecipeCard.astro';
     const cards = document.querySelectorAll('.recipe-card');
 
     function filterRecipes(query) {
-      // Pulizia query: minuscolo e divide in parole (es: "fettine panate" -> ["fettine", "panate"])
-      const searchTerms = query.toLowerCase().trim().split(/\s+/).filter(t => t.length > 2);
+      // Pulizia query: minuscolo e divide in termini
+      const searchTerms = query.toLowerCase().trim().split(/\s+/).filter(t => t.length >= 2);
       let visibleCount = 0;
 
       cards.forEach(card => {
@@ -66,15 +66,16 @@ import RecipeCard from './RecipeCard.astro';
           return;
         }
 
+        // Recuperiamo Titolo e Slug dai data-attributes della card
         const title = (card.getAttribute('data-title') || '').toLowerCase();
-        const ingredients = (card.getAttribute('data-ingredients') || '').toLowerCase();
+        const slug = (card.getAttribute('data-slug') || '').toLowerCase();
         
-        // La ricetta è visibile se ALMENO UNA delle parole cercate è contenuta nel titolo o ingredienti
-        // O se il titolo/ingredienti contengono la radice della parola (es. "fettin" trova "fettine" e "fettina")
+        // LOGICA RICHIESTA: Ricerca solo su Titolo e Slug
+        // Rimuoviamo il controllo sugli ingredienti
         const isVisible = searchTerms.some(term => {
-          // Riduciamo leggermente il termine per beccare singolare/plurale (fuzzy light)
+          // Utilizziamo la radice per gestire singolare/plurale
           const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
-          return title.includes(root) || ingredients.includes(root);
+          return title.includes(root) || slug.includes(root);
         });
 
         if (isVisible) {
@@ -85,6 +86,7 @@ import RecipeCard from './RecipeCard.astro';
         }
       });
 
+      // Toggle visibilità griglia
       if (visibleCount === 0) {
         if(grid) grid.classList.add('hidden');
         if(noResults) noResults.classList.remove('hidden');
