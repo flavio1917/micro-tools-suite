@@ -47,38 +47,44 @@ import RecipeCard from './RecipeCard.astro';
 </section>
 
 <script is:inline>
-  // Aspettiamo che il DOM sia caricato
   document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('recipe-search-input');
     const grid = document.getElementById('recipes-grid');
     const noResults = document.getElementById('no-results');
     const resetBtn = document.getElementById('reset-search');
-    
-    // Selezioniamo tutte le card
     const cards = document.querySelectorAll('.recipe-card');
 
     function filterRecipes(query) {
-      const term = query.toLowerCase().trim();
+      // Pulizia query: minuscolo e divide in parole (es: "fettine panate" -> ["fettine", "panate"])
+      const searchTerms = query.toLowerCase().trim().split(/\s+/).filter(t => t.length > 2);
       let visibleCount = 0;
 
       cards.forEach(card => {
-        // Leggiamo i data-attributes (assicurati che RecipeCard li abbia!)
-        const title = card.getAttribute('data-title') || '';
-        const ingredients = card.getAttribute('data-ingredients') || '';
-        const emoji = card.getAttribute('data-emoji') || '';
+        if (query.trim() === "") {
+          card.style.display = '';
+          visibleCount++;
+          return;
+        }
+
+        const title = (card.getAttribute('data-title') || '').toLowerCase();
+        const ingredients = (card.getAttribute('data-ingredients') || '').toLowerCase();
         
-        // Logica di ricerca
-        const isVisible = title.includes(term) || emoji.includes(term) || ingredients.includes(term);
-        
+        // La ricetta è visibile se ALMENO UNA delle parole cercate è contenuta nel titolo o ingredienti
+        // O se il titolo/ingredienti contengono la radice della parola (es. "fettin" trova "fettine" e "fettina")
+        const isVisible = searchTerms.some(term => {
+          // Riduciamo leggermente il termine per beccare singolare/plurale (fuzzy light)
+          const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
+          return title.includes(root) || ingredients.includes(root);
+        });
+
         if (isVisible) {
-          card.style.display = ''; // Reset display (mostra)
+          card.style.display = '';
           visibleCount++;
         } else {
-          card.style.display = 'none'; // Nascondi
+          card.style.display = 'none';
         }
       });
 
-      // Gestione visibilità griglia vs messaggio errore
       if (visibleCount === 0) {
         if(grid) grid.classList.add('hidden');
         if(noResults) noResults.classList.remove('hidden');
@@ -88,14 +94,12 @@ import RecipeCard from './RecipeCard.astro';
       }
     }
 
-    // Event Listener Input
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
         filterRecipes(e.target.value);
       });
     }
 
-    // Event Listener Reset
     if (resetBtn) {
       resetBtn.addEventListener('click', () => {
         if (searchInput) {
