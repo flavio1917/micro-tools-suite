@@ -1,5 +1,4 @@
 ---
-// src/components/recipes/RecipeSearch.astro
 import recipes from '../../data/recipes.json';
 import RecipeCard from './RecipeCard.astro';
 ---
@@ -55,7 +54,6 @@ import RecipeCard from './RecipeCard.astro';
     const cards = document.querySelectorAll('.recipe-card');
 
     function filterRecipes(query) {
-      // Pulizia query: minuscolo e divide in termini
       const searchTerms = query.toLowerCase().trim().split(/\s+/).filter(t => t.length >= 2);
       let visibleCount = 0;
 
@@ -66,14 +64,11 @@ import RecipeCard from './RecipeCard.astro';
           return;
         }
 
-        // Recuperiamo Titolo e Slug dai data-attributes della card
         const title = (card.getAttribute('data-title') || '').toLowerCase();
         const slug = (card.getAttribute('data-slug') || '').toLowerCase();
         
-        // LOGICA RICHIESTA: Ricerca solo su Titolo e Slug
-        // Rimuoviamo il controllo sugli ingredienti
+        // Ricerca esclusiva su Titolo e Slug
         const isVisible = searchTerms.some(term => {
-          // Utilizziamo la radice per gestire singolare/plurale
           const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
           return title.includes(root) || slug.includes(root);
         });
@@ -86,7 +81,6 @@ import RecipeCard from './RecipeCard.astro';
         }
       });
 
-      // Toggle visibilità griglia
       if (visibleCount === 0) {
         if(grid) grid.classList.add('hidden');
         if(noResults) noResults.classList.remove('hidden');

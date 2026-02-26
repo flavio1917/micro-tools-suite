@@ -7,14 +7,15 @@ export interface Props {
   lang?: string;
   description?: string;
   ogImage?: string;
+  recipeData?: any; 
 }
 
-// SEO STRATEGICA: Titolo e Descrizione con keyword esatte
 const { 
   title = "Convertitore Friggitrice ad Aria: Tempi e Gradi Online", 
   lang = "it",
-  description = "Il miglior convertitore friggitrice ad aria online. Trasforma tempi e temperature da forno a air fryer in un click. Oltre 220 ricette ottimizzate.",
-  ogImage = "https://www.convertitorefriggitrice.it/og-image.jpg"
+  description = "Il miglior convertitore friggitrice ad aria online. Trasforma tempi e temperature da forno a Air Fryer in un click. Oltre 220 ricette ottimizzate.",
+  ogImage = "https://www.convertitorefriggitrice.it/og-image.jpg",
+  recipeData
 } = Astro.props;
 ---
 
@@ -28,7 +29,7 @@ const {
     
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="convertitore friggitrice ad aria, conversione tempi friggitrice ad aria, calcolo gradi air fryer, ricette friggitrice ad aria" />
+    <meta name="keywords" content="convertitore friggitrice ad aria, calcolo tempi friggitrice ad aria, conversione forno friggitrice aria, ricette air fryer" />
     <link rel="canonical" href="https://www.convertitorefriggitrice.it" />
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
 
@@ -49,7 +50,7 @@ const {
         "@type": "WebApplication",
         "name": "Convertitore Friggitrice ad Aria",
         "url": "https://www.convertitorefriggitrice.it",
-        "description": "Strumento online gratuito per convertire tempi e temperature da forno tradizionale a friggitrice ad aria.",
+        "description": "Strumento online per convertire automaticamente tempi e temperature da forno a friggitrice ad aria.",
         "applicationCategory": "KitchenTool",
         "operatingSystem": "All",
         "offers": {
@@ -59,6 +60,23 @@ const {
         }
       }
     </script>
+
+    {recipeData && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
+        "name": recipeData.title,
+        "image": [`https://www.convertitorefriggitrice.it${recipeData.image}`],
+        "description": `Come cucinare ${recipeData.title} in friggitrice ad aria.`,
+        "cookTime": `PT${recipeData.time}M`,
+        "recipeIngredient": recipeData.ingredients,
+        "prepTime": "PT5M",
+        "author": {
+          "@type": "Organization",
+          "name": "Convertitore Friggitrice"
+        }
+      })} />
+    )}
   </head>
   
   <body class="bg-[#0B1120] text-slate-300 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white">
@@ -70,8 +88,7 @@ const {
       <div class="max-w-[480px] mx-auto px-6 space-y-6">
         <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-800 shadow-inner text-justify">
           <p class="text-[10px] text-slate-500 leading-relaxed italic">
-            <strong>Disclaimer:</strong> Questo sito offre uno strumento di calcolo basato su medie matematiche. 
-            In qualità di Affiliato Amazon, riceviamo un guadagno dagli acquisti idonei tramite i link presenti.
+            <strong>Trasparenza:</strong> In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. I risultati della conversione sono stime basate su parametri standard (-20°C / -20% tempo). Controlla sempre la cottura. Le immagini sono a scopo illustrativo (IA).
           </p>
         </div>
         
@@ -84,7 +101,7 @@ const {
         </nav>
         
         <p class="text-[10px] text-slate-600 font-mono italic">
-          © {new Date().getFullYear()} convertitorefriggitrice.it - Versione Smart 2.0
+          © {new Date().getFullYear()} convertitorefriggitrice.it
         </p>
       </div>
     </footer>
