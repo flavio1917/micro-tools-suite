@@ -20,8 +20,8 @@ import RecipeCard from './RecipeCard.astro';
           <input 
             type="text" 
             id="recipe-search-input" 
-            placeholder="🔍 Cerca per titolo o URL (es. 'pollo', 'patatine')..." 
-            class="block w-full p-4 pl-6 text-lg bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none shadow-xl transition-all"
+            placeholder="🔍 Cerca per titolo o categoria (es. 'pollo', 'frittura')..." 
+            class="block w-full p-4 pl-6 text-lg bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent outline-none shadow-xl transition-all"
           >
         </div>
       </div>
@@ -29,7 +29,9 @@ import RecipeCard from './RecipeCard.astro';
 
     <div id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       {recipes.map((recipe) => (
-        <RecipeCard recipe={recipe} />
+        <div class="recipe-wrapper" data-title={recipe.title} data-slug={recipe.slug} data-keywords={recipe.keywords || ''}>
+          <RecipeCard recipe={recipe} />
+        </div>
       ))}
     </div>
 
@@ -37,7 +39,7 @@ import RecipeCard from './RecipeCard.astro';
       <span class="text-6xl block mb-4">😕</span>
       <h3 class="text-xl font-bold text-white">Nessuna ricetta trovata</h3>
       <p class="text-slate-400 mt-2">Prova a cercare un titolo diverso o usa parole più semplici.</p>
-      <button id="reset-search" class="mt-6 text-blue-400 hover:text-blue-300 underline underline-offset-4 cursor-pointer">
+      <button id="reset-search" class="mt-6 text-[#F59E0B] hover:text-white underline underline-offset-4 cursor-pointer transition-colors">
         Mostra tutte le ricette
       </button>
     </div>
@@ -51,33 +53,37 @@ import RecipeCard from './RecipeCard.astro';
     const grid = document.getElementById('recipes-grid');
     const noResults = document.getElementById('no-results');
     const resetBtn = document.getElementById('reset-search');
-    const cards = document.querySelectorAll('.recipe-card');
+    
+    // Ora peschiamo i wrapper che contengono i dati
+    const wrappers = document.querySelectorAll('.recipe-wrapper');
 
     function filterRecipes(query) {
       const searchTerms = query.toLowerCase().trim().split(/\s+/).filter(t => t.length >= 2);
       let visibleCount = 0;
 
-      cards.forEach(card => {
+      wrappers.forEach(wrapper => {
         if (query.trim() === "") {
-          card.style.display = '';
+          wrapper.style.display = '';
           visibleCount++;
           return;
         }
 
-        const title = (card.getAttribute('data-title') || '').toLowerCase();
-        const slug = (card.getAttribute('data-slug') || '').toLowerCase();
+        // Recuperiamo Titolo, Slug e le nuove KEYWORDS
+        const title = (wrapper.getAttribute('data-title') || '').toLowerCase();
+        const slug = (wrapper.getAttribute('data-slug') || '').toLowerCase();
+        const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
         
-        // Ricerca esclusiva su Titolo e Slug
+        // La ricerca ora copre anche le parole chiave nascoste (es. "frittura")
         const isVisible = searchTerms.some(term => {
           const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
-          return title.includes(root) || slug.includes(root);
+          return title.includes(root) || slug.includes(root) || keywords.includes(root);
         });
 
         if (isVisible) {
-          card.style.display = '';
+          wrapper.style.display = '';
           visibleCount++;
         } else {
-          card.style.display = 'none';
+          wrapper.style.display = 'none';
         }
       });
 

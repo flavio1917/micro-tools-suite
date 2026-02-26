@@ -16,6 +16,10 @@ const { recipe } = Astro.props;
 
 // Gestione immagine
 const imagePath = `/images/recipes/${recipe.slug}.webp`;
+
+// Calcoliamo il numero base di porzioni estraendolo dalla stringa (es: "4" o "4-6")
+// Se non c'è, il default è 2
+const defaultPortions = parseInt(recipe.portions) || 2;
 ---
 
 <MainLayout title={`${recipe.title} - Ricetta Friggitrice ad Aria`}>
@@ -63,11 +67,16 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
         <div class="text-xl md:text-2xl font-bold text-green-400 mt-2">{recipe.prep_time || 'N/D'}</div>
       </div>
 
-      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
-        <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">Porzioni</span>
-        <div class="text-2xl md:text-3xl font-bold text-purple-400 mt-1">
-          {recipe.portions || 'N/D'} {recipe.portions && <span class="text-sm">pers.</span>}
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center items-center relative group">
+        <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-2">Porzioni</span>
+        <div class="flex items-center justify-center gap-3 mt-1">
+          <button id="btn-minus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg" aria-label="Riduci">-</button>
+          <div class="text-2xl md:text-3xl font-bold text-purple-400 w-8 text-center" id="portions-display">
+            {defaultPortions}
+          </div>
+          <button id="btn-plus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg" aria-label="Aumenta">+</button>
         </div>
+        <span class="text-[10px] text-slate-500 mt-1">pers.</span>
       </div>
     </div>
 
@@ -83,7 +92,7 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
               recipe.ingredients.map((ing) => (
                 <li class="flex items-start gap-3 text-slate-300 group">
                   <input type="checkbox" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500">
-                  <span class="leading-relaxed group-hover:text-white transition-colors">{ing}</span>
+                  <span class="leading-relaxed group-hover:text-white transition-colors ingredient-text" data-original={ing}>{ing}</span>
                 </li>
               ))
             ) : (
@@ -104,7 +113,6 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
           
           <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
             
-            {/* RENDER DINAMICO DELLE ISTRUZIONI */}
             {recipe.instructions && Array.isArray(recipe.instructions) ? (
               recipe.instructions.map((step, index) => (
                 <div class="flex gap-6 relative">
@@ -117,7 +125,6 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
                 </div>
               ))
             ) : (
-              /* FALLBACK PER VECCHIE RICETTE NON ANCORA AGGIORNATE */
               <>
                 <div class="flex gap-6 relative">
                   <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">1</div>
@@ -142,7 +149,6 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
               </>
             )}
 
-            {/* BOX TIP (Sempre alla fine della linea) */}
             {recipe.tip && (
               <div class="flex gap-6 relative">
                 <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-bold text-black shadow-lg shadow-amber-500/20 ring-4 ring-slate-900 z-10">💡</div>
@@ -167,4 +173,69 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
       </div>
     </div>
   </div>
+
+  <script is:inline define:vars={{ basePortions: defaultPortions }}>
+    document.addEventListener('DOMContentLoaded', () => {
+      let currentPortions = basePortions;
+      const display = document.getElementById('portions-display');
+      const btnMinus = document.getElementById('btn-minus');
+      const btnPlus = document.getElementById('btn-plus');
+      const ingredients = document.querySelectorAll('.ingredient-text');
+
+      if (!display || !btnMinus || !btnPlus) return;
+
+      // Funzione intelligente per scalare i numeri
+      function scaleIngredient(originalStr, ratio) {
+        // Cerca di beccare un numero (intero, decimale o frazione) all'inizio della stringa dell'ingrediente
+        const match = originalStr.trim().match(/^([\d.,]+(?:\/\d+)?)\s+(.*)/);
+        
+        // Se l'ingrediente non inizia con un numero (es. "Sale e pepe"), ritorna la stringa invariata
+        if (!match) return originalStr; 
+
+        let numStr = match[1].replace(',', '.');
+        let num = 0;
+        
+        // Risolvi frazioni (es. "1/2")
+        if (numStr.includes('/')) {
+          const parts = numStr.split('/');
+          num = parseFloat(parts[0]) / parseFloat(parts[1]);
+        } else {
+          num = parseFloat(numStr);
+        }
+
+        if (isNaN(num)) return originalStr;
+
+        let newNum = num * ratio;
+        
+        // Arrotonda per evitare risultati brutti come 1.3333333. Rimuove lo zero inutile se è intero
+        newNum = Number.isInteger(newNum) ? newNum : parseFloat(newNum.toFixed(2));
+
+        return newNum + " " + match[2];
+      }
+
+      function updateUI() {
+        display.textContent = currentPortions;
+        const ratio = currentPortions / basePortions;
+
+        ingredients.forEach(el => {
+          const originalText = el.getAttribute('data-original');
+          el.textContent = scaleIngredient(originalText, ratio);
+        });
+      }
+
+      btnMinus.addEventListener('click', () => {
+        if (currentPortions > 1) { // Non scendere sotto la singola porzione
+          currentPortions--;
+          updateUI();
+        }
+      });
+
+      btnPlus.addEventListener('click', () => {
+        if (currentPortions < 20) { // Limite massimo di buon senso
+          currentPortions++;
+          updateUI();
+        }
+      });
+    });
+  </script>
 </MainLayout>
