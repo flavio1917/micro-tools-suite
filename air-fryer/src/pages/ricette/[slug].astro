@@ -24,7 +24,7 @@ const defaultPortions = parseInt(recipe.portions) || 2;
 
 <MainLayout title={`${recipe.title} - Ricetta Friggitrice ad Aria`}>
   
-  <div class="relative h-[50vh] min-h-[400px] w-full overflow-hidden bg-slate-900">
+  <div class="relative h-[40vh] min-h-[320px] md:h-[50vh] md:min-h-[400px] w-full overflow-hidden bg-slate-900">
     <img 
       src={imagePath} 
       alt={recipe.title} 
@@ -33,17 +33,17 @@ const defaultPortions = parseInt(recipe.portions) || 2;
     />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
     
-    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-16 items-center text-center z-10">
+    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-12 md:pb-16 items-center text-center z-10">
       
-      <a href="/#ricettario" class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-slate-800/60 hover:bg-slate-700/80 backdrop-blur-md text-slate-300 hover:text-white transition-all border border-slate-600/50 text-xs md:text-sm font-medium shadow-lg group">
-        <svg class="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+      <a href="/#ricettario" class="inline-flex items-center gap-2 px-6 py-3 md:px-4 md:py-2 mb-4 md:mb-6 rounded-full bg-slate-800/80 hover:bg-slate-700/90 backdrop-blur-md text-white transition-all border border-slate-500/50 text-sm font-bold md:font-medium shadow-xl group">
+        <svg class="w-5 h-5 md:w-4 md:h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         Torna al Ricettario
       </a>
 
-      <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
+      <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-3 md:mb-4 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
         {recipe.title}
       </h1>
-      <p class="text-lg md:text-xl text-slate-200 max-w-2xl font-medium drop-shadow-md border-t border-white/20 pt-4 mt-2">
+      <p class="text-base md:text-xl text-slate-200 max-w-2xl font-medium drop-shadow-md border-t border-white/20 pt-3 md:pt-4 mt-1 md:mt-2">
         {recipe.description}
       </p>
     </div>
@@ -184,18 +184,13 @@ const defaultPortions = parseInt(recipe.portions) || 2;
 
       if (!display || !btnMinus || !btnPlus) return;
 
-      // Funzione intelligente per scalare i numeri
       function scaleIngredient(originalStr, ratio) {
-        // Cerca di beccare un numero (intero, decimale o frazione) all'inizio della stringa dell'ingrediente
         const match = originalStr.trim().match(/^([\d.,]+(?:\/\d+)?)\s+(.*)/);
-        
-        // Se l'ingrediente non inizia con un numero (es. "Sale e pepe"), ritorna la stringa invariata
         if (!match) return originalStr; 
 
         let numStr = match[1].replace(',', '.');
         let num = 0;
         
-        // Risolvi frazioni (es. "1/2")
         if (numStr.includes('/')) {
           const parts = numStr.split('/');
           num = parseFloat(parts[0]) / parseFloat(parts[1]);
@@ -206,8 +201,6 @@ const defaultPortions = parseInt(recipe.portions) || 2;
         if (isNaN(num)) return originalStr;
 
         let newNum = num * ratio;
-        
-        // Arrotonda per evitare risultati brutti come 1.3333333. Rimuove lo zero inutile se è intero
         newNum = Number.isInteger(newNum) ? newNum : parseFloat(newNum.toFixed(2));
 
         return newNum + " " + match[2];
@@ -224,14 +217,14 @@ const defaultPortions = parseInt(recipe.portions) || 2;
       }
 
       btnMinus.addEventListener('click', () => {
-        if (currentPortions > 1) { // Non scendere sotto la singola porzione
+        if (currentPortions > 1) { 
           currentPortions--;
           updateUI();
         }
       });
 
       btnPlus.addEventListener('click', () => {
-        if (currentPortions < 20) { // Limite massimo di buon senso
+        if (currentPortions < 20) { 
           currentPortions++;
           updateUI();
         }

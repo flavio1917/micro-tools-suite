@@ -71,7 +71,7 @@ const translations = {
     tab_conv: "Pegar Receta",
     tab_food: "Datos Manuales",
     tab_recipes: "Recetas",
-    placeholder: "Pega el texto de la receta para el horno aquí...",
+    placeholder: "Pega el texto de la receta para il horno aquí...",
     btn_action: "Convertir Ahora",
     label_temp: "Temperatura",
     label_time: "Tiempo",
@@ -212,33 +212,43 @@ const t = translations[lang as keyof typeof translations] || translations.it;
     </div>
   </div>
 
-  <div class="grid grid-cols-3 gap-3 max-w-[480px] mx-auto mt-6 md:mt-4">
-    {t.shop_items.map(item => (
-      <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-2 text-center hover:border-[#F59E0B]/50 hover:bg-white/10 transition-all group block shadow-lg relative">
-        <span class="absolute top-1 right-2 text-[7px] text-slate-500 font-bold opacity-70 italic">AD</span>
-        <div class="aspect-square w-full mb-3 overflow-hidden rounded-xl bg-white/10 flex items-center justify-center p-2">
-          <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
-        </div>
-        <div class="min-h-[32px] flex items-center justify-center">
-          <span class="text-[10px] sm:text-[11px] font-bold text-slate-200 group-hover:text-[#F59E0B] leading-tight uppercase tracking-tighter transition-colors">
-            {item.name}
-          </span>
-        </div>
-      </a>
-    ))}
-  </div>
+  <div class="flex flex-col">
+    
+    <div class="grid grid-cols-3 gap-3 md:gap-2 max-w-[480px] w-full mx-auto mt-6 md:mt-4 order-2 md:order-1">
+      {t.shop_items.map(item => (
+        <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl md:rounded-xl p-2 md:p-1.5 text-center hover:border-[#F59E0B]/50 hover:bg-white/10 transition-all group block shadow-lg relative overflow-hidden">
+          
+          <span class="absolute top-0 right-0 bg-[#F59E0B] text-black text-[8px] md:text-[7px] font-black px-1.5 py-0.5 rounded-bl-lg z-10 uppercase tracking-widest shadow-sm">AD</span>
+          
+          <div class="h-16 md:h-14 w-full mb-2 overflow-hidden rounded-xl bg-white/10 flex items-center justify-center p-1">
+            <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+          </div>
+          
+          <div class="flex flex-col items-center justify-center min-h-[32px]">
+            <span class="text-[10px] md:text-[9px] font-bold text-slate-200 group-hover:text-white leading-none uppercase tracking-tighter transition-colors mb-1.5">
+              {item.name}
+            </span>
+            <span class="text-[8px] md:text-[7px] text-[#F59E0B] font-semibold uppercase tracking-wider bg-[#F59E0B]/10 border border-[#F59E0B]/20 px-1.5 py-0.5 rounded-full whitespace-nowrap">
+              Su Amazon
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
 
-  <div class="max-w-[480px] mx-auto mt-6 md:mt-4">
-    <button id="cta-recipes" class="w-full py-4 md:py-3.5 border-2 border-[#F59E0B]/80 bg-gradient-to-br from-[#F59E0B]/20 to-black/40 backdrop-blur-sm hover:from-[#F59E0B]/30 hover:to-black/60 rounded-xl font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
-      
-      <div class="absolute inset-0 bg-[#F59E0B]/10 animate-pulse pointer-events-none"></div>
-      
-      <span class="text-[#F59E0B] text-xs uppercase tracking-wider mb-1 relative z-10 drop-shadow-md">{t.cta_recipes_top}</span>
-      <span class="text-white text-lg md:text-xl flex items-center gap-2 group-hover:text-[#F59E0B] transition-colors relative z-10 drop-shadow-lg">
-        {t.cta_recipes_bottom}
-        <svg class="w-5 h-5 md:w-6 md:h-6 text-[#F59E0B] animate-bounce transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-      </span>
-    </button>
+    <div class="max-w-[480px] w-full mx-auto mt-6 md:mt-4 order-1 md:order-2">
+      <button id="cta-recipes" class="w-full py-4 md:py-3.5 border border-[#F59E0B]/80 bg-[#0B1120] rounded-xl font-bold shadow-[0_0_15px_rgba(245,158,11,0.15)] transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
+        
+        <div class="absolute inset-0 bg-[#0F172A] animate-pulse pointer-events-none opacity-80"></div>
+        
+        <span class="text-[#F59E0B] text-xs uppercase tracking-wider mb-1 relative z-10">{t.cta_recipes_top}</span>
+        <span class="text-white text-lg md:text-xl flex items-center gap-2 group-hover:text-[#F59E0B] transition-colors relative z-10">
+          {t.cta_recipes_bottom}
+          <svg class="w-5 h-5 md:w-6 md:h-6 text-[#F59E0B] animate-bounce transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </span>
+      </button>
+    </div>
+
   </div>
 
   <div class="mx-auto text-center space-y-4 px-4 pb-8 md:pb-4 mt-8 md:mt-4">
