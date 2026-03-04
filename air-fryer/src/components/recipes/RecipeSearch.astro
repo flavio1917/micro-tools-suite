@@ -101,6 +101,14 @@ import RecipeCard from './RecipeCard.astro';
       searchInput.addEventListener('input', (e) => {
         filterRecipes(e.target.value);
       });
+
+      // NUOVA AGGIUNTA: Chiude la tastiera su mobile alla pressione di "Vai" o "Invio"
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault(); // Evita ricaricamenti anomali
+          searchInput.blur(); // Toglie il focus, nascondendo la tastiera
+        }
+      });
     }
 
     if (resetBtn) {
