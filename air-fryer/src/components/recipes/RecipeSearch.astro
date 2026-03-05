@@ -54,39 +54,81 @@ import RecipeCard from './RecipeCard.astro';
     const noResults = document.getElementById('no-results');
     const resetBtn = document.getElementById('reset-search');
     
-    // Peschiamo i wrapper che contengono i dati
-    const wrappers = document.querySelectorAll('.recipe-wrapper');
+    // Peschiamo i wrapper convertendoli in Array per poterli ordinare
+    const wrappers = Array.from(document.querySelectorAll('.recipe-wrapper'));
+    
+    // Memorizziamo l'ordine iniziale per poterlo ripristinare
+    wrappers.forEach((w, index) => w.setAttribute('data-original-index', index));
 
     function filterRecipes(query) {
-      const searchTerms = query.toLowerCase().trim().split(/\s+/).filter(t => t.length >= 2);
+      const rawQuery = query.toLowerCase().trim();
+      const searchTerms = rawQuery.split(/\s+/).filter(t => t.length >= 2);
       let visibleCount = 0;
 
-      wrappers.forEach(wrapper => {
-        if (query.trim() === "") {
+      // Se la ricerca è vuota, ripristina l'ordine originale
+      if (rawQuery === "") {
+        wrappers.sort((a, b) => parseInt(a.getAttribute('data-original-index')) - parseInt(b.getAttribute('data-original-index')));
+        wrappers.forEach(wrapper => {
+          grid.appendChild(wrapper);
           wrapper.style.display = '';
           visibleCount++;
-          return;
-        }
+        });
+      } else {
+        let results = [];
 
-        const title = (wrapper.getAttribute('data-title') || '').toLowerCase();
-        const slug = (wrapper.getAttribute('data-slug') || '').toLowerCase();
-        const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
-        
-        // LA MAGIA È QUI: Sostituito .some() con .every() (Logica AND invece di OR)
-        // Ora OGNI parola cercata deve essere presente per mostrare la ricetta
-        const isVisible = searchTerms.every(term => {
-          // Tronca l'ultima lettera se la parola è più lunga di 4 caratteri (per gestire plurali/singolari base)
-          const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
-          return title.includes(root) || slug.includes(root) || keywords.includes(root);
+        wrappers.forEach(wrapper => {
+          const title = (wrapper.getAttribute('data-title') || '').toLowerCase();
+          const slug = (wrapper.getAttribute('data-slug') || '').toLowerCase();
+          const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
+          
+          const isVisible = searchTerms.every(term => {
+            const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
+            return title.includes(root) || slug.includes(root) || keywords.includes(root);
+          });
+
+          if (isVisible) {
+            // CALCOLO DEL PUNTEGGIO DI PERTINENZA
+            let score = 0;
+
+            // 1. Match Esatto di una parola intera (es. "parmigiana" non viene confuso con "parmigiano")
+            try {
+              const exactWordRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
+              if (exactWordRegex.test(title)) score += 100;
+            } catch(e) {}
+
+            // 2. Il titolo contiene l'esatta frase cercata
+            if (title.includes(rawQuery)) score += 50;
+
+            // 3. Punteggi per le singole parole tagliate
+            searchTerms.forEach(term => {
+              const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
+              if (title.includes(root)) score += 10;
+              if (keywords.includes(root)) score += 1;
+            });
+
+            results.push({ 
+              wrapper: wrapper, 
+              score: score, 
+              originalIndex: parseInt(wrapper.getAttribute('data-original-index')) 
+            });
+          } else {
+            wrapper.style.display = 'none';
+          }
         });
 
-        if (isVisible) {
-          wrapper.style.display = '';
+        // Ordina i risultati in base al punteggio (decrescente). A parità di punti, usa l'ordine originale.
+        results.sort((a, b) => {
+          if (b.score !== a.score) return b.score - a.score;
+          return a.originalIndex - b.originalIndex;
+        });
+
+        // Appendi gli elementi riordinati al DOM
+        results.forEach(item => {
+          grid.appendChild(item.wrapper);
+          item.wrapper.style.display = '';
           visibleCount++;
-        } else {
-          wrapper.style.display = 'none';
-        }
-      });
+        });
+      }
 
       if (visibleCount === 0) {
         if(grid) grid.classList.add('hidden');
@@ -102,11 +144,11 @@ import RecipeCard from './RecipeCard.astro';
         filterRecipes(e.target.value);
       });
 
-      // NUOVA AGGIUNTA: Chiude la tastiera su mobile alla pressione di "Vai" o "Invio"
+      // Chiude la tastiera su mobile alla pressione di "Vai" o "Invio"
       searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') {
-          e.preventDefault(); // Evita ricaricamenti anomali
-          searchInput.blur(); // Toglie il focus, nascondendo la tastiera
+          e.preventDefault(); 
+          searchInput.blur(); 
         }
       });
     }
