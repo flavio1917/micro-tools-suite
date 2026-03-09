@@ -3,6 +3,7 @@ import recipesIt from '../../data/recipes-it.json';
 import recipesEn from '../../data/recipes-en.json';
 import recipesEs from '../../data/recipes-es.json';
 import recipesFr from '../../data/recipes-fr.json';
+import RecipeCard from './RecipeCard.astro';
 
 export interface Props { lang?: string; }
 const { lang = "it" } = Astro.props;
@@ -17,18 +18,14 @@ const allRecipes = {
 
 // Seleziona l'array corretto (di default usa l'italiano)
 const recipes = allRecipes[lang as keyof typeof allRecipes] || recipesIt;
-import RecipeCard from './RecipeCard.astro';
 
-export interface Props { lang?: string; }
-
-
-// Dizionario per le traduzioni della barra di ricerca
+// Dizionario per le traduzioni della barra di ricerca (AGGIORNATI I SUGGERIMENTI)
 const translations = {
   it: {
     title: "Cosa vuoi cucinare oggi?",
     subtitlePre: "Cerca tra ",
     subtitlePost: " ricette ottimizzate per la tua friggitrice ad aria.",
-    placeholder: "🔍 Cerca per titolo o categoria (es. 'frittura gamberi')...",
+    placeholder: "🔍 Cerca per titolo o categoria (es. 'italiana', 'pollo')...",
     noResultsTitle: "Nessuna ricetta trovata",
     noResultsDesc: "Prova a cercare un titolo diverso o usa parole più semplici.",
     resetBtn: "Mostra tutte le ricette"
@@ -37,7 +34,7 @@ const translations = {
     title: "What do you want to cook today?",
     subtitlePre: "Search through ",
     subtitlePost: " optimized recipes for your air fryer.",
-    placeholder: "🔍 Search by title or category (e.g. 'fried shrimp')...",
+    placeholder: "🔍 Search by title or category (e.g. 'authentic', 'chicken')...",
     noResultsTitle: "No recipes found",
     noResultsDesc: "Try searching for a different title or use simpler words.",
     resetBtn: "Show all recipes"
@@ -46,7 +43,7 @@ const translations = {
     title: "¿Qué quieres cocinar hoy?",
     subtitlePre: "Busca entre ",
     subtitlePost: " recetas optimizadas para tu freidora de aire.",
-    placeholder: "🔍 Buscar por título o categoría (ej. 'patatas fritas')...",
+    placeholder: "🔍 Buscar por título o categoría (ej. 'auténtica', 'pollo')...",
     noResultsTitle: "No se encontraron recetas",
     noResultsDesc: "Prueba a buscar un título diferente o usa palabras más sencillas.",
     resetBtn: "Mostrar todas las recetas"
@@ -55,7 +52,7 @@ const translations = {
     title: "Que voulez-vous cuisiner aujourd'hui ?",
     subtitlePre: "Recherchez parmi ",
     subtitlePost: " recettes optimisées pour votre friteuse à air.",
-    placeholder: "🔍 Rechercher par titre ou catégorie (ex. 'poulet frit')...",
+    placeholder: "🔍 Rechercher par titre ou catégorie (ex. 'authentique', 'poulet')...",
     noResultsTitle: "Aucune recette trouvée",
     noResultsDesc: "Essayez de rechercher un titre différent ou utilisez des mots plus simples.",
     resetBtn: "Afficher toutes les recettes"
@@ -90,11 +87,18 @@ const t = translations[lang as keyof typeof translations] || translations.it;
     </div>
 
     <div id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      {recipes.map((recipe) => (
-        <div class="recipe-wrapper" data-title={recipe.title} data-slug={recipe.slug} data-keywords={recipe.keywords || ''}>
-          <RecipeCard recipe={recipe} lang={lang} />
-        </div>
-      ))}
+      {recipes.map((recipe) => {
+        // INIEZIONE DINAMICA DELLE KEYWORD PER LE RICETTE ITALIANE
+        const isAuth = recipe.isItalian === true || recipe.isItalian === "true";
+        const authKeyword = isAuth ? "italia italiana autentica authentic italian authentique auténtica" : "";
+        const combinedKeywords = `${recipe.keywords || ''} ${authKeyword}`.trim();
+
+        return (
+          <div class="recipe-wrapper" data-title={recipe.title} data-slug={recipe.slug} data-keywords={combinedKeywords}>
+            <RecipeCard recipe={recipe} lang={lang} />
+          </div>
+        );
+      })}
     </div>
 
     <div id="no-results" class="hidden text-center py-12">
