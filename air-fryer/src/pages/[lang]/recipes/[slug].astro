@@ -29,7 +29,6 @@ export async function getStaticPaths() {
 
 const { recipe, lang } = Astro.props;
 
-// CORRETTO IL LINK DEL RICETTARIO QUI
 const translations = {
   it: {
     back: "Torna al Ricettario", backLink: "/#ricettario",
@@ -41,7 +40,7 @@ const translations = {
     step2: "Cottura", step2Desc: `Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minuti</strong>.`,
     tipTitle: "Il Segreto dello Chef",
     searchOther: "← Cerca un'altra ricetta",
-    authBadge: "🇮🇹 Ricetta Autentica", seoAuth: " | Ricetta Originale",
+    authBadge: "Ricetta Autentica", seoAuth: " | Ricetta Originale",
     unitTemp: "°C", unitTime: "min"
   },
   en: {
@@ -54,7 +53,7 @@ const translations = {
     step2: "Cooking", step2Desc: `Set air fryer to <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°F</strong>. Cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
     tipTitle: "Chef's Tip",
     searchOther: "← Search another recipe",
-    authBadge: "🇮🇹 Authentic Italian", seoAuth: " | Authentic Italian Recipe",
+    authBadge: "Authentic Italian", seoAuth: " | Authentic Italian Recipe",
     unitTemp: "°F", unitTime: "min"
   },
   es: {
@@ -67,7 +66,7 @@ const translations = {
     step2: "Cocción", step2Desc: `Ajusta la freidora a <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutos</strong>.`,
     tipTitle: "Consejo del Chef",
     searchOther: "← Buscar otra receta",
-    authBadge: "🇮🇹 Receta Auténtica", seoAuth: " | Auténtica Receta Italiana",
+    authBadge: "Receta Auténtica", seoAuth: " | Auténtica Receta Italiana",
     unitTemp: "°C", unitTime: "min"
   },
   fr: {
@@ -80,7 +79,7 @@ const translations = {
     step2: "Cuisson", step2Desc: `Réglez la friteuse sur <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
     tipTitle: "Astuce du Chef",
     searchOther: "← Chercher une autre recette",
-    authBadge: "🇮🇹 Recette Authentique", seoAuth: " | Recette Italienne Authentique",
+    authBadge: "Recette Authentique", seoAuth: " | Recette Italienne Authentique",
     unitTemp: "°C", unitTime: "min"
   }
 };
@@ -125,9 +124,10 @@ function enrichText(text: string, currentLang: string) {
       </a>
 
       {isAuth && (
-        <span class="mb-3 px-3 py-1 bg-green-900/80 border border-green-500/50 text-green-100 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full backdrop-blur-sm shadow-[0_0_15px_rgba(34,197,94,0.3)]">
-          {t.authBadge}
-        </span>
+        <div class="mb-4 inline-flex items-center gap-2.5 px-4 py-1.5 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 border border-yellow-200/80 text-black text-[10px] md:text-xs font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(245,158,11,0.5)] transform transition-transform hover:scale-105 backdrop-blur-sm">
+          <img src="https://flagcdn.com/it.svg" alt="Italia" class="w-5 h-auto rounded-sm shadow-md border border-black/10" />
+          <span class="drop-shadow-sm">{t.authBadge}</span>
+        </div>
       )}
 
       <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-3 md:mb-4 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
