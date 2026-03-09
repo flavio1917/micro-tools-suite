@@ -1,4 +1,6 @@
 ---
+import recipesEn from '../../data/recipes-en.json';
+
 export interface Props {
   recipe: any;
   lang?: string;
@@ -22,8 +24,14 @@ const recipeUrl = `/${lang}/recipes/${recipe.slug}`;
 const tempSymbol = lang === "en" ? "°F" : "°C";
 const timeSymbol = lang === "en" ? " min" : "'";
 
-// CONTROLLO ROBUSTO: verifica sia il booleano (true) che la stringa ("true")
-const isAuth = recipe.isItalian === true || recipe.isItalian === "true";
+// LOGICA CROSS-REFERENCE: Se "isItalian" manca nel JSON corrente, lo cerca nel file Inglese
+let isAuth = recipe.isItalian === true || recipe.isItalian === "true";
+if (recipe.isItalian === undefined) {
+  const enRecipe = recipesEn.find((r: any) => (r.image || r.slug) === baseImageName);
+  if (enRecipe) {
+    isAuth = enRecipe.isItalian === true || enRecipe.isItalian === "true";
+  }
+}
 
 const authLabels = {
   it: "Autentica",

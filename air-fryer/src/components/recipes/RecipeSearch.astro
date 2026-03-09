@@ -16,10 +16,8 @@ const allRecipes = {
   fr: recipesFr
 };
 
-// Seleziona l'array corretto (di default usa l'italiano)
 const recipes = allRecipes[lang as keyof typeof allRecipes] || recipesIt;
 
-// Dizionario per le traduzioni della barra di ricerca (AGGIORNATI I SUGGERIMENTI)
 const translations = {
   it: {
     title: "Cosa vuoi cucinare oggi?",
@@ -88,8 +86,17 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 
     <div id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       {recipes.map((recipe) => {
-        // INIEZIONE DINAMICA DELLE KEYWORD PER LE RICETTE ITALIANE
-        const isAuth = recipe.isItalian === true || recipe.isItalian === "true";
+        // CROSS REFERENCE PER LA RICERCA
+        const baseImageName = recipe.image || recipe.slug;
+        let isAuth = recipe.isItalian === true || recipe.isItalian === "true";
+        
+        if (recipe.isItalian === undefined) {
+          const enRecipe = recipesEn.find((r: any) => (r.image || r.slug) === baseImageName);
+          if (enRecipe) {
+            isAuth = enRecipe.isItalian === true || enRecipe.isItalian === "true";
+          }
+        }
+
         const authKeyword = isAuth ? "italia italiana autentica authentic italian authentique auténtica" : "";
         const combinedKeywords = `${recipe.keywords || ''} ${authKeyword}`.trim();
 
@@ -120,10 +127,7 @@ const t = translations[lang as keyof typeof translations] || translations.it;
     const noResults = document.getElementById('no-results');
     const resetBtn = document.getElementById('reset-search');
     
-    // Peschiamo i wrapper convertendoli in Array per poterli ordinare
     const wrappers = Array.from(document.querySelectorAll('.recipe-wrapper'));
-    
-    // Memorizziamo l'ordine iniziale per poterlo ripristinare
     wrappers.forEach((w, index) => w.setAttribute('data-original-index', index));
 
     function filterRecipes(query) {
@@ -131,7 +135,6 @@ const t = translations[lang as keyof typeof translations] || translations.it;
       const searchTerms = rawQuery.split(/\s+/).filter(t => t.length >= 2);
       let visibleCount = 0;
 
-      // Se la ricerca è vuota, ripristina l'ordine originale
       if (rawQuery === "") {
         wrappers.sort((a, b) => parseInt(a.getAttribute('data-original-index')) - parseInt(b.getAttribute('data-original-index')));
         wrappers.forEach(wrapper => {
@@ -153,42 +156,31 @@ const t = translations[lang as keyof typeof translations] || translations.it;
           });
 
           if (isVisible) {
-            // CALCOLO DEL PUNTEGGIO DI PERTINENZA
             let score = 0;
-
-            // 1. Match Esatto di una parola intera
             try {
               const exactWordRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
               if (exactWordRegex.test(title)) score += 100;
             } catch(e) {}
 
-            // 2. Il titolo contiene l'esatta frase cercata
             if (title.includes(rawQuery)) score += 50;
 
-            // 3. Punteggi per le singole parole tagliate
             searchTerms.forEach(term => {
               const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
               if (title.includes(root)) score += 10;
               if (keywords.includes(root)) score += 1;
             });
 
-            results.push({ 
-              wrapper: wrapper, 
-              score: score, 
-              originalIndex: parseInt(wrapper.getAttribute('data-original-index')) 
-            });
+            results.push({ wrapper: wrapper, score: score, originalIndex: parseInt(wrapper.getAttribute('data-original-index')) });
           } else {
             wrapper.style.display = 'none';
           }
         });
 
-        // Ordina i risultati in base al punteggio (decrescente). A parità di punti, usa l'ordine originale.
         results.sort((a, b) => {
           if (b.score !== a.score) return b.score - a.score;
           return a.originalIndex - b.originalIndex;
         });
 
-        // Appendi gli elementi riordinati al DOM
         results.forEach(item => {
           grid.appendChild(item.wrapper);
           item.wrapper.style.display = '';
@@ -206,26 +198,15 @@ const t = translations[lang as keyof typeof translations] || translations.it;
     }
 
     if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        filterRecipes(e.target.value);
-      });
-
-      // Chiude la tastiera su mobile alla pressione di "Vai" o "Invio"
+      searchInput.addEventListener('input', (e) => filterRecipes(e.target.value));
       searchInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') {
-          e.preventDefault(); 
-          searchInput.blur(); 
-        }
+        if (e.key === 'Enter') { e.preventDefault(); searchInput.blur(); }
       });
     }
 
     if (resetBtn) {
       resetBtn.addEventListener('click', () => {
-        if (searchInput) {
-          searchInput.value = '';
-          filterRecipes('');
-          searchInput.focus();
-        }
+        if (searchInput) { searchInput.value = ''; filterRecipes(''); searchInput.focus(); }
       });
     }
   });
