@@ -14,12 +14,7 @@ const translations = {
     btn_action: "Converti Ora", label_temp: "Temperatura", label_time: "Tempo", eco_label: "Risparmio stimato: ~",
     manual_temp: "TEMP. FORNO", manual_time: "MINUTI FORNO", error_msg: "⚠️ Manca qualcosa! Inserisci Temperatura e Tempo.", 
     legal_privacy: "🔒 Privacy First: Calcoli locali. Nessun dato inviato.",
-    shop_items: [
-      { name: "Carta Forno", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.it/dp/B0FP284FKG?tag=convfriggit-21" },
-      { name: "Magneti Cottura", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.it/dp/B0FJRJP94B?tag=convfriggit-21" },
-      { name: "Olio Spray", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.it/dp/B0GC74RM68?tag=convfriggit-21" }
-    ],
-    alert_cap: "⚠️ Temp limitata a 200°C", cta_recipes_top: "Non sai cosa cucinare?", cta_recipes_bottom: `Esplora le nostre ${roundedCount}+ Ricette`, badge_grid: "TOP", btn_grid: "Prezzo"
+    alert_cap: "⚠️ Temp limitata a 200°C", cta_recipes_top: "Non sai cosa cucinare?", cta_recipes_bottom: `Esplora le nostre ${roundedCount}+ Ricette`
   },
   en: {
     title: "Air Fryer Calculator", subtitle: "Pro", tab_conv: "Paste Recipe", tab_food: "Manual Input", tab_recipes: "Recipes",
@@ -27,7 +22,7 @@ const translations = {
     btn_action: "Convert Now", label_temp: "Temperature", label_time: "Time", eco_label: "Est. Savings: ~",
     manual_temp: "OVEN TEMP.", manual_time: "OVEN MINUTES", error_msg: "⚠️ Missing inputs! Please provide Temp and Time.", 
     legal_privacy: "🔒 Privacy First: Local calculations. No data sent.",
-    shop_items: [], alert_cap: "⚠️ Capped at 400°F", cta_recipes_top: "Don't know what to cook?", cta_recipes_bottom: `Explore ${roundedCount}+ Recipes`, badge_grid: "TOP", btn_grid: "Price"
+    alert_cap: "⚠️ Capped at 400°F", cta_recipes_top: "Don't know what to cook?", cta_recipes_bottom: `Explore ${roundedCount}+ Recipes`
   },
   es: {
     title: "Freidora de Aire", subtitle: "Smart", tab_conv: "Pegar Receta", tab_food: "Datos Manuales", tab_recipes: "Recetas",
@@ -35,7 +30,7 @@ const translations = {
     btn_action: "Convertir Ahora", label_temp: "Temperatura", label_time: "Tiempo", eco_label: "Ahorro estimado: ~",
     manual_temp: "TEMP. HORNO", manual_time: "MINUTOS HORNO", error_msg: "⚠️ ¡Falta algo! Introduce Temperatura y Tiempo.", 
     legal_privacy: "🔒 Privacidad: Cálculos locales. Sin envío de datos.",
-    shop_items: [], alert_cap: "⚠️ Temp limitada a 200°C", cta_recipes_top: "¿No sabes qué cocinar?", cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`, badge_grid: "TOP", btn_grid: "Precio"
+    alert_cap: "⚠️ Temp limitada a 200°C", cta_recipes_top: "¿No sabes qué cocinar?", cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`
   },
   fr: {
     title: "Friteuse à Air", subtitle: "Smart", tab_conv: "Coller Recette", tab_food: "Saisie Manuelle", tab_recipes: "Recettes",
@@ -43,7 +38,7 @@ const translations = {
     btn_action: "Convertir", label_temp: "Température", label_time: "Temps", eco_label: "Économie est. : ~",
     manual_temp: "TEMP. FOUR", manual_time: "MINUTES FOUR", error_msg: "⚠️ Il manque des données ! Entrez la Température et le Temps.", 
     legal_privacy: "🔒 Confidentialité : Calculs locaux. Aucune donnée envoyée.",
-    shop_items: [], alert_cap: "⚠️ Temp. limitée à 200°C", cta_recipes_top: "Vous ne savez pas quoi cuisiner ?", cta_recipes_bottom: `Explorez nos ${roundedCount}+ Recettes`, badge_grid: "TOP", btn_grid: "Prix"
+    alert_cap: "⚠️ Temp. limitée à 200°C", cta_recipes_top: "Vous ne savez pas quoi cuisiner ?", cta_recipes_bottom: `Explorez nos ${roundedCount}+ Recettes`
   }
 };
 
@@ -145,54 +140,12 @@ const initialEco = isEn ? '$0.00' : '0.00€';
     </button>
   </div>
 
-  <div class="block md:hidden space-y-4">
-    {lang === 'it' && (
-      <div class="grid grid-cols-3 gap-2 w-full mx-auto">
-        {t.shop_items.map(item => (
-          <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-transparent border border-white/5 rounded-xl p-1.5 text-center hover:border-[#F59E0B]/50 transition-all group block relative">
-            <span class="absolute top-1 right-1 bg-emerald-500/20 text-emerald-400 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider z-10 backdrop-blur-sm border border-emerald-500/30">{t.badge_grid}</span>
-            <div class="aspect-square w-full mb-2 overflow-hidden bg-white/5 rounded-xl flex items-center justify-center p-2">
-              <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
-            </div>
-            <div class="flex flex-col items-center justify-center min-h-[40px]">
-              <span class="text-[10px] font-medium text-slate-300 group-hover:text-white leading-tight transition-colors mb-2">{item.name}</span>
-              <span class="text-[9px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-2.5 py-1.5 rounded-full whitespace-nowrap transition-colors w-full flex items-center justify-center gap-1">
-                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                {t.btn_grid}
-              </span>
-            </div>
-          </a>
-        ))}
-      </div>
-    )}
-  </div>
-
-  <div class="hidden md:block space-y-6">
-    {lang === 'it' && (
-      <div class="grid grid-cols-3 gap-3 w-full mx-auto">
-        {t.shop_items.map(item => (
-          <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-transparent border border-white/5 rounded-2xl p-2 text-center hover:border-[#F59E0B]/50 transition-all group block relative">
-            <span class="absolute top-2 right-2 bg-emerald-500/20 text-emerald-400 text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider z-10 border border-emerald-500/30">{t.badge_grid}</span>
-            <div class="aspect-square w-full mb-3 overflow-hidden bg-white/5 rounded-xl flex items-center justify-center p-3">
-              <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
-            </div>
-            <div class="flex flex-col items-center justify-center min-h-[44px]">
-              <span class="text-[11px] font-medium text-slate-300 group-hover:text-white leading-tight transition-colors mb-2.5">{item.name}</span>
-              <span class="text-[10px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-4 py-1.5 rounded-full whitespace-nowrap transition-colors w-full flex items-center justify-center gap-1.5">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                {t.btn_grid}
-              </span>
-            </div>
-          </a>
-        ))}
-      </div>
-    )}
-  </div>
-
   <div class="mx-auto text-center space-y-4 px-4 pb-4 md:mt-4">
     <p class="text-[11px] text-slate-500 leading-relaxed font-medium">{t.legal_privacy}</p>
     <div class="border-t border-white/5 w-1/2 mx-auto"></div>
   </div>
+  
+  <div class="h-24 md:h-12"></div>
 </div>
 
 {lang === 'it' && (
