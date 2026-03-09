@@ -2,13 +2,11 @@
 import MainLayout from '../../../layouts/MainLayout.astro';
 import AmazonProduct from '../../../components/ads/AmazonProduct.astro';
 
-// Importiamo i 4 database separati
 import recipesIt from '../../../data/recipes-it.json';
 import recipesEn from '../../../data/recipes-en.json';
 import recipesEs from '../../../data/recipes-es.json';
 import recipesFr from '../../../data/recipes-fr.json';
 
-// Funzione che genera le pagine dinamicamente per ogni lingua e ricetta
 export async function getStaticPaths() {
   const datasets = {
     it: recipesIt,
@@ -18,7 +16,6 @@ export async function getStaticPaths() {
   };
 
   const paths = [];
-  
   for (const [lang, recipes] of Object.entries(datasets)) {
     recipes.forEach((recipe) => {
       paths.push({
@@ -27,22 +24,21 @@ export async function getStaticPaths() {
       });
     });
   }
-  
   return paths;
 }
 
 const { recipe, lang } = Astro.props;
 
-// --- DIZIONARIO MULTILINGUA INTERFACCIA ---
+// CORRETTO IL LINK DEL RICETTARIO QUI
 const translations = {
   it: {
-    back: "Torna al Ricettario", backLink: "/it/#ricettario",
+    back: "Torna al Ricettario", backLink: "/#ricettario",
     temp: "Temperatura", time: "Cottura", prep: "Preparazione",
     portions: "Porzioni", pers: "pers.",
     ingTitle: "Ingredienti", noIng: "Vedi descrizione per i dettagli.",
     stepTitle: "Procedimento",
-    step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro. Se necessario, ungi leggermente il cibo con un filo d'olio spray o condiscilo in una ciotola per distribuire uniformemente le spezie.",
-    step2: "Cottura", step2Desc: `Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Inserisci il cibo e cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minuti</strong>.`,
+    step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro. Se necessario, ungi leggermente il cibo con un filo d'olio spray.",
+    step2: "Cottura", step2Desc: `Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minuti</strong>.`,
     tipTitle: "Il Segreto dello Chef",
     searchOther: "← Cerca un'altra ricetta",
     authBadge: "🇮🇹 Ricetta Autentica", seoAuth: " | Ricetta Originale",
@@ -54,8 +50,8 @@ const translations = {
     portions: "Servings", pers: "pers.",
     ingTitle: "Ingredients", noIng: "See description for details.",
     stepTitle: "Instructions",
-    step1: "Preparation", step1Desc: "Prepare all ingredients on the counter. If necessary, lightly coat the food with cooking spray or toss in a bowl to distribute spices evenly.",
-    step2: "Cooking", step2Desc: `Set air fryer to <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°F</strong>. Place food in basket and cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
+    step1: "Preparation", step1Desc: "Prepare all ingredients on the counter. Lightly coat the food with cooking spray.",
+    step2: "Cooking", step2Desc: `Set air fryer to <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°F</strong>. Cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
     tipTitle: "Chef's Tip",
     searchOther: "← Search another recipe",
     authBadge: "🇮🇹 Authentic Italian", seoAuth: " | Authentic Italian Recipe",
@@ -67,8 +63,8 @@ const translations = {
     portions: "Porciones", pers: "pers.",
     ingTitle: "Ingredientes", noIng: "Ver descripción para más detalles.",
     stepTitle: "Instrucciones",
-    step1: "Preparación", step1Desc: "Prepara todos los ingredientes. Si es necesario, rocía ligeramente la comida con aceite en spray o mézclala en un bol para distribuir las especias uniformemente.",
-    step2: "Cocción", step2Desc: `Ajusta la freidora a <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Introduce la comida y cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutos</strong>.`,
+    step1: "Preparación", step1Desc: "Prepara todos los ingredientes. Rocía ligeramente la comida con aceite en spray.",
+    step2: "Cocción", step2Desc: `Ajusta la freidora a <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutos</strong>.`,
     tipTitle: "Consejo del Chef",
     searchOther: "← Buscar otra receta",
     authBadge: "🇮🇹 Receta Auténtica", seoAuth: " | Auténtica Receta Italiana",
@@ -80,8 +76,8 @@ const translations = {
     portions: "Portions", pers: "pers.",
     ingTitle: "Ingrédients", noIng: "Voir la description pour les détails.",
     stepTitle: "Instructions",
-    step1: "Préparation", step1Desc: "Préparez tous les ingrédients. Si nécessaire, vaporisez légèrement les aliments d'huile ou mélangez-les dans un bol pour répartir les épices.",
-    step2: "Cuisson", step2Desc: `Réglez la friteuse sur <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Placez les aliments et cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
+    step1: "Préparation", step1Desc: "Préparez tous les ingrédients. Vaporisez légèrement les aliments d'huile.",
+    step2: "Cuisson", step2Desc: `Réglez la friteuse sur <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
     tipTitle: "Astuce du Chef",
     searchOther: "← Chercher une autre recette",
     authBadge: "🇮🇹 Recette Authentique", seoAuth: " | Recette Italienne Authentique",
@@ -91,17 +87,14 @@ const translations = {
 
 const t = translations[lang as keyof typeof translations] || translations.it;
 
-// --- LOGICA IMMAGINE ---
 const baseImageName = recipe.image || recipe.slug;
 const imagePath = `/images/recipes/${baseImageName}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
 
-// --- LOGICA "AUTHENTIC ITALIAN" ---
 const isAuth = recipe.isItalian === true;
 const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
 const seoRecipeData = { ...recipe, image: imagePath, isItalian: isAuth };
 
-// --- FUNZIONE PER LINK IN-TEXT (Solo per l'Italiano) ---
 const affiliateLinks = [
   { regex: /(carta forno\b(?: forata)?)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
   { regex: /(olio(?: in)? spray|nebulizzatore)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
@@ -113,7 +106,6 @@ function enrichText(text: string, currentLang: string) {
   if (currentLang !== 'it' || !text) return text;
   let enriched = text;
   affiliateLinks.forEach(item => {
-    // Sostituisce la parola trovata con un link SEO-friendly
     enriched = enriched.replace(item.regex, `<a href="${item.link}" target="_blank" rel="nofollow noopener" class="text-orange-400 font-bold hover:underline decoration-orange-500 underline-offset-4 transition-colors">$1</a>`);
   });
   return enriched;
@@ -123,16 +115,10 @@ function enrichText(text: string, currentLang: string) {
 <MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData}>
   
   <div class="relative h-[40vh] min-h-[320px] md:h-[50vh] md:min-h-[400px] w-full overflow-hidden bg-slate-900">
-    <img 
-      src={imagePath} 
-      alt={recipe.title} 
-      class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-1000 hover:scale-105"
-      onerror="this.style.opacity='0'" 
-    />
+    <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-1000 hover:scale-105" onerror="this.style.opacity='0'" />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
     
     <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-12 md:pb-16 items-center text-center z-10">
-      
       <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 md:px-4 md:py-2 mb-4 md:mb-6 rounded-full bg-slate-800/80 hover:bg-slate-700/90 backdrop-blur-md text-white transition-all border border-slate-500/50 text-sm font-bold md:font-medium shadow-xl group">
         <svg class="w-5 h-5 md:w-4 md:h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         {t.back}
@@ -153,39 +139,32 @@ function enrichText(text: string, currentLang: string) {
     </div>
   </div>
 
-  <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 pb-28 md:pb-20">
-    
+  <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 pb-10">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.temp}</span>
         <div class="text-3xl md:text-4xl font-mono font-bold text-orange-400 mt-1">{recipe.temp}{t.unitTemp}</div>
       </div>
-      
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.time}</span>
         <div class="text-3xl md:text-4xl font-mono font-bold text-blue-400 mt-1">{recipe.time} <span class="text-lg md:text-xl">{t.unitTime}</span></div>
       </div>
-      
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.prep}</span>
         <div class="text-xl md:text-2xl font-bold text-green-400 mt-2">{recipe.prep_time || '--'}</div>
       </div>
-
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center items-center relative group">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-2">{t.portions}</span>
         <div class="flex items-center justify-center gap-3 mt-1">
-          <button id="btn-minus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg" aria-label="Riduci">-</button>
-          <div class="text-2xl md:text-3xl font-bold text-purple-400 w-8 text-center" id="portions-display">
-            {defaultPortions}
-          </div>
-          <button id="btn-plus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg" aria-label="Aumenta">+</button>
+          <button id="btn-minus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg">-</button>
+          <div class="text-2xl md:text-3xl font-bold text-purple-400 w-8 text-center" id="portions-display">{defaultPortions}</div>
+          <button id="btn-plus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg">+</button>
         </div>
         <span class="text-[10px] text-slate-500 mt-1">{t.pers}</span>
       </div>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
-      
       <div class="lg:col-span-1">
         <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sticky top-8 shadow-lg">
           <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3 border-b border-slate-800 pb-4">
@@ -207,7 +186,6 @@ function enrichText(text: string, currentLang: string) {
       </div>
 
       <div class="lg:col-span-2 space-y-8">
-        
         <AmazonProduct recipe={recipe} lang={lang} />
 
         <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl">
@@ -216,7 +194,6 @@ function enrichText(text: string, currentLang: string) {
           </h3>
           
           <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
-            
             {recipe.instructions && Array.isArray(recipe.instructions) ? (
               recipe.instructions.map((step, index) => (
                 <div class="flex gap-6 relative">
@@ -235,7 +212,6 @@ function enrichText(text: string, currentLang: string) {
                     <p class="text-slate-400 leading-relaxed" set:html={enrichText(t.step1Desc, lang)}></p>
                   </div>
                 </div>
-
                 <div class="flex gap-6 relative">
                   <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">2</div>
                   <div class="pt-1">
@@ -257,7 +233,6 @@ function enrichText(text: string, currentLang: string) {
                 </div>
               </div>
             )}
-
           </div>
         </div>
 
@@ -266,22 +241,28 @@ function enrichText(text: string, currentLang: string) {
             {t.searchOther}
           </a>
         </div>
-
       </div>
     </div>
   </div>
 
   {lang === 'it' && (
-    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-t border-slate-700 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] p-3 px-4 transition-transform duration-300">
-      <div class="flex items-center justify-between gap-3">
-        <div class="flex-1">
-          <span class="block text-[9px] uppercase tracking-wider font-bold text-emerald-400 mb-0.5">Scelta Top</span>
-          <p class="text-[11px] text-slate-200 leading-tight font-medium">Carta forno forata <span class="hidden sm:inline">per Friggitrice</span>.</p>
+    <div class="fixed bottom-0 left-0 right-0 z-[100] transition-transform duration-300">
+      <div class="w-full bg-[#0B1120] border-t border-orange-500/30 shadow-[0_-15px_40px_rgba(0,0,0,0.6)]">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+          <div class="flex items-center gap-3 flex-1 min-w-0">
+             <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 p-[1px] flex-shrink-0 shadow-[0_0_10px_rgba(245,158,11,0.5)] animate-pulse">
+                <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-lg">🎁</div>
+             </div>
+            <div class="flex-1 min-w-0">
+              <span class="block text-[10px] uppercase tracking-widest font-extrabold text-orange-400 mb-0.5 drop-shadow-md">Migliora la tua Friggitrice</span>
+              <p class="text-xs md:text-sm text-slate-100 leading-tight font-semibold truncate">Scopri il Kit Accessori Universale definitivo.</p>
+            </div>
+          </div>
+          <a href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="flex-shrink-0 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-black text-xs md:text-sm font-black py-2.5 px-5 rounded-full flex items-center gap-1.5 shadow-[0_0_15px_rgba(245,158,11,0.4)] hover:shadow-[0_0_25px_rgba(245,158,11,0.6)] transition-all hover:scale-105 active:scale-95">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            <span class="hidden sm:inline">Scopri le</span> Offerte
+          </a>
         </div>
-        <a href="https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="flex-shrink-0 bg-orange-500 hover:bg-orange-600 text-white text-[11px] font-bold py-2.5 px-4 rounded-full flex items-center gap-1.5 shadow-lg shadow-orange-900/30 transition-colors">
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-          Prezzo
-        </a>
       </div>
     </div>
   )}
