@@ -25,15 +25,13 @@ const {
   alternateUrls
 } = Astro.props;
 
-// Genera l'URL canonico corretto per ogni pagina
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://www.convertitorefriggitrice.it").toString();
 
-// Gestione dinamica e pulita delle traduzioni del Footer
 const disclaimers = {
-  it: "Trasparenza: In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. I risultati della conversione sono stime basate su parametri standard (-20°C / -20% tempo). Controlla sempre la cottura. Le immagini sono a scopo illustrativo (IA).",
-  en: "Transparency: As an Amazon Associate, this site earns from qualifying purchases. Conversion results are estimates based on standard parameters (-40°F / -20% time). Always check your food. Images are for illustrative purposes (AI).",
-  es: "Transparencia: Como Afiliado de Amazon, este sitio recibe una comisión por compras elegibles. Los resultados son estimaciones basadas en parámetros estándar (-20°C / -20% tiempo). Comprueba siempre la cocción. Las imágenes son ilustrativas (IA).",
-  fr: "Transparence : En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises. Les résultats sont des estimations basées sur des paramètres standards (-20°C / -20% temps). Vérifiez toujours la cuisson. Images à but illustratif (IA)."
+  it: "Trasparenza: In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. I risultati della conversione sono stime basate su parametri standard (-20°C / -20% tempo). Controlla sempre la cottura.",
+  en: "Transparency: As an Amazon Associate, this site earns from qualifying purchases. Conversion results are estimates based on standard parameters (-40°F / -20% time). Always check your food.",
+  es: "Transparencia: Como Afiliado de Amazon, este sitio recibe una comisión por compras elegibles. Los resultados son estimaciones basadas en parámetros estándar (-20°C / -20% tiempo). Comprueba siempre la cocción.",
+  fr: "Transparence : En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises. Les résultats sont des estimations basées sur des paramètres standards (-20°C / -20% temps)."
 };
 
 const footerLabels = {
@@ -43,7 +41,6 @@ const footerLabels = {
   fr: { about: "À Propos", privacy: "Confidentialité", cookie: "Cookies", prefix: "/fr" }
 };
 
-// Seleziona la lingua corretta (fallback all'italiano se non trovata)
 const currentDisclaimer = disclaimers[lang as keyof typeof disclaimers] || disclaimers.it;
 const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerLabels.it;
 ---
@@ -80,23 +77,6 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogImage} />
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Convertitore Friggitrice ad Aria",
-        "url": "https://www.convertitorefriggitrice.it",
-        "description": "Strumento online per convertire automaticamente tempi e temperature da forno a friggitrice ad aria.",
-        "applicationCategory": "KitchenTool",
-        "operatingSystem": "All",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "EUR"
-        }
-      }
-    </script>
-
     {recipeData && (
       <script type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org/",
@@ -107,10 +87,7 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
         "cookTime": `PT${recipeData.time}M`,
         "recipeIngredient": recipeData.ingredients,
         "prepTime": "PT5M",
-        "author": {
-          "@type": "Organization",
-          "name": "Convertitore Friggitrice"
-        }
+        "author": { "@type": "Organization", "name": "Convertitore Friggitrice" }
       })} />
     )}
   </head>
@@ -118,29 +95,45 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
   <body class="bg-[#0B1120] text-slate-300 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white">
     
     {alternateUrls && (
-      <header class="w-full flex justify-center px-4 py-4 md:py-6">
-        <div class="flex items-center gap-4 bg-slate-900/60 backdrop-blur-md border border-slate-700/50 rounded-full px-5 py-2.5 shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
-          {alternateUrls.it && <a href={alternateUrls.it} class={`text-2xl md:text-xl hover:scale-125 transition-all duration-300 ${lang === 'it' ? 'drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100'}`} title="Italiano">🇮🇹</a>}
-          {alternateUrls.en && <a href={alternateUrls.en} class={`text-2xl md:text-xl hover:scale-125 transition-all duration-300 ${lang === 'en' ? 'drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100'}`} title="English">🇬🇧</a>}
-          {alternateUrls.es && <a href={alternateUrls.es} class={`text-2xl md:text-xl hover:scale-125 transition-all duration-300 ${lang === 'es' ? 'drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100'}`} title="Español">🇪🇸</a>}
-          {alternateUrls.fr && <a href={alternateUrls.fr} class={`text-2xl md:text-xl hover:scale-125 transition-all duration-300 ${lang === 'fr' ? 'drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100'}`} title="Français">🇫🇷</a>}
+      <header class="w-full flex justify-center px-4 pt-3 pb-1 md:pt-4 md:pb-2">
+        <div class="flex items-center gap-4 bg-slate-900/60 backdrop-blur-md border border-slate-700/50 rounded-full px-5 py-2 shadow-lg">
+          {alternateUrls.it && (
+            <a href={alternateUrls.it} title="Italiano" class="flex items-center justify-center">
+              <img src="https://flagcdn.com/it.svg" alt="IT" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'it' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
+            </a>
+          )}
+          {alternateUrls.en && (
+            <a href={alternateUrls.en} title="English" class="flex items-center justify-center">
+              <img src="https://flagcdn.com/gb.svg" alt="EN" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'en' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
+            </a>
+          )}
+          {alternateUrls.es && (
+            <a href={alternateUrls.es} title="Español" class="flex items-center justify-center">
+              <img src="https://flagcdn.com/es.svg" alt="ES" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'es' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
+            </a>
+          )}
+          {alternateUrls.fr && (
+            <a href={alternateUrls.fr} title="Français" class="flex items-center justify-center">
+              <img src="https://flagcdn.com/fr.svg" alt="FR" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'fr' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
+            </a>
+          )}
         </div>
       </header>
     )}
 
-    <main class="flex-grow w-full px-4 pb-8 pt-2">
+    <main class="flex-grow w-full px-4 pb-4 pt-1">
       <slot />
     </main>
 
-    <footer class="bg-[#0F172A] border-t border-slate-800 mt-auto py-10 pb-28 text-center font-sans">
-      <div class="max-w-[480px] mx-auto px-6 space-y-6">
-        <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-800 shadow-inner text-justify">
-          <p class="text-[10px] text-slate-500 leading-relaxed italic">
+    <footer class="bg-[#0F172A] border-t border-slate-800 mt-auto py-8 pb-[100px] text-center font-sans relative z-10">
+      <div class="max-w-[480px] mx-auto px-6 space-y-5">
+        <div class="p-3 bg-slate-900/50 rounded-xl border border-slate-800 shadow-inner text-justify">
+          <p class="text-[9px] text-slate-500 leading-relaxed italic">
             <strong>{currentDisclaimer}</strong>
           </p>
         </div>
         
-        <nav class="flex justify-center gap-4 text-[11px] text-slate-400 font-medium tracking-wide">
+        <nav class="flex justify-center gap-4 text-[10px] text-slate-400 font-medium tracking-wide">
           <a href={`${currentLabels.prefix}/info`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.about}</a>
           <span>•</span>
           <a href={`${currentLabels.prefix}/privacy`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.privacy}</a>
@@ -148,7 +141,7 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
           <a href={`${currentLabels.prefix}/cookies`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.cookie}</a>
         </nav>
         
-        <p class="text-[10px] text-slate-600 font-mono italic">
+        <p class="text-[9px] text-slate-600 font-mono italic">
           © {new Date().getFullYear()} convertitorefriggitrice.it
         </p>
       </div>
