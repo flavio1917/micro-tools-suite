@@ -20,8 +20,8 @@ const translations = {
     label_time: "Tempo",
     eco_label: "Risparmio stimato: ~",
     ad_title: "Consiglio dello Chef",
-    ad_label: "Scelta Top", // MODIFICATO DA Sponsorizzato
-    ad_link: "Verifica il Prezzo", // MODIFICATO DA Vedi su Amazon
+    ad_label: "Scelta Top", 
+    ad_link: "Verifica il Prezzo", 
     manual_temp: "TEMP. FORNO",
     manual_time: "MINUTI FORNO",
     error_msg: "⚠️ Manca qualcosa! Inserisci Temperatura e Tempo.",
@@ -57,11 +57,7 @@ const translations = {
     error_msg: "⚠️ Missing inputs! Please provide Temp and Time.",
     legal_privacy: "🔒 Privacy First: Local calculations. No data sent.",
     legal_disclaimer: "⚠️ DISCLAIMER: As an Amazon Associate I earn from qualifying purchases. Estimated results (-25°F / -20%). ALWAYS check food.",
-    shop_items: [
-      { name: "Paper Liners", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.com/dp/B0FP284FKG" },
-      { name: "Oil Sprayer", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.com/dp/B0GC74RM68" },
-      { name: "Cheat Sheet", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.com/dp/B08J3B1VXZ" }
-    ],
+    shop_items: [],
     alert_cap: "⚠️ Capped at 400°F (Max Air Fryer Temp)",
     cta_recipes_top: "Don't know what to cook?",
     cta_recipes_bottom: `Explore ${roundedCount}+ Recipes`,
@@ -87,11 +83,7 @@ const translations = {
     error_msg: "⚠️ ¡Falta algo! Introduce Temperatura y Tiempo.",
     legal_privacy: "🔒 Privacidad: Cálculos locales. Sin envío de datos.",
     legal_disclaimer: "⚠️ AVISO: En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas. Resultados estimados (-20°C / -20%). Revisa SIEMPRE la cocción.",
-    shop_items: [
-      { name: "Papel Horno", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.es/dp/B0FP284FKG" },
-      { name: "Aceite Spray", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.es/dp/B0GC74RM68" },
-      { name: "Imanes Tiempos", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.es/dp/B08J3B1VXZ" }
-    ],
+    shop_items: [],
     alert_cap: "⚠️ Temp limitada a 200°C (Máx Air Fryer)",
     cta_recipes_top: "¿No sabes qué cocinar?",
     cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`,
@@ -117,11 +109,7 @@ const translations = {
     error_msg: "⚠️ Il manque des données ! Entrez la Température et le Temps.",
     legal_privacy: "🔒 Confidentialité : Calculs locaux. Aucune donnée envoyée.",
     legal_disclaimer: "⚠️ AVIS : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats. Résultats estimés (-20°C / -20%). Vérifiez TOUJOURS la cuisson.",
-    shop_items: [
-      { name: "Papier Cuisson", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.fr/dp/B0FP284FKG" },
-      { name: "Huile en Spray", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.fr/dp/B0GC74RM68" },
-      { name: "Aimants Temps", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.fr/dp/B08J3B1VXZ" }
-    ],
+    shop_items: [],
     alert_cap: "⚠️ Temp. limitée à 200°C (Max Air Fryer)",
     cta_recipes_top: "Vous ne savez pas quoi cuisiner ?",
     cta_recipes_bottom: `Explorez nos ${roundedCount}+ Recettes`,
@@ -139,178 +127,177 @@ const initialEco = isEn ? '$0.00' : '0.00€';
 ---
 
 <div id="airfryer-wrapper" data-lang={lang} class="max-w-[480px] mx-auto space-y-4 md:space-y-6">
-  <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-[32px] shadow-2xl overflow-hidden font-sans text-white p-4 md:p-6 relative">
+  <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-[32px] shadow-2xl overflow-hidden font-sans text-white p-4 md:p-5 relative">
     
-    <div class="text-center mb-4 md:mb-6">
+    <div class="text-center mb-4 md:mb-5">
       <h2 class="text-xl md:text-2xl font-bold text-slate-100">
         {t.title} <span class="text-[#F59E0B]">{t.subtitle}</span>
       </h2>
     </div>
 
-    <div class="hidden md:block mb-6">
-      <button id="cta-recipes-desk-top" class="w-full py-4 border-2 border-[#F59E0B]/80 bg-gradient-to-br from-[#F59E0B]/20 to-black/40 backdrop-blur-sm rounded-xl font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
-        <div class="absolute inset-0 bg-[#F59E0B]/10 animate-pulse pointer-events-none"></div>
-        <span class="text-[#F59E0B] text-xs uppercase tracking-wider mb-1 relative z-10 drop-shadow-md">{t.cta_recipes_top}</span>
-        <span class="text-white text-xl flex items-center gap-2 group-hover:text-[#F59E0B] transition-colors relative z-10 drop-shadow-lg">
-          {t.cta_recipes_bottom}
-          <svg class="w-6 h-6 text-[#F59E0B] animate-bounce transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-        </span>
-      </button>
-    </div>
-
-    <div class="flex p-1 bg-black/20 border border-white/5 rounded-xl mb-4 md:mb-6 gap-1">
-      <button id="tab-conv" class="flex-1 py-2 md:py-2.5 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all">
+    <div class="flex p-1 bg-black/20 border border-white/5 rounded-xl mb-4 md:mb-5 gap-1">
+      <button id="tab-conv" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all">
         {t.tab_conv}
       </button>
-      <button id="tab-food" class="flex-1 py-2 md:py-2.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all">
+      <button id="tab-food" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all">
         {t.tab_food}
       </button>
-      <button id="tab-recipes" class="flex-1 py-2 md:py-2.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all flex items-center justify-center gap-1">
+      <button id="tab-recipes" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all flex items-center justify-center gap-1">
         <svg class="w-4 h-4 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
         {t.tab_recipes}
       </button>
     </div>
 
-    <div id="view-converter" class="space-y-4 md:space-y-6 animate-fade-in">
+    <div id="view-converter" class="space-y-4 animate-fade-in">
       <div class="relative group">
         <textarea 
           id="recipe-input"
-          class="w-full h-20 md:h-32 p-3 md:p-4 bg-black/20 border border-white/10 rounded-2xl focus:border-[#F59E0B] focus:bg-black/40 outline-none transition-all resize-none text-slate-200 text-sm leading-relaxed placeholder:text-slate-500"
+          class="w-full h-20 md:h-24 p-3 bg-black/20 border border-white/10 rounded-2xl focus:border-[#F59E0B] focus:bg-black/40 outline-none transition-all resize-none text-slate-200 text-sm leading-relaxed placeholder:text-slate-500"
           placeholder={t.placeholder}
         ></textarea>
       </div>
 
-      <div id="error-box" class="hidden bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-2 md:py-3 rounded-xl text-xs font-bold text-center animate-pulse">
+      <div id="error-box" class="hidden bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-2 rounded-xl text-xs font-bold text-center animate-pulse">
         {t.error_msg}
       </div>
       <div id="cap-alert" class="hidden bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold text-center">
         {t.alert_cap}
       </div>
 
-      <button id="btn-convert" class="w-full py-3 md:py-4 bg-[#F59E0B] hover:bg-[#D97706] text-black rounded-xl font-bold text-base md:text-lg shadow-[0_4px_14px_0_rgba(245,158,11,0.2)] transition-transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer border border-[#F59E0B]/50">
+      <button id="btn-convert" class="w-full py-3 md:py-3.5 bg-[#F59E0B] hover:bg-[#D97706] text-black rounded-xl font-bold text-base md:text-lg shadow-[0_4px_14px_0_rgba(245,158,11,0.2)] transition-transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer border border-[#F59E0B]/50">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         {t.btn_action}
       </button>
     </div>
     
-    <div id="view-presets" class="hidden space-y-4 md:space-y-6 animate-fade-in py-4 md:py-8">
+    <div id="view-presets" class="hidden space-y-4 animate-fade-in py-4">
       <div class="flex gap-3 md:gap-4">
         <div class="flex-1">
           <label class="text-[9px] md:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_temp}</label>
           <div class="relative">
-            <input type="number" id="manual-temp" class="w-full p-3 md:p-4 pl-8 md:pl-10 bg-black/20 border border-white/10 rounded-xl font-bold text-lg md:text-xl text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
-            <span class="absolute left-2.5 md:left-3 top-3.5 md:top-4 text-slate-500">🌡️</span>
-            <span class="absolute right-2.5 md:right-3 top-4 md:top-5 text-[9px] md:text-[10px] text-slate-500 font-bold">{tempSymbol}</span>
+            <input type="number" id="manual-temp" class="w-full p-3 pl-8 bg-black/20 border border-white/10 rounded-xl font-bold text-lg text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
+            <span class="absolute left-2.5 top-3.5 text-slate-500">🌡️</span>
+            <span class="absolute right-2.5 top-4 text-[9px] text-slate-500 font-bold">{tempSymbol}</span>
           </div>
         </div>
         <div class="flex-1">
           <label class="text-[9px] md:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_time}</label>
           <div class="relative">
-            <input type="number" id="manual-time" class="w-full p-3 md:p-4 pl-8 md:pl-10 bg-black/20 border border-white/10 rounded-xl font-bold text-lg md:text-xl text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
-            <span class="absolute left-2.5 md:left-3 top-3.5 md:top-4 text-slate-500">⏱️</span>
-            <span class="absolute right-2.5 md:right-3 top-4 md:top-5 text-[9px] md:text-[10px] text-slate-500 font-bold tracking-wider">MIN</span>
+            <input type="number" id="manual-time" class="w-full p-3 pl-8 bg-black/20 border border-white/10 rounded-xl font-bold text-lg text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
+            <span class="absolute left-2.5 top-3.5 text-slate-500">⏱️</span>
+            <span class="absolute right-2.5 top-4 text-[9px] text-slate-500 font-bold tracking-wider">MIN</span>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="mt-5 pt-4 md:mt-8 md:pt-6 border-t border-white/10 relative">
+    <div class="mt-4 pt-4 border-t border-white/10 relative">
       <div class="grid grid-cols-2 gap-3 md:gap-4">
-        <div class="bg-black/20 p-3 md:p-4 rounded-xl md:rounded-2xl flex flex-col items-center justify-center relative min-h-[80px] md:min-h-[100px] border border-white/5">
-          <span class="text-[10px] md:text-[11px] text-slate-400 uppercase font-bold mb-1">{t.label_temp}</span>
+        <div class="bg-black/20 p-3 rounded-xl flex flex-col items-center justify-center relative min-h-[80px] border border-white/5">
+          <span class="text-[10px] text-slate-400 uppercase font-bold mb-1">{t.label_temp}</span>
           <div class="flex items-baseline gap-1">
-            <span id="res-temp" class="text-3xl md:text-4xl font-black text-white">--</span>
-            <span class="text-lg md:text-xl font-bold text-[#F59E0B]">{tempSymbol}</span>
+            <span id="res-temp" class="text-3xl font-black text-white">--</span>
+            <span class="text-lg font-bold text-[#F59E0B]">{tempSymbol}</span>
           </div>
         </div>
-        <div class="bg-black/20 p-3 md:p-4 rounded-xl md:rounded-2xl flex flex-col items-center justify-center relative min-h-[80px] md:min-h-[100px] border border-white/5">
-          <span class="text-[10px] md:text-[11px] text-slate-400 uppercase font-bold mb-1">{t.label_time}</span>
+        <div class="bg-black/20 p-3 rounded-xl flex flex-col items-center justify-center relative min-h-[80px] border border-white/5">
+          <span class="text-[10px] text-slate-400 uppercase font-bold mb-1">{t.label_time}</span>
           <div class="flex items-baseline gap-1">
-            <span id="res-time" class="text-3xl md:text-4xl font-black text-white">--</span>
-            <span class="text-lg md:text-xl font-bold text-[#F59E0B]">m</span>
+            <span id="res-time" class="text-3xl font-black text-white">--</span>
+            <span class="text-lg font-bold text-[#F59E0B]">m</span>
           </div>
         </div>
       </div>
 
-      <div class="flex justify-center -mt-2">
-        <div class="bg-emerald-950/50 border border-emerald-500/20 px-3 md:px-4 py-1 md:py-1.5 rounded-full flex items-center gap-2 shadow-lg backdrop-blur-sm">
-          <span class="text-[10px] md:text-xs font-bold text-emerald-400 uppercase tracking-wide">
+      <div class="flex justify-center -mt-2 mb-4">
+        <div class="bg-emerald-950/50 border border-emerald-500/20 px-3 py-1 rounded-full flex items-center gap-2 shadow-lg backdrop-blur-sm">
+          <span class="text-[10px] font-bold text-emerald-400 uppercase tracking-wide">
             {t.eco_label} <span id="res-eco">{initialEco}</span>
           </span>
         </div>
       </div>
 
-      <div class="mt-4 md:mt-6 flex justify-between items-center mb-1.5 px-1">
-         <h4 class="text-[#F59E0B] font-bold text-[9px] md:text-[10px] uppercase tracking-wider">{t.ad_title}</h4>
-         <span class="text-[8px] md:text-[9px] text-emerald-400 font-bold uppercase tracking-widest bg-emerald-500/10 px-2 py-0.5 rounded">{t.ad_label}</span>
-      </div>
-      <a id="ad-link" href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="bg-orange-950/20 border border-[#F59E0B]/20 rounded-xl p-3 md:p-4 flex gap-3 md:gap-4 items-start transition-all hover:border-[#F59E0B]/40 hover:bg-orange-950/30 cursor-pointer group block">
-        <div class="p-1.5 md:p-2 bg-[#F59E0B]/10 rounded-lg text-[#F59E0B] group-hover:bg-[#F59E0B] group-hover:text-black transition-colors">
-          <svg width="20" height="20" class="md:w-6 md:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" y1="17" x2="18" y2="17"/></svg>
-        </div>
-        <div class="flex-1">
-          <p id="ad-text" class="text-slate-300 text-[11px] md:text-xs leading-relaxed">
-            Il segreto per cucinare tutto in metà tempo? Questo set di accessori universali.
-          </p>
-          <div class="inline-flex items-center gap-1 text-[10px] md:text-[11px] font-bold text-[#F59E0B] mt-1.5 md:mt-2 group-hover:text-white transition-colors">
-            {t.ad_link}
-            <svg class="w-3 h-3 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7-7m7-7H3"></path></svg>
+      {lang === 'it' && (
+        <>
+          <div class="mt-4 flex justify-between items-center mb-1.5 px-1">
+            <h4 class="text-[#F59E0B] font-bold text-[9px] uppercase tracking-wider">{t.ad_title}</h4>
+            <span class="text-[8px] text-emerald-400 font-bold uppercase tracking-widest bg-emerald-500/10 px-2 py-0.5 rounded">{t.ad_label}</span>
           </div>
-        </div>
-      </a>
+          <a id="ad-link" href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="bg-orange-950/20 border border-[#F59E0B]/20 rounded-xl p-3 flex gap-3 items-start transition-all hover:border-[#F59E0B]/40 hover:bg-orange-950/30 cursor-pointer group block">
+            <div class="p-1.5 bg-[#F59E0B]/10 rounded-lg text-[#F59E0B] group-hover:bg-[#F59E0B] group-hover:text-black transition-colors">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" y1="17" x2="18" y2="17"/></svg>
+            </div>
+            <div class="flex-1">
+              <p id="ad-text" class="text-slate-300 text-[11px] leading-relaxed">
+                Il segreto per cucinare tutto in metà tempo? Questo set di accessori universali.
+              </p>
+              <div class="inline-flex items-center gap-1 text-[10px] font-bold text-[#F59E0B] mt-1.5 group-hover:text-white transition-colors">
+                {t.ad_link}
+                <svg class="w-3 h-3 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7-7m7-7H3"></path></svg>
+              </div>
+            </div>
+          </a>
+        </>
+      )}
     </div>
   </div>
 
-  <div class="block md:hidden space-y-4">
-    <button id="cta-recipes-mob" class="w-full py-4 border-2 border-[#F59E0B]/80 bg-gradient-to-br from-[#F59E0B]/20 to-black/40 backdrop-blur-sm rounded-xl font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
+  <div class="py-2">
+    <button id="cta-recipes-unified" class="w-full py-4 border-2 border-[#F59E0B]/80 bg-gradient-to-br from-[#F59E0B]/20 to-black/40 backdrop-blur-sm rounded-xl font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
       <div class="absolute inset-0 bg-[#F59E0B]/10 animate-pulse pointer-events-none"></div>
       <span class="text-[#F59E0B] text-xs uppercase tracking-wider mb-1 relative z-10 drop-shadow-md">{t.cta_recipes_top}</span>
-      <span class="text-white text-lg flex items-center gap-2 group-hover:text-[#F59E0B] transition-colors relative z-10 drop-shadow-lg">
+      <span class="text-white text-lg md:text-xl flex items-center gap-2 group-hover:text-[#F59E0B] transition-colors relative z-10 drop-shadow-lg">
         {t.cta_recipes_bottom}
         <svg class="w-5 h-5 text-[#F59E0B] animate-bounce transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
       </span>
     </button>
+  </div>
 
-    <div class="grid grid-cols-3 gap-2 w-full mx-auto">
-      {t.shop_items.map(item => (
-        <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-transparent border border-white/5 rounded-xl p-1.5 text-center hover:border-[#F59E0B]/50 transition-all group block relative">
-          <span class="absolute top-1 right-1 bg-emerald-500/20 text-emerald-400 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider z-10 backdrop-blur-sm border border-emerald-500/30">{t.badge_grid}</span>
-          <div class="aspect-square w-full mb-2 overflow-hidden bg-white/5 rounded-xl flex items-center justify-center p-2">
-            <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
-          </div>
-          <div class="flex flex-col items-center justify-center min-h-[40px]">
-            <span class="text-[10px] font-medium text-slate-300 group-hover:text-white leading-tight transition-colors mb-2">{item.name}</span>
-            <span class="text-[9px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-2.5 py-1.5 rounded-full whitespace-nowrap transition-colors w-full flex items-center justify-center gap-1">
-              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-              {t.btn_grid}
-            </span>
-          </div>
-        </a>
-      ))}
-    </div>
+  <div class="block md:hidden space-y-4">
+    {lang === 'it' && (
+      <div class="grid grid-cols-3 gap-2 w-full mx-auto">
+        {t.shop_items.map(item => (
+          <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-transparent border border-white/5 rounded-xl p-1.5 text-center hover:border-[#F59E0B]/50 transition-all group block relative">
+            <span class="absolute top-1 right-1 bg-emerald-500/20 text-emerald-400 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider z-10 backdrop-blur-sm border border-emerald-500/30">{t.badge_grid}</span>
+            <div class="aspect-square w-full mb-2 overflow-hidden bg-white/5 rounded-xl flex items-center justify-center p-2">
+              <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div class="flex flex-col items-center justify-center min-h-[40px]">
+              <span class="text-[10px] font-medium text-slate-300 group-hover:text-white leading-tight transition-colors mb-2">{item.name}</span>
+              <span class="text-[9px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-2.5 py-1.5 rounded-full whitespace-nowrap transition-colors w-full flex items-center justify-center gap-1">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                {t.btn_grid}
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
   </div>
 
   <div class="hidden md:block space-y-6">
-    <div class="grid grid-cols-3 gap-3 w-full mx-auto">
-      {t.shop_items.map(item => (
-        <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-transparent border border-white/5 rounded-2xl p-2 text-center hover:border-[#F59E0B]/50 transition-all group block relative">
-          <span class="absolute top-2 right-2 bg-emerald-500/20 text-emerald-400 text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider z-10 border border-emerald-500/30">{t.badge_grid}</span>
-          <div class="aspect-square w-full mb-3 overflow-hidden bg-white/5 rounded-xl flex items-center justify-center p-3">
-            <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
-          </div>
-          <div class="flex flex-col items-center justify-center min-h-[44px]">
-            <span class="text-[11px] font-medium text-slate-300 group-hover:text-white leading-tight transition-colors mb-2.5">{item.name}</span>
-            <span class="text-[10px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-4 py-1.5 rounded-full whitespace-nowrap transition-colors w-full flex items-center justify-center gap-1.5">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-              {t.btn_grid}
-            </span>
-          </div>
-        </a>
-      ))}
-    </div>
+    {lang === 'it' && (
+      <div class="grid grid-cols-3 gap-3 w-full mx-auto">
+        {t.shop_items.map(item => (
+          <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-transparent border border-white/5 rounded-2xl p-2 text-center hover:border-[#F59E0B]/50 transition-all group block relative">
+            <span class="absolute top-2 right-2 bg-emerald-500/20 text-emerald-400 text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider z-10 border border-emerald-500/30">{t.badge_grid}</span>
+            <div class="aspect-square w-full mb-3 overflow-hidden bg-white/5 rounded-xl flex items-center justify-center p-3">
+              <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
+            </div>
+            <div class="flex flex-col items-center justify-center min-h-[44px]">
+              <span class="text-[11px] font-medium text-slate-300 group-hover:text-white leading-tight transition-colors mb-2.5">{item.name}</span>
+              <span class="text-[10px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-4 py-1.5 rounded-full whitespace-nowrap transition-colors w-full flex items-center justify-center gap-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                {t.btn_grid}
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    )}
   </div>
 
-  <div class="mx-auto text-center space-y-4 px-4 pb-8 mt-8">
+  <div class="mx-auto text-center space-y-4 px-4 pb-8 mt-4">
     <p class="text-[11px] text-slate-500 leading-relaxed font-medium">{t.legal_privacy}</p>
     <div class="border-t border-white/5 w-1/2 mx-auto"></div>
     <p class="text-[10px] text-slate-500 leading-relaxed italic opacity-80">{t.legal_disclaimer}</p>
@@ -337,7 +324,6 @@ const initialEco = isEn ? '$0.00' : '0.00€';
   const convert = (temp: number, time: number, isInputF: boolean) => {
     let finalTemp, finalTime, isCapped = false;
     
-    // Logica per mercato USA/UK (Fahrenheit)
     if (isEn) {
       let tempF = isInputF ? temp : (temp * 9/5) + 32;
       finalTemp = tempF - 25;
@@ -352,7 +338,6 @@ const initialEco = isEn ? '$0.00' : '0.00€';
       finalTime = Math.round(time * 0.8 * timeMult);
       finalTemp = Math.round(finalTemp / 5) * 5;
       
-    // Logica EU (Celsius)
     } else {
       let tempC = isInputF ? (temp - 32) * 5/9 : temp;
       finalTemp = tempC - 20;
@@ -471,8 +456,9 @@ const initialEco = isEn ? '$0.00' : '0.00€';
   document.getElementById('manual-time')?.addEventListener('input', runManual);
 
   document.getElementById('tab-recipes')?.addEventListener('click', scrollToRecipes);
-  document.getElementById('cta-recipes-mob')?.addEventListener('click', scrollToRecipes);
-  document.getElementById('cta-recipes-desk-top')?.addEventListener('click', scrollToRecipes);
+  
+  // Cambiato l'ID per intercettare il bottone unificato
+  document.getElementById('cta-recipes-unified')?.addEventListener('click', scrollToRecipes);
 
   const btnConv = document.getElementById('tab-conv');
   const btnFood = document.getElementById('tab-food');
@@ -485,13 +471,13 @@ const initialEco = isEn ? '$0.00' : '0.00€';
       if(mode === 'conv') {
         viewConv.classList.remove('hidden');
         viewFood.classList.add('hidden');
-        btnConv.className = "flex-1 py-2 md:py-2.5 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all";
-        btnFood.className = "flex-1 py-2 md:py-2.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all";
+        btnConv.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all";
+        btnFood.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all";
       } else {
         viewConv.classList.add('hidden');
         viewFood.classList.remove('hidden');
-        btnFood.className = "flex-1 py-2 md:py-2.5 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all";
-        btnConv.className = "flex-1 py-2 md:py-2.5 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all";
+        btnFood.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all";
+        btnConv.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all";
       }
     };
     btnConv.addEventListener('click', () => switchTo('conv'));
