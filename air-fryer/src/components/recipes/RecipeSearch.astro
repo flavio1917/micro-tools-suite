@@ -20,7 +20,7 @@ const recipes = allRecipes[lang as keyof typeof allRecipes] || recipesIt;
 import RecipeCard from './RecipeCard.astro';
 
 export interface Props { lang?: string; }
-const { lang = "it" } = Astro.props;
+
 
 // Dizionario per le traduzioni della barra di ricerca
 const translations = {
