@@ -56,99 +56,48 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 const isEn = lang === 'en';
 const tempSymbol = isEn ? '°F' : '°C';
 const currSymbol = isEn ? '$' : '€';
-const initialEco = isEn ? '$0.00' : '0.00€';
 ---
-
 <div id="airfryer-wrapper" data-lang={lang} class="max-w-[480px] mx-auto space-y-3 md:space-y-4">
-  <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-[32px] shadow-2xl overflow-hidden font-sans text-white p-4 relative">
+  <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl shadow-2xl overflow-hidden font-sans text-white p-4 relative">
     
-    <div class="text-center mb-3 md:mb-4">
-      <h2 class="text-xl md:text-2xl font-bold text-slate-100">
-        {t.title} <span class="text-[#F59E0B]">{t.subtitle}</span>
-      </h2>
+    <div class="text-center mb-4">
+      <h2 class="text-xl font-bold text-slate-100">{t.title} <span class="text-[#F59E0B]">{t.subtitle}</span></h2>
     </div>
 
-    <div class="flex p-1 bg-black/20 border border-white/5 rounded-xl mb-3 md:mb-4 gap-1">
-      <button id="tab-conv" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all">
-        {t.tab_conv}
-      </button>
-      <button id="tab-food" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all">
-        {t.tab_food}
-      </button>
-      <button id="tab-recipes" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all flex items-center justify-center gap-1">
-        <svg class="w-4 h-4 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-        {t.tab_recipes}
-      </button>
+    <div class="flex p-1 bg-black/20 border border-white/5 rounded-xl mb-4 gap-1">
+      <button id="tab-conv" class="flex-1 py-2 rounded-lg text-xs font-bold bg-[#F59E0B] text-black transition-all">{t.tab_conv}</button>
+      <button id="tab-food" class="flex-1 py-2 rounded-lg text-xs font-medium text-slate-400 hover:text-white transition-all">{t.tab_food}</button>
+      <button id="tab-recipes" class="flex-1 py-2 rounded-lg text-xs font-medium text-slate-400 hover:text-white transition-all">{t.tab_recipes}</button>
     </div>
 
-    <div id="view-converter" class="space-y-3 md:space-y-4 animate-fade-in">
-      <div class="relative group">
-        <textarea 
-          id="recipe-input"
-          class="w-full h-16 md:h-20 p-3 bg-black/20 border border-white/10 rounded-2xl focus:border-[#F59E0B] focus:bg-black/40 outline-none transition-all resize-none text-slate-200 text-sm leading-relaxed placeholder:text-slate-500"
-          placeholder={t.placeholder}
-        ></textarea>
-      </div>
-
-      <div id="error-box" class="hidden bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-2 rounded-xl text-xs font-bold text-center animate-pulse">
-        {t.error_msg}
-      </div>
-      <div id="cap-alert" class="hidden bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold text-center">
-        {t.alert_cap}
-      </div>
-
-      <button id="btn-convert" class="w-full py-3 bg-[#F59E0B] hover:bg-[#D97706] text-black rounded-xl font-bold text-base shadow-[0_4px_14px_0_rgba(245,158,11,0.2)] transition-transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer border border-[#F59E0B]/50">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        {t.btn_action}
-      </button>
-    </div>
-    
-    <div id="view-presets" class="hidden space-y-3 animate-fade-in py-2">
-      <div class="flex gap-3 md:gap-4">
-        <div class="flex-1">
-          <label class="text-[9px] md:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_temp}</label>
-          <div class="relative">
-            <input type="number" id="manual-temp" class="w-full p-2.5 pl-8 bg-black/20 border border-white/10 rounded-xl font-bold text-lg text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
-            <span class="absolute left-2.5 top-3 text-slate-500">🌡️</span>
-            <span class="absolute right-2.5 top-3.5 text-[9px] md:text-[10px] text-slate-500 font-bold">{tempSymbol}</span>
-          </div>
-        </div>
-        <div class="flex-1">
-          <label class="text-[9px] md:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_time}</label>
-          <div class="relative">
-            <input type="number" id="manual-time" class="w-full p-2.5 pl-8 bg-black/20 border border-white/10 rounded-xl font-bold text-lg text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
-            <span class="absolute left-2.5 top-3 text-slate-500">⏱️</span>
-            <span class="absolute right-2.5 top-3.5 text-[9px] md:text-[10px] text-slate-500 font-bold tracking-wider">MIN</span>
-          </div>
-        </div>
-      </div>
+    <div id="view-converter" class="space-y-3 animate-fade-in">
+        <textarea id="recipe-input" class="w-full h-20 p-3 bg-black/20 border border-white/10 rounded-xl focus:border-[#F59E0B] outline-none text-sm text-slate-200 resize-none" placeholder={t.placeholder}></textarea>
+        <button id="btn-convert" class="w-full py-3 bg-[#F59E0B] hover:bg-[#D97706] text-black rounded-xl font-bold text-base transition-all active:scale-95">{t.btn_action}</button>
     </div>
 
-    <div class="mt-4 pt-3 border-t border-white/10 relative">
-      <div class="grid grid-cols-2 gap-3 md:gap-4">
-        <div class="bg-black/20 p-3 rounded-xl md:rounded-2xl flex flex-col items-center justify-center relative min-h-[70px] md:min-h-[80px] border border-white/5">
-          <span class="text-[10px] md:text-[11px] text-slate-400 uppercase font-bold mb-1">{t.label_temp}</span>
-          <div class="flex items-baseline gap-1">
-            <span id="res-temp" class="text-3xl font-black text-white">--</span>
-            <span class="text-lg md:text-xl font-bold text-[#F59E0B]">{tempSymbol}</span>
-          </div>
-        </div>
-        <div class="bg-black/20 p-3 rounded-xl md:rounded-2xl flex flex-col items-center justify-center relative min-h-[70px] md:min-h-[80px] border border-white/5">
-          <span class="text-[10px] md:text-[11px] text-slate-400 uppercase font-bold mb-1">{t.label_time}</span>
-          <div class="flex items-baseline gap-1">
-            <span id="res-time" class="text-3xl font-black text-white">--</span>
-            <span class="text-lg md:text-xl font-bold text-[#F59E0B]">m</span>
-          </div>
-        </div>
+    <div class="mt-4 pt-3 border-t border-white/10">
+      <div class="grid grid-cols-2 gap-3">
+        <div class="bg-black/20 p-3 rounded-xl border border-white/5 text-center"><span class="block text-[9px] text-slate-400 uppercase font-bold">{t.label_temp}</span><span id="res-temp" class="text-2xl font-black">--</span><span class="text-sm font-bold text-[#F59E0B]">{tempSymbol}</span></div>
+        <div class="bg-black/20 p-3 rounded-xl border border-white/5 text-center"><span class="block text-[9px] text-slate-400 uppercase font-bold">{t.label_time}</span><span id="res-time" class="text-2xl font-black">--</span><span class="text-sm font-bold text-[#F59E0B]">m</span></div>
       </div>
+      <div id="eco-container" class="hidden flex justify-center mt-2 mb-2">
+        <div class="bg-emerald-950/50 border border-emerald-500/20 px-3 py-0.5 rounded-full"><span class="text-[9px] font-bold text-emerald-400 uppercase">{t.eco_label}<span id="res-eco"></span></span></div>
+      </div>
+    </div>
+  </div>
 
-      <div class="flex justify-center -mt-2 mb-3 md:mb-4">
-        <div class="bg-emerald-950/50 border border-emerald-500/20 px-3 md:px-4 py-1 rounded-full flex items-center gap-2 shadow-lg backdrop-blur-sm">
-          <span class="text-[10px] md:text-xs font-bold text-emerald-400 uppercase tracking-wide">
-            {t.eco_label} <span id="res-eco">{initialEco}</span>
-          </span>
+  {lang === 'it' && (
+    <div class="fixed bottom-0 left-0 right-0 z-[100]">
+      <div class="w-full bg-[#0B1120] md:border-t md:border-slate-800 border-t border-orange-500/30 p-3 flex items-center justify-between gap-3 shadow-2xl">
+        <div class="flex items-center gap-2 flex-1 min-w-0">
+          <div class="w-8 h-8 rounded-full bg-orange-500 flex items-center justify-center animate-pulse">🎁</div>
+          <p class="text-[11px] font-semibold text-white truncate">Kit Accessori Universale: miglior prezzo oggi</p>
         </div>
+        <a href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" class="bg-orange-500 text-black text-[11px] font-bold py-2 px-4 rounded-full">Prezzo</a>
       </div>
+    </div>
+  )}
+</div>
 
       {lang === 'it' && (
         <>
