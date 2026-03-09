@@ -1,11 +1,13 @@
 ---
-const { recipe } = Astro.props;
+// Aggiungiamo 'lang' alle props per capire in che lingua siamo (di default 'it')
+const { recipe, lang = "it" } = Astro.props;
 
 // LOGICA CLUSTER CON LINK REALI FORNITI E TAG AFFILIATO
 const products = {
   meat: {
     keywords: ['pollo', 'manzo', 'bistecca', 'carne', 'agnello', 'salsiccia', 'hamburger', 'costine', 'arrosto', 'maiale'],
-    title: "Mai Più Carne Secca o Cruda",
+    // Copy Ottimizzato: [Nome Oggetto] - [Beneficio]
+    title: "Termometro Digitale - Mai Più Carne Secca", 
     name: "ThermoPro TP02S Termometro Digitale",
     desc: "Il segreto per arrosti succosi? La temperatura al cuore. Lettura istantanea e precisa.",
     image: "/images/ads/thermopro.jpg", 
@@ -13,7 +15,7 @@ const products = {
   },
   crispy: {
     keywords: ['patatine', 'crocchette', 'fritto', 'cotoletta', 'panatura', 'bastoncini', 'arancini', 'olive', 'pesce'],
-    title: "Il Fritto Perfetto (Senza Gas)",
+    title: "Nebulizzatore Olio - Fritto Perfetto Senza Gas",
     name: "Nebulizzatore Olio Spray Vetro",
     desc: "Nebulizza il tuo olio preferito per una doratura uniforme senza appesantire il cibo.",
     image: "/images/ads/oil-spray.jpg",
@@ -21,7 +23,7 @@ const products = {
   },
   baking: {
     keywords: ['muffin', 'torta', 'dolce', 'pane', 'focaccia', 'soufflé', 'tortino', 'uova', 'frittata'],
-    title: "Cucina Senza Sporcare",
+    title: "Teglia in Silicone - Cucina Senza Sporcare",
     name: "Contenitore in Silicone Riutilizzabile",
     desc: "Perfetto per dolci e sformati. Protegge il cestello e si lava in lavastoviglie.",
     image: "/images/ads/silicone-pot.jpg",
@@ -29,7 +31,7 @@ const products = {
   },
   generic: {
     keywords: [], 
-    title: "Odi Pulire la Friggitrice?",
+    title: "Carta Forno Forata - Odi Pulire la Friggitrice?",
     name: "Carta Forno Monouso Air Fryer (100pz)",
     desc: "Mantieni il cestello come nuovo. Cucini, mangi e butti via la carta. Zero grasso.",
     image: "/images/ads/paper-liner.jpg",
@@ -49,26 +51,28 @@ if (products.meat.keywords.some(k => searchText.includes(k))) {
 }
 ---
 
-<div class="my-10 mx-auto max-w-2xl px-4">
-  <a href={selectedProduct.link} target="_blank" rel="nofollow noopener" class="group block relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-800 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.3)] transition-all duration-300">
-    <div class="absolute inset-0 bg-gradient-to-r from-slate-800 via-slate-800 to-slate-900 group-hover:via-slate-800/80 transition-all"></div>
-    <div class="relative flex flex-row items-center p-4 sm:p-5 gap-5">
-      <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 bg-white rounded-xl p-2 shadow-inner flex items-center justify-center">
-        <img src={selectedProduct.image} alt={selectedProduct.name} class="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" loading="lazy" />
-      </div>
-      <div class="flex-1 min-w-0 text-left">
-        <div class="flex items-center gap-2 mb-1.5">
-          <span class="bg-orange-500/10 text-orange-400 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-orange-500/20">Consigliato per te</span>
+{lang === 'it' && (
+  <div class="my-10 mx-auto max-w-2xl px-4">
+    <a href={selectedProduct.link} target="_blank" rel="nofollow noopener" class="group block relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-800 hover:border-orange-500 hover:shadow-[0_0_20px_rgba(249,115,22,0.3)] transition-all duration-300">
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-800 via-slate-800 to-slate-900 group-hover:via-slate-800/80 transition-all"></div>
+      <div class="relative flex flex-row items-center p-4 sm:p-5 gap-5">
+        <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 bg-white rounded-xl p-2 shadow-inner flex items-center justify-center">
+          <img src={selectedProduct.image} alt={selectedProduct.name} class="max-w-full max-h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500" loading="lazy" />
         </div>
-        <h3 class="text-white font-bold text-lg leading-tight mb-1 group-hover:text-blue-300 transition-colors">{selectedProduct.title}</h3>
-        <p class="text-slate-400 text-sm leading-snug mb-3 line-clamp-2">{selectedProduct.desc}</p>
-        <div class="flex items-center justify-end">
-          <button class="bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm font-bold py-2 px-4 rounded-full transition-colors shadow-lg shadow-orange-900/20 flex items-center gap-1">
-            Scopri su Amazon
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          </button>
+        <div class="flex-1 min-w-0 text-left">
+          <div class="flex items-center gap-2 mb-1.5">
+            <span class="bg-emerald-500/10 text-emerald-400 text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded uppercase tracking-wider border border-emerald-500/20">Scelta Top</span>
+          </div>
+          <h3 class="text-white font-bold text-lg leading-tight mb-1 group-hover:text-blue-300 transition-colors">{selectedProduct.title}</h3>
+          <p class="text-slate-400 text-sm leading-snug mb-3 line-clamp-2">{selectedProduct.desc}</p>
+          <div class="flex items-center justify-end">
+            <button class="bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm font-bold py-2 px-4 rounded-full transition-colors shadow-lg shadow-orange-900/20 flex items-center gap-1.5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              Verifica il Prezzo
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </a>
-</div>
+    </a>
+  </div>
+)}

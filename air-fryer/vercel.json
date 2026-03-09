@@ -1,0 +1,9 @@
+{
+    "redirects": [
+      {
+        "source": "/ricette/(.*)",
+        "destination": "/it/recipes/$1",
+        "permanent": true
+      }
+    ]
+  }

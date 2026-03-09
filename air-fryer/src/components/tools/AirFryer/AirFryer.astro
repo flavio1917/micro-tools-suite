@@ -1,11 +1,10 @@
 ---
 import recipes from '../../../data/recipes.json';
 
-export interface Props { lang: string; }
-const { lang } = Astro.props;
+export interface Props { lang?: string; }
+const { lang = "it" } = Astro.props;
 
-// Calcolo dinamico del numero (es. 155 diventa 150)
-const totalRecipes = recipes.length;
+const totalRecipes = recipes.length || 200;
 const roundedCount = Math.floor(totalRecipes / 10) * 10;
 
 const translations = {
@@ -21,8 +20,8 @@ const translations = {
     label_time: "Tempo",
     eco_label: "Risparmio stimato: ~",
     ad_title: "Consiglio dello Chef",
-    ad_label: "Sponsorizzato",
-    ad_link: "Vedi su Amazon",
+    ad_label: "Scelta Top", // MODIFICATO DA Sponsorizzato
+    ad_link: "Verifica il Prezzo", // MODIFICATO DA Vedi su Amazon
     manual_temp: "TEMP. FORNO",
     manual_time: "MINUTI FORNO",
     error_msg: "⚠️ Manca qualcosa! Inserisci Temperatura e Tempo.",
@@ -30,40 +29,44 @@ const translations = {
     legal_disclaimer: "⚠️ DISCLAIMER: In qualità di Affiliato Amazon, ricevo un guadagno dagli acquisti idonei. Risultati stimati su base matematica (-20°C / -20%). Controlla SEMPRE la cottura.",
     shop_items: [
       { name: "Carta Forno", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.it/dp/B0FP284FKG?tag=convfriggit-21" },
-      { name: "Magneti Carta Forno", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.it/dp/B0FJRJP94B?tag=convfriggit-21" },
+      { name: "Magneti Cottura", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.it/dp/B0FJRJP94B?tag=convfriggit-21" },
       { name: "Olio Spray", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.it/dp/B0GC74RM68?tag=convfriggit-21" }
     ],
-    alert_cap: "Temp max raggiungibile da friggitrice ad aria a 200°C",
+    alert_cap: "⚠️ Temp limitata a 200°C (Max Air Fryer)",
     cta_recipes_top: "Non sai cosa cucinare?",
-    cta_recipes_bottom: `Esplora le nostre ${roundedCount}+ Ricette`
+    cta_recipes_bottom: `Esplora le nostre ${roundedCount}+ Ricette`,
+    badge_grid: "TOP",
+    btn_grid: "Prezzo"
   },
   en: {
-    title: "Air Fryer",
-    subtitle: "Smart",
+    title: "Air Fryer Calculator",
+    subtitle: "Pro",
     tab_conv: "Paste Recipe",
     tab_food: "Manual Input",
     tab_recipes: "Recipes",
-    placeholder: "Paste oven recipe text here...",
+    placeholder: "Paste oven recipe text here (e.g. 'Bake at 400°F for 40 minutes')...",
     btn_action: "Convert Now",
     label_temp: "Temperature",
     label_time: "Time",
     eco_label: "Est. Savings: ~",
     ad_title: "Chef's Tip",
-    ad_label: "Sponsored",
-    ad_link: "View on Amazon",
+    ad_label: "Top Pick",
+    ad_link: "Check Price",
     manual_temp: "OVEN TEMP.",
     manual_time: "OVEN MINUTES",
-    error_msg: "⚠️ Missing inputs.",
-    legal_privacy: "🔒 Privacy First: Local calculations.",
-    legal_disclaimer: "⚠️ DISCLAIMER: As an Amazon Associate I earn from qualifying purchases. Estimated results. ALWAYS check food.",
+    error_msg: "⚠️ Missing inputs! Please provide Temp and Time.",
+    legal_privacy: "🔒 Privacy First: Local calculations. No data sent.",
+    legal_disclaimer: "⚠️ DISCLAIMER: As an Amazon Associate I earn from qualifying purchases. Estimated results (-25°F / -20%). ALWAYS check food.",
     shop_items: [
-      { name: "Liners", image: "/images/ads/paper-liner-main-page.png", link: "https://www.amazon.it/dp/B0FP284FKG?tag=convfriggit-21" },
-      { name: "Sprayer", image: "/images/ads/oil-spray-main.png", link: "https://www.amazon.it/dp/B0GC74RM68?tag=convfriggit-21" },
-      { name: "Cheat Sheet", image: "/images/ads/magnets-main-page.png", link: "https://www.amazon.it/dp/B08J3B1VXZ?tag=convfriggit-21" }
+      { name: "Paper Liners", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.com/dp/B0FP284FKG" },
+      { name: "Oil Sprayer", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.com/dp/B0GC74RM68" },
+      { name: "Cheat Sheet", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.com/dp/B08J3B1VXZ" }
     ],
-    alert_cap: "⚠️ Capped at 200°C",
+    alert_cap: "⚠️ Capped at 400°F (Max Air Fryer Temp)",
     cta_recipes_top: "Don't know what to cook?",
-    cta_recipes_bottom: `Explore ${roundedCount}+ Recipes`
+    cta_recipes_bottom: `Explore ${roundedCount}+ Recipes`,
+    badge_grid: "TOP",
+    btn_grid: "Price"
   },
   es: {
     title: "Freidora de Aire",
@@ -71,40 +74,88 @@ const translations = {
     tab_conv: "Pegar Receta",
     tab_food: "Datos Manuales",
     tab_recipes: "Recetas",
-    placeholder: "Pega el texto de la receta para el horno aquí...",
+    placeholder: "Pega el texto de la receta para el horno aquí (ej: 'Hornear a 200°C por 40 min')...",
     btn_action: "Convertir Ahora",
     label_temp: "Temperatura",
     label_time: "Tiempo",
     eco_label: "Ahorro estimado: ~",
     ad_title: "Consejo del Chef",
-    ad_label: "Patrocinado",
-    ad_link: "Ver en Amazon",
+    ad_label: "Elección Top",
+    ad_link: "Ver Precio",
     manual_temp: "TEMP. HORNO",
     manual_time: "MINUTOS HORNO",
     error_msg: "⚠️ ¡Falta algo! Introduce Temperatura y Tiempo.",
-    legal_privacy: "🔒 Privacidad: Cálculos locales. Sin envío de dati.",
-    legal_disclaimer: "⚠️ AVISO: En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas. Resultados estimados. Revisa SIEMPRE la cocción.",
+    legal_privacy: "🔒 Privacidad: Cálculos locales. Sin envío de datos.",
+    legal_disclaimer: "⚠️ AVISO: En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas. Resultados estimados (-20°C / -20%). Revisa SIEMPRE la cocción.",
     shop_items: [
-      { name: "Papel Horno", image: "/images/ads/paper-liner-main-page.png", link: "https://www.amazon.it/dp/B0FP284FKG?tag=convfriggit-21" },
-      { name: "Aceite Spray", image: "/images/ads/oil-spray-main.png", link: "https://www.amazon.it/dp/B0GC74RM68?tag=convfriggit-21" },
-      { name: "Imanes Tiempos", image: "/images/ads/magnets-main-page.png", link: "https://www.amazon.it/dp/B08J3B1VXZ?tag=convfriggit-21" }
+      { name: "Papel Horno", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.es/dp/B0FP284FKG" },
+      { name: "Aceite Spray", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.es/dp/B0GC74RM68" },
+      { name: "Imanes Tiempos", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.es/dp/B08J3B1VXZ" }
     ],
-    alert_cap: "⚠️ Temp limitada a 200°C",
+    alert_cap: "⚠️ Temp limitada a 200°C (Máx Air Fryer)",
     cta_recipes_top: "¿No sabes qué cocinar?",
-    cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`
+    cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`,
+    badge_grid: "TOP",
+    btn_grid: "Precio"
+  },
+  fr: {
+    title: "Friteuse à Air",
+    subtitle: "Smart",
+    tab_conv: "Coller Recette",
+    tab_food: "Saisie Manuelle",
+    tab_recipes: "Recettes",
+    placeholder: "Collez le texte de la recette pour four ici (ex: 'Cuire à 200°C pendant 40 minutes')...",
+    btn_action: "Convertir",
+    label_temp: "Température",
+    label_time: "Temps",
+    eco_label: "Économie est. : ~",
+    ad_title: "Astuce du Chef",
+    ad_label: "Top Choix",
+    ad_link: "Vérifier le Prix",
+    manual_temp: "TEMP. FOUR",
+    manual_time: "MINUTES FOUR",
+    error_msg: "⚠️ Il manque des données ! Entrez la Température et le Temps.",
+    legal_privacy: "🔒 Confidentialité : Calculs locaux. Aucune donnée envoyée.",
+    legal_disclaimer: "⚠️ AVIS : En tant que Partenaire Amazon, je réalise un bénéfice sur les achats. Résultats estimés (-20°C / -20%). Vérifiez TOUJOURS la cuisson.",
+    shop_items: [
+      { name: "Papier Cuisson", image: "/images/ads/paper-liner-main-page.jpg", link: "https://www.amazon.fr/dp/B0FP284FKG" },
+      { name: "Huile en Spray", image: "/images/ads/oil-spray-main.jpg", link: "https://www.amazon.fr/dp/B0GC74RM68" },
+      { name: "Aimants Temps", image: "/images/ads/magnets-main-page.jpg", link: "https://www.amazon.fr/dp/B08J3B1VXZ" }
+    ],
+    alert_cap: "⚠️ Temp. limitée à 200°C (Max Air Fryer)",
+    cta_recipes_top: "Vous ne savez pas quoi cuisiner ?",
+    cta_recipes_bottom: `Explorez nos ${roundedCount}+ Recettes`,
+    badge_grid: "TOP",
+    btn_grid: "Prix"
   }
 };
 
 const t = translations[lang as keyof typeof translations] || translations.it;
+
+const isEn = lang === 'en';
+const tempSymbol = isEn ? '°F' : '°C';
+const currSymbol = isEn ? '$' : '€';
+const initialEco = isEn ? '$0.00' : '0.00€';
 ---
 
-<div class="max-w-[480px] mx-auto space-y-4 md:space-y-6">
+<div id="airfryer-wrapper" data-lang={lang} class="max-w-[480px] mx-auto space-y-4 md:space-y-6">
   <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-[32px] shadow-2xl overflow-hidden font-sans text-white p-4 md:p-6 relative">
     
     <div class="text-center mb-4 md:mb-6">
       <h2 class="text-xl md:text-2xl font-bold text-slate-100">
         {t.title} <span class="text-[#F59E0B]">{t.subtitle}</span>
       </h2>
+    </div>
+
+    <div class="hidden md:block mb-6">
+      <button id="cta-recipes-desk-top" class="w-full py-4 border-2 border-[#F59E0B]/80 bg-gradient-to-br from-[#F59E0B]/20 to-black/40 backdrop-blur-sm rounded-xl font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
+        <div class="absolute inset-0 bg-[#F59E0B]/10 animate-pulse pointer-events-none"></div>
+        <span class="text-[#F59E0B] text-xs uppercase tracking-wider mb-1 relative z-10 drop-shadow-md">{t.cta_recipes_top}</span>
+        <span class="text-white text-xl flex items-center gap-2 group-hover:text-[#F59E0B] transition-colors relative z-10 drop-shadow-lg">
+          {t.cta_recipes_bottom}
+          <svg class="w-6 h-6 text-[#F59E0B] animate-bounce transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </span>
+      </button>
     </div>
 
     <div class="flex p-1 bg-black/20 border border-white/5 rounded-xl mb-4 md:mb-6 gap-1">
@@ -149,7 +200,7 @@ const t = translations[lang as keyof typeof translations] || translations.it;
           <div class="relative">
             <input type="number" id="manual-temp" class="w-full p-3 md:p-4 pl-8 md:pl-10 bg-black/20 border border-white/10 rounded-xl font-bold text-lg md:text-xl text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
             <span class="absolute left-2.5 md:left-3 top-3.5 md:top-4 text-slate-500">🌡️</span>
-            <span class="absolute right-2.5 md:right-3 top-4 md:top-5 text-[9px] md:text-[10px] text-slate-500 font-bold">°C</span>
+            <span class="absolute right-2.5 md:right-3 top-4 md:top-5 text-[9px] md:text-[10px] text-slate-500 font-bold">{tempSymbol}</span>
           </div>
         </div>
         <div class="flex-1">
@@ -169,7 +220,7 @@ const t = translations[lang as keyof typeof translations] || translations.it;
           <span class="text-[10px] md:text-[11px] text-slate-400 uppercase font-bold mb-1">{t.label_temp}</span>
           <div class="flex items-baseline gap-1">
             <span id="res-temp" class="text-3xl md:text-4xl font-black text-white">--</span>
-            <span class="text-lg md:text-xl font-bold text-[#F59E0B]">°C</span>
+            <span class="text-lg md:text-xl font-bold text-[#F59E0B]">{tempSymbol}</span>
           </div>
         </div>
         <div class="bg-black/20 p-3 md:p-4 rounded-xl md:rounded-2xl flex flex-col items-center justify-center relative min-h-[80px] md:min-h-[100px] border border-white/5">
@@ -184,14 +235,14 @@ const t = translations[lang as keyof typeof translations] || translations.it;
       <div class="flex justify-center -mt-2">
         <div class="bg-emerald-950/50 border border-emerald-500/20 px-3 md:px-4 py-1 md:py-1.5 rounded-full flex items-center gap-2 shadow-lg backdrop-blur-sm">
           <span class="text-[10px] md:text-xs font-bold text-emerald-400 uppercase tracking-wide">
-            {t.eco_label} <span id="res-eco">0.00€</span>
+            {t.eco_label} <span id="res-eco">{initialEco}</span>
           </span>
         </div>
       </div>
 
       <div class="mt-4 md:mt-6 flex justify-between items-center mb-1.5 px-1">
          <h4 class="text-[#F59E0B] font-bold text-[9px] md:text-[10px] uppercase tracking-wider">{t.ad_title}</h4>
-         <span class="text-[8px] md:text-[9px] text-slate-500 font-bold uppercase tracking-widest">{t.ad_label}</span>
+         <span class="text-[8px] md:text-[9px] text-emerald-400 font-bold uppercase tracking-widest bg-emerald-500/10 px-2 py-0.5 rounded">{t.ad_label}</span>
       </div>
       <a id="ad-link" href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="bg-orange-950/20 border border-[#F59E0B]/20 rounded-xl p-3 md:p-4 flex gap-3 md:gap-4 items-start transition-all hover:border-[#F59E0B]/40 hover:bg-orange-950/30 cursor-pointer group block">
         <div class="p-1.5 md:p-2 bg-[#F59E0B]/10 rounded-lg text-[#F59E0B] group-hover:bg-[#F59E0B] group-hover:text-black transition-colors">
@@ -213,7 +264,6 @@ const t = translations[lang as keyof typeof translations] || translations.it;
   <div class="block md:hidden space-y-4">
     <button id="cta-recipes-mob" class="w-full py-4 border-2 border-[#F59E0B]/80 bg-gradient-to-br from-[#F59E0B]/20 to-black/40 backdrop-blur-sm rounded-xl font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
       <div class="absolute inset-0 bg-[#F59E0B]/10 animate-pulse pointer-events-none"></div>
-      
       <span class="text-[#F59E0B] text-xs uppercase tracking-wider mb-1 relative z-10 drop-shadow-md">{t.cta_recipes_top}</span>
       <span class="text-white text-lg flex items-center gap-2 group-hover:text-[#F59E0B] transition-colors relative z-10 drop-shadow-lg">
         {t.cta_recipes_bottom}
@@ -224,13 +274,16 @@ const t = translations[lang as keyof typeof translations] || translations.it;
     <div class="grid grid-cols-3 gap-2 w-full mx-auto">
       {t.shop_items.map(item => (
         <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-transparent border border-white/5 rounded-xl p-1.5 text-center hover:border-[#F59E0B]/50 transition-all group block relative">
-          <span class="absolute top-1 right-1 bg-[#F59E0B] text-black text-[8px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider z-10">AD</span>
+          <span class="absolute top-1 right-1 bg-emerald-500/20 text-emerald-400 text-[8px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider z-10 backdrop-blur-sm border border-emerald-500/30">{t.badge_grid}</span>
           <div class="aspect-square w-full mb-2 overflow-hidden bg-white/5 rounded-xl flex items-center justify-center p-2">
             <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
           </div>
           <div class="flex flex-col items-center justify-center min-h-[40px]">
             <span class="text-[10px] font-medium text-slate-300 group-hover:text-white leading-tight transition-colors mb-2">{item.name}</span>
-            <span class="text-[9px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-2.5 py-1 rounded-full whitespace-nowrap transition-colors w-full">Su Amazon</span>
+            <span class="text-[9px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-2.5 py-1.5 rounded-full whitespace-nowrap transition-colors w-full flex items-center justify-center gap-1">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              {t.btn_grid}
+            </span>
           </div>
         </a>
       ))}
@@ -241,27 +294,20 @@ const t = translations[lang as keyof typeof translations] || translations.it;
     <div class="grid grid-cols-3 gap-3 w-full mx-auto">
       {t.shop_items.map(item => (
         <a href={item.link} target="_blank" rel="nofollow noopener" class="bg-transparent border border-white/5 rounded-2xl p-2 text-center hover:border-[#F59E0B]/50 transition-all group block relative">
-          <span class="absolute top-2 right-2 bg-[#F59E0B] text-black text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider z-10">AD</span>
+          <span class="absolute top-2 right-2 bg-emerald-500/20 text-emerald-400 text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider z-10 border border-emerald-500/30">{t.badge_grid}</span>
           <div class="aspect-square w-full mb-3 overflow-hidden bg-white/5 rounded-xl flex items-center justify-center p-3">
             <img src={item.image} alt={item.name} class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" />
           </div>
           <div class="flex flex-col items-center justify-center min-h-[44px]">
             <span class="text-[11px] font-medium text-slate-300 group-hover:text-white leading-tight transition-colors mb-2.5">{item.name}</span>
-            <span class="text-[10px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-4 py-1.5 rounded-full whitespace-nowrap transition-colors w-full">Su Amazon</span>
+            <span class="text-[10px] text-black font-bold bg-[#F59E0B] hover:bg-[#D97706] px-4 py-1.5 rounded-full whitespace-nowrap transition-colors w-full flex items-center justify-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              {t.btn_grid}
+            </span>
           </div>
         </a>
       ))}
     </div>
-
-    <button id="cta-recipes-desk" class="w-full py-4 border-2 border-[#F59E0B]/80 bg-gradient-to-br from-[#F59E0B]/20 to-black/40 backdrop-blur-sm rounded-xl font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
-      <div class="absolute inset-0 bg-[#F59E0B]/10 animate-pulse pointer-events-none"></div>
-      
-      <span class="text-[#F59E0B] text-xs uppercase tracking-wider mb-1 relative z-10 drop-shadow-md">{t.cta_recipes_top}</span>
-      <span class="text-white text-xl flex items-center gap-2 group-hover:text-[#F59E0B] transition-colors relative z-10 drop-shadow-lg">
-        {t.cta_recipes_bottom}
-        <svg class="w-6 h-6 text-[#F59E0B] animate-bounce transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-      </span>
-    </button>
   </div>
 
   <div class="mx-auto text-center space-y-4 px-4 pb-8 mt-8">
@@ -272,31 +318,55 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 </div>
 
 <script>
-  // --- DATABASE ---
+  // --- DATABASE ADS ---
   const ads = [
     { k: ['patat', 'fries', 'chips', 'surgelat', 'frozen'], t: "Per patatine croccanti e non unte, questo spray è fondamentale.", l: "https://www.amazon.it/dp/B0GC74RM68?tag=convfriggit-21" },
     { k: ['pollo', 'chicken', 'wings', 'alette', 'carne', 'meat'], t: "Non sporcare il cestello! Usa le teglie in carta forno per Air Fryer.", l: "https://www.amazon.it/dp/B0FP284FKG?tag=convfriggit-21" },
     { k: ['pesce', 'fish', 'salmone'], t: "Cucina il pesce senza odori persistenti con i tappetini in silicone.", l: "https://www.amazon.it/dp/B0FVM478YZ?tag=convfriggit-21" },
     { k: ['dolc', 'cake', 'muffin', 'verdur', 'veggie'], t: "Set di stampi in silicone per cotture delicate e uniformi.", l: "https://www.amazon.it/s?k=stampi+silicone+friggitrice+ad+aria&tag=convfriggit-21" }
   ];
-  
   const defaultAd = { t: "Il kit definitivo per sfruttare al 100% la tua friggitrice.", l: "https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" };
   
-  // --- CALCOLO CORE ---
-  const convert = (temp: number, time: number, isF: boolean) => {
-    let t = isF ? (temp - 32) * (5/9) : temp;
-    let finalTemp = Math.round(t - 20);
-    let finalTime = time * 0.8;
+  // Lettura della lingua dal wrapper
+  const wrapper = document.getElementById('airfryer-wrapper');
+  const sysLang = wrapper ? wrapper.getAttribute('data-lang') : 'it';
+  const isEn = sysLang === 'en';
+  const currUnit = isEn ? '$' : '€';
+
+  // --- CALCOLO CORE MULTILINGUA ---
+  const convert = (temp: number, time: number, isInputF: boolean) => {
+    let finalTemp, finalTime, isCapped = false;
     
-    const MAX_TEMP = 200; 
-    let isCapped = false;
-    if (finalTemp > MAX_TEMP) {
-      isCapped = true;
-      const diff = finalTemp - MAX_TEMP;
-      finalTemp = MAX_TEMP;
-      finalTime = finalTime * (1 + (diff * 0.015));
+    // Logica per mercato USA/UK (Fahrenheit)
+    if (isEn) {
+      let tempF = isInputF ? temp : (temp * 9/5) + 32;
+      finalTemp = tempF - 25;
+      let timeMult = 1;
+      
+      if (finalTemp > 400) {
+        isCapped = true;
+        let diff = finalTemp - 400;
+        finalTemp = 400;
+        timeMult = 1 + (diff * 0.015);
+      }
+      finalTime = Math.round(time * 0.8 * timeMult);
+      finalTemp = Math.round(finalTemp / 5) * 5;
+      
+    // Logica EU (Celsius)
+    } else {
+      let tempC = isInputF ? (temp - 32) * 5/9 : temp;
+      finalTemp = tempC - 20;
+      let timeMult = 1;
+      
+      if (finalTemp > 200) {
+        isCapped = true;
+        let diff = finalTemp - 200;
+        finalTemp = 200;
+        timeMult = 1 + (diff * 0.015);
+      }
+      finalTime = Math.round(time * 0.8 * timeMult);
+      finalTemp = Math.round(finalTemp);
     }
-    finalTime = Math.round(finalTime);
 
     const ovenCost = 2.0 * (time / 60);
     const fryerCost = 1.4 * (finalTime / 60);
@@ -316,7 +386,7 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 
     if (resTemp) resTemp.innerText = res.temp.toString();
     if (resTime) resTime.innerText = res.time.toString();
-    if (resEco) resEco.innerText = res.saved + "€";
+    if (resEco) resEco.innerText = isEn ? (currUnit + res.saved) : (res.saved + currUnit);
     if (errorBox) errorBox.classList.add('hidden');
     
     if (capAlert) {
@@ -340,12 +410,11 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 
     if (resTemp) resTemp.innerText = "--";
     if (resTime) resTime.innerText = "--";
-    if (resEco) resEco.innerText = "0.00€";
+    if (resEco) resEco.innerText = isEn ? "$0.00" : "0.00€";
     if (errorBox) errorBox.classList.add('hidden');
     if (capAlert) capAlert.classList.add('hidden');
   };
 
-  // --- EVENTI E SMOOTH SCROLL ---
   const runParser = () => {
     const inputEl = document.getElementById('recipe-input') as HTMLTextAreaElement | null;
     if (!inputEl) return;
@@ -355,7 +424,7 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 
     if (tMatch && mMatch) {
       const tempVal = parseInt(tMatch[1]);
-      const isF = tMatch[2].toUpperCase() === 'F';
+      const isF = tMatch[2].toUpperCase() === 'F' || (isEn && tMatch[2].toUpperCase() !== 'C');
       const timeVal = parseInt(mMatch[1]);
       const res = convert(tempVal, timeVal, isF);
       updateUI(res, text);
@@ -372,7 +441,7 @@ const t = translations[lang as keyof typeof translations] || translations.it;
     const t = parseInt(tInput.value || "0");
     const m = parseInt(mInput.value || "0");
     if (t > 0 && m > 0) {
-      const res = convert(t, m, false);
+      const res = convert(t, m, isEn);
       updateUI(res, "");
     } else {
       resetUI();
@@ -389,7 +458,6 @@ const t = translations[lang as keyof typeof translations] || translations.it;
     }
   };
 
-  // Setup Listeners
   document.getElementById('btn-convert')?.addEventListener('click', runParser);
   
   const recipeInput = document.getElementById('recipe-input') as HTMLTextAreaElement | null;
@@ -402,18 +470,16 @@ const t = translations[lang as keyof typeof translations] || translations.it;
   document.getElementById('manual-temp')?.addEventListener('input', runManual);
   document.getElementById('manual-time')?.addEventListener('input', runManual);
 
-  // Aggiunto listener a entrambi i bottoni (sdoppiati per mobile/desktop)
   document.getElementById('tab-recipes')?.addEventListener('click', scrollToRecipes);
   document.getElementById('cta-recipes-mob')?.addEventListener('click', scrollToRecipes);
-  document.getElementById('cta-recipes-desk')?.addEventListener('click', scrollToRecipes);
+  document.getElementById('cta-recipes-desk-top')?.addEventListener('click', scrollToRecipes);
 
   const btnConv = document.getElementById('tab-conv');
   const btnFood = document.getElementById('tab-food');
-  const btnRecipes = document.getElementById('tab-recipes');
   const viewConv = document.getElementById('view-converter');
   const viewFood = document.getElementById('view-presets');
 
-  if(btnConv && btnFood && btnRecipes && viewConv && viewFood) {
+  if(btnConv && btnFood && viewConv && viewFood) {
     const switchTo = (mode: 'conv' | 'food') => {
       resetUI();
       if(mode === 'conv') {

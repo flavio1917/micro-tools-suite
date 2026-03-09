@@ -7,7 +7,14 @@ export interface Props {
   lang?: string;
   description?: string;
   ogImage?: string;
-  recipeData?: any; 
+  recipeData?: any;
+  // Prop estesa per le 4 lingue
+  alternateUrls?: { 
+    it?: string; 
+    en?: string; 
+    es?: string; 
+    fr?: string;
+  };
 }
 
 const { 
@@ -15,8 +22,31 @@ const {
   lang = "it",
   description = "Il miglior convertitore friggitrice ad aria online. Trasforma tempi e temperature da forno a Air Fryer in un click. Oltre 220 ricette ottimizzate.",
   ogImage = "https://www.convertitorefriggitrice.it/og-image.jpg",
-  recipeData
+  recipeData,
+  alternateUrls
 } = Astro.props;
+
+// Genera l'URL canonico corretto per ogni pagina
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://www.convertitorefriggitrice.it").toString();
+
+// Gestione dinamica e pulita delle traduzioni del Footer
+const disclaimers = {
+  it: "Trasparenza: In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. I risultati della conversione sono stime basate su parametri standard (-20°C / -20% tempo). Controlla sempre la cottura. Le immagini sono a scopo illustrativo (IA).",
+  en: "Transparency: As an Amazon Associate, this site earns from qualifying purchases. Conversion results are estimates based on standard parameters (-40°F / -20% time). Always check your food. Images are for illustrative purposes (AI).",
+  es: "Transparencia: Como Afiliado de Amazon, este sitio recibe una comisión por compras elegibles. Los resultados son estimaciones basadas en parámetros estándar (-20°C / -20% tiempo). Comprueba siempre la cocción. Las imágenes son ilustrativas (IA).",
+  fr: "Transparence : En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises. Les résultats sont des estimations basées sur des paramètres standards (-20°C / -20% temps). Vérifiez toujours la cuisson. Images à but illustratif (IA)."
+};
+
+const footerLabels = {
+  it: { about: "Chi Siamo", privacy: "Privacy", cookie: "Cookie", prefix: "" },
+  en: { about: "About Us", privacy: "Privacy", cookie: "Cookies", prefix: "/en" },
+  es: { about: "Quiénes Somos", privacy: "Privacidad", cookie: "Cookies", prefix: "/es" },
+  fr: { about: "À Propos", privacy: "Confidentialité", cookie: "Cookies", prefix: "/fr" }
+};
+
+// Seleziona la lingua corretta (fallback all'italiano se non trovata)
+const currentDisclaimer = disclaimers[lang as keyof typeof disclaimers] || disclaimers.it;
+const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerLabels.it;
 ---
 
 <!doctype html>
@@ -29,13 +59,19 @@ const {
     
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="convertitore friggitrice ad aria, calcolo tempi friggitrice ad aria, conversione forno friggitrice aria, ricette air fryer" />
-    <link rel="canonical" href="https://www.convertitorefriggitrice.it" />
+    <link rel="canonical" href={canonicalURL} />
+    
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
     <meta name="p:domain_verify" content="0513c10094fa04708fce47d2922e822b"/>
 
+    {alternateUrls?.it && <link rel="alternate" hreflang="it" href={alternateUrls.it} />}
+    {alternateUrls?.en && <link rel="alternate" hreflang="en-US" href={alternateUrls.en} />}
+    {alternateUrls?.es && <link rel="alternate" hreflang="es" href={alternateUrls.es} />}
+    {alternateUrls?.fr && <link rel="alternate" hreflang="fr" href={alternateUrls.fr} />}
+    {alternateUrls?.it && <link rel="alternate" hreflang="x-default" href={alternateUrls.it} />}
+
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.convertitorefriggitrice.it" />
+    <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
@@ -68,7 +104,7 @@ const {
         "@type": "Recipe",
         "name": recipeData.title,
         "image": [`https://www.convertitorefriggitrice.it${recipeData.image}`],
-        "description": `Come cucinare ${recipeData.title} in friggitrice ad aria.`,
+        "description": recipeData.description || `Come cucinare ${recipeData.title} in friggitrice ad aria.`,
         "cookTime": `PT${recipeData.time}M`,
         "recipeIngredient": recipeData.ingredients,
         "prepTime": "PT5M",
@@ -81,7 +117,17 @@ const {
   </head>
   
   <body class="bg-[#0B1120] text-slate-300 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white">
-    <main class="flex-grow w-full px-4 py-8">
+    
+    <header class="w-full flex justify-end px-4 py-3 max-w-[480px] mx-auto md:max-w-4xl">
+      <div class="flex items-center gap-2 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-full px-3 py-1.5 shadow-lg">
+        {alternateUrls?.it && <a href={alternateUrls.it} class={`text-lg hover:scale-110 transition-transform ${lang === 'it' ? 'grayscale-0' : 'grayscale opacity-50 hover:grayscale-0 hover:opacity-100'}`} title="Italiano">🇮🇹</a>}
+        {alternateUrls?.en && <a href={alternateUrls.en} class={`text-lg hover:scale-110 transition-transform ${lang === 'en' ? 'grayscale-0' : 'grayscale opacity-50 hover:grayscale-0 hover:opacity-100'}`} title="English">🇬🇧</a>}
+        {alternateUrls?.es && <a href={alternateUrls.es} class={`text-lg hover:scale-110 transition-transform ${lang === 'es' ? 'grayscale-0' : 'grayscale opacity-50 hover:grayscale-0 hover:opacity-100'}`} title="Español">🇪🇸</a>}
+        {alternateUrls?.fr && <a href={alternateUrls.fr} class={`text-lg hover:scale-110 transition-transform ${lang === 'fr' ? 'grayscale-0' : 'grayscale opacity-50 hover:grayscale-0 hover:opacity-100'}`} title="Français">🇫🇷</a>}
+      </div>
+    </header>
+
+    <main class="flex-grow w-full px-4 pb-8 pt-2">
       <slot />
     </main>
 
@@ -89,16 +135,16 @@ const {
       <div class="max-w-[480px] mx-auto px-6 space-y-6">
         <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-800 shadow-inner text-justify">
           <p class="text-[10px] text-slate-500 leading-relaxed italic">
-            <strong>Trasparenza:</strong> In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. I risultati della conversione sono stime basate su parametri standard (-20°C / -20% tempo). Controlla sempre la cottura. Le immagini sono a scopo illustrativo (IA).
+            <strong>{currentDisclaimer}</strong>
           </p>
         </div>
         
         <nav class="flex justify-center gap-4 text-[11px] text-slate-400 font-medium tracking-wide">
-          <a href="/info" class="hover:text-[#F59E0B] transition-colors">Chi Siamo</a>
+          <a href={`${currentLabels.prefix}/info`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.about}</a>
           <span>•</span>
-          <a href="/privacy" class="hover:text-[#F59E0B] transition-colors">Privacy</a>
+          <a href={`${currentLabels.prefix}/privacy`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.privacy}</a>
           <span>•</span>
-          <a href="/cookies" class="hover:text-[#F59E0B] transition-colors">Cookie</a>
+          <a href={`${currentLabels.prefix}/cookies`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.cookie}</a>
         </nav>
         
         <p class="text-[10px] text-slate-600 font-mono italic">
