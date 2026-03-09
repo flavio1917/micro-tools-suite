@@ -14,6 +14,11 @@ export async function getStaticPaths() {
 
 const { recipe } = Astro.props;
 
+// --- AGGIUNTE PER LINGUA E BOTTONE ---
+const lang = 'it'; // ATTENZIONE: cambia questo in 'en', 'es', 'fr' quando duplichi questo file per le altre lingue!
+const backUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
+// -------------------------------------
+
 // Gestione immagine
 const imagePath = `/images/recipes/${recipe.slug}.webp`;
 
@@ -22,7 +27,7 @@ const imagePath = `/images/recipes/${recipe.slug}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
 ---
 
-<MainLayout title={`${recipe.title} - Ricetta Friggitrice ad Aria`}>
+<MainLayout title={`${recipe.title} - Ricetta Friggitrice ad Aria`} lang={lang}>
   
   <div class="relative h-[40vh] min-h-[320px] md:h-[50vh] md:min-h-[400px] w-full overflow-hidden bg-slate-900">
     <img 
@@ -35,7 +40,7 @@ const defaultPortions = parseInt(recipe.portions) || 2;
     
     <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-12 md:pb-16 items-center text-center z-10">
       
-      <a href="/#ricettario" class="inline-flex items-center gap-2 px-6 py-3 md:px-4 md:py-2 mb-4 md:mb-6 rounded-full bg-slate-800/80 hover:bg-slate-700/90 backdrop-blur-md text-white transition-all border border-slate-500/50 text-sm font-bold md:font-medium shadow-xl group">
+      <a href={backUrl} class="inline-flex items-center gap-2 px-6 py-3 md:px-4 md:py-2 mb-4 md:mb-6 rounded-full bg-slate-800/80 hover:bg-slate-700/90 backdrop-blur-md text-white transition-all border border-slate-500/50 text-sm font-bold md:font-medium shadow-xl group">
         <svg class="w-5 h-5 md:w-4 md:h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         Torna al Ricettario
       </a>
@@ -104,7 +109,7 @@ const defaultPortions = parseInt(recipe.portions) || 2;
 
       <div class="lg:col-span-2 space-y-8">
         
-        <AmazonProduct recipe={recipe} />
+        {lang === 'it' && <AmazonProduct recipe={recipe} />}
 
         <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl">
           <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
@@ -165,7 +170,7 @@ const defaultPortions = parseInt(recipe.portions) || 2;
         </div>
 
         <div class="text-center pt-8 border-t border-slate-800">
-          <a href="/#ricettario" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-all font-medium">
+          <a href={backUrl} class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-all font-medium">
             ← Cerca un'altra ricetta
           </a>
         </div>
