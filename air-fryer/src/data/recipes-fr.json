@@ -53,7 +53,7 @@
     "source": "Tradition Italienne",
     "tip": "Ajoutez une cuillère à soupe de parmesan et une demi-gousse d'ail hachée à la chapelure pour une panure encore plus savoureuse.",
     "big_image_prompt": "A classic Italian 'fettina panata' (breaded chicken cutlet) golden and crispy, served on a white plate with a side of mixed green salad and a lemon slice. Natural bright lighting, appetizing.",
-    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, salé, apéritif, snack, rapide, facile",
+    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, salé, apéritif, rapide, facile",
     "isItalian": true,
     "image": "cotoletta-fettina-panata"
   },
@@ -199,7 +199,7 @@
     "source": "Tradition Italienne",
     "tip": "Si vous utilisez du riz cru, assurez-vous que la farce soit très humide et juteuse (ajoutez la pulpe de tomate) pour que le grain cuise parfaitement à l'intérieur.",
     "big_image_prompt": "Italian stuffed vegetables, red tomatoes and bell peppers filled with savory rice and herbs, roasted to perfection. Served in a rustic baking dish, garnished with fresh basil leaves.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, sucré, dessert, petit-déjeuner, goûter",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, petit-déjeuner",
     "image": "verdure-ripiene-riso-carne"
   },
   {
@@ -259,7 +259,7 @@
     "source": "Tradizione Italiana",
     "tip": "Placez le moule directement sur la grille perforée du panier : la circulation de l'air par le bas garantira que le fond de la pâte cuise sans rester mou.",
     "big_image_prompt": "A slice of savory Italian Ricotta and Spinach tart (Torta salata) with a flaky, buttery golden crust. Displayed on a rustic plate with a checkered napkin in the background. Natural daylight.",
-    "keywords": "tarte salée, ricotta, épinards, friteuse à air, plat rapide, cuisine italienne, apéritif, snack",
+    "keywords": "tarte salée, ricotta, épinards, friteuse à air, plat rapide, cuisine italienne, apéritif",
     "isItalian": true,
     "image": "torta-salata-ricotta-spinaci"
   },
@@ -288,7 +288,7 @@
     "isItalian": true,
     "tip": "Ne sautez pas l'étape du trempage ni le repos dans le torchon humide : ce sont les secrets pour éviter qu'elles ne deviennent trop sèches.",
     "big_image_prompt": "Professional food photography of roasted chestnuts in a rustic wooden bowl, some partially peeled showing the golden fruit inside. Cozy autumn lighting, steam rising, macro detail, rustic dark wood table.",
-    "keywords": "châtaignes, automne, encas, snack, rapide, facile, friteuse à air, sans gluten",
+    "keywords": "châtaignes, automne, encas, rapide, facile, friteuse à air, sans gluten",
     "image": "caldarroste-friggitrice-aria"
   },
   {
@@ -374,7 +374,7 @@
     "isItalian": true,
     "tip": "L'émulsion d'eau et d'huile est le secret des boulangers : elle empêche la focaccia de trop sécher avec la chaleur pulsée et la garde moelleuse à l'intérieur.",
     "big_image_prompt": "A freshly baked Italian flatbread (Schiacciatina/Focaccia) glistening with olive oil, dimpled with fingerprints, topped with coarse sea salt and fresh rosemary. Rustic bakery style.",
-    "keywords": "pâte levée, salé, apéritif, snack, rapide, facile",
+    "keywords": "pâte levée, salé, apéritif, rapide, facile",
     "image": "focaccia-schiacciatina-veloce"
   },
   {
@@ -1074,7 +1074,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Assurez-vous de ne pas trop les superposer dans le panier ; si nécessaire, faites-les cuire en deux fournées séparées pour bien les faire sécher.",
-    "keywords": "croustillant, gourmand, levé, salé, apéritif, snack, rapide, facile, vegan, végétarien",
+    "keywords": "croustillant, gourmand, levé, salé, apéritif, rapide, facile, vegan, végétarien",
     "image": "patatine-tortilla"
   },
   {
@@ -1752,7 +1752,7 @@
     ],
     "source": "Cosori",
     "tip": "Laissez toujours un peu d'espace entre chaque feuilleté : la pâte feuilletée triple de volume à la cuisson et risque de s'agglomérer en un seul bloc.",
-    "keywords": "pâte feuilletée, salé, apéritif, snack, rapide, facile, express, gourmand",
+    "keywords": "pâte feuilletée, salé, apéritif, rapide, facile, express, gourmand",
     "isItalian": false,
     "image": "maiali-in-coperta"
   },
@@ -2110,7 +2110,7 @@
     ],
     "source": "Cosori",
     "tip": "Badigeonnez la surface avec de l'œuf et faites de petites incisions pour laisser échapper la vapeur. N'oubliez pas de secouer le panier ou de retourner les aliments à mi-temps.",
-    "keywords": "viande, plat principal, protéiné, poisson, mer, légumes, accompagnement, pâte levée, salé, apéritif, snack",
+    "keywords": "viande, plat principal, protéiné, poisson, mer, légumes, accompagnement, pâte levée, salé, apéritif",
     "image": "stromboli"
   },
   {
@@ -2315,7 +2315,7 @@
     ],
     "source": "Cosori",
     "tip": "N'oubliez pas de secouer le panier ou de retourner les aliments à mi-cuisson. Ajoutez le fromage sur le hamburger dans la dernière minute de cuisson pour le faire fondre.",
-    "keywords": "viande, plat principal, protéiné, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, collation, rapide, facile, vélocité",
     "isItalian": true,
     "image": "cheeseburger-sliders"
   },
@@ -2374,7 +2374,7 @@
     ],
     "source": "Tefal",
     "tip": "Badigeonnez les empanadas avec du jaune d'œuf mélangé à de l'eau avant de les cuire. N'oubliez pas de secouer le panier ou de retourner les aliments à mi-cuisson.",
-    "keywords": "viande, plat principal, protéiné, sucré, dessert, petit déjeuner, collation",
+    "keywords": "viande, plat principal, protéiné, collation",
     "isItalian": true,
     "image": "empanadas-di-manzo"
   },
@@ -2460,7 +2460,7 @@
     ],
     "source": "Tefal",
     "tip": "Toastez légèrement les pains à burger dans la friteuse à air pendant que la viande repose.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, collation, levé, salé, apéritif, rapide, facile, vélocité",
     "isItalian": true,
     "image": "hamburger-deluxe"
   },
@@ -2489,7 +2489,7 @@
     ],
     "source": "Cosori",
     "tip": "Laissez refroidir les galettes au réfrigérateur avant de les cuire pour qu'elles conservent leur forme.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, collation, levé, salé, apéritif, rapide, facile, vélocité",
     "isItalian": false,
     "image": "hamburger-tacchino-asiatico"
   },
@@ -2576,7 +2576,7 @@
     ],
     "source": "Cosori",
     "tip": "Retirez bien les graines des jalapeños pour réduire le piquant. N'oubliez pas de secouer le panier ou de retourner les aliments à mi-cuisson.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, doux, dessert, petit déjeuner, collation",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, doux, collation",
     "isItalian": true,
     "image": "jalapenos-ripieni-bacon"
   },
@@ -2605,7 +2605,7 @@
     ],
     "source": "Tefal",
     "tip": "Servez les kofta avec une sauce fraîche au yaourt et à la menthe.",
-    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, doux, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, doux, collation, rapide, facile, vélocité",
     "isItalian": false,
     "image": "kofta-manzo-coriandolo"
   },
@@ -2718,7 +2718,7 @@
     ],
     "source": "Tefal",
     "tip": "Enfilez la spirale avec deux brochettes croisées pour maintenir sa forme pendant la cuisson. N'oubliez pas de la retourner à mi-temps.",
-    "keywords": "viande, plat principal, protéiné, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, collation, rapide, facile, vélocité",
     "isItalian": true,
     "image": "salsiccia-griglia-spirale"
   },
@@ -2783,7 +2783,7 @@
     ],
     "source": "Cosori",
     "tip": "Servez ces brochettes parfumées accompagnées d'une sauce fraîche au yaourt et de feuilles de menthe.",
-    "keywords": "viande, plat principal, protéiné, doux, dessert, petit déjeuner, collation, rapide, facile, prompt",
+    "keywords": "viande, plat principal, protéiné, doux, collation, rapide, facile, prompt",
     "isItalian": false,
     "image": "spiedini-agnello-shawarma"
   },
@@ -2844,7 +2844,7 @@
     ],
     "source": "Cosori",
     "tip": "Utilisez des brochettes en bois pré-trempées dans l'eau pendant une dizaine de minutes, ainsi elles ne brûleront pas lors de l'exposition à la chaleur.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, véloces",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, collation, levé, salé, apéritif, rapide, facile, véloces",
     "isItalian": false,
     "image": "spiedini-manzo-coreano"
   },
@@ -2872,7 +2872,7 @@
     ],
     "source": "Tefal",
     "tip": "Assurez-vous d'enrouler très étroitement la viande pour éviter que le fromage ne coule excessivement au fond.",
-    "keywords": "viande, plat principal, protéiné, sucré, dessert, petit déjeuner, collation, rapide, facile, veloce",
+    "keywords": "viande, plat principal, protéiné, collation, rapide, facile, veloce",
     "isItalian": true,
     "image": "spiedini-manzo-teriyaki"
   },
@@ -3192,7 +3192,7 @@
     ],
     "source": "Cosori",
     "tip": "Utilisez en toute confiance une épingle ou un cure-dent fin pour serrer et lier intimement la charcuterie rayée à la crevette et éviter complètement le déroulement horrible sous la chaleur.",
-    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, poisson, mer, doux, dessert, petit déjeuner, collation, levé, salé, apéritif, snack",
+    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, poisson, mer, doux, collation, levé, salé, apéritif",
     "isItalian": true,
     "image": "gamberetti-bacon"
   },
@@ -3281,7 +3281,7 @@
     ],
     "source": "Tefal",
     "tip": "Utilisez un carré de papier sulfurisé sous le poisson pour ne pas salir le panier avec la sauce. N'oubliez pas de secouer le panier ou de retourner les aliments à mi-cuisson.",
-    "keywords": "poisson, mer, plat principal, doux, dessert, petit déjeuner, collation, rapide, facile, prompt",
+    "keywords": "poisson, mer, plat principal, doux, collation, rapide, facile, prompt",
     "isItalian": true,
     "image": "merluzzo-al-curry"
   },
@@ -3494,7 +3494,7 @@
     ],
     "source": "Cosori",
     "tip": "Vaporisez généreusement d'huile sur le poisson épicé avant de le cuire pour créer la croûte sombre et aromatique typique.",
-    "keywords": "poisson, mer, plat principal, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, en-cas, rapide, facile, vélocité",
+    "keywords": "poisson, mer, plat principal, collation, levé, salé, apéritif, en-cas, rapide, facile, vélocité",
     "isItalian": false,
     "image": "pesce-gatto-cajun"
   },
@@ -3848,7 +3848,7 @@
     ],
     "source": "Ninja",
     "tip": "Il n'est pas nécessaire d'ajouter de l'huile si le produit est déjà pré-frit ou pané industriellement.",
-    "keywords": "poisson, mer, plat principal, dessert, petit déjeuner, collation, rapide, facile, veloce",
+    "keywords": "poisson, mer, plat principal, collation, rapide, facile, veloce",
     "isItalian": true,
     "image": "tortini-pesce-surgelati"
   },
@@ -3879,7 +3879,7 @@
     ],
     "source": "Cosori",
     "tip": "Cuire jusqu'à ce que le blanc soit complètement pris mais que le jaune reste encore moelleux et liquide au centre.",
-    "keywords": "sucré, dessert, petit-déjeuner, collation, rapide, facile, vite",
+    "keywords": "petit-déjeuner, collation, rapide, facile, vite",
     "isItalian": true,
     "image": "uovo-in-vaso-cotto"
   },
@@ -4178,7 +4178,7 @@
     ],
     "source": "Tefal",
     "tip": "Occupez-vous d'abord de l'assombrissement des légumes épicés, puis utilisez la fin des minutes pour raviver la pâte levée en assurant un service très chaud.",
-    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, levé, salé, apéritif, snack",
+    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, levé, salé, apéritif",
     "isItalian": true,
     "image": "bagel-vegetariani"
   },
@@ -4265,7 +4265,7 @@
     ],
     "source": "Cosori",
     "tip": "Privilégiez un assortiment radiculaire aux largeurs appariées afin que la réaction de Maillard sirupeuse attaque de manière similaire tout le contenu sucré croustillant.",
-    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, végétarien, collation, rapide, facile, vélocité",
     "isItalian": true,
     "image": "carote-soia-miele"
   },
@@ -4293,7 +4293,7 @@
     ],
     "source": "Cosori",
     "tip": "Reprendre les étapes en secouant le plateau de cuisson au sommet des temps pour s'assurer que rien ne se dessèche irrémédiablement.",
-    "keywords": "poisson, mer, plat principal, légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "poisson, mer, plat principal, légumes, accompagnement, végétarien, collation, rapide, facile, vélocité",
     "isItalian": true,
     "image": "carote-arrosto-miele"
   },
@@ -4351,7 +4351,7 @@
     ],
     "source": "Tefal",
     "tip": "Remuez constamment au milieu de la cuisson en retirant rapidement le tout chaud et en le faisant bouger pour que les parties les plus exposées ne brunissent pas de manière irréversible.",
-    "keywords": "légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "légumes, accompagnement, végétarien, collation, rapide, facile, vélocité",
     "isItalian": true,
     "image": "cavolfiore-salsa-tahina"
   },
@@ -4467,7 +4467,7 @@
     ],
     "source": "Tefal",
     "tip": "Badigeonnez le pesto uniquement pendant les dernières minutes de cuisson afin qu'il ne brûle pas et ne perde pas sa belle couleur verte.",
-    "keywords": "légumes, accompagnement, végétarien, doux, dessert, petit déjeuner, collation",
+    "keywords": "légumes, accompagnement, végétarien, doux, collation",
     "isItalian": true,
     "image": "melanzane-grigliate-pesto"
   },
@@ -4607,7 +4607,7 @@
     ],
     "source": "Ninja",
     "tip": "Si les pommes de terre nouvelles sont très petites, vous pouvez les laisser entières en prolongeant éventuellement la cuisson de 5 minutes.",
-    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, doux, dessert, petit-déjeuner, collation",
+    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, doux, petit-déjeuner, collation",
     "isItalian": true,
     "image": "patate-arrosto-maionese-piccante"
   },
@@ -4689,7 +4689,7 @@
     ],
     "source": "Cosori",
     "tip": "Positionnez les moitiés de pommes de terre avec la partie coupée vers le haut pour maximiser leur brunissement doré.",
-    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack",
+    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, légumes, accompagnement, végétarien, collation, levé, salé, apéritif",
     "isItalian": true,
     "image": "patate-novelle-arrosto"
   },
@@ -4773,7 +4773,7 @@
     ],
     "source": "Cosori",
     "tip": "Surveillez la cuisson à la sixième minute, car les cassonades à la friteuse à air passent du caramélisé au brûlé très rapidement.",
-    "keywords": "légumes, accompagnement, sucré, dessert, petit-déjeuner, collation, rapide, facile, vite",
+    "keywords": "légumes, accompagnement, petit-déjeuner, collation, rapide, facile, vite",
     "isItalian": false,
     "image": "bbq-bacon"
   },
@@ -4883,7 +4883,7 @@
     ],
     "source": "Tefal",
     "tip": "Pour sécher avec une vertu céleste, coupez des tranches d'épaisseur régulière et identique (3 mm) avec précision en utilisant des mandolines tranchantes et froides sans crainte, et le résultat se brisera de manière cristalline avec la même sécheresse croustillante.",
-    "keywords": "sucré, dessert, petit déjeuner, collation",
+    "keywords": "collation",
     "isItalian": false,
     "image": "chips-di-mela"
   },
@@ -4938,7 +4938,7 @@
     ],
     "source": "Ninja",
     "tip": "Assurez-vous grandement d'utiliser un nettoyage minutieux et sec après le lavage pour ne pas introduire de liquides et d'eau infecte dans le panier, car cela détruirait tristement et inévitablement en faisant bouillir et cuire à la vapeur le croustillant final tant désiré pour grignoter joyeusement.",
-    "keywords": "doux, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "doux, collation, rapide, facile, vélocité",
     "isItalian": true,
     "image": "fagiolini-arrosto"
   },
@@ -5024,7 +5024,7 @@
     ],
     "source": "Ninja",
     "tip": "Ne remplissez pas le panier jusqu'au bord : les spirales occupent beaucoup de volume et ont besoin d'espace pour faire circuler l'air chaud au centre du tas.",
-    "keywords": "friture, frit, croustillant, savoureux, pommes de terre, surgelé, légumes, accompagnement, végétarien, vegan, rapide, facile, apéritif, snack",
+    "keywords": "friture, frit, croustillant, savoureux, pommes de terre, surgelé, légumes, accompagnement, végétarien, vegan, rapide, facile, apéritif",
     "isItalian": true,
     "image": "patatine-spirale-surgelate"
   },
@@ -5053,7 +5053,7 @@
     ],
     "source": "Tefal",
     "tip": "Si les légumes de la garniture sont trop aqueux, tamponnez-les légèrement pour ne pas mouiller et percer l'enveloppe de pâte.",
-    "keywords": "légumes, accompagnement, végétarien, doux, dessert, petit déjeuner, collation, rapide, facile, veloce",
+    "keywords": "légumes, accompagnement, végétarien, doux, collation, rapide, facile, veloce",
     "isItalian": false,
     "image": "samosa-vegetali"
   },
@@ -5190,7 +5190,7 @@
     ],
     "source": "Cosori",
     "tip": "Retournez l'épi de maïs rigide et noueux à mi-cuisson pour toaster esthétiquement et aromatiquement les grains sur tous les hémisphères exposés.",
-    "keywords": "viande, plat principal, protéiné, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, en-cas, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, collation, levé, salé, apéritif, en-cas, rapide, facile, vélocité",
     "isItalian": true,
     "image": "mais-tostato-burro"
   },
@@ -5305,7 +5305,7 @@
     ],
     "source": "Cosori",
     "tip": "Ajoutez les ingrédients humides et les fromages en garniture dans les 5 dernières minutes de cuisson pour éviter qu'ils ne détrempent la pâte.",
-    "keywords": "sucré, dessert, petit déjeuner, collation, rapide, facile",
+    "keywords": "collation, rapide, facile",
     "isItalian": true,
     "image": "pizzette-fiestas"
   },
@@ -5335,7 +5335,7 @@
     ],
     "source": "Tefal",
     "tip": "Essorez très bien les épinards avant de les mixer : l'excès d'eau rendrait la pâte trop molle et impossible à compacter.",
-    "keywords": "doux, dessert, petit déjeuner, goûter, levé, salé, apéritif, collation, rapide, facile, véloces",
+    "keywords": "doux, levé, salé, apéritif, collation, rapide, facile, véloces",
     "isItalian": true,
     "image": "burger-ceci-spinaci"
   },
@@ -5365,7 +5365,7 @@
     ],
     "source": "Ninja",
     "tip": "Égouttez la ricotta dans une passoire pendant au moins une heure avant de l'utiliser, sinon elle libérera trop de lactosérum, ruinant la consistance de la garniture.",
-    "keywords": "légumes, accompagnement, végétarien, doux, dessert, petit déjeuner, collation",
+    "keywords": "légumes, accompagnement, végétarien, doux, collation",
     "isItalian": true,
     "image": "barchette-zucchine-ricotta"
   },
@@ -5395,7 +5395,7 @@
     ],
     "source": "Cosori",
     "tip": "Si vous aimez les saveurs fortes, vous pouvez ajouter à la panure également deux filets d'anchois finement hachés à la place d'une partie du sel.",
-    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, doux, dessert, petit-déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, prompt",
+    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, doux, petit-déjeuner, collation, levé, salé, apéritif, rapide, facile, prompt",
     "isItalian": true,
     "image": "peperoni-gratinati-capperi"
   },
@@ -5453,7 +5453,7 @@
     ],
     "source": "Cosori",
     "tip": "Gardez une petite portion du cœur basal intacte dans chaque quartier, c'est le seul moyen de maintenir les feuilles de fenouil unies pendant la cuisson.",
-    "keywords": "carne, plat principal, protéiné, doux, dessert, petit déjeuner, collation, rapide, facile, veloce",
+    "keywords": "carne, plat principal, protéiné, doux, collation, rapide, facile, veloce",
     "isItalian": true,
     "image": "spicchi-finocchio-limone"
   },
@@ -5511,7 +5511,7 @@
     ],
     "source": "Cosori",
     "tip": "Appliquez toujours les sauces contenant du miel et des sucres uniquement pendant les dernières minutes de cuisson pour obtenir un effet brillant (vernis) tout en évitant les brûlures amères.",
-    "keywords": "sucré, dessert, petit-déjeuner, collation, rapide, facile, prompt",
+    "keywords": "petit-déjeuner, collation, rapide, facile, prompt",
     "isItalian": true,
     "image": "cavoletti-glassati-balsamico"
   },
@@ -5627,7 +5627,7 @@
     ],
     "source": "Cosori",
     "tip": "Utilisez des pommes de terre à chair jaune ou farineuse et laissez-les tiédir avant de les mélanger à l'œuf pour ne pas le faire cailler prématurément avec la chaleur.",
-    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation",
+    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, collation",
     "isItalian": true,
     "image": "tortino-patate-filante"
   },

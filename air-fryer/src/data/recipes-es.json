@@ -54,7 +54,7 @@
     "tip": "Añade una cucharada de parmesano y medio diente de ajo picado al pan rallado para un empanado aún más sabroso.",
     "isItalian": true,
     "big_image_prompt": "A classic Italian 'fettina panata' (breaded chicken cutlet) golden and crispy, served on a white plate with a side of mixed green salad and a lemon slice. Natural bright lighting, appetizing.",
-    "keywords": "fritura, frito, crujiente, delicioso, carne, segundo plato, proteico, salado, aperitivo, snack, rápido, fácil",
+    "keywords": "fritura, frito, crujiente, delicioso, carne, segundo plato, proteico, salado, aperitivo, rápido, fácil",
     "image": "cotoletta-fettina-panata"
   },
   {
@@ -199,7 +199,7 @@
     "isItalian": true,
     "tip": "Si usas arroz crudo, asegúrate de que el relleno esté muy húmedo y jugoso (añade la pulpa del tomate) para que el grano se cocine bien en su interior.",
     "big_image_prompt": "Italian stuffed vegetables, red tomatoes and bell peppers filled with savory rice and herbs, roasted to perfection. Served in a rustic baking dish, garnished with fresh basil leaves.",
-    "keywords": "carne, plato principal, proteico, verduras, guarnición, dulce, postre, desayuno, merienda",
+    "keywords": "carne, plato principal, proteico, verduras, guarnición",
     "image": "verdure-ripiene-riso-carne"
   },
   {
@@ -287,7 +287,7 @@
     "source": "Tradición Italiana",
     "tip": "No te saltes el remojo ni el reposo en el paño húmedo: son los secretos para evitar que se sequen demasiado.",
     "big_image_prompt": "Professional food photography of roasted chestnuts (caldarroste) in a rustic wooden bowl, some partially peeled showing the golden fruit inside. Cozy autumn lighting, steam rising, macro detail, rustic dark wood table.",
-    "keywords": "castañas, otoño, snack, saludable, freidora de aire, fácil, rápido, receta italiana",
+    "keywords": "castañas, otoño, saludable, freidora de aire, fácil, rápido, receta italiana",
     "isItalian": true,
     "image": "caldarroste-friggitrice-aria"
   },
@@ -373,7 +373,7 @@
     "source": "Tradición Italiana",
     "tip": "La salmuera de agua y aceite es el verdadero truco de los panaderos: evita que la focaccia se seque demasiado con el aire ventilado y la mantiene suave por dentro.",
     "big_image_prompt": "A freshly baked Italian flatbread (Schiacciatina/Focaccia) glistening with olive oil, dimpled with fingerprints, topped with coarse sea salt and fresh rosemary. Rustic bakery style.",
-    "keywords": "masa fermentada, salado, aperitivo, snack, rápido, fácil, exprés",
+    "keywords": "masa fermentada, salado, aperitivo, rápido, fácil, exprés",
     "isItalian": true,
     "image": "focaccia-schiacciatina-veloce"
   },
@@ -1073,7 +1073,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Asegúrate de no superponerlas demasiado en la cesta; si es necesario, cocínalas en dos tandas separadas para que queden bien secas.",
-    "keywords": "crujiente, delicioso, salado, aperitivo, snack, rápido, fácil, vegano, vegetariano",
+    "keywords": "crujiente, delicioso, salado, aperitivo, rápido, fácil, vegano, vegetariano",
     "isItalian": false,
     "image": "patatine-tortilla"
   },
@@ -1290,7 +1290,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "El almidón de maíz es fundamental: absorbe la humedad de la piel del pollo transformándola en una costra perfecta.",
-    "keywords": "carne, segundo plato, proteico, pollo, delicioso, crujiente, aperitivo, snack, fritura, frito",
+    "keywords": "carne, segundo plato, proteico, pollo, delicioso, crujiente, aperitivo, fritura, frito",
     "isItalian": false,
     "image": "ali-pollo-aglio-parmigiano"
   },
@@ -1752,7 +1752,7 @@
     ],
     "source": "Cosori",
     "tip": "Deja siempre un espacio de dos dedos entre cada pieza: el hojaldre triplica su volumen durante la cocción y corren el riesgo de pegarse formando un bloque único.",
-    "keywords": "masa, salado, aperitivo, snack, rápido, fácil, sencillo, delicioso",
+    "keywords": "masa, salado, aperitivo, rápido, fácil, sencillo, delicioso",
     "isItalian": false,
     "image": "maiali-in-coperta"
   },
@@ -2109,7 +2109,7 @@
     ],
     "source": "Cosori",
     "tip": "Pincela la superficie con huevo y haz pequeños cortes para que salga el vapor. Recuerda sacudir la cesta o girar los alimentos a mitad del tiempo previsto.",
-    "keywords": "carne, segundo plato, proteico, pescado, mar, verduras, guarnición, masa leudada, salado, aperitivo, snack",
+    "keywords": "carne, segundo plato, proteico, pescado, mar, verduras, guarnición, masa leudada, salado, aperitivo",
     "isItalian": true,
     "image": "stromboli"
   },
@@ -2167,7 +2167,7 @@
     ],
     "source": "Cosori",
     "tip": "Recuerda agitar la cesta o dar la vuelta a los alimentos a mitad del tiempo previsto. Corta la carne en contra de la fibra después de cocinarla para obtener la máxima ternura.",
-    "keywords": "carne, segundo plato, proteico, dulce, postre, desayuno, merienda, rápido, fácil, sencillo",
+    "keywords": "carne, segundo plato, proteico, rápido, fácil, sencillo",
     "image": "bistecca-mostarda-balsamica"
   },
   {
@@ -2197,7 +2197,7 @@
     ],
     "source": "Cosori",
     "tip": "Recuerda agitar la cesta o dar la vuelta a los alimentos a mitad del tiempo previsto. Deja reposar la carne durante 10 minutos después de la cocción para redistribuir los jugos.",
-    "keywords": "carne, segundo plato, proteico, salado, aperitivo, snack, veloz, fácil, rápido",
+    "keywords": "carne, segundo plato, proteico, salado, aperitivo, veloz, fácil, rápido",
     "image": "bistecca-costata-santa-maria"
   },
   {
@@ -2460,7 +2460,7 @@
     ],
     "source": "Tefal",
     "tip": "Tuesta ligeramente los panecillos en la freidora de aire mientras la carne reposa.",
-    "keywords": "carne, segundo plato, proteico, verduras, guarnición, dulce, postre, desayuno, merienda, fermentado, salado, aperitivo, snack, rápido, fácil",
+    "keywords": "carne, segundo plato, proteico, verduras, guarnición, fermentado, salado, aperitivo, rápido, fácil",
     "isItalian": false,
     "image": "hamburger-deluxe"
   },
@@ -2518,7 +2518,7 @@
     ],
     "source": "Tefal",
     "tip": "Precocina las salchichas en agua hirviendo antes de montar y calentar los panecillos.",
-    "keywords": "carne, segundo plato, proteico, levadura, salado, aperitivo, snack, rápido, fácil, exprés",
+    "keywords": "carne, segundo plato, proteico, levadura, salado, aperitivo, rápido, fácil, exprés",
     "isItalian": false,
     "image": "hot-dog-newyorkese"
   },
@@ -2576,7 +2576,7 @@
     ],
     "source": "Cosori",
     "tip": "Retira bien las semillas de los jalapeños para reducir el picante. Recuerda agitar la cesta o dar la vuelta a los alimentos a mitad del tiempo previsto.",
-    "keywords": "carne, segundo plato, proteico, verduras, guarnición, dulce, postre, desayuno, merienda",
+    "keywords": "carne, segundo plato, proteico, verduras, guarnición",
     "isItalian": false,
     "image": "jalapenos-ripieni-bacon"
   },
@@ -2718,7 +2718,7 @@
     ],
     "source": "Tefal",
     "tip": "Pincha la espiral con dos brochetas cruzadas para mantener su forma durante la cocción. Recuerda girarla a mitad del tiempo.",
-    "keywords": "carne, segundo plato, proteico, dulce, comida, rápido, fácil",
+    "keywords": "carne, segundo plato, proteico, comida, rápido, fácil",
     "isItalian": false,
     "image": "salsiccia-griglia-spirale"
   },
@@ -2844,7 +2844,7 @@
     ],
     "source": "Cosori",
     "tip": "Usa brochetas de madera previamente remojadas en agua durante unos diez minutos para que no se quemen durante la exposición al calor.",
-    "keywords": "carne, segundo plato, proteico, verduras, guarnición, dulce, postre, desayuno, merienda, fermentado, salado, aperitivo, snack, rápido, fácil, rápido",
+    "keywords": "carne, segundo plato, proteico, verduras, guarnición, fermentado, salado, aperitivo, rápido, fácil, rápido",
     "isItalian": false,
     "image": "spiedini-manzo-coreano"
   },
@@ -2872,7 +2872,7 @@
     ],
     "source": "Tefal",
     "tip": "Asegúrate de envolver la carne muy apretada para evitar que el queso se derrame excesivamente en el fondo.",
-    "keywords": "carne, segundo plato, proteico, dulce, postre, desayuno, merienda, veloz, fácil, rápido",
+    "keywords": "carne, segundo plato, proteico, veloz, fácil, rápido",
     "isItalian": false,
     "image": "spiedini-manzo-teriyaki"
   },
@@ -3193,7 +3193,7 @@
     ],
     "source": "Cosori",
     "tip": "Usa con confianza un palillo para sujetar y cerrar bien el beicon alrededor de la gamba y evitar que se desenrolle por completo con el calor.",
-    "keywords": "freidora de aire, frito, crujiente, delicioso, carne, segundo plato, proteico, pescado, marisco, salado, aperitivo, snack",
+    "keywords": "freidora de aire, frito, crujiente, delicioso, carne, segundo plato, proteico, pescado, marisco, salado, aperitivo",
     "image": "gamberetti-bacon"
   },
   {
@@ -3524,7 +3524,7 @@
     ],
     "source": "Cosori",
     "tip": "Rompe el huevo sobre la pizza solo en los últimos minutos de cocción para que la yema permanezca muy cremosa.",
-    "keywords": "masa fermentada, salado, aperitivo, snack, rápido, fácil, exprés",
+    "keywords": "masa fermentada, salado, aperitivo, rápido, fácil, exprés",
     "image": "pizza-da-colazione"
   },
   {
@@ -3583,7 +3583,7 @@
     ],
     "source": "Ninja",
     "tip": "Prepara la salsa fría mientras el salmón se cocina para optimizar los tiempos. Recuerda comprobar la cocción del pescado al séptimo minuto.",
-    "keywords": "pescado, mar, segundo plato, verduras, guarnición, fermentado, salado, aperitivo, snack, rápido, fácil, rápido",
+    "keywords": "pescado, mar, segundo plato, verduras, guarnición, fermentado, salado, aperitivo, rápido, fácil, rápido",
     "isItalian": false,
     "image": "salmone-pomodoro-cetriolo"
   },
@@ -3879,7 +3879,7 @@
     ],
     "source": "Cosori",
     "tip": "Cocina hasta que la clara esté completamente cuajada pero la yema siga suave y líquida en el centro.",
-    "keywords": "desayuno, huevos, panceta, saludable, rápido, fácil, freidora de aire",
+    "keywords": "huevos, panceta, saludable, rápido, fácil, freidora de aire",
     "isItalian": false,
     "image": "uovo-in-vaso-cotto"
   },
@@ -4179,7 +4179,7 @@
     "source": "Tefal",
     "isItalian": false,
     "tip": "Prepara primero las verduras especiadas y utiliza el tiempo restante para calentar el pan, asegurándote de servirlo bien caliente.",
-    "keywords": "freidora de aire, frito, crujiente, delicioso, verduras, guarnición, vegetariano, pan, salado, aperitivo, snack",
+    "keywords": "freidora de aire, frito, crujiente, delicioso, verduras, guarnición, vegetariano, pan, salado, aperitivo",
     "image": "bagel-vegetariani"
   },
   {
@@ -4381,7 +4381,7 @@
     ],
     "source": "Cosori",
     "tip": "El uso de una mandolina es obligatorio: rodajas de diferente grosor se cocinarán en tiempos distintos (algunas se quemarán, otras quedarán blandas). ¡Nunca te saltes el remojo y el secado!",
-    "keywords": "fritura, frito, crujiente, delicioso, patatas, verduras, guarnición, vegetariano, vegano, aperitivo, snack",
+    "keywords": "fritura, frito, crujiente, delicioso, patatas, verduras, guarnición, vegetariano, vegano, aperitivo",
     "isItalian": false,
     "image": "chips-patate-croccanti"
   },
@@ -4607,7 +4607,7 @@
     ],
     "source": "Ninja",
     "tip": "Si las patatas nuevas son muy pequeñas, puedes dejarlas enteras prolongando la cocción 5 minutos si fuera necesario.",
-    "keywords": "freír, frito, crujiente, delicioso, verduras, guarnición, vegetariano, dulce, postre, desayuno, merienda",
+    "keywords": "freír, frito, crujiente, delicioso, verduras, guarnición, vegetariano",
     "isItalian": false,
     "image": "patate-arrosto-maionese-piccante"
   },
@@ -4689,7 +4689,7 @@
     ],
     "source": "Cosori",
     "tip": "Coloca las medias patatas con la parte plana cortada hacia arriba para maximizar el dorado.",
-    "keywords": "fritura, frito, crujiente, delicioso, carne, segundo plato, proteico, verduras, guarnición, vegetariano, dulce, postre, desayuno, merienda, fermentado, salado, aperitivo, snack",
+    "keywords": "fritura, frito, crujiente, delicioso, carne, segundo plato, proteico, verduras, guarnición, vegetariano, fermentado, salado, aperitivo",
     "isItalian": false,
     "image": "patate-novelle-arrosto"
   },
@@ -4884,7 +4884,7 @@
     ],
     "source": "Tefal",
     "tip": "Para obtener un resultado perfecto, asegúrate de que todas las rodajas tengan el mismo grosor (3 mm) utilizando una mandolina; esto garantiza que todas se deshidraten de forma uniforme.",
-    "keywords": "dulce, postre, desayuno, merienda",
+    "keywords": "",
     "image": "chips-di-mela"
   },
   {
@@ -5024,7 +5024,7 @@
     ],
     "source": "Ninja",
     "tip": "No llenes la cesta hasta el borde: las espirales ocupan mucho volumen y necesitan espacio para que el aire caliente circule por el centro del montón.",
-    "keywords": "fritura, frito, crujiente, delicioso, patatas, congelado, verduras, guarnición, vegetariano, vegano, rápido, fácil, aperitivo, snack",
+    "keywords": "fritura, frito, crujiente, delicioso, patatas, congelado, verduras, guarnición, vegetariano, vegano, rápido, fácil, aperitivo",
     "isItalian": false,
     "image": "patatine-spirale-surgelate"
   },
@@ -5135,7 +5135,7 @@
     ],
     "source": "Cosori",
     "tip": "Aplica la mantequilla exclusivamente en el exterior del pan para garantizar la formación de una corteza dorada y crujiente al contacto con el aire caliente.",
-    "keywords": "pan, salado, aperitivo, snack, rápido, fácil, freidora de aire",
+    "keywords": "pan, salado, aperitivo, rápido, fácil, freidora de aire",
     "isItalian": false,
     "image": "grilled-cheese"
   },
@@ -5164,7 +5164,7 @@
     ],
     "source": "Cosori",
     "tip": "No prolongues demasiado el tiempo de cocción para evitar que se vuelvan gomosas. Agita a mitad de cocción.",
-    "keywords": "freidora de aire, frito, crujiente, sabroso, pescado, marisco, segundo plato, rápido, fácil, aperitivo, snack",
+    "keywords": "freidora de aire, frito, crujiente, sabroso, pescado, marisco, segundo plato, rápido, fácil, aperitivo",
     "isItalian": false,
     "image": "gamberetti-stile-cajun"
   },
@@ -5220,7 +5220,7 @@
     ],
     "source": "Cosori",
     "tip": "Es fundamental precocinar la masa sola antes de añadir la salsa para evitar que el exceso de humedad la ablande y pierda su textura crujiente.",
-    "keywords": "aperitivo, snack, pizza, salado, rápido, fácil, freidora de aire, cena",
+    "keywords": "aperitivo, pizza, salado, rápido, fácil, freidora de aire, cena",
     "isItalian": true,
     "image": "mini-pizza-pepperoni"
   },
@@ -5250,7 +5250,7 @@
     ],
     "source": "Cosori",
     "tip": "Extiende la crema de ajo generosamente sobre el pan antes de hornearlo; el calor hará que la mantequilla se funda y penetre en la miga, dejándola irresistiblemente crujiente.",
-    "keywords": "rápido, fácil, snack",
+    "keywords": "rápido, fácil",
     "isItalian": false,
     "image": "pane-aglio"
   },
@@ -5396,7 +5396,7 @@
     ],
     "source": "Cosori",
     "tip": "Si te gustan los sabores intensos, puedes añadir al empanado dos filetes de anchoa picados finamente en lugar de una parte de la sal.",
-    "keywords": "freidora de aire, frito, crujiente, delicioso, verduras, guarnición, vegetariano, salado, aperitivo, snack, rápido, fácil",
+    "keywords": "freidora de aire, frito, crujiente, delicioso, verduras, guarnición, vegetariano, salado, aperitivo, rápido, fácil",
     "image": "peperoni-gratinati-capperi"
   },
   {
@@ -5655,7 +5655,7 @@
     ],
     "source": "Ninja",
     "tip": "Aliñar los edamame solo después de haberlos descongelado al aire durante los primeros 4 minutos evita que las especias se deslicen con el hielo derretido al fondo de la cesta.",
-    "keywords": "verduras, guarnición, vegetariano, salado, aperitivo, snack, rápido, fácil",
+    "keywords": "verduras, guarnición, vegetariano, salado, aperitivo, rápido, fácil",
     "isItalian": false,
     "image": "edamame-speziati-croccanti"
   },
@@ -5683,7 +5683,7 @@
     ],
     "source": "Cosori",
     "tip": "Secar los garbanzos con atención meticulosa antes de añadir el aceite es la única manera real de obtener el efecto crujiente en lugar de un decepcionante efecto hervido.",
-    "keywords": "aperitivo, salado, snack, rápido, fácil",
+    "keywords": "aperitivo, salado, rápido, fácil",
     "isItalian": false,
     "image": "ceci-tostati-paprika"
   },
@@ -5711,7 +5711,7 @@
     ],
     "source": "Tefal",
     "tip": "La mandolina es absolutamente imprescindible en esta preparación: las rodajas cortadas a cuchillo resultarán de grosor irregular, quemándose por los lados y quedando blandas en el centro.",
-    "keywords": "verduras, guarnición, vegetariano, salado, aperitivo, snack",
+    "keywords": "verduras, guarnición, vegetariano, salado, aperitivo",
     "isItalian": true,
     "image": "chips-zucchine-parmigiano"
   }

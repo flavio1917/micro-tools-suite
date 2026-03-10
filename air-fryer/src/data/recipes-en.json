@@ -53,7 +53,7 @@
     "source": "Italian Tradition",
     "tip": "Add one tablespoon of Parmesan cheese and half a minced garlic clove to the breadcrumbs for an even more flavorful coating.",
     "big_image_prompt": "A classic Italian 'fettina panata' (breaded chicken cutlet) golden and crispy, served on a white plate with a side of mixed green salad and a lemon slice. Natural bright lighting, appetizing.",
-    "keywords": "fried, crispy, delicious, meat, main course, high-protein, savory, appetizer, snack, quick, easy, fast",
+    "keywords": "fried, crispy, delicious, meat, main course, high-protein, savory, appetizer, quick, easy, fast",
     "isItalian": true,
     "image": "cotoletta-fettina-panata"
   },
@@ -259,7 +259,7 @@
     "source": "Italian Tradition",
     "tip": "Place the baking dish directly on the perforated rack of the air fryer basket: the air circulation from the bottom will ensure the pastry base cooks without becoming soggy.",
     "big_image_prompt": "A slice of savory Italian Ricotta and Spinach tart (Torta salata) with a flaky, buttery golden crust. Displayed on a rustic plate with a checkered napkin in the background. Natural daylight.",
-    "keywords": "savory, appetizer, snack, lunch, dinner, vegetarian, easy recipe",
+    "keywords": "savory, appetizer, lunch, dinner, vegetarian, easy recipe",
     "isItalian": true,
     "image": "torta-salata-ricotta-spinaci"
   },
@@ -287,7 +287,7 @@
     "source": "Italian Tradition",
     "tip": "Don't skip the soaking and the resting in the damp cloth: these are the secrets to prevent them from drying out too much.",
     "big_image_prompt": "Professional food photography of roasted chestnuts (caldarroste) in a rustic wooden bowl, some partially peeled showing the golden fruit inside. Cozy autumn lighting, steam rising, macro detail, rustic dark wood table.",
-    "keywords": "meat, main course, protein, leavened, savory, appetizer, snack, quick, easy, rapid",
+    "keywords": "meat, main course, protein, leavened, savory, appetizer, quick, easy, rapid",
     "isItalian": true,
     "image": "caldarroste-friggitrice-aria"
   },
@@ -373,7 +373,7 @@
     "source": "Italian Tradition",
     "tip": "The water and oil brine is the bakers' secret trick: it prevents the focaccia from drying out too much with the circulating air and keeps it soft inside.",
     "big_image_prompt": "A freshly baked Italian flatbread (Schiacciatina/Focaccia) glistening with olive oil, dimpled with fingerprints, topped with coarse sea salt and fresh rosemary. Rustic bakery style.",
-    "keywords": "leavened, savory, appetizer, snack, quick, easy, fast",
+    "keywords": "leavened, savory, appetizer, quick, easy, fast",
     "isItalian": true,
     "image": "focaccia-schiacciatina-veloce"
   },
@@ -1073,7 +1073,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Make sure not to overlap them too much in the basket; if necessary, cook in two separate batches to get them nice and crisp.",
-    "keywords": "crispy, delicious, savory, appetizer, snack, quick, easy, fast, vegan, vegetarian",
+    "keywords": "crispy, delicious, savory, appetizer, quick, easy, fast, vegan, vegetarian",
     "isItalian": false,
     "image": "patatine-tortilla"
   },
@@ -1167,7 +1167,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Do not salt raw potatoes before cooking: salt draws out moisture and makes them soggy. Always salt at the end of the cooking process.",
-    "keywords": "frying, fried, crispy, snack, vegetables, side dish, vegetarian, vegan, potatoes",
+    "keywords": "frying, fried, crispy, vegetables, side dish, vegetarian, vegan, potatoes",
     "isItalian": false,
     "image": "patatine-fritte-fatte-in-casa"
   },
@@ -1291,7 +1291,7 @@
     "source": "RicetteFriggitriceAria",
     "isItalian": false,
     "tip": "Cornstarch is essential: it absorbs moisture from the chicken skin, turning it into a perfect crust.",
-    "keywords": "meat, main course, high-protein, chicken, tasty, crispy, appetizer, snack, frying, fried",
+    "keywords": "meat, main course, high-protein, chicken, tasty, crispy, appetizer, frying, fried",
     "image": "ali-pollo-aglio-parmigiano"
   },
   {
@@ -1753,7 +1753,7 @@
     ],
     "source": "Cosori",
     "tip": "Always leave about an inch of space between each snack: puff pastry triples in volume during cooking and they risk sticking together in one big clump.",
-    "keywords": "yeasted, savory, appetizer, snack, fast, easy, quick, tasty",
+    "keywords": "yeasted, savory, appetizer, fast, easy, quick, tasty",
     "image": "maiali-in-coperta"
   },
   {
@@ -2109,7 +2109,7 @@
     ],
     "source": "Cosori",
     "tip": "Brush the surface with egg wash and make small slits to let steam escape. Remember to shake the basket or turn the food halfway through the cooking time.",
-    "keywords": "meat, main course, protein, savory, baked goods, appetizer, snack",
+    "keywords": "meat, main course, protein, savory, baked goods, appetizer",
     "isItalian": true,
     "image": "stromboli"
   },
@@ -2136,7 +2136,7 @@
     ],
     "source": "Ninja",
     "tip": "Use a meat thermometer to check internal doneness without cutting into the tenderloin. Remember to shake the basket or turn the food halfway through the cooking time.",
-    "keywords": "meat, main course, protein, savory, snack",
+    "keywords": "meat, main course, protein, savory",
     "isItalian": false,
     "image": "arrosto-filetto-maiale"
   },
@@ -2196,7 +2196,7 @@
     ],
     "source": "Cosori",
     "tip": "Remember to shake the basket or flip the food halfway through the cooking time. Let the meat rest for 10 minutes after cooking to redistribute the juices.",
-    "keywords": "meat, main course, protein, savory, snack, quick, easy, fast",
+    "keywords": "meat, main course, protein, savory, quick, easy, fast",
     "isItalian": false,
     "image": "bistecca-costata-santa-maria"
   },
@@ -2460,7 +2460,7 @@
     ],
     "source": "Tefal",
     "tip": "Lightly toast the buns in the air fryer while the meat is resting.",
-    "keywords": "meat, main course, protein, vegetables, side dish, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy, fast",
+    "keywords": "meat, main course, protein, vegetables, side dish, leavened, savory, appetizer, quick, easy, fast",
     "isItalian": false,
     "image": "hamburger-deluxe"
   },
@@ -2518,7 +2518,7 @@
     ],
     "source": "Tefal",
     "tip": "Pre-cook the sausages in boiling water before assembling and air frying the buns.",
-    "keywords": "meat, main dish, high-protein, leavened, savory, appetizer, snack, fast, easy, quick",
+    "keywords": "meat, main dish, high-protein, leavened, savory, appetizer, fast, easy, quick",
     "isItalian": false,
     "image": "hot-dog-newyorkese"
   },
@@ -2844,7 +2844,7 @@
     ],
     "source": "Cosori",
     "tip": "Use wooden skewers soaked in water for about ten minutes so they won't burn during exposure to the heat.",
-    "keywords": "meat, main course, protein, vegetables, side dish, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy, fast",
+    "keywords": "meat, main course, protein, vegetables, side dish, leavened, savory, appetizer, quick, easy, fast",
     "isItalian": false,
     "image": "spiedini-manzo-coreano"
   },
@@ -2872,7 +2872,7 @@
     ],
     "source": "Tefal",
     "tip": "Make sure to wrap the meat very tightly to prevent the cheese from leaking excessively onto the bottom.",
-    "keywords": "meat, main course, protein, sweet, appetizer, snack, quick, easy, fast",
+    "keywords": "meat, main course, protein, appetizer, quick, easy, fast",
     "isItalian": false,
     "image": "spiedini-manzo-teriyaki"
   },
@@ -3193,7 +3193,7 @@
     ],
     "source": "Cosori",
     "tip": "Use a toothpick to securely fasten the bacon to the shrimp to prevent it from unrolling during the cooking process.",
-    "keywords": "air fry, fried, crispy, tasty, meat, main dish, protein, fish, seafood, sweet, appetizer, snack",
+    "keywords": "air fry, fried, crispy, tasty, meat, main dish, protein, fish, seafood, appetizer",
     "image": "gamberetti-bacon"
   },
   {
@@ -3524,7 +3524,7 @@
     ],
     "source": "Cosori",
     "tip": "Crack the egg onto the pizza only during the final minutes of cooking to ensure the yolk stays soft and runny.",
-    "keywords": "leavened, savory, appetizer, snack, fast, easy, quick",
+    "keywords": "leavened, savory, appetizer, fast, easy, quick",
     "image": "pizza-da-colazione"
   },
   {
@@ -3879,7 +3879,7 @@
     ],
     "source": "Cosori",
     "tip": "Cook until the whites are fully set but the yolk remains soft and runny in the center.",
-    "keywords": "breakfast, eggs, bacon, savory, quick, easy, air fryer",
+    "keywords": "eggs, bacon, savory, quick, easy, air fryer",
     "isItalian": true,
     "image": "uovo-in-vaso-cotto"
   },
@@ -4178,7 +4178,7 @@
     ],
     "source": "Tefal",
     "tip": "Focus first on browning the seasoned vegetables, then use the remaining time to toast the bread, ensuring it is served piping hot.",
-    "keywords": "frying, fried, crunchy, delicious, vegetables, side dish, vegetarian, leavened, savory, appetizer, snack",
+    "keywords": "frying, fried, crunchy, delicious, vegetables, side dish, vegetarian, leavened, savory, appetizer",
     "isItalian": false,
     "image": "bagel-vegetariani"
   },
@@ -4381,7 +4381,7 @@
     ],
     "source": "Cosori",
     "tip": "Using a mandoline is mandatory: slices of different thicknesses will cook at different rates (some will burn, others will remain soft). Never skip the soaking and drying steps!",
-    "keywords": "frying, fried, crispy, tasty, potatoes, vegetables, side dish, vegetarian, vegan, appetizer, snack",
+    "keywords": "frying, fried, crispy, tasty, potatoes, vegetables, side dish, vegetarian, vegan, appetizer",
     "isItalian": false,
     "image": "chips-patate-croccanti"
   },
@@ -4607,7 +4607,7 @@
     ],
     "source": "Ninja",
     "tip": "If the baby potatoes are very small, you can leave them whole, possibly extending the cooking time by 5 minutes.",
-    "keywords": "air frying, fried, crispy, tasty, vegetables, side dish, vegetarian, sweet, dessert, breakfast, snack",
+    "keywords": "air frying, fried, crispy, tasty, vegetables, side dish, vegetarian",
     "isItalian": false,
     "image": "patate-arrosto-maionese-piccante"
   },
@@ -4631,7 +4631,7 @@
     ],
     "source": "Ninja",
     "tip": "Arranging them in a single layer is the essential secret to ensure maximum crispiness and prevent them from falling apart.",
-    "keywords": "frying, fried, crispy, tasty, snack, side dish, vegetarian",
+    "keywords": "frying, fried, crispy, tasty, side dish, vegetarian",
     "isItalian": false,
     "image": "hash-brown"
   },
@@ -4689,7 +4689,7 @@
     ],
     "source": "Cosori",
     "tip": "Place the potato halves with the cut side facing up to maximize golden browning.",
-    "keywords": "frying, fried, crispy, tasty, meat, main dish, protein, vegetables, side dish, vegetarian, sweet, dessert, breakfast, snack, leavened, savory, appetizer, snack",
+    "keywords": "frying, fried, crispy, tasty, meat, main dish, protein, vegetables, side dish, vegetarian, leavened, savory, appetizer",
     "isItalian": false,
     "image": "patate-novelle-arrosto"
   },
@@ -4883,7 +4883,7 @@
     ],
     "source": "Tefal",
     "tip": "For perfect dehydration, slice them to a consistent 3mm thickness using a mandoline; the result will be perfectly crisp and brittle.",
-    "keywords": "sweet, dessert, breakfast, snack",
+    "keywords": "",
     "isItalian": false,
     "image": "chips-di-mela"
   },
@@ -4967,7 +4967,7 @@
     ],
     "source": "Tefal",
     "tip": "Lightly spray each falafel with a fine mist of oil before cooking; this ensures they achieve a beautiful, deep golden-brown color and a satisfying crunch that mimics deep-frying.",
-    "keywords": "frying, fried, crispy, tasty, snack, appetizer, quick, easy, fast",
+    "keywords": "frying, fried, crispy, tasty, appetizer, quick, easy, fast",
     "image": "falafel"
   },
   {
@@ -5024,7 +5024,7 @@
     ],
     "source": "Ninja",
     "tip": "Do not overfill the basket: curly fries take up a lot of volume and need space for the hot air to circulate in the center of the pile.",
-    "keywords": "frying, fried, crispy, tasty, potatoes, frozen, vegetables, side dish, vegetarian, vegan, fast, easy, appetizer, snack",
+    "keywords": "frying, fried, crispy, tasty, potatoes, frozen, vegetables, side dish, vegetarian, vegan, fast, easy, appetizer",
     "isItalian": false,
     "image": "patatine-spirale-surgelate"
   },
@@ -5136,7 +5136,7 @@
     ],
     "source": "Cosori",
     "tip": "Brush the butter exclusively on the outer sides of the bread to ensure the formation of a formidable golden crust in the hot air.",
-    "keywords": "leavened, savory, appetizer, snack, quick, easy, fast",
+    "keywords": "leavened, savory, appetizer, quick, easy, fast",
     "image": "grilled-cheese"
   },
   {
@@ -5164,7 +5164,7 @@
     ],
     "source": "Cosori",
     "tip": "Do not overcook, as this can make the shrimp rubbery and tough. Shake the basket halfway through cooking.",
-    "keywords": "frying, fried, crispy, tasty, seafood, sea, main course, vegetables, side dish, leavened, savory, appetizer, snack, fast, easy, quick",
+    "keywords": "frying, fried, crispy, tasty, seafood, sea, main course, vegetables, side dish, leavened, savory, appetizer, fast, easy, quick",
     "isItalian": false,
     "image": "gamberetti-stile-cajun"
   },
@@ -5220,7 +5220,7 @@
     ],
     "source": "Cosori",
     "tip": "Always pre-bake the dough before adding the sauce and toppings to prevent the base from becoming soggy.",
-    "keywords": "savory, snack, appetizer, quick, easy, fast, pizza, pepperoni, air fryer",
+    "keywords": "savory, appetizer, quick, easy, fast, pizza, pepperoni, air fryer",
     "isItalian": true,
     "image": "mini-pizza-pepperoni"
   },
@@ -5396,7 +5396,7 @@
     ],
     "source": "Cosori",
     "tip": "If you love bold flavors, you can add two finely chopped anchovy fillets to the breadcrumb mixture, reducing the amount of salt accordingly.",
-    "keywords": "air frying, fried, crunchy, delicious, vegetables, side dish, vegetarian, salty, appetizer, snack, fast, easy, quick",
+    "keywords": "air frying, fried, crunchy, delicious, vegetables, side dish, vegetarian, salty, appetizer, fast, easy, quick",
     "image": "peperoni-gratinati-capperi"
   },
   {
@@ -5655,7 +5655,7 @@
     ],
     "source": "Ninja",
     "tip": "Seasoning the edamame only after the initial 4-minute air-thawing stage prevents the spices from sliding off with the melted ice at the bottom of the basket.",
-    "keywords": "vegetables, side dish, vegetarian, salty, appetizer, snack, quick, easy, fast",
+    "keywords": "vegetables, side dish, vegetarian, salty, appetizer, quick, easy, fast",
     "isItalian": false,
     "image": "edamame-speziati-croccanti"
   },
@@ -5684,7 +5684,7 @@
     ],
     "source": "Cosori",
     "tip": "Drying the chickpeas with extreme care before adding the oil is the only real way to achieve that signature crunch instead of a disappointing boiled texture.",
-    "keywords": "leavened, salty, appetizer, snack, quick, easy, fast",
+    "keywords": "leavened, salty, appetizer, quick, easy, fast",
     "image": "ceci-tostati-paprika"
   },
   {
@@ -5712,7 +5712,7 @@
     ],
     "source": "Tefal",
     "tip": "A mandoline is absolutely essential for this recipe: slices cut with a knife will result in uneven thickness, burning on the edges while remaining soft in the center.",
-    "keywords": "vegetables, side dish, vegetarian, salty, appetizer, snack",
+    "keywords": "vegetables, side dish, vegetarian, salty, appetizer",
     "image": "chips-zucchine-parmigiano"
   }
 ]

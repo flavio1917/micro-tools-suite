@@ -51,7 +51,7 @@
     "source": "Tradizione Italiana",
     "tip": "Aggiungi un cucchiaio di parmigiano e mezzo spicchio d'aglio tritato al pangrattato per una panatura ancora più saporita.",
     "big_image_prompt": "A classic Italian 'fettina panata' (breaded chicken cutlet) golden and crispy, served on a white plate with a side of mixed green salad and a lemon slice. Natural bright lighting, appetizing.",
-    "keywords": "frittura, fritto, croccante, sfizioso, carne, secondo, proteico, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, carne, secondo, proteico, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "polpettone-ripieno-aria",
@@ -186,7 +186,7 @@
     "source": "Tradizione Italiana",
     "tip": "Se usi il riso crudo, assicurati che il ripieno sia molto umido e acquoso (aggiungi la polpa del pomodoro), così il chicco cuocerà bene all'interno.",
     "big_image_prompt": "Italian stuffed vegetables, red tomatoes and bell peppers filled with savory rice and herbs, roasted to perfection. Served in a rustic baking dish, garnished with fresh basil leaves.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, dolce, dessert, colazione, merenda"
+    "keywords": "carne, secondo, proteico, verdure, contorno"
   },
   {
     "slug": "patate-forno-cubetti-rosmarino",
@@ -269,7 +269,7 @@
     "source": "Tradizione Italiana",
     "tip": "Non saltare l'ammollo e il riposo nel panno umido: sono i segreti per non farle seccare troppo.",
     "big_image_prompt": "Professional food photography of roasted chestnuts (caldarroste) in a rustic wooden bowl, some partially peeled showing the golden fruit inside. Cozy autumn lighting, steam rising, macro detail, rustic dark wood table.",
-    "keywords": "carne, secondo, proteico, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "arancini-suppli-aria",
@@ -349,7 +349,7 @@
     "source": "Tradizione Italiana",
     "tip": "La salamoia di acqua e olio è il vero trucco dei panettieri: previene che la focaccia si secchi troppo con l'aria ventilata e la mantiene morbida dentro.",
     "big_image_prompt": "A freshly baked Italian flatbread (Schiacciatina/Focaccia) glistening with olive oil, dimpled with fingerprints, topped with coarse sea salt and fresh rosemary. Rustic bakery style.",
-    "keywords": "lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "cornetti-sfoglia-ripieni",
@@ -997,7 +997,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Assicurati di non sovrapporle troppo nel cestello; se necessario, cuocile in due infornate separate per farle seccare bene.",
-    "keywords": "croccante, sfizioso, lievitato, salato, aperitivo, snack, veloce, facile, rapido, vegano, vegetariano"
+    "keywords": "croccante, sfizioso, lievitato, salato, aperitivo, veloce, facile, rapido, vegano, vegetariano"
   },
   {
     "slug": "patatine-dolci-fritte",
@@ -1200,7 +1200,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "L'amido di mais è fondamentale: assorbe l'umidità della pelle del pollo trasformandola in una crosticina perfetta.",
-    "keywords": "carne, secondo, proteico, pollo, sfizioso, croccante, aperitivo, snack, frittura, fritto"
+    "keywords": "carne, secondo, proteico, pollo, sfizioso, croccante, aperitivo, frittura, fritto"
   },
   {
     "slug": "ali-pollo-jerk",
@@ -1632,7 +1632,7 @@
     ],
     "source": "Cosori",
     "tip": "Lascia sempre due dita di spazio tra un rustico e l'altro: la pasta sfoglia triplica il suo volume in cottura e rischiano di incollarsi in un blocco unico.",
-    "keywords": "lievitato, salato, aperitivo, snack, veloce, facile, rapido, sfizioso"
+    "keywords": "lievitato, salato, aperitivo, veloce, facile, rapido, sfizioso"
   },
   {
     "slug": "petti-pollo-semplici",
@@ -1965,7 +1965,7 @@
     ],
     "source": "Cosori",
     "tip": "Spennella la superficie con uovo e fai dei piccoli tagli per far uscire il vapore. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto.",
-    "keywords": "carne, secondo, proteico, pesce, mare, verdure, contorno, lievitato, salato, aperitivo, snack"
+    "keywords": "carne, secondo, proteico, pesce, mare, verdure, contorno, lievitato, salato, aperitivo"
   },
   {
     "slug": "arrosto-filetto-maiale",
@@ -1990,7 +1990,7 @@
     ],
     "source": "Ninja",
     "tip": "Usa un termometro per carne per verificare la cottura interna senza tagliare il filetto. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto.",
-    "keywords": "carne, secondo, proteico, pesce, mare, lievitato, salato, aperitivo, snack"
+    "keywords": "carne, secondo, proteico, pesce, mare, lievitato, salato, aperitivo"
   },
   {
     "slug": "bistecca-mostarda-balsamica",
@@ -2018,7 +2018,7 @@
     ],
     "source": "Cosori",
     "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Taglia la carne controfibra dopo la cottura per la massima tenerezza.",
-    "keywords": "carne, secondo, proteico, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, veloce, facile, rapido"
   },
   {
     "slug": "bistecca-costata-santa-maria",
@@ -2046,7 +2046,7 @@
     ],
     "source": "Cosori",
     "tip": "Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto. Lascia riposare la carne per 10 minuti dopo la cottura per ridistribuire i succhi.",
-    "keywords": "carne, secondo, proteico, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "bistecca-new-york-chimichurri",
@@ -2292,7 +2292,7 @@
     ],
     "source": "Tefal",
     "tip": "Tosta leggermente i panini nella friggitrice ad aria mentre la carne riposa.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, verdure, contorno, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "hamburger-tacchino-asiatico",
@@ -2346,7 +2346,7 @@
     ],
     "source": "Tefal",
     "tip": "Pre-cuoci le salsicce in acqua bollente prima di assemblare e grigliare i panini.",
-    "keywords": "carne, secondo, proteico, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "involtini-maiale-prosciutto",
@@ -2400,7 +2400,7 @@
     ],
     "source": "Cosori",
     "tip": "Rimuovi bene i semi dai jalapeños per ridurre la piccantezza. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, dolce, dessert, colazione, merenda"
+    "keywords": "carne, secondo, proteico, verdure, contorno"
   },
   {
     "slug": "kofta-manzo-coriandolo",
@@ -2532,7 +2532,7 @@
     ],
     "source": "Tefal",
     "tip": "Infilza la spirale con due spiedini incrociati per mantenerne la forma durante la cottura. Ricordati di girarla a metà del tempo.",
-    "keywords": "carne, secondo, proteico, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, veloce, facile, rapido"
   },
   {
     "slug": "sandwich-bistecca-rafano",
@@ -2650,7 +2650,7 @@
     ],
     "source": "Cosori",
     "tip": "Usa spiedini di legno pre-ammollati in acqua per una decina di minuti, così non bruceranno durante l'esposizione al calore.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, verdure, contorno, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "spiedini-manzo-teriyaki",
@@ -2676,7 +2676,7 @@
     ],
     "source": "Tefal",
     "tip": "Assicurati di avvolgere molto strettamente la carne per evitare che il formaggio coli eccessivamente sul fondo.",
-    "keywords": "carne, secondo, proteico, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, veloce, facile, rapido"
   },
   {
     "slug": "uovo-allo-scotch",
@@ -2974,7 +2974,7 @@
     ],
     "source": "Cosori",
     "tip": "Usa fiduciosamente uno spillo o uno stuzzicadenti fine per serrare e legare intimamente l'insaccato striato al gamberetto ed evitare del tutto l'orribile srotolamento sotto calore.",
-    "keywords": "frittura, fritto, croccante, sfizioso, carne, secondo, proteico, pesce, mare, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack"
+    "keywords": "frittura, fritto, croccante, sfizioso, carne, secondo, proteico, pesce, mare, lievitato, salato, aperitivo"
   },
   {
     "slug": "gamberi-al-cocco",
@@ -3283,7 +3283,7 @@
     ],
     "source": "Cosori",
     "tip": "Rompi l'uovo sulla pizza solo negli ultimi minuti di cottura per far sì che il tuorlo rimanga morbidissimo.",
-    "keywords": "lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "salmone-burro-limone",
@@ -3339,7 +3339,7 @@
     ],
     "source": "Ninja",
     "tip": "Prepara la salsa fredda mentre il salmone cuoce per ottimizzare i tempi. Ricordati di controllare la cottura del pesce al 7° minuto.",
-    "keywords": "pesce, mare, secondo, verdure, contorno, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "pesce, mare, secondo, verdure, contorno, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "salmone-glassato-teriyaki",
@@ -3586,7 +3586,7 @@
     ],
     "source": "Ninja",
     "tip": "Non occorre aggiungere olio se il prodotto è già pre-fritto o impanato industrialmente.",
-    "keywords": "pesce, mare, secondo, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "pesce, mare, secondo, veloce, facile, rapido"
   },
   {
     "slug": "uovo-in-vaso-cotto",
@@ -3615,7 +3615,7 @@
     ],
     "source": "Cosori",
     "tip": "Cuoci finché l'albume non è completamente rappreso ma il tuorlo resta ancora morbido e liquido al centro.",
-    "keywords": "dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "veloce, facile, rapido"
   },
   {
     "slug": "biscotti-al-cheddar",
@@ -3894,7 +3894,7 @@
     ],
     "source": "Tefal",
     "tip": "Occupati prima dello scurirsi delle verdure speziate, dopodiché usa la coda dei minuti per ravvivare il lievitato assicurando servita caldissima.",
-    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano, lievitato, salato, aperitivo, snack"
+    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano, lievitato, salato, aperitivo"
   },
   {
     "slug": "bocconcini-cavolfiore-salsa-ranch",
@@ -3975,7 +3975,7 @@
     ],
     "source": "Cosori",
     "tip": "Privilegia un assortimento radicolare dalle larghezze appaiate così la reazione maillardiana sciropposa attacchi similmente tutto il dolce contenuto croccante.",
-    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, secondo, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, secondo, verdure, contorno, vegetariano, veloce, facile, rapido"
   },
   {
     "slug": "carote-arrosto-miele",
@@ -4055,7 +4055,7 @@
     ],
     "source": "Tefal",
     "tip": "Impeganti costantemente allo scoccare di metà turno prelevando sveltamente l'insieme caldo ed appuntando per muoverlo affinché gli scuri non deturpino irreparabilmente i bordi più esposti.",
-    "keywords": "verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "verdure, contorno, vegetariano, veloce, facile, rapido"
   },
   {
     "slug": "chips-patate-croccanti",
@@ -4083,7 +4083,7 @@
     ],
     "source": "Cosori",
     "tip": "L'uso di una mandolina è obbligatorio: fette di spessore diverso cuoceranno in tempi diversi (alcune bruceranno, altre resteranno molli). Non saltare mai l'ammollo e l'asciugatura!",
-    "keywords": "frittura, fritto, croccante, sfizioso, patate, verdure, contorno, vegetariano, vegano, aperitivo, snack"
+    "keywords": "frittura, fritto, croccante, sfizioso, patate, verdure, contorno, vegetariano, vegano, aperitivo"
   },
   {
     "slug": "funghi-arrostiti",
@@ -4163,7 +4163,7 @@
     ],
     "source": "Tefal",
     "tip": "Spennella il pesto solo negli ultimi minuti di cottura affinché non si bruci e non perda il suo brillante colore verde.",
-    "keywords": "verdure, contorno, vegetariano, dolce, dessert, colazione, merenda"
+    "keywords": "verdure, contorno, vegetariano"
   },
   {
     "slug": "melanzane-ripiene-mozzarella",
@@ -4293,7 +4293,7 @@
     ],
     "source": "Ninja",
     "tip": "Se le patate novelle sono molto piccole, puoi lasciarle intere prolungando eventualmente la cottura di 5 minuti.",
-    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda"
+    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano"
   },
   {
     "slug": "hash-brown",
@@ -4369,7 +4369,7 @@
     ],
     "source": "Cosori",
     "tip": "Posiziona le mezze patate con la parte piatta tagliata rivolta verso l'alto per massimizzarne l'abbrustolimento dorato.",
-    "keywords": "frittura, fritto, croccante, sfizioso, carne, secondo, proteico, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack"
+    "keywords": "frittura, fritto, croccante, sfizioso, carne, secondo, proteico, verdure, contorno, vegetariano, lievitato, salato, aperitivo"
   },
   {
     "slug": "peperoni-arrostiti-interi",
@@ -4549,7 +4549,7 @@
     ],
     "source": "Tefal",
     "tip": "Per essiccare con virtù celesti affetta gli spessori regolarissimi identici (3 mm) in modo millimetrico impiegando freddi mandolini trancianti senza timore ed il risultato si spezzera cristallino insieme alle medesime secchezze croccanti.",
-    "keywords": "dolce, dessert, colazione, merenda"
+    "keywords": ""
   },
   {
     "slug": "crostata-pere-rustica",
@@ -4600,7 +4600,7 @@
     ],
     "source": "Ninja",
     "tip": "Assicurati grandemente ad impiegar una minuziosa ed asciutta detersione postuma al lavaggio per non introdur liquidi ed acqua infetta nel paniere poichè distruggerebbe tristemente ed inevitabile lessando e mollemente bollendo il croccante finale tanto bramato per sgranocchiare festoso.",
-    "keywords": "dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "veloce, facile, rapido"
   },
   {
     "slug": "falafel",
@@ -4626,7 +4626,7 @@
     ],
     "source": "Tefal",
     "tip": "Elargisci senza timore inusitate piccolissime gocce olesose sfreccianti cadenti ad irrorate sopra ad ogni pallottola preparata per la cottura cruda poichè le renderanno esteriormente doratissime esibendo visivamente bruniture coloratissime invitanti che ingannano golosamente replicandone a pari merito il sentore d'una totale bollitura fiammante.",
-    "keywords": "frittura, fritto, croccante, sfizioso, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, veloce, facile, rapido"
   },
   {
     "slug": "fritto-greco",
@@ -4680,7 +4680,7 @@
     ],
     "source": "Ninja",
     "tip": "Non riempire il cestello fino all'orlo: le spirali occupano molto volume e hanno bisogno di spazio per far circolare l'aria rovente al centro del mucchio.",
-    "keywords": "frittura, fritto, croccante, sfizioso, patate, surgelato, verdure, contorno, vegetariano, vegano, veloce, facile, aperitivo, snack"
+    "keywords": "frittura, fritto, croccante, sfizioso, patate, surgelato, verdure, contorno, vegetariano, vegano, veloce, facile, aperitivo"
   },
   {
     "slug": "samosa-vegetali",
@@ -4707,7 +4707,7 @@
     ],
     "source": "Tefal",
     "tip": "Se le verdure del ripieno risultano troppo acquose, tamponale leggermente per non bagnare e bucare l'involucro di pasta.",
-    "keywords": "verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "verdure, contorno, vegetariano, veloce, facile, rapido"
   },
   {
     "slug": "torta-banana-mascarpone",
@@ -4783,7 +4783,7 @@
     ],
     "source": "Cosori",
     "tip": "Spennella la generosa e morbida noce di burro esclusivamente sui lati esterni del pane per garantire la nascita della formidabile crosta dorata a ridosso dell'aria calda.",
-    "keywords": "lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "gamberetti-stile-cajun",
@@ -4810,7 +4810,7 @@
     ],
     "source": "Cosori",
     "tip": "Non prolungarne oltremodo lo stazionamento scottante per scongiurare disgraziatamente la rapida calcificazione elastica in gomma tipica del fine pesce cotto a sfinimento. Scuoti a metà cottura.",
-    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, secondo, verdure, contorno, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, secondo, verdure, contorno, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "mais-tostato-burro",
@@ -4862,7 +4862,7 @@
     ],
     "source": "Cosori",
     "tip": "Cuoci obbligatoriamente d'anticipo di nuda panificazione solitaria prima della stesura colosa delle rosse ed acquose salsature d'intingolo per schivarne infallibilmente e drasticamente gli ammosciamenti rovinosi d'umidità disastrosa frollata.",
-    "keywords": "dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "pane-aglio",
@@ -4914,7 +4914,7 @@
     ],
     "source": "Ninja",
     "tip": "Rimuovi inflessibile l'erbaceo inviluppo e l'intero scudo peloso prima per ungere uniformante ed abilita capovolgimenti frequenti e misurati assicuranti perfette tonalizzazioni lucide scure sui fitti perimetri del mais dolce abbrustoliti.",
-    "keywords": "pesce, mare, secondo, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "pesce, mare, secondo, verdure, contorno, vegetariano, veloce, facile, rapido"
   },
   {
     "slug": "pizzette-fiestas",
@@ -4997,7 +4997,7 @@
     ],
     "source": "Ninja",
     "tip": "Sgocciola la ricotta in un colino per almeno un'ora prima di usarla, altrimenti rilascerà troppo siero rovinando la consistenza del ripieno.",
-    "keywords": "verdure, contorno, vegetariano, dolce, dessert, colazione, merenda"
+    "keywords": "verdure, contorno, vegetariano"
   },
   {
     "slug": "peperoni-gratinati-capperi",
@@ -5025,7 +5025,7 @@
     ],
     "source": "Cosori",
     "tip": "Se ami i sapori forti, puoi aggiungere alla panatura anche due filetti di acciuga tritati finemente al posto di una parte di sale.",
-    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "asparagi-gratinati-parmigiano",
@@ -5079,7 +5079,7 @@
     ],
     "source": "Cosori",
     "tip": "Mantieni intatta una piccola porzione del torsolo basale in ogni spicchio, è l'unico modo per tenere unite le sfoglie del finocchio durante la cottura.",
-    "keywords": "carne, secondo, proteico, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, veloce, facile, rapido"
   },
   {
     "slug": "cipolle-rosse-agrodolce",
@@ -5133,7 +5133,7 @@
     ],
     "source": "Cosori",
     "tip": "Applica sempre le salse contenenti miele e zuccheri solo negli ultimi minuti di cottura per ottenere un effetto lucido (laccatura) evitando bruciature amare.",
-    "keywords": "dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "veloce, facile, rapido"
   },
   {
     "slug": "pomodorini-confit-origano",
@@ -5241,7 +5241,7 @@
     ],
     "source": "Cosori",
     "tip": "Usa patate a pasta gialla o farinose e lasciale intiepidire prima di amalgamarle all'uovo per non farlo stracciare prematuramente col calore.",
-    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda"
+    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano"
   },
   {
     "slug": "edamame-speziati-croccanti",
@@ -5267,7 +5267,7 @@
     ],
     "source": "Ninja",
     "tip": "Effettuare il condimento solo *dopo* averli scongelati ad aria per i primi 4 minuti evita che le spezie scivolino via col ghiaccio fuso sul fondo del cassetto.",
-    "keywords": "verdure, contorno, vegetariano, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "verdure, contorno, vegetariano, lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "ceci-tostati-paprika",
@@ -5293,7 +5293,7 @@
     ],
     "source": "Cosori",
     "tip": "Asciugare i ceci con maniacale attenzione prima di oliarli è l'unico modo reale per ottenere l'effetto 'croc' scricchiolante invece di un deludente effetto bollito.",
-    "keywords": "lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "lievitato, salato, aperitivo, veloce, facile, rapido"
   },
   {
     "slug": "chips-zucchine-parmigiano",
@@ -5319,6 +5319,6 @@
     ],
     "source": "Tefal",
     "tip": "La mandolina è assolutamente imprescindibile in questa preparazione: fette tagliate al coltello risulteranno di spessore disomogeneo, bruciando ai lati e rimanendo molli al centro.",
-    "keywords": "verdure, contorno, vegetariano, lievitato, salato, aperitivo, snack"
+    "keywords": "verdure, contorno, vegetariano, lievitato, salato, aperitivo"
   }
 ]
