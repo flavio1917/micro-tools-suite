@@ -23,7 +23,7 @@ const translations = {
     title: "Cosa vuoi cucinare oggi?",
     subtitlePre: "Cerca tra ",
     subtitlePost: " ricette ottimizzate per la tua friggitrice ad aria.",
-    placeholder: "🔍 Cerca (es. 'italiana', 'pesce', 'pollo', 'vegetariana', dolce',)...",
+    placeholder: "🔍 Cerca (es. 'italiana', 'pesce', 'pollo', 'vegetariana', 'dolce')...",
     noResultsTitle: "Nessuna ricetta trovata",
     noResultsDesc: "Prova a cercare un titolo diverso o usa parole più semplici.",
     resetBtn: "Mostra tutte le ricette"
@@ -157,17 +157,30 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 
           if (isVisible) {
             let score = 0;
+            
+            // 1. PRIORITÀ MASSIMA: Match esatto nelle KEYWORDS (Categoria) [+200 punti]
             try {
-              const exactWordRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
-              if (exactWordRegex.test(title)) score += 100;
+              const exactKeywordRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
+              if (exactKeywordRegex.test(keywords)) score += 200;
+            } catch(e) {}
+            
+            // La keyword contiene l'intera frase cercata [+100 punti]
+            if (keywords.includes(rawQuery)) score += 100;
+
+            // 2. PRIORITÀ SECONDARIA: Match esatto nel TITOLO [+50 punti]
+            try {
+              const exactTitleRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
+              if (exactTitleRegex.test(title)) score += 50;
             } catch(e) {}
 
-            if (title.includes(rawQuery)) score += 50;
+            // Il titolo contiene l'intera frase [+25 punti]
+            if (title.includes(rawQuery)) score += 25;
 
+            // 3. PRIORITÀ MINIMA: Match parziali sulle radici delle parole
             searchTerms.forEach(term => {
               const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
-              if (title.includes(root)) score += 10;
-              if (keywords.includes(root)) score += 1;
+              if (keywords.includes(root)) score += 10;
+              if (title.includes(root)) score += 5;
             });
 
             results.push({ wrapper: wrapper, score: score, originalIndex: parseInt(wrapper.getAttribute('data-original-index')) });
@@ -176,6 +189,7 @@ const t = translations[lang as keyof typeof translations] || translations.it;
           }
         });
 
+        // Ordinamento in base al punteggio più alto. A parità di punteggio, usa l'ordine originale.
         results.sort((a, b) => {
           if (b.score !== a.score) return b.score - a.score;
           return a.originalIndex - b.originalIndex;
