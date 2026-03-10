@@ -108,7 +108,7 @@
     "source": "Tradizione Italiana",
     "tip": "Se le patate sono tagliate troppo grandi potrebbero rimanere crude, cerca di mantenere una dimensione del cubetto uniforme.",
     "big_image_prompt": "A rustic Italian dish of roasted sausage chunks and golden diced potatoes (salsiccia e patate) with fresh rosemary sprigs, served in a black cast iron skillet. Hearty, warm, home-cooked meal.",
-    "keywords": "frittura, fritto, croccante, sfizioso, carne, secondo, proteico, verdure, contorno, vegetariano"
+    "keywords": "frittura, fritto, croccante, sfizioso, carne, secondo, proteico, verdure, contorno"
   },
   {
     "slug": "arrosticini-abruzzesi",
@@ -186,7 +186,7 @@
     "source": "Tradizione Italiana",
     "tip": "Se usi il riso crudo, assicurati che il ripieno sia molto umido e acquoso (aggiungi la polpa del pomodoro), così il chicco cuocerà bene all'interno.",
     "big_image_prompt": "Italian stuffed vegetables, red tomatoes and bell peppers filled with savory rice and herbs, roasted to perfection. Served in a rustic baking dish, garnished with fresh basil leaves.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda"
+    "keywords": "carne, secondo, proteico, verdure, contorno, dolce, dessert, colazione, merenda"
   },
   {
     "slug": "patate-forno-cubetti-rosmarino",
@@ -1936,7 +1936,7 @@
     "source": "Cosori",
     "tip": "Assicurati misurando con il righello o 'a occhio' che i bastoncini che andrai a usare non siano più lunghi della diagonale del tuo cestello quadrato!",
     "keywords": "carne, secondo, proteico, pollo, spiedini, etnico, mediorientale, veloce, facile"
-  }, 
+  },
   {
     "slug": "stromboli",
     "title": "Rotolo di Pizza Farcito",
@@ -1965,7 +1965,7 @@
     ],
     "source": "Cosori",
     "tip": "Spennella la superficie con uovo e fai dei piccoli tagli per far uscire il vapore. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto.",
-    "keywords": "carne, secondo, proteico, pesce, mare, verdure, contorno, vegetariano, lievitato, salato, aperitivo, snack"
+    "keywords": "carne, secondo, proteico, pesce, mare, verdure, contorno, lievitato, salato, aperitivo, snack"
   },
   {
     "slug": "arrosto-filetto-maiale",
@@ -2240,7 +2240,7 @@
     ],
     "source": "Ninja",
     "tip": "Marina la carne per almeno 2 ore prima di cuocerla insieme alle verdure. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, vegetariano"
+    "keywords": "carne, secondo, proteico, verdure, contorno"
   },
   {
     "slug": "hamburger-classico",
@@ -2292,7 +2292,7 @@
     ],
     "source": "Tefal",
     "tip": "Tosta leggermente i panini nella friggitrice ad aria mentre la carne riposa.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, verdure, contorno, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
   },
   {
     "slug": "hamburger-tacchino-asiatico",
@@ -2319,7 +2319,7 @@
     ],
     "source": "Cosori",
     "tip": "Fai raffreddare i tortini in frigo prima di cuocerli per mantenerne la forma.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, verdure, contorno, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
   },
   {
     "slug": "hot-dog-newyorkese",
@@ -2400,7 +2400,7 @@
     ],
     "source": "Cosori",
     "tip": "Rimuovi bene i semi dai jalapeños per ridurre la piccantezza. Ricordati di scuotere il cestello o girare gli alimenti a metà del tempo previsto.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda"
+    "keywords": "carne, secondo, proteico, verdure, contorno, dolce, dessert, colazione, merenda"
   },
   {
     "slug": "kofta-manzo-coriandolo",
@@ -2650,7 +2650,7 @@
     ],
     "source": "Cosori",
     "tip": "Usa spiedini di legno pre-ammollati in acqua per una decina di minuti, così non bruceranno durante l'esposizione al calore.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, verdure, contorno, dolce, dessert, colazione, merenda, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
   },
   {
     "slug": "spiedini-manzo-teriyaki",
@@ -3339,7 +3339,7 @@
     ],
     "source": "Ninja",
     "tip": "Prepara la salsa fredda mentre il salmone cuoce per ottimizzare i tempi. Ricordati di controllare la cottura del pesce al 7° minuto.",
-    "keywords": "pesce, mare, secondo, verdure, contorno, vegetariano, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "pesce, mare, secondo, verdure, contorno, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
   },
   {
     "slug": "salmone-glassato-teriyaki",
@@ -3507,7 +3507,7 @@
     ],
     "source": "Cosori",
     "tip": "Capovolgi molto delicatamente il pesce a metà cottura per evitare di romperne le tenere fibre.",
-    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, secondo, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, secondo, verdure, contorno, dolce, dessert, colazione, merenda, veloce, facile, rapido"
   },
   {
     "slug": "toast-farcito-francese",
@@ -3866,7 +3866,7 @@
     ],
     "source": "Cosori",
     "tip": "Evita categoricamente l'aggiunta di dosi generose di sale: la carne in stagionatura riverserà spontaneamente altissima sapidità nei tessuti verdi.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, vegetariano, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, verdure, contorno, veloce, facile, rapido"
   },
   {
     "slug": "bagel-vegetariani",
@@ -4447,7 +4447,7 @@
     ],
     "source": "Cosori",
     "tip": "Sorveglia la cottura al sesto minuto, poiché gli zuccheri bruni in friggitrice ad aria passano dal caramellato al bruciato molto velocemente.",
-    "keywords": "verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "verdure, contorno, dolce, dessert, colazione, merenda, veloce, facile, rapido"
   },
   {
     "slug": "bistecche-costata-senape",
@@ -4500,7 +4500,7 @@
     ],
     "source": "Cosori",
     "tip": "Spacca e seziona sempre le minuscole e dure sfere vegetali nel mezzo per domare drasticamente e decurtare le lungaggini di intenerimento centrali.",
-    "keywords": "carne, secondo, proteico, verdure, contorno, vegetariano, veloce, facile, rapido"
+    "keywords": "carne, secondo, proteico, verdure, contorno, veloce, facile, rapido"
   },
   {
     "slug": "chips-cavolo-nero",
@@ -4810,7 +4810,7 @@
     ],
     "source": "Cosori",
     "tip": "Non prolungarne oltremodo lo stazionamento scottante per scongiurare disgraziatamente la rapida calcificazione elastica in gomma tipica del fine pesce cotto a sfinimento. Scuoti a metà cottura.",
-    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, secondo, verdure, contorno, vegetariano, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, secondo, verdure, contorno, lievitato, salato, aperitivo, snack, veloce, facile, rapido"
   },
   {
     "slug": "mais-tostato-burro",
@@ -5321,5 +5321,4 @@
     "tip": "La mandolina è assolutamente imprescindibile in questa preparazione: fette tagliate al coltello risulteranno di spessore disomogeneo, bruciando ai lati e rimanendo molli al centro.",
     "keywords": "verdure, contorno, vegetariano, lievitato, salato, aperitivo, snack"
   }
-  
 ]

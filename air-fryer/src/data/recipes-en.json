@@ -198,7 +198,7 @@
     "source": "Italian Tradition",
     "tip": "If using uncooked rice, ensure the filling is very moist and watery (add the tomato pulp) so the grains cook thoroughly inside.",
     "big_image_prompt": "Italian stuffed vegetables, red tomatoes and bell peppers filled with savory rice and herbs, roasted to perfection. Served in a rustic baking dish, garnished with fresh basil leaves.",
-    "keywords": "meat, main course, protein-rich, vegetables, side dish, vegetarian",
+    "keywords": "meat, main course, protein-rich, vegetables, side dish",
     "isItalian": true,
     "image": "verdure-ripiene-riso-carne"
   },
@@ -2404,7 +2404,7 @@
     ],
     "source": "Ninja",
     "tip": "Marinate the meat for at least 2 hours before cooking it with the vegetables. Remember to shake the basket or turn the food halfway through the cooking time.",
-    "keywords": "meat, main course, protein, vegetables, side dish, vegetarian",
+    "keywords": "meat, main course, protein, vegetables, side dish",
     "isItalian": false,
     "image": "filetto-maiale-verdure"
   },
@@ -2460,7 +2460,7 @@
     ],
     "source": "Tefal",
     "tip": "Lightly toast the buns in the air fryer while the meat is resting.",
-    "keywords": "meat, main course, protein, vegetables, side dish, vegetarian, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy, fast",
+    "keywords": "meat, main course, protein, vegetables, side dish, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy, fast",
     "isItalian": false,
     "image": "hamburger-deluxe"
   },
@@ -2576,7 +2576,7 @@
     ],
     "source": "Cosori",
     "tip": "Remove the seeds from the jalapeños well to reduce the heat. Remember to shake the basket or flip the food halfway through the cooking time.",
-    "keywords": "meat, main dish, protein, vegetables, side dish, vegetarian, sweet, dessert, breakfast, snack",
+    "keywords": "meat, main dish, protein, vegetables, side dish, sweet, dessert, breakfast, snack",
     "isItalian": false,
     "image": "jalapenos-ripieni-bacon"
   },
@@ -2844,7 +2844,7 @@
     ],
     "source": "Cosori",
     "tip": "Use wooden skewers soaked in water for about ten minutes so they won't burn during exposure to the heat.",
-    "keywords": "meat, main course, protein, vegetables, side dish, vegetarian, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy, fast",
+    "keywords": "meat, main course, protein, vegetables, side dish, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy, fast",
     "isItalian": false,
     "image": "spiedini-manzo-coreano"
   },
@@ -3763,7 +3763,7 @@
     ],
     "source": "Cosori",
     "tip": "Flip the fish very gently halfway through cooking to avoid breaking the tender fibers.",
-    "keywords": "frying, fried, crispy, delicious, fish, seafood, main course, vegetables, side dish, vegetarian, sweet, dessert, breakfast, snack, fast, easy, quick",
+    "keywords": "frying, fried, crispy, delicious, fish, seafood, main course, vegetables, side dish, sweet, dessert, breakfast, snack, fast, easy, quick",
     "isItalian": false,
     "image": "tacos-pesce-griglia"
   },
@@ -4148,7 +4148,7 @@
     ],
     "source": "Cosori",
     "tip": "Strictly avoid adding generous amounts of salt: the cured meat will spontaneously release high levels of salinity into the green tissue.",
-    "keywords": "meat, main dish, protein, vegetables, side dish, vegetarian, fast, easy, quick",
+    "keywords": "meat, main dish, protein, vegetables, side dish, fast, easy, quick",
     "isItalian": true,
     "image": "asparagi-avvolti-prosciutto"
   },
@@ -5164,7 +5164,7 @@
     ],
     "source": "Cosori",
     "tip": "Do not overcook, as this can make the shrimp rubbery and tough. Shake the basket halfway through cooking.",
-    "keywords": "frying, fried, crispy, tasty, seafood, sea, main course, vegetables, side dish, vegetarian, leavened, savory, appetizer, snack, fast, easy, quick",
+    "keywords": "frying, fried, crispy, tasty, seafood, sea, main course, vegetables, side dish, leavened, savory, appetizer, snack, fast, easy, quick",
     "isItalian": false,
     "image": "gamberetti-stile-cajun"
   },

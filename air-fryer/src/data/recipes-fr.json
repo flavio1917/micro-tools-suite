@@ -115,7 +115,7 @@
     "source": "Tradition Italienne",
     "tip": "Si les pommes de terre sont coupées trop gros, elles pourraient rester crues ; essayez de maintenir une taille de cube uniforme.",
     "big_image_prompt": "A rustic Italian dish of roasted sausage chunks and golden diced potatoes (salsiccia e patate) with fresh rosemary sprigs, served in a black cast iron skillet. Hearty, warm, home-cooked meal.",
-    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, légumes, accompagnement, non végétarien",
+    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, légumes, accompagnement, non",
     "image": "salsiccia-patate-cubetti"
   },
   {
@@ -199,7 +199,7 @@
     "source": "Tradition Italienne",
     "tip": "Si vous utilisez du riz cru, assurez-vous que la farce soit très humide et juteuse (ajoutez la pulpe de tomate) pour que le grain cuise parfaitement à l'intérieur.",
     "big_image_prompt": "Italian stuffed vegetables, red tomatoes and bell peppers filled with savory rice and herbs, roasted to perfection. Served in a rustic baking dish, garnished with fresh basil leaves.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, végétarien, sucré, dessert, petit-déjeuner, goûter",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, sucré, dessert, petit-déjeuner, goûter",
     "image": "verdure-ripiene-riso-carne"
   },
   {
@@ -2110,7 +2110,7 @@
     ],
     "source": "Cosori",
     "tip": "Badigeonnez la surface avec de l'œuf et faites de petites incisions pour laisser échapper la vapeur. N'oubliez pas de secouer le panier ou de retourner les aliments à mi-temps.",
-    "keywords": "viande, plat principal, protéiné, poisson, mer, légumes, accompagnement, végétarien, pâte levée, salé, apéritif, snack",
+    "keywords": "viande, plat principal, protéiné, poisson, mer, légumes, accompagnement, pâte levée, salé, apéritif, snack",
     "image": "stromboli"
   },
   {
@@ -2404,7 +2404,7 @@
     ],
     "source": "Ninja",
     "tip": "Marinez la viande pendant au moins 2 heures avant de la cuire avec les légumes. N'oubliez pas de secouer le panier ou de retourner les aliments à mi-cuisson.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, végétarien",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement",
     "isItalian": true,
     "image": "filetto-maiale-verdure"
   },
@@ -2460,7 +2460,7 @@
     ],
     "source": "Tefal",
     "tip": "Toastez légèrement les pains à burger dans la friteuse à air pendant que la viande repose.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, vélocité",
     "isItalian": true,
     "image": "hamburger-deluxe"
   },
@@ -2489,7 +2489,7 @@
     ],
     "source": "Cosori",
     "tip": "Laissez refroidir les galettes au réfrigérateur avant de les cuire pour qu'elles conservent leur forme.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, vélocité",
     "isItalian": false,
     "image": "hamburger-tacchino-asiatico"
   },
@@ -2576,7 +2576,7 @@
     ],
     "source": "Cosori",
     "tip": "Retirez bien les graines des jalapeños pour réduire le piquant. N'oubliez pas de secouer le panier ou de retourner les aliments à mi-cuisson.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, végétarien, doux, dessert, petit déjeuner, collation",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, doux, dessert, petit déjeuner, collation",
     "isItalian": true,
     "image": "jalapenos-ripieni-bacon"
   },
@@ -2844,7 +2844,7 @@
     ],
     "source": "Cosori",
     "tip": "Utilisez des brochettes en bois pré-trempées dans l'eau pendant une dizaine de minutes, ainsi elles ne brûleront pas lors de l'exposition à la chaleur.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, véloces",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack, rapide, facile, véloces",
     "isItalian": false,
     "image": "spiedini-manzo-coreano"
   },
@@ -3583,7 +3583,7 @@
     ],
     "source": "Ninja",
     "tip": "Préparez la sauce froide pendant que le saumon cuit pour optimiser le temps. N'oubliez pas de vérifier la cuisson du poisson à la 7ème minute.",
-    "keywords": "poisson, mer, plat principal, légumes, accompagnement, végétarien, levé, salé, apéritif, collation, rapide, facile, vélocité",
+    "keywords": "poisson, mer, plat principal, légumes, accompagnement, levé, salé, apéritif, collation, rapide, facile, vélocité",
     "isItalian": false,
     "image": "salmone-pomodoro-cetriolo"
   },
@@ -3763,7 +3763,7 @@
     ],
     "source": "Cosori",
     "tip": "Retournez le poisson très délicatement à mi-cuisson pour éviter de casser ses fibres tendres.",
-    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
     "isItalian": false,
     "image": "tacos-pesce-griglia"
   },
@@ -4148,7 +4148,7 @@
     ],
     "source": "Cosori",
     "tip": "Évitez catégoriquement d'ajouter des doses généreuses de sel : la viande affinée libérera spontanément une saveur élevée dans les tissus verts.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, végétarien, rapide, facile, veloce",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, rapide, facile, veloce",
     "isItalian": true,
     "image": "asparagi-avvolti-prosciutto"
   },
@@ -4773,7 +4773,7 @@
     ],
     "source": "Cosori",
     "tip": "Surveillez la cuisson à la sixième minute, car les cassonades à la friteuse à air passent du caramélisé au brûlé très rapidement.",
-    "keywords": "légumes, accompagnement, végétarien, sucré, dessert, petit-déjeuner, collation, rapide, facile, vite",
+    "keywords": "légumes, accompagnement, sucré, dessert, petit-déjeuner, collation, rapide, facile, vite",
     "isItalian": false,
     "image": "bbq-bacon"
   },
@@ -4830,7 +4830,7 @@
     ],
     "source": "Cosori",
     "tip": "Coupez et sectionnez toujours les petites sphères végétales dures en deux pour réduire considérablement et raccourcir le temps d'attendrissement du cœur.",
-    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, végétarien, rapide, facile",
+    "keywords": "viande, plat principal, protéiné, légumes, accompagnement, rapide, facile",
     "isItalian": true,
     "image": "cavoletti-bruxelles-pancetta"
   },
@@ -5164,7 +5164,7 @@
     ],
     "source": "Cosori",
     "tip": "Ne prolongez pas trop leur séjour de cuisson pour éviter malheureusement la calcification élastique en caoutchouc typique du poisson trop cuit. Secouez à mi-cuisson.",
-    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, végétarien, levé, salé, apéritif, collation, rapide, facile, prompt",
+    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, levé, salé, apéritif, collation, rapide, facile, prompt",
     "isItalian": false,
     "image": "gamberetti-stile-cajun"
   },

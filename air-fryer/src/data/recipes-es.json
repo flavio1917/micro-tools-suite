@@ -115,7 +115,7 @@
     "source": "Tradición Italiana",
     "tip": "Si las patatas se cortan demasiado grandes podrían quedar crudas, intenta mantener un tamaño de cubo uniforme.",
     "big_image_prompt": "A rustic Italian dish of roasted sausage chunks and golden diced potatoes (salsiccia e patate) with fresh rosemary sprigs, served in a black cast iron skillet. Hearty, warm, home-cooked meal.",
-    "keywords": "freír, frito, crujiente, delicioso, carne, segundo plato, proteico, verduras, guarnición, no vegetariano",
+    "keywords": "freír, frito, crujiente, delicioso, carne, segundo plato, proteico, verduras, guarnición, no",
     "image": "salsiccia-patate-cubetti"
   },
   {
@@ -199,7 +199,7 @@
     "isItalian": true,
     "tip": "Si usas arroz crudo, asegúrate de que el relleno esté muy húmedo y jugoso (añade la pulpa del tomate) para que el grano se cocine bien en su interior.",
     "big_image_prompt": "Italian stuffed vegetables, red tomatoes and bell peppers filled with savory rice and herbs, roasted to perfection. Served in a rustic baking dish, garnished with fresh basil leaves.",
-    "keywords": "carne, plato principal, proteico, verduras, guarnición, vegetariano, dulce, postre, desayuno, merienda",
+    "keywords": "carne, plato principal, proteico, verduras, guarnición, dulce, postre, desayuno, merienda",
     "image": "verdure-ripiene-riso-carne"
   },
   {
@@ -2109,7 +2109,7 @@
     ],
     "source": "Cosori",
     "tip": "Pincela la superficie con huevo y haz pequeños cortes para que salga el vapor. Recuerda sacudir la cesta o girar los alimentos a mitad del tiempo previsto.",
-    "keywords": "carne, segundo plato, proteico, pescado, mar, verduras, guarnición, vegetariano, masa leudada, salado, aperitivo, snack",
+    "keywords": "carne, segundo plato, proteico, pescado, mar, verduras, guarnición, masa leudada, salado, aperitivo, snack",
     "isItalian": true,
     "image": "stromboli"
   },
@@ -2405,7 +2405,7 @@
     ],
     "source": "Ninja",
     "tip": "Marina la carne durante al menos 2 horas antes de cocinarla junto con las verduras. Recuerda agitar la cesta o dar la vuelta a los alimentos a mitad del tiempo previsto.",
-    "keywords": "carne, segundo plato, proteico, verduras, guarnición, vegetariano",
+    "keywords": "carne, segundo plato, proteico, verduras, guarnición",
     "image": "filetto-maiale-verdure"
   },
   {
@@ -2460,7 +2460,7 @@
     ],
     "source": "Tefal",
     "tip": "Tuesta ligeramente los panecillos en la freidora de aire mientras la carne reposa.",
-    "keywords": "carne, segundo plato, proteico, verduras, guarnición, vegetariano, dulce, postre, desayuno, merienda, fermentado, salado, aperitivo, snack, rápido, fácil",
+    "keywords": "carne, segundo plato, proteico, verduras, guarnición, dulce, postre, desayuno, merienda, fermentado, salado, aperitivo, snack, rápido, fácil",
     "isItalian": false,
     "image": "hamburger-deluxe"
   },
@@ -2489,7 +2489,7 @@
     ],
     "source": "Cosori",
     "tip": "Deja enfriar los medallones en la nevera antes de cocinarlos para mantener su forma.",
-    "keywords": "carne, segundo plato, proteico, verduras, guarnición, vegetariano, dulce, postre, desayuno, merienda, fermentado, salado, aperitivo, snack, rápido, fácil, exprés",
+    "keywords": "carne, segundo plato, proteico, verduras, guarnición, dulce, postre, desayuno, merienda, fermentado, salado, aperitivo, snack, rápido, fácil, exprés",
     "isItalian": false,
     "image": "hamburger-tacchino-asiatico"
   },
@@ -2576,7 +2576,7 @@
     ],
     "source": "Cosori",
     "tip": "Retira bien las semillas de los jalapeños para reducir el picante. Recuerda agitar la cesta o dar la vuelta a los alimentos a mitad del tiempo previsto.",
-    "keywords": "carne, segundo plato, proteico, verduras, guarnición, vegetariano, dulce, postre, desayuno, merienda",
+    "keywords": "carne, segundo plato, proteico, verduras, guarnición, dulce, postre, desayuno, merienda",
     "isItalian": false,
     "image": "jalapenos-ripieni-bacon"
   },
@@ -2844,7 +2844,7 @@
     ],
     "source": "Cosori",
     "tip": "Usa brochetas de madera previamente remojadas en agua durante unos diez minutos para que no se quemen durante la exposición al calor.",
-    "keywords": "carne, segundo plato, proteico, verduras, guarnición, vegetariano, dulce, postre, desayuno, merienda, fermentado, salado, aperitivo, snack, rápido, fácil, rápido",
+    "keywords": "carne, segundo plato, proteico, verduras, guarnición, dulce, postre, desayuno, merienda, fermentado, salado, aperitivo, snack, rápido, fácil, rápido",
     "isItalian": false,
     "image": "spiedini-manzo-coreano"
   },
@@ -3583,7 +3583,7 @@
     ],
     "source": "Ninja",
     "tip": "Prepara la salsa fría mientras el salmón se cocina para optimizar los tiempos. Recuerda comprobar la cocción del pescado al séptimo minuto.",
-    "keywords": "pescado, mar, segundo plato, verduras, guarnición, vegetariano, fermentado, salado, aperitivo, snack, rápido, fácil, rápido",
+    "keywords": "pescado, mar, segundo plato, verduras, guarnición, fermentado, salado, aperitivo, snack, rápido, fácil, rápido",
     "isItalian": false,
     "image": "salmone-pomodoro-cetriolo"
   },
@@ -3763,7 +3763,7 @@
     ],
     "source": "Cosori",
     "tip": "Voltea el pescado con mucha suavidad a mitad de la cocción para evitar romper sus tiernas fibras.",
-    "keywords": "freidora de aire, frito, crujiente, delicioso, pescado, mar, plato principal, verduras, guarnición, vegetariano, dulce, postre, desayuno, merienda, rápido, fácil",
+    "keywords": "freidora de aire, frito, crujiente, delicioso, pescado, mar, plato principal, verduras, guarnición, dulce, postre, desayuno, merienda, rápido, fácil",
     "isItalian": false,
     "image": "tacos-pesce-griglia"
   },
@@ -4148,7 +4148,7 @@
     ],
     "source": "Cosori",
     "tip": "Evita añadir demasiado sal, ya que el jamón curado aportará suficiente sapidez a los espárragos durante la cocción.",
-    "keywords": "carne, segundo plato, proteico, verduras, guarnición, vegetariano, rápido, fácil",
+    "keywords": "carne, segundo plato, proteico, verduras, guarnición, rápido, fácil",
     "isItalian": false,
     "image": "asparagi-avvolti-prosciutto"
   },
