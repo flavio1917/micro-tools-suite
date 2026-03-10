@@ -945,7 +945,7 @@
   {
     "title": "Air Fryer Mixed Fried Fish (Frittura di Paranza)",
     "slug": "air-fryer-mixed-fried-fish",
-    "keywords": "fried, crispy, delicious, fish, seafood, main course, paranza, small fish, anchovies",
+    "keywords": "fried, crispy, delicious, seafood, main course, paranza, small fish, anchovies",
     "emoji": "🐟",
     "temp": 400,
     "time": "10",
@@ -973,7 +973,7 @@
   {
     "title": "Air Fryer Crispy Baby Squid",
     "slug": "crispy-air-fryer-baby-squid",
-    "keywords": "frying, fried, crispy, delicious, seafood, fish, main dish, baby squid, calamari",
+    "keywords": "frying, fried, crispy, delicious, seafood, main dish, baby squid, calamari",
     "emoji": "🦑",
     "temp": 400,
     "time": "8",
@@ -1226,7 +1226,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Cooking spray is the secret: if you see white flour spots during cooking, spray them with oil to help them brown.",
-    "keywords": "frying, fried, crispy, delicious, meat, main course, protein, chicken",
+    "keywords": "frying, fried, crispy, delicious, main course, protein, chicken",
     "isItalian": false,
     "image": "pollo-fritto-latticello"
   },
@@ -1353,7 +1353,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Cook them at 340°F instead of the standard 385°F: sugary sauces (like ketchup and sweet soy) burn easily at higher temperatures.",
-    "keywords": "meat, main course, protein, chicken, glazed, sweet-and-savory, delicious",
+    "keywords": "main course, protein, chicken, glazed, sweet-and-savory, delicious",
     "isItalian": false,
     "image": "ali-pollo-ketchup-senape"
   },
@@ -1446,7 +1446,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "The clump trick: pouring a few drops of liquid marinade into the flour before breading creates those extra-crispy flakes typical of fast food.",
-    "keywords": "frying, fried, crunchy, delicious, meat, main dish, protein, chicken, fast, easy, quick, spicy",
+    "keywords": "frying, fried, crunchy, delicious, main dish, protein, chicken, fast, easy, quick, spicy",
     "isItalian": false,
     "image": "cajun-di-pollo"
   },
@@ -1508,7 +1508,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Line the bottom of the basket (under the grill) with a piece of parchment paper or foil: the dripping mustard and sugar will tend to burn and make a mess of the base.",
-    "keywords": "meat, main course, protein, chicken, sweet and sour, easy, fast, quick",
+    "keywords": "main course, protein, chicken, sweet and sour, easy, fast, quick",
     "isItalian": false,
     "image": "cosce-pollo-senape"
   },
@@ -1539,7 +1539,7 @@
     ],
     "source": "Tefal",
     "tip": "If you love crispy skin, this recipe is not for you (the yogurt softens everything). It is ideal for boneless, skinless thighs, which will remain as tender as butter.",
-    "keywords": "meat, main course, protein, chicken, mediterranean, tender",
+    "keywords": "main course, protein, chicken, mediterranean, tender",
     "isItalian": false,
     "image": "cosce-pollo-yogurt-rosmarino"
   },
@@ -1571,7 +1571,7 @@
     ],
     "source": "Cosori",
     "tip": "For Katsu, regular breadcrumbs do NOT work: you must use Panko (available in most large supermarkets). It is what provides that signature large-flake, extra-crispy effect.",
-    "keywords": "frying, fried, crispy, delicious, meat, main course, high protein, Japanese, ethnic, pork",
+    "keywords": "frying, fried, crispy, delicious, main course, high protein, Japanese, ethnic, pork",
     "image": "maiale-katsu"
   },
   {
@@ -1633,7 +1633,7 @@
     ],
     "source": "Cosori",
     "tip": "Fresh fish is delicate: do not use tongs when flipping halfway through or you risk breaking the sticks, use a silicone spatula to lift them from underneath.",
-    "keywords": "frying, fried, crispy, delicious, fish, seafood, main course, sea, fast, easy, quick",
+    "keywords": "frying, fried, crispy, delicious, seafood, main course, sea, fast, easy, quick",
     "image": "crocchette-pesce-fritte"
   },
   {
@@ -1663,7 +1663,7 @@
     ],
     "source": "Ninja",
     "tip": "Place the corn flakes in a sealed freezer bag and roll over them with a rolling pin a few times: you will get the perfect crumbly consistency without making a mess in the kitchen.",
-    "keywords": "frying, fried, crispy, delicious, meat, main course, protein, chicken, tasty",
+    "keywords": "frying, fried, crispy, delicious, main course, protein, chicken, tasty",
     "isItalian": false,
     "image": "crocchette-pollo-salsa-senape"
   },
@@ -1810,7 +1810,7 @@
     ],
     "source": "Cosori",
     "tip": "Apply the sauce only at the end! If you air fry raw chicken already coated in BBQ sauce, the sugars in the sauce will carbonize in 10 minutes, making it bitter.",
-    "keywords": "meat, main dish, protein, chicken, tasty, american",
+    "keywords": "main dish, protein, chicken, tasty, american",
     "isItalian": false,
     "image": "pollo-barbecue-cosori"
   },
@@ -1840,7 +1840,7 @@
     ],
     "source": "Cosori",
     "tip": "Honey gets very hot and can burn quickly; keep an eye on the drumsticks during the last 5 minutes, and if they darken too much, lower the temperature to 320°F.",
-    "keywords": "meat, main course, protein, chicken, sweet and sour, citrus",
+    "keywords": "main course, protein, chicken, sweet and sour, citrus",
     "isItalian": false,
     "image": "pollo-limone-miele"
   },
@@ -1870,7 +1870,7 @@
     ],
     "source": "Cosori",
     "tip": "The Chinese five-spice blend contains cinnamon, star anise, and cloves: use it sparingly as the flavor is very potent and pervasive.",
-    "keywords": "meat, main course, protein, chicken, asian, ethnic, chinese",
+    "keywords": "main course, protein, chicken, asian, ethnic, chinese",
     "isItalian": false,
     "image": "pollo-cinque-spezie"
   },
@@ -1929,7 +1929,7 @@
     ],
     "source": "Tefal",
     "tip": "If you notice the breast skin is browning too quickly but the chicken is not yet cooked through, place a small piece of aluminum foil on top to act as a shield for the final minutes.",
-    "keywords": "meat, main course, protein, chicken, roasted, sunday, family",
+    "keywords": "main course, protein, chicken, roasted, sunday, family",
     "image": "pollo-intero-aglio"
   },
   {
@@ -2018,7 +2018,7 @@
     ],
     "source": "Ninja",
     "tip": "The toothpick is essential in the final step! Air fryer fans are very powerful and would lift the empty side of the tortilla, spilling the filling.",
-    "keywords": "meat, main course, high-protein, chicken, ethnic, Mexican, fast, easy, quick, snack",
+    "keywords": "main course, high-protein, chicken, ethnic, Mexican, fast, easy, quick",
     "image": "quesadillas-fajita-pollo"
   },
   {
@@ -2077,7 +2077,7 @@
     ],
     "source": "Cosori",
     "tip": "Make sure to measure your skewers to ensure they are shorter than the diagonal of your square air fryer basket!",
-    "keywords": "meat, main course, high protein, chicken, skewers, ethnic, middle eastern, fast, easy",
+    "keywords": "main course, high protein, chicken, skewers, ethnic, middle eastern, fast, easy",
     "isItalian": false,
     "image": "spiedini-pollo-yogurt"
   },
@@ -2284,7 +2284,7 @@
     ],
     "source": "Cosori",
     "tip": "Spread the spices well over the meat to create a flavorful crust. Remember to shake the basket or turn the food halfway through the cooking time.",
-    "keywords": "meat, main course, protein-rich, sweet, dinner, quick, easy, fast",
+    "keywords": "main course, protein-rich, dinner, quick, easy, fast",
     "isItalian": false,
     "image": "braciole-maiale-north-carolina"
   },
@@ -2315,7 +2315,7 @@
     ],
     "source": "Cosori",
     "tip": "Remember to shake the basket or flip the food halfway through the cooking time. Add the cheese to the burger in the last minute of cooking to let it melt.",
-    "keywords": "meat, main course, protein, savory, fast, easy, quick",
+    "keywords": "main course, protein, savory, fast, easy, quick",
     "isItalian": false,
     "image": "cheeseburger-sliders"
   },
@@ -2374,7 +2374,7 @@
     ],
     "source": "Tefal",
     "tip": "Brush the empanadas with egg yolk mixed with water before baking. Remember to shake the basket or flip the food halfway through the cooking time.",
-    "keywords": "meat, main course, protein, savory, snack, appetizer",
+    "keywords": "main course, protein, savory, appetizer",
     "isItalian": false,
     "image": "empanadas-di-manzo"
   },
@@ -2489,7 +2489,7 @@
     ],
     "source": "Cosori",
     "tip": "Let the patties chill in the fridge before cooking to help them maintain their shape.",
-    "keywords": "meat, main course, protein, vegetables, side dish, fast, easy, quick",
+    "keywords": "main course, protein, vegetables, side dish, fast, easy, quick",
     "isItalian": false,
     "image": "hamburger-tacchino-asiatico"
   },
@@ -2576,7 +2576,7 @@
     ],
     "source": "Cosori",
     "tip": "Remove the seeds from the jalapeños well to reduce the heat. Remember to shake the basket or flip the food halfway through the cooking time.",
-    "keywords": "meat, main dish, protein, vegetables, side dish, sweet, dessert, breakfast, snack",
+    "keywords": "main dish, protein, vegetables, side dish",
     "isItalian": false,
     "image": "jalapenos-ripieni-bacon"
   },
@@ -2665,7 +2665,7 @@
     ],
     "source": "Cosori",
     "tip": "Brush the meatballs with the glaze every 2 minutes during cooking. Remember to shake the basket or turn the food halfway through the cooking time.",
-    "keywords": "meat, main course, high protein, savory, fast, easy, quick",
+    "keywords": "main course, high protein, savory, fast, easy, quick",
     "image": "polpette-giapponesi"
   },
   {
@@ -2783,7 +2783,7 @@
     ],
     "source": "Cosori",
     "tip": "Serve these fragrant skewers with a fresh yogurt sauce and mint leaves.",
-    "keywords": "meat, main course, protein, savory, fast, easy, quick",
+    "keywords": "main course, protein, savory, fast, easy, quick",
     "isItalian": false,
     "image": "spiedini-agnello-shawarma"
   },
@@ -2814,7 +2814,7 @@
     ],
     "source": "Cosori",
     "tip": "Brush the teriyaki sauce onto the skewers every 2 minutes to create a thick, caramelized layer.",
-    "keywords": "frying, fried, crispy, delicious, meat, main course, protein, savory, fast, easy, quick",
+    "keywords": "frying, fried, crispy, delicious, main course, protein, savory, fast, easy, quick",
     "isItalian": false,
     "image": "spiedini-maiale-teriyaki-cosori"
   },
@@ -2903,7 +2903,7 @@
     ],
     "source": "Cosori",
     "tip": "Spray the breaded eggs with plenty of cooking oil spray to replicate the aesthetic effect of deep-frying.",
-    "keywords": "meat, main course, protein, savory, appetizer, snack, quick, easy, fast",
+    "keywords": "main course, protein, savory, appetizer, quick, easy, fast",
     "isItalian": false,
     "image": "uovo-allo-scotch"
   },
@@ -2962,7 +2962,7 @@
     ],
     "source": "Cosori",
     "tip": "Strictly choose avocados that are ripe but still very firm to the touch, so they won't fall apart during preparation.",
-    "keywords": "fish, seafood, main course, leavened, savory, appetizer, snack, quick, easy, fast",
+    "keywords": "seafood, main course, leavened, savory, appetizer, snack, quick, easy, fast",
     "image": "avocado-fritti"
   },
   {
@@ -3103,7 +3103,7 @@
     ],
     "source": "Tefal",
     "tip": "Do not skip the small pieces of butter placed on top of each raw fillet: the fat melting during the cooking process will make the dish super golden and wonderfully flavorful.",
-    "keywords": "frying, fried, crispy, tasty, fish, seafood, main course, fast, easy, quick",
+    "keywords": "frying, fried, crispy, tasty, seafood, main course, fast, easy, quick",
     "isItalian": false,
     "image": "fish-and-chips"
   },
@@ -3193,7 +3193,7 @@
     ],
     "source": "Cosori",
     "tip": "Use a toothpick to securely fasten the bacon to the shrimp to prevent it from unrolling during the cooking process.",
-    "keywords": "air fry, fried, crispy, tasty, meat, main dish, protein, fish, seafood, appetizer",
+    "keywords": "air fry, fried, crispy, tasty, main dish, protein, fish, seafood, appetizer",
     "image": "gamberetti-bacon"
   },
   {
@@ -3224,7 +3224,7 @@
     ],
     "source": "Cosori",
     "tip": "Press the fibrous coating firmly onto the shrimp and spray generously with neutral oil to ensure they hold up to the heat and achieve a perfect, golden-brown crust.",
-    "keywords": "frying, fried, crunchy, delicious, seafood, ocean, main course, salty, appetizer, snack, quick, easy, fast",
+    "keywords": "frying, fried, crunchy, delicious, seafood, ocean, main course, salty, appetizer, quick, easy, fast",
     "image": "gamberi-al-cocco"
   },
   {
@@ -3494,7 +3494,7 @@
     ],
     "source": "Cosori",
     "tip": "Spray plenty of oil on the seasoned fish before cooking to create the typical dark, aromatic crust.",
-    "keywords": "fish, seafood, main course, dinner, savory, quick, easy, fast",
+    "keywords": "seafood, main course, dinner, savory, quick, easy, fast",
     "isItalian": false,
     "image": "pesce-gatto-cajun"
   },
@@ -3613,7 +3613,7 @@
     ],
     "source": "Cosori",
     "tip": "Cook the salmon skin-side down to protect the delicate meat during heat exposure.",
-    "keywords": "fish, seafood, main course, sweet, dessert, breakfast, snack, quick, easy, fast",
+    "keywords": "seafood, main course, sweet, dessert, breakfast, snack, quick, easy, fast",
     "isItalian": false,
     "image": "salmone-glassato-teriyaki"
   },
@@ -3643,7 +3643,7 @@
     ],
     "source": "Cosori",
     "tip": "Add hot water to the ramekin with the egg to steam it gently while the bread toasts nearby.",
-    "keywords": "meat, main course, high-protein, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy",
+    "keywords": "main course, high-protein, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy",
     "isItalian": false,
     "image": "sandwich-muffin-colazione"
   },
@@ -3848,7 +3848,7 @@
     ],
     "source": "Ninja",
     "tip": "No need to add oil if the product is already pre-fried or commercially breaded.",
-    "keywords": "fish, seafood, main course, quick, easy, air fryer, frozen food",
+    "keywords": "seafood, main course, quick, easy, air fryer, frozen food",
     "isItalian": false,
     "image": "tortini-pesce-surgelati"
   },
@@ -4208,7 +4208,7 @@
     ],
     "source": "Ninja",
     "tip": "Once finished, shake each piece vigorously in the spicy sauce to ensure a perfectly uniform coating.",
-    "keywords": "frying, fried, crunchy, tasty, meat, main course, protein, vegetables, side dish, vegetarian",
+    "keywords": "frying, fried, crunchy, tasty, main course, protein, vegetables, side dish, vegetarian",
     "isItalian": false,
     "image": "bocconcini-cavolfiore-salsa-ranch"
   },
@@ -4801,7 +4801,7 @@
     ],
     "source": "Ninja",
     "tip": "High initial heat seals all the precious juices inside the structure of the meat, preventing it from drying out.",
-    "keywords": "meat, main course, protein, sweet, dinner, quick, easy, fast",
+    "keywords": "main course, protein, dinner, quick, easy, fast",
     "isItalian": false,
     "image": "bistecche-costata-senape"
   },
@@ -5191,7 +5191,7 @@
     ],
     "source": "Cosori",
     "tip": "Rotate the corn halfway through the cooking time to ensure it is evenly toasted and aromatic on all sides.",
-    "keywords": "meat, side dish, protein, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy, fast",
+    "keywords": "side dish, protein, sweet, dessert, breakfast, snack, leavened, savory, appetizer, quick, easy, fast",
     "image": "mais-tostato-burro"
   },
   {

@@ -2,81 +2,64 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-// In ESM __dirname non esiste, dobbiamo ricrearlo così:
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-// Percorso dei tuoi file JSON
 const dataDir = path.join(__dirname, 'src', 'data');
 const files = ['recipes-it.json', 'recipes-en.json', 'recipes-es.json', 'recipes-fr.json'];
 
-// Dizionario massivo di "trigger" di carne/pesce nelle 4 lingue
-const meatTriggers = [
-    'carne', 'pesce', 'pollo', 'manzo', 'maiale', 'vitello', 'agnello', 'tacchino', 
-    'salsiccia', 'salsicce', 'bacon', 'pancetta', 'guanciale', 'prosciutto', 'speck', 
-    'bresaola', 'salame', 'wurstel', 'salmone', 'tonno', 'gamberi', 'gamberetti', 
-    'calamari', 'calamaro', 'merluzzo', 'baccalà', 'polpo', 'seppie', 'cozze', 'vongole',
-    'meat', 'fish', 'chicken', 'beef', 'pork', 'veal', 'lamb', 'turkey', 
-    'sausage', 'sausages', 'ham', 'salami', 'salmon', 'tuna', 'shrimp', 'shrimps', 
-    'prawn', 'prawns', 'squid', 'cod', 'octopus', 'mussel', 'mussels', 'clam', 'clams',
-    'pescado', 'ternera', 'cerdo', 'cordero', 'pavo', 'salchicha', 'salchichas', 
-    'tocino', 'jamón', 'chorizo', 'salmón', 'atún', 'camarón', 'camarones', 
-    'langostino', 'langostinos', 'calamar', 'calamares', 'bacalao', 'pulpo',
-    'viande', 'poisson', 'poulet', 'boeuf', 'bœuf', 'porc', 'veau', 'agneau', 'dinde', 
-    'saucisse', 'saucisses', 'lardon', 'lardons', 'jambon', 'saumon', 'thon', 
-    'crevette', 'crevettes', 'calmar', 'calmars', 'cabillaud', 'poulpe'
-];
+// 1. Definiamo i trigger per capire la NATURA della ricetta
+const triggers = {
+    meat: ['carne', 'pollo', 'manzo', 'maiale', 'bistecca', 'ali', 'salsiccia', 'meat', 'chicken', 'beef', 'pork', 'steak', 'viande', 'poulet'],
+    sweet: ['zucchero', 'farina', 'cacao', 'cioccolato', 'muffin', 'biscotti', 'torta', 'dolce', 'sugar', 'flour', 'chocolate', 'cake', 'sweet', 'sucre', 'gâteau'],
+    fish: ['pesce', 'tonno', 'salmone', 'gamberi', 'fish', 'salmon', 'tuna', 'shrimp', 'poisson', 'saumon']
+};
 
-const veggieKeywordsRegex = /\b(vegetariano|vegetariana|vegetarian|veggie|vegan|vegano|vegana|végétarien|végétarienne)\b/gi;
+// 2. Definiamo quali tag sono proibiti se la natura è X
+const conflicts = {
+    meat: ['dolce', 'dessert', 'colazione', 'merenda', 'vegetariano', 'vegano', 'vegan', 'veggie', 'sweet', 'breakfast', 'snack', 'sucré', 'végétarien'],
+    sweet: ['carne', 'secondo', 'proteico', 'pollo', 'manzo', 'maiale', 'salato', 'aperitivo', 'meat', 'fish', 'salt', 'aperitif'],
+    fish: ['carne', 'pollo', 'maiale', 'manzo', 'meat', 'chicken', 'beef', 'pork']
+};
 
-console.log("🧹 INIZIO PULIZIA KEYWORDS VEGETARIANE ERRATE...\n");
+console.log("🛠️ INIZIO PULIZIA LOGICA... (Rimuovo tag contraddittori)\n");
 
 files.forEach(file => {
     const filePath = path.join(dataDir, file);
-    if (!fs.existsSync(filePath)) {
-        console.log(`⚠️  File non trovato: ${file}`);
-        return;
-    }
+    if (!fs.existsSync(filePath)) return;
 
     let raw = fs.readFileSync(filePath, 'utf8');
     let recipes = JSON.parse(raw);
-    let fixedCount = 0;
+    let changed = 0;
 
     recipes.forEach(recipe => {
-        let isMeat = false;
+        const textContent = (recipe.title + " " + (recipe.ingredients || []).join(" ")).toLowerCase();
         
-        let textToSearch = (recipe.title || "") + " " + (recipe.ingredients ? recipe.ingredients.join(" ") : "");
-        textToSearch = textToSearch.toLowerCase();
-        
-        for (let trigger of meatTriggers) {
-            let regex = new RegExp('\\b' + trigger + '\\b', 'i');
-            if (regex.test(textToSearch)) {
-                isMeat = true;
-                break;
-            }
-        }
+        // Determiniamo la natura della ricetta
+        const isMeat = triggers.meat.some(t => textContent.includes(t));
+        const isSweet = triggers.sweet.some(t => textContent.includes(t));
+        const isFish = triggers.fish.some(t => textContent.includes(t));
 
-        if (isMeat && recipe.keywords) {
-            let originalKeywords = recipe.keywords;
-            let newKeywords = originalKeywords.replace(veggieKeywordsRegex, '')
-                .replace(/,\s*,/g, ',')
-                .replace(/^[\s,]+|[\s,]+$/g, '')
-                .replace(/\s{2,}/g, ' ')
-                .trim();
-            
-            if (originalKeywords !== newKeywords) {
-                recipe.keywords = newKeywords;
-                fixedCount++;
+        if (recipe.keywords) {
+            let tags = recipe.keywords.split(',').map(k => k.trim());
+            let originalLength = tags.length;
+
+            // Applichiamo i conflitti
+            if (isMeat) tags = tags.filter(t => !conflicts.meat.includes(t.toLowerCase()));
+            if (isSweet) tags = tags.filter(t => !conflicts.sweet.includes(t.toLowerCase()));
+            if (isFish) tags = tags.filter(t => !conflicts.fish.includes(t.toLowerCase()));
+
+            if (tags.length !== originalLength) {
+                recipe.keywords = tags.join(', ');
+                changed++;
+                // console.log(`Corretta: ${recipe.title}`);
             }
         }
     });
 
-    if (fixedCount > 0) {
+    if (changed > 0) {
         fs.writeFileSync(filePath, JSON.stringify(recipes, null, 2), 'utf8');
-        console.log(`✅ ${file}: Ripulite ${fixedCount} ricette di carne/pesce falsamente vegetariane.`);
+        console.log(`✅ ${file}: Corrette ${changed} ricette.`);
     } else {
-        console.log(`👍 ${file}: Tutte le ricette erano già corrette.`);
+        console.log(`👍 ${file}: Tutto ok.`);
     }
 });
-
-console.log("\n🚀 OPERAZIONE COMPLETATA! Fai un push per aggiornare Vercel.");
