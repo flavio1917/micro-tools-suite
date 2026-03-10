@@ -1260,7 +1260,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Pour des courgettes extra-croustillantes, utilisez du panko (chapelure japonaise) à la place de la chapelure classique.",
-    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, apéritif, snack",
+    "keywords": "friture, frit, croustillant, savoureux, légumes, accompagnement, végétarien, apéritif",
     "image": "zucchine-fritte"
   },
   {
@@ -1601,7 +1601,7 @@
     ],
     "source": "Cosori",
     "tip": "Si vous souhaitez une panure ultra-croustillante façon escalope, après la chapelure, replongez-les dans l'œuf et faites un deuxième passage dans la chapelure. Le résultat est incroyable.",
-    "keywords": "friture, frit, croustillant, gourmand, légumes, accompagnement, végétarien, apéritif, snack",
+    "keywords": "friture, frit, croustillant, gourmand, légumes, accompagnement, végétarien, apéritif",
     "isItalian": true,
     "image": "cotoletta-melanzane"
   },
@@ -2284,7 +2284,7 @@
     ],
     "source": "Cosori",
     "tip": "Répartissez bien les épices sur la viande pour créer une croûte savoureuse. N'oubliez pas de secouer le panier ou de retourner les aliments à mi-cuisson.",
-    "keywords": "viande, plat principal, protéiné, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, collation, rapide, facile, vélocité",
     "isItalian": false,
     "image": "braciole-maiale-north-carolina"
   },
@@ -2903,7 +2903,7 @@
     ],
     "source": "Cosori",
     "tip": "Vaporisez les œufs panés avec beaucoup d'huile en spray pour reproduire l'effet esthétique de la friture.",
-    "keywords": "viande, plat principal, protéiné, petit déjeuner, collation, levé, salé, apéritif, en-cas, rapide, facile, véloces",
+    "keywords": "viande, plat principal, protéiné, collation, levé, salé, apéritif, en-cas, rapide, facile, véloces",
     "isItalian": false,
     "image": "uovo-allo-scotch"
   },
@@ -3046,7 +3046,7 @@
     ],
     "source": "Cosori",
     "tip": "Respectez toujours le temps d'immersion dans l'eau glacée pendant quelques heures, c'est le secret essentiel pour faire 'fleurir' magnifiquement les pétales.",
-    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, végétarien, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, snack",
+    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, végétarien, collation, levé, salé, apéritif",
     "isItalian": true,
     "image": "cipolla-fiorita"
   },
@@ -3223,7 +3223,7 @@
     ],
     "source": "Cosori",
     "tip": "Poussez vraiment fermement l'enveloppe extérieure fibreuse mélangée et vaporisez généreusement l'huile neutre sur ces délicieuses crevettes tropicales pour garantir leur solidité à la chaleur et un brunissement incroyable.",
-    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, sucré, dessert, petit déjeuner, collation, levé, salé, apéritif, en-cas, rapide, facile, prompt",
+    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, collation, levé, salé, apéritif, en-cas, rapide, facile, prompt",
     "isItalian": false,
     "image": "gamberi-al-cocco"
   },
@@ -3703,7 +3703,7 @@
     ],
     "source": "Cosori",
     "tip": "Séchez très bien les cornichons avec du papier absorbant avant de les paner pour éviter que l'humidité ne fasse décoller la croûte.",
-    "keywords": "friture, frit, croustillant, savoureux, doux, dessert, petit-déjeuner, goûter, levé, salé, apéritif, snack, rapide, facile, vélocité",
+    "keywords": "friture, frit, croustillant, savoureux, doux, petit-déjeuner, levé, salé, apéritif, rapide, facile, vélocité",
     "isItalian": false,
     "image": "sottaceti-fritti"
   },
@@ -3763,7 +3763,7 @@
     ],
     "source": "Cosori",
     "tip": "Retournez le poisson très délicatement à mi-cuisson pour éviter de casser ses fibres tendres.",
-    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "friture, frit, croustillant, savoureux, poisson, mer, plat principal, légumes, accompagnement, collation, rapide, facile, vélocité",
     "isItalian": false,
     "image": "tacos-pesce-griglia"
   },
@@ -3939,7 +3939,7 @@
     ],
     "source": "Tefal",
     "tip": "Utilisez des olives noires coupées en rondelles pour créer des visages amusants sur la mozzarella fondue avec les enfants.",
-    "keywords": "sucré, dessert, petit déjeuner, goûter, levé, salé, apéritif, collation, rapide, facile, véloces",
+    "keywords": "levé, salé, apéritif, collation, rapide, facile, véloces",
     "isItalian": true,
     "image": "mini-pizze"
   },
@@ -4745,7 +4745,7 @@
     ],
     "source": "Cosori",
     "tip": "Placez brièvement les anneaux panés au congélateur pendant 5 minutes avant de les cuire : cela durcit l'œuf et fixe la panure au légume.",
-    "keywords": "friture, frit, croustillant, savoureux, doux, dessert, petit déjeuner, collation",
+    "keywords": "friture, frit, croustillant, savoureux, doux, collation",
     "isItalian": false,
     "image": "anelli-cipolla"
   },

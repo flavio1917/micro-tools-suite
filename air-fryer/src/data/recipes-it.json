@@ -243,7 +243,7 @@
     "source": "Tradizione Italiana",
     "tip": "Metti la teglia direttamente sulla griglia forata del cestello: il circolo dell'aria dal basso garantirà che il fondo della sfoglia cuocia senza restare molliccio.",
     "big_image_prompt": "A slice of savory Italian Ricotta and Spinach tart (Torta salata) with a flaky, buttery golden crust. Displayed on a rustic plate with a checkered napkin in the background. Natural daylight.",
-    "keywords": "dolce, dessert, colazione, merenda, lievitato, snack"
+    "keywords": "lievitato"
   },
   {
     "slug": "caldarroste-friggitrice-aria",
@@ -1171,7 +1171,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Per zucchine extra-croccanti, usa il panko (pangrattato giapponese) al posto del pangrattato classico.",
-    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano, snack"
+    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano"
   },
   {
     "slug": "ali-pollo-aglio-parmigiano",
@@ -1491,7 +1491,7 @@
     ],
     "source": "Cosori",
     "tip": "Se vuoi una panatura inscalfibile stile cotoletta, dopo il pangrattato rituffale nell'uovo e fai un secondo passaggio nel pane. Il risultato è incredibile.",
-    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano, snack"
+    "keywords": "frittura, fritto, croccante, sfizioso, verdure, contorno, vegetariano"
   },
   {
     "slug": "crocchette-pesce-fritte",
@@ -2759,7 +2759,7 @@
     ],
     "source": "Cosori",
     "tip": "Scegli rigorosamente avocado maturi ma che risultino ancora molto sodi al tatto, così non si spappoleranno durante le fasi di preparazione.",
-    "keywords": "pesce, mare, lievitato, snack, veloce, facile, rapido"
+    "keywords": "pesce, mare, lievitato, veloce, facile, rapido"
   },
   {
     "slug": "bastoncini-french-toast",
@@ -2838,7 +2838,7 @@
     ],
     "source": "Cosori",
     "tip": "Rispetta sempre il tempo di immersione in acqua ghiacciata per un paio d'ore, è il segreto essenziale per far 'fiorire' splendidamente i petali.",
-    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, verdure, contorno, vegetariano, dolce, dessert, colazione, merenda, lievitato, snack"
+    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, verdure, contorno, vegetariano, lievitato"
   },
   {
     "slug": "filetti-salmone-semplici",
@@ -3003,7 +3003,7 @@
     ],
     "source": "Cosori",
     "tip": "Pigia davvero saldamente la copertura esterna fibrosa mescolata e spruzza generoso l'olio neutro su questi deliziosi gamberi tropicali per garantirne solidità al calore ed una brunitura pazzesca.",
-    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, dolce, dessert, colazione, merenda, lievitato, snack, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, lievitato, veloce, facile, rapido"
   },
   {
     "slug": "gamberi-croccanti-curry",
@@ -3256,7 +3256,7 @@
     ],
     "source": "Cosori",
     "tip": "Spruzza abbondante olio sul pesce speziato prima di cuocerlo per creare la tipica crosta scura e aromatica.",
-    "keywords": "pesce, mare, dolce, dessert, colazione, merenda, lievitato, snack, veloce, facile, rapido"
+    "keywords": "pesce, mare, lievitato, veloce, facile, rapido"
   },
   {
     "slug": "pizza-da-colazione",
@@ -3395,7 +3395,7 @@
     ],
     "source": "Cosori",
     "tip": "Metti l'acqua calda nella pirofila con l'uovo per cuocerlo delicatamente al vapore mentre tosti il pane accanto.",
-    "keywords": "dolce, dessert, colazione, merenda, lievitato, snack, veloce, facile, rapido"
+    "keywords": "lievitato, veloce, facile, rapido"
   },
   {
     "slug": "sfogliatine-mele",
@@ -3451,7 +3451,7 @@
     ],
     "source": "Cosori",
     "tip": "Asciuga molto bene i sottaceti con carta da cucina prima di impanarli per evitare che l'umidità faccia staccare la crosta.",
-    "keywords": "frittura, fritto, croccante, sfizioso, dolce, dessert, colazione, merenda, lievitato, snack, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, lievitato, veloce, facile, rapido"
   },
   {
     "slug": "souffle-cioccolato",
@@ -3507,7 +3507,7 @@
     ],
     "source": "Cosori",
     "tip": "Capovolgi molto delicatamente il pesce a metà cottura per evitare di romperne le tenere fibre.",
-    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, verdure, contorno, dolce, dessert, colazione, merenda, veloce, facile, rapido"
+    "keywords": "frittura, fritto, croccante, sfizioso, pesce, mare, verdure, contorno, veloce, facile, rapido"
   },
   {
     "slug": "toast-farcito-francese",
@@ -3671,7 +3671,7 @@
     ],
     "source": "Tefal",
     "tip": "Usa le olive nere tagliate a rondelle per creare delle faccine divertenti sulla mozzarella fusa assieme ai bambini.",
-    "keywords": "dolce, dessert, colazione, merenda, lievitato, snack, veloce, facile, rapido"
+    "keywords": "lievitato, veloce, facile, rapido"
   },
   {
     "slug": "muffin-mirtilli-rossi",
@@ -4421,7 +4421,7 @@
     ],
     "source": "Cosori",
     "tip": "Metti brevemente gli anelli impanati nel congelatore per 5 minuti prima di cuocerli: questo indurisce l'uovo e fissa la panatura al vegetale.",
-    "keywords": "frittura, fritto, croccante, sfizioso, dolce, dessert, colazione, merenda"
+    "keywords": "frittura, fritto, croccante, sfizioso"
   },
   {
     "slug": "bbq-bacon",
@@ -4578,7 +4578,7 @@
     ],
     "source": "Cosori",
     "tip": "Spennella la irregolare e rugosa parte rotonda della crosta impastata verniciando generoso l'ouvo allungato al cospargimento rurale e rude bruno di granelli zuccherati grezzi che cristallizzerano stupendi rosolando fiammanti sul crinale rotondo prima al cospetto radiante bollente.",
-    "keywords": "dolce, dessert, colazione, merenda"
+    "keywords": ""
   },
   {
     "slug": "fagiolini-arrosto",
@@ -4658,7 +4658,7 @@
     ],
     "source": "Cosori",
     "tip": "Aggiungi la feta e le erbe solo DOPO aver estratto le patatine dal cestello, altrimenti il calore eccessivo fonderà troppo il formaggio facendolo disperdere sul fondo.",
-    "keywords": "frittura, fritto, croccante, sfizioso, patate, verdure, contorno, vegetariano, snack"
+    "keywords": "frittura, fritto, croccante, sfizioso, patate, verdure, contorno, vegetariano"
   },
   {
     "slug": "patatine-spirale-surgelate",
@@ -4834,7 +4834,7 @@
     ],
     "source": "Cosori",
     "tip": "Gira la rigida e bitorzoluta pannocchia rigorosamente al cadere di mezza via della cottura per tostarne esteticamente ed aromaticamente i calici su tutti e quanti gli emisferi esposti.",
-    "keywords": "dolce, dessert, colazione, merenda, lievitato, snack, veloce, facile, rapido"
+    "keywords": "lievitato, veloce, facile, rapido"
   },
   {
     "slug": "mini-pizza-pepperoni",
@@ -4969,7 +4969,7 @@
     ],
     "source": "Tefal",
     "tip": "Strizza benissimo gli spinaci prima di frullarli: l'eccesso di acqua renderebbe l'impasto troppo molle e impossibile da compattare.",
-    "keywords": "dolce, dessert, colazione, merenda, lievitato, snack, veloce, facile, rapido"
+    "keywords": "lievitato, veloce, facile, rapido"
   },
   {
     "slug": "barchette-zucchine-ricotta",
