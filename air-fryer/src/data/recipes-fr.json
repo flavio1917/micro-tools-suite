@@ -2664,7 +2664,7 @@
     ],
     "source": "Cosori",
     "tip": "Badigeonnez les boulettes avec la sauce glacée tous les 2 minutes pendant la cuisson. N'oubliez pas de secouer le panier ou de retourner les aliments à mi-cuisson.",
-    "keywords": "viande, plat principal, protéiné, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, collation, rapide, facile, vélocité",
     "isItalian": false,
     "image": "polpette-giapponesi"
   },
@@ -2814,7 +2814,7 @@
     ],
     "source": "Cosori",
     "tip": "Badigeonnez la sauce teriyaki sur les brochettes toutes les 2 minutes pour créer une couche caramélisée épaisse.",
-    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, sucré, dessert, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "friture, frit, croustillant, savoureux, viande, plat principal, protéiné, collation, rapide, facile, vélocité",
     "isItalian": false,
     "image": "spiedini-maiale-teriyaki-cosori"
   },
@@ -3613,7 +3613,7 @@
     ],
     "source": "Cosori",
     "tip": "Cuire le saumon avec la peau vers le bas pour protéger la chair délicate pendant l'exposition à la chaleur.",
-    "keywords": "poisson, mer, plat principal, sucré, dessert, petit déjeuner, collation, rapide, facile, prompt",
+    "keywords": "poisson, mer, plat principal, collation, rapide, facile, prompt",
     "isItalian": false,
     "image": "salmone-glassato-teriyaki"
   },
@@ -3793,7 +3793,7 @@
     ],
     "source": "Cosori",
     "tip": "Utilisez du pain légèrement rassis pour qu'il absorbe parfaitement le mélange d'œufs sans s'effondrer et se casser.",
-    "keywords": "viande, plat principal, protéiné, poisson, fruits de mer, sucré, dessert, petit déjeuner, goûter, levé, salé, apéritif, collation, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, poisson, fruits de mer, levé, salé, apéritif, collation, rapide, facile, vélocité",
     "isItalian": true,
     "image": "toast-farcito-francese"
   },
@@ -4801,7 +4801,7 @@
     ],
     "source": "Ninja",
     "tip": "La chaleur élevée au départ scelle tous les jus précieux à l'intérieur de la structure de la viande, prévenant ainsi l'effet de dessèchement.",
-    "keywords": "viande, plat principal, protéiné, petit déjeuner, collation, rapide, facile, vélocité",
+    "keywords": "viande, plat principal, protéiné, collation, rapide, facile, vélocité",
     "isItalian": true,
     "image": "bistecche-costata-senape"
   },
@@ -4914,7 +4914,7 @@
     ],
     "source": "Cosori",
     "tip": "Badigeonner généreusement la pâte avec de l'œuf battu et saupoudrer de sucre roux avant la cuisson pour une croûte dorée et croustillante.",
-    "keywords": "fruit, dessert, sucré, poire, noix, galette",
+    "keywords": "fruit, poire, noix, galette",
     "isItalian": false,
     "image": "crostata-pere-rustica"
   },
@@ -5482,7 +5482,7 @@
     ],
     "source": "Tefal",
     "tip": "Le remuage fréquent est vital dans cette recette : le sucre de canne et le vinaigre balsamique ont tendance à brunir très rapidement s'ils sont exposés à la chaleur statique.",
-    "keywords": "sucré, dessert, petit-déjeuner, collation, levé, salé, apéritif, en-cas",
+    "keywords": "petit-déjeuner, collation, levé, salé, apéritif, en-cas",
     "isItalian": true,
     "image": "cipolle-rosse-agrodolce"
   },
@@ -5540,7 +5540,7 @@
     ],
     "source": "Cosori",
     "tip": "Garder la partie coupée vers le haut empêche les jus de tomate de se disperser au fond, concentrant toute la saveur à l'intérieur de la peau.",
-    "keywords": "sucré, dessert, petit déjeuner, collation",
+    "keywords": "collation",
     "isItalian": true,
     "image": "pomodorini-confit-origano"
   },
