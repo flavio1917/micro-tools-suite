@@ -1,4 +1,5 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ path: '../.env' }); // Il "../" gli dice di cercare nella cartella superiore
 import fs from 'node:fs';
 import path from 'node:path';
 import axios from 'axios';
