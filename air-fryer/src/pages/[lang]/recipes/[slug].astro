@@ -97,6 +97,13 @@ const isAuth = recipe.isItalian === true;
 const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
 const seoRecipeData = { ...recipe, image: imagePath, isItalian: isAuth };
 
+// LOGICA CAMBIO LINGUA (Cerca lo slug equivalente nelle altre lingue basandosi sull'immagine)
+const getLocalizedUrl = (targetLang: string) => {
+  const datasets: Record<string, any[]> = { it: recipesIt, en: recipesEn, es: recipesEs, fr: recipesFr };
+  const targetRecipe = datasets[targetLang].find(r => (r.image || r.slug) === baseImageName);
+  return targetRecipe ? `/${targetLang}/recipes/${targetRecipe.slug}` : `/${targetLang}/#ricettario`;
+};
+
 const affiliateLinks = [
   { regex: /(carta forno\b(?: forata)?)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
   { regex: /(olio(?: in)? spray|nebulizzatore)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
@@ -122,27 +129,36 @@ function enrichText(text: string, currentLang: string) {
     
     <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-12 md:pb-16 items-center text-center z-10">
       
-      <div class="w-full flex justify-between items-center mb-4 md:mb-6">
+      <div class="w-full flex justify-start mb-4 md:mb-6">
         <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 md:px-4 md:py-2 rounded-full bg-slate-800/80 hover:bg-slate-700/90 backdrop-blur-md text-white transition-all border border-slate-500/50 text-sm font-bold md:font-medium shadow-xl group">
           <svg class="w-5 h-5 md:w-4 md:h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
           {t.back}
         </a>
-
-        {/* SELETTORE UNITÀ DI MISURA (VISIBILE SOLO IN INGLESE) */}
-        {lang === 'en' && (
-          <div class="bg-slate-800/80 backdrop-blur-md p-1 rounded-full border border-slate-600 shadow-xl flex items-center">
-            <button id="btn-imperial" class="px-3 py-1 text-xs font-bold rounded-full transition-colors bg-blue-600 text-white">Imperial</button>
-            <button id="btn-metric" class="px-3 py-1 text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white">Metric</button>
-          </div>
-        )}
       </div>
 
-      {isAuth && (
-        <div class="mb-4 inline-flex items-center gap-2.5 px-4 py-1.5 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 border border-yellow-200/80 text-black text-[10px] md:text-xs font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(245,158,11,0.5)] transform transition-transform hover:scale-105 backdrop-blur-sm">
-          <img src="https://flagcdn.com/it.svg" alt="Italia" class="w-5 h-auto rounded-sm shadow-md border border-black/10" />
-          <span class="drop-shadow-sm">{t.authBadge}</span>
+      <div class="flex flex-row items-center justify-center gap-3 mb-4 flex-wrap">
+        {isAuth && (
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 border border-yellow-200/80 text-black text-[10px] md:text-xs font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(245,158,11,0.5)] transform transition-transform hover:scale-105 backdrop-blur-sm">
+            <img src="https://flagcdn.com/it.svg" alt="Italia" class="w-5 h-auto rounded-sm shadow-md border border-black/10" />
+            <span class="drop-shadow-sm">{t.authBadge}</span>
+          </div>
+        )}
+
+        <div class="inline-flex items-center gap-2 bg-slate-800/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-slate-600 shadow-xl">
+          <a href={getLocalizedUrl('it')} class={`transition-all ${lang === 'it' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
+            <img src="https://flagcdn.com/it.svg" alt="IT" class="w-5 h-[14px] rounded-[2px] object-cover" />
+          </a>
+          <a href={getLocalizedUrl('en')} class={`transition-all ${lang === 'en' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
+            <img src="https://flagcdn.com/gb.svg" alt="EN" class="w-5 h-[14px] rounded-[2px] object-cover" />
+          </a>
+          <a href={getLocalizedUrl('es')} class={`transition-all ${lang === 'es' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
+            <img src="https://flagcdn.com/es.svg" alt="ES" class="w-5 h-[14px] rounded-[2px] object-cover" />
+          </a>
+          <a href={getLocalizedUrl('fr')} class={`transition-all ${lang === 'fr' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
+            <img src="https://flagcdn.com/fr.svg" alt="FR" class="w-5 h-[14px] rounded-[2px] object-cover" />
+          </a>
         </div>
-      )}
+      </div>
 
       <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-3 md:mb-4 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
         {recipe.title}
@@ -186,9 +202,19 @@ function enrichText(text: string, currentLang: string) {
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
       <div class="lg:col-span-1">
         <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sticky top-8 shadow-lg">
-          <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3 border-b border-slate-800 pb-4">
-            <span class="text-2xl">🛒</span> {t.ingTitle}
+          
+          <h3 class="text-xl font-bold text-white mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <span class="text-2xl">🛒</span> {t.ingTitle}
+            </div>
+            {lang === 'en' && (
+              <div class="bg-slate-800/80 p-1 rounded-full border border-slate-600 flex items-center shrink-0 shadow-inner">
+                <button id="btn-imperial" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm">Imperial</button>
+                <button id="btn-metric" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white">Metric</button>
+              </div>
+            )}
           </h3>
+
           <ul class="space-y-4">
             {recipe.ingredients && recipe.ingredients.length > 0 ? (
               recipe.ingredients.map((ing) => (
