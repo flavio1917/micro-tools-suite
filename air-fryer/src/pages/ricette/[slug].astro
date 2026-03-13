@@ -122,10 +122,26 @@ const defaultPortions = parseInt(recipe.portions) || 2;
               recipe.instructions.map((step, index) => (
                 <div class="flex gap-6 relative">
                   <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
-                  <div class="pt-1 pb-2">
-                    <p class="text-slate-300 leading-relaxed text-lg">
+                  
+                  {/* MODIFICA: Contenitore w-full per permettere all'immagine di prendere lo spazio */}
+                  <div class="pt-1 pb-2 w-full">
+                    
+                    <p class="text-slate-300 leading-relaxed text-lg mb-4">
                       {step}
                     </p>
+                    
+                    {/* INIEZIONE IMMAGINE DELLO STEP SE ESISTE */}
+                    {recipe.step_images && recipe.step_images[index] && (
+                      <div class="mb-4">
+                        <img 
+                          src={recipe.step_images[index]} 
+                          alt={`Step ${index + 1} - ${recipe.title}`} 
+                          class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover" 
+                          loading="lazy" 
+                        />
+                      </div>
+                    )}
+
                   </div>
                 </div>
               ))

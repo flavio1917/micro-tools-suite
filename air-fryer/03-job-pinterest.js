@@ -1,4 +1,5 @@
 import 'dotenv/config';
+dotenv.config({ path: '../.env' }); // Il "../" gli dice di cercare nella cartella superiore
 import fs from 'node:fs';
 import axios from 'axios';
 import { GoogleGenerativeAI } from "@google/generative-ai";

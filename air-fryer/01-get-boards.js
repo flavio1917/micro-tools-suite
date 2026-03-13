@@ -1,7 +1,10 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
+dotenv.config({ path: '../.env' }); // Cerca il file .env nella cartella principale
 import axios from 'axios';
 
 const PINTEREST_TOKEN = process.env.PINTEREST_TOKEN;
+
+console.log(`🕵️ Debug Token: inizia per "${PINTEREST_TOKEN?.substring(0, 6)}...", lunghezza totale: ${PINTEREST_TOKEN?.length} caratteri`);
 
 async function run() {
     try {

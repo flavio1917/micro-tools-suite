@@ -32,7 +32,13 @@
       "Proteico",
       "Calamari"
     ],
-    "step_images": []
+    "step_images": [
+      "/images/recipes/anelli-calamari-fritti/step_1.jpg",
+      "/images/recipes/anelli-calamari-fritti/step_2.jpg",
+      "/images/recipes/anelli-calamari-fritti/step_3.jpg",
+      "/images/recipes/anelli-calamari-fritti/step_4.jpg",
+      "/images/recipes/anelli-calamari-fritti/step_5.jpg"
+    ]
   },
   {
     "slug": "cotoletta-fettina-panata",
