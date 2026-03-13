@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-dotenv.config({ path: '../.env' }); // Cerca il file .env nella cartella principale
+dotenv.config({ path: '../.env' });
 import fs from 'node:fs';
 import path from 'node:path';
 import axios from 'axios';
@@ -97,7 +97,7 @@ async function publishPin(recipe) {
 }
 
 async function runTest() {
-    console.log("🚀 AVVIO TEST GOOGLE VERTEX AI E PINTEREST...");
+    console.log("🚀 AVVIO MOTORE DI REGIA GOOGLE VERTEX AI...");
 
     let recipes = JSON.parse(fs.readFileSync(RECIPES_FILE, 'utf8'));
     let recipe = recipes[0]; // LA PRIMA RICETTA
@@ -111,26 +111,39 @@ async function runTest() {
     
     for (let i = 0; i < recipe.instructions.length; i++) {
         let step = recipe.instructions[i];
+        let stepLower = step.toLowerCase();
         console.log(`\n📸 Step ${i + 1}: ${step.substring(0, 60)}...`);
 
         let prompt = "";
 
-        // Regole di prompt iper-specifiche per i calamari per evitare gli errori di prima
+        // Regole hardcoded per i primissimi step delicati dei calamari
         if (i === 0 && recipe.slug.includes('calamari')) {
-            prompt = `Professional close-up macro food photography, photorealistic. Clean hands are gently patting fresh, translucent calamari rings using thick white absorbent paper towels. The paper is clearly absorbing moisture. Arranged on a clean, rustic wooden counter. Focus on the texture of the moisture and the absorbent paper. STRICTLY NO SEMOLINA. NO FLOUR. NO POTS. NO TEXT.`;
+            prompt = `Professional close-up macro food photography. Clean hands gently patting fresh, translucent calamari rings using white absorbent paper towels. Arranged on a rustic wooden counter. STRICTLY NO SEMOLINA, NO FLOUR, NO POTS, NO PANS.`;
         } else if (i === 1 && recipe.slug.includes('calamari')) {
-            prompt = `Close-up macro shot on a rustic wooden counter. Calamari rings are being carefully added to a clean, clear, food-grade plastic zip-top bag already containing some fine semolina flour. Clean hands are holding the bag open. Focus on the action of inserting the rings inside the clear bag. STRICTLY NO POTS, NO PANS, NO WOODEN SPOONS. Soft warm cinematic lighting.`;
+            prompt = `Close-up macro shot. Calamari rings being added to a clear food-grade plastic zip-top bag containing fine semolina flour. Hands holding the bag open. STRICTLY NO POTS, NO PANS, NO WOODEN SPOONS.`;
         } else {
-            // Prompt generico per tutte le altre ricette/step
-            const isCookingContext = /(cuocer|cottura|girar|cestello|gradi|°C|°F|spruzzar|friggitrice|fonder|posizionar)/i.test(step);
-            const environment = isCookingContext 
-                ? "Action happening strictly inside the black basket of an air fryer." 
-                : "Action happening on a modern, well-lit wooden kitchen counter.";
+            // === IL NUOVO MOTORE DI REGIA AUTOMATICO ===
             
-            prompt = `Professional food photography, close-up macro shot. Step-by-step cooking instruction for '${recipe.title}'. 
-Action taking place: ${step}. 
-Environment: ${environment}. 
-Style: photorealistic, highly detailed, soft warm cinematic kitchen lighting, appetizing, no text, no watermarks, no abstract elements.`;
+            // 1. Rilevatore Friggitrice
+            let isInAirFryer = /(cuocer|cottura|girar|cestello|gradi|°c|°f|friggitrice|posizionar)/i.test(stepLower);
+            let environment = isInAirFryer 
+                ? "Action happening STRICTLY INSIDE the dark, perforated black drawer basket of an air fryer." 
+                : "Action happening on a modern wooden kitchen counter.";
+
+            // 2. Rilevatore Azioni Specifiche (es. Spruzzino)
+            let actionOverride = step;
+            if (/(nebulizzare|spruzzare|spray|olio spray)/i.test(stepLower)) {
+                actionOverride += " (Visual focus: a hand holding a glass oil spray bottle, misting cooking oil over the food).";
+                environment = "Action happening STRICTLY INSIDE the black drawer basket of an air fryer.";
+            }
+
+            // 3. Assemblaggio Prompt Blindato
+            prompt = `Professional food photography, close-up macro shot.
+Subject to maintain visual consistency: ${recipe.title}. The food MUST look like '${recipe.title}' and match its specific shape at all times.
+Action taking place: ${actionOverride}.
+Environment: ${environment}.
+Style: photorealistic, highly detailed, soft warm cinematic lighting, appetizing.
+STRICT NEGATIVE CONSTRAINTS: NO standard pans, NO skillets, NO pots, NO whole animals if the recipe is for rings/pieces, NO text.`;
         }
 
         const imgName = `step_${i + 1}.jpg`;
@@ -142,8 +155,7 @@ Style: photorealistic, highly detailed, soft warm cinematic kitchen lighting, ap
             console.log(`   ✅ Foto generata e salvata: ${imgName}`);
         }
         
-        // Pausa salvavita per le Quote di Google (15 SECONDI)
-        console.log(`   ⏳ Attendo 15 secondi per rispettare i limiti di velocità di Google...`);
+        console.log(`   ⏳ Attendo 15 secondi per rispettare le quote di Google...`);
         await new Promise(res => setTimeout(res, 15000));
     }
 
@@ -153,7 +165,7 @@ Style: photorealistic, highly detailed, soft warm cinematic kitchen lighting, ap
 
     fs.writeFileSync(RECIPES_FILE, JSON.stringify(recipes, null, 2));
     console.log(`\n💾 Dati salvati in recipes-it.json`);
-    console.log(`🎉 TEST COMPLETATO!`);
+    console.log(`🎉 AUTOMAZIONE COMPLETATA!`);
 }
 
 runTest();
