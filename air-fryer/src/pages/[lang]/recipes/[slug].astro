@@ -18,10 +18,13 @@ export async function getStaticPaths() {
   const paths = [];
   for (const [lang, recipes] of Object.entries(datasets)) {
     recipes.forEach((recipe) => {
-      paths.push({
-        params: { lang, slug: recipe.slug },
-        props: { recipe, lang },
-      });
+      // PREVENZIONE CRASH: Aggiunge la pagina solo se esiste uno slug valido
+      if (recipe && recipe.slug) {
+        paths.push({
+          params: { lang, slug: recipe.slug },
+          props: { recipe, lang },
+        });
+      }
     });
   }
   return paths;
@@ -90,14 +93,11 @@ const baseImageName = recipe.image || recipe.slug;
 const imagePath = `/images/recipes/${baseImageName}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
 
-// PULIZIA DEL TEMPO: Rimuove "minutes", "min", "mins" dal numero per evitare sdoppiamenti
 const cleanTime = recipe.time ? recipe.time.toString().replace(/\s*(minutes|mins|min)\s*/gi, '') : "--";
-
 const isAuth = recipe.isItalian === true;
 const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
 const seoRecipeData = { ...recipe, image: imagePath, isItalian: isAuth };
 
-// LOGICA CAMBIO LINGUA (Cerca lo slug equivalente nelle altre lingue basandosi sull'immagine)
 const getLocalizedUrl = (targetLang: string) => {
   const datasets: Record<string, any[]> = { it: recipesIt, en: recipesEn, es: recipesEs, fr: recipesFr };
   const targetRecipe = datasets[targetLang].find(r => (r.image || r.slug) === baseImageName);
@@ -311,13 +311,21 @@ function enrichText(text: string, currentLang: string) {
 
       if (!display || !btnMinus || !btnPlus) return;
 
-      // FUNZIONI DI CONVERSIONE MATEMATICA
+      // FUNZIONI DI CONVERSIONE "SMART" PER CUCINA
       function fToC(f) { return Math.round((f - 32) * 5/9); }
-      function ozToG(oz) { return Math.round(oz * 28.3495); }
-      function flOzToMl(floz) { return Math.round(floz * 29.5735); }
+      
+      // Arrotonda in modo logico: al 10 più vicino se > 100g, al 5 se > 10g, altrimenti intero
+      function smartRound(val) {
+        if (val >= 100) return Math.round(val / 10) * 10;
+        if (val >= 10) return Math.round(val / 5) * 5;
+        return Math.round(val);
+      }
+
+      function ozToG(oz) { return smartRound(oz * 28.3495); }
+      function flOzToMl(floz) { return smartRound(floz * 29.5735); }
       function lbsToKg(lbs) { return (lbs * 0.453592).toFixed(2); }
 
-      // REGEX PER TROVARE E SOSTITUIRE MISURE
+      // REGEX
       const regexOz = /([\d.,]+)\s*oz\b/gi;
       const regexFlOz = /([\d.,]+)\s*fl oz\b/gi;
       const regexLbs = /([\d.,]+)\s*lbs?\b/gi;
@@ -363,7 +371,7 @@ function enrichText(text: string, currentLang: string) {
           el.textContent = scaleAndConvertIngredient(originalText, ratio, isMetric);
         });
 
-        // Aggiorna Temperature se siamo in inglese
+        // Aggiorna Temperature
         if (lang === 'en' && tempValDisplay && baseTemp) {
             const currentTemp = isMetric ? fToC(baseTemp) : baseTemp;
             const currentUnit = isMetric ? "°C" : "°F";
@@ -390,7 +398,7 @@ function enrichText(text: string, currentLang: string) {
         }
       });
 
-      // GESTIONE BOTTONI IMPERIAL/METRIC
+      // TOGGLE
       if (btnImperial && btnMetric) {
           btnImperial.addEventListener('click', () => {
               isMetric = false;

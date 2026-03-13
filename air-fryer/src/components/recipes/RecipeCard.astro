@@ -45,7 +45,7 @@ const authLabel = authLabels[lang as keyof typeof authLabels] || authLabels.it;
 <a 
   href={recipeUrl} 
   class="recipe-card group relative block overflow-hidden rounded-2xl bg-slate-900 border border-slate-700 hover:border-blue-500 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20"
-  data-title={recipe.title.toLowerCase()} 
+  data-title={recipe?.title?.toLowerCase() || ''}
   data-ingredients={ingredientsString}
 >
   
