@@ -37,7 +37,7 @@ const translations = {
     ingTitle: "Ingredienti", noIng: "Vedi descrizione per i dettagli.",
     stepTitle: "Procedimento",
     step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro. Se necessario, ungi leggermente il cibo con un filo d'olio spray.",
-    step2: "Cottura", step2Desc: `Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minuti</strong>.`,
+    step2: "Cottura", step2Desc: `Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minuti</strong>.`,
     tipTitle: "Il Segreto dello Chef",
     searchOther: "← Cerca un'altra ricetta",
     authBadge: "Ricetta Autentica", seoAuth: " | Ricetta Originale",
@@ -50,7 +50,7 @@ const translations = {
     ingTitle: "Ingredients", noIng: "See description for details.",
     stepTitle: "Instructions",
     step1: "Preparation", step1Desc: "Prepare all ingredients on the counter. Lightly coat the food with cooking spray.",
-    step2: "Cooking", step2Desc: `Set air fryer to <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°F</strong>. Cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
+    step2: "Cooking", step2Desc: `Set air fryer to <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°F</strong>. Cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
     tipTitle: "Chef's Tip",
     searchOther: "← Search another recipe",
     authBadge: "Authentic Italian", seoAuth: " | Authentic Italian Recipe",
@@ -63,7 +63,7 @@ const translations = {
     ingTitle: "Ingredientes", noIng: "Ver descripción para más detalles.",
     stepTitle: "Instrucciones",
     step1: "Preparación", step1Desc: "Prepara todos los ingredientes. Rocía ligeramente la comida con aceite en spray.",
-    step2: "Cocción", step2Desc: `Ajusta la freidora a <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutos</strong>.`,
+    step2: "Cocción", step2Desc: `Ajusta la freidora a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutos</strong>.`,
     tipTitle: "Consejo del Chef",
     searchOther: "← Buscar otra receta",
     authBadge: "Receta Auténtica", seoAuth: " | Auténtica Receta Italiana",
@@ -76,7 +76,7 @@ const translations = {
     ingTitle: "Ingrédients", noIng: "Voir la description pour les détails.",
     stepTitle: "Instructions",
     step1: "Préparation", step1Desc: "Préparez tous les ingrédients. Vaporisez légèrement les aliments d'huile.",
-    step2: "Cuisson", step2Desc: `Réglez la friteuse sur <strong class="text-white bg-slate-700 px-1 rounded">${recipe.temp}°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
+    step2: "Cuisson", step2Desc: `Réglez la friteuse sur <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
     tipTitle: "Astuce du Chef",
     searchOther: "← Chercher une autre recette",
     authBadge: "Recette Authentique", seoAuth: " | Recette Italienne Authentique",
@@ -89,6 +89,9 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 const baseImageName = recipe.image || recipe.slug;
 const imagePath = `/images/recipes/${baseImageName}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
+
+// PULIZIA DEL TEMPO: Rimuove "minutes", "min", "mins" dal numero per evitare sdoppiamenti
+const cleanTime = recipe.time ? recipe.time.toString().replace(/\s*(minutes|mins|min)\s*/gi, '') : "--";
 
 const isAuth = recipe.isItalian === true;
 const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
@@ -118,10 +121,21 @@ function enrichText(text: string, currentLang: string) {
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
     
     <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-12 md:pb-16 items-center text-center z-10">
-      <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 md:px-4 md:py-2 mb-4 md:mb-6 rounded-full bg-slate-800/80 hover:bg-slate-700/90 backdrop-blur-md text-white transition-all border border-slate-500/50 text-sm font-bold md:font-medium shadow-xl group">
-        <svg class="w-5 h-5 md:w-4 md:h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-        {t.back}
-      </a>
+      
+      <div class="w-full flex justify-between items-center mb-4 md:mb-6">
+        <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 md:px-4 md:py-2 rounded-full bg-slate-800/80 hover:bg-slate-700/90 backdrop-blur-md text-white transition-all border border-slate-500/50 text-sm font-bold md:font-medium shadow-xl group">
+          <svg class="w-5 h-5 md:w-4 md:h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          {t.back}
+        </a>
+
+        {/* SELETTORE UNITÀ DI MISURA (VISIBILE SOLO IN INGLESE) */}
+        {lang === 'en' && (
+          <div class="bg-slate-800/80 backdrop-blur-md p-1 rounded-full border border-slate-600 shadow-xl flex items-center">
+            <button id="btn-imperial" class="px-3 py-1 text-xs font-bold rounded-full transition-colors bg-blue-600 text-white">Imperial</button>
+            <button id="btn-metric" class="px-3 py-1 text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white">Metric</button>
+          </div>
+        )}
+      </div>
 
       {isAuth && (
         <div class="mb-4 inline-flex items-center gap-2.5 px-4 py-1.5 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 border border-yellow-200/80 text-black text-[10px] md:text-xs font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(245,158,11,0.5)] transform transition-transform hover:scale-105 backdrop-blur-sm">
@@ -143,11 +157,16 @@ function enrichText(text: string, currentLang: string) {
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.temp}</span>
-        <div class="text-3xl md:text-4xl font-mono font-bold text-orange-400 mt-1">{recipe.temp}{t.unitTemp}</div>
+        <div class="text-3xl md:text-4xl font-mono font-bold text-orange-400 mt-1 flex justify-center items-end gap-1">
+            <span id="display-temp-val">{recipe.temp}</span>
+            <span id="display-temp-unit" class="text-xl md:text-2xl pb-1">{t.unitTemp}</span>
+        </div>
       </div>
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.time}</span>
-        <div class="text-3xl md:text-4xl font-mono font-bold text-blue-400 mt-1">{recipe.time} <span class="text-lg md:text-xl">{t.unitTime}</span></div>
+        <div class="text-3xl md:text-4xl font-mono font-bold text-blue-400 mt-1">
+            {cleanTime} <span class="text-lg md:text-xl">{t.unitTime}</span>
+        </div>
       </div>
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.prep}</span>
@@ -199,7 +218,7 @@ function enrichText(text: string, currentLang: string) {
                 <div class="flex gap-6 relative">
                   <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
                   <div class="pt-1 pb-2">
-                    <p class="text-slate-300 leading-relaxed text-lg" set:html={enrichText(step, lang)}></p>
+                    <p class="text-slate-300 leading-relaxed text-lg instruction-text" set:html={enrichText(step, lang)}></p>
                   </div>
                 </div>
               ))
@@ -245,41 +264,51 @@ function enrichText(text: string, currentLang: string) {
     </div>
   </div>
 
-  {lang === 'it' && (
-    <div class="fixed bottom-0 left-0 right-0 z-[100] transition-transform duration-300">
-      <div class="w-full bg-[#0B1120] border-t border-orange-500/30 shadow-[0_-15px_40px_rgba(0,0,0,0.6)]">
-        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-          <div class="flex items-center gap-3 flex-1 min-w-0">
-             <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 p-[1px] flex-shrink-0 shadow-[0_0_10px_rgba(245,158,11,0.5)] animate-pulse">
-                <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-lg">🎁</div>
-             </div>
-            <div class="flex-1 min-w-0">
-              <span class="block text-[10px] uppercase tracking-widest font-extrabold text-orange-400 mb-0.5 drop-shadow-md">Migliora la tua Friggitrice</span>
-              <p class="text-xs md:text-sm text-slate-100 leading-tight font-semibold truncate">Scopri il Kit Accessori Universale definitivo.</p>
-            </div>
-          </div>
-          <a href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="flex-shrink-0 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-black text-xs md:text-sm font-black py-2.5 px-5 rounded-full flex items-center gap-1.5 shadow-[0_0_15px_rgba(245,158,11,0.4)] hover:shadow-[0_0_25px_rgba(245,158,11,0.6)] transition-all hover:scale-105 active:scale-95">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-            <span class="hidden sm:inline">Scopri le</span> Offerte
-          </a>
-        </div>
-      </div>
-    </div>
-  )}
-
-  <script is:inline define:vars={{ basePortions: defaultPortions }}>
+  <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang }}>
     document.addEventListener('DOMContentLoaded', () => {
+      // LOGICA PORZIONI
       let currentPortions = basePortions;
       const display = document.getElementById('portions-display');
       const btnMinus = document.getElementById('btn-minus');
       const btnPlus = document.getElementById('btn-plus');
       const ingredients = document.querySelectorAll('.ingredient-text');
 
+      // STATO UNITÀ (solo EN)
+      let isMetric = false; 
+      const btnImperial = document.getElementById('btn-imperial');
+      const btnMetric = document.getElementById('btn-metric');
+      
+      const tempValDisplay = document.getElementById('display-temp-val');
+      const tempUnitDisplay = document.getElementById('display-temp-unit');
+      const instTempVals = document.querySelectorAll('.recipe-temp-val');
+      const instTempUnits = document.querySelectorAll('.recipe-temp-unit');
+
       if (!display || !btnMinus || !btnPlus) return;
 
-      function scaleIngredient(originalStr, ratio) {
-        const match = originalStr.trim().match(/^([\d.,]+(?:\/\d+)?)\s+(.*)/);
-        if (!match) return originalStr; 
+      // FUNZIONI DI CONVERSIONE MATEMATICA
+      function fToC(f) { return Math.round((f - 32) * 5/9); }
+      function ozToG(oz) { return Math.round(oz * 28.3495); }
+      function flOzToMl(floz) { return Math.round(floz * 29.5735); }
+      function lbsToKg(lbs) { return (lbs * 0.453592).toFixed(2); }
+
+      // REGEX PER TROVARE E SOSTITUIRE MISURE
+      const regexOz = /([\d.,]+)\s*oz\b/gi;
+      const regexFlOz = /([\d.,]+)\s*fl oz\b/gi;
+      const regexLbs = /([\d.,]+)\s*lbs?\b/gi;
+
+      function scaleAndConvertIngredient(originalStr, ratio, forceMetric) {
+        let currentStr = originalStr;
+
+        // 1. Applica conversione Metrica se richiesta
+        if (forceMetric) {
+            currentStr = currentStr.replace(regexFlOz, (match, p1) => `${flOzToMl(parseFloat(p1))} ml`);
+            currentStr = currentStr.replace(regexOz, (match, p1) => `${ozToG(parseFloat(p1))} g`);
+            currentStr = currentStr.replace(regexLbs, (match, p1) => `${lbsToKg(parseFloat(p1))} kg`);
+        }
+
+        // 2. Scala le porzioni
+        const match = currentStr.trim().match(/^([\d.,]+(?:\/\d+)?)\s+(.*)/);
+        if (!match) return currentStr; 
 
         let numStr = match[1].replace(',', '.');
         let num = 0;
@@ -291,7 +320,7 @@ function enrichText(text: string, currentLang: string) {
           num = parseFloat(numStr);
         }
 
-        if (isNaN(num)) return originalStr;
+        if (isNaN(num)) return currentStr;
 
         let newNum = num * ratio;
         newNum = Number.isInteger(newNum) ? newNum : parseFloat(newNum.toFixed(2));
@@ -305,8 +334,20 @@ function enrichText(text: string, currentLang: string) {
 
         ingredients.forEach(el => {
           const originalText = el.getAttribute('data-original');
-          el.textContent = scaleIngredient(originalText, ratio);
+          el.textContent = scaleAndConvertIngredient(originalText, ratio, isMetric);
         });
+
+        // Aggiorna Temperature se siamo in inglese
+        if (lang === 'en' && tempValDisplay && baseTemp) {
+            const currentTemp = isMetric ? fToC(baseTemp) : baseTemp;
+            const currentUnit = isMetric ? "°C" : "°F";
+            
+            tempValDisplay.textContent = currentTemp;
+            tempUnitDisplay.textContent = currentUnit;
+
+            instTempVals.forEach(el => el.textContent = currentTemp);
+            instTempUnits.forEach(el => el.textContent = currentUnit);
+        }
       }
 
       btnMinus.addEventListener('click', () => {
@@ -322,6 +363,29 @@ function enrichText(text: string, currentLang: string) {
           updateUI();
         }
       });
+
+      // GESTIONE BOTTONI IMPERIAL/METRIC
+      if (btnImperial && btnMetric) {
+          btnImperial.addEventListener('click', () => {
+              isMetric = false;
+              btnImperial.classList.replace('text-slate-400', 'text-white');
+              btnImperial.classList.replace('bg-transparent', 'bg-blue-600');
+              
+              btnMetric.classList.replace('text-white', 'text-slate-400');
+              btnMetric.classList.replace('bg-blue-600', 'bg-transparent');
+              updateUI();
+          });
+
+          btnMetric.addEventListener('click', () => {
+              isMetric = true;
+              btnMetric.classList.replace('text-slate-400', 'text-white');
+              btnMetric.classList.replace('bg-transparent', 'bg-blue-600');
+              
+              btnImperial.classList.replace('text-white', 'text-slate-400');
+              btnImperial.classList.replace('bg-blue-600', 'bg-transparent');
+              updateUI();
+          });
+      }
     });
   </script>
 </MainLayout>
