@@ -96,7 +96,7 @@ const defaultPortions = parseInt(recipe.portions) || 2;
             {recipe.ingredients && recipe.ingredients.length > 0 ? (
               recipe.ingredients.map((ing) => (
                 <li class="flex items-start gap-3 text-slate-300 group">
-                  <input type="checkbox" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500">
+                  <input type="checkbox" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500" />
                   <span class="leading-relaxed group-hover:text-white transition-colors ingredient-text" data-original={ing}>{ing}</span>
                 </li>
               ))
@@ -123,7 +123,6 @@ const defaultPortions = parseInt(recipe.portions) || 2;
                 <div class="flex gap-6 relative">
                   <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
                   
-                  {/* MODIFICA: Contenitore w-full per permettere all'immagine di prendere lo spazio */}
                   <div class="pt-1 pb-2 w-full">
                     
                     <p class="text-slate-300 leading-relaxed text-lg mb-4">
@@ -138,7 +137,6 @@ const defaultPortions = parseInt(recipe.portions) || 2;
                           alt={`Step ${index + 1} - ${recipe.title}`} 
                           class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover bg-slate-800 min-h-[200px]" 
                           loading="lazy"
-                          onerror="console.error('Immagine non trovata:', this.src); this.style.display='none';"
                         />
                       </div>
                     ) : null}

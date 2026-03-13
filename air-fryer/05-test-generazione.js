@@ -124,105 +124,61 @@ async function runTest() {
 
     recipe.step_images = new Array(recipe.instructions.length).fill("");
     
-    // Variabili di contesto persistenti tra i vari step
-    let previousVisualContext = "None. This is the very first step.";
-    let currentFoodAppearance = "";
-    
-    // Lista ingredienti e proporzioni da passare come contesto all'IA
-    const ingredientsContext = "Quantities: 400g raw calamari rings, ONLY 100g of fine yellow semolina flour (a very small amount), olive oil spray, salt, lemon wedges.";
+    const ingredientsContext = "400g raw calamari rings, 100g of fine yellow semolina flour, olive oil spray, salt, lemon wedges.";
+    let previousStepText = "None. Ingredients are in their initial state.";
 
     for (let i = 0; i < recipe.instructions.length; i++) {
         let step = recipe.instructions[i];
         let stepLower = step.toLowerCase();
         console.log(`\n📸 Generazione Step ${i + 1}/${recipe.instructions.length}`);
 
-        // --- 1. DETERMINA LO STATO DI COTTURA (Memoria Cumulativa) ---
-        // Uniamo il testo di tutti gli step fino a quello corrente per capire se abbiamo già iniziato a cuocere
+        // 1. DETERMINA LO STATO DI COTTURA (Memoria Cumulativa)
         let accumulatedSteps = recipe.instructions.slice(0, i + 1).join(" ").toLowerCase();
-        
-        let foodState = "RAW (Crudo)";
-        if (/(cuocer|cottura|girar|doratura|200°c|sfornar|friggere)/i.test(accumulatedSteps)) {
-            foodState = "COOKING/COOKED (Golden brown, crispy, cooked)";
-        }
+        let foodState = /(cuocer|cottura|girar|doratura|200°c|sfornar|friggere)/i.test(accumulatedSteps) 
+            ? "COOKING/COOKED (Golden brown, crispy, cooked)" 
+            : "RAW/PREPPING (Uncooked, fresh)";
 
-        // --- 2. REGOLA FERREA PER FARINA E SACCHETTI ---
+        let isInAirFryer = /(cuocer|cottura|girar|doratura|200°c|sfornar|friggere|cestello|posizionar)/i.test(stepLower);
+        let environment = isInAirFryer 
+            ? "Inside the dark black perforated drawer basket of an air fryer. The food is resting directly on the basket grill." 
+            : "On a modern rustic wooden kitchen counter.";
+
+        // 2. LA TUA REGOLA DI ESTRAZIONE DEL CONTESTO (IL CUORE DELL'AGGIORNAMENTO)
+        const stateExtractionRule = `CRITICAL STATE INSTRUCTION: You must maintain the physical transformation of the ingredients from the previous step (e.g., if they were breaded, they remain breaded). HOWEVER, you MUST STRICTLY REMOVE AND IGNORE any tools, bags, bowls, or containers used in the previous step. Only render tools if they are explicitly required for the CURRENT action.`;
+
+        // 3. REGOLA FARINA
         let flourRule = "";
-        if (/(sacchetto|semola|farina|impanatura|panatura)/i.test(stepLower)) {
-            flourRule = `CRITICAL RULE: The clear plastic bag MUST NOT be full of flour. It must contain ONLY a very thin, sparse layer of semolina flour at the bottom (representing 100g of flour vs 400g of squid). The raw squid rings must be clearly visible inside. NO giant bags of flour.`;
+        if (/(sacchetto|semola|farina|impanatura|panatura)/i.test(stepLower) && !isInAirFryer) {
+            flourRule = `RULE: If using a clear plastic bag, it must contain ONLY a very sparse, thin layer of semolina flour at the bottom (100g max). NO giant bags full of flour.`;
         }
 
-        // --- 3. LOGICA UNIVERSALE DI NEGATIVE PROMPT ---
-        const universalNegative = `STRICT NEGATIVE CONSTRAINTS: NO traditional pans, NO pots, NO skillets, NO stovetops, NO text, NO breadcrumbs, NO whole squid, MUST be rings, NO bags full to the brim with flour.`;
+        // 4. COSTRUZIONE PROMPT
+        const prompt = `Professional food photography, close-up macro shot.
+RECIPE INGREDIENTS: ${ingredientsContext}
+PREVIOUS STEP ACTION: ${previousStepText}
+CURRENT FOOD STATE: ${foodState}
+${stateExtractionRule}
 
-        // --- 4. MOTORE DI REGIA PER CALAMARI ---
-        let prompt = "";
-        let environment = "";
-        let actionOverride = step;
-
-        if (recipe.slug.includes('calamari')) {
-            if (i === 0) {
-                currentFoodAppearance = "raw, fresh, moist, translucent white calamari rings";
-                environment = "Rustic wooden counter.";
-                actionOverride = "Clean hands gently patting the raw squid rings dry using white absorbent paper towels.";
-            } 
-            else if (i === 1) {
-                currentFoodAppearance = "raw calamari rings being mixed with a tiny dusting of fine yellow semolina flour";
-                environment = "Rustic wooden counter.";
-                actionOverride = "Hands holding open a clear plastic ziplock food bag. Adding the raw rings into the bag which contains just a tiny bit of yellow semolina.";
-            } 
-            else if (i === 2) {
-                currentFoodAppearance = "raw calamari rings evenly coated with a light layer of fine yellow semolina flour";
-                environment = "Action happening STRICTLY INSIDE the dark, perforated black drawer basket of an air fryer.";
-                actionOverride = "Arranging the flour-coated raw rings in a single layer inside the air fryer basket.";
-            }
-            else if (i === 3) {
-                currentFoodAppearance = "raw calamari rings evenly coated with fine yellow semolina flour, sitting in the basket";
-                environment = "Action happening STRICTLY INSIDE the dark, perforated black drawer basket of an air fryer.";
-                actionOverride = "A hand using a glass oil spray bottle to mist cooking oil evenly over the coated raw rings.";
-            }
-            else {
-                currentFoodAppearance = "perfectly cooked, golden-brown, crispy fried calamari rings";
-                environment = "Action happening STRICTLY INSIDE the dark, perforated black drawer basket of an air fryer.";
-                actionOverride = "The fully cooked crispy rings resting inside the air fryer basket, showing a perfect golden texture.";
-            }
-        } else {
-            // Fallback per altre ricette
-            let isInAirFryer = /(cuocer|cottura|girar|cestello|gradi|°c|°f|friggitrice|posizionar)/i.test(stepLower);
-            environment = isInAirFryer 
-                ? "Action happening STRICTLY INSIDE the dark black perforated drawer basket of an air fryer." 
-                : "Action happening on a modern wooden kitchen counter.";
-            currentFoodAppearance = `Subject matter corresponding to recipe: ${recipe.title}`;
-        }
-
-        // --- 5. COSTRUZIONE PROMPT FINALE STRUTTURATO ---
-        prompt = `Professional food photography, close-up macro shot.
-CONTEXT:
-- Ingredients present: ${ingredientsContext}
-- Previous visual state: ${previousVisualContext}
-- Current Food State: ${foodState}
-- Current Appearance: ${currentFoodAppearance}
-ACTION: ${actionOverride}
+CURRENT ACTION TO RENDER: ${step}
 ENVIRONMENT: ${environment}
 ${flourRule}
+
 STYLE: photorealistic, cinematic lighting, highly detailed.
-${universalNegative}`;
+STRICT NEGATIVE CONSTRAINTS: NO traditional pans, NO pots, NO skillets, NO stovetops, NO text, NO whole squid, MUST be rings.`;
 
         const imgName = `step_${i + 1}.jpg`;
         const imgPath = path.join(recipeDir, imgName);
 
-        // Generiamo l'immagine
         const success = await generateImagen3Image(prompt, imgPath);
         
         if (success) {
             recipe.step_images[i] = `/images/recipes/${recipe.slug}/${imgName}`;
             console.log(`   ✅ Step ${i+1} completato.`);
-            // Aggiorniamo la memoria per lo step successivo
-            previousVisualContext = currentFoodAppearance;
+            previousStepText = step; // Aggiorniamo la memoria con l'azione appena conclusa
         } else {
             console.log(`   ⚠️ Step ${i+1} fallito dopo i retry.`);
         }
         
-        // Pausa cautelativa tra gli step
         console.log(`   ⏳ Pausa 20s...`);
         await new Promise(res => setTimeout(res, 20000));
     }
@@ -231,7 +187,6 @@ ${universalNegative}`;
     const pinOk = await publishPin(recipe);
     if (pinOk) recipe.pinterest_pin_published = true;
 
-    // Salvataggio finale
     fs.writeFileSync(RECIPES_FILE, JSON.stringify(recipes, null, 2));
     console.log(`\n💾 JSON aggiornato correttamente.`);
     console.log(`🎉 FINE PROCESSO.`);
