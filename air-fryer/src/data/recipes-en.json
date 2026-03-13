@@ -3226,6 +3226,116 @@
     "is_sanitized": true
   },
   {
+    "slug": "classic-hamburger",
+    "title": "Classic Beef Hamburgers",
+    "emoji": "🍔",
+    "temp": 375,
+    "time": "8-10",
+    "prep_time": "Not specified",
+    "portions": "4",
+    "ingredients": [
+      "4 beef hamburgers (5.3 oz each)",
+      "0.7 fl oz extra virgin olive oil",
+      "Salt",
+      "Freshly ground black pepper"
+    ],
+    "description": "This method produces beef hamburgers with a well-formed, golden-brown crust while maintaining a moist interior.",
+    "instructions": [
+      "Remove hamburgers from the refrigerator before cooking to bring them to room temperature.",
+      "Season both sides of the hamburgers with salt and black pepper.",
+      "Brush the surface of the hamburgers with olive oil.",
+      "Place hamburgers in the preheated appliance set to 375°F. Do not press down on the hamburgers during cooking.",
+      "Cook for the specified time, flipping the hamburgers halfway through to ensure even browning."
+    ],
+    "source": "Ninja",
+    "tip": "Flip the hamburgers halfway through the cooking time for uniform browning.",
+    "keywords": [
+      "Meat",
+      "Main Course",
+      "Protein",
+      "Quick"
+    ],
+    "isItalian": false,
+    "image": "hamburger-classico",
+    "is_sanitized": true
+  },
+  {
+    "slug": "deluxe-hamburger",
+    "title": "Classic Beef Hamburgers",
+    "emoji": "🍔",
+    "temp": 400,
+    "time": "8-12",
+    "prep_time": "25 minutes",
+    "portions": "4",
+    "ingredients": [
+      "23 oz Ground Beef",
+      "4 Sesame Seed Buns",
+      "2 Large Tomatoes, sliced",
+      "Lettuce Leaves",
+      "1 Garlic Clove, minced",
+      "0.7 fl oz Soy Sauce",
+      "1 tbsp Vegetable Oil",
+      "Salt to taste"
+    ],
+    "description": "A classic hamburger recipe. High-temperature cooking ensures a well-seared hamburger and toasted buns.",
+    "instructions": [
+      "In a bowl, combine ground beef, minced garlic, soy sauce, oil, and salt.",
+      "Mix until evenly combined and form four hamburgers.",
+      "Preheat the appliance to 400°F. Place the hamburgers in the basket and cook for 8-12 minutes.",
+      "Remove the hamburgers and let them rest. Place the bun halves in the basket and toast for 2 minutes until golden.",
+      "Assemble the hamburgers with lettuce, tomato slices, and hamburgers. Serve immediately."
+    ],
+    "source": "Tefal",
+    "tip": "Toast the buns while the hamburgers are resting for optimal temperature and texture.",
+    "keywords": [
+      "Meat",
+      "Main Course",
+      "Protein-rich",
+      "Quick"
+    ],
+    "isItalian": false,
+    "image": "hamburger-deluxe",
+    "is_sanitized": true
+  },
+  {
+    "slug": "asian-turkey-burgers",
+    "title": "Asian-Style Turkey Hamburgers",
+    "emoji": "🍔",
+    "temp": 400,
+    "time": "11",
+    "prep_time": "35 minutes",
+    "portions": "4",
+    "ingredients": [
+      "16 oz lean ground turkey",
+      "1 tsp grated ginger",
+      "2 garlic cloves, minced",
+      "1.2 oz Hoisin sauce",
+      "1 tbsp soy sauce",
+      "3.2 oz panko breadcrumbs",
+      "4 burger buns, for serving",
+      "Cabbage and carrot slaw, for serving"
+    ],
+    "description": "A lean protein alternative to traditional beef hamburgers, featuring Asian-inspired seasonings. These turkey hamburgers are cooked to achieve a well-seared exterior while remaining moist inside.",
+    "instructions": [
+      "In a large bowl, combine the ground turkey, grated ginger, minced garlic, Hoisin sauce, and soy sauce.",
+      "Add the panko breadcrumbs and mix until fully incorporated. Avoid overmixing.",
+      "Shape the mixture into 4 uniform hamburgers.",
+      "Refrigerate the hamburgers for at least 30 minutes to help them hold their shape during cooking.",
+      "Cook at 400°F for 11 minutes, flipping halfway through. Serve immediately on buns with slaw."
+    ],
+    "source": "Cosori",
+    "tip": "Chilling the hamburgers before cooking is essential to prevent them from breaking apart.",
+    "keywords": [
+      "Meat",
+      "Main Course",
+      "High-Protein",
+      "Quick"
+    ],
+    "isItalian": false,
+    "image": "hamburger-tacchino-asiatico",
+    "is_sanitized": true
+  },
+  {
     "slug": "new-york-style-hot-dog",
     "title": "New York-Style Hot Dogs",
     "emoji": "🌭",

@@ -2835,13 +2835,13 @@
     "description": "Preparazione di mini hamburger con formaggio fuso, caratterizzati da una rosolatura uniforme della carne.",
     "instructions": [
       "In una ciotola, miscelare la carne macinata con la salsa Worcestershire, la senape, la cipolla grattugiata, l'uovo, sale e pepe.",
-      "Formare medaglioni di uguali dimensioni con l'impasto ottenuto. Riporre in frigorifero per 1 ora.",
-      "Spennellare i medaglioni con olio d'oliva e disporli nel cestello di cottura preriscaldato a 200°C.",
-      "Cuocere per 9 minuti, girando i medaglioni a metà cottura per una doratura uniforme.",
-      "Durante l'ultimo minuto di cottura, posizionare una fetta di formaggio su ogni medaglione per fonderlo. Assemblare gli hamburger nei panini e servire."
+      "Formare hamburger di uguali dimensioni con l'impasto ottenuto. Riporre in frigorifero per 1 ora.",
+      "Spennellare gli hamburger con olio d'oliva e disporli nel cestello di cottura preriscaldato a 200°C.",
+      "Cuocere per 9 minuti, girando gli hamburger a metà cottura per una doratura uniforme.",
+      "Durante l'ultimo minuto di cottura, posizionare una fetta di formaggio su ogni hamburger per fonderlo. Assemblare gli hamburger nei panini e servire."
     ],
     "source": "Cosori",
-    "tip": "Girare i medaglioni a metà cottura. Aggiungere il formaggio 1 minuto prima del termine della cottura per consentirne la fusione.",
+    "tip": "Girare gli hamburger a metà cottura. Aggiungere il formaggio 1 minuto prima del termine della cottura per consentirne la fusione.",
     "keywords": [
       "Carne",
       "Antipasto",
@@ -2965,28 +2965,28 @@
   },
   {
     "slug": "hamburger-classico",
-    "title": "Medaglioni di Carne Classici",
+    "title": "Hamburger di Carne Classici",
     "emoji": "🍔",
     "temp": 190,
     "time": "8-10",
     "prep_time": "Non presente",
     "portions": "4",
     "ingredients": [
-      "4 medaglioni di carne bovina (150 g cad.)",
+      "4 hamburger di carne bovina (150 g cad.)",
       "20 ml olio extravergine d'oliva",
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Procedura di cottura per medaglioni di carne che garantisce una doratura uniforme e mantiene la succosità interna del prodotto.",
+    "description": "Procedura di cottura per gli hamburger di carne che garantisce una doratura uniforme e mantiene la succosità interna del prodotto.",
     "instructions": [
       "Portare la carne a temperatura ambiente prima della cottura.",
-      "Condire entrambi i lati dei medaglioni con sale e pepe nero macinato.",
-      "Ungere la superficie dei medaglioni con olio extravergine d'oliva.",
-      "Preriscaldare l'apparecchio a 190°C. Inserire i medaglioni nel cestello, evitando di sovrapporli.",
-      "Cuocere per 8-10 minuti, girando i medaglioni a metà cottura per ottenere una doratura omogenea."
+      "Condire entrambi i lati degli hamburger con sale e pepe nero macinato.",
+      "Ungere la superficie degli hamburger con olio extravergine d'oliva.",
+      "Preriscaldare l'apparecchio a 190°C. Inserire gli hamburger nel cestello, evitando di sovrapporli.",
+      "Cuocere per 8-10 minuti, girando gli hamburger a metà cottura per ottenere una doratura omogenea."
     ],
     "source": "Ninja",
-    "tip": "Per una doratura uniforme, girare il medaglione a metà del tempo di cottura.",
+    "tip": "Per una doratura uniforme, girare gli hamburger a metà del tempo di cottura.",
     "keywords": [
       "Carne",
       "Secondo",
@@ -3017,10 +3017,10 @@
     "description": "Preparazione di hamburger di manzo con cottura ad alta temperatura per rosolare la carne e tostare il pane. La farcitura include pomodoro fresco e lattuga.",
     "instructions": [
       "Condire la carne macinata con aglio tritato, salsa di soia, olio e sale.",
-      "Amalgamare il composto e formare quattro medaglioni di carne spessi.",
-      "Disporre i medaglioni nel cestello e cuocere a 200°C per 8-12 minuti, o fino a doratura desiderata.",
+      "Amalgamare il composto e formare quattro hamburger di carne spessi.",
+      "Disporre gli hamburger nel cestello e cuocere a 200°C per 8-12 minuti, o fino a doratura desiderata.",
       "Rimuovere la carne e mantenerla al caldo. Inserire i panini tagliati a metà e tostarli per 2 minuti.",
-      "Assemblare gli hamburger farcendo i panini con foglie di lattuga, fette di pomodoro e i medaglioni di carne. Servire immediatamente."
+      "Assemblare gli hamburger farcendo i panini con foglie di lattuga, fette di pomodoro e gli hamburger di carne. Servire immediatamente."
     ],
     "source": "Tefal",
     "tip": "Per una maggiore croccantezza, tostare i panini tagliati a metà nel cestello per 2 minuti dopo la cottura della carne.",
@@ -6547,7 +6547,7 @@
   },
   {
     "slug": "burger-ceci-spinaci",
-    "title": "Medaglioni di Ceci e Spinaci",
+    "title": "Hamburger di Ceci e Spinaci",
     "emoji": "🍔",
     "temp": 180,
     "time": "14",
@@ -6565,7 +6565,7 @@
     "instructions": [
       "Nel bicchiere del frullatore, inserisci i ceci, gli spinaci ben strizzati, le spezie, il sale, il pepe e l'uovo.",
       "Frulla a scatti fino a ottenere un composto modellabile ma non eccessivamente liscio (deve mantenere un po' di consistenza rustica).",
-      "Trasferisci in una ciotola, aggiungi il pangrattato e impasta. Forma 4 grandi medaglioni con le mani umide.",
+      "Trasferisci in una ciotola, aggiungi il pangrattato e impasta. Forma 4 grandi hamburger con le mani umide.",
       "Spruzza il cestello con l'olio spray, adagia i burger e vaporizza anche la loro superficie.",
       "Cuoci a 180°C per 14 minuti, girandoli molto delicatamente a metà del tempo previsto."
     ],

@@ -3039,147 +3039,148 @@
     ],
     "isItalian": true,
     "image": "filetto-maiale-verdure"
-  },
-  {
-    "slug": "hamburger-classique",
-    "title": "Steaks Hachés Classiques",
-    "emoji": "🍔",
-    "temp": 190,
-    "time": "8-10",
-    "prep_time": "Non disponible",
-    "portions": "4",
-    "ingredients": [
-      "4 steaks hachés de bœuf (environ 150 g chacun)",
-      "20 ml d'huile d'olive extra vierge",
-      "Sel et poivre noir du moulin"
-    ],
-    "description": "Méthode de cuisson assurant un brunissement parfait des steaks hachés, tout en conservant leur texture moelleuse et juteuse.",
-    "instructions": [
-      "Sortir la viande du réfrigérateur quelques minutes avant la cuisson pour l'amener à température ambiante.",
-      "Assaisonner les deux faces des steaks hachés avec du sel et du poivre noir.",
-      "Badigeonner la surface des steaks avec l'huile d'olive.",
-      "Placer les steaks hachés dans l'appareil préchauffé à 190°C, en évitant de les superposer ou de les presser.",
-      "Cuire pendant la durée indiquée, en retournant les steaks à mi-cuisson pour un dorage uniforme."
-    ],
-    "source": "Ninja",
-    "tip": "Pour un brunissement homogène, retourner les steaks hachés à mi-cuisson.",
-    "keywords": [
-      "Viande",
-      "Plat principal",
-      "Protéiné",
-      "LowCarb",
-      "Rapide"
-    ],
-    "isItalian": true,
-    "image": "hamburger-classico"
-  },
-  {
-    "slug": "hamburger-deluxe",
-    "title": "Hamburger de Bœuf",
-    "emoji": "🍔",
-    "temp": 200,
-    "time": "8-12",
-    "prep_time": "25 minutes",
-    "portions": "4",
-    "ingredients": [
-      "650 g de viande de bœuf hachée",
-      "4 pains à burger aux graines de sésame",
-      "2 tomates, coupées en tranches",
-      "Feuilles de laitue",
-      "1 gousse d'ail, hachée",
-      "20 ml de sauce soja",
-      "Huile",
-      "Sel"
-    ],
-    "description": "Préparation de hamburgers avec cuisson à haute température pour rôtir la viande et griller le pain.",
-    "instructions": [
-      "Assaisonner la viande hachée avec l'ail haché, la sauce soja, un filet d'huile et du sel.",
-      "Mélanger et former quatre steaks hachés.",
-      "Cuire les steaks à 200°C jusqu'à la coloration désirée.",
-      "Retirer la viande et la maintenir au chaud. Griller les pains coupés en deux.",
-      "Assembler les hamburgers en superposant laitue, tranches de tomate et viande sur les bases de pain. Servir immédiatement."
-    ],
-    "source": "Tefal",
-    "tip": "Griller les pains pendant que la viande repose.",
-    "keywords": [
-      "Viande",
-      "Plat principal",
-      "Snack",
-      "Protéique"
-    ],
-    "isItalian": true,
-    "image": "hamburger-deluxe"
-  },
-  {
-    "slug": "galettes-de-dinde-asiatiques",
-    "title": "Galettes de Dinde et Salade Croquante",
-    "emoji": "🍔",
-    "temp": 200,
-    "time": "11",
-    "prep_time": "35 minutes",
-    "portions": "4",
-    "ingredients": [
-      "450 g de dinde hachée maigre",
-      "Gingembre râpé et 2 gousses d'ail hachées",
-      "35 g de sauce Hoisin et sauce soja",
-      "90 g de chapelure grossière",
-      "Coleslaw (chou, carotte, ciboulette) pour servir"
-    ],
-    "description": "Galettes de dinde aux saveurs asiatiques, servies avec une salade croquante. Une alternative à la viande rouge.",
-    "instructions": [
-      "Dans un grand bol, mélanger la dinde hachée, le gingembre, l'ail et les sauces.",
-      "Incorporer la chapelure et pétrir jusqu'à l'obtention d'un mélange homogène.",
-      "Diviser le mélange et former des galettes de taille égale.",
-      "Réfrigérer les galettes pour les raffermir.",
-      "Cuire à 200°C pendant 11 minutes, en retournant à mi-cuisson. Servir avec le coleslaw."
-    ],
-    "source": "Cosori",
-    "tip": "La réfrigération des galettes avant la cuisson aide à maintenir leur forme.",
-    "keywords": [
-      "Viande",
-      "Plat principal",
-      "Protéique",
-      "LowCarb"
-    ],
-    "isItalian": false,
-    "image": "hamburger-tacchino-asiatico"
-  },
-  {
-    "slug": "hot-dog-newyorkais",
-    "title": "Hot-dog New-Yorkais au Fromage",
-    "emoji": "🌭",
-    "temp": 170,
-    "time": "5",
-    "prep_time": "25 minutes",
-    "portions": "4",
-    "ingredients": [
-      "4 pains à hot-dog",
-      "4 saucisses de porc",
-      "1 oignon rouge, émincé",
-      "4 tranches de cheddar",
-      "60 ml de ketchup",
-      "Cornichons en dés"
-    ],
-    "description": "Recette de hot-dog style New-Yorkais avec saucisse de porc, oignons, cornichons et cheddar fondu.",
-    "instructions": [
-      "Pocher les saucisses dans l'eau bouillante pendant quelques minutes.",
-      "Faire suer l'oignon rouge émincé dans une poêle.",
-      "Ouvrir les pains en deux dans le sens de la longueur et garnir l'intérieur de ketchup.",
-      "Insérer la saucisse dans le pain. Ajouter les oignons et les cornichons. Recouvrir avec une tranche de cheddar.",
-      "Cuire à 170°C pendant 5 minutes, jusqu'à ce que le fromage soit fondu et le pain chaud."
-    ],
-    "source": "Tefal",
-    "tip": "Pocher les saucisses dans l'eau bouillante avant de composer les hot-dogs.",
-    "keywords": [
-      "Viande",
-      "Plat principal",
-      "Snack",
-      "Protéique",
-      "Rapide"
-    ],
-    "isItalian": false,
-    "image": "hot-dog-newyorkese"
-  },
+  },[
+    {
+      "slug": "hamburger-classique",
+      "title": "Hamburger Classiques",
+      "emoji": "🍔",
+      "temp": 190,
+      "time": "8-10",
+      "prep_time": "Non disponible",
+      "portions": "4",
+      "ingredients": [
+        "4 hamburgers de bœuf (environ 150 g chacun)",
+        "20 ml d'huile d'olive extra vierge",
+        "Sel et poivre noir du moulin"
+      ],
+      "description": "Méthode de cuisson assurant un brunissement parfait de hamburgers, tout en conservant leur texture moelleuse et juteuse.",
+      "instructions": [
+        "Sortir la viande du réfrigérateur quelques minutes avant la cuisson pour l'amener à température ambiante.",
+        "Assaisonner les deux faces des hamburgers avec du sel et du poivre noir.",
+        "Badigeonner la surface des hamburgers avec l'huile d'olive.",
+        "Placer les hamburgers dans l'appareil préchauffé à 190°C, en évitant de les superposer ou de les presser.",
+        "Cuire pendant la durée indiquée, en retournant les hamburgers à mi-cuisson pour un dorage uniforme."
+      ],
+      "source": "Ninja",
+      "tip": "Pour un brunissement homogène, retourner les hamburgers à mi-cuisson.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide"
+      ],
+      "isItalian": true,
+      "image": "hamburger-classico"
+    },
+    {
+      "slug": "hamburger-deluxe",
+      "title": "Hamburger de Bœuf",
+      "emoji": "🍔",
+      "temp": 200,
+      "time": "8-12",
+      "prep_time": "25 minutes",
+      "portions": "4",
+      "ingredients": [
+        "650 g de viande de bœuf hachée",
+        "4 pains à burger aux graines de sésame",
+        "2 tomates, coupées en tranches",
+        "Feuilles de laitue",
+        "1 gousse d'ail, hachée",
+        "20 ml de sauce soja",
+        "Huile",
+        "Sel"
+      ],
+      "description": "Préparation de hamburgers avec cuisson à haute température pour rôtir la viande et griller le pain.",
+      "instructions": [
+        "Assaisonner la viande hachée avec l'ail haché, la sauce soja, un filet d'huile et du sel.",
+        "Mélanger et former quatre hamburgers.",
+        "Cuire les hamburgers à 200°C jusqu'à la coloration désirée.",
+        "Retirer la viande et la maintenir au chaud. Griller les pains coupés en deux.",
+        "Assembler les hamburgers en superposant laitue, tranches de tomate et viande sur les bases de pain. Servir immédiatement."
+      ],
+      "source": "Tefal",
+      "tip": "Griller les pains pendant que la viande repose.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Snack",
+        "Protéique"
+      ],
+      "isItalian": true,
+      "image": "hamburger-deluxe"
+    },
+    {
+      "slug": "galettes-de-dinde-asiatiques",
+      "title": "Hamburgers de Dinde et Salade Croquante",
+      "emoji": "🍔",
+      "temp": 200,
+      "time": "11",
+      "prep_time": "35 minutes",
+      "portions": "4",
+      "ingredients": [
+        "450 g de dinde hachée maigre",
+        "Gingembre râpé et 2 gousses d'ail hachées",
+        "35 g de sauce Hoisin et sauce soja",
+        "90 g de chapelure grossière",
+        "Coleslaw (chou, carotte, ciboulette) pour servir"
+      ],
+      "description": "Hamburgers de dinde aux saveurs asiatiques, servis avec une salade croquante. Une alternative à la viande rouge.",
+      "instructions": [
+        "Dans un grand bol, mélanger la dinde hachée, le gingembre, l'ail et les sauces.",
+        "Incorporer la chapelure et pétrir jusqu'à l'obtention d'un mélange homogène.",
+        "Diviser le mélange et former des hamburgers de taille égale.",
+        "Réfrigérer les hamburgers pour les raffermir.",
+        "Cuire à 200°C pendant 11 minutes, en retournant à mi-cuisson. Servir avec le coleslaw."
+      ],
+      "source": "Cosori",
+      "tip": "La réfrigération des hamburgers avant la cuisson aide à maintenir leur forme.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéique",
+        "LowCarb"
+      ],
+      "isItalian": false,
+      "image": "hamburger-tacchino-asiatico"
+    },
+    {
+      "slug": "hot-dog-newyorkais",
+      "title": "Hot-dog New-Yorkais au Fromage",
+      "emoji": "🌭",
+      "temp": 170,
+      "time": "5",
+      "prep_time": "25 minutes",
+      "portions": "4",
+      "ingredients": [
+        "4 pains à hot-dog",
+        "4 saucisses de porc",
+        "1 oignon rouge, émincé",
+        "4 tranches de cheddar",
+        "60 ml de ketchup",
+        "Cornichons en dés"
+      ],
+      "description": "Recette de hot-dog style New-Yorkais avec saucisse de porc, oignons, cornichons et cheddar fondu.",
+      "instructions": [
+        "Pocher les saucisses dans l'eau bouillante pendant quelques minutes.",
+        "Faire suer l'oignon rouge émincé dans une poêle.",
+        "Ouvrir les pains en deux dans le sens de la longueur et garnir l'intérieur de ketchup.",
+        "Insérer la saucisse dans le pain. Ajouter les oignons et les cornichons. Recouvrir avec une tranche de cheddar.",
+        "Cuire à 170°C pendant 5 minutes, jusqu'à ce que le fromage soit fondu et le pain chaud."
+      ],
+      "source": "Tefal",
+      "tip": "Pocher les saucisses dans l'eau bouillante avant de composer les hot-dogs.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Snack",
+        "Protéique",
+        "Rapide"
+      ],
+      "isItalian": false,
+      "image": "hot-dog-newyorkese"
+    }
+  ],
   {
     "slug": "rouleaux-porc-jambon",
     "title": "Roulés de filet de porc au jambon cru",

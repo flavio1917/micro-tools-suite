@@ -1993,8 +1993,8 @@
     "is_sanitized": true
   },
   {
-    "slug": "medallones-berenjena-empanados",
-    "title": "Berenjenas Empanadas",
+    "slug": "hamburgesas-berenjena-empanados",
+    "title": "Hamburgesas de Berenjena Empanadas",
     "emoji": "🍆",
     "temp": 200,
     "time": "10-12",
@@ -2926,7 +2926,7 @@
     "description": "Mini hamburguesas de ternera con queso fundido, servidas en panecillos. Ideales como aperitivo o segundo plato.",
     "instructions": [
       "En un bol, mezclar la carne de ternera picada, la salsa Worcestershire, la mostaza, la cebolla rallada, el huevo, sal y pimienta.",
-      "Dividir la mezcla en 4 porciones iguales y formar medallones. Refrigerar durante 1 hora.",
+      "Dividir la mezcla en 4 porciones iguales y formar las hamburgesas. Refrigerar durante 1 hora.",
       "Pincelar las hamburguesas con aceite de oliva.",
       "Precalentar el dispositivo de cocción a 200°C.",
       "Cocinar durante 9 minutos, volteando a mitad de cocción.",
@@ -3064,27 +3064,27 @@
   },
   {
     "slug": "hamburguesa-clasica",
-    "title": "Medallones de Vacuno",
+    "title": "Hamburguesa de Vacuno",
     "emoji": "🍔",
     "temp": 190,
     "time": "8-10",
     "prep_time": "No presente",
     "portions": "4",
     "ingredients": [
-      "4 medallones de vacuno (150 g/unidad)",
+      "4 hamburgesas de vacuno (150 g/unidad)",
       "20 ml de aceite de oliva virgen extra",
       "Sal y pimienta negra recién molida al gusto"
     ],
-    "description": "Procedimiento para la cocción de medallones de vacuno que asegura un dorado uniforme y mantiene la jugosidad de la carne.",
+    "description": "Procedimiento para la cocción de hamburgesas de vacuno que asegura un dorado uniforme y mantiene la jugosidad de la carne.",
     "instructions": [
       "Atemperar la carne sacándola del frigorífico minutos antes de la cocción.",
-      "Salpimentar abundantemente los medallones por ambos lados.",
+      "Salpimentar abundantemente las hamburguesas por ambos lados.",
       "Pincelar la superficie con aceite de oliva para favorecer el sellado.",
-      "Colocar los medallones en el recipiente de cocción precalentado a 190°C, sin superponerlos.",
+      "Colocar las hamburguesas en el recipiente de cocción precalentado a 190°C, sin superponerlos.",
       "Cocinar durante el tiempo indicado, volteando la carne a mitad de cocción para obtener un dorado uniforme."
     ],
     "source": "Ninja",
-    "tip": "Voltear el medallón a mitad de cocción para garantizar un dorado uniforme.",
+    "tip": "Voltear la hamburguesa a mitad de cocción para garantizar un dorado uniforme.",
     "keywords": [
       "Carne",
       "Segundo",
