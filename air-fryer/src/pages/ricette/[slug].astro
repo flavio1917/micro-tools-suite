@@ -119,35 +119,32 @@ const defaultPortions = parseInt(recipe.portions) || 2;
           <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
             
             {recipe.instructions && Array.isArray(recipe.instructions) ? (
-              recipe.instructions.map((step, index) => {
-                // --- LA MAGIA È QUI: Calcoliamo il percorso foto basandoci sull'indice ---
-                const stepImagePath = `/images/recipes/${recipe.slug}/step_${index + 1}.jpg`;
+              {recipe.instructions.map((step, index) => {
+  // Calcolo dinamico del percorso
+  const stepImagePath = `/images/recipes/${recipe.slug}/step_${index + 1}.jpg`;
 
-                return (
-                  <div class="flex gap-6 relative">
-                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
-                    
-                    <div class="pt-1 pb-2 w-full">
-                      
-                      <p class="text-slate-300 leading-relaxed text-lg mb-4">
-                        {step}
-                      </p>
-                      
-                      {/* INIEZIONE IMMAGINE DELLO STEP */}
-                      <div class="mb-4">
-                        <img 
-                          src={stepImagePath} 
-                          alt={`Step ${index + 1} - ${recipe.title}`} 
-                          class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover bg-slate-800 min-h-[200px]" 
-                          loading="lazy"
-                          onerror="this.style.display='none'"
-                        />
-                      </div>
+  return (
+    <div class="flex gap-6 relative">
+      <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
+      <div class="pt-1 pb-2 w-full">
+        
+        <p class="text-slate-300 leading-relaxed text-lg mb-4">{step}</p>
+        
+        {/* LA FOTO DEVE ESSERE QUI */}
+        <div class="mb-4">
+          <img 
+            src={stepImagePath} 
+            alt={`Step ${index + 1} - ${recipe.title}`} 
+            class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover bg-slate-800 min-h-[200px]" 
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+        </div>
 
-                    </div>
-                  </div>
-                );
-              })
+      </div>
+    </div>
+  );
+})}
             ) : (
               <>
                 <div class="flex gap-6 relative">
