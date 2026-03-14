@@ -6,13 +6,15 @@ import recipesIt from '../../../data/recipes-it.json';
 import recipesEn from '../../../data/recipes-en.json';
 import recipesEs from '../../../data/recipes-es.json';
 import recipesFr from '../../../data/recipes-fr.json';
+import recipesZh from '../../../data/recipes-zh.json';
 
 export async function getStaticPaths() {
   const datasets = {
     it: recipesIt,
     en: recipesEn,
     es: recipesEs,
-    fr: recipesFr
+    fr: recipesFr,
+    zh: recipesZh
   };
 
   const paths = [];
@@ -84,6 +86,19 @@ const translations = {
     searchOther: "← Chercher une autre recette",
     authBadge: "Recette Authentique", seoAuth: " | Recette Italienne Authentique",
     unitTemp: "°C", unitTime: "min"
+  },
+  zh: {
+    back: "返回食谱", backLink: "/zh/#ricettario",
+    temp: "温度", time: "烹饪时间", prep: "准备时间",
+    portions: "份量", pers: "人",
+    ingTitle: "配料", noIng: "详情请见说明。",
+    stepTitle: "制作步骤",
+    step1: "准备", step1Desc: "在操作台上准备好所有食材。如果需要，可以在食物上轻轻喷抹一层食用油。",
+    step2: "烹饪", step2Desc: `将空气炸锅设置为 <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>。 烹饪 <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} 分钟</strong>。`,
+    tipTitle: "大厨秘诀",
+    searchOther: "← 搜索其他食谱",
+    authBadge: "正宗意大利菜", seoAuth: " | 正宗意大利食谱",
+    unitTemp: "°C", unitTime: "分钟"
   }
 };
 
@@ -93,17 +108,24 @@ const baseImageName = recipe.image || recipe.slug;
 const imagePath = `/images/recipes/${baseImageName}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
 
+// --- NUOVA LOGICA IMMAGINI CONDIVISE ---
+// Cerchiamo la ricetta italiana corrispondente tramite lo slug (o baseImageName)
+const italianRecipe = recipesIt.find(r => (r.image || r.slug) === baseImageName);
+// Se esiste e ha le immagini, le usiamo. Altrimenti usiamo quelle della ricetta corrente.
+const sharedStepImages = italianRecipe?.step_images || recipe.step_images || [];
+
 const cleanTime = recipe.time ? recipe.time.toString().replace(/\s*(minutes|mins|min)\s*/gi, '') : "--";
 const isAuth = recipe.isItalian === true;
 const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
 const seoRecipeData = { ...recipe, image: imagePath, isItalian: isAuth };
 
 const getLocalizedUrl = (targetLang: string) => {
-  const datasets: Record<string, any[]> = { it: recipesIt, en: recipesEn, es: recipesEs, fr: recipesFr };
+  const datasets: Record<string, any[]> = { it: recipesIt, en: recipesEn, es: recipesEs, fr: recipesFr, zh: recipesZh };
   const targetRecipe = datasets[targetLang].find(r => (r.image || r.slug) === baseImageName);
   return targetRecipe ? `/${targetLang}/recipes/${targetRecipe.slug}` : `/${targetLang}/#ricettario`;
 };
 
+// Dizionario Affiliazioni Amazon
 const affiliateLinks = [
   { regex: /(carta forno\b(?: forata)?)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
   { regex: /(olio(?: in)? spray|nebulizzatore)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
@@ -111,6 +133,7 @@ const affiliateLinks = [
   { regex: /(termometro\b(?: per carne)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" }
 ];
 
+// Funzione Server-side per il primo caricamento
 function enrichText(text: string, currentLang: string) {
   if (currentLang !== 'it' || !text) return text;
   let enriched = text;
@@ -157,6 +180,9 @@ function enrichText(text: string, currentLang: string) {
           <a href={getLocalizedUrl('fr')} class={`transition-all ${lang === 'fr' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
             <img src="https://flagcdn.com/fr.svg" alt="FR" class="w-5 h-[14px] rounded-[2px] object-cover" />
           </a>
+          <a href={getLocalizedUrl('zh')} class={`transition-all ${lang === 'zh' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
+            <img src="https://flagcdn.com/cn.svg" alt="ZH" class="w-5 h-[14px] rounded-[2px] object-cover" />
+          </a>
         </div>
       </div>
 
@@ -169,7 +195,7 @@ function enrichText(text: string, currentLang: string) {
     </div>
   </div>
 
-  <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 pb-10">
+  <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 pb-28">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.temp}</span>
@@ -220,7 +246,8 @@ function enrichText(text: string, currentLang: string) {
               recipe.ingredients.map((ing) => (
                 <li class="flex items-start gap-3 text-slate-300 group">
                   <input type="checkbox" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500">
-                  <span class="leading-relaxed group-hover:text-white transition-colors ingredient-text" data-original={ing}>{ing}</span>
+                  {/* set:html gestisce il render iniziale del server per i link affiliati */}
+                  <span class="leading-relaxed group-hover:text-white transition-colors ingredient-text" data-original={ing} set:html={enrichText(ing, lang)}></span>
                 </li>
               ))
             ) : (
@@ -248,10 +275,10 @@ function enrichText(text: string, currentLang: string) {
                     <p class="text-slate-300 leading-relaxed text-lg instruction-text mb-4" set:html={enrichText(step, lang)}></p>
                     
                     {/* INIEZIONE IMMAGINE DELLO STEP SE ESISTE E NON È VUOTA */}
-                    {recipe.step_images && recipe.step_images[index] && recipe.step_images[index] !== "" && (
+                    {sharedStepImages && sharedStepImages[index] && sharedStepImages[index] !== "" && (
                       <div class="mb-4">
                         <img 
-                          src={recipe.step_images[index]} 
+                          src={sharedStepImages[index]} 
                           alt={`Step ${index + 1} - ${recipe.title}`} 
                           class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover" 
                           loading="lazy" 
@@ -305,14 +332,44 @@ function enrichText(text: string, currentLang: string) {
     </div>
   </div>
 
+  <div class="fixed bottom-0 left-0 w-full bg-slate-900 border-t border-slate-700 p-3 z-50 flex justify-center items-center shadow-[0_-10px_30px_rgba(0,0,0,0.6)]">
+    <a href="https://www.amazon.it/b?node=31244463031&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="flex items-center gap-3 text-white hover:text-orange-400 transition-colors w-full max-w-5xl px-2 justify-between md:justify-center">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl animate-bounce hidden md:block">🛒</span>
+        <div class="flex flex-col">
+          <span class="font-bold text-sm md:text-base">Scopri le Offerte sugli Accessori per Friggitrice ad Aria</span>
+          <span class="text-[10px] md:text-xs text-slate-400 hidden md:block">Teglie, nebulizzatori, carta forno e molto altro su Amazon.it</span>
+        </div>
+      </div>
+      <span class="bg-orange-500 hover:bg-orange-600 transition-colors text-white text-xs md:text-sm font-bold px-4 py-2 rounded-full whitespace-nowrap shadow-lg">Vedi Offerte</span>
+    </a>
+  </div>
+
   <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang }}>
     document.addEventListener('DOMContentLoaded', () => {
-      // LOGICA PORZIONI
+      // LOGICA PORZIONI E LINK LATO CLIENT
       let currentPortions = basePortions;
       const display = document.getElementById('portions-display');
       const btnMinus = document.getElementById('btn-minus');
       const btnPlus = document.getElementById('btn-plus');
       const ingredients = document.querySelectorAll('.ingredient-text');
+
+      // Dizionario Link per il client (Necessario per non perdere i link al ricalcolo)
+      const affiliateLinksClient = [
+        { regex: /(carta forno\b(?: forata)?)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
+        { regex: /(olio(?: in)? spray|nebulizzatore)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
+        { regex: /(teglia(?: in)? silicone|stampo(?: in)? silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
+        { regex: /(termometro\b(?: per carne)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" }
+      ];
+
+      function enrichTextClient(text) {
+        if (lang !== 'it' || !text) return text;
+        let enriched = text;
+        affiliateLinksClient.forEach(item => {
+          enriched = enriched.replace(item.regex, `<a href="${item.link}" target="_blank" rel="nofollow noopener" class="text-orange-400 font-bold hover:underline decoration-orange-500 underline-offset-4 transition-colors">$1</a>`);
+        });
+        return enriched;
+      }
 
       // STATO UNITÀ (solo EN)
       let isMetric = false; 
@@ -327,9 +384,11 @@ function enrichText(text: string, currentLang: string) {
       if (!display || !btnMinus || !btnPlus) return;
 
       // FUNZIONI DI CONVERSIONE "SMART" PER CUCINA
-      function fToC(f) { return Math.round((f - 32) * 5/9); }
-      
-      // Arrotonda in modo logico: al 10 più vicino se > 100g, al 5 se > 10g, altrimenti intero
+// FUNZIONI DI CONVERSIONE "SMART" PER CUCINA
+function fToC(f) { 
+        const celsius = (f - 32) * 5/9;
+        return Math.round(celsius / 5) * 5; // Arrotonda al 5 più vicino
+      }      
       function smartRound(val) {
         if (val >= 100) return Math.round(val / 10) * 10;
         if (val >= 10) return Math.round(val / 5) * 5;
@@ -340,7 +399,6 @@ function enrichText(text: string, currentLang: string) {
       function flOzToMl(floz) { return smartRound(floz * 29.5735); }
       function lbsToKg(lbs) { return (lbs * 0.453592).toFixed(2); }
 
-      // REGEX
       const regexOz = /([\d.,]+)\s*oz\b/gi;
       const regexFlOz = /([\d.,]+)\s*fl oz\b/gi;
       const regexLbs = /([\d.,]+)\s*lbs?\b/gi;
@@ -348,14 +406,12 @@ function enrichText(text: string, currentLang: string) {
       function scaleAndConvertIngredient(originalStr, ratio, forceMetric) {
         let currentStr = originalStr;
 
-        // 1. Applica conversione Metrica se richiesta
         if (forceMetric) {
             currentStr = currentStr.replace(regexFlOz, (match, p1) => `${flOzToMl(parseFloat(p1))} ml`);
             currentStr = currentStr.replace(regexOz, (match, p1) => `${ozToG(parseFloat(p1))} g`);
             currentStr = currentStr.replace(regexLbs, (match, p1) => `${lbsToKg(parseFloat(p1))} kg`);
         }
 
-        // 2. Scala le porzioni
         const match = currentStr.trim().match(/^([\d.,]+(?:\/\d+)?)\s+(.*)/);
         if (!match) return currentStr; 
 
@@ -383,7 +439,9 @@ function enrichText(text: string, currentLang: string) {
 
         ingredients.forEach(el => {
           const originalText = el.getAttribute('data-original');
-          el.textContent = scaleAndConvertIngredient(originalText, ratio, isMetric);
+          const scaledText = scaleAndConvertIngredient(originalText, ratio, isMetric);
+          // Usiamo innerHTML + enrichTextClient per re-iniettare i link Amazon dopo il calcolo matematico
+          el.innerHTML = enrichTextClient(scaledText);
         });
 
         // Aggiorna Temperature
@@ -413,7 +471,7 @@ function enrichText(text: string, currentLang: string) {
         }
       });
 
-      // TOGGLE
+      // TOGGLE UNITÀ IMPERIALI/METRICHE
       if (btnImperial && btnMetric) {
           btnImperial.addEventListener('click', () => {
               isMetric = false;
