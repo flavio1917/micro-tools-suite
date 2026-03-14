@@ -108,10 +108,9 @@ const baseImageName = recipe.image || recipe.slug;
 const imagePath = `/images/recipes/${baseImageName}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
 
-// --- NUOVA LOGICA IMMAGINI CONDIVISE ---
-// Cerchiamo la ricetta italiana corrispondente tramite lo slug (o baseImageName)
+// --- LOGICA IMMAGINI CONDIVISE ---
+// Cerca la ricetta corrispondente nel file italiano e usa le sue immagini per tutte le lingue
 const italianRecipe = recipesIt.find(r => (r.image || r.slug) === baseImageName);
-// Se esiste e ha le immagini, le usiamo. Altrimenti usiamo quelle della ricetta corrente.
 const sharedStepImages = italianRecipe?.step_images || recipe.step_images || [];
 
 const cleanTime = recipe.time ? recipe.time.toString().replace(/\s*(minutes|mins|min)\s*/gi, '') : "--";
@@ -246,7 +245,6 @@ function enrichText(text: string, currentLang: string) {
               recipe.ingredients.map((ing) => (
                 <li class="flex items-start gap-3 text-slate-300 group">
                   <input type="checkbox" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500">
-                  {/* set:html gestisce il render iniziale del server per i link affiliati */}
                   <span class="leading-relaxed group-hover:text-white transition-colors ingredient-text" data-original={ing} set:html={enrichText(ing, lang)}></span>
                 </li>
               ))
@@ -274,7 +272,7 @@ function enrichText(text: string, currentLang: string) {
                     
                     <p class="text-slate-300 leading-relaxed text-lg instruction-text mb-4" set:html={enrichText(step, lang)}></p>
                     
-                    {/* INIEZIONE IMMAGINE DELLO STEP SE ESISTE E NON È VUOTA */}
+                    {/* INIEZIONE IMMAGINE DELLO STEP CONDIVISA */}
                     {sharedStepImages && sharedStepImages[index] && sharedStepImages[index] !== "" && (
                       <div class="mb-4">
                         <img 
@@ -354,7 +352,6 @@ function enrichText(text: string, currentLang: string) {
       const btnPlus = document.getElementById('btn-plus');
       const ingredients = document.querySelectorAll('.ingredient-text');
 
-      // Dizionario Link per il client (Necessario per non perdere i link al ricalcolo)
       const affiliateLinksClient = [
         { regex: /(carta forno\b(?: forata)?)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
         { regex: /(olio(?: in)? spray|nebulizzatore)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
@@ -371,7 +368,6 @@ function enrichText(text: string, currentLang: string) {
         return enriched;
       }
 
-      // STATO UNITÀ (solo EN)
       let isMetric = false; 
       const btnImperial = document.getElementById('btn-imperial');
       const btnMetric = document.getElementById('btn-metric');
@@ -383,12 +379,12 @@ function enrichText(text: string, currentLang: string) {
 
       if (!display || !btnMinus || !btnPlus) return;
 
-      // FUNZIONI DI CONVERSIONE "SMART" PER CUCINA
-// FUNZIONI DI CONVERSIONE "SMART" PER CUCINA
-function fToC(f) { 
+      // ARROTONDAMENTO A MULTIPLI DI 5
+      function fToC(f) { 
         const celsius = (f - 32) * 5/9;
-        return Math.round(celsius / 5) * 5; // Arrotonda al 5 più vicino
-      }      
+        return Math.round(celsius / 5) * 5; 
+      }
+      
       function smartRound(val) {
         if (val >= 100) return Math.round(val / 10) * 10;
         if (val >= 10) return Math.round(val / 5) * 5;
@@ -440,7 +436,6 @@ function fToC(f) {
         ingredients.forEach(el => {
           const originalText = el.getAttribute('data-original');
           const scaledText = scaleAndConvertIngredient(originalText, ratio, isMetric);
-          // Usiamo innerHTML + enrichTextClient per re-iniettare i link Amazon dopo il calcolo matematico
           el.innerHTML = enrichTextClient(scaledText);
         });
 
@@ -471,7 +466,6 @@ function fToC(f) {
         }
       });
 
-      // TOGGLE UNITÀ IMPERIALI/METRICHE
       if (btnImperial && btnMetric) {
           btnImperial.addEventListener('click', () => {
               isMetric = false;
