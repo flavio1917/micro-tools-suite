@@ -112,7 +112,7 @@ async function runTest() {
     console.log("🚀 AVVIO PROCESSO DI GENERAZIONE FOTOREALISTICA...");
 
     let recipes = JSON.parse(fs.readFileSync(RECIPES_FILE, 'utf8'));
-    let recipe = recipes[0]; 
+    let recipe = recipes[1]; 
 
     console.log(`\n👨‍🍳 In lavorazione: ${recipe.title.toUpperCase()}`);
     
