@@ -2258,7 +2258,7 @@
     "image": "petti-pollo-semplici"
   },
   {
-    "slug": "poulet-barbecue-cosori",
+    "slug": "poulet-barbecue",
     "title": "Poulet laqué à la sauce barbecue",
     "emoji": "🍗",
     "temp": 195,
@@ -2293,7 +2293,7 @@
       "Poulet",
       "Américain"
     ],
-    "image": "pollo-barbecue-cosori"
+    "image": "pollo-barbecue"
   },
   {
     "slug": "pilons-poulet-miel-citron",
@@ -3510,7 +3510,7 @@
     "image": "spiedini-agnello-shawarma"
   },
   {
-    "slug": "brochettes-porc-teriyaki-cosori",
+    "slug": "brochettes-porc-teriyaki",
     "title": "Brochettes de Porc Sauce Teriyaki",
     "emoji": "🍢",
     "temp": 200,
@@ -3546,7 +3546,7 @@
       "Protéiné"
     ],
     "isItalian": false,
-    "image": "spiedini-maiale-teriyaki-cosori"
+    "image": "spiedini-maiale-teriyaki"
   },
   {
     "slug": "brochettes-boeuf-coreennes",
@@ -6645,7 +6645,7 @@
     "image": "pane-aglio"
   },
   {
-    "slug": "epuissettes-de-mais-ninja",
+    "slug": "epuissettes-de-mais",
     "title": "Épis de Maïs Rôtis",
     "emoji": "🌽",
     "temp": 200,

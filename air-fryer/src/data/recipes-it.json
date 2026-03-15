@@ -2200,7 +2200,7 @@
     ]
   },
   {
-    "slug": "pollo-barbecue-cosori",
+    "slug": "pollo-barbecue",
     "title": "Pollo Laccato alla Salsa Barbecue",
     "emoji": "🍗",
     "temp": 195,
@@ -3442,7 +3442,7 @@
     ]
   },
   {
-    "slug": "spiedini-maiale-teriyaki-cosori",
+    "slug": "spiedini-maiale-teriyaki",
     "title": "Spiedini di Maiale in Salsa Teriyaki",
     "emoji": "🍢",
     "temp": 200,
@@ -6482,7 +6482,7 @@
     ]
   },
   {
-    "slug": "pannocchie-mais-ninja",
+    "slug": "pannocchie-mais",
     "title": "Pannocchie di mais arrostite",
     "emoji": "🌽",
     "temp": 200,

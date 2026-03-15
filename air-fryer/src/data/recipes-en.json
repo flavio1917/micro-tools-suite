@@ -2350,7 +2350,7 @@
       "American Cuisine"
     ],
     "isItalian": false,
-    "image": "pollo-barbecue-cosori",
+    "image": "pollo-barbecue",
     "is_sanitized": true
   },
   {
@@ -3708,7 +3708,7 @@
     "is_sanitized": true
   },
   {
-    "slug": "teriyaki-pork-skewers-cosori",
+    "slug": "teriyaki-pork-skewers",
     "title": "Teriyaki Pork Skewers",
     "emoji": "🍢",
     "temp": 400,
@@ -3744,7 +3744,7 @@
       "Quick"
     ],
     "isItalian": false,
-    "image": "spiedini-maiale-teriyaki-cosori",
+    "image": "spiedini-maiale-teriyaki",
     "is_sanitized": true
   },
   {

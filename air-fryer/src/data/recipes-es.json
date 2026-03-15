@@ -2253,7 +2253,7 @@
     "is_sanitized": true
   },
   {
-    "slug": "pollo-barbacoa-cosori",
+    "slug": "pollo-barbacoa",
     "title": "Pollo Glaseado a la Barbacoa",
     "emoji": "🍗",
     "temp": 195,
@@ -3550,7 +3550,7 @@
     "is_sanitized": true
   },
   {
-    "slug": "brochetas-cerdo-teriyaki-cosori",
+    "slug": "brochetas-cerdo-teriyaki",
     "title": "Brochetas de Cerdo Teriyaki",
     "emoji": "🍢",
     "temp": 200,
@@ -3585,7 +3585,7 @@
       "Proteico",
       "Rápido"
     ],
-    "image": "spiedini-maiale-teriyaki-cosori",
+    "image": "spiedini-maiale-teriyaki",
     "is_sanitized": true
   },
   {
@@ -6720,7 +6720,7 @@
     "is_sanitized": true
   },
   {
-    "slug": "mazorcas-de-maiz-ninja",
+    "slug": "mazorcas-de-maiz",
     "title": "Mazorcas de maíz",
     "emoji": "🌽",
     "temp": 200,
@@ -6748,7 +6748,7 @@
       "Veloce"
     ],
     "isItalian": false,
-    "image": "pannocchie-mais-ninja",
+    "image": "pannocchie-mais",
     "is_sanitized": true
   },
   {
