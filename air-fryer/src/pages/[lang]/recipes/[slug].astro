@@ -96,9 +96,11 @@ const baseImageName = recipe.image || recipe.slug;
 const imagePath = `/images/recipes/${baseImageName}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
 
-// LOGICA IMMAGINI CONDIVISE (pesca sempre da recipes-it.json)
-const italianRecipe = recipesIt.find(r => (r.image || r.slug) === baseImageName);
-const sharedStepImages = italianRecipe?.step_images || recipe.step_images || [];
+/// NUOVA LOGICA: Genera i percorsi immagini basandosi sul numero di istruzioni
+const sharedStepImages = recipe.instructions.map((_, index) => {
+  // Costruisce il percorso: /images/recipes/[slug]/step_[1...n].jpg
+  return `/images/recipes/${recipe.slug}/step_${index + 1}.jpg`;
+});
 
 const cleanTime = recipe.time ? recipe.time.toString().replace(/\s*(minutes|mins|min)\s*/gi, '') : "--";
 const isAuth = recipe.isItalian === true;

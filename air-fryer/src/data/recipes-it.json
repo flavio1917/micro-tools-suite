@@ -31,13 +31,6 @@
       "Secondo",
       "Proteico",
       "Calamari"
-    ],
-    "step_images": [
-      "/images/recipes/anelli-calamari-fritti/step_1.jpg",
-      "/images/recipes/anelli-calamari-fritti/step_2.jpg",
-      "/images/recipes/anelli-calamari-fritti/step_3.jpg",
-      "/images/recipes/anelli-calamari-fritti/step_4.jpg",
-      "/images/recipes/anelli-calamari-fritti/step_5.jpg"
     ]
   },
   {
@@ -73,13 +66,6 @@
       "Proteico",
       "Pollo",
       "Vitello"
-    ],
-    "step_images": [
-      "/images/recipes/cotoletta-fettina-panata/step_1.jpg",
-      "/images/recipes/cotoletta-fettina-panata/step_2.jpg",
-      "/images/recipes/cotoletta-fettina-panata/step_3.jpg",
-      "",
-      ""
     ]
   },
   {
