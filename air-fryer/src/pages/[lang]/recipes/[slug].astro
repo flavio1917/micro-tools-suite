@@ -44,7 +44,7 @@ const translations = {
     searchOther: "← Cerca un'altra ricetta",
     authBadge: "Ricetta Autentica", seoAuth: " | Ricetta Originale",
     unitTemp: "°C", unitTime: "min",
-    bannerTop: "MIGLIORA LA TUA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori Universale", bannerBtn: "Offerte"
+    bannerTop: "MIGLIORA LA TUA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori Universale definitivo.", bannerBtn: "Scopri le Offerte"
   },
   en: {
     back: "Back to Recipes", backLink: "/en/#ricettario",
@@ -58,7 +58,7 @@ const translations = {
     searchOther: "← Search another recipe",
     authBadge: "Authentic Italian", seoAuth: " | Authentic Italian Recipe",
     unitTemp: "°F", unitTime: "min",
-    bannerTop: "UPGRADE YOUR AIR FRYER", bannerBot: "Discover the Universal Accessory Kit", bannerBtn: "Deals"
+    bannerTop: "UPGRADE YOUR AIR FRYER", bannerBot: "Discover the ultimate Universal Accessory Kit.", bannerBtn: "View Deals"
   },
   es: {
     back: "Volver al Recetario", backLink: "/es/#ricettario",
@@ -72,7 +72,7 @@ const translations = {
     searchOther: "← Buscar otra receta",
     authBadge: "Receta Auténtica", seoAuth: " | Auténtica Receta Italiana",
     unitTemp: "°C", unitTime: "min",
-    bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit de Accesorios Universal", bannerBtn: "Ofertas"
+    bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit de Accesorios Universal definitivo.", bannerBtn: "Ver Ofertas"
   },
   fr: {
     back: "Retour aux Recettes", backLink: "/fr/#ricettario",
@@ -86,7 +86,7 @@ const translations = {
     searchOther: "← Chercher une autre recette",
     authBadge: "Recette Authentique", seoAuth: " | Recette Italienne Authentique",
     unitTemp: "°C", unitTime: "min",
-    bannerTop: "AMÉLIOREZ VOTRE FRITEUSE", bannerBot: "Découvrez le Kit d'Accessoires Universel", bannerBtn: "Offres"
+    bannerTop: "AMÉLIOREZ VOTRE FRITEUSE", bannerBot: "Découvrez le Kit d'Accessoires Universel ultime.", bannerBtn: "Voir les Offres"
   }
 };
 
@@ -96,9 +96,8 @@ const baseImageName = recipe.image || recipe.slug;
 const imagePath = `/images/recipes/${baseImageName}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
 
-/// NUOVA LOGICA: Genera i percorsi immagini basandosi sul numero di istruzioni
+// NUOVA LOGICA: Genera i percorsi immagini basandosi sul numero di istruzioni
 const sharedStepImages = recipe.instructions.map((_, index) => {
-  // Costruisce il percorso: /images/recipes/[slug]/step_[1...n].jpg
   return `/images/recipes/${recipe.slug}/step_${index + 1}.jpg`;
 });
 
@@ -113,12 +112,13 @@ const getLocalizedUrl = (targetLang: string) => {
   return targetRecipe ? `/${targetLang}/recipes/${targetRecipe.slug}` : `/${targetLang}/#ricettario`;
 };
 
-// DIZIONARIO AFFILIAZIONI AMAZON MULTILINGUA
+// DIZIONARIO AFFILIAZIONI AMAZON MULTILINGUA (POTENZIATO)
 const affiliateLinks = [
-  { regex: /(carta forno\b(?: forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
-  { regex: /(olio(?: in)? spray|nebulizzatore|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
-  { regex: /(teglia(?: in)? silicone|stampo(?: in)? silicone|silicone mold|silicone pan|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
-  { regex: /(termometro\b(?: per carne)?|thermometer|termómetro|thermomètre)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" }
+  { regex: /(carta(?: da)? forno\b(?: forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
+  { regex: /(olio(?: extra vergine d'oliva| evo)? spray|nebulizzatore(?: d'olio)?|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
+  { regex: /(teglia(?: in)? silicone|cestello(?: in)? silicone|stampo(?: in)? silicone|silicone(?: liner| mold| pan| basket)|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
+  { regex: /(termometro\b(?: per carne| alimentare)?|meat thermometer|termómetro(?: de carne)?|thermomètre(?: à viande)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" },
+  { regex: /(pinze(?: da cucina| in silicone)?|kitchen tongs|pinzas(?: de cocina)?|pinces(?: de cuisine)?)/gi, link: "https://www.amazon.it/dp/B08P1QDFN6?tag=convfriggit-21" }
 ];
 
 // Funzione Server-side per iniettare i link Amazon
@@ -126,7 +126,7 @@ function enrichText(text: string) {
   if (!text) return text;
   let enriched = text;
   affiliateLinks.forEach(item => {
-    enriched = enriched.replace(item.regex, `<a href="${item.link}" target="_blank" rel="nofollow noopener" class="text-orange-400 font-bold hover:underline decoration-orange-500 underline-offset-4 transition-colors">$1</a>`);
+    enriched = enriched.replace(item.regex, `<a href="${item.link}" target="_blank" rel="nofollow noopener" title="Vedi su Amazon" class="text-orange-400 font-bold hover:text-orange-300 hover:underline decoration-orange-500/50 underline-offset-4 transition-colors">$1</a>`);
   });
   return enriched;
 }
@@ -269,7 +269,7 @@ function enrichText(text: string) {
                           alt={`Step ${index + 1} - ${recipe.title}`} 
                           class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover" 
                           loading="lazy" 
-                          onerror="this.style.display='none';"
+                          onerror="this.parentElement.style.display='none';"
                         />
                       </div>
                     )}
@@ -319,21 +319,31 @@ function enrichText(text: string) {
     </div>
   </div>
 
-  <div class="fixed bottom-0 left-0 w-full bg-slate-950 border-t border-slate-800 p-2 md:p-3 z-50 flex justify-center items-center shadow-[0_-10px_30px_rgba(0,0,0,0.8)]">
-    <a href="https://www.amazon.it/b?node=31244463031&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="flex items-center justify-between w-full max-w-5xl px-1 md:px-4 gap-2 group">
-      <div class="flex items-center gap-3 md:gap-4">
-        <div class="text-3xl md:text-4xl drop-shadow-md group-hover:scale-110 transition-transform">🎁</div>
-        <div class="flex flex-col">
-          <span class="text-orange-500 font-black text-[10px] md:text-xs tracking-wide uppercase">{t.bannerTop}</span>
-          <span class="text-white font-bold text-xs md:text-sm leading-tight">{t.bannerBot}</span>
+  {/* BANNER AFFILIAZIONE (SOLO PER LINGUA ITALIANA) */}
+  {lang === 'it' && (
+    <div class="fixed bottom-0 left-0 right-0 z-[100] transition-transform duration-300">
+      <div class="w-full bg-[#0B1120] border-t border-orange-500/30 shadow-[0_-15px_40px_rgba(0,0,0,0.6)]">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+          
+          <div class="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
+             <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 p-[1px] flex-shrink-0 shadow-[0_0_10px_rgba(245,158,11,0.5)] animate-pulse">
+                <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-lg">🎁</div>
+             </div>
+            <div class="flex-1 min-w-0">
+              <span class="block text-[10px] uppercase tracking-widest font-extrabold text-orange-500 mb-0.5 drop-shadow-md truncate">{t.bannerTop}</span>
+              <p class="text-sm md:text-base text-white leading-tight font-bold truncate">{t.bannerBot}</p>
+            </div>
+          </div>
+
+          <a href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="flex-shrink-0 bg-orange-500 hover:bg-orange-400 text-black text-xs md:text-sm font-black py-2.5 px-5 rounded-full flex items-center gap-1.5 shadow-[0_0_15px_rgba(245,158,11,0.4)] transition-all hover:scale-105 active:scale-95">
+            <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            <span class="hidden sm:inline">Scopri le</span> Offerte
+          </a>
+          
         </div>
       </div>
-      <div class="bg-orange-500 hover:bg-orange-400 transition-colors text-black text-xs md:text-sm font-black px-3 py-2 md:px-4 rounded-xl flex items-center gap-2 shadow-lg">
-        <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-        {t.bannerBtn}
-      </div>
-    </a>
-  </div>
+    </div>
+  )}
 
   <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang }}>
     document.addEventListener('DOMContentLoaded', () => {
@@ -345,17 +355,18 @@ function enrichText(text: string) {
 
       // Dizionario Link per il client (Mantiene vivi i link dopo il ricalcolo porzioni) - MULTILINGUA
       const affiliateLinksClient = [
-        { regex: /(carta forno\b(?: forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
-        { regex: /(olio(?: in)? spray|nebulizzatore|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
-        { regex: /(teglia(?: in)? silicone|stampo(?: in)? silicone|silicone mold|silicone pan|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
-        { regex: /(termometro\b(?: per carne)?|thermometer|termómetro|thermomètre)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" }
+        { regex: /(carta(?: da)? forno\b(?: forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
+        { regex: /(olio(?: extra vergine d'oliva| evo)? spray|nebulizzatore(?: d'olio)?|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
+        { regex: /(teglia(?: in)? silicone|cestello(?: in)? silicone|stampo(?: in)? silicone|silicone(?: liner| mold| pan| basket)|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
+        { regex: /(termometro\b(?: per carne| alimentare)?|meat thermometer|termómetro(?: de carne)?|thermomètre(?: à viande)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" },
+        { regex: /(pinze(?: da cucina| in silicone)?|kitchen tongs|pinzas(?: de cocina)?|pinces(?: de cuisine)?)/gi, link: "https://www.amazon.it/dp/B08P1QDFN6?tag=convfriggit-21" }
       ];
 
       function enrichTextClient(text) {
         if (!text) return text;
         let enriched = text;
         affiliateLinksClient.forEach(item => {
-          enriched = enriched.replace(item.regex, `<a href="${item.link}" target="_blank" rel="nofollow noopener" class="text-orange-400 font-bold hover:underline decoration-orange-500 underline-offset-4 transition-colors">$1</a>`);
+          enriched = enriched.replace(item.regex, `<a href="${item.link}" target="_blank" rel="nofollow noopener" title="Vedi su Amazon" class="text-orange-400 font-bold hover:text-orange-300 hover:underline decoration-orange-500/50 underline-offset-4 transition-colors">$1</a>`);
         });
         return enriched;
       }
