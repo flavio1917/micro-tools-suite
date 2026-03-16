@@ -113,12 +113,22 @@ const getLocalizedUrl = (targetLang: string) => {
 };
 
 // DIZIONARIO AFFILIAZIONI AMAZON MULTILINGUA (POTENZIATO)
+// DIZIONARIO AFFILIAZIONI AMAZON MULTILINGUA (VERSIONE ELASTICA)
 const affiliateLinks = [
-  { regex: /(carta(?: da)? forno\b(?: forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
-  { regex: /(olio(?: extra vergine d'oliva| evo)? spray|nebulizzatore(?: d'olio)?|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
-  { regex: /(teglia(?: in)? silicone|cestello(?: in)? silicone|stampo(?: in)? silicone|silicone(?: liner| mold| pan| basket)|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
-  { regex: /(termometro\b(?: per carne| alimentare)?|meat thermometer|termómetro(?: de carne)?|thermomètre(?: à viande)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" },
-  { regex: /(pinze(?: da cucina| in silicone)?|kitchen tongs|pinzas(?: de cocina)?|pinces(?: de cuisine)?)/gi, link: "https://www.amazon.it/dp/B08P1QDFN6?tag=convfriggit-21" }
+  // Carta forno (cattura anche "fogli di carta forno", "carta da forno")
+  { regex: /(carta(?:\s+da)?\s+forno(?:(?:\s+in)?\s+fogli)?(?:\s+forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
+  
+  // Olio Spray (cattura "extravergine" attaccato/staccato, e il verbo "nebulizzare")
+  { regex: /(olio(?:\s+(?:extravergine|extra vergine)\s+d'oliva|\s+evo)?\s+spray|nebulizzare(?:\s+(?:con\s+)?olio)?|nebulizzatore(?:\s+d'olio)?|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
+  
+  // Teglie/Cestelli
+  { regex: /(teglia(?:\s+in)?\s+silicone|cestello(?:\s+in)?\s+silicone|stampo(?:\s+in)?\s+silicone|silicone(?: liner| mold| pan| basket)|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
+  
+  // Termometri
+  { regex: /(termometro\b(?:\s+per\s+carne|\s+alimentare)?|meat thermometer|termómetro(?: de carne)?|thermomètre(?: à viande)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" },
+
+  // Pinze
+  { regex: /(pinze(?:\s+da\s+cucina|\s+in\s+silicone)?|kitchen tongs|pinzas(?: de cocina)?|pinces(?: de cuisine)?)/gi, link: "https://www.amazon.it/dp/B08P1QDFN6?tag=convfriggit-21" }
 ];
 
 // Funzione Server-side per iniettare i link Amazon
@@ -355,11 +365,11 @@ function enrichText(text: string) {
 
       // Dizionario Link per il client (Mantiene vivi i link dopo il ricalcolo porzioni) - MULTILINGUA
       const affiliateLinksClient = [
-        { regex: /(carta(?: da)? forno\b(?: forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
-        { regex: /(olio(?: extra vergine d'oliva| evo)? spray|nebulizzatore(?: d'olio)?|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
-        { regex: /(teglia(?: in)? silicone|cestello(?: in)? silicone|stampo(?: in)? silicone|silicone(?: liner| mold| pan| basket)|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
-        { regex: /(termometro\b(?: per carne| alimentare)?|meat thermometer|termómetro(?: de carne)?|thermomètre(?: à viande)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" },
-        { regex: /(pinze(?: da cucina| in silicone)?|kitchen tongs|pinzas(?: de cocina)?|pinces(?: de cuisine)?)/gi, link: "https://www.amazon.it/dp/B08P1QDFN6?tag=convfriggit-21" }
+        { regex: /(carta(?:\s+da)?\s+forno(?:(?:\s+in)?\s+fogli)?(?:\s+forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
+        { regex: /(olio(?:\s+(?:extravergine|extra vergine)\s+d'oliva|\s+evo)?\s+spray|nebulizzare(?:\s+(?:con\s+)?olio)?|nebulizzatore(?:\s+d'olio)?|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
+        { regex: /(teglia(?:\s+in)?\s+silicone|cestello(?:\s+in)?\s+silicone|stampo(?:\s+in)?\s+silicone|silicone(?: liner| mold| pan| basket)|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
+        { regex: /(termometro\b(?:\s+per\s+carne|\s+alimentare)?|meat thermometer|termómetro(?: de carne)?|thermomètre(?: à viande)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" },
+        { regex: /(pinze(?:\s+da\s+cucina|\s+in\s+silicone)?|kitchen tongs|pinzas(?: de cocina)?|pinces(?: de cuisine)?)/gi, link: "https://www.amazon.it/dp/B08P1QDFN6?tag=convfriggit-21" }
       ];
 
       function enrichTextClient(text) {
