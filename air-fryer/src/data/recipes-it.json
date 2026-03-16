@@ -73,6 +73,13 @@
       "Proteico",
       "Pollo",
       "Vitello"
+    ],
+    "step_images": [
+      "/images/recipes/cotoletta-fettina-panata/step_1.jpg",
+      "/images/recipes/cotoletta-fettina-panata/step_2.jpg",
+      "/images/recipes/cotoletta-fettina-panata/step_3.jpg",
+      "",
+      ""
     ]
   },
   {

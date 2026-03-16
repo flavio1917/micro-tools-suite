@@ -1,235 +1,253 @@
 import dotenv from 'dotenv';
 dotenv.config({ path: '../.env' });
-import fs from 'node:fs';
-import path from 'node:path';
-import axios from 'axios';
+
+import fs from 'fs';
+import path from 'path';
+import readline from 'readline';
+import { fileURLToPath } from 'url';
 import { GoogleAuth } from 'google-auth-library';
+import sharp from 'sharp';
 
-const RECIPES_FILE = './src/data/recipes-it.json';
-const BASE_IMG_DIR = './public/images/recipes';
-const DOMAIN = 'https://www.convertitorefriggitrice.it';
-const PINTEREST_TOKEN = process.env.PINTEREST_TOKEN;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// ==========================================
-// 1. GENERAZIONE IMMAGINE CON RETRY
-// ==========================================
-async function generateImagen3Image(prompt, filepath, maxRetries = 3) {
-    for (let attempt = 1; attempt <= maxRetries; attempt++) {
-        try {
-            console.log(`   ⏳ Google Vertex AI... [Tentativo ${attempt}/${maxRetries}]`);
-            
-            const auth = new GoogleAuth({
-                keyFile: '../credenziali-google.json',
-                scopes: ['https://www.googleapis.com/auth/cloud-platform']
-            });
-            
-            const client = await auth.getClient();
-            const projectId = await auth.getProjectId();
-            const token = await client.getAccessToken();
+// CONFIGURAZIONE
+const PROJECT_ID = process.env.PROJECT_ID;
+const LOCATION = 'europe-west1'; // o us-central1
+const MODEL_ID = 'imagen-3.0-capability-001';
+const RECIPES_FILE = path.join(__dirname, 'src', 'data', 'recipes-it.json');
+const IMAGES_DIR = path.join(__dirname, 'public', 'images', 'recipes');
 
-            const endpoint = `https://us-central1-aiplatform.googleapis.com/v1/projects/${projectId}/locations/us-central1/publishers/google/models/imagen-3.0-generate-001:predict`;
+// Autenticazione
+const auth = new GoogleAuth({
+    scopes: ['https://www.googleapis.com/auth/cloud-platform']
+});
 
-            const requestBody = {
-                instances: [ { prompt: prompt } ],
-                parameters: {
-                    sampleCount: 1,
-                    aspectRatio: "4:3",
-                    outputOptions: { mimeType: "image/jpeg" }
-                }
-            };
+// Supporto per attendere l'input utente
+function wait() {
+    const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+    return new Promise(resolve => rl.question('\n👉 Premi INVIO per elaborare la prossima ricetta...', (ans) => {
+        rl.close();
+        resolve();
+    }));
+}
 
-            const response = await axios.post(endpoint, requestBody, {
-                headers: {
-                    'Authorization': `Bearer ${token.token}`,
-                    'Content-Type': 'application/json'
-                }
-            });
-
-            const base64Image = response.data.predictions[0].bytesBase64Encoded;
-            const buffer = Buffer.from(base64Image, 'base64');
-            
-            fs.writeFileSync(filepath, buffer);
-            return true;
-
-        } catch (e) {
-            const errorMsg = e.response?.data?.error?.message || e.message;
-            console.warn(`   ⚠️ Errore API: ${errorMsg.substring(0, 100)}`);
-            
-            if (attempt < maxRetries) {
-                console.log(`   ⏳ Pausa tecnica di 30 secondi prima del prossimo tentativo...`);
-                await new Promise(res => setTimeout(res, 30000));
-            } else {
-                console.error(`   ❌ Generazione fallita definitivamente.`);
-                return false;
-            }
-        }
+// Salva l'immagine: per la principale usiamo WebP, per gli step JPG
+async function saveImage(imageBase64, filePath, isWebp = false) {
+    const buffer = Buffer.from(imageBase64, 'base64');
+    let sharpInstance = sharp(buffer).resize({ width: 1024, height: 1024, fit: 'inside' });
+    
+    if (isWebp) {
+        await sharpInstance.webp({ quality: 85 }).toFile(filePath);
+    } else {
+        await sharpInstance.jpeg({ quality: 85 }).toFile(filePath);
     }
 }
 
 // ==========================================
-// 2. LOGICA PINTEREST
+// IL CUORE DELLA LOGICA: ANALISI DELLO STATO
 // ==========================================
-function getTargetBoard(recipe) {
-    const text = (recipe.title + " " + (recipe.keywords?.join(' ') || "")).toLowerCase();
-    if (/(snack|contorno|antipasto|calamari)/i.test(text)) return process.env.BOARD_ANTIPASTI;
-    if (/(carne|secondo|hamburger|pesce)/i.test(text)) return process.env.BOARD_SECONDI;
-    return process.env.BOARD_GENERALI;
+function getContextForStep(recipe, stepIndex) {
+    // 1. SCENARIO: IMMAGINE PRINCIPALE (Copertina Click-Bait)
+    if (stepIndex === -1) {
+        return `
+        SCENE CONTEXT: This is the FINAL, PLATED DISH. 
+        CRITICAL: DO NOT SHOW THE AIR FRYER. DO NOT SHOW BASKETS.
+        The image must be an ultra-appetizing, click-bait style, professional food photography shot.
+        Show the beautifully assembled final product on a rustic table with elegant plating.
+        Highlight the delicious textures, perfect cooking, and vibrant colors of the fresh ingredients.
+        `;
+    }
+
+    const currentStepText = recipe.instructions[stepIndex].toLowerCase();
+    let isCooking = false;
+    let isInBasket = false;
+
+    // Controlliamo gli step dal primo fino a quello attuale per capire "la storia"
+    for (let i = 0; i <= stepIndex; i++) {
+        const text = recipe.instructions[i].toLowerCase();
+        
+        // Se si nomina il cestello, il prodotto ci entra
+        if (text.includes('cestello') || text.includes('friggitrice')) {
+            isInBasket = true;
+        }
+        
+        // Se si parla di gradi o cuocere, la cottura inizia
+        if (text.includes('cuocere') || text.includes('gradi') || text.includes('°c') || text.includes('infornare')) {
+            isCooking = true;
+        }
+    }
+
+    // 2. SCENARIO: IN COTTURA NEL CESTELLO
+    if (isCooking) {
+        return `
+        SCENE CONTEXT: COOKING PHASE.
+        CRITICAL: The food is currently INSIDE the massive, deep black metal basket of an XXL Air Fryer.
+        Show the perforated metal grate. The food is actively cooking, showing heat, browning, and changing textures.
+        `;
+    } 
+    // 3. SCENARIO: MESSO NEL CESTELLO MA ANCORA CRUDO/IN PREPARAZIONE
+    else if (isInBasket) {
+        return `
+        SCENE CONTEXT: PLACED IN AIR FRYER.
+        CRITICAL: The food has just been placed INSIDE the black metal basket of an XXL Air Fryer.
+        Show the perforated metal grate of the large basket. The food is RAW or just prepped, not cooked yet.
+        `;
+    } 
+    // 4. SCENARIO: PREPARAZIONE SUL BANCONE
+    else {
+        return `
+        SCENE CONTEXT: EARLY PREPARATION.
+        CRITICAL: The food is strictly OUTSIDE the air fryer. DO NOT show the air fryer.
+        Show a kitchen counter, cutting boards, bowls, or hands preparing the RAW ingredients.
+        `;
+    }
 }
 
-async function publishPin(recipe) {
-    const boardId = getTargetBoard(recipe);
-    const imageUrl = `${DOMAIN}/images/recipes/${recipe.image || recipe.slug}.webp`;
-    const recipeUrl = `${DOMAIN}/it/recipes/${recipe.slug}`;
+// Costruisce il prompt per l'API
+function buildMasterPrompt(recipe, stepIndex) {
+    const isFinalImage = stepIndex === -1;
+    const actionText = isFinalImage ? "The final plated dish ready to be eaten." : recipe.instructions[stepIndex];
+    const sceneContext = getContextForStep(recipe, stepIndex);
+    const description = recipe.description ? `RECIPE DESCRIPTION: ${recipe.description}` : "";
 
-    console.log(`📌 Pubblicazione Pin su bacheca: ${boardId}`);
+    return `
+    You are an award-winning food photographer. Create a photorealistic, 8k resolution, cinematic image.
 
-    const seoTags = `#friggitriceadaria #airfryerrecipes #ricetteveloci #${recipe.slug.replace(/-/g, '')}`;
-    const description = `✨ ${recipe.title} ✨\n\n${recipe.description}\n\n${seoTags}`;
+    RECIPE TITLE: ${recipe.title}
+    ${description}
+    ALL INGREDIENTS INVOLVED: ${recipe.ingredients.join(', ')}
+    
+    ${sceneContext}
+
+    SPECIFIC ACTION OR STATE TO VISUALIZE: 
+    "${actionText}"
+
+    Focus entirely on illustrating the action and context described above, ensuring the ingredients look realistic.
+    `;
+}
+
+// Chiamata all'API
+async function generateImageWithVertex(prompt, baseImageBase64) {
+    const client = await auth.getClient();
+    const url = `https://${LOCATION}-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/${LOCATION}/publishers/google/models/${MODEL_ID}:predict`;
+
+    const payload = {
+        instances: [
+            {
+                prompt: prompt,
+                referenceImages: [
+                    {
+                        referenceId: 1, // ID obbligatorio
+                        referenceType: "REFERENCE_TYPE_STYLE", // Usa la foto come guida per luci, set e colori
+                        referenceImage: {
+                            bytesBase64Encoded: baseImageBase64 // Il Base64 crudo, senza altri oggetti intorno
+                        },
+                        styleImageConfig: {
+                            styleDescription: "fotografia culinaria professionale" // Parametro richiesto da Google quando si usa lo Style
+                        }
+                    }
+                ]
+            }
+        ],
+        parameters: {
+            sampleCount: 1,
+            outputOptions: {
+                mimeType: "image/jpeg"
+            }
+        }
+    };
 
     try {
-        const response = await axios.post('https://api.pinterest.com/v5/pins', {
-            board_id: boardId,
-            title: recipe.title,
-            description: description,
-            link: recipeUrl,
-            media_source: { source_type: "image_url", url: imageUrl }
-        }, {
-            headers: { 'Authorization': `Bearer ${PINTEREST_TOKEN}` }
-        });
+        const response = await client.request({ url, method: 'POST', data: payload });
         
-        console.log(`✅ Pin pubblicato! ID: ${response.data.id}`);
-        return true;
-    } catch (error) {
-        console.error("❌ Errore Pinterest (Token non valido o permessi insufficienti)");
-        return false;
-    }
-}
-
-// ==========================================
-// 3. RUNNER PRINCIPALE (DIRETTORE DI REGIA)
-// ==========================================
-async function runTest() {
-    console.log("🚀 AVVIO PROCESSO DI GENERAZIONE FOTOREALISTICA...");
-
-    let recipes = JSON.parse(fs.readFileSync(RECIPES_FILE, 'utf8'));
-    let recipe = recipes[1]; 
-
-    console.log(`\n👨‍🍳 In lavorazione: ${recipe.title.toUpperCase()}`);
-    
-    const recipeDir = path.join(BASE_IMG_DIR, recipe.slug);
-    if (!fs.existsSync(recipeDir)) fs.mkdirSync(recipeDir, { recursive: true });
-
-    recipe.step_images = new Array(recipe.instructions.length).fill("");
-    const ingredientsList = recipe.ingredients ? recipe.ingredients.join(", ") : "";
-
-    let isInAirFryer = false;
-    let foodMaturity = "RAW"; 
-
-    for (let i = 0; i < recipe.instructions.length; i++) {
-        let step = recipe.instructions[i];
-        let stepLower = step.toLowerCase();
-        console.log(`\n📸 Elaborazione Step ${i + 1}/${recipe.instructions.length}`);
-
-        // --- A. TRIGGER CESTELLO CORRETTO ---
-        // 1. Controlla prima se esce (in modo specifico, non un "estrarre dal sacchetto")
-        if (/(sfornare|servire|impiattare|dal cestello|dalla friggitrice)/i.test(stepLower) && i > 0) {
-            isInAirFryer = false;
-        }
-        // 2. Poi controlla se entra (così vince sempre se c'è scritto "estrarre dal sacchetto e mettere nel cestello")
-        if (/(nel cestello|il cestello|friggitrice)/i.test(stepLower)) {
-            isInAirFryer = true;
-        }
-
-        // --- B. TRIGGER MATURAZIONE CIBO ---
-        if (/\d+°c|gradi|cuocere a/i.test(stepLower)) {
-            foodMaturity = "START_COOKING";
-        } else if (/(agitare|ruotare|girare|metà cottura)/i.test(stepLower) && foodMaturity !== "RAW") {
-            foodMaturity = "MID_COOKING";
-        } 
-        
-        if (i === recipe.instructions.length - 1 || /(doratura|pronto|servire|cotti)/i.test(stepLower)) {
-            foodMaturity = "COOKED";
-        }
-
-        // --- C. TRADUZIONE STATI IN DESCRIZIONI VISIVE ---
-        let visualState = "";
-        if (foodMaturity === "RAW") visualState = "RAW (completely raw, uncooked, natural cold colors, no steam, no smoke)";
-        else if (foodMaturity === "START_COOKING") visualState = "STARTING TO COOK (glistening with oil, still pale, slightly warm)";
-        else if (foodMaturity === "MID_COOKING") visualState = "HALF-COOKED (sizzling, turning golden brown, slight steam)";
-        else visualState = "PERFECTLY COOKED (deep golden brown, crispy texture, fully done)";
-
-        let locationDesc = isInAirFryer 
-            ? "STRICTLY INSIDE A DARK AIR FRYER BASKET. The background MUST be the black perforated metal grate of the air fryer." 
-            : "On a clean wooden kitchen counter.";
-
-        // --- D. COSTRUZIONE PROMPT ---
-        const universalNegative = `STRICT NEGATIVE: NO pans, NO pots, NO skillets, NO stove burners, NO text, NO breadcrumbs if not in recipe, NO massive piles of ingredients, NO mountains of flour${isInAirFryer ? ', NO wooden boards, NO tables, NO counters' : ''}.`;
-
-        let prompt = "";
-
-        if (recipe.slug.includes('calamari')) {
-            if (i === 0) {
-                prompt = `Professional macro food photography. 
-                    MAIN SUBJECT & ACTION: VISIBLE HUMAN HANDS gently patting dry raw white calamari rings using white paper towels. 
-                    SCENE: ${locationDesc}
-                    FOOD STATE: ${visualState}.
-                    STYLE: Photorealistic, cinematic lighting, 8k.
-                    ${universalNegative} NO FLOUR, NO SEMOLINA, NO BAGS IN THIS STEP.`;
-            } 
-            else if (i === 1) {
-                prompt = `Professional macro food photography. 
-                    MAIN SUBJECT & ACTION: A clear transparent plastic ziplock bag held open. Inside the bag are raw calamari rings and a VERY SMALL AMOUNT of yellow semolina flour (just a light dusting, DO NOT overfill). 
-                    SCENE: ${locationDesc}
-                    FOOD STATE: ${visualState}.
-                    INGREDIENTS SCALE: ${ingredientsList}.
-                    STYLE: Photorealistic, cinematic lighting, 8k.
-                    ${universalNegative}`;
-            } 
-            else {
-                let actionOverride = step;
-                if (/(nebulizzare|spruzzare|spray)/i.test(stepLower)) {
-                    actionOverride = `A hand using a glass oil spray bottle to mist the food.`;
-                }
-
-                prompt = `Professional macro food photography. 
-                    ACTION TO RENDER: "${actionOverride}"
-                    SCENE SETUP: ${locationDesc}
-                    SUBJECT STATE: ${visualState}. 
-                    APPEARANCE: Calamari rings coated in fine yellow semolina.
-                    INGREDIENTS SCALE: ${ingredientsList}. 
-                    STYLE: Photorealistic, cinematic lighting, 8k.
-                    ${universalNegative}`;
-            }
+        if (response.data && response.data.predictions && response.data.predictions[0].bytesBase64Encoded) {
+            return response.data.predictions[0].bytesBase64Encoded;
         } else {
-            prompt = `Professional macro food photography. 
-                ACTION TO RENDER: "${step}"
-                SCENE SETUP: ${locationDesc}
-                SUBJECT STATE: ${visualState}. 
-                APPEARANCE: ${recipe.title}. 
-                INGREDIENTS SCALE: ${ingredientsList}.
-                STYLE: Photorealistic, cinematic lighting, 8k.
-                ${universalNegative}`;
+            console.error("Dettaglio Risposta:", JSON.stringify(response.data, null, 2));
+            throw new Error("L'API ha risposto ma non ha restituito immagini.");
         }
-
-        const imgName = `step_${i + 1}.jpg`;
-        const imgPath = path.join(recipeDir, imgName);
-
-        const success = await generateImagen3Image(prompt, imgPath);
-        
-        if (success) {
-            recipe.step_images[i] = `/images/recipes/${recipe.slug}/${imgName}`;
-            console.log(`   ✅ Completato: ${imgName} [Stato: ${foodMaturity}] [Loc: ${isInAirFryer ? 'CEST' : 'BANCO'}]`);
-        }
-        
-        console.log(`   ⏳ Pausa 20s per quote API...`);
-        await new Promise(res => setTimeout(res, 20000));
+    } catch (err) {
+        console.error("❌ Dettaglio Errore:", JSON.stringify(err.response?.data || err.message, null, 2));
+        throw err;
     }
-
-    console.log(`\n📱 Avvio Pinterest...`);
-    await publishPin(recipe);
-
-    fs.writeFileSync(RECIPES_FILE, JSON.stringify(recipes, null, 2));
-    console.log(`\n💾 Dati salvati in recipes-it.json. 🎉`);
 }
 
-runTest();
+// ==========================================
+// CICLO PRINCIPALE
+// ==========================================
+async function runBatchGenerator() {
+    console.log("🚀 Avvio Generatore Text-to-Image Completo (Copertina + Step)...");
+
+    if (!process.env.GOOGLE_APPLICATION_CREDENTIALS) {
+        console.error("❌ ERRORE: Manca GOOGLE_APPLICATION_CREDENTIALS nel file .env");
+        return;
+    }
+
+    let recipes = JSON.parse(fs.readFileSync(RECIPES_FILE, 'utf-8'));
+
+    for (let rIndex = 0; rIndex < recipes.length; rIndex++) {
+        let recipe = recipes[rIndex];
+        const slug = recipe.slug;
+
+        // Per testare la tua logica, eseguiamo se mancano gli step O se vuoi rigenerare (puoi forzare qui)
+        const needsImages = !recipe.step_images || recipe.step_images.includes("") || recipe.step_images.length < recipe.instructions.length;
+        
+        if (!needsImages) continue;
+
+        console.log(`\n--- 👨‍🍳 Elaborazione: ${recipe.title.toUpperCase()} ---`);
+        await wait();
+
+        const recipeDir = path.join(IMAGES_DIR, slug);
+        if (!fs.existsSync(recipeDir)) fs.mkdirSync(recipeDir, { recursive: true });
+
+        // --- 1. RIGENERA IMMAGINE PRINCIPALE (COPERTINA) ---
+        console.log(`   📸 Generazione Immagine Principale (Click-Bait)...`);
+        try {
+            const promptCopertina = buildMasterPrompt(recipe, -1);
+            const base64Copertina = await generateImageWithVertex(promptCopertina);
+            const coverFileName = `${slug}.webp`; // Mantiene la tua estensione
+            const coverPath = path.join(IMAGES_DIR, coverFileName);
+            
+            await saveImage(base64Copertina, coverPath, true);
+            recipe.image = `/images/recipes/${coverFileName}`;
+            console.log(`   ✅ Sovrascritta copertina: ${coverFileName}`);
+            
+            await new Promise(res => setTimeout(res, 2000)); // Pausa Rate Limit
+        } catch (error) {
+            console.error(`   ❌ Errore API Copertina:`, error.message);
+            continue; // Se fallisce la copertina, passiamo oltre
+        }
+
+        // --- 2. GENERA IMMAGINI STEP-BY-STEP ---
+        if (!recipe.step_images) recipe.step_images = new Array(recipe.instructions.length).fill("");
+
+        for (let i = 0; i < recipe.instructions.length; i++) {
+            if (recipe.step_images[i] && recipe.step_images[i] !== "") continue;
+
+            console.log(`   📸 Generazione Step ${i + 1}/${recipe.instructions.length}...`);
+            
+            try {
+                const promptStep = buildMasterPrompt(recipe, i);
+                const base64Step = await generateImageWithVertex(promptStep);
+                
+                const fileName = `step_${i + 1}.jpg`;
+                const filePath = path.join(recipeDir, fileName);
+                
+                await saveImage(base64Step, filePath, false);
+                recipe.step_images[i] = `/images/recipes/${slug}/${fileName}`;
+                console.log(`   ✅ Salvato step_${i + 1}.jpg`);
+
+                fs.writeFileSync(RECIPES_FILE, JSON.stringify(recipes, null, 2));
+                await new Promise(res => setTimeout(res, 2000));
+                
+            } catch (error) {
+                console.error(`   ❌ Errore API nello Step ${i + 1}:`, error.message);
+                break;
+            }
+        }
+    }
+    console.log("\n✅ Elaborazione terminata.");
+}
+
+runBatchGenerator().catch(console.error);
