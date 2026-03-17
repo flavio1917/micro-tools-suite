@@ -27,6 +27,51 @@ const {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://www.convertitorefriggitrice.it").toString();
 
+// FIX 1: Diamo sempre la priorità alla descrizione della ricetta, se esiste
+const finalDescription = recipeData?.description || description;
+
+// FIX 2: Generazione Dati Strutturati Intelligente
+let schemaJson = null;
+if (recipeData) {
+  // Funzione per estrarre solo i numeri (es. "12-14" diventa 12, "2 ore" diventa 120)
+  const getMinutes = (timeStr: any) => {
+    if (!timeStr) return 0;
+    const str = timeStr.toString().toLowerCase();
+    const numMatch = str.match(/\d+/);
+    if (!numMatch) return 0;
+    let val = parseInt(numMatch[0]);
+    if (str.includes('ore') || str.includes('ora') || str.includes('h')) {
+      val = val * 60; // Converte le ore in minuti
+    }
+    return val;
+  };
+
+  const prepMin = getMinutes(recipeData.prep_time) || 10;
+  const cookMin = getMinutes(recipeData.time) || 15;
+  const totalMin = prepMin + cookMin;
+
+  schemaJson = JSON.stringify({
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": recipeData.title,
+    "image": [`https://www.convertitorefriggitrice.it${recipeData.image || `/images/recipes/${recipeData.slug}.webp`}`],
+    "description": finalDescription,
+    "prepTime": `PT${prepMin}M`,
+    "cookTime": `PT${cookMin}M`,
+    "totalTime": `PT${totalMin}M`,
+    "recipeYield": `${recipeData.portions || 2} servings`,
+    "recipeCategory": "Main Course",
+    "cookMethod": "Air Frying",
+    "recipeIngredient": recipeData.ingredients,
+    "recipeInstructions": recipeData.instructions ? recipeData.instructions.map((step: string, idx: number) => ({
+      "@type": "HowToStep",
+      "position": idx + 1,
+      "text": step
+    })) : [],
+    "author": { "@type": "Organization", "name": "Convertitore Friggitrice" }
+  });
+}
+
 const disclaimers = {
   it: "Trasparenza: In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. I risultati della conversione sono stime basate su parametri standard (-20°C / -20% tempo). Controlla sempre la cottura.",
   en: "Transparency: As an Amazon Associate, this site earns from qualifying purchases. Conversion results are estimates based on standard parameters (-40°F / -20% time). Always check your food.",
@@ -54,7 +99,7 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
     <meta name="generator" content={Astro.generator} />
     
     <title>{title}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={finalDescription} />
     <link rel="canonical" href={canonicalURL} />
     
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
@@ -69,21 +114,11 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={finalDescription} />
     <meta property="og:image" content={ogImage} />
 
-    {recipeData && (
-      <script type="application/ld+json" set:html={JSON.stringify({
-        "@context": "https://schema.org/",
-        "@type": "Recipe",
-        "name": recipeData.title,
-        "image": [`https://www.convertitorefriggitrice.it${recipeData.image}`],
-        "description": recipeData.description || `Come cucinare ${recipeData.title} in friggitrice ad aria.`,
-        "cookTime": `PT${recipeData.time}M`,
-        "recipeIngredient": recipeData.ingredients,
-        "prepTime": "PT5M",
-        "author": { "@type": "Organization", "name": "Convertitore Friggitrice" }
-      })} />
+    {schemaJson && (
+      <script type="application/ld+json" set:html={schemaJson} />
     )}
   </head>
   

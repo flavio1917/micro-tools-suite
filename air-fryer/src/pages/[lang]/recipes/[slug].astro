@@ -503,4 +503,26 @@ function enrichText(text: string) {
       }
     });
   </script>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": recipe.title,
+    "image": [ "https://www.convertitorefriggitrice.it" + imagePath ],
+    "description": recipe.description,
+    "prepTime": `PT${(recipe.prep_time || "10").toString().match(/\d+/) ? (recipe.prep_time || "10").toString().match(/\d+/)[0] : "10"}M`,
+    "cookTime": `PT${(recipe.time || "20").toString().match(/\d+/) ? (recipe.time || "20").toString().match(/\d+/)[0] : "20"}M`,
+    "totalTime": `PT${
+      (parseInt((recipe.prep_time || "10").toString().match(/\d+/)?.[0] || "10") + 
+      parseInt((recipe.time || "20").toString().match(/\d+/)?.[0] || "20"))
+    }M`,
+    "recipeYield": `${recipe.portions || 2} servings`,
+    "recipeCategory": "Main Course",
+    "cookMethod": "Air Frying",
+    "recipeIngredient": recipe.ingredients,
+    "recipeInstructions": recipe.instructions ? recipe.instructions.map((step, idx) => ({
+      "@type": "HowToStep",
+      "position": idx + 1,
+      "text": step
+    })) : []
+  })} />
 </MainLayout>
