@@ -1,6 +1,5 @@
 ---
-// Riceviamo lo slug della ricetta e i dati iniziali (se li abbiamo)
-const { slug, initialRating = 0, initialCount = 0 } = Astro.props;
+const { slug, title } = Astro.props;
 ---
 
 <div class="flex flex-col items-center gap-2 my-6 p-4 bg-slate-900/40 rounded-2xl border border-slate-800" id="rating-container">
@@ -19,24 +18,54 @@ const { slug, initialRating = 0, initialCount = 0 } = Astro.props;
   </div>
 
   <div class="text-sm text-slate-500">
-    <span id="avg-display">{initialRating > 0 ? initialRating : 'Nessun voto'}</span> 
-    <span id="count-display" class="ml-1">({initialCount} voti)</span>
+    <span id="avg-display">Nessun voto</span> 
+    <span id="count-display" class="ml-1"></span>
   </div>
 </div>
 
-<script is:inline define:vars={{ slug }}>
+<script is:inline define:vars={{ slug, title }}>
   const stars = document.querySelectorAll('.star-btn');
   const avgDisplay = document.getElementById('avg-display');
   const countDisplay = document.getElementById('count-display');
   let hasVoted = false;
 
+  // 1. CARICAMENTO VOTI ALL'AVVIO
+  fetch(`/api/vote?slug=${slug}`)
+    .then(res => res.json())
+    .then(data => {
+      if (data.count > 0) {
+        // Aggiorna l'interfaccia
+        avgDisplay.innerText = data.average;
+        countDisplay.innerText = `(${data.count} voti)`;
+        highlightStars(Math.round(data.average));
+
+        // Inserisce i dati SEO per Google (Rich Snippet)
+        const schema = {
+          "@context": "https://schema.org/",
+          "@type": "Recipe",
+          "name": title,
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": data.average,
+            "reviewCount": data.count,
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        };
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+      }
+    })
+    .catch(err => console.error("Errore caricamento voti", err));
+
+  // 2. GESTIONE DEL CLIC PER VOTARE
   stars.forEach(star => {
     star.addEventListener('click', async () => {
       if (hasVoted) return;
       
       const rating = star.getAttribute('data-value');
-      
-      // Feedback visivo immediato
       highlightStars(rating);
       hasVoted = true;
 
@@ -48,18 +77,13 @@ const { slug, initialRating = 0, initialCount = 0 } = Astro.props;
         });
 
         const data = await response.json();
-        
         if (data.success) {
           avgDisplay.innerText = data.average;
           countDisplay.innerText = `(${data.count} voti)`;
-          alert("Grazie per il tuo voto!");
         }
-      } catch (err) {
-        console.error("Errore al voto:", err);
-      }
+      } catch (err) {}
     });
 
-    // Effetto hover
     star.addEventListener('mouseenter', () => {
       if (!hasVoted) highlightStars(star.getAttribute('data-value'));
     });
@@ -70,8 +94,6 @@ const { slug, initialRating = 0, initialCount = 0 } = Astro.props;
       const sVal = s.getAttribute('data-value');
       s.classList.toggle('text-yellow-400', sVal <= val);
       s.classList.toggle('text-slate-700', sVal > val);
-      if (sVal <= val) s.classList.add('drop-shadow-[0_0_8px_rgba(250,204,21,0.5)]');
-      else s.classList.remove('drop-shadow-[0_0_8px_rgba(250,204,21,0.5)]');
     });
   }
 </script>

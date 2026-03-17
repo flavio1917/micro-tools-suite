@@ -1,36 +1,39 @@
 ---
-export const prerender = false; // <-- LA VERA MAGIA: dice ad Astro di non bloccare la build!
-
 import MainLayout from '../../../layouts/MainLayout.astro';
 import AmazonProduct from '../../../components/ads/AmazonProduct.astro';
-import StarRating from '../../../components/StarRating.astro'; 
-import Redis from 'ioredis'; 
+import StarRating from '../../../components/StarRating.astro'; // Componente pulito
 
 import recipesIt from '../../../data/recipes-it.json';
 import recipesEn from '../../../data/recipes-en.json';
 import recipesEs from '../../../data/recipes-es.json';
 import recipesFr from '../../../data/recipes-fr.json';
 
-// In SSR non ci serve più getStaticPaths, prendiamo i parametri direttamente dall'URL
-const { lang, slug } = Astro.params;
+// RIPRISTINIAMO getStaticPaths per la build statica (addio 404!)
+export async function getStaticPaths() {
+  const datasets = {
+    it: recipesIt,
+    en: recipesEn,
+    es: recipesEs,
+    fr: recipesFr
+  };
 
-const datasets = {
-  it: recipesIt,
-  en: recipesEn,
-  es: recipesEs,
-  fr: recipesFr
-};
-
-// Troviamo la ricetta giusta in tempo reale
-const recipes = datasets[lang as keyof typeof datasets] || datasets.it;
-const recipe = recipes.find(r => r.slug === slug);
-
-// Se qualcuno digita un URL sbagliato, lo rimandiamo alla home
-if (!recipe) {
-  return Astro.redirect(`/${lang}/#ricettario`);
+  const paths = [];
+  for (const [lang, recipes] of Object.entries(datasets)) {
+    recipes.forEach((recipe) => {
+      if (recipe && recipe.slug) {
+        paths.push({
+          params: { lang, slug: recipe.slug },
+          props: { recipe, lang },
+        });
+      }
+    });
+  }
+  return paths;
 }
 
-// Da qui in poi il tuo codice originale...
+const { recipe, lang } = Astro.props;
+
+// Dizionario traduzioni (lascialo come lo avevi)
 const translations = {
   it: {
     back: "Torna al Ricettario", backLink: "/#ricettario",
@@ -209,11 +212,7 @@ function enrichText(text: string) {
           {recipe.title}
         </h1>
         
-        <StarRating 
-          slug={slug} 
-          initialRating={initialRating} 
-          initialCount={initialCount} 
-        />
+        <StarRating slug={recipe.slug} title={recipe.title} />
         
         <p class="text-base md:text-xl text-slate-200 max-w-2xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-3 md:pt-4 mt-1 md:mt-2">
           {recipe.description}
