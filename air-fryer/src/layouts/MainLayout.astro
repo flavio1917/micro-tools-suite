@@ -63,8 +63,7 @@ if (recipeData) {
     "recipeCategory": "Main Course",
     "cookMethod": "Air Frying",
     // Inseriamo le keywords se esistono nel tuo JSON
-    "keywords": recipeData.keywords ? recipeData.keywords.join(", ") : "friggitrice ad aria, ricette",
-    "recipeIngredient": recipeData.ingredients,
+"keywords": Array.isArray(recipeData.keywords) ? recipeData.keywords.join(", ") : (recipeData.keywords || "friggitrice ad aria, ricette"),    "recipeIngredient": recipeData.ingredients,
     // Arricchiamo gli step con Nomi e Immagini per far contento Google
     "recipeInstructions": recipeData.instructions ? recipeData.instructions.map((step: string, idx: number) => ({
       "@type": "HowToStep",
