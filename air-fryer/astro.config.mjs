@@ -1,12 +1,11 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
-import vercel from '@astrojs/vercel'; // <--- ECCO LA MODIFICA! Niente più "/serverless"
-
+import vercel from '@astrojs/vercel';
 export default defineConfig({
   site: 'https://www.convertitorefriggitrice.it',
   
-  output: 'hybrid', 
+  // output: 'hybrid', 
   adapter: vercel(), 
 
   i18n: {
