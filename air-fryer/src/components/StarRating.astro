@@ -8,12 +8,12 @@ const { slug, title } = Astro.props;
   <div class="flex gap-1" id="star-wrapper">
     {[1, 2, 3, 4, 5].map((num) => (
       <button 
-        class="star-btn text-3xl transition-all duration-200 hover:scale-125 focus:outline-none text-slate-700" 
-        data-value={num}
-        aria-label={`Vota ${num} stelle`}
-      >
-        ★
-      </button>
+  class="star-btn text-3xl transition-all duration-200 hover:scale-125 focus:outline-none text-slate-500" 
+  data-value={num}
+  aria-label={`Vota ${num} stelle`}
+>
+  ★
+</button>
     ))}
   </div>
 
@@ -90,10 +90,12 @@ const { slug, title } = Astro.props;
   });
 
   function highlightStars(val) {
-    stars.forEach(s => {
-      const sVal = s.getAttribute('data-value');
-      s.classList.toggle('text-yellow-400', sVal <= val);
-      s.classList.toggle('text-slate-700', sVal > val);
-    });
-  }
+  stars.forEach(s => {
+    const sVal = s.getAttribute('data-value');
+    // Se la stella è minore o uguale al valore, diventa gialla
+    s.classList.toggle('text-yellow-400', sVal <= val);
+    // Se è maggiore, torna al grigio chiaro (invece del 700 che non vedi)
+    s.classList.toggle('text-slate-500', sVal > val); 
+  });
+}
 </script>
