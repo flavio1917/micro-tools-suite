@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
 export default defineConfig({
   site: 'https://www.convertitorefriggitrice.it',
-  
+  output: 'static',
   // output: 'hybrid', 
   adapter: vercel(), 
 
