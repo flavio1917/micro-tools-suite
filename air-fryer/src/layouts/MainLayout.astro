@@ -62,16 +62,19 @@ if (recipeData) {
     "recipeYield": `${recipeData.portions || 2} servings`,
     "recipeCategory": "Main Course",
     "cookMethod": "Air Frying",
+    // Inseriamo le keywords se esistono nel tuo JSON
+    "keywords": recipeData.keywords ? recipeData.keywords.join(", ") : "friggitrice ad aria, ricette",
     "recipeIngredient": recipeData.ingredients,
+    // Arricchiamo gli step con Nomi e Immagini per far contento Google
     "recipeInstructions": recipeData.instructions ? recipeData.instructions.map((step: string, idx: number) => ({
       "@type": "HowToStep",
-      "position": idx + 1,
-      "text": step
+      "name": `Step ${idx + 1}`,
+      "text": step,
+      "url": `https://www.convertitorefriggitrice.it/recipes/${recipeData.slug}#step-${idx + 1}`,
+      "image": `https://www.convertitorefriggitrice.it/images/recipes/${recipeData.slug}/step_${idx + 1}.jpg`
     })) : [],
     "author": { "@type": "Organization", "name": "Convertitore Friggitrice" }
   });
-}
-
 const disclaimers = {
   it: "Trasparenza: In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. I risultati della conversione sono stime basate su parametri standard (-20°C / -20% tempo). Controlla sempre la cottura.",
   en: "Transparency: As an Amazon Associate, this site earns from qualifying purchases. Conversion results are estimates based on standard parameters (-40°F / -20% time). Always check your food.",
