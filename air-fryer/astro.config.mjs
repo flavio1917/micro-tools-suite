@@ -1,12 +1,11 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
-import vercel from '@astrojs/vercel/serverless'; // <-- Aggiunto import Vercel
+import vercel from '@astrojs/vercel'; // <--- ECCO LA MODIFICA! Niente più "/serverless"
 
 export default defineConfig({
   site: 'https://www.convertitorefriggitrice.it',
   
-  // <-- ABILITIAMO LE API MANTENENDO IL SITO VELOCE -->
   output: 'hybrid', 
   adapter: vercel(), 
 
@@ -22,7 +21,6 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
-      // Configurazione extra per la sitemap multilingua
       i18n: {
         defaultLocale: 'it',
         locales: {
