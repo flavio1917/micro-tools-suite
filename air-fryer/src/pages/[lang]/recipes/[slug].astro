@@ -1,14 +1,13 @@
 ---
 import MainLayout from '../../../layouts/MainLayout.astro';
 import AmazonProduct from '../../../components/ads/AmazonProduct.astro';
-import StarRating from '../../../components/StarRating.astro'; // Componente pulito
+import StarRating from '../../../components/StarRating.astro';
 
 import recipesIt from '../../../data/recipes-it.json';
 import recipesEn from '../../../data/recipes-en.json';
 import recipesEs from '../../../data/recipes-es.json';
 import recipesFr from '../../../data/recipes-fr.json';
 
-// RIPRISTINIAMO getStaticPaths per la build statica (addio 404!)
 export async function getStaticPaths() {
   const datasets = {
     it: recipesIt,
@@ -33,7 +32,6 @@ export async function getStaticPaths() {
 
 const { recipe, lang } = Astro.props;
 
-// Dizionario traduzioni (lascialo come lo avevi)
 const translations = {
   it: {
     back: "Torna al Ricettario", backLink: "/#ricettario",
@@ -107,42 +105,11 @@ const cleanTime = recipe.time ? recipe.time.toString().replace(/\s*(minutes|mins
 const isAuth = recipe.isItalian === true;
 const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
 
-// --- LOGICA REDIS PER I VOTI (CARICAMENTO INIZIALE) ---
-let initialCount = 0;
-let initialRating = 0;
-
-// Eseguiamo la connessione a Redis solo se siamo sul server durante la build o in SSR
-try {
-  // process.env.REDIS_URL è usato da Vercel
-  const redisUrl = process.env.REDIS_URL || process.env.KV_URL;
-  if (redisUrl) {
-    const redis = new Redis(redisUrl);
-    const votesKey = `recipe:${slug}:votes`;
-    const sumKey = `recipe:${slug}:sum`;
-    
-    const [countStr, sumStr] = await Promise.all([
-      redis.get(votesKey),
-      redis.get(sumKey)
-    ]);
-    
-    initialCount = countStr ? parseInt(countStr) : 0;
-    const initialSum = sumStr ? parseInt(sumStr) : 0;
-    initialRating = initialCount > 0 ? parseFloat((initialSum / initialCount).toFixed(1)) : 0;
-    
-    // Chiudiamo la connessione se usiamo serverless
-    await redis.quit();
-  }
-} catch (e) {
-  console.error("Errore lettura Redis in fase di caricamento:", e);
-}
-
-// Inseriamo i dati nel SEO per fare in modo che Google mostri le stelline!
+// Niente più Redis qui! È tutto delegato al client.
 const seoRecipeData = { 
   ...recipe, 
   image: imagePath, 
-  isItalian: isAuth,
-  ratingValue: initialRating, // Valore da passare al MainLayout per Schema.org
-  ratingCount: initialCount   // Conteggio da passare al MainLayout per Schema.org
+  isItalian: isAuth
 };
 
 const getLocalizedUrl = (targetLang: string) => {
