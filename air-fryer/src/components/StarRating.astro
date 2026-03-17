@@ -22,7 +22,7 @@ const { slug, title } = Astro.props;
     <span id="count-display" class="ml-1"></span>
   </div>
 </div>
-
+<div class="border-4 border-red-600 ..." id="rating-container"></div>
 <script is:inline define:vars={{ slug, title }}>
   const stars = document.querySelectorAll('.star-btn');
   const avgDisplay = document.getElementById('avg-display');
