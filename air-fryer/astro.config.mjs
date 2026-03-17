@@ -1,9 +1,15 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import vercel from '@astrojs/vercel/serverless'; // <-- Aggiunto import Vercel
 
 export default defineConfig({
   site: 'https://www.convertitorefriggitrice.it',
+  
+  // <-- ABILITIAMO LE API MANTENENDO IL SITO VELOCE -->
+  output: 'hybrid', 
+  adapter: vercel(), 
+
   i18n: {
     defaultLocale: 'it',
     locales: ['it', 'en', 'es', 'fr'],
