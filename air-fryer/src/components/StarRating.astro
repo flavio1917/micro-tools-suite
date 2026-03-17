@@ -1,0 +1,77 @@
+---
+// Riceviamo lo slug della ricetta e i dati iniziali (se li abbiamo)
+const { slug, initialRating = 0, initialCount = 0 } = Astro.props;
+---
+
+<div class="flex flex-col items-center gap-2 my-6 p-4 bg-slate-900/40 rounded-2xl border border-slate-800" id="rating-container">
+  <p class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Valuta questa ricetta</p>
+  
+  <div class="flex gap-1" id="star-wrapper">
+    {[1, 2, 3, 4, 5].map((num) => (
+      <button 
+        class="star-btn text-3xl transition-all duration-200 hover:scale-125 focus:outline-none text-slate-700" 
+        data-value={num}
+        aria-label={`Vota ${num} stelle`}
+      >
+        ★
+      </button>
+    ))}
+  </div>
+
+  <div class="text-sm text-slate-500">
+    <span id="avg-display">{initialRating > 0 ? initialRating : 'Nessun voto'}</span> 
+    <span id="count-display" class="ml-1">({initialCount} voti)</span>
+  </div>
+</div>
+
+<script is:inline define:vars={{ slug }}>
+  const stars = document.querySelectorAll('.star-btn');
+  const avgDisplay = document.getElementById('avg-display');
+  const countDisplay = document.getElementById('count-display');
+  let hasVoted = false;
+
+  stars.forEach(star => {
+    star.addEventListener('click', async () => {
+      if (hasVoted) return;
+      
+      const rating = star.getAttribute('data-value');
+      
+      // Feedback visivo immediato
+      highlightStars(rating);
+      hasVoted = true;
+
+      try {
+        const response = await fetch('/api/vote', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ slug, rating: parseInt(rating) })
+        });
+
+        const data = await response.json();
+        
+        if (data.success) {
+          avgDisplay.innerText = data.average;
+          countDisplay.innerText = `(${data.count} voti)`;
+          alert("Grazie per il tuo voto!");
+        }
+      } catch (err) {
+        console.error("Errore al voto:", err);
+      }
+    });
+
+    // Effetto hover
+    star.addEventListener('mouseenter', () => {
+      if (!hasVoted) highlightStars(star.getAttribute('data-value'));
+    });
+  });
+
+  function highlightStars(val) {
+    stars.forEach(s => {
+      const sVal = s.getAttribute('data-value');
+      s.classList.toggle('text-yellow-400', sVal <= val);
+      s.classList.toggle('text-slate-700', sVal > val);
+      if (sVal <= val) s.classList.add('drop-shadow-[0_0_8px_rgba(250,204,21,0.5)]');
+      else s.classList.remove('drop-shadow-[0_0_8px_rgba(250,204,21,0.5)]');
+    });
+  }
+</script>
