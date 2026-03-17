@@ -1,39 +1,36 @@
 ---
+export const prerender = false; // <-- LA VERA MAGIA: dice ad Astro di non bloccare la build!
+
 import MainLayout from '../../../layouts/MainLayout.astro';
 import AmazonProduct from '../../../components/ads/AmazonProduct.astro';
-import StarRating from '../../../components/StarRating.astro'; // <-- IMPORT DEL COMPONENTE
-import Redis from 'ioredis'; // <-- IMPORT DI REDIS PER LEGGERE I VOTI ALL'AVVIO
+import StarRating from '../../../components/StarRating.astro'; 
+import Redis from 'ioredis'; 
 
 import recipesIt from '../../../data/recipes-it.json';
 import recipesEn from '../../../data/recipes-en.json';
 import recipesEs from '../../../data/recipes-es.json';
 import recipesFr from '../../../data/recipes-fr.json';
 
-export async function getStaticPaths() {
-  const datasets = {
-    it: recipesIt,
-    en: recipesEn,
-    es: recipesEs,
-    fr: recipesFr
-  };
+// In SSR non ci serve più getStaticPaths, prendiamo i parametri direttamente dall'URL
+const { lang, slug } = Astro.params;
 
-  const paths = [];
-  for (const [lang, recipes] of Object.entries(datasets)) {
-    recipes.forEach((recipe) => {
-      if (recipe && recipe.slug) {
-        paths.push({
-          params: { lang, slug: recipe.slug },
-          props: { recipe, lang },
-        });
-      }
-    });
-  }
-  return paths;
+const datasets = {
+  it: recipesIt,
+  en: recipesEn,
+  es: recipesEs,
+  fr: recipesFr
+};
+
+// Troviamo la ricetta giusta in tempo reale
+const recipes = datasets[lang as keyof typeof datasets] || datasets.it;
+const recipe = recipes.find(r => r.slug === slug);
+
+// Se qualcuno digita un URL sbagliato, lo rimandiamo alla home
+if (!recipe) {
+  return Astro.redirect(`/${lang}/#ricettario`);
 }
 
-const { recipe, lang } = Astro.props;
-const { slug } = Astro.params; // Estrapoliamo lo slug dalle params per usarlo con Redis
-
+// Da qui in poi il tuo codice originale...
 const translations = {
   it: {
     back: "Torna al Ricettario", backLink: "/#ricettario",
