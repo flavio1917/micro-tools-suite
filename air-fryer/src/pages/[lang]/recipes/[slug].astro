@@ -102,10 +102,10 @@ function enrichText(text: string) {
     <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40"></div>
     
-    <div class="absolute top-4 md:top-6 left-0 right-0 z-50 px-4 w-full">
+    <div class="absolute top-4 md:top-6 left-0 right-0 z-50 px-3 md:px-4 w-full">
       <div class="max-w-5xl mx-auto flex justify-between items-center relative h-10 md:h-11">
         
-        <a href={t.backLink} class="flex items-center justify-center h-full px-3 md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 w-10 md:w-auto overflow-hidden">
+        <a href={t.backLink} class="flex items-center justify-center h-full w-10 md:w-auto md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10">
           <svg class="w-4 h-4 md:mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
           <span class="hidden md:inline font-bold text-xs">{t.back}</span>
         </a>
@@ -114,14 +114,12 @@ function enrichText(text: string) {
           <StarRating slug={baseImageName} title={recipe.title} />
         </div>
 
-        <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl z-10">
-          <div class="flex items-center gap-1.5 md:gap-2">
+        <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl z-10 gap-1.5 md:gap-2">
             {['it', 'en', 'es', 'fr'].map((l) => (
               <a href={getLocalizedUrl(l)} class={`transition-all flex items-center justify-center ${lang === l ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-40 hover:opacity-100'}`}>
                 <img src={`https://flagcdn.com/${l === 'en' ? 'gb' : l}.svg`} alt={l.toUpperCase()} class="w-4 h-[11px] md:w-[18px] md:h-[13px] rounded-[1px] object-cover" />
               </a>
             ))}
-          </div>
         </div>
 
       </div>
