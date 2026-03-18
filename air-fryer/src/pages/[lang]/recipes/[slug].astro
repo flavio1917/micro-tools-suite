@@ -9,21 +9,12 @@ import recipesEs from '../../../data/recipes-es.json';
 import recipesFr from '../../../data/recipes-fr.json';
 
 export async function getStaticPaths() {
-  const datasets = {
-    it: recipesIt,
-    en: recipesEn,
-    es: recipesEs,
-    fr: recipesFr
-  };
-
+  const datasets = { it: recipesIt, en: recipesEn, es: recipesEs, fr: recipesFr };
   const paths = [];
   for (const [lang, recipes] of Object.entries(datasets)) {
     recipes.forEach((recipe) => {
       if (recipe && recipe.slug) {
-        paths.push({
-          params: { lang, slug: recipe.slug },
-          props: { recipe, lang },
-        });
+        paths.push({ params: { lang, slug: recipe.slug }, props: { recipe, lang } });
       }
     });
   }
@@ -34,60 +25,36 @@ const { recipe, lang } = Astro.props;
 
 const translations = {
   it: {
-    back: "Indietro", backLink: "/#ricettario",
-    temp: "Temperatura", time: "Cottura", prep: "Preparazione",
-    portions: "Porzioni", pers: "pers.",
-    ingTitle: "Ingredienti", noIng: "Vedi descrizione per i dettagli.",
-    stepTitle: "Procedimento",
-    step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro. Se necessario, ungi leggermente il cibo con un filo d'olio spray.",
-    step2: "Cottura", step2Desc: `Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minuti</strong>.`,
-    tipTitle: "Il Segreto dello Chef",
-    searchOther: "← Cerca un'altra ricetta",
-    authBadge: "Ricetta Autentica", seoAuth: " | Ricetta Originale",
-    unitTemp: "°C", unitTime: "min",
-    bannerTop: "MIGLIORA LA TUA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori Universale definitivo.", bannerBtn: "Scopri le Offerte"
+    back: "Indietro", backLink: "/#ricettario", temp: "Temperatura", time: "Cottura", prep: "Preparazione",
+    portions: "Porzioni", pers: "pers.", ingTitle: "Ingredienti", noIng: "Vedi descrizione per i dettagli.",
+    stepTitle: "Procedimento", step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro.",
+    step2: "Cottura", step2Desc: `Imposta a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
+    tipTitle: "Il Segreto dello Chef", searchOther: "← Cerca un'altra ricetta", authBadge: "Autentica", seoAuth: " | Ricetta Originale",
+    unitTemp: "°C", unitTime: "min", bannerTop: "MIGLIORA LA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori.", bannerBtn: "Offerte"
   },
   en: {
-    back: "Back", backLink: "/en/#ricettario",
-    temp: "Temperature", time: "Cook Time", prep: "Prep Time",
-    portions: "Servings", pers: "pers.",
-    ingTitle: "Ingredients", noIng: "See description for details.",
-    stepTitle: "Instructions",
-    step1: "Preparation", step1Desc: "Prepare all ingredients on the counter. Lightly coat the food with cooking spray.",
-    step2: "Cooking", step2Desc: `Set air fryer to <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°F</strong>. Cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
-    tipTitle: "Chef's Tip",
-    searchOther: "← Search another recipe",
-    authBadge: "Authentic Italian", seoAuth: " | Authentic Italian Recipe",
-    unitTemp: "°F", unitTime: "min",
-    bannerTop: "UPGRADE YOUR AIR FRYER", bannerBot: "Discover the ultimate Universal Accessory Kit.", bannerBtn: "View Deals"
+    back: "Back", backLink: "/en/#ricettario", temp: "Temperature", time: "Cook Time", prep: "Prep Time",
+    portions: "Servings", pers: "pers.", ingTitle: "Ingredients", noIng: "See description for details.",
+    stepTitle: "Instructions", step1: "Preparation", step1Desc: "Prepare all ingredients on the counter.",
+    step2: "Cooking", step2Desc: `Set to <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°F</strong>. Cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
+    tipTitle: "Chef's Tip", searchOther: "← Search another recipe", authBadge: "Authentic", seoAuth: " | Authentic Recipe",
+    unitTemp: "°F", unitTime: "min", bannerTop: "UPGRADE AIR FRYER", bannerBot: "Discover the ultimate Kit.", bannerBtn: "Deals"
   },
   es: {
-    back: "Volver", backLink: "/es/#ricettario",
-    temp: "Temperatura", time: "Cocción", prep: "Preparación",
-    portions: "Porciones", pers: "pers.",
-    ingTitle: "Ingredientes", noIng: "Ver descripción para más detalles.",
-    stepTitle: "Instrucciones",
-    step1: "Preparación", step1Desc: "Prepara todos los ingredientes. Rocía ligeramente la comida con aceite en spray.",
-    step2: "Cocción", step2Desc: `Ajusta la freidora a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutos</strong>.`,
-    tipTitle: "Consejo del Chef",
-    searchOther: "← Buscar otra receta",
-    authBadge: "Receta Auténtica", seoAuth: " | Auténtica Receta Italiana",
-    unitTemp: "°C", unitTime: "min",
-    bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit de Accesorios Universal definitivo.", bannerBtn: "Ver Ofertas"
+    back: "Volver", backLink: "/es/#ricettario", temp: "Temperatura", time: "Cocción", prep: "Preparación",
+    portions: "Porciones", pers: "pers.", ingTitle: "Ingredientes", noIng: "Ver descripción.",
+    stepTitle: "Instrucciones", step1: "Preparación", step1Desc: "Prepara todos los ingredientes.",
+    step2: "Cocción", step2Desc: `Ajusta a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
+    tipTitle: "Consejo del Chef", searchOther: "← Buscar otra receta", authBadge: "Auténtica", seoAuth: " | Auténtica",
+    unitTemp: "°C", unitTime: "min", bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit definitivo.", bannerBtn: "Ofertas"
   },
   fr: {
-    back: "Retour", backLink: "/fr/#ricettario",
-    temp: "Température", time: "Cuisson", prep: "Préparation",
-    portions: "Portions", pers: "pers.",
-    ingTitle: "Ingrédients", noIng: "Voir la description pour les détails.",
-    stepTitle: "Instructions",
-    step1: "Préparation", step1Desc: "Préparez tous les ingrédients. Vaporisez légèrement les aliments d'huile.",
-    step2: "Cuisson", step2Desc: `Réglez la friteuse sur <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
-    tipTitle: "Astuce du Chef",
-    searchOther: "← Chercher une autre recette",
-    authBadge: "Recette Authentique", seoAuth: " | Recette Italienne Authentique",
-    unitTemp: "°C", unitTime: "min",
-    bannerTop: "AMÉLIOREZ VOTRE FRITEUSE", bannerBot: "Découvrez le Kit d'Accessoires Universel ultime.", bannerBtn: "Voir les Offres"
+    back: "Retour", backLink: "/fr/#ricettario", temp: "Température", time: "Cuisson", prep: "Préparation",
+    portions: "Portions", pers: "pers.", ingTitle: "Ingrédients", noIng: "Voir la description.",
+    stepTitle: "Instructions", step1: "Préparation", step1Desc: "Préparez tous les ingrédients.",
+    step2: "Cuisson", step2Desc: `Réglez sur <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
+    tipTitle: "Astuce du Chef", searchOther: "← Chercher autre", authBadge: "Authentique", seoAuth: " | Authentique",
+    unitTemp: "°C", unitTime: "min", bannerTop: "AMÉLIOREZ LA FRITEUSE", bannerBot: "Découvrez le Kit ultime.", bannerBtn: "Offres"
   }
 };
 
@@ -97,19 +64,13 @@ const baseImageName = recipe.image || recipe.slug;
 const imagePath = `/images/recipes/${baseImageName}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
 
-const sharedStepImages = recipe.instructions.map((_, index) => {
-  return `/images/recipes/${baseImageName}/step_${index + 1}.jpg`;
-});
+const sharedStepImages = recipe.instructions.map((_, index) => `/images/recipes/${baseImageName}/step_${index + 1}.jpg`);
 
 const cleanTime = recipe.time ? recipe.time.toString().replace(/\s*(minutes|mins|min)\s*/gi, '') : "--";
 const isAuth = recipe.isItalian === true;
 const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
 
-const seoRecipeData = { 
-  ...recipe, 
-  image: imagePath, 
-  isItalian: isAuth
-};
+const seoRecipeData = { ...recipe, image: imagePath, isItalian: isAuth };
 
 const getLocalizedUrl = (targetLang: string) => {
   const datasets: Record<string, any[]> = { it: recipesIt, en: recipesEn, es: recipesEs, fr: recipesFr };
@@ -137,55 +98,42 @@ function enrichText(text: string) {
 
 <MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData}>
   
-  <div class="relative h-[45vh] min-h-[360px] md:h-[50vh] md:min-h-[400px] w-full overflow-hidden bg-slate-900">
-    <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80 transition-transform duration-1000 hover:scale-105" onerror="this.style.opacity='0'" />
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/70 to-slate-950/20"></div>
+  <div class="relative h-[40vh] min-h-[320px] md:h-[45vh] w-full overflow-hidden bg-slate-900">
+    <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40"></div>
     
-    <div class="absolute top-4 md:top-6 left-0 right-0 z-20 px-4 flex justify-between items-start w-full max-w-5xl mx-auto">
-      
-      <a href={t.backLink} class="flex items-center justify-center bg-slate-800/80 backdrop-blur-md text-white border border-slate-500/50 shadow-xl transition-all hover:bg-slate-700 w-10 h-10 rounded-full md:w-auto md:h-auto md:px-4 md:py-2">
-        <svg class="w-5 h-5 md:w-4 md:h-4 md:mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-        <span class="hidden md:inline font-bold text-sm">{t.back}</span>
-      </a>
+    <div class="absolute top-4 md:top-6 left-0 right-0 z-50 px-4 w-full">
+      <div class="max-w-5xl mx-auto flex justify-between items-center relative h-10 md:h-11">
+        
+        <a href={t.backLink} class="flex items-center justify-center h-full px-3 md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 w-10 md:w-auto overflow-hidden">
+          <svg class="w-4 h-4 md:mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          <span class="hidden md:inline font-bold text-xs">{t.back}</span>
+        </a>
 
-      <div class="flex items-center gap-2">
-        {isAuth && (
-          <div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 border border-yellow-200/80 text-black text-[10px] font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(245,158,11,0.5)]">
-            <img src="https://flagcdn.com/it.svg" alt="Italia" class="w-3.5 h-auto rounded-[2px]" />
-            <span class="drop-shadow-sm whitespace-nowrap">{t.authBadge}</span>
-          </div>
-        )}
-        <div class="inline-flex items-center gap-1.5 md:gap-2 bg-slate-800/80 backdrop-blur-md px-2.5 py-1.5 md:px-3 md:py-2 rounded-full border border-slate-600 shadow-xl">
-          <a href={getLocalizedUrl('it')} class={`transition-all ${lang === 'it' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
-            <img src="https://flagcdn.com/it.svg" alt="IT" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
-          </a>
-          <a href={getLocalizedUrl('en')} class={`transition-all ${lang === 'en' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
-            <img src="https://flagcdn.com/gb.svg" alt="EN" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
-          </a>
-          <a href={getLocalizedUrl('es')} class={`transition-all ${lang === 'es' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
-            <img src="https://flagcdn.com/es.svg" alt="ES" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
-          </a>
-          <a href={getLocalizedUrl('fr')} class={`transition-all ${lang === 'fr' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
-            <img src="https://flagcdn.com/fr.svg" alt="FR" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
-          </a>
+        <div class="absolute left-1/2 -translate-x-1/2 h-full z-20">
+          <StarRating slug={baseImageName} title={recipe.title} />
         </div>
+
+        <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl z-10">
+          <div class="flex items-center gap-1.5 md:gap-2">
+            {['it', 'en', 'es', 'fr'].map((l) => (
+              <a href={getLocalizedUrl(l)} class={`transition-all flex items-center justify-center ${lang === l ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-40 hover:opacity-100'}`}>
+                <img src={`https://flagcdn.com/${l === 'en' ? 'gb' : l}.svg`} alt={l.toUpperCase()} class="w-4 h-[11px] md:w-[18px] md:h-[13px] rounded-[1px] object-cover" />
+              </a>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
     
-    <div class="relative max-w-5xl mx-auto px-4 h-full flex flex-col justify-end pb-8 md:pb-12 z-10 text-center">
-      
-      <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
+    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-8 md:pb-12 z-10 text-center">
+      <h1 class="text-xl md:text-3xl lg:text-4xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
         {recipe.title}
       </h1>
-      
-      <div class="flex justify-center items-center transform scale-75 md:scale-90 origin-center -my-3 md:-my-4">
-        <StarRating slug={baseImageName} title={recipe.title} />
-      </div>
-      
-      <p class="text-sm md:text-lg text-slate-200 max-w-2xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-3 mt-3 px-3">
+      <p class="text-xs md:text-base text-slate-300 max-w-2xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-2 md:pt-3 mt-1 px-3 leading-relaxed">
         {recipe.description}
       </p>
-
     </div>
   </div>
 
@@ -222,11 +170,8 @@ function enrichText(text: string) {
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
       <div class="lg:col-span-1">
         <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sticky top-8 shadow-lg">
-          
           <h3 class="text-xl font-bold text-white mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
-            <div class="flex items-center gap-3">
-              <span class="text-2xl">🛒</span> {t.ingTitle}
-            </div>
+            <div class="flex items-center gap-3"><span class="text-2xl">🛒</span> {t.ingTitle}</div>
             {lang === 'en' && (
               <div class="bg-slate-800/80 p-1 rounded-full border border-slate-600 flex items-center shrink-0 shadow-inner">
                 <button id="btn-imperial" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm">Imperial</button>
@@ -234,7 +179,6 @@ function enrichText(text: string) {
               </div>
             )}
           </h3>
-
           <ul class="space-y-4">
             {recipe.ingredients && recipe.ingredients.length > 0 ? (
               recipe.ingredients.map((ing) => (
@@ -243,111 +187,57 @@ function enrichText(text: string) {
                   <span class="leading-relaxed group-hover:text-white transition-colors ingredient-text" data-original={ing} set:html={enrichText(ing)}></span>
                 </li>
               ))
-            ) : (
-              <li class="text-slate-500 italic text-sm">{t.noIng}</li>
-            )}
+            ) : (<li class="text-slate-500 italic text-sm">{t.noIng}</li>)}
           </ul>
         </div>
       </div>
 
       <div class="lg:col-span-2 space-y-8">
         <AmazonProduct recipe={recipe} lang={lang} />
-
         <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl">
-          <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-            <span class="text-3xl">👨‍🍳</span> {t.stepTitle}
-          </h3>
-          
+          <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"><span class="text-3xl">👨‍🍳</span> {t.stepTitle}</h3>
           <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
             {recipe.instructions && Array.isArray(recipe.instructions) ? (
               recipe.instructions.map((step, index) => (
                 <div class="flex gap-6 relative">
                   <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
                   <div class="pt-1 pb-2 w-full">
-                    
                     <p class="text-slate-300 leading-relaxed text-lg instruction-text mb-4" set:html={enrichText(step)}></p>
-                    
                     {sharedStepImages && sharedStepImages[index] && sharedStepImages[index] !== "" && (
                       <div class="mb-4">
-                        <img 
-                          src={sharedStepImages[index]} 
-                          alt={`Step ${index + 1} - ${recipe.title}`} 
-                          class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover" 
-                          loading="lazy" 
-                          onerror="this.parentElement.style.display='none';"
-                        />
+                        <img src={sharedStepImages[index]} alt={`Step ${index + 1}`} class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover" loading="lazy" onerror="this.parentElement.style.display='none';" />
                       </div>
                     )}
-
                   </div>
                 </div>
               ))
             ) : (
               <>
                 <div class="flex gap-6 relative">
-                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">1</div>
-                  <div class="pt-1">
-                    <h4 class="text-lg font-bold text-white mb-2">{t.step1}</h4>
-                    <p class="text-slate-400 leading-relaxed" set:html={enrichText(t.step1Desc)}></p>
-                  </div>
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg z-10">1</div>
+                  <div class="pt-1"><h4 class="text-lg font-bold text-white mb-2">{t.step1}</h4><p class="text-slate-400" set:html={enrichText(t.step1Desc)}></p></div>
                 </div>
                 <div class="flex gap-6 relative">
-                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">2</div>
-                  <div class="pt-1">
-                    <h4 class="text-lg font-bold text-white mb-2">{t.step2}</h4>
-                    <p class="text-slate-400 leading-relaxed" set:html={t.step2Desc}></p>
-                  </div>
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg z-10">2</div>
+                  <div class="pt-1"><h4 class="text-lg font-bold text-white mb-2">{t.step2}</h4><p class="text-slate-400" set:html={t.step2Desc}></p></div>
                 </div>
               </>
             )}
-
             {recipe.tip && (
               <div class="flex gap-6 relative">
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-bold text-black shadow-lg shadow-amber-500/20 ring-4 ring-slate-900 z-10">💡</div>
-                <div class="pt-1 w-full">
-                  <h4 class="text-amber-400 font-bold mb-2">{t.tipTitle}</h4>
-                  <div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
-                    <p class="text-amber-100 italic leading-relaxed">"{recipe.tip}"</p>
-                  </div>
-                </div>
+                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-bold text-black shadow-lg shadow-amber-500/20 z-10">💡</div>
+                <div class="pt-1 w-full"><h4 class="text-amber-400 font-bold mb-2">{t.tipTitle}</h4><div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4"><p class="text-amber-100 italic">"{recipe.tip}"</p></div></div>
               </div>
             )}
           </div>
         </div>
 
         <div class="text-center pt-8 border-t border-slate-800">
-          <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-all font-medium">
-            {t.searchOther}
-          </a>
+          <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-all font-medium">{t.searchOther}</a>
         </div>
       </div>
     </div>
   </div>
-
-  {lang === 'it' && (
-    <div class="fixed bottom-0 left-0 right-0 z-[100] transition-transform duration-300">
-      <div class="w-full bg-[#0B1120] border-t border-orange-500/30 shadow-[0_-15px_40px_rgba(0,0,0,0.6)]">
-        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-          
-          <div class="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
-             <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 p-[1px] flex-shrink-0 shadow-[0_0_10px_rgba(245,158,11,0.5)] animate-pulse">
-                <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-lg">🎁</div>
-             </div>
-            <div class="flex-1 min-w-0">
-              <span class="block text-[10px] uppercase tracking-widest font-extrabold text-orange-500 mb-0.5 drop-shadow-md truncate">{t.bannerTop}</span>
-              <p class="text-sm md:text-base text-white leading-tight font-bold truncate">{t.bannerBot}</p>
-            </div>
-          </div>
-
-          <a href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convfriggit-21" target="_blank" rel="nofollow noopener" class="flex-shrink-0 bg-orange-500 hover:bg-orange-400 text-black text-xs md:text-sm font-black py-2.5 px-5 rounded-full flex items-center gap-1.5 shadow-[0_0_15px_rgba(245,158,11,0.4)] transition-all hover:scale-105 active:scale-95">
-            <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-            <span class="hidden sm:inline">Scopri le</span> Offerte
-          </a>
-          
-        </div>
-      </div>
-    </div>
-  )}
 
   <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang }}>
     document.addEventListener('DOMContentLoaded', () => {
@@ -357,141 +247,58 @@ function enrichText(text: string) {
       const btnPlus = document.getElementById('btn-plus');
       const ingredients = document.querySelectorAll('.ingredient-text');
 
-      const affiliateLinksClient = [
-        { regex: /(carta(?:\s+da)?\s+forno(?:(?:\s+in)?\s+fogli)?(?:\s+forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
-        { regex: /(olio(?:\s+(?:extravergine|extra vergine)\s+d'oliva|\s+evo)?\s+spray|nebulizzare(?:\s+(?:con\s+)?olio)?|nebulizzatore(?:\s+d'olio)?|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
-        { regex: /(teglia(?:\s+in)?\s+silicone|cestello(?:\s+in)?\s+silicone|stampo(?:\s+in)?\s+silicone|silicone(?: liner| mold| pan| basket)|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
-        { regex: /(termometro\b(?:\s+per\s+carne|\s+alimentare)?|meat thermometer|termómetro(?: de carne)?|thermomètre(?: à viande)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" },
-        { regex: /(pinze(?:\s+da\s+cucina|\s+in\s+silicone)?|kitchen tongs|pinzas(?: de cocina)?|pinces(?: de cuisine)?)/gi, link: "https://www.amazon.it/dp/B08P1QDFN6?tag=convfriggit-21" }
-      ];
-
-      function enrichTextClient(text) {
-        if (!text) return text;
-        let enriched = text;
-        affiliateLinksClient.forEach(item => {
-          enriched = enriched.replace(item.regex, `<a href="${item.link}" target="_blank" rel="nofollow noopener" title="Vedi su Amazon" class="text-orange-400 font-bold hover:text-orange-300 hover:underline decoration-orange-500/50 underline-offset-4 transition-colors">$1</a>`);
-        });
-        return enriched;
-      }
-
       let isMetric = false; 
       const btnImperial = document.getElementById('btn-imperial');
       const btnMetric = document.getElementById('btn-metric');
-      
       const tempValDisplay = document.getElementById('display-temp-val');
       const tempUnitDisplay = document.getElementById('display-temp-unit');
-      const instTempVals = document.querySelectorAll('.recipe-temp-val');
-      const instTempUnits = document.querySelectorAll('.recipe-temp-unit');
 
       if (!display || !btnMinus || !btnPlus) return;
 
-      function fToC(f) { 
-        const celsius = (f - 32) * 5/9;
-        return Math.round(celsius / 5) * 5; 
-      }
-      
-      function smartRound(val) {
-        if (val >= 100) return Math.round(val / 10) * 10;
-        if (val >= 10) return Math.round(val / 5) * 5;
-        return Math.round(val);
-      }
-
+      function fToC(f) { return Math.round(((f - 32) * 5/9) / 5) * 5; }
+      function smartRound(val) { return val >= 100 ? Math.round(val / 10) * 10 : val >= 10 ? Math.round(val / 5) * 5 : Math.round(val); }
       function ozToG(oz) { return smartRound(oz * 28.3495); }
       function flOzToMl(floz) { return smartRound(floz * 29.5735); }
       function lbsToKg(lbs) { return (lbs * 0.453592).toFixed(2); }
 
-      const regexOz = /([\d.,]+)\s*oz\b/gi;
-      const regexFlOz = /([\d.,]+)\s*fl oz\b/gi;
-      const regexLbs = /([\d.,]+)\s*lbs?\b/gi;
-
       function scaleAndConvertIngredient(originalStr, ratio, forceMetric) {
-        let currentStr = originalStr;
-
+        let str = originalStr;
         if (forceMetric) {
-            currentStr = currentStr.replace(regexFlOz, (match, p1) => `${flOzToMl(parseFloat(p1))} ml`);
-            currentStr = currentStr.replace(regexOz, (match, p1) => `${ozToG(parseFloat(p1))} g`);
-            currentStr = currentStr.replace(regexLbs, (match, p1) => `${lbsToKg(parseFloat(p1))} kg`);
+            str = str.replace(/([\d.,]+)\s*fl oz\b/gi, (m, p1) => `${flOzToMl(parseFloat(p1))} ml`);
+            str = str.replace(/([\d.,]+)\s*oz\b/gi, (m, p1) => `${ozToG(parseFloat(p1))} g`);
+            str = str.replace(/([\d.,]+)\s*lbs?\b/gi, (m, p1) => `${lbsToKg(parseFloat(p1))} kg`);
         }
-
-        const match = currentStr.trim().match(/^([\d.,]+(?:\/\d+)?)\s+(.*)/);
-        if (!match) return currentStr; 
-
+        const match = str.trim().match(/^([\d.,]+(?:\/\d+)?)\s+(.*)/);
+        if (!match) return str; 
         let numStr = match[1].replace(',', '.');
-        let num = 0;
-        
-        if (numStr.includes('/')) {
-          const parts = numStr.split('/');
-          num = parseFloat(parts[0]) / parseFloat(parts[1]);
-        } else {
-          num = parseFloat(numStr);
-        }
-
-        if (isNaN(num)) return currentStr;
-
+        let num = numStr.includes('/') ? parseFloat(numStr.split('/')[0]) / parseFloat(numStr.split('/')[1]) : parseFloat(numStr);
+        if (isNaN(num)) return str;
         let newNum = num * ratio;
         newNum = Number.isInteger(newNum) ? newNum : parseFloat(newNum.toFixed(2));
-
         return newNum + " " + match[2];
       }
 
       function updateUI() {
         display.textContent = currentPortions;
         const ratio = currentPortions / basePortions;
-
         ingredients.forEach(el => {
-          const originalText = el.getAttribute('data-original');
-          const scaledText = scaleAndConvertIngredient(originalText, ratio, isMetric);
-          el.innerHTML = enrichTextClient(scaledText);
+          el.innerHTML = el.innerHTML.replace(el.innerText, scaleAndConvertIngredient(el.getAttribute('data-original'), ratio, isMetric));
         });
-
         if (lang === 'en' && tempValDisplay && baseTemp) {
-            const currentTemp = isMetric ? fToC(baseTemp) : baseTemp;
-            const currentUnit = isMetric ? "°C" : "°F";
-            
-            tempValDisplay.textContent = currentTemp;
-            tempUnitDisplay.textContent = currentUnit;
-
-            instTempVals.forEach(el => el.textContent = currentTemp);
-            instTempUnits.forEach(el => el.textContent = currentUnit);
+            tempValDisplay.textContent = isMetric ? fToC(baseTemp) : baseTemp;
+            tempUnitDisplay.textContent = isMetric ? "°C" : "°F";
+            document.querySelectorAll('.recipe-temp-val').forEach(el => el.textContent = isMetric ? fToC(baseTemp) : baseTemp);
+            document.querySelectorAll('.recipe-temp-unit').forEach(el => el.textContent = isMetric ? "°C" : "°F");
         }
       }
 
-      btnMinus.addEventListener('click', () => {
-        if (currentPortions > 1) { 
-          currentPortions--;
-          updateUI();
-        }
-      });
-
-      btnPlus.addEventListener('click', () => {
-        if (currentPortions < 20) { 
-          currentPortions++;
-          updateUI();
-        }
-      });
+      btnMinus.addEventListener('click', () => { if (currentPortions > 1) { currentPortions--; updateUI(); }});
+      btnPlus.addEventListener('click', () => { if (currentPortions < 20) { currentPortions++; updateUI(); }});
 
       if (btnImperial && btnMetric) {
-          btnImperial.addEventListener('click', () => {
-              isMetric = false;
-              btnImperial.classList.replace('text-slate-400', 'text-white');
-              btnImperial.classList.replace('bg-transparent', 'bg-blue-600');
-              
-              btnMetric.classList.replace('text-white', 'text-slate-400');
-              btnMetric.classList.replace('bg-blue-600', 'bg-transparent');
-              updateUI();
-          });
-
-          btnMetric.addEventListener('click', () => {
-              isMetric = true;
-              btnMetric.classList.replace('text-slate-400', 'text-white');
-              btnMetric.classList.replace('bg-transparent', 'bg-blue-600');
-              
-              btnImperial.classList.replace('text-white', 'text-slate-400');
-              btnImperial.classList.replace('bg-blue-600', 'bg-transparent');
-              updateUI();
-          });
+          btnImperial.addEventListener('click', () => { isMetric = false; btnImperial.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm"; btnMetric.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white"; updateUI(); });
+          btnMetric.addEventListener('click', () => { isMetric = true; btnMetric.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm"; btnImperial.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white"; updateUI(); });
       }
     });
   </script>
-  
 </MainLayout>
