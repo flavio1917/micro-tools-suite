@@ -65,29 +65,29 @@ const translations = {
     back: "Volver", backLink: "/es/#ricettario",
     temp: "Temperatura", time: "Cocción", prep: "Preparación",
     portions: "Porciones", pers: "pers.",
-    ingTitle: "Ingredientes", noIng: "Ver descrizione per più dettagli.",
+    ingTitle: "Ingredientes", noIng: "Ver descripción para más detalles.",
     stepTitle: "Instrucciones",
-    step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti. Rocía leggermente il cibo con olio in spray.",
-    step2: "Cocción", step2Desc: `Regola la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minuti</strong>.`,
-    tipTitle: "Il consiglio dello Chef",
-    searchOther: "← Cerca un'altra ricetta",
-    authBadge: "Ricetta Autentica", seoAuth: " | Ricetta Originale",
+    step1: "Preparación", step1Desc: "Prepara todos los ingredientes. Rocía ligeramente la comida con aceite en spray.",
+    step2: "Cocción", step2Desc: `Ajusta la freidora a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutos</strong>.`,
+    tipTitle: "Consejo del Chef",
+    searchOther: "← Buscar otra receta",
+    authBadge: "Receta Auténtica", seoAuth: " | Auténtica Receta Italiana",
     unitTemp: "°C", unitTime: "min",
-    bannerTop: "MIGLIORA LA TUA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori Universale definitivo.", bannerBtn: "Scopri le Offerte"
+    bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit de Accesorios Universal definitivo.", bannerBtn: "Ver Ofertas"
   },
   fr: {
     back: "Retour", backLink: "/fr/#ricettario",
     temp: "Température", time: "Cuisson", prep: "Préparation",
     portions: "Portions", pers: "pers.",
-    ingTitle: "Ingrédients", noIng: "Vedi descrizione per i dettagli.",
-    stepTitle: "Procedimento",
-    step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro. Se necessario, ungi leggermente il cibo con un filo d'olio spray.",
-    step2: "Cottura", step2Desc: `Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minuti</strong>.`,
-    tipTitle: "Il Segreto dello Chef",
-    searchOther: "← Cerca un'altra ricetta",
-    authBadge: "Ricetta Autentica", seoAuth: " | Ricetta Originale",
+    ingTitle: "Ingrédients", noIng: "Voir la description pour les détails.",
+    stepTitle: "Instructions",
+    step1: "Préparation", step1Desc: "Préparez tous les ingrédients. Vaporisez légèrement les aliments d'huile.",
+    step2: "Cuisson", step2Desc: `Réglez la friteuse sur <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minutes</strong>.`,
+    tipTitle: "Astuce du Chef",
+    searchOther: "← Chercher une autre recette",
+    authBadge: "Recette Authentique", seoAuth: " | Recette Italienne Authentique",
     unitTemp: "°C", unitTime: "min",
-    bannerTop: "MIGLIORA LA TUA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori Universale definitivo.", bannerBtn: "Scopri le Offerte"
+    bannerTop: "AMÉLIOREZ VOTRE FRITEUSE", bannerBot: "Découvrez le Kit d'Accessoires Universel ultime.", bannerBtn: "Voir les Offres"
   }
 };
 
@@ -138,59 +138,54 @@ function enrichText(text: string) {
 <MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData}>
   
   <div class="relative h-[45vh] min-h-[360px] md:h-[50vh] md:min-h-[400px] w-full overflow-hidden bg-slate-900">
-    <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-90 transition-transform duration-1000 hover:scale-105" onerror="this.style.opacity='0'" />
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent"></div>
+    <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80 transition-transform duration-1000 hover:scale-105" onerror="this.style.opacity='0'" />
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/70 to-slate-950/20"></div>
     
-    <div class="relative max-w-5xl mx-auto px-4 h-full flex flex-col justify-end pb-12 md:pb-16 z-10">
+    <div class="absolute top-4 md:top-6 left-0 right-0 z-20 px-4 flex justify-between items-start w-full max-w-5xl mx-auto">
       
-      <div class="text-center w-full">
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white mb-3 md:mb-5 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
-          {recipe.title}
-        </h1>
-        
-        <div class="w-full mt-3 md:mt-5 space-y-4 md:space-y-0 relative z-20">
+      <a href={t.backLink} class="flex items-center justify-center bg-slate-800/80 backdrop-blur-md text-white border border-slate-500/50 shadow-xl transition-all hover:bg-slate-700 w-10 h-10 rounded-full md:w-auto md:h-auto md:px-4 md:py-2">
+        <svg class="w-5 h-5 md:w-4 md:h-4 md:mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="hidden md:inline font-bold text-sm">{t.back}</span>
+      </a>
 
-          <div class="flex flex-row items-center justify-center md:justify-between gap-x-3 md:gap-x-0 w-full px-2 md:px-0">
-            
-            <a href={t.backLink} class="px-3 py-1.5 md:px-4 md:py-2 flex items-center justify-center gap-1.5 md:gap-2 rounded-full bg-slate-800/80 hover:bg-slate-700/90 backdrop-blur-md text-white transition-all border border-slate-500/50 shadow-xl text-xs md:text-sm font-bold whitespace-nowrap">
-              <svg class="w-3.5 h-3.5 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-              <span>{t.back}</span>
-            </a>
-
-            <div class="flex items-center gap-2">
-              {isAuth && (
-                <div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 md:px-3 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 border border-yellow-200/80 text-black text-[9px] md:text-[10px] font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(245,158,11,0.5)]">
-                  <img src="https://flagcdn.com/it.svg" alt="Italia" class="w-3.5 h-auto rounded-[2px]" />
-                  <span class="drop-shadow-sm whitespace-nowrap">{t.authBadge}</span>
-                </div>
-              )}
-              <div class="inline-flex items-center gap-1.5 md:gap-2 bg-slate-800/80 backdrop-blur-md px-2.5 py-1.5 md:px-3 md:py-2 rounded-full border border-slate-600 shadow-xl">
-                <a href={getLocalizedUrl('it')} class={`transition-all ${lang === 'it' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
-                  <img src="https://flagcdn.com/it.svg" alt="IT" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
-                </a>
-                <a href={getLocalizedUrl('en')} class={`transition-all ${lang === 'en' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
-                  <img src="https://flagcdn.com/gb.svg" alt="EN" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
-                </a>
-                <a href={getLocalizedUrl('es')} class={`transition-all ${lang === 'es' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
-                  <img src="https://flagcdn.com/es.svg" alt="ES" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
-                </a>
-                <a href={getLocalizedUrl('fr')} class={`transition-all ${lang === 'fr' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
-                  <img src="https://flagcdn.com/fr.svg" alt="FR" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
-                </a>
-              </div>
-            </div>
+      <div class="flex items-center gap-2">
+        {isAuth && (
+          <div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 border border-yellow-200/80 text-black text-[10px] font-black uppercase tracking-widest rounded-full shadow-[0_0_20px_rgba(245,158,11,0.5)]">
+            <img src="https://flagcdn.com/it.svg" alt="Italia" class="w-3.5 h-auto rounded-[2px]" />
+            <span class="drop-shadow-sm whitespace-nowrap">{t.authBadge}</span>
           </div>
-
-          <div class="flex items-center justify-center pt-2 md:pt-0">
-            <StarRating slug={baseImageName} title={recipe.title} />
-          </div>
-
+        )}
+        <div class="inline-flex items-center gap-1.5 md:gap-2 bg-slate-800/80 backdrop-blur-md px-2.5 py-1.5 md:px-3 md:py-2 rounded-full border border-slate-600 shadow-xl">
+          <a href={getLocalizedUrl('it')} class={`transition-all ${lang === 'it' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
+            <img src="https://flagcdn.com/it.svg" alt="IT" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
+          </a>
+          <a href={getLocalizedUrl('en')} class={`transition-all ${lang === 'en' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
+            <img src="https://flagcdn.com/gb.svg" alt="EN" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
+          </a>
+          <a href={getLocalizedUrl('es')} class={`transition-all ${lang === 'es' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
+            <img src="https://flagcdn.com/es.svg" alt="ES" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
+          </a>
+          <a href={getLocalizedUrl('fr')} class={`transition-all ${lang === 'fr' ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-50 hover:opacity-100'}`}>
+            <img src="https://flagcdn.com/fr.svg" alt="FR" class="w-4 h-[11px] md:w-5 md:h-[14px] rounded-[2px] object-cover" />
+          </a>
         </div>
-        
-        <p class="text-sm md:text-xl text-slate-200 max-w-2xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-3 md:pt-4 mt-2 md:mt-3 px-3">
-          {recipe.description}
-        </p>
       </div>
+    </div>
+    
+    <div class="relative max-w-5xl mx-auto px-4 h-full flex flex-col justify-end pb-8 md:pb-12 z-10 text-center">
+      
+      <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
+        {recipe.title}
+      </h1>
+      
+      <div class="flex justify-center items-center transform scale-75 md:scale-90 origin-center -my-3 md:-my-4">
+        <StarRating slug={baseImageName} title={recipe.title} />
+      </div>
+      
+      <p class="text-sm md:text-lg text-slate-200 max-w-2xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-3 mt-3 px-3">
+        {recipe.description}
+      </p>
+
     </div>
   </div>
 
