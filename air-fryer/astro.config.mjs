@@ -6,7 +6,7 @@ import vercel from '@astrojs/vercel';
 export default defineConfig({
   site: 'https://www.convertitorefriggitrice.it',
   
-  output: 'hybrid', // <--- LA MAGIA È QUI
+  output: 'static', // <--- Torna a static!
   adapter: vercel(), 
 
   i18n: {
