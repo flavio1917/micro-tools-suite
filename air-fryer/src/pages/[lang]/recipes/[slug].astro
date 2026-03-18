@@ -38,7 +38,7 @@ const translations = {
     temp: "Temperatura", time: "Cottura", prep: "Preparazione",
     portions: "Porzioni", pers: "pers.",
     ingTitle: "Ingredienti", noIng: "Vedi descrizione per i dettagli.",
-    stepTitle: "Procedimiiiiiiento",
+    stepTitle: "Procedimento",
     step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro. Se necessario, ungi leggermente il cibo con un filo d'olio spray.",
     step2: "Cottura", step2Desc: `Imposta la friggitrice a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} minuti</strong>.`,
     tipTitle: "Il Segreto dello Chef",
@@ -173,19 +173,7 @@ function enrichText(text: string) {
           </div>
         </div>
       </div>
-      <div class="text-center w-full">
-        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-3 md:mb-4 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
-          {recipe.title}
-        </h1>
-        
-        <h2 style="color: red; font-size: 40px; font-weight: bold; background: yellow;">STO CERCANDO LE STELLINE</h2>
-        
-        <StarRating slug={recipe.slug} title={recipe.title} />
-        
-        <p class="text-base md:text-xl text-slate-200 max-w-2xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-3 md:pt-4 mt-1 md:mt-2">
-          {recipe.description}
-        </p>
-      </div>
+
       <div class="text-center w-full">
         <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-3 md:mb-4 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]">
           {recipe.title}

@@ -2,10 +2,11 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
+
 export default defineConfig({
   site: 'https://www.convertitorefriggitrice.it',
-  output: 'static',
-  // output: 'hybrid', 
+  
+  output: 'hybrid', // <--- LA MAGIA È QUI
   adapter: vercel(), 
 
   i18n: {
