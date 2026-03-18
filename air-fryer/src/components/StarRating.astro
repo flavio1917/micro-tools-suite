@@ -5,10 +5,11 @@ const { slug, title } = Astro.props;
 <div class="flex flex-col items-center gap-2 my-6 p-4 bg-slate-900/40 rounded-2xl border border-slate-700 w-full max-w-sm mx-auto shadow-lg" id="rating-box">
   <p class="text-xs text-slate-300 uppercase tracking-widest font-semibold">Valuta questa ricetta</p>
   
-  <div class="flex gap-1">
+  <div class="flex gap-1" style="min-height: 40px;">
     {[1, 2, 3, 4, 5].map((num) => (
       <button 
-        class="star-btn text-4xl transition-all duration-200 hover:scale-125 focus:outline-none text-slate-500 drop-shadow-md" 
+        class="star-btn text-4xl focus:outline-none drop-shadow-md" 
+        style="color: #64748b; transition: all 0.2s;"
         data-value={num}
         aria-label={`Vota ${num} stelle`}
       >
@@ -24,97 +25,99 @@ const { slug, title } = Astro.props;
 </div>
 
 <script is:inline define:vars={{ slug, title }}>
-  const stars = document.querySelectorAll('.star-btn');
-  const avgDisplay = document.getElementById('avg-display');
-  const countDisplay = document.getElementById('count-display');
-  let hasVoted = false;
+  document.addEventListener('DOMContentLoaded', () => {
+    const stars = document.querySelectorAll('.star-btn');
+    const avgDisplay = document.getElementById('avg-display');
+    const countDisplay = document.getElementById('count-display');
+    let hasVoted = false;
 
-  // CARICAMENTO VOTI
-  fetch(`/api/vote?slug=${slug}`)
-    .then(res => res.json())
-    .then(data => {
-      if (data.count > 0) {
-        avgDisplay.innerText = `${data.average} / 5`;
-        countDisplay.innerText = `(${data.count} voti)`;
-        highlightStars(Math.round(data.average));
-
-        // Schema.org per Google
-        const schema = {
-          "@context": "https://schema.org/",
-          "@type": "Recipe",
-          "name": title,
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": data.average,
-            "reviewCount": data.count,
-            "bestRating": "5",
-            "worstRating": "1"
-          }
-        };
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.text = JSON.stringify(schema);
-        document.head.appendChild(script);
-      } else {
-        avgDisplay.innerText = "Nessun voto";
-      }
-    })
-    .catch(() => {
-        avgDisplay.innerText = "Nessun voto";
-    });
-
-  // CLICK SULLE STELLE
-  stars.forEach(star => {
-    star.addEventListener('click', async () => {
-      if (hasVoted) return;
-      
-      const rating = star.getAttribute('data-value');
-      highlightStars(rating);
-      hasVoted = true;
-      avgDisplay.innerText = "Salvando...";
-
-      try {
-        const response = await fetch('/api/vote', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ slug, rating: parseInt(rating) })
-        });
-
-        const data = await response.json();
-        if (data.success) {
+    // CARICAMENTO VOTI
+    fetch(`/api/vote?slug=${slug}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.count > 0) {
           avgDisplay.innerText = `${data.average} / 5`;
           countDisplay.innerText = `(${data.count} voti)`;
+          highlightStars(Math.round(data.average));
+
+          // Schema.org per Google
+          const schema = {
+            "@context": "https://schema.org/",
+            "@type": "Recipe",
+            "name": title,
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": data.average,
+              "reviewCount": data.count,
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          };
+          const script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.text = JSON.stringify(schema);
+          document.head.appendChild(script);
+        } else {
+          avgDisplay.innerText = "Nessun voto";
         }
-      } catch (err) {
-         avgDisplay.innerText = "Errore";
-      }
+      })
+      .catch(() => {
+          avgDisplay.innerText = "Nessun voto";
+      });
+
+    // CLICK SULLE STELLE
+    stars.forEach(star => {
+      star.addEventListener('click', async () => {
+        if (hasVoted) return;
+        
+        const rating = star.getAttribute('data-value');
+        highlightStars(rating);
+        hasVoted = true;
+        avgDisplay.innerText = "Salvando...";
+
+        try {
+          const response = await fetch('/api/vote', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ slug, rating: parseInt(rating) })
+          });
+
+          const data = await response.json();
+          if (data.success) {
+            avgDisplay.innerText = `${data.average} / 5`;
+            countDisplay.innerText = `(${data.count} voti)`;
+          }
+        } catch (err) {
+           avgDisplay.innerText = "Errore";
+        }
+      });
+
+      // EFFETTO HOVER
+      star.addEventListener('mouseenter', () => {
+        if (!hasVoted) highlightStars(star.getAttribute('data-value'));
+      });
+      star.addEventListener('mouseleave', () => {
+          if(!hasVoted) {
+              stars.forEach(s => {
+                  s.style.color = '#64748b'; // Grigio
+                  s.style.transform = 'scale(1)';
+              });
+          }
+      });
     });
 
-    // EFFETTO HOVER
-    star.addEventListener('mouseenter', () => {
-      if (!hasVoted) highlightStars(star.getAttribute('data-value'));
-    });
-    star.addEventListener('mouseleave', () => {
-        if(!hasVoted) {
-             // Reset al colore base se non ha ancora votato
-            stars.forEach(s => {
-                s.classList.add('text-slate-500');
-                s.classList.remove('text-yellow-400');
-            });
+    // FUNZIONE DI EVIDENZIAZIONE (FORZATA IN CSS PURO)
+    function highlightStars(val) {
+      stars.forEach(s => {
+        const sVal = s.getAttribute('data-value');
+        if(sVal <= val) {
+            s.style.color = '#eab308'; // Giallo vivo
+            s.style.transform = 'scale(1.15)';
+        } else {
+            s.style.color = '#64748b'; // Grigio scuro
+            s.style.transform = 'scale(1)';
         }
-    })
+      });
+    }
   });
-
-  function highlightStars(val) {
-    stars.forEach(s => {
-      const sVal = s.getAttribute('data-value');
-      if(sVal <= val) {
-          s.classList.add('text-yellow-400');
-          s.classList.remove('text-slate-500');
-      } else {
-          s.classList.add('text-slate-500');
-          s.classList.remove('text-yellow-400');
-      }
-    });
-  }
 </script>
