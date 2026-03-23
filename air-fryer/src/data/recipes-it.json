@@ -1486,8 +1486,7 @@
   },
   {
     "slug": "pollo-fritto-latticello",
-    "title": "Pollo Marinato al Latticello",
-    "emoji": "🍗",
+    "title": "Pollo al Latticello in Friggitrice ad Aria (Super Croccante senza Olio!)",    "emoji": "🍗",
     "temp": 195,
     "time": "25",
     "prep_time": "2 ore",
@@ -1516,13 +1515,7 @@
     ],
     "source": "RicetteFriggitriceAria",
     "tip": "Per una doratura uniforme, nebulizzare olio spray su eventuali aree di panatura che appaiono asciutte durante la cottura.",
-    "keywords": [
-      "Carne",
-      "Secondo",
-      "Proteico",
-      "Pollo",
-      "Latticello"
-    ]
+    "keywords": ["Carne", "Secondo", "Proteico", "Pollo", "Latticello", "Pollo fritto non fritto", "Chicken nuggets"]
   },
   {
     "slug": "zucchine-fritte",
@@ -2961,6 +2954,123 @@
       "Proteico",
       "Maiale"
     ]
+  },
+  {
+    "slug": "costolette-agnello",
+    "title": "Costolette di Agnello in Friggitrice ad Aria (Tenerissime!)",
+    "emoji": "🍖",
+    "temp": 200,
+    "time": "10-12",
+    "prep_time": "10 minuti",
+    "portions": "2",
+    "ingredients": [
+      "4 costolette di agnello",
+      "1 cucchiaio di olio d'oliva spray",
+      "1 spicchio d'aglio tritato",
+      "Rosmarino fresco q.b.",
+      "Sale e pepe nero q.b."
+    ],
+    "description": "Il secondo di carne perfetto per Pasqua. Costolette di agnello croccanti fuori e succose dentro in soli 10 minuti. Ricetta proteica e low carb senza fumo in casa!",
+    "instructions": [
+      "Asciugare bene le costolette di agnello con carta assorbente.",
+      "Cospargere la carne con l'olio spray, l'aglio tritato, il rosmarino, sale e pepe.",
+      "Preriscaldare a 200°C per 3 minuti.",
+      "Disporre le costolette nel cestello senza sovrapporle. Cuocere per 10-12 minuti girandole a metà cottura.",
+      "Sfornare e lasciar riposare la carne per 2 minuti prima di servire."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Vuoi una crosticina ancora più golosa? Spolvera un pizzico di pecorino sulle costolette negli ultimi 2 minuti di cottura!",
+    "keywords": ["Carne", "Secondo", "Proteico", "Low Carb", "Chetogenica", "Costolette agnello", "Abbacchio", "Pasqua"],
+    "isItalian": true
+  },
+  {
+    "slug": "mini-torta-pasqualina",
+    "title": "Mini Torte Pasqualine (Pronte in 15 min!)",
+    "emoji": "🥧",
+    "temp": 180,
+    "time": "15",
+    "prep_time": "15 minuti",
+    "portions": "4",
+    "ingredients": [
+      "1 rotolo di pasta sfoglia rotonda",
+      "250g di spinaci freschi o surgelati (ben strizzati)",
+      "150g di ricotta vaccina",
+      "4 uova di quaglia",
+      "30g di parmigiano grattugiato",
+      "Sale, pepe e noce moscata q.b."
+    ],
+    "description": "L'antipasto vegetariano perfetto per Pasqua. Mini torte salate con spinaci, ricotta e uovo dal cuore morbido. Sfoglia croccantissima garantita in 15 minuti.",
+    "instructions": [
+      "Mescolare in una ciotola la ricotta, gli spinaci tritati, il parmigiano, sale, pepe e noce moscata.",
+      "Ricavare 4 dischi dalla pasta sfoglia e foderare 4 pirottini in silicone.",
+      "Riempire i pirottini con il ripieno, creando una piccola conca al centro.",
+      "Rompere un uovo di quaglia crudo nella conca di ogni tortina.",
+      "Cuocere a 180°C per 15 minuti, finché la sfoglia è dorata e l'uovo cotto."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Assicurati di strizzare perfettamente gli spinaci prima di amalgamarli alla ricotta, altrimenti l'acqua bagnerà la sfoglia impedendole di diventare croccante!",
+    "keywords": ["Vegetariano", "Torta pasqualina", "Antipasto", "Pasqua", "Rustici spinaci e ricotta"],
+    "isItalian": true
+  },
+  {
+    "slug": "casatiello-napoletano",
+    "title": "Casatiello Napoletano (Soffice e Veloce!)",
+    "emoji": "🧀",
+    "temp": 160,
+    "time": "35",
+    "prep_time": "20 minuti",
+    "portions": "6",
+    "ingredients": [
+      "500g di farina 00",
+      "250ml di acqua tiepida",
+      "10g di lievito di birra fresco",
+      "100g di strutto (o burro morbido)",
+      "200g di salumi e formaggi misti a cubetti (salame, provolone)",
+      "3 uova crude (per la decorazione)",
+      "Sale e abbondante pepe nero q.b."
+    ],
+    "description": "Il re della Pasqua! Scopri come cuocere un Casatiello morbidissimo e ricco di ripieno dorato e garantito in 35 minuti.",
+    "instructions": [
+      "Sciogliere il lievito nell'acqua tiepida. Impastare farina, acqua lievitata, strutto, sale e pepe fino a ottenere un panetto liscio. Far lievitare per 2 ore.",
+      "Stendere l'impasto a rettangolo (tenendo da parte un pezzettino per le croci). Distribuire i salumi e i formaggi, quindi arrotolare formando un salsicciotto.",
+      "Chiudere a ciambella e posizionarlo in uno stampo con buco da 20cm. Incastonare le 3 uova crude ben lavate e fermarle con striscioline di pasta a croce.",
+      "Far lievitare per un'altra ora nello stampo.",
+      "Cuocere a 160°C per 35 minuti. Fare la prova stecchino prima di sfornare."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Se la parte superiore del casatiello si colora troppo in fretta durante la cottura, coprila con un foglio di alluminio forato per gli ultimi 15 minuti!",
+    "keywords": ["Pasqua", "Torta salata", "Lievitati", "Rustico", "Casatiello", "Antipasto pasquale", "Torta rustica", "Pasqua"],
+    "isItalian": true
+  },
+  {
+    "slug": "mini-pastiera-napoletana",
+    "title": "Mini Pastiere Napoletane (Dolce di Pasqua!)",
+    "emoji": "🥧",
+    "temp": 170,
+    "time": "20",
+    "prep_time": "30 minuti",
+    "portions": "4",
+    "ingredients": [
+      "1 rotolo di pasta frolla già pronta",
+      "200g di ricotta di pecora (ben scolata)",
+      "200g di grano cotto per pastiera",
+      "150g di zucchero",
+      "2 uova (1 intero + 1 tuorlo)",
+      "Aroma fior d'arancio e scorza di limone q.b.",
+      "Canditi a cubetti (opzionali)"
+    ],
+    "description": "Tutto il profumo della tradizione, ma in versione monoporzione! Le mini pastiere restano umide al centro con una frolla iper croccante. Pronte in 20 min.",
+    "instructions": [
+      "In una ciotola, setacciare la ricotta e mescolarla con lo zucchero fino a renderla una crema. Aggiungere il grano cotto, le uova, gli aromi e i canditi.",
+      "Srotolare la pasta frolla (tenendo da parte dei ritagli per le strisce) e foderare 4 pirottini in silicone o alluminio imburrati.",
+      "Versare il composto di ricotta e grano nei pirottini arrivando a pochi millimetri dal bordo.",
+      "Decorare la superficie di ogni tortina con le classiche striscioline di frolla incrociate a losanga.",
+      "Cuocere a 170°C per 20 minuti, finché la frolla risulta ben dorata."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Il segreto della pastiera perfetta è il riposo! Preparale il giorno prima di mangiarle: i sapori del fior d'arancio e della ricotta si amalgameranno in modo divino.",
+    "keywords": ["Dolce", "Dessert", "Pasqua", "Pastiera napoletana", "Ricotta", "Monoporzione", "Dolci veloci"],
+    "isItalian": true
   },
   {
     "slug": "hamburger-classico",

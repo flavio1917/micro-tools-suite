@@ -3039,7 +3039,95 @@
     ],
     "isItalian": true,
     "image": "filetto-maiale-verdure"
-  },[
+  },
+  {
+    "slug": "costolette-agnello",
+    "title": "Côtelettes d'Agneau (Juteuses en 10 minutes!)",
+    "emoji": "🍖",
+    "temp": 200,
+    "time": "10-12",
+    "prep_time": "10 min",
+    "portions": "2",
+    "ingredients": [
+      "4 côtelettes d'agneau",
+      "1 c.à.s d'huile d'olive en spray",
+      "1 gousse d'ail hachée",
+      "Romarin frais",
+      "Sel et poivre"
+    ],
+    "description": "Le plat de viande parfait et hyperprotéiné pour Pâques. Côtelettes croustillantes à l'extérieur et rosées à cœur. Recette low carb sans aucune fumée!",
+    "instructions": [
+      "Bien sécher les côtelettes d'agneau avec du papier absorbant.",
+      "Masser la viande avec l'huile en spray, l'ail haché, le romarin, le sel et le poivre.",
+      "Préchauffer à 200°C pendant 3 minutes.",
+      "Disposer les côtelettes dans le panier sans les superposer. Cuire 10-12 minutes en les retournant à mi-cuisson.",
+      "Sortir et laisser reposer la viande 2 minutes avant de servir."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Envie d'une croûte plus gourmande? Saupoudrez une pincée de parmesan sur les côtelettes 2 minutes avant la fin de la cuisson!",
+    "keywords": ["Viande", "Plat principal", "Protéiné", "Low Carb", "Keto", "Côtelettes agneau", "Pâques"],
+    "isItalian": true
+  },
+  {
+    "slug": "casatiello-napoletano",
+    "title": "Casatiello Napolitain (Pain de Pâques Moelleux et Garni!)",
+    "emoji": "🧀",
+    "temp": 160,
+    "time": "35",
+    "prep_time": "20 min",
+    "portions": "6",
+    "ingredients": [
+      "500g de farine",
+      "250ml d'eau tiède",
+      "10g de levure boulangère fraîche",
+      "100g de saindoux (ou beurre mou)",
+      "200g de charcuterie et fromages en dés (salami, provolone)",
+      "3 œufs crus (avec la coquille, pour décorer)",
+      "Sel et beaucoup de poivre noir"
+    ],
+    "description": "Le roi de Pâques en Italie! Découvrez comment cuire ce pain brioché hyper moelleux et garni de fromage et charcuterie.",
+    "instructions": [
+      "Dissoudre la levure dans l'eau tiède. Pétrir la farine, l'eau, le saindoux, le sel et le poivre pour obtenir une pâte lisse. Laisser lever 2 heures.",
+      "Étaler la pâte en rectangle (en gardant un morceau pour les croix). Répartir les charcuteries et fromages, puis rouler en boudin.",
+      "Former une couronne et la placer dans un moule à savarin de 20cm. Enfoncer les 3 œufs crus propres et les fixer avec des bandes de pâte en croix.",
+      "Laisser lever encore une heure dans le moule.",
+      "Cuire à 160°C pendant 35 minutes. Vérifier la cuisson avec un cure-dent avant de sortir."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Si le dessus du pain dore trop vite, couvrez-le avec une feuille de papier aluminium percée de trous pour les 15 dernières minutes de cuisson!",
+    "keywords": ["Pâques", "Pain garni", "Recette italienne", "Casatiello", "Charcuterie", "Boulangerie"],
+    "isItalian": true
+  },
+  {
+    "slug": "mini-pastiera-napoletana",
+    "title": "Mini Pastiera Napolitaine (Dessert Traditionnel de Pâques!)",
+    "emoji": "🥧",
+    "temp": 170,
+    "time": "20",
+    "prep_time": "30 min",
+    "portions": "4",
+    "ingredients": [
+      "1 rouleau de pâte sablée",
+      "200g de ricotta (bien égouttée)",
+      "200g de blé précuit (grano cotto)",
+      "150g de sucre",
+      "2 œufs (1 entier + 1 jaune)",
+      "Eau de fleur d'oranger et zeste de citron",
+      "Fruits confits (facultatif)"
+    ],
+    "description": "Toute la saveur de la tradition italienne en portion individuelle! Des mini tartelettes à la ricotta et au blé pour une pâte hyper croustillante.",
+    "instructions": [
+      "Dans un bol, crémer la ricotta avec le sucre. Ajouter le blé cuit, les œufs, les arômes et les fruits confits.",
+      "Dérouler la pâte sablée (en gardant des chutes pour le croisillon) et foncer 4 petits moules en silicone ou aluminium.",
+      "Verser la préparation à la ricotta dans les moules, presque jusqu'au bord.",
+      "Décorer le dessus de chaque tartelette avec des bandelettes de pâte croisées.",
+      "Cuire à 170°C pendant 20 minutes, jusqu'à ce que la pâte soit bien dorée."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Le secret d'une Pastiera parfaite est le repos! Préparez-les la veille: les saveurs de fleur d'oranger et de ricotta vont se mélanger divinament.",
+    "keywords": ["Dessert", "Pâques", "Tartelette italienne", "Pastiera", "Ricotta", "Portion individuelle"],
+    "isItalian": true
+  },
     {
       "slug": "hamburger-classique",
       "title": "Hamburger Classiques",
@@ -3179,8 +3267,7 @@
       ],
       "isItalian": false,
       "image": "hot-dog-newyorkese"
-    }
-  ],
+    },
   {
     "slug": "rouleaux-porc-jambon",
     "title": "Roulés de filet de porc au jambon cru",

@@ -3116,6 +3116,123 @@
     "is_sanitized": true
   },
   {
+    "slug": "costolette-agnello",
+    "title": "Lamb Chops (Juicy & Tender in 10 Mins!)",
+    "emoji": "🍖",
+    "temp": 200,
+    "time": "10-12",
+    "prep_time": "10 mins",
+    "portions": "2",
+    "ingredients": [
+      "4 lamb chops",
+      "1 tbsp olive oil spray",
+      "1 minced garlic clove",
+      "Fresh rosemary",
+      "Salt and pepper"
+    ],
+    "description": "The perfect high-protein meat dinner for Easter. Crispy outside, perfectly pink inside in just 10 minutes. A completely smoke-free, low-carb recipe!",
+    "instructions": [
+      "Pat the lamb chops completely dry with paper towels.",
+      "Rub the meat with oil spray, minced garlic, chopped rosemary, salt, and pepper.",
+      "Preheat to 390°F (200°C) for 3 minutes.",
+      "Place the chops in the basket in a single layer. Cook for 10-12 minutes, flipping halfway through.",
+      "Remove and let the meat rest for 2 minutes before serving."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Want a crunchier crust? Sprinkle a pinch of parmesan cheese on the chops during the last 2 minutes of cooking!",
+    "keywords": ["Meat", "Main Course", "Protein", "Low Carb", "Keto", "Lamb chops", "Easter"],
+    "isItalian": true
+  },
+  {
+    "slug": "mini-torta-pasqualina",
+    "title": "Mini Easter Spinach Pies (Ready in 15 Mins!)",
+    "emoji": "🥧",
+    "temp": 180,
+    "time": "15",
+    "prep_time": "15 mins",
+    "portions": "4",
+    "ingredients": [
+      "1 sheet round puff pastry",
+      "8 oz (250g) spinach (cooked and squeezed dry)",
+      "5 oz (150g) ricotta cheese",
+      "4 quail eggs",
+      "1/4 cup grated parmesan",
+      "Salt, pepper, and nutmeg"
+    ],
+    "description": "The ultimate vegetarian appetizer! Mini savory pies with spinach, ricotta, and a soft-centered egg. Super crispy puff pastry guaranteed in 15 minutes.",
+    "instructions": [
+      "In a bowl, mix ricotta, chopped spinach, parmesan, salt, pepper, and nutmeg.",
+      "Cut 4 circles out of the puff pastry and line 4 silicone muffin liners.",
+      "Fill the cups with the mixture, making a small well in the center of each.",
+      "Crack a raw quail egg into each well.",
+      "Cook at 350°F (180°C) for 15 minutes, until the pastry is golden and the egg is set."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Make sure to squeeze all the water out of the spinach before mixing it, otherwise the pastry will get soggy and won't crisp up!",
+    "keywords": ["Vegetarian", "Savory pie", "Easter appetizer", "Spinach and ricotta"],
+    "isItalian": true
+  },
+  {
+    "slug": "casatiello-napoletano",
+    "title": "Casatiello (Italian Easter Bread, Soft & Easy!)",
+    "emoji": "🧀",
+    "temp": 160,
+    "time": "35",
+    "prep_time": "20 mins",
+    "portions": "6",
+    "ingredients": [
+      "3 1/2 cups (500g) all-purpose flour",
+      "1 cup (250ml) warm water",
+      "1 tbsp active dry yeast",
+      "1/2 cup (100g) lard or softened butter",
+      "7 oz (200g) mixed diced salami and provolone cheese",
+      "3 whole raw eggs (in shell, for decoration)",
+      "Salt and lots of black pepper"
+    ],
+    "description": "The king of Italian Easter! Discover how to bake a super soft Casatiello stuffed with cheese and cured meats. Golden and delicious in 35 mins.",
+    "instructions": [
+      "Dissolve the yeast in warm water. Knead flour, yeast water, lard, salt, and pepper into a smooth dough. Let it rise for 2 hours.",
+      "Roll out the dough into a rectangle (save a small piece for the egg crosses). Scatter the meats and cheeses, then roll it up into a log.",
+      "Form a ring and place it in an 8-inch (20cm) ring mold. Press the 3 clean, raw eggs into the dough and secure them with dough strips in a cross shape.",
+      "Let it rise in the mold for 1 more hour.",
+      "Bake at 320°F (160°C) for 35 minutes. Check with a toothpick before removing."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "If the top of the bread gets too brown too quickly, cover it with a piece of pierced aluminum foil for the last 15 minutes of cooking!",
+    "keywords": ["Easter", "Savory pie", "Italian bread", "Casatiello", "Salami and cheese", "Baking"],
+    "isItalian": true
+  },
+  {
+    "slug": "mini-pastiera-napoletana",
+    "title": "Mini Pastiera (Traditional Italian Easter Tart!)",
+    "emoji": "🥧",
+    "temp": 170,
+    "time": "20",
+    "prep_time": "30 mins",
+    "portions": "4",
+    "ingredients": [
+      "1 sheet shortcrust pastry (store-bought)",
+      "7 oz (200g) sheep's milk ricotta (drained)",
+      "7 oz (200g) cooked wheat grains (grano cotto)",
+      "3/4 cup (150g) sugar",
+      "2 eggs (1 whole + 1 yolk)",
+      "Orange blossom water & lemon zest",
+      "Candied fruit (optional)"
+    ],
+    "description": "All the authentic Italian flavor in a single serving! Mini Pastiera tarts stay moist in the center with a super crispy crust. Ready in 20 mins.",
+    "instructions": [
+      "In a bowl, cream the ricotta and sugar together. Add the cooked wheat, eggs, flavorings, and candied fruit, mixing well.",
+      "Unroll the shortcrust pastry (save some scraps for the lattice) and line 4 greased silicone or foil muffin liners.",
+      "Pour the ricotta and wheat mixture into the cups, filling almost to the top.",
+      "Decorate the top of each tart with a classic criss-cross lattice made from the pastry scraps.",
+      "Bake at 340°F (170°C) for 20 minutes, until the crust is golden brown."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "The secret to the perfect Pastiera is resting! Make them the day before you eat them: the orange blossom and ricotta flavors will meld beautifully.",
+    "keywords": ["Dessert", "Easter", "Italian tart", "Pastiera", "Ricotta", "Single serving", "Baking"],
+    "isItalian": true
+  },
+  {
     "slug": "classic-hamburger",
     "title": "Classic Beef Patties",
     "emoji": "🍔",

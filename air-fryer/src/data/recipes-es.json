@@ -3063,6 +3063,123 @@
     "is_sanitized": true
   },
   {
+    "slug": "costolette-agnello",
+    "title": "Chuletas de Cordero (¡Jugosas en 10 min!)",
+    "emoji": "🍖",
+    "temp": 200,
+    "time": "10-12",
+    "prep_time": "10 min",
+    "portions": "2",
+    "ingredients": [
+      "4 chuletas de cordero",
+      "1 cucharada de aceite de oliva en spray",
+      "1 diente de ajo picado",
+      "Romero fresco",
+      "Sal y pimienta"
+    ],
+    "description": "El segundo plato de carne perfecto. Chuletas de cordero crujientes por fuera y jugosas por dentro en 10 minutos. ¡Receta alta en proteínas y baja en carbohidratos!",
+    "instructions": [
+      "Secar bien las chuletas de cordero con papel de cocina.",
+      "Masajear la carne con el aceite en spray, el ajo picado, el romero, sal y pimienta.",
+      "Precalentar a 200°C durante 3 minutos.",
+      "Colocar las chuletas en la cesta sin superponerlas. Cocinar de 10 a 12 minutos, dándoles la vuelta a la mitad.",
+      "Sacar y dejar reposar la carne durante 2 minutos antes de servir."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "¿Quieres una costra más crujiente? ¡Espolvorea una pizca de queso parmesano sobre las chuletas en los últimos 2 minutos de cocción!",
+    "keywords": ["Carne", "Segundo", "Proteico", "Low Carb", "Keto", "Chuletas de cordero", "Pascua"],
+    "isItalian": true
+  },
+  {
+    "slug": "mini-torta-pasqualina",
+    "title": "Mini Tartas Pascualinas (¡Listas en 15 min!)",
+    "emoji": "🥧",
+    "temp": 180,
+    "time": "15",
+    "prep_time": "15 min",
+    "portions": "4",
+    "ingredients": [
+      "1 lámina de hojaldre redondo",
+      "250g de espinacas (cocidas y escurridas)",
+      "150g de queso ricotta",
+      "4 huevos de codorniz",
+      "30g de queso parmesano rallado",
+      "Sal, pimienta y nuez moscada"
+    ],
+    "description": "El aperitivo vegetariano ideal para Pascua. Mini tartas saladas con espinacas, ricotta y yema suave. ¡Hojaldre súper crujiente en solo 15 minutos!",
+    "instructions": [
+      "Mezclar en un bol la ricotta, las espinacas picadas, el parmesano, sal, pimienta y nuez moscada.",
+      "Cortar 4 círculos de hojaldre y forrar 4 moldes de silicona.",
+      "Rellenar los moldes con la mezcla, haciendo un pequeño hueco en el centro.",
+      "Romper un huevo de codorniz crudo en cada hueco.",
+      "Cocinar a 180°C durante 15 minutos, hasta que el hojaldre esté dorado y el huevo cuajado."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Asegúrate de exprimir perfectamente el agua de las espinacas antes de mezclarlas, ¡de lo contrario mojarán el hojaldre y no quedará crujiente!",
+    "keywords": ["Vegetariano", "Tarta salada", "Aperitivos de Pascua", "Espinacas y ricotta"],
+    "isItalian": true
+  },
+  {
+    "slug": "casatiello-napoletano",
+    "title": "Casatiello Napolitano (¡Pan de Pascua Súper Esponjoso!)",
+    "emoji": "🧀",
+    "temp": 160,
+    "time": "35",
+    "prep_time": "20 min",
+    "portions": "6",
+    "ingredients": [
+      "500g de harina de trigo",
+      "250ml de agua tibia",
+      "10g de levadura fresca",
+      "100g de manteca de cerdo (o mantequilla)",
+      "200g de salami y queso provolone en cubitos",
+      "3 huevos crudos (con cáscara, para decorar)",
+      "Sal y mucha pimienta negra"
+    ],
+    "description": "¡El rey de la Pascua italiana! Descubre cómo hornear un Casatiello súper esponjoso relleno de queso y embutidos. Listo en 35 minutos.",
+    "instructions": [
+      "Disolver la levadura en el agua tibia. Amasar la harina, el agua, la manteca, sal y pimienta hasta obtener una masa lisa. Dejar reposar 2 horas.",
+      "Estirar la masa en forma de rectángulo (guardando un trozo para las cruces). Repartir los embutidos y quesos, y enrollar formando un cilindro.",
+      "Unir los extremos formando una rosca y colocar en un molde de 20cm. Incrustar los 3 huevos crudos limpios y asegurarlos con tiras de masa en forma de cruz.",
+      "Dejar levar una hora más en el molde.",
+      "Hornear a 160°C por 35 minutos. Hacer la prueba del palillo antes de sacar."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Si la parte superior se dora demasiado rápido, cúbrela con papel de aluminio perforado durante los últimos 15 minutos de cocción.",
+    "keywords": ["Pascua", "Tarta salada", "Pan relleno", "Casatiello", "Embutidos", "Recetas italianas"],
+    "isItalian": true
+  },
+  {
+    "slug": "mini-pastiera-napoletana",
+    "title": "Mini Pastiera Napolitana (¡Postre de Pascua!)",
+    "emoji": "🥧",
+    "temp": 170,
+    "time": "20",
+    "prep_time": "30 min",
+    "portions": "4",
+    "ingredients": [
+      "1 lámina de masa quebrada (brisa)",
+      "200g de queso ricotta (bien escurrido)",
+      "200g de trigo cocido (grano cotto)",
+      "150g de azúcar",
+      "2 huevos (1 entero + 1 yema)",
+      "Agua de azahar y ralladura de limón",
+      "Fruta confitada (opcional)"
+    ],
+    "description": "¡Todo el sabor tradicional italiano en ración individual! Las mini pastieras quedan húmedas por dentro con una masa súper crujiente.",
+    "instructions": [
+      "En un bol, mezclar la ricotta con el azúcar hasta que quede cremosa. Añadir el trigo cocido, los huevos, los aromas y la fruta confitada.",
+      "Estirar la masa quebrada (guardando recortes para las tiras) y forrar 4 moldes de silicona o aluminio.",
+      "Verter la mezcla de ricotta en los moldes, llenando casi hasta el borde.",
+      "Decorar la superficie de cada tartaleta con tiras de masa formando un enrejado clásico.",
+      "Hornear a 170°C por 20 minutos, hasta que la masa esté bien dorada."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "¡El secreto de la Pastiera perfecta es el reposo! Prepáralas el día antes de comerlas para que los sabores de azahar y ricotta se mezclen divinamente.",
+    "keywords": ["Postre", "Dulce", "Pascua", "Pastiera", "Ricota", "Ricotta", "Tartaletas", "Semana Santa"],
+    "isItalian": true
+  },
+  {
     "slug": "hamburguesa-clasica",
     "title": "Hamburguesa de Vacuno",
     "emoji": "🍔",
