@@ -3128,6 +3128,35 @@
     "keywords": ["Dessert", "Pâques", "Tartelette italienne", "Pastiera", "Ricotta", "Portion individuelle"],
     "isItalian": true
   },
+  {
+    "slug": "mini-torta-pasqualina",
+    "title": "Mini Tourtes Pascales (Prêtes en 15 min!)",
+    "emoji": "🥧",
+    "temp": 180,
+    "time": "15",
+    "prep_time": "15 min",
+    "portions": "4",
+    "ingredients": [
+      "1 rouleau de pâte feuilletée",
+      "250g d'épinards (cuits et bien essorés)",
+      "150g de ricotta",
+      "4 petits œufs (ou moyens)",
+      "30g de parmesan râpé",
+      "Sel, poivre et muscade"
+    ],
+    "description": "L'entrée végétarienne de Pâques idéale! Mini tourtes fermées aux épinards, ricotta et œuf caché. Pâte feuilletée hyper croustillante garantie en 15 minutes.",
+    "instructions": [
+      "Mélanger dans un bol la ricotta, les épinards hachés, le parmesan, sel, poivre et muscade.",
+      "Découper 4 grands disques de pâte feuilletée pour foncer 4 petits moules individuels (ramequins), et 4 disques plus petits pour les couvercles.",
+      "Remplir les moules de farce en creusant un puits profond et y casser un œuf cru.",
+      "Couvrir chaque tourte avec un petit disque de pâte, en scellant bien les bords. Piquer légèrement le dessus avec une fourchette.",
+      "Cuire à 180°C pendant 15-18 minutes, jusqu'à ce que la pâte supérieure soit dorée et croustillante."
+    ],
+    "source": "Tradizione Italiana",
+    "tip": "Veillez à essorer parfaitement les épinards avant de les mélanger, sinon ils détremperont la pâte feuilletée à l'intérieur!",
+    "keywords": ["Végétarien", "Tourte salée", "Entrée de Pâques", "Epinards ricotta"],
+    "isItalian": true
+  },
     {
       "slug": "hamburger-classique",
       "title": "Hamburger Classiques",

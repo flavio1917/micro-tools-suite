@@ -3152,23 +3152,23 @@
     "prep_time": "15 mins",
     "portions": "4",
     "ingredients": [
-      "1 sheet round puff pastry",
+      "1 sheet puff pastry",
       "8 oz (250g) spinach (cooked and squeezed dry)",
       "5 oz (150g) ricotta cheese",
-      "4 quail eggs",
+      "4 small (or medium) eggs",
       "1/4 cup grated parmesan",
       "Salt, pepper, and nutmeg"
     ],
-    "description": "The ultimate vegetarian appetizer! Mini savory pies with spinach, ricotta, and a soft-centered egg. Super crispy puff pastry guaranteed in 15 minutes.",
+    "description": "The ultimate vegetarian appetizer! Mini savory enclosed pies with spinach, ricotta, and a hidden egg. Super crispy puff pastry guaranteed in 15 minutes.",
     "instructions": [
       "In a bowl, mix ricotta, chopped spinach, parmesan, salt, pepper, and nutmeg.",
-      "Cut 4 circles out of the puff pastry and line 4 silicone muffin liners.",
-      "Fill the cups with the mixture, making a small well in the center of each.",
-      "Crack a raw quail egg into each well.",
-      "Cook at 350°F (180°C) for 15 minutes, until the pastry is golden and the egg is set."
+      "Cut 4 large circles from the puff pastry to line 4 single-serve ramekins or tart pans, and 4 smaller circles for the lids.",
+      "Fill the cups with the mixture making a deep well in the center, and crack a raw egg into each.",
+      "Cover each pie with a smaller pastry circle, sealing the edges well. Pierce the top lightly with a fork.",
+      "Cook at 350°F (180°C) for 15-18 minutes, until the top pastry is golden and crispy."
     ],
     "source": "Tradizione Italiana",
-    "tip": "Make sure to squeeze all the water out of the spinach before mixing it, otherwise the pastry will get soggy and won't crisp up!",
+    "tip": "Make sure to squeeze all the water out of the spinach before mixing it, otherwise the pastry will get soggy and won't crisp up inside!",
     "keywords": ["Vegetarian", "Savory pie", "Easter appetizer", "Spinach and ricotta"],
     "isItalian": true
   },

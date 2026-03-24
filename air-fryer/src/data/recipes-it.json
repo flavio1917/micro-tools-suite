@@ -2983,7 +2983,7 @@
     "keywords": ["Carne", "Secondo", "Proteico", "Low Carb", "Chetogenica", "Costolette agnello", "Abbacchio", "Pasqua"],
     "isItalian": true
   },
-  {
+  {{
     "slug": "mini-torta-pasqualina",
     "title": "Mini Torte Pasqualine (Pronte in 15 min!)",
     "emoji": "🥧",
@@ -2992,23 +2992,23 @@
     "prep_time": "15 minuti",
     "portions": "4",
     "ingredients": [
-      "1 rotolo di pasta sfoglia rotonda",
+      "1 rotolo di pasta sfoglia",
       "250g di spinaci freschi o surgelati (ben strizzati)",
       "150g di ricotta vaccina",
-      "4 uova di quaglia",
+      "4 uova piccole (o medie)",
       "30g di parmigiano grattugiato",
       "Sale, pepe e noce moscata q.b."
     ],
-    "description": "L'antipasto vegetariano perfetto per Pasqua. Mini torte salate con spinaci, ricotta e uovo dal cuore morbido. Sfoglia croccantissima garantita in 15 minuti.",
+    "description": "L'antipasto vegetariano perfetto per Pasqua. Mini torte salate chiuse a scrigno con spinaci, ricotta e uovo nascosto. Sfoglia croccantissima garantita in 15 minuti.",
     "instructions": [
       "Mescolare in una ciotola la ricotta, gli spinaci tritati, il parmigiano, sale, pepe e noce moscata.",
-      "Ricavare 4 dischi dalla pasta sfoglia e foderare 4 pirottini in silicone.",
-      "Riempire i pirottini con il ripieno, creando una piccola conca al centro.",
-      "Rompere un uovo di quaglia crudo nella conca di ogni tortina.",
-      "Cuocere a 180°C per 15 minuti, finché la sfoglia è dorata e l'uovo cotto."
+      "Ricavare 4 dischi grandi dalla pasta sfoglia per foderare 4 stampini monoporzione (circa 10-12 cm), e 4 dischi più piccoli per i coperchi.",
+      "Riempire gli stampini con il ripieno creando una bella conca profonda al centro, e rompere un uovo crudo in ciascuna.",
+      "Coprire ogni tortina con il disco di sfoglia più piccolo, sigillando bene i bordi con le dita. Bucherellare leggermente la superficie con una forchetta.",
+      "Cuocere a 180°C per 15-18 minuti, finché la sfoglia superiore è ben dorata e croccante."
     ],
     "source": "Tradizione Italiana",
-    "tip": "Assicurati di strizzare perfettamente gli spinaci prima di amalgamarli alla ricotta, altrimenti l'acqua bagnerà la sfoglia impedendole di diventare croccante!",
+    "tip": "Assicurati di strizzare perfettamente gli spinaci prima di amalgamarli alla ricotta, altrimenti l'acqua bagnerà la sfoglia interna impedendole di cuocere bene!",
     "keywords": ["Vegetariano", "Torta pasqualina", "Antipasto", "Pasqua", "Rustici spinaci e ricotta"],
     "isItalian": true
   },

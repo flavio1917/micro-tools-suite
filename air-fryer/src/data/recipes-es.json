@@ -3099,23 +3099,23 @@
     "prep_time": "15 min",
     "portions": "4",
     "ingredients": [
-      "1 lámina de hojaldre redondo",
+      "1 lámina de hojaldre",
       "250g de espinacas (cocidas y escurridas)",
       "150g de queso ricotta",
-      "4 huevos de codorniz",
+      "4 huevos pequeños (o medianos)",
       "30g de queso parmesano rallado",
       "Sal, pimienta y nuez moscada"
     ],
-    "description": "El aperitivo vegetariano ideal para Pascua. Mini tartas saladas con espinacas, ricotta y yema suave. ¡Hojaldre súper crujiente en solo 15 minutos!",
+    "description": "El aperitivo vegetariano ideal para Pascua. Mini tartas saladas cerradas con espinacas, ricotta y un huevo oculto. ¡Hojaldre súper crujiente en solo 15 minutos!",
     "instructions": [
       "Mezclar en un bol la ricotta, las espinacas picadas, el parmesano, sal, pimienta y nuez moscada.",
-      "Cortar 4 círculos de hojaldre y forrar 4 moldes de silicona.",
-      "Rellenar los moldes con la mezcla, haciendo un pequeño hueco en el centro.",
-      "Romper un huevo de codorniz crudo en cada hueco.",
-      "Cocinar a 180°C durante 15 minutos, hasta que el hojaldre esté dorado y el huevo cuajado."
+      "Cortar 4 círculos grandes de hojaldre para forrar 4 moldes individuales o ramequines, y 4 círculos más pequeños para las tapas.",
+      "Rellenar los moldes haciendo un hueco profundo en el centro, y romper un huevo crudo en cada uno.",
+      "Cubrir cada tarta con un círculo de hojaldre más pequeño, sellando bien los bordes. Pinchar ligeramente la superficie con un tenedor.",
+      "Cocinar a 180°C durante 15-18 minutos, hasta que el hojaldre superior esté dorado y crujiente."
     ],
     "source": "Tradizione Italiana",
-    "tip": "Asegúrate de exprimir perfectamente el agua de las espinacas antes de mezclarlas, ¡de lo contrario mojarán el hojaldre y no quedará crujiente!",
+    "tip": "Asegúrate de exprimir perfectamente el agua de las espinacas antes de mezclarlas, ¡de lo contrario mojarán el hojaldre y no quedará crujiente por dentro!",
     "keywords": ["Vegetariano", "Tarta salada", "Aperitivos de Pascua", "Espinacas y ricotta"],
     "isItalian": true
   },
