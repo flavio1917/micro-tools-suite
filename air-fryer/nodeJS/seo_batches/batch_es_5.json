@@ -1,0 +1,272 @@
+{
+  "es": [
+    {
+      "slug": "costillas-cordero-limon",
+      "title": "Costillitas de Cordero al Limón y Ajo",
+      "description": "Pequeños bocados de puro sabor. Estas costillas se marinan en cítricos para ablandar la carne, logrando una superficie dorada y crujiente que contrasta con un interior tierno y rosado.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "cordero",
+        "gourmet"
+      ]
+    },
+    {
+      "slug": "empanadas-de-carne",
+      "title": "Empanadas de Carne (Masa Crujiente)",
+      "description": "El clásico bocado argentino en tu mesa. Un relleno jugoso de ternera, cebolleta y pimentón envuelto en una masa que se hornea hasta quedar perfectamente quebradiza y dorada.",
+      "keywords": [
+        "Carne",
+        "Entrante",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Rápido",
+        "empanadas"
+      ]
+    },
+    {
+      "slug": "solomillo-cerdo-verduras",
+      "title": "Solomillo de Cerdo con Verduras de Temporada",
+      "description": "Una cena completa en un solo paso. El solomillo se cocina sobre un colchón de vegetales que absorben todos los jugos de la carne, creando una guarnición melosa y llena de sabor.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "solomillo",
+        "saludable",
+        "plato único"
+      ]
+    },
+    {
+      "slug": "costolette-agnello",
+      "title": "Chuletas de Cordero (Listas en 10 min)",
+      "description": "La solución perfecta para una cena elegante y rápida. Chuletas selladas a alta temperatura para mantener toda la jugosidad, ideales para quienes buscan una opción alta en proteínas y baja en carbohidratos.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Low Carb",
+        "Keto",
+        "cordero",
+        "rápido"
+      ]
+    },
+    {
+      "slug": "mini-torta-pasqualina",
+      "title": "Mini Tartas Pascualinas de Espinacas y Ricotta",
+      "description": "Un tesoro de la cocina italiana. Estas tartaletas de hojaldre esconden un corazón cremoso de queso y espinacas con la sorpresa de un huevo oculto. El aperitivo vegetariano estrella.",
+      "keywords": [
+        "Vegetariano",
+        "Tarta salada",
+        "Entrante",
+        "Pascua",
+        "espinacas",
+        "hojaldre"
+      ]
+    },
+    {
+      "slug": "casatiello-napoletano",
+      "title": "Casatiello Napolitano (Pan Relleno Tradicional)",
+      "description": "El emblema de la Pascua en Nápoles. Un pan rústico, tierno y enriquecido con una mezcla generosa de quesos y embutidos italianos. ¡El aroma al hornearlo es simplemente irresistible!",
+      "keywords": [
+        "Pascua",
+        "Tarta salada",
+        "Pan relleno",
+        "Casatiello",
+        "Embutidos",
+        "Recetas italianas"
+      ]
+    },
+    {
+      "slug": "mini-pastiera-napoletana",
+      "title": "Mini Pastieras Napolitanas (Bocados Dulces)",
+      "description": "Tradición en formato individual. Estas mini tartas combinan el aroma del agua de azahar con la cremosidad de la ricotta y el trigo cocido, logrando un postre húmedo y delicado.",
+      "keywords": [
+        "Postre",
+        "Dulce",
+        "Pascua",
+        "Pastiera",
+        "Ricotta",
+        "Tartaletas",
+        "Semana Santa"
+      ]
+    },
+    {
+      "slug": "hamburguesa-clasica",
+      "title": "Hamburguesa de Vacuno (Punto Perfecto)",
+      "description": "Aprende el arte de la hamburguesa perfecta. Un sellado uniforme que crea una costra sabrosa mientras el interior permanece jugoso, resaltando el sabor auténtico de la buena carne.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Low Carb",
+        "Rápido",
+        "burger"
+      ]
+    },
+    {
+      "slug": "hamburguesa-deluxe",
+      "title": "Hamburguesa Deluxe con Pan Tostado",
+      "description": "La experiencia completa de una hamburguesería en casa. Carne de vacuno de calidad cocinada a alta temperatura y servida en un pan perfectamente tostado que aguanta cada bocado.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "deluxe",
+        "burger"
+      ]
+    },
+    {
+      "slug": "hamburguesas-pavo-estilo-asiatico",
+      "title": "Burger de Pavo al Estilo Oriental",
+      "description": "Una alternativa ligera y sorprendente. El pavo magro se combina con notas de jengibre y soja, ofreciendo una hamburguesa jugosa con un perfil de sabor fresco y exótico.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "pavo",
+        "asiático",
+        "saludable"
+      ]
+    },
+    {
+      "slug": "perritos-calientes-estilo-nueva-york",
+      "title": "Hot Dogs NY: Cheddar y Cebolla",
+      "description": "Directo desde las calles de Nueva York. Un perrito caliente completo donde el queso Cheddar fundido abraza la salchicha, rematado con el toque crujiente de la cebolla y el pepinillo.",
+      "keywords": [
+        "Carne",
+        "Masas",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Rápido",
+        "hot dog"
+      ]
+    },
+    {
+      "slug": "rollitos-cerdo-jamon",
+      "title": "Rollitos de Solomillo y Jamón Serrano",
+      "description": "Sofisticación mediterránea. Solomillo relleno de espinacas y tomates secos, envuelto en jamón serrano que se vuelve crujiente al cocinarlo, protegiendo un interior tierno y fundente.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "Low Carb",
+        "jamón serrano"
+      ]
+    },
+    {
+      "slug": "jalapenos-rellenos-tocino",
+      "title": "Jalapeños Popper Envueltos en Tocino",
+      "description": "El snack definitivo para los amantes del picante. Jalapeños rellenos de carne y Cheddar, envueltos en tocino que se dora hasta crujir. Una explosión de sabor en cada bocado.",
+      "keywords": [
+        "Carne",
+        "Verduras",
+        "Entrante",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Low Carb",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "kofta-ternera-cilantro",
+      "title": "Koftas de Ternera al Ras el Hanout",
+      "description": "Brochetas de carne picada con el alma de Marruecos. Las especias y el cilantro fresco crean un aroma inconfundible, logrando una carne dorada por fuera y muy jugosa.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Entrante",
+        "Proteico",
+        "Rápido",
+        "kofta",
+        "especias"
+      ]
+    },
+    {
+      "slug": "albondigas-cordero-menta",
+      "title": "Albóndigas de Cordero, Menta y Limón",
+      "description": "Frescura y potencia en un plato. La menta realza la intensidad del cordero, mientras que el limón aporta una nota vibrante. Unas albóndigas diferentes, doradas y muy tiernas.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "cordero",
+        "menta"
+      ]
+    },
+    {
+      "slug": "albondigas-japonesas",
+      "title": "Albóndigas Glaseadas con Soja y Miso",
+      "description": "Umami puro. Estas albóndigas se bañan en un glaseado japonés que se carameliza durante la cocción, creando una capa brillante, dulce y salada absolutamente adictiva.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "japón",
+        "miso",
+        "umami"
+      ]
+    },
+    {
+      "slug": "salchichas-enteras-asadas",
+      "title": "Salchichas Rústicas (Dorado Uniforme)",
+      "description": "La mejor forma de cocinar salchichas. Sin pincharlas para que no pierdan sus jugos, logramos una piel tensa y crujiente con un interior perfectamente cocido y sabroso.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "salchichas",
+        "clásico"
+      ]
+    },
+    {
+      "slug": "espiral-de-salchicha-a-la-mostaza",
+      "title": "Espiral de Salchicha Miel y Mostaza",
+      "description": "Una presentación espectacular para una receta sencilla. La salchicha en espiral se glasea con una mezcla que carameliza al fuego, aportando un toque dulce y picante irresistible.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "mostaza y miel"
+      ]
+    },
+    {
+      "slug": "sandwich-bistec-rabanillo",
+      "title": "Sándwich de Ternera y Rábano Picante",
+      "description": "Un sándwich con carácter. Finas lonchas de bistec jugoso combinadas con la potencia del rábano picante en un pan caliente. El almuerzo ideal para los que buscan algo con fuerza.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "sándwich",
+        "ternera"
+      ]
+    },
+    {
+      "slug": "brochetas-cordero-shawarma",
+      "title": "Brochetas Shawarma (Especias de Oriente)",
+      "description": "Todo el sabor del street food de Oriente Medio en formato brocheta. Una costra de especias intensas envuelve la carne de cordero, manteniéndola tierna y aromática por dentro.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "shawarma",
+        "especias"
+      ]
+    }
+  ]
+}

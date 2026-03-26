@@ -1,0 +1,233 @@
+{
+  "en": [
+    {
+      "slug": "pigs-in-a-blanket",
+      "title": "Golden Pigs in a Blanket",
+      "description": "A crowd-pleasing classic. Savory sausages are wrapped in buttery, flaky puff pastry and baked until puffed and golden-brown. Perfect as a quick snack or party appetizer.",
+      "keywords": [
+        "Meat",
+        "Leavened Goods",
+        "Appetizer",
+        "Snack",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "simple-chicken-breasts",
+      "title": "Juicy Roasted Chicken Breasts",
+      "description": "Master the art of the perfect chicken breast. This method ensures a tender, moist texture every time, making it an essential staple for high-protein meal prep and healthy dinners.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "cosori-bbq-glazed-chicken-mix",
+      "title": "Sticky Glazed BBQ Chicken",
+      "description": "Get that backyard grill flavor indoors. A blend of chicken pieces is coated in a savory dry rub and finished with a BBQ glaze that caramelizes into a delicious, sticky crust.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick",
+        "American"
+      ]
+    },
+    {
+      "slug": "honey-lemon-chicken-drumsticks",
+      "title": "Honey Lemon Glazed Drumsticks",
+      "description": "A delightful balance of zesty lemon and sweet honey. The high-heat cooking renders the chicken fat to create a thin, crackly glaze that locks in all the flavor.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "five-spice-chicken-thighs",
+      "title": "Five-Spice Glazed Chicken Thighs",
+      "description": "Aromatic and deeply flavorful. These succulent chicken thighs are seasoned with a traditional Cantonese five-spice blend and glazed to a beautiful mahogany finish.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Asian"
+      ]
+    },
+    {
+      "slug": "rustic-herb-roasted-chicken",
+      "title": "Garlic and Herb Roasted Chicken",
+      "description": "Simple, rustic, and aromatic. Chicken pieces are rubbed with fresh garlic and garden herbs, roasting until the skin is perfectly crispy while the meat remains juicy.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "whole-garlic-chicken",
+      "title": "Whole Roasted Garlic Chicken",
+      "description": "The ultimate Sunday roast made easy. This whole chicken is infused with garlic and roasted to achieve a stunningly crispy skin and a tender, moist interior throughout.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "whole-bbq-glazed-chicken",
+      "title": "Whole Rotisserie-Style BBQ Chicken",
+      "description": "Succulent whole chicken with a professional finish. First roasted to perfection, then glazed with a rich BBQ sauce for a sweet, smoky, and sticky exterior.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "italian-meatballs",
+      "title": "Golden Parmesan Meatballs",
+      "description": "Classic Italian-style meatballs with a lighter touch. Cooked to achieve a perfect sear without excess grease, they are delicious on their own or simmered in tomato sauce.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "chicken-fajita-quesadillas",
+      "title": "Crispy Chicken Fajita Quesadillas",
+      "description": "A Tex-Mex favorite. Sautéed chicken and peppers meet melted cheese inside a flour tortilla, toasted until the outside is golden and irresistibly crunchy.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "greek-lamb-shoulder",
+      "title": "Greek Roasted Lamb with Potatoes",
+      "description": "A traditional Mediterranean feast. As the lamb shoulder roasts to tender perfection, its savory drippings season the potatoes below for an incredible depth of flavor.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Lamb"
+      ]
+    },
+    {
+      "slug": "yogurt-marinated-chicken-skewers",
+      "title": "Middle Eastern Yogurt Chicken Skewers",
+      "description": "The secret to incredibly moist chicken. A tangy yogurt marinade tenderizes each bite, creating flavorful, charred skewers inspired by traditional Lebanese flavors.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "stuffed-pizza-roll",
+      "title": "Ham and Cheese Stuffed Pizza Roll",
+      "description": "A savory, rolled delight. Soft pizza dough is packed with cooked ham, provolone, and roasted peppers, baked until the cheese is molten and the crust is golden.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "golden-pork-tenderloin-roast",
+      "title": "Perfect Roasted Pork Tenderloin",
+      "description": "Elegant yet effortless. This high-heat method creates a beautiful browned crust on the outside while keeping the tenderloin succulent and pink in the center.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "balsamic-mustard-steak",
+      "title": "Balsamic and Mustard Glazed Steak",
+      "description": "A sophisticated main course. The acidity of balsamic vinegar and the kick of mustard perfectly complement the rich beef, resulting in a tender and savory steak.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "santa-maria-ribeye-steak",
+      "title": "Herb-Crusted Ribeye Steak",
+      "description": "Experience the steakhouse at home. A robust aromatic herb crust sears into the ribeye at high heat, locking in the juices for a perfectly medium-rare result.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "new-york-strip-steak-chimichurri",
+      "title": "New York Strip Steak with Chimichurri",
+      "description": "Bold and bright flavors. A tender New York strip is seared to perfection and topped with a fresh, zesty herb sauce for a restaurant-quality, protein-rich meal.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "bone-in-pork-chops",
+      "title": "Golden Bone-in Pork Chops",
+      "description": "Juicy and full of flavor. Cooking with the bone-in ensures the meat stays moist, while the high heat creates a beautiful golden-brown crust in just minutes.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "sweet-and-spicy-north-carolina-pork-chops",
+      "title": "Southern Sweet & Smoky Pork Chops",
+      "description": "Inspired by North Carolina BBQ. A brown sugar and spice rub caramelizes into a sweet and smoky crust, delivering the soul of the South to your dinner table.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "cheeseburger-sliders",
+      "title": "Perfect Cheeseburger Sliders",
+      "description": "Bite-sized and big on flavor. These miniature beef patties are seared to perfection and topped with melting cheese, offering all the burger joy with zero mess.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Main Course",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    }
+  ]
+}

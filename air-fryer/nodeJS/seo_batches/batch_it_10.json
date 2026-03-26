@@ -1,0 +1,338 @@
+
+{
+"it": [
+{
+"slug": "grilled-cheese",
+"title": "Grilled Cheese Sandwich (Il Classico Filante in Friggitrice ad Aria)",
+"description": "Il massimo del comfort food: pane tostato alla perfezione con un cuore di cheddar fuso. La friggitrice ad aria garantisce una doratura uniforme e una croccantezza imbattibile senza dover girare il sandwich continuamente in padella.",
+"keywords": [
+"Lievitati",
+"Uova/Formaggi",
+"Snack",
+"Antipasto",
+"Vegetariano",
+"Veloce",
+"Formaggio Cheddar",
+"Pane",
+"Formaggio grigliato",
+"toast filante"
+]
+},
+{
+"slug": "gamberetti-stile-cajun",
+"title": "Gamberetti Cajun (Speziati e Succosi in 5 Minuti)",
+"description": "Porta i sapori della Louisiana in tavola con questi gamberetti pronti in un lampo. Il mix di spezie Cajun crea una crosticina saporita, mentre l'aria calda mantiene il pesce tenero e succoso.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Antipasto",
+"Proteico",
+"LowCarb",
+"Veloce",
+"Gamberetti",
+"Spezie",
+"gamberetti cajun",
+"pesce speziato",
+"secondo veloce"
+]
+},
+{
+"slug": "mais-tostato-burro",
+"title": "Pannocchia al Burro (Snack Dolce e Salato)",
+"description": "La dolcezza del mais incontra la cremosità del burro fuso. La tostatura in Friggitrice ad Aria intensifica il sapore dei chicchi, rendendoli leggermente croccanti all'esterno e tenerissimi all'interno.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Veloce",
+"Mais",
+"pannocchia burro",
+"mais Friggitrice ad Aria",
+"contorno sfizioso"
+]
+},
+{
+"slug": "mini-pizza-pepperoni",
+"title": "Mini Pizza Pepperoni (Croccantezza da Pizzeria)",
+"description": "Piccole pizze cariche di gusto con salame piccante e mozzarella filante. Il trucco della precottura della base in Friggitrice ad Aria assicura una consistenza biscottata che regge perfettamente ogni condimento.",
+"keywords": [
+"Lievitati",
+"Carne",
+"Antipasto",
+"Snack",
+"Proteico",
+"Veloce",
+"Salame piccante",
+"Mozzarella",
+"mini pizza",
+"pizzette salame",
+"merenda salata"
+]
+},
+{
+"slug": "pane-aglio",
+"title": "Garlic Bread (Pane all'Aglio e Parmigiano Dorato)",
+"description": "L'accompagnamento perfetto per ogni cena. Pane fragrante spennellato con burro all'aglio e una pioggia di Parmigiano, tostato fino a diventare dorato e irresistibilmente profumato.",
+"keywords": [
+"Lievitati",
+"Antipasto",
+"Snack",
+"Vegetariano",
+"Veloce",
+"Aglio",
+"Parmigiano",
+"garlic bread",
+"pane aglio",
+"contorno sfizioso"
+]
+},
+{
+"slug": "pannocchie-mais",
+"title": "Pannocchie Arrostite (Il Gusto dell'Estate tutto l'Anno)",
+"description": "Semplici e genuine: pannocchie intere arrostite ad alta temperatura. La friggitrice ad aria simula perfettamente il barbecue, caramellando gli zuccheri naturali del mais senza seccarlo.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"Veloce",
+"Mais",
+"mais arrostito",
+"contorno vegano",
+"barbecue indoor"
+]
+},
+{
+"slug": "pizzette-fiestas",
+"title": "Pizzette Messicane (Fagioli Neri, Mais e Formaggio)",
+"description": "Un'esplosione di colori e sapori Tex-Mex su una base croccante. Fagioli neri, mais e un mix di formaggi fusi creano una mini pizza originale e sostanziosa, ideale per i tuoi party.",
+"keywords": [
+"Uova/Formaggi",
+"Verdure",
+"Antipasto",
+"Snack",
+"Vegetariano",
+"Veloce",
+"Formaggio",
+"Fagioli Neri",
+"pizza messicana",
+"aperitivo tex-mex"
+]
+},
+{
+"slug": "burger-ceci-spinaci",
+"title": "Veggie Burger Ceci e Spinaci (Fatti in Casa e Leggeri)",
+"description": "Dimentica i burger confezionati. Questi hamburger vegetali sono ricchi di nutrienti e hanno una consistenza perfetta: croccanti fuori grazie all'Friggitrice ad Aria e teneri al cuore, senza grassi in eccesso.",
+"keywords": [
+"Verdure",
+"Secondo",
+"Vegetariano",
+"Vegano",
+"Ceci",
+"Spinaci",
+"burger vegetali",
+"hamburger ceci",
+"secondo light"
+]
+},
+{
+"slug": "barchette-zucchine-ricotta",
+"title": "Zucchine Ripiene alla Ricotta (Leggere e Gratinate)",
+"description": "Barchette di zucchine tenere farcite con una crema delicata di ricotta e Parmigiano. La cottura ventilata crea una crosticina dorata in superficie per un secondo piatto vegetariano sano ed elegante.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Secondo",
+"Contorno",
+"Proteico",
+"Vegetariano",
+"LowCarb",
+"Zucchina",
+"Ricotta",
+"zucchine ripiene"
+]
+},
+{
+"slug": "peperoni-gratinati-capperi",
+"title": "Peperoni Gratinati (Saporiti con Capperi e Aglio)",
+"description": "Falde di peperone dolci e carnose ricoperte da una panatura croccante e aromatica. Un contorno vegano dal carattere deciso che sprigiona tutto il profumo del Mediterraneo.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Vegano",
+"Peperoni",
+"Capperi",
+"peperoni gratinati",
+"contorno saporito"
+]
+},
+{
+"slug": "asparagi-gratinati-parmigiano",
+"title": "Asparagi al Parmigiano e Mandorle (Crunch Irresistibile)",
+"description": "Eleva i tuoi asparagi con questa panatura croccante al Parmigiano e scaglie di mandorle. La cottura rapida preserva la croccantezza degli asparagi regalandoti una gratinatura da chef.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Contorno",
+"Antipasto",
+"Proteico",
+"Vegetariano",
+"LowCarb",
+"Veloce",
+"Asparagi",
+"Parmigiano",
+"asparagi gratinati"
+]
+},
+{
+"slug": "spicchi-finocchio-limone",
+"title": "Finocchi Arrostiti al Limone (Delicati e Light)",
+"description": "Scopri il lato dolce del finocchio. Arrostito in Friggitrice ad Aria perde la nota pungente di anice per diventare tenero e caramellato, con un tocco di limone che rinfresca il palato.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Vegano",
+"LowCarb",
+"Veloce",
+"Finocchio",
+"finocchi arrosto",
+"contorno leggero"
+]
+},
+{
+"slug": "cipolle-rosse-agrodolce",
+"title": "Cipolle Rosse Caramellate (L'Agrodolce Perfetto)",
+"description": "Cipolle rosse trasformate in una glassa densa e deliziosa. Perfette per accompagnare formaggi stagionati o per dare un tocco gourmet ai tuoi hamburger fatti in casa.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Vegano",
+"Cipolla Rossa",
+"cipolle agrodolce",
+"cipolle caramellate"
+]
+},
+{
+"slug": "cavoletti-glassati-balsamico",
+"title": "Cavoletti al Balsamico (Agrodolce e Croccanti)",
+"description": "Cavoletti di Bruxelles croccanti fuori e teneri dentro, avvolti in una riduzione di aceto balsamico che ne esalta il sapore rustico. Un contorno saporito e veloce.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Cavoletti di Bruxelles",
+"Aceto Balsamico",
+"cavoletti glassati"
+]
+},
+{
+"slug": "pomodorini-confit-origano",
+"title": "Pomodorini Confit Rapidi (Caramelle di Sapore)",
+"description": "Ottieni pomodorini dolcissimi e concentrati in una frazione del tempo del forno tradizionale. Ideali per bruschette gourmet, per condire la pasta o arricchire insalate.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Vegano",
+"Pomodorini",
+"Origano",
+"pomodori confit",
+"bruschette gourmet"
+]
+},
+{
+"slug": "frittata-verdure-miste",
+"title": "Frittata Soffice in Friggitrice ad Aria (Leggera e Senza Stress)",
+"description": "Niente più padelle da girare! Una frittata alta, soffice e cotta in modo uniforme grazie alla ventilazione, perfetta per chi cerca un secondo piatto proteico e povero di grassi.",
+"keywords": [
+"Uova/Formaggi",
+"Verdure",
+"Secondo",
+"Antipasto",
+"Proteico",
+"Vegetariano",
+"LowCarb",
+"Uova",
+"frittata Friggitrice ad Aria",
+"secondo veloce"
+]
+},
+{
+"slug": "spiedini-halloumi-verdure",
+"title": "Spiedini di Halloumi (Il Formaggio che non si Scioglie)",
+"description": "Scopri la consistenza unica dell'Halloumi grigliato. Insieme alle zucchine crea uno spiedino saporito con una crosticina dorata deliziosa, perfetto per una cena vegetariana diversa dal solito.",
+"keywords": [
+"Uova/Formaggi",
+"Verdure",
+"Secondo",
+"Antipasto",
+"Proteico",
+"Vegetariano",
+"LowCarb",
+"Halloumi",
+"Zucchine",
+"spiedini vegetariani"
+]
+},
+{
+"slug": "tortino-patate-filante",
+"title": "Sformato di Patate e Provola (Cuore Filante Affumicato)",
+"description": "Un tortino di patate dalla crosta dorata che nasconde un cuore di provola affumicata filante. Un piatto unico o contorno ricco che conquista al primo assaggio.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Secondo",
+"Contorno",
+"Proteico",
+"Vegetariano",
+"Patate",
+"Provola",
+"sformato patate",
+"gateau veloce"
+]
+},
+{
+"slug": "edamame-speziati-croccanti",
+"title": "Edamame Tostati (Snack Proteico al Sesamo e Peperoncino)",
+"description": "Trasforma i baccelli di soia in un antipasto irresistibile. Tostati con olio di sesamo e peperoncino, questi edamame diventano croccanti e saporiti, ideali per un aperitivo healthy.",
+"keywords": [
+"Verdure",
+"Antipasto",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Vegano",
+"LowCarb",
+"Veloce",
+"Edamame",
+"aperitivo sano"
+]
+},
+{
+"slug": "ceci-tostati-paprika",
+"title": "Ceci Croccanti alla Paprika (Lo Snack che Crea Dipendenza)",
+"description": "Dimentica le patatine confezionate. Questi ceci tostati alla paprika e cumino sono croccantissimi, sani e ricchi di proteine. Perfetti da sgranocchiare davanti a un film o sopra una vellutata.",
+"keywords": [
+"Verdure",
+"Snack",
+"Antipasto",
+"Vegetariano",
+"Vegano",
+"Ceci",
+"Paprika",
+"ceci tostati",
+"snack proteico"
+]
+}
+]
+}

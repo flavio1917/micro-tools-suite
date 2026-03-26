@@ -1,0 +1,268 @@
+{
+  "es": [
+    {
+      "slug": "muffins-cafe-cacao-streusel",
+      "title": "Muffins de Café y Cacao con Streusel",
+      "description": "El despertar perfecto. Muffins de café y cacao con una textura increíblemente húmeda y un aroma intenso, coronados con un crujiente streusel que se deshace en la boca.",
+      "keywords": [
+        "Dulce",
+        "Desayuno",
+        "Snack",
+        "Rápido",
+        "café",
+        "chocolate"
+      ]
+    },
+    {
+      "slug": "muffins-gotas-chocolate",
+      "title": "Muffins Esponjosos con Chispas de Chocolate",
+      "description": "La receta definitiva del muffin clásico. Logra una masa alta y aireada con una cúpula pronunciada y generosas gotas de chocolate fundido en cada bocado.",
+      "keywords": [
+        "Dulce",
+        "Desayuno",
+        "Merienda",
+        "Rápido",
+        "clásico",
+        "repostería"
+      ]
+    },
+    {
+      "slug": "dorada-parrilla-aceitunas",
+      "title": "Dorada a la Parrilla con Aceitunas y Tomate",
+      "description": "Sabor mediterráneo en estado puro. Filetes de dorada perfectamente sellados, acompañados de una salsa cruda de tomate fresco y aceitunas que aporta un toque vibrante.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "mediterráneo",
+        "saludable"
+      ]
+    },
+    {
+      "slug": "filetes-bagre-cajun",
+      "title": "Filetes de Pescado al Estilo Cajún",
+      "description": "Un viaje a Luisiana. Filetes sazonados con una mezcla de especias potentes y ahumadas que crean una costra deliciosa, manteniendo el pescado tierno y jugoso.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Low Carb",
+        "Rápido",
+        "Cajún",
+        "especiado"
+      ]
+    },
+    {
+      "slug": "pizza-de-desayuno",
+      "title": "Pizza de Desayuno con Huevo y Jamón",
+      "description": "Rompe la rutina. Una base crujiente con mozzarella fundida y jamón ahumado, terminada con un huevo en el centro cocinado justo en su punto.",
+      "keywords": [
+        "Masas",
+        "Desayuno",
+        "Snack",
+        "Proteico",
+        "Rápido",
+        "pizza"
+      ]
+    },
+    {
+      "slug": "salmon-mantequilla-limon",
+      "title": "Salmón con Mantequilla, Limón y Ajo",
+      "description": "Elegancia y sencillez. El salmón se baña en una salsa de mantequilla cítrica y ajo que realza su sabor natural, logrando una textura sedosa que se deshace al tenedor.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "Low Carb",
+        "salmón",
+        "gourmet"
+      ]
+    },
+    {
+      "slug": "salmon-tomate-pepino",
+      "title": "Salmón Grillé con Ensalada Fresca",
+      "description": "La cena ligera perfecta. Salmón jugoso acompañado de una ensalada refrescante de tomate, pepino y cebolla roja. Un plato equilibrado, proteico y lleno de color.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "fitness",
+        "fresco"
+      ]
+    },
+    {
+      "slug": "salmon-glaseado-estilo-oriental",
+      "title": "Salmón Glaseado con Soja y Naranja",
+      "description": "Dulce, cítrico y salado. Filetes de salmón lacados con una reducción de soja, naranja y jengibre que crea una capa brillante y un sabor asiático irresistible.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "asiático",
+        "glaseado"
+      ]
+    },
+    {
+      "slug": "muffin-sandwich-desayuno",
+      "title": "Breakfast Muffin: Sándwich de Huevo y Queso",
+      "description": "El clásico desayuno americano ahora en tu casa. Pan tostado, queso fundido, carne sabrosa y un huevo cocinado al vapor para lograr esa textura de comida rápida premium.",
+      "keywords": [
+        "Plato principal",
+        "Desayuno",
+        "Merienda",
+        "Masas",
+        "Rápido",
+        "Fácil",
+        "americano"
+      ]
+    },
+    {
+      "slug": "hojaldres-manzana",
+      "title": "Hojaldres de Manzana y Canela",
+      "description": "Láminas crujientes de hojaldre con finas rodajas de manzana caramelizada y un toque de canela. Un postre individual clásico, elegante y muy fácil de preparar.",
+      "keywords": [
+        "Dulce",
+        "Snack",
+        "Desayuno",
+        "Rápido",
+        "Vegetariano",
+        "manzana",
+        "hojaldre"
+      ]
+    },
+    {
+      "slug": "pepinillos-fritos",
+      "title": "Pepinillos Fritos (Fried Pickles)",
+      "description": "El aperitivo más adictivo. Pepinillos encurtidos con un rebozado ultra crujiente y dorado. El equilibrio perfecto entre el ácido del vinagre y el crujido exterior.",
+      "keywords": [
+        "Verduras",
+        "Aperitivo",
+        "Vegetariano",
+        "Rápido",
+        "pickles",
+        "snack"
+      ]
+    },
+    {
+      "slug": "souffle-de-chocolate",
+      "title": "Soufflé de Chocolate Negro Intenso",
+      "description": "Alta repostería francesa en minutos. Un postre de textura etérea y centro fundente que impresiona por su volumen y su profundo sabor a cacao.",
+      "keywords": [
+        "Dulce",
+        "Postre",
+        "Rápido",
+        "chocolate",
+        "francés"
+      ]
+    },
+    {
+      "slug": "tacos-pescado-parrilla",
+      "title": "Tacos de Pescado con Harina de Maíz",
+      "description": "Sabor de costa mexicana. Tiras de pescado tiernas con un rebozado ligero de maíz y especias, listas para montar en tortillas calientes con tus toppings favoritos.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "tacos",
+        "mexicano"
+      ]
+    },
+    {
+      "slug": "tostadas-francesas-rellenas",
+      "title": "Tostadas Francesas Rellenas de Crema",
+      "description": "Lleva el brunch a otro nivel. Pan brioche esponjoso relleno de suave queso crema, dorado hasta quedar crujiente por fuera y fundente por dentro.",
+      "keywords": [
+        "Dulce",
+        "Desayuno",
+        "Snack",
+        "Rápido",
+        "brioche",
+        "brunch"
+      ]
+    },
+    {
+      "slug": "bizcocho-esponjoso-de-limon",
+      "title": "Bizcocho de Limón (Súper Esponjoso)",
+      "description": "El bizcocho de siempre, pero mejor. Con un aroma cítrico natural intenso y una miga suave y húmeda que se mantiene perfecta durante días.",
+      "keywords": [
+        "Dulce",
+        "Postre",
+        "Snack",
+        "Desayuno",
+        "Rápido",
+        "limón",
+        "casero"
+      ]
+    },
+    {
+      "slug": "pastelitos-pescado-congelados",
+      "title": "Pastelitos de Pescado Crujientes",
+      "description": "La solución rápida para una cena nutritiva. Te enseñamos cómo cocinar pasteles de pescado congelados para que queden extra crujientes por fuera y jugosos por dentro.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Rápido",
+        "Proteico",
+        "cena fácil"
+      ]
+    },
+    {
+      "slug": "huevos-en-cocotte-con-panceta",
+      "title": "Huevos Cocotte con Panceta y Parmesano",
+      "description": "Un bocado de lujo. Huevos horneados en moldes individuales sobre una cama de panceta crujiente y espinacas, bañados en una crema suave de parmesano.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Carne",
+        "Desayuno",
+        "Entrante",
+        "Proteico",
+        "Low Carb",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "biscuits-de-queso-cheddar",
+      "title": "Cheddar Biscuits (Panecillos de Queso)",
+      "description": "El acompañamiento ideal. Panecillos salados, tiernos y cargados de queso Cheddar. Perfectos para acompañar una sopa caliente o un guiso tradicional.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Entrante",
+        "Snack",
+        "Rápido",
+        "cheddar",
+        "pan casero"
+      ]
+    },
+    {
+      "slug": "mini-pizzas-rapidas",
+      "title": "Mini Pizzas en Muffin Inglés",
+      "description": "Cena divertida y exprés. Utilizamos la base aireada de un muffin inglés para crear pizzas individuales con queso fundido y dorado en tiempo récord.",
+      "keywords": [
+        "Masas",
+        "Huevos/Quesos",
+        "Entrante",
+        "Snack",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "muffin-de-arandanos-rojos",
+      "title": "Muffins de Arándanos Rojos y Naranja",
+      "description": "Un equilibrio cítrico y dulce. La ralladura de naranja potencia el sabor de los arándanos rojos en estos muffins esponjosos y coloridos.",
+      "keywords": [
+        "Dulce",
+        "Desayuno",
+        "Snack",
+        "Rápido",
+        "arándanos",
+        "frutal"
+      ]
+    }
+  ]
+}

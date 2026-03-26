@@ -1,0 +1,251 @@
+{
+  "en": [
+    {
+      "slug": "cajun-spiced-french-fries",
+      "title": "Cajun-Spiced Crispy Fries",
+      "description": "Bring the flavors of Louisiana to your table. These fries are tossed in a bold Cajun spice blend, delivering a satisfyingly spicy crunch with a fluffy, tender center.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Vegan",
+        "Quick",
+        "Spicy"
+      ]
+    },
+    {
+      "slug": "homemade-french-fries",
+      "title": "Perfect Homemade Potato Fries",
+      "description": "Master the art of the fry. By soaking the potatoes to remove excess starch, we achieve a superior level of crispness that rivals your favorite bistro fries.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "frozen-crinkle-cut-fries",
+      "title": "Crispy Crinkle Cut Fries",
+      "description": "The ultimate texture for sauce lovers. The unique crinkle cut creates more surface area for maximum crunch, making them the perfect vessel for your favorite dips.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "buttermilk-fried-chicken",
+      "title": "Southern-Style Buttermilk Fried Chicken",
+      "description": "A true classic made lighter. A tangy buttermilk marinade ensures incredibly juicy chicken, while the seasoned flour coating air-fries to a golden, rustic crunch.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "parmesan-zucchini-fries",
+      "title": "Parmesan-Crusted Zucchini Fries",
+      "description": "The perfect veggie alternative. These zucchini batons are coated in a savory Parmesan and breadcrumb crust, offering a light yet crispy bite with a tender heart.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "garlic-parmesan-chicken-wings",
+      "title": "Garlic Parmesan Chicken Wings",
+      "description": "A crowd-pleasing favorite. These wings are cooked until the skin is perfectly crisp, then tossed in a rich, aromatic blend of toasted garlic and sharp Parmesan cheese.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "jerk-chicken-wings",
+      "title": "Spicy Jamaican Jerk Wings",
+      "description": "Escape to the Caribbean. These wings are infused with a traditional Jamaican dry rub, featuring a complex and aromatic heat that’s balanced by deep, smoky undertones.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Quick",
+        "Spicy"
+      ]
+    },
+    {
+      "slug": "ketchup-mustard-glazed-chicken-wings",
+      "title": "Tangy Glazed Chicken Wings",
+      "description": "A pantry-friendly miracle. A simple glaze of ketchup and mustard caramelizes beautifully under the heat, creating sticky, flavorful wings the whole family will love.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "Snack",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "honey-sriracha-chicken-wings",
+      "title": "Sweet & Spicy Honey Sriracha Wings",
+      "description": "The perfect balance of heat and sweet. These wings are air-fried to peak crispness before being tossed in a glossy, addictive honey-sriracha glaze.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Quick",
+        "Spicy"
+      ]
+    },
+    {
+      "slug": "chicken-tikka-drumsticks",
+      "title": "Tender Chicken Tikka Drumsticks",
+      "description": "Flavorful and aromatic. Marinated in a traditional spice blend and creamy coconut milk, these drumsticks are cooked until the meat is succulent and falls off the bone.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Indian"
+      ]
+    },
+    {
+      "slug": "cajun-chicken-tenders",
+      "title": "Crispy Cajun Chicken Tenders",
+      "description": "Bold flavor in every bite. These juicy chicken strips feature a zesty Cajun-spiced breading that delivers a satisfying crunch and a hint of Louisiana heat.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Quick",
+        "Spicy"
+      ]
+    },
+    {
+      "slug": "lemon-garlic-chicken-drumsticks",
+      "title": "Lemon Garlic Herb Drumsticks",
+      "description": "Fresh and zesty. Marinated with bright lemon, pungent garlic, and garden herbs, these drumsticks feature a beautifully rendered, crispy skin and juicy interior.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "mustard-glazed-chicken-thighs",
+      "title": "Sweet Mustard Glazed Chicken Thighs",
+      "description": "Quick, easy, and incredibly flavorful. A sharp mustard and sweet maple syrup glaze creates a caramelized finish on these tender, succulent chicken thighs.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "yogurt-rosemary-chicken-thighs",
+      "title": "Creamy Yogurt & Rosemary Chicken",
+      "description": "The secret to the juiciest chicken. A yogurt-based marinade tenderizes the meat from within, while fresh rosemary adds a sophisticated, piney aroma during roasting.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "pork-katsu",
+      "title": "Crispy Pork Katsu Cutlets",
+      "description": "A Japanese restaurant favorite made light. Using Panko breadcrumbs, these pork cutlets achieve a thick, extra-crunchy crust that satisfies with minimal oil.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick",
+        "Japanese"
+      ]
+    },
+    {
+      "slug": "breaded-eggplant-medallions",
+      "title": "Cheesy Breaded Eggplant Medallions",
+      "description": "Versatile and delicious. These eggplant slices feature a savory cheese crust that’s perfect as a snack, a side, or the base for a lighter Eggplant Parmesan.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "homemade-golden-fish-sticks",
+      "title": "Golden Homemade Fish Sticks",
+      "description": "Skip the freezer aisle. These homemade sticks use fresh white fish and a crisp breading for a wholesome, protein-rich meal that kids and adults will both enjoy.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "cereal-crusted-chicken-bites-mustard-sauce",
+      "title": "Ultra-Crispy Cereal-Crusted Chicken",
+      "description": "Take crunch to the next level. A clever cornflake coating creates a distinctively loud and satisfying crispness on these tender, bite-sized chicken pieces.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "sausage-stuffed-mushrooms",
+      "title": "Savory Sausage-Stuffed Mushrooms",
+      "description": "Bite-sized flavor bombs. Tender mushroom caps are overflowing with a savory mixture of pork sausage, cheese, and herbs, roasted to a golden-brown finish.",
+      "keywords": [
+        "Meat",
+        "Vegetables",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "chicken-spring-rolls",
+      "title": "Crispy Golden Chicken Spring Rolls",
+      "description": "Better than takeout. These spring rolls are packed with a savory chicken and vegetable filling, wrapped in a paper-thin shell that air-fries to a perfect, glass-like crunch.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Asian"
+      ]
+    }
+  ]
+}

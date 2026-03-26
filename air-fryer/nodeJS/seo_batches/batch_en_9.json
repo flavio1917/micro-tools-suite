@@ -1,0 +1,255 @@
+{
+  "en": [
+    {
+      "slug": "stuffed-eggplant-mozzarella",
+      "title": "Parmigiana-Style Stuffed Eggplant",
+      "description": "A clever, hearty twist on a classic. These eggplant shells are packed with a savory mixture of roasted pulp, rich tomato sauce, and gooey mozzarella, then baked until perfectly tender and bubbly.",
+      "keywords": [
+        "Vegetables",
+        "Main Course",
+        "Side Dish",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "frozen-potato-wedges",
+      "title": "Crispy Frozen Potato Wedges",
+      "description": "The ultimate effortless side dish. Cooked directly from the freezer, these wedges achieve a fluffy, steaming interior and a satisfyingly golden, crisp exterior without the need for extra oil.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "rustic-spiced-potato-wedges",
+      "title": "Parmesan & Garlic Spiced Wedges",
+      "description": "Rustic, bold, and full of flavor. These thick-cut wedges are tossed in a savory blend of Parmesan cheese, garlic, and onion powder, then roasted to a perfect golden crunch.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "whole-baked-potatoes",
+      "title": "Perfect Whole Baked Potatoes",
+      "description": "The gold standard of comfort food. Enjoy a classic jacket potato with an incredibly shatter-crisp skin and a soft, pillowy interior that's ready for your favorite toppings.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "roasted-potatoes-spicy-mayo",
+      "title": "Roasted Baby Potatoes with Spicy Dip",
+      "description": "Bite-sized perfection. These herb-seasoned baby potatoes are roasted until the skins are snappy and served with a creamy, zesty spicy mayonnaise for the ultimate dipping experience.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Appetizer",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "air-fryer-hash-browns",
+      "title": "Golden Hash Brown Patties",
+      "description": "Start your morning with a crunch. These classic potato patties are cooked to a beautiful golden-brown finish using rapid air circulation, keeping them light, crispy, and oil-free.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Breakfast",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "hasselback-potatoes",
+      "title": "Buttery Hasselback Potatoes",
+      "description": "Elegant and eye-catching. Thinly sliced but held together at the base, these potatoes fan out as they bake, allowing seasoned butter to seep into every layer for a crispy outside and melt-in-your-mouth inside.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "roasted-baby-potatoes",
+      "title": "Herb-Roasted Baby Potatoes",
+      "description": "A versatile and wholesome side. These tiny potatoes are roasted at high heat with fresh herbs until the exteriors are crispy and the centers are buttery and tender.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Appetizer",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "whole-roasted-bell-peppers",
+      "title": "Charred Whole Roasted Bell Peppers",
+      "description": "A kitchen essential made easy. High heat blisters and chars the skins to perfection, resulting in a sweet, tender, and smoky pulp that's perfect for salads, sauces, or sides.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Vegan",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "air-fryer-onion-rings",
+      "title": "Crunchy Air-Fried Onion Rings",
+      "description": "All the crunch of the deep-fryer with a fraction of the oil. These onion rings feature a thick, seasoned coating that air-fries to a loud, golden-brown finish.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "bbq-candied-bacon",
+      "title": "Smoky Candied BBQ Bacon",
+      "description": "The ultimate sweet and salty snack. Thick-cut bacon is glazed with sugar and spices, then caramelized until it forms a glass-like, smoky-sweet crust that's completely addictive.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "sweet-mustard-crusted-steaks",
+      "title": "Sweet & Mustard Crusted Steaks",
+      "description": "A flavor powerhouse. Intense heat sears the steak while rapidly melting a sweet mustard rub into a robust, aromatic crust that locks in all the succulent juices.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "brussels-sprouts-with-pancetta",
+      "title": "Charred Brussels Sprouts & Pancetta",
+      "description": "Sophisticated and savory. High-heat roasting chars the outer leaves of the sprouts while rendering the salty pancetta fat, coating every bite in a rich, smoky flavor.",
+      "keywords": [
+        "Vegetables",
+        "Meat",
+        "Side Dish",
+        "Main Course",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "crispy-kale-chips",
+      "title": "Light & Crispy Kale Chips",
+      "description": "The ultimate guilt-free snack. Transform fresh kale into paper-thin, shatteringly crisp chips in minutes—a healthy, salty alternative to traditional potato chips.",
+      "keywords": [
+        "Vegetables",
+        "Snack",
+        "Side Dish",
+        "Vegetarian",
+        "Vegan",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "apple-chips",
+      "title": "Crispy Dehydrated Apple Chips",
+      "description": "Naturally sweet and wholesome. Low-temperature dehydration turns fresh apple slices into crisp, concentrated bites of fruit that are perfect for snacking on the go.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Vegan",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "rustic-pear-tart",
+      "title": "Rustic Pear & Walnut Galette",
+      "description": "Effortlessly elegant. This free-form tart features a flaky, buttery crust folded over sweet sliced pears, finished with a drizzle of honey and a crunch of toasted walnuts.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Vegetarian",
+        "Baked Goods"
+      ]
+    },
+    {
+      "slug": "roasted-green-beans",
+      "title": "Crisp-Tender Roasted Green Beans",
+      "description": "A vibrant and simple side. Roasting at high temperatures eliminates excess moisture, leaving you with green beans that are snappy, tender, and beautifully browned.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Vegan",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "air-fryer-falafel",
+      "title": "Golden Spiced Chickpea Falafel",
+      "description": "Authentic flavor made light. These falafels feature a moist, herb-spiced interior and a perfectly golden-brown, crisp exterior without the need for deep-frying.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "greek-style-fries",
+      "title": "Greek-Style Feta & Oregano Fries",
+      "description": "A Mediterranean twist on a favorite. Crispy fries are tossed with salty crumbled feta, fresh parsley, and aromatic oregano for a bold and savory side dish.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Appetizer",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "frozen-curly-fries",
+      "title": "Perfectly Golden Curly Fries",
+      "description": "Fun, crunchy, and hassle-free. Get evenly cooked, golden-brown spirals directly from the freezer to your plate without a drop of extra oil.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Appetizer",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    }
+  ]
+}

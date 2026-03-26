@@ -1,0 +1,285 @@
+{
+  "es": [
+    {
+      "slug": "patatas-fritas-cajun",
+      "title": "Patatas Cajun (Especiadas & Crujientes)",
+      "description": "Viaja al corazón de Luisiana con estas patatas cortadas a mano. El secreto está en su mezcla de especias aromáticas que les aporta un toque picante y un color dorado irresistible en cada bocado.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "Rápido",
+        "cajun",
+        "picante"
+      ]
+    },
+    {
+      "slug": "patatas-fritas-caseras",
+      "title": "Patatas Fritas de Verdad (Técnica Tradicional)",
+      "description": "La patata frita perfecta existe. Al eliminar el exceso de almidón, logramos unos bastones que se mantienen firmes y crujientes por fuera, con un interior tierno que se deshace en la boca.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "patatas fritas",
+        "casero"
+      ]
+    },
+    {
+      "slug": "patatas-onduladas-congeladas",
+      "title": "Patatas Onduladas (Máxima Crocancia)",
+      "description": "Gracias a su forma estriada, estas patatas multiplican la superficie de contacto para un acabado extra crujiente. Ideales para atrapar tus salsas favoritas sin añadir ni una gota de aceite extra.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "Rápido",
+        "onduladas",
+        "sin aceite"
+      ]
+    },
+    {
+      "slug": "pollo-frito-suero-leche",
+      "title": "Pollo Frito al Estilo Sureño (Buttermilk)",
+      "description": "El marinado en suero de leche es la clave para una carne increíblemente tierna. Envuelta en un rebozado especiado y crujiente, esta receta es un homenaje al mejor pollo frito tradicional.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "pollo frito",
+        "buttermilk",
+        "southern style"
+      ]
+    },
+    {
+      "slug": "bastoncitos-calabacin-parmesano",
+      "title": "Bastones de Calabacín al Parmesano",
+      "description": "Una forma divertida y deliciosa de comer verdura. Estos bastones se cubren con una costra de queso parmesano que se gratina hasta quedar crujiente, manteniendo el calabacín jugoso por dentro.",
+      "keywords": [
+        "Verduras",
+        "Aperitivo",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "calabacín",
+        "parmesano",
+        "healthy snack"
+      ]
+    },
+    {
+      "slug": "alitas-pollo-ajo-parmesano",
+      "title": "Alitas de Pollo al Ajo y Parmesano",
+      "description": "Olvídate de las manos pegajosas. Estas alitas llevan un rebozado seco de queso y ajo que crea una capa sabrosa y crujiente, ideal para un picoteo gourmet con amigos.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Aperitivo",
+        "Proteico",
+        "Rápido",
+        "alitas",
+        "ajo y queso"
+      ]
+    },
+    {
+      "slug": "alitas-pollo-jerk",
+      "title": "Alitas Jerk (Sabor Auténtico de Jamaica)",
+      "description": "Una explosión de sabores caribeños. El marinado Jerk impregna el pollo con notas de pimienta de Jamaica, tomillo y canela, logrando una piel tostada y una carne profundamente aromática.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "jerk chicken",
+        "jamaica",
+        "especiado"
+      ]
+    },
+    {
+      "slug": "alitas-pollo-ketchup-mostaza",
+      "title": "Alitas Glaseadas (Ketchup & Mostaza)",
+      "description": "El equilibrio perfecto entre lo dulce y lo salado. Estas alitas se caramelizan durante la cocción, creando un glaseado brillante que sella todos los jugos de la carne.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Entrante",
+        "Proteico",
+        "alitas glaseadas",
+        "BBQ style"
+      ]
+    },
+    {
+      "slug": "alitas-miel-sriracha",
+      "title": "Alitas Miel & Sriracha (Agridulce Picante)",
+      "description": "Para los amantes del contraste. El picor de la Sriracha se suaviza con la dulzura de la miel, envolviendo las alitas en una salsa pegajosa y adictiva de inspiración asiática.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Aperitivo",
+        "Proteico",
+        "Rápido",
+        "Picante",
+        "Agridulce",
+        "Asiático"
+      ]
+    },
+    {
+      "slug": "muslos-pollo-tikka",
+      "title": "Contramuslos Tikka con Coco",
+      "description": "Sabor exótico y textura sedosa. El marinado de leche de coco y especias indias suaviza la carne, permitiendo que el pollo se dore por fuera mientras permanece extremadamente tierno por dentro.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Pollo",
+        "Cocina india",
+        "Especiado",
+        "tikka"
+      ]
+    },
+    {
+      "slug": "tenders-de-pollo-cajun",
+      "title": "Tiras de Pollo Cajun (Tenders Caseros)",
+      "description": "Tiras de pechuga jugosas con un empanado rústico y potente. Esta mezcla de especias sureñas garantiza un sabor auténtico y un crujido que se oye en cada bocado.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Rápido",
+        "Pollo",
+        "Crujiente",
+        "Picante"
+      ]
+    },
+    {
+      "slug": "muslos-pollo-ajo-limon",
+      "title": "Pollo al Ajo y Limón (Piel Crujiente)",
+      "description": "La receta que nunca falla. Un marinado clásico de hierbas y cítricos que penetra en la carne, logrando que la piel se tueste hasta quedar fina y crujiente como el cristal.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "LowCarb",
+        "pollo asado",
+        "limón"
+      ]
+    },
+    {
+      "slug": "muslos-pollo-mostaza",
+      "title": "Pollo Glaseado con Mostaza y Arce",
+      "description": "Sofisticación en pocos minutos. La mostaza aporta carácter y el sirope de arce una nota dulce que carameliza la piel, creando un contraste de sabores digno de un restaurante.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "agridulce",
+        "mostaza"
+      ]
+    },
+    {
+      "slug": "muslos-pollo-yogur-romero",
+      "title": "Pollo al Yogur (Súper Jugoso)",
+      "description": "La ciencia al servicio de la cocina: el ácido láctico del yogur rompe las fibras del pollo, dejándolo increíblemente tierno. El romero fresco remata el plato con un aroma campestre único.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "pollo al yogur",
+        "romero",
+        "tierno"
+      ]
+    },
+    {
+      "slug": "cerdo-katsu",
+      "title": "Tonkatsu de Cerdo (Estilo Japonés)",
+      "description": "Chuletas de cerdo con un empanado de panko, mucho más aireado y crujiente que el pan rallado común. Una delicia japonesa rápida de preparar y muy satisfactoria.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "katsu",
+        "panko",
+        "japón"
+      ]
+    },
+    {
+      "slug": "hamburgesas-berenjena-empanados",
+      "title": "Berenjenas Empanadas (Bocados Crujientes)",
+      "description": "Rodajas de berenjena con un rebozado de queso que las transforma por completo. Crujientes por fuera y cremosas por dentro, son perfectas como aperitivo o para montar una burger vegetal.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Guarnición",
+        "Snack",
+        "Vegetariano",
+        "Rápido",
+        "berenjena",
+        "rebozado"
+      ]
+    },
+    {
+      "slug": "palitos-de-pescado-dorados-caseros",
+      "title": "Varitas de Pescado Blanco Caseras",
+      "description": "La versión saludable y sabrosa de un favorito infantil. Filetes de pescado blanco de calidad empanados y cocinados hasta que brillan con un tono dorado y un crujido perfecto.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Rápido",
+        "merluza",
+        "casero"
+      ]
+    },
+    {
+      "slug": "bocaditos-pollo-cereales",
+      "title": "Nuggets de Pollo con Costra de Cereales",
+      "description": "¡Diversión en la cocina! Usamos copos de maíz triturados para lograr un rebozado extra irregular y crujiente que hará que los nuggets comprados parezcan aburridos.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Rápido",
+        "nuggets",
+        "corn flakes"
+      ]
+    },
+    {
+      "slug": "champiñones-rellenos-salchicha",
+      "title": "Champiñones Gratinados con Salchicha",
+      "description": "Un bocado gourmet y potente. Champiñones frescos rellenos de una farsa de salchicha y queso que se funde y se dora al horno, ideal como entrante para impresionar.",
+      "keywords": [
+        "Carne",
+        "Verduras",
+        "Entrante",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "champiñones rellenos"
+      ]
+    },
+    {
+      "slug": "rollitos-primavera-pollo",
+      "title": "Rollitos de Primavera (Relleno de Pollo)",
+      "description": "Crujientes, dorados y sin exceso de aceite. Estos rollitos esconden un relleno jugoso de pollo y verduras picadas, trayendo el sabor de la cocina asiática a tu casa de forma saludable.",
+      "keywords": [
+        "Carne",
+        "Entrante",
+        "Proteico",
+        "Rápido",
+        "rollitos",
+        "asiático"
+      ]
+    }
+  ]
+}

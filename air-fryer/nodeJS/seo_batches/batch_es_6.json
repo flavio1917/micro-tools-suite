@@ -1,0 +1,270 @@
+{
+  "es": [
+    {
+      "slug": "brochetas-cerdo-teriyaki",
+      "title": "Brochetas de Cerdo al Teriyaki Glaseado",
+      "description": "Bocados de cerdo bañados en una reducción de teriyaki. La cocción rápida carameliza la salsa, creando una superficie brillante, pegajosa y llena de sabor umami.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "teriyaki",
+        "cerdo"
+      ]
+    },
+    {
+      "slug": "brochetas-ternera-coreanas",
+      "title": "Brochetas de Ternera (Estilo Bulgogi)",
+      "description": "Viaja a Seúl con estas brochetas marinadas en una mezcla equilibrada de soja, jengibre y un toque picante. El sellado a alta temperatura mantiene la carne increíblemente jugosa.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Aperitivo",
+        "Proteico",
+        "Rápido",
+        "coreano",
+        "ternera"
+      ]
+    },
+    {
+      "slug": "brochetas-de-queso-y-ternera",
+      "title": "Brochetas de Ternera con Corazón de Queso",
+      "description": "Finas láminas de ternera que abrazan un interior de queso fundido. El glaseado de miel y soja aporta un toque dulce que marida a la perfección con el fundido cremoso.",
+      "keywords": [
+        "Carne",
+        "Entrante",
+        "Proteico",
+        "Rápido",
+        "queso fundido",
+        "brochetas"
+      ]
+    },
+    {
+      "slug": "huevos-a-la-escocesa",
+      "title": "Scotch Eggs: Huevos a la Escocesa",
+      "description": "Un clásico británico reinventado. Huevos cocidos envueltos en carne de cerdo sazonada y un empanado rústico que queda extra crujiente, protegiendo un interior tierno.",
+      "keywords": [
+        "Carne",
+        "Huevos/Quesos",
+        "Entrante",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "bollitos-suaves-de-coco",
+      "title": "Bocaditos de Coco (Tiernos & Dorados)",
+      "description": "Pastelitos ligeros con un aroma tropical intenso. Su exterior se dora delicadamente mientras el corazón de coco permanece húmedo y esponjoso.",
+      "keywords": [
+        "Dulce",
+        "Snack",
+        "Desayuno",
+        "Vegetariano",
+        "Rápido",
+        "coco"
+      ]
+    },
+    {
+      "slug": "gajos-de-aguacate-dorados",
+      "title": "Aguacate Crujiente (Avocado Fries)",
+      "description": "El snack de moda. Gajos de aguacate cremoso con un rebozado especiado que ofrece un contraste de texturas sorprendente: crujiente por fuera, fundente por dentro.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Snack",
+        "Vegetariano",
+        "Rápido",
+        "aguacate"
+      ]
+    },
+    {
+      "slug": "palitos-de-pan-frances",
+      "title": "French Toast Sticks (Canela y Azúcar)",
+      "description": "El desayuno definitivo. Bastones de pan brioche empapados en crema, dorados hasta crujir y rebozados en una mezcla fragante de azúcar y canela.",
+      "keywords": [
+        "Dulce",
+        "Desayuno",
+        "Snack",
+        "Rápido",
+        "tostada francesa"
+      ]
+    },
+    {
+      "slug": "palitos-de-pescado-congelados",
+      "title": "Varitas de Pescado (Extra Light)",
+      "description": "Consigue el crujido perfecto sin usar aceite. Este método de cocción por aire transforma los palitos congelados en una opción ligera, rápida y deliciosa para toda la familia.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Rápido",
+        "sin aceite"
+      ]
+    },
+    {
+      "slug": "cebolla-en-flor",
+      "title": "Blooming Onion: Cebolla en Flor Rebozada",
+      "description": "Un espectáculo visual en tu plato. La cebolla se abre como una flor durante la cocción, creando pétalos individuales ultra crujientes listos para dipear en tu salsa favorita.",
+      "keywords": [
+        "Verduras",
+        "Aperitivo",
+        "Guarnición",
+        "Vegetariano",
+        "cebolla frita"
+      ]
+    },
+    {
+      "slug": "filetes-de-salmon-sencillos",
+      "title": "Salmón Asado (Jugoso & Caramelizado)",
+      "description": "La forma más sana y sabrosa de preparar salmón. El calor circular sella la superficie con un ligero tostado, manteniendo las lascas de pescado hidratadas y tiernas.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Low Carb",
+        "Rápido",
+        "salmón"
+      ]
+    },
+    {
+      "slug": "pescado-con-patatas-estilo-ingles",
+      "title": "Fish & Chips Saludable (Bacalao Crujiente)",
+      "description": "Disfruta del clásico londinense sin remordimientos. Bacalao con un rebozado aireado y crujiente, cocinado con una pizca de mantequilla para un sabor auténtico y jugoso.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "bacalao",
+        "estilo inglés"
+      ]
+    },
+    {
+      "slug": "bollos-de-fresa",
+      "title": "Scones de Fresa Fresca (Estilo British)",
+      "description": "Bollos tradicionales con una textura hojaldrada y ligera. Las pepitas de fresa fresca se funden durante el horneado, aportando dulzor y frescura en cada bocado.",
+      "keywords": [
+        "Dulce",
+        "Snack",
+        "Desayuno",
+        "Vegetariano",
+        "Rápido",
+        "fresa",
+        "scones"
+      ]
+    },
+    {
+      "slug": "bollos-arandanos-jengibre",
+      "title": "Bollos de Arándanos y Toque de Jengibre",
+      "description": "Un contraste vibrante para tu paladar. La dulzura de los arándanos se encuentra con el punto especiado del jengibre en una masa tierna, ideal para una merienda especial.",
+      "keywords": [
+        "Dulce",
+        "Masas",
+        "Desayuno",
+        "Snack",
+        "Postre",
+        "Rápido",
+        "arándanos"
+      ]
+    },
+    {
+      "slug": "gambas-envueltas-en-beicon",
+      "title": "Gambones Crujientes con Beicon",
+      "description": "Mar y montaña en un bocado intenso. La grasa del beicon se funde sobre los gambones, protegiendo su carne y aportando un sabor ahumado e irresistible.",
+      "keywords": [
+        "Carne",
+        "Pescado",
+        "Entrante",
+        "Proteico",
+        "Low Carb",
+        "Rápido",
+        "aperitivo"
+      ]
+    },
+    {
+      "slug": "gambas-al-coco",
+      "title": "Gambas al Coco con Rebozado Crujiente",
+      "description": "Delicadeza tropical. Gambas envueltas en una costra de coco rallado que se tuesta hasta quedar muy crujiente. Perfectas para combinar con una salsa agridulce.",
+      "keywords": [
+        "Pescado",
+        "Entrante",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "coco",
+        "gambas"
+      ]
+    },
+    {
+      "slug": "gambas-crujientes-al-curry",
+      "title": "Gambas al Curry (Doble Empanado)",
+      "description": "Una explosión de sabor especiado. El doble rebozado con harina de maíz garantiza un crujido extra, mientras que el curry aporta un aroma cálido y exótico.",
+      "keywords": [
+        "Pescado",
+        "Aperitivo",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "curry",
+        "especiado"
+      ]
+    },
+    {
+      "slug": "merluza-al-curry",
+      "title": "Merluza al Curry y Leche de Coco",
+      "description": "Lomos de merluza suaves cocinados en una salsa cremosa de inspiración oriental. Una forma ligera y aromática de disfrutar del pescado blanco.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "merluza",
+        "curry"
+      ]
+    },
+    {
+      "slug": "merluza-costra-panko",
+      "title": "Lomos de Merluza con Costra de Panko y Limón",
+      "description": "Textura gourmet en casa. El panko crea una capa mucho más crujiente que el pan rallado, aromatizada con perejil y ralladura de limón para un acabado fresco.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "panko",
+        "merluza"
+      ]
+    },
+    {
+      "slug": "mini-tartas-manzana",
+      "title": "Mini Apple Pies (Tartaletas de Manzana)",
+      "description": "Todo el sabor de la tarta de manzana clásica en formato individual. Un relleno de fruta especiada con canela dentro de una masa dorada y quebradiza.",
+      "keywords": [
+        "Dulce",
+        "Postre",
+        "Snack",
+        "Desayuno",
+        "Vegetariano",
+        "Rápido",
+        "manzana"
+      ]
+    },
+    {
+      "slug": "bocaditos-de-mozzarella-fritos",
+      "title": "Mozzarella Bites (Doble Rebozado)",
+      "description": "El snack de queso definitivo. Cubos de mozzarella con un empanado reforzado para evitar fugas, logrando un exterior crujiente y un corazón de queso hilado infinitamente elástico.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Entrante",
+        "Snack",
+        "Vegetariano",
+        "Rápido",
+        "mozzarella"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+"it": [
+{
+"slug": "muffin-cioccolato-espresso",
+"title": "Muffin Cacao ed Espresso (Energia Pura in Friggitrice ad Aria)",
+"description": "Muffin dall'aroma travolgente, dove il cacao amaro incontra la spinta del caffè espresso. La cottura in Friggitrice ad Aria crea una crosticina deliziosa lasciando il cuore umido e profumato.",
+"keywords": [
+"Dolce",
+"Lievitati",
+"Colazione",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Cacao",
+"Caffè",
+"muffin al caffè",
+"dolci veloci Friggitrice ad Aria"
+]
+},
+{
+"slug": "muffin-formaggio-mais",
+"title": "Muffin Rustici Mais e Formaggio (Cuore Filante e Saporito)",
+"description": "Tortine salate irresistibili che uniscono la dolcezza del mais al carattere del formaggio fuso e degli scalogni. Perfetti come antipasto o snack salato pronto in pochi minuti.",
+"keywords": [
+"Lievitati",
+"Uova/Formaggi",
+"Antipasto",
+"Snack",
+"Vegetariano",
+"Veloce",
+"Mais",
+"Formaggio",
+"muffin salati",
+"aperitivo sfizioso"
+]
+},
+{
+"slug": "muffin-limone-mirtilli",
+"title": "Muffin Cocco e Mirtilli (Senza Uova e Lattosio in Friggitrice ad Aria)",
+"description": "Una variante leggera e profumata dal tocco esotico. Il latte di cocco e il limone regalano una morbidezza incredibile a questi muffin carichi di mirtilli freschi, ideali per ogni esigenza alimentare.",
+"keywords": [
+"Dolce",
+"Colazione",
+"Merenda",
+"Veloce",
+"Senza Lattosio",
+"Vegano",
+"Cocco",
+"Mirtilli",
+"muffin leggeri"
+]
+},
+{
+"slug": "pane-banana-noci",
+"title": "Mini Banana Bread alle Noci (Il Classico in Formato Snack)",
+"description": "Tutto il sapore del banana bread in un formato compatto e fragrante. L'interno rimane dolcissimo e umido, esaltato dallo scrocchio croccante delle noci tostate alla perfezione dall'aria calda.",
+"keywords": [
+"Dolce",
+"Colazione",
+"Snack",
+"Lievitati",
+"Banana",
+"Noci",
+"banana bread veloce",
+"mini plumcake"
+]
+},
+{
+"slug": "asparagi-arrostiti-semplici",
+"title": "Asparagi Arrostiti (Contorno Primaverile in 8 Minuti)",
+"description": "Sani, vibranti e incredibilmente rapidi. Grazie alla friggitrice ad aria, le punte degli asparagi diventano croccanti e saporite, mantenendo intatte tutte le proprietà nutritive e il colore brillante.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Vegetariano",
+"Vegano",
+"Veloce",
+"LowCarb",
+"Asparagi",
+"contorno leggero",
+"asparagi Friggitrice ad Aria"
+]
+},
+{
+"slug": "asparagi-avvolti-prosciutto",
+"title": "Asparagi e Prosciutto Crudo (Antipasto Gourmet Croccante)",
+"description": "Un abbinamento vincente: la dolcezza dell'asparago incontra la sapidità del prosciutto crudo, che in Friggitrice ad Aria diventa croccante come una chips. Elegante e pronto in un lampo.",
+"keywords": [
+"Carne",
+"Verdure",
+"Antipasto",
+"Contorno",
+"Proteico",
+"LowCarb",
+"Veloce",
+"Asparagi",
+"Prosciutto Crudo",
+"finger food sfizioso"
+]
+},
+{
+"slug": "bagel-vegetariani",
+"title": "Bagel Veggie (Verdure Grigliate e Crema al Formaggio)",
+"description": "Un pranzo veloce o uno snack sostanzioso: bagel perfettamente tostati farciti con peperoni e funghi saporiti, bilanciati dalla freschezza del formaggio spalmabile.",
+"keywords": [
+"Lievitati",
+"Uova/Formaggi",
+"Snack",
+"Vegetariano",
+"Peperoni",
+"Funghi",
+"bagel farcito",
+"pranzo veloce"
+]
+},
+{
+"slug": "bocconcini-cavolfiore-salsa-ranch",
+"title": "Cauliflower Wings (Cavolfiore Impanato e Piccante)",
+"description": "La versione vegetale delle famose alette di pollo! Cimette di cavolfiore con una panatura croccante, rese irresistibili da un tocco di salsa piccante. Lo snack perfetto da tuffare nella salsa Ranch.",
+"keywords": [
+"Verdure",
+"Antipasto",
+"Snack",
+"Vegetariano",
+"Cavolfiore",
+"cauliflower wings",
+"aperitivo veg",
+"snack piccante"
+]
+},
+{
+"slug": "broccoli-arrosto-aglio",
+"title": "Broccoli all'Aglio (Dorati e Saporiti in Friggitrice ad Aria)",
+"description": "Dimentica i broccoli bolliti! L'aria calda tosta le cimette rendendole croccanti e concentrando il sapore dell'aglio per un contorno vegano che piacerà a tutti.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Vegetariano",
+"Vegano",
+"LowCarb",
+"Veloce",
+"Broccolo",
+"Aglio",
+"broccoli arrosto"
+]
+},
+{
+"slug": "carote-soia-miele",
+"title": "Carote Laccate Soia e Miele (Contorno Agrodolce)",
+"description": "Carote novelle trasformate in una delizia caramellata. La laccatura alla soia e miele crea una crosticina lucida e saporita che avvolge il cuore tenero della carota.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Carota",
+"Miele",
+"Salsa di Soia",
+"carote glassate"
+]
+},
+{
+"slug": "carote-arrosto-miele",
+"title": "Carote al Miele e Timo (Caramellate e Profumate)",
+"description": "La dolcezza naturale delle carote viene esaltata dal miele e dall'aroma del timo fresco. Un contorno raffinato, dorato e tenero, ideale per accompagnare ogni secondo piatto.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Carote",
+"Miele",
+"Timo",
+"contorno sano"
+]
+},
+{
+"slug": "cavolfiore-curcuma",
+"title": "Cavolfiore alla Curcuma (Speziato e Dorato)",
+"description": "Cimette di cavolfiore croccanti e dal colore vibrante grazie alla curcuma. Un contorno leggero, antinfiammatorio e ricco di sapore, pronto in metà tempo rispetto al forno.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"LowCarb",
+"Veloce",
+"Cavolfiore",
+"Curcuma",
+"cavolfiore speziato"
+]
+},
+{
+"slug": "cavolfiore-salsa-tahina",
+"title": "Cavolfiore Arrosto e Tahina (Gusto Mediorientale)",
+"description": "Il cavolfiore arrostito incontra la cremosità della salsa tahina al limone. Un piatto aromatico e saziante, perfetto come antipasto o contorno originale.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Vegano",
+"Cavolfiore",
+"Tahina",
+"cucina mediorientale"
+]
+},
+{
+"slug": "chips-patate-croccanti",
+"title": "Chips di Patate (Croccantissime e Leggere)",
+"description": "Sottili fette di patata dorate alla perfezione. Tutto il piacere delle patatine fritte ma con pochissimo olio, ideali come snack o contorno irresistibile per i bambini.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"Patate",
+"chips Friggitrice ad Aria",
+"patatine fatte in casa"
+]
+},
+{
+"slug": "funghi-arrostiti",
+"title": "Funghi Arrostiti (Sodi e Saporiti in 10 Minuti)",
+"description": "Il segreto per funghi perfetti? L'Friggitrice ad Aria! Cuociono senza perdere i loro succhi, diventando dorati fuori e teneri dentro, esaltando tutto il loro aroma naturale.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Vegetariano",
+"Vegano",
+"LowCarb",
+"Veloce",
+"Funghi",
+"funghi Friggitrice ad Aria"
+]
+},
+{
+"slug": "melanzane-arrostite-semplici",
+"title": "Melanzane Arrostite (Speziate e Leggere)",
+"description": "Fette di melanzana dorate e insaporite con le tue spezie preferite. Ottime come base per altre ricette o come contorno ipocalorico e saporito.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Vegano",
+"LowCarb",
+"Veloce",
+"Melanzana",
+"melanzane grigliate"
+]
+},
+{
+"slug": "melanzane-grigliate-pesto",
+"title": "Melanzane al Pesto (Morbide e Profumate)",
+"description": "Melanzane cotte in Friggitrice ad Aria fino a diventare tenere e poi condite con un generoso strato di pesto al basilico. Un'esplosione di freschezza e gusto mediterraneo.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"LowCarb",
+"Melanzana",
+"Pesto",
+"melanzane saporite"
+]
+},
+{
+"slug": "melanzane-ripiene-mozzarella",
+"title": "Melanzane alla Parmigiana (Farcite e Filanti)",
+"description": "Una versione originale e veloce della parmigiana: melanzane farcite con pomodoro, mozzarella e basilico, gratinate in friggitrice ad aria fino a formare una crosticina irresistibile.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Secondo",
+"Contorno",
+"Vegetariano",
+"LowCarb",
+"Melanzana",
+"Mozzarella",
+"melanzane ripiene"
+]
+},
+{
+"slug": "patate-spicchi-surgelate",
+"title": "Patate a Spicchi Surgelate (Crunch Esterno e Cuore Soffice)",
+"description": "Il modo migliore per cucinare le patate surgelate: l'aria calda le rende croccanti come se fossero fritte, mantenendo l'interno morbido e senza eccedere con i grassi.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"Patate",
+"patate spicchi Friggitrice ad Aria"
+]
+},
+{
+"slug": "patate-a-spicchi",
+"title": "Patate al Parmigiano (Spicchi Rustici e Saporiti)",
+"description": "Patate con la buccia rese speciali da un mix di spezie e Parmigiano Reggiano grattugiato. Dorate, croccanti e dal gusto deciso: il contorno che mette d'accordo tutti.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Patata",
+"Parmigiano",
+"patate rustiche"
+]
+}
+]
+}

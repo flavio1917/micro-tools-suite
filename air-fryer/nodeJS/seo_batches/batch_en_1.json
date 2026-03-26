@@ -1,0 +1,248 @@
+{
+  "en": [
+    {
+      "slug": "air-fryer-crispy-calamari-rings",
+      "title": "Semolina-Crusted Calamari Rings",
+      "description": "Enjoy the crunch without the deep-fryer. These calamari rings are coated in fine semolina for a golden, shatteringly crisp exterior that locks in the tender, moist interior in just 8 minutes.",
+      "keywords": [
+        "Seafood",
+        "Appetizer",
+        "Main Course",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "classic-indian-breaded-cutlet-air-fryer",
+      "title": "Italian Breaded Cutlet (Cotoletta)",
+      "description": "A lighter take on a Milanese classic. This method achieves a perfectly even, golden-brown crust and juicy meat, delivering all the satisfaction of a traditional pan-fried cutlet with a fraction of the oil.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "air-fryer-stuffed-meatloaf",
+      "title": "Ham and Cheese Stuffed Meatloaf",
+      "description": "A savory centerpiece with a molten surprise. This meatloaf features a seasoned ground meat exterior that crisps beautifully, protecting a heart of melted cheese and savory ham.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "air-fryer-sausage-and-potatoes",
+      "title": "Crispy Sausage and Potato Roast",
+      "description": "The ultimate one-pan comfort meal. As they cook together, the sausage juices coat the potatoes, creating a rustic dish with crispy edges and a tender, flavor-packed interior.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "abruzzese-lamb-skewers",
+      "title": "Abruzzese Lamb Skewers (Arrosticini)",
+      "description": "Bring Italian street food home. High-temperature cooking mimics a charcoal grill, rendering the fat to create tender, slightly charred lamb skewers that are authentically juicy.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "air-fried-giudia-style-artichokes",
+      "title": "Crispy Giudia-Style Artichokes",
+      "description": "A tribute to Rome's Jewish Quarter. These artichokes bloom like flowers, with outer leaves that shatter like chips and a heart that stays buttery and soft.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Vegetarian",
+        "Vegan",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "stuffed-tomatoes-and-bell-peppers",
+      "title": "Mediterranean Stuffed Vegetables",
+      "description": "A wholesome family classic. Vibrant bell peppers and tomatoes are hollowed out and filled with seasoned rice or meat, baking until the vegetables are tender and the filling is infused with juice.",
+      "keywords": [
+        "Vegetables",
+        "Meat",
+        "Main Course",
+        "Side Dish",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "roasted-diced-rosemary-potatoes",
+      "title": "Rosemary and Garlic Roasted Potatoes",
+      "description": "The perfect side dish. Diced potatoes are roasted until they reach peak crispness, tossed with fragrant fresh rosemary and toasted garlic for a rustic, aromatic finish.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "savory-ricotta-spinach-tart",
+      "title": "Creamy Ricotta and Spinach Tart",
+      "description": "Elegant and effortless. A golden, flaky pastry crust holds a silky filling of whipped ricotta and fresh spinach, making it a perfect light lunch or appetizer.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Vegetables",
+        "Appetizer",
+        "Main Course",
+        "High-Protein",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "roasted-chestnuts-air-fryer",
+      "title": "Perfectly Roasted Chestnuts",
+      "description": "Capture the flavor of autumn. This method ensures chestnuts are easy to peel and have a sweet, tender interior with a nostalgic roasted aroma.",
+      "keywords": [
+        "Vegetables",
+        "Snack",
+        "Appetizer",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "light-arancini-and-suppli",
+      "title": "Arancini and Supplì (Street Food Duo)",
+      "description": "Sicilian and Roman flavors combined. A uniform, crispy breadcrumb shell hides a core of stringy mozzarella that melts perfectly every time.",
+      "keywords": [
+        "Meat",
+        "Eggs/Cheeses",
+        "Appetizer",
+        "Snack",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "potato-croquettes-panzarotti",
+      "title": "Neapolitan Potato Croquettes",
+      "description": "Experience the famous 'Panzarotti' of Naples. These croquettes feature a smooth, seasoned potato mash with a melting cheese center, all wrapped in a firm, golden crust.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Snack",
+        "Meat",
+        "Quick",
+        "Italian"
+      ]
+    },
+    {
+      "slug": "quick-focaccia-flatbread",
+      "title": "Rosemary and Sea Salt Focaccia",
+      "description": "A fast and fragrant flatbread. Brushed with extra virgin olive oil and topped with coarse salt, this focaccia is crispy on the bottom and airy on top—the ideal partner for charcuterie.",
+      "keywords": [
+        "Leavened",
+        "Appetizer",
+        "Snack",
+        "Quick",
+        "Vegan"
+      ]
+    },
+    {
+      "slug": "nutella-jam-puff-pastry-cornetti",
+      "title": "Mini Filled Croissants (Cornetti)",
+      "description": "Sweeten your morning in minutes. Flaky, buttery puff pastry triangles are filled with your choice of chocolate or jam and baked until puffed and golden.",
+      "keywords": [
+        "Dessert",
+        "Breakfast",
+        "Snack",
+        "Quick",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "eggplant-parmesan",
+      "title": "Lighter Eggplant Parmesan",
+      "description": "All the soul of the Italian original with a modern twist. Layers of tender eggplant, rich tomato sauce, and bubbling mozzarella baked to a comforting perfection.",
+      "keywords": [
+        "Vegetables",
+        "Eggs/Cheeses",
+        "Main Course",
+        "Side Dish",
+        "Vegetarian",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "grandmas-meatballs-with-sauce",
+      "title": "Classic Meatballs in Tomato Sauce",
+      "description": "Just like Nonna used to make. A juicy blend of beef and pork, seasoned to perfection and simmered in a simple, vibrant tomato sauce for a timeless family meal.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "sicilian-ragu-arancini",
+      "title": "Traditional Sicilian Ragù Arancini",
+      "description": "The king of Sicilian snacks. Golden rice balls stuffed with a slow-cooked meat ragù and peas, with a molten cheese center that’s worth every bite.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Snack",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "ascolana-style-olives",
+      "title": "Ascolana Meat-Stuffed Olives",
+      "description": "A jewel of Italian gastronomy. Large green olives are hand-stuffed with a savory meat filling, breaded, and cooked until they are a crispy, bite-sized delight.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Snack",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "ligurian-stuffed-zucchini",
+      "title": "Ligurian-Style Stuffed Zucchini",
+      "description": "A taste of the Italian Riviera. Tender zucchini boats filled with a savory mixture of meat and herbs, baked until they achieve a beautiful golden-brown finish.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "roman-suppli-al-telefono",
+      "title": "Roman Supplì 'al Telefono'",
+      "description": "Named for the 'telephone wire' of mozzarella that stretches when you pull them apart. These Roman rice croquettes are a savory, cheesy staple of the Eternal City.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Appetizer",
+        "Snack",
+        "Vegetarian"
+      ]
+    }
+  ]
+}

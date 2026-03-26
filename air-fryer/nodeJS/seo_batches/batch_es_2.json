@@ -1,0 +1,284 @@
+{
+  "es": [
+    {
+      "slug": "mozzarella-in-carrozza",
+      "title": "Mozzarella en Carroza (Sándwich Dorado)",
+      "description": "El bocado más reconfortante de Italia. Dos rebanadas de pan que encierran un corazón de mozzarella fundida, empanadas y cocinadas hasta que el exterior cruje y el queso se vuelve elástico e irresistible.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Aperitivo",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Végétarien",
+        "Rapide",
+        "mozzarella",
+        "italiano"
+      ]
+    },
+    {
+      "slug": "calamares-fritos-crujientes",
+      "title": "Anillas de Calamar al Punto de Sal",
+      "description": "Disfruta de unas anillas de calamar con un rebozado ligero y una textura ultra crujiente. Una opción rápida y deliciosa que mantiene toda la frescura del mar en cada bocado.",
+      "keywords": [
+        "Pescado",
+        "Aperitivo",
+        "Plato principal",
+        "Proteico",
+        "Rapide",
+        "calamares",
+        "tapas"
+      ]
+    },
+    {
+      "slug": "pimientos-rellenos-carne",
+      "title": "Pimientos Rellenos de Carne y Queso",
+      "description": "Un plato completo y lleno de color. Pimientos asados hasta quedar tiernos, rellenos de una jugosa mezcla de carne picada y queso fundido que se deshace en la boca.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "pimientos rellenos",
+        "asado"
+      ]
+    },
+    {
+      "slug": "salchicha-y-patatas-a-la-rustica",
+      "title": "Salchichas Rústicas con Patatas al Romero",
+      "description": "La combinación clásica que nunca falla. Salchichas de cerdo doradas acompañadas de patatas crujientes, todo aromatizado con la fragancia del romero fresco y un toque de ajo.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "rústico",
+        "cena fácil"
+      ]
+    },
+    {
+      "slug": "frittata-de-maccheroni-pasta-omelette",
+      "title": "Tortilla de Pasta (Frittata di Maccheroni)",
+      "description": "La receta perfecta para aprovechar la pasta y disfrutarla de una forma nueva. Con un exterior dorado y un interior jugoso, es ideal tanto para una cena rápida como para llevar de picnic.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Plato principal",
+        "Proteico",
+        "aprovechamiento",
+        "frittata",
+        "pasta"
+      ]
+    },
+    {
+      "slug": "cotoletta-a-la-milanesa",
+      "title": "Cotoletta a la Milanesa (Escalope Crujiente)",
+      "description": "El filete empanado elevado a otro nivel. Una carne tierna con un empanado crujiente y uniforme, convertida en un plato principal versátil que gusta a toda la familia.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "milanesa",
+        "escalope",
+        "clásico"
+      ]
+    },
+    {
+      "slug": "alcachofas-crujientes-a-la-romana",
+      "title": "Alcachofas Crujientes al Estilo Romano",
+      "description": "Descubre la textura sorprendente de la alcachofa asada. Las hojas exteriores quedan tan finas y crujientes como un snack, protegiendo un corazón tierno y lleno de matices.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Entrante",
+        "Vegetariano",
+        "Vegano",
+        "LowCarb",
+        "Rapide",
+        "alcachofas"
+      ]
+    },
+    {
+      "slug": "flores-de-calabacin-rebozadas",
+      "title": "Flores de Calabacín con Mozzarella y Anchoas",
+      "description": "Un bocado gourmet y delicado. Flores de calabacín rellenas de queso fundido y un toque salino de anchoa, envueltas en un rebozado ligero que estalla de sabor al morderlo.",
+      "keywords": [
+        "Verduras",
+        "Huevos/Quesos",
+        "Entrante",
+        "Snack",
+        "Proteico",
+        "Vegetariano",
+        "delicatessen"
+      ]
+    },
+    {
+      "slug": "bruschette-tomate-albahaca",
+      "title": "Bruschetta Italiana de Tomate y Albahaca",
+      "description": "La esencia del Mediterráneo sobre una rebanada de pan tostado. El frescor del tomate maduro, el aroma de la albahaca y un buen aceite de oliva crean el aperitivo perfecto.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Vegetariano",
+        "Vegano",
+        "Rapide",
+        "bruschetta",
+        "aperitivo"
+      ]
+    },
+    {
+      "slug": "gnocchi-fritos-aperitivo",
+      "title": "Ñoquis Crujientes (El Snack de Patata)",
+      "description": "¿Has probado los ñoquis fritos? Olvida la textura blanda; aquí se vuelven dorados y crujientes por fuera, manteniendo su corazón suave. Un aperitivo original y adictivo.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Snack",
+        "Vegetariano",
+        "ñoquis",
+        "finger food"
+      ]
+    },
+    {
+      "slug": "castagnole-ricotta",
+      "title": "Castagnole de Ricotta (Bocaditos Cítricos)",
+      "description": "Pequeños dulces tradicionales que se deshacen en la boca. La ricotta aporta una esponjosidad única, mientras que los cítricos inundan el paladar con un aroma fresco y festivo.",
+      "keywords": [
+        "Dulce",
+        "Postre",
+        "Proteico",
+        "Vegetariano",
+        "repostería",
+        "italiano"
+      ]
+    },
+    {
+      "slug": "panzerotti-pugliesi-rapidos",
+      "title": "Panzerotti de Tomate y Mozzarella",
+      "description": "Bolsitas de masa rellenas del dúo más famoso de Italia. Al morder el borde dorado, descubrirás un relleno de tomate y mozzarella fundida que es puro placer.",
+      "keywords": [
+        "Masas",
+        "Entrante",
+        "Snack",
+        "Proteico",
+        "Vegetariano",
+        "Rapide",
+        "panzerotti",
+        "pizza"
+      ]
+    },
+    {
+      "slug": "focaccia-esponjosa-romero",
+      "title": "Focaccia Esponjosa de Romero y Sal Gruesa",
+      "description": "Pan tierno y aireado con los hoyuelos clásicos que atrapan el aceite de oliva. Su aroma a romero la hace ideal para disfrutar sola o abierta y rellena de tus ingredientes favoritos.",
+      "keywords": [
+        "Masas",
+        "Entrante",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "focaccia",
+        "pan casero"
+      ]
+    },
+    {
+      "slug": "fritura-de-calamares-y-gambas",
+      "title": "Fritura Mixta de Calamares y Gambas",
+      "description": "El festín del mar en tu mesa. Una combinación de marisco con un rebozado seco, ligero y crujiente que respeta el sabor natural del calamar y la gamba.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "LowCarb",
+        "calamares",
+        "gambas",
+        "fritura"
+      ]
+    },
+    {
+      "slug": "fritura-de-pescado-de-paranza",
+      "title": "Fritura de Pescaito Frito (Paranza)",
+      "description": "El auténtico sabor de la costa. Una selección de pescado pequeño enharinado y cocinado hasta alcanzar ese punto crujiente que invita a compartir.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Proteico",
+        "fritura",
+        "paranza",
+        "pescaito"
+      ]
+    },
+    {
+      "slug": "calamaretti-fritos-crujientes",
+      "title": "Calamaretes Crujientes (Bocados de Mar)",
+      "description": "Pequeños calamares cocinados enteros para preservar toda su jugosidad interior. Un bocado rápido, tierno y con una capa exterior deliciosamente tostada.",
+      "keywords": [
+        "Pescado",
+        "Plato principal",
+        "Aperitivo",
+        "Proteico",
+        "LowCarb",
+        "Rapide",
+        "calamaretes"
+      ]
+    },
+    {
+      "slug": "gambas-doradas-crujientes",
+      "title": "Colas de Gamba Empanadas y Crujientes",
+      "description": "Colas de gamba seleccionadas con un empanado dorado que potencia su sabor dulce. Perfectas como un elegante entrante o un segundo plato ligero.",
+      "keywords": [
+        "Pescado",
+        "Entrante",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Rapide",
+        "gambas",
+        "rebozado"
+      ]
+    },
+    {
+      "slug": "patatas-rusticas-con-piel-congeladas",
+      "title": "Patatas Rústicas con Piel (Súper Sabrosas)",
+      "description": "Disfruta de la potencia de la patata asada con su piel. Logran un dorado uniforme y un sabor rústico inconfundible, siendo el acompañamiento ideal para cualquier carne o pescado.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "Rapide",
+        "patatas",
+        "rústico"
+      ]
+    },
+    {
+      "slug": "chips-de-maiz-caseras",
+      "title": "Nachos Caseros de Maíz (Totopos)",
+      "description": "Olvida los snacks industriales. Estos triángulos de maíz tostados son mucho más sanos y crujientes, ideales para dipear en guacamole o acompañar tus aperitivos.",
+      "keywords": [
+        "Verduras",
+        "Aperitivo",
+        "Snack",
+        "Vegano",
+        "Vegetariano",
+        "Rapide",
+        "nachos",
+        "maíz"
+      ]
+    },
+    {
+      "slug": "palitos-de-batata-dulce-paprika",
+      "title": "Bastones de Boniato al Pimentón Dulce",
+      "description": "El equilibrio perfecto entre dulce y salado. Estos bastones de boniato quedan tiernos por dentro y crujientes por fuera, con un toque ahumado de pimentón que los hace únicos.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "Rapide",
+        "boniato",
+        "batata",
+        "pimentón"
+      ]
+    }
+  ]
+}

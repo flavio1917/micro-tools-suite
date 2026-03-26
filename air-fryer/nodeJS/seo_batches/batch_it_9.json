@@ -1,0 +1,322 @@
+{
+"it": [
+{
+"slug": "patate-al-forno-intere",
+"title": "Patate Intere con Buccia (Morbide e Rustiche in Friggitrice ad Aria)",
+"description": "Il contorno più semplice e amato: patate cotte intere con la loro buccia per preservarne tutto il sapore. L'aria calda le rende croccanti all'esterno e soffici come purè all'interno.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Vegetariano",
+"Vegano",
+"Patata",
+"patate intere",
+"jacket potato",
+"contorno semplice"
+]
+},
+{
+"slug": "patate-arrosto-maionese-piccante",
+"title": "Patate Novelle Arrosto (Con Maionese ai Pomodori Secchi)",
+"description": "Patate novelle croccanti arricchite da un mix di spezie e servite con una maionese gourmet fatta in casa. Un antipasto o contorno originale che stupirà i tuoi ospiti.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Proteico",
+"Vegetariano",
+"Patate",
+"Pomodori Secchi",
+"patate novelle",
+"salsa piccante"
+]
+},
+{
+"slug": "hash-brown",
+"title": "Hash Brown Croccanti (Frittelle di Patate senza Olio)",
+"description": "Direttamente dalla tradizione anglosassone, queste frittelle di patate grattugiate sono dorate e croccantissime. Perfette per una colazione salata o un brunch energetico in Friggitrice ad Aria.",
+"keywords": [
+"Verdure",
+"Colazione",
+"Contorno",
+"Vegetariano",
+"Patate",
+"hash browns",
+"brunch veloce",
+"frittelle patate"
+]
+},
+{
+"slug": "patate-hasselback",
+"title": "Patate Hasselback (Scenografiche e Gustose in Friggitrice ad Aria)",
+"description": "Tagliate a fisarmonica per accogliere tutti i condimenti tra le fette: queste patate sono tanto belle quanto buone. L'Friggitrice ad Aria le rende croccanti strato dopo strato.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Patata",
+"hasselback potatoes",
+"patate a fisarmonica",
+"contorno scenografico"
+]
+},
+{
+"slug": "patate-novelle-arrosto",
+"title": "Patate Novelle alle Erbe (Snack Rustico e Veloce)",
+"description": "Piccole, saporite e profumatissime. Queste patate novelle con la buccia sono ricoperte da un mix di erbe aromatiche che le rendono lo snack perfetto o un contorno pronto in pochi minuti.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"Patate",
+"patate aromatiche",
+"patate piccole",
+"contorno veloce"
+]
+},
+{
+"slug": "peperoni-arrostiti-interi",
+"title": "Peperoni Arrostiti (Facili da Pelare in Friggitrice ad Aria)",
+"description": "Il metodo più furbo per arrostire i peperoni! L'alta temperatura dell'Friggitrice ad Aria solleva la pelle in pochi minuti, lasciando la polpa tenera, dolce e pronta per le tue insalate.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Vegetariano",
+"Vegano",
+"LowCarb",
+"Peperone",
+"peperoni arrostiti",
+"come pelare i peperoni",
+"contorno light"
+]
+},
+{
+"slug": "anelli-cipolla",
+"title": "Onion Rings Speziati (Anelli di Cipolla Super Crunch)",
+"description": "Croccanti come quelli del fast food, ma senza la pesantezza del fritto! Anelli di cipolla con una panatura dorata e speziata, perfetti da tuffare nella tua salsa preferita.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Antipasto",
+"Contorno",
+"Proteico",
+"Vegetariano",
+"Cipolla",
+"anelli di cipolla",
+"onion rings",
+"fritto non fritto"
+]
+},
+{
+"slug": "bbq-bacon",
+"title": "Bacon Caramellato (Croccantezza BBQ in Friggitrice ad Aria)",
+"description": "Pancetta trasformata in un candy-snack irresistibile. Grazie allo zucchero e alle spezie, queste fette diventano croccanti e caramellate: il tocco magico per i tuoi burger o brunch.",
+"keywords": [
+"Carne",
+"Snack",
+"Colazione",
+"Proteico",
+"Veloce",
+"Pancetta",
+"bacon caramellato",
+"pancetta croccante",
+"bacon bbq"
+]
+},
+{
+"slug": "bistecche-costata-senape",
+"title": "Bistecca in Crosta di Senape (Succosa e Caramellata)",
+"description": "Eleva la tua bistecca con una crosticina di zucchero e senape che esplode di sapore. La friggitrice ad aria sigilla i succhi all'interno, garantendo una cottura da ristorante.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"Veloce",
+"Manzo",
+"Senape",
+"bistecca Friggitrice ad Aria",
+"costata di manzo",
+"secondo di carne"
+]
+},
+{
+"slug": "cavoletti-bruxelles-pancetta",
+"title": "Cavoletti di Bruxelles e Bacon (Saporiti e Croccanti)",
+"description": "Anche chi non ama i cavoletti cambierà idea! La pancetta rilascia il suo sapore rendendoli deliziosi, mentre l'Friggitrice ad Aria regala foglie esterne croccanti e un cuore tenero.",
+"keywords": [
+"Carne",
+"Verdure",
+"Contorno",
+"Antipasto",
+"Proteico",
+"LowCarb",
+"Veloce",
+"Cavoletti di Bruxelles",
+"Pancetta",
+"contorno saporito"
+]
+},
+{
+"slug": "chips-cavolo-nero",
+"title": "Kale Chips (Le Chips di Cavolo Nero Leggere e Fit)",
+"description": "Lo snack salutare che crea dipendenza! Foglie di cavolo nero rese croccantissime in pochi minuti. Pochissime calorie, tanto gusto e una croccantezza imbattibile.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"LowCarb",
+"Veloce",
+"Cavolo Nero",
+"kale chips",
+"snack sano"
+]
+},
+{
+"slug": "chips-di-mela",
+"title": "Chips di Mela (Snack Naturale e Croccante)",
+"description": "Sottili fette di mela disidratate lentamente per uno snack sano, senza zuccheri aggiunti e amato dai bambini. Perfette da portare sempre con sé.",
+"keywords": [
+"Dolce",
+"Snack",
+"Vegetariano",
+"Vegano",
+"Mela",
+"chips di mela",
+"mele essiccate",
+"merenda sana"
+]
+},
+{
+"slug": "crostata-pere-rustica",
+"title": "Galette Rustica alle Pere (Pere, Noci e Miele)",
+"description": "Una crostata dai bordi ripiegati a mano, ripiena di pere succose e noci croccanti. Un dolce rustico e genuino che sprigiona tutto il calore del miele e della frutta.",
+"keywords": [
+"Dolce",
+"Snack",
+"Vegetariano",
+"Pera",
+"Noci",
+"crostata rustica",
+"galette di pere",
+"dolce alle pere"
+]
+},
+{
+"slug": "fagiolini-arrosto",
+"title": "Fagiolini Arrosto (Croccanti e Veloci in Friggitrice ad Aria)",
+"description": "Cambia il modo di mangiare i fagiolini! Arstiti ad alta temperatura diventano uno snack croccante o un contorno originale, preservando tutto il loro sapore intenso.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"LowCarb",
+"Fagiolini",
+"fagiolini croccanti",
+"contorno light"
+]
+},
+{
+"slug": "falafel",
+"title": "Falafel in Friggitrice ad Aria (Polpette di Ceci Croccanti e Leggere)",
+"description": "Il classico mediorientale in versione light. Queste polpette di ceci sono speziate, profumate e cotte con un filo d'olio per un esterno croccante e un cuore morbido.",
+"keywords": [
+"Verdure",
+"Antipasto",
+"Secondo",
+"Vegetariano",
+"Vegano",
+"Ceci",
+"falafel Friggitrice ad Aria",
+"polpette di ceci",
+"cucina mediorientale"
+]
+},
+{
+"slug": "fritto-greco",
+"title": "Patate alla Greca (Con Feta e Origano Fresco)",
+"description": "Bastoncini di patate dorati conditi con formaggio feta sbriciolato e origano profumato. Un viaggio di sapori mediterranei pronto in tavola in pochi minuti.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Contorno",
+"Antipasto",
+"Vegetariano",
+"Patate",
+"Feta",
+"patate alla greca",
+"aperitivo mediterraneo"
+]
+},
+{
+"slug": "patatine-spirale-surgelate",
+"title": "Patate a Spirale (Effetto Luna Park in Friggitrice ad Aria)",
+"description": "Divertenti e croccanti! Le patate a spirale surgelate cuociono perfettamente nell'Friggitrice ad Aria diventando dorate senza bisogno di olio extra. La gioia di grandi e piccoli.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"Patate",
+"curly fries",
+"patate a spirale",
+"snack bambini"
+]
+},
+{
+"slug": "samosa-vegetali",
+"title": "Samosa Verdure e Feta (Scrigni Croccanti di Pasta Brick)",
+"description": "Triangolini di sfoglia croccante con un ripieno saporito di cavolfiore, piselli e formaggio feta. Un antipasto speziato e originale cotto ad aria per la massima leggerezza.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Antipasto",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Cavolfiore",
+"Feta",
+"samosa vegetariani",
+"involtini croccanti"
+]
+},
+{
+"slug": "torta-banana-mascarpone",
+"title": "Torta Banana e Mascarpone (Soffice e Naturalmente Dolce)",
+"description": "L'unione perfetta tra la dolcezza delle banane mature e la cremosità del mascarpone. Una torta umida e ricca di noci, ideale per una colazione che sa di casa.",
+"keywords": [
+"Dolce",
+"Colazione",
+"Snack",
+"Vegetariano",
+"Banana",
+"Mascarpone",
+"banana bread cremoso",
+"torta alle banane",
+"dolce soffice"
+]
+},
+{
+"slug": "funghi-panati",
+"title": "Funghi Panati Surgelati (Antipasto Dorato e Veloce)",
+"description": "Funghi interi con una panatura spessa e croccante. La friggitrice ad aria li rende caldi e dorati in pochissimo tempo, pronti da servire come contorno o finger food.",
+"keywords": [
+"Verdure",
+"Antipasto",
+"Contorno",
+"Vegetariano",
+"Funghi",
+"funghi impanati",
+"antipasto veloce",
+"funghi Friggitrice ad Aria"
+]
+}
+]
+}

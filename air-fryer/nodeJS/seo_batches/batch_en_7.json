@@ -1,0 +1,240 @@
+{
+  "en": [
+    {
+      "slug": "panko-crusted-cod",
+      "title": "Crispy Panko-Crusted Cod",
+      "description": "Elevate your weeknight dinner with these golden cod fillets. A zesty lemon-herb panko crust provides a satisfyingly loud crunch while keeping the delicate white fish beneath perfectly flaky and moist.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "mini-apple-pies",
+      "title": "Handheld Mini Apple Pies",
+      "description": "All the comfort of a classic apple pie in a convenient, handheld size. These buttery shortcrust pastry pockets are bursting with a warm, spiced apple filling—perfect for a quick dessert or a sweet breakfast treat.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Breakfast",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "fried-mozzarella-bites",
+      "title": "Molten Breaded Mozzarella Bites",
+      "description": "The ultimate cheesy indulgence. These double-breaded mozzarella pieces are cooked until the exterior is a deep golden-brown, hiding a gooey, molten cheese center that’s ready for dipping.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Appetizer",
+        "Snack",
+        "Quick",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "coffee-cocoa-streusel-muffins",
+      "title": "Mocha Streusel Muffins",
+      "description": "A sophisticated wake-up call for your taste buds. These moist, tender muffins feature a rich harmony of dark cocoa and aromatic coffee, finished with a sweet, crumbly streusel topping.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Breakfast",
+        "Quick",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "chocolate-chip-muffins",
+      "title": "Classic Chocolate Chip Muffins",
+      "description": "A timeless bakery favorite made at home. These fluffy, golden muffins are generously studded with melty chocolate chips, offering a perfect balance of sweetness in every bite.",
+      "keywords": [
+        "Dessert",
+        "Breakfast",
+        "Snack",
+        "Quick",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "grilled-sea-bream-with-olives",
+      "title": "Mediterranean Grilled Sea Bream",
+      "description": "Transport yourself to the coast with this light and fresh dish. Delicate sea bream fillets are seared to perfection and topped with a vibrant, raw Mediterranean-style olive and tomato salsa.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "Quick",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "cajun-catfish",
+      "title": "Smoky Cajun Catfish Fillets",
+      "description": "Bold, smoky, and full of soul. These catfish fillets are coated in a traditional Louisiana-style spice blend, resulting in a blackened finish that’s big on flavor and low on carbs.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "breakfast-pizza-egg-ham",
+      "title": "Savory Brunch Pizza",
+      "description": "Why choose between pizza and breakfast? This savory delight features a crispy crust topped with melted mozzarella, salty smoked ham, and a perfectly cooked egg right in the center.",
+      "keywords": [
+        "Meat",
+        "Eggs/Cheeses",
+        "Breakfast",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "lemon-butter-salmon",
+      "title": "Silk Lemon Butter Salmon",
+      "description": "Pure culinary elegance. These tender salmon fillets are finished with a rich, velvety lemon-butter sauce that perfectly complements the natural richness of the fish.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "summer-salmon-crispy-salad",
+      "title": "Fresh Summer Salmon & Salad",
+      "description": "Light, healthy, and incredibly satisfying. Perfectly cooked salmon fillets are paired with a crisp, refreshing tomato and cucumber salad for a high-protein meal that won't weigh you down.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "teriyaki-glazed-salmon",
+      "title": "Sticky Teriyaki & Orange Salmon",
+      "description": "A beautiful fusion of sweet and citrus. These tender salmon fillets are coated in a glossy, homemade teriyaki-orange glaze that caramelizes into a mouthwatering finish.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "breakfast-muffin-sandwich",
+      "title": "Classic English Muffin Breakfast Sandwich",
+      "description": "Better than the drive-thru. A toasted, pillowy English muffin layers a steamed egg, salty Canadian bacon, and sharp melted cheddar for the ultimate on-the-go breakfast.",
+      "keywords": [
+        "Meat",
+        "Eggs/Cheeses",
+        "Breakfast",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "apple-puff-pastries",
+      "title": "Crispy Apple Puff Pastry Tarts",
+      "description": "Elegant simplicity in pastry form. Thinly sliced, spiced apples rest on buttery puff pastry that rises into a golden, flaky border for a dessert that looks as good as it tastes.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Breakfast",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "air-fried-pickles",
+      "title": "Zesty Fried Dill Pickles",
+      "description": "A tangy, crunchy American snack made lighter. These dill pickles are coated in a spiced breading and air-fried until golden, providing a perfect salty-sour bite.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "dark-chocolate-souffle",
+      "title": "Decadent Dark Chocolate Soufflé",
+      "description": "Impress with ease. These individual soufflés offer a light, aerated texture that melts on the tongue, delivering a deep and sophisticated dark chocolate punch.",
+      "keywords": [
+        "Dessert",
+        "Eggs/Cheeses",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "grilled-fish-tacos",
+      "title": "Zesty Cornmeal Fish Tacos",
+      "description": "A quick trip to the coast. Fish fillets are dusted in a spiced cornmeal mixture for a light crunch, then served in warm tortillas for a fresh and protein-packed taco night.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "stuffed-french-toast",
+      "title": "Cream Cheese Stuffed Brioche",
+      "description": "The ultimate brunch indulgence. Thick slices of buttery brioche are stuffed with a rich cream cheese filling and cooked until the exterior is golden-brown and slightly crisp.",
+      "keywords": [
+        "Dessert",
+        "Breakfast",
+        "Vegetarian",
+        "Quick",
+        "Eggs/Cheeses"
+      ]
+    },
+    {
+      "slug": "soft-lemon-loaf-cake",
+      "title": "Zesty Glazed Lemon Loaf",
+      "description": "Bright, citrusy, and incredibly tender. This soft loaf cake is infused with fresh lemon flavor, making it a refreshing companion to your morning coffee or afternoon tea.",
+      "keywords": [
+        "Dessert",
+        "Leavened Goods",
+        "Snack",
+        "Breakfast",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "frozen-fish-cakes",
+      "title": "Crispy Golden Fish Cakes",
+      "description": "Quick and convenient without sacrificing texture. Cooked directly from frozen, these fish cakes achieve a beautiful golden-brown crunch while remaining tender and hot inside.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "Snack",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "eggs-in-cocotte-with-bacon",
+      "title": "Creamy Baked Eggs with Bacon & Spinach",
+      "description": "A sophisticated one-dish breakfast. Eggs are baked in individual ramekins with smoky bacon, fresh spinach, and a decadent Parmesan cream sauce for a high-protein, low-carb start to your day.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Meat",
+        "Breakfast",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    }
+  ]
+}

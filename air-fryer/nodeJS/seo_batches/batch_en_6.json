@@ -1,0 +1,242 @@
+{
+  "en": [
+    {
+      "slug": "mustard-sausage-spiral",
+      "title": "Honey-Mustard Sausage Spiral",
+      "description": "A stunning centerpiece for your next indoor grill session. This continuous sausage spiral is basted with a sweet and tangy honey-mustard glaze that caramelizes into a rich, savory crust.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "steak-horseradish-sandwich",
+      "title": "Steak & Horseradish Toasted Sandwich",
+      "description": "Bold flavors in every bite. Perfectly roasted steak is paired with a pungent, creamy horseradish sauce to cut through the richness, all tucked into a warm, toasted roll.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "shawarma-lamb-skewers",
+      "title": "Shawarma-Spiced Lamb Skewers",
+      "description": "Bring the scents of the Middle East home. These ground lamb skewers are infused with aromatic shawarma spices and cooked to achieve a succulent interior with a well-browned, savory crust.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "teriyaki-pork-skewers",
+      "title": "Sticky Teriyaki Pork Skewers",
+      "description": "Irresistibly glossy and sweet. Lean pork loin cubes are glazed with a homemade teriyaki sauce that caramelizes beautifully under high heat for a perfect sweet-and-salty balance.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "korean-beef-skewers",
+      "title": "Korean-Style Gochujang Beef Skewers",
+      "description": "A flavor explosion. These beef skewers are marinated in a traditional blend of spicy Korean paste, soy sauce, and honey, delivering a deep umami punch with a hint of sweetness.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "beef-cheese-skewers",
+      "title": "Cheese-Stuffed Beef Roulades",
+      "description": "The ultimate comfort snack. Thin beef slices wrap around a heart of melting cheese, finished with a honey-soy glaze that creates a sticky, savory exterior.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "scotch-eggs",
+      "title": "Crispy British Scotch Eggs",
+      "description": "A gastropub classic made lighter. A soft or hard-boiled egg is encased in seasoned sausage meat and golden breadcrumbs, air-fried until perfectly crisp and satisfying.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "soft-coconut-macaroons",
+      "title": "Chewy Toasted Coconut Macaroons",
+      "description": "Sweet, tropical, and incredibly easy. These macaroons feature a moist, chewy center and a beautifully toasted golden exterior—a perfect treat for any time of day.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "golden-avocado-wedges",
+      "title": "Crispy Breaded Avocado Wedges",
+      "description": "A modern appetizer with a textural twist. Creamy avocado wedges are coated in a spiced breading and cooked until crunchy, creating a unique 'fries' experience.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "french-toast-sticks",
+      "title": "Cinnamon Sugar French Toast Sticks",
+      "description": "The breakfast of champions. These dunkable bread sticks are dipped in rich egg batter, cooked to a golden crisp, and rolled in fragrant cinnamon sugar.",
+      "keywords": [
+        "Sweet",
+        "Leavened Goods",
+        "Eggs/Cheeses",
+        "Breakfast",
+        "Snack",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "frozen-fish-sticks",
+      "title": "Crispy Frozen Fish Sticks",
+      "description": "Perfectly crunchy every time. Cook your favorite breaded fish sticks directly from the freezer for a quick, high-protein meal with absolutely no added oil required.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "blooming-onion",
+      "title": "Golden 'Blooming' Onion",
+      "description": "An iconic American steakhouse appetizer. This whole onion is carved into petals, lightly battered, and cooked until it 'blooms' into a spectacular, crispy pull-apart snack.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "simple-salmon-fillets",
+      "title": "Perfectly Flaky Salmon Fillets",
+      "description": "Elegant and healthy. Our cooking method ensures a beautifully caramelized exterior while keeping the salmon pink, moist, and tender enough to flake with a fork.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "High-Protein",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "air-fryer-breaded-cod",
+      "title": "Golden Breaded Cod Fillets",
+      "description": "A lighter take on a seafood classic. These cod fillets feature a buttery, golden breadcrumb crust that stays remarkably crisp while protecting the delicate white fish inside.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "strawberry-scones",
+      "title": "Fresh Strawberry British Scones",
+      "description": "Perfect for afternoon tea. These light and flaky scones are studded with fresh strawberries, offering a sweet, fruity burst in every buttery bite.",
+      "keywords": [
+        "Dessert",
+        "Leavened Goods",
+        "Breakfast",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "blueberry-ginger-scones",
+      "title": "Blueberry & Zesty Ginger Scones",
+      "description": "A sophisticated twist on a classic. The tartness of fresh blueberries perfectly balances the warm spice of ginger in these tender, golden-baked scones.",
+      "keywords": [
+        "Sweet",
+        "Leavened Goods",
+        "Breakfast",
+        "Snack",
+        "Quick",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "bacon-wrapped-shrimp",
+      "title": "Savory Bacon-Wrapped Shrimp",
+      "description": "Double the flavor. Large shrimp are wrapped in smoky bacon and cooked until the bacon is crisp, naturally basting the seafood for a decadent, high-protein appetizer.",
+      "keywords": [
+        "Meat",
+        "Seafood",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "coconut-crusted-shrimp",
+      "title": "Crispy Coconut-Crusted Shrimp",
+      "description": "A taste of the tropics. These shrimp feature a thick, crunchy coconut coating that delivers a sweet and savory finish without the need for deep-frying.",
+      "keywords": [
+        "Seafood",
+        "Appetizer",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "crispy-curry-shrimp",
+      "title": "Double-Breaded Curry Shrimp",
+      "description": "Extra crunch, extra flavor. These shrimp are double-breaded with a spiced flour and coarse cornmeal mixture for a uniquely rugged, curry-infused crispness.",
+      "keywords": [
+        "Seafood",
+        "Appetizer",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "spiced-curry-coconut-cod",
+      "title": "Curry & Coconut Cream Cod",
+      "description": "Indulgent and aromatic. Delicate cod fillets are seasoned with vibrant curry paste and served with a silky coconut cream sauce for a restaurant-quality meal.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    }
+  ]
+}

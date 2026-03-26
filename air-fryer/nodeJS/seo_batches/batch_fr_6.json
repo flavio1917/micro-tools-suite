@@ -1,0 +1,294 @@
+{
+  "fr": [
+    {
+      "slug": "brochettes-porc-teriyaki",
+      "title": "Brochettes de Porc Teriyaki (Glaçage Brillant)",
+      "description": "Succombez à ces cubes de porc fondants, laqués d'une sauce teriyaki maison. La chaleur tournante caramélise les sucres pour créer un glaçage dense, brillant et profondément savoureux.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Apéritif",
+        "Snack",
+        "Protéiné",
+        "teriyaki",
+        "porc laqué",
+        "asie"
+      ]
+    },
+    {
+      "slug": "brochettes-boeuf-coreennes",
+      "title": "Brochettes de Bœuf à la Coréenne (Bulgogi Style)",
+      "description": "Une explosion de saveurs d'inspiration coréenne. Ces brochettes marinent dans un mélange épicé, salé et sucré avant d'être saisies à l'airfryer pour un résultat tendre et parfumé.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Entrée",
+        "Snack",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "corée",
+        "bœuf épicé"
+      ]
+    },
+    {
+      "slug": "brochettes-boeuf-teriyaki",
+      "title": "Brochettes Bœuf-Fromage (Yakitori Cheese)",
+      "description": "Le chouchou des restaurants japonais à la maison ! De fines tranches de bœuf enrobent un cœur de fromage fondant, le tout sublimé par une marinade soja-miel qui caramélise à la cuisson.",
+      "keywords": [
+        "Viande",
+        "Apéritif",
+        "Snack",
+        "Protéiné",
+        "yakitori",
+        "bœuf fromage",
+        "fromage fondu"
+      ]
+    },
+    {
+      "slug": "oeuf-a-la-scotch",
+      "title": "Œufs Écossais (Scotch Eggs Croustillants)",
+      "description": "Une spécialité britannique revisitée sans friture. Un œuf entouré de chair à saucisse savoureuse et d'une panure dorée, pour un contraste de textures parfait en entrée ou en snack.",
+      "keywords": [
+        "Viande",
+        "Œufs/Fromages",
+        "Plat principal",
+        "En-cas",
+        "Protéique",
+        "Rapide",
+        "scotch egg",
+        "œuf écossais",
+        "pané"
+      ]
+    },
+    {
+      "slug": "amaretti-au-coco",
+      "title": "Rochers Coco Moelleux (Style Amaretti)",
+      "description": "De petites douceurs à la noix de coco avec un cœur ultra-tendre et une croûte délicatement dorée. La cuisson précise préserve toute leur humidité pour une gourmandise irrésistible.",
+      "keywords": [
+        "Dessert",
+        "Collation",
+        "Protéique",
+        "Végétarien",
+        "Rapide",
+        "LowCarb",
+        "rocher coco",
+        "sans gluten"
+      ]
+    },
+    {
+      "slug": "avocat-frit",
+      "title": "Frites d'Avocat Panées (Avocado Fries)",
+      "description": "Osez l'originalité avec ces quartiers d'avocat panés. L'intérieur reste incroyablement crémeux tandis que l'extérieur devient croustillant et épicé. Le snack 'healthy' par excellence.",
+      "keywords": [
+        "Légumes",
+        "Apéritif",
+        "Snack",
+        "Végétarien",
+        "Rapide",
+        "avocat pané",
+        "frites avocat"
+      ]
+    },
+    {
+      "slug": "batonnets-french-toast",
+      "title": "Bâtonnets de Pain Perdu (Petit-Déjeuner Express)",
+      "description": "Transformez votre petit-déjeuner en moment gourmet. Ces bâtonnets de pain sucré sont moelleux à souhait et ressortent de l'airfryer avec une texture parfaitement craquante en surface.",
+      "keywords": [
+        "Dessert",
+        "Petit-déjeuner",
+        "Snack",
+        "Protéiné",
+        "Végétarien",
+        "Rapide",
+        "pain perdu",
+        "french toast"
+      ]
+    },
+    {
+      "slug": "bâtonnets-de-poisson-surgelés",
+      "title": "Bâtonnets de Poisson (Croustillant Express)",
+      "description": "La solution parfaite pour un repas rapide et sain. Obtenez des bâtonnets de poisson surgelés ultra-croustillants sans ajouter une seule goutte d'huile grâce à la convection rapide.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéiné",
+        "Rapide",
+        "poisson pané",
+        "surgelé"
+      ]
+    },
+    {
+      "slug": "fleur-doignon",
+      "title": "Fleur d'Oignon Panée (Blooming Onion)",
+      "description": "Un apéritif spectaculaire à partager ! Cet oignon découpé en fleur s'ouvre à la cuisson, offrant des pétales panés croustillants à détacher et à tremper dans votre sauce préférée.",
+      "keywords": [
+        "Légumes",
+        "Apéritif",
+        "Snack",
+        "Accompagnement",
+        "Végétarien",
+        "blooming onion",
+        "oignon frit"
+      ]
+    },
+    {
+      "slug": "filets-saumon-simples",
+      "title": "Pavé de Saumon Rôti (Peau Croustillante)",
+      "description": "Découvrez la cuisson parfaite du saumon : une surface légèrement caramélisée et une chair qui reste nacrée, tendre et juteuse. Rapide, sain et riche en oméga-3.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "saumon airfryer",
+        "poisson grillé"
+      ]
+    },
+    {
+      "slug": "fish-and-chips",
+      "title": "Filets de Morue Panés (Style Fish & Chips)",
+      "description": "Le plaisir du pub anglais à la maison. Une panure dorée et croustillante qui protège une morue fondante, avec une touche de beurre pour une saveur authentique et gourmande.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéiné",
+        "Pané",
+        "Croustillant",
+        "fish and chips",
+        "morue"
+      ]
+    },
+    {
+      "slug": "focaccine-a-la-fraise",
+      "title": "Scones Moelleux aux Fraises Fraîches",
+      "description": "Une douceur d'inspiration anglo-saxonne. Ces scones garnis de morceaux de fraises fraîches offrent une texture légère et feuilletée, parfaits pour un brunch ou un goûter fruité.",
+      "keywords": [
+        "Dessert",
+        "Collation",
+        "Petit-déjeuner",
+        "Protéique",
+        "Végétarien",
+        "Rapide",
+        "scones",
+        "fraises"
+      ]
+    },
+    {
+      "slug": "scones-myrtilles-gingembre",
+      "title": "Scones Myrtilles et Gingembre (Peps Fruités)",
+      "description": "L'alliance audacieuse de la douceur des myrtilles et de la chaleur du gingembre. Servez ces scones tièdes pour profiter de leur texture sablée et de leur parfum envoûtant.",
+      "keywords": [
+        "Dessert",
+        "Petit-déjeuner",
+        "Goûter",
+        "Végétarien",
+        "Protéique",
+        "scones myrtilles",
+        "gingembre"
+      ]
+    },
+    {
+      "slug": "crevettes-bacon",
+      "title": "Crevettes au Bacon (Terre & Mer Croustillant)",
+      "description": "Le mariage irrésistible du bacon fumé et de la finesse de la crevette. À la cuisson, le bacon devient croustillant et infuse les crevettes de ses saveurs salées.",
+      "keywords": [
+        "Poisson",
+        "Viande",
+        "Apéritif",
+        "Snack",
+        "Protéique",
+        "LowCarb",
+        "crevette bacon",
+        "tapas"
+      ]
+    },
+    {
+      "slug": "crevettes-coco",
+      "title": "Crevettes Panées à la Noix de Coco",
+      "description": "Une évasion exotique en quelques minutes. Ces crevettes enrobées de noix de coco offrent un contraste sucré-salé unique et une texture incroyablement croquante.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Apéritif",
+        "Protéiné",
+        "crevette coco",
+        "exotique"
+      ]
+    },
+    {
+      "slug": "crevettes-croustillantes-curry",
+      "title": "Crevettes Croustillantes au Curry",
+      "description": "Double panure à la farine de maïs et au curry pour un maximum de croquant ! Un apéritif relevé et original qui change des classiques, prêt en un clin d'œil.",
+      "keywords": [
+        "Poisson",
+        "Apéritif",
+        "Plat principal",
+        "Snack",
+        "Protéiné",
+        "Rapide",
+        "crevettes épicées",
+        "curry"
+      ]
+    },
+    {
+      "slug": "morue-au-curry",
+      "title": "Cabillaud Curry et Crème de Coco",
+      "description": "Une recette onctueuse et légère. Les filets de cabillaud sont nappés d'une sauce parfumée au curry et à la coco pour un résultat fondant et riche en saveurs orientales.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "cabillaud coco",
+        "poisson curry"
+      ]
+    },
+    {
+      "slug": "morue-croute-panko",
+      "title": "Filets de Cabillaud en Croûte de Panko",
+      "description": "Le secret du croustillant japonais ! Une croûte légère au panko, citron et persil qui vient protéger la finesse du cabillaud pour un plat digne d'un chef.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "panko",
+        "cabillaud",
+        "croûte de pain"
+      ]
+    },
+    {
+      "slug": "mini-tarte-pommes",
+      "title": "Chaussons aux Pommes (Cœur Fondant)",
+      "description": "Le goûter réconfortant par excellence. Une pâte dorée et croustillante qui renferme des pommes fondantes parfumées à la cannelle. Idéal pour les petits et les grands.",
+      "keywords": [
+        "Dessert",
+        "En-cas",
+        "Petit-déjeuner",
+        "Végétarien",
+        "chausson aux pommes",
+        "pomme cannelle"
+      ]
+    },
+    {
+      "slug": "morsures-mozzarella-frites",
+      "title": "Bouchées de Mozzarella (Mozzarella Sticks)",
+      "description": "Du fromage, du fromage et encore du fromage ! Ces bouchées panées cachent un cœur de mozzarella filant, obtenues sans aucune friture pour plus de légèreté.",
+      "keywords": [
+        "Œufs/Fromages",
+        "Snack",
+        "Apéritif",
+        "Protéique",
+        "Végétarien",
+        "Fromage",
+        "Mozzarella",
+        "Pané",
+        "mozzarella sticks"
+      ]
+    }
+  ]
+}

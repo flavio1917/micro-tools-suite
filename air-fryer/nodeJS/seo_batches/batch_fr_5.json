@@ -1,0 +1,292 @@
+{
+  "fr": [
+    {
+      "slug": "cotes-agneau-citron",
+      "title": "Côtes d'Agneau à l'Ail et au Citron",
+      "description": "Succombez à la tendreté de l'agneau magnifiée par une marinade vive au citron et à l'ail. La cuisson flash à l'airfryer saisit la viande pour une croûte dorée tout en gardant un cœur divinement juteux.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "côtes d'agneau",
+        "agneau grillé",
+        "citron ail"
+      ]
+    },
+    {
+      "slug": "empanadas-de-boeuf",
+      "title": "Empanadas au Bœuf (Croustillantes et Épicées)",
+      "description": "Voyagez en Amérique du Sud avec ces chaussons dorés. Une farce généreuse au bœuf haché et aux épices, enveloppée dans une pâte qui devient incroyablement craquante sous l'effet de la chaleur tournante.",
+      "keywords": [
+        "Viande",
+        "Entrée",
+        "Snack",
+        "Protéiné",
+        "empanadas maison",
+        "chausson au bœuf",
+        "street food"
+      ]
+    },
+    {
+      "slug": "filet-de-porc-et-legumes",
+      "title": "Filet de Porc et Trio de Légumes Rôtis",
+      "description": "Le plat complet 'tout-en-un' par excellence. Le filet de porc rôtit sur un lit de légumes de saison, permettant à ses jus savoureux d'aromatiser l'accompagnement pour un repas sain et équilibré.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéique",
+        "LowCarb",
+        "Légumes",
+        "filet mignon",
+        "plat complet",
+        "rôti sain"
+      ]
+    },
+    {
+      "slug": "costolette-agnello",
+      "title": "Côtelettes d'Agneau Express (Prêtes en 10 min !)",
+      "description": "Le secret d'un repas de Pâques réussi et sans stress. Ces côtelettes ressortent croustillantes et rosées à cœur, sans aucune fumée dans votre cuisine. Une option keto et hyperprotéinée irrésistible.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "Low Carb",
+        "Keto",
+        "Côtelettes agneau",
+        "Pâques",
+        "agneau rapide"
+      ]
+    },
+    {
+      "slug": "casatiello-napoletano",
+      "title": "Casatiello Napolitain (Pain Brioché de Pâques)",
+      "description": "Le roi des tables italiennes ! Un pain brioché rustique et ultra-moelleux, généreusement garni de fromages fondants et de charcuteries fines. Une explosion de saveurs traditionnelles.",
+      "keywords": [
+        "Pâques",
+        "Pain garni",
+        "Recette italienne",
+        "Casatiello",
+        "Charcuterie",
+        "Boulangerie",
+        "spécialité napolitaine"
+      ]
+    },
+    {
+      "slug": "mini-pastiera-napoletana",
+      "title": "Mini Pastieras (Le Dessert Culte de Pâques)",
+      "description": "Retrouvez toute la magie de Naples en format individuel. Une pâte sablée hyper croustillante abritant un cœur fondant à la ricotta, au blé cuit et aux parfums de fleurs d'oranger.",
+      "keywords": [
+        "Dessert",
+        "Pâques",
+        "Tartelette italienne",
+        "Pastiera",
+        "Ricotta",
+        "Portion individuelle",
+        "douceur italienne"
+      ]
+    },
+    {
+      "slug": "mini-torta-pasqualina",
+      "title": "Mini Tourtes Pascales (Épinards et Ricotta)",
+      "description": "Une entrée végétarienne chic et rapide. Ces mini tourtes feuilletées cachent un cœur onctueux d'épinards, de ricotta et un œuf. Le croustillant de la pâte est garanti en seulement 15 minutes.",
+      "keywords": [
+        "Végétarien",
+        "Tourte salée",
+        "Entrée de Pâques",
+        "Epinards ricotta",
+        "torta pasqualina",
+        "feuilleté légumes"
+      ]
+    },
+    {
+      "slug": "hamburger-classique",
+      "title": "Le Burger Maison Parfait (Juteux et Doré)",
+      "description": "Obtenez un brunissement digne d'un steakhouse ! L'airfryer saisit la viande pour emprisonner les sucs, garantissant un burger hyper moelleux sans les projections de graisse sur votre plaque.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "burger maison",
+        "steak haché",
+        "grillade propre"
+      ]
+    },
+    {
+      "slug": "hamburger-deluxe",
+      "title": "Hamburger de Bœuf Deluxe (Pain Grillé)",
+      "description": "L'expérience burger ultime : une viande parfaitement rôtie surmontée de fromage fondant, le tout dans un pain brioché toasté juste ce qu'il faut par la circulation d'air chaud.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Snack",
+        "Protéique",
+        "cheeseburger",
+        "burger gourmand"
+      ]
+    },
+    {
+      "slug": "galettes-de-dinde-asiatiques",
+      "title": "Burgers de Dinde (Saveurs Asiatiques)",
+      "description": "Une alternative légère et originale à la viande rouge. Ces galettes de dinde parfumées au gingembre et à la coriandre sont servies avec une salade croquante pour un repas frais et healthy.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéique",
+        "LowCarb",
+        "burger dinde",
+        "healthy burger",
+        "saveurs d'asie"
+      ]
+    },
+    {
+      "slug": "hot-dog-newyorkais",
+      "title": "Hot-Dog New-Yorkais au Cheddar Fondu",
+      "description": "Retrouvez l'ambiance des rues de Manhattan ! Une saucisse grillée, des oignons caramélisés et du cheddar coulant dans un pain moelleux, le tout préparé en un clin d'œil.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Snack",
+        "Protéique",
+        "Rapide",
+        "hot-dog",
+        "street food US",
+        "cheddar"
+      ]
+    },
+    {
+      "slug": "rouleaux-porc-jambon",
+      "title": "Roulés de Porc au Jambon Cru et Mozzarella",
+      "description": "Une recette raffinée où le filet de porc s'entoure d'épinards et de mozzarella, le tout enveloppé dans une tranche de jambon cru qui devient ultra-croustillante à la cuisson.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéique",
+        "LowCarb",
+        "involtini",
+        "roulé de porc",
+        "jambon croustillant"
+      ]
+    },
+    {
+      "slug": "jalapenos-farcis-bacon",
+      "title": "Jalapeños au Bacon (L'Apéro qui Pique !)",
+      "description": "Le snack ultime des amateurs de sensations fortes. Des piments jalapeños farcis au cheddar et au porc, enrubannés de bacon fumé pour un résultat croquant, fondant et piquant.",
+      "keywords": [
+        "Viande",
+        "Légumes",
+        "Œufs/Fromages",
+        "Apéritif",
+        "Snack",
+        "Protéiné",
+        "LowCarb",
+        "jalapeno poppers",
+        "bacon"
+      ]
+    },
+    {
+      "slug": "kofta-boeuf-coriandre",
+      "title": "Koftas de Bœuf à la Coriandre (Orientales)",
+      "description": "Ces brochettes de bœuf haché, riches en herbes et en épices, bénéficient d'une dorure uniforme grâce à la convection. Une saveur intense et une texture tendre garantie.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "kofta",
+        "brochette bœuf",
+        "cuisine orientale"
+      ]
+    },
+    {
+      "slug": "boulettes-agneau-mediterraneennes",
+      "title": "Boulettes d'Agneau à la Menthe et Cumin",
+      "description": "Fraîcheur et caractère se rencontrent dans ces boulettes d'agneau au citron. La haute température crée une croûte irrésistible tout en préservant le moelleux de la viande.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Snack",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "Facile",
+        "boulettes agneau",
+        "menthe"
+      ]
+    },
+    {
+      "slug": "boulettes-japonaise",
+      "title": "Boulettes de Bœuf Glacées au Miso",
+      "description": "Un délice umami ! Ces boulettes de bœuf sont laquées avec une sauce soja et miso onctueuse qui caramélise magnifiquement, offrant un goût riche et profond.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Snack",
+        "Protéique",
+        "boulettes japonaises",
+        "miso",
+        "yakitori"
+      ]
+    },
+    {
+      "slug": "saucisses-entieres-roties",
+      "title": "Saucisses Rôties (Cuisson Homogène)",
+      "description": "Oubliez la poêle ! La cuisson à l'airfryer assure une enveloppe parfaitement dorée et une chair cuite uniformément à cœur, sans gras ajouté et en toute simplicité.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "Rapide",
+        "LowCarb",
+        "saucisses grillées",
+        "repas express"
+      ]
+    },
+    {
+      "slug": "saucisse-spirale-grillee",
+      "title": "Spirale de Saucisse Miel et Moutarde",
+      "description": "Présentation originale pour un goût unique. Cette spirale de saucisse est badigeonnée d'un mélange miel-moutarde qui caramélise sous la chaleur, créant une croûte sucrée-salée craquante.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Snack",
+        "Protéique",
+        "LowCarb",
+        "saucisse en spirale",
+        "sucré-salé"
+      ]
+    },
+    {
+      "slug": "sandwich-steak-raifort",
+      "title": "Steak Sandwich à la Sauce Raifort",
+      "description": "Un sandwich chaud et puissant. Le bœuf saisi à la perfection rencontre le piquant de la sauce raifort pour un déjeuner rapide qui ne manque pas de panache.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "Rapide",
+        "sandwich bœuf",
+        "raifort",
+        "lunch chaud"
+      ]
+    },
+    {
+      "slug": "brochettes-agneau-shawarma",
+      "title": "Brochettes d'Agneau Façon Shawarma",
+      "description": "Retrouvez les saveurs du Moyen-Orient ! De la viande d'agneau hachée, façonnée en brochettes et parfumée d'un mélange d'épices chaudes pour un résultat tendre et dépaysant.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Snack",
+        "Protéique",
+        "LowCarb",
+        "Rapide",
+        "shawarma agneau",
+        "brochettes épicées"
+      ]
+    }
+  ]
+}

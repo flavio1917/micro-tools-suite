@@ -1,0 +1,323 @@
+{
+"it": [
+{
+"slug": "patatine-fritte-cajun",
+"title": "Patatine Cajun in Friggitrice ad Aria (Super Croccanti e Speziate)",
+"description": "Porta il sapore della Louisiana in tavola! Patate a bastoncino croccantissime fuori e tenere dentro, avvolte da un mix Cajun esplosivo. Senza olio e pronte in un lampo.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"Patate",
+"patate speziate",
+"contorno veloce",
+"cajun fries Friggitrice ad Aria"
+]
+},
+{
+"slug": "patatine-fritte-fatte-in-casa",
+"title": "Patatine Fritte in Friggitrice ad Aria (Il Segreto per Farle Croccanti)",
+"description": "Addio fritto unto! Scopri come preparare patatine fatte in casa perfette con la tua friggitrice ad aria. Seguendo il nostro trucco dell'ammollo saranno irresistibili.",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"Patate",
+"patate fritte light",
+"chips fatte in casa",
+"snack salutare"
+]
+},
+{
+"slug": "patatine-ondulate-surgelate",
+"title": "Patate Ondulate Surgelate in Friggitrice ad Aria (Doratura Uniforme)",
+"description": "Voglia di patatine last-minute? Le ondulate in friggitrice ad aria diventano croccantissime in pochi minuti senza aggiungere un solo grammo di grasso. Provale subito!",
+"keywords": [
+"Verdure",
+"Contorno",
+"Snack",
+"Vegetariano",
+"Vegano",
+"Patate",
+"patate surgelate Friggitrice ad Aria",
+"contorno rapido",
+"croccantezza garantita"
+]
+},
+{
+"slug": "pollo-fritto-latticello",
+"title": "Pollo al Latticello in Friggitrice ad Aria (Super Croccante senza Olio!)",
+"description": "Il vero pollo fritto americano ma in versione light! Grazie alla marinatura nel latticello otterrai una carne succosissima e una crosta speziata che scrocchia sotto i denti.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"Pollo",
+"Latticello",
+"Pollo fritto non fritto",
+"Chicken nuggets",
+"fried chicken Friggitrice ad Aria",
+"secondo goloso"
+]
+},
+{
+"slug": "zucchine-fritte",
+"title": "Stick di Zucchine al Parmigiano (Snack Croccante in Friggitrice ad Aria)",
+"description": "Trasforma le zucchine in uno snack goloso! Bastoncini panati al parmigiano, dorati e croccanti in friggitrice ad aria. Il contorno perfetto che piace anche ai bambini.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Antipasto",
+"Contorno",
+"Proteico",
+"Vegetariano",
+"Zucchine",
+"Parmigiano Reggiano",
+"zucchine Friggitrice ad Aria",
+"verdure croccanti",
+"aperitivo light"
+]
+},
+{
+"slug": "ali-pollo-aglio-parmigiano",
+"title": "Ali di Pollo Aglio e Parmigiano (Crosticina Irresistibile in Friggitrice ad Aria)",
+"description": "Alette di pollo da sballo! Panatura secca al parmigiano e aglio per un risultato croccante e saporitissimo senza friggere. Pronte in meno di 20 minuti!",
+"keywords": [
+"Carne",
+"Secondo",
+"Antipasto",
+"Proteico",
+"Pollo",
+"Parmigiano",
+"alette di pollo veloci",
+"snack proteico",
+"chicken wings Friggitrice ad Aria"
+]
+},
+{
+"slug": "ali-pollo-jerk",
+"title": "Ali di Pollo Jerk in Friggitrice ad Aria (Gusto Giamaicano Veloce)",
+"description": "Porta i tropici in cucina! Ali di pollo piccanti e aromatiche con marinatura Jerk, cotte alla perfezione nella friggitrice ad aria. Succose dentro e speziate fuori.",
+"keywords": [
+"Carne",
+"Secondo",
+"Snack",
+"Proteico",
+"LowCarb",
+"Pollo",
+"pollo jerk ricetta",
+"alette speziate",
+"cena etnica veloce"
+]
+},
+{
+"slug": "ali-pollo-ketchup-senape",
+"title": "Ali di Pollo Glassate (Ketchup e Senape in Friggitrice ad Aria)",
+"description": "Alette di pollo caramellate e succose! La glassa agrodolce di ketchup e senape si sposa divinamente con la cottura rapida in Friggitrice ad Aria. Da leccarsi le dita!",
+"keywords": [
+"Carne",
+"Secondo",
+"Antipasto",
+"Proteico",
+"Pollo",
+"Senape",
+"alette glassate",
+"secondo sfizioso",
+"bbq style Friggitrice ad Aria"
+]
+},
+{
+"slug": "ali-miele-sriracha",
+"title": "Ali di Pollo Miele e Sriracha (Agrodolce Piccante in Friggitrice ad Aria)",
+"description": "Voglia di un gusto audace? Ali di pollo croccanti glassate con miele e sriracha. Un mix perfetto di dolce e piccante ottenuto velocemente in friggitrice ad aria.",
+"keywords": [
+"Carne",
+"Secondo",
+"Antipasto",
+"Proteico",
+"Pollo",
+"alette piccanti",
+"miele e sriracha",
+"secondo piatto orientale"
+]
+},
+{
+"slug": "bacchette-pollo-tikka",
+"title": "Fusi di Pollo Tikka Masala (Morbidi e Speziati in Friggitrice ad Aria)",
+"description": "Fusi di pollo tenerissimi grazie alla marinatura al latte di cocco e spezie indiane. La friggitrice ad aria crea una crosticina saporita mantenendo l'interno succoso.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Pollo",
+"pollo tikka masala",
+"ricetta indiana light",
+"fusi di pollo speziati"
+]
+},
+{
+"slug": "cajun-di-pollo",
+"title": "Filetti di Pollo Cajun (Panatura Croccante in Friggitrice ad Aria)",
+"description": "Nuggets di pollo fatti in casa con un tocco Cajun! Marinati nel latticello e panati con spezie intense per una croccantezza imbattibile senza l'uso di olio.",
+"keywords": [
+"Carne",
+"Secondo",
+"Snack",
+"Proteico",
+"Pollo",
+"Cajun",
+"filetti di pollo croccanti",
+"pollo speziato",
+"snack proteico veloce"
+]
+},
+{
+"slug": "cosce-pollo-aglio-limone",
+"title": "Cosce di Pollo Aglio e Limone (Pelle Croccante in Friggitrice ad Aria)",
+"description": "Un classico leggero e saporito. Cosce di pollo marinate al limone con pelle croccantissima grazie alla friggitrice ad aria. Solo ingredienti sani e naturali!",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Pollo",
+"Limone",
+"pollo al limone light",
+"secondo piatto veloce",
+"cosce di pollo arrosto"
+]
+},
+{
+"slug": "cosce-pollo-senape",
+"title": "Cosce di Pollo alla Senape (Glassa Agrodolce in Friggitrice ad Aria)",
+"description": "Prova il contrasto tra senape e sciroppo d'acero su cosce di pollo succose. Una ricetta gourmet pronta in pochi minuti che stupirà i tuoi ospiti per la sua bontà.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"Pollo",
+"Senape",
+"pollo alla senape",
+"cena agrodolce",
+"ricetta raffinata pollo"
+]
+},
+{
+"slug": "cosce-pollo-yogurt-rosmarino",
+"title": "Cosce di Pollo allo Yogurt (Tenere e Succose in Friggitrice ad Aria)",
+"description": "Il segreto per un pollo che si scioglie in bocca? La marinatura allo yogurt! Scoprila abbinata al rosmarino e cotta nella friggitrice ad aria per un risultato perfetto.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Pollo",
+"Yogurt",
+"pollo allo yogurt",
+"secondo leggero",
+"pollo succoso Friggitrice ad Aria"
+]
+},
+{
+"slug": "maiale-katsu",
+"title": "Tonkatsu in Friggitrice ad Aria (Maiale in Panko Croccantissimo)",
+"description": "La famosa cotoletta di maiale giapponese diventa light! Panatura in Panko dorata e super croccante senza l'olio della frittura profonda. Un successo garantito!",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"Maiale",
+"Panko",
+"maiale katsu",
+"cotoletta giapponese",
+"frittura panko Friggitrice ad Aria"
+]
+},
+{
+"slug": "cotoletta-melanzane",
+"title": "Cotolette di Melanzana in Friggitrice ad Aria (Vegetariane e Croccanti)",
+"description": "Cerchi un'alternativa alla carne? Queste fette di melanzana impanate al parmigiano sono dorate e croccanti. Ideali come contorno o antipasto sfizioso e leggero.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Antipasto",
+"Contorno",
+"Proteico",
+"Vegetariano",
+"Melanzana",
+"Parmigiano",
+"melanzane impanate",
+"secondo vegetariano",
+"contorno light"
+]
+},
+{
+"slug": "crocchette-pesce-fritte",
+"title": "Bastoncini di Pesce in Friggitrice ad Aria (Croccanti per Bambini)",
+"description": "Fai mangiare il pesce ai più piccoli con questi bastoncini fatti in casa! Panatura dorata e uniforme senza grassi aggiunti, cotti in 10 minuti nell'Friggitrice ad Aria.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Antipasto",
+"Proteico",
+"Pesce bianco",
+"bastoncini di pesce light",
+"cena bambini veloce",
+"pesce impanato"
+]
+},
+{
+"slug": "crocchette-pollo-salsa-senape",
+"title": "Bocconcini di Pollo ai Cereali (Massima Croccantezza in Friggitrice ad Aria)",
+"description": "Panatura extra crunch con i corn flakes! Bocconcini di pollo sfiziosi e veloci da preparare nella friggitrice ad aria, perfetti da intingere nella tua salsa preferita.",
+"keywords": [
+"Carne",
+"Secondo",
+"Snack",
+"Proteico",
+"Pollo",
+"pollo ai corn flakes",
+"chicken nuggets sani",
+"merenda proteica"
+]
+},
+{
+"slug": "funghi-ripieni-salsiccia",
+"title": "Funghi Ripieni alla Salsiccia (Gratinati in Friggitrice ad Aria)",
+"description": "Un antipasto da chef! Cappelle di champignon farcite con salsiccia e provola filante, gratinate perfettamente nella friggitrice ad aria. Succulenti e veloci.",
+"keywords": [
+"Carne",
+"Verdure",
+"Antipasto",
+"Secondo",
+"Proteico",
+"Funghi",
+"Salsiccia",
+"funghi farciti",
+"antipasto caldo",
+"secondo piatto funghi"
+]
+},
+{
+"slug": "involtini-primavera-pollo",
+"title": "Involtini Pollo e Verdure (Sfoglia Croccante in Friggitrice ad Aria)",
+"description": "Voglia di cinese? Prepara involtini croccanti con ripieno di pollo e verdure fresche. La friggitrice ad aria li rende fragranti senza l'olio del fritto tradizionale.",
+"keywords": [
+"Carne",
+"Antipasto",
+"Snack",
+"Proteico",
+"Pollo",
+"Verdure",
+"involtini primavera Friggitrice ad Aria",
+"snack etnico",
+"aperitivo sfizioso"
+]
+}
+]
+}

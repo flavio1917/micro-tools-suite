@@ -1,0 +1,334 @@
+{
+"it": [
+{
+"slug": "spiedini-maiale-teriyaki",
+"title": "Spiedini di Maiale Teriyaki (Glassati e Lucidi in Friggitrice ad Aria)",
+"description": "Cubetti di maiale tenerissimi avvolti da una salsa Teriyaki densa e dolciastra. La friggitrice ad aria caramellizza la glassa in pochi minuti, regalandoti un gusto orientale autentico.",
+"keywords": [
+"Carne",
+"Secondo",
+"Antipasto",
+"Proteico",
+"Maiale",
+"Salsa Teriyaki",
+"spiedini orientali",
+"maiale glassato",
+"cucina giapponese veloce"
+]
+},
+{
+"slug": "spiedini-manzo-coreano",
+"title": "Spiedini di Manzo alla Coreana (Agrodolci e Piccanti)",
+"description": "Porta il Korean BBQ a casa tua! Spiedini di manzo marinati con Gochujang per un'esplosione di sapore. La cottura rapida sigilla i succhi, lasciando la carne morbida e succulenta.",
+"keywords": [
+"Carne",
+"Secondo",
+"Antipasto",
+"Proteico",
+"Manzo",
+"Gochujang",
+"bbq coreano",
+"manzo piccante",
+"spiedini saporiti"
+]
+},
+{
+"slug": "spiedini-manzo-teriyaki",
+"title": "Spiedini Manzo e Formaggio (Cuore Filante in Friggitrice ad Aria)",
+"description": "Il connubio perfetto: fettine di manzo saporite che racchiudono un cuore di formaggio fuso, il tutto laccato con salsa Teriyaki. Uno snack filante pronto in un lampo!",
+"keywords": [
+"Carne",
+"Uova/Formaggi",
+"Antipasto",
+"Secondo",
+"Proteico",
+"Manzo",
+"Formaggio",
+"spiedini filanti",
+"manzo e formaggio",
+"snack sfizioso"
+]
+},
+{
+"slug": "uovo-allo-scotch",
+"title": "Uova alla Scozzese in Friggitrice ad Aria (Croccanti e Proteiche)",
+"description": "Il classico British in versione light! Uova sode avvolte in saporita salsiccia e panatura croccante. Dorate alla perfezione nell'Friggitrice ad Aria senza bisogno di friggere in olio.",
+"keywords": [
+"Carne",
+"Uova/Formaggi",
+"Antipasto",
+"Snack",
+"Proteico",
+"Veloce",
+"Uova",
+"Salsiccia",
+"scotch eggs light",
+"antipasto sostanzioso"
+]
+},
+{
+"slug": "amaretti-al-cocco",
+"title": "Pasticcini al Cocco Veloci (3 Ingredienti in Friggitrice ad Aria)",
+"description": "Dolcetti irresistibili pronti in soli 10 minuti! Morbidi dentro e dorati fuori, questi pasticcini al cocco sono perfetti per una voglia di dolce improvvisa o una colazione sprint.",
+"keywords": [
+"Dolce",
+"Snack",
+"Colazione",
+"Proteico",
+"Vegetariano",
+"Veloce",
+"Cocco",
+"Latte Condensato",
+"dolci al cocco",
+"biscotti veloci"
+]
+},
+{
+"slug": "avocado-fritti",
+"title": "Avocado Fries (Stick Croccanti e Cremosi in Friggitrice ad Aria)",
+"description": "L'avocado come non l'hai mai provato! Spicchi impanati e speziati che diventano croccantissimi fuori e burrosi dentro. Lo snack vegetariano definitivo per i tuoi aperitivi.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Antipasto",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Veloce",
+"Avocado",
+"avocado fritto",
+"chips di avocado",
+"aperitivo light"
+]
+},
+{
+"slug": "bastoncini-french-toast",
+"title": "French Toast Sticks (Colazione Golosa in Friggitrice ad Aria)",
+"description": "Bastoncini di pane dorati, profumati alla cannella e pronti da tuffare nel tuo sciroppo preferito. Croccanti fuori e soffici dentro, senza burro in eccesso.",
+"keywords": [
+"Dolce",
+"Uova/Formaggi",
+"Colazione",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Veloce",
+"Pane",
+"Uova",
+"french toast veloce",
+"colazione americana"
+]
+},
+{
+"slug": "bastoncini-pesce-surgelati",
+"title": "Bastoncini di Pesce Surgelati (Super Crunch in 10 Minuti)",
+"description": "Dimentica il forno lento o la padella unta! I bastoncini di pesce in friggitrice ad aria diventano incredibilmente croccanti e asciutti in metà tempo. Ideali per i bambini.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Snack",
+"Proteico",
+"Veloce",
+"bastoncini pesce Friggitrice ad Aria",
+"cena bambini rapida",
+"pesce surgelato"
+]
+},
+{
+"slug": "cipolla-fiorita",
+"title": "Blooming Onion (La Cipolla a Fiore in Friggitrice ad Aria)",
+"description": "Scenografica e deliziosa! Una cipolla intera che 'sboccia' in petali croccanti e speziati. Un antipasto da condividere, perfetto da intingere in una salsa saporita.",
+"keywords": [
+"Verdure",
+"Antipasto",
+"Contorno",
+"Vegetariano",
+"Vegano",
+"Cipolla",
+"blooming onion Friggitrice ad Aria",
+"antipasto scenografico",
+"cipolla fritta light"
+]
+},
+{
+"slug": "filetti-salmone-semplici",
+"title": "Salmone in Friggitrice ad Aria (Pelle Croccante e Cuore Tenero)",
+"description": "Il segreto per un salmone perfetto? La convezione dell'aria! Ottieni una superficie dorata e caramellata mentre l'interno resta umido, rosa e succulento. Pronto in 8 minuti.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Veloce",
+"Salmone",
+"salmone Friggitrice ad Aria",
+"cena sana",
+"pesce veloce"
+]
+},
+{
+"slug": "fish-and-chips",
+"title": "Fish & Chips Leggero (Merluzzo Croccante in Friggitrice ad Aria)",
+"description": "Il classico pub inglese in versione salutare. Merluzzo con una panatura dorata e fragrante, cotto alla perfezione senza la pesantezza del fritto tradizionale.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"Merluzzo",
+"Uova",
+"fish and chips light",
+"pesce impanato",
+"merluzzo croccante"
+]
+},
+{
+"slug": "focaccine-alla-fragola",
+"title": "Scones alle Fragole (Soffici e Fragranti in Friggitrice ad Aria)",
+"description": "Piccole delizie anglosassoni ricche di fragole fresche. La friggitrice ad aria le rende leggermente sfogliate e dorate, ideali per un tè pomeridiano o una colazione speciale.",
+"keywords": [
+"Dolce",
+"Lievitati",
+"Colazione",
+"Snack",
+"Proteico",
+"Fragola",
+"Burro",
+"scones fragole",
+"dolci da tè",
+"focaccine dolci"
+]
+},
+{
+"slug": "focaccine-mirtilli-zenzero",
+"title": "Scones Mirtilli e Zenzero (Profumati e Veloci in Friggitrice ad Aria)",
+"description": "Un abbinamento raffinato: la dolcezza dei mirtilli incontra la nota piccante dello zenzero. Scones soffici pronti in pochi minuti per una merenda gourmet.",
+"keywords": [
+"Dolce",
+"Lievitati",
+"Colazione",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Mirtilli",
+"Zenzero",
+"scones mirtilli",
+"dolci veloci",
+"merenda sana"
+]
+},
+{
+"slug": "gamberetti-bacon",
+"title": "Gamberi al Bacon (Antipasto Croccante in Friggitrice ad Aria)",
+"description": "Un'esplosione di sapori terra-mare! Gamberi succosi avvolti in pancetta croccante che rilascia tutto il suo aroma durante la cottura veloce. L'aperitivo perfetto.",
+"keywords": [
+"Pesce",
+"Carne",
+"Antipasto",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Gamberi",
+"Pancetta",
+"gamberi e bacon",
+"surf and turf",
+"aperitivo sfizioso"
+]
+},
+{
+"slug": "gamberi-al-cocco",
+"title": "Gamberi al Cocco (Croccanti e Tropicali in Friggitrice ad Aria)",
+"description": "Viaggia ai tropici con ogni morso! Gamberi con una panatura dorata al cocco per un contrasto dolce-salato unico. Croccantezza imbattibile garantita dalla friggitrice ad aria.",
+"keywords": [
+"Pesce",
+"Antipasto",
+"Secondo",
+"Proteico",
+"Gamberi",
+"Cocco",
+"coconut shrimp",
+"antipasto esotico",
+"gamberi croccanti"
+]
+},
+{
+"slug": "gamberi-croccanti-curry",
+"title": "Gamberi al Curry (Doppia Panatura Extra Crunch)",
+"description": "Gamberi speziati e super croccanti grazie alla doppia impanatura con farina di mais. Il profumo del curry si sposa perfettamente con la doratura rapida dell'Friggitrice ad Aria.",
+"keywords": [
+"Pesce",
+"Antipasto",
+"Secondo",
+"Proteico",
+"Gamberi",
+"Curry",
+"gamberi speziati",
+"snack di pesce",
+"secondo veloce"
+]
+},
+{
+"slug": "merluzzo-al-curry",
+"title": "Merluzzo Curry e Cocco (Tenero e Cremoso in Friggitrice ad Aria)",
+"description": "Un modo originale e sano di cucinare il pesce bianco. Filetti di merluzzo che restano morbidissimi in una salsa aromatica al curry e cocco. Leggero e saporito.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Merluzzo",
+"Curry",
+"pesce al curry",
+"merluzzo light",
+"ricetta esotica pesce"
+]
+},
+{
+"slug": "merluzzo-crosta-panko",
+"title": "Merluzzo in Crosta di Panko (Leggero e Croccante in Friggitrice ad Aria)",
+"description": "Filetti di merluzzo nobilitati da una crosticina di Panko, limone e prezzemolo. La friggitrice ad aria li rende croccanti come se fossero fritti, ma con pochissimi grassi.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"Veloce",
+"Merluzzo",
+"Limone",
+"merluzzo panko",
+"pesce croccante",
+"secondo di pesce veloce"
+]
+},
+{
+"slug": "mini-torta-mele",
+"title": "Tortine di Mele Monoporzione (Cuore Caldo in 15 Minuti)",
+"description": "Piccoli scrigni di sfoglia ripieni di mele speziate alla cannella. Profumate e fragranti, queste monoporzioni sono il fine pasto o la merenda perfetta, pronte in un attimo.",
+"keywords": [
+"Dolce",
+"Snack",
+"Colazione",
+"Proteico",
+"Vegetariano",
+"Mela",
+"mini apple pie",
+"dolci alle mele",
+"merenda veloce"
+]
+},
+{
+"slug": "morsi-mozzarella-fritti",
+"title": "Mozzarella Bites (Cubetti Filanti in Friggitrice ad Aria)",
+"description": "Addio mozzarella gommosa! Cubetti con doppia panatura che esplodono di formaggio fuso al primo morso. Croccantissimi fuori, sono lo snack vegetariano più amato da grandi e piccoli.",
+"keywords": [
+"Uova/Formaggi",
+"Antipasto",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Mozzarella",
+"mozzarella fritta light",
+"finger food filante",
+"aperitivo mozzarella"
+]
+}
+]
+}

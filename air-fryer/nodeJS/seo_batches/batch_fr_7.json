@@ -1,0 +1,304 @@
+{
+  "fr": [
+    {
+      "slug": "muffins-cafe-streusel",
+      "title": "Muffins au Café et Cacao (Texture Moelleuse)",
+      "description": "L'alliance parfaite du réveil ! Ces muffins marient l'intensité du café et la gourmandise du cacao sous une texture aérienne. La cuisson à l'airfryer leur confère un dôme parfaitement saisi et un cœur fondant.",
+      "keywords": [
+        "Dessert",
+        "Petit-déjeuner",
+        "Collation",
+        "Végétarien",
+        "Rapide",
+        "muffin café",
+        "chocolat",
+        "goûter"
+      ]
+    },
+    {
+      "slug": "muffins-aux-pépites-de-chocolat",
+      "title": "Muffins aux Pépites de Chocolat (Extra Moelleux)",
+      "description": "Le grand classique indémodable. Découvrez comment obtenir des muffins bombés avec des pépites de chocolat fondantes. La chaleur pulsée garantit une cuisson homogène pour un résultat digne d'une pâtisserie.",
+      "keywords": [
+        "Dessert",
+        "Petit-déjeuner",
+        "Snack",
+        "Protéique",
+        "Végétarien",
+        "muffin chocolat",
+        "pépites",
+        "pâtisserie"
+      ]
+    },
+    {
+      "slug": "filet-de-dorade-grillee-tomates",
+      "title": "Filets de Dorade aux Olives et Tomates",
+      "description": "Une recette méditerranéenne saine et colorée. La dorade est grillée à la perfection, accompagnée d'une sauce vierge aux tomates cerises, olives et herbes fraîches qui sublime la finesse du poisson.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéiné",
+        "Rapide",
+        "dorade grillée",
+        "méditerranéen",
+        "poisson frais"
+      ]
+    },
+    {
+      "slug": "poisson-chat-cajun",
+      "title": "Poisson Style Cajun (Saveurs de Louisiane)",
+      "description": "Cap sur la Nouvelle-Orléans ! Ces filets de poisson sont enrobés d'un mélange d'épices cajun relevé, créant une croûte sombre et parfumée tandis que la chair reste tendre et juteuse.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "cajun",
+        "poisson épicé",
+        "louisiane"
+      ]
+    },
+    {
+      "slug": "pizza-matinale-oeuf-jambon",
+      "title": "Pizza Petit-Déjeuner (Œuf et Jambon Fumé)",
+      "description": "Une façon originale de commencer la journée. Une base croustillante garnie de mozzarella fondante et de jambon fumé, le tout couronné d'un œuf au jaune encore coulant.",
+      "keywords": [
+        "Viande",
+        "Œufs/Fromages",
+        "Produits Levés",
+        "Petit-déjeuner",
+        "Snack",
+        "Protéiné",
+        "Rapide",
+        "pizza œuf",
+        "brunch"
+      ]
+    },
+    {
+      "slug": "saumon-beurre-citron",
+      "title": "Saumon au Beurre Citronné (Nappage Onctueux)",
+      "description": "La simplicité élégante. Ces filets de saumon sont rôtis jusqu'à obtenir une texture nacrée, puis nappés d'une sauce veloutée au beurre et au citron pour une explosion de fraîcheur en bouche.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "saumon citron",
+        "sauce beurre",
+        "cuisine saine"
+      ]
+    },
+    {
+      "slug": "saumon-tomate-concombre",
+      "title": "Pavé de Saumon et Salade Fraîcheur",
+      "description": "Un repas complet, léger et riche en protéines. Le saumon grillé s'accompagne d'une salade croquante de tomates cerises, concombres et oignons rouges pour un contraste chaud-froid irrésistible.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "saumon salade",
+        "healthy food",
+        "oméga-3"
+      ]
+    },
+    {
+      "slug": "saumon-glace-teriyaki",
+      "title": "Saumon Glacé Teriyaki et Orange",
+      "description": "Un voyage sensoriel asiatisant. Le saumon est laqué avec un mélange de sauce soja et de jus d'orange qui caramélise délicieusement sous la chaleur, offrant un fini brillant et sucré-salé.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Protéique",
+        "LowCarb",
+        "teriyaki",
+        "saumon laqué",
+        "sucré-salé"
+      ]
+    },
+    {
+      "slug": "sandwich-muffin-petit-dejeuner",
+      "title": "Muffin Anglais (Bacon, Œuf et Fromage)",
+      "description": "Le mythique sandwich matinal version maison ! Un muffin anglais toasté, du bacon croustillant, un œuf poché à la perfection et du fromage fondu pour un réveil gourmand et protéiné.",
+      "keywords": [
+        "Œufs/Fromages",
+        "Viande",
+        "Petit-déjeuner",
+        "Snack",
+        "Protéiné",
+        "Rapide",
+        "muffin anglais",
+        "egg muffin",
+        "brunch express"
+      ]
+    },
+    {
+      "slug": "tartelettes-pommes",
+      "title": "Tartelettes aux Pommes et Cannelle",
+      "description": "Le croustillant de la pâte feuilletée rencontre la douceur des pommes finement tranchées. Une touche de cannelle vient sublimer ces tartelettes dorées, prêtes en quelques minutes seulement.",
+      "keywords": [
+        "Dessert",
+        "Collation",
+        "Petit-déjeuner",
+        "Végétarien",
+        "Pomme",
+        "Pâtisserie",
+        "tartelette feuilletée"
+      ]
+    },
+    {
+      "slug": "cornichons-frits",
+      "title": "Cornichons Frits (Fried Pickles Croustillants)",
+      "description": "L'apéritif insolite qui fait fureur ! Ces cornichons panés ressortent de l'airfryer ultra-craquants. Un contraste audacieux entre l'acidité du vinaigre et le croustillant de la panure épicée.",
+      "keywords": [
+        "Légumes",
+        "Snack",
+        "Apéritif",
+        "Végétarien",
+        "fried pickles",
+        "cornichon pané",
+        "insolite"
+      ]
+    },
+    {
+      "slug": "souffle-chocolat",
+      "title": "Soufflé au Chocolat Noir (Cœur Coulant)",
+      "description": "La haute pâtisserie s'invite dans votre cuisine. Ce soufflé aérien cache un cœur intensément chocolaté. Sa texture légère et sa montée parfaite impressionneront tous vos convives.",
+      "keywords": [
+        "Dessert",
+        "Œufs/Fromages",
+        "Goûter",
+        "Protéique",
+        "Végétarien",
+        "Chocolat",
+        "soufflé",
+        "fondant"
+      ]
+    },
+    {
+      "slug": "tacos-de-poisson-grille",
+      "title": "Tacos de Poisson (Fish Tacos Mexicains)",
+      "description": "Fraîcheur et peps garantis ! Un poisson enrobé d'épices et de farine de maïs pour un croquant irrésistible, servi dans des tortillas souples avec une touche de lime.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Snack",
+        "Protéiné",
+        "LowCarb",
+        "Cuisine mexicaine",
+        "tacos",
+        "street food"
+      ]
+    },
+    {
+      "slug": "pain-perdu-fourre-dore",
+      "title": "Pain Perdu Fourré au Cream Cheese",
+      "description": "Le summum de la gourmandise matinale. Une brioche épaisse garnie d'un cœur onctueux au fromage à la crème, dorée à l'extérieur pour un résultat crousti-fondant incomparable.",
+      "keywords": [
+        "Dessert",
+        "Petit-déjeuner",
+        "Œufs/Fromages",
+        "Protéiné",
+        "Végétarien",
+        "Rapide",
+        "pain perdu",
+        "brioche",
+        "gourmandise"
+      ]
+    },
+    {
+      "slug": "gateau-au-citron",
+      "title": "Gâteau au Citron (Arôme Intense)",
+      "description": "Un gâteau moelleux qui fait la part belle aux agrumes. Sa mie homogène et son parfum de zeste frais en font le compagnon idéal du café ou du thé. Une réussite à tous les coups.",
+      "keywords": [
+        "Dessert",
+        "Petit-déjeuner",
+        "Goûter",
+        "Protéiné",
+        "Végétarien",
+        "gâteau citron",
+        "cake",
+        "agrumes"
+      ]
+    },
+    {
+      "slug": "tortini-de-poisson-congeles",
+      "title": "Galettes de Poisson (Dorées et Tendres)",
+      "description": "La solution idéale pour les jours pressés. Ces galettes de poisson panées cuisent directement depuis le congélateur pour offrir une croûte bien craquante et un cœur de poisson fondant.",
+      "keywords": [
+        "Poisson",
+        "Plat principal",
+        "Snack",
+        "Protéiné",
+        "Rapide",
+        "poisson pané",
+        "repas express"
+      ]
+    },
+    {
+      "slug": "oeuf-en-cocotte-avec-lardons",
+      "title": "Œufs Cocotte aux Lardons et Épinards",
+      "description": "Un petit-déjeuner salé ou une entrée raffinée. Des œufs cuits à la crème de parmesan avec des lardons fumés et des épinards frais pour un plat complet et riche en protéines.",
+      "keywords": [
+        "Œufs/Fromages",
+        "Petit-déjeuner",
+        "Entrée",
+        "Protéique",
+        "LowCarb",
+        "Rapide",
+        "œuf cocotte",
+        "ramequin"
+      ]
+    },
+    {
+      "slug": "biscuits-au-cheddar",
+      "title": "Cheddar Biscuits (Friables et Salés)",
+      "description": "Inspirés des célèbres biscuits américains, ces petits pains au fromage sont d'une texture incroyablement friable. Parfaits pour accompagner une soupe ou à dévorer tels quels à l'apéro.",
+      "keywords": [
+        "Produits Levés",
+        "Fromage",
+        "Accompagnement",
+        "Apéritif",
+        "En-cas",
+        "Protéique",
+        "Végétarien",
+        "biscuits cheddar",
+        "scones salés"
+      ]
+    },
+    {
+      "slug": "mini-pizzas",
+      "title": "Mini-Pizzas Muffin (Express et Kid-Friendly)",
+      "description": "La pizza la plus rapide du monde ! Utilisez des muffins anglais comme base pour créer des mini-pizzas croustillantes à la tomate, mozzarella et olives. Un succès garanti auprès des enfants.",
+      "keywords": [
+        "Œufs/Fromages",
+        "Produits Levés",
+        "Apéritif",
+        "Snack",
+        "Protéiné",
+        "Végétarien",
+        "Rapide",
+        "mini pizza",
+        "goûter salé"
+      ]
+    },
+    {
+      "slug": "muffins-aux-myrtilles-rouges",
+      "title": "Muffins aux Airelles et Orange",
+      "description": "L'acidité des airelles rencontre la douceur de l'orange dans ces muffins fruités. Une recette colorée et énergisante pour un petit-déjeuner plein de peps.",
+      "keywords": [
+        "Dessert",
+        "Petit-déjeuner",
+        "Snack",
+        "Végétarien",
+        "Rapide",
+        "muffin airelles",
+        "canneberge",
+        "orange"
+      ]
+    }
+  ]
+}

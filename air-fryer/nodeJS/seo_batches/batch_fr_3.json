@@ -1,0 +1,300 @@
+{
+"fr": [
+{
+"slug": "frites-epices-cajun",
+"title": "Frites Cajun (Épicées et Croustillantes)",
+"description": "Relevez vos repas avec ces frites maison aux saveurs de la Louisiane. Le mélange d'épices Cajun apporte une touche de piquant et de caractère, sublimée par une cuisson à l'air chaud qui les rend parfaitement dorées.",
+"keywords": [
+"Légumes",
+"Accompagnement",
+"Snack",
+"Végétarien",
+"Végétalien",
+"Pommes de terre",
+"Épicé",
+"Cajun",
+"frites épicées",
+"louisiane"
+]
+},
+{
+"slug": "frites-maison-classiques",
+"title": "Frites Maison Parfaites (Zéro Gras Superflu)",
+"description": "Le secret des frites parfaites à l'airfryer ? Un trempage à l'eau froide pour libérer l'amidon. Résultat : des frites ultra-croustillantes dehors et fondantes dedans, avec seulement une cuillère d'huile.",
+"keywords": [
+"Légumes",
+"Accompagnement",
+"Snack",
+"Végétarien",
+"Végan",
+"frites fraîches",
+"cuisson saine",
+"classique"
+]
+},
+{
+"slug": "frites-ondulees-congelees",
+"title": "Frites Ondulées (Le Croustillant Express)",
+"description": "Gagnez du temps sans sacrifier le plaisir ! Ces frites ondulées surgelées cuisent uniformément grâce à la circulation d'air, offrant une texture croquante sans aucun ajout d'huile.",
+"keywords": [
+"Légumes",
+"Accompagnement",
+"Snack",
+"Végétarien",
+"Végan",
+"frites surgelées",
+"rapide",
+"ondulées"
+]
+},
+{
+"slug": "poulet-frit-babeurre",
+"title": "Poulet Frit au Babeurre (Ultra Tendre)",
+"description": "Inspiré du Sud des États-Unis, ce poulet est mariné dans du babeurre pour une tendreté absolue. La panure épicée saisie à l'air chaud crée une croûte irrésistiblement crunchy.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"Poulet",
+"Frit",
+"soul food",
+"poulet frit sain",
+"babeurre"
+]
+},
+{
+"slug": "batonnets-courgettes-parmesan",
+"title": "Frites de Courgettes au Parmesan",
+"description": "Une alternative saine et gourmande aux frites classiques. Ces bâtonnets de courgettes sont enrobés de parmesan pour une gratinure savoureuse qui plaira même aux enfants.",
+"keywords": [
+"Légumes",
+"Accompagnement",
+"Apéritif",
+"Protéique",
+"Végétarien",
+"courgettes panées",
+"snack healthy",
+"low carb"
+]
+},
+{
+"slug": "ailes-de-poulet-ail-parmesan",
+"title": "Ailes de Poulet Ail et Parmesan (Garlic Parm)",
+"description": "Découvrez le duo culte : des ailes de poulet croustillantes enrobées d'une panure sèche au parmesan et à l'ail. Une explosion de saveurs sans aucune friture à l'huile.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Apéritif",
+"Protéiné",
+"LowCarb",
+"wings",
+"ail parmesan",
+"finger food"
+]
+},
+{
+"slug": "ailes-de-poulet-jerk",
+"title": "Ailes de Poulet Jerk (Saveurs Jamaïcaines)",
+"description": "Évadez-vous aux Caraïbes avec ces ailes de poulet relevées. Le mélange d'épices Jerk offre un profil aromatique fumé et piquant, magnifié par la cuisson grillée de l'airfryer.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Snack",
+"Protéiné",
+"Poulet",
+"Épicé",
+"Cuisine des Caraïbes",
+"jerk chicken"
+]
+},
+{
+"slug": "ailes-poulet-ketchup-moutarde",
+"title": "Ailes de Poulet Glacées (Ketchup-Moutarde)",
+"description": "Des ailes de poulet caramélisées à souhait ! La marinade ketchup-moutarde crée un glaçage brillant et juteux en fin de cuisson. Le parfait équilibre entre le sucré et le salé.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéique",
+"Poulet",
+"Glacé",
+"Sucré-salé",
+"barbecue express"
+]
+},
+{
+"slug": "ailes-miel-sriracha",
+"title": "Ailes de Poulet Miel-Sriracha (Asiatique-Fusion)",
+"description": "Le mariage parfait du piquant de la Sriracha et de la douceur du miel. Grâce à une pointe de fécule de maïs, ces ailes obtiennent une texture incroyablement croquante.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Apéritif",
+"Protéiné",
+"Poulet",
+"Épicé",
+"Aigre-doux",
+"Asiatique",
+"wings miel"
+]
+},
+{
+"slug": "pilons-de-poulet-tikka",
+"title": "Pilons de Poulet Tikka (Marinade Coco-Épices)",
+"description": "Succombez à la douceur de l'Inde. Ces pilons marinent dans un mélange onctueux de lait de coco et d'épices Tikka pour une chair fondante et une peau parfumée.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"LowCarb",
+"Poulet",
+"Cuisine indienne",
+"Épicé",
+"chicken tikka",
+"lait de coco"
+]
+},
+{
+"slug": "tenders-de-poulet-cajun",
+"title": "Tenders de Poulet Cajun (Croustis-Tendres)",
+"description": "Oubliez les fast-foods ! Préparez vos propres filets de poulet panés aux épices Cajun. Une croûte bien épicée et un cœur de filet de poulet ultra-juteux.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Snack",
+"Protéiné",
+"Poulet",
+"Cajun",
+"Épicé",
+"tenders maison"
+]
+},
+{
+"slug": "cuisses-de-poulet-ail-citron",
+"title": "Poulet Ail et Citron (Peau Croustillante)",
+"description": "Un classique indémodable. La marinade au citron et aux herbes de Provence infuse la chair, tandis que l'air chaud rend la peau des cuisses dorée et craquante à souhait.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"LowCarb",
+"poulet citron",
+"rôti express"
+]
+},
+{
+"slug": "cuisses-de-poulet-moutarde",
+"title": "Cuisses de Poulet au Sirop d'Érable et Moutarde",
+"description": "Un glaçage gourmet pour vos cuisses de poulet. L'alliance du sirop d'érable et de la moutarde de Dijon crée une surface caramélisée et riche en goût en quelques minutes.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéique",
+"LowCarb",
+"Poulet",
+"Moutarde",
+"glaçage érable"
+]
+},
+{
+"slug": "cuisses-de-poulet-yaourt-romarin",
+"title": "Poulet Méditerranéen au Yaourt et Romarin",
+"description": "Grâce à l'acide lactique du yaourt, ces cuisses de poulet sont d'une tendreté incomparable. Parfumées au romarin, elles apportent un air de vacances dans votre assiette.",
+"keywords": [
+"Viande",
+"Plat Principal",
+"Protéique",
+"LowCarb",
+"Poulet",
+"Méditerranéen",
+"marinade yaourt"
+]
+},
+{
+"slug": "cotolette-porc-katsu",
+"title": "Tonkatsu de Porc (Croustillant Japonais)",
+"description": "Découvrez le secret de la panure Panko ! Cette côtelette de porc japonaise offre une croûte épaisse et aérienne qui reste incroyablement légère grâce à la friteuse à air.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"Japonais",
+"Porc",
+"Croustillant",
+"tonkatsu",
+"panko"
+]
+},
+{
+"slug": "medaillons-aubergine-panes",
+"title": "Aubergines Panées au Parmesan",
+"description": "De savoureux médaillons d'aubergine avec une croûte de fromage dorée. À déguster tels quels pour l'apéro ou comme base légère pour une Parmigiana express.",
+"keywords": [
+"Légumes",
+"Œufs/Fromages",
+"Entrée",
+"Accompagnement",
+"En-cas",
+"Protéique",
+"Végétarien",
+"aubergines frites"
+]
+},
+{
+"slug": "batonnets-de-poisson-maison",
+"title": "Bâtonnets de Poisson Maison (Fish Fingers)",
+"description": "Réconciliez toute la famille avec le poisson ! Ces bâtonnets de filet blanc sont panés maison et cuits sans friture pour un résultat sain, croquant et savoureux.",
+"keywords": [
+"Poisson",
+"Plat principal",
+"Protéiné",
+"bâtonnets poisson",
+"poisson pané",
+"menu enfant"
+]
+},
+{
+"slug": "bouchees-poulet-cereales",
+"title": "Popcorn Chicken aux Corn Flakes",
+"description": "Le secret du croustillant ultime : une panure aux Corn Flakes ! Ces petites bouchées de poulet sont parfaites pour un apéritif dînatoire ou un plateau télé original.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Snack",
+"Protéiné",
+"Poulet",
+"Pané",
+"Croustillant",
+"corn flakes"
+]
+},
+{
+"slug": "chapeaux-de-champignons-farcis-saucisse",
+"title": "Champignons Farcis à la Saucisse (Gratinés)",
+"description": "Une entrée gourmande où la chair à saucisse et le fromage fondu garnissent des chapeaux de champignons tendres. Idéal pour une touche rustique lors de vos soirées.",
+"keywords": [
+"Viande",
+"Légumes",
+"Entrée",
+"Snack",
+"Protéique",
+"champignons farcis",
+"apéritif chaud"
+]
+},
+{
+"slug": "nems-poulet-croustillants",
+"title": "Nems au Poulet (Légers et Craquants)",
+"description": "Retrouvez tout le plaisir des nems asiatiques sans l'huile de friture. Ces rouleaux farcis au poulet et légumes ressortent de l'airfryer ultra-croustillants et dorés.",
+"keywords": [
+"Viande",
+"Entrée",
+"Protéique",
+"Poulet",
+"Asiatique",
+"Légumes",
+"nems maison",
+"rouleaux de printemps frits"
+]
+}
+]
+}

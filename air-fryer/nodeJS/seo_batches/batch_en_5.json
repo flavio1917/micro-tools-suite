@@ -1,0 +1,202 @@
+{
+  "en": [
+    {
+      "slug": "citrus-scented-lamb-chops",
+      "title": "Citrus-Infused Lamb Chops",
+      "description": "Bright, zesty, and elegant. A long marination in citrus and herbs ensures these chops are bursting with flavor, while a quick high-heat sear creates a fragrant, golden crust and a succulent center.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "beef-empanadas",
+      "title": "Crispy Beef Empanadas",
+      "description": "A South American street-food favorite. Flaky, golden pastry shells are stuffed with a savory, spiced ground beef filling and air-fried to a perfect crunch without the heavy oil.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Snack",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "pork-tenderloin-with-vegetables",
+      "title": "Pork Tenderloin & Harvest Vegetables",
+      "description": "A complete, wholesome meal in one go. Succulent pork tenderloin is roasted atop a bed of seasonal vegetables, allowing the savory pan juices to naturally season the roast below.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "costolette-agnello",
+      "title": "10-Minute Juicy Lamb Chops",
+      "description": "The ultimate centerpiece for a festive Easter dinner. Achieve restaurant-quality results in just 10 minutes—perfectly pink on the inside with a beautifully seared, smoke-free exterior.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Low Carb",
+        "Keto",
+        "Easter"
+      ]
+    },
+    {
+      "slug": "mini-torta-pasqualina",
+      "title": "Mini Easter Spinach & Ricotta Pies",
+      "description": "An Italian spring classic made simple. These adorable savory tarts feature a creamy spinach and ricotta heart with a hidden egg, all wrapped in a shatteringly crisp puff pastry.",
+      "keywords": [
+        "Vegetarian",
+        "Leavened Goods",
+        "Appetizer",
+        "Easter"
+      ]
+    },
+    {
+      "slug": "casatiello-napoletano",
+      "title": "Authentic Soft Italian Casatiello",
+      "description": "Celebrate like a Neapolitan with the king of Easter breads. This soft, savory loaf is generously stuffed with spicy salami and sharp cheeses, baked to a rich golden brown.",
+      "keywords": [
+        "Meat",
+        "Leavened Goods",
+        "Easter",
+        "Main Course"
+      ]
+    },
+    {
+      "slug": "mini-pastiera-napoletana",
+      "title": "Mini Neapolitan Pastiera Tarts",
+      "description": "All the tradition of Naples in a single serving. These mini tarts feature a fragrant cooked grain and ricotta filling, staying perfectly moist inside a buttery, crisp shortcrust.",
+      "keywords": [
+        "Dessert",
+        "Easter",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "classic-hamburger",
+      "title": "Classic Golden Beef Patties",
+      "description": "Master the art of the everyday burger. This high-heat method creates a beautifully seared, golden-brown crust that locks in all the juices for a tender, flavorful bite.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "deluxe-hamburger",
+      "title": "Deluxe Toasted Beef Burgers",
+      "description": "The ultimate home burger experience. High-temperature circulation ensures a perfectly seared patty and a toasted, buttery bun for that authentic gourmet texture.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "asian-turkey-burgers",
+      "title": "Asian-Style Ginger Turkey Burgers",
+      "description": "A light and zesty twist on a classic. These lean turkey patties are infused with ginger and soy, seared to perfection for a moist interior and a savory, aromatic crust.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick",
+        "Asian"
+      ]
+    },
+    {
+      "slug": "new-york-style-hot-dog",
+      "title": "New York-Style Loaded Hot Dogs",
+      "description": "Bring the Big Apple home. This method ensures perfectly snappy sausages, gooey melted cheese, and a warm, pillowy bun for the ultimate street-food experience.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "pork-and-prosciutto-rolls",
+      "title": "Prosciutto-Wrapped Pork Roulade",
+      "description": "Sophisticated and savory. Tender pork loin is rolled with spinach and molten mozzarella, then wrapped in salty prosciutto that crisps up beautifully during cooking.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "bacon-wrapped-stuffed-jalapenos",
+      "title": "Bacon-Wrapped Stuffed Jalapeño Poppers",
+      "description": "The perfect spicy kick. These jalapeños are stuffed with a rich ground pork and cheddar blend, then wrapped in smoky bacon that air-fries to a crispy, golden finish.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "beef-coriander-kofta",
+      "title": "Middle Eastern Beef Kofta Skewers",
+      "description": "Fragrant and smoky. These herb-packed beef skewers are cooked to mimic the high heat of a grill, resulting in a charred, aromatic exterior and a juicy, spiced center.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "mediterranean-lamb-meatballs",
+      "title": "Minted Mediterranean Lamb Meatballs",
+      "description": "Cool mint meets savory lamb. These meatballs are seasoned with fresh herbs and garlic, then air-fried at high heat to create a satisfyingly crisp outer layer.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "japanese-glazed-meatballs",
+      "title": "Soy-Miso Glazed Japanese Meatballs",
+      "description": "Bite-sized umami bombs. Seasoned with miso and finished with a sweet and savory soy-mirin glaze, these meatballs caramelize beautifully for a glossy, addictive finish.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Japanese",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "air-fried-whole-sausages",
+      "title": "Perfectly Roasted Whole Sausages",
+      "description": "The easiest way to cook sausages. Hot air circulation ensures a snappy, well-browned casing and a juicy interior every time, with no need for pricking or messy splatters.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "es": [
+    {
+      "slug": "sandwich-de-queso-fundido",
+      "title": "Sándwich de Queso Fundido (Grilled Cheese)",
+      "description": "El confort convertido en sándwich. Dos rebanadas de pan perfectamente doradas y crujientes que encierran un corazón de queso fundido elástico y sabroso.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Snack",
+        "Entrante",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "gambas-estilo-cajun",
+      "title": "Gambas al Estilo Cajún (Picantes y Jugosas)",
+      "description": "Explosión de sabor sureño. Gambas sazonadas con una mezcla de especias potentes y picantes, ideales como plato principal o para elevar tus tacos y bocadillos.",
+      "keywords": [
+        "Marisco",
+        "Plato principal",
+        "Entrante",
+        "Proteico",
+        "Low Carb",
+        "Rápido",
+        "Cajún"
+      ]
+    },
+    {
+      "slug": "maiz-tostado-mantequilla",
+      "title": "Mazorca de Maíz Asada con Mantequilla",
+      "description": "El acompañamiento estrella de cualquier barbacoa. Maíz dulce asado hasta que los granos se caramelizan, potenciando su sabor natural con un toque de mantequilla.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Snack",
+        "Rápido",
+        "maíz"
+      ]
+    },
+    {
+      "slug": "mini-pizzas-pepperoni",
+      "title": "Mini Pizzas de Pepperoni Express",
+      "description": "Cenas divertidas en tiempo récord. Pequeñas pizzas de base crujiente con abundante queso fundido y rodajas de pepperoni que aportan un toque ahumado y picante.",
+      "keywords": [
+        "Carne",
+        "Masas",
+        "Entrante",
+        "Snack",
+        "Rápido",
+        "pizza"
+      ]
+    },
+    {
+      "slug": "pan-de-ajo-parmesano",
+      "title": "Pan de Ajo Crujiente con Parmesano",
+      "description": "El acompañamiento definitivo. Pan tostado con una costra dorada de ajo y queso parmesano, manteniendo un interior tierno. Ideal para dipear en sopas y cremas.",
+      "keywords": [
+        "Masas",
+        "Entrante",
+        "Guarnición",
+        "Snack",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "mazorcas-de-maiz",
+      "title": "Mazorcas de Maíz al Punto de Sal",
+      "description": "Simple y delicioso. Mazorcas de maíz cocinadas para resaltar su dulzor natural, con una superficie ligeramente tostada y granos que estallan de frescura.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "coronitas-hojaldre-mexicana",
+      "title": "Coronas de Hojaldre Estilo Mexicano",
+      "description": "Un bocado crujiente y colorido. Discos de hojaldre cubiertos con salsa mexicana, frijoles negros, maíz y queso fundido. Perfecto para compartir.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Entrante",
+        "Snack",
+        "Vegetariano",
+        "Rápido",
+        "mexicano"
+      ]
+    },
+    {
+      "slug": "hamburguesas-garbanzos-espinacas",
+      "title": "Hamburguesas de Garbanzos y Espinacas",
+      "description": "Nutritivas y llenas de sabor. Hamburguesas vegetales con una costra exterior crujiente y un interior jugoso, perfectas para servir al plato o en panecillos.",
+      "keywords": [
+        "Verduras",
+        "Plato principal",
+        "Vegetariano",
+        "Proteico",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "barquitas-calabacin-ricotta",
+      "title": "Calabacines Rellenos de Crema de Ricotta",
+      "description": "Ligereza y sabor en cada bocado. Barquitas de calabacín rellenas de suave ricotta y queso, gratinadas hasta lograr una superficie dorada y tentadora.",
+      "keywords": [
+        "Verduras",
+        "Huevos/Quesos",
+        "Plato principal",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "Low Carb",
+        "Proteico"
+      ]
+    },
+    {
+      "slug": "pimientos-gratinados-alcaparras",
+      "title": "Tiras de Pimiento Gratinadas con Alcaparras",
+      "description": "Un toque mediterráneo. Pimientos asados cubiertos con un crujiente de pan rallado, ajo y alcaparras que aporta una explosión de sabor salino y aromático.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Entrante",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "esparragos-gratinados-parmesano",
+      "title": "Espárragos Verdes al Parmesano y Almendras",
+      "description": "Elegancia en el plato. Espárragos tiernos con una cobertura gratinada de queso y láminas de almendra que añaden un contraste crujiente inigualable.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "gajos-hinojo-limon",
+      "title": "Gajos de Hinojo Asados al Limón",
+      "description": "Descubre el hinojo de una forma nueva. Al asarlo, su sabor anisado se suaviza y se vuelve dulce, complementado perfectamente con el frescor del limón.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "Low Carb",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "cebollas-rojas-agridulces",
+      "title": "Cebollas Rojas Glaseadas (Agridulces)",
+      "description": "El condimento perfecto. Cebollas caramelizadas con un brillo espectacular, ideales para elevar tus tablas de quesos o acompañar carnes asadas.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Entrante",
+        "Vegetariano",
+        "Rápido",
+        "agridulce"
+      ]
+    },
+    {
+      "slug": "coles-de-bruselas-glaseadas-al-balsamico",
+      "title": "Coles de Bruselas al Glaseado Balsámico",
+      "description": "El equilibrio perfecto entre dulce y ácido. Coles de Bruselas con hojas exteriores tostadas y un corazón tierno, bañadas en una reducción de balsámico.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "balsámico"
+      ]
+    },
+    {
+      "slug": "tomates-cherry-confit-oregano",
+      "title": "Tomates Cherry Confitados al Orégano",
+      "description": "Caramelos de la naturaleza. Tomates cherry cocinados lentamente para concentrar todo su dulzor. Ideales para bruschettas, pastas o como guarnición gourmet.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "tomate",
+        "confit"
+      ]
+    },
+    {
+      "slug": "frittata-verduras-mixtas",
+      "title": "Frittata de Verduras (Esponjosa y Ligera)",
+      "description": "Una receta alta y dorada con muy poca grasa. Esta frittata combina la esponjosidad del huevo con una selección de verduras frescas de temporada.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Plato principal",
+        "Entrante",
+        "Proteico",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "brochetas-halloumi-verduras",
+      "title": "Brochetas de Halloumi Crujiente",
+      "description": "Descubre el queso que no se funde. El Halloumi crea una deliciosa costra dorada al calor, alternado con verduras frescas en brochetas equilibradas y sabrosas.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Plato principal",
+        "Entrante",
+        "Proteico",
+        "Vegetariano",
+        "Rápido",
+        "Halloumi"
+      ]
+    },
+    {
+      "slug": "pastel-patatas-fundente",
+      "title": "Pastel de Patatas con Provola Ahumada",
+      "description": "Puro placer fundente. Un pastel de patatas con una costra dorada que esconde un interior cremoso de queso provola ahumada derretido.",
+      "keywords": [
+        "Verduras",
+        "Huevos/Quesos",
+        "Guarnición",
+        "Plato principal",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "edamame-especiados-crujientes",
+      "title": "Edamame Especiado y Crujiente",
+      "description": "El snack saludable definitivo. Vainas de edamame tostadas con un toque de especias, perfectas para un picoteo proteico y lleno de sabor.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "Proteico",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "garbanzos-tostados-paprika",
+      "title": "Garbanzos Tostados al Pimentón (Crunchy Snack)",
+      "description": "Adiós a los snacks procesados. Garbanzos horneados hasta quedar ultra crujientes, sazonados con pimentón. Deliciosos solos o para dar un toque 'crunchy' a tus cremas.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Snack",
+        "Rápido",
+        "Vegetariano",
+        "Vegano",
+        "proteico"
+      ]
+    }
+  ]
+}

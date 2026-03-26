@@ -1,0 +1,247 @@
+{
+  "en": [
+    {
+      "slug": "fried-mozzarella-sandwich",
+      "title": "Mozzarella in Carrozza (Golden Fried Sandwich)",
+      "description": "A Neapolitan street food classic. Thick slices of bread encase a heart of stringy mozzarella, resulting in a crispy, golden exterior and a luxuriously melted center—all with a fraction of the oil.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "crispy-fried-calamari",
+      "title": "Crispy Calamari Rings",
+      "description": "Enjoy the seaside favorite at home. These calamari rings are light, tender, and shatteringly crisp, achieving that perfect 'fried' texture without the need for deep-frying.",
+      "keywords": [
+        "Seafood",
+        "Appetizer",
+        "Snack",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "stuffed-bell-peppers",
+      "title": "Meat-Stuffed Bell Peppers",
+      "description": "A hearty Mediterranean staple. Vibrant bell peppers are packed with a savory, herb-seasoned ground meat filling and roasted until the vegetables are sweet and tender.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "Side Dish",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "rustic-sausage-and-potatoes",
+      "title": "Rustic Sausage and Potato Roast",
+      "description": "The ultimate Italian comfort duo. As they roast together, the savory juices from the sausage infuse the potatoes, creating a dish with crispy edges and deep, traditional flavor.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "pasta-omelette",
+      "title": "Neapolitan Pasta Omelette (Frittata di Pasta)",
+      "description": "The genius of Italian leftovers. This golden pasta cake features a crunchy crust and a soft, cheesy interior. Perfect for picnics, lunchboxes, or a quick, satisfying dinner.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "milanese-breaded-cutlet",
+      "title": "Classic Breaded Cutlet (Cotoletta)",
+      "description": "A timeless family favorite. This recipe delivers a perfectly even, golden-brown breading that stays crisp while the meat inside remains remarkably juicy and tender.",
+      "keywords": [
+        "Meat",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "crispy-roman-artichokes",
+      "title": "Roman-Style Crispy Artichokes",
+      "description": "Inspired by the famous Jewish-style artichokes of Rome. The outer leaves become as crunchy as chips, while the heart stays buttery and delicate. A true gourmet treat.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Vegetarian",
+        "Vegan",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "air-fryer-stuffed-zucchini-blossoms",
+      "title": "Stuffed Zucchini Blossoms with Anchovies",
+      "description": "Delicate and elegant. These blossoms are filled with molten mozzarella and a hint of salty anchovy, then lightly breaded for a sophisticated, crispy appetizer.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Snack",
+        "Seafood",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "tomato-and-basil-bruschetta",
+      "title": "Classic Tomato and Basil Bruschetta",
+      "description": "The taste of summer on toast. Sourdough bread is toasted to perfection and topped with a vibrant mixture of sun-ripened tomatoes, fresh basil, and extra virgin olive oil.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "air-fryer-gnocchi-appetizer-bites",
+      "title": "Crispy Golden Gnocchi Bites",
+      "description": "Transform your gnocchi into the perfect snack. These potato bites are toasted until golden and crunchy on the outside, remaining soft and pillowy on the inside.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Snack",
+        "Quick",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "ricotta-castagnole-carnival",
+      "title": "Lemon Ricotta Carnival Fritters",
+      "description": "A sweet Italian tradition. These 'Castagnole' are made with creamy ricotta for a cloud-like texture, scented with citrus zest and tossed in sugar while still warm.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "quick-apulian-panzerotti",
+      "title": "Tomato and Mozzarella Panzerotti",
+      "description": "The soul of Apulian street food. These savory turnovers feature a crispy, light dough filled with a classic combination of tomato and melting mozzarella cheese.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Appetizer",
+        "Snack",
+        "Quick",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "soft-rosemary-focaccia",
+      "title": "Tall and Soft Rosemary Focaccia",
+      "description": "Experience the aroma of a traditional bakery. This focaccia is tall, airy, and soft, topped with fragrant rosemary and sea salt. Ideal for sandwiches or dipping.",
+      "keywords": [
+        "Leavened Goods",
+        "Appetizer",
+        "Snack",
+        "Vegetarian",
+        "Vegan"
+      ]
+    },
+    {
+      "slug": "air-fryer-calamari-and-shrimp",
+      "title": "Crispy Calamari and Shrimp Fritto Misto",
+      "description": "A lighter take on the Italian mixed fry. Calamari and shrimp are cooked to a dry, light crispness that lets the natural sweetness of the seafood shine through.",
+      "keywords": [
+        "Seafood",
+        "Appetizer",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "air-fryer-mixed-fried-fish",
+      "title": "Traditional Mixed Fried Fish (Paranza)",
+      "description": "Rustic and authentic. A selection of small, delicate fish cooked until perfectly crisp. Best enjoyed whole with a generous squeeze of fresh lemon.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "crispy-air-fryer-baby-squid",
+      "title": "Tender Crispy Baby Squid",
+      "description": "Quick, easy, and delicious. These baby squid are cooked at high heat to ensure a crunchy coating while the meat remains incredibly tender and juicy.",
+      "keywords": [
+        "Seafood",
+        "Main Course",
+        "Appetizer",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "golden-crispy-shrimp",
+      "title": "Golden Crispy Shrimp",
+      "description": "Succulent shrimp with a stunning golden coating. Whether served as a party appetizer or a main course, these bites are guaranteed to disappear fast.",
+      "keywords": [
+        "Seafood",
+        "Appetizer",
+        "Main Course",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "frozen-skin-on-fries",
+      "title": "Rustic Skin-on Fries",
+      "description": "Better than the restaurant. Skin-on fries offer a deeper potato flavor and a superior crunch. We ensure they come out perfectly golden-brown every time.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "homemade-corn-tortilla-chips",
+      "title": "Homemade Corn Tortilla Chips (Totopos)",
+      "description": "Forget store-bought bags. Make your own ultra-crunchy corn tortilla chips at home—perfect for dipping into fresh salsa, guacamole, or melting under nachos.",
+      "keywords": [
+        "Vegetables",
+        "Snack",
+        "Appetizer",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "sweet-potato-fries",
+      "title": "Paprika-Spiced Sweet Potato Fries",
+      "description": "A sweet and smoky alternative to classic fries. These sweet potato batons are seasoned with a vibrant paprika blend and roasted until tender with crispy edges.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    }
+  ]
+}

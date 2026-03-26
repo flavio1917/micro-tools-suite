@@ -1,0 +1,254 @@
+{
+  "en": [
+    {
+      "slug": "crispy-vegetable-samosas",
+      "title": "Crispy Feta & Vegetable Samosas",
+      "description": "A delightful fusion of textures. These golden, triangular pastries are stuffed with a savory medley of cauliflower and peas, elevated by the salty tang of melted feta cheese.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "banana-mascarpone-cake",
+      "title": "Velvety Banana Mascarpone Cake",
+      "description": "The ultimate upgrade for overripe bananas. This dense, moist cake packs a deep tropical sweetness, perfectly balanced by a rich and silky mascarpone frosting.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Breakfast",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "breaded-mushrooms",
+      "title": "Crispy Breaded Whole Mushrooms",
+      "description": "A quick and earthy indulgence. These whole mushrooms are coated in a seasoned breading that air-fries to a perfect crunch while keeping the inside juicy and tender.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "air-fryer-grilled-cheese",
+      "title": "Ultimate Air-Fried Grilled Cheese",
+      "description": "Rediscover a childhood classic. This method creates an impossibly crisp, edge-to-edge golden crust with a centers of thick, stringy melted cheese in record time.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Leavened Goods",
+        "Snack",
+        "Appetizer",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "cajun-style-shrimp",
+      "title": "Zesty Cajun-Style Shrimp",
+      "description": "Bold, spicy, and incredibly versatile. These shrimp are tossed in a vibrant Cajun spice blend and seared quickly—perfect for tacos, salads, or a high-protein snack.",
+      "keywords": [
+        "Seafood",
+        "Appetizer",
+        "Main Course",
+        "Snack",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "roasted-buttered-corn",
+      "title": "Buttery Roasted Corn on the Cob",
+      "description": "The taste of summer in minutes. Sweet corn is roasted until the kernels are plump and charred, then finished with a savory butter glaze for a classic BBQ side.",
+      "keywords": [
+        "Side Dish",
+        "Vegetables",
+        "Appetizer",
+        "Quick",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "mini-pepperoni-pizzas",
+      "title": "Crispy Pepperoni Mini Pizzas",
+      "description": "No more soggy crusts. By toasting the dough before adding the savory pepperoni and cheese, these mini pizzas achieve a perfect crunch every single time.",
+      "keywords": [
+        "Meat",
+        "Appetizer",
+        "Quick",
+        "Snack",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "garlic-parmesan-baguette",
+      "title": "Garlic & Parmesan Roasted Baguette",
+      "description": "A must-have for soup night. This baguette features a shatteringly crisp crust and a soft, butter-infused center loaded with roasted garlic and sharp Parmesan.",
+      "keywords": [
+        "Baked Goods",
+        "Side Dish",
+        "Appetizer",
+        "Quick",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "ninja-air-fryer-corn-on-the-cob",
+      "title": "Golden Air-Fried Corn on the Cob",
+      "description": "Achieve that fire-roasted flavor without the grill. Rapid air circulation caramelizes the natural sugars in the corn, creating a sweet and smoky vegetable side.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "mexican-style-puff-pastry-bites",
+      "title": "Mexican-Style Puff Pastry Wreaths",
+      "description": "A crowd-pleasing fusion snack. Flaky puff pastry circles are topped with black beans, sweet corn, and melted cheese for a savory, Tex-Mex inspired appetizer.",
+      "keywords": [
+        "Snack",
+        "Appetizer",
+        "Quick",
+        "Vegetarian",
+        "Leavened Goods"
+      ]
+    },
+    {
+      "slug": "chickpea-spinach-burgers",
+      "title": "Chickpea & Spinach Plant-Based Patties",
+      "description": "Healthy, hearty, and homemade. These nutrient-dense patties feature a tender, spiced interior and a crisp outer shell, making them ideal for a wholesome main course.",
+      "keywords": [
+        "Main Course",
+        "Plant-Based",
+        "Vegetarian",
+        "Vegan",
+        "Quick",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "zucchini-ricotta-boats",
+      "title": "Herbed Ricotta Zucchini Boats",
+      "description": "Light yet satisfying. Fresh zucchini halves are hollowed and filled with a creamy, mint-infused ricotta and Parmesan blend that browns beautifully in the heat.",
+      "keywords": [
+        "Vegetables",
+        "Main Course",
+        "Side Dish",
+        "Vegetarian",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "gratinated-bell-pepper-strips-with-capers",
+      "title": "Gratinated Sweet Peppers with Capers",
+      "description": "A rustic Mediterranean treat. Sliced bell peppers are roasted until sweet and topped with a savory, crunchy breadcrumb and caper crust for a burst of flavor.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Appetizer",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "parmesan-crusted-asparagus",
+      "title": "Almond & Parmesan Crusted Asparagus",
+      "description": "Elegant and crunchy. These tender green asparagus stalks are draped in melted cheese and toasted almond flakes, creating a sophisticated, aromatic side dish.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "roasted-fennel-wedges-lemon",
+      "title": "Lemon-Roasted Fennel Wedges",
+      "description": "A revelation for fennel skeptics. Roasting transforms the sharp anise flavor into a mellow, caramelized sweetness, finished with a bright, zesty lemon lift.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegan",
+        "Vegetarian",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "sweet-and-sour-red-onions",
+      "title": "Glazed Sweet & Sour Red Onions",
+      "description": "The perfect gourmet garnish. These red onions are caramelized into a thick, glossy, balsamic-style glaze—ideal for topping grilled meats or aged cheeses.",
+      "keywords": [
+        "Side Dish",
+        "Appetizer",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "balsamic-glazed-brussels-sprouts",
+      "title": "Tangy Balsamic Glazed Sprouts",
+      "description": "Sweet, sour, and smoky. These Brussels sprouts feature crisp outer leaves and a tender core, all tossed in a refined balsamic reduction for a vibrant side dish.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Vegan",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "oregano-confit-cherry-tomatoes",
+      "title": "Slow-Roasted Oregano Confit Tomatoes",
+      "description": "An explosion of concentrated flavor. These cherry tomatoes are gently dehydrated to lock in their natural sugars—perfect for elevated bruschetta or pasta.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Vegan",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "fluffy-seasonal-frittata",
+      "title": "Voluminous Seasonal Frittata",
+      "description": "Lighter than air. This air-fried egg dish achieves a dramatic rise and a tender, fluffy texture with minimal oil, making it a healthy and quick seasonal staple.",
+      "keywords": [
+        "Eggs/Cheeses",
+        "Main Course",
+        "Breakfast",
+        "Vegetarian",
+        "Quick",
+        "High-Protein"
+      ]
+    },
+    {
+      "slug": "halloumi-vegetable-skewers",
+      "title": "Grilled Halloumi & Veggie Skewers",
+      "description": "The ultimate vegetarian skewer. Salty Cypriot halloumi cheese keeps its shape against the heat, developing a delicious grilled crust alongside vibrant, roasted vegetables.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Quick",
+        "Vegetarian",
+        "High-Protein",
+        "Low Carb"
+      ]
+    }
+  ]
+}

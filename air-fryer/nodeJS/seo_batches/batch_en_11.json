@@ -1,0 +1,57 @@
+{
+  "en": [
+    {
+      "slug": "cheesy-potato-cake",
+      "title": "Crispy Neapolitan-Style Potato Cake",
+      "description": "A clever and quick take on the traditional potato gâteau. This savory cake features a golden, breaded exterior that shatters to reveal a fluffy, melt-in-your-mouth potato and cheese center.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Eggs/Cheeses",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "spicy-crispy-edamame",
+      "title": "Zesty Air-Toasted Edamame",
+      "description": "The perfect healthy snack in minutes. Frozen edamame pods are air-toasted until they achieve a satisfyingly roasted texture, then tossed in a bold, spicy seasoning for a kick of flavor.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Snack",
+        "Vegetarian",
+        "Vegan",
+        "High-Protein",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "paprika-roasted-chickpeas",
+      "title": "Smoky Paprika Roasted Chickpeas",
+      "description": "Swap the store-bought chips for this protein-packed crunch. Legumes are roasted at high heat until crisp and smoky, making them a perfect stand-alone snack or a crunchy garnish for creamy soups.",
+      "keywords": [
+        "Vegetables",
+        "Snack",
+        "Appetizer",
+        "High-Protein",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "zucchini-parmesan-chips",
+      "title": "Crispy Zucchini Parmesan Crisps",
+      "description": "Light, salty, and totally addictive. Thinly sliced zucchini is coated in sharp Parmesan that crystallizes during cooking, creating a delicate, golden chip that’s big on crunch and low on carbs.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Snack",
+        "Vegetarian",
+        "Low Carb",
+        "Quick"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "fr": [
+    {
+      "slug": "toast-fromagere-a-la-poele",
+      "title": "Grilled Cheese Sandwich (Extra Croustillant)",
+      "description": "Le réconfort absolu du sandwich américain classique. Grâce à une cuisson parfaitement maîtrisée, le pain développe une croûte dorée et craquante tandis que le fromage devient irrésistiblement filant.",
+      "keywords": [
+        "Œufs/Fromages",
+        "Snack",
+        "Entrée",
+        "Protéiné",
+        "Végétarien",
+        "Rapide",
+        "grilled cheese",
+        "fromage fondu"
+      ]
+    },
+    {
+      "slug": "crevettes-style-cajun",
+      "title": "Crevettes Cajun Épicées (Tendres & Relevées)",
+      "description": "Cap sur la Louisiane avec ces crevettes charnues au mélange d'épices volcanique. Prêtes en un clin d'œil, elles sont parfaites pour pimper vos tacos, vos salades composées ou à picorer à l'apéro.",
+      "keywords": [
+        "Poisson",
+        "Apéritif",
+        "Plat principal",
+        "Snack",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "crevettes",
+        "cajun",
+        "épicé"
+      ]
+    },
+    {
+      "slug": "mais-toste-beurre",
+      "title": "Épis de Maïs Rôtis au Beurre Fondant",
+      "description": "Le goût des vacances ! Ces épis de maïs sont rôtis jusqu'à être légèrement caramélisés, puis nappés de beurre pour une saveur douce et sucrée. L'accompagnement idéal de vos grillades.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Apéritif",
+        "Végétarien",
+        "Rapide",
+        "maïs",
+        "BBQ style"
+      ]
+    },
+    {
+      "slug": "mini-pizza-pepperoni",
+      "title": "Mini Pizzas au Pepperoni (Spécial Apéro)",
+      "description": "Des bouchées de pizza ultra-croustillantes réalisées en un temps record. Une astuce de pré-cuisson garantit une pâte ferme qui supporte généreusement le fromage et le pepperoni piquant.",
+      "keywords": [
+        "Viande",
+        "Apéritif",
+        "Snack",
+        "Protéiné",
+        "Rapide",
+        "Pizza",
+        "pepperoni",
+        "finger food"
+      ]
+    },
+    {
+      "slug": "pain-ail",
+      "title": "Garlic Bread au Parmesan et Herbes",
+      "description": "Une baguette croustillante infusée d'un beurre à l'ail onctueux et de parmesan gratiné. Ce pain à l'ail est l'allié indispensable de vos soirées pasta ou de vos apéritifs entre amis.",
+      "keywords": [
+        "Produits Levés",
+        "Fromages",
+        "Apéritif",
+        "Accompagnement",
+        "Snack",
+        "Végétarien",
+        "Rapide",
+        "garlic bread",
+        "pain à l'ail"
+      ]
+    },
+    {
+      "slug": "epuissettes-de-mais",
+      "title": "Maïs Rôti Nature (Saveur Caramélisée)",
+      "description": "Redécouvrez le vrai goût du maïs. La cuisson à haute température concentre les sucres naturels du grain pour offrir une texture croquante et une saveur intensément grillée.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "Végétalien",
+        "Rapide",
+        "maïs grillé",
+        "healthy snack"
+      ]
+    },
+    {
+      "slug": "pizzettes-fiesta",
+      "title": "Pizzettes Feuilletées Fiesta (Style Mexicain)",
+      "description": "Une explosion de couleurs sur une pâte feuilletée légère ! Garnies de haricots noirs, maïs et fromage sur une base épicée, ces pizzettes apportent une touche mexicaine à vos snacks.",
+      "keywords": [
+        "Œufs/Fromages",
+        "Snack",
+        "Protéiné",
+        "Végétarien",
+        "Rapide",
+        "mexicain",
+        "pizzetta",
+        "feuilleté"
+      ]
+    },
+    {
+      "slug": "burger-pois-chiches-epinards",
+      "title": "Burgers Veggie Pois Chiches & Épinards",
+      "description": "Des galettes végétariennes savoureuses et nutritives. Leur croûte bien saisie cache un cœur tendre et riche en fer. À glisser dans un pain brioché ou à déguster avec une salade croquante.",
+      "keywords": [
+        "Légumes",
+        "Plat principal",
+        "Végétarien",
+        "Protéiné",
+        "Rapide",
+        "burger veggie",
+        "steak végétal"
+      ]
+    },
+    {
+      "slug": "bateaux-courgettes-ricotta",
+      "title": "Courgettes Farcies à la Ricotta et Menthe",
+      "description": "Une recette fraîche et légère. Ces courgettes fondantes sont garnies d'un mélange onctueux de ricotta et de parmesan, relevé par une note de menthe fraîche pour un gratiné parfait.",
+      "keywords": [
+        "Légumes",
+        "Œufs/Fromages",
+        "Accompagnement",
+        "Plat principal",
+        "Protéiné",
+        "Végétarien",
+        "LowCarb",
+        "courgette farcie"
+      ]
+    },
+    {
+      "slug": "poivrons-gratinés-câpres",
+      "title": "Poivrons Gratinés aux Câpres (Style Italien)",
+      "description": "La douceur des poivrons rôtis rencontre le caractère des câpres. Sous une chapelure dorée et croustillante, les quartiers de poivrons deviennent fondants et parfumés.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Entrée",
+        "Végétarien",
+        "poivrons",
+        "gratiné",
+        "italie"
+      ]
+    },
+    {
+      "slug": "asperges-vertes-gratininees-au-parmesan",
+      "title": "Asperges Gratinées au Parmesan et Amandes",
+      "description": "Un accompagnement raffiné et croquant. Les asperges vertes sont sublimées par une croûte de parmesan et d'amandes effilées grillées, offrant un mélange de textures divin.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "Protéiné",
+        "Rapide",
+        "LowCarb",
+        "asperges",
+        "amandes"
+      ]
+    },
+    {
+      "slug": "quartiers-fenouil-citron",
+      "title": "Fenouil Rôti au Citron (Saveur Douce)",
+      "description": "Réconciliez-vous avec le fenouil ! La cuisson transforme son côté anisé en une saveur délicatement sucrée et fondante, parfaitement équilibrée par la fraîcheur du citron.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "Végétalien",
+        "LowCarb",
+        "Rapide",
+        "fenouil",
+        "citron"
+      ]
+    },
+    {
+      "slug": "oignons-rouges-aigre-doux",
+      "title": "Oignons Rouges Confits (Aigre-Doux)",
+      "description": "Le condiment ultime pour vos burgers ou vos plateaux de fromages. Ces oignons caramélisent lentement pour créer un glaçage brillant, intense et délicieusement acidulé.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Entrée",
+        "Végétarien",
+        "Végétalien",
+        "LowCarb",
+        "oignon confit",
+        "chutney"
+      ]
+    },
+    {
+      "slug": "choux-de-bruxelles-glaces-au-balsamique",
+      "title": "Choux de Bruxelles au Glaçage Balsamique",
+      "description": "Une métamorphose gourmande. Rôtis jusqu'à être bien croustillants, ces choux de Bruxelles sont ensuite enrobés d'un velouté de balsamique pour un fini sucré-salé addictif.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Végétarien",
+        "LowCarb",
+        "balsamique",
+        "choux de bruxelles"
+      ]
+    },
+    {
+      "slug": "tomates-cerises-confites-origan",
+      "title": "Tomates Cerises Confites (Express)",
+      "description": "Concentrez tout le soleil de l'été dans ces petites tomates. Cuites doucement à l'origan, elles éclatent en bouche et sont idéales pour sublimer vos bruschettas ou vos pâtes.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Apéritif",
+        "Snack",
+        "Végétarien",
+        "Végétalien",
+        "LowCarb",
+        "tomates confites"
+      ]
+    },
+    {
+      "slug": "frittata-legumes-mixtes",
+      "title": "Frittata aux Légumes (Haute & Aérienne)",
+      "description": "Oubliez la poêle ! Cette frittata cuite par convection gonfle comme un soufflé tout en restant incroyablement moelleuse. Une option saine, protéinée et sans stress pour le dîner.",
+      "keywords": [
+        "Œufs/Fromages",
+        "Plat principal",
+        "Entrée",
+        "Protéiné",
+        "Végétarien",
+        "LowCarb",
+        "Rapide",
+        "frittata",
+        "omelette"
+      ]
+    },
+    {
+      "slug": "brochettes-halloumi-legumes",
+      "title": "Brochettes de Halloumi Grillé",
+      "description": "Le fromage qui chante sous la dent ! Le Halloumi grillé offre une texture ferme et savoureuse qui ne coule pas, alterné avec des légumes croquants pour un plat végétarien complet.",
+      "keywords": [
+        "Œufs/Fromages",
+        "Légumes",
+        "Plat principal",
+        "Accompagnement",
+        "Végétarien",
+        "Protéiné",
+        "LowCarb",
+        "halloumi",
+        "brochettes"
+      ]
+    },
+    {
+      "slug": "galette-de-pommes-de-terre-filante",
+      "title": "Galette de PDT au Cœur Fondant",
+      "description": "Le mariage parfait entre une röstie croustillante et un centre de fromage coulant. Cette galette généreuse se prépare en un clin d'œil pour un plaisir garanti à chaque bouchée.",
+      "keywords": [
+        "Légumes",
+        "Œufs/Fromages",
+        "Accompagnement",
+        "Snack",
+        "Protéiné",
+        "Végétarien",
+        "rösti",
+        "fromage"
+      ]
+    },
+    {
+      "slug": "edamame-epices-croquants",
+      "title": "Edamame Rôtis (Snack Protéiné)",
+      "description": "L'alternative saine et craquante pour l'apéro. Ces gousses d'edamame sont rôties avec un mélange d'épices relevé pour une collation addictive, riche en protéines et faible en glucides.",
+      "keywords": [
+        "Légumes",
+        "Apéritif",
+        "Snack",
+        "Accompagnement",
+        "Végétarien",
+        "Végan",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "edamame"
+      ]
+    },
+    {
+      "slug": "pois-chiches-rôtis-paprika",
+      "title": "Pois Chiches au Paprika (Chips Veggie)",
+      "description": "Adieu les chips industrielles ! Ces pois chiches deviennent ultra-croustillants après un passage à 200°C. Parfaits à grignoter tels quels ou pour ajouter du croquant à vos soupes.",
+      "keywords": [
+        "Légumes",
+        "Snack",
+        "Apéritif",
+        "Végétarien",
+        "Végétalien",
+        "Rapide",
+        "pois chiches",
+        "healthy snack"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "fr": [
+    {
+      "slug": "pommes-de-terre-entiere-au-four",
+      "title": "Pommes de Terre en Robe des Champs",
+      "description": "Le classique indémodable. Obtenez une peau sèche et craquante qui protège un cœur de chair incroyablement moelleux et fumant. À garnir selon vos envies de crème fraîche ou de ciboulette.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "pomme de terre",
+        "four",
+        "tradition"
+      ]
+    },
+    {
+      "slug": "pommes-de-terre-roties-mayonnaise-pimentee",
+      "title": "Pommes de Terre Rôties et Mayo Pimentée",
+      "description": "De petites pommes de terre nouvelles rôties aux épices pour un maximum de saveur. Le contraste est total avec la douceur de la mayonnaise relevée d'une pointe de piment.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Apéritif",
+        "Snack",
+        "Végétarien",
+        "spicy",
+        "tapas"
+      ]
+    },
+    {
+      "slug": "galettes-de-pommes-de-terre",
+      "title": "Hash Browns Croustillants (Galettes de PDT)",
+      "description": "Le secret d'un petit-déjeuner réussi ! Ces galettes de pommes de terre surgelées retrouvent tout leur croustillant sans aucun ajout de gras, pour un réveil gourmand et léger.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Petit-déjeuner",
+        "Végétarien",
+        "hash brown",
+        "brunch"
+      ]
+    },
+    {
+      "slug": "pommes-de-terre-hasselback",
+      "title": "Pommes de Terre Hasselback au Beurre Aillé",
+      "description": "Une présentation spectaculaire pour une texture unique : des tranches fines qui croustillent sur les bords tout en restant fondantes au centre, imprégnées d'un beurre aromatisé fondant.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "hasselback",
+        "suédois",
+        "élégant"
+      ]
+    },
+    {
+      "slug": "pommes-de-terre-nouvelles-roties",
+      "title": "Pommes de Terre Nouvelles aux Fines Herbes",
+      "description": "La simplicité sublimée. Ces petites pommes de terre développent une croûte aromatique irrésistible sous l'effet de l'air chaud, tout en gardant une chair tendre et sucrée.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Apéritif",
+        "Végétarien",
+        "Végan",
+        "herbes de provence"
+      ]
+    },
+    {
+      "slug": "poivrons-entiers-rotis",
+      "title": "Poivrons Rôtis (Technique Peau Facile)",
+      "description": "Obtenez des poivrons fondants et sucrés. La cuisson à haute température permet de décoller la peau sans effort, révélant une pulpe charnue parfaite pour vos salades ou marinades.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "Végétalien",
+        "LowCarb",
+        "poivrons grillés"
+      ]
+    },
+    {
+      "slug": "anneaux-d-oignon",
+      "title": "Onion Rings Croustillants (Sans Friture)",
+      "description": "Retrouvez le plaisir des anneaux d'oignon avec une panure ultra-craquante. Cuits à l'air chaud, ils sont bien moins gras qu'une friture classique mais tout aussi gourmands.",
+      "keywords": [
+        "Légumes",
+        "Snack",
+        "Apéritif",
+        "Végétarien",
+        "onion rings",
+        "street food"
+      ]
+    },
+    {
+      "slug": "bbq-bacon",
+      "title": "Candy Bacon Caramélisé au BBQ",
+      "description": "Attention, addiction garantie ! Ces lanières de bacon sont laquées d'un mélange de sucre et d'épices qui caramélise à la cuisson pour un résultat croquant, sucré et fumé.",
+      "keywords": [
+        "Viande",
+        "Apéritif",
+        "Petit-déjeuner",
+        "Snack",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "bacon",
+        "sucré-salé"
+      ]
+    },
+    {
+      "slug": "steaks-de-contrefilet-moutarde",
+      "title": "Steaks de Contrefilet en Croûte de Moutarde",
+      "description": "Une saisie parfaite qui cautérise la viande instantanément. Le mélange d'épices et la moutarde forment une croûte aromatique puissante qui protège le jus et la tendreté du steak.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "steak",
+        "bœuf"
+      ]
+    },
+    {
+      "slug": "choux-de-bruxelles-lardons",
+      "title": "Choux de Bruxelles Rôtis aux Lardons",
+      "description": "Même les plus sceptiques vont adorer ! La graisse des lardons imprègne les choux, rendant les feuilles extérieures incroyablement croustillantes et le cœur délicieusement fondant.",
+      "keywords": [
+        "Viande",
+        "Légumes",
+        "Accompagnement",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "choux de bruxelles"
+      ]
+    },
+    {
+      "slug": "chips-chou-noir",
+      "title": "Chips de Kale (Snack Healthy)",
+      "description": "Transformez le chou kale en une collation légère et craquante. Assaisonnées d'une pointe de sel, ces chips maison sont l'alternative parfaite et saine pour vos apéritifs.",
+      "keywords": [
+        "Légumes",
+        "Snack",
+        "Accompagnement",
+        "Végétarien",
+        "Végan",
+        "LowCarb",
+        "Rapide",
+        "kale",
+        "superfood"
+      ]
+    },
+    {
+      "slug": "chips-de-pomme",
+      "title": "Chips de Pomme (Déshydratation Douce)",
+      "description": "Une collation 100% naturelle. Les pommes sont déshydratées lentement pour concentrer leurs sucres naturels et offrir un croquant irrésistible, sans aucun sucre ajouté.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Végétarien",
+        "Végan",
+        "fruits secs",
+        "sain"
+      ]
+    },
+    {
+      "slug": "tarte-poires-rustique",
+      "title": "Tarte Rustique Poires, Miel et Noix",
+      "description": "Un dessert authentique qui mise sur le goût. Une pâte sablée croustillante garnie de poires fondantes, sublimée par la douceur du miel et le croquant des éclats de noix.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Végétarien",
+        "Tarte",
+        "Poire",
+        "rustique"
+      ]
+    },
+    {
+      "slug": "haricots-verts-rôtis",
+      "title": "Haricots Verts Rôtis et Croquants",
+      "description": "Oubliez les haricots à l'eau ! La cuisson à haute température exalte leur saveur naturelle et leur donne une texture croquante incomparable. Un accompagnement sain et rapide.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Végétarien",
+        "Végan",
+        "LowCarb",
+        "haricots verts"
+      ]
+    },
+    {
+      "slug": "falafel",
+      "title": "Falafels Maison (Cœur Moelleux)",
+      "description": "Le secret des falafels parfaits : une croûte bien dorée et un intérieur aux herbes resté bien tendre. Ces boulettes de pois chiches épicées sont le pilier de vos repas végétariens.",
+      "keywords": [
+        "Légumes",
+        "Apéritif",
+        "Snack",
+        "Végétarien",
+        "Végétalien",
+        "Rapide",
+        "falafel",
+        "oriental"
+      ]
+    },
+    {
+      "slug": "frites-grecques",
+      "title": "Frites Grecques à la Feta et Origan",
+      "description": "Voyagez en Méditerranée avec ces frites croustillantes parsemées de feta fondante et d'origan parfumé. Un accompagnement de caractère qui change du quotidien.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Apéritif",
+        "Snack",
+        "Végétarien",
+        "frites",
+        "feta",
+        "grèce"
+      ]
+    },
+    {
+      "slug": "spirales-de-pommes-de-terre-congelees",
+      "title": "Curly Fries (Spirales Croustillantes)",
+      "description": "Ludiques et gourmandes, ces spirales de pommes de terre surgelées deviennent parfaitement dorées sans ajout d'huile. Le snack favori des petits comme des grands.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Végétarien",
+        "Végétalien",
+        "pomme de terre",
+        "curly fries"
+      ]
+    },
+    {
+      "slug": "samosas-vegetales",
+      "title": "Samosas Chou-Fleur, Petits Pois et Feta",
+      "description": "De croustillants triangles de pâte brick qui cachent une farce savoureuse et épicée. L'alliance du chou-fleur, des petits pois et de la feta offre un équilibre parfait.",
+      "keywords": [
+        "Légumes",
+        "Entrée",
+        "Snack",
+        "Végétarien",
+        "Rapide",
+        "samosas",
+        "brick"
+      ]
+    },
+    {
+      "slug": "gateau-banane-mascarpone",
+      "title": "Gâteau Fondant Banane et Mascarpone",
+      "description": "L'onctuosité du mascarpone alliée à la douceur des bananes très mûres crée un gâteau d'une densité et d'un fruité exceptionnels. Parfait pour un goûter qui dure plusieurs jours.",
+      "keywords": [
+        "Dessert",
+        "Petit-déjeuner",
+        "Collation",
+        "Végétarien",
+        "mascarpone",
+        "banana cake"
+      ]
+    },
+    {
+      "slug": "champignons-panes",
+      "title": "Champignons Panés (Ultra-Croustillants)",
+      "description": "Un apéritif bluffant ! Ces champignons pré-frits retrouvent tout leur craquant à l'air chaud, révélant un cœur fondant et juteux. Prêts en quelques minutes seulement.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Apéritif",
+        "Snack",
+        "Végétarien",
+        "Rapide",
+        "Facile",
+        "croustillant"
+      ]
+    }
+  ]
+}

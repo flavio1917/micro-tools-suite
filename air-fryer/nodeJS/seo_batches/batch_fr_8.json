@@ -1,0 +1,296 @@
+{
+  "fr": [
+    {
+      "slug": "muffins-chocolat-espresso",
+      "title": "Muffins Intenses Chocolat et Espresso",
+      "description": "L'accord parfait pour un réveil énergisant. Ces muffins combinent la profondeur du cacao et la force de l'espresso dans une texture incroyablement moelleuse, idéale pour accompagner votre café du matin.",
+      "keywords": [
+        "Dessert",
+        "Goûter",
+        "Petit-déjeuner",
+        "Végétarien",
+        "Rapide",
+        "Facile",
+        "muffin café",
+        "chocolat noir"
+      ]
+    },
+    {
+      "slug": "muffins-fromage-mais",
+      "title": "Muffins Salés Maïs et Cheddar Fondu",
+      "description": "Une gourmandise salée à savourer tiède. Ces muffins au maïs cachent un cœur de cheddar fondant et le peps des échalotes, parfaits pour un brunch original ou un en-cas sur le pouce.",
+      "keywords": [
+        "Œufs/Fromages",
+        "Entrée",
+        "Snack",
+        "Protéique",
+        "Végétarien",
+        "muffin salé",
+        "cheddar",
+        "maïs"
+      ]
+    },
+    {
+      "slug": "muffins-citron-myrtilles",
+      "title": "Muffins Citron-Myrtilles (Végan & Sans Lactose)",
+      "description": "Légèreté et fraîcheur au rendez-vous. Ces muffins sans œufs ni produits laitiers utilisent l'onctuosité du lait de coco pour sublimer l'alliance classique du citron et des myrtilles juteuses.",
+      "keywords": [
+        "Dessert",
+        "Goûter",
+        "Petit-déjeuner",
+        "Végétarien",
+        "Végétalien",
+        "Rapide",
+        "sans lactose",
+        "myrtilles"
+      ]
+    },
+    {
+      "slug": "pain-banane-noix",
+      "title": "Banana Bread aux Noix (Crousti-Moelleux)",
+      "description": "Le réconfort ultime en une tranche. Ce cake à la banane offre une mie dense et tendre, ponctuée par le croquant généreux des noix torréfiées. Idéal pour un petit-déjeuner nutritif.",
+      "keywords": [
+        "Dessert",
+        "Collation",
+        "Petit-déjeuner",
+        "Protéiné",
+        "Végétarien",
+        "banana bread",
+        "noix",
+        "cake banane"
+      ]
+    },
+    {
+      "slug": "asperges-roties-simples",
+      "title": "Asperges Rôties au Naturel (Pointes Croustillantes)",
+      "description": "La quintessence du printemps en quelques minutes. La cuisson rapide à haute température rend les pointes d'asperges délicieusement croquantes tout en préservant la tendreté de la tige.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "Végan",
+        "LowCarb",
+        "Rapide",
+        "asperges",
+        "printemps"
+      ]
+    },
+    {
+      "slug": "asperges-enroulees-jambon",
+      "title": "Fagots d'Asperges au Jambon Cru",
+      "description": "Un mariage chic et savoureux. Les asperges sont enveloppées dans des tranches de jambon cru qui deviennent ultra-croustillantes à la cuisson, offrant un contraste parfait avec le cœur tendre des légumes.",
+      "keywords": [
+        "Viande",
+        "Légumes",
+        "Accompagnement",
+        "Entrée",
+        "Protéique",
+        "LowCarb",
+        "Rapide",
+        "asperges jambon",
+        "apéritif dinatoire"
+      ]
+    },
+    {
+      "slug": "bagel-vegetariens",
+      "title": "Bagel aux Légumes Grillés et Moutarde Douce",
+      "description": "Un sandwich chaud généreux et sain. Ce bagel croustillant est garni de légumes grillés à point et d'une crème de fromage onctueuse relevée d'une pointe de moutarde.",
+      "keywords": [
+        "Légumes",
+        "Snack",
+        "Végétarien",
+        "Protéique",
+        "Bagel",
+        "Fromage",
+        "sandwich chaud"
+      ]
+    },
+    {
+      "slug": "morceaux-chou-fleur-sauce-ranch",
+      "title": "Chou-Fleur Pané (Façon Buffalo Wings)",
+      "description": "L'alternative végétarienne bluffante ! Ces bouchées de chou-fleur sont enrobées d'une panure craquante puis nappées d'une sauce piquante. À tremper sans modération dans une sauce fraîche.",
+      "keywords": [
+        "Légumes",
+        "Entrée",
+        "Accompagnement",
+        "Snack",
+        "Végétarien",
+        "chou-fleur pané",
+        "buffalo cauliflower"
+      ]
+    },
+    {
+      "slug": "brocolis-rôtis-ail",
+      "title": "Brocolis Rôtis à l'Ail et aux Épices",
+      "description": "Redécouvrez le brocoli ! Rôti à chaleur sèche, il développe des arômes noisette. L'ail et les épices infusent chaque fleurette pour un accompagnement sain et plein de caractère.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "Végan",
+        "LowCarb",
+        "Rapide",
+        "brocoli rôti",
+        "ail"
+      ]
+    },
+    {
+      "slug": "carottes-soja-miel",
+      "title": "Carottes Nouvelles Glacées Soja-Miel",
+      "description": "Une gourmandise potagère. Ces carottes sont laquées d'une sauce aigre-douce qui caramélise sous l'air chaud, créant un en-cas ou un accompagnement brillant et fondant.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Végétarien",
+        "Rapide",
+        "carottes glacées",
+        "sucré-salé"
+      ]
+    },
+    {
+      "slug": "carottes-roties-miel",
+      "title": "Carottes Caramélisées au Miel et Thym",
+      "description": "Tendres à cœur et délicatement dorées. Ces carottes entières rôties exhalent le parfum du thym frais, souligné par la douceur du miel pour un résultat rustique et élégant.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Entrée",
+        "Végétarien",
+        "Rapide",
+        "carottes rôties",
+        "thym"
+      ]
+    },
+    {
+      "slug": "chou-fleur-curcuma",
+      "title": "Chou-Fleur Doré au Curcuma",
+      "description": "Apportez de la couleur à votre table ! Les fleurettes de chou-fleur se parent d'une robe jaune éclatante et de saveurs orientales, restant tendres tout en offrant une surface joliment grillée.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "Végan",
+        "LowCarb",
+        "Rapide",
+        "curcuma",
+        "chou-fleur"
+      ]
+    },
+    {
+      "slug": "chou-fleur-sauce-tahini",
+      "title": "Chou-Fleur Rôti et Sauce Tahini Onctueuse",
+      "description": "Un délice d'inspiration levantine. Le chou-fleur rôti est servi avec une sauce veloutée au sésame, citron et huile d'olive. Un contraste de saveurs riche et satisfaisant.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Végétarien",
+        "Végan",
+        "LowCarb",
+        "Rapide",
+        "tahini",
+        "houmous style"
+      ]
+    },
+    {
+      "slug": "chips-de-pommes-de-terre-croquantes",
+      "title": "Chips Maison Ultra-Croustillantes",
+      "description": "Le plaisir de la chips, la légèreté en plus. Obtenez des tranches de pommes de terre dorées et craquantes avec un minimum d'huile. Parfait pour un apéro sain sans culpabilité.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Apéritif",
+        "En-cas",
+        "Végétarien",
+        "Végétalien",
+        "chips maison"
+      ]
+    },
+    {
+      "slug": "champignons-rôtis",
+      "title": "Poêlée de Champignons Rôtis (Chaleur Sèche)",
+      "description": "Découvrez des champignons charnus et dorés, sans l'excès d'eau habituel. La cuisson à chaleur tournante concentre les saveurs boisées pour un accompagnement savoureux.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "Végétalien",
+        "LowCarb",
+        "Rapide",
+        "Champignons",
+        "boisés"
+      ]
+    },
+    {
+      "slug": "aubergines-roties-simples",
+      "title": "Tranches d'Aubergines Épicées",
+      "description": "Une recette simple pour transformer l'aubergine. Relevées d'un mélange d'épices, ces tranches deviennent fondantes et parfumées, prêtes à accompagner tous vos plats d'été.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Végétarien",
+        "Végétalien",
+        "LowCarb",
+        "Rapide",
+        "aubergine grillée"
+      ]
+    },
+    {
+      "slug": "aubergines-grillees-pesto",
+      "title": "Aubergines Fondantes au Pesto",
+      "description": "Le goût de l'Italie dans votre assiette. Ces aubergines cuites lentement sont nappées de pesto de basilic frais en fin de cuisson pour préserver tous les arômes des herbes.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Entrée",
+        "Végétarien",
+        "LowCarb",
+        "Snack",
+        "pesto",
+        "italien"
+      ]
+    },
+    {
+      "slug": "aubergines-farcees-mozzarella",
+      "title": "Aubergines Gratinées à la Tomate et Mozzarella",
+      "description": "Un plat principal végétarien gourmand. Ces aubergines farcies de sauce tomate parfumée et de mozzarella filante sont gratinées jusqu'à ce que le fromage soit parfaitement doré.",
+      "keywords": [
+        "Légumes",
+        "Plat principal",
+        "Végétarien",
+        "Protéiné",
+        "LowCarb",
+        "aubergine farcie",
+        "gratin"
+      ]
+    },
+    {
+      "slug": "pommes-de-terre-en-quartiers-congelees",
+      "title": "Potatoes Surgelées (Cœur Moelleux)",
+      "description": "La solution express pour un accompagnement réussi. Ces quartiers de pommes de terre surgelés ressortent avec une croûte bien craquante et un intérieur fondant comme au restaurant.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Végétarien",
+        "Végan",
+        "potatoes",
+        "express"
+      ]
+    },
+    {
+      "slug": "pommes-de-terre-en-quartiers",
+      "title": "Quartiers de Pommes de Terre au Parmesan",
+      "description": "De délicieuses wedges maison ! Assaisonnées de fromage et d'épices, ces pommes de terre sont idéales à tremper dans une sauce au yaourt ou une mayonnaise épicée.",
+      "keywords": [
+        "Légumes",
+        "Accompagnement",
+        "Snack",
+        "Végétarien",
+        "wedges",
+        "pommes de terre épicées"
+      ]
+    }
+  ]
+}

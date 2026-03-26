@@ -1,0 +1,339 @@
+{
+"it": [
+{
+"slug": "muffin-caffe-streusel",
+"title": "Muffin al Caffè e Cacao (Soffice Risveglio in Friggitrice ad Aria)",
+"description": "Muffin dal cuore umido e sapore deciso di caffè e cacao. La cottura in friggitrice ad aria assicura una lievitazione perfetta e una consistenza soffice, ideale per una carica di energia mattutina.",
+"keywords": [
+"Dolce",
+"Colazione",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Caffè",
+"Cacao",
+"muffin Friggitrice ad Aria",
+"dolci al caffè",
+"colazione veloce"
+]
+},
+{
+"slug": "muffin-gocce-cioccolato",
+"title": "Muffin con Gocce di Cioccolato (Cupola Perfetta in Friggitrice ad Aria)",
+"description": "Il classico intramontabile: muffin alti e soffici con tante gocce di cioccolato. Grazie alla ventilazione costante dell'aria, otterrai la tipica cupola dorata da pasticceria in metà tempo.",
+"keywords": [
+"Dolce",
+"Colazione",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Cioccolato",
+"muffin gocce cioccolato",
+"merenda bambini",
+"dolci facili"
+]
+},
+{
+"slug": "orata-griglia-pomodori",
+"title": "Orata alla Griglia con Olive (Secondo Light in Friggitrice ad Aria)",
+"description": "Filetti di orata tenerissimi arricchiti da un'emulsione fresca di olive e pomodori. L'Friggitrice ad Aria simula perfettamente la griglia, mantenendo il pesce succoso e la pelle croccante.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Orata",
+"Pomodoro",
+"orata Friggitrice ad Aria",
+"pesce alla griglia",
+"cena leggera"
+]
+},
+{
+"slug": "pesce-gatto-cajun",
+"title": "Pesce Gatto al Cajun (Croccante e Speziato in Friggitrice ad Aria)",
+"description": "Un tocco di New Orleans in cucina! Filetti di pesce gatto avvolti in una panatura Cajun intensa e aromatica. La cottura ad aria li rende croccantissimi fuori senza l'uso di grassi aggiunti.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Veloce",
+"Pesce gatto",
+"Cajun",
+"pesce speziato",
+"cucina americana",
+"secondo rapido"
+]
+},
+{
+"slug": "pizza-da-colazione",
+"title": "Breakfast Pizza (Uovo e Prosciutto in Friggitrice ad Aria)",
+"description": "Inizia la giornata con una marcia in più! Una pizza sottile e croccante guarnita con mozzarella, prosciutto e un uovo dal tuorlo fondente, pronta in pochissimi minuti.",
+"keywords": [
+"Lievitati",
+"Carne",
+"Colazione",
+"Snack",
+"Proteico",
+"Veloce",
+"Uovo",
+"Prosciutto",
+"pizza uovo",
+"colazione salata",
+"snack veloce"
+]
+},
+{
+"slug": "salmone-burro-limone",
+"title": "Salmone Burro e Limone (Raffinato e Veloce in Friggitrice ad Aria)",
+"description": "Salmone gourmet pronto in 10 minuti. Una salsa setosa al burro, limone e aglio che esalta la morbidezza del pesce, cotto alla perfezione grazie al calore circolare dell'aria.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Veloce",
+"Salmone",
+"Limone",
+"salmone al limone",
+"secondo raffinato",
+"salmone veloce"
+]
+},
+{
+"slug": "salmone-pomodoro-cetriolo",
+"title": "Salmone Freschezza (Cottura Rapida e Insalata Cruda)",
+"description": "L'equilibrio perfetto tra il calore del salmone arrostito in Friggitrice ad Aria e la freschezza di un'insalata di cetrioli e cipolla rossa. Un piatto unico sano, proteico e bilanciato.",
+"keywords": [
+"Pesce",
+"Verdure",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Veloce",
+"Salmone",
+"Pomodoro",
+"salmone e cetrioli",
+"piatto fit",
+"cena estiva"
+]
+},
+{
+"slug": "salmone-glassato-teriyaki",
+"title": "Salmone Teriyaki all'Arancia (Glassatura Pro in Friggitrice ad Aria)",
+"description": "Filetti di salmone laccati con una riduzione di teriyaki e arancia. La friggitrice ad aria crea una crosticina agrodolce irresistibile, mantenendo la polpa che si scioglie in bocca.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"Salmone",
+"salmone teriyaki",
+"cucina asiatica",
+"pesce glassato"
+]
+},
+{
+"slug": "sandwich-muffin-colazione",
+"title": "English Muffin Breakfast Sandwich (Come al Fast Food, ma Sano)",
+"description": "Muffin inglese tostato con cuore filante di cheddar, uova e pancetta croccante. La friggitrice ad aria scalda e tosta tutto uniformemente per un risveglio da campioni.",
+"keywords": [
+"Carne",
+"Uova/Formaggi",
+"Colazione",
+"Snack",
+"Proteico",
+"Veloce",
+"Uova",
+"Pancetta",
+"english muffin",
+"colazione americana",
+"sandwich uova"
+]
+},
+{
+"slug": "sfogliatine-mele",
+"title": "Sfogliatine Mele e Cannella (Friabili in 12 Minuti)",
+"description": "Dolcetti espressi di pasta sfoglia con cuore di mele tenere e cannella. L'aria calda rende la sfoglia leggerissima e croccante, sprigionando tutto il profumo della frutta.",
+"keywords": [
+"Dolce",
+"Snack",
+"Colazione",
+"Proteico",
+"Vegetariano",
+"Mela",
+"Cannella",
+"sfogliatine mele",
+"dolce veloce",
+"sfoglia Friggitrice ad Aria"
+]
+},
+{
+"slug": "sottaceti-fritti",
+"title": "Fried Pickles (I Sottaceti Fritti Croccanti e Leggeri)",
+"description": "Lo snack americano più amato in versione Friggitrice ad Aria! Cetrioli sottaceto impanati e resi croccantissimi. Un contrasto sorprendente tra l'acidulo interno e la panatura speziata.",
+"keywords": [
+"Verdure",
+"Uova/Formaggi",
+"Antipasto",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Cetriolo",
+"fried pickles",
+"snack originale",
+"aperitivo sfizioso"
+]
+},
+{
+"slug": "souffle-cioccolato",
+"title": "Soufflé al Cioccolato Fondente (Cuore Morbido in Friggitrice ad Aria)",
+"description": "Un dessert elegante e dal successo assicurato. Questo soufflé monoporzione lievita perfettamente nell'Friggitrice ad Aria, mantenendo un cuore cremoso e un sapore intenso di fondente.",
+"keywords": [
+"Dolce",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Cioccolato",
+"Uova",
+"soufflé cioccolato",
+"tortino cuore caldo",
+"dessert Friggitrice ad Aria"
+]
+},
+{
+"slug": "tacos-pesce-griglia",
+"title": "Fish Tacos Croccanti (Pesce Bianco e Mais in Friggitrice ad Aria)",
+"description": "Filetti di pesce bianco dalla panatura speziata al mais, pronti per farcire le tue tortillas. Un'alternativa leggera e saporita ai classici tacos, pronta in pochi minuti.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"Pesce bianco",
+"Spezie",
+"fish tacos",
+"cena messicana",
+"pesce croccante"
+]
+},
+{
+"slug": "toast-farcito-francese",
+"title": "Stuffed French Toast (Brioche Filante in Friggitrice ad Aria)",
+"description": "Pane brioche dorato e farcito con formaggio cremoso. La cottura in Friggitrice ad Aria rende l'esterno croccante come un toast, ma mantiene il ripieno morbido e goloso.",
+"keywords": [
+"Dolce",
+"Uova/Formaggi",
+"Colazione",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Veloce",
+"Pane Brioche",
+"Formaggio",
+"french toast farcito",
+"colazione gourmet"
+]
+},
+{
+"slug": "torta-al-limone",
+"title": "Plumcake al Limone (Soffice e Dorato in 20 Minuti)",
+"description": "Un plumcake soffice e profumato, perfetto per la colazione di tutta la famiglia. La friggitrice ad aria garantisce una cottura uniforme senza seccare l'impasto.",
+"keywords": [
+"Dolce",
+"Lievitati",
+"Colazione",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Limone",
+"Burro",
+"plumcake limone",
+"torta Friggitrice ad Aria",
+"dolci soffici"
+]
+},
+{
+"slug": "tortini-pesce-surgelati",
+"title": "Tortini di Pesce (Doratura Rapida e Interno Caldo)",
+"description": "Il trucco per tortini di pesce surgelati impeccabili: l'Friggitrice ad Aria! Superficie dorata e invitante con un cuore bollente in pochi minuti, senza sporcare il forno grande.",
+"keywords": [
+"Pesce",
+"Secondo",
+"Proteico",
+"Veloce",
+"tortini pesce Friggitrice ad Aria",
+"cena rapida",
+"pesce surgelato"
+]
+},
+{
+"slug": "uovo-in-vaso-cotto",
+"title": "Uova in Cocotte (Pancetta e Spinaci in Friggitrice ad Aria)",
+"description": "Un antipasto raffinato o una colazione proteica. Uova cotte delicatamente in cocotte con crema di panna, parmigiano e la nota sapida della pancetta croccante.",
+"keywords": [
+"Uova/Formaggi",
+"Carne",
+"Colazione",
+"Antipasto",
+"Proteico",
+"LowCarb",
+"Uova",
+"Pancetta",
+"uova in cocotte",
+"uova pancetta",
+"antipasto raffinato"
+]
+},
+{
+"slug": "biscotti-al-cheddar",
+"title": "Cheddar Biscuits (Friabili e Salati in Friggitrice ad Aria)",
+"description": "Biscotti salati al cheddar, croccanti fuori e friabili dentro. Perfetti per accompagnare stufati o come snack sfizioso per un aperitivo diverso dal solito.",
+"keywords": [
+"Lievitati",
+"Uova/Formaggi",
+"Antipasto",
+"Snack",
+"Vegetariano",
+"Cheddar",
+"biscotti salati",
+"snack al formaggio",
+"aperitivo Friggitrice ad Aria"
+]
+},
+{
+"slug": "mini-pizze",
+"title": "Muffin Pizza (Pizzette Veloci su Base Muffin Inglese)",
+"description": "L'idea geniale per una merenda last-minute o un aperitivo: basi di muffin inglese condite come mini pizze. Croccantissime in soli 5 minuti in Friggitrice ad Aria.",
+"keywords": [
+"Lievitati",
+"Uova/Formaggi",
+"Antipasto",
+"Snack",
+"Vegetariano",
+"Veloce",
+"Muffin",
+"Mozzarella",
+"pizzette veloci",
+"merenda salata",
+"mini pizza"
+]
+},
+{
+"slug": "muffin-mirtilli-rossi",
+"title": "Muffin Arancia e Mirtilli Rossi (Profumo d'Agrume in Friggitrice ad Aria)",
+"description": "Muffin fragranti con succo d'arancia e mirtilli rossi aspro-dolci. La cottura ad aria esalta gli aromi agrumati, regalando muffin leggeri e perfetti da inzuppare.",
+"keywords": [
+"Dolce",
+"Colazione",
+"Snack",
+"Proteico",
+"Vegetariano",
+"Mirtilli",
+"Arancia",
+"muffin mirtilli",
+"dolci agrumi",
+"muffin veloci"
+]
+}
+]
+}

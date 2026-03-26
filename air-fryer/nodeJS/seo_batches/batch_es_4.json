@@ -1,0 +1,271 @@
+{
+  "es": [
+    {
+      "slug": "salchichas-en-hojaldre",
+      "title": "Mini Enrollados de Salchicha y Hojaldre",
+      "description": "El aperitivo que nunca falla en las reuniones. Salchichas envueltas en láminas de hojaldre mantequilloso que se hornean hasta alcanzar un dorado perfecto y un crujido irresistible.",
+      "keywords": [
+        "Carne",
+        "Aperitivo",
+        "Snack",
+        "Rápido",
+        "hojaldre",
+        "party food"
+      ]
+    },
+    {
+      "slug": "pechugas-de-pollo-jugosas",
+      "title": "Pechugas de Pollo Asadas (Extra Jugosas)",
+      "description": "Olvídate del pollo seco. Con esta técnica de sellado rápido, logramos pechugas increíblemente tiernas que retienen todos sus jugos naturales. La base perfecta para una dieta proteica con sabor.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "pechuga de pollo",
+        "saludable"
+      ]
+    },
+    {
+      "slug": "pollo-barbacoa",
+      "title": "Pollo Glaseado con Salsa Barbacoa",
+      "description": "Puro sabor ahumado. Las piezas de pollo se cocinan con un marinado seco y se bañan en salsa barbacoa hasta lograr ese glaseado brillante, dulce y caramelizado que se pega a los dedos.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "BBQ",
+        "caramelizado",
+        "pollo"
+      ]
+    },
+    {
+      "slug": "muslos-pollo-limon-miel",
+      "title": "Muslos de Pollo con Miel y Limón",
+      "description": "Un contraste de sabores vibrante. La acidez del limón corta la dulzura de la miel, creando un glaseado agridulce que dora la piel del pollo hasta dejarla crujiente y deliciosa.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Pollo",
+        "Agridulce",
+        "Cítricos",
+        "miel y limón"
+      ]
+    },
+    {
+      "slug": "muslos-de-pollo-cinco-especias",
+      "title": "Muslos de Pollo a las Cinco Especias Chinas",
+      "description": "Un viaje aromático a Asia. El toque de la salsa Hoisin y el aroma de las cinco especias le dan al pollo un color caoba espectacular y una piel crujiente llena de matices exóticos.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Asiático",
+        "Hoisin",
+        "cinco especias"
+      ]
+    },
+    {
+      "slug": "pollo-asado-ajo-hierbas",
+      "title": "Pollo Asado con Ajo y Hierbas del Mediterráneo",
+      "description": "Sencillez y elegancia. Un adobo seco de ajo, tomillo y romero que realza el sabor natural del pollo, logrando un asado tradicional con una piel tostada y aromática.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Pollo",
+        "Asado",
+        "Fácil",
+        "hierbas aromáticas"
+      ]
+    },
+    {
+      "slug": "pollo-entero-al-ajo",
+      "title": "Pollo Entero Asado al Estilo Tradicional",
+      "description": "El rey de los domingos. Te enseñamos a asar el pollo entero para que la piel quede crujiente y la carne se desprenda del hueso, todo en tiempo récord y con un aroma a ajo irresistible.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "pollo asado",
+        "cena familiar"
+      ]
+    },
+    {
+      "slug": "pollo-entero-barbacoa",
+      "title": "Pollo Entero Glaseado a la Barbacoa",
+      "description": "Consigue el acabado de un asador profesional en casa. Un pollo entero jugoso, recubierto de una capa generosa de salsa barbacoa que se carameliza para un sabor intenso y ahumado.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "BBQ",
+        "asador",
+        "pollo entero"
+      ]
+    },
+    {
+      "slug": "albondigas-italianas",
+      "title": "Albóndigas de Ternera al Parmesano",
+      "description": "Cremosidad y sabor en cada bocado. El queso parmesano se funde dentro de la carne picada, logrando unas albóndigas doradas por fuera y tan tiernas que se deshacen en la boca.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "albóndigas",
+        "parmesano"
+      ]
+    },
+    {
+      "slug": "quesadillas-mexicanas-pollo",
+      "title": "Quesadillas de Pollo, Pimientos y Queso Fundido",
+      "description": "El sabor de México en minutos. Tortillas rellenas de pollo sazonado y verduras que se tuestan hasta que el queso se funde por completo, creando un bocado crujiente y reconfortante.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Rápido",
+        "mexicano",
+        "quesadilla"
+      ]
+    },
+    {
+      "slug": "paletilla-cordero-griega",
+      "title": "Paletilla de Cordero Asada con Patatas Panadera",
+      "description": "Un plato de fiesta. La paletilla de cordero se cocina lentamente mientras sus jugos impregnan las patatas, dejándolas melosas y llenas de sabor. Tradición pura en tu mesa.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Cordero",
+        "Asado",
+        "Patatas",
+        "banquete"
+      ]
+    },
+    {
+      "slug": "brochetas-pollo-yogur",
+      "title": "Brochetas de Pollo al Yogur y Especias",
+      "description": "Ternura máxima garantizada. El marinado con yogur actúa sobre las fibras del pollo, logrando unas brochetas jugosas y ligeras, perfectas para una cena rápida y saludable.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "brochetas",
+        "saludable"
+      ]
+    },
+    {
+      "slug": "stromboli-relleno",
+      "title": "Stromboli de Jamón y Queso (Rollo de Pizza)",
+      "description": "Divertido, crujiente y delicioso. Un rollo de masa de pizza relleno de jamón cocido y queso fundido que se hornea hasta quedar dorado. Ideal para compartir o como cena rápida.",
+      "keywords": [
+        "Carne",
+        "Huevos/Quesos",
+        "Masas",
+        "Plato principal",
+        "Entrante",
+        "Snack",
+        "Proteico",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "solomillo-cerdo-dorado",
+      "title": "Solomillo de Cerdo Sellado y Jugoso",
+      "description": "El corte más tierno del cerdo preparado para brillar. Un sellado rápido a alta temperatura crea una costra dorada que guarda toda la jugosidad en el interior. Elegante y sencillo.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "solomillo",
+        "cerdo"
+      ]
+    },
+    {
+      "slug": "filete-mostaza-balsamico",
+      "title": "Ternera a la Mostaza de Dijon y Balsámico",
+      "description": "Sabor sofisticado en tiempo récord. El vinagre balsámico carameliza la superficie de la ternera mientras la mostaza le da un punto picante y elegante. Un plato gourmet bajo en carbohidratos.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "LowCarb",
+        "mostaza de Dijon",
+        "gourmet"
+      ]
+    },
+    {
+      "slug": "chuletón-a-las-hierbas-aromaticas",
+      "title": "Chuletón con Costra de Hierbas Aromáticas",
+      "description": "Para los auténticos amantes de la carne. Un chuletón de primera con una costra de especias que potencia su sabor, sellado para mantener el interior rojo y jugoso.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "LowCarb",
+        "Rápido",
+        "chuletón",
+        "carne roja"
+      ]
+    },
+    {
+      "slug": "bistec-new-york-chimichurri",
+      "title": "Bistec New York con Chimichurri de Anchoas",
+      "description": "Un clásico renovado. Bistec de ternera de alta calidad servido con una potente salsa verde de hierbas frescas y un toque salino de anchoas que realza cada bocado.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "chimichurri",
+        "bistec"
+      ]
+    },
+    {
+      "slug": "chuletas-cerdo-hueso",
+      "title": "Chuletas de Cerdo al Punto (Con Hueso)",
+      "description": "La carne junto al hueso es siempre la más sabrosa. Estas chuletas se cocinan para lograr una superficie dorada y un interior que se mantiene tierno y lleno de jugos.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "chuletas de cerdo"
+      ]
+    },
+    {
+      "slug": "chuletas-cerdo-estilo-north-carolina",
+      "title": "Chuletas de Cerdo Estilo Carolina (Ahumadas)",
+      "description": "Siente el sabor del sur de Estados Unidos. El azúcar moreno crea una costra caramelizada con notas ahumadas que transforma unas simples chuletas en un festín de sabores.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "southern style",
+        "ahumado"
+      ]
+    },
+    {
+      "slug": "mini-hamburguesas-con-queso",
+      "title": "Slappers: Mini Hamburguesas con Queso Fundido",
+      "description": "Bocados de pura felicidad. Pequeñas hamburguesas de ternera con queso derretido en panecillos tiernos. El formato ideal para un picoteo divertido o una cena rápida con niños.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Aperitivo",
+        "Proteico",
+        "Rápido",
+        "sliders",
+        "mini burger"
+      ]
+    }
+  ]
+}

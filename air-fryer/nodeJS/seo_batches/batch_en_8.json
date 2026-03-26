@@ -1,0 +1,255 @@
+{
+  "en": [
+    {
+      "slug": "cheddar-biscuits",
+      "title": "Flaky Cheddar Cheese Biscuits",
+      "description": "Golden, buttery, and irresistibly flaky. These cheese-infused biscuits are the perfect warm accompaniment for hearty stews or a quick savory snack on their own.",
+      "keywords": [
+        "Baked Goods",
+        "Eggs/Cheeses",
+        "Appetizer",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "quick-mini-pizzas",
+      "title": "English Muffin Mini Pizzas",
+      "description": "The ultimate quick-fix comfort food. These miniature pizzas use an English muffin base for a satisfying crunch, topped with zesty tomato sauce and melty mozzarella.",
+      "keywords": [
+        "Leavened Goods",
+        "Appetizer",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "fluffy-cranberry-muffins",
+      "title": "Zesty Cranberry & Orange Muffins",
+      "description": "A bright and morning-ready treat. These fluffy muffins balance the sharp tartness of fresh cranberries with the sweet, aromatic citrus notes of orange juice and zest.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Breakfast",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "dark-chocolate-espresso-muffins",
+      "title": "Dark Chocolate Espresso Muffins",
+      "description": "Indulgent and energizing. These rich muffins combine deep cocoa flavors with a bold espresso kick, creating a sophisticated treat for breakfast or an afternoon pick-me-up.",
+      "keywords": [
+        "Dessert",
+        "Breakfast",
+        "Snack",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "cheesy-corn-muffins",
+      "title": "Savory Cheddar & Corn Muffins",
+      "description": "A savory twist on a classic. Packed with sweet corn, sharp cheddar, and subtle shallots, these golden muffins are best enjoyed warm with a smear of butter.",
+      "keywords": [
+        "Leavened Goods",
+        "Eggs/Cheeses",
+        "Appetizer",
+        "Snack",
+        "Breakfast",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "lemon-blueberry-coconut-muffins",
+      "title": "Lemon Blueberry Coconut Muffins",
+      "description": "Wonderfully soft and entirely plant-based. Creamy coconut milk and zesty lemon create a tender crumb that highlights the burst of fresh blueberries in every bite.",
+      "keywords": [
+        "Dessert",
+        "Snack",
+        "Breakfast",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "banana-walnut-mini-loaf",
+      "title": "Mini Banana Walnut Loaf",
+      "description": "The perfect personal-sized loaf. This compact treat features a moist, sweet banana interior perfectly complemented by the crunch of toasted walnuts.",
+      "keywords": [
+        "Dessert",
+        "Baked Goods",
+        "Snack",
+        "Breakfast",
+        "Quick",
+        "Vegetarian"
+      ]
+    },
+    {
+      "slug": "simple-roasted-asparagus",
+      "title": "Crispy Roasted Asparagus",
+      "description": "Simple, elegant, and vibrant. A high-heat roast transforms tender asparagus spears, making the tips delightfully crisp while locking in their natural sweetness.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Appetizer",
+        "Vegetarian",
+        "Vegan",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "prosciutto-wrapped-asparagus",
+      "title": "Prosciutto-Wrapped Asparagus Spears",
+      "description": "A sophisticated appetizer that never fails to impress. Tender asparagus stalks are enveloped in a savory prosciutto shell that crisps up beautifully during roasting.",
+      "keywords": [
+        "Meat",
+        "Vegetables",
+        "Side Dish",
+        "Appetizer",
+        "High-Protein",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "vegetarian-bagels",
+      "title": "Grilled Veggie & Cream Cheese Bagels",
+      "description": "A hearty vegetarian lunch. These toasted bagels feature a smoky medley of grilled vegetables layered over a tangy cream cheese and mustard spread.",
+      "keywords": [
+        "Vegetables",
+        "Main Course",
+        "Snack",
+        "Breakfast",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "cauliflower-ranch-bites",
+      "title": "Spicy Buffalo Cauliflower Bites",
+      "description": "The perfect vegetarian alternative to wings. These breaded cauliflower florets are cooked until crunchy and tossed in a fiery Buffalo-style glaze.",
+      "keywords": [
+        "Vegetables",
+        "Appetizer",
+        "Side Dish",
+        "Snack",
+        "Vegetarian",
+        "Quick",
+        "Spicy"
+      ]
+    },
+    {
+      "slug": "roasted-garlic-broccoli",
+      "title": "Roasted Garlic Broccoli Florets",
+      "description": "Elevate your greens. Broccoli florets are seasoned with garlic and roasted until the edges are beautifully browned, bringing out a deep, nutty flavor.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Vegan",
+        "Low Carb",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "honey-soy-glazed-carrots",
+      "title": "Sticky Honey-Soy Glazed Carrots",
+      "description": "A balanced blend of sweet and savory. Tender baby carrots are coated in a rich honey-soy glaze that caramelizes into a glossy, addictive finish.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "honey-roasted-carrots",
+      "title": "Honey & Thyme Roasted Carrots",
+      "description": "Rustic and comforting. These carrots are roasted with sweet honey and aromatic fresh thyme, resulting in a tender-firm texture and a delicate floral glaze.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "turmeric-cauliflower",
+      "title": "Golden Turmeric Cauliflower",
+      "description": "Vibrant and aromatic. Seasoned with turmeric, garlic, and onion powder, these roasted cauliflower florets offer a bold color and a warm, earthy flavor profile.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "roasted-cauliflower-tahini-sauce",
+      "title": "Roasted Cauliflower with Tahini",
+      "description": "A Mediterranean-inspired delight. Nutty, roasted cauliflower florets are drizzled with a creamy, zesty tahini and lemon sauce for a sophisticated side dish.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "crispy-potato-chips",
+      "title": "Hand-Cut Crispy Potato Chips",
+      "description": "Snacking made smarter. These thinly sliced potatoes are air-fried with minimal oil to achieve a light, golden crunch that rivals any store-bought bag.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Snack",
+        "Appetizer",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "roasted-mushrooms",
+      "title": "Savory Golden-Brown Mushrooms",
+      "description": "Concentrated umami in every bite. This high-heat method yields mushrooms that are perfectly tender inside and beautifully browned outside, without any sogginess.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Vegan",
+        "Quick",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "simple-roasted-eggplant",
+      "title": "Spiced Roasted Eggplant Slices",
+      "description": "A simple yet flavorful vegetable staple. These eggplant slices are seasoned with a custom spice blend and roasted until tender and golden.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Vegan",
+        "Quick"
+      ]
+    },
+    {
+      "slug": "grilled-eggplant-pesto",
+      "title": "Grilled Eggplant with Basil Pesto",
+      "description": "The taste of summer. Tender grilled eggplant slices are finished with a vibrant layer of fresh basil pesto for a burst of herb-forward flavor.",
+      "keywords": [
+        "Vegetables",
+        "Side Dish",
+        "Vegetarian",
+        "Quick"
+      ]
+    }
+  ]
+}

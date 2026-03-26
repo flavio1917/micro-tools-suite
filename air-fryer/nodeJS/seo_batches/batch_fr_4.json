@@ -1,0 +1,297 @@
+{
+  "fr": [
+    {
+      "slug": "feuilletés-saucisses",
+      "title": "Feuilletés à la Saucisse (Apéritif Croustillant)",
+      "description": "Le grand classique des soirées réussies. Ces mini-feuilletés gonflent à la perfection dans la friteuse à air, offrant une pâte feuilletée ultra-croustillante et une saucisse juteuse en un temps record.",
+      "keywords": [
+        "Viande",
+        "Snack",
+        "Apéritif",
+        "Protéique",
+        "Rapide",
+        "feuilleté saucisse",
+        "amuse-bouche",
+        "pâte feuilletée"
+      ]
+    },
+    {
+      "slug": "blancs-de-poulet-simples",
+      "title": "Blancs de Poulet Rôtis (Tendres et Juteux)",
+      "description": "Fini le poulet sec ! Découvrez la méthode idéale pour obtenir des blancs de poulet parfaitement dorés à l'extérieur et incroyablement tendres à cœur. Une base saine et protéinée pour tous vos repas.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Poulet",
+        "blanc de poulet airfryer",
+        "cuisine minceur"
+      ]
+    },
+    {
+      "slug": "poulet-barbecue",
+      "title": "Poulet Laqué Sauce Barbecue (Style BBQ)",
+      "description": "Un voyage direct aux USA. Des morceaux de poulet imprégnés d'épices, puis laqués généreusement à la sauce BBQ pour une finition caramélisée, collante et fumée absolument irrésistible.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéique",
+        "Poulet",
+        "Américain",
+        "poulet BBQ",
+        "poulet laqué",
+        "grillade"
+      ]
+    },
+    {
+      "slug": "pilons-poulet-miel-citron",
+      "title": "Pilons de Poulet Miel et Citron (Aigre-Doux)",
+      "description": "L'équilibre parfait entre la douceur du miel et le peps du citron. La chaleur tournante rend la peau des pilons extrêmement craquante tout en emprisonnant les sucs parfumés de la marinade.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "Poulet",
+        "Aigre-doux",
+        "Agrumes",
+        "pilons de poulet",
+        "miel citron"
+      ]
+    },
+    {
+      "slug": "poulet-cinq-epices",
+      "title": "Hauts de Cuisse aux Cinq Épices (Saveurs d'Asie)",
+      "description": "Plongez dans la gastronomie cantonaise avec ces hauts de cuisse laqués. Le parfum envoûtant des cinq épices chinoises s'associe à une peau croustillante pour un résultat digne d'un grand restaurant.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéique",
+        "Poulet",
+        "Asiatique",
+        "Chinois",
+        "cinq épices",
+        "haut de cuisse"
+      ]
+    },
+    {
+      "slug": "poulet-roti-ail-herbes",
+      "title": "Poulet Rôti à l'Ail et Herbes de Provence",
+      "description": "Le goût authentique du dimanche. Des morceaux de poulet généreusement frottés d'ail frais et d'herbes aromatiques, rôtis jusqu'à obtenir une peau dorée et une chair qui se détache toute seule.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Poulet",
+        "Rôti",
+        "herbes de provence",
+        "poulet à l'ail"
+      ]
+    },
+    {
+      "slug": "poulet-entier-a-l-ail",
+      "title": "Poulet Entier Rôti à l'Airfryer (Peau Craquante)",
+      "description": "Réussissez votre poulet entier à tous les coups ! Cette méthode garantit une cuisson homogène, une peau uniformément dorée et une chair d'une jutosité exceptionnelle, bien plus rapidement qu'au four traditionnel.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "Poulet",
+        "Rôti",
+        "poulet entier",
+        "rôti du dimanche"
+      ]
+    },
+    {
+      "slug": "poulet-entier-barbecue",
+      "title": "Poulet Entier Laqué (Style Barbecue)",
+      "description": "Un poulet entier rôti puis laqué à plusieurs reprises pour une croûte caramélisée et sombre, typique du barbecue américain. Un plat spectaculaire et généreux à partager.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "Poulet",
+        "Américain",
+        "Rôti",
+        "poulet fumé",
+        "sauce BBQ"
+      ]
+    },
+    {
+      "slug": "boulettes-italiennes-maison",
+      "title": "Boulettes de Viande au Parmesan (Polpette)",
+      "description": "Les célèbres boulettes italiennes en version légère. Moelleuses à l'intérieur et saisies à l'extérieur, elles sont parfaites à picorer à l'apéritif ou à plonger dans une sauce tomate onctueuse.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "Apéritif",
+        "Bœuf",
+        "Porc",
+        "Boulettes",
+        "polpette",
+        "italien"
+      ]
+    },
+    {
+      "slug": "quesadillas-fajitas-poulet",
+      "title": "Quesadillas au Poulet et Fromage Fondant",
+      "description": "Une fusion gourmande entre fajitas et quesadillas. Des tortillas croustillantes garnies de poulet épicé, de poivrons croquants et d'une montagne de fromage fondu pour un plaisir mexicain immédiat.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéique",
+        "Rapide",
+        "Poulet",
+        "Mexicain",
+        "quesadilla",
+        "tortilla"
+      ]
+    },
+    {
+      "slug": "epaule-agneau-grecque",
+      "title": "Épaule d'Agneau Rôtie et ses Pommes de Terre",
+      "description": "L'agneau devient divin lorsqu'il est rôti ainsi : sa chair fondante libère ses jus qui viennent napper et parfumer les pommes de terre placées juste en dessous. Un plat de fête simplifié.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "Agneau",
+        "Rôti",
+        "Pommes de terre",
+        "épaule agneau",
+        "plat de fête"
+      ]
+    },
+    {
+      "slug": "brochettes-poulet-yaourt",
+      "title": "Brochettes de Poulet (Marinade Onctueuse)",
+      "description": "Le secret des brochettes les plus tendres du monde ? Une marinade au yaourt qui attendrit les fibres du poulet. Saisies à haute température, elles restent d'une jutosité incroyable.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "Rapide",
+        "brochettes poulet",
+        "shish taouk",
+        "grillade saine"
+      ]
+    },
+    {
+      "slug": "roule-pizza-farcie",
+      "title": "Roulé Pizza (Jambon et Fromage Coulant)",
+      "description": "Une variante ludique de la pizza ! Cette pâte roulée et farcie offre une croûte dorée et un cœur de fromage ultra-fondant. Idéal pour un dîner rapide ou découpé en tranches pour l'apéro.",
+      "keywords": [
+        "Viande",
+        "Pâtes levées",
+        "Œufs et Fromages",
+        "Plat principal",
+        "Apéritif",
+        "Snack",
+        "Protéiné",
+        "roulé pizza",
+        "stromboli"
+      ]
+    },
+    {
+      "slug": "roti-filet-mignon-de-porc",
+      "title": "Filet Mignon de Porc Rôti (Gourmet)",
+      "description": "Sublimez cette pièce noble avec une cuisson précise. Obtenez un filet mignon à la surface joliment colorée et à la chair rosée et juteuse. Un classique de la gastronomie française à portée de main.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "filet mignon",
+        "porc rôti",
+        "cuisine gourmet"
+      ]
+    },
+    {
+      "slug": "bifteck-moutarde-balsamique",
+      "title": "Steak de Bœuf (Moutarde et Balsamique)",
+      "description": "Une marinade sophistiquée pour un bifteck de caractère. Le vinaigre balsamique et la moutarde créent une croûte aromatique intense lors de la saisie à haute température.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéique",
+        "steak",
+        "bifteck",
+        "balsamique",
+        "viande rouge"
+      ]
+    },
+    {
+      "slug": "cote-de-boeuf-aux-herbes-aromatiques",
+      "title": "Côte de Bœuf aux Herbes (Croûte Parfumée)",
+      "description": "Pour les amateurs de viande rouge : une côte de bœuf saisie avec un mélange d'herbes qui forme une croûte savoureuse. Une cuisson rapide qui respecte la tendreté exceptionnelle du bœuf.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "côte de bœuf",
+        "viande grillée"
+      ]
+    },
+    {
+      "slug": "faux-filet-de-boeuf-chimichurri",
+      "title": "Faux-Filet de Bœuf et Sauce Chimichurri",
+      "description": "Le mariage de la viande rôtie et de la fraîcheur des herbes. Ce faux-filet est servi avec une sauce argentine acidulée et pimentée qui réveille les papilles.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "faux-filet",
+        "chimichurri",
+        "steak argentin"
+      ]
+    },
+    {
+      "slug": "cotes-de-porc-a-l-os",
+      "title": "Côtes de Porc à l'Os (Extra Juteuses)",
+      "description": "Cuire la viande avec son os est le secret d'une saveur décuplée. Ces côtes de porc restent tendres et humides tout en arborant une dorure uniforme et appétissante.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "Rapide",
+        "côte de porc",
+        "grillade de porc"
+      ]
+    },
+    {
+      "slug": "cotes-de-porc-caroline-du-nord",
+      "title": "Côtes de Porc (Style Caroline du Nord)",
+      "description": "Inspirées du barbecue du Sud des États-Unis, ces côtes de porc sont frottées de cassonade et d'épices pour une croûte caramélisée et un goût fumé inimitable.",
+      "keywords": [
+        "Viande",
+        "Plat principal",
+        "Protéiné",
+        "LowCarb",
+        "porc barbecue",
+        "southern style",
+        "croûte de sucre"
+      ]
+    },
+    {
+      "slug": "mini-burgers-au-fromage",
+      "title": "Mini Burgers (Cheeseburgers Apéro)",
+      "description": "L'esprit street food sans les inconvénients ! Ces mini burgers dorent parfaitement sans projections de graisse, pour un apéritif dînatoire propre, rapide et ultra-gourmand.",
+      "keywords": [
+        "Viande",
+        "Plat Principal",
+        "Snack",
+        "Protéiné",
+        "Rapide",
+        "mini burger",
+        "cheeseburger",
+        "sliders"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+"fr": [
+{
+"slug": "mozzarella-in-carrozza",
+"title": "Mozzarella in Carrozza (Sandwich Doré au Fromage)",
+"description": "Le nec plus ultra du réconfort italien : des sandwichs de pain de mie généreusement farcis de mozzarella, panés et dorés à l'airfryer pour un résultat croustillant et un cœur incroyablement filant.",
+"keywords": [
+"Œufs/Fromages",
+"Antipasto",
+"Snack",
+"Protéique",
+"Végétarien",
+"mozzarella in carrozza",
+"beignet de fromage",
+"street food italienne"
+]
+},
+{
+"slug": "calamars-frits-croustillants",
+"title": "Calamars Frits à la Romaine (Sans Friture)",
+"description": "Obtenez des anneaux de calamar parfaitement croustillants grâce à une fine panure de semoule de blé dur. La cuisson à l'air chaud remplace la friture traditionnelle pour plus de légèreté.",
+"keywords": [
+"Fruits de mer",
+"Entrée",
+"Plat principal",
+"Protéique",
+"calamars frits",
+"calamars airfryer",
+"tapas de la mer"
+]
+},
+{
+"slug": "poivrons-farcis",
+"title": "Poivrons Farcis à la Viande (Gourmands et Moelleux)",
+"description": "Des poivrons rôtis farcis d'un mélange savoureux de viande hachée, de parmesan et d'herbes. Un plat complet et coloré où le légume devient tendre et la farce reste juteuse.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"poivrons farcis",
+"plat familial",
+"poivrons rôtis"
+]
+},
+{
+"slug": "saucisse-et-pommes-de-terre-rustiques",
+"title": "Saucisses et Pommes de Terre au Romarin",
+"description": "Un plat rustique et efficace : des saucisses de porc grillées accompagnées de pommes de terre fondantes, le tout parfumé à l'ail et au romarin frais. Un régal prêt en un rien de temps.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"saucisse grillée",
+"pommes de terre rôties",
+"repas rapide"
+]
+},
+{
+"slug": "frittata-di-maccheroni-pates",
+"title": "Omelette de Pâtes à la Napolitaine (Croustillante)",
+"description": "La célèbre 'frittata di maccheroni' : une omelette de pâtes généreuse avec une croûte dorée et un cœur tendre. Parfaite pour recycler vos restes de pâtes ou pour un pique-nique gourmand.",
+"keywords": [
+"Œufs/Fromages",
+"Plat principal",
+"Protéiné",
+"omelette de pâtes",
+"frittata di maccheroni",
+"cuisine anti-gaspi"
+]
+},
+{
+"slug": "cotolette-a-la-milanaise",
+"title": "Escalope à la Milanaise (Dorée et Légère)",
+"description": "Succombez à la véritable escalope milanaise avec une chapelure fine et croquante. La friteuse à air assure une dorure parfaite sans avoir besoin de plonger la viande dans le beurre.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"escalope milanaise",
+"cotoletta",
+"viande panée"
+]
+},
+{
+"slug": "artichauts-croquants-romaine",
+"title": "Artichauts à la Romaine (Cœur Fondant)",
+"description": "Apprenez à sublimer les artichauts avec cette cuisson qui rend les feuilles extérieures croustillantes comme des chips tout en gardant un cœur fondant et parfumé.",
+"keywords": [
+"Légumes",
+"Entrée",
+"Accompagnement",
+"Végétarien",
+"Végétalien",
+"LowCarb",
+"Rapide",
+"artichauts grillés",
+"cuisine romaine"
+]
+},
+{
+"slug": "fleurs-de-courgettes-frites",
+"title": "Fleurs de Courgettes Farcies (Mozzarella et Anchois)",
+"description": "Une spécialité estivale raffinée : des fleurs de courgettes délicates, farcies d'un cœur fondant de mozzarella et d'une pointe d'anchois, enveloppées dans une panure légère.",
+"keywords": [
+"Légumes",
+"Poisson",
+"Œufs/Fromages",
+"Entrée",
+"Snack",
+"Protéique",
+"fleurs de courgettes",
+"beignets de fleurs",
+"antipasto chic"
+]
+},
+{
+"slug": "bruschetta-tomate-basilic",
+"title": "Bruschetta Classique (Tomate, Basilic et Ail)",
+"description": "Le secret d'une bonne bruschetta réside dans le pain : grillé à la perfection pour rester croquant sous une garniture de tomates fraîches juteuses, d'ail et de basilic parfumé.",
+"keywords": [
+"Légumes",
+"Antipasto",
+"Végétarien",
+"Végétalien",
+"Rapide",
+"bruschetta maison",
+"apéritif italien",
+"pain grillé"
+]
+},
+{
+"slug": "gnocchis-frits-aperitif",
+"title": "Gnocchis Frits (L'Apéritif Croquant et Ludique)",
+"description": "Oubliez les gnocchis bouillis ! Frits à l'air chaud, ils deviennent des petites bouchées croustillantes à l'extérieur et moelleuses à l'intérieur. Idéal pour tremper dans une sauce tomate.",
+"keywords": [
+"Légumes",
+"Apéritif",
+"Végétarien",
+"Rapide",
+"gnocchis frits",
+"tapas express",
+"bouchées apéritives"
+]
+},
+{
+"slug": "castagnole-ricotta-carnaval",
+"title": "Castagnole à la Ricotta (Douceurs de Carnaval)",
+"description": "De petites boules de pâte à la ricotta, tendres et parfumées aux agrumes. Une version allégée grâce à l'airfryer pour célébrer le Carnaval avec gourmandise et légèreté.",
+"keywords": [
+"Dessert",
+"Snack",
+"Végétarien",
+"Protéiné",
+"Rapide",
+"beignets ricotta",
+"castagnole",
+"dessert italien"
+]
+},
+{
+"slug": "panzerotti-des-pouilles-rapides",
+"title": "Panzerotti des Pouilles (Chaussons Tomate-Mozzarella)",
+"description": "Retrouvez le goût authentique des Pouilles avec ces chaussons de pâte levée farcis. La mozzarella fond sur la tomate pour un cœur chaud et filant à chaque bouchée.",
+"keywords": [
+"Œufs/Fromages",
+"Entrée",
+"Snack",
+"Protéique",
+"Végétarien",
+"Rapide",
+"panzerotti",
+"chaussons italiens",
+"tomate mozzarella"
+]
+},
+{
+"slug": "focaccia-moelleuse-romarin",
+"title": "Focaccia Moelleuse au Romarin (Haute et Aérée)",
+"description": "Une focaccia épaisse et incroyablement souple, parsemée de gros sel et de romarin. Ses alvéoles gourmandes retiennent l'huile d'olive pour un parfum irrésistible.",
+"keywords": [
+"Pâtes levées",
+"Apéritif",
+"Snack",
+"Végétarien",
+"Végan",
+"focaccia moelleuse",
+"pain au romarin",
+"boulangerie maison"
+]
+},
+{
+"slug": "friture-de-calamars-et-crevettes",
+"title": "Friture de la Mer (Calamars et Crevettes)",
+"description": "Le duo gagnant des tables méditerranéennes. Calamars et crevettes sont enrobés d'une fine semoule croustillante pour une friture légère, saine et pleine de saveurs marines.",
+"keywords": [
+"Poisson",
+"Fruits de mer",
+"Plat principal",
+"Entrée",
+"Protéiné",
+"friture de la mer",
+"mélange calamars crevettes"
+]
+},
+{
+"slug": "friture-de-petits-poissons-paranza",
+"title": "Friture de Petits Poissons (Frittura di Paranza)",
+"description": "Dégustez ces petits poissons croustillants à manger entiers, comme au bord de la mer. Une cuisson rapide à haute température pour un résultat extra-crunchy.",
+"keywords": [
+"Poisson",
+"Plat principal",
+"Protéique",
+"LowCarb",
+"Friture",
+"friture de poissons",
+"paranza",
+"poisson croustillant"
+]
+},
+{
+"slug": "petits-calmars-frits-croustillants",
+"title": "Petits Calmars Frits (Tendres et Croquants)",
+"description": "Ces petits calmars entiers sont saisis à l'air chaud pour devenir irrésistiblement croquants tout en restant fondants à l'intérieur. Un délice à arroser d'un filet de citron.",
+"keywords": [
+"Poisson",
+"Plat principal",
+"Entrée",
+"Protéiné",
+"Calamars",
+"Friture",
+"Fruits de mer",
+"calamars entiers"
+]
+},
+{
+"slug": "crevettes-dorees-croustillantes",
+"title": "Crevettes Panées Express (Dorées et Savoureuses)",
+"description": "Des crevettes charnues enveloppées d'une panure dorée. Une préparation simple et élégante, idéale pour un dîner léger ou pour agrémenter vos salades composées.",
+"keywords": [
+"Poisson",
+"Plat Principal",
+"Entrée",
+"Protéique",
+"crevettes panées",
+"beignets de crevettes",
+"entrée rapide"
+]
+},
+{
+"slug": "frites-rustiques-congelees",
+"title": "Frites Rustiques avec Peau (Le Vrai Goût de la Pomme de Terre)",
+"description": "Donnez une seconde vie à vos frites surgelées ! La cuisson en airfryer avec leur peau préserve les arômes naturels et offre une texture rustique, croquante et peu grasse.",
+"keywords": [
+"Légumes",
+"Accompagnement",
+"Snack",
+"Végétarien",
+"Végétalien",
+"Pommes de terre",
+"Surgelé",
+"Frites",
+"frites rustiques",
+"frites à la peau"
+]
+},
+{
+"slug": "chips-de-mais-maison",
+"title": "Chips de Tortilla Maison (Dorées et Craquantes)",
+"description": "Réalisez vos propres nachos ! Des triangles de tortilla de maïs grillés jusqu'à devenir parfaitement craquants. Le compagnon idéal de votre guacamole ou sauce salsa.",
+"keywords": [
+"Verdures",
+"Apéritif",
+"Snack",
+"Végétarien",
+"Végan",
+"Rapide",
+"chips de maïs",
+"tortilla chips",
+"nachos maison"
+]
+},
+{
+"slug": "batonnets-patate-douce-paprika",
+"title": "Frites de Patate Douce au Paprika (Sucré-Salé)",
+"description": "Une alternative colorée aux frites classiques. Ces bâtonnets de patate douce au paprika fumé sont à la fois doux, épicés et incroyablement savoureux.",
+"keywords": [
+"Légumes",
+"Accompagnement",
+"Snack",
+"Végétarien",
+"Végétalien",
+"patate douce",
+"frites patate douce",
+"épices paprika"
+]
+}
+]
+}

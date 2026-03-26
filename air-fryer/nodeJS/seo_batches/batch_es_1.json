@@ -1,0 +1,277 @@
+{
+  "es": [
+    {
+      "slug": "anillos-de-calamar-fritos",
+      "title": "Anillas de Calamar a la Romana (Súper Crujientes)",
+      "description": "El secreto de un rebozado perfecto. Estas anillas se envuelven en sémola de trigo duro para lograr una textura exterior extra crujiente que protege un interior tierno y jugoso. Un clásico del tapeo sin excesos de grasa.",
+      "keywords": [
+        "Pescado",
+        "Aperitivo",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "calamares",
+        "tapa"
+      ]
+    },
+    {
+      "slug": "filete-empanado-italiano",
+      "title": "Escalope de Ternera Empanado y Dorado",
+      "description": "La sencillez hecha delicia. Disfruta de un filete de carne con un empanado uniforme que se vuelve dorado y crujiente al instante, manteniendo toda la jugosidad de la carne en cada bocado.",
+      "keywords": [
+        "Carne",
+        "Plat principal",
+        "Proteico",
+        "Crujiente",
+        "Salado",
+        "Fácil",
+        "escalope",
+        "milanesa"
+      ]
+    },
+    {
+      "slug": "pastel-de-carne-relleno-freidora-aire",
+      "title": "Pastel de Carne Relleno de Jamón y Queso",
+      "description": "Una sorpresa deliciosa en el centro. Este pastel de carne picada desarrolla una costra exterior perfectamente sellada que guarda en su interior el irresistible placer del queso fundido y el sabor del jamón.",
+      "keywords": [
+        "Carne",
+        "Plat principal",
+        "Proteico",
+        "queso fundido",
+        "cena rápida"
+      ]
+    },
+    {
+      "slug": "salchicha-patatas-cubos",
+      "title": "Dúo Rústico: Salchichas con Patatas al Punto",
+      "description": "La combinación ganadora para una cena sin complicaciones. Al cocinarse juntas, las patatas absorben el aroma de las salchichas, quedando doradas por fuera y suaves como mantequilla por dentro.",
+      "keywords": [
+        "Carne",
+        "Verduras",
+        "Guarnición",
+        "Patatas",
+        "Salchicha",
+        "Crujiente",
+        "plato combinado"
+      ]
+    },
+    {
+      "slug": "arrosticini-abruzzesi-freidora-aire",
+      "title": "Arrosticini: Brochetas de Cordero al Estilo Abruzos",
+      "description": "Viaja a Italia con estas brochetas tradicionales. La alta temperatura funde la grasa exterior para sellar los jugos naturales del cordero, logrando una carne tierna con ese toque tostado tan característico.",
+      "keywords": [
+        "Carne",
+        "Plat principal",
+        "Proteico",
+        "LowCarb",
+        "Rápido",
+        "cordero",
+        "brochetas"
+      ]
+    },
+    {
+      "slug": "alcachofas-estilo-judia-freidora-aire",
+      "title": "Alcachofas a la Judía (Carciofi alla Giudia)",
+      "description": "Una joya de la cocina romana. Las hojas se abren como una flor y se vuelven tan crujientes como las patatas fritas, mientras el corazón permanece tierno y lleno de sabor. Una experiencia gourmet vegetal.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "LowCarb",
+        "alcachofas"
+      ]
+    },
+    {
+      "slug": "verduras-rellenas-arroz-carne",
+      "title": "Verduras Rellenas Tradicionales",
+      "description": "Platos completos y equilibrados. Ya sea con arroz o carne picada, las verduras se asan lentamente hasta ablandarse, permitiendo que el relleno absorba todos los jugos naturales para un sabor intenso.",
+      "keywords": [
+        "Carne",
+        "Verduras",
+        "Plat principal",
+        "Proteico",
+        "Vegetariano",
+        "rellenos"
+      ]
+    },
+    {
+      "slug": "patatas-horno-dados-romero",
+      "title": "Patatas al Romero con Toque de Ajo",
+      "description": "La guarnición definitiva. Cubos de patata asados con romero fresco y ajo que desprenden un aroma irresistible, logrando esos bordes tostados que todo el mundo busca en el plato.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "patatas asadas",
+        "guarnición clásica"
+      ]
+    },
+    {
+      "slug": "tarta-salada-ricotta-espinacas",
+      "title": "Tarta Rústica de Ricotta y Espinacas",
+      "description": "Suavidad y sabor en cada porción. Una base de hojaldre crujiente sostiene un relleno cremoso de queso ricotta y espinacas frescas. Perfecta para un picnic, un entrante o una cena ligera.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Entrante",
+        "Proteico",
+        "Vegetariano",
+        "Tarta salada",
+        "Ricotta",
+        "Espinacas"
+      ]
+    },
+    {
+      "slug": "castanas-asadas-freidora-aire",
+      "title": "Castañas Asadas (Sabor a Otoño)",
+      "description": "El placer de las castañas recién hechas en casa. Gracias al remojo previo, se pelan con facilidad, ofreciendo un interior dulce y harinoso con ese aroma tostado tan reconfortante.",
+      "keywords": [
+        "Verduras",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "Castañas",
+        "Otoño",
+        "frutos secos"
+      ]
+    },
+    {
+      "slug": "arancini-suppli-freidora-aire",
+      "title": "Arancini y Supplì Crujientes",
+      "description": "Lo mejor del 'street food' italiano. Estas croquetas de arroz consiguen un empanado dorado y firme que, al morderlo, libera un corazón de mozzarella fundida extremadamente elástica.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Aperitivo",
+        "Snack",
+        "Carne",
+        "Rápido",
+        "comida italiana",
+        "arroz"
+      ]
+    },
+    {
+      "slug": "croquetas-patatas-panzarotti",
+      "title": "Panzarotti: Croquetas de Patata y Mozzarella",
+      "description": "Pura cremosidad envuelta en crujiente. El puré de patata suave se combina con un relleno de queso que se funde durante la cocción, creando un bocado dorado irresistible para grandes y pequeños.",
+      "keywords": [
+        "Verduras",
+        "Huevos/Quesos",
+        "Entrante",
+        "Guarnición",
+        "Snack",
+        "Proteico",
+        "Vegetariano"
+      ]
+    },
+    {
+      "slug": "focaccia-rapida-al-aceite",
+      "title": "Focaccia Crujiente al Aceite y Romero",
+      "description": "Pan recién hecho en minutos. Una masa fina y dorada, impregnada de aceite de oliva virgen extra y sal gruesa, que se convierte en el compañero ideal para tus tablas de embutidos o quesos.",
+      "keywords": [
+        "Masas",
+        "Aperitivo",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "Rápido",
+        "focaccia",
+        "pan casero"
+      ]
+    },
+    {
+      "slug": "croissants-hojaldre-rellenos",
+      "title": "Mini Croissants de Hojaldre (Dulces o Salados)",
+      "description": "Pequeños bocados de felicidad. Estos mini croissants se hornean hasta alcanzar un hojaldrado perfecto y un color dorado, ideales para un desayuno especial o una merienda rápida.",
+      "keywords": [
+        "Dulce",
+        "Postre",
+        "Desayuno",
+        "Snack",
+        "Vegetariano",
+        "hojaldre",
+        "pastelería"
+      ]
+    },
+    {
+      "slug": "parmigiana-de-berenjenas",
+      "title": "Berenjenas a la Parmesana (Estilo Tradicional)",
+      "description": "Capas de sabor mediterráneo. Berenjenas tiernas se alternan con salsa de tomate casera, mozzarella fundida y un toque generoso de parmesano gratinado para un plato reconfortante.",
+      "keywords": [
+        "Verduras",
+        "Huevos/Quesos",
+        "Plat principal",
+        "Guarnición",
+        "Vegetariano",
+        "Proteico",
+        "LowCarb",
+        "parmigiana"
+      ]
+    },
+    {
+      "slug": "albondigas-de-la-abuela-con-salsa",
+      "title": "Albóndigas de la Abuela en Salsa de Tomate",
+      "description": "El sabor de siempre, ahora más ligero. Albóndigas jugosas cocinadas en una salsa de tomate espesa y aromática, listas para mojar pan y disfrutar de un segundo plato clásico.",
+      "keywords": [
+        "Carne",
+        "Plat principal",
+        "Proteico",
+        "Rápido",
+        "albóndigas",
+        "cocina casera"
+      ]
+    },
+    {
+      "slug": "arancini-sicilianos-ragu",
+      "title": "Arancini Siciliani al Ragú (Corazón de Carne)",
+      "description": "Una explosión de sabor siciliano. Estas esferas de arroz cuentan con un rebozado crujiente hecho con muy poco aceite que esconde un guiso de carne (ragú) jugoso y sabroso.",
+      "keywords": [
+        "Carne",
+        "Entrante",
+        "Primer plato",
+        "Snack",
+        "Proteico",
+        "Rápido",
+        "Sicilia"
+      ]
+    },
+    {
+      "slug": "aceitunas-a-la-ascolana",
+      "title": "Aceitunas Ascolanas Rellenas de Carne",
+      "description": "El aperitivo más sorprendente de Las Marcas. Aceitunas verdes carnosas rellenas de una mezcla de carne sazonada y empanadas hasta lograr un crujiente perfecto. ¡Imposible comer solo una!",
+      "keywords": [
+        "Carne",
+        "Aperitivo",
+        "Proteico",
+        "aceitunas rellenas",
+        "especialidad"
+      ]
+    },
+    {
+      "slug": "calabacines-rellenos-estilo-liguria",
+      "title": "Calabacines Rellenos a la Ligur (Gratinados)",
+      "description": "Frescura y gratín en un solo plato. Calabacines rellenos de una mezcla equilibrada de carne y queso, horneados hasta que la parte superior queda dorada y crujiente.",
+      "keywords": [
+        "Carne",
+        "Plat principal",
+        "Proteico",
+        "calabacín relleno",
+        "gratinado"
+      ]
+    },
+    {
+      "slug": "suppli-romanos-telefono",
+      "title": "Supplì al Telefono (Estilo Romano)",
+      "description": "El clásico de Roma. Estas croquetas de arroz con tomate se llaman 'al telefono' porque al abrirlas, la mozzarella fundida forma un hilo que recuerda al cable de un teléfono antiguo.",
+      "keywords": [
+        "Huevos/Quesos",
+        "Entrante",
+        "Proteico",
+        "Vegetariano",
+        "Roma",
+        "suppli"
+      ]
+    }
+  ]
+}

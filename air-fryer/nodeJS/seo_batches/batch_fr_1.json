@@ -1,0 +1,303 @@
+{
+"fr": [
+{
+"slug": "anneaux-calamars-frits",
+"title": "Calamars Frits à la Semoule (Extra Croustillants)",
+"description": "Redécouvrez les anneaux de calamars avec une panure à la semoule de blé dur pour un craquant incomparable. Une cuisson rapide en friteuse à air qui préserve la tendreté du poulpe sans l'excès d'huile.",
+"keywords": [
+"Poisson",
+"Entrée",
+"Plat principal",
+"Apéritif",
+"Protéiné",
+"calamars frits",
+"friture de la mer",
+"tapas rapides"
+]
+},
+{
+"slug": "escalope-panee-cotoletta",
+"title": "Cotoletta Dorée (Escalope Panée Express)",
+"description": "L'indémodable escalope panée, version légère. Obtenez une chapelure bien dorée et une viande juteuse grâce à la circulation d'air chaud. Parfait pour un déjeuner familial rapide et savoureux.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"Poulet",
+"Veau",
+"escalope panée",
+"milanaise",
+"repas enfant"
+]
+},
+{
+"slug": "pain-de-viande-farcie-friteuse-air",
+"title": "Pain de Viande Farci (Jambon et Fromage Fondant)",
+"description": "Un classique revisité avec un cœur surprise. Ce pain de viande hachée cache un mélange de jambon et de fromage coulant, avec une croûte extérieure parfaitement saisie à l'airfryer.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"pain de viande",
+"cœur fondant",
+"cuisine réconfortante"
+]
+},
+{
+"slug": "saucisse-et-pommes-de-terre-en-cubes",
+"title": "Duo Saucisse et Pommes de Terre Rôties",
+"description": "Le plat complet par excellence : des dés de pommes de terre qui dorent dans le jus parfumé des saucisses de porc. Une cuisson simultanée pour un gain de temps et un maximum de saveurs.",
+"keywords": [
+"Viande",
+"Légumes",
+"Plat principal",
+"Protéiné",
+"plat unique",
+"saucisse grillée",
+"pommes de terre rissolées"
+]
+},
+{
+"slug": "arrosticini-abruzzesi-friteuse-air",
+"title": "Arrosticini des Abruzzes (Brochettes de Mouton)",
+"description": "Voyagez en Italie avec ces célèbres brochettes de mouton. La friteuse à air saisit la viande à haute température, la rendant croustillante à l'extérieur tout en restant incroyablement tendre.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"LowCarb",
+"Rapide",
+"arrosticini",
+"cuisine italienne",
+"brochettes agneau"
+]
+},
+{
+"slug": "artichauts-a-la-juive-friteuse-air",
+"title": "Artichauts à la Juive (Croustillants comme à Rome)",
+"description": "Une merveille de texture : des feuilles aussi croquantes que des chips et un cœur fondant. Cette version à l'airfryer simplifie ce monument de la cuisine romaine en utilisant très peu d'huile.",
+"keywords": [
+"Légumes",
+"Entrée",
+"Contour",
+"Végétarien",
+"Végétalien",
+"LowCarb",
+"Rapide",
+"artichauts frits",
+"carciofi alla giudia"
+]
+},
+{
+"slug": "legumes-farcis-riz-viande",
+"title": "Légumes Farcis Tradition (Tomates et Poivrons)",
+"description": "Tomates et poivrons gorgés de soleil, généreusement garnis de viande hachée ou de riz. La cuisson à l'air chaud concentre les saveurs des légumes tout en cuisant la farce à cœur.",
+"keywords": [
+"Légumes",
+"Viande",
+"Plat principal",
+"Protéiné",
+"Végétarien",
+"légumes farcis",
+"cuisine méditerranéenne",
+"tomates farcies"
+]
+},
+{
+"slug": "pommes-de-terre-en-des-romarin",
+"title": "Pommes de Terre au Romarin (Le Classique Rôti)",
+"description": "Des cubes de pommes de terre croustillants parfumés à l'ail frais et au romarin. L'alternative idéale et saine aux frites traditionnelles pour accompagner tous vos plats.",
+"keywords": [
+"Légumes",
+"Accompagnement",
+"Végétarien",
+"Végétalien",
+"Pomme de terre",
+"Romarin",
+"pommes de terre sautées",
+"garniture ail"
+]
+},
+{
+"slug": "tarte-salee-ricotta-epinards",
+"title": "Tarte Ricotta et Épinards (Onctueuse et Dorée)",
+"description": "Une alliance indémodable entre la douceur de la ricotta et le caractère des épinards. Une tarte salée à la pâte croustillante, parfaite pour un dîner léger ou une entrée végétarienne.",
+"keywords": [
+"Légumes",
+"Œufs/Fromages",
+"Plat principal",
+"Entrée",
+"Végétarien",
+"Protéiné",
+"Ricotta",
+"Épinards",
+"tarte salée",
+"quiche végétarienne"
+]
+},
+{
+"slug": "chataignes-grillees-friteuse-air",
+"title": "Châtaignes Grillées (Comme au Feu de Bois)",
+"description": "Retrouvez le goût des soirées d'automne. Grâce à l'airfryer, vos châtaignes sont parfaitement grillées, faciles à éplucher et tendres à souhait en un temps record.",
+"keywords": [
+"Légumes",
+"En-cas",
+"Accompagnement",
+"Végétarien",
+"Végétalien",
+"Sans gluten",
+"Châtaignes",
+"Automne",
+"marrons grillés"
+]
+},
+{
+"slug": "arancini-suppli-friteuse-air",
+"title": "Arancini et Supplì (Cœur de Mozzarella Filant)",
+"description": "Le secret d'un bon snack italien : une panure ultra-croustillante et un riz savoureux qui cache un fromage fondant. Une cuisson sans friture pour plus de légèreté sans sacrifier le plaisir.",
+"keywords": [
+"Œufs/Fromages",
+"Entrée",
+"Snack",
+"Viande",
+"Protéiné",
+"Rapide",
+"Riz",
+"Mozzarella",
+"boulettes de riz",
+"street food"
+]
+},
+{
+"slug": "croquettes-de-pommes-de-terre-panzarotti",
+"title": "Croquettes de Pommes de Terre (Panzarotti Fondants)",
+"description": "Des croquettes de pommes de terre maison, dorées et craquantes. À chaque bouchée, découvrez un cœur de mozzarella filante. Une recette qui ravira petits et grands au moment de l'apéritif.",
+"keywords": [
+"Légumes",
+"Œufs/Fromages",
+"Entrée",
+"Accompagnement",
+"Snack",
+"Végétarien",
+"Protéiné",
+"croquettes maison",
+"panzarotti"
+]
+},
+{
+"slug": "focaccia-rapide-huile-d-olive",
+"title": "Focaccia Express au Romarin (Fine et Croquante)",
+"description": "Une focaccia maison prête en un clin d'œil. Fine, parfumée à l'huile d'olive extra vierge et parsemée de gros sel, elle est la compagne idéale de vos planches de charcuterie.",
+"keywords": [
+"Pâtes levées",
+"Antipasto",
+"Snack",
+"Végétarien",
+"Végan",
+"focaccia maison",
+"pain italien",
+"apéritif rapide"
+]
+},
+{
+"slug": "mini-croissants-pate-feuilletee",
+"title": "Mini-Croissants Feuilletés (Petit-Déjeuner Express)",
+"description": "Réalisez des mini-croissants dorés et croustillants en quelques minutes. Fourrez-les selon vos envies (chocolat, confiture ou pâte à tartiner) pour un goûter gourmand et rapide.",
+"keywords": [
+"Dessert",
+"Petit-déjeuner",
+"Goûter",
+"Végétarien",
+"Rapide",
+"viennoiserie maison",
+"pâte feuilletée"
+]
+},
+{
+"slug": "parmigiana-d-aubergines",
+"title": "Parmigiana d'Aubergines (Version Légère et Savoureuse)",
+"description": "Tout le goût de la célèbre Parmigiana italienne avec beaucoup moins de calories. Les aubergines sont grillées à l'air chaud avant d'être gratinées avec de la tomate et du fromage.",
+"keywords": [
+"Légumes",
+"Œufs/Fromages",
+"Plat principal",
+"Protéiné",
+"Végétarien",
+"LowCarb",
+"parmigiana aubergine",
+"gratin italien"
+]
+},
+{
+"slug": "boulettes-de-grand-mere-a-la-sauce-tomate",
+"title": "Boulettes de Viande à l'Italienne (Sauce Tomate)",
+"description": "Des boulettes de bœuf et porc moelleuses, saisies à l'airfryer puis mijotées dans une sauce tomate onctueuse. Le goût authentique des recettes de grand-mère en version moderne.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"Rapide",
+"boulettes viande",
+"polpette",
+"plat familial"
+]
+},
+{
+"slug": "arancini-siciliens-ragout",
+"title": "Arancini Siciliens au Ragoût (Le Goût de l'Italie)",
+"description": "Véritable institution sicilienne, ces boules de riz sont farcies d'un ragoût de viande savoureux. La cuisson à air pulsé leur donne cette croûte orangée et craquante si caractéristique.",
+"keywords": [
+"Viande",
+"Antipasto",
+"Plat principal",
+"Protéiné",
+"arancini ragu",
+"spécialité sicilienne",
+"riz farci"
+]
+},
+{
+"slug": "olives-ascolana",
+"title": "Olives à l'Ascolana (Olives Farcies à la Viande)",
+"description": "Des olives vertes charnues, farcies d'une préparation à la viande et panées. Une spécialité croustillante et surprenante, parfaite pour un apéritif dînatoire raffiné.",
+"keywords": [
+"Viande",
+"Apéritif",
+"Protéiné",
+"Rapide",
+"oliva ascolana",
+"tapas italiennes",
+"olives panées"
+]
+},
+{
+"slug": "courgettes-farcies-ligure",
+"title": "Courgettes Farcies à la Ligure (Grilles et Tendres)",
+"description": "Des courgettes découpées en barquettes et garnies d'une farce savoureuse. L'airfryer permet une cuisson homogène : la viande est bien saisie et le légume reste fondant.",
+"keywords": [
+"Viande",
+"Plat principal",
+"Protéiné",
+"courgettes farcies",
+"plat sain",
+"recette méditerranéenne"
+]
+},
+{
+"slug": "suppli-romains-au-telephone",
+"title": "Supplì Romains au Téléphone (Riz et Tomate)",
+"description": "Pourquoi 'au téléphone' ? Parce que la mozzarella fondue s'étire comme un fil entre les deux morceaux ! Des croquettes de riz à la tomate typiques de la street food romaine.",
+"keywords": [
+"Œufs/Fromages",
+"Entrée",
+"En-cas",
+"Protéique",
+"Végétarien",
+"Rapide",
+"suppli al telefono",
+"croquettes riz",
+"snack romain"
+]
+}
+]
+}

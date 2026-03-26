@@ -1,0 +1,322 @@
+{
+"it": [
+{
+"slug": "costolette-agnello-limone",
+"title": "Costolette di Agnello al Limone (Pelle Croccante in Friggitrice ad Aria)",
+"description": "Costolette di agnello tenere e profumate con una marinatura sprint all'aglio e limone. La friggitrice ad aria garantisce una rosolatura da ristorante in pochi minuti.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Agnello",
+"Limone",
+"costolette Friggitrice ad Aria",
+"agnello veloce",
+"secondo piatto light"
+]
+},
+{
+"slug": "empanadas-di-manzo",
+"title": "Empanadas di Manzo in Friggitrice ad Aria (Dorate e Croccanti)",
+"description": "Fagottini argentini dal cuore succoso di carne e paprika. Con la cottura in Friggitrice ad Aria otterrai una pasta brisée friabile e leggera senza dover accendere il forno.",
+"keywords": [
+"Carne",
+"Antipasto",
+"Snack",
+"Proteico",
+"Manzo",
+"Cipollotti",
+"empanadas veloci",
+"aperitivo etnico",
+"fagottini di carne"
+]
+},
+{
+"slug": "filetto-maiale-verdure",
+"title": "Filetto di Maiale e Verdure (Piatto Unico in Friggitrice ad Aria)",
+"description": "Una cena completa e sana pronta in un solo cestello! Il filetto di maiale resta succulento mentre i suoi succhi insaporiscono un mix di verdure fresche e croccanti.",
+"keywords": [
+"Carne",
+"Verdure",
+"Secondo",
+"Contorno",
+"Proteico",
+"Maiale",
+"cena completa Friggitrice ad Aria",
+"maiale e verdure",
+"ricetta salva tempo"
+]
+},
+{
+"slug": "costolette-agnello",
+"title": "Costolette di Agnello in Friggitrice ad Aria (Tenerissime!)",
+"description": "Il secondo di carne perfetto per Pasqua. Costolette di agnello croccanti fuori e succose dentro in soli 10 minuti. Ricetta proteica e low carb senza fumo in casa!",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"Low Carb",
+"Chetogenica",
+"Costolette agnello",
+"Abbacchio",
+"Pasqua"
+]
+},
+{
+"slug": "mini-torta-pasqualina",
+"title": "Mini Torte Pasqualine (Pronte in 15 min!)",
+"description": "L'antipasto vegetariano perfetto per Pasqua. Mini torte salate chiuse a scrigno con spinaci, ricotta e uovo nascosto. Sfoglia croccantissima garantita in 15 minuti.",
+"keywords": [
+"Vegetariano",
+"Torta pasqualina",
+"Antipasto",
+"Pasqua",
+"Rustici spinaci e ricotta"
+]
+},
+{
+"slug": "casatiello-napoletano",
+"title": "Casatiello Napoletano (Soffice e Veloce!)",
+"description": "Il re della Pasqua! Scopri come cuocere un Casatiello morbidissimo e ricco di ripieno dorato e garantito in 35 minuti.",
+"keywords": [
+"Pasqua",
+"Torta salata",
+"Lievitati",
+"Rustico",
+"Casatiello",
+"Antipasto pasquale",
+"Torta rustica",
+"Pasqua"
+]
+},
+{
+"slug": "mini-pastiera-napoletana",
+"title": "Mini Pastiere Napoletane (Dolce di Pasqua!)",
+"description": "Tutto il profumo della tradizione, ma in versione monoporzione! Le mini pastiere restano umide al centro con una frolla iper croccante. Pronte in 20 min.",
+"keywords": [
+"Dolce",
+"Dessert",
+"Pasqua",
+"Pastiera napoletana",
+"Ricotta",
+"Monoporzione",
+"Dolci veloci"
+]
+},
+{
+"slug": "hamburger-classico",
+"title": "Hamburger Perfetto in Friggitrice ad Aria (Succoso e Dorato)",
+"description": "Ottieni un hamburger da steakhouse direttamente a casa tua. La friggitrice ad aria sigilla i succhi all'interno garantendo una rosolatura esterna uniforme e veloce.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Veloce",
+"Manzo",
+"hamburger Friggitrice ad Aria",
+"burger fatto in casa",
+"cena veloce"
+]
+},
+{
+"slug": "hamburger-deluxe",
+"title": "Burger Deluxe in Friggitrice ad Aria (Pane Tostato e Carne Succosa)",
+"description": "L'hamburger completo: carne di manzo rosolata, pane tostato nell'Friggitrice ad Aria e la freschezza di pomodoro e lattuga. Il fast food diventa sano e gourmet.",
+"keywords": [
+"Carne",
+"Lievitati",
+"Secondo",
+"Proteico",
+"Manzo",
+"Pomodoro",
+"hamburger gourmet",
+"burger deluxe",
+"panino farcito"
+]
+},
+{
+"slug": "hamburger-tacchino-asiatico",
+"title": "Burger di Tacchino allo Zenzero (Leggero e Aromatico in Friggitrice ad Aria)",
+"description": "Un'alternativa magra e saporita! Hamburger di tacchino profumati con zenzero e soia, resi succosi dalla cottura rapida in friggitrice ad aria. Ideale per la dieta.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"Tacchino",
+"Zenzero",
+"burger tacchino",
+"ricetta asiatica",
+"secondo light"
+]
+},
+{
+"slug": "hot-dog-newyorkese",
+"title": "Hot Dog al Cheddar in Friggitrice ad Aria (Filante e Croccante)",
+"description": "Porta New York in cucina! Salsiccia arrostita, pane fragrante e cheddar fuso in un'unica mossa. Il segreto per un hot dog perfetto è tutto nella cottura ad aria.",
+"keywords": [
+"Carne",
+"Lievitati",
+"Secondo",
+"Snack",
+"Proteico",
+"Salsiccia",
+"Cheddar",
+"hot dog veloce",
+"panino con wurstel",
+"cena street food"
+]
+},
+{
+"slug": "involtini-maiale-prosciutto",
+"title": "Involtini di Maiale e Crudo (Guscio Croccante in Friggitrice ad Aria)",
+"description": "Involtini gourmet farciti con spinaci e mozzarella, avvolti nel prosciutto crudo che diventa croccantissimo in Friggitrice ad Aria. Un secondo piatto raffinato e veloce.",
+"keywords": [
+"Carne",
+"Uova/Formaggi",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Maiale",
+"Prosciutto",
+"involtini sfiziosi",
+"maiale ripieno",
+"carne saporita"
+]
+},
+{
+"slug": "jalapenos-ripieni-bacon",
+"title": "Jalapeños al Bacon in Friggitrice ad Aria (Piccanti e Croccanti)",
+"description": "L'antipasto esplosivo: peperoncini jalapeño ripieni di formaggio e carne, avvolti in pancetta croccante. Preparati in friggitrice ad aria sono irresistibili.",
+"keywords": [
+"Carne",
+"Verdure",
+"Antipasto",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Peperoncino",
+"Pancetta",
+"jalapeno poppers",
+"snack piccante",
+"bacon Friggitrice ad Aria"
+]
+},
+{
+"slug": "kofta-manzo-coriandolo",
+"title": "Kofta di Manzo in Friggitrice ad Aria (Spiedini Speziati e Light)",
+"description": "Viaggia in Medio Oriente con questi spiedini di manzo speziati. Doratura uniforme e sapore intenso grazie alla tecnologia dell'Friggitrice ad Aria. Ottimi con salsa yogurt!",
+"keywords": [
+"Carne",
+"Secondo",
+"Antipasto",
+"Proteico",
+"LowCarb",
+"Manzo",
+"Coriandolo",
+"spiedini speziati",
+"kofta ricetta",
+"carne orientale"
+]
+},
+{
+"slug": "polpette-agnello-mediterraneo",
+"title": "Polpette di Agnello alla Menta (Profumate e Dorate in Friggitrice ad Aria)",
+"description": "Polpette di agnello leggere e aromatiche. La friggitrice ad aria crea una crosticina deliziosa mantenendo l'interno succoso e profumato di menta e cumino.",
+"keywords": [
+"Carne",
+"Secondo",
+"Antipasto",
+"Proteico",
+"LowCarb",
+"Agnello",
+"Menta",
+"polpette agnello",
+"secondo sfizioso",
+"piatto mediterraneo"
+]
+},
+{
+"slug": "polpette-giapponesi",
+"title": "Polpette Glassate al Miso (Gusto Umami in Friggitrice ad Aria)",
+"description": "Polpette di manzo dalla glassatura caramellata irresistibile a base di soia e miso. La cottura ad aria concentra i sapori per un'esperienza giapponese autentica.",
+"keywords": [
+"Carne",
+"Secondo",
+"Antipasto",
+"Proteico",
+"Manzo",
+"Miso",
+"polpette giapponesi",
+"carne glassata",
+"cena etnica veloce"
+]
+},
+{
+"slug": "salsicce-intere-arrostite",
+"title": "Salsicce Arrosto in Friggitrice ad Aria (Succose e Senza Buchi)",
+"description": "Il metodo definitivo per cucinare le salsicce: doratura uniforme, pelle croccante e interno succosissimo. Zero schizzi in cucina e risultato garantito in 15 minuti.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"LowCarb",
+"Veloce",
+"Suino",
+"salsiccia Friggitrice ad Aria",
+"secondo rapido",
+"salsiccia arrosto"
+]
+},
+{
+"slug": "salsiccia-griglia-spirale",
+"title": "Spirale di Salsiccia Miele e Senape (Effetto Brace in Friggitrice ad Aria)",
+"description": "Una presentazione scenografica per un gusto unico. Salsiccia a spirale caramellata con glassa agrodolce, pronta velocemente nella tua friggitrice ad aria.",
+"keywords": [
+"Carne",
+"Secondo",
+"Proteico",
+"Salsiccia",
+"Senape",
+"salsiccia glassata",
+"secondo saporito",
+"spirale di carne"
+]
+},
+{
+"slug": "sandwich-bistecca-rafano",
+"title": "Steak Sandwich al Rafano (Panino Caldo in Friggitrice ad Aria)",
+"description": "Bistecca di manzo succosa e salsa piccante al rafano in un panino croccante. Tutto preparato e scaldato nell'Friggitrice ad Aria per un pranzo da vero pub inglese.",
+"keywords": [
+"Carne",
+"Lievitati",
+"Secondo",
+"Proteico",
+"Veloce",
+"Manzo",
+"Rafano",
+"steak sandwich",
+"panino con carne",
+"pranzo veloce"
+]
+},
+{
+"slug": "spiedini-agnello-shawarma",
+"title": "Spiedini Shawarma di Agnello (Saporiti e Veloci in Friggitrice ad Aria)",
+"description": "Spiedini di agnello macinato ricchi di spezie orientali. La friggitrice ad aria forma una crosta deliziosa in pochi minuti. Perfetti da servire con pane pita!",
+"keywords": [
+"Carne",
+"Secondo",
+"Antipasto",
+"Proteico",
+"LowCarb",
+"Agnello",
+"Spezie",
+"shawarma ricetta",
+"spiedini agnello",
+"cena speziata"
+]
+}
+]
+}

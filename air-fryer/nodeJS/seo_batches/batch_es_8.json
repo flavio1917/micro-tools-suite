@@ -1,0 +1,260 @@
+{
+  "es": [
+    {
+      "slug": "muffins-chocolate-espresso",
+      "title": "Muffins de Chocolate y Espresso Intenso",
+      "description": "El capricho perfecto para los amantes del café. Muffins con un equilibrio magistral entre el amargor del espresso y la dulzura del cacao, logrando una miga esponjosa y oscura.",
+      "keywords": [
+        "Dulce",
+        "Snack",
+        "Desayuno",
+        "Rápido",
+        "chocolate",
+        "café"
+      ]
+    },
+    {
+      "slug": "muffins-rusticos-maiz-queso",
+      "title": "Muffins Salados de Maíz y Cheddar",
+      "description": "Panecillos rústicos con el toque dulce del maíz y la intensidad del queso Cheddar fundido. Ideales para disfrutar tibios como acompañamiento o snack salado.",
+      "keywords": [
+        "Masas",
+        "Huevos/Quesos",
+        "Entrante",
+        "Snack",
+        "Desayuno",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "muffins-limon-arandanos",
+      "title": "Muffins Veganos de Limón y Arándanos",
+      "description": "Deliciosa opción sin lactosa ni huevo. La leche de coco aporta una cremosidad sorprendente que, unida al frescor del limón y los arándanos, crea un bocado ligero y aromático.",
+      "keywords": [
+        "Dulce",
+        "Snack",
+        "Desayuno",
+        "Vegano",
+        "Rápido",
+        "sin lactosa"
+      ]
+    },
+    {
+      "slug": "mini-pan-de-platano-y-nueces",
+      "title": "Plumcake de Plátano y Nueces Crujientes",
+      "description": "Un clásico reconfortante. Este pastel de plátano destaca por su interior extremadamente húmedo y el contraste crujiente de las nueces tostadas en cada rebanada.",
+      "keywords": [
+        "Dulce",
+        "Postre",
+        "Desayuno",
+        "Snack",
+        "Rápido",
+        "plátano"
+      ]
+    },
+    {
+      "slug": "esparragos-asados-sencillos",
+      "title": "Espárragos Asados (Puntas Crujientes)",
+      "description": "La guarnición más saludable y rápida. Espárragos verdes cocinados al punto exacto para que las puntas queden ligeramente tostadas y el tallo tierno y lleno de sabor.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "Rápido",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "esparragos-envueltos-en-jamon",
+      "title": "Espárragos con Camisa de Jamón Serrano",
+      "description": "Un entrante gourmet listo en minutos. El jamón serrano se vuelve crujiente al calor, protegiendo al espárrago y aportando un toque salino irresistible.",
+      "keywords": [
+        "Carne",
+        "Verduras",
+        "Guarnición",
+        "Entrante",
+        "Proteico",
+        "Low Carb",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "bagels-vegetales",
+      "title": "Bagels de Verduras Asadas y Mostaza",
+      "description": "Sándwiches redondos rellenos de hortalizas asadas al punto y una crema suave de queso a la mostaza. Un bocado vegetariano sustancioso y lleno de texturas.",
+      "keywords": [
+        "Verduras",
+        "Snack",
+        "Vegetariano",
+        "Rápido",
+        "bagel"
+      ]
+    },
+    {
+      "slug": "bocaditos-coliflor-salsa-ranch",
+      "title": "Bocados de Coliflor con Toque Picante",
+      "description": "La alternativa vegetal perfecta a las alitas de pollo. Ramilletes de coliflor con un empanado crujiente, bañados en salsa picante para un aperitivo sorprendente.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Plato principal",
+        "Guarnición",
+        "Snack",
+        "Proteico",
+        "Vegetariano",
+        "Vegano"
+      ]
+    },
+    {
+      "slug": "brocoli-asados-ajo",
+      "title": "Brócoli Tostado al Ajo y Pimienta",
+      "description": "Olvídate del brócoli hervido. Estos floretes asados con ajo quedan dorados y firmes, convirtiéndose en una guarnición sabrosa que gusta a todo el mundo.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "Low Carb",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "zanahorias-soja-miel",
+      "title": "Zanahorias Glaseadas (Soja y Miel)",
+      "description": "Un acompañamiento agridulce que sorprende. El glaseado carameliza la superficie de las zanahorias, dándoles un brillo espectacular y una textura tierna.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "agridulce"
+      ]
+    },
+    {
+      "slug": "zanahorias-asadas-miel",
+      "title": "Zanahorias al Tomillo y Miel",
+      "description": "Zanahorias asadas lentamente para resaltar su dulzor natural, equilibrado con el aroma fresco del tomillo. Una guarnición elegante y equilibrada.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "hierbas aromáticas"
+      ]
+    },
+    {
+      "slug": "coliflor-curcuma",
+      "title": "Coliflor Especiada con Cúrcuma",
+      "description": "Un plato vibrante y saludable. Los ramilletes de coliflor se impregnan del color y los beneficios de la cúrcuma, logrando un sabor exótico en tiempo récord.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "Low Carb",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "coliflor-salsa-tahini",
+      "title": "Coliflor Tostada con Crema de Tahini",
+      "description": "Inspiración de Oriente Medio. Coliflor asada hasta dorar, servida con una salsa sedosa de tahini y un toque cítrico de limón que realza el conjunto.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "tahini"
+      ]
+    },
+    {
+      "slug": "chips-de-patata-crujientes",
+      "title": "Chips de Patata Caseras (Sin Exceso de Aceite)",
+      "description": "El snack clásico en su versión más ligera. Láminas finísimas de patata cocinadas hasta alcanzar un crujido perfecto con el mínimo de grasa.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "snack"
+      ]
+    },
+    {
+      "slug": "champiñones-asados",
+      "title": "Champiñones Dorados al Punto",
+      "description": "Champiñones asados con un método que evita que suelten agua, concentrando todo su sabor y logrando una textura firme y carnosa por fuera.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "Rápido",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "berenjenas-asadas-sencillas",
+      "title": "Rodajas de Berenjena a las Finas Hierbas",
+      "description": "Una guarnición versátil y ligera. Rodajas de berenjena sazonadas y asadas hasta que quedan tiernas, ideales para acompañar cualquier plato de proteína.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "Rápido",
+        "Low Carb"
+      ]
+    },
+    {
+      "slug": "berenjenas-parrilla-pesto",
+      "title": "Berenjenas Asadas con Pesto de Albahaca",
+      "description": "El sabor del verano italiano. Berenjenas tiernas terminadas con un pesto fresco de albahaca que aporta una explosión de aroma y frescura.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "pesto"
+      ]
+    },
+    {
+      "slug": "berenjenas-rellenas-mozzarella",
+      "title": "Berenjenas Gratinadas a la Parmesana",
+      "description": "Berenjenas rellenas de una mezcla clásica de tomate y mozzarella, coronadas con queso Parmesano que se gratina hasta formar una costra dorada.",
+      "keywords": [
+        "Verduras",
+        "Plato principal",
+        "Guarnición",
+        "Vegetariano",
+        "gratinado"
+      ]
+    },
+    {
+      "slug": "gajos-patata-congelados",
+      "title": "Gajos de Patata Rústicos (Extra Crujientes)",
+      "description": "Transforma las patatas congeladas en una guarnición de restaurante. Exterior crujiente y corazón suave como puré, sin complicaciones.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "patatas"
+      ]
+    },
+    {
+      "slug": "gajos-de-patata-rusticos",
+      "title": "Gajos de Patata al Queso y Especias",
+      "description": "Patatas cortadas en gajos rústicos, aderezadas con una mezcla de especias y queso para un sabor intenso. El snack perfecto para dipear en salsas.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Snack",
+        "Vegetariano",
+        "Rápido"
+      ]
+    }
+  ]
+}

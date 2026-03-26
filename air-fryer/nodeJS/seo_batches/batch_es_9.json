@@ -1,0 +1,256 @@
+{
+  "es": [
+    {
+      "slug": "patatas-enteras-horneadas",
+      "title": "Patatas Asadas Enteras (Piel Crujiente)",
+      "description": "La esencia de lo rústico. Patatas asadas con su piel para proteger un interior extremadamente tierno y harinoso. Un básico infalible que combina con todo.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "clásico"
+      ]
+    },
+    {
+      "slug": "patatas-nuevas-con-mayonesa-picante",
+      "title": "Patatas Baby con Mayonesa de Pesto Rojo",
+      "description": "Bocados de patata asados con especias y servidos con una cremosa mayonesa al pesto rojo. El equilibrio perfecto entre el toque picante y la suavidad del tubérculo.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "pesto"
+      ]
+    },
+    {
+      "slug": "hash-brown-patatas",
+      "title": "Hash Browns: Tortitas de Patata Crujientes",
+      "description": "El icono del desayuno anglosajón. Tortitas de patata rallada, doradas hasta conseguir una costra exterior muy crujiente que esconde un corazón suave.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Snack",
+        "Desayuno",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "patatas-hasselback",
+      "title": "Patatas Hasselback al Ajo y Mantequilla",
+      "description": "Sofisticación sueca en tu mesa. El corte en láminas finas permite que la mantequilla y las hierbas penetren en cada capa, logrando una patata que es mitad asada, mitad frita.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Rápido",
+        "Hasselback"
+      ]
+    },
+    {
+      "slug": "patatas-nuevas-asadas",
+      "title": "Patatas Nuevas a las Hierbas del Campo",
+      "description": "Pequeñas patatas baby asadas con un ramillete de hierbas aromáticas frescas. Un bocado dorado por fuera y con la textura de la mantequilla por dentro.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Snack",
+        "Entrante",
+        "Vegetariano",
+        "Vegano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "pimientos-enteros-asados",
+      "title": "Pimientos Asados (Técnica de Pelado Fácil)",
+      "description": "Consigue unos pimientos asados perfectos y dulces. Te enseñamos la técnica del choque térmico para separar la piel sin esfuerzo, dejando la pulpa jugosa y lista para ensaladas.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "Rápido",
+        "técnica"
+      ]
+    },
+    {
+      "slug": "aros-de-cebolla",
+      "title": "Aros de Cebolla con Rebozado Especiado",
+      "description": "El snack por excelencia. Aros de cebolla dulces envueltos en un rebozado con especias que garantiza una cocción uniforme y un crujido que se oye en cada mordisco.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Snack",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "tocino-caramelizado-bbq",
+      "title": "Bacon Caramelizado con Sabor Barbacoa",
+      "description": "Un snack dulce-salado adictivo. Tiras de panceta ahumada cubiertas con una mezcla de azúcar que se carameliza al calor, creando una textura crujiente y única.",
+      "keywords": [
+        "Carne",
+        "Snack",
+        "Entrante",
+        "Rápido",
+        "barbacoa"
+      ]
+    },
+    {
+      "slug": "filetes-costilla-mostaza",
+      "title": "Costillas con Costra Crujiente de Mostaza",
+      "description": "Intensidad en cada bocado. La alta temperatura sella la jugosidad de la costilla mientras carameliza la mostaza, formando una capa exterior potente y sabrosa.",
+      "keywords": [
+        "Carne",
+        "Plato principal",
+        "Proteico",
+        "Rápido",
+        "mostaza"
+      ]
+    },
+    {
+      "slug": "coles-bruselas-panceta",
+      "title": "Coles de Bruselas Tostadas con Panceta",
+      "description": "Incluso para quienes no aman las verduras. Las coles se tuestan en la grasa de la panceta, perdiendo su amargor y ganando un sabor ahumado y una textura crujiente.",
+      "keywords": [
+        "Carne",
+        "Verduras",
+        "Plato principal",
+        "Guarnición",
+        "Proteico",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "chips-kale-crujientes",
+      "title": "Chips de Kale (El Snack Saludable)",
+      "description": "Ligero, verde y muy crujiente. Hojas de kale deshidratadas al punto de sal y especias, convirtiéndose en el sustituto perfecto y nutritivo de las patatas fritas.",
+      "keywords": [
+        "Verduras",
+        "Snack",
+        "Guarnición",
+        "Vegetariano",
+        "Vegano",
+        "Low Carb",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "chips-de-manzana",
+      "title": "Chips de Manzana (Snack 100% Natural)",
+      "description": "Pura fruta deshidratada. Rodajas finas de manzana cocinadas a baja temperatura para concentrar su dulzor y lograr una textura crujiente sin azúcares añadidos.",
+      "keywords": [
+        "Fruta",
+        "Snack",
+        "Vegetariano",
+        "Vegano",
+        "saludable"
+      ]
+    },
+    {
+      "slug": "tarta-rustica-de-peras",
+      "title": "Galette Rústica de Peras y Nueces",
+      "description": "Un postre artesanal con masa quebrada crujiente. El relleno de peras dulces con un hilo de miel y nueces tostadas ofrece una experiencia de repostería casera inigualable.",
+      "keywords": [
+        "Dulce",
+        "Postre",
+        "Desayuno",
+        "Vegetariano",
+        "pera"
+      ]
+    },
+    {
+      "slug": "judias-verdes-asadas",
+      "title": "Judías Verdes Asadas al Punto de Sal",
+      "description": "Dile adiós a las judías hervidas y blandas. Cocinadas a alta temperatura, conservan un color vibrante y una textura firme y ligeramente tostada que te sorprenderá.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Vegano",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "falafel-airfryer",
+      "title": "Falafel de Garbanzos (Receta Tradicional)",
+      "description": "Viaja a Oriente Medio con estos falafel. Un interior verde y especiado protegido por una costra dorada conseguida con el mínimo de aceite. Saludables y auténticos.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Plato principal",
+        "Snack",
+        "Proteico",
+        "Vegetariano",
+        "Vegano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "patatas-griegas",
+      "title": "Patatas al Estilo Griego con Feta y Orégano",
+      "description": "Una explosión mediterránea. Patatas doradas que se terminan con queso feta desmenuzado, orégano fragante y perejil fresco. Ideales para compartir.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Entrante",
+        "Vegetariano",
+        "feta"
+      ]
+    },
+    {
+      "slug": "patatas-espiral-congeladas",
+      "title": "Espirales de Patata (Extra Crujientes)",
+      "description": "Diversión en el plato. Preparamos patatas en espiral para que queden súper doradas y crujientes sin necesidad de añadir ni una gota de aceite extra.",
+      "keywords": [
+        "Verduras",
+        "Guarnición",
+        "Entrante",
+        "Vegetariano",
+        "Vegano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "samosas-de-verduras-crujientes",
+      "title": "Samosas de Verduras y Queso Feta",
+      "description": "Triángulos de masa brick crujiente rellenos de una mezcla sabrosa de coliflor, guisantes y el toque salino del queso feta. Un bocado exótico y delicioso.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Snack",
+        "Vegetariano",
+        "Rápido",
+        "samosas"
+      ]
+    },
+    {
+      "slug": "pastel-platano-mascarpone",
+      "title": "Banana Bread con Crema de Mascarpone",
+      "description": "El pastel de plátano definitivo. Masa densa y húmeda gracias a los plátanos maduros, coronada con una capa suave de mascarpone que eleva este postre a otro nivel.",
+      "keywords": [
+        "Dulce",
+        "Postre",
+        "Desayuno",
+        "Snack",
+        "Vegetariano",
+        "Rápido"
+      ]
+    },
+    {
+      "slug": "champiñones-empanados",
+      "title": "Champiñones Empanados Crujientes",
+      "description": "Aperitivo infalible. Champiñones con un empanado firme que mantiene toda la jugosidad del hongo en su interior. Listos en minutos para cualquier ocasión.",
+      "keywords": [
+        "Verduras",
+        "Entrante",
+        "Guarnición",
+        "Snack",
+        "Rápido"
+      ]
+    }
+  ]
+}
