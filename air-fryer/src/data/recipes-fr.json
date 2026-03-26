@@ -817,41 +817,6 @@
     ]
   },
   {
-    "title": "Calamars Frits à la Romaine (Sans Friture)",
-    "slug": "calamars-frits-croustillants",
-    "emoji": "🦑",
-    "temp": 200,
-    "time": "10",
-    "prep_time": "15 minutes",
-    "portions": "2",
-    "ingredients": [
-      "400 g d'anneaux de calamar, frais ou décongelés",
-      "Farine de semoule de blé dur",
-      "Huile d'olive extra vierge en spray",
-      "Sel",
-      "Citron (pour le service)"
-    ],
-    "description": "Obtenez des anneaux de calamar parfaitement croustillants grâce à une fine panure de semoule de blé dur. La cuisson à l'air chaud remplace la friture traditionnelle pour plus de légèreté.",
-    "instructions": [
-      "Séchez soigneusement les anneaux de calamar avec du papier absorbant. Ils doivent être complètement secs.",
-      "Placez les anneaux de calamar et la farine de semoule dans un sac. Secouez énergiquement pour enrober uniformément.",
-      "Disposez les anneaux en une seule couche dans le panier, sans superposition. Procédez en plusieurs fois si nécessaire. Vaporisez d'huile d'olive.",
-      "Cuisez à 200°C pendant 10-12 minutes. Salez en fin de cuisson. Servez avec des tranches de citron."
-    ],
-    "tip": "Un séchage minutieux des calamars est essentiel pour éviter une texture caoutchouteuse. La semoule de blé dur garantit une meilleure croustillance que la farine classique.",
-    "isItalian": true,
-    "image": "calamari-fritti-croccanti",
-    "keywords": [
-      "Fruits de mer",
-      "Entrée",
-      "Plat principal",
-      "Protéique",
-      "calamars frits",
-      "calamars airfryer",
-      "tapas de la mer"
-    ]
-  },
-  {
     "title": "Poivrons Farcis à la Viande (Gourmands et Moelleux)",
     "slug": "poivrons-farcis",
     "emoji": "🫑",

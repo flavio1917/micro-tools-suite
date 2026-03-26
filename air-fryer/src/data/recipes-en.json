@@ -776,40 +776,6 @@
     "is_sanitized": true
   },
   {
-    "title": "Crispy Calamari Rings",
-    "slug": "crispy-fried-calamari",
-    "emoji": "🦑",
-    "temp": 400,
-    "time": "10-12",
-    "prep_time": "15 minutes",
-    "portions": "2",
-    "ingredients": [
-      "14 oz squid rings, fresh or thawed",
-      "Semolina flour, for dredging",
-      "Extra virgin olive oil spray",
-      "Salt, to taste",
-      "Lemon wedges, for serving"
-    ],
-    "description": "Enjoy the seaside favorite at home. These calamari rings are light, tender, and shatteringly crisp, achieving that perfect 'fried' texture without the need for deep-frying.",
-    "instructions": [
-      "Pat the squid rings completely dry with paper towels.",
-      "In a bag, toss the squid rings with semolina flour until evenly coated.",
-      "Arrange the coated rings in the cooking basket in a single layer, without overlapping. Work in batches if necessary. Lightly spray with olive oil.",
-      "Cook at 400°F for 10-12 minutes. Season with salt immediately after cooking and serve with lemon wedges."
-    ],
-    "tip": "For optimal texture, ensure the squid is thoroughly dry. Semolina flour yields a crispier coating than all-purpose flour.",
-    "isItalian": true,
-    "image": "calamari-fritti-croccanti",
-    "keywords": [
-      "Seafood",
-      "Appetizer",
-      "Snack",
-      "High-Protein",
-      "Quick"
-    ],
-    "is_sanitized": true
-  },
-  {
     "title": "Meat-Stuffed Bell Peppers",
     "slug": "stuffed-bell-peppers",
     "emoji": "🫑",
