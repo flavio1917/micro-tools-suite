@@ -6,7 +6,6 @@ import RecipeSearch from '../components/recipes/RecipeSearch.astro';
 export interface Props { lang: string; }
 const { lang } = Astro.props;
 
-// DIZIONARIO COMPLETO (Sostituisce le vecchie frasi fisse)
 const content = {
   it: {
     pageTitle: "Converti da Forno a Friggitrice ad Aria: Tempi e Gradi",
@@ -146,7 +145,6 @@ const toolsData = {
 
 const toolsLang = toolsData[lang as keyof typeof toolsData] || toolsData.it;
 
-// HELPER PER URL PULITI
 const alternateUrls = {
   it: "https://www.convertitorefriggitrice.it/",
   en: "https://www.convertitorefriggitrice.it/en/",
@@ -188,7 +186,7 @@ const jsonLd = {
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
       {toolsLang.cards.map((card) => (
-        <a href={`/${lang === 'it' ? '' : lang + '/'}${card.link}`} class="group bg-slate-800/40 border border-slate-700/60 p-5 md:p-6 rounded-2xl hover:bg-slate-800 transition-all shadow-lg hover:shadow-2xl flex items-start gap-4 overflow-hidden relative">
+        <a href={`/${lang}/${card.link}`} class="group bg-slate-800/40 border border-slate-700/60 p-5 md:p-6 rounded-2xl hover:bg-slate-800 transition-all shadow-lg hover:shadow-2xl flex items-start gap-4 overflow-hidden relative">
           
           <div class="absolute -left-10 top-0 bottom-0 w-2 bg-gradient-to-b from-blue-400 to-orange-500 blur-xl group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
 
