@@ -1,0 +1,57 @@
+---
+// src/components/SchemaRecipe.astro
+export interface Props {
+  recipe: any;
+  lang?: string;
+}
+
+const { recipe, lang = "it" } = Astro.props;
+
+// Helper: Estrae i minuti dal tuo formato "8-10" e lo converte in ISO 8601 (es. "PT10M")
+function toISODuration(timeStr: string | undefined) {
+  if (!timeStr) return "PT0M";
+  const matches = timeStr.toString().match(/\d+/g);
+  if (matches && matches.length > 0) {
+    // Se è un range tipo "8-10", prende il numero più alto per sicurezza
+    const maxTime = matches[matches.length - 1];
+    return `PT${maxTime}M`;
+  }
+  return "PT0M";
+}
+
+const prepTimeISO = toISODuration(recipe.prep_time);
+const cookTimeISO = toISODuration(recipe.time); 
+
+// L'URL dinamico dell'immagine
+const baseImageName = recipe.image || recipe.slug;
+const imageUrl = `https://www.convertitorefriggitrice.it/images/recipes/${baseImageName}.webp`;
+
+// Gestione URL dinamico per la pagina Info (IT è root, le altre hanno la sottocartella)
+const infoUrlPath = lang === 'it' ? '/info' : `/${lang}/info`;
+
+const schema = {
+  "@context": "https://schema.org/",
+  "@type": "Recipe",
+  "name": recipe.title,
+  "image": [ imageUrl ],
+  "author": {
+    "@type": "Person",
+    "name": "Flavio Refrigeri",
+    "jobTitle": "Ingegnere Informatico & Creatore di Ricette", // BOOM! Segnale di Autorità!
+    "url": `https://www.convertitorefriggitrice.it${infoUrlPath}` // Punta alla pagina giusta
+  },
+  "description": recipe.description,
+  "prepTime": prepTimeISO,
+  "cookTime": cookTimeISO,
+  "recipeYield": recipe.portions ? `${recipe.portions} servings` : "2 servings",
+  "cookMethod": "Air Frying",
+  "recipeCategory": recipe.keywords && recipe.keywords.length > 0 ? recipe.keywords[0] : "Main Course",
+  "recipeIngredient": recipe.ingredients,
+  "recipeInstructions": recipe.instructions ? recipe.instructions.map((step: string) => ({
+    "@type": "HowToStep",
+    "text": step
+  })) : []
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

@@ -1,0 +1,248 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } }
+  ];
+}
+
+const { lang } = Astro.params;
+
+const content = {
+  it: {
+    title: "Risoluzione Problemi Friggitrice ad Aria | Fumo e Cattivi Odori",
+    h1: "Pronto Soccorso Air Fryer",
+    desc: "Fumo bianco? Puzza di plastica? Niente panico. Ecco la guida rapida per risolvere i problemi più comuni e salvare la tua cena.",
+    quickNav: "Vai subito a:",
+    emergencyTitle: "🚨 Regola di Sicurezza Base",
+    emergency: "Se vedi FUMO NERO o senti odore di cavi elettrici bruciati, STACCA SUBITO LA SPINA. Non è grasso che brucia, è un guasto elettrico.",
+    causeLabel: "Causa",
+    solutionLabel: "Soluzione Rapida",
+    backBtn: "← Torna al Calcolatore",
+    items: [
+      { 
+        id: "fumo-bianco", emoji: "💨", name: "Fumo Bianco dal retro", 
+        cause: "Cibo troppo grasso (es. salsicce, pancetta) o residui di unto sul fondo del cestello.", 
+        solution: "Aggiungi 2 cucchiai d'acqua sul fondo del cestello (sotto la griglia) prima di cuocere cibi grassi. L'acqua impedisce al grasso colato di bruciare e fumare." 
+      },
+      { 
+        id: "puzza-plastica", emoji: "👃", name: "Puzza di Plastica", 
+        cause: "Residui di fabbricazione sui rivestimenti interni. È normale al primo avvio.", 
+        solution: "Fai un ciclo a vuoto a 200°C per 15-20 minuti mettendo nel cestello mezzo limone o una ciotolina con acqua e aceto. Pulisci tutto a freddo." 
+      },
+      { 
+        id: "cibo-bruciato", emoji: "🔥", name: "Bruciato fuori, crudo dentro", 
+        cause: "Temperatura troppo alta o cestello troppo pieno. L'aria non circola.", 
+        solution: "Abbassa la temperatura di 20°C rispetto alla ricetta del forno e cuoci più a lungo. Non riempire mai il cestello oltre i 3/4." 
+      },
+      { 
+        id: "cibo-vola", emoji: "🌪️", name: "Cibo o carta che vola", 
+        cause: "Alimenti troppo leggeri (es. formaggio, spinaci, carta forno vuota) aspirati dalla ventola.", 
+        solution: "Usa degli stuzzicadenti (ben incastrati) per fissare i cibi. NON mettere mai la carta forno senza cibo pesante sopra, o finirà sulla resistenza." 
+      }
+    ]
+  },
+  en: {
+    title: "Air Fryer Troubleshooting | Smoke and Bad Smells",
+    h1: "Air Fryer First Aid",
+    desc: "White smoke? Plastic smell? Don't panic. Here is the quick guide to solving the most common problems and saving your dinner.",
+    quickNav: "Jump to:",
+    emergencyTitle: "🚨 Basic Safety Rule",
+    emergency: "If you see BLACK SMOKE or smell burning wires, UNPLUG IT IMMEDIATELY. That's not burning grease; it's an electrical fault.",
+    causeLabel: "Cause",
+    solutionLabel: "Quick Fix",
+    backBtn: "← Back to Calculator",
+    items: [
+      { 
+        id: "white-smoke", emoji: "💨", name: "White Smoke", 
+        cause: "Food is too greasy (e.g., sausages, bacon) or there is grease residue at the bottom.", 
+        solution: "Add 2 tablespoons of water to the bottom of the basket (under the grate) before cooking fatty foods. The water prevents dripped fat from smoking." 
+      },
+      { 
+        id: "plastic-smell", emoji: "👃", name: "Plastic Smell", 
+        cause: "Manufacturing residues on the internal coatings. Completely normal on the first run.", 
+        solution: "Run an empty cycle at 400°F (200°C) for 15-20 minutes with half a lemon or a small bowl of water and vinegar. Wipe down when cool." 
+      },
+      { 
+        id: "burnt-food", emoji: "🔥", name: "Burnt outside, raw inside", 
+        cause: "Temperature too high or basket overcrowded. Air cannot circulate.", 
+        solution: "Lower the temperature by 25°F compared to the oven recipe and cook longer. Never fill the basket more than 3/4 full." 
+      },
+      { 
+        id: "flying-food", emoji: "🌪️", name: "Food or paper flying", 
+        cause: "Lightweight items (e.g., cheese slices, empty parchment paper) sucked up by the fan.", 
+        solution: "Use toothpicks (firmly secured) to weigh down light foods. NEVER put parchment paper in without heavy food on top." 
+      }
+    ]
+  },
+  es: {
+    title: "Solución de Problemas Freidora de Aire | Humo y Olores",
+    h1: "Primeros Auxilios Air Fryer",
+    desc: "¿Humo blanco? ¿Olor a plástico? Que no cunda el pánico. Aquí tienes la guía rápida para solucionar los problemas más comunes.",
+    quickNav: "Ir a:",
+    emergencyTitle: "🚨 Regla Básica de Seguridad",
+    emergency: "Si ves HUMO NEGRO o hueles a cables quemados, DESENCHÚFALA INMEDIATAMENTE. No es grasa quemada, es un fallo eléctrico.",
+    causeLabel: "Causa",
+    solutionLabel: "Solución Rápida",
+    backBtn: "← Volver a la Calculadora",
+    items: [
+      { 
+        id: "humo-blanco", emoji: "💨", name: "Humo Blanco", 
+        cause: "Comida muy grasa (ej. salchichas, bacon) o restos de aceite en el fondo.", 
+        solution: "Añade 2 cucharadas de agua en el fondo de la cesta (bajo la rejilla) antes de cocinar. El agua evita que la grasa goteada humee." 
+      },
+      { 
+        id: "olor-plastico", emoji: "👃", name: "Olor a Plástico", 
+        cause: "Residuos de fabricación en los revestimientos. Es normal al principio.", 
+        solution: "Haz un ciclo en vacío a 200°C durante 15-20 min con medio limón o un bol con agua y vinagre. Limpia cuando se enfríe." 
+      },
+      { 
+        id: "comida-quemada", emoji: "🔥", name: "Quemado fuera, crudo dentro", 
+        cause: "Temperatura muy alta o cesta demasiado llena. El aire no circula.", 
+        solution: "Baja la temperatura 20°C respecto a la receta de horno y cocina más tiempo. No llenes la cesta más de 3/4." 
+      },
+      { 
+        id: "comida-vuela", emoji: "🌪️", name: "Comida o papel volando", 
+        cause: "Alimentos ligeros (ej. queso, espinacas, papel vacío) absorbidos por el ventilador.", 
+        solution: "Usa palillos (bien clavados) para fijar alimentos. NUNCA pongas papel de horno sin comida pesada encima." 
+      }
+    ]
+  },
+  fr: {
+    title: "Dépannage Friteuse à Air | Fumée et Mauvaises Odeurs",
+    h1: "Premiers Secours Air Fryer",
+    desc: "Fumée blanche ? Odeur de plastique ? Pas de panique. Voici le guide rapide pour résoudre les problèmes courants.",
+    quickNav: "Aller à :",
+    emergencyTitle: "🚨 Règle de Sécurité de Base",
+    emergency: "Si vous voyez de la FUMÉE NOIRE ou sentez une odeur de fils brûlés, DÉBRANCHEZ IMMÉDIATEMENT. C'est un défaut électrique.",
+    causeLabel: "Cause",
+    solutionLabel: "Solution Rapide",
+    backBtn: "← Retour au Calculateur",
+    items: [
+      { 
+        id: "fumee-blanche", emoji: "💨", name: "Fumée Blanche", 
+        cause: "Aliments trop gras (ex. saucisses, bacon) ou résidus de graisse au fond.", 
+        solution: "Ajoutez 2 cuillères à soupe d'eau au fond du panier (sous la grille) avant de cuire des aliments gras. L'eau empêche la graisse de fumer." 
+      },
+      { 
+        id: "odeur-plastique", emoji: "👃", name: "Odeur de Plastique", 
+        cause: "Résidus de fabrication sur les revêtements. C'est normal au début.", 
+        solution: "Faites un cycle à vide à 200°C pendant 15-20 min avec un demi-citron ou un bol d'eau et de vinaigre. Nettoyez à froid." 
+      },
+      { 
+        id: "nourriture-brulee", emoji: "🔥", name: "Brûlé dehors, cru dedans", 
+        cause: "Température trop élevée ou panier trop plein. L'air ne circule pas.", 
+        solution: "Baissez la température de 20°C par rapport au four et cuisez plus longtemps. Ne remplissez jamais à plus des 3/4." 
+      },
+      { 
+        id: "nourriture-vole", emoji: "🌪️", name: "Nourriture qui vole", 
+        cause: "Aliments légers (ex. fromage, papier cuisson vide) aspirés par le ventilateur.", 
+        solution: "Utilisez des cure-dents pour fixer les aliments légers. Ne mettez JAMAIS de papier cuisson sans aliments lourds dessus." 
+      }
+    ]
+  }
+};
+
+const t = content[lang as keyof typeof content] || content.it;
+
+// Dati Strutturati FAQ
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": t.items.map(item => ({
+    "@type": "Question",
+    "name": `Perché la friggitrice ad aria fa ${item.name.toLowerCase()}?`, 
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Causa: ${item.cause} Soluzione: ${item.solution}`
+    }
+  }))
+};
+
+// Dati Strutturati Breadcrumb
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": `https://www.convertitorefriggitrice.it/${lang === 'it' ? '' : lang}`
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "Risoluzione Problemi",
+    "item": `https://www.convertitorefriggitrice.it/${lang}/problemi`
+  }]
+};
+---
+
+<MainLayout title={t.title} lang={lang}>
+  <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
+    
+    <header class="text-center mb-8">
+      <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">{t.h1}</h1>
+      <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+    </header>
+
+    <nav aria-label={t.quickNav} class="flex flex-wrap justify-center gap-2 md:gap-3 mb-12">
+      <span class="text-slate-500 text-sm font-bold w-full text-center mb-1">{t.quickNav}</span>
+      {t.items.map((item) => (
+        <a href={`#${item.id}`} class="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-full text-xs md:text-sm font-bold text-slate-300 hover:bg-slate-700 hover:text-white transition-all shadow-sm focus:ring-2 focus:ring-orange-500 outline-none">
+          <span aria-hidden="true">{item.emoji}</span> {item.name}
+        </a>
+      ))}
+    </nav>
+
+    <aside class="bg-red-950/40 border-l-4 border-red-500 rounded-r-xl p-6 shadow-lg mb-12 max-w-3xl mx-auto animate-fade-in" role="alert">
+      <h2 class="text-lg font-bold text-red-400 mb-2 flex items-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+        {t.emergencyTitle}
+      </h2>
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed font-medium">{t.emergency}</p>
+    </aside>
+
+    <div class="space-y-6 mb-16">
+      {t.items.map((item) => (
+        <article id={item.id} class="bg-slate-800/40 border border-slate-700/50 p-6 md:p-8 rounded-2xl shadow-xl hover:border-slate-500/50 transition-all group flex flex-col md:flex-row gap-6 scroll-mt-24">
+          <div class="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-4xl bg-slate-900/50 shadow-inner border border-white/5 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300" aria-hidden="true">
+            {item.emoji}
+          </div>
+          
+          <div class="flex-1 space-y-4">
+            <h2 class="text-xl md:text-2xl font-bold text-white">{item.name}</h2>
+            
+            <div class="bg-black/40 border border-slate-700/50 p-4 rounded-xl shadow-inner">
+              <span class="flex items-center gap-1 text-[10px] uppercase text-slate-500 font-bold tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {t.causeLabel}
+              </span>
+              <p class="text-slate-300 text-sm md:text-base leading-relaxed">{item.cause}</p>
+            </div>
+            
+            <div class="bg-blue-950/20 border border-blue-500/20 p-4 rounded-xl">
+              <span class="flex items-center gap-1 text-[10px] uppercase text-blue-400 font-bold tracking-wider mb-1.5">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                {t.solutionLabel}
+              </span>
+              <p class="text-blue-100 text-sm md:text-base font-medium leading-relaxed">{item.solution}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="text-center pt-8 border-t border-slate-800">
+      <a href={`/${lang === 'it' ? '' : lang}`} class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors font-semibold text-sm shadow-md focus:ring-2 focus:ring-slate-400 outline-none">
+        {t.backBtn}
+      </a>
+    </div>
+
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumb

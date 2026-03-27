@@ -1,0 +1,162 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } }
+  ];
+}
+
+const { lang } = Astro.params;
+
+const content = {
+  it: {
+    title: "Come Riscaldare gli Avanzi in Friggitrice ad Aria",
+    h1: "Il Rianimatore di Avanzi",
+    desc: "Basta microonde che rende tutto molliccio! Scopri i tempi e le temperature esatte per far tornare croccanti e succosi i tuoi avanzi del giorno prima.",
+    goldenRuleTitle: "⭐ La Regola d'Oro",
+    goldenRule: "Preriscalda sempre la friggitrice per 2 minuti prima di inserire gli avanzi. Lo shock termico immediato è il segreto per una croccantezza perfetta senza seccare l'interno.",
+    backBtn: "← Torna al Calcolatore",
+    items: [
+      { emoji: "🍕", name: "Pizza", temp: "170°C", time: "3-4 min", tip: "Il segreto assoluto. Torna croccante sotto e filante sopra. Non sovrapporre le fette." },
+      { emoji: "🍟", name: "Patatine e Fritti", temp: "190°C", time: "3-5 min", tip: "Spruzza un velo leggerissimo d'olio prima di infornare. Torneranno croccantissime, addio effetto gomma!" },
+      { emoji: "🥩", name: "Carne e Arrosti", temp: "160°C", time: "5-7 min", tip: "Temperatura più dolce per non seccare le fibre. Aggiungi un cucchiaino d'acqua sul fondo o avvolgi in carta stagnola se è molto asciutta." },
+      { emoji: "🥖", name: "Pane e Focacce", temp: "160°C", time: "3-4 min", tip: "Inumidisci leggermente la crosta con le mani bagnate prima di cuocere. Sembrerà appena sfornato dal panettiere." },
+      { emoji: "🥦", name: "Verdure Arrosto", temp: "180°C", time: "4-5 min", tip: "Scuoti il cestello a metà tempo per ridare croccantezza uniforme." }
+    ]
+  },
+  en: {
+    title: "How to Reheat Leftovers in the Air Fryer",
+    h1: "The Leftover Reviver",
+    desc: "Stop using the microwave that makes everything soggy! Discover the exact times and temps to make yesterday's food crispy and juicy again.",
+    goldenRuleTitle: "⭐ The Golden Rule",
+    goldenRule: "Always preheat the air fryer for 2 minutes before putting leftovers in. The immediate thermal shock is the secret to perfect crispness without drying out the inside.",
+    backBtn: "← Back to Calculator",
+    items: [
+      { emoji: "🍕", name: "Pizza", temp: "340°F", time: "3-4 min", tip: "The absolute best method. Crispy crust, melty cheese. Do not overlap slices." },
+      { emoji: "🍟", name: "Fries & Fried Food", temp: "375°F", time: "3-5 min", tip: "Spray a tiny bit of oil before reheating. They will become super crispy again, goodbye rubbery fries!" },
+      { emoji: "🥩", name: "Meat & Roasts", temp: "320°F", time: "5-7 min", tip: "Lower temp to avoid drying out the fibers. Add a teaspoon of water or wrap in foil if it's already dry." },
+      { emoji: "🥖", name: "Bread & Pastries", temp: "320°F", time: "3-4 min", tip: "Lightly dampen the crust with wet hands before reheating. It will taste bakery-fresh." },
+      { emoji: "🥦", name: "Roasted Veggies", temp: "350°F", time: "4-5 min", tip: "Shake the basket halfway through to restore an even crispiness." }
+    ]
+  },
+  es: {
+    title: "Cómo Recalentar Sobras en la Freidora de Aire",
+    h1: "El Reanimador de Sobras",
+    desc: "¡Basta del microondas que deja todo blando! Descubre los tiempos y temperaturas exactas para que tu comida vuelva a estar crujiente.",
+    goldenRuleTitle: "⭐ La Regla de Oro",
+    goldenRule: "Precalienta siempre la freidora 2 minutos antes de meter las sobras. El choque térmico inmediato es el secreto para un crujido perfecto sin secar el interior.",
+    backBtn: "← Volver a la Calculadora",
+    items: [
+      { emoji: "🍕", name: "Pizza", temp: "170°C", time: "3-4 min", tip: "El secreto absoluto. Vuelve a estar crujiente abajo y derretida arriba. No superpongas las porciones." },
+      { emoji: "🍟", name: "Patatas y Fritos", temp: "190°C", time: "3-5 min", tip: "Rocía un poco de aceite antes de recalentar. ¡Adiós a las patatas de goma!" },
+      { emoji: "🥩", name: "Carne y Asados", temp: "160°C", time: "5-7 min", tip: "Temperatura suave para no secar la carne. Añade una cucharadita de agua o envuelve en aluminio si está seca." },
+      { emoji: "🥖", name: "Pan y Focaccia", temp: "160°C", time: "3-4 min", tip: "Humedece ligeramente la corteza con las manos mojadas antes de calentar. Parecerá recién horneado." },
+      { emoji: "🥦", name: "Verduras Asadas", temp: "180°C", time: "4-5 min", tip: "Agita la cesta a la mitad del tiempo para recuperar el crujiente uniforme." }
+    ]
+  },
+  fr: {
+    title: "Comment Réchauffer les Restes à la Friteuse à Air",
+    h1: "Le Réanimateur de Restes",
+    desc: "Fini le micro-ondes qui rend tout ramolli ! Découvrez les temps et températures pour redonner du croustillant à vos restes.",
+    goldenRuleTitle: "⭐ La Règle d'Or",
+    goldenRule: "Préchauffez toujours la friteuse 2 minutes avant d'y mettre les restes. Le choc thermique immédiat est le secret d'un croustillant parfait sans dessécher l'intérieur.",
+    backBtn: "← Retour au Calculateur",
+    items: [
+      { emoji: "🍕", name: "Pizza", temp: "170°C", time: "3-4 min", tip: "Le secret absolu. Pâte croustillante et fromage fondu. Ne superposez pas les parts." },
+      { emoji: "🍟", name: "Frites et Fritures", temp: "190°C", time: "3-5 min", tip: "Vaporisez un peu d'huile avant de chauffer. Adieu l'effet caoutchouc !" },
+      { emoji: "🥩", name: "Viandes et Rôtis", temp: "160°C", time: "5-7 min", tip: "Température douce pour ne pas assécher. Ajoutez une cuillère d'eau ou enveloppez d'aluminium si c'est sec." },
+      { emoji: "🥖", name: "Pain et Viennoiseries", temp: "160°C", time: "3-4 min", tip: "Humidifiez légèrement la croûte avec vos mains avant de chauffer. Comme à la boulangerie." },
+      { emoji: "🥦", name: "Légumes Rôtis", temp: "180°C", time: "4-5 min", tip: "Secouez le panier à mi-cuisson pour retrouver un croustillant uniforme." }
+    ]
+  }
+};
+
+const t = content[lang as keyof typeof content] || content.it;
+
+// Dati Strutturati FAQ
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": t.items.map(item => ({
+    "@type": "Question",
+    "name": `Come riscaldare ${item.name.toLowerCase()} nella friggitrice ad aria?`, 
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `Imposta la friggitrice ad aria a ${item.temp} e riscalda per ${item.time}. Consiglio: ${item.tip}`
+    }
+  }))
+};
+
+// Dati Strutturati Breadcrumb (Aiuta Google a capire l'alberatura)
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": `https://www.convertitorefriggitrice.it/${lang === 'it' ? '' : lang}`
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "name": t.title,
+    "item": `https://www.convertitorefriggitrice.it/${lang}/riscaldare`
+  }]
+};
+---
+
+<MainLayout title={t.title} lang={lang}>
+  <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
+    
+    <div class="text-center mb-10 md:mb-14">
+      <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">{t.h1}</h1>
+      <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+    </div>
+
+    <div class="bg-gradient-to-r from-slate-900 to-slate-800 border-l-4 border-yellow-400 rounded-r-xl p-6 shadow-lg mb-12 max-w-3xl mx-auto">
+      <h2 class="text-lg font-bold text-yellow-400 mb-2">{t.goldenRuleTitle}</h2>
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed">{t.goldenRule}</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-16">
+      {t.items.map((item) => (
+        <article class="bg-slate-800/40 border border-slate-700/50 p-6 rounded-2xl shadow-xl hover:border-orange-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.1)] transition-all group flex flex-col h-full">
+          <header class="flex items-center gap-4 mb-5 border-b border-slate-700/50 pb-4">
+            <div class="text-4xl group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300" aria-hidden="true">{item.emoji}</div>
+            <h2 class="text-xl md:text-2xl font-bold text-white">{item.name}</h2>
+          </header>
+          
+          <div class="flex gap-4 mb-5">
+            <div class="bg-black/40 rounded-xl p-3 flex-1 text-center border border-slate-700/50 shadow-inner">
+              <span class="block text-[10px] uppercase text-orange-400 font-bold tracking-wider mb-1">Temp</span>
+              <span class="text-xl md:text-2xl font-black text-white">{item.temp}</span>
+            </div>
+            <div class="bg-black/40 rounded-xl p-3 flex-1 text-center border border-slate-700/50 shadow-inner">
+              <span class="block text-[10px] uppercase text-blue-400 font-bold tracking-wider mb-1">Time</span>
+              <span class="text-xl md:text-2xl font-black text-white">{item.time}</span>
+            </div>
+          </div>
+
+          <div class="bg-blue-950/30 border border-blue-500/20 p-4 rounded-xl mt-auto">
+            <p class="text-sm text-blue-200 leading-relaxed"><strong class="text-blue-400">💡 Tip:</strong> {item.tip}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="text-center pt-8 border-t border-slate-800">
+      <a href={`/${lang === 'it' ? '' : lang}`} class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors font-semibold text-sm shadow-md">
+        {t.backBtn}
+      </a>
+    </div>
+
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+</MainLayout>

@@ -1,48 +1,46 @@
 ---
+// src/components/tools/AirFryer/AirFryer.astro
 import recipes from '../../../data/recipes-it.json';
 
 export interface Props { lang?: string; }
 const { lang = "it" } = Astro.props;
 
-const totalRecipes = recipes.length || 200;
+const totalRecipes = recipes?.length || 200;
 const roundedCount = Math.floor(totalRecipes / 10) * 10;
 
+// COPY PREMIUM E INGEGNERISTICO
 const translations = {
   it: {
-    title: "Friggitrice ad Aria", subtitle: "Smart", tab_conv: "Incolla Ricetta", tab_food: "Inserisci Dati", tab_recipes: "Ricettario",
-    placeholder: "Incolla qui il testo della ricetta per Forno (es: 'Cuocere a 200°C per 40 minuti')...",
-    btn_action: "Converti Ora", label_temp: "Temperatura", label_time: "Tempo", eco_label: "Risparmio stimato: ~",
-    manual_temp: "TEMP. FORNO", manual_time: "MINUTI FORNO", error_msg: "⚠️ Manca qualcosa! Inserisci Temperatura e Tempo.", 
-    legal_privacy: "🔒 Privacy First: Calcoli locali. Nessun dato inviato.",
-    alert_cap: "⚠️ Temp limitata a 200°C", cta_recipes_top: "Non sai cosa cucinare?", cta_recipes_bottom: `Esplora le nostre ${roundedCount}+ Ricette`,
-    bannerTop: "MIGLIORA LA TUA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori Universale definitivo.", bannerBtn: "Scopri le Offerte"
+    title: "Convertitore", subtitle: "Pro", tab_conv: "Incolla Ricetta", tab_food: "Inserimento Rapido", tab_recipes: "Ricettario",
+    placeholder: "Incolla qui la ricetta (es: 'Cuocere a 200°C per 40 minuti')...",
+    btn_action: "Calcola", label_temp: "Temp. Ottimizzata", label_time: "Tempo Calcolato", eco_label: "Risparmio stimato: ~",
+    manual_temp: "TEMP. FORNO", manual_time: "MINUTI FORNO", error_msg: "⚠️ Dati insufficienti. Inserisci Temperatura e Tempo.", 
+    legal_privacy: "⚙️ Motore di Convezione Termica attivo. Calcolo 100% locale.",
+    alert_cap: "⚠️ Sicurezza: Temp limitata a 200°C", cta_recipes_top: "Senza idee per cena?", cta_recipes_bottom: `Esplora ${roundedCount}+ Ricette Testate`,
   },
   en: {
-    title: "Air Fryer Calculator", subtitle: "Pro", tab_conv: "Paste Recipe", tab_food: "Manual Input", tab_recipes: "Recipes",
-    placeholder: "Paste oven recipe text here (e.g. 'Bake at 400°F for 40 minutes')...",
-    btn_action: "Convert Now", label_temp: "Temperature", label_time: "Time", eco_label: "Est. Savings: ~",
-    manual_temp: "OVEN TEMP.", manual_time: "OVEN MINUTES", error_msg: "⚠️ Missing inputs! Please provide Temp and Time.", 
-    legal_privacy: "🔒 Privacy First: Local calculations. No data sent.",
-    alert_cap: "⚠️ Capped at 400°F", cta_recipes_top: "Don't know what to cook?", cta_recipes_bottom: `Explore ${roundedCount}+ Recipes`,
-    bannerTop: "UPGRADE YOUR AIR FRYER", bannerBot: "Discover the ultimate Universal Accessory Kit.", bannerBtn: "View Deals"
+    title: "Air Fryer", subtitle: "Engine", tab_conv: "Smart Paste", tab_food: "Quick Input", tab_recipes: "Recipes",
+    placeholder: "Paste oven recipe here (e.g. 'Bake at 400°F for 40 minutes')...",
+    btn_action: "Calculate", label_temp: "Optimized Temp", label_time: "Calculated Time", eco_label: "Est. Savings: ~",
+    manual_temp: "OVEN TEMP.", manual_time: "OVEN MINUTES", error_msg: "⚠️ Missing data! Please provide Temp and Time.", 
+    legal_privacy: "⚙️ Thermal Convection Engine active. 100% local processing.",
+    alert_cap: "⚠️ Safety: Capped at 400°F", cta_recipes_top: "Don't know what to cook?", cta_recipes_bottom: `Explore ${roundedCount}+ Tested Recipes`,
   },
   es: {
-    title: "Freidora de Aire", subtitle: "Smart", tab_conv: "Pegar Receta", tab_food: "Datos Manuales", tab_recipes: "Recetas",
-    placeholder: "Pega el texto de la receta para el horno aquí (ej: 'Hornear a 200°C por 40 min')...",
-    btn_action: "Convertir Ahora", label_temp: "Temperatura", label_time: "Tiempo", eco_label: "Ahorro estimado: ~",
-    manual_temp: "TEMP. HORNO", manual_time: "MINUTOS HORNO", error_msg: "⚠️ ¡Falta algo! Introduce Temperatura y Tiempo.", 
-    legal_privacy: "🔒 Privacidad: Cálculos locales. Sin envío de datos.",
-    alert_cap: "⚠️ Temp limitada a 200°C", cta_recipes_top: "¿No sabes qué cocinar?", cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`,
-    bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit de Accesorios Universal definitivo.", bannerBtn: "Ver Ofertas"
+    title: "Convertidor", subtitle: "Pro", tab_conv: "Pegar Receta", tab_food: "Datos Rápidos", tab_recipes: "Recetas",
+    placeholder: "Pega el texto de la receta aquí (ej: 'Hornear a 200°C por 40 min')...",
+    btn_action: "Calcular", label_temp: "Temp. Optimizada", label_time: "Tiempo Calculado", eco_label: "Ahorro estimado: ~",
+    manual_temp: "TEMP. HORNO", manual_time: "MINUTOS HORNO", error_msg: "⚠️ ¡Faltan datos! Introduce Temperatura y Tiempo.", 
+    legal_privacy: "⚙️ Motor de Convección Térmica activo. Cálculos 100% locales.",
+    alert_cap: "⚠️ Seguridad: Temp limitada a 200°C", cta_recipes_top: "¿Sin ideas para cenar?", cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`,
   },
   fr: {
-    title: "Friteuse à Air", subtitle: "Smart", tab_conv: "Coller Recette", tab_food: "Saisie Manuelle", tab_recipes: "Recettes",
-    placeholder: "Collez le texte de la recette pour four ici (ex: 'Cuire à 200°C pendant 40 minutes')...",
-    btn_action: "Convertir", label_temp: "Température", label_time: "Temps", eco_label: "Économie est. : ~",
-    manual_temp: "TEMP. FOUR", manual_time: "MINUTES FOUR", error_msg: "⚠️ Il manque des données ! Entrez la Température et le Temps.", 
-    legal_privacy: "🔒 Confidentialité : Calculs locaux. Aucune donnée envoyée.",
-    alert_cap: "⚠️ Temp. limitée à 200°C", cta_recipes_top: "Vous ne savez pas quoi cuisiner ?", cta_recipes_bottom: `Explorez nos ${roundedCount}+ Recettes`,
-    bannerTop: "AMÉLIOREZ VOTRE FRITEUSE", bannerBot: "Découvrez le Kit d'Accessoires Universel ultime.", bannerBtn: "Voir les Offres"
+    title: "Convertisseur", subtitle: "Pro", tab_conv: "Coller Recette", tab_food: "Saisie Rapide", tab_recipes: "Recettes",
+    placeholder: "Collez le texte de la recette ici (ex: 'Cuire à 200°C pendant 40 min')...",
+    btn_action: "Calculer", label_temp: "Temp. Optimisée", label_time: "Temps Calculé", eco_label: "Économie est. : ~",
+    manual_temp: "TEMP. FOUR", manual_time: "MINUTES FOUR", error_msg: "⚠️ Données manquantes ! Entrez Température et Temps.", 
+    legal_privacy: "⚙️ Moteur de Convection Thermique actif. Calculs 100% locaux.",
+    alert_cap: "⚠️ Sécurité : Temp. limitée à 200°C", cta_recipes_top: "En panne d'inspiration ?", cta_recipes_bottom: `Explorez ${roundedCount}+ Recettes`,
   }
 };
 
@@ -52,79 +50,100 @@ const isEn = lang === 'en';
 const tempSymbol = isEn ? '°F' : '°C';
 const currSymbol = isEn ? '$' : '€';
 const initialEco = isEn ? '$0.00' : '0.00€';
+
+// SCHEMA.ORG: SOFTWARE APPLICATION
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": `${t.title} ${t.subtitle}`,
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": isEn ? "USD" : "EUR"
+  },
+  "description": "Algoritmo avanzato di ottimizzazione termica per convertire tempi e temperature dal forno tradizionale alla friggitrice ad aria in tempo reale.",
+  "featureList": [
+    "Analisi testuale istantanea delle ricette",
+    "Calcolo differenziale del tempo e della temperatura",
+    "Stima del risparmio energetico"
+  ]
+};
 ---
 
 <div id="airfryer-wrapper" data-lang={lang} class="max-w-[480px] mx-auto space-y-3 md:space-y-4">
   <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-[32px] shadow-2xl overflow-hidden font-sans text-white p-4 relative">
     
-    <div class="text-center mb-3 md:mb-4">
-      <h2 class="text-xl md:text-2xl font-bold text-slate-100">
-        {t.title} <span class="text-[#F59E0B]">{t.subtitle}</span>
+    <div class="text-center mb-3 md:mb-4 flex flex-col items-center justify-center">
+      <h2 class="text-xl md:text-2xl font-black text-slate-100 uppercase tracking-tight">
+        {t.title} <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-300">{t.subtitle}</span>
       </h2>
+      <div class="flex items-center gap-1.5 mt-1">
+        <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" aria-hidden="true"></span>
+        <span class="text-[9px] uppercase tracking-widest text-green-400 font-bold opacity-80">System Online</span>
+      </div>
     </div>
 
-    <div class="flex p-1 bg-black/20 border border-white/5 rounded-xl mb-3 md:mb-4 gap-1">
-      <button id="tab-conv" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all">{t.tab_conv}</button>
-      <button id="tab-food" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all">{t.tab_food}</button>
-      <button id="tab-recipes" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all flex items-center justify-center gap-1">
-        <svg class="w-4 h-4 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-        {t.tab_recipes}
-      </button>
+    <div class="flex p-1 bg-black/30 border border-white/5 rounded-xl mb-3 md:mb-4 gap-1 shadow-inner" role="tablist">
+      <button id="tab-conv" role="tab" aria-selected="true" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-gradient-to-b from-orange-400 to-orange-500 text-black shadow-md transition-all">{t.tab_conv}</button>
+      <button id="tab-food" role="tab" aria-selected="false" class="flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all">{t.tab_food}</button>
     </div>
 
-    <div id="view-converter" class="space-y-3 md:space-y-4 animate-fade-in">
-      <textarea id="recipe-input" class="w-full h-16 md:h-20 p-3 bg-black/20 border border-white/10 rounded-2xl focus:border-[#F59E0B] focus:bg-black/40 outline-none transition-all resize-none text-slate-200 text-sm leading-relaxed placeholder:text-slate-500" placeholder={t.placeholder}></textarea>
+    <div id="view-converter" class="space-y-3 md:space-y-4 animate-fade-in" role="tabpanel">
+      <textarea id="recipe-input" aria-label={t.tab_conv} class="w-full h-16 md:h-20 p-3 bg-black/40 border border-slate-700 rounded-2xl focus:border-orange-400 focus:ring-1 focus:ring-orange-400/50 outline-none transition-all resize-none text-slate-200 text-sm leading-relaxed placeholder:text-slate-500 shadow-inner" placeholder={t.placeholder}></textarea>
       
-      <div id="error-box" class="hidden bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-2 rounded-xl text-xs font-bold text-center animate-pulse">{t.error_msg}</div>
-      <div id="cap-alert" class="hidden bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold text-center">{t.alert_cap}</div>
+      <div id="error-box" class="hidden bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-2 rounded-xl text-xs font-bold text-center animate-pulse" role="alert">{t.error_msg}</div>
+      <div id="cap-alert" class="hidden bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold text-center" role="alert">{t.alert_cap}</div>
 
-      <button id="btn-convert" class="w-full py-3 bg-[#F59E0B] hover:bg-[#D97706] text-black rounded-xl font-bold text-base shadow-[0_4px_14px_0_rgba(245,158,11,0.2)] transition-transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer border border-[#F59E0B]/50">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      <button id="btn-convert" aria-label={t.btn_action} class="hidden w-full py-3 bg-gradient-to-r from-orange-500 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-black rounded-xl font-black text-base shadow-[0_4px_20px_0_rgba(245,158,11,0.3)] transition-transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer border border-orange-300/50">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
         {t.btn_action}
       </button>
     </div>
     
-    <div id="view-presets" class="hidden space-y-3 animate-fade-in py-2">
+    <div id="view-presets" class="hidden space-y-3 animate-fade-in py-2" role="tabpanel">
       <div class="flex gap-3 md:gap-4">
         <div class="flex-1">
-          <label class="text-[9px] md:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_temp}</label>
+          <label for="manual-temp" class="text-[9px] md:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_temp}</label>
           <div class="relative">
-            <input type="number" id="manual-temp" class="w-full p-2.5 pl-8 bg-black/20 border border-white/10 rounded-xl font-bold text-lg text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
-            <span class="absolute left-2.5 top-3 text-slate-500">🌡️</span>
-            <span class="absolute right-2.5 top-3.5 text-[9px] md:text-[10px] text-slate-500 font-bold">{tempSymbol}</span>
+            <input type="number" id="manual-temp" min="1" max="600" aria-label={t.manual_temp} class="w-full p-2.5 pl-8 bg-black/40 border border-slate-700 rounded-xl font-bold text-lg text-white outline-none focus:border-orange-400 focus:ring-1 focus:ring-orange-400/50 transition-all placeholder:text-slate-600 shadow-inner" placeholder="0">
+            <span class="absolute left-2.5 top-3 text-slate-500" aria-hidden="true">🌡️</span>
+            <span class="absolute right-2.5 top-3.5 text-[9px] md:text-[10px] text-slate-500 font-bold" aria-hidden="true">{tempSymbol}</span>
           </div>
         </div>
         <div class="flex-1">
-          <label class="text-[9px] md:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_time}</label>
+          <label for="manual-time" class="text-[9px] md:text-[10px] uppercase font-bold text-slate-400 tracking-wider block mb-1.5">{t.manual_time}</label>
           <div class="relative">
-            <input type="number" id="manual-time" class="w-full p-2.5 pl-8 bg-black/20 border border-white/10 rounded-xl font-bold text-lg text-white outline-none focus:border-[#F59E0B] transition-all placeholder:text-slate-600" placeholder="0">
-            <span class="absolute left-2.5 top-3 text-slate-500">⏱️</span>
-            <span class="absolute right-2.5 top-3.5 text-[9px] md:text-[10px] text-slate-500 font-bold tracking-wider">MIN</span>
+            <input type="number" id="manual-time" min="1" max="300" aria-label={t.manual_time} class="w-full p-2.5 pl-8 bg-black/40 border border-slate-700 rounded-xl font-bold text-lg text-white outline-none focus:border-orange-400 focus:ring-1 focus:ring-orange-400/50 transition-all placeholder:text-slate-600 shadow-inner" placeholder="0">
+            <span class="absolute left-2.5 top-3 text-slate-500" aria-hidden="true">⏱️</span>
+            <span class="absolute right-2.5 top-3.5 text-[9px] md:text-[10px] text-slate-500 font-bold tracking-wider" aria-hidden="true">MIN</span>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="mt-4 pt-3 border-t border-white/10 relative">
+    <div class="mt-4 pt-3 border-t border-slate-700/50 relative">
       <div class="grid grid-cols-2 gap-3 md:gap-4">
-        <div class="bg-black/20 p-3 rounded-xl md:rounded-2xl flex flex-col items-center justify-center relative min-h-[70px] md:min-h-[80px] border border-white/5">
-          <span class="text-[10px] md:text-[11px] text-slate-400 uppercase font-bold mb-1">{t.label_temp}</span>
+        <div class="bg-black/30 p-3 rounded-xl md:rounded-2xl flex flex-col items-center justify-center relative min-h-[70px] md:min-h-[80px] border border-slate-700/50 shadow-inner">
+          <span class="text-[9px] md:text-[10px] text-orange-300 uppercase font-black tracking-wider mb-1 opacity-90">{t.label_temp}</span>
           <div class="flex items-baseline gap-1">
-            <span id="res-temp" class="text-3xl font-black text-white">--</span>
-            <span class="text-lg md:text-xl font-bold text-[#F59E0B]">{tempSymbol}</span>
+            <span id="res-temp" class="text-3xl font-black text-white drop-shadow-md">--</span>
+            <span class="text-lg md:text-xl font-bold text-orange-400" aria-hidden="true">{tempSymbol}</span>
           </div>
         </div>
-        <div class="bg-black/20 p-3 rounded-xl md:rounded-2xl flex flex-col items-center justify-center relative min-h-[70px] md:min-h-[80px] border border-white/5">
-          <span class="text-[10px] md:text-[11px] text-slate-400 uppercase font-bold mb-1">{t.label_time}</span>
+        <div class="bg-black/30 p-3 rounded-xl md:rounded-2xl flex flex-col items-center justify-center relative min-h-[70px] md:min-h-[80px] border border-slate-700/50 shadow-inner">
+          <span class="text-[9px] md:text-[10px] text-orange-300 uppercase font-black tracking-wider mb-1 opacity-90">{t.label_time}</span>
           <div class="flex items-baseline gap-1">
-            <span id="res-time" class="text-3xl font-black text-white">--</span>
-            <span class="text-lg md:text-xl font-bold text-[#F59E0B]">m</span>
+            <span id="res-time" class="text-3xl font-black text-white drop-shadow-md">--</span>
+            <span class="text-lg md:text-xl font-bold text-orange-400" aria-hidden="true">m</span>
           </div>
         </div>
       </div>
 
-      <div id="eco-container" class="hidden flex justify-center -mt-2 mb-1">
-        <div class="bg-emerald-950/50 border border-emerald-500/20 px-3 md:px-4 py-1 rounded-full flex items-center gap-2 shadow-lg backdrop-blur-sm">
+      <div id="eco-container" class="hidden flex justify-center mt-3 mb-1">
+        <div class="bg-emerald-950/50 border border-emerald-500/30 px-3 md:px-4 py-1.5 rounded-full flex items-center gap-2 shadow-[0_0_10px_rgba(16,185,129,0.1)] backdrop-blur-sm">
+          <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
           <span class="text-[10px] md:text-xs font-bold text-emerald-400 uppercase tracking-wide">
             {t.eco_label} <span id="res-eco">{initialEco}</span>
           </span>
@@ -134,210 +153,207 @@ const initialEco = isEn ? '$0.00' : '0.00€';
   </div>
 
   <div class="py-2">
-    <button id="cta-recipes-unified" class="w-full py-3.5 md:py-4 border-2 border-[#F59E0B]/80 bg-gradient-to-br from-[#F59E0B]/20 to-black/40 backdrop-blur-sm rounded-xl font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
-      <div class="absolute inset-0 bg-[#F59E0B]/10 animate-pulse pointer-events-none"></div>
-      <span class="text-[#F59E0B] text-[10px] md:text-xs uppercase tracking-wider mb-0.5 md:mb-1 relative z-10 drop-shadow-md">{t.cta_recipes_top}</span>
-      <span class="text-white text-base md:text-xl flex items-center gap-2 group-hover:text-[#F59E0B] transition-colors relative z-10 drop-shadow-lg">
+    <button id="cta-recipes-unified" class="w-full py-3.5 md:py-4 border border-blue-500/30 bg-gradient-to-br from-slate-900 to-black backdrop-blur-sm rounded-xl font-bold shadow-lg hover:border-blue-400 transition-all flex flex-col items-center justify-center group cursor-pointer relative overflow-hidden">
+      <span class="text-slate-400 text-[10px] md:text-xs uppercase tracking-widest mb-0.5 md:mb-1 relative z-10 font-bold">{t.cta_recipes_top}</span>
+      <span class="text-white text-sm md:text-lg flex items-center gap-2 group-hover:text-blue-300 transition-colors relative z-10 font-black tracking-tight">
         {t.cta_recipes_bottom}
-        <svg class="w-4 h-4 md:w-5 md:h-5 text-[#F59E0B] animate-bounce transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        <svg class="w-4 h-4 md:w-5 md:h-5 text-blue-400 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7-7m7-7H3"></path></svg>
       </span>
     </button>
   </div>
 
   <div class="mx-auto text-center space-y-4 px-4 pb-4 md:mt-4">
-    <p class="text-[11px] text-slate-500 leading-relaxed font-medium">{t.legal_privacy}</p>
-    <div class="border-t border-white/5 w-1/2 mx-auto"></div>
+    <p class="text-[10px] text-slate-500/80 uppercase tracking-wider font-bold">{t.legal_privacy}</p>
+    <div class="border-t border-white/5 w-1/3 mx-auto"></div>
   </div>
-  
-  <div class="h-24 md:h-12"></div>
 </div>
 
-{/* BANNER AFFILIAZIONE (SOLO PER LINGUA ITALIANA) */}
-{lang === 'it' && (
-  <div class="fixed bottom-0 left-0 right-0 z-[100] transition-transform duration-300">
-    <div class="w-full bg-[#0B1120] border-t border-orange-500/30 shadow-[0_-15px_40px_rgba(0,0,0,0.6)]">
-      <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-        
-        <div class="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
-           <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 p-[1px] flex-shrink-0 shadow-[0_0_10px_rgba(245,158,11,0.5)] animate-pulse">
-              <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-lg">🎁</div>
-           </div>
-          <div class="flex-1 min-w-0">
-            <span class="block text-[10px] uppercase tracking-widest font-extrabold text-orange-500 mb-0.5 drop-shadow-md truncate">{t.bannerTop}</span>
-            <p class="text-sm md:text-base text-white leading-tight font-bold truncate">{t.bannerBot}</p>
-          </div>
-        </div>
-
-        <a href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convertitoref-21" target="_blank" rel="nofollow noopener" class="flex-shrink-0 bg-orange-500 hover:bg-orange-400 text-black text-xs md:text-sm font-black py-2.5 px-5 rounded-full flex items-center gap-1.5 shadow-[0_0_15px_rgba(245,158,11,0.4)] transition-all hover:scale-105 active:scale-95">
-          <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-          <span>{t.bannerBtn}</span>
-        </a>
-        
-      </div>
-    </div>
-  </div>
-)}
+<script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
 
 <script>
-  const wrapper = document.getElementById('airfryer-wrapper');
-  const sysLang = wrapper ? wrapper.getAttribute('data-lang') : 'it';
-  const isEn = sysLang === 'en';
-  const currUnit = isEn ? '$' : '€';
+  // PATTERN DI INIZIALIZZAZIONE SICURO (Supporta Astro View Transitions)
+  function initAirFryer() {
+    const wrapper = document.getElementById('airfryer-wrapper');
+    if (!wrapper) return; // Evita errori in pagine dove il componente non c'è
 
-  const convert = (temp: number, time: number, isInputF: boolean) => {
-    let finalTemp, finalTime, isCapped = false;
-    
-    if (isEn) {
-      let tempF = isInputF ? temp : (temp * 9/5) + 32;
-      finalTemp = tempF - 25;
-      let timeMult = 1;
+    const sysLang = wrapper.getAttribute('data-lang') || 'it';
+    const isEn = sysLang === 'en';
+    const currUnit = isEn ? '$' : '€';
+
+    const convert = (temp: number, time: number, isInputF: boolean) => {
+      let finalTemp, finalTime, isCapped = false;
       
-      if (finalTemp > 400) {
-        isCapped = true;
-        let diff = finalTemp - 400;
-        finalTemp = 400;
-        timeMult = 1 + (diff * 0.015);
-      }
-      finalTime = Math.round(time * 0.8 * timeMult);
-      finalTemp = Math.round(finalTemp / 5) * 5;
+      // Sanitizzazione input estremi
+      if (temp > 600) temp = 600; 
+      if (time > 300) time = 300;
       
-    } else {
-      let tempC = isInputF ? (temp - 32) * 5/9 : temp;
-      finalTemp = tempC - 20;
-      let timeMult = 1;
-      
-      if (finalTemp > 200) {
-        isCapped = true;
-        let diff = finalTemp - 200;
-        finalTemp = 200;
-        timeMult = 1 + (diff * 0.015);
-      }
-      finalTime = Math.round(time * 0.8 * timeMult);
-      finalTemp = Math.round(finalTemp);
-    }
-
-    const ovenCost = 2.0 * (time / 60);
-    const fryerCost = 1.4 * (finalTime / 60);
-    const saved = ((ovenCost - fryerCost) * 0.30).toFixed(2);
-    
-    return { temp: finalTemp, time: finalTime, saved: saved, isCapped: isCapped };
-  };
-
-  const updateUI = (res: { temp: number | string, time: number | string, saved: string, isCapped: boolean }) => {
-    const resTemp = document.getElementById('res-temp');
-    const resTime = document.getElementById('res-time');
-    const resEco = document.getElementById('res-eco');
-    const errorBox = document.getElementById('error-box');
-    const capAlert = document.getElementById('cap-alert');
-    const ecoContainer = document.getElementById('eco-container');
-
-    if (resTemp) resTemp.innerText = res.temp.toString();
-    if (resTime) resTime.innerText = res.time.toString();
-    if (resEco) resEco.innerText = isEn ? (currUnit + res.saved) : (res.saved + currUnit);
-    if (errorBox) errorBox.classList.add('hidden');
-    if (ecoContainer) ecoContainer.classList.remove('hidden');
-    
-    if (capAlert) {
-      if (res.isCapped) capAlert.classList.remove('hidden');
-      else capAlert.classList.add('hidden');
-    }
-  };
-
-  const resetUI = () => {
-    const resTemp = document.getElementById('res-temp');
-    const resTime = document.getElementById('res-time');
-    const resEco = document.getElementById('res-eco');
-    const errorBox = document.getElementById('error-box');
-    const capAlert = document.getElementById('cap-alert');
-    const ecoContainer = document.getElementById('eco-container');
-
-    if (resTemp) resTemp.innerText = "--";
-    if (resTime) resTime.innerText = "--";
-    if (resEco) resEco.innerText = isEn ? "$0.00" : "0.00€";
-    if (errorBox) errorBox.classList.add('hidden');
-    if (capAlert) capAlert.classList.add('hidden');
-    if (ecoContainer) ecoContainer.classList.add('hidden');
-  };
-
-  const runParser = () => {
-    const inputEl = document.getElementById('recipe-input') as HTMLTextAreaElement | null;
-    if (!inputEl) return;
-    const text = inputEl.value;
-    const tMatch = text.match(/(\d{3})\s?[°º]?\s?([CFcf]?)/);
-    const mMatch = text.match(/(\d{1,3})\s?(m|min|minutes|minuti)/i);
-
-    if (tMatch && mMatch) {
-      const tempVal = parseInt(tMatch[1]);
-      const isF = tMatch[2].toUpperCase() === 'F' || (isEn && tMatch[2].toUpperCase() !== 'C');
-      const timeVal = parseInt(mMatch[1]);
-      const res = convert(tempVal, timeVal, isF);
-      updateUI(res);
-    } else {
-      const errorBox = document.getElementById('error-box');
-      if (errorBox) errorBox.classList.remove('hidden');
-    }
-  };
-
-  const runManual = () => {
-    const tInput = document.getElementById('manual-temp') as HTMLInputElement | null;
-    const mInput = document.getElementById('manual-time') as HTMLInputElement | null;
-    if (!tInput || !mInput) return;
-    const t = parseInt(tInput.value || "0");
-    const m = parseInt(mInput.value || "0");
-    if (t > 0 && m > 0) {
-      const res = convert(t, m, isEn);
-      updateUI(res);
-    } else {
-      resetUI();
-    }
-  };
-
-  const scrollToRecipes = (e: Event) => {
-    e.preventDefault();
-    const recipeSection = document.getElementById('ricettario');
-    if (recipeSection) {
-      recipeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      window.location.href = '/#ricettario';
-    }
-  };
-
-  document.getElementById('btn-convert')?.addEventListener('click', runParser);
-  
-  const recipeInput = document.getElementById('recipe-input') as HTMLTextAreaElement | null;
-  recipeInput?.addEventListener('input', (e) => {
-    const target = e.target as HTMLTextAreaElement;
-    if (target.value.trim() === "") resetUI();
-    else document.getElementById('error-box')?.classList.add('hidden');
-  });
-  
-  document.getElementById('manual-temp')?.addEventListener('input', runManual);
-  document.getElementById('manual-time')?.addEventListener('input', runManual);
-
-  document.getElementById('tab-recipes')?.addEventListener('click', scrollToRecipes);
-  document.getElementById('cta-recipes-unified')?.addEventListener('click', scrollToRecipes);
-
-  const btnConv = document.getElementById('tab-conv');
-  const btnFood = document.getElementById('tab-food');
-  const viewConv = document.getElementById('view-converter');
-  const viewFood = document.getElementById('view-presets');
-
-  if(btnConv && btnFood && viewConv && viewFood) {
-    const switchTo = (mode: 'conv' | 'food') => {
-      resetUI();
-      if(mode === 'conv') {
-        viewConv.classList.remove('hidden');
-        viewFood.classList.add('hidden');
-        btnConv.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all";
-        btnFood.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all";
+      if (isEn) {
+        let tempF = isInputF ? temp : (temp * 9/5) + 32;
+        finalTemp = tempF - 25;
+        let timeMult = 1;
+        
+        if (finalTemp > 400) {
+          isCapped = true;
+          let diff = finalTemp - 400;
+          finalTemp = 400;
+          timeMult = 1 + (diff * 0.015);
+        }
+        finalTime = Math.round(time * 0.8 * timeMult);
+        finalTemp = Math.round(finalTemp / 5) * 5;
+        
       } else {
-        viewConv.classList.add('hidden');
-        viewFood.classList.remove('hidden');
-        btnFood.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-[#F59E0B] text-black shadow-md transition-all";
-        btnConv.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all";
+        let tempC = isInputF ? (temp - 32) * 5/9 : temp;
+        finalTemp = tempC - 20;
+        let timeMult = 1;
+        
+        if (finalTemp > 200) {
+          isCapped = true;
+          let diff = finalTemp - 200;
+          finalTemp = 200;
+          timeMult = 1 + (diff * 0.015);
+        }
+        finalTime = Math.round(time * 0.8 * timeMult);
+        finalTemp = Math.round(finalTemp);
+      }
+
+      const ovenCost = 2.0 * (time / 60);
+      const fryerCost = 1.4 * (finalTime / 60);
+      const saved = ((ovenCost - fryerCost) * 0.30).toFixed(2);
+      
+      return { temp: finalTemp, time: finalTime, saved: saved, isCapped: isCapped };
+    };
+
+    const updateUI = (res: { temp: number | string, time: number | string, saved: string, isCapped: boolean }) => {
+      const elTemp = document.getElementById('res-temp');
+      const elTime = document.getElementById('res-time');
+      const elEco = document.getElementById('res-eco');
+      
+      if (elTemp) elTemp.innerText = res.temp.toString();
+      if (elTime) elTime.innerText = res.time.toString();
+      if (elEco) elEco.innerText = isEn ? (currUnit + res.saved) : (res.saved + currUnit);
+      
+      document.getElementById('error-box')?.classList.add('hidden');
+      document.getElementById('eco-container')?.classList.remove('hidden');
+      
+      const capAlert = document.getElementById('cap-alert');
+      if (capAlert) {
+        res.isCapped ? capAlert.classList.remove('hidden') : capAlert.classList.add('hidden');
       }
     };
-    btnConv.addEventListener('click', () => switchTo('conv'));
-    btnFood.addEventListener('click', () => switchTo('food'));
+
+    const resetUI = () => {
+      const elTemp = document.getElementById('res-temp');
+      const elTime = document.getElementById('res-time');
+      const elEco = document.getElementById('res-eco');
+      
+      if (elTemp) elTemp.innerText = "--";
+      if (elTime) elTime.innerText = "--";
+      if (elEco) elEco.innerText = isEn ? "$0.00" : "0.00€";
+      
+      document.getElementById('error-box')?.classList.add('hidden');
+      document.getElementById('cap-alert')?.classList.add('hidden');
+      document.getElementById('eco-container')?.classList.add('hidden');
+    };
+
+    // REGEX MIGLIORATA E A PROVA DI BOMBA
+    const runParser = (showErrors = false) => {
+      const inputEl = document.getElementById('recipe-input') as HTMLTextAreaElement | null;
+      const btnConvert = document.getElementById('btn-convert');
+      if (!inputEl) return;
+      const text = inputEl.value;
+      
+      // Ora legge anche "gradi", "degrees", "minutos" etc.
+      const tMatch = text.match(/(\d{3})\s*(?:°|º|gradi|degrees)?\s*([CFcf]?)/i);
+      const mMatch = text.match(/(\d{1,3})\s*(?:m|min|minutes|minuti|minutos)/i);
+
+      if (tMatch && mMatch) {
+        const tempVal = parseInt(tMatch[1], 10);
+        const isF = tMatch[2].toUpperCase() === 'F' || (isEn && tMatch[2].toUpperCase() !== 'C');
+        const timeVal = parseInt(mMatch[1], 10);
+        
+        const res = convert(tempVal, timeVal, isF);
+        updateUI(res);
+        if (btnConvert) btnConvert.classList.add('hidden');
+      } else {
+        resetUI();
+        if (btnConvert && text.length > 5) btnConvert.classList.remove('hidden');
+        if (showErrors) document.getElementById('error-box')?.classList.remove('hidden');
+      }
+    };
+
+    const runManual = () => {
+      const tInput = document.getElementById('manual-temp') as HTMLInputElement | null;
+      const mInput = document.getElementById('manual-time') as HTMLInputElement | null;
+      if (!tInput || !mInput) return;
+      const t = parseInt(tInput.value || "0", 10);
+      const m = parseInt(mInput.value || "0", 10);
+      
+      if (t > 0 && m > 0) {
+        updateUI(convert(t, m, isEn));
+      } else {
+        resetUI();
+      }
+    };
+
+    const scrollToRecipes = (e: Event) => {
+      e.preventDefault();
+      const recipeSection = document.getElementById('ricettario');
+      if (recipeSection) {
+        recipeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        window.location.href = '/#ricettario';
+      }
+    };
+
+    // EVENT LISTENERS
+    document.getElementById('btn-convert')?.addEventListener('click', () => runParser(true));
+    
+    document.getElementById('recipe-input')?.addEventListener('input', (e) => {
+      const target = e.target as HTMLTextAreaElement;
+      if (target.value.trim() === "") {
+          resetUI();
+          document.getElementById('btn-convert')?.classList.add('hidden');
+      } else {
+          document.getElementById('error-box')?.classList.add('hidden');
+          runParser(false); 
+      }
+    });
+    
+    document.getElementById('manual-temp')?.addEventListener('input', runManual);
+    document.getElementById('manual-time')?.addEventListener('input', runManual);
+    document.getElementById('cta-recipes-unified')?.addEventListener('click', scrollToRecipes);
+
+    const btnConv = document.getElementById('tab-conv');
+    const btnFood = document.getElementById('tab-food');
+    const viewConv = document.getElementById('view-converter');
+    const viewFood = document.getElementById('view-presets');
+
+    if(btnConv && btnFood && viewConv && viewFood) {
+      const switchTo = (mode: 'conv' | 'food') => {
+        resetUI();
+        if(mode === 'conv') {
+          viewConv.classList.remove('hidden');
+          viewFood.classList.add('hidden');
+          btnConv.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-gradient-to-b from-orange-400 to-orange-500 text-black shadow-md transition-all";
+          btnConv.setAttribute('aria-selected', 'true');
+          btnFood.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all";
+          btnFood.setAttribute('aria-selected', 'false');
+        } else {
+          viewConv.classList.add('hidden');
+          viewFood.classList.remove('hidden');
+          btnFood.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-bold bg-gradient-to-b from-orange-400 to-orange-500 text-black shadow-md transition-all";
+          btnFood.setAttribute('aria-selected', 'true');
+          btnConv.className = "flex-1 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-400 hover:text-white transition-all";
+          btnConv.setAttribute('aria-selected', 'false');
+        }
+      };
+      btnConv.addEventListener('click', () => switchTo('conv'));
+      btnFood.addEventListener('click', () => switchTo('food'));
+    }
   }
+
+  // Esegui al caricamento iniziale
+  document.addEventListener('DOMContentLoaded', initAirFryer);
+  // Esegui anche in caso di navigazione interna SPA (View Transitions di Astro)
+  document.addEventListener('astro:page-load', initAirFryer);
 </script>

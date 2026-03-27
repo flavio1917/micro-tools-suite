@@ -1,0 +1,169 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } }
+  ];
+}
+
+const { lang } = Astro.params;
+
+const content = {
+  it: {
+    title: "Cosa mettere nella Friggitrice ad Aria? | Semaforo dei Materiali",
+    h1: "Il Semaforo dei Materiali",
+    desc: "La guida definitiva su cosa puoi e NON puoi inserire nel cestello della tua friggitrice ad aria. Evita disastri in cucina e proteggi il tuo elettrodomestico.",
+    safe: "🟢 SICURO (Vai tranquillo)",
+    caution: "🟡 ATTENZIONE (Con riserva)",
+    danger: "🔴 PERICOLO (Mai inserire)",
+    disclaimerTitle: "⚖️ Disclaimer sulle Responsabilità",
+    disclaimer: "Le informazioni contenute in questa pagina sono frutto di esperienza e linee guida generali, fornite a scopo puramente informativo. Le friggitrici ad aria variano per marca, modello e architettura interna. Fai sempre riferimento al manuale di istruzioni ufficiale del tuo specifico elettrodomestico. ConvertitoreFriggitrice.it e i suoi autori declinano ogni responsabilità per eventuali danni a cose o persone derivanti dall'uso improprio dell'elettrodomestico o dall'applicazione delle indicazioni qui riportate.",
+    items: [
+      { status: "safe", name: "Carta Forno", desc: "Sì, ma usala solo se forata e SEMPRE con il cibo pesante sopra. Mai metterla durante il preriscaldamento o volerà sulla resistenza bruciandosi." },
+      { status: "safe", name: "Alluminio (Carta Stagnola)", desc: "Sì, ma non metterlo a contatto con cibi molto acidi (come pomodoro o limone). Assicurati che sia ben fissato e che non ostruisca completamente il flusso d'aria sul fondo." },
+      { status: "safe", name: "Teglie in Silicone", desc: "Perfette. Il silicone resiste alle alte temperature ed è il materiale migliore per torte o per non sporcare il cestello." },
+      { status: "safe", name: "Vetro Pirofilo / Ceramica", desc: "Se c'è scritto esplicitamente 'Adatto per forno', va bene anche nella friggitrice ad aria. Assicurati solo che ci sia spazio ai lati per far circolare l'aria calda." },
+      { status: "caution", name: "Stuzzicadenti di Legno", desc: "Possono bruciare o volare via verso la resistenza. Usali solo se ben incastrati nella carne (es. involtini) o immergili in acqua per 10 minuti prima di usarli." },
+      { status: "danger", name: "Plastica e Tupperware", desc: "Assolutamente no. Si scioglieranno in pochi secondi fondendosi con il cibo e distruggendo irreparabilmente l'elettrodomestico." },
+      { status: "danger", name: "Carta Assorbente (Scottex)", desc: "Mai. Prenderà fuoco istantaneamente a causa del potente flusso d'aria calda." },
+      { status: "danger", name: "Vetro normale non temperato", desc: "Il vetro normale si frantumerà a causa dello shock termico rapido e violento tipico della friggitrice ad aria." }
+    ]
+  },
+  en: {
+    title: "What can you put in an Air Fryer? | Materials Guide",
+    h1: "The Materials Traffic Light",
+    desc: "The ultimate guide on what you can and CANNOT put in your air fryer basket. Avoid kitchen disasters and protect your appliance.",
+    safe: "🟢 SAFE (Go ahead)",
+    caution: "🟡 CAUTION (Be careful)",
+    danger: "🔴 DANGER (Never use)",
+    disclaimerTitle: "⚖️ Liability Disclaimer",
+    disclaimer: "The information on this page is based on experience and general guidelines, provided for informational purposes only. Air fryers vary by brand, model, and internal architecture. Always refer to the official instruction manual for your specific appliance. AirFryerConverter and its authors disclaim all liability for any damage to property or injury to persons resulting from the improper use of the appliance or the application of the information provided herein.",
+    items: [
+      { status: "safe", name: "Parchment Paper", desc: "Yes, but use it perforated and ALWAYS weighted down by food. Never put it in during preheating or it will fly into the heating element and catch fire." },
+      { status: "safe", name: "Aluminum Foil", desc: "Yes, but avoid contact with highly acidic foods (like tomatoes or lemon). Ensure it is secured and does not completely block airflow." },
+      { status: "safe", name: "Silicone Molds", desc: "Perfect. Silicone withstands high temperatures and is the best material for baking or keeping the basket clean." },
+      { status: "safe", name: "Oven-Safe Glass / Ceramic", desc: "If it explicitly says 'Oven Safe', it's air fryer safe. Just make sure there is space around the edges for air to circulate." },
+      { status: "caution", name: "Wooden Toothpicks", desc: "They can burn or fly into the heating element. Use them only if firmly secured in food or soak them in water for 10 minutes before use." },
+      { status: "danger", name: "Plastic and Tupperware", desc: "Absolutely not. They will melt in seconds, fusing with your food and destroying the appliance." },
+      { status: "danger", name: "Paper Towels", desc: "Never. They will catch fire instantly due to the powerful flow of hot air." },
+      { status: "danger", name: "Non-tempered Glass", desc: "Regular glass will shatter due to the rapid and violent thermal shock typical of air fryers." }
+    ]
+  },
+  es: {
+    title: "¿Qué se puede meter en la Freidora de Aire? | Guía de Materiales",
+    h1: "El Semáforo de Materiales",
+    desc: "La guía definitiva sobre lo que puedes y NO puedes poner en la cesta de tu freidora de aire. Evita desastres en la cocina.",
+    safe: "🟢 SEGURO (Adelante)",
+    caution: "🟡 PRECAUCIÓN (Con cuidado)",
+    danger: "🔴 PELIGRO (Nunca usar)",
+    disclaimerTitle: "⚖️ Aviso de Responsabilidad",
+    disclaimer: "La información de esta página se basa en la experiencia y en directrices generales, y se proporciona únicamente con fines informativos. Las freidoras de aire varían según la marca y el modelo. Consulta siempre el manual de instrucciones oficial de tu electrodoméstico. El autor declina toda responsabilidad por los daños a bienes o personas derivados del uso indebido del electrodoméstico o de la aplicación de las indicaciones aquí descritas.",
+    items: [
+      { status: "safe", name: "Papel de Horno", desc: "Sí, pero úsalo perforado y SIEMPRE con comida pesada encima. Nunca lo pongas durante el precalentamiento." },
+      { status: "safe", name: "Papel de Aluminio", desc: "Sí, pero evita el contacto con alimentos muy ácidos. Asegúrate de que no bloquee totalmente el flujo de aire." },
+      { status: "safe", name: "Moldes de Silicona", desc: "Perfectos. Soportan altas temperaturas y son ideales para hornear y no ensuciar." },
+      { status: "safe", name: "Vidrio para Horno / Cerámica", desc: "Si dice 'Apto para horno', sirve. Deja espacio a los lados para que circule el aire." },
+      { status: "caution", name: "Palillos de Madera", desc: "Pueden quemarse o salir volando. Úsalos solo si están bien clavados o remójalos en agua 10 minutos antes." },
+      { status: "danger", name: "Plástico y Tupperware", desc: "Absolutamente no. Se derretirán en segundos arruinando la comida y la freidora." },
+      { status: "danger", name: "Papel de Cocina", desc: "Nunca. Se incendiará instantáneamente por el potente flujo de aire caliente." },
+      { status: "danger", name: "Vidrio Normal", desc: "Se romperá debido al rápido choque térmico de la freidora." }
+    ]
+  },
+  fr: {
+    title: "Que peut-on mettre dans une Friteuse à Air ? | Guide des Matériaux",
+    h1: "Le Feu Tricolore des Matériaux",
+    desc: "Le guide définitif sur ce que vous pouvez et NE pouvez PAS mettre dans votre friteuse à air. Évitez les catastrophes.",
+    safe: "🟢 SÛR (Allez-y)",
+    caution: "🟡 ATTENTION (Avec précaution)",
+    danger: "🔴 DANGER (Ne jamais utiliser)",
+    disclaimerTitle: "⚖️ Clause de Non-responsabilité",
+    disclaimer: "Les informations contenues sur cette page sont fournies à titre informatif. Les friteuses à air varient selon la marque et le modèle. Référez-vous toujours au manuel d'instructions officiel de votre appareil. L'auteur décline toute responsabilité pour tout dommage matériel ou corporel résultant d'une mauvaise utilisation de l'appareil ou de l'application des informations fournies ici.",
+    items: [
+      { status: "safe", name: "Papier Cuisson", desc: "Oui, mais perforé et TOUJOURS avec des aliments lourds dessus. Ne jamais le mettre pendant le préchauffage." },
+      { status: "safe", name: "Papier d'Aluminium", desc: "Oui, mais évitez le contact avec des aliments acides. Assurez-vous qu'il ne bloque pas complètement l'air." },
+      { status: "safe", name: "Moules en Silicone", desc: "Parfaits. Résistent aux hautes températures, idéals pour garder le panier propre." },
+      { status: "safe", name: "Verre allant au four / Céramique", desc: "Si c'est 'Compatible Four', c'est bon. Laissez de l'espace sur les côtés pour l'air." },
+      { status: "caution", name: "Cure-dents en Bois", desc: "Peuvent brûler ou s'envoler. À utiliser bien plantés ou trempés dans l'eau 10 min avant." },
+      { status: "danger", name: "Plastique et Tupperware", desc: "Absolument pas. Vont fondre en quelques secondes." },
+      { status: "danger", name: "Essuie-tout", desc: "Jamais. Prendra feu instantanément à cause du flux d'air chaud." },
+      { status: "danger", name: "Verre non trempé", desc: "Se brisera à cause du choc thermique rapide." }
+    ]
+  }
+};
+
+const t = content[lang as keyof typeof content] || content.it;
+
+// Configurazione Dati Strutturati FAQ (Cruciale per i Rich Snippets di Google)
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": t.items.map(item => ({
+    "@type": "Question",
+    "name": `Posso mettere ${item.name.toLowerCase()} nella friggitrice ad aria?`, 
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.desc
+    }
+  }))
+};
+---
+
+<MainLayout title={t.title} lang={lang}>
+  <section class="max-w-4xl mx-auto py-16 px-4">
+    
+    <div class="text-center mb-12">
+      <h1 class="text-3xl md:text-5xl font-black text-white mb-4">{t.h1}</h1>
+      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">{t.desc}</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4 text-center">
+        <span class="font-bold text-green-400 text-sm">{t.safe}</span>
+      </div>
+      <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-xl p-4 text-center">
+        <span class="font-bold text-yellow-400 text-sm">{t.caution}</span>
+      </div>
+      <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-center">
+        <span class="font-bold text-red-400 text-sm">{t.danger}</span>
+      </div>
+    </div>
+
+    <div class="space-y-4 mb-16">
+      {t.items.map((item) => (
+        <div class={`p-6 rounded-2xl border backdrop-blur-sm flex flex-col md:flex-row gap-4 items-start md:items-center transition-all hover:-translate-y-1 ${
+          item.status === 'safe' ? 'bg-green-950/20 border-green-500/20 hover:border-green-500/50 hover:shadow-[0_0_15px_rgba(34,197,94,0.1)]' : 
+          item.status === 'caution' ? 'bg-yellow-950/20 border-yellow-500/20 hover:border-yellow-500/50 hover:shadow-[0_0_15px_rgba(234,179,8,0.1)]' : 
+          'bg-red-950/20 border-red-500/20 hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.1)]'
+        }`}>
+          <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-2xl bg-slate-900/50 shadow-inner border border-white/5">
+            {item.status === 'safe' ? '✅' : item.status === 'caution' ? '⚠️' : '❌'}
+          </div>
+          <div>
+            <h3 class={`text-xl font-bold mb-1 ${
+              item.status === 'safe' ? 'text-green-300' : 
+              item.status === 'caution' ? 'text-yellow-300' : 'text-red-300'
+            }`}>{item.name}</h3>
+            <p class="text-slate-300 leading-relaxed text-sm md:text-base">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="bg-slate-900/80 border border-slate-700/80 rounded-xl p-6 md:p-8 text-sm text-slate-400 shadow-inner">
+      <h4 class="text-slate-300 font-bold mb-3 uppercase tracking-wider text-xs flex items-center gap-2">
+        {t.disclaimerTitle}
+      </h4>
+      <p class="leading-relaxed">
+        {t.disclaimer}
+      </p>
+    </div>
+
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+</MainLayout>

@@ -85,7 +85,7 @@ const affiliateLinks = [
   { regex: /(termometro\b(?:\s+per\s+carne|\s+alimentare)?|meat thermometer|termómetro(?: de carne)?|thermomètre(?: à viande)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" },
   { regex: /(pinze(?:\s+da\s+cucina|\s+in\s+silicone)?|kitchen tongs|pinzas(?: de cocina)?|pinces(?: de cuisine)?)/gi, link: "https://www.amazon.it/dp/B08P1QDFN6?tag=convfriggit-21" }
 ];
-
+/*
 function enrichText(text: string) {
   if (!text) return text;
   let enriched = text;
@@ -94,10 +94,16 @@ function enrichText(text: string) {
   });
   return enriched;
 }
+*/
+function enrichText(text: string) {
+  return text; // Link Amazon disattivati temporaneamente per la SEO
+}
 ---
 
 <MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData}>
   
+  <SchemaRecipe recipe={recipe} lang={lang} />
+
   <div class="relative h-[40vh] min-h-[320px] md:h-[45vh] w-full overflow-hidden bg-slate-900">
     <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40"></div>
@@ -236,7 +242,7 @@ function enrichText(text: string) {
       </div>
     </div>
   </div>
-{/* BANNER AFFILIAZIONE (SOLO PER LINGUA ITALIANA) */}
+{/* BANNER AFFILIAZIONE (SOLO PER LINGUA ITALIANA) 
 {lang === 'it' && (
 <div class="fixed bottom-0 left-0 right-0 z-[100] transition-transform duration-300">
   <div class="w-full bg-[#0B1120] border-t border-orange-500/30 shadow-[0_-15px_40px_rgba(0,0,0,0.6)]">
@@ -261,6 +267,7 @@ function enrichText(text: string) {
   </div>
 </div>
 )}
+*/}
   <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang }}>
     document.addEventListener('DOMContentLoaded', () => {
       let currentPortions = basePortions;
