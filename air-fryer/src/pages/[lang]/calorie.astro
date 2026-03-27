@@ -27,7 +27,7 @@ const content = {
     h1: "Calcolatore di Risparmio Calorico",
     desc: "Scopri esattamente quanti grassi e calorie risparmi cucinando ad aria invece che per immersione nell'olio. Dati scientifici, non slogan.",
     foodLabel: "Seleziona l'alimento:",
-    weightLabel: "Peso della porzione (grammi):",
+    weightLabel: "Peso della porzione:",
     btnCalc: "Calcola Risparmio",
     resFat: "Grassi Risparmiati",
     resKcal: "Calorie Risparmiate",
@@ -45,7 +45,7 @@ const content = {
     h1: "Calorie Savings Calculator",
     desc: "Discover exactly how much fat and calories you save by air frying instead of deep frying. Real math, not marketing slogans.",
     foodLabel: "Select food:",
-    weightLabel: "Portion weight (grams):",
+    weightLabel: "Portion weight:",
     btnCalc: "Calculate Savings",
     resFat: "Fat Saved",
     resKcal: "Calories Saved",
@@ -63,7 +63,7 @@ const content = {
     h1: "Calculadora de Ahorro Calórico",
     desc: "Descubre exactamente cuánta grasa y calorías ahorras al cocinar con aire. Matemáticas reales, no eslóganes.",
     foodLabel: "Selecciona el alimento:",
-    weightLabel: "Peso de la porción (gramos):",
+    weightLabel: "Peso de la porción:",
     btnCalc: "Calcular Ahorro",
     resFat: "Grasa Ahorrada",
     resKcal: "Calorías Ahorradas",
@@ -81,7 +81,7 @@ const content = {
     h1: "Calculateur d'Économie de Calories",
     desc: "Découvrez exactement combien de graisses et de calories vous économisez. Des vrais chiffres, pas des slogans.",
     foodLabel: "Sélectionnez l'aliment :",
-    weightLabel: "Poids de la portion (grammes) :",
+    weightLabel: "Poids de la portion :",
     btnCalc: "Calculer l'Économie",
     resFat: "Graisse Économisée",
     resKcal: "Calories Économisées",
@@ -139,13 +139,21 @@ const softwareSchema = {
 
         <div>
           <label class="block text-sm font-bold text-slate-300 uppercase tracking-wider mb-2">{t.weightLabel}</label>
-          <div class="relative">
-            <input type="number" id="weight-input" value="250" min="50" max="2000" class="w-full bg-slate-900 border border-slate-600 text-white rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all shadow-inner font-mono text-2xl" />
-            <span class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 font-bold">g</span>
+          
+          <div class="flex items-center justify-between bg-slate-900 border border-slate-600 rounded-xl overflow-hidden shadow-inner h-14">
+            <button id="btn-minus-weight" class="w-16 h-full bg-slate-800 hover:bg-slate-700 text-white font-black text-2xl transition-colors active:bg-slate-600 flex items-center justify-center cursor-pointer select-none">-</button>
+            
+            <div class="flex items-center justify-center flex-1">
+              <input type="number" id="weight-input" value="250" min="50" max="2000" step="50" class="w-20 bg-transparent text-center text-white font-mono font-bold text-3xl outline-none appearance-none" style="-moz-appearance: textfield;" />
+              <span class="text-slate-400 font-bold text-xl ml-1 select-none">g</span>
+            </div>
+            
+            <button id="btn-plus-weight" class="w-16 h-full bg-slate-800 hover:bg-slate-700 text-white font-black text-2xl transition-colors active:bg-slate-600 flex items-center justify-center cursor-pointer select-none">+</button>
           </div>
+          
         </div>
 
-        <button id="calc-btn" class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-900 font-black text-lg py-4 rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all active:scale-95 uppercase tracking-wide">
+        <button id="calc-btn" class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-900 font-black text-lg py-4 rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all active:scale-95 uppercase tracking-wide mt-4">
           {t.btnCalc}
         </button>
       </div>
@@ -188,11 +196,34 @@ const softwareSchema = {
 
   </section>
 
+  <style>
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+
   <script is:inline>
     document.addEventListener('DOMContentLoaded', () => {
+      // Logica Pulsanti Peso
+      const btnMinus = document.getElementById('btn-minus-weight');
+      const btnPlus = document.getElementById('btn-plus-weight');
+      const wInput = document.getElementById('weight-input');
+
+      btnMinus.addEventListener('click', () => {
+        let val = parseInt(wInput.value) || 0;
+        if (val > 50) wInput.value = val - 50;
+      });
+
+      btnPlus.addEventListener('click', () => {
+        let val = parseInt(wInput.value) || 0;
+        if (val < 2000) wInput.value = val + 50;
+      });
+
+      // Logica Calcolatore
       const btn = document.getElementById('calc-btn');
       const select = document.getElementById('food-select');
-      const weightInput = document.getElementById('weight-input');
       const dash = document.getElementById('results-dash');
       const elFat = document.getElementById('res-fat');
       const elKcal = document.getElementById('res-kcal');
@@ -216,7 +247,7 @@ const softwareSchema = {
         const option = select.options[select.selectedIndex];
         const absorbRate = parseFloat(option.getAttribute('data-absorb'));
         const airFryOilGram = parseFloat(option.getAttribute('data-airoil'));
-        const weight = parseFloat(weightInput.value);
+        const weight = parseFloat(wInput.value);
 
         if (isNaN(weight) || weight <= 0) return;
 

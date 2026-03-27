@@ -31,7 +31,8 @@ const translations = {
     stepTitle: "Procedimento", step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro.",
     step2: "Cottura", step2Desc: `Imposta a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Il Segreto dello Chef", searchOther: "← Cerca un'altra ricetta", authBadge: "Autentica", seoAuth: " | Ricetta Originale",
-    unitTemp: "°C", unitTime: "min", bannerTop: "MIGLIORA LA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori.", bannerBtn: "Scopri le Offerte"
+    unitTemp: "°C", unitTime: "min", bannerTop: "MIGLIORA LA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori.", bannerBtn: "Scopri le Offerte",
+    calWidgetTitle: "Risparmio Calorico", calWidgetText: "Cucinando ad aria risparmi fino al 70% di grassi in meno.", calWidgetBtn: "Calcola ora →"
   },
   en: {
     back: "Back", backLink: "/en/#ricettario", temp: "Temperature", time: "Cook Time", prep: "Prep Time",
@@ -39,7 +40,8 @@ const translations = {
     stepTitle: "Instructions", step1: "Preparation", step1Desc: "Prepare all ingredients on the counter.",
     step2: "Cooking", step2Desc: `Set to <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°F</strong>. Cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Chef's Tip", searchOther: "← Search another recipe", authBadge: "Authentic", seoAuth: " | Authentic Recipe",
-    unitTemp: "°F", unitTime: "min", bannerTop: "UPGRADE AIR FRYER", bannerBot: "Discover the ultimate Kit.", bannerBtn: "View Deals"
+    unitTemp: "°F", unitTime: "min", bannerTop: "UPGRADE AIR FRYER", bannerBot: "Discover the ultimate Kit.", bannerBtn: "View Deals",
+    calWidgetTitle: "Calorie Savings", calWidgetText: "Cooking with air saves up to 70% less fat.", calWidgetBtn: "Calculate now →"
   },
   es: {
     back: "Volver", backLink: "/es/#ricettario", temp: "Temperatura", time: "Cocción", prep: "Preparación",
@@ -47,7 +49,8 @@ const translations = {
     stepTitle: "Instrucciones", step1: "Preparación", step1Desc: "Prepara todos los ingredientes.",
     step2: "Cocción", step2Desc: `Ajusta a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Consejo del Chef", searchOther: "← Buscar otra receta", authBadge: "Auténtica", seoAuth: " | Auténtica",
-    unitTemp: "°C", unitTime: "min", bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit definitivo.", bannerBtn: "Ver Las Ofertas"
+    unitTemp: "°C", unitTime: "min", bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit definitivo.", bannerBtn: "Ver Las Ofertas",
+    calWidgetTitle: "Ahorro Calórico", calWidgetText: "Cocinar con aire ahorra hasta un 70% menos de grasa.", calWidgetBtn: "Calcula ahora →"
   },
   fr: {
     back: "Retour", backLink: "/fr/#ricettario", temp: "Température", time: "Cuisson", prep: "Préparation",
@@ -55,7 +58,8 @@ const translations = {
     stepTitle: "Instructions", step1: "Préparation", step1Desc: "Préparez tous les ingrédients.",
     step2: "Cuisson", step2Desc: `Réglez sur <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Astuce du Chef", searchOther: "← Chercher autre", authBadge: "Authentique", seoAuth: " | Authentique",
-    unitTemp: "°C", unitTime: "min", bannerTop: "AMÉLIOREZ LA FRITEUSE", bannerBot: "Découvrez le Kit ultime.", bannerBtn: "Voir les Offres"
+    unitTemp: "°C", unitTime: "min", bannerTop: "AMÉLIOREZ LA FRITEUSE", bannerBot: "Découvrez le Kit ultime.", bannerBtn: "Voir les Offres",
+    calWidgetTitle: "Économie de Calories", calWidgetText: "La cuisson à l'air permet d'économiser jusqu'à 70 % de matières grasses.", calWidgetBtn: "Calculez maintenant →"
   }
 };
 
@@ -79,25 +83,8 @@ const getLocalizedUrl = (targetLang: string) => {
   return targetRecipe ? `/${targetLang}/recipes/${targetRecipe.slug}` : `/${targetLang}/#ricettario`;
 };
 
-const affiliateLinks = [
-  { regex: /(carta(?:\s+da)?\s+forno(?:(?:\s+in)?\s+fogli)?(?:\s+forata)?|parchment paper|papel de horno|papel pergamino|papier cuisson|papier sulfurisé)/gi, link: "https://www.amazon.it/dp/B0D3VCV459?tag=convfriggit-21" },
-  { regex: /(olio(?:\s+(?:extravergine|extra vergine)\s+d'oliva|\s+evo)?\s+spray|nebulizzare(?:\s+(?:con\s+)?olio)?|nebulizzatore(?:\s+d'olio)?|oil spray|cooking spray|aceite en spray|pulverizador(?: de aceite)?|huile en spray|vaporisateur(?: d'huile)?)/gi, link: "https://www.amazon.it/dp/B0F2DJV6SZ?tag=convfriggit-21" },
-  { regex: /(teglia(?:\s+in)?\s+silicone|cestello(?:\s+in)?\s+silicone|stampo(?:\s+in)?\s+silicone|silicone(?: liner| mold| pan| basket)|molde de silicona|moule en silicone)/gi, link: "https://www.amazon.it/dp/B0D9CSGYYP?tag=convfriggit-21" },
-  { regex: /(termometro\b(?:\s+per\s+carne|\s+alimentare)?|meat thermometer|termómetro(?: de carne)?|thermomètre(?: à viande)?)/gi, link: "https://www.amazon.it/dp/B07CB8JG21?tag=convfriggit-21" },
-  { regex: /(pinze(?:\s+da\s+cucina|\s+in\s+silicone)?|kitchen tongs|pinzas(?: de cocina)?|pinces(?: de cuisine)?)/gi, link: "https://www.amazon.it/dp/B08P1QDFN6?tag=convfriggit-21" }
-];
-/*
 function enrichText(text: string) {
-  if (!text) return text;
-  let enriched = text;
-  affiliateLinks.forEach(item => {
-    enriched = enriched.replace(item.regex, `<a href="${item.link}" target="_blank" rel="nofollow noopener" title="Vedi su Amazon" class="text-orange-400 font-bold hover:text-orange-300 hover:underline decoration-orange-500/50 underline-offset-4 transition-colors">$1</a>`);
-  });
-  return enriched;
-}
-*/
-function enrichText(text: string) {
-  return text; // Link Amazon disattivati temporaneamente per la SEO
+  return text; 
 }
 ---
 
@@ -169,9 +156,9 @@ function enrichText(text: string) {
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center items-center relative group">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-2">{t.portions}</span>
         <div class="flex items-center justify-center gap-3 mt-1">
-          <button id="btn-minus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg">-</button>
-          <div class="text-2xl md:text-3xl font-bold text-purple-400 w-8 text-center" id="portions-display">{defaultPortions}</div>
-          <button id="btn-plus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg">+</button>
+          <button id="btn-minus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg select-none">-</button>
+          <div class="text-2xl md:text-3xl font-bold text-purple-400 w-8 text-center select-none" id="portions-display">{defaultPortions}</div>
+          <button id="btn-plus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg select-none">+</button>
         </div>
         <span class="text-[10px] text-slate-500 mt-1">{t.pers}</span>
       </div>
@@ -199,11 +186,22 @@ function enrichText(text: string) {
               ))
             ) : (<li class="text-slate-500 italic text-sm">{t.noIng}</li>)}
           </ul>
+
+          <a href={`/${lang}/calorie`} class="mt-8 block bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-2xl p-5 hover:border-emerald-500/60 transition-colors group">
+            <h4 class="text-emerald-400 font-bold flex items-center gap-2 mb-2">
+              <span class="text-xl">⚖️</span> {t.calWidgetTitle}
+            </h4>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              {t.calWidgetText}
+              <strong class="text-white group-hover:text-emerald-400 transition-colors ml-1">{t.calWidgetBtn}</strong>
+            </p>
+          </a>
+
         </div>
       </div>
 
       <div class="lg:col-span-2 space-y-8">
-        <!-- <AmazonProduct recipe={recipe} lang={lang} />-->
+        <AmazonProduct recipe={recipe} lang={lang} />
         <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl">
           <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"><span class="text-3xl">👨‍🍳</span> {t.stepTitle}</h3>
           <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
@@ -248,32 +246,7 @@ function enrichText(text: string) {
       </div>
     </div>
   </div>
-{/* BANNER AFFILIAZIONE (SOLO PER LINGUA ITALIANA) 
-{lang === 'it' && (
-<div class="fixed bottom-0 left-0 right-0 z-[100] transition-transform duration-300">
-  <div class="w-full bg-[#0B1120] border-t border-orange-500/30 shadow-[0_-15px_40px_rgba(0,0,0,0.6)]">
-    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-      
-      <div class="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
-         <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 p-[1px] flex-shrink-0 shadow-[0_0_10px_rgba(245,158,11,0.5)] animate-pulse">
-            <div class="w-full h-full bg-slate-900 rounded-full flex items-center justify-center text-lg">🎁</div>
-         </div>
-        <div class="flex-1 min-w-0">
-          <span class="block text-[10px] uppercase tracking-widest font-extrabold text-orange-500 mb-0.5 drop-shadow-md truncate">{t.bannerTop}</span>
-          <p class="text-sm md:text-base text-white leading-tight font-bold truncate">{t.bannerBot}</p>
-        </div>
-      </div>
 
-      <a href="https://www.amazon.it/s?k=kit+accessori+friggitrice+ad+aria&tag=convertitoref-21" target="_blank" rel="nofollow noopener" class="flex-shrink-0 bg-orange-500 hover:bg-orange-400 text-black text-xs md:text-sm font-black py-2.5 px-5 rounded-full flex items-center gap-1.5 shadow-[0_0_15px_rgba(245,158,11,0.4)] transition-all hover:scale-105 active:scale-95">
-        <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-        <span>{t.bannerBtn}</span>
-      </a>
-      
-    </div>
-  </div>
-</div>
-)}
-*/}
   <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang }}>
     document.addEventListener('DOMContentLoaded', () => {
       let currentPortions = basePortions;
@@ -291,33 +264,74 @@ function enrichText(text: string) {
       if (!display || !btnMinus || !btnPlus) return;
 
       function fToC(f) { return Math.round(((f - 32) * 5/9) / 5) * 5; }
-      function smartRound(val) { return val >= 100 ? Math.round(val / 10) * 10 : val >= 10 ? Math.round(val / 5) * 5 : Math.round(val); }
-      function ozToG(oz) { return smartRound(oz * 28.3495); }
-      function flOzToMl(floz) { return smartRound(floz * 29.5735); }
-      function lbsToKg(lbs) { return (lbs * 0.453592).toFixed(2); }
 
+      // IL NUOVO PARSER CHIRURGICO PER GLI INGREDIENTI
       function scaleAndConvertIngredient(originalStr, ratio, forceMetric) {
         let str = originalStr;
+
         if (forceMetric) {
-            str = str.replace(/([\d.,]+)\s*fl oz\b/gi, (m, p1) => `${flOzToMl(parseFloat(p1))} ml`);
-            str = str.replace(/([\d.,]+)\s*oz\b/gi, (m, p1) => `${ozToG(parseFloat(p1))} g`);
-            str = str.replace(/([\d.,]+)\s*lbs?\b/gi, (m, p1) => `${lbsToKg(parseFloat(p1))} kg`);
+            str = str.replace(/([\d.,]+)\s*fl oz\b/gi, (m, p1) => `${Math.round(parseFloat(p1) * 29.5735)} ml`);
+            str = str.replace(/([\d.,]+)\s*oz\b/gi, (m, p1) => `${Math.round(parseFloat(p1) * 28.3495)} g`);
+            str = str.replace(/([\d.,]+)\s*lbs?\b/gi, (m, p1) => `${(parseFloat(p1) * 0.453592).toFixed(2)} kg`);
         }
-        const match = str.trim().match(/^([\d.,]+(?:\/\d+)?)\s+(.*)/);
-        if (!match) return str; 
-        let numStr = match[1].replace(',', '.');
-        let num = numStr.includes('/') ? parseFloat(numStr.split('/')[0]) / parseFloat(numStr.split('/')[1]) : parseFloat(numStr);
-        if (isNaN(num)) return str;
-        let newNum = num * ratio;
-        newNum = Number.isInteger(newNum) ? newNum : parseFloat(newNum.toFixed(2));
-        return newNum + " " + match[2];
+
+        if (!/\d/.test(str)) return str;
+
+        const regex = /(^|[:,]\s*|\b)(\d+(?:[.,]\d+)?(?:\s*-\s*\d+(?:[.,]\d+)?)?(?:\/\d+)?)\s*([a-zA-Z]*)/g;
+        let match;
+        const tempRegex = new RegExp(regex);
+
+        while ((match = tempRegex.exec(str)) !== null) {
+            const pre = match[1];
+            const numStr = match[2];
+            const unitStr = match[3] ? match[3].toLowerCase() : '';
+
+            // Ignora le farine (es. "tipo 00")
+            if (numStr === '00' || numStr === '0') continue; 
+
+            // Logica di arrotondamento intelligente
+            const roundSmart = (val) => {
+                if (val >= 50 || ['g', 'gr', 'ml', 'grammi', 'kg'].includes(unitStr)) {
+                    return Math.round(val / 5) * 5; // Arrotonda a step di 5g
+                }
+                if (val >= 10) return Math.round(val);
+                let step = Math.round(val * 2) / 2; // Arrotonda a step di 0.5 per cucchiai/spicchi
+                return step > 0 ? step : 0.5;
+            };
+
+            let newNumStr;
+            if (numStr.includes('-')) {
+                const parts = numStr.split('-');
+                const val1 = parseFloat(parts[0].replace(',', '.')) * ratio;
+                const val2 = parseFloat(parts[1].replace(',', '.')) * ratio;
+                newNumStr = roundSmart(val1) + "-" + roundSmart(val2);
+            } else if (numStr.includes('/')) {
+                const parts = numStr.split('/');
+                const val = (parseFloat(parts[0]) / parseFloat(parts[1])) * ratio;
+                newNumStr = roundSmart(val);
+            } else {
+                const val = parseFloat(numStr.replace(',', '.')) * ratio;
+                newNumStr = roundSmart(val);
+            }
+
+            // Ricostruisce la stringa sostituendo solo la quantità interessata
+            str = str.substring(0, match.index + pre.length) + 
+                     newNumStr + 
+                     str.substring(match.index + pre.length + numStr.length);
+            break; 
+        }
+
+        return str;
       }
 
       function updateUI() {
         display.textContent = currentPortions;
         const ratio = currentPortions / basePortions;
         ingredients.forEach(el => {
-          el.innerHTML = el.innerHTML.replace(el.innerText, scaleAndConvertIngredient(el.getAttribute('data-original'), ratio, isMetric));
+          const original = el.getAttribute('data-original');
+          if(original) {
+             el.innerHTML = scaleAndConvertIngredient(original, ratio, isMetric);
+          }
         });
         if (lang === 'en' && tempValDisplay && baseTemp) {
             tempValDisplay.textContent = isMetric ? fToC(baseTemp) : baseTemp;
