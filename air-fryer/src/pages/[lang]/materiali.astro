@@ -1,5 +1,6 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
 
 export function getStaticPaths() {
   return [
@@ -10,17 +11,16 @@ export function getStaticPaths() {
   ];
 }
 
-const { lang } = Astro.params;
-// Link al ricettario
+const lang = Astro.params.lang || 'it';
 const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
 
-// Label tradotta
 const backBtnLabel = {
   it: "Vai alle ricette",
   en: "Go to Recipes",
   es: "Ir a las recetas",
   fr: "Voir les recettes"
 }[lang] || "Vai alle ricette";
+
 const content = {
   it: {
     title: "Cosa mettere nella Friggitrice ad Aria? | Semaforo dei Materiali",
@@ -29,8 +29,6 @@ const content = {
     safe: "🟢 SICURO (Vai tranquillo)",
     caution: "🟡 ATTENZIONE (Con riserva)",
     danger: "🔴 PERICOLO (Mai inserire)",
-    disclaimerTitle: "⚖️ Disclaimer sulle Responsabilità",
-    disclaimer: "Le informazioni contenute in questa pagina sono frutto di esperienza e linee guida generali, fornite a scopo puramente informativo. Le friggitrici ad aria variano per marca, modello e architettura interna. Fai sempre riferimento al manuale di istruzioni ufficiale del tuo specifico elettrodomestico. ConvertitoreFriggitrice.it e i suoi autori declinano ogni responsabilità per eventuali danni a cose o persone derivanti dall'uso improprio dell'elettrodomestico o dall'applicazione delle indicazioni qui riportate.",
     items: [
       { status: "safe", name: "Carta Forno", desc: "Sì, ma usala solo se forata e SEMPRE con il cibo pesante sopra. Mai metterla durante il preriscaldamento o volerà sulla resistenza bruciandosi." },
       { status: "safe", name: "Alluminio (Carta Stagnola)", desc: "Sì, ma non metterlo a contatto con cibi molto acidi (come pomodoro o limone). Assicurati che sia ben fissato e che non ostruisca completamente il flusso d'aria sul fondo." },
@@ -49,8 +47,6 @@ const content = {
     safe: "🟢 SAFE (Go ahead)",
     caution: "🟡 CAUTION (Be careful)",
     danger: "🔴 DANGER (Never use)",
-    disclaimerTitle: "⚖️ Liability Disclaimer",
-    disclaimer: "The information on this page is based on experience and general guidelines, provided for informational purposes only. Air fryers vary by brand, model, and internal architecture. Always refer to the official instruction manual for your specific appliance. AirFryerConverter and its authors disclaim all liability for any damage to property or injury to persons resulting from the improper use of the appliance or the application of the information provided herein.",
     items: [
       { status: "safe", name: "Parchment Paper", desc: "Yes, but use it perforated and ALWAYS weighted down by food. Never put it in during preheating or it will fly into the heating element and catch fire." },
       { status: "safe", name: "Aluminum Foil", desc: "Yes, but avoid contact with highly acidic foods (like tomatoes or lemon). Ensure it is secured and does not completely block airflow." },
@@ -69,8 +65,6 @@ const content = {
     safe: "🟢 SEGURO (Adelante)",
     caution: "🟡 PRECAUCIÓN (Con cuidado)",
     danger: "🔴 PELIGRO (Nunca usar)",
-    disclaimerTitle: "⚖️ Aviso de Responsabilidad",
-    disclaimer: "La información de esta página se basa en la experiencia y en directrices generales, y se proporciona únicamente con fines informativos. Las freidoras de aire varían según la marca y el modelo. Consulta siempre el manual de instrucciones oficial de tu electrodoméstico. El autor declina toda responsabilidad por los daños a bienes o personas derivados del uso indebido del electrodoméstico o de la aplicación de las indicaciones aquí descritas.",
     items: [
       { status: "safe", name: "Papel de Horno", desc: "Sí, pero úsalo perforado y SIEMPRE con comida pesada encima. Nunca lo pongas durante el precalentamiento." },
       { status: "safe", name: "Papel de Aluminio", desc: "Sí, pero evita el contacto con alimentos muy ácidos. Asegúrate de que no bloquee totalmente el flujo de aire." },
@@ -89,8 +83,6 @@ const content = {
     safe: "🟢 SÛR (Allez-y)",
     caution: "🟡 ATTENTION (Avec précaution)",
     danger: "🔴 DANGER (Ne jamais utiliser)",
-    disclaimerTitle: "⚖️ Clause de Non-responsabilité",
-    disclaimer: "Les informations contenues sur cette page sont fournies à titre informatif. Les friteuses à air varient selon la marque et le modèle. Référez-vous toujours au manuel d'instructions officiel de votre appareil. L'auteur décline toute responsabilité pour tout dommage matériel ou corporel résultant d'une mauvaise utilisation de l'appareil ou de l'application des informations fournies ici.",
     items: [
       { status: "safe", name: "Papier Cuisson", desc: "Oui, mais perforé et TOUJOURS avec des aliments lourds dessus. Ne jamais le mettre pendant le préchauffage." },
       { status: "safe", name: "Papier d'Aluminium", desc: "Oui, mais évitez le contact avec des aliments acides. Assurez-vous qu'il ne bloque pas complètement l'air." },
@@ -106,7 +98,6 @@ const content = {
 
 const t = content[lang as keyof typeof content] || content.it;
 
-// Configurazione Dati Strutturati FAQ (Cruciale per i Rich Snippets di Google)
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -167,14 +158,8 @@ const faqSchema = {
       ))}
     </div>
 
-    <div class="bg-slate-900/80 border border-slate-700/80 rounded-xl p-6 md:p-8 text-sm text-slate-400 shadow-inner">
-      <h4 class="text-slate-300 font-bold mb-3 uppercase tracking-wider text-xs flex items-center gap-2">
-        {t.disclaimerTitle}
-      </h4>
-      <p class="leading-relaxed">
-        {t.disclaimer}
-      </p>
-    </div>
+    <Disclaimer type="generale" lang={lang} />
+
     <div class="mt-12 text-center pt-8 border-t border-slate-800">
       <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>

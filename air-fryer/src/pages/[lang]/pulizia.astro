@@ -1,0 +1,160 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } }
+  ];
+}
+
+const lang = Astro.params.lang || 'it';
+const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
+
+const backBtnLabel = {
+  it: "Vai alle ricette",
+  en: "Go to Recipes",
+  es: "Ir a las recetas",
+  fr: "Voir les recettes"
+}[lang] || "Vai alle ricette";
+
+const content = {
+  it: {
+    title: "Come Pulire la Resistenza della Friggitrice ad Aria (Senza Rovinare il Teflon)",
+    h1: "Guida Pulizia Resistenza",
+    desc: "Smettila di grattare! Scopri il metodo sicuro per sgrassare la serpentina superiore della tua friggitrice ad aria senza usare chimica aggressiva o rovinare il Teflon.",
+    dangerTitle: "🚫 Assolutamente Vietato",
+    dangerText: "Mai usare sgrassatori industriali da forno (es. schiume attive), spugne in metallo o lame. I residui chimici brucerebbero alla prima accensione intossicando il cibo.",
+    tools: ["Spazzolino a setole morbide", "Panno in microfibra", "Carta assorbente"],
+    supplies: ["Bicarbonato di sodio", "Acqua"],
+    steps: [
+      { title: "Scollega e Proteggi il Display", desc: "Stacca la spina e assicurati che la macchina sia fredda. Stendi un asciugamano spesso sul tavolo e capovolgi DELICATAMENTE il corpo motore." },
+      { title: "Crea la Pasta Naturale", desc: "Mescola 3 cucchiai di bicarbonato con 1 d'acqua. Ottieni una pasta densa, simile al dentifricio. Il bicarbonato sgrassa senza graffiare il metallo." },
+      { title: "Applica con Precisione", desc: "Usa uno spazzolino a setole MORBIDE. Massaggia la pasta sulla serpentina metallica, evitando di spingerla dentro le fessure della ventola." },
+      { title: "Lascia Agire la Chimica", desc: "Il grasso ha bisogno di tempo per sciogliersi. Lascia agire per 15-20 minuti. Non accendere MAI la macchina in questa fase." },
+      { title: "Risciacquo a Umido e Asciugatura", desc: "Usa un panno in microfibra umido e ben strizzato per rimuovere la pasta. Asciuga perfettamente con carta assorbente. Lascia asciugare all'aria per 30 minuti." }
+    ]
+  },
+  en: {
+    title: "How to Safely Clean the Air Fryer Heating Element",
+    h1: "Heating Element Cleaning Guide",
+    desc: "Stop scratching! Discover the safe method to degrease the upper heating coil of your air fryer without harsh chemicals.",
+    dangerTitle: "🚫 Strictly Prohibited",
+    dangerText: "Never use heavy-duty oven cleaners, steel wool, or blades. Chemical residues will vaporize into your food.",
+    tools: ["Soft-bristle toothbrush", "Microfiber cloth", "Paper towels"],
+    supplies: ["Baking soda", "Water"],
+    steps: [
+      { title: "Unplug and Protect the Display", desc: "Unplug the unit. Place a thick towel on your counter and GENTLY turn the main unit upside down." },
+      { title: "Mix the Natural Paste", desc: "Mix 3 tablespoons of baking soda with 1 tablespoon of water. You want a thick paste, like toothpaste." },
+      { title: "Apply with Precision", desc: "Use a SOFT-bristled toothbrush. Gently scrub the metal coil. Do not push paste into the fan slots." },
+      { title: "Let Chemistry Work", desc: "Let the paste sit for 15-20 minutes to break down grease. NEVER plug in the machine during this phase." },
+      { title: "Damp Rinse and Dry", desc: "Use a damp microfiber cloth (wrung out tightly) to wipe away the paste. Dry perfectly with paper towels." }
+    ]
+  },
+  es: {
+    title: "Cómo Limpiar la Resistencia de la Freidora de Aire",
+    h1: "Guía de Limpieza",
+    desc: "¡Deja de raspar! Descubre el método seguro para desengrasar la resistencia superior de tu freidora sin químicos fuertes.",
+    dangerTitle: "🚫 Totalmente Prohibido",
+    dangerText: "Nunca uses desengrasantes para hornos, estropajos metálicos o cuchillas. Los químicos intoxicarán tu comida.",
+    tools: ["Cepillo de cerdas suaves", "Paño de microfibra", "Papel absorbente"],
+    supplies: ["Bicarbonato de sodio", "Agua"],
+    steps: [
+      { title: "Desenchufa y Protege la Pantalla", desc: "Desenchufa. Pon una toalla gruesa en la mesa y voltea la máquina DELICADAMENTE sobre ella." },
+      { title: "Crea la Pasta Natural", desc: "Mezcla 3 cucharadas de bicarbonato con 1 de agua. Debe ser una pasta espesa, similar a la pasta de dientes." },
+      { title: "Aplica con Precisión", desc: "Usa un cepillo de cerdas SUAVES. Frota suavemente la resistencia. No empujes la pasta hacia el ventilador." },
+      { title: "Deja Actuar", desc: "Deja actuar la pasta 15-20 minutos. NUNCA enciendas la máquina en esta fase." },
+      { title: "Enjuague Húmedo", desc: "Usa un paño de microfibra húmedo muy escurrido para retirar la pasta. Seca perfectamente con papel absorbente." }
+    ]
+  },
+  fr: {
+    title: "Comment Nettoyer la Résistance de la Friteuse à Air",
+    h1: "Guide de Nettoyage",
+    desc: "Arrêtez de gratter ! Découvrez la méthode sûre pour dégraisser la résistance supérieure sans produits chimiques agressifs.",
+    dangerTitle: "🚫 Strictement Interdit",
+    dangerText: "N'utilisez jamais de dégraissants pour four, d'éponges métalliques ou de lames. Les résidus intoxiqueront vos aliments.",
+    tools: ["Brosse à poils souples", "Chiffon en microfibre", "Essuie-tout"],
+    supplies: ["Bicarbonate de soude", "Eau"],
+    steps: [
+      { title: "Débranchez et Protégez l'Écran", desc: "Débranchez. Placez une serviette épaisse sur la table et retournez DÉLICATEMENT l'appareil." },
+      { title: "Créez la Pâte Naturelle", desc: "Mélangez 3 cuillères à soupe de bicarbonate avec 1 d'eau. Obtenez une pâte épaisse, semblable à du dentifrice." },
+      { title: "Appliquez avec Précision", desc: "Utilisez une brosse à poils SOUPLES. Massez la pâte sur la résistance sans en pousser dans le ventilateur." },
+      { title: "Laissez Agir", desc: "Laissez la pâte agir 15-20 minutes. Ne branchez JAMAIS l'appareil pendant cette phase." },
+      { title: "Rinçage Humide", desc: "Utilisez un chiffon humide très essoré pour retirer la pâte. Séchez parfaitement avec de l'essuie-tout." }
+    ]
+  }
+};
+
+const t = content[lang as keyof typeof content] || content.it;
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": t.title,
+  "description": t.desc,
+  "totalTime": "PT30M",
+  "tool": t.tools.map(tool => ({ "@type": "HowToTool", "name": tool })),
+  "supply": t.supplies.map(supply => ({ "@type": "HowToSupply", "name": supply })),
+  "step": t.steps.map((step, index) => ({
+    "@type": "HowToStep",
+    "position": index + 1,
+    "name": step.title,
+    "text": step.desc
+  }))
+};
+---
+
+<MainLayout title={t.title} lang={lang}>
+  <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
+    
+    <div class="mb-8 flex justify-start">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="font-bold text-sm">{backBtnLabel}</span>
+      </a>
+    </div>
+
+    <header class="text-center mb-10">
+      <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">{t.h1}</h1>
+      <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+    </header>
+
+    <div class="bg-red-950/40 border border-red-500/50 rounded-2xl p-6 shadow-lg mb-12 max-w-3xl mx-auto">
+      <h2 class="text-lg font-black text-red-400 mb-2 flex items-center gap-2">
+        {t.dangerTitle}
+      </h2>
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed font-medium">
+        {t.dangerText}
+      </p>
+    </div>
+
+    <div class="space-y-8 mb-16 relative before:absolute before:inset-0 before:ml-[1.1rem] md:before:ml-6 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
+      {t.steps.map((step, index) => (
+        <article class="flex gap-4 md:gap-6 relative">
+          <div class="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-600 flex items-center justify-center font-black text-white shadow-[0_0_15px_rgba(37,99,235,0.5)] ring-4 ring-[#0B1120] z-10 text-lg md:text-xl">
+            {index + 1}
+          </div>
+          <div class="pt-1.5 md:pt-2 w-full bg-slate-800/40 border border-slate-700/50 p-5 md:p-6 rounded-2xl shadow-xl hover:border-blue-500/30 transition-colors">
+            <h3 class="text-lg md:text-xl font-bold text-white mb-2">{step.title}</h3>
+            <p class="text-slate-300 leading-relaxed text-sm md:text-base">{step.desc}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <Disclaimer type="elettrico" lang={lang} />
+
+    <div class="mt-12 text-center pt-8 border-t border-slate-800">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="font-bold text-sm">{backBtnLabel}</span>
+      </a>
+    </div>
+
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+</MainLayout>

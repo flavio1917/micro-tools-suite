@@ -1,0 +1,255 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } }
+  ];
+}
+
+const lang = Astro.params.lang || 'it';
+const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
+
+const backBtnLabel = {
+  it: "Vai alle ricette",
+  en: "Go to Recipes",
+  es: "Ir a las recetas",
+  fr: "Voir les recettes"
+}[lang] || "Vai alle ricette";
+
+const content = {
+  it: {
+    title: "Codici Errore Friggitrice ad Aria: Database Guasti e Reset",
+    h1: "Database Errori & Reset",
+    desc: "Display bloccato su E1 o E2? Non buttarla! Scopri il vero significato tecnico dei codici di errore (Cosori, Ninja, Philips) e come ripararli.",
+    levelHard: "🔴 Riparazione Hardware",
+    levelSoft: "🟢 Reset Software",
+    brandLabel: "Marca frequente:",
+    causeLabel: "Diagnosi:",
+    solutionLabel: "Soluzione:",
+    faqQuestion: "Cosa significa l'errore {code} sulla friggitrice ad aria?",
+    items: [
+      { 
+        code: "E1 / E01", brand: "Cosori, Ninja, Philips", type: "hard",
+        cause: "Sensore di temperatura (Termistore NTC) scollegato, in circuito aperto o guasto alla scheda madre.", 
+        solution: "Scollega la spina. Se l'errore persiste a freddo, il sensore è fuso. Richiede la sostituzione hardware (per esperti) o l'assistenza in garanzia." 
+      },
+      { 
+        code: "E2 / E02", brand: "Cosori, Ariete, Moulinex", type: "hard",
+        cause: "Cortocircuito del sensore termico o surriscaldamento estremo. La macchina si blocca per evitare incendi.", 
+        solution: "Stacca immediatamente la spina e verifica che le griglie d'aria non siano ostruite. Se l'errore non si resetta, il cablaggio interno è danneggiato irreparabilmente." 
+      },
+      { 
+        code: "E3 / E03", brand: "Ninja, Generico, Proscenic", type: "soft",
+        cause: "Protezione da surriscaldamento scattata o cestello non chiuso in modo stagno.", 
+        solution: "Estrai e reinserisci il cestello con forza. Allontana la friggitrice dal muro (almeno 15cm) per far circolare l'aria e lasciala raffreddare 45 minuti." 
+      },
+      { 
+        code: "E4 / E04", brand: "Ninja, Cosori", type: "soft",
+        cause: "Anomalia alla ventola di areazione o problemi di comunicazione della scheda (spesso dovuto a voltaggio errato).", 
+        solution: "Verifica a torcia che non ci siano detriti sulla ventola superiore. Assicurati di non usare prolunghe o adattatori di voltaggio difettosi." 
+      },
+      { 
+        code: "Display Spento", brand: "Tutte le marche", type: "hard",
+        cause: "Micro-interruttore di sicurezza non attivato o fusibile termico di protezione bruciato.", 
+        solution: "Spingi il cestello fino a sentire un 'clic'. Se la macchina non si accende più dopo un uso intenso, il fusibile interno è saltato e va sostituito." 
+      }
+    ]
+  },
+  en: {
+    title: "Air Fryer Error Codes: Troubleshooting & Reset Database",
+    h1: "Error Code Database",
+    desc: "Display stuck on E1 or E2? Don't throw it away! Discover the technical meaning of error codes and how to fix your appliance.",
+    levelHard: "🔴 Hardware Fix",
+    levelSoft: "🟢 Software Reset",
+    brandLabel: "Common Brands:",
+    causeLabel: "Diagnosis:",
+    solutionLabel: "Solution:",
+    faqQuestion: "What does the {code} error mean on an air fryer?",
+    items: [
+      { 
+        code: "E1 / E01", brand: "Cosori, Ninja, Philips", type: "hard",
+        cause: "Temperature sensor (NTC Thermistor) unplugged, open circuit, or motherboard failure.", 
+        solution: "Unplug the unit. If the error persists when cold, the sensor is dead. Requires hardware replacement (experts only) or customer support." 
+      },
+      { 
+        code: "E2 / E02", brand: "Cosori, Ariete, Moulinex", type: "hard",
+        cause: "Thermal sensor short circuit or extreme overheating. The machine locks down to prevent fire.", 
+        solution: "Unplug immediately and ensure air vents aren't blocked. If the error doesn't clear, internal wiring is irreparably damaged." 
+      },
+      { 
+        code: "E3 / E03", brand: "Ninja, Generic, Proscenic", type: "soft",
+        cause: "Overheating protection tripped or the basket/drawer is not securely closed.", 
+        solution: "Pull out and firmly reinsert the basket. Move the air fryer away from walls (at least 6 inches) and let it cool for 45 minutes." 
+      },
+      { 
+        code: "E4 / E04", brand: "Ninja, Cosori", type: "soft",
+        cause: "Fan/airflow malfunction or communication error (often due to incorrect voltage).", 
+        solution: "Use a flashlight to check the upper fan for debris. Make sure you are not using faulty extension cords or travel voltage adapters." 
+      },
+      { 
+        code: "Dead Display", brand: "All Brands", type: "hard",
+        cause: "Safety micro-switch not engaged or internal thermal fuse blown.", 
+        solution: "Push the basket in until you hear a 'click'. If it won't turn on after heavy use, the internal thermal fuse has blown to protect your home." 
+      }
+    ]
+  },
+  es: {
+    title: "Códigos de Error Freidora de Aire: Base de Datos y Reset",
+    h1: "Base de Datos de Errores",
+    desc: "¿Pantalla bloqueada en E1 o E2? Descubre el significado técnico de los códigos de error y cómo reparar tu electrodoméstico.",
+    levelHard: "🔴 Reparación Hardware",
+    levelSoft: "🟢 Reset Software",
+    brandLabel: "Marcas comunes:",
+    causeLabel: "Diagnóstico:",
+    solutionLabel: "Solución:",
+    faqQuestion: "¿Qué significa el error {code} en la freidora de aire?",
+    items: [
+      { 
+        code: "E1 / E01", brand: "Cosori, Ninja, Philips", type: "hard",
+        cause: "Sensor de temperatura (Termistor NTC) desconectado, circuito abierto o fallo en placa base.", 
+        solution: "Desenchufa. Si el error persiste en frío, el sensor está fundido. Requiere sustitución (expertos) o contactar al soporte." 
+      },
+      { 
+        code: "E2 / E02", brand: "Cosori, Ariete, Moulinex", type: "hard",
+        cause: "Cortocircuito del sensor térmico o sobrecalentamiento extremo. La máquina se bloquea.", 
+        solution: "Desenchufa inmediatamente. Verifica que las rejillas no estén obstruidas. Si no se reinicia, el cableado está dañado." 
+      },
+      { 
+        code: "E3 / E03", brand: "Ninja, Genérico, Proscenic", type: "soft",
+        cause: "Protección contra sobrecalentamiento activada o cesta mal cerrada.", 
+        solution: "Saca e inserta la cesta con fuerza. Aleja la freidora de la pared (15 cm) y déjala enfriar 45 minutos." 
+      },
+      { 
+        code: "E4 / E04", brand: "Ninja, Cosori", type: "soft",
+        cause: "Anomalía en el ventilador o problema de comunicación de voltaje.", 
+        solution: "Verifica con una linterna que no haya restos bloqueando el ventilador. No uses regletas o adaptadores defectuosos." 
+      },
+      { 
+        code: "Pantalla Apagada", brand: "Todas", type: "hard",
+        cause: "Microinterruptor de seguridad no activado o fusible térmico quemado.", 
+        solution: "Empuja la cesta hasta oír un 'clic'. Si no enciende tras un uso intenso, el fusible interno se ha quemado y debe sustituirse." 
+      }
+    ]
+  },
+  fr: {
+    title: "Codes d'Erreur Friteuse à Air : Base de données",
+    h1: "Base de Données des Erreurs",
+    desc: "Écran bloqué sur E1 ou E2 ? Découvrez la signification technique des codes d'erreur et comment les résoudre.",
+    levelHard: "🔴 Réparation Matérielle",
+    levelSoft: "🟢 Reset Logiciel",
+    brandLabel: "Marques courantes :",
+    causeLabel: "Diagnostic :",
+    solutionLabel: "Solution :",
+    faqQuestion: "Que signifie l'erreur {code} sur la friteuse à air ?",
+    items: [
+      { 
+        code: "E1 / E01", brand: "Cosori, Ninja, Philips", type: "hard",
+        cause: "Capteur de température (Thermistance NTC) déconnecté, circuit ouvert ou panne de carte mère.", 
+        solution: "Débranchez. Si l'erreur persiste à froid, le capteur est mort. Nécessite un remplacement matériel ou le SAV." 
+      },
+      { 
+        code: "E2 / E02", brand: "Cosori, Ariete, Moulinex", type: "hard",
+        cause: "Court-circuit du capteur thermique ou surchauffe extrême. Verrouillage de sécurité.", 
+        solution: "Débranchez immédiatement et vérifiez les grilles d'aération. Si l'erreur ne disparaît pas, le câblage est endommagé." 
+      },
+      { 
+        code: "E3 / E03", brand: "Ninja, Générique, Proscenic", type: "soft",
+        cause: "Protection contre la surchauffe déclenchée ou panier mal fermé.", 
+        solution: "Retirez et réinsérez fermement le panier. Éloignez la friteuse du mur (15 cm) et laissez refroidir 45 minutes." 
+      },
+      { 
+        code: "E4 / E04", brand: "Ninja, Cosori", type: "soft",
+        cause: "Anomalie du ventilateur ou problème de communication (souvent dû à un mauvais voltage).", 
+        solution: "Vérifiez avec une lampe qu'aucun débris ne bloque le ventilateur. N'utilisez pas de rallonges défectueuses." 
+      },
+      { 
+        code: "Écran Éteint", brand: "Toutes", type: "hard",
+        cause: "Micro-interrupteur de sécurité non engagé ou fusible thermique grillé.", 
+        solution: "Poussez le panier jusqu'au 'clic'. Si elle ne s'allume plus après une utilisation intensive, le fusible interne est grillé." 
+      }
+    ]
+  }
+};
+
+const t = content[lang as keyof typeof content] || content.it;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": t.items.map(item => ({
+    "@type": "Question",
+    "name": t.faqQuestion.replace('{code}', item.code), 
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `${t.causeLabel} ${item.cause} ${t.solutionLabel} ${item.solution}`
+    }
+  }))
+};
+---
+
+<MainLayout title={t.title} lang={lang}>
+  <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
+    
+    <div class="mb-8 flex justify-start">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="font-bold text-sm">{backBtnLabel}</span>
+      </a>
+    </div>
+
+    <header class="text-center mb-12">
+      <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">{t.h1}</h1>
+      <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+    </header>
+
+    <div class="space-y-6 mb-16">
+      {t.items.map((item) => (
+        <article class="bg-slate-800/40 border border-slate-700/50 p-6 md:p-8 rounded-2xl shadow-xl transition-all flex flex-col md:flex-row gap-6 relative overflow-hidden">
+          
+          <div class={`absolute left-0 top-0 bottom-0 w-1.5 ${item.type === 'hard' ? 'bg-red-500' : 'bg-green-500'}`}></div>
+
+          <div class="flex-shrink-0 w-full md:w-48 border-b md:border-b-0 md:border-r border-slate-700/50 pb-4 md:pb-0 md:pr-6 flex flex-col justify-center">
+            <h2 class="text-3xl md:text-4xl font-mono font-black text-white mb-2">{item.code}</h2>
+            <div class="text-[10px] md:text-xs font-bold uppercase tracking-wider mb-2">
+              {item.type === 'hard' ? 
+                <span class="text-red-400 bg-red-950/30 border border-red-500/20 px-2 py-1 rounded">{t.levelHard}</span> : 
+                <span class="text-green-400 bg-green-950/30 border border-green-500/20 px-2 py-1 rounded">{t.levelSoft}</span>
+              }
+            </div>
+            <span class="text-[10px] text-slate-500 mt-2 block font-medium">{t.brandLabel} <span class="text-slate-300 font-bold">{item.brand}</span></span>
+          </div>
+          
+          <div class="flex-1 space-y-4">
+            <div class="bg-black/30 border border-slate-700/50 p-4 rounded-xl shadow-inner">
+              <span class="block text-[10px] uppercase text-slate-500 font-bold tracking-wider mb-1.5">{t.causeLabel}</span>
+              <p class="text-slate-300 text-sm md:text-base leading-relaxed font-medium">{item.cause}</p>
+            </div>
+            
+            <div class="bg-slate-700/30 border border-slate-600/30 p-4 rounded-xl">
+              <span class="block text-[10px] uppercase text-blue-400 font-bold tracking-wider mb-1.5">{t.solutionLabel}</span>
+              <p class="text-blue-50 text-sm md:text-base font-medium leading-relaxed">{item.solution}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <Disclaimer type="elettrico" lang={lang} />
+
+    <div class="mt-12 text-center pt-8 border-t border-slate-800">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="font-bold text-sm">{backBtnLabel}</span>
+      </a>
+    </div>
+
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+</MainLayout>

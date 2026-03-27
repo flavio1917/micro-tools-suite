@@ -1,0 +1,40 @@
+---
+export interface Props {
+  type: 'elettrico' | 'nutrizionale' | 'generale';
+  lang: string;
+}
+
+const { type, lang = 'it' } = Astro.props;
+
+const content = {
+  elettrico: {
+    it: { title: "⚠️ Sicurezza Elettrica e Responsabilità", text: "Lavorare vicino alla serpentina o manipolare i circuiti comporta il rischio di scosse elettriche fatali. La macchina DEVE essere scollegata e fredda. ConvertitoreFriggitrice declina ogni responsabilità per danni a cose o lesioni a persone." },
+    en: { title: "⚠️ Electrical Safety and Liability", text: "Working near the heating coil or manipulating circuits carries a risk of fatal electric shock. The machine MUST be unplugged and cold. AirFryerConverter disclaims all liability for property damage or personal injury." },
+    es: { title: "⚠️ Seguridad Eléctrica y Responsabilidad", text: "Trabajar cerca de la resistencia o manipular circuitos conlleva riesgo de descarga eléctrica. La máquina DEBE estar desenchufada y fría. El autor declina toda responsabilidad por daños o lesiones." },
+    fr: { title: "⚠️ Sécurité Électrique et Responsabilité", text: "Travailler près de la résistance implique des risques de choc électrique. L'appareil DOIT être débranché et froid. L'auteur décline toute responsabilité en cas de dommage ou de blessure." }
+  },
+  nutrizionale: {
+    it: { title: "⚖️ Avvertenza Nutrizionale", text: "I dati calorici e i risparmi lipidici indicati sono stime matematiche basate su valori medi di assorbimento. Hanno scopo puramente informativo e non sostituiscono in alcun modo il parere di un medico o nutrizionista." },
+    en: { title: "⚖️ Nutritional Disclaimer", text: "The caloric data and lipid savings shown are mathematical estimates based on average absorption values. They are for informational purposes only and do not replace medical or nutritional advice." },
+    es: { title: "⚖️ Aviso Nutricional", text: "Los datos calóricos y el ahorro de lípidos son estimaciones matemáticas. Tienen fines informativos y no sustituyen el consejo de un médico o nutricionista." },
+    fr: { title: "⚖️ Avis Nutritionnel", text: "Les données caloriques et les économies de lipides sont des estimations mathématiques. Elles sont fournies à titre informatif et ne remplacent pas l'avis d'un médecin ou d'un nutritionniste." }
+  },
+  generale: {
+    it: { title: "ℹ️ Nota Informativa", text: "Le indicazioni riportate in questa guida sono basate su test pratici e linee guida generali. Verifica sempre il manuale specifico del tuo modello di friggitrice ad aria prima di procedere." },
+    en: { title: "ℹ️ Information Note", text: "The instructions in this guide are based on practical tests and general guidelines. Always check your specific air fryer model's manual before proceeding." },
+    es: { title: "ℹ️ Nota Informativa", text: "Las instrucciones de esta guía se basan en pruebas prácticas y directrices generales. Consulta siempre el manual de tu modelo específico." },
+    fr: { title: "ℹ️ Note d'Information", text: "Les instructions de ce guide sont basées sur des tests pratiques. Vérifiez toujours le manuel de votre modèle spécifique avant de procéder." }
+  }
+};
+
+const t = content[type][lang as keyof typeof content[typeof type]] || content[type].it;
+---
+
+<div class="bg-slate-900/80 border border-slate-700/80 rounded-xl p-6 md:p-8 text-sm text-slate-400 shadow-inner mb-8">
+  <h4 class="text-slate-300 font-bold mb-3 uppercase tracking-wider text-xs flex items-center gap-2">
+    {t.title}
+  </h4>
+  <p class="leading-relaxed">
+    {t.text}
+  </p>
+</div>

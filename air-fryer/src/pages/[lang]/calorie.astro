@@ -1,0 +1,238 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Disclaimer from '../../components/Disclaimer.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } }
+  ];
+}
+
+const lang = Astro.params.lang || 'it';
+const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
+
+const backBtnLabel = {
+  it: "Vai alle ricette",
+  en: "Go to Recipes",
+  es: "Ir a las recetas",
+  fr: "Voir les recettes"
+}[lang] || "Vai alle ricette";
+
+const content = {
+  it: {
+    title: "Calcolatore Calorie: Frittura Tradizionale vs Friggitrice ad Aria",
+    h1: "Calcolatore di Risparmio Calorico",
+    desc: "Scopri esattamente quanti grassi e calorie risparmi cucinando ad aria invece che per immersione nell'olio. Dati scientifici, non slogan.",
+    foodLabel: "Seleziona l'alimento:",
+    weightLabel: "Peso della porzione (grammi):",
+    btnCalc: "Calcola Risparmio",
+    resFat: "Grassi Risparmiati",
+    resKcal: "Calorie Risparmiate",
+    resRun: "Equivale a circa",
+    resRunUnit: "min. di corsa",
+    foods: [
+      { id: "patate", name: "Patatine Fritte (Fresche)", absorb: 0.12, airOil: 10 },
+      { id: "cotoletta", name: "Cotoletta di Pollo Impanata", absorb: 0.15, airOil: 5 },
+      { id: "calamari", name: "Anelli di Calamari", absorb: 0.11, airOil: 8 },
+      { id: "verdure", name: "Verdure Miste Pastellate", absorb: 0.18, airOil: 5 }
+    ]
+  },
+  en: {
+    title: "Calorie Calculator: Deep Frying vs Air Frying",
+    h1: "Calorie Savings Calculator",
+    desc: "Discover exactly how much fat and calories you save by air frying instead of deep frying. Real math, not marketing slogans.",
+    foodLabel: "Select food:",
+    weightLabel: "Portion weight (grams):",
+    btnCalc: "Calculate Savings",
+    resFat: "Fat Saved",
+    resKcal: "Calories Saved",
+    resRun: "Equivalent to approx",
+    resRunUnit: "min of running",
+    foods: [
+      { id: "patate", name: "French Fries (Fresh)", absorb: 0.12, airOil: 10 },
+      { id: "cotoletta", name: "Breaded Chicken Cutlet", absorb: 0.15, airOil: 5 },
+      { id: "calamari", name: "Calamari Rings", absorb: 0.11, airOil: 8 },
+      { id: "verdure", name: "Battered Vegetables", absorb: 0.18, airOil: 5 }
+    ]
+  },
+  es: {
+    title: "Calculadora de Calorías: Fritura vs Freidora de Aire",
+    h1: "Calculadora de Ahorro Calórico",
+    desc: "Descubre exactamente cuánta grasa y calorías ahorras al cocinar con aire. Matemáticas reales, no eslóganes.",
+    foodLabel: "Selecciona el alimento:",
+    weightLabel: "Peso de la porción (gramos):",
+    btnCalc: "Calcular Ahorro",
+    resFat: "Grasa Ahorrada",
+    resKcal: "Calorías Ahorradas",
+    resRun: "Equivale a unos",
+    resRunUnit: "min de correr",
+    foods: [
+      { id: "patate", name: "Patatas Fritas (Frescas)", absorb: 0.12, airOil: 10 },
+      { id: "cotoletta", name: "Pollo Empanado", absorb: 0.15, airOil: 5 },
+      { id: "calamari", name: "Anillos de Calamar", absorb: 0.11, airOil: 8 },
+      { id: "verdure", name: "Verduras Rebozadas", absorb: 0.18, airOil: 5 }
+    ]
+  },
+  fr: {
+    title: "Calculateur de Calories : Friture vs Friteuse à Air",
+    h1: "Calculateur d'Économie de Calories",
+    desc: "Découvrez exactement combien de graisses et de calories vous économisez. Des vrais chiffres, pas des slogans.",
+    foodLabel: "Sélectionnez l'aliment :",
+    weightLabel: "Poids de la portion (grammes) :",
+    btnCalc: "Calculer l'Économie",
+    resFat: "Graisse Économisée",
+    resKcal: "Calories Économisées",
+    resRun: "Équivaut à env.",
+    resRunUnit: "min de course",
+    foods: [
+      { id: "patate", name: "Frites (Fraîches)", absorb: 0.12, airOil: 10 },
+      { id: "cotoletta", name: "Poulet Pané", absorb: 0.15, airOil: 5 },
+      { id: "calamari", name: "Calamars", absorb: 0.11, airOil: 8 },
+      { id: "verdure", name: "Légumes en Beignets", absorb: 0.18, airOil: 5 }
+    ]
+  }
+};
+
+const t = content[lang as keyof typeof content] || content.it;
+
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": t.h1,
+  "operatingSystem": "All",
+  "applicationCategory": "HealthApplication",
+  "description": t.desc,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+};
+---
+
+<MainLayout title={t.title} lang={lang}>
+  <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
+    
+    <div class="mb-8 flex justify-start">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="font-bold text-sm">{backBtnLabel}</span>
+      </a>
+    </div>
+
+    <header class="text-center mb-12">
+      <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">{t.h1}</h1>
+      <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+    </header>
+
+    <div class="bg-slate-800/60 border border-slate-700 rounded-3xl p-6 md:p-10 shadow-2xl mb-12 backdrop-blur-sm max-w-2xl mx-auto relative overflow-hidden">
+      <div class="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="space-y-6 relative z-10">
+        <div>
+          <label class="block text-sm font-bold text-slate-300 uppercase tracking-wider mb-2">{t.foodLabel}</label>
+          <select id="food-select" class="w-full bg-slate-900 border border-slate-600 text-white rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all shadow-inner font-medium text-lg appearance-none cursor-pointer">
+            {t.foods.map((food) => (
+              <option value={food.id} data-absorb={food.absorb} data-airoil={food.airOil}>{food.name}</option>
+            ))}
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold text-slate-300 uppercase tracking-wider mb-2">{t.weightLabel}</label>
+          <div class="relative">
+            <input type="number" id="weight-input" value="250" min="50" max="2000" class="w-full bg-slate-900 border border-slate-600 text-white rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all shadow-inner font-mono text-2xl" />
+            <span class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 font-bold">g</span>
+          </div>
+        </div>
+
+        <button id="calc-btn" class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-900 font-black text-lg py-4 rounded-xl shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all active:scale-95 uppercase tracking-wide">
+          {t.btnCalc}
+        </button>
+      </div>
+
+      <div id="results-dash" class="mt-8 pt-8 border-t border-slate-700 hidden opacity-0 transition-opacity duration-500">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-slate-900/80 border border-amber-500/30 rounded-2xl p-4 text-center shadow-inner">
+            <span class="block text-[10px] md:text-xs uppercase font-bold text-amber-400 tracking-wider mb-1">{t.resFat}</span>
+            <div class="flex items-baseline justify-center gap-1">
+              <span id="res-fat" class="text-3xl md:text-4xl font-black font-mono text-white">0</span>
+              <span class="text-amber-500 font-bold">g</span>
+            </div>
+          </div>
+          <div class="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-4 text-center shadow-inner">
+            <span class="block text-[10px] md:text-xs uppercase font-bold text-emerald-400 tracking-wider mb-1">{t.resKcal}</span>
+            <div class="flex items-baseline justify-center gap-1">
+              <span id="res-kcal" class="text-3xl md:text-4xl font-black font-mono text-white">0</span>
+              <span class="text-emerald-500 font-bold">kcal</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-4 bg-blue-900/20 border border-blue-500/20 rounded-xl p-4 flex items-center justify-center gap-3">
+          <span class="text-2xl animate-bounce">🏃‍♂️</span>
+          <p class="text-blue-200 text-sm md:text-base font-medium">
+            {t.resRun} <strong id="res-run" class="text-white text-lg font-black mx-1">0</strong> <span class="text-blue-300">{t.resRunUnit}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <Disclaimer type="nutrizionale" lang={lang} />
+
+    <div class="mt-12 text-center pt-8 border-t border-slate-800">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="font-bold text-sm">{backBtnLabel}</span>
+      </a>
+    </div>
+
+  </section>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('calc-btn');
+      const select = document.getElementById('food-select');
+      const weightInput = document.getElementById('weight-input');
+      const dash = document.getElementById('results-dash');
+      const elFat = document.getElementById('res-fat');
+      const elKcal = document.getElementById('res-kcal');
+      const elRun = document.getElementById('res-run');
+
+      let animRefs = { fat: null, kcal: null, run: null };
+
+      function animateValue(obj, start, end, duration, animKey) {
+        if (animRefs[animKey]) cancelAnimationFrame(animRefs[animKey]);
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          obj.innerHTML = Math.floor(progress * (end - start) + start);
+          if (progress < 1) animRefs[animKey] = window.requestAnimationFrame(step);
+        };
+        animRefs[animKey] = window.requestAnimationFrame(step);
+      }
+
+      btn.addEventListener('click', () => {
+        const option = select.options[select.selectedIndex];
+        const absorbRate = parseFloat(option.getAttribute('data-absorb'));
+        const airFryOilGram = parseFloat(option.getAttribute('data-airoil'));
+        const weight = parseFloat(weightInput.value);
+
+        if (isNaN(weight) || weight <= 0) return;
+
+        const deepFryFat = weight * absorbRate;
+        let savedFat = Math.max(0, deepFryFat - airFryOilGram);
+        const savedKcal = savedFat * 9;
+        const runMinutes = savedKcal / 10;
+
+        dash.classList.remove('hidden');
+        requestAnimationFrame(() => dash.classList.remove('opacity-0'));
+
+        animateValue(elFat, 0, Math.round(savedFat), 1000, 'fat');
+        animateValue(elKcal, 0, Math.round(savedKcal), 1000, 'kcal');
+        animateValue(elRun, 0, Math.round(runMinutes), 1000, 'run');
+      });
+    });
+  </script>
+  <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+</MainLayout>
