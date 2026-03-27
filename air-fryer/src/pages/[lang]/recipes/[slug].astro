@@ -151,16 +151,21 @@ function enrichText(text: string) {
             <span id="display-temp-unit" class="text-xl md:text-2xl pb-1">{t.unitTemp}</span>
         </div>
       </div>
+      
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.time}</span>
         <div class="text-3xl md:text-4xl font-mono font-bold text-blue-400 mt-1">
             {cleanTime} <span class="text-lg md:text-xl">{t.unitTime}</span>
         </div>
       </div>
+      
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.prep}</span>
-        <div class="text-xl md:text-2xl font-bold text-green-400 mt-2">{recipe.prep_time || '--'}</div>
+        <div class="text-3xl md:text-4xl font-mono font-bold text-green-400 mt-1">
+            {recipe.prep_time || '--'} <span class="text-lg md:text-xl">{t.unitTime}</span>
+        </div>
       </div>
+      
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center items-center relative group">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-2">{t.portions}</span>
         <div class="flex items-center justify-center gap-3 mt-1">
