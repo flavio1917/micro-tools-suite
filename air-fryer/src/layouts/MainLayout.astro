@@ -63,7 +63,8 @@ if (recipeData) {
     "recipeCategory": "Main Course",
     "cookMethod": "Air Frying",
     // Inseriamo le keywords se esistono nel tuo JSON
-"keywords": Array.isArray(recipeData.keywords) ? recipeData.keywords.join(", ") : (recipeData.keywords || "friggitrice ad aria, ricette"),    "recipeIngredient": recipeData.ingredients,
+    "keywords": Array.isArray(recipeData.keywords) ? recipeData.keywords.join(", ") : (recipeData.keywords || "friggitrice ad aria, ricette"),    
+    "recipeIngredient": recipeData.ingredients,
     // Arricchiamo gli step con Nomi e Immagini per far contento Google
     "recipeInstructions": recipeData.instructions ? recipeData.instructions.map((step: string, idx: number) => ({
       "@type": "HowToStep",
@@ -83,11 +84,12 @@ const disclaimers = {
   fr: "Transparence : En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises. Les résultats sont des estimations basées sur des paramètres standards (-20°C / -20% temps)."
 };
 
+// DIZIONARIO AGGIORNATO CON I NUOVI LINK "BLUE OCEAN"
 const footerLabels = {
-  it: { about: "Chi Siamo", privacy: "Privacy", cookie: "Cookie", prefix: "" },
-  en: { about: "About Us", privacy: "Privacy", cookie: "Cookies", prefix: "/en" },
-  es: { about: "Quiénes Somos", privacy: "Privacidad", cookie: "Cookies", prefix: "/es" },
-  fr: { about: "À Propos", privacy: "Confidentialité", cookie: "Cookies", prefix: "/fr" }
+  it: { info: "Chi Siamo", mat: "Guida Materiali", ris: "Riscaldare Avanzi", prob: "Risoluzione Problemi", privacy: "Privacy", cookie: "Cookie", prefix: "" },
+  en: { info: "About Us", mat: "Materials Guide", ris: "Reheating Leftovers", prob: "Troubleshooting", privacy: "Privacy", cookie: "Cookies", prefix: "/en" },
+  es: { info: "Quiénes Somos", mat: "Guía de Materiales", ris: "Recalentar Sobras", prob: "Solución de Problemas", privacy: "Privacidad", cookie: "Cookies", prefix: "/es" },
+  fr: { info: "À Propos", mat: "Guide des Matériaux", ris: "Réchauffer les Restes", prob: "Dépannage", privacy: "Confidentialité", cookie: "Cookies", prefix: "/fr" }
 };
 
 const currentDisclaimer = disclaimers[lang as keyof typeof disclaimers] || disclaimers.it;
@@ -160,16 +162,25 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
     </main>
 
     <footer class="bg-[#0F172A] border-t border-slate-800 mt-auto py-8 pb-[100px] text-center font-sans relative z-10">
-      <div class="max-w-[480px] mx-auto px-6 space-y-5">
+      <div class="max-w-[500px] md:max-w-3xl mx-auto px-4 space-y-6">
+        
         <div class="p-3 bg-slate-900/50 rounded-xl border border-slate-800 shadow-inner text-justify">
           <p class="text-[9px] text-slate-500 leading-relaxed italic">
             <strong>{currentDisclaimer}</strong>
           </p>
         </div>
         
-        <nav class="flex justify-center gap-4 text-[10px] text-slate-400 font-medium tracking-wide">
-          <a href={`${currentLabels.prefix}/info`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.about}</a>
-          <span>•</span>
+        <nav class="flex flex-wrap justify-center gap-x-4 gap-y-3 text-[10px] md:text-xs text-slate-400 font-bold tracking-wide">
+          <a href={`${currentLabels.prefix}/info`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.info}</a>
+          <span class="hidden sm:inline text-slate-700">•</span>
+          <a href={`${currentLabels.prefix}/materiali`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.mat}</a>
+          <span class="hidden sm:inline text-slate-700">•</span>
+          <a href={`${currentLabels.prefix}/riscaldare`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.ris}</a>
+          <span class="hidden sm:inline text-slate-700">•</span>
+          <a href={`${currentLabels.prefix}/problemi`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.prob}</a>
+        </nav>
+        
+        <nav class="flex justify-center gap-4 text-[10px] text-slate-500 font-medium tracking-wide pt-4 border-t border-slate-800/50 w-2/3 md:w-1/3 mx-auto">
           <a href={`${currentLabels.prefix}/privacy`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.privacy}</a>
           <span>•</span>
           <a href={`${currentLabels.prefix}/cookies`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.cookie}</a>
