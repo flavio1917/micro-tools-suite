@@ -107,8 +107,7 @@ const fT = footerLinks[lang as keyof typeof footerLinks] || footerLinks.it;
 
 // HELPER PER URL PULITI (Es. /it/materiali o /materiali)
 // La funzione genera il link corretto sia per l'italiano (senza /it/) che per le altre lingue
-const getUrl = (path: string) => lang === 'it' ? `/${path}` : `/${lang}/${path}`;
-
+const getUrl = (path: string) => `/${lang}/${path}`;
 const alternateUrls = {
   it: "https://www.convertitorefriggitrice.it/",
   en: "https://www.convertitorefriggitrice.it/en/",
