@@ -107,9 +107,7 @@ const fT = footerLinks[lang as keyof typeof footerLinks] || footerLinks.it;
 
 // HELPER PER URL PULITI (Es. /it/materiali o /materiali)
 // La funzione genera il link corretto sia per l'italiano (senza /it/) che per le altre lingue
-const getUrl = (path: string) => {
-  return lang === 'it' ? `/${path}` : `/${lang}/${path}`;
-};
+const getUrl = (path: string) => lang === 'it' ? `/${path}` : `/${lang}/${path}`;
 
 const alternateUrls = {
   it: "https://www.convertitorefriggitrice.it/",
@@ -233,9 +231,9 @@ const jsonLd = {
           <a href={getUrl('problemi')} class="text-slate-400 hover:text-orange-400 transition-colors">{fT.prob}</a>
         </nav>
 
-        <p class="text-xs text-slate-500 max-w-2xl text-center leading-relaxed px-4">
+        <!-- <p class="text-xs text-slate-500 max-w-2xl text-center leading-relaxed px-4">
           {t.footerDisclaimer}
-        </p>
+        </p> -->
       </div>
     </footer>
 
