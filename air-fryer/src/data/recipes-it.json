@@ -5,7 +5,7 @@
     "emoji": "🦑",
     "temp": 200,
     "time": "8-10",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "400 g anelli di calamari, freschi o decongelati",
@@ -42,7 +42,7 @@
     "emoji": "🥩",
     "temp": 190,
     "time": "12-15",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "2",
     "ingredients": [
       "Petto di pollo o fesa di vitello: 2 fette sottili",
@@ -80,7 +80,7 @@
     "emoji": "🍖",
     "temp": 180,
     "time": "35-40",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "500 g carne macinata mista (bovino, suino)",
@@ -122,7 +122,7 @@
     "emoji": "🥘",
     "temp": 195,
     "time": "20-25",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "3",
     "ingredients": [
       "350 g salsiccia di maiale",
@@ -162,7 +162,7 @@
     "emoji": "🍢",
     "temp": 200,
     "time": "8-10",
-    "prep_time": "2 minuti",
+    "prep_time": "2",
     "portions": "2",
     "ingredients": [
       "Arrosticini di pecora: 15-20",
@@ -198,7 +198,7 @@
     "emoji": "🥬",
     "temp": 180,
     "time": "15",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "2",
     "ingredients": [
       "4 carciofi, varietà mammole o romaneschi",
@@ -236,7 +236,7 @@
     "emoji": "🍅",
     "temp": 180,
     "time": "20-25",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "2 pomodori a grappolo, grandi",
@@ -278,7 +278,7 @@
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "800 g di patate a pasta gialla",
@@ -317,7 +317,7 @@
     "emoji": "🥧",
     "temp": 170,
     "time": "20-25",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "Pasta sfoglia o brisée, 1 rotolo tondo",
@@ -359,7 +359,7 @@
     "emoji": "🌰",
     "temp": 200,
     "time": "15-20",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "500 g di castagne fresche",
@@ -395,7 +395,7 @@
     "emoji": "🍘",
     "temp": 200,
     "time": "15-18",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "4 arancini o supplì di riso, crudi e impanati",
@@ -431,7 +431,7 @@
     "emoji": "🥔",
     "temp": 200,
     "time": "12-14",
-    "prep_time": "30 minuti",
+    "prep_time": "30",
     "portions": "4",
     "ingredients": [
       "500 g di purea di patate (da patate farinose), fredda",
@@ -477,7 +477,7 @@
     "emoji": "🥖",
     "temp": 190,
     "time": "12-15",
-    "prep_time": "5 minuti (se usi impasto pronto)",
+    "prep_time": "5(se usi impasto pronto)",
     "portions": "2",
     "ingredients": [
       "250 g di impasto per pizza lievitato",
@@ -516,7 +516,7 @@
     "emoji": "🥐",
     "temp": 170,
     "time": "10-12",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "Pasta sfoglia rotonda, 1 rotolo",
@@ -552,7 +552,7 @@
     "emoji": "🍆",
     "temp": 180,
     "time": "20",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "2",
     "ingredients": [
       "1 melanzana",
@@ -591,7 +591,7 @@
     "emoji": "🍝",
     "temp": 190,
     "time": "15",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "300 g carne macinata mista (bovino e suino)",
@@ -627,7 +627,7 @@
     "emoji": "🍙",
     "temp": 200,
     "time": "15",
-    "prep_time": "40 minuti",
+    "prep_time": "40",
     "portions": "4",
     "ingredients": [
       "300 g di riso per risotti, cotto e freddo",
@@ -665,7 +665,7 @@
     "emoji": "🫒",
     "temp": 200,
     "time": "10",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "20 Olive Ascolane ripiene di carne, fresche o surgelate",
@@ -695,7 +695,7 @@
     "emoji": "🥒",
     "temp": 180,
     "time": "18",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "2",
     "ingredients": [
       "2 zucchine grandi",
@@ -735,7 +735,7 @@
     "emoji": "🍅",
     "temp": 200,
     "time": "12",
-    "prep_time": "30 minuti",
+    "prep_time": "30",
     "portions": "4",
     "ingredients": [
       "250 g riso al ragù, freddo",
@@ -771,7 +771,7 @@
     "emoji": "🍞",
     "temp": 190,
     "time": "10",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "4 fette di pancarrè",
@@ -809,7 +809,7 @@
     "emoji": "🫑",
     "temp": 180,
     "time": "25",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "2",
     "ingredients": [
       "2 peperoni medi",
@@ -848,7 +848,7 @@
     "emoji": "🥔",
     "temp": 190,
     "time": "22",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "3",
     "ingredients": [
       "3 salsicce di suino",
@@ -884,7 +884,7 @@
     "emoji": "🍳",
     "temp": 180,
     "time": "18",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "3",
     "ingredients": [
       "200 g di pasta cotta",
@@ -921,7 +921,7 @@
     "emoji": "🥩",
     "temp": 190,
     "time": "14",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "2 fette di lonza di maiale o vitello, battute",
@@ -955,7 +955,7 @@
     "emoji": "🥬",
     "temp": 180,
     "time": "15",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "2",
     "ingredients": [
       "4 carciofi, tipo romanesco o violetto",
@@ -994,7 +994,7 @@
     "emoji": "🌼",
     "temp": 190,
     "time": "8",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "3",
     "ingredients": [
       "10 Fiori di Zucca",
@@ -1031,7 +1031,7 @@
     "emoji": "🥖",
     "temp": 200,
     "time": "5",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "Pane casereccio, 4 fette",
@@ -1069,7 +1069,7 @@
     "emoji": "🧀",
     "temp": 200,
     "time": "12",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "250 g gnocchi di patate freschi",
@@ -1103,7 +1103,7 @@
     "emoji": "🍩",
     "temp": 180,
     "time": "10",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "200 g di farina 00",
@@ -1143,7 +1143,7 @@
     "emoji": "🥟",
     "temp": 200,
     "time": "8",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "3",
     "ingredients": [
       "Base per pizza rettangolare, 1 rotolo",
@@ -1228,7 +1228,7 @@
     "emoji": "🍤",
     "temp": 200,
     "time": "12",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "2",
     "ingredients": [
       "200 g anelli di calamaro",
@@ -1265,7 +1265,7 @@
     "emoji": "🐟",
     "temp": 200,
     "time": "10",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "2",
     "ingredients": [
       "400 g Pesce di paranza (alici, trigliette, merluzzetti, latterini)",
@@ -1300,7 +1300,7 @@
     "emoji": "🦑",
     "temp": 200,
     "time": "8",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "300 g di calamaretti spillo, puliti",
@@ -1335,7 +1335,7 @@
     "emoji": "🦐",
     "temp": 200,
     "time": "10",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "300 g code di gambero, sgusciate con coda",
@@ -1361,7 +1361,7 @@
     "emoji": "🍟",
     "temp": 200,
     "time": "18-20",
-    "prep_time": "0 minuti",
+    "prep_time": "0",
     "portions": "2",
     "ingredients": [
       "500 g di patate fritte con buccia, surgelate"
@@ -1393,7 +1393,7 @@
     "emoji": "🌮",
     "temp": 150,
     "time": "8",
-    "prep_time": "2 minuti",
+    "prep_time": "2",
     "portions": "2",
     "ingredients": [
       "3 tortillas di mais (Ø 15 cm)",
@@ -1431,7 +1431,7 @@
     "emoji": "🍠",
     "temp": 200,
     "time": "11-15",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "2 patate dolci a pasta arancione, grandi",
@@ -1471,7 +1471,7 @@
     "emoji": "🍟",
     "temp": 195,
     "time": "20-25",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "2 patate grandi, sbucciate",
@@ -1509,7 +1509,7 @@
     "emoji": "🍟",
     "temp": 195,
     "time": "25-28",
-    "prep_time": "30 minuti",
+    "prep_time": "30",
     "portions": "4",
     "ingredients": [
       "2 patate grandi a pasta gialla",
@@ -1548,7 +1548,7 @@
     "emoji": "🍟",
     "temp": 200,
     "time": "18-20",
-    "prep_time": "0 minuti",
+    "prep_time": "0",
     "portions": "2",
     "ingredients": [
       "500 g di patate prefritte surgelate, taglio ondulato"
@@ -1624,7 +1624,7 @@
     "emoji": "🥒",
     "temp": 190,
     "time": "10-12",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "2 zucchine medie",
@@ -1668,7 +1668,7 @@
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "500 g di ali di pollo, sezionate",
@@ -1709,7 +1709,7 @@
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "1 kg di ali di pollo",
@@ -1793,7 +1793,7 @@
     "emoji": "🍗",
     "temp": 195,
     "time": "25-30",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "600 g di ali di pollo",
@@ -1873,7 +1873,7 @@
     "emoji": "🌶",
     "temp": 195,
     "time": "12-14",
-    "prep_time": "1 ora e 15 minuti",
+    "prep_time": "1 ora e 15",
     "portions": "4",
     "ingredients": [
       "500 g petto di pollo, tagliato a strisce",
@@ -1914,7 +1914,7 @@
     "emoji": "🍗",
     "temp": 195,
     "time": "20-25",
-    "prep_time": "30 minuti",
+    "prep_time": "30",
     "portions": "4",
     "ingredients": [
       "8 fusi di pollo con pelle",
@@ -1954,7 +1954,7 @@
     "emoji": "🍗",
     "temp": 190,
     "time": "22-25",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "4 cosce di pollo, con osso e pelle",
@@ -2033,7 +2033,7 @@
     "emoji": "🍱",
     "temp": 185,
     "time": "14-16",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "2",
     "ingredients": [
       "2 fette di lonza di maiale disossata (170 g cad., spessore 1 cm)",
@@ -2073,7 +2073,7 @@
     "emoji": "🍆",
     "temp": 200,
     "time": "10-12",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "2",
     "ingredients": [
       "1 Melanzana",
@@ -2115,7 +2115,7 @@
     "emoji": "🐟",
     "temp": 180,
     "time": "8-10",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "400 g filetto di pesce bianco (merluzzo, platessa o nasello)",
@@ -2153,7 +2153,7 @@
     "emoji": "🍗",
     "temp": 180,
     "time": "15-18",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "500 g petto di pollo, a cubi",
@@ -2193,7 +2193,7 @@
     "emoji": "🍄",
     "temp": 160,
     "time": "12-14",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "8-10 funghi champignon o portobello, medi",
@@ -2233,7 +2233,7 @@
     "emoji": "🍙",
     "temp": 180,
     "time": "15-18",
-    "prep_time": "35 minuti",
+    "prep_time": "35",
     "portions": "4",
     "ingredients": [
       "12 fogli di carta di riso",
@@ -2271,7 +2271,7 @@
     "emoji": "🌭",
     "temp": 200,
     "time": "10-12",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "1 rotolo di pasta sfoglia rettangolare",
@@ -2310,7 +2310,7 @@
     "emoji": "🍗",
     "temp": 190,
     "time": "18-20",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "4 petti di pollo (circa 200g l'uno)",
@@ -2346,7 +2346,7 @@
     "emoji": "🍗",
     "temp": 195,
     "time": "22-25",
-    "prep_time": "30 minuti",
+    "prep_time": "30",
     "portions": "4",
     "ingredients": [
       "400 g cosce di pollo con pelle",
@@ -2462,7 +2462,7 @@
     "emoji": "🍗",
     "temp": 195,
     "time": "22-25",
-    "prep_time": "30 minuti",
+    "prep_time": "30",
     "portions": "4",
     "ingredients": [
       "Pollo: 8 pezzi (fusi e sovracosce)",
@@ -2501,7 +2501,7 @@
     "emoji": "🍗",
     "temp": 180,
     "time": "50-60",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "Pollo intero eviscerato (1.2 kg max)",
@@ -2541,7 +2541,7 @@
     "emoji": "🍗",
     "temp": 180,
     "time": "50",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "1 pollo intero, circa 1,3 kg",
@@ -2576,7 +2576,7 @@
     "emoji": "🍝",
     "temp": 195,
     "time": "10-12",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "400 g carne macinata di manzo (o misto manzo/suino)",
@@ -2617,7 +2617,7 @@
     "emoji": "🌮",
     "temp": 190,
     "time": "15",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "4 tortillas di mais o frumento",
@@ -2657,7 +2657,7 @@
     "emoji": "🍖",
     "temp": 180,
     "time": "45-50",
-    "prep_time": "30 minuti",
+    "prep_time": "30",
     "portions": "4",
     "ingredients": [
       "1 kg spalla o cosciotto di agnello, disossato",
@@ -2741,7 +2741,7 @@
     "emoji": "🌯",
     "temp": 175,
     "time": "20",
-    "prep_time": "35 minuti",
+    "prep_time": "35",
     "portions": "4",
     "ingredients": [
       "280 g di impasto per pizza pronto",
@@ -2821,7 +2821,7 @@
     "emoji": "🥩",
     "temp": 200,
     "time": "7",
-    "prep_time": "2 ore 10 minuti",
+    "prep_time": "2 ore 10",
     "portions": "4",
     "ingredients": [
       "900 g di bistecca di manzo (taglio bavetta o fianco)",
@@ -2899,7 +2899,7 @@
     "emoji": "🥩",
     "temp": 200,
     "time": "7-9",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "900 g di controfiletto di manzo (2 bistecche)",
@@ -2976,7 +2976,7 @@
     "emoji": "🍖",
     "temp": 0,
     "time": "11",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "Braciole di maiale senza osso: 2",
@@ -3016,7 +3016,7 @@
     "emoji": "🍔",
     "temp": 200,
     "time": "9",
-    "prep_time": "1 ora 5 minuti",
+    "prep_time": "1 ora 5",
     "portions": "4",
     "ingredients": [
       "450 g di carne di manzo macinata",
@@ -3058,7 +3058,7 @@
     "emoji": "🍖",
     "temp": 200,
     "time": "10",
-    "prep_time": "4 ore 15 minuti",
+    "prep_time": "4 ore 15",
     "portions": "4",
     "ingredients": [
       "Costolette di agnello: 12",
@@ -3096,7 +3096,7 @@
     "emoji": "🥟",
     "temp": 200,
     "time": "20",
-    "prep_time": "25 minuti",
+    "prep_time": "25",
     "portions": "4",
     "ingredients": [
       "Pasta brisée, 2 rotoli",
@@ -3134,7 +3134,7 @@
     "emoji": "🥓",
     "temp": 190,
     "time": "35",
-    "prep_time": "2 ore 20 minuti",
+    "prep_time": "2 ore 20",
     "portions": "4",
     "ingredients": [
       "Filetto di maiale: 800 g",
@@ -3179,7 +3179,7 @@
     "emoji": "🍖",
     "temp": 200,
     "time": "10-12",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "4 costolette di agnello",
@@ -3216,7 +3216,7 @@
     "emoji": "🥧",
     "temp": 180,
     "time": "15",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "1 rotolo di pasta sfoglia",
@@ -3251,7 +3251,7 @@
     "emoji": "🧀",
     "temp": 160,
     "time": "35",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "6",
     "ingredients": [
       "500g di farina 00",
@@ -3290,7 +3290,7 @@
     "emoji": "🥧",
     "temp": 170,
     "time": "20",
-    "prep_time": "30 minuti",
+    "prep_time": "30",
     "portions": "4",
     "ingredients": [
       "1 rotolo di pasta frolla già pronta",
@@ -3364,7 +3364,7 @@
     "emoji": "🍔",
     "temp": 200,
     "time": "8-12",
-    "prep_time": "25 minuti",
+    "prep_time": "25",
     "portions": "4",
     "ingredients": [
       "650 g di carne macinata di manzo",
@@ -3404,7 +3404,7 @@
     "emoji": "🍔",
     "temp": 200,
     "time": "11",
-    "prep_time": "35 minuti",
+    "prep_time": "35",
     "portions": "4",
     "ingredients": [
       "450 g macinato di tacchino magro",
@@ -3442,7 +3442,7 @@
     "emoji": "🌭",
     "temp": 170,
     "time": "5",
-    "prep_time": "25 minuti",
+    "prep_time": "25",
     "portions": "4",
     "ingredients": [
       "4 panini per hot dog",
@@ -3481,7 +3481,7 @@
     "emoji": "🥓",
     "temp": 200,
     "time": "10",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "Filetto di maiale: 450 g, diviso e battuto",
@@ -3520,7 +3520,7 @@
     "emoji": "🌶",
     "temp": 160,
     "time": "16",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "12 peperoncini jalapeño",
@@ -3560,7 +3560,7 @@
     "emoji": "🍢",
     "temp": 180,
     "time": "8",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "360 g di manzo macinato",
@@ -3601,7 +3601,7 @@
     "emoji": "🧆",
     "temp": 200,
     "time": "11",
-    "prep_time": "35 minuti",
+    "prep_time": "35",
     "portions": "4",
     "ingredients": [
       "600 g polpa di agnello macinata",
@@ -3643,7 +3643,7 @@
     "emoji": "🍡",
     "temp": 200,
     "time": "11",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "450 g di carne bovina macinata",
@@ -3714,7 +3714,7 @@
     "emoji": "🌭",
     "temp": 200,
     "time": "10",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "800 g di salsiccia di suino, pezzo unico",
@@ -3752,7 +3752,7 @@
     "emoji": "🥩",
     "temp": 200,
     "time": "7",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "Bistecca di manzo (ribeye), 450 g",
@@ -3796,7 +3796,7 @@
     "emoji": "🍢",
     "temp": 200,
     "time": "9",
-    "prep_time": "12 minuti",
+    "prep_time": "12",
     "portions": "2",
     "ingredients": [
       "350 g di polpa di agnello macinata",
@@ -3839,7 +3839,7 @@
     "emoji": "🍢",
     "temp": 200,
     "time": "9",
-    "prep_time": "35 minuti",
+    "prep_time": "35",
     "portions": "4",
     "ingredients": [
       "450 g lombata di maiale, a cubetti",
@@ -3880,7 +3880,7 @@
     "emoji": "🍢",
     "temp": 200,
     "time": "7",
-    "prep_time": "1 ora 5 minuti",
+    "prep_time": "1 ora 5",
     "portions": "4",
     "ingredients": [
       "500 g di manzo a cubetti",
@@ -3919,7 +3919,7 @@
     "emoji": "🍢",
     "temp": 180,
     "time": "6",
-    "prep_time": "1 ora 20 minuti",
+    "prep_time": "1 ora 20",
     "portions": "4",
     "ingredients": [
       "12 fette di carpaccio di manzo",
@@ -3956,7 +3956,7 @@
     "emoji": "🥚",
     "temp": 175,
     "time": "15",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "4 uova sode, sbucciate",
@@ -4078,7 +4078,7 @@
     "emoji": "🍞",
     "temp": 175,
     "time": "10",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "Pane bianco in cassetta, 4 fette spesse",
@@ -4151,7 +4151,7 @@
     "emoji": "🧅",
     "temp": 200,
     "time": "25",
-    "prep_time": "2 ore 15 minuti",
+    "prep_time": "2 ore 15",
     "portions": "4",
     "ingredients": [
       "2 cipolle dorate, grandi",
@@ -4229,7 +4229,7 @@
     "emoji": "🐟",
     "temp": 180,
     "time": "12",
-    "prep_time": "25 minuti",
+    "prep_time": "25",
     "portions": "4",
     "ingredients": [
       "4 filetti di merluzzo fresco",
@@ -4268,7 +4268,7 @@
     "emoji": "🍓",
     "temp": 175,
     "time": "12",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "240 g di farina 00",
@@ -4307,7 +4307,7 @@
     "emoji": "🫐",
     "temp": 175,
     "time": "12",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "240 g di farina 00",
@@ -4351,7 +4351,7 @@
     "emoji": "🍤",
     "temp": 160,
     "time": "16",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "16 code di gambero, sgusciate",
@@ -4390,7 +4390,7 @@
     "emoji": "🥥",
     "temp": 175,
     "time": "8",
-    "prep_time": "8 minuti",
+    "prep_time": "8",
     "portions": "4",
     "ingredients": [
       "300 g di gamberi, puliti",
@@ -4431,7 +4431,7 @@
     "emoji": "🦐",
     "temp": 170,
     "time": "10",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "260 g di gamberi, puliti",
@@ -4469,7 +4469,7 @@
     "emoji": "🥘",
     "temp": 200,
     "time": "10",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "500 g di filetto di merluzzo",
@@ -4507,7 +4507,7 @@
     "emoji": "🐟",
     "temp": 170,
     "time": "10",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "4 filetti di merluzzo (130 g cad.)",
@@ -4547,7 +4547,7 @@
     "emoji": "🥧",
     "temp": 175,
     "time": "10",
-    "prep_time": "35 minuti",
+    "prep_time": "35",
     "portions": "2",
     "ingredients": [
       "Mela: 1 media, sbucciata e tagliata a cubetti",
@@ -4588,7 +4588,7 @@
     "emoji": "🧀",
     "temp": 175,
     "time": "8",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "Formaggio a pasta filata: 8 bastoncini",
@@ -4630,7 +4630,7 @@
     "emoji": "☕",
     "temp": 150,
     "time": "15",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "8",
     "ingredients": [
       "120 g di farina 00",
@@ -4673,7 +4673,7 @@
     "emoji": "🧁",
     "temp": 170,
     "time": "20",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "130 g di farina 00",
@@ -4712,7 +4712,7 @@
     "emoji": "🐟",
     "temp": 200,
     "time": "7",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "4 filetti di orata",
@@ -4753,7 +4753,7 @@
     "emoji": "🐟",
     "temp": 175,
     "time": "7",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "2",
     "ingredients": [
       "Pesce gatto: 2 filetti (170 g/cad.)",
@@ -4795,7 +4795,7 @@
     "emoji": "🍕",
     "temp": 175,
     "time": "8",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "1 Base per pizza pronta (18 cm)",
@@ -4835,7 +4835,7 @@
     "emoji": "🐟",
     "temp": 175,
     "time": "8",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "2",
     "ingredients": [
       "2 filetti di salmone (170g cad.)",
@@ -4875,7 +4875,7 @@
     "emoji": "🐟",
     "temp": 200,
     "time": "9",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "Filetti di salmone: 4 (120 g cad.)",
@@ -4919,7 +4919,7 @@
     "emoji": "🍣",
     "temp": 175,
     "time": "8",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "Filetti di salmone: 2 da 140 g",
@@ -4957,7 +4957,7 @@
     "emoji": "🥪",
     "temp": 160,
     "time": "10",
-    "prep_time": "2 minuti",
+    "prep_time": "2",
     "portions": "2",
     "ingredients": [
       "2 muffin inglesi, divisi a metà",
@@ -4999,7 +4999,7 @@
     "emoji": "🥧",
     "temp": 180,
     "time": "16",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "8",
     "ingredients": [
       "330 g pasta sfoglia rettangolare",
@@ -5039,7 +5039,7 @@
     "emoji": "🥒",
     "temp": 180,
     "time": "10",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "Cetrioli sottaceto, grandi: 4",
@@ -5078,7 +5078,7 @@
     "emoji": "🍫",
     "temp": 165,
     "time": "13",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "100 g cioccolato fondente, tritato",
@@ -5117,7 +5117,7 @@
     "emoji": "🌮",
     "temp": 175,
     "time": "7",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "450 g di filetti di pesce bianco (es. tilapia), tagliati a strisce",
@@ -5160,7 +5160,7 @@
     "emoji": "🍞",
     "temp": 175,
     "time": "10",
-    "prep_time": "4 minuti",
+    "prep_time": "4",
     "portions": "2",
     "ingredients": [
       "2 fette spesse di pane brioche raffermo",
@@ -5202,7 +5202,7 @@
     "emoji": "🍋",
     "temp": 160,
     "time": "30",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "6",
     "ingredients": [
       "120 g di farina 00",
@@ -5274,7 +5274,7 @@
     "emoji": "🍳",
     "temp": 175,
     "time": "14",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "4",
     "ingredients": [
       "4 uova",
@@ -5316,7 +5316,7 @@
     "emoji": "🧀",
     "temp": 175,
     "time": "12",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "Farina 00: 200 g",
@@ -5357,7 +5357,7 @@
     "emoji": "🍕",
     "temp": 170,
     "time": "8",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "2 muffin inglesi",
@@ -5394,7 +5394,7 @@
     "emoji": "🍒",
     "temp": 150,
     "time": "15",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "8",
     "ingredients": [
       "120 g farina 00",
@@ -5437,7 +5437,7 @@
     "emoji": "☕",
     "temp": 150,
     "time": "15",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "8",
     "ingredients": [
       "120 g farina 00",
@@ -5482,7 +5482,7 @@
     "emoji": "🧁",
     "temp": 160,
     "time": "15",
-    "prep_time": "8 minuti",
+    "prep_time": "8",
     "portions": "6",
     "ingredients": [
       "60 g di farina e 80 g di farina di mais gialla",
@@ -5522,7 +5522,7 @@
     "emoji": "🧁",
     "temp": 150,
     "time": "15",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "6",
     "ingredients": [
       "120 g di farina per dolci",
@@ -5561,7 +5561,7 @@
     "emoji": "🍞",
     "temp": 150,
     "time": "40",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "2 banane mature e annerite",
@@ -5598,7 +5598,7 @@
     "emoji": "🥗",
     "temp": 200,
     "time": "6-8",
-    "prep_time": "2 minuti",
+    "prep_time": "2",
     "portions": "2",
     "ingredients": [
       "260 g di asparagi verdi freschi",
@@ -5633,7 +5633,7 @@
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "12 asparagi, mondati",
@@ -5671,7 +5671,7 @@
     "emoji": "🥯",
     "temp": 200,
     "time": "17",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "4 bagel",
@@ -5710,7 +5710,7 @@
     "emoji": "🥦",
     "temp": 170,
     "time": "27",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "500 g di cavolfiore, diviso in cimette",
@@ -5752,7 +5752,7 @@
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "4",
     "ingredients": [
       "Broccolo, 1 testa",
@@ -5789,7 +5789,7 @@
     "emoji": "🥕",
     "temp": 200,
     "time": "13",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "460 g di carote novelle",
@@ -5824,7 +5824,7 @@
     "emoji": "🥕",
     "temp": 200,
     "time": "13",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "460 g di carote",
@@ -5861,7 +5861,7 @@
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
-    "prep_time": "2 minuti",
+    "prep_time": "2",
     "portions": "2",
     "ingredients": [
       "300 g di cimette di cavolfiore",
@@ -5899,7 +5899,7 @@
     "emoji": "🥦",
     "temp": 180,
     "time": "15",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "1 cavolfiore piccolo",
@@ -5936,7 +5936,7 @@
     "emoji": "🥔",
     "temp": 165,
     "time": "23-26",
-    "prep_time": "40 minuti",
+    "prep_time": "40",
     "portions": "4",
     "ingredients": [
       "2 patate a pasta gialla",
@@ -5973,7 +5973,7 @@
     "emoji": "🍄",
     "temp": 200,
     "time": "10-12",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "320 g di funghi champignon",
@@ -6009,7 +6009,7 @@
     "emoji": "🍆",
     "temp": 200,
     "time": "10",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "1 melanzana",
@@ -6048,7 +6048,7 @@
     "emoji": "🍆",
     "temp": 170,
     "time": "27",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "2 melanzane medie",
@@ -6084,7 +6084,7 @@
     "emoji": "🍆",
     "temp": 190,
     "time": "30",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "2 melanzane medie",
@@ -6155,7 +6155,7 @@
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "4",
     "ingredients": [
       "Patate a pasta gialla: 2 grandi",
@@ -6226,7 +6226,7 @@
     "emoji": "🥔",
     "temp": 180,
     "time": "30",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "1 kg di patate novelle, lavate e tagliate a metà",
@@ -6298,7 +6298,7 @@
     "emoji": "🥔",
     "temp": 175,
     "time": "40",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "4",
     "ingredients": [
       "4 patate medie",
@@ -6336,7 +6336,7 @@
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "4",
     "ingredients": [
       "230 g di patate novelle, lavate e tagliate a metà",
@@ -6409,7 +6409,7 @@
     "emoji": "🧅",
     "temp": 190,
     "time": "20",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "1 cipolla bianca dolce, tagliata ad anelli spessore 13 mm",
@@ -6449,7 +6449,7 @@
     "emoji": "🥓",
     "temp": 160,
     "time": "8",
-    "prep_time": "2 minuti",
+    "prep_time": "2",
     "portions": "2",
     "ingredients": [
       "4 fette di pancetta tesa",
@@ -6487,7 +6487,7 @@
     "emoji": "🥩",
     "temp": 200,
     "time": "10",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "2 bistecche di costata, 230 g cad.",
@@ -6523,7 +6523,7 @@
     "emoji": "🥬",
     "temp": 200,
     "time": "9",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "300 g di cavoletti di Bruxelles, puliti e tagliati a metà",
@@ -6563,7 +6563,7 @@
     "emoji": "🥬",
     "temp": 150,
     "time": "8-10",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "200 g di cavolo nero (foglie)",
@@ -6599,7 +6599,7 @@
     "emoji": "🍎",
     "temp": 80,
     "time": "240",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "Mele: 2",
@@ -6632,7 +6632,7 @@
     "emoji": "🍐",
     "temp": 160,
     "time": "45",
-    "prep_time": "1 ora 10 minuti",
+    "prep_time": "1 ora 10",
     "portions": "4",
     "ingredients": [
       "100 g di farina 00 (90 g per l'impasto, 10 g per la spianatoia)",
@@ -6672,7 +6672,7 @@
     "emoji": "🥗",
     "temp": 200,
     "time": "12-14",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "400 g fagiolini freschi",
@@ -6706,7 +6706,7 @@
     "emoji": "🧆",
     "temp": 170,
     "time": "15",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "500 g di ceci lessati",
@@ -6745,7 +6745,7 @@
     "emoji": "🍟",
     "temp": 195,
     "time": "25-28",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "Patate a pasta gialla: 2 grandi",
@@ -6789,7 +6789,7 @@
     "emoji": "🍟",
     "temp": 200,
     "time": "18-20",
-    "prep_time": "0 minuti",
+    "prep_time": "0",
     "portions": "4",
     "ingredients": [
       "700 g di patate a spirale surgelate"
@@ -6821,7 +6821,7 @@
     "emoji": "🥟",
     "temp": 170,
     "time": "15",
-    "prep_time": "20 minuti",
+    "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "6 fogli di pasta brick",
@@ -6862,7 +6862,7 @@
     "emoji": "🍰",
     "temp": 160,
     "time": "35",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "Farina autolievitante: 180 g",
@@ -6934,7 +6934,7 @@
     "emoji": "🥪",
     "temp": 160,
     "time": "8",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "4 fette di pane in cassetta",
@@ -6971,7 +6971,7 @@
     "emoji": "🦐",
     "temp": 190,
     "time": "5",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "2",
     "ingredients": [
       "450 g di gamberetti, sgusciati e devenati",
@@ -7010,7 +7010,7 @@
     "emoji": "🌽",
     "temp": 200,
     "time": "10",
-    "prep_time": "2 minuti",
+    "prep_time": "2",
     "portions": "2",
     "ingredients": [
       "1 pannocchia di mais",
@@ -7044,7 +7044,7 @@
     "emoji": "🍕",
     "temp": 160,
     "time": "10",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "2",
     "ingredients": [
       "2 basi per pizza pronte (diametro 17 cm)",
@@ -7084,7 +7084,7 @@
     "emoji": "🥖",
     "temp": 160,
     "time": "8",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "1 sfilatino o mezza baguette",
@@ -7123,7 +7123,7 @@
     "emoji": "🌽",
     "temp": 200,
     "time": "12-15",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "4 pannocchie di mais",
@@ -7158,7 +7158,7 @@
     "emoji": "🍕",
     "temp": 160,
     "time": "10",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "2",
     "ingredients": [
       "2 basi per pizza pre-confezionate (diametro 17 cm)",
@@ -7198,7 +7198,7 @@
     "emoji": "🍔",
     "temp": 180,
     "time": "14",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "400 g di ceci precotti e ben scolati",
@@ -7236,7 +7236,7 @@
     "emoji": "🥒",
     "temp": 175,
     "time": "16",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "4 zucchine medie",
@@ -7277,7 +7277,7 @@
     "emoji": "🫑",
     "temp": 185,
     "time": "14",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "4",
     "ingredients": [
       "2 peperoni grandi (rossi o gialli)",
@@ -7317,7 +7317,7 @@
     "emoji": "🥗",
     "temp": 190,
     "time": "8",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "300 g di asparagi verdi",
@@ -7357,7 +7357,7 @@
     "emoji": "🥗",
     "temp": 180,
     "time": "15",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "2 finocchi",
@@ -7396,7 +7396,7 @@
     "emoji": "🧅",
     "temp": 170,
     "time": "16",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "3 cipolle rosse di Tropea medie",
@@ -7433,7 +7433,7 @@
     "emoji": "🥬",
     "temp": 190,
     "time": "12",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "400 g di cavoletti di Bruxelles, puliti e tagliati a metà",
@@ -7469,7 +7469,7 @@
     "emoji": "🍅",
     "temp": 140,
     "time": "40",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "400 g di pomodorini ciliegino o datterino lavati",
@@ -7506,7 +7506,7 @@
     "emoji": "🍳",
     "temp": 160,
     "time": "15",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "4 uova grandi",
@@ -7546,7 +7546,7 @@
     "emoji": "🍢",
     "temp": 190,
     "time": "12",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "200 g Halloumi, a cubetti",
@@ -7586,7 +7586,7 @@
     "emoji": "🥧",
     "temp": 170,
     "time": "25",
-    "prep_time": "15 minuti",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
       "400 g di patate, lessate e schiacciate",
@@ -7627,7 +7627,7 @@
     "emoji": "🫛",
     "temp": 190,
     "time": "10",
-    "prep_time": "3 minuti",
+    "prep_time": "3",
     "portions": "2",
     "ingredients": [
       "250 g edamame surgelati in baccello",
@@ -7665,7 +7665,7 @@
     "emoji": "🥣",
     "temp": 200,
     "time": "15",
-    "prep_time": "5 minuti",
+    "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "400 g ceci precotti",
@@ -7701,7 +7701,7 @@
     "emoji": "🥒",
     "temp": 160,
     "time": "18",
-    "prep_time": "10 minuti",
+    "prep_time": "10",
     "portions": "2",
     "ingredients": [
       "1 Zucchina media",
