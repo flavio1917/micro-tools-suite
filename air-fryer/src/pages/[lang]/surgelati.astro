@@ -26,9 +26,12 @@ const content = {
     title: "Convertitore Friggitrice ad Aria per Surgelati: Tempi a 2 Fasi",
     h1: "Calibratore Surgelati",
     desc: "Basta cibi bruciati fuori e ghiacciati dentro. Inserisci i dati della scatola e ottieni la cottura termodinamica perfetta in 2 Fasi.",
+    sourceLabel: "Cosa c'è scritto sulla confezione?",
+    srcOven: "🌡️ Forno",
+    srcAF: "🌪️ Friggitrice ad Aria",
     catLabel: "Categoria Prodotto",
-    tLabel: "Gradi sulla Scatola",
-    mLabel: "Minuti sulla Scatola",
+    tLabel: "Gradi sulla Confezione",
+    mLabel: "Minuti sulla Confezione",
     phase1: "Fase 1: Scongelamento & Asciugatura",
     phase2: "Fase 2: Crisping ad Alta Temp.",
     cats: [
@@ -43,9 +46,12 @@ const content = {
     title: "Air Fryer Frozen Food Converter: 2-Phase Cooking",
     h1: "Frozen Food Calibrator",
     desc: "Stop burning the outside while the inside is frozen. Enter the box instructions to get the perfect 2-Phase thermodynamic cooking method.",
+    sourceLabel: "Box instructions are for:",
+    srcOven: "🌡️ Oven",
+    srcAF: "🌪️ Air Fryer",
     catLabel: "Product Category",
-    tLabel: "Box Temperature",
-    mLabel: "Box Minutes",
+    tLabel: "Degrees on Box",
+    mLabel: "Minutes on Box",
     phase1: "Phase 1: Defrost & Dry",
     phase2: "Phase 2: High-Heat Crisping",
     cats: [
@@ -59,7 +65,10 @@ const content = {
   es: {
     title: "Calculadora Freidora de Aire para Congelados: 2 Fases",
     h1: "Calibrador de Congelados",
-    desc: "Evita comida quemada por fuera y helada por dentro. Introduce los datos del envase y obtén la cocción termodinámica perfecta en 2 Fases.",
+    desc: "Evita comida quemada por fuera y helada por dentro. Introduce los datos del envase y obtén la cocción termodinámica en 2 Fases.",
+    sourceLabel: "¿Las instrucciones del envase son para?",
+    srcOven: "🌡️ Horno",
+    srcAF: "🌪️ Freidora de Aire",
     catLabel: "Categoría del Producto",
     tLabel: "Grados en el Envase",
     mLabel: "Minutos en el Envase",
@@ -77,6 +86,9 @@ const content = {
     title: "Convertisseur Friteuse à Air pour Surgelés : Cuisson en 2 Phases",
     h1: "Calculateur pour Surgelés",
     desc: "Évitez les aliments brûlés dehors et congelés dedans. Entrez les données de la boîte pour obtenir la cuisson thermodynamique parfaite.",
+    sourceLabel: "Les instructions sur la boîte sont pour :",
+    srcOven: "🌡️ Four",
+    srcAF: "🌪️ Friteuse à Air",
     catLabel: "Catégorie de Produit",
     tLabel: "Temp. sur la Boîte",
     mLabel: "Minutes sur la Boîte",
@@ -128,6 +140,15 @@ const softwareSchema = {
         <div class="absolute -top-24 -left-24 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="space-y-8 relative z-10">
+          
+          <div>
+            <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">{t.sourceLabel}</label>
+            <div class="flex p-1 bg-slate-900 border border-slate-700 rounded-xl shadow-inner gap-1" role="tablist">
+              <button id="src-oven" role="tab" aria-selected="true" class="flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold bg-gradient-to-b from-cyan-500 to-blue-600 text-white shadow-md transition-all border border-cyan-400/50">{t.srcOven}</button>
+              <button id="src-af" role="tab" aria-selected="false" class="flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-400 hover:text-white transition-all border border-transparent">{t.srcAF}</button>
+            </div>
+          </div>
+
           <div>
             <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">{t.catLabel}</label>
             <select id="cat-select" class="w-full bg-slate-900 border border-slate-600 text-white rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-cyan-500 outline-none transition-all shadow-inner font-medium text-base appearance-none cursor-pointer">
@@ -165,7 +186,7 @@ const softwareSchema = {
       </div>
 
       <div class="flex-1 space-y-0 flex flex-col justify-center relative">
-    
+        
         <div class="relative bg-gradient-to-r from-cyan-900/30 to-slate-900/50 border border-cyan-500/30 p-6 rounded-2xl mb-6 ml-0 md:ml-4 shadow-lg hover:border-cyan-400/60 transition-colors">
           <div class="absolute -top-4 -left-4 md:-left-8 w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center font-black text-slate-900 shadow-[0_0_15px_rgba(6,182,212,0.5)] text-lg ring-4 ring-[#0B1120]">1</div>
           
@@ -219,8 +240,10 @@ const softwareSchema = {
       const selectCat = document.getElementById('cat-select');
       const sliderTemp = document.getElementById('slider-temp');
       const sliderMins = document.getElementById('slider-mins');
+      const btnOven = document.getElementById('src-oven');
+      const btnAF = document.getElementById('src-af');
       
-      if (!selectCat) return; // Sicurezza per le view transitions
+      if (!selectCat || !btnOven || !btnAF) return;
 
       const valTemp = document.getElementById('val-temp');
       const valMins = document.getElementById('val-mins');
@@ -229,7 +252,9 @@ const softwareSchema = {
       const resT2 = document.getElementById('res-t2');
       const resM2 = document.getElementById('res-m2');
 
+      let currentSource = 'oven'; // 'oven' o 'af'
       let animRefs = {};
+
       function animateValue(obj, start, end, duration, key) {
         if (animRefs[key]) cancelAnimationFrame(animRefs[key]);
         let startTimestamp = null;
@@ -254,16 +279,21 @@ const softwareSchema = {
 
         let dropT1, dropT2, percM1, percM2;
 
-        if (cat === 'patate') {
-          dropT1 = 40; dropT2 = 0; percM1 = 0.45; percM2 = 0.35;
-        } else if (cat === 'carne') {
-          dropT1 = 30; dropT2 = 10; percM1 = 0.50; percM2 = 0.30;
-        } else if (cat === 'pesce') {
-          dropT1 = 40; dropT2 = 15; percM1 = 0.50; percM2 = 0.25;
-        } else if (cat === 'lievitati') {
-          dropT1 = 50; dropT2 = 20; percM1 = 0.60; percM2 = 0.20;
+        if (currentSource === 'oven') {
+          // Logica FORNO -> AF (Abbassiamo temp e tempo)
+          if (cat === 'patate') { dropT1 = 40; dropT2 = 0; percM1 = 0.45; percM2 = 0.35; } 
+          else if (cat === 'carne') { dropT1 = 30; dropT2 = 10; percM1 = 0.50; percM2 = 0.30; } 
+          else if (cat === 'pesce') { dropT1 = 40; dropT2 = 15; percM1 = 0.50; percM2 = 0.25; } 
+          else if (cat === 'lievitati') { dropT1 = 50; dropT2 = 20; percM1 = 0.60; percM2 = 0.20; }
+        } else {
+          // Logica AF -> AF a 2 Fasi (Manteniamo temp di picco e tempo totale, ma dividiamo l'impatto)
+          if (cat === 'patate') { dropT1 = 20; dropT2 = -10; percM1 = 0.60; percM2 = 0.40; } // Patate in AF: prima caldeggiamo, poi shock finale
+          else if (cat === 'carne') { dropT1 = 15; dropT2 = 0; percM1 = 0.60; percM2 = 0.40; } 
+          else if (cat === 'pesce') { dropT1 = 20; dropT2 = 0; percM1 = 0.65; percM2 = 0.35; } 
+          else if (cat === 'lievitati') { dropT1 = 30; dropT2 = 0; percM1 = 0.70; percM2 = 0.30; }
         }
 
+        // Conversione Delta Fahrenheit se lingua inglese
         if (isEn) {
           dropT1 = Math.round(dropT1 * 1.8);
           dropT2 = Math.round(dropT2 * 1.8);
@@ -284,6 +314,25 @@ const softwareSchema = {
         animateValue(resT2, currT2, finalT2, 400, 't2');
         animateValue(resM2, currM2, finalM2, 400, 'm2');
       }
+
+      // UI Toggle Origine
+      btnOven.addEventListener('click', () => {
+        currentSource = 'oven';
+        btnOven.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold bg-gradient-to-b from-cyan-500 to-blue-600 text-white shadow-md transition-all border border-cyan-400/50";
+        btnOven.setAttribute('aria-selected', 'true');
+        btnAF.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-400 hover:text-white transition-all border border-transparent";
+        btnAF.setAttribute('aria-selected', 'false');
+        calculateLive();
+      });
+
+      btnAF.addEventListener('click', () => {
+        currentSource = 'af';
+        btnAF.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold bg-gradient-to-b from-cyan-500 to-blue-600 text-white shadow-md transition-all border border-cyan-400/50";
+        btnAF.setAttribute('aria-selected', 'true');
+        btnOven.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-400 hover:text-white transition-all border border-transparent";
+        btnOven.setAttribute('aria-selected', 'false');
+        calculateLive();
+      });
 
       selectCat.addEventListener('change', calculateLive);
       sliderTemp.addEventListener('input', calculateLive);
