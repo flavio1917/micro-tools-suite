@@ -164,7 +164,7 @@ const isFast = (recipe: any) => {
 </section>
 
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('astro:page-load', () => {
     const searchInput = document.getElementById('recipe-search-input');
     const filterBtns = document.querySelectorAll('.filter-btn');
     const grid = document.getElementById('recipes-grid');

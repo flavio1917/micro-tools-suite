@@ -8,7 +8,7 @@ const { lang = "it" } = Astro.props;
 const totalRecipes = recipes?.length || 200;
 const roundedCount = Math.floor(totalRecipes / 10) * 10;
 
-// COPY PREMIUM E INGEGNERISTICO
+// COPY PREMIUM E INGEGNERISTICO (Con il nuovo Tooltip E-E-A-T)
 const translations = {
   it: {
     title: "Convertitore", subtitle: "Pro", tab_conv: "Incolla Ricetta", tab_food: "Inserimento Rapido", tab_recipes: "Ricettario",
@@ -16,7 +16,9 @@ const translations = {
     btn_action: "Calcola", label_temp: "Temp. Ottimizzata", label_time: "Tempo Calcolato", eco_label: "Risparmio stimato: ~",
     manual_temp: "TEMP. FORNO", manual_time: "MINUTI FORNO", error_msg: "⚠️ Dati insufficienti. Inserisci Temperatura e Tempo.", 
     legal_privacy: "⚙️ Motore di Convezione Termica attivo. Calcolo 100% locale.",
-    alert_cap: "⚠️ Sicurezza: Temp limitata a 200°C", cta_recipes_top: "Senza idee per cena?", cta_recipes_bottom: `Esplora ${roundedCount}+ Ricette Testate`,
+    alert_cap: "⚠️ Sicurezza: Temp limitata a 200°C", 
+    tooltip_cap: "Perché 200°C? Superare questa soglia degrada l'antiaderente e favorisce l'Acrilammide, nociva sugli amidi ad alte temperature. Cuoci in sicurezza!",
+    cta_recipes_top: "Senza idee per cena?", cta_recipes_bottom: `Esplora ${roundedCount}+ Ricette Testate`,
   },
   en: {
     title: "Air Fryer", subtitle: "Engine", tab_conv: "Smart Paste", tab_food: "Quick Input", tab_recipes: "Recipes",
@@ -24,7 +26,9 @@ const translations = {
     btn_action: "Calculate", label_temp: "Optimized Temp", label_time: "Calculated Time", eco_label: "Est. Savings: ~",
     manual_temp: "OVEN TEMP.", manual_time: "OVEN MINUTES", error_msg: "⚠️ Missing data! Please provide Temp and Time.", 
     legal_privacy: "⚙️ Thermal Convection Engine active. 100% local processing.",
-    alert_cap: "⚠️ Safety: Capped at 400°F", cta_recipes_top: "Don't know what to cook?", cta_recipes_bottom: `Explore ${roundedCount}+ Tested Recipes`,
+    alert_cap: "⚠️ Safety: Capped at 400°F", 
+    tooltip_cap: "Why 400°F? Exceeding this degrades the non-stick coating and promotes Acrylamide, a harmful byproduct on starches at extreme heat. Cook safely!",
+    cta_recipes_top: "Don't know what to cook?", cta_recipes_bottom: `Explore ${roundedCount}+ Tested Recipes`,
   },
   es: {
     title: "Convertidor", subtitle: "Pro", tab_conv: "Pegar Receta", tab_food: "Datos Rápidos", tab_recipes: "Recetas",
@@ -32,7 +36,9 @@ const translations = {
     btn_action: "Calcular", label_temp: "Temp. Optimizada", label_time: "Tiempo Calculado", eco_label: "Ahorro estimado: ~",
     manual_temp: "TEMP. HORNO", manual_time: "MINUTOS HORNO", error_msg: "⚠️ ¡Faltan datos! Introduce Temperatura y Tiempo.", 
     legal_privacy: "⚙️ Motor de Convección Térmica activo. Cálculos 100% locales.",
-    alert_cap: "⚠️ Seguridad: Temp limitada a 200°C", cta_recipes_top: "¿Sin ideas para cenar?", cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`,
+    alert_cap: "⚠️ Seguridad: Temp limitada a 200°C", 
+    tooltip_cap: "¿Por qué 200°C? Superar este límite degrada el antiadherente y favorece la Acrilamida, nociva en almidones a calor extremo. ¡Cocina seguro!",
+    cta_recipes_top: "¿Sin ideas para cenar?", cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`,
   },
   fr: {
     title: "Convertisseur", subtitle: "Pro", tab_conv: "Coller Recette", tab_food: "Saisie Rapide", tab_recipes: "Recettes",
@@ -40,7 +46,9 @@ const translations = {
     btn_action: "Calculer", label_temp: "Temp. Optimisée", label_time: "Temps Calculé", eco_label: "Économie est. : ~",
     manual_temp: "TEMP. FOUR", manual_time: "MINUTES FOUR", error_msg: "⚠️ Données manquantes ! Entrez Température et Temps.", 
     legal_privacy: "⚙️ Moteur de Convection Thermique actif. Calculs 100% locaux.",
-    alert_cap: "⚠️ Sécurité : Temp. limitée à 200°C", cta_recipes_top: "En panne d'inspiration ?", cta_recipes_bottom: `Explorez ${roundedCount}+ Recettes`,
+    alert_cap: "⚠️ Sécurité : Temp. limitée à 200°C", 
+    tooltip_cap: "Pourquoi 200°C ? Dépasser ce seuil dégrade le revêtement et favorise l'Acrylamide, nocive sur les amidons à haute température. Cuisinez en sécurité !",
+    cta_recipes_top: "En panne d'inspiration ?", cta_recipes_bottom: `Explorez ${roundedCount}+ Recettes`,
   }
 };
 
@@ -94,7 +102,18 @@ const softwareSchema = {
       <textarea id="recipe-input" aria-label={t.tab_conv} class="w-full h-16 md:h-20 p-3 bg-black/40 border border-slate-700 rounded-2xl focus:border-orange-400 focus:ring-1 focus:ring-orange-400/50 outline-none transition-all resize-none text-slate-200 text-sm leading-relaxed placeholder:text-slate-500 shadow-inner" placeholder={t.placeholder}></textarea>
       
       <div id="error-box" class="hidden bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-2 rounded-xl text-xs font-bold text-center animate-pulse" role="alert">{t.error_msg}</div>
-      <div id="cap-alert" class="hidden bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 px-4 py-2 rounded-xl text-xs font-bold text-center" role="alert">{t.alert_cap}</div>
+      
+      <div id="cap-alert" tabindex="0" class="hidden mt-3 bg-yellow-950/20 border border-yellow-500/30 rounded-xl p-3 items-start gap-3 group relative cursor-help outline-none">
+        <span class="text-lg flex-shrink-0">🛡️</span>
+        <div class="flex-1 text-left">
+          <p class="text-yellow-200 text-[10px] md:text-xs font-bold mt-0.5 border-b border-yellow-500/30 border-dashed inline-block pb-0.5">
+            {t.alert_cap}
+          </p>
+          <div class="absolute z-50 bottom-full left-0 mb-2 w-full md:w-80 p-3 bg-slate-900 border border-yellow-500/50 rounded-xl shadow-2xl opacity-0 pointer-events-none group-hover:opacity-100 transition-all text-xs text-slate-300 leading-relaxed">
+            {t.tooltip_cap}
+          </div>
+        </div>
+      </div>
 
       <button id="btn-convert" aria-label={t.btn_action} class="hidden w-full py-3 bg-gradient-to-r from-orange-500 to-orange-400 hover:from-orange-400 hover:to-orange-500 text-black rounded-xl font-black text-base shadow-[0_4px_20px_0_rgba(245,158,11,0.3)] transition-transform active:scale-95 flex items-center justify-center gap-2 cursor-pointer border border-orange-300/50">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
@@ -172,10 +191,9 @@ const softwareSchema = {
 <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
 
 <script>
-  // PATTERN DI INIZIALIZZAZIONE SICURO (Supporta Astro View Transitions)
   function initAirFryer() {
     const wrapper = document.getElementById('airfryer-wrapper');
-    if (!wrapper) return; // Evita errori in pagine dove il componente non c'è
+    if (!wrapper) return;
 
     const sysLang = wrapper.getAttribute('data-lang') || 'it';
     const isEn = sysLang === 'en';
@@ -184,7 +202,6 @@ const softwareSchema = {
     const convert = (temp: number, time: number, isInputF: boolean) => {
       let finalTemp, finalTime, isCapped = false;
       
-      // Sanitizzazione input estremi
       if (temp > 600) temp = 600; 
       if (time > 300) time = 300;
       
@@ -201,7 +218,6 @@ const softwareSchema = {
         }
         finalTime = Math.round(time * 0.8 * timeMult);
         finalTemp = Math.round(finalTemp / 5) * 5;
-        
       } else {
         let tempC = isInputF ? (temp - 32) * 5/9 : temp;
         finalTemp = tempC - 20;
@@ -236,9 +252,16 @@ const softwareSchema = {
       document.getElementById('error-box')?.classList.add('hidden');
       document.getElementById('eco-container')?.classList.remove('hidden');
       
+      // MOSTRA/NASCONDI ALERT CON LOGICA FLEX (Perché ora usiamo flex-row nel tooltip)
       const capAlert = document.getElementById('cap-alert');
       if (capAlert) {
-        res.isCapped ? capAlert.classList.remove('hidden') : capAlert.classList.add('hidden');
+        if (res.isCapped) {
+            capAlert.classList.remove('hidden');
+            capAlert.classList.add('flex');
+        } else {
+            capAlert.classList.add('hidden');
+            capAlert.classList.remove('flex');
+        }
       }
     };
 
@@ -252,18 +275,21 @@ const softwareSchema = {
       if (elEco) elEco.innerText = isEn ? "$0.00" : "0.00€";
       
       document.getElementById('error-box')?.classList.add('hidden');
-      document.getElementById('cap-alert')?.classList.add('hidden');
       document.getElementById('eco-container')?.classList.add('hidden');
+
+      const capAlert = document.getElementById('cap-alert');
+      if (capAlert) {
+        capAlert.classList.add('hidden');
+        capAlert.classList.remove('flex');
+      }
     };
 
-    // REGEX MIGLIORATA E A PROVA DI BOMBA
     const runParser = (showErrors = false) => {
       const inputEl = document.getElementById('recipe-input') as HTMLTextAreaElement | null;
       const btnConvert = document.getElementById('btn-convert');
       if (!inputEl) return;
       const text = inputEl.value;
       
-      // Ora legge anche "gradi", "degrees", "minutos" etc.
       const tMatch = text.match(/(\d{3})\s*(?:°|º|gradi|degrees)?\s*([CFcf]?)/i);
       const mMatch = text.match(/(\d{1,3})\s*(?:m|min|minutes|minuti|minutos)/i);
 
@@ -306,7 +332,6 @@ const softwareSchema = {
       }
     };
 
-    // EVENT LISTENERS
     document.getElementById('btn-convert')?.addEventListener('click', () => runParser(true));
     
     document.getElementById('recipe-input')?.addEventListener('input', (e) => {
@@ -353,8 +378,6 @@ const softwareSchema = {
     }
   }
 
-  // Esegui al caricamento iniziale
   document.addEventListener('DOMContentLoaded', initAirFryer);
-  // Esegui anche in caso di navigazione interna SPA (View Transitions di Astro)
   document.addEventListener('astro:page-load', initAirFryer);
 </script>
