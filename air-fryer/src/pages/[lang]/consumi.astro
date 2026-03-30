@@ -186,13 +186,11 @@ const softwareSchema = {
   </section>
 
   <script is:inline>
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('astro:page-load', () => {
       const sliderWatts = document.getElementById('slider-watts');
       const valWatts = document.getElementById('val-watts');
-      
       const sliderMins = document.getElementById('slider-mins');
       const valMins = document.getElementById('val-mins');
-      
       const inCost = document.getElementById('input-cost');
       
       const elAF = document.getElementById('res-af');
@@ -200,41 +198,35 @@ const softwareSchema = {
       const elSave = document.getElementById('res-save');
       const barAF = document.getElementById('bar-af');
 
+      // Se non trova lo slider, ferma lo script (evita errori in altre pagine)
+      if (!sliderWatts) return; 
+
       function calculateLive() {
         const watts = parseFloat(sliderWatts.value);
         const mins = parseFloat(sliderMins.value);
         const costKwh = parseFloat(inCost.value) || 0;
 
-        // Aggiorna etichette slider
         valWatts.textContent = watts;
         valMins.textContent = mins;
 
-        // Costo Friggitrice
         const costAF = (watts / 1000) * (mins / 60) * costKwh;
-
-        // Costo Forno: fisso a 2500W, tempo +25%
         const ovenWatts = 2500;
         const ovenMins = mins * 1.25;
         const costOven = (ovenWatts / 1000) * (ovenMins / 60) * costKwh;
-
         const savings = costOven - costAF;
 
-        // Aggiorna Testi (Formattati a 2 decimali)
         elAF.textContent = costAF.toFixed(2);
         elOven.textContent = costOven.toFixed(2);
         elSave.textContent = Math.max(0, savings).toFixed(2);
 
-        // Anima la barra proporzionale (Forno è sempre il 100% essendo più dispendioso)
         const ratio = Math.min((costAF / costOven) * 100, 100);
         barAF.style.width = `${ratio}%`;
       }
 
-      // Event Listeners (si attiva ogni volta che si sposta la levetta)
       sliderWatts.addEventListener('input', calculateLive);
       sliderMins.addEventListener('input', calculateLive);
       inCost.addEventListener('input', calculateLive);
 
-      // Calcolo iniziale al caricamento
       calculateLive();
     });
   </script>

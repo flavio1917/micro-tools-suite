@@ -265,8 +265,8 @@ const softwareSchema = {
     }
   </style>
 
-  <script is:inline>
-    document.addEventListener('DOMContentLoaded', () => {
+<script is:inline data-astro-rerun>
+    document.addEventListener('astro:page-load', () => {
       // Logica Pulsanti Peso
       const btnMinus = document.getElementById('btn-minus-weight');
       const btnPlus = document.getElementById('btn-plus-weight');

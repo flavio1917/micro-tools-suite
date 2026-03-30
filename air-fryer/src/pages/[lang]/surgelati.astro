@@ -215,19 +215,20 @@ const softwareSchema = {
   </section>
 
   <script is:inline define:vars={{ isEn: lang === 'en' }}>
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('astro:page-load', () => {
       const selectCat = document.getElementById('cat-select');
       const sliderTemp = document.getElementById('slider-temp');
       const sliderMins = document.getElementById('slider-mins');
+      
+      if (!selectCat) return; // Sicurezza per le view transitions
+
       const valTemp = document.getElementById('val-temp');
       const valMins = document.getElementById('val-mins');
-
       const resT1 = document.getElementById('res-t1');
       const resM1 = document.getElementById('res-m1');
       const resT2 = document.getElementById('res-t2');
       const resM2 = document.getElementById('res-m2');
 
-      // Helper per animare i numeri al volo
       let animRefs = {};
       function animateValue(obj, start, end, duration, key) {
         if (animRefs[key]) cancelAnimationFrame(animRefs[key]);
@@ -253,7 +254,6 @@ const softwareSchema = {
 
         let dropT1, dropT2, percM1, percM2;
 
-        // MATEMATICA BASE IN CELSIUS (Drop termico)
         if (cat === 'patate') {
           dropT1 = 40; dropT2 = 0; percM1 = 0.45; percM2 = 0.35;
         } else if (cat === 'carne') {
@@ -264,7 +264,6 @@ const softwareSchema = {
           dropT1 = 50; dropT2 = 20; percM1 = 0.60; percM2 = 0.20;
         }
 
-        // Se lingua inglese, moltiplichiamo i "drop" termici per 1.8 (Conversione C -> F dei Delta)
         if (isEn) {
           dropT1 = Math.round(dropT1 * 1.8);
           dropT2 = Math.round(dropT2 * 1.8);
@@ -275,7 +274,6 @@ const softwareSchema = {
         const finalM1 = Math.max(1, Math.round(boxMins * percM1));
         const finalM2 = Math.max(1, Math.round(boxMins * percM2));
 
-        // Anima i numeri per effetto gamification (molto veloce, 400ms)
         const currT1 = parseInt(resT1.textContent) || finalT1;
         const currM1 = parseInt(resM1.textContent) || finalM1;
         const currT2 = parseInt(resT2.textContent) || finalT2;
@@ -287,12 +285,10 @@ const softwareSchema = {
         animateValue(resM2, currM2, finalM2, 400, 'm2');
       }
 
-      // Event Listeners
       selectCat.addEventListener('change', calculateLive);
       sliderTemp.addEventListener('input', calculateLive);
       sliderMins.addEventListener('input', calculateLive);
 
-      // Inizializza
       calculateLive();
     });
   </script>
