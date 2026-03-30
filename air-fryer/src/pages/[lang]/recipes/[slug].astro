@@ -33,6 +33,7 @@ const translations = {
     tipTitle: "Il Segreto dello Chef", searchOther: "← Cerca un'altra ricetta", authBadge: "Autentica", seoAuth: " | Ricetta Originale",
     unitTemp: "°C", unitTime: "min",
     nutriTitle: "Valori Nutrizionali", nutriSub: "Valori medi per 1 porzione", nutriVnr: "% Valore Giornaliero*"
+    lblKcal: "Kcal", lblPro: "Pro", lblCarbs: "Carbo", lblFat: "Grassi"
   },
   en: {
     back: "Back", backLink: "/en/#ricettario", temp: "Temperature", time: "Cook Time", prep: "Prep Time",
@@ -42,6 +43,7 @@ const translations = {
     tipTitle: "Chef's Tip", searchOther: "← Search another recipe", authBadge: "Authentic", seoAuth: " | Authentic Recipe",
     unitTemp: "°F", unitTime: "min",
     nutriTitle: "Nutrition Facts", nutriSub: "Amount per 1 serving", nutriVnr: "% Daily Value*"
+    lblKcal: "Kcal", lblPro: "Pro", lblCarbs: "Carbs", lblFat: "Fat"
   },
   es: {
     back: "Volver", backLink: "/es/#ricettario", temp: "Temperatura", time: "Cocción", prep: "Preparación",
@@ -51,6 +53,7 @@ const translations = {
     tipTitle: "Consejo del Chef", searchOther: "← Buscar otra receta", authBadge: "Auténtica", seoAuth: " | Auténtica",
     unitTemp: "°C", unitTime: "min",
     nutriTitle: "Información Nutricional", nutriSub: "Cantidad por 1 porción", nutriVnr: "% Valor Diario*"
+    lblKcal: "Kcal", lblPro: "Pro", lblCarbs: "Carbo", lblFat: "Grasas"
   },
   fr: {
     back: "Retour", backLink: "/fr/#ricettario", temp: "Température", time: "Cuisson", prep: "Préparation",
@@ -60,6 +63,7 @@ const translations = {
     tipTitle: "Astuce du Chef", searchOther: "← Chercher autre", authBadge: "Authentique", seoAuth: " | Authentique",
     unitTemp: "°C", unitTime: "min",
     nutriTitle: "Valeurs Nutritionnelles", nutriSub: "Quantité pour 1 portion", nutriVnr: "% Valeur Quotidienne*"
+    lblKcal: "Kcal", lblPro: "Pro", lblCarbs: "Glucides", lblFat: "Lipides"
   }
 };
 
@@ -178,43 +182,44 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
     </div>
 
     {/* VISTA MOBILE: Valori Nutrizionali Fissi per singola porzione */}
-    {hasNutrition && (
-      <div class="lg:hidden mb-12">
-        <div class="flex items-baseline justify-between mb-4">
-          <h2 class="text-xl font-bold text-white">{t.nutriTitle}</h2>
-          <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">Per 1 porzione</span>
+   {/* VISTA MOBILE: Valori Nutrizionali (Re-Design Leggero) */}
+   {hasNutrition && (
+    <div class="lg:hidden mb-12">
+      <div class="flex items-baseline justify-between mb-4">
+        <h2 class="text-xl font-bold text-white">{t.nutriTitle}</h2>
+        <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">{t.nutriSub}</span>
+      </div>
+      
+      {/* Layout a 4 colonne (Pillole strette ed eleganti) */}
+      <div class="grid grid-cols-4 gap-2">
+        
+        <div class="bg-gradient-to-b from-orange-500/20 to-transparent border border-orange-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
+          <span class="text-lg mb-1">🔥</span>
+          <span class="text-white font-bold text-sm">{baseNutrition.kcal}</span>
+          <span class="text-orange-400 text-[9px] font-bold uppercase tracking-wider">{t.lblKcal}</span>
         </div>
         
-        {/* Layout a 4 colonne su una riga (Pillole strette) o 2x2 molto leggeri */}
-        <div class="grid grid-cols-4 gap-2">
-          
-          <div class="bg-gradient-to-b from-orange-500/20 to-transparent border border-orange-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
-            <span class="text-lg mb-1">🔥</span>
-            <span class="text-white font-bold text-sm">{baseNutrition.kcal}</span>
-            <span class="text-orange-400 text-[9px] font-bold uppercase tracking-wider">Kcal</span>
-          </div>
-          
-          <div class="bg-gradient-to-b from-red-500/20 to-transparent border border-red-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
-            <span class="text-lg mb-1">🥩</span>
-            <span class="text-white font-bold text-sm">{baseNutrition.proteins_g}g</span>
-            <span class="text-red-400 text-[9px] font-bold uppercase tracking-wider">Pro</span>
-          </div>
-          
-          <div class="bg-gradient-to-b from-blue-500/20 to-transparent border border-blue-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
-            <span class="text-lg mb-1">🍞</span>
-            <span class="text-white font-bold text-sm">{baseNutrition.carbs_g}g</span>
-            <span class="text-blue-400 text-[9px] font-bold uppercase tracking-wider">Carbo</span>
-          </div>
-          
-          <div class="bg-gradient-to-b from-yellow-500/20 to-transparent border border-yellow-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
-            <span class="text-lg mb-1">🥑</span>
-            <span class="text-white font-bold text-sm">{baseNutrition.fats_g}g</span>
-            <span class="text-yellow-400 text-[9px] font-bold uppercase tracking-wider">Fat</span>
-          </div>
-          
+        <div class="bg-gradient-to-b from-red-500/20 to-transparent border border-red-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
+          <span class="text-lg mb-1">🥩</span>
+          <span class="text-white font-bold text-sm">{baseNutrition.proteins_g}g</span>
+          <span class="text-red-400 text-[9px] font-bold uppercase tracking-wider">{t.lblPro}</span>
         </div>
+        
+        <div class="bg-gradient-to-b from-blue-500/20 to-transparent border border-blue-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
+          <span class="text-lg mb-1">🍞</span>
+          <span class="text-white font-bold text-sm">{baseNutrition.carbs_g}g</span>
+          <span class="text-blue-400 text-[9px] font-bold uppercase tracking-wider">{t.lblCarbs}</span>
+        </div>
+        
+        <div class="bg-gradient-to-b from-yellow-500/20 to-transparent border border-yellow-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
+          <span class="text-lg mb-1">🥑</span>
+          <span class="text-white font-bold text-sm">{baseNutrition.fats_g}g</span>
+          <span class="text-yellow-400 text-[9px] font-bold uppercase tracking-wider">{t.lblFat}</span>
+        </div>
+        
       </div>
-    )}
+    </div>
+  )}
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
       <div class="lg:col-span-1">
@@ -281,7 +286,9 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
               </ul>
             </div>
             <div class="bg-slate-900/50 px-6 py-3 border-t border-slate-700">
-              <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-wide font-semibold text-center mb-1">{t.nutriSub}</p>
+              <p class="text-xs text-slate-200 font-bold text-center mb-2 tracking-wide italic">
+                {t.nutriSub}
+              </p>
               <p class="text-[10px] text-slate-500 leading-relaxed text-center">I valori percentuali giornalieri si basano su una dieta standard da 2000 calorie.</p>
             </div>
           </div>
