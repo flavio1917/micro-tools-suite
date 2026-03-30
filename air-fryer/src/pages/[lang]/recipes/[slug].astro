@@ -31,9 +31,8 @@ const translations = {
     stepTitle: "Procedimento", step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro.",
     step2: "Cottura", step2Desc: `Imposta a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Il Segreto dello Chef", searchOther: "← Cerca un'altra ricetta", authBadge: "Autentica", seoAuth: " | Ricetta Originale",
-    unitTemp: "°C", unitTime: "min", bannerTop: "MIGLIORA LA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori.", bannerBtn: "Scopri le Offerte",
-    calWidgetTitle: "Risparmio Calorico", calWidgetText: "Cucinando ad aria risparmi fino al 70% di grassi in meno.", calWidgetBtn: "Calcola ora →",
-    nutriTitle: "Valori Nutrizionali", nutriSub: "Totali per le porzioni selezionate", nutriVnr: "% Valore Giornaliero*"
+    unitTemp: "°C", unitTime: "min",
+    nutriTitle: "Valori Nutrizionali", nutriSub: "Valori medi per 1 porzione", nutriVnr: "% Valore Giornaliero*"
   },
   en: {
     back: "Back", backLink: "/en/#ricettario", temp: "Temperature", time: "Cook Time", prep: "Prep Time",
@@ -41,9 +40,8 @@ const translations = {
     stepTitle: "Instructions", step1: "Preparation", step1Desc: "Prepare all ingredients on the counter.",
     step2: "Cooking", step2Desc: `Set to <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°F</strong>. Cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Chef's Tip", searchOther: "← Search another recipe", authBadge: "Authentic", seoAuth: " | Authentic Recipe",
-    unitTemp: "°F", unitTime: "min", bannerTop: "UPGRADE AIR FRYER", bannerBot: "Discover the ultimate Kit.", bannerBtn: "View Deals",
-    calWidgetTitle: "Calorie Savings", calWidgetText: "Cooking with air saves up to 70% less fat.", calWidgetBtn: "Calculate now →",
-    nutriTitle: "Nutrition Facts", nutriSub: "Total for selected servings", nutriVnr: "% Daily Value*"
+    unitTemp: "°F", unitTime: "min",
+    nutriTitle: "Nutrition Facts", nutriSub: "Amount per 1 serving", nutriVnr: "% Daily Value*"
   },
   es: {
     back: "Volver", backLink: "/es/#ricettario", temp: "Temperatura", time: "Cocción", prep: "Preparación",
@@ -51,9 +49,8 @@ const translations = {
     stepTitle: "Instrucciones", step1: "Preparación", step1Desc: "Prepara todos los ingredientes.",
     step2: "Cocción", step2Desc: `Ajusta a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Consejo del Chef", searchOther: "← Buscar otra receta", authBadge: "Auténtica", seoAuth: " | Auténtica",
-    unitTemp: "°C", unitTime: "min", bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit definitivo.", bannerBtn: "Ver Las Ofertas",
-    calWidgetTitle: "Ahorro Calórico", calWidgetText: "Cocinar con aire ahorra hasta un 70% menos de grasa.", calWidgetBtn: "Calcula ahora →",
-    nutriTitle: "Información Nutricional", nutriSub: "Total para porciones seleccionadas", nutriVnr: "% Valor Diario*"
+    unitTemp: "°C", unitTime: "min",
+    nutriTitle: "Información Nutricional", nutriSub: "Cantidad por 1 porción", nutriVnr: "% Valor Diario*"
   },
   fr: {
     back: "Retour", backLink: "/fr/#ricettario", temp: "Température", time: "Cuisson", prep: "Préparation",
@@ -61,9 +58,8 @@ const translations = {
     stepTitle: "Instructions", step1: "Préparation", step1Desc: "Préparez tous les ingrédients.",
     step2: "Cuisson", step2Desc: `Réglez sur <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Astuce du Chef", searchOther: "← Chercher autre", authBadge: "Authentique", seoAuth: " | Authentique",
-    unitTemp: "°C", unitTime: "min", bannerTop: "AMÉLIOREZ LA FRITEUSE", bannerBot: "Découvrez le Kit ultime.", bannerBtn: "Voir les Offres",
-    calWidgetTitle: "Économie de Calories", calWidgetText: "La cuisson à l'air permet d'économiser jusqu'à 70 % de matières grasses.", calWidgetBtn: "Calculez maintenant →",
-    nutriTitle: "Valeurs Nutritionnelles", nutriSub: "Total pour les portions sélectionnées", nutriVnr: "% Valeur Quotidienne*"
+    unitTemp: "°C", unitTime: "min",
+    nutriTitle: "Valeurs Nutritionnelles", nutriSub: "Quantité pour 1 portion", nutriVnr: "% Valeur Quotidienne*"
   }
 };
 
@@ -109,25 +105,25 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
   
   <SchemaRecipe recipe={recipe} lang={lang} />
 
-  <div class="relative h-[40vh] min-h-[320px] md:h-[45vh] w-full overflow-hidden bg-slate-900 pointer-events-none">
+  <div class="relative h-[40vh] min-h-[320px] md:h-[45vh] w-full overflow-hidden bg-slate-900">
     <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40"></div>
     
-    <div class="absolute top-4 md:top-6 left-0 right-0 z-50 px-3 md:px-4 w-full pointer-events-none">
+    <div class="absolute top-4 md:top-6 left-0 right-0 z-[60] px-3 md:px-4 w-full">
       <div class="max-w-5xl mx-auto flex justify-between items-center relative h-10 md:h-11">
         
-        <a href={t.backLink} class="flex items-center justify-center h-full w-10 md:w-auto md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-50 pointer-events-auto">
+        <a href={t.backLink} class="flex items-center justify-center h-full w-10 md:w-auto md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all cursor-pointer">
           <svg class="w-4 h-4 md:mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
           <span class="hidden md:inline font-bold text-xs">{t.back}</span>
         </a>
 
-        <div class="absolute left-1/2 -translate-x-1/2 h-full z-[100] pointer-events-auto">
+        <div class="absolute left-1/2 -translate-x-1/2 h-full z-[70] cursor-pointer">
           <StarRating slug={baseImageName} title={recipe.title} />
         </div>
 
-        <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl z-50 gap-1.5 md:gap-2 pointer-events-auto">
+        <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl gap-1.5 md:gap-2">
             {['it', 'en', 'es', 'fr'].map((l) => (
-              <a href={getLocalizedUrl(l)} class={`transition-all flex items-center justify-center ${lang === l ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-40 hover:opacity-100'}`}>
+              <a href={getLocalizedUrl(l)} class={`transition-all flex items-center justify-center cursor-pointer ${lang === l ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-40 hover:opacity-100'}`}>
                 <img src={`https://flagcdn.com/${l === 'en' ? 'gb' : l}.svg`} alt={l.toUpperCase()} class="w-4 h-[11px] md:w-[18px] md:h-[13px] rounded-[1px] object-cover" />
               </a>
             ))}
@@ -136,7 +132,7 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
       </div>
     </div>
     
-    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-8 md:pb-12 z-10 text-center pointer-events-auto">
+    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-8 md:pb-12 z-20 text-center">
       <h1 class="text-xl md:text-3xl lg:text-4xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
         {recipe.title}
       </h1>
@@ -146,7 +142,7 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
     </div>
   </div>
 
-  <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 pb-28">
+  <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-30 pb-28">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.temp}</span>
@@ -181,28 +177,29 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
       </div>
     </div>
 
+    {/* VISTA MOBILE: Valori Nutrizionali Fissi per singola porzione */}
     {hasNutrition && (
       <div class="lg:hidden mb-12">
         <h2 class="text-xl font-bold text-white mb-4">{t.nutriTitle} <span class="text-sm font-normal text-slate-400 ml-1">({t.nutriSub})</span></h2>
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <div class="bg-orange-900/30 border border-orange-700/50 rounded-xl p-3 flex flex-col items-center justify-center text-center">
             <span class="text-2xl mb-1">🔥</span>
-            <span class="text-white font-bold text-lg dyn-kcal">{baseNutrition.kcal}</span>
+            <span class="text-white font-bold text-lg">{baseNutrition.kcal}</span>
             <span class="text-orange-400 text-xs font-semibold uppercase tracking-wider">Kcal</span>
           </div>
           <div class="bg-red-900/30 border border-red-700/50 rounded-xl p-3 flex flex-col items-center justify-center text-center">
             <span class="text-2xl mb-1">🥩</span>
-            <span class="text-white font-bold text-lg"><span class="dyn-proteins">{baseNutrition.proteins_g}</span>g</span>
+            <span class="text-white font-bold text-lg">{baseNutrition.proteins_g}g</span>
             <span class="text-red-400 text-xs font-semibold uppercase tracking-wider">Pro</span>
           </div>
           <div class="bg-blue-900/30 border border-blue-700/50 rounded-xl p-3 flex flex-col items-center justify-center text-center">
             <span class="text-2xl mb-1">🍞</span>
-            <span class="text-white font-bold text-lg"><span class="dyn-carbs">{baseNutrition.carbs_g}</span>g</span>
+            <span class="text-white font-bold text-lg">{baseNutrition.carbs_g}g</span>
             <span class="text-blue-400 text-xs font-semibold uppercase tracking-wider">Carbo</span>
           </div>
           <div class="bg-yellow-900/30 border border-yellow-700/50 rounded-xl p-3 flex flex-col items-center justify-center text-center">
             <span class="text-2xl mb-1">🥑</span>
-            <span class="text-white font-bold text-lg"><span class="dyn-fats">{baseNutrition.fats_g}</span>g</span>
+            <span class="text-white font-bold text-lg">{baseNutrition.fats_g}g</span>
             <span class="text-yellow-400 text-xs font-semibold uppercase tracking-wider">Fat</span>
           </div>
         </div>
@@ -233,16 +230,7 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
           </ul>
         </div>
 
-        <a href={`/${lang}/calorie`} class="block mb-8 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-2xl p-5 hover:border-emerald-500/60 transition-colors group">
-          <h4 class="text-emerald-400 font-bold flex items-center gap-2 mb-2">
-            <span class="text-xl">⚖️</span> {t.calWidgetTitle}
-          </h4>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            {t.calWidgetText}
-            <strong class="text-white group-hover:text-emerald-400 transition-colors ml-1">{t.calWidgetBtn}</strong>
-          </p>
-        </a>
-
+        {/* VISTA DESKTOP: Etichetta Nutrizionale Fissa per 1 Porzione */}
         {hasNutrition && (
           <div class="hidden lg:block sticky top-8 bg-slate-800 rounded-2xl border border-slate-600 overflow-hidden shadow-xl mb-8">
             <div class="bg-slate-700/50 px-6 py-4 border-b border-slate-600 flex justify-between items-center">
@@ -254,31 +242,31 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
               <ul class="space-y-3 text-sm text-slate-300">
                 <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
                   <span class="font-bold text-white">Energia (Kcal)</span>
-                  <span class="font-mono text-white"><span class="dyn-kcal text-green-400">{baseNutrition.kcal}</span> <span class="text-slate-500 text-xs ml-1">(<span class="dyn-kcal-pct">{calcPercent(baseNutrition.kcal, VNR.kcal)}</span>%)</span></span>
+                  <span class="font-mono text-white"><span class="text-green-400">{baseNutrition.kcal}</span> <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.kcal, VNR.kcal)}%)</span></span>
                 </li>
                 <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
                   <span class="font-bold text-white">Grassi</span>
-                  <span class="font-mono text-white"><span class="dyn-fats">{baseNutrition.fats_g}</span>g <span class="text-slate-500 text-xs ml-1">(<span class="dyn-fats-pct">{calcPercent(baseNutrition.fats_g, VNR.fats)}</span>%)</span></span>
+                  <span class="font-mono text-white">{baseNutrition.fats_g}g <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.fats_g, VNR.fats)}%)</span></span>
                 </li>
                 <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 pl-4">
                   <span class="text-slate-400">di cui saturi</span>
-                  <span class="font-mono text-slate-400"><span class="dyn-satfats">{baseNutrition.saturated_fats_g}</span>g <span class="text-slate-600 text-xs ml-1">(<span class="dyn-satfats-pct">{calcPercent(baseNutrition.saturated_fats_g, VNR.saturated_fats)}</span>%)</span></span>
+                  <span class="font-mono text-slate-400">{baseNutrition.saturated_fats_g}g <span class="text-slate-600 text-xs ml-1">({calcPercent(baseNutrition.saturated_fats_g, VNR.saturated_fats)}%)</span></span>
                 </li>
                 <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
                   <span class="font-bold text-white">Carboidrati</span>
-                  <span class="font-mono text-white"><span class="dyn-carbs">{baseNutrition.carbs_g}</span>g <span class="text-slate-500 text-xs ml-1">(<span class="dyn-carbs-pct">{calcPercent(baseNutrition.carbs_g, VNR.carbs)}</span>%)</span></span>
+                  <span class="font-mono text-white">{baseNutrition.carbs_g}g <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.carbs_g, VNR.carbs)}%)</span></span>
                 </li>
                 <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 pl-4">
                   <span class="text-slate-400">di cui zuccheri</span>
-                  <span class="font-mono text-slate-400"><span class="dyn-sugars">{baseNutrition.sugars_g}</span>g <span class="text-slate-600 text-xs ml-1">(<span class="dyn-sugars-pct">{calcPercent(baseNutrition.sugars_g, VNR.sugars)}</span>%)</span></span>
+                  <span class="font-mono text-slate-400">{baseNutrition.sugars_g}g <span class="text-slate-600 text-xs ml-1">({calcPercent(baseNutrition.sugars_g, VNR.sugars)}%)</span></span>
                 </li>
                 <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
                   <span class="font-bold text-white">Proteine</span>
-                  <span class="font-mono text-white"><span class="dyn-proteins">{baseNutrition.proteins_g}</span>g <span class="text-slate-500 text-xs ml-1">(<span class="dyn-proteins-pct">{calcPercent(baseNutrition.proteins_g, VNR.proteins)}</span>%)</span></span>
+                  <span class="font-mono text-white">{baseNutrition.proteins_g}g <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.proteins_g, VNR.proteins)}%)</span></span>
                 </li>
                 <li class="flex justify-between items-center pb-1">
                   <span class="font-bold text-white">Sale</span>
-                  <span class="font-mono text-white"><span class="dyn-salt">{baseNutrition.salt_g}</span>g <span class="text-slate-500 text-xs ml-1">(<span class="dyn-salt-pct">{calcPercent(baseNutrition.salt_g, VNR.salt)}</span>%)</span></span>
+                  <span class="font-mono text-white">{baseNutrition.salt_g}g <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.salt_g, VNR.salt)}%)</span></span>
                 </li>
               </ul>
             </div>
@@ -338,8 +326,7 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
     </div>
   </div>
 
-  <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang, baseNutrition: baseNutrition, VNR: VNR }}>
-    // BUG FIX: Sostituito DOMContentLoaded con astro:page-load per funzionare con le View Transitions
+  <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang }}>
     document.addEventListener('astro:page-load', () => {
       let currentPortions = basePortions;
       const display = document.getElementById('portions-display');
@@ -416,39 +403,13 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
         display.textContent = currentPortions;
         const ratio = currentPortions / basePortions;
         
-        // Scala Ingredienti
+        // Scala Ingredienti (ora le Kcal restano fisse!)
         ingredients.forEach(el => {
           const original = el.getAttribute('data-original');
           if(original) {
              el.innerHTML = scaleAndConvertIngredient(original, ratio, isMetric);
           }
         });
-
-        // Scala Dati Nutrizionali (Se esistono)
-        if (baseNutrition) {
-            const dynUpdate = (className, key) => {
-                const val = (baseNutrition[key] * ratio);
-                const rounded = Number.isInteger(val) ? val : parseFloat(val.toFixed(1));
-                
-                document.querySelectorAll('.' + className).forEach(el => el.textContent = rounded);
-                
-                const pctClass = className + '-pct';
-                const vnrKey = key === 'proteins_g' ? 'proteins' : key === 'carbs_g' ? 'carbs' : key === 'sugars_g' ? 'sugars' : key === 'fats_g' ? 'fats' : key === 'saturated_fats_g' ? 'saturated_fats' : key === 'salt_g' ? 'salt' : key;
-                
-                if (VNR && VNR[vnrKey]) {
-                    const pct = Math.round((val / VNR[vnrKey]) * 100);
-                    document.querySelectorAll('.' + pctClass).forEach(el => el.textContent = pct);
-                }
-            };
-
-            dynUpdate('dyn-kcal', 'kcal');
-            dynUpdate('dyn-proteins', 'proteins_g');
-            dynUpdate('dyn-carbs', 'carbs_g');
-            dynUpdate('dyn-sugars', 'sugars_g');
-            dynUpdate('dyn-fats', 'fats_g');
-            dynUpdate('dyn-satfats', 'saturated_fats_g');
-            dynUpdate('dyn-salt', 'salt_g');
-        }
 
         if (lang === 'en' && tempValDisplay && baseTemp) {
             tempValDisplay.textContent = isMetric ? fToC(baseTemp) : baseTemp;
