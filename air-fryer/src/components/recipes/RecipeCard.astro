@@ -8,23 +8,17 @@ export interface Props {
 
 const { recipe, lang = "it" } = Astro.props;
 
-// Logica per l'immagine
 const baseImageName = recipe.image || recipe.slug;
 const imagePath = `/images/recipes/${baseImageName}.webp`;
 
-// Preparazione stringa ingredienti per la barra di ricerca
 const ingredientsString = recipe.ingredients && Array.isArray(recipe.ingredients) 
   ? recipe.ingredients.join(' ').toLowerCase() 
   : '';
 
-// Generazione dinamica del link
 const recipeUrl = `/${lang}/recipes/${recipe.slug}`;
-
-// Unità di misura dinamiche
 const tempSymbol = lang === "en" ? "°F" : "°C";
 const timeSymbol = lang === "en" ? " min" : "'";
 
-// LOGICA CROSS-REFERENCE
 let isAuth = recipe.isItalian === true || recipe.isItalian === "true";
 if (recipe.isItalian === undefined) {
   const enRecipe = recipesEn.find((r: any) => (r.image || r.slug) === baseImageName);
@@ -41,7 +35,7 @@ const authLabels = {
 };
 const authLabel = authLabels[lang as keyof typeof authLabels] || authLabels.it;
 
-// NOVITÀ: Estrazione sicura delle calorie (se non esistono, assegniamo 9999 per escluderle dal filtro)
+// Manteniamo le calorie solo come data-attribute per far funzionare il filtro
 const kcalValue = recipe.nutrition ? recipe.nutrition.kcal : 9999;
 ---
 
@@ -87,13 +81,6 @@ const kcalValue = recipe.nutrition ? recipe.nutrition.kcal : 9999;
       <span class="flex items-center gap-1.5 bg-black/70 px-2.5 py-1.5 rounded-lg backdrop-blur-md border border-white/10 shadow-lg font-medium pointer-events-auto">
         ⏱️ <span class="text-blue-300 font-bold">{recipe.time}{timeSymbol}</span>
       </span>
-      
-      {/* NOVITÀ: Badge Calorie */}
-      {recipe.nutrition && (
-        <span class="flex items-center gap-1.5 bg-black/70 px-2.5 py-1.5 rounded-lg backdrop-blur-md border border-white/10 shadow-lg font-medium pointer-events-auto">
-          ⚖️ <span class="text-green-400 font-bold">{recipe.nutrition.kcal} kcal</span>
-        </span>
-      )}
     </div>
   </div>
 </a>

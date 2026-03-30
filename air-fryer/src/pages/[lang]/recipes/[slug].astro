@@ -74,7 +74,6 @@ const imagePath = `/images/recipes/${baseImageName}.webp`;
 const defaultPortions = parseInt(recipe.portions) || 2;
 
 const sharedStepImages = recipe.instructions.map((_, index) => `/images/recipes/${baseImageName}/step_${index + 1}.jpg`);
-
 const cleanTime = recipe.time ? recipe.time.toString().replace(/\s*(minutes|mins|min)\s*/gi, '') : "--";
 const isAuth = recipe.isItalian === true;
 const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
@@ -87,26 +86,22 @@ const getLocalizedUrl = (targetLang: string) => {
   return targetRecipe ? `/${targetLang}/recipes/${targetRecipe.slug}` : `/${targetLang}/#ricettario`;
 };
 
-function enrichText(text: string) {
-  return text; 
+function enrichText(text: string) { return text; }
+
+// LOGICA VALORI NUTRIZIONALI & FALLBACK ITALIANO
+let baseNutrition = recipe.nutrition || null;
+
+if (!baseNutrition && lang !== 'it') {
+  // Se non c'è nutrizione e non siamo in italiano, cerca nel file italiano come master
+  const fallbackRecipe = recipesIt.find((r: any) => (r.image || r.slug) === baseImageName);
+  if (fallbackRecipe && fallbackRecipe.nutrition) {
+    baseNutrition = fallbackRecipe.nutrition;
+  }
 }
 
-// LOGICA VALORI NUTRIZIONALI
-const hasNutrition = !!recipe.nutrition;
-const baseNutrition = recipe.nutrition || null;
+const hasNutrition = !!baseNutrition;
 
-// Valori Nutritivi di Riferimento (VNR) per adulto medio (2000 kcal)
-const VNR = { 
-  kcal: 2000, 
-  proteins: 50, 
-  carbs: 260, 
-  sugars: 50, 
-  fats: 70, 
-  saturated_fats: 20, 
-  salt: 6 
-};
-
-// Calcolo % iniziale (basato sulle porzioni default)
+const VNR = { kcal: 2000, proteins: 50, carbs: 260, sugars: 50, fats: 70, saturated_fats: 20, salt: 6 };
 const calcPercent = (val: number, target: number) => Math.round((val / target) * 100);
 ---
 
@@ -114,23 +109,23 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
   
   <SchemaRecipe recipe={recipe} lang={lang} />
 
-  <div class="relative h-[40vh] min-h-[320px] md:h-[45vh] w-full overflow-hidden bg-slate-900">
+  <div class="relative h-[40vh] min-h-[320px] md:h-[45vh] w-full overflow-hidden bg-slate-900 pointer-events-none">
     <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40"></div>
     
-    <div class="absolute top-4 md:top-6 left-0 right-0 z-50 px-3 md:px-4 w-full">
+    <div class="absolute top-4 md:top-6 left-0 right-0 z-50 px-3 md:px-4 w-full pointer-events-none">
       <div class="max-w-5xl mx-auto flex justify-between items-center relative h-10 md:h-11">
         
-        <a href={t.backLink} class="flex items-center justify-center h-full w-10 md:w-auto md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10">
+        <a href={t.backLink} class="flex items-center justify-center h-full w-10 md:w-auto md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-50 pointer-events-auto">
           <svg class="w-4 h-4 md:mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
           <span class="hidden md:inline font-bold text-xs">{t.back}</span>
         </a>
 
-        <div class="absolute left-1/2 -translate-x-1/2 h-full z-20">
+        <div class="absolute left-1/2 -translate-x-1/2 h-full z-[100] pointer-events-auto">
           <StarRating slug={baseImageName} title={recipe.title} />
         </div>
 
-        <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl z-10 gap-1.5 md:gap-2">
+        <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl z-50 gap-1.5 md:gap-2 pointer-events-auto">
             {['it', 'en', 'es', 'fr'].map((l) => (
               <a href={getLocalizedUrl(l)} class={`transition-all flex items-center justify-center ${lang === l ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-40 hover:opacity-100'}`}>
                 <img src={`https://flagcdn.com/${l === 'en' ? 'gb' : l}.svg`} alt={l.toUpperCase()} class="w-4 h-[11px] md:w-[18px] md:h-[13px] rounded-[1px] object-cover" />
@@ -141,7 +136,7 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
       </div>
     </div>
     
-    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-8 md:pb-12 z-10 text-center">
+    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-8 md:pb-12 z-10 text-center pointer-events-auto">
       <h1 class="text-xl md:text-3xl lg:text-4xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
         {recipe.title}
       </h1>
@@ -186,7 +181,6 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
       </div>
     </div>
 
-    {/* VISTA MOBILE: Valori Nutrizionali a Pillole */}
     {hasNutrition && (
       <div class="lg:hidden mb-12">
         <h2 class="text-xl font-bold text-white mb-4">{t.nutriTitle} <span class="text-sm font-normal text-slate-400 ml-1">({t.nutriSub})</span></h2>
@@ -249,7 +243,6 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
           </p>
         </a>
 
-        {/* VISTA DESKTOP: Etichetta Nutrizionale Laterale (Sticky) */}
         {hasNutrition && (
           <div class="hidden lg:block sticky top-8 bg-slate-800 rounded-2xl border border-slate-600 overflow-hidden shadow-xl mb-8">
             <div class="bg-slate-700/50 px-6 py-4 border-b border-slate-600 flex justify-between items-center">
@@ -346,7 +339,8 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
   </div>
 
   <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang, baseNutrition: baseNutrition, VNR: VNR }}>
-    document.addEventListener('DOMContentLoaded', () => {
+    // BUG FIX: Sostituito DOMContentLoaded con astro:page-load per funzionare con le View Transitions
+    document.addEventListener('astro:page-load', () => {
       let currentPortions = basePortions;
       const display = document.getElementById('portions-display');
       const btnMinus = document.getElementById('btn-minus');
@@ -436,10 +430,8 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
                 const val = (baseNutrition[key] * ratio);
                 const rounded = Number.isInteger(val) ? val : parseFloat(val.toFixed(1));
                 
-                // Aggiorna Grammi/Kcal
                 document.querySelectorAll('.' + className).forEach(el => el.textContent = rounded);
                 
-                // Aggiorna % VNR
                 const pctClass = className + '-pct';
                 const vnrKey = key === 'proteins_g' ? 'proteins' : key === 'carbs_g' ? 'carbs' : key === 'sugars_g' ? 'sugars' : key === 'fats_g' ? 'fats' : key === 'saturated_fats_g' ? 'saturated_fats' : key === 'salt_g' ? 'salt' : key;
                 
@@ -458,7 +450,6 @@ const calcPercent = (val: number, target: number) => Math.round((val / target) *
             dynUpdate('dyn-salt', 'salt_g');
         }
 
-        // Scala Sistema Imperiale
         if (lang === 'en' && tempValDisplay && baseTemp) {
             tempValDisplay.textContent = isMetric ? fToC(baseTemp) : baseTemp;
             tempUnitDisplay.textContent = isMetric ? "°C" : "°F";
