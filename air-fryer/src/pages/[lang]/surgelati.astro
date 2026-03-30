@@ -24,14 +24,15 @@ const backBtnLabel = {
 const content = {
   it: {
     title: "Convertitore Friggitrice ad Aria per Surgelati: Tempi a 2 Fasi",
-    h1: "Calibratore Surgelati",
-    desc: "Basta cibi bruciati fuori e ghiacciati dentro. Inserisci i dati della scatola e ottieni la cottura termodinamica perfetta in 2 Fasi.",
+    h1: "Cottura Surgelati",
+    desc: "Basta cibi surgelati che vengono bruciati fuori e ghiacciati dentro. Inserisci i dati della scatola e ottieni la cottura termodinamica perfetta in 2 Fasi.",
     sourceLabel: "Cosa c'è scritto sulla confezione?",
     srcOven: "🌡️ Forno",
     srcAF: "🌪️ Friggitrice ad Aria",
     catLabel: "Categoria Prodotto",
     tLabel: "Gradi sulla Confezione",
     mLabel: "Minuti sulla Confezione",
+    targetAFLabel: "🎯 Le tue impostazioni per Friggitrice ad Aria:",
     phase1: "Fase 1: Scongelamento & Asciugatura",
     phase2: "Fase 2: Crisping ad Alta Temp.",
     cats: [
@@ -45,13 +46,14 @@ const content = {
   en: {
     title: "Air Fryer Frozen Food Converter: 2-Phase Cooking",
     h1: "Frozen Food Calibrator",
-    desc: "Stop burning the outside while the inside is frozen. Enter the box instructions to get the perfect 2-Phase thermodynamic cooking method.",
+    desc: "Stop burning the frozen food outside while the inside is frozen. Enter the box instructions to get the perfect 2-Phase thermodynamic cooking method.",
     sourceLabel: "Box instructions are for:",
     srcOven: "🌡️ Oven",
     srcAF: "🌪️ Air Fryer",
     catLabel: "Product Category",
     tLabel: "Degrees on Box",
     mLabel: "Minutes on Box",
+    targetAFLabel: "🎯 Your Air Fryer Settings:",
     phase1: "Phase 1: Defrost & Dry",
     phase2: "Phase 2: High-Heat Crisping",
     cats: [
@@ -65,13 +67,14 @@ const content = {
   es: {
     title: "Calculadora Freidora de Aire para Congelados: 2 Fases",
     h1: "Calibrador de Congelados",
-    desc: "Evita comida quemada por fuera y helada por dentro. Introduce los datos del envase y obtén la cocción termodinámica en 2 Fases.",
+    desc: "Evita que la comida congelada se queme por fuera y sea congelada por dentro. Introduce los datos del envase y obtén la cocción termodinámica en 2 Fases.",
     sourceLabel: "¿Las instrucciones del envase son para?",
     srcOven: "🌡️ Horno",
     srcAF: "🌪️ Freidora de Aire",
     catLabel: "Categoría del Producto",
     tLabel: "Grados en el Envase",
     mLabel: "Minutos en el Envase",
+    targetAFLabel: "🎯 Tus ajustes para Freidora de Aire:",
     phase1: "Fase 1: Descongelación y Secado",
     phase2: "Fase 2: Crujiente a Alta Temp.",
     cats: [
@@ -92,6 +95,7 @@ const content = {
     catLabel: "Catégorie de Produit",
     tLabel: "Temp. sur la Boîte",
     mLabel: "Minutes sur la Boîte",
+    targetAFLabel: "🎯 Vos paramètres pour Friteuse à Air :",
     phase1: "Phase 1 : Décongélation",
     phase2: "Phase 2 : Croustillant Haute Temp.",
     cats: [
@@ -187,6 +191,12 @@ const softwareSchema = {
 
       <div class="flex-1 space-y-0 flex flex-col justify-center relative">
         
+        <div id="af-target-badge" class="mb-5 ml-0 md:ml-4 flex justify-center md:justify-start transition-opacity duration-300 ease-in-out opacity-100">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-900/40 to-cyan-900/40 border border-cyan-500/40 rounded-xl shadow-lg backdrop-blur-sm">
+            <span class="text-cyan-300 font-bold text-xs md:text-sm uppercase tracking-wide">{t.targetAFLabel}</span>
+          </div>
+        </div>
+
         <div class="relative bg-gradient-to-r from-cyan-900/30 to-slate-900/50 border border-cyan-500/30 p-6 rounded-2xl mb-6 ml-0 md:ml-4 shadow-lg hover:border-cyan-400/60 transition-colors">
           <div class="absolute -top-4 -left-4 md:-left-8 w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center font-black text-slate-900 shadow-[0_0_15px_rgba(6,182,212,0.5)] text-lg ring-4 ring-[#0B1120]">1</div>
           
@@ -242,6 +252,7 @@ const softwareSchema = {
       const sliderMins = document.getElementById('slider-mins');
       const btnOven = document.getElementById('src-oven');
       const btnAF = document.getElementById('src-af');
+      const afTargetBadge = document.getElementById('af-target-badge'); // NOVITÀ
       
       if (!selectCat || !btnOven || !btnAF) return;
 
@@ -287,7 +298,7 @@ const softwareSchema = {
           else if (cat === 'lievitati') { dropT1 = 50; dropT2 = 20; percM1 = 0.60; percM2 = 0.20; }
         } else {
           // Logica AF -> AF a 2 Fasi (Manteniamo temp di picco e tempo totale, ma dividiamo l'impatto)
-          if (cat === 'patate') { dropT1 = 20; dropT2 = -10; percM1 = 0.60; percM2 = 0.40; } // Patate in AF: prima caldeggiamo, poi shock finale
+          if (cat === 'patate') { dropT1 = 20; dropT2 = -10; percM1 = 0.60; percM2 = 0.40; } 
           else if (cat === 'carne') { dropT1 = 15; dropT2 = 0; percM1 = 0.60; percM2 = 0.40; } 
           else if (cat === 'pesce') { dropT1 = 20; dropT2 = 0; percM1 = 0.65; percM2 = 0.35; } 
           else if (cat === 'lievitati') { dropT1 = 30; dropT2 = 0; percM1 = 0.70; percM2 = 0.30; }
@@ -322,6 +333,13 @@ const softwareSchema = {
         btnOven.setAttribute('aria-selected', 'true');
         btnAF.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-400 hover:text-white transition-all border border-transparent";
         btnAF.setAttribute('aria-selected', 'false');
+        
+        // NOVITÀ: Mostra il badge
+        if(afTargetBadge) {
+            afTargetBadge.classList.remove('hidden', 'opacity-0');
+            afTargetBadge.classList.add('opacity-100');
+        }
+        
         calculateLive();
       });
 
@@ -331,6 +349,13 @@ const softwareSchema = {
         btnAF.setAttribute('aria-selected', 'true');
         btnOven.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-400 hover:text-white transition-all border border-transparent";
         btnOven.setAttribute('aria-selected', 'false');
+        
+        // NOVITÀ: Nascondi il badge
+        if(afTargetBadge) {
+            afTargetBadge.classList.add('hidden', 'opacity-0');
+            afTargetBadge.classList.remove('opacity-100');
+        }
+        
         calculateLive();
       });
 
