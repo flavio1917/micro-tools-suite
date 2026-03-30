@@ -32,7 +32,8 @@ const translations = {
     step2: "Cottura", step2Desc: `Imposta a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuoci per <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Il Segreto dello Chef", searchOther: "← Cerca un'altra ricetta", authBadge: "Autentica", seoAuth: " | Ricetta Originale",
     unitTemp: "°C", unitTime: "min", bannerTop: "MIGLIORA LA FRIGGITRICE", bannerBot: "Scopri il Kit Accessori.", bannerBtn: "Scopri le Offerte",
-    calWidgetTitle: "Risparmio Calorico", calWidgetText: "Cucinando ad aria risparmi fino al 70% di grassi in meno.", calWidgetBtn: "Calcola ora →"
+    calWidgetTitle: "Risparmio Calorico", calWidgetText: "Cucinando ad aria risparmi fino al 70% di grassi in meno.", calWidgetBtn: "Calcola ora →",
+    nutriTitle: "Valori Nutrizionali", nutriSub: "Totali per le porzioni selezionate", nutriVnr: "% Valore Giornaliero*"
   },
   en: {
     back: "Back", backLink: "/en/#ricettario", temp: "Temperature", time: "Cook Time", prep: "Prep Time",
@@ -41,7 +42,8 @@ const translations = {
     step2: "Cooking", step2Desc: `Set to <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°F</strong>. Cook for <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Chef's Tip", searchOther: "← Search another recipe", authBadge: "Authentic", seoAuth: " | Authentic Recipe",
     unitTemp: "°F", unitTime: "min", bannerTop: "UPGRADE AIR FRYER", bannerBot: "Discover the ultimate Kit.", bannerBtn: "View Deals",
-    calWidgetTitle: "Calorie Savings", calWidgetText: "Cooking with air saves up to 70% less fat.", calWidgetBtn: "Calculate now →"
+    calWidgetTitle: "Calorie Savings", calWidgetText: "Cooking with air saves up to 70% less fat.", calWidgetBtn: "Calculate now →",
+    nutriTitle: "Nutrition Facts", nutriSub: "Total for selected servings", nutriVnr: "% Daily Value*"
   },
   es: {
     back: "Volver", backLink: "/es/#ricettario", temp: "Temperatura", time: "Cocción", prep: "Preparación",
@@ -50,7 +52,8 @@ const translations = {
     step2: "Cocción", step2Desc: `Ajusta a <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cocina por <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Consejo del Chef", searchOther: "← Buscar otra receta", authBadge: "Auténtica", seoAuth: " | Auténtica",
     unitTemp: "°C", unitTime: "min", bannerTop: "MEJORA TU FREIDORA", bannerBot: "Descubre el Kit definitivo.", bannerBtn: "Ver Las Ofertas",
-    calWidgetTitle: "Ahorro Calórico", calWidgetText: "Cocinar con aire ahorra hasta un 70% menos de grasa.", calWidgetBtn: "Calcula ahora →"
+    calWidgetTitle: "Ahorro Calórico", calWidgetText: "Cocinar con aire ahorra hasta un 70% menos de grasa.", calWidgetBtn: "Calcula ahora →",
+    nutriTitle: "Información Nutricional", nutriSub: "Total para porciones seleccionadas", nutriVnr: "% Valor Diario*"
   },
   fr: {
     back: "Retour", backLink: "/fr/#ricettario", temp: "Température", time: "Cuisson", prep: "Préparation",
@@ -59,7 +62,8 @@ const translations = {
     step2: "Cuisson", step2Desc: `Réglez sur <strong class="text-white bg-slate-700 px-1 rounded recipe-temp-val">${recipe.temp}</strong><strong class="text-white bg-slate-700 pr-1 rounded recipe-temp-unit">°C</strong>. Cuisez pendant <strong class="text-white bg-slate-700 px-1 rounded">${recipe.time} min</strong>.`,
     tipTitle: "Astuce du Chef", searchOther: "← Chercher autre", authBadge: "Authentique", seoAuth: " | Authentique",
     unitTemp: "°C", unitTime: "min", bannerTop: "AMÉLIOREZ LA FRITEUSE", bannerBot: "Découvrez le Kit ultime.", bannerBtn: "Voir les Offres",
-    calWidgetTitle: "Économie de Calories", calWidgetText: "La cuisson à l'air permet d'économiser jusqu'à 70 % de matières grasses.", calWidgetBtn: "Calculez maintenant →"
+    calWidgetTitle: "Économie de Calories", calWidgetText: "La cuisson à l'air permet d'économiser jusqu'à 70 % de matières grasses.", calWidgetBtn: "Calculez maintenant →",
+    nutriTitle: "Valeurs Nutritionnelles", nutriSub: "Total pour les portions sélectionnées", nutriVnr: "% Valeur Quotidienne*"
   }
 };
 
@@ -86,6 +90,24 @@ const getLocalizedUrl = (targetLang: string) => {
 function enrichText(text: string) {
   return text; 
 }
+
+// LOGICA VALORI NUTRIZIONALI
+const hasNutrition = !!recipe.nutrition;
+const baseNutrition = recipe.nutrition || null;
+
+// Valori Nutritivi di Riferimento (VNR) per adulto medio (2000 kcal)
+const VNR = { 
+  kcal: 2000, 
+  proteins: 50, 
+  carbs: 260, 
+  sugars: 50, 
+  fats: 70, 
+  saturated_fats: 20, 
+  salt: 6 
+};
+
+// Calcolo % iniziale (basato sulle porzioni default)
+const calcPercent = (val: number, target: number) => Math.round((val / target) * 100);
 ---
 
 <MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData}>
@@ -130,7 +152,7 @@ function enrichText(text: string) {
   </div>
 
   <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 pb-28">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.temp}</span>
         <div class="text-3xl md:text-4xl font-mono font-bold text-orange-400 mt-1 flex justify-center items-end gap-1">
@@ -164,9 +186,38 @@ function enrichText(text: string) {
       </div>
     </div>
 
+    {/* VISTA MOBILE: Valori Nutrizionali a Pillole */}
+    {hasNutrition && (
+      <div class="lg:hidden mb-12">
+        <h2 class="text-xl font-bold text-white mb-4">{t.nutriTitle} <span class="text-sm font-normal text-slate-400 ml-1">({t.nutriSub})</span></h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="bg-orange-900/30 border border-orange-700/50 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+            <span class="text-2xl mb-1">🔥</span>
+            <span class="text-white font-bold text-lg dyn-kcal">{baseNutrition.kcal}</span>
+            <span class="text-orange-400 text-xs font-semibold uppercase tracking-wider">Kcal</span>
+          </div>
+          <div class="bg-red-900/30 border border-red-700/50 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+            <span class="text-2xl mb-1">🥩</span>
+            <span class="text-white font-bold text-lg"><span class="dyn-proteins">{baseNutrition.proteins_g}</span>g</span>
+            <span class="text-red-400 text-xs font-semibold uppercase tracking-wider">Pro</span>
+          </div>
+          <div class="bg-blue-900/30 border border-blue-700/50 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+            <span class="text-2xl mb-1">🍞</span>
+            <span class="text-white font-bold text-lg"><span class="dyn-carbs">{baseNutrition.carbs_g}</span>g</span>
+            <span class="text-blue-400 text-xs font-semibold uppercase tracking-wider">Carbo</span>
+          </div>
+          <div class="bg-yellow-900/30 border border-yellow-700/50 rounded-xl p-3 flex flex-col items-center justify-center text-center">
+            <span class="text-2xl mb-1">🥑</span>
+            <span class="text-white font-bold text-lg"><span class="dyn-fats">{baseNutrition.fats_g}</span>g</span>
+            <span class="text-yellow-400 text-xs font-semibold uppercase tracking-wider">Fat</span>
+          </div>
+        </div>
+      </div>
+    )}
+
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
       <div class="lg:col-span-1">
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sticky top-8 shadow-lg">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg mb-8">
           <h3 class="text-xl font-bold text-white mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
             <div class="flex items-center gap-3"><span class="text-2xl">🛒</span> {t.ingTitle}</div>
             {lang === 'en' && (
@@ -178,7 +229,7 @@ function enrichText(text: string) {
           </h3>
           <ul class="space-y-4">
             {recipe.ingredients && recipe.ingredients.length > 0 ? (
-              recipe.ingredients.map((ing) => (
+              recipe.ingredients.map((ing: string) => (
                 <li class="flex items-start gap-3 text-slate-300 group">
                   <input type="checkbox" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500" />
                   <span class="leading-relaxed group-hover:text-white transition-colors ingredient-text" data-original={ing} set:html={enrichText(ing)}></span>
@@ -186,18 +237,65 @@ function enrichText(text: string) {
               ))
             ) : (<li class="text-slate-500 italic text-sm">{t.noIng}</li>)}
           </ul>
-
-          <a href={`/${lang}/calorie`} class="mt-8 block bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-2xl p-5 hover:border-emerald-500/60 transition-colors group">
-            <h4 class="text-emerald-400 font-bold flex items-center gap-2 mb-2">
-              <span class="text-xl">⚖️</span> {t.calWidgetTitle}
-            </h4>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              {t.calWidgetText}
-              <strong class="text-white group-hover:text-emerald-400 transition-colors ml-1">{t.calWidgetBtn}</strong>
-            </p>
-          </a>
-
         </div>
+
+        <a href={`/${lang}/calorie`} class="block mb-8 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 rounded-2xl p-5 hover:border-emerald-500/60 transition-colors group">
+          <h4 class="text-emerald-400 font-bold flex items-center gap-2 mb-2">
+            <span class="text-xl">⚖️</span> {t.calWidgetTitle}
+          </h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            {t.calWidgetText}
+            <strong class="text-white group-hover:text-emerald-400 transition-colors ml-1">{t.calWidgetBtn}</strong>
+          </p>
+        </a>
+
+        {/* VISTA DESKTOP: Etichetta Nutrizionale Laterale (Sticky) */}
+        {hasNutrition && (
+          <div class="hidden lg:block sticky top-8 bg-slate-800 rounded-2xl border border-slate-600 overflow-hidden shadow-xl mb-8">
+            <div class="bg-slate-700/50 px-6 py-4 border-b border-slate-600 flex justify-between items-center">
+              <span class="text-slate-200 font-bold">{t.nutriTitle}</span>
+              <span class="text-xs text-slate-400">{t.nutriVnr}</span>
+            </div>
+            
+            <div class="p-6">
+              <ul class="space-y-3 text-sm text-slate-300">
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+                  <span class="font-bold text-white">Energia (Kcal)</span>
+                  <span class="font-mono text-white"><span class="dyn-kcal text-green-400">{baseNutrition.kcal}</span> <span class="text-slate-500 text-xs ml-1">(<span class="dyn-kcal-pct">{calcPercent(baseNutrition.kcal, VNR.kcal)}</span>%)</span></span>
+                </li>
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+                  <span class="font-bold text-white">Grassi</span>
+                  <span class="font-mono text-white"><span class="dyn-fats">{baseNutrition.fats_g}</span>g <span class="text-slate-500 text-xs ml-1">(<span class="dyn-fats-pct">{calcPercent(baseNutrition.fats_g, VNR.fats)}</span>%)</span></span>
+                </li>
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 pl-4">
+                  <span class="text-slate-400">di cui saturi</span>
+                  <span class="font-mono text-slate-400"><span class="dyn-satfats">{baseNutrition.saturated_fats_g}</span>g <span class="text-slate-600 text-xs ml-1">(<span class="dyn-satfats-pct">{calcPercent(baseNutrition.saturated_fats_g, VNR.saturated_fats)}</span>%)</span></span>
+                </li>
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+                  <span class="font-bold text-white">Carboidrati</span>
+                  <span class="font-mono text-white"><span class="dyn-carbs">{baseNutrition.carbs_g}</span>g <span class="text-slate-500 text-xs ml-1">(<span class="dyn-carbs-pct">{calcPercent(baseNutrition.carbs_g, VNR.carbs)}</span>%)</span></span>
+                </li>
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 pl-4">
+                  <span class="text-slate-400">di cui zuccheri</span>
+                  <span class="font-mono text-slate-400"><span class="dyn-sugars">{baseNutrition.sugars_g}</span>g <span class="text-slate-600 text-xs ml-1">(<span class="dyn-sugars-pct">{calcPercent(baseNutrition.sugars_g, VNR.sugars)}</span>%)</span></span>
+                </li>
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+                  <span class="font-bold text-white">Proteine</span>
+                  <span class="font-mono text-white"><span class="dyn-proteins">{baseNutrition.proteins_g}</span>g <span class="text-slate-500 text-xs ml-1">(<span class="dyn-proteins-pct">{calcPercent(baseNutrition.proteins_g, VNR.proteins)}</span>%)</span></span>
+                </li>
+                <li class="flex justify-between items-center pb-1">
+                  <span class="font-bold text-white">Sale</span>
+                  <span class="font-mono text-white"><span class="dyn-salt">{baseNutrition.salt_g}</span>g <span class="text-slate-500 text-xs ml-1">(<span class="dyn-salt-pct">{calcPercent(baseNutrition.salt_g, VNR.salt)}</span>%)</span></span>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-slate-900/50 px-6 py-3 border-t border-slate-700">
+              <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-wide font-semibold text-center mb-1">{t.nutriSub}</p>
+              <p class="text-[10px] text-slate-500 leading-relaxed text-center">I valori percentuali giornalieri si basano su una dieta standard da 2000 calorie.</p>
+            </div>
+          </div>
+        )}
+
       </div>
 
       <div class="lg:col-span-2 space-y-8">
@@ -206,7 +304,7 @@ function enrichText(text: string) {
           <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"><span class="text-3xl">👨‍🍳</span> {t.stepTitle}</h3>
           <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
             {recipe.instructions && Array.isArray(recipe.instructions) ? (
-              recipe.instructions.map((step, index) => (
+              recipe.instructions.map((step: string, index: number) => (
                 <div class="flex gap-6 relative">
                   <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
                   <div class="pt-1 pb-2 w-full">
@@ -247,7 +345,7 @@ function enrichText(text: string) {
     </div>
   </div>
 
-  <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang }}>
+  <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang, baseNutrition: baseNutrition, VNR: VNR }}>
     document.addEventListener('DOMContentLoaded', () => {
       let currentPortions = basePortions;
       const display = document.getElementById('portions-display');
@@ -265,7 +363,6 @@ function enrichText(text: string) {
 
       function fToC(f) { return Math.round(((f - 32) * 5/9) / 5) * 5; }
 
-      // IL NUOVO PARSER CHIRURGICO PER GLI INGREDIENTI
       function scaleAndConvertIngredient(originalStr, ratio, forceMetric) {
         let str = originalStr;
 
@@ -286,16 +383,14 @@ function enrichText(text: string) {
             const numStr = match[2];
             const unitStr = match[3] ? match[3].toLowerCase() : '';
 
-            // Ignora le farine (es. "tipo 00")
             if (numStr === '00' || numStr === '0') continue; 
 
-            // Logica di arrotondamento intelligente
             const roundSmart = (val) => {
                 if (val >= 50 || ['g', 'gr', 'ml', 'grammi', 'kg'].includes(unitStr)) {
-                    return Math.round(val / 5) * 5; // Arrotonda a step di 5g
+                    return Math.round(val / 5) * 5; 
                 }
                 if (val >= 10) return Math.round(val);
-                let step = Math.round(val * 2) / 2; // Arrotonda a step di 0.5 per cucchiai/spicchi
+                let step = Math.round(val * 2) / 2; 
                 return step > 0 ? step : 0.5;
             };
 
@@ -314,7 +409,6 @@ function enrichText(text: string) {
                 newNumStr = roundSmart(val);
             }
 
-            // Ricostruisce la stringa sostituendo solo la quantità interessata
             str = str.substring(0, match.index + pre.length) + 
                      newNumStr + 
                      str.substring(match.index + pre.length + numStr.length);
@@ -327,12 +421,44 @@ function enrichText(text: string) {
       function updateUI() {
         display.textContent = currentPortions;
         const ratio = currentPortions / basePortions;
+        
+        // Scala Ingredienti
         ingredients.forEach(el => {
           const original = el.getAttribute('data-original');
           if(original) {
              el.innerHTML = scaleAndConvertIngredient(original, ratio, isMetric);
           }
         });
+
+        // Scala Dati Nutrizionali (Se esistono)
+        if (baseNutrition) {
+            const dynUpdate = (className, key) => {
+                const val = (baseNutrition[key] * ratio);
+                const rounded = Number.isInteger(val) ? val : parseFloat(val.toFixed(1));
+                
+                // Aggiorna Grammi/Kcal
+                document.querySelectorAll('.' + className).forEach(el => el.textContent = rounded);
+                
+                // Aggiorna % VNR
+                const pctClass = className + '-pct';
+                const vnrKey = key === 'proteins_g' ? 'proteins' : key === 'carbs_g' ? 'carbs' : key === 'sugars_g' ? 'sugars' : key === 'fats_g' ? 'fats' : key === 'saturated_fats_g' ? 'saturated_fats' : key === 'salt_g' ? 'salt' : key;
+                
+                if (VNR && VNR[vnrKey]) {
+                    const pct = Math.round((val / VNR[vnrKey]) * 100);
+                    document.querySelectorAll('.' + pctClass).forEach(el => el.textContent = pct);
+                }
+            };
+
+            dynUpdate('dyn-kcal', 'kcal');
+            dynUpdate('dyn-proteins', 'proteins_g');
+            dynUpdate('dyn-carbs', 'carbs_g');
+            dynUpdate('dyn-sugars', 'sugars_g');
+            dynUpdate('dyn-fats', 'fats_g');
+            dynUpdate('dyn-satfats', 'saturated_fats_g');
+            dynUpdate('dyn-salt', 'salt_g');
+        }
+
+        // Scala Sistema Imperiale
         if (lang === 'en' && tempValDisplay && baseTemp) {
             tempValDisplay.textContent = isMetric ? fToC(baseTemp) : baseTemp;
             tempUnitDisplay.textContent = isMetric ? "°C" : "°F";

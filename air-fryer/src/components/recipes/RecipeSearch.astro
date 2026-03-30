@@ -28,7 +28,7 @@ const translations = {
     noResultsDesc: "Prova a cercare un titolo diverso o rimuovi i filtri applicati.",
     resetBtn: "Mostra tutte le ricette",
     // Etichette Filtri Rapidi
-    all: "🍽️ Tutte", meat: "🥩 Carne", fish: "🐟 Pesce", veg: "🥦 Veg", sweet: "🥧 Dolci", fast: "⏱️ Veloci (<15m)"
+    all: "🍽️ Tutte", meat: "🥩 Carne", fish: "🐟 Pesce", veg: "🥦 Veg", sweet: "🥧 Dolci", fast: "⏱️ Veloci (<15m)", light: "🥗 Leggeri (<300)"
   },
   en: {
     title: "What do you want to cook today?",
@@ -38,7 +38,7 @@ const translations = {
     noResultsTitle: "No recipes found",
     noResultsDesc: "Try searching for a different title or clear the filters.",
     resetBtn: "Show all recipes",
-    all: "🍽️ All", meat: "🥩 Meat", fish: "🐟 Fish", veg: "🥦 Veg", sweet: "🥧 Sweets", fast: "⏱️ Fast (<15m)"
+    all: "🍽️ All", meat: "🥩 Meat", fish: "🐟 Fish", veg: "🥦 Veg", sweet: "🥧 Sweets", fast: "⏱️ Fast (<15m)", light: "🥗 Light (<300)"
   },
   es: {
     title: "¿Qué quieres cocinar hoy?",
@@ -48,7 +48,7 @@ const translations = {
     noResultsTitle: "No se encontraron recetas",
     noResultsDesc: "Prueba a buscar un título diferente o quita los filtros.",
     resetBtn: "Mostrar todas las recetas",
-    all: "🍽️ Todas", meat: "🥩 Carne", fish: "🐟 Pescado", veg: "🥦 Veg", sweet: "🥧 Dulces", fast: "⏱️ Rápidas (<15m)"
+    all: "🍽️ Todas", meat: "🥩 Carne", fish: "🐟 Pescado", veg: "🥦 Veg", sweet: "🥧 Dulces", fast: "⏱️ Rápidas (<15m)", light: "🥗 Ligeras (<300)"
   },
   fr: {
     title: "Que voulez-vous cuisiner aujourd'hui ?",
@@ -58,7 +58,7 @@ const translations = {
     noResultsTitle: "Aucune recette trouvée",
     noResultsDesc: "Essayez un autre mot-clé ou désactivez les filtres.",
     resetBtn: "Afficher toutes les recettes",
-    all: "🍽️ Toutes", meat: "🥩 Viande", fish: "🐟 Poisson", veg: "🥦 Végé", sweet: "🥧 Desserts", fast: "⏱️ Rapides (<15m)"
+    all: "🍽️ Toutes", meat: "🥩 Viande", fish: "🐟 Poisson", veg: "🥦 Végé", sweet: "🥧 Desserts", fast: "⏱️ Rapides (<15m)", light: "🥗 Légères (<300)"
   }
 };
 
@@ -114,6 +114,7 @@ const isFast = (recipe: any) => {
           <button data-filter="veg" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.veg}</button>
           <button data-filter="sweet" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.sweet}</button>
           <button data-filter="fast" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-amber-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105 hover:text-amber-400">{t.fast}</button>
+          <button data-filter="light" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-emerald-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105 hover:text-emerald-400">{t.light}</button>
         </div>
 
       </div>
@@ -137,6 +138,9 @@ const isFast = (recipe: any) => {
         // Passiamo al DOM la categoria e la velocità pre-calcolate
         const cat = getCategory(recipe);
         const fast = isFast(recipe);
+        
+        // NOVITÀ: Valore calorie per il data-attribute
+        const kcalValue = recipe.nutrition ? recipe.nutrition.kcal : 9999;
 
         return (
           <div class="recipe-wrapper" 
@@ -144,7 +148,8 @@ const isFast = (recipe: any) => {
                data-slug={recipe.slug} 
                data-keywords={combinedKeywords}
                data-category={cat}
-               data-fast={fast}>
+               data-fast={fast}
+               data-kcal={kcalValue}>
             <RecipeCard recipe={recipe} lang={lang} />
           </div>
         );
@@ -189,6 +194,9 @@ const isFast = (recipe: any) => {
         const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
         const category = wrapper.getAttribute('data-category');
         const isFast = wrapper.getAttribute('data-fast') === 'true';
+        
+        // NOVITÀ: Estrazione delle calorie per il filtro
+        const kcal = parseInt(wrapper.getAttribute('data-kcal') || "9999", 10);
 
         // 1. MATCH TESTUALE
         let isTextMatch = true;
@@ -203,6 +211,7 @@ const isFast = (recipe: any) => {
         let isFilterMatch = false;
         if (currentFilter === 'all') isFilterMatch = true;
         else if (currentFilter === 'fast') isFilterMatch = isFast;
+        else if (currentFilter === 'light') isFilterMatch = kcal <= 300; // Logica filtro calorie
         else isFilterMatch = (category === currentFilter);
 
         // Se passa entrambi i check, calcoliamo lo SCOING e lo mostriamo
@@ -273,12 +282,20 @@ const isFast = (recipe: any) => {
       btn.addEventListener('click', (e) => {
         // Aggiorna stile bottoni
         filterBtns.forEach(b => {
-          b.classList.remove('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active');
+          b.classList.remove('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active', 'bg-emerald-600', 'border-emerald-500', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]');
           b.classList.add('bg-slate-900', 'text-slate-300', 'border-slate-700');
         });
         const target = e.currentTarget;
+        const isLightFilter = target.getAttribute('data-filter') === 'light';
+        
         target.classList.remove('bg-slate-900', 'text-slate-300', 'border-slate-700');
-        target.classList.add('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active');
+        
+        // Stile differente per il bottone Leggeri (Verde invece che blu)
+        if (isLightFilter) {
+          target.classList.add('bg-emerald-600', 'text-white', 'border-emerald-500', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]', 'active');
+        } else {
+          target.classList.add('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active');
+        }
 
         currentFilter = target.getAttribute('data-filter');
         updateDisplay();
@@ -291,7 +308,7 @@ const isFast = (recipe: any) => {
         if (searchInput) searchInput.value = '';
         currentSearch = "";
         
-        // Resetsta il filtro al bottone "Tutte"
+        // Resetta il filtro al bottone "Tutte"
         const btnAll = document.querySelector('[data-filter="all"]');
         if(btnAll) btnAll.click();
         else {
