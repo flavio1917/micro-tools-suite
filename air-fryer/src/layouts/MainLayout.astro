@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import Analytics from '@vercel/analytics/astro';
-
+import { ClientRouter } from 'astro:transitions'; // <--- USA ClientRouter
 export interface Props {
   title?: string;
   lang?: string;
@@ -97,8 +97,7 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
-    
-    <title>{title}</title>
+    <ClientRouter /> <title>{title}</title>    <title>{title}</title>
     <meta name="description" content={finalDescription} />
     <link rel="canonical" href={canonicalURL} />
     

@@ -23,70 +23,104 @@ const translations = {
     title: "Cosa vuoi cucinare oggi?",
     subtitlePre: "Cerca tra ",
     subtitlePost: " ricette ottimizzate per la tua friggitrice ad aria.",
-    placeholder: "🔍 Cerca (es. 'italiana', 'pesce', 'pollo', 'vegetariana', 'dolce')...",
+    placeholder: "🔍 Cerca (es. 'pesce', 'pollo', 'vegetariana')...",
     noResultsTitle: "Nessuna ricetta trovata",
-    noResultsDesc: "Prova a cercare un titolo diverso o usa parole più semplici.",
-    resetBtn: "Mostra tutte le ricette"
+    noResultsDesc: "Prova a cercare un titolo diverso o rimuovi i filtri applicati.",
+    resetBtn: "Mostra tutte le ricette",
+    // Etichette Filtri Rapidi
+    all: "🍽️ Tutte", meat: "🥩 Carne", fish: "🐟 Pesce", veg: "🥦 Veg", sweet: "🥧 Dolci", fast: "⏱️ Veloci (<15m)"
   },
   en: {
     title: "What do you want to cook today?",
     subtitlePre: "Search through ",
     subtitlePost: " optimized recipes for your air fryer.",
-    placeholder: "🔍 Search (e.g. 'authentic', 'fish', 'chicken', 'vegetarian', 'dessert')...",
+    placeholder: "🔍 Search (e.g. 'fish', 'chicken', 'vegetarian')...",
     noResultsTitle: "No recipes found",
-    noResultsDesc: "Try searching for a different title or use simpler words.",
-    resetBtn: "Show all recipes"
+    noResultsDesc: "Try searching for a different title or clear the filters.",
+    resetBtn: "Show all recipes",
+    all: "🍽️ All", meat: "🥩 Meat", fish: "🐟 Fish", veg: "🥦 Veg", sweet: "🥧 Sweets", fast: "⏱️ Fast (<15m)"
   },
   es: {
     title: "¿Qué quieres cocinar hoy?",
     subtitlePre: "Busca entre ",
     subtitlePost: " recetas optimizadas para tu freidora de aire.",
-    placeholder: "🔍 Buscar (ej. 'auténtica', 'pescado', 'pollo', 'vegetariana', 'postre')...",
+    placeholder: "🔍 Buscar (ej. 'pescado', 'pollo', 'vegetariana')...",
     noResultsTitle: "No se encontraron recetas",
-    noResultsDesc: "Prueba a buscar un título diferente o usa palabras más sencillas.",
-    resetBtn: "Mostrar todas las recetas"
+    noResultsDesc: "Prueba a buscar un título diferente o quita los filtros.",
+    resetBtn: "Mostrar todas las recetas",
+    all: "🍽️ Todas", meat: "🥩 Carne", fish: "🐟 Pescado", veg: "🥦 Veg", sweet: "🥧 Dulces", fast: "⏱️ Rápidas (<15m)"
   },
   fr: {
     title: "Que voulez-vous cuisiner aujourd'hui ?",
     subtitlePre: "Recherchez parmi ",
     subtitlePost: " recettes optimisées pour votre friteuse à air.",
-    placeholder: "🔍 Rechercher (ex. 'authentique', 'poisson', 'poulet', 'végétarien', 'dessert')...",
+    placeholder: "🔍 Rechercher (ex. 'poisson', 'poulet', 'végétarien')...",
     noResultsTitle: "Aucune recette trouvée",
-    noResultsDesc: "Essayez de rechercher un titre différent ou utilisez des mots plus simples.",
-    resetBtn: "Afficher toutes les recettes"
+    noResultsDesc: "Essayez un autre mot-clé ou désactivez les filtres.",
+    resetBtn: "Afficher toutes les recettes",
+    all: "🍽️ Toutes", meat: "🥩 Viande", fish: "🐟 Poisson", veg: "🥦 Végé", sweet: "🥧 Desserts", fast: "⏱️ Rapides (<15m)"
   }
 };
 
 const t = translations[lang as keyof typeof translations] || translations.it;
+
+// HELPER: Categorizzazione automatica in base alle keyword
+const getCategory = (recipe: any) => {
+  const kw = (recipe.keywords || []).map((k: string) => k.toLowerCase());
+  if (kw.some((k: string) => k.includes('carne') || k.includes('pollo') || k.includes('meat') || k.includes('viande'))) return 'meat';
+  if (kw.some((k: string) => k.includes('pesce') || k.includes('fish') || k.includes('poisson'))) return 'fish';
+  if (kw.some((k: string) => k.includes('veg') || k.includes('verdure') || k.includes('vegetariano') || k.includes('vegan'))) return 'veg';
+  if (kw.some((k: string) => k.includes('dolc') || k.includes('sweet') || k.includes('dessert'))) return 'sweet';
+  return 'other';
+};
+
+// HELPER: Rilevamento ricette veloci
+const isFast = (recipe: any) => {
+  const timeStr = recipe.time ? recipe.time.toString() : "0";
+  const numMatch = timeStr.match(/\d+/);
+  return (numMatch && parseInt(numMatch[0]) <= 15) ? 'true' : 'false';
+};
 ---
 
 <section id="ricettario" class="py-12 scroll-mt-20">
   <div class="max-w-6xl mx-auto px-4">
     
-    <div class="text-center max-w-2xl mx-auto mb-12 space-y-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+    <div class="text-center max-w-3xl mx-auto mb-12 space-y-6">
+      <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">
         {t.title}
       </h2>
       <p class="text-slate-400">
         {t.subtitlePre}<span class="text-blue-400 font-bold">{recipes.length}</span>{t.subtitlePost}
       </p>
 
-      <div class="relative group">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#0B1120] via-[#0B1120]/20 to-transparent transition-all duration-300"></div>      
-        <div class="relative">
+      <div class="bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-4 md:p-6 shadow-2xl relative z-30">
+        
+        <div class="relative mb-6">
+          <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+            <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </div>
           <input 
             type="text" 
             id="recipe-search-input" 
             placeholder={t.placeholder}
-            class="block w-full p-4 pl-6 text-lg bg-slate-900 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-[#F59E0B] focus:border-transparent outline-none shadow-xl transition-all"
+            class="block w-full p-4 pl-12 text-lg bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none shadow-inner transition-all font-medium"
           >
         </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-2 md:gap-3" id="filter-pills">
+          <button data-filter="all" class="filter-btn active bg-blue-600 text-white border border-blue-500 px-4 py-2 rounded-full text-sm font-bold transition-all shadow-[0_0_15px_rgba(37,99,235,0.4)] hover:scale-105">{t.all}</button>
+          <button data-filter="meat" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.meat}</button>
+          <button data-filter="fish" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.fish}</button>
+          <button data-filter="veg" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.veg}</button>
+          <button data-filter="sweet" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.sweet}</button>
+          <button data-filter="fast" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-amber-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105 hover:text-amber-400">{t.fast}</button>
+        </div>
+
       </div>
     </div>
 
-    <div id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative z-20">
       {recipes.map((recipe) => {
-        // CROSS REFERENCE PER LA RICERCA
         const baseImageName = recipe.image || recipe.slug;
         let isAuth = recipe.isItalian === true || recipe.isItalian === "true";
         
@@ -100,19 +134,28 @@ const t = translations[lang as keyof typeof translations] || translations.it;
         const authKeyword = isAuth ? "italia italiana autentica authentic italian authentique auténtica" : "";
         const combinedKeywords = `${recipe.keywords || ''} ${authKeyword}`.trim();
 
+        // Passiamo al DOM la categoria e la velocità pre-calcolate
+        const cat = getCategory(recipe);
+        const fast = isFast(recipe);
+
         return (
-          <div class="recipe-wrapper" data-title={recipe.title} data-slug={recipe.slug} data-keywords={combinedKeywords}>
+          <div class="recipe-wrapper" 
+               data-title={recipe.title} 
+               data-slug={recipe.slug} 
+               data-keywords={combinedKeywords}
+               data-category={cat}
+               data-fast={fast}>
             <RecipeCard recipe={recipe} lang={lang} />
           </div>
         );
       })}
     </div>
 
-    <div id="no-results" class="hidden text-center py-12">
-      <span class="text-6xl block mb-4">😕</span>
-      <h3 class="text-xl font-bold text-white">{t.noResultsTitle}</h3>
-      <p class="text-slate-400 mt-2">{t.noResultsDesc}</p>
-      <button id="reset-search" class="mt-6 text-[#F59E0B] hover:text-white underline underline-offset-4 cursor-pointer transition-colors">
+    <div id="no-results" class="hidden text-center py-16 bg-slate-800/40 border border-slate-700/60 rounded-3xl mt-6">
+      <span class="text-6xl block mb-4 opacity-50">😕</span>
+      <h3 class="text-2xl font-bold text-white">{t.noResultsTitle}</h3>
+      <p class="text-slate-400 mt-2 mb-6">{t.noResultsDesc}</p>
+      <button id="reset-search" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-white font-bold hover:bg-slate-700 hover:text-blue-400 transition-all border border-slate-600 shadow-lg">
         {t.resetBtn}
       </button>
     </div>
@@ -123,6 +166,7 @@ const t = translations[lang as keyof typeof translations] || translations.it;
 <script is:inline>
   document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('recipe-search-input');
+    const filterBtns = document.querySelectorAll('.filter-btn');
     const grid = document.getElementById('recipes-grid');
     const noResults = document.getElementById('no-results');
     const resetBtn = document.getElementById('reset-search');
@@ -130,97 +174,130 @@ const t = translations[lang as keyof typeof translations] || translations.it;
     const wrappers = Array.from(document.querySelectorAll('.recipe-wrapper'));
     wrappers.forEach((w, index) => w.setAttribute('data-original-index', index));
 
-    function filterRecipes(query) {
-      const rawQuery = query.toLowerCase().trim();
+    let currentSearch = "";
+    let currentFilter = "all";
+
+    function updateDisplay() {
+      const rawQuery = currentSearch.toLowerCase().trim();
       const searchTerms = rawQuery.split(/\s+/).filter(t => t.length >= 2);
       let visibleCount = 0;
+      let results = [];
 
-      if (rawQuery === "") {
-        wrappers.sort((a, b) => parseInt(a.getAttribute('data-original-index')) - parseInt(b.getAttribute('data-original-index')));
-        wrappers.forEach(wrapper => {
-          grid.appendChild(wrapper);
-          wrapper.style.display = '';
-          visibleCount++;
-        });
-      } else {
-        let results = [];
+      wrappers.forEach(wrapper => {
+        const title = (wrapper.getAttribute('data-title') || '').toLowerCase();
+        const slug = (wrapper.getAttribute('data-slug') || '').toLowerCase();
+        const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
+        const category = wrapper.getAttribute('data-category');
+        const isFast = wrapper.getAttribute('data-fast') === 'true';
 
-        wrappers.forEach(wrapper => {
-          const title = (wrapper.getAttribute('data-title') || '').toLowerCase();
-          const slug = (wrapper.getAttribute('data-slug') || '').toLowerCase();
-          const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
-          
-          const isVisible = searchTerms.every(term => {
+        // 1. MATCH TESTUALE
+        let isTextMatch = true;
+        if (searchTerms.length > 0) {
+          isTextMatch = searchTerms.every(term => {
             const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
             return title.includes(root) || slug.includes(root) || keywords.includes(root);
           });
+        }
 
-          if (isVisible) {
-            let score = 0;
-            
-            // 1. PRIORITÀ MASSIMA: Match esatto nelle KEYWORDS (Categoria) [+200 punti]
+        // 2. MATCH FILTRO A PILLOLA
+        let isFilterMatch = false;
+        if (currentFilter === 'all') isFilterMatch = true;
+        else if (currentFilter === 'fast') isFilterMatch = isFast;
+        else isFilterMatch = (category === currentFilter);
+
+        // Se passa entrambi i check, calcoliamo lo SCOING e lo mostriamo
+        if (isTextMatch && isFilterMatch) {
+          let score = 0;
+          
+          if (rawQuery !== "") {
+            // IL TUO ALGORITMO DI SCORING
             try {
               const exactKeywordRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
               if (exactKeywordRegex.test(keywords)) score += 200;
             } catch(e) {}
-            
-            // La keyword contiene l'intera frase cercata [+100 punti]
             if (keywords.includes(rawQuery)) score += 100;
-
-            // 2. PRIORITÀ SECONDARIA: Match esatto nel TITOLO [+50 punti]
             try {
               const exactTitleRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
               if (exactTitleRegex.test(title)) score += 50;
             } catch(e) {}
-
-            // Il titolo contiene l'intera frase [+25 punti]
             if (title.includes(rawQuery)) score += 25;
-
-            // 3. PRIORITÀ MINIMA: Match parziali sulle radici delle parole
             searchTerms.forEach(term => {
               const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
               if (keywords.includes(root)) score += 10;
               if (title.includes(root)) score += 5;
             });
-
-            results.push({ wrapper: wrapper, score: score, originalIndex: parseInt(wrapper.getAttribute('data-original-index')) });
-          } else {
-            wrapper.style.display = 'none';
           }
-        });
 
-        // Ordinamento in base al punteggio più alto. A parità di punteggio, usa l'ordine originale.
-        results.sort((a, b) => {
-          if (b.score !== a.score) return b.score - a.score;
-          return a.originalIndex - b.originalIndex;
-        });
+          results.push({ wrapper: wrapper, score: score, originalIndex: parseInt(wrapper.getAttribute('data-original-index')) });
+        } else {
+          wrapper.style.display = 'none';
+        }
+      });
 
-        results.forEach(item => {
-          grid.appendChild(item.wrapper);
-          item.wrapper.style.display = '';
-          visibleCount++;
-        });
-      }
+      // ORDINAMENTO
+      results.sort((a, b) => {
+        if (b.score !== a.score) return b.score - a.score;
+        return a.originalIndex - b.originalIndex;
+      });
 
+      // RENDER
+      results.forEach(item => {
+        grid.appendChild(item.wrapper); // Riappende per mantenere l'ordine
+        item.wrapper.style.display = '';
+        visibleCount++;
+      });
+
+      // STATO VUOTO
       if (visibleCount === 0) {
-        if(grid) grid.classList.add('hidden');
-        if(noResults) noResults.classList.remove('hidden');
+        if(grid) grid.style.display = 'none';
+        if(noResults) noResults.style.display = 'block';
       } else {
-        if(grid) grid.classList.remove('hidden');
-        if(noResults) noResults.classList.add('hidden');
+        if(grid) grid.style.display = 'grid'; // Usa 'grid' invece di rimuovere la classe hidden per mantenere il grid-cols
+        if(noResults) noResults.style.display = 'none';
       }
     }
 
+    // LISTENER RICERCA TESTUALE
     if (searchInput) {
-      searchInput.addEventListener('input', (e) => filterRecipes(e.target.value));
+      searchInput.addEventListener('input', (e) => {
+        currentSearch = e.target.value;
+        updateDisplay();
+      });
       searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter') { e.preventDefault(); searchInput.blur(); }
       });
     }
 
+    // LISTENER BOTTONI PILLOLA
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        // Aggiorna stile bottoni
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active');
+          b.classList.add('bg-slate-900', 'text-slate-300', 'border-slate-700');
+        });
+        const target = e.currentTarget;
+        target.classList.remove('bg-slate-900', 'text-slate-300', 'border-slate-700');
+        target.classList.add('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active');
+
+        currentFilter = target.getAttribute('data-filter');
+        updateDisplay();
+      });
+    });
+
+    // LISTENER RESET
     if (resetBtn) {
       resetBtn.addEventListener('click', () => {
-        if (searchInput) { searchInput.value = ''; filterRecipes(''); searchInput.focus(); }
+        if (searchInput) searchInput.value = '';
+        currentSearch = "";
+        
+        // Resetsta il filtro al bottone "Tutte"
+        const btnAll = document.querySelector('[data-filter="all"]');
+        if(btnAll) btnAll.click();
+        else {
+          currentFilter = "all";
+          updateDisplay();
+        }
       });
     }
   });
