@@ -1,12 +1,15 @@
 ---
+import MainLayout from '../layouts/MainLayout.astro';
+import AirFryer from '../components/tools/AirFryer/AirFryer.astro';
+import RecipeSearch from '../components/recipes/RecipeSearch.astro';
 import recipesIt from '../../data/recipes-it.json';
 import recipesEn from '../../data/recipes-en.json';
 import recipesEs from '../../data/recipes-es.json';
 import recipesFr from '../../data/recipes-fr.json';
 import RecipeCard from './RecipeCard.astro';
 
-export interface Props { lang?: string; }
-const { lang = "it" } = Astro.props;
+export interface Props { lang: string; }
+const { lang } = Astro.props;
 
 // Selezionatore dinamico del database
 const allRecipes = {
@@ -27,7 +30,6 @@ const translations = {
     noResultsTitle: "Nessuna ricetta trovata",
     noResultsDesc: "Prova a cercare un titolo diverso o rimuovi i filtri applicati.",
     resetBtn: "Mostra tutte le ricette",
-    // Etichette Filtri Rapidi
     all: "🍽️ Tutte", meat: "🥩 Carne", fish: "🐟 Pesce", veg: "🥦 Veg", sweet: "🥧 Dolci", fast: "⏱️ Veloci (<15m)", light: "🥗 Leggeri (<300)"
   },
   en: {
@@ -64,7 +66,6 @@ const translations = {
 
 const t = translations[lang as keyof typeof translations] || translations.it;
 
-// HELPER: Categorizzazione automatica in base alle keyword
 const getCategory = (recipe: any) => {
   const kw = (recipe.keywords || []).map((k: string) => k.toLowerCase());
   if (kw.some((k: string) => k.includes('carne') || k.includes('pollo') || k.includes('meat') || k.includes('viande'))) return 'meat';
@@ -74,7 +75,6 @@ const getCategory = (recipe: any) => {
   return 'other';
 };
 
-// HELPER: Rilevamento ricette veloci
 const isFast = (recipe: any) => {
   const timeStr = recipe.time ? recipe.time.toString() : "0";
   const numMatch = timeStr.match(/\d+/);
@@ -82,240 +82,237 @@ const isFast = (recipe: any) => {
 };
 ---
 
-<section id="ricettario" class="py-12 scroll-mt-20">
-  <div class="max-w-6xl mx-auto px-4">
-    
-    <div class="text-center max-w-3xl mx-auto mb-12 space-y-6">
-      <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">
-        {t.title}
-      </h2>
-      <p class="text-slate-400">
-        {t.subtitlePre}<span class="text-blue-400 font-bold">{recipes.length}</span>{t.subtitlePost}
-      </p>
+<MainLayout title={t.title} lang={lang} alternateUrls={{}}>
+  
+  <AirFryer lang={lang} />
 
-      <div class="bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-4 md:p-6 shadow-2xl relative z-30">
-        
-        <div class="relative mb-6">
-          <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-            <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-          </div>
-          <input 
-            type="text" 
-            id="recipe-search-input" 
-            placeholder={t.placeholder}
-            class="block w-full p-4 pl-12 text-lg bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none shadow-inner transition-all font-medium"
-          >
-        </div>
+  <section id="ricettario" class="py-12 scroll-mt-20 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4">
+      
+      <div class="text-center w-full max-w-5xl mx-auto mb-12 space-y-6">
+        <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">
+          {t.title}
+        </h2>
+        <p class="text-slate-400">
+          {t.subtitlePre}<span class="text-blue-400 font-bold">{recipes.length}</span>{t.subtitlePost}
+        </p>
 
-        <div class="flex flex-wrap items-center justify-center gap-2 md:gap-3" id="filter-pills">
-          <button data-filter="all" class="filter-btn active bg-blue-600 text-white border border-blue-500 px-4 py-2 rounded-full text-sm font-bold transition-all shadow-[0_0_15px_rgba(37,99,235,0.4)] hover:scale-105">{t.all}</button>
-          <button data-filter="meat" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.meat}</button>
-          <button data-filter="fish" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.fish}</button>
-          <button data-filter="veg" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.veg}</button>
-          <button data-filter="sweet" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.sweet}</button>
-          <button data-filter="fast" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-amber-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105 hover:text-amber-400">{t.fast}</button>
-          <button data-filter="light" class="filter-btn bg-slate-900 text-slate-300 border border-slate-700 hover:border-emerald-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105 hover:text-emerald-400">{t.light}</button>
-        </div>
-
-      </div>
-    </div>
-
-    <div id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative z-20">
-      {recipes.map((recipe) => {
-        const baseImageName = recipe.image || recipe.slug;
-        let isAuth = recipe.isItalian === true || recipe.isItalian === "true";
-        
-        if (recipe.isItalian === undefined) {
-          const enRecipe = recipesEn.find((r: any) => (r.image || r.slug) === baseImageName);
-          if (enRecipe) {
-            isAuth = enRecipe.isItalian === true || enRecipe.isItalian === "true";
-          }
-        }
-
-        const authKeyword = isAuth ? "italia italiana autentica authentic italian authentique auténtica" : "";
-        const combinedKeywords = `${recipe.keywords || ''} ${authKeyword}`.trim();
-
-        // Passiamo al DOM la categoria e la velocità pre-calcolate
-        const cat = getCategory(recipe);
-        const fast = isFast(recipe);
-        
-        // NOVITÀ: Valore calorie per il data-attribute
-        const kcalValue = recipe.nutrition ? recipe.nutrition.kcal : 9999;
-
-        return (
-          <div class="recipe-wrapper" 
-               data-title={recipe.title} 
-               data-slug={recipe.slug} 
-               data-keywords={combinedKeywords}
-               data-category={cat}
-               data-fast={fast}
-               data-kcal={kcalValue}>
-            <RecipeCard recipe={recipe} lang={lang} />
-          </div>
-        );
-      })}
-    </div>
-
-    <div id="no-results" class="hidden text-center py-16 bg-slate-800/40 border border-slate-700/60 rounded-3xl mt-6">
-      <span class="text-6xl block mb-4 opacity-50">😕</span>
-      <h3 class="text-2xl font-bold text-white">{t.noResultsTitle}</h3>
-      <p class="text-slate-400 mt-2 mb-6">{t.noResultsDesc}</p>
-      <button id="reset-search" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-white font-bold hover:bg-slate-700 hover:text-blue-400 transition-all border border-slate-600 shadow-lg">
-        {t.resetBtn}
-      </button>
-    </div>
-
-  </div>
-</section>
-
-<script is:inline>
-  document.addEventListener('astro:page-load', () => {
-    const searchInput = document.getElementById('recipe-search-input');
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const grid = document.getElementById('recipes-grid');
-    const noResults = document.getElementById('no-results');
-    const resetBtn = document.getElementById('reset-search');
-    
-    const wrappers = Array.from(document.querySelectorAll('.recipe-wrapper'));
-    wrappers.forEach((w, index) => w.setAttribute('data-original-index', index));
-
-    let currentSearch = "";
-    let currentFilter = "all";
-
-    function updateDisplay() {
-      const rawQuery = currentSearch.toLowerCase().trim();
-      const searchTerms = rawQuery.split(/\s+/).filter(t => t.length >= 2);
-      let visibleCount = 0;
-      let results = [];
-
-      wrappers.forEach(wrapper => {
-        const title = (wrapper.getAttribute('data-title') || '').toLowerCase();
-        const slug = (wrapper.getAttribute('data-slug') || '').toLowerCase();
-        const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
-        const category = wrapper.getAttribute('data-category');
-        const isFast = wrapper.getAttribute('data-fast') === 'true';
-        
-        // NOVITÀ: Estrazione delle calorie per il filtro
-        const kcal = parseInt(wrapper.getAttribute('data-kcal') || "9999", 10);
-
-        // 1. MATCH TESTUALE
-        let isTextMatch = true;
-        if (searchTerms.length > 0) {
-          isTextMatch = searchTerms.every(term => {
-            const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
-            return title.includes(root) || slug.includes(root) || keywords.includes(root);
-          });
-        }
-
-        // 2. MATCH FILTRO A PILLOLA
-        let isFilterMatch = false;
-        if (currentFilter === 'all') isFilterMatch = true;
-        else if (currentFilter === 'fast') isFilterMatch = isFast;
-        else if (currentFilter === 'light') isFilterMatch = kcal <= 300; // Logica filtro calorie
-        else isFilterMatch = (category === currentFilter);
-
-        // Se passa entrambi i check, calcoliamo lo SCOING e lo mostriamo
-        if (isTextMatch && isFilterMatch) {
-          let score = 0;
+        <div class="bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-4 md:p-8 shadow-2xl relative z-30">
           
-          if (rawQuery !== "") {
-            // IL TUO ALGORITMO DI SCORING
-            try {
-              const exactKeywordRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
-              if (exactKeywordRegex.test(keywords)) score += 200;
-            } catch(e) {}
-            if (keywords.includes(rawQuery)) score += 100;
-            try {
-              const exactTitleRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
-              if (exactTitleRegex.test(title)) score += 50;
-            } catch(e) {}
-            if (title.includes(rawQuery)) score += 25;
-            searchTerms.forEach(term => {
+          <div class="relative mb-6">
+            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+            <input 
+              type="text" 
+              id="recipe-search-input" 
+              placeholder={t.placeholder}
+              class="block w-full p-4 pl-12 text-lg bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none shadow-inner transition-all font-medium"
+            >
+          </div>
+
+          <div class="flex overflow-x-auto snap-x hide-scrollbar items-center justify-start md:justify-center gap-2 md:gap-3 pb-2 -mx-4 px-4 md:mx-0 md:px-0 md:flex-wrap md:overflow-x-visible" id="filter-pills">
+            <button data-filter="all" class="filter-btn active whitespace-nowrap flex-shrink-0 snap-start bg-blue-600 text-white border border-blue-500 px-4 py-2 rounded-full text-sm font-bold transition-all shadow-[0_0_15px_rgba(37,99,235,0.4)] hover:scale-105">{t.all}</button>
+            <button data-filter="meat" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.meat}</button>
+            <button data-filter="fish" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.fish}</button>
+            <button data-filter="veg" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.veg}</button>
+            <button data-filter="sweet" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.sweet}</button>
+            <button data-filter="fast" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-amber-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105 hover:text-amber-400">{t.fast}</button>
+            <button data-filter="light" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-emerald-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105 hover:text-emerald-400">{t.light}</button>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative z-20">
+        {recipes.map((recipe) => {
+          const baseImageName = recipe.image || recipe.slug;
+          let isAuth = recipe.isItalian === true || recipe.isItalian === "true";
+          
+          if (recipe.isItalian === undefined) {
+            const enRecipe = recipesEn.find((r: any) => (r.image || r.slug) === baseImageName);
+            if (enRecipe) {
+              isAuth = enRecipe.isItalian === true || enRecipe.isItalian === "true";
+            }
+          }
+
+          const authKeyword = isAuth ? "italia italiana autentica authentic italian authentique auténtica" : "";
+          const combinedKeywords = `${recipe.keywords || ''} ${authKeyword}`.trim();
+
+          const cat = getCategory(recipe);
+          const fast = isFast(recipe);
+          const kcalValue = recipe.nutrition ? recipe.nutrition.kcal : 9999;
+
+          return (
+            <div class="recipe-wrapper" 
+                 data-title={recipe.title} 
+                 data-slug={recipe.slug} 
+                 data-keywords={combinedKeywords}
+                 data-category={cat}
+                 data-fast={fast}
+                 data-kcal={kcalValue}>
+              <RecipeCard recipe={recipe} lang={lang} />
+            </div>
+          );
+        })}
+      </div>
+
+      <div id="no-results" class="hidden text-center py-16 bg-slate-800/40 border border-slate-700/60 rounded-3xl mt-6">
+        <span class="text-6xl block mb-4 opacity-50">😕</span>
+        <h3 class="text-2xl font-bold text-white">{t.noResultsTitle}</h3>
+        <p class="text-slate-400 mt-2 mb-6">{t.noResultsDesc}</p>
+        <button id="reset-search" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-white font-bold hover:bg-slate-700 hover:text-blue-400 transition-all border border-slate-600 shadow-lg">
+          {t.resetBtn}
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    .hide-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none; /* Chrome, Safari and Opera */
+    }
+  </style>
+
+  <script is:inline>
+    document.addEventListener('astro:page-load', () => {
+      const searchInput = document.getElementById('recipe-search-input');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const grid = document.getElementById('recipes-grid');
+      const noResults = document.getElementById('no-results');
+      const resetBtn = document.getElementById('reset-search');
+      
+      const wrappers = Array.from(document.querySelectorAll('.recipe-wrapper'));
+      wrappers.forEach((w, index) => w.setAttribute('data-original-index', index));
+
+      let currentSearch = "";
+      let currentFilter = "all";
+
+      function updateDisplay() {
+        const rawQuery = currentSearch.toLowerCase().trim();
+        const searchTerms = rawQuery.split(/\s+/).filter(t => t.length >= 2);
+        let visibleCount = 0;
+        let results = [];
+
+        wrappers.forEach(wrapper => {
+          const title = (wrapper.getAttribute('data-title') || '').toLowerCase();
+          const slug = (wrapper.getAttribute('data-slug') || '').toLowerCase();
+          const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
+          const category = wrapper.getAttribute('data-category');
+          const isFast = wrapper.getAttribute('data-fast') === 'true';
+          const kcal = parseInt(wrapper.getAttribute('data-kcal') || "9999", 10);
+
+          let isTextMatch = true;
+          if (searchTerms.length > 0) {
+            isTextMatch = searchTerms.every(term => {
               const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
-              if (keywords.includes(root)) score += 10;
-              if (title.includes(root)) score += 5;
+              return title.includes(root) || slug.includes(root) || keywords.includes(root);
             });
           }
 
-          results.push({ wrapper: wrapper, score: score, originalIndex: parseInt(wrapper.getAttribute('data-original-index')) });
-        } else {
-          wrapper.style.display = 'none';
-        }
-      });
+          let isFilterMatch = false;
+          if (currentFilter === 'all') isFilterMatch = true;
+          else if (currentFilter === 'fast') isFilterMatch = isFast;
+          else if (currentFilter === 'light') isFilterMatch = kcal <= 300;
+          else isFilterMatch = (category === currentFilter);
 
-      // ORDINAMENTO
-      results.sort((a, b) => {
-        if (b.score !== a.score) return b.score - a.score;
-        return a.originalIndex - b.originalIndex;
-      });
+          if (isTextMatch && isFilterMatch) {
+            let score = 0;
+            
+            if (rawQuery !== "") {
+              try {
+                const exactKeywordRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
+                if (exactKeywordRegex.test(keywords)) score += 200;
+              } catch(e) {}
+              if (keywords.includes(rawQuery)) score += 100;
+              try {
+                const exactTitleRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
+                if (exactTitleRegex.test(title)) score += 50;
+              } catch(e) {}
+              if (title.includes(rawQuery)) score += 25;
+              searchTerms.forEach(term => {
+                const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
+                if (keywords.includes(root)) score += 10;
+                if (title.includes(root)) score += 5;
+              });
+            }
 
-      // RENDER
-      results.forEach(item => {
-        grid.appendChild(item.wrapper); // Riappende per mantenere l'ordine
-        item.wrapper.style.display = '';
-        visibleCount++;
-      });
-
-      // STATO VUOTO
-      if (visibleCount === 0) {
-        if(grid) grid.style.display = 'none';
-        if(noResults) noResults.style.display = 'block';
-      } else {
-        if(grid) grid.style.display = 'grid'; // Usa 'grid' invece di rimuovere la classe hidden per mantenere il grid-cols
-        if(noResults) noResults.style.display = 'none';
-      }
-    }
-
-    // LISTENER RICERCA TESTUALE
-    if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        currentSearch = e.target.value;
-        updateDisplay();
-      });
-      searchInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') { e.preventDefault(); searchInput.blur(); }
-      });
-    }
-
-    // LISTENER BOTTONI PILLOLA
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        // Aggiorna stile bottoni
-        filterBtns.forEach(b => {
-          b.classList.remove('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active', 'bg-emerald-600', 'border-emerald-500', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]');
-          b.classList.add('bg-slate-900', 'text-slate-300', 'border-slate-700');
+            results.push({ wrapper: wrapper, score: score, originalIndex: parseInt(wrapper.getAttribute('data-original-index')) });
+          } else {
+            wrapper.style.display = 'none';
+          }
         });
-        const target = e.currentTarget;
-        const isLightFilter = target.getAttribute('data-filter') === 'light';
-        
-        target.classList.remove('bg-slate-900', 'text-slate-300', 'border-slate-700');
-        
-        // Stile differente per il bottone Leggeri (Verde invece che blu)
-        if (isLightFilter) {
-          target.classList.add('bg-emerald-600', 'text-white', 'border-emerald-500', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]', 'active');
+
+        results.sort((a, b) => {
+          if (b.score !== a.score) return b.score - a.score;
+          return a.originalIndex - b.originalIndex;
+        });
+
+        results.forEach(item => {
+          grid.appendChild(item.wrapper); 
+          item.wrapper.style.display = '';
+          visibleCount++;
+        });
+
+        if (visibleCount === 0) {
+          if(grid) grid.style.display = 'none';
+          if(noResults) noResults.style.display = 'block';
         } else {
-          target.classList.add('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active');
+          if(grid) grid.style.display = 'grid'; 
+          if(noResults) noResults.style.display = 'none';
         }
+      }
 
-        currentFilter = target.getAttribute('data-filter');
-        updateDisplay();
-      });
-    });
-
-    // LISTENER RESET
-    if (resetBtn) {
-      resetBtn.addEventListener('click', () => {
-        if (searchInput) searchInput.value = '';
-        currentSearch = "";
-        
-        // Resetta il filtro al bottone "Tutte"
-        const btnAll = document.querySelector('[data-filter="all"]');
-        if(btnAll) btnAll.click();
-        else {
-          currentFilter = "all";
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          currentSearch = e.target.value;
           updateDisplay();
-        }
+        });
+        searchInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') { e.preventDefault(); searchInput.blur(); }
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active', 'bg-emerald-600', 'border-emerald-500', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]');
+            b.classList.add('bg-slate-900', 'text-slate-300', 'border-slate-700');
+          });
+          const target = e.currentTarget;
+          const isLightFilter = target.getAttribute('data-filter') === 'light';
+          
+          target.classList.remove('bg-slate-900', 'text-slate-300', 'border-slate-700');
+          
+          if (isLightFilter) {
+            target.classList.add('bg-emerald-600', 'text-white', 'border-emerald-500', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]', 'active');
+          } else {
+            target.classList.add('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active');
+          }
+
+          currentFilter = target.getAttribute('data-filter');
+          updateDisplay();
+        });
       });
-    }
-  });
-</script>
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          if (searchInput) searchInput.value = '';
+          currentSearch = "";
+          
+          const btnAll = document.querySelector('[data-filter="all"]');
+          if(btnAll) btnAll.click();
+          else {
+            currentFilter = "all";
+            updateDisplay();
+          }
+        });
+      }
+    });
+  </script>
+</MainLayout>
