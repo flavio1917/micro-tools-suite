@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* 1. VARIABILI E ANIMAZIONI GLOBALI (Sostituisce il vecchio tailwind.config) */
+/* 1. VARIABILI E ANIMAZIONI GLOBALI */
 @theme {
   --animate-fade-in: fade-in 0.3s ease-out forwards;
 
@@ -16,33 +16,33 @@
   }
 }
 
-/* 2. UTILITY CLASSES PERSONALIZZATE */
-@layer utilities {
-  /* Nasconde le brutte scrollbar di sistema su mobile mantenendo lo swipe */
-  .hide-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
-  }
-
-  /* IL TRUCCO PSICOLOGICO: Filtro caldo per far venire fame */
-  .food-warm-filter {
-    filter: sepia(15%) saturate(110%) contrast(105%) brightness(102%);
-  }
-}
-
-/* 3. STILI BASE GLOBALI */
+/* 2. STILI BASE GLOBALI */
 @layer base {
   body {
-    /* Assicura che il background scuro sia coerente ovunque */
     background-color: #0B1120;
     color: #cbd5e1; /* text-slate-300 */
   }
   
-  /* Applica automaticamente il Color Grading a tutte le immagini del sito */
+  /* IL TRUCCO PSICOLOGICO: Filtro caldo applicato direttamente */
+  /* In v4 iniettiamo le proprietà native direttamente nel selettore base */
   img {
-    @apply food-warm-filter;
+    filter: sepia(15%) saturate(110%) contrast(105%) brightness(102%);
+    transition: filter 0.3s ease;
+  }
+
+  /* Evitiamo che il filtro rovini le icone o le bandiere se necessario */
+  .no-filter, img[src*="flagcdn.com"] {
+    filter: none !important;
+  }
+}
+
+/* 3. UTILITY CLASSES */
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
