@@ -41,7 +41,7 @@ const { slug, title } = Astro.props;
 </style>
 
 <script is:inline define:vars={{ slug }}>
-  document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('astro:page-load', () => {
     const widget = document.getElementById('rating-widget');
     const closedState = document.getElementById('rating-closed');
     const expandedState = document.getElementById('rating-expanded');
