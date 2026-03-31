@@ -37,10 +37,10 @@ const translations = {
     ecoTitle: "Risparmio Energetico", ecoDesc: "Scopri quanto risparmi cucinando questa ricetta ad aria invece che al forno.",
     ecoOven: "Forno Tradizionale", ecoAF: "Friggitrice ad Aria", ecoSave: "Risparmio Netto", ecoCustomize: "⚙️ Personalizza Consumi",
     ecoKwh: "Costo Energia (€/kWh)", ecoWattOven: "Watt Forno", ecoWattAF: "Watt Friggitrice",
-    eeatTested: "✓ Ricetta Testata", eeatReview: "✓ Metodo Validato",
-    startTimer: "⏱️ Avvia Timer", stopTimer: "⏹️ Ferma",
+    eeatTested: "Ricetta Testata", eeatReview: "Metodo Validato", // Rimossi i '✓' doppi qui
+    startTimer: "⏱️ Avvia Timer", stopTimer: "⏹️ Ferma Timer",
     months: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
-    verifiedText: "Ultima verifica parametri:"
+    verifiedText: "Ultima verifica:"
   },
   en: {
     back: "Back", backLink: "/en/#ricettario", temp: "Temperature", time: "Cook Time", prep: "Prep Time",
@@ -54,10 +54,10 @@ const translations = {
     ecoTitle: "Energy Savings", ecoDesc: "See how much you save by cooking this recipe with air instead of an oven.",
     ecoOven: "Traditional Oven", ecoAF: "Air Fryer", ecoSave: "Net Savings", ecoCustomize: "⚙️ Customize Parameters",
     ecoKwh: "Energy Cost ($/kWh)", ecoWattOven: "Oven Wattage", ecoWattAF: "Air Fryer Wattage",
-    eeatTested: "✓ Lab Tested", eeatReview: "✓ Verified Method",
-    startTimer: "⏱️ Start Timer", stopTimer: "⏹️ Stop",
+    eeatTested: "Lab Tested", eeatReview: "Verified Method", // Rimossi i '✓' doppi qui
+    startTimer: "⏱️ Start Timer", stopTimer: "⏹️ Stop Timer",
     months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    verifiedText: "Last parameter check:"
+    verifiedText: "Last check:"
   },
   es: {
     back: "Volver", backLink: "/es/#ricettario", temp: "Temperatura", time: "Cocción", prep: "Preparación",
@@ -71,8 +71,8 @@ const translations = {
     ecoTitle: "Ahorro de Energía", ecoDesc: "Descubre cuánto ahorras cocinando esta receta con aire en lugar de horno.",
     ecoOven: "Horno Tradicional", ecoAF: "Freidora de Aire", ecoSave: "Ahorro Neto", ecoCustomize: "⚙️ Personalizar Consumo",
     ecoKwh: "Costo Energía (€/kWh)", ecoWattOven: "Vatios Horno", ecoWattAF: "Vatios Freidora",
-    eeatTested: "✓ Receta Probada", eeatReview: "✓ Método Validado",
-    startTimer: "⏱️ Iniciar Temp.", stopTimer: "⏹️ Parar",
+    eeatTested: "Receta Probada", eeatReview: "Método Validado", // Rimossi i '✓' doppi qui
+    startTimer: "⏱️ Iniciar Timer", stopTimer: "⏹️ Parar Timer",
     months: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
     verifiedText: "Última verificación:"
   },
@@ -88,10 +88,10 @@ const translations = {
     ecoTitle: "Économie d'Énergie", ecoDesc: "Découvrez combien vous économisez en cuisinant cette recette à l'air.",
     ecoOven: "Four Traditionnel", ecoAF: "Friteuse à Air", ecoSave: "Économie Nette", ecoCustomize: "⚙️ Personnaliser",
     ecoKwh: "Coût Énergie (€/kWh)", ecoWattOven: "Watts Four", ecoWattAF: "Watts Friteuse",
-    eeatTested: "✓ Recette Testée", eeatReview: "✓ Méthode Validée",
-    startTimer: "⏱️ Démarrer", stopTimer: "⏹️ Arrêter",
+    eeatTested: "Recette Testée", eeatReview: "Méthode Validée", // Rimossi i '✓' doppi qui
+    startTimer: "⏱️ Démarrer Timer", stopTimer: "⏹️ Arrêter Timer",
     months: ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc"],
-    verifiedText: "Dernière vérification :"
+    verifiedText: "Dernière vérif. :"
   }
 };
 
@@ -141,7 +141,7 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
   
   <SchemaRecipe recipe={recipe} lang={lang} />
 
-  <div class="relative h-[40vh] min-h-[320px] md:h-[45vh] w-full overflow-hidden bg-slate-900">
+  <div class="relative h-[45vh] min-h-[380px] md:h-[50vh] w-full overflow-hidden bg-slate-900">
     <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40"></div>
     
@@ -152,10 +152,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
           <svg class="w-4 h-4 md:mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
           <span class="hidden md:inline font-bold text-xs">{t.back}</span>
         </a>
-
-        <div class="absolute left-1/2 -translate-x-1/2 h-full z-[70] cursor-pointer">
-          <StarRating slug={baseImageName} title={recipe.title} />
-        </div>
 
         <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl gap-1.5 md:gap-2">
             {['it', 'en', 'es', 'fr'].map((l) => (
@@ -168,21 +164,26 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
       </div>
     </div>
     
-    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-8 md:pb-12 z-20 text-center">
+    <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-10 md:pb-14 z-20 text-center">
+      
       <div class="flex justify-center mb-3 opacity-90">
-         <span class="px-3 py-1 bg-slate-900/60 backdrop-blur-md border border-slate-500/30 rounded-full text-[9px] md:text-[10px] text-slate-300 font-bold uppercase tracking-wider tracking-widest flex items-center gap-1.5 shadow-lg"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> {freshnessString}</span>
+         <span class="px-3 py-1 bg-slate-900/60 backdrop-blur-md border border-slate-500/30 rounded-full text-[9px] md:text-[10px] text-slate-300 font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-lg"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> {freshnessString}</span>
       </div>
 
-      <h1 class="text-xl md:text-3xl lg:text-4xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
+      <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
         {recipe.title}
       </h1>
-      <p class="text-xs md:text-base text-slate-300 max-w-2xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-2 md:pt-3 mt-1 px-3 leading-relaxed">
+      <p class="text-sm md:text-base text-slate-300 max-w-2xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-2 md:pt-3 mt-1 px-3 leading-relaxed">
         {recipe.description}
       </p>
       
-      <div class="flex flex-wrap justify-center gap-2 mt-4">
-         <span class="px-3 py-1 bg-slate-800/80 backdrop-blur-sm border border-slate-600 rounded-full text-[10px] md:text-xs text-slate-300 font-bold flex items-center gap-1.5 shadow-lg"><span class="text-blue-400">✓</span> {t.eeatTested}</span>
-         <span class="px-3 py-1 bg-slate-800/80 backdrop-blur-sm border border-slate-600 rounded-full text-[10px] md:text-xs text-slate-300 font-bold flex items-center gap-1.5 shadow-lg"><span class="text-green-400">✓</span> {t.eeatReview}</span>
+      <div class="flex justify-center items-center mt-5 mb-2 relative z-[70] cursor-pointer hover:scale-105 transition-transform">
+         <StarRating slug={baseImageName} title={recipe.title} />
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-3 mt-3">
+         <span class="px-3 py-1.5 bg-slate-900/80 backdrop-blur-md border border-slate-600 rounded-full text-[10px] md:text-xs text-slate-200 font-medium flex items-center gap-1.5 shadow-lg"><svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> {t.eeatTested}</span>
+         <span class="px-3 py-1.5 bg-slate-900/80 backdrop-blur-md border border-slate-600 rounded-full text-[10px] md:text-xs text-slate-200 font-medium flex items-center gap-1.5 shadow-lg"><svg class="w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> {t.eeatReview}</span>
       </div>
     </div>
   </div>
@@ -198,13 +199,15 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         </div>
       </div>
       
-      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl hover:border-blue-500 transition-colors flex flex-col justify-center group relative overflow-hidden">
-        <div id="timer-progress" class="absolute bottom-0 left-0 h-1 bg-blue-500 w-0 transition-all duration-1000 ease-linear"></div>
+      <div class="bg-slate-900/95 backdrop-blur-md border border-blue-500/30 rounded-xl p-4 md:p-6 text-center shadow-[0_0_15px_rgba(59,130,246,0.15)] flex flex-col justify-center group relative overflow-hidden">
+        <div id="timer-progress" class="absolute bottom-0 left-0 h-1.5 bg-blue-500 w-0 transition-all duration-1000 ease-linear shadow-[0_0_10px_rgba(59,130,246,0.8)]"></div>
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.time}</span>
-        <div class="text-3xl md:text-4xl font-mono font-bold text-blue-400 mt-1 mb-2">
-            <span id="timer-display">{cleanTime}</span> <span class="text-lg md:text-xl" id="timer-unit">{t.unitTime}</span>
+        
+        <div class="text-3xl md:text-4xl font-mono font-black text-blue-400 mt-1 mb-3 flex justify-center items-center gap-2">
+            <span id="timer-display">{cleanTime}</span> <span class="text-lg md:text-xl font-sans font-bold text-blue-500" id="timer-unit">{t.unitTime}</span>
         </div>
-        <button id="btn-timer" class="px-3 py-1 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-lg text-[10px] uppercase font-bold tracking-wider transition-colors">
+        
+        <button id="btn-timer" class="mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5">
           {t.startTimer}
         </button>
       </div>
@@ -227,7 +230,7 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
       </div>
     </div>
 
-    {/* VISTA MOBILE: Valori Nutrizionali Fissi per singola porzione */}
+    {/* VISTA MOBILE: Valori Nutrizionali */}
     {hasNutrition && (
       <div class="lg:hidden mb-8">
         <div class="flex items-baseline justify-between mb-4">
@@ -429,7 +432,7 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
   <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang, recipeTime: cleanTime, txtStart: t.startTimer, txtStop: t.stopTimer }}>
     document.addEventListener('astro:page-load', () => {
       
-      // --- LOGICA TIMER DWELL TIME HACK ---
+      // --- LOGICA TIMER DWELL TIME HACK (FIX RANGE 8-10) ---
       const btnTimer = document.getElementById('btn-timer');
       const timerDisplay = document.getElementById('timer-display');
       const timerUnit = document.getElementById('timer-unit');
@@ -437,27 +440,37 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
       
       let timerInterval = null;
       let totalSeconds = 0;
-      let originalTime = parseInt(recipeTime) || 0;
+      
+      // Parse del range (es "8-10") per calcolare la media
+      let parsedTime = 0;
+      let timeStr = recipeTime.toString().trim();
+      if (timeStr.includes('-')) {
+          let parts = timeStr.split('-');
+          parsedTime = Math.round((parseFloat(parts[0]) + parseFloat(parts[1])) / 2);
+      } else {
+          parsedTime = parseFloat(timeStr) || 0;
+      }
+      
       let isTimerRunning = false;
 
-      if (btnTimer && timerDisplay && originalTime > 0) {
+      if (btnTimer && timerDisplay && parsedTime > 0) {
         btnTimer.addEventListener('click', () => {
           if (isTimerRunning) {
             // Stop Timer
             clearInterval(timerInterval);
             isTimerRunning = false;
             btnTimer.innerHTML = txtStart;
-            btnTimer.className = "px-3 py-1 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-lg text-[10px] uppercase font-bold tracking-wider transition-colors";
-            timerDisplay.innerText = recipeTime;
+            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5";
+            timerDisplay.innerText = recipeTime; // Ripristina il testo originale (es "8-10")
             timerUnit.innerText = lang === 'en' ? 'min' : 'min';
             progressBar.style.width = '0%';
           } else {
-            // Start Timer
-            totalSeconds = originalTime * 60;
+            // Start Timer (Usa la media)
+            totalSeconds = parsedTime * 60;
             const fullTime = totalSeconds;
             isTimerRunning = true;
             btnTimer.innerHTML = txtStop;
-            btnTimer.className = "px-3 py-1 bg-red-600/20 border border-red-500/50 hover:bg-red-600/40 text-red-300 rounded-lg text-[10px] uppercase font-bold tracking-wider transition-colors";
+            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-red-600/20 border border-red-500/50 hover:bg-red-600/40 text-red-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5";
             
             timerInterval = setInterval(() => {
               totalSeconds--;
@@ -467,7 +480,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
                 btnTimer.innerHTML = txtStart;
                 isTimerRunning = false;
                 progressBar.style.width = '100%';
-                // Suono di notifica fine cottura (opzionale, basato su browser)
                 try { new Audio("data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU").play(); } catch(e) {}
                 return;
               }
@@ -477,11 +489,17 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
               timerUnit.innerText = '';
               progressBar.style.width = `${((fullTime - totalSeconds) / fullTime) * 100}%`;
             }, 1000);
+            
+            // Imposta subito la formattazione a minuti e secondi all'avvio
+            const m = Math.floor(totalSeconds / 60).toString().padStart(2, '0');
+            const s = (totalSeconds % 60).toString().padStart(2, '0');
+            timerDisplay.innerText = `${m}:${s}`;
+            timerUnit.innerText = '';
           }
         });
       }
 
-      // --- LOGICA PORZIONI E INGREDIENTI ---
+      // --- LOGICA PORZIONI E INGREDIENTI (FIX METRIC) ---
       let currentPortions = basePortions;
       const display = document.getElementById('portions-display');
       const btnMinus = document.getElementById('btn-minus');
@@ -544,6 +562,7 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         
         ingredients.forEach(el => {
           const original = el.getAttribute('data-original');
+          // CORREZIONE APPLICATA: Passiamo isMetric alla funzione
           if(original) el.innerHTML = scaleAndConvertIngredient(original, ratio, isMetric);
         });
 
@@ -574,7 +593,7 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
       }
 
       // --- LOGICA BLUE OCEAN WIDGET (Risparmio Energetico) ---
-      const timeValue = parseInt(recipeTime) || 0; 
+      const timeValue = parsedTime || 0; // Usiamo parsedTime invece di cleanTime per gestire i range
       const kwhInput = document.getElementById('input-kwh');
       const wattOvenInput = document.getElementById('input-watt-oven');
       const wattAFInput = document.getElementById('input-watt-af');
