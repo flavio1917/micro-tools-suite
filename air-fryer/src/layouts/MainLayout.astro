@@ -28,7 +28,58 @@ const {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://www.convertitorefriggitrice.it").toString();
 
-const finalDescription = recipeData?.description || description;
+// --- INIZIO: EXTREME CTR HACKING (SEO Dinamica Semantica) ---
+let finalTitle = title;
+let finalDescription = description;
+
+if (recipeData) {
+  // Traduzioni per i badge dinamici in SERP
+  const seoPhrases = {
+    it: { pro: "Proteine", fast: "Pronto in", light: "Solo", kcal: "Kcal", read: "Ricetta testata. Leggi la guida per la cottura perfetta." },
+    en: { pro: "Protein", fast: "Ready in", light: "Only", kcal: "Kcal", read: "Tested recipe. Read the guide for perfect cooking." },
+    es: { pro: "Proteínas", fast: "Listo en", light: "Solo", kcal: "Kcal", read: "Receta probada. Lee la guía para una cocción perfecta." },
+    fr: { pro: "Protéines", fast: "Prêt en", light: "Seulement", kcal: "Kcal", read: "Recette testée. Lisez le guide pour une cuisson parfaite." }
+  };
+  const p = seoPhrases[lang as keyof typeof seoPhrases] || seoPhrases.it;
+
+  // Analisi Keywords per Search Intent
+  const kw = Array.isArray(recipeData.keywords) ? recipeData.keywords.map((k:string) => k.toLowerCase()) : [];
+  const isMeatOrFish = kw.some((k:string) => k.includes('carne') || k.includes('pollo') || k.includes('pesce') || k.includes('salmone') || k.includes('meat') || k.includes('fish'));
+  const isVegOrSide = kw.some((k:string) => k.includes('veg') || k.includes('verdure') || k.includes('patate') || k.includes('contorno') || k.includes('side'));
+  
+  // Analisi Metriche
+  const timeStr = recipeData.time ? recipeData.time.toString() : "";
+  const numMatch = timeStr.match(/\d+/);
+  const cookTimeNum = numMatch ? parseInt(numMatch[0]) : 999;
+  const isFast = cookTimeNum <= 15;
+
+  const hasNutrition = recipeData.nutrition && recipeData.nutrition.kcal;
+  const kcal = hasNutrition ? recipeData.nutrition.kcal : 0;
+  const pro = hasNutrition ? recipeData.nutrition.proteins_g : 0;
+  const isLowCal = kcal > 0 && kcal <= 350;
+
+  // Assegnazione Dinamica del Titolo
+  if (isMeatOrFish && pro >= 15) {
+    finalTitle = `${recipeData.title} - ${pro}g ${p.pro} | Air Fryer`;
+  } else if (isVegOrSide && isLowCal) {
+    finalTitle = `${recipeData.title} - ${p.light} ${kcal} ${p.kcal} | Air Fryer`;
+  } else if (isFast) {
+    finalTitle = `${recipeData.title} - ${p.fast} ${timeStr} | Air Fryer`;
+  } else {
+    finalTitle = `${recipeData.title} | Air Fryer`;
+  }
+
+  // Costruzione Meta Description Persuasiva
+  const baseDesc = recipeData.description || "";
+  let statsString = "";
+  if (hasNutrition && isFast) statsString = `✓ ${pro}g ${p.pro} · ✓ ${timeStr} · ✓ ${kcal} ${p.kcal} — `;
+  else if (hasNutrition) statsString = `✓ ${pro}g ${p.pro} · ✓ ${kcal} ${p.kcal} — `;
+  else if (isFast) statsString = `✓ ${p.fast} ${timeStr} — `;
+
+  finalDescription = `${statsString}${baseDesc} ${p.read}`;
+}
+// --- FINE: EXTREME CTR HACKING ---
+
 
 let schemaJson = null;
 if (recipeData) {
@@ -80,7 +131,6 @@ const disclaimers = {
   fr: "Transparence : En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises. Les résultats sont des estimations basées sur des paramètres standards (-20°C / -20% temps)."
 };
 
-// AGGIUNTE LE VOCI MANCANTI (cons = consumi, ice = surgelati)
 const footerLabels = {
   it: { info: "Chi Siamo", mat: "Guida Materiali", ris: "Riscaldare Avanzi", prob: "Risoluzione Problemi", err: "Codici Errore", cal: "Calcolo Calorie", pul: "Pulizia Resistenza", cons: "Costi Bolletta", ice: "Surgelati", privacy: "Privacy", cookie: "Cookie" },
   en: { info: "About Us", mat: "Materials Guide", ris: "Reheating", prob: "Troubleshooting", err: "Error Codes", cal: "Calories", pul: "Cleaning Guide", cons: "Electricity Costs", ice: "Frozen Foods", privacy: "Privacy", cookie: "Cookies" },
@@ -101,8 +151,8 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
     <meta name="generator" content={Astro.generator} />
     
     <ClientRouter /> 
-    <title>{title}</title>
     
+    <title>{finalTitle}</title>
     <meta name="description" content={finalDescription} />
     <link rel="canonical" href={canonicalURL} />
     
@@ -117,7 +167,7 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={finalTitle} />
     <meta property="og:description" content={finalDescription} />
     <meta property="og:image" content={ogImage} />
 

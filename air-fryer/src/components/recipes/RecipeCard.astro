@@ -35,8 +35,21 @@ const authLabels = {
 };
 const authLabel = authLabels[lang as keyof typeof authLabels] || authLabels.it;
 
-// Manteniamo le calorie solo come data-attribute per far funzionare il filtro
-const kcalValue = recipe.nutrition ? recipe.nutrition.kcal : 9999;
+// LOGICA CTR HACKING (Badge Nutrizionali Visivi)
+const hasNutrition = recipe.nutrition && recipe.nutrition.kcal;
+const kcalValue = hasNutrition ? recipe.nutrition.kcal : 9999;
+const proValue = hasNutrition ? recipe.nutrition.proteins_g : 0;
+
+const isHighProtein = proValue >= 15;
+const isLowCal = kcalValue > 0 && kcalValue <= 350;
+
+const badgeLabels = {
+  it: { pro: "Pro", light: "Solo", kcal: "Kcal" },
+  en: { pro: "Pro", light: "Only", kcal: "Kcal" },
+  es: { pro: "Pro", light: "Solo", kcal: "Kcal" },
+  fr: { pro: "Pro", light: "Max", kcal: "Kcal" }
+};
+const bl = badgeLabels[lang as keyof typeof badgeLabels] || badgeLabels.it;
 ---
 
 <a 
@@ -54,8 +67,22 @@ const kcalValue = recipe.nutrition ? recipe.nutrition.kcal : 9999;
       class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
       onerror="this.style.opacity='0';" 
     />
-    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 via-40% to-transparent to-60% transition-opacity duration-300"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0B1120] via-[#0B1120]/70 via-40% to-transparent to-60% transition-opacity duration-300"></div>
   </div>
+
+  {hasNutrition && (isHighProtein || isLowCal) && (
+    <div class="absolute top-3 left-3 z-30 flex flex-col gap-1.5">
+      {isHighProtein ? (
+        <span class="flex items-center gap-1.5 px-2.5 py-1.5 bg-emerald-500/95 backdrop-blur-md border border-emerald-400 text-white text-[10px] font-black uppercase tracking-widest rounded-lg shadow-lg">
+          💪 {proValue}g {bl.pro}
+        </span>
+      ) : (
+        <span class="flex items-center gap-1.5 px-2.5 py-1.5 bg-amber-500/95 backdrop-blur-md border border-amber-400 text-black text-[10px] font-black uppercase tracking-widest rounded-lg shadow-lg">
+          🥗 {bl.light} {kcalValue} {bl.kcal}
+        </span>
+      )}
+    </div>
+  )}
 
   {isAuth && (
     <div class="absolute top-3 right-3 z-30">

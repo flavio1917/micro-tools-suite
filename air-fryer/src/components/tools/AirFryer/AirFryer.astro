@@ -8,7 +8,7 @@ const { lang = "it" } = Astro.props;
 const totalRecipes = recipes?.length || 200;
 const roundedCount = Math.floor(totalRecipes / 10) * 10;
 
-// COPY PREMIUM E INGEGNERISTICO (Con il nuovo Tooltip E-E-A-T)
+// COPY PREMIUM, INGEGNERISTICO E CONTENUTI SEO
 const translations = {
   it: {
     title: "Convertitore", subtitle: "Pro", tab_conv: "Incolla Ricetta", tab_food: "Inserimento Rapido", tab_recipes: "Ricettario",
@@ -19,6 +19,16 @@ const translations = {
     alert_cap: "⚠️ Sicurezza: Temp limitata a 200°C", 
     tooltip_cap: "Perché 200°C? Superare questa soglia degrada l'antiaderente e favorisce l'Acrilammide, nociva sugli amidi ad alte temperature. Cuoci in sicurezza!",
     cta_recipes_top: "Senza idee per cena?", cta_recipes_bottom: `Esplora ${roundedCount}+ Ricette Testate`,
+    
+    // Contenuti SEO
+    seo_title: "La Scienza della Conversione",
+    seo_text: "La friggitrice ad aria non è una semplice friggitrice, ma un <strong>potente forno a convezione termica</strong>. Sfrutta l'effetto ciclonico: una ventola spinge aria rovente ad altissima velocità in uno spazio ristretto. La trasmissione del calore è molto più aggressiva rispetto a un forno tradizionale. Per questo, il nostro algoritmo applica la regola aurea ingegneristica: <strong>abbattere la temperatura di 20°C (o 25°F) e ridurre il tempo del 20%</strong>, applicando massimali di sicurezza.",
+    faq_title: "Domande Frequenti (FAQ)",
+    faqs: [
+      { q: "Perché è obbligatorio abbassare la temperatura?", a: "L'aria ciclonica ad alta velocità disidrata la superficie dei cibi molto più rapidamente. Mantenere gli stessi gradi del forno brucerebbe l'esterno prima che il cuore del cibo sia cotto." },
+      { q: "Posso usare la carta forno o l'alluminio?", a: "Sì, ma non devi mai coprire l'intero fondo del cestello. Se blocchi il flusso d'aria ascendente, annulli l'effetto croccante della convezione e rischi che la carta voli sulla resistenza incendiandosi." },
+      { q: "Devo preriscaldare la friggitrice ad aria?", a: "Grazie alle dimensioni ridotte della camera, si scalda in 2-3 minuti. Il preriscaldamento è consigliato solo per i lievitati delicati o per sigillare tagli di carne rossa spessi (come le bistecche)." }
+    ]
   },
   en: {
     title: "Air Fryer", subtitle: "Engine", tab_conv: "Smart Paste", tab_food: "Quick Input", tab_recipes: "Recipes",
@@ -29,6 +39,15 @@ const translations = {
     alert_cap: "⚠️ Safety: Capped at 400°F", 
     tooltip_cap: "Why 400°F? Exceeding this degrades the non-stick coating and promotes Acrylamide, a harmful byproduct on starches at extreme heat. Cook safely!",
     cta_recipes_top: "Don't know what to cook?", cta_recipes_bottom: `Explore ${roundedCount}+ Tested Recipes`,
+
+    seo_title: "The Science of Conversion",
+    seo_text: "An air fryer is not a fryer; it's a <strong>high-powered convection oven</strong>. It uses a cyclonic effect, pushing blazing hot air at high speed in a confined space. Heat transmission is much more aggressive than a traditional oven. Therefore, our algorithm applies the golden engineering rule: <strong>drop the temperature by 25°F (or 20°C) and reduce time by 20%</strong>, while applying safety caps.",
+    faq_title: "Frequently Asked Questions",
+    faqs: [
+      { q: "Why must I lower the temperature?", a: "High-speed cyclonic air dehydrates food surfaces rapidly. Keeping oven temperatures would burn the exterior before the inside is cooked." },
+      { q: "Can I use parchment paper or aluminum foil?", a: "Yes, but never cover the entire bottom of the basket. Blocking the upward airflow ruins the crisping effect and risks the paper flying up into the heating element." },
+      { q: "Do I need to preheat the air fryer?", a: "Due to its small chamber, it heats up in 2-3 minutes. Preheating is only recommended for delicate pastries or searing thick cuts of red meat." }
+    ]
   },
   es: {
     title: "Convertidor", subtitle: "Pro", tab_conv: "Pegar Receta", tab_food: "Datos Rápidos", tab_recipes: "Recetas",
@@ -39,6 +58,15 @@ const translations = {
     alert_cap: "⚠️ Seguridad: Temp limitada a 200°C", 
     tooltip_cap: "¿Por qué 200°C? Superar este límite degrada el antiadherente y favorece la Acrilamida, nociva en almidones a calor extremo. ¡Cocina seguro!",
     cta_recipes_top: "¿Sin ideas para cenar?", cta_recipes_bottom: `Explora ${roundedCount}+ Recetas`,
+
+    seo_title: "La Ciencia de la Conversión",
+    seo_text: "La freidora de aire es un <strong>potente horno de convección</strong>. Utiliza un efecto ciclónico: un ventilador empuja aire muy caliente a alta velocidad. La transmisión de calor es mucho más agresiva que en un horno tradicional. Por eso, nuestro algoritmo aplica la regla de oro: <strong>bajar la temperatura 20°C (o 25°F) y reducir el tiempo un 20%</strong>.",
+    faq_title: "Preguntas Frecuentes",
+    faqs: [
+      { q: "¿Por qué es obligatorio bajar la temperatura?", a: "El aire ciclónico a alta velocidad deshidrata la superficie más rápido. Mantener los grados del horno quemaría el exterior antes de cocinar el interior." },
+      { q: "¿Puedo usar papel de horno o aluminio?", a: "Sí, pero nunca cubras todo el fondo. Si bloqueas el flujo de aire, anulas el efecto crujiente y corres el riesgo de que el papel vuele hacia la resistencia." },
+      { q: "¿Debo precalentar la freidora de aire?", a: "Gracias a su tamaño reducido, se calienta en 2-3 minutos. Solo se recomienda precalentar para masas delicadas o para sellar cortes gruesos de carne." }
+    ]
   },
   fr: {
     title: "Convertisseur", subtitle: "Pro", tab_conv: "Coller Recette", tab_food: "Saisie Rapide", tab_recipes: "Recettes",
@@ -49,6 +77,15 @@ const translations = {
     alert_cap: "⚠️ Sécurité : Temp. limitée à 200°C", 
     tooltip_cap: "Pourquoi 200°C ? Dépasser ce seuil dégrade le revêtement et favorise l'Acrylamide, nocive sur les amidons à haute température. Cuisinez en sécurité !",
     cta_recipes_top: "En panne d'inspiration ?", cta_recipes_bottom: `Explorez ${roundedCount}+ Recettes`,
+
+    seo_title: "La Science de la Conversion",
+    seo_text: "La friteuse à air est un <strong>puissant four à convection</strong>. Elle utilise un effet cyclonique : un ventilateur propulse de l'air brûlant à grande vitesse. La transmission de la chaleur est plus agressive qu'un four traditionnel. C'est pourquoi notre algorithme applique la règle d'or : <strong>baisser la température de 20°C (ou 25°F) et réduire le temps de 20 %</strong>.",
+    faq_title: "Foire Aux Questions",
+    faqs: [
+      { q: "Pourquoi est-il obligatoire de baisser la température ?", a: "L'air cyclonique déshydrate la surface très rapidement. Garder les degrés du four brûlerait l'extérieur avant que l'intérieur ne soit cuit." },
+      { q: "Puis-je utiliser du papier sulfurisé ou de l'aluminium ?", a: "Oui, mais ne couvrez jamais tout le fond. Bloquer le flux d'air annule l'effet croustillant et le papier risque de voler sur la résistance." },
+      { q: "Dois-je préchauffer la friteuse à air ?", a: "Grâce à sa petite taille, elle chauffe en 2-3 minutes. Le préchauffage n'est recommandé que pour les pâtes délicates ou pour saisir les viandes épaisses." }
+    ]
   }
 };
 
@@ -77,6 +114,20 @@ const softwareSchema = {
     "Calcolo differenziale del tempo e della temperatura",
     "Stima del risparmio energetico"
   ]
+};
+
+// SCHEMA.ORG: FAQ PAGE
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": t.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a
+    }
+  }))
 };
 ---
 
@@ -169,6 +220,26 @@ const softwareSchema = {
         </div>
       </div>
     </div>
+    
+    <details class="mt-4 pt-3 border-t border-slate-700/50 group cursor-pointer [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex justify-between items-center text-[10px] uppercase tracking-wider text-slate-400 font-bold hover:text-orange-400 transition-colors">
+        {t.seo_title} & FAQ
+        <span class="transition-transform group-open:rotate-180">▼</span>
+      </summary>
+      <div class="pt-4 text-xs text-slate-300 space-y-4 animate-fade-in text-left">
+        <p class="leading-relaxed" set:html={t.seo_text}></p>
+        <div class="space-y-2 mt-4">
+          <strong class="text-white block border-b border-slate-700/50 pb-1">{t.faq_title}</strong>
+          {t.faqs.map(faq => (
+            <div class="bg-black/20 p-3 rounded-lg border border-white/5">
+              <strong class="text-orange-300 block mb-1">Q: {faq.q}</strong>
+              <p class="text-slate-400 leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </details>
+
   </div>
 
   <div class="py-2">
@@ -189,6 +260,7 @@ const softwareSchema = {
 </div>
 
 <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
 <script>
   function initAirFryer() {
@@ -252,7 +324,6 @@ const softwareSchema = {
       document.getElementById('error-box')?.classList.add('hidden');
       document.getElementById('eco-container')?.classList.remove('hidden');
       
-      // MOSTRA/NASCONDI ALERT CON LOGICA FLEX (Perché ora usiamo flex-row nel tooltip)
       const capAlert = document.getElementById('cap-alert');
       if (capAlert) {
         if (res.isCapped) {

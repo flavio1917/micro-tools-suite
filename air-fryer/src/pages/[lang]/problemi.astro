@@ -31,6 +31,15 @@ const content = {
     emergency: "Se vedi FUMO NERO o senti odore di cavi elettrici bruciati, STACCA SUBITO LA SPINA. Non è grasso che brucia, è un guasto elettrico.",
     causeLabel: "Causa",
     solutionLabel: "Soluzione Rapida",
+    
+    // NUOVI CONTENUTI SEO - Featured Snippet
+    fsTitle: "3 Regole per evitare fumo e puzze:",
+    fsList: [
+      "Pulisci sempre il grasso residuo sotto il cestello dopo ogni cottura.",
+      "Aggiungi un cucchiaio d'acqua sul fondo quando cuoci cibi molto grassi (come pancetta o salsicce).",
+      "Esegui un ciclo a vuoto con limone o aceto se la friggitrice è nuova per eliminare l'odore di plastica."
+    ],
+
     items: [
       { 
         id: "fumo-bianco", emoji: "💨", name: "Fumo Bianco dal retro", 
@@ -63,6 +72,14 @@ const content = {
     emergency: "If you see BLACK SMOKE or smell burning wires, UNPLUG IT IMMEDIATELY. That's not burning grease; it's an electrical fault.",
     causeLabel: "Cause",
     solutionLabel: "Quick Fix",
+    
+    fsTitle: "3 Rules to avoid smoke and smells:",
+    fsList: [
+      "Always clean residual grease from under the basket after every use.",
+      "Add a tablespoon of water to the bottom when cooking very fatty foods (like bacon or sausages).",
+      "Run an empty cycle with lemon or vinegar if the air fryer is new to eliminate the plastic smell."
+    ],
+
     items: [
       { 
         id: "white-smoke", emoji: "💨", name: "White Smoke", 
@@ -95,6 +112,14 @@ const content = {
     emergency: "Si ves HUMO NEGRO o hueles a cables quemados, DESENCHÚFALA INMEDIATAMENTE. No es grasa quemada, es un fallo eléctrico.",
     causeLabel: "Causa",
     solutionLabel: "Solución Rápida",
+    
+    fsTitle: "3 Reglas para evitar humo y olores:",
+    fsList: [
+      "Limpia siempre la grasa residual debajo de la cesta después de cada uso.",
+      "Añade una cucharada de agua en el fondo al cocinar alimentos muy grasos (como tocino o salchichas).",
+      "Realiza un ciclo en vacío con limón o vinagre si la freidora es nueva para eliminar el olor a plástico."
+    ],
+
     items: [
       { 
         id: "humo-blanco", emoji: "💨", name: "Humo Blanco", 
@@ -127,6 +152,14 @@ const content = {
     emergency: "Si vous voyez de la FUMÉE NOIRE ou sentez une odeur de fils brûlés, DÉBRANCHEZ IMMÉDIATEMENT. C'est un défaut électrique.",
     causeLabel: "Cause",
     solutionLabel: "Solution Rapide",
+
+    fsTitle: "3 Règles pour éviter la fumée et les odeurs :",
+    fsList: [
+      "Nettoyez toujours la graisse résiduelle sous le panier après chaque utilisation.",
+      "Ajoutez une cuillère à soupe d'eau au fond lorsque vous cuisinez des aliments très gras.",
+      "Faites un cycle à vide avec du citron ou du vinaigre si la friteuse est neuve pour éliminer l'odeur de plastique."
+    ],
+
     items: [
       { 
         id: "fumee-blanche", emoji: "💨", name: "Fumée Blanche", 
@@ -154,7 +187,7 @@ const content = {
 
 const t = content[lang as keyof typeof content] || content.it;
 
-// Dati Strutturati FAQ
+// Dati Strutturati FAQ Aggiornati per E-E-A-T
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -163,7 +196,7 @@ const faqSchema = {
     "name": `Perché la friggitrice ad aria fa ${item.name.toLowerCase()}?`, 
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": `Causa: ${item.cause} Soluzione: ${item.solution}`
+      "text": `Questo problema si verifica perché: ${item.cause} Per risolvere rapidamente il problema: ${item.solution}`
     }
   }))
 };
@@ -186,7 +219,7 @@ const breadcrumbSchema = {
 };
 ---
 
-<MainLayout title={t.title} lang={lang}>
+<MainLayout title={t.title} lang={lang} description={t.desc}>
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
     
     <div class="mb-8 flex justify-start">
@@ -201,14 +234,14 @@ const breadcrumbSchema = {
       <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
     </header>
 
-    <nav aria-label={t.quickNav} class="flex flex-wrap justify-center gap-2 md:gap-3 mb-12">
-      <span class="text-slate-500 text-sm font-bold w-full text-center mb-1">{t.quickNav}</span>
-      {t.items.map((item) => (
-        <a href={`#${item.id}`} class="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-full text-xs md:text-sm font-bold text-slate-300 hover:bg-slate-700 hover:text-white transition-all shadow-sm focus:ring-2 focus:ring-orange-500 outline-none">
-          <span aria-hidden="true">{item.emoji}</span> {item.name}
-        </a>
-      ))}
-    </nav>
+    <div class="bg-blue-900/10 border border-blue-500/30 p-6 md:p-8 rounded-3xl shadow-inner mb-12 max-w-3xl mx-auto">
+      <h3 class="text-xl font-bold text-blue-400 mb-4">{t.fsTitle}</h3>
+      <ol class="space-y-3 text-slate-300 list-decimal list-inside marker:text-blue-500 font-medium">
+        {t.fsList.map(rule => (
+          <li class="leading-relaxed pl-2" set:html={rule}></li>
+        ))}
+      </ol>
+    </div>
 
     <aside class="bg-red-950/40 border-l-4 border-red-500 rounded-r-xl p-6 shadow-lg mb-12 max-w-3xl mx-auto animate-fade-in" role="alert">
       <h2 class="text-lg font-bold text-red-400 mb-2 flex items-center gap-2">
@@ -217,6 +250,15 @@ const breadcrumbSchema = {
       </h2>
       <p class="text-slate-300 text-sm md:text-base leading-relaxed font-medium">{t.emergency}</p>
     </aside>
+
+    <nav aria-label={t.quickNav} class="flex flex-wrap justify-center gap-2 md:gap-3 mb-12">
+      <span class="text-slate-500 text-sm font-bold w-full text-center mb-1">{t.quickNav}</span>
+      {t.items.map((item) => (
+        <a href={`#${item.id}`} class="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-full text-xs md:text-sm font-bold text-slate-300 hover:bg-slate-700 hover:text-white transition-all shadow-sm focus:ring-2 focus:ring-orange-500 outline-none">
+          <span aria-hidden="true">{item.emoji}</span> {item.name}
+        </a>
+      ))}
+    </nav>
 
     <div class="space-y-6 mb-16">
       {t.items.map((item) => (

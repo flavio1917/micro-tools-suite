@@ -26,6 +26,10 @@ const content = {
     title: "Cosa mettere nella Friggitrice ad Aria? | Semaforo dei Materiali",
     h1: "Il Semaforo dei Materiali",
     desc: "La guida definitiva su cosa puoi e NON puoi inserire nel cestello della tua friggitrice ad aria. Evita disastri in cucina e proteggi il tuo elettrodomestico.",
+    eeatBadge: "✓ Standard di Sicurezza Verificati",
+    fsTitle: "La Regola d'Oro: Cosa usare?",
+    fsText: "In generale, <strong>qualsiasi contenitore adatto al forno tradizionale può essere utilizzato nella friggitrice ad aria</strong> (vetro temperato, ceramica, silicone, metallo). Tuttavia, a causa del violento flusso d'aria ciclonico, non inserire mai materiali leggeri sprovvisti di peso (come la carta forno da sola) o materiali a basso punto di fusione come la plastica.",
+    questionFormat: "Posso mettere {item} nella friggitrice ad aria?",
     safe: "🟢 SICURO (Vai tranquillo)",
     caution: "🟡 ATTENZIONE (Con riserva)",
     danger: "🔴 PERICOLO (Mai inserire)",
@@ -44,6 +48,10 @@ const content = {
     title: "What can you put in an Air Fryer? | Materials Guide",
     h1: "The Materials Traffic Light",
     desc: "The ultimate guide on what you can and CANNOT put in your air fryer basket. Avoid kitchen disasters and protect your appliance.",
+    eeatBadge: "✓ Verified Safety Standards",
+    fsTitle: "The Golden Rule: What to use?",
+    fsText: "Generally, <strong>any oven-safe container can be used in an air fryer</strong> (tempered glass, ceramic, silicone, metal). However, due to the violent cyclonic airflow, never insert lightweight materials without weight on them (like parchment paper alone) or low-melting-point materials like plastic.",
+    questionFormat: "Can I put {item} in the air fryer?",
     safe: "🟢 SAFE (Go ahead)",
     caution: "🟡 CAUTION (Be careful)",
     danger: "🔴 DANGER (Never use)",
@@ -62,6 +70,10 @@ const content = {
     title: "¿Qué se puede meter en la Freidora de Aire? | Guía de Materiales",
     h1: "El Semáforo de Materiales",
     desc: "La guía definitiva sobre lo que puedes y NO puedes poner en la cesta de tu freidora de aire. Evita desastres en la cocina.",
+    eeatBadge: "✓ Estándares de Seguridad Verificados",
+    fsTitle: "La Regla de Oro: ¿Qué usar?",
+    fsText: "En general, <strong>cualquier recipiente apto para horno se puede usar en la freidora de aire</strong> (vidrio templado, cerámica, silicona, metal). Sin embargo, debido al violento flujo de aire ciclónico, nunca introduzcas materiales ligeros sin peso (como papel de horno solo) ni plásticos que se derritan.",
+    questionFormat: "¿Puedo poner {item} en la freidora de aire?",
     safe: "🟢 SEGURO (Adelante)",
     caution: "🟡 PRECAUCIÓN (Con cuidado)",
     danger: "🔴 PELIGRO (Nunca usar)",
@@ -80,6 +92,10 @@ const content = {
     title: "Que peut-on mettre dans une Friteuse à Air ? | Guide des Matériaux",
     h1: "Le Feu Tricolore des Matériaux",
     desc: "Le guide définitif sur ce que vous pouvez et NE pouvez PAS mettre dans votre friteuse à air. Évitez les catastrophes.",
+    eeatBadge: "✓ Normes de Sécurité Vérifiées",
+    fsTitle: "La Règle d'Or : Que peut-on utiliser ?",
+    fsText: "En général, <strong>tout récipient allant au four peut être utilisé dans une friteuse à air</strong> (verre trempé, céramique, silicone, métal). Cependant, en raison du puissant flux d'air cyclonique, n'insérez jamais de matériaux légers sans poids dessus (comme du papier sulfurisé seul) ou des matériaux qui fondent comme le plastique.",
+    questionFormat: "Puis-je mettre {item} dans la friteuse à air ?",
     safe: "🟢 SÛR (Allez-y)",
     caution: "🟡 ATTENTION (Avec précaution)",
     danger: "🔴 DANGER (Ne jamais utiliser)",
@@ -98,12 +114,13 @@ const content = {
 
 const t = content[lang as keyof typeof content] || content.it;
 
+// Generazione dinamica corretta per il multilingua
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": t.items.map(item => ({
     "@type": "Question",
-    "name": `Posso mettere ${item.name.toLowerCase()} nella friggitrice ad aria?`, 
+    "name": t.questionFormat.replace('{item}', item.name.toLowerCase()), 
     "acceptedAnswer": {
       "@type": "Answer",
       "text": item.desc
@@ -112,47 +129,61 @@ const faqSchema = {
 };
 ---
 
-<MainLayout title={t.title} lang={lang}>
-  <section class="max-w-4xl mx-auto py-16 px-4">
+<MainLayout title={t.title} lang={lang} description={t.desc}>
+  <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
+    
     <div class="mb-8 flex justify-start">
       <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         <span class="font-bold text-sm">{backBtnLabel}</span>
       </a>
     </div>
-    <div class="text-center mb-12">
-      <h1 class="text-3xl md:text-5xl font-black text-white mb-4">{t.h1}</h1>
-      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto">{t.desc}</p>
+
+    <header class="text-center mb-10">
+      <div class="inline-flex items-center justify-center mb-6">
+         <span class="px-4 py-1.5 bg-emerald-950/50 backdrop-blur-sm border border-emerald-500/30 rounded-full text-xs text-emerald-400 font-bold shadow-lg">
+           {t.eeatBadge}
+         </span>
+      </div>
+
+      <h1 class="text-3xl md:text-5xl font-black text-white mb-6 drop-shadow-md">{t.h1}</h1>
+      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+    </header>
+
+    <div class="bg-slate-800/60 border border-slate-700 rounded-3xl p-6 md:p-8 mb-12 shadow-2xl relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-1 bg-blue-500 h-full"></div>
+      <h2 class="text-xl font-bold text-white mb-3">{t.fsTitle}</h2>
+      <p class="text-slate-300 leading-relaxed text-base" set:html={t.fsText}></p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6 mb-12">
-      <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4 text-center">
-        <span class="font-bold text-green-400 text-sm">{t.safe}</span>
+    <div class="grid md:grid-cols-3 gap-4 mb-12">
+      <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4 text-center shadow-inner">
+        <span class="font-bold text-green-400 text-sm tracking-wide">{t.safe}</span>
       </div>
-      <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-xl p-4 text-center">
-        <span class="font-bold text-yellow-400 text-sm">{t.caution}</span>
+      <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-xl p-4 text-center shadow-inner">
+        <span class="font-bold text-yellow-400 text-sm tracking-wide">{t.caution}</span>
       </div>
-      <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-center">
-        <span class="font-bold text-red-400 text-sm">{t.danger}</span>
+      <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-center shadow-inner">
+        <span class="font-bold text-red-400 text-sm tracking-wide">{t.danger}</span>
       </div>
     </div>
 
-    <div class="space-y-4 mb-16">
+    <div class="space-y-5 mb-16">
       {t.items.map((item) => (
-        <div class={`p-6 rounded-2xl border backdrop-blur-sm flex flex-col md:flex-row gap-4 items-start md:items-center transition-all hover:-translate-y-1 ${
-          item.status === 'safe' ? 'bg-green-950/20 border-green-500/20 hover:border-green-500/50 hover:shadow-[0_0_15px_rgba(34,197,94,0.1)]' : 
-          item.status === 'caution' ? 'bg-yellow-950/20 border-yellow-500/20 hover:border-yellow-500/50 hover:shadow-[0_0_15px_rgba(234,179,8,0.1)]' : 
-          'bg-red-950/20 border-red-500/20 hover:border-red-500/50 hover:shadow-[0_0_15px_rgba(239,68,68,0.1)]'
+        <div class={`p-6 md:p-8 rounded-2xl border backdrop-blur-sm flex flex-col md:flex-row gap-5 items-start md:items-center transition-all hover:-translate-y-1 ${
+          item.status === 'safe' ? 'bg-green-950/20 border-green-500/20 hover:border-green-500/50 hover:shadow-[0_0_20px_rgba(34,197,94,0.15)]' : 
+          item.status === 'caution' ? 'bg-yellow-950/20 border-yellow-500/20 hover:border-yellow-500/50 hover:shadow-[0_0_20px_rgba(234,179,8,0.15)]' : 
+          'bg-red-950/20 border-red-500/20 hover:border-red-500/50 hover:shadow-[0_0_20px_rgba(239,68,68,0.15)]'
         }`}>
-          <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-2xl bg-slate-900/50 shadow-inner border border-white/5">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center text-3xl bg-slate-900/80 shadow-inner border border-white/5 drop-shadow-md">
             {item.status === 'safe' ? '✅' : item.status === 'caution' ? '⚠️' : '❌'}
           </div>
           <div>
-            <h3 class={`text-xl font-bold mb-1 ${
+            <h3 class={`text-xl font-bold mb-2 ${
               item.status === 'safe' ? 'text-green-300' : 
               item.status === 'caution' ? 'text-yellow-300' : 'text-red-300'
             }`}>{item.name}</h3>
-            <p class="text-slate-300 leading-relaxed text-sm md:text-base">{item.desc}</p>
+            <p class="text-slate-300 leading-relaxed text-base">{item.desc}</p>
           </div>
         </div>
       ))}

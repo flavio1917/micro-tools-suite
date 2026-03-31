@@ -27,6 +27,15 @@ const content = {
     h1: "Rianimatore di Avanzi",
     desc: "Il microonde li rende gommosi, il forno ci mette troppo. Seleziona la categoria e scopri tempi e gradi perfetti per far tornare croccante il cibo di ieri.",
     quickNav: "Vai a:",
+    // NUOVO CONTENUTO SEO
+    editorialH2: "La Scienza del Rianimatore: Perché funziona?",
+    editorialText: "Riscaldare il cibo nel microonde agisce sulle molecole d'acqua, bollendo letteralmente il cibo dall'interno (ecco perché la pizza diventa gommosa). La friggitrice ad aria, invece, utilizza la <strong>convezione termica a secco</strong>. Soffiando aria calda ad alta velocità, fa evaporare l'umidità in eccesso accumulata in frigo e <strong>riattiva la reazione di Maillard</strong> (la crosticina) in soli 3 o 4 minuti, ridando croccantezza senza asciugare il cuore del prodotto.",
+    fsTitle: "3 Regole d'Oro per Riscaldare:",
+    fsList: [
+      "<strong>Abbassa sempre la temperatura:</strong> Usa 20-30°C in meno rispetto alla cottura originale per non bruciare l'esterno.",
+      "<strong>Niente carta forno:</strong> Blocca il flusso d'aria inferiore, lasciando il fondo del cibo umido e molliccio.",
+      "<strong>Aggiungi umidità ai lievitati:</strong> Spruzza un velo d'acqua su pane e pizza prima di infornare per ridare elasticità alla mollica."
+    ],
     categories: [
       {
         id: "lievitati", icon: "🍕", title: "Pizza, Pane & Rustici",
@@ -80,6 +89,14 @@ const content = {
     h1: "The Leftover Reviver",
     desc: "The microwave makes them chewy. Select a category and discover the perfect times and temperatures to bring back the crispiness.",
     quickNav: "Jump to:",
+    editorialH2: "The Science of Reviving: Why it works?",
+    editorialText: "Reheating food in the microwave affects water molecules, literally boiling the food from the inside (which is why pizza gets rubbery). The air fryer, on the other hand, uses <strong>dry thermal convection</strong>. By blowing hot air at high speeds, it evaporates the excess moisture accumulated in the fridge and <strong>reactivates the Maillard reaction</strong> (the crust) in just 3 or 4 minutes, restoring crispiness without drying out the core.",
+    fsTitle: "3 Golden Rules for Reheating:",
+    fsList: [
+      "<strong>Always lower the temperature:</strong> Use 20-30°C (35-50°F) less than the original cooking temp to avoid burning the outside.",
+      "<strong>No parchment paper:</strong> It blocks the bottom airflow, leaving the underside of your food wet and soggy.",
+      "<strong>Add moisture to doughs:</strong> Spray a little water on bread and pizza before cooking to restore elasticity to the crumb."
+    ],
     categories: [
       {
         id: "lievitati", icon: "🍕", title: "Pizza, Bread & Pastries",
@@ -133,6 +150,14 @@ const content = {
     h1: "Revividor de Sobras",
     desc: "El microondas las deja blandas. Selecciona una categoría y descubre los tiempos y grados perfectos para devolverle el crujiente.",
     quickNav: "Ir a:",
+    editorialH2: "La Ciencia de Revivir: ¿Por qué funciona?",
+    editorialText: "Calentar en el microondas afecta a las moléculas de agua, hirviendo la comida desde dentro (por eso la pizza se vuelve gomosa). La freidora de aire usa <strong>convección térmica seca</strong>. Al soplar aire caliente a alta velocidad, evapora la humedad sobrante y <strong>reactiva la reacción de Maillard</strong> (la corteza) en solo 3 o 4 minutos, devolviendo el crujiente sin secar el interior.",
+    fsTitle: "3 Reglas de Oro para Recalentar:",
+    fsList: [
+      "<strong>Baja siempre la temperatura:</strong> Usa 20-30°C menos que la cocción original para no quemar el exterior.",
+      "<strong>Nada de papel de horno:</strong> Bloquea el flujo de aire inferior, dejando la base de la comida blanda y húmeda.",
+      "<strong>Añade humedad a las masas:</strong> Rocía un poco de agua sobre el pan y la pizza antes de cocinar para devolver elasticidad a la miga."
+    ],
     categories: [
       {
         id: "lievitati", icon: "🍕", title: "Pizza, Pan y Masas",
@@ -186,6 +211,14 @@ const content = {
     h1: "Le Réanimateur de Restes",
     desc: "Le micro-ondes les rend caoutchouteux. Sélectionnez une catégorie et découvrez les temps parfaits pour redonner du croustillant.",
     quickNav: "Aller à :",
+    editorialH2: "La Science du Réanimateur : Pourquoi ça marche ?",
+    editorialText: "Chauffer au micro-ondes affecte les molécules d'eau, faisant littéralement bouillir la nourriture de l'intérieur (c'est pourquoi la pizza devient caoutchouteuse). La friteuse à air utilise la <strong>convection thermique sèche</strong>. L'air très chaud évapore l'excès d'humidité et <strong>réactive la réaction de Maillard</strong> (la croûte) en 3 ou 4 minutes, redonnant du croustillant sans assécher le cœur.",
+    fsTitle: "3 Règles d'Or pour Réchauffer :",
+    fsList: [
+      "<strong>Baissez toujours la température :</strong> Utilisez 20-30°C de moins que la cuisson d'origine pour ne pas brûler l'extérieur.",
+      "<strong>Pas de papier cuisson :</strong> Il bloque le flux d'air inférieur, laissant le fond humide et mou.",
+      "<strong>Humidifiez les pâtes :</strong> Vaporisez un peu d'eau sur le pain et la pizza avant cuisson pour redonner de l'élasticité à la mie."
+    ],
     categories: [
       {
         id: "lievitati", icon: "🍕", title: "Pizza, Pain et Pâtisseries",
@@ -270,10 +303,32 @@ const faqSchema = {
       <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
     </header>
 
-    <nav class="flex flex-wrap justify-center gap-2 md:gap-3 mb-16 bg-slate-900/50 p-4 rounded-2xl border border-slate-800/50">
+    <div class="max-w-4xl mx-auto mb-16 space-y-6">
+      <article class="bg-slate-800/50 p-6 md:p-8 rounded-3xl border border-slate-700/50 shadow-xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-2 h-full bg-gradient-to-b from-orange-400 to-amber-600"></div>
+        <h2 class="text-2xl font-bold text-white mb-4 tracking-tight flex items-center gap-2">
+          <span>🔬</span> {t.editorialH2}
+        </h2>
+        <p class="text-slate-300 leading-relaxed text-base" set:html={t.editorialText}></p>
+      </article>
+
+      <div class="bg-amber-500/10 border border-amber-500/30 p-6 md:p-8 rounded-3xl shadow-inner">
+        <h3 class="text-xl font-bold text-amber-400 mb-4">{t.fsTitle}</h3>
+        <ul class="space-y-3 text-slate-300">
+          {t.fsList.map(rule => (
+            <li class="flex items-start gap-3">
+              <span class="text-amber-500 font-bold mt-1">✔</span>
+              <span class="leading-relaxed" set:html={rule}></span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <nav class="flex flex-wrap justify-center gap-2 md:gap-3 mb-16 bg-slate-900/50 p-4 rounded-2xl border border-slate-800/50 max-w-4xl mx-auto shadow-inner">
       <span class="text-slate-500 text-sm font-bold w-full text-center mb-2">{t.quickNav}</span>
       {t.categories.map(cat => (
-        <a href={`#${cat.id}`} class="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-700 rounded-full text-xs md:text-sm font-bold text-slate-300 hover:bg-slate-700 hover:text-white transition-all shadow-sm focus:ring-2 focus:ring-orange-500 outline-none">
+        <a href={`#${cat.id}`} class="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-700 rounded-full text-xs md:text-sm font-bold text-slate-300 hover:bg-slate-700 hover:text-white hover:border-orange-500/50 transition-all shadow-sm focus:ring-2 focus:ring-orange-500 outline-none">
           <span class="text-base">{cat.icon}</span> {cat.title}
         </a>
       ))}

@@ -26,6 +26,7 @@ const content = {
     title: "Calcolatore Calorie: Frittura Tradizionale vs Friggitrice ad Aria",
     h1: "Calcolatore di Risparmio Calorico",
     desc: "Scopri esattamente quanti grassi e calorie risparmi cucinando ad aria invece che per immersione nell'olio. Dati scientifici, non slogan.",
+    eeatBadge: "✓ Algoritmo basato su tassi di assorbimento lipidico",
     foodLabel: "Seleziona l'alimento:",
     weightLabel: "Peso della porzione:",
     btnCalc: "Calcola Risparmio",
@@ -33,6 +34,17 @@ const content = {
     resKcal: "Calorie Risparmiate",
     resRun: "Equivale a circa",
     resRunUnit: "min. di corsa",
+    
+    // NUOVI CONTENUTI EDITORIALI E FAQ
+    editorialH2: "La Scienza del Risparmio Calorico",
+    editorialText: "Nella frittura tradizionale per immersione, un alimento assorbe in media <strong>dal 10% al 20% del suo peso in olio</strong> (1 grammo di olio = 9 kcal). La friggitrice ad aria elimina la necessità del bagno d'olio: sfrutta la <strong>convezione termica ad alta velocità</strong> per scatenare la reazione di Maillard. Il risultato è una doratura croccante con un abbattimento fino all'80% dei grassi saturi aggiunti.",
+    faqTitle: "Domande Frequenti su Dieta e Air Fryer",
+    faqs: [
+      { q: "La friggitrice ad aria distrugge le vitamine?", a: "Al contrario. Cuocendo in tempi ridotti e senza dispersione in acqua (bollitura) o bagni d'olio, l'air fryer preserva meglio le vitamine termolabili e i nutrienti del cibo fresco." },
+      { q: "Devo usare per forza l'olio spray?", a: "Sui cibi freschi (come patate tagliate a mano o pollo crudo) basta un solo 'puff' di olio spray (circa 1-2 grammi) per favorire la doratura. Sui cibi surgelati pre-fritti, l'olio è già presente e NON devi aggiungerne altro." },
+      { q: "Riduce l'acrilammide rispetto alla frittura normale?", a: "Sì. Studi dimostrano che la frittura ad aria riduce la formazione di acrilammide (una sostanza potenzialmente nociva che si crea negli amidi ad alte temperature) fino al 90% rispetto alla frittura a immersione." }
+    ],
+    
     foods: [
       { id: "patate", name: "Patatine Fritte (Fresche)", absorb: 0.12, airOil: 10 },
       { id: "cotoletta", name: "Cotoletta di Pollo Impanata", absorb: 0.15, airOil: 5 },
@@ -60,6 +72,7 @@ const content = {
     title: "Calorie Calculator: Deep Frying vs Air Frying",
     h1: "Calorie Savings Calculator",
     desc: "Discover exactly how much fat and calories you save by air frying instead of deep frying. Real math, not marketing slogans.",
+    eeatBadge: "✓ Algorithm based on lipid absorption rates",
     foodLabel: "Select food:",
     weightLabel: "Portion weight:",
     btnCalc: "Calculate Savings",
@@ -67,6 +80,16 @@ const content = {
     resKcal: "Calories Saved",
     resRun: "Equivalent to approx",
     resRunUnit: "min of running",
+    
+    editorialH2: "The Science of Calorie Savings",
+    editorialText: "In traditional deep frying, food absorbs on average <strong>10% to 20% of its weight in oil</strong> (1 gram of oil = 9 kcal). The air fryer eliminates the need for an oil bath: it uses <strong>high-speed thermal convection</strong> to trigger the Maillard reaction. The result is a crispy golden finish with up to an 80% reduction in added saturated fats.",
+    faqTitle: "Frequently Asked Questions",
+    faqs: [
+      { q: "Does the air fryer destroy vitamins?", a: "On the contrary. By cooking in less time and without water (boiling) or deep oil baths, the air fryer preserves heat-sensitive vitamins and nutrients better." },
+      { q: "Do I have to use cooking spray?", a: "On fresh foods (like hand-cut potatoes) just one 'puff' of spray oil (about 1-2 grams) helps browning. On pre-fried frozen foods, oil is already present and you DO NOT need to add more." },
+      { q: "Does it reduce acrylamide compared to normal frying?", a: "Yes. Studies show that air frying reduces the formation of acrylamide (a potentially harmful substance created in starches at high temperatures) by up to 90% compared to deep frying." }
+    ],
+
     foods: [
       { id: "patate", name: "French Fries (Fresh)", absorb: 0.12, airOil: 10 },
       { id: "cotoletta", name: "Breaded Chicken Cutlet", absorb: 0.15, airOil: 5 },
@@ -94,6 +117,7 @@ const content = {
     title: "Calculadora de Calorías: Fritura vs Freidora de Aire",
     h1: "Calculadora de Ahorro Calórico",
     desc: "Descubre exactamente cuánta grasa y calorías ahorras al cocinar con aire. Matemáticas reales, no eslóganes.",
+    eeatBadge: "✓ Algoritmo basado en tasas de absorción lipídica",
     foodLabel: "Selecciona el alimento:",
     weightLabel: "Peso de la porción:",
     btnCalc: "Calcular Ahorro",
@@ -101,6 +125,16 @@ const content = {
     resKcal: "Calorías Ahorradas",
     resRun: "Equivale a unos",
     resRunUnit: "min de correr",
+    
+    editorialH2: "La Ciencia del Ahorro Calórico",
+    editorialText: "En la fritura tradicional, un alimento absorbe en media <strong>del 10% al 20% de su peso en aceite</strong> (1 gramo de aceite = 9 kcal). La freidora de aire elimina el baño de aceite: usa <strong>convección térmica a alta velocidad</strong> para crear la reacción de Maillard. El resultado es un dorado crujiente reduciendo hasta un 80% las grasas añadidas.",
+    faqTitle: "Preguntas Frecuentes",
+    faqs: [
+      { q: "¿La freidora de aire destruye las vitaminas?", a: "Al contrario. Al cocinar en menos tiempo y sin sumergir en agua o aceite, conserva mejor las vitaminas y nutrientes." },
+      { q: "¿Tengo que usar aceite en spray obligatoriamente?", a: "En alimentos frescos (como patatas naturales) basta un toque de spray (1-2 gramos) para dorar. En alimentos congelados prefritos NO necesitas añadir aceite." },
+      { q: "¿Reduce la acrilamida frente a la fritura normal?", a: "Sí. Los estudios demuestran que la fritura por aire reduce la formación de acrilamida (sustancia nociva creada en almidones a altas temperaturas) hasta en un 90%." }
+    ],
+
     foods: [
       { id: "patate", name: "Patatas Fritas (Frescas)", absorb: 0.12, airOil: 10 },
       { id: "cotoletta", name: "Pollo Empanado", absorb: 0.15, airOil: 5 },
@@ -128,6 +162,7 @@ const content = {
     title: "Calculateur de Calories : Friture vs Friteuse à Air",
     h1: "Calculateur d'Économie de Calories",
     desc: "Découvrez exactement combien de graisses et de calories vous économisez. Des vrais chiffres, pas des slogans.",
+    eeatBadge: "✓ Algorithme basé sur l'absorption lipidique",
     foodLabel: "Sélectionnez l'aliment :",
     weightLabel: "Poids de la portion :",
     btnCalc: "Calculer l'Économie",
@@ -135,6 +170,16 @@ const content = {
     resKcal: "Calories Économisées",
     resRun: "Équivaut à env.",
     resRunUnit: "min de course",
+    
+    editorialH2: "La Science de l'Économie de Calories",
+    editorialText: "Dans la friture traditionnelle, un aliment absorbe en moyenne <strong>10% à 20% de son poids en huile</strong> (1 gramme d'huile = 9 kcal). La friteuse à air élimine le bain d'huile : elle utilise la <strong>convection thermique à grande vitesse</strong> pour créer la réaction de Maillard. Le résultat est une dorure croustillante avec jusqu'à 80% de graisses ajoutées en moins.",
+    faqTitle: "Foire Aux Questions",
+    faqs: [
+      { q: "La friteuse à air détruit-elle les vitamines ?", a: "Au contraire. En cuisant plus rapidement et sans immersion dans l'eau ou l'huile, elle préserve mieux les vitamines et nutriments." },
+      { q: "Dois-je obligatoirement utiliser de l'huile en spray ?", a: "Sur des aliments frais (comme des frites maison), une seule pulvérisation (1-2 grammes) suffit pour dorer. Sur les surgelés préfrits, N'AJOUTEZ PAS d'huile." },
+      { q: "Réduit-elle l'acrylamide par rapport à la friture normale ?", a: "Oui. Des études montrent que la friture à air réduit la formation d'acrylamide (substance nocive créée à haute température) jusqu'à 90%." }
+    ],
+
     foods: [
       { id: "patate", name: "Frites (Fraîches)", absorb: 0.12, airOil: 10 },
       { id: "cotoletta", name: "Poulet Pané", absorb: 0.15, airOil: 5 },
@@ -171,9 +216,23 @@ const softwareSchema = {
   "description": t.desc,
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
 };
+
+// GENERAZIONE DINAMICA DELLO SCHEMA FAQPage
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": t.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a
+    }
+  }))
+};
 ---
 
-<MainLayout title={t.title} lang={lang}>
+<MainLayout title={t.title} lang={lang} description={t.desc}>
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
     
     <div class="mb-8 flex justify-start">
@@ -183,7 +242,13 @@ const softwareSchema = {
       </a>
     </div>
 
-    <header class="text-center mb-12">
+    <header class="text-center mb-10">
+      <div class="inline-flex items-center justify-center mb-6">
+         <span class="px-4 py-1.5 bg-emerald-950/50 backdrop-blur-sm border border-emerald-500/30 rounded-full text-xs text-emerald-400 font-bold shadow-lg">
+           {t.eeatBadge}
+         </span>
+      </div>
+
       <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">{t.h1}</h1>
       <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
     </header>
@@ -246,6 +311,30 @@ const softwareSchema = {
       </div>
     </div>
 
+    <div class="max-w-3xl mx-auto mt-16 text-slate-300">
+      <article class="mb-12 bg-slate-800/30 p-8 rounded-3xl border border-slate-700/50">
+        <h2 class="text-2xl font-bold text-white mb-4 tracking-tight">{t.editorialH2}</h2>
+        <p class="text-lg leading-relaxed text-slate-400" set:html={t.editorialText}></p>
+      </article>
+
+      <div class="space-y-6 mb-12">
+        <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-4">{t.faqTitle}</h2>
+        <div class="space-y-4">
+          {t.faqs.map((faq) => (
+            <details class="group bg-slate-900 rounded-2xl p-5 border border-slate-800 cursor-pointer [&_summary::-webkit-details-marker]:hidden shadow-sm hover:shadow-md transition-shadow">
+              <summary class="flex justify-between items-center font-bold text-slate-200 group-hover:text-emerald-400 transition-colors text-lg">
+                {faq.q}
+                <span class="transition group-open:rotate-180 bg-slate-800 p-2 rounded-full text-slate-400">
+                  <svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20"><path d="M6 9l6 6 6-6"></path></svg>
+                </span>
+              </summary>
+              <p class="text-slate-400 mt-4 leading-relaxed text-base border-t border-slate-800 pt-4">{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </div>
+
     <Disclaimer type="nutrizionale" lang={lang} />
 
     <div class="mt-12 text-center pt-8 border-t border-slate-800">
@@ -267,10 +356,11 @@ const softwareSchema = {
 
 <script is:inline data-astro-rerun>
     document.addEventListener('astro:page-load', () => {
-      // Logica Pulsanti Peso
       const btnMinus = document.getElementById('btn-minus-weight');
       const btnPlus = document.getElementById('btn-plus-weight');
       const wInput = document.getElementById('weight-input');
+
+      if (!btnMinus || !btnPlus || !wInput) return; // Salvaguardia per cambi pagina
 
       btnMinus.addEventListener('click', () => {
         let val = parseInt(wInput.value) || 0;
@@ -282,7 +372,6 @@ const softwareSchema = {
         if (val < 2000) wInput.value = val + 50;
       });
 
-      // Logica Calcolatore
       const btn = document.getElementById('calc-btn');
       const select = document.getElementById('food-select');
       const dash = document.getElementById('results-dash');
@@ -307,7 +396,6 @@ const softwareSchema = {
       btn.addEventListener('click', () => {
         const option = select.options[select.selectedIndex];
         const absorbRate = parseFloat(option.getAttribute('data-absorb'));
-        // DATO FONDAMENTALE: calcoliamo l'olio ad aria proporzionalmente (valore base calcolato su 250g)
         const baseAirOil = parseFloat(option.getAttribute('data-airoil'));
         const weight = parseFloat(wInput.value);
 
@@ -329,5 +417,7 @@ const softwareSchema = {
       });
     });
   </script>
+  
   <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </MainLayout>

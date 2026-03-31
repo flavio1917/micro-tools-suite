@@ -1,5 +1,4 @@
 ---
-// src/components/SchemaRecipe.astro
 export interface Props {
   recipe: any;
   lang?: string;
@@ -7,12 +6,11 @@ export interface Props {
 
 const { recipe, lang = "it" } = Astro.props;
 
-// Helper: Estrae i minuti dal tuo formato "8-10" e lo converte in ISO 8601 (es. "PT10M")
+// Helper: Estrae i minuti dal formato e converte in ISO 8601
 function toISODuration(timeStr: string | undefined) {
   if (!timeStr) return "PT0M";
   const matches = timeStr.toString().match(/\d+/g);
   if (matches && matches.length > 0) {
-    // Se è un range tipo "8-10", prende il numero più alto per sicurezza
     const maxTime = matches[matches.length - 1];
     return `PT${maxTime}M`;
   }
@@ -26,8 +24,24 @@ const cookTimeISO = toISODuration(recipe.time);
 const baseImageName = recipe.image || recipe.slug;
 const imageUrl = `https://www.convertitorefriggitrice.it/images/recipes/${baseImageName}.webp`;
 
-// Gestione URL dinamico per la pagina Info (IT è root, le altre hanno la sottocartella)
+// Gestione URL dinamico per la pagina Info
 const infoUrlPath = lang === 'it' ? '/info' : `/${lang}/info`;
+
+// Integrazione Nutrizionale Avanzata
+let nutritionSchema = undefined;
+if (recipe.nutrition) {
+  nutritionSchema = {
+    "@type": "NutritionInformation",
+    "servingSize": "1 porzione",
+    "calories": `${recipe.nutrition.kcal} calories`,
+    "proteinContent": `${recipe.nutrition.proteins_g} grams`,
+    "fatContent": `${recipe.nutrition.fats_g} grams`,
+    "saturatedFatContent": `${recipe.nutrition.saturated_fats_g} grams`,
+    "carbohydrateContent": `${recipe.nutrition.carbs_g} grams`,
+    "sugarContent": `${recipe.nutrition.sugars_g} grams`,
+    "sodiumContent": `${recipe.nutrition.salt_g * 400} milligrams`
+  };
+}
 
 const schema = {
   "@context": "https://schema.org/",
@@ -37,8 +51,8 @@ const schema = {
   "author": {
     "@type": "Person",
     "name": "Flavio Refrigeri",
-    "jobTitle": "Ingegnere Informatico & Creatore di Ricette", // BOOM! Segnale di Autorità!
-    "url": `https://www.convertitorefriggitrice.it${infoUrlPath}` // Punta alla pagina giusta
+    "jobTitle": "Ingegnere Informatico & Creatore di Ricette", 
+    "url": `https://www.convertitorefriggitrice.it${infoUrlPath}` 
   },
   "description": recipe.description,
   "prepTime": prepTimeISO,
@@ -50,8 +64,12 @@ const schema = {
   "recipeInstructions": recipe.instructions ? recipe.instructions.map((step: string) => ({
     "@type": "HowToStep",
     "text": step
-  })) : []
+  })) : [],
+  "nutrition": nutritionSchema
 };
+
+// Rimuove eventuali chiavi undefined
+Object.keys(schema).forEach(key => schema[key as keyof typeof schema] === undefined && delete schema[key as keyof typeof schema]);
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+<script type="application/ld+json" id="recipe-schema" set:html={JSON.stringify(schema)} />
