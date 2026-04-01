@@ -495,15 +495,16 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         });
       }
 
-      // --- LOGICA PORZIONI E INGREDIENTI (BI-DIREZIONALE & ARROTONDAMENTO INTELLIGENTE) ---
+      // --- LOGICA PORZIONI E INGREDIENTI ---
       let currentPortions = basePortions;
       const display = document.getElementById('portions-display');
       const btnMinus = document.getElementById('btn-minus');
       const btnPlus = document.getElementById('btn-plus');
       const ingredients = document.querySelectorAll('.ingredient-text');
 
-      let isMetric = false; 
-      let originalWasImperial = lang === 'en'; // Presupponiamo che l'inglese usi Imperial di base
+      // IL FIX È QUI: Se non siamo in inglese, il sistema nasce già in Metrico!
+      let isMetric = lang !== 'en'; 
+
       const btnImperial = document.getElementById('btn-imperial');
       const btnMetric = document.getElementById('btn-metric');
       const tempValDisplay = document.getElementById('display-temp-val');
@@ -513,11 +514,9 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
 
       function fToC(f) { return Math.round(((f - 32) * 5/9) / 5) * 5; }
 
-      // CORE FIX: Motore di conversione totalmente isolato
       function scaleAndConvertIngredient(originalStr, ratio, forceMetric, forceImperial) {
         let str = originalStr;
 
-        // SEZIONE 1: CONVERSIONE UNITA' (Se richiesta)
         if (forceMetric) {
             str = str.replace(/([\d.,]+)\s*fl oz\b/gi, (m, p1) => {
                 let ml = parseFloat(p1.replace(',', '.')) * 29.5735;
@@ -547,7 +546,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
             });
         }
 
-        // SEZIONE 2: SCALATURA PORZIONI
         if (!/\d/.test(str)) return str;
         const regex = /(^|[:,]\s*|\b)(\d+(?:[.,]\d+)?(?:\s*-\s*\d+(?:[.,]\d+)?)?(?:\/\d+)?)\s*([a-zA-Z]*)/g;
         let match;
@@ -577,7 +575,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
             } else if (numStr.includes('/')) {
                 const parts = numStr.split('/');
                 let val = (parseFloat(parts[0]) / parseFloat(parts[1])) * ratio;
-                // Se non scalo porzioni e non c'è stata conversione, mantengo la stringa orginale "1/2"
                 newNumStr = (ratio === 1 && !forceMetric && !forceImperial) ? numStr : roundSmart(val); 
             } else {
                 newNumStr = roundSmart(parseFloat(numStr.replace(',', '.')) * ratio);
@@ -595,8 +592,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         ingredients.forEach(el => {
           const original = el.getAttribute('data-original');
           if(original) {
-              // Applichiamo forceMetric se siamo passati a metrico (isMetric=true),
-              // Applichiamo forceImperial se siamo tornati a imperial (isMetric=false)
               el.innerHTML = scaleAndConvertIngredient(original, ratio, isMetric, !isMetric);
           }
         });
