@@ -5,18 +5,12 @@
   --animate-fade-in: fade-in 0.3s ease-out forwards;
 
   @keyframes fade-in {
-    from { 
-      opacity: 0; 
-      transform: translateY(5px); 
-    }
-    to { 
-      opacity: 1; 
-      transform: translateY(0); 
-    }
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }
 
-/* 2. STILI BASE GLOBALI E TYPOGRAPHY PREMIUM */
+/* 2. STILI BASE GLOBALI */
 @layer base {
   body {
     background-color: #0B1120;
@@ -50,6 +44,7 @@
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out;
   }
 
+  /* Testi più scuri e leggibili per la modalità chiara */
   .reading-mode {
     background-color: #ffffff !important; 
     color: #0f172a !important; 
@@ -78,35 +73,32 @@
   }
 }
 
-/* 4. MODALITÀ STAMPA (INK-SAVER & UX) */
+/* 4. MODALITÀ STAMPA (UX E IMPAGINAZIONE) */
 @media print {
   @page {
-    margin: 1.5cm;
+    margin: 1.2cm;
   }
   
   body {
     background-color: white !important;
     color: black !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
-  /* Nascondiamo con forza assoluta Ads e Orpelli */
+  /* Nascondiamo tutto il superfluo inclusa l'immagine Hero gigante */
   .hide-on-print, 
   header, 
   footer, 
   .amazon-product,
   .eco-widget-container,
   #rating-widget,
+  .hero-bg-print-hide,
   button:not(.keep-print) {
     display: none !important;
   }
 
-  * {
-    box-shadow: none !important;
-    text-shadow: none !important;
-    background-image: none !important;
-  }
+  * { box-shadow: none !important; text-shadow: none !important; background-image: none !important; }
 
   .print-clean-bg {
     background-color: transparent !important;
@@ -115,17 +107,33 @@
     margin-bottom: 1rem !important;
   }
 
-  h1, h2, h3, h4 {
-    color: black !important;
-    page-break-after: avoid;
-    break-after: avoid;
-    margin-bottom: 0.5rem !important;
+  h1, h2, h3, h4 { color: black !important; page-break-after: avoid; break-after: avoid; margin-bottom: 0.5rem !important; }
+  p, li, span { color: #111 !important; }
+
+  /* FORZATURA INTERRUZIONI DI PAGINA (Le tue 3 pagine) */
+  .print-page-break {
+    page-break-before: always !important;
+    break-before: page !important;
+    margin-top: 2rem !important;
   }
 
-  p, li, span {
-    color: #111 !important;
+  /* FIX LINEA E PALLINI BLU */
+  .step-list::before { display: none !important; content: none !important; } /* Uccide la linea rotta */
+  .step-container { margin-bottom: 1.5rem !important; page-break-inside: avoid; break-inside: avoid; display: flex !important; align-items: flex-start !important; }
+  
+  .step-number {
+    background-color: #2563eb !important; /* Forziamo il blu nativo */
+    color: white !important; /* Forziamo il testo bianco */
+    border-radius: 50% !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: bold !important;
+    flex-shrink: 0 !important;
+    border: none !important;
   }
 
-  .step-container { margin-bottom: 1.5rem !important; page-break-inside: avoid; break-inside: avoid; }
-  img { max-width: 100% !important; page-break-inside: avoid; break-inside: avoid; display: none !important; } /* Immagini ricetta rimosse in stampa */
+  img { max-width: 100% !important; display: none !important; } /* Niente immagini per non sprecare inchiostro */
 }
