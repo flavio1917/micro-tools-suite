@@ -1,13 +1,22 @@
 @import "tailwindcss";
 
+/* 1. VARIABILI E ANIMAZIONI GLOBALI */
 @theme {
   --animate-fade-in: fade-in 0.3s ease-out forwards;
+
   @keyframes fade-in {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { 
+      opacity: 0; 
+      transform: translateY(5px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
   }
 }
 
+/* 2. STILI BASE GLOBALI E TYPOGRAPHY PREMIUM */
 @layer base {
   body {
     background-color: #0B1120;
@@ -16,15 +25,18 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
+  
   img {
     filter: sepia(15%) saturate(110%) contrast(105%) brightness(102%);
     transition: filter 0.3s ease;
   }
+
   .no-filter, img[src*="flagcdn.com"] {
     filter: none !important;
   }
 }
 
+/* 3. UTILITY CLASSES (Lettura e UI) */
 @layer utilities {
   .hide-scrollbar {
     -ms-overflow-style: none;
@@ -38,7 +50,6 @@
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out;
   }
 
-  /* FIX LETTURA: Colori molto più scuri per i testi in modalità chiara */
   .reading-mode {
     background-color: #ffffff !important; 
     color: #0f172a !important; 
@@ -48,13 +59,10 @@
     color: #000000 !important;
     text-shadow: none !important;
   }
-  /* Testi normali (es. step ricetta) */
   .reading-mode .text-slate-300 { color: #1e293b !important; font-weight: 500 !important; }
-  /* Etichette piccole (es. TEMPERATURA) */
   .reading-mode .text-slate-400 { color: #475569 !important; font-weight: 700 !important; }
   .reading-mode .text-slate-500 { color: #64748b !important; }
   
-  /* Adattamento colori accento */
   .reading-mode .text-blue-400 { color: #2563eb !important; }
   .reading-mode .text-orange-400 { color: #ea580c !important; }
   .reading-mode .text-green-400 { color: #16a34a !important; }
@@ -70,24 +78,54 @@
   }
 }
 
+/* 4. MODALITÀ STAMPA (INK-SAVER & UX) */
 @media print {
-  @page { margin: 1cm; }
-  body { background-color: white !important; color: black !important; }
+  @page {
+    margin: 1.5cm;
+  }
+  
+  body {
+    background-color: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 
-  .hide-on-print, header, footer, .amazon-product, .eco-widget-container, #rating-widget, button:not(.keep-print) {
+  /* Nascondiamo con forza assoluta Ads e Orpelli */
+  .hide-on-print, 
+  header, 
+  footer, 
+  .amazon-product,
+  .eco-widget-container,
+  #rating-widget,
+  button:not(.keep-print) {
     display: none !important;
   }
 
-  * { box-shadow: none !important; text-shadow: none !important; background-image: none !important; }
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-image: none !important;
+  }
 
-  .print-clean-bg { background-color: transparent !important; border: none !important; }
+  .print-clean-bg {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 1rem !important;
+  }
 
-  /* FIX GRID DI STAMPA: Uccide le colonne e formatta a blocco intero */
-  .grid { display: block !important; }
-  .lg\:col-span-1, .lg\:col-span-2 { width: 100% !important; margin-bottom: 2rem !important; }
+  h1, h2, h3, h4 {
+    color: black !important;
+    page-break-after: avoid;
+    break-after: avoid;
+    margin-bottom: 0.5rem !important;
+  }
+
+  p, li, span {
+    color: #111 !important;
+  }
+
   .step-container { margin-bottom: 1.5rem !important; page-break-inside: avoid; break-inside: avoid; }
-
-  h1, h2, h3, h4 { color: black !important; page-break-after: avoid; break-after: avoid; margin-bottom: 0.5rem !important; }
-  p, li, span { color: #111 !important; }
-  img { max-width: 100% !important; page-break-inside: avoid; break-inside: avoid; }
+  img { max-width: 100% !important; page-break-inside: avoid; break-inside: avoid; display: none !important; } /* Immagini ricetta rimosse in stampa */
 }
