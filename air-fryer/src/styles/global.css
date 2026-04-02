@@ -26,7 +26,17 @@
   
   .reading-transition { transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out; }
 
+  /* FIX ESTREMO MODALITÀ LETTURA */
   .reading-mode { background-color: #ffffff !important; color: #0f172a !important; border-color: #e2e8f0 !important; }
+  
+  /* Pialla QUALSIASI sfondo slate (incluso Amazon e timer) e lo fa diventare bianco */
+  .reading-mode [class*="bg-slate-800"], 
+  .reading-mode [class*="bg-slate-900"] {
+    background-color: #ffffff !important; 
+    border-color: #e2e8f0 !important; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+  }
+
   .reading-mode h3, .reading-mode h4, .reading-mode .text-white { color: #000000 !important; text-shadow: none !important; }
   .reading-mode .text-slate-300 { color: #1e293b !important; font-weight: 500 !important; }
   .reading-mode .text-slate-400 { color: #475569 !important; font-weight: 700 !important; }
@@ -35,17 +45,49 @@
   .reading-mode .text-orange-400 { color: #ea580c !important; }
   .reading-mode .text-green-400 { color: #16a34a !important; }
   .reading-mode .text-purple-400 { color: #7e22ce !important; }
-  .reading-mode .bg-slate-900, .reading-mode .bg-slate-800, .reading-mode .bg-slate-800\/90 {
-    background-color: #f8fafc !important; border-color: #cbd5e1 !important; box-shadow: none !important;
-  }
   .reading-mode .before\:bg-slate-700::before { background-color: #cbd5e1 !important; }
 }
 
-/* MODALITÀ STAMPA BASE (Il resto lo fa Tailwind in [slug].astro) */
+/* FIX ESTREMO STAMPA */
 @media print {
   @page { margin: 1.5cm; }
   body { background-color: white !important; color: black !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  
   .hide-on-print, header, footer, .amazon-product, .eco-widget-container, #rating-widget, .hero-bg-print-hide, button:not(.keep-print) { display: none !important; }
+  
   * { box-shadow: none !important; }
+
+  /* UCCIDE TUTTI GLI SFONDI GRIGI IN STAMPA */
+  [class*="bg-slate-800"], 
+  [class*="bg-slate-900"] {
+    background-color: transparent !important;
+    border: none !important;
+  }
+
+  .print-clean-bg { background-color: transparent !important; border: none !important; padding: 0 !important; margin-bottom: 1rem !important; }
+
+  h1, h2, h3, h4 { color: black !important; page-break-after: avoid; break-after: avoid; margin-bottom: 0.5rem !important; }
+  p, li, span { color: #111 !important; }
+
   .print-page-break { page-break-before: always !important; break-before: page !important; }
+
+  .step-list::before { display: none !important; content: none !important; }
+  .step-container { margin-bottom: 1.5rem !important; page-break-inside: avoid; break-inside: avoid; display: flex !important; align-items: flex-start !important; }
+  
+  /* SALVA IL PALLINO BLU DEI NUMERI */
+  .step-number {
+    background-color: #2563eb !important; 
+    color: white !important; 
+    border-radius: 50% !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: bold !important;
+    flex-shrink: 0 !important;
+    border: none !important;
+  }
+
+  img { max-width: 100% !important; display: none !important; }
 }
