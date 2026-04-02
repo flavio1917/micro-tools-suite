@@ -924,41 +924,6 @@
     ]
   },
   {
-    "title": "Escalope à la Milanaise (Dorée et Légère)",
-    "slug": "cotolette-a-la-milanaise",
-    "emoji": "🥩",
-    "temp": 190,
-    "time": "14",
-    "prep_time": "10",
-    "portions": "2",
-    "ingredients": [
-      "2 escalopes de porc ou de veau, fines",
-      "1 œuf",
-      "Chapelure",
-      "Huile d'olive en spray",
-      "Quartiers de citron pour le service",
-      "Sel"
-    ],
-    "description": "Succombez à la véritable escalope milanaise avec une chapelure fine et croquante. La friteuse à air assure une dorure parfaite sans avoir besoin de plonger la viande dans le beurre.",
-    "instructions": [
-      "Aplatir légèrement la viande si nécessaire. Passer chaque escalope dans l'œuf battu, puis dans la chapelure en pressant pour faire adhérer.",
-      "Préchauffer l'appareil à 190°C.",
-      "Disposer les escalopes dans le panier. Vaporiser uniformément d'huile la surface.",
-      "Cuire 7 minutes. Retourner les escalopes, vaporiser d'huile l'autre côté et poursuivre la cuisson 7 minutes supplémentaires. Saler avant de servir."
-    ],
-    "tip": "Ajouter à la chapelure du persil haché et du parmesan râpé pour aromatiser la panure.",
-    "isItalian": true,
-    "image": "cotoletta-alla-milanese",
-    "keywords": [
-      "Viande",
-      "Plat principal",
-      "Protéiné",
-      "escalope milanaise",
-      "cotoletta",
-      "viande panée"
-    ]
-  },
-  {
     "title": "Artichauts à la Romaine (Cœur Fondant)",
     "slug": "artichauts-croquants-romaine",
     "emoji": "🥬",

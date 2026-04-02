@@ -2,54 +2,56 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// Ricreiamo __dirname per gli ES Modules
+// Configurazione __dirname per ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// ⚠️ INSERISCI QUI IL NOME ESATTO DELLA CARTELLA DEL TUO PROGETTO
-const nomeCartellaProgetto = 'air-fryer'; 
+// Percorso del file italiano
+const filePath = path.join(__dirname, '..', 'src', 'data', 'recipes-it.json');
 
-// Percorso aggiornato
-const filePath = path.join(__dirname, '..', 'src', 'data', 'recipes-en.json');
+console.log('--- Inizio Pulizia Definitiva per SLUG ---');
 
 try {
-  console.log('Lettura del file in corso...');
-  const rawData = fs.readFileSync(filePath, 'utf8');
-  const recipes = JSON.parse(rawData);
+  if (!fs.existsSync(filePath)) {
+    console.error(`❌ File non trovato: ${filePath}`);
+    process.exit(1);
+  }
 
+  const recipes = JSON.parse(fs.readFileSync(filePath, 'utf8'));
   const seenSlugs = new Set();
-  const duplicatesRemoved = [];
-  
-  const uniqueRecipes = recipes.filter(recipe => {
-    const identifier = recipe.slug || recipe.title;
+  const removedList = [];
 
-    if (seenSlugs.has(identifier)) {
-      duplicatesRemoved.push(identifier);
-      return false; 
+  const uniqueRecipes = recipes.filter(recipe => {
+    const slug = recipe.slug;
+
+    if (!slug) return true; // Sicurezza: se manca lo slug lo tiene
+
+    if (seenSlugs.has(slug)) {
+      // Trovato slug duplicato (seconda, terza volta...)
+      removedList.push(`[Eliminato] - Slug: ${slug} (Titolo: ${recipe.title})`);
+      return false; // Scarta
     } else {
-      seenSlugs.add(identifier);
-      return true; 
+      // Prima volta che vediamo questo slug
+      seenSlugs.add(slug);
+      return true; // Mantieni
     }
   });
 
+  // Salvataggio file sovrascritto
   fs.writeFileSync(filePath, JSON.stringify(uniqueRecipes, null, 2), 'utf8');
 
-  console.log('\n✅ PULIZIA COMPLETATA CON SUCCESSO!\n');
-  console.log(`📊 STATISTICHE:`);
-  console.log(`- Ricette totali (prima): ${recipes.length}`);
-  console.log(`- Ricette uniche (dopo):  ${uniqueRecipes.length}`);
-  console.log(`- Duplicati rimossi:      ${duplicatesRemoved.length}\n`);
+  console.log(`✅ Database Italiano ripulito dai cloni!`);
+  console.log(`   - Ricette Originali: ${recipes.length}`);
+  console.log(`   - Ricette Rimaste:   ${uniqueRecipes.length}`);
+  console.log(`   - Duplicati Rimossi: ${removedList.length}\n`);
 
-  if (duplicatesRemoved.length > 0) {
-    console.log(`🗑️ RICETTE ELIMINATE:`);
-    duplicatesRemoved.forEach((slug, index) => {
-      console.log(`  ${index + 1}. ${slug}`);
-    });
+  if (removedList.length > 0) {
+    console.log(`🗑️ Dettaglio cloni eliminati:`);
+    removedList.forEach(item => console.log(`     ${item}`));
   } else {
     console.log(`✨ Nessun duplicato trovato.`);
   }
 
 } catch (error) {
-  console.error("❌ Errore durante l'elaborazione del file:", error.message);
-  console.error("💡 Verifica che il percorso del file JSON sia corretto rispetto alla posizione dello script.");
+  console.error(`❌ Errore durante l'elaborazione:`, error.message);
 }
