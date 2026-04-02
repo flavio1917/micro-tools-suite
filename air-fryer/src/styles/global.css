@@ -16,27 +16,30 @@
   }
 }
 
-/* 2. STILI BASE GLOBALI */
+/* 2. STILI BASE GLOBALI E TYPOGRAPHY PREMIUM */
 @layer base {
   body {
     background-color: #0B1120;
     color: #cbd5e1; /* text-slate-300 */
+    /* Ottimizzazione Font (Resa Apple-like) */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
   
-  /* IL TRUCCO PSICOLOGICO: Filtro caldo applicato direttamente */
-  /* In v4 iniettiamo le proprietà native direttamente nel selettore base */
+  /* Filtro caldo applicato alle immagini per rendere il cibo appetitoso */
   img {
     filter: sepia(15%) saturate(110%) contrast(105%) brightness(102%);
     transition: filter 0.3s ease;
   }
 
-  /* Evitiamo che il filtro rovini le icone o le bandiere se necessario */
+  /* Evitiamo che il filtro rovini icone o bandiere */
   .no-filter, img[src*="flagcdn.com"] {
     filter: none !important;
   }
 }
 
-/* 3. UTILITY CLASSES */
+/* 3. UTILITY CLASSES (Lettura e UI) */
 @layer utilities {
   .hide-scrollbar {
     -ms-overflow-style: none;
@@ -44,5 +47,92 @@
   }
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
+  }
+
+  /* --- MODALITÀ LETTURA (UX HACK) --- */
+  /* Transizioni fluide per uno switch "burroso" */
+  .reading-transition {
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  }
+
+  /* Forziamo testo scuro e sfondo chiaro senza usare @apply (previene bug Tailwind v4) */
+  .reading-mode {
+    background-color: #f8fafc !important; /* bg-slate-50 */
+    color: #0f172a !important; /* text-slate-900 */
+    border-color: #e2e8f0 !important;
+  }
+  .reading-mode h3, 
+  .reading-mode h4,
+  .reading-mode .text-white {
+    color: #0f172a !important;
+    text-shadow: none !important;
+  }
+  .reading-mode .text-slate-300, 
+  .reading-mode .text-slate-400 {
+    color: #334155 !important;
+  }
+  .reading-mode .bg-slate-900, 
+  .reading-mode .bg-slate-800 {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+  }
+  .reading-mode .before\:bg-slate-700::before {
+    background-color: #cbd5e1 !important;
+  }
+}
+
+/* 4. MODALITÀ STAMPA (INK-SAVER & UX) */
+@media print {
+  @page {
+    margin: 1.5cm;
+  }
+  
+  body {
+    background-color: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Nascondiamo tutto ciò che non serve su carta */
+  .hide-on-print, 
+  header, 
+  footer, 
+  .amazon-product,
+  .eco-widget-container,
+  #rating-widget,
+  button:not(.keep-print) {
+    display: none !important;
+  }
+
+  /* Rimuoviamo ombre, gradienti e sfondi scuri per non sprecare toner */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-image: none !important;
+  }
+
+  .print-clean-bg {
+    background-color: transparent !important;
+    border: none !important;
+  }
+
+  h1, h2, h3, h4 {
+    color: black !important;
+    page-break-after: avoid;
+    break-after: avoid;
+    margin-bottom: 0.5rem !important;
+  }
+
+  p, li, span {
+    color: #111 !important;
+  }
+
+  /* Evita che un'immagine o un passaggio vengano spezzati tra due fogli */
+  img, li, .step-container {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 }

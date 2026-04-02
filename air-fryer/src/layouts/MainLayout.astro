@@ -28,12 +28,20 @@ const {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://www.convertitorefriggitrice.it").toString();
 
+// Gestione dinamica dei Locale per i Social Network
+const locales = {
+  it: "it_IT",
+  en: "en_US",
+  es: "es_ES",
+  fr: "fr_FR"
+};
+const currentLocale = locales[lang as keyof typeof locales] || "it_IT";
+
 // --- INIZIO: EXTREME CTR HACKING (SEO Dinamica Semantica) ---
 let finalTitle = title;
 let finalDescription = description;
 
 if (recipeData) {
-  // Traduzioni per i badge dinamici in SERP
   const seoPhrases = {
     it: { pro: "Proteine", fast: "Pronto in", light: "Solo", kcal: "Kcal", read: "Ricetta testata. Leggi la guida per la cottura perfetta." },
     en: { pro: "Protein", fast: "Ready in", light: "Only", kcal: "Kcal", read: "Tested recipe. Read the guide for perfect cooking." },
@@ -42,12 +50,10 @@ if (recipeData) {
   };
   const p = seoPhrases[lang as keyof typeof seoPhrases] || seoPhrases.it;
 
-  // Analisi Keywords per Search Intent
   const kw = Array.isArray(recipeData.keywords) ? recipeData.keywords.map((k:string) => k.toLowerCase()) : [];
   const isMeatOrFish = kw.some((k:string) => k.includes('carne') || k.includes('pollo') || k.includes('pesce') || k.includes('salmone') || k.includes('meat') || k.includes('fish'));
   const isVegOrSide = kw.some((k:string) => k.includes('veg') || k.includes('verdure') || k.includes('patate') || k.includes('contorno') || k.includes('side'));
   
-  // Analisi Metriche
   const timeStr = recipeData.time ? recipeData.time.toString() : "";
   const numMatch = timeStr.match(/\d+/);
   const cookTimeNum = numMatch ? parseInt(numMatch[0]) : 999;
@@ -58,7 +64,6 @@ if (recipeData) {
   const pro = hasNutrition ? recipeData.nutrition.proteins_g : 0;
   const isLowCal = kcal > 0 && kcal <= 350;
 
-  // Assegnazione Dinamica del Titolo
   if (isMeatOrFish && pro >= 15) {
     finalTitle = `${recipeData.title} - ${pro}g ${p.pro} | Air Fryer`;
   } else if (isVegOrSide && isLowCal) {
@@ -69,7 +74,6 @@ if (recipeData) {
     finalTitle = `${recipeData.title} | Air Fryer`;
   }
 
-  // Costruzione Meta Description Persuasiva
   const baseDesc = recipeData.description || "";
   let statsString = "";
   if (hasNutrition && isFast) statsString = `✓ ${pro}g ${p.pro} · ✓ ${timeStr} · ✓ ${kcal} ${p.kcal} — `;
@@ -79,50 +83,6 @@ if (recipeData) {
   finalDescription = `${statsString}${baseDesc} ${p.read}`;
 }
 // --- FINE: EXTREME CTR HACKING ---
-
-
-let schemaJson = null;
-if (recipeData) {
-  const getMinutes = (timeStr: any) => {
-    if (!timeStr) return 0;
-    const str = timeStr.toString().toLowerCase();
-    const numMatch = str.match(/\d+/);
-    if (!numMatch) return 0;
-    let val = parseInt(numMatch[0]);
-    if (str.includes('ore') || str.includes('ora') || str.includes('h')) {
-      val = val * 60; 
-    }
-    return val;
-  };
-
-  const prepMin = getMinutes(recipeData.prep_time) || 10;
-  const cookMin = getMinutes(recipeData.time) || 15;
-  const totalMin = prepMin + cookMin;
-
-  schemaJson = JSON.stringify({
-    "@context": "https://schema.org/",
-    "@type": "Recipe",
-    "name": recipeData.title,
-    "image": [`https://www.convertitorefriggitrice.it${recipeData.image || `/images/recipes/${recipeData.slug}.webp`}`],
-    "description": finalDescription,
-    "prepTime": `PT${prepMin}M`,
-    "cookTime": `PT${cookMin}M`,
-    "totalTime": `PT${totalMin}M`,
-    "recipeYield": `${recipeData.portions || 2} servings`,
-    "recipeCategory": "Main Course",
-    "cookMethod": "Air Frying",
-    "keywords": Array.isArray(recipeData.keywords) ? recipeData.keywords.join(", ") : (recipeData.keywords || "friggitrice ad aria, ricette"),    
-    "recipeIngredient": recipeData.ingredients,
-    "recipeInstructions": recipeData.instructions ? recipeData.instructions.map((step: string, idx: number) => ({
-      "@type": "HowToStep",
-      "name": `Step ${idx + 1}`,
-      "text": step,
-      "url": `https://www.convertitorefriggitrice.it/recipes/${recipeData.slug}#step-${idx + 1}`,
-      "image": `https://www.convertitorefriggitrice.it/images/recipes/${recipeData.slug}/step_${idx + 1}.jpg`
-    })) : [],
-    "author": { "@type": "Organization", "name": "Convertitore Friggitrice" }
-  });
-}
 
 const disclaimers = {
   it: "Trasparenza: In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. I risultati della conversione sono stime basate su parametri standard (-20°C / -20% tempo). Controlla sempre la cottura.",
@@ -146,9 +106,12 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
 <html lang={lang} class="scroll-smooth bg-[#0B1120]">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B1120" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
+    
+    <link rel="preconnect" href="https://flagcdn.com" crossorigin />
     
     <ClientRouter /> 
     
@@ -156,49 +119,57 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
     <meta name="description" content={finalDescription} />
     <link rel="canonical" href={canonicalURL} />
     
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
     <meta name="p:domain_verify" content="0513c10094fa04708fce47d2922e822b"/>
 
+    {/* Architettura Internazionale (Hreflang) */}
     {alternateUrls?.it && <link rel="alternate" hreflang="it" href={alternateUrls.it} />}
     {alternateUrls?.en && <link rel="alternate" hreflang="en-US" href={alternateUrls.en} />}
     {alternateUrls?.es && <link rel="alternate" hreflang="es" href={alternateUrls.es} />}
     {alternateUrls?.fr && <link rel="alternate" hreflang="fr" href={alternateUrls.fr} />}
     {alternateUrls?.it && <link rel="alternate" hreflang="x-default" href={alternateUrls.it} />}
 
+    {/* Open Graph / Facebook */}
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={finalTitle} />
     <meta property="og:description" content={finalDescription} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={currentLocale} />
 
-    {schemaJson && (
-      <script type="application/ld+json" set:html={schemaJson} />
-    )}
+    {/* Twitter Cards */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={finalTitle} />
+    <meta name="twitter:description" content={finalDescription} />
+    <meta name="twitter:image" content={ogImage} />
   </head>
   
-  <body class="bg-[#0B1120] text-slate-300 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white">
+  <body class="bg-[#0B1120] text-slate-300 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white transition-colors duration-300">
     
     {alternateUrls && (
-      <header class="w-full flex justify-center px-4 pt-3 pb-1 md:pt-4 md:pb-2 relative z-20">
+      <header class="w-full flex justify-center px-4 pt-3 pb-1 md:pt-4 md:pb-2 relative z-20 hide-on-print">
         <div class="flex items-center gap-4 bg-slate-900/60 backdrop-blur-md border border-slate-700/50 rounded-full px-5 py-2 shadow-lg">
           {alternateUrls.it && (
-            <a href={alternateUrls.it} title="Italiano" class="flex items-center justify-center">
-              <img src="https://flagcdn.com/it.svg" alt="IT" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'it' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
+            <a href={alternateUrls.it} aria-label="Italiano" class="flex items-center justify-center">
+              <img src="https://flagcdn.com/it.svg" alt="IT" width="24" height="18" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'it' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
             </a>
           )}
           {alternateUrls.en && (
-            <a href={alternateUrls.en} title="English" class="flex items-center justify-center">
-              <img src="https://flagcdn.com/gb.svg" alt="EN" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'en' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
+            <a href={alternateUrls.en} aria-label="English" class="flex items-center justify-center">
+              <img src="https://flagcdn.com/gb.svg" alt="EN" width="24" height="18" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'en' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
             </a>
           )}
           {alternateUrls.es && (
-            <a href={alternateUrls.es} title="Español" class="flex items-center justify-center">
-              <img src="https://flagcdn.com/es.svg" alt="ES" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'es' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
+            <a href={alternateUrls.es} aria-label="Español" class="flex items-center justify-center">
+              <img src="https://flagcdn.com/es.svg" alt="ES" width="24" height="18" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'es' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
             </a>
           )}
           {alternateUrls.fr && (
-            <a href={alternateUrls.fr} title="Français" class="flex items-center justify-center">
-              <img src="https://flagcdn.com/fr.svg" alt="FR" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'fr' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
+            <a href={alternateUrls.fr} aria-label="Français" class="flex items-center justify-center">
+              <img src="https://flagcdn.com/fr.svg" alt="FR" width="24" height="18" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'fr' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
             </a>
           )}
         </div>
@@ -209,7 +180,7 @@ const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerL
       <slot />
     </main>
 
-    <footer class="bg-[#0F172A] border-t border-slate-800 mt-auto py-8 pb-[100px] text-center font-sans relative z-10">
+    <footer class="bg-[#0F172A] border-t border-slate-800 mt-auto py-8 pb-[100px] text-center font-sans relative z-10 hide-on-print">
       <div class="max-w-[500px] md:max-w-3xl mx-auto px-4 space-y-6">
         
         <div class="p-3 bg-slate-900/50 rounded-xl border border-slate-800 shadow-inner text-justify">

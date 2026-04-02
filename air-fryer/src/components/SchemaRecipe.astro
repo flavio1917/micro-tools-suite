@@ -6,28 +6,38 @@ export interface Props {
 
 const { recipe, lang = "it" } = Astro.props;
 
-// Helper: Estrae i minuti dal formato e converte in ISO 8601
-function toISODuration(timeStr: string | undefined) {
-  if (!timeStr) return "PT0M";
+// Helper: Estrae i minuti in modo intelligente per calcolare il Total Time
+function extractMinutes(timeStr: string | undefined): number {
+  if (!timeStr) return 0;
   const matches = timeStr.toString().match(/\d+/g);
   if (matches && matches.length > 0) {
-    const maxTime = matches[matches.length - 1];
-    return `PT${maxTime}M`;
+    return parseInt(matches[matches.length - 1], 10);
   }
-  return "PT0M";
+  return 0;
 }
 
-const prepTimeISO = toISODuration(recipe.prep_time);
-const cookTimeISO = toISODuration(recipe.time); 
+const prepMin = extractMinutes(recipe.prep_time);
+const cookMin = extractMinutes(recipe.time);
+const totalMin = prepMin + cookMin;
 
-// L'URL dinamico dell'immagine
+const prepTimeISO = prepMin > 0 ? `PT${prepMin}M` : undefined;
+const cookTimeISO = cookMin > 0 ? `PT${cookMin}M` : undefined;
+const totalTimeISO = totalMin > 0 ? `PT${totalMin}M` : undefined;
+
 const baseImageName = recipe.image || recipe.slug;
-const imageUrl = `https://www.convertitorefriggitrice.it/images/recipes/${baseImageName}.webp`;
+const baseUrl = "https://www.convertitorefriggitrice.it/images/recipes";
+const imageUrl = `${baseUrl}/${baseImageName}.webp`;
 
-// Gestione URL dinamico per la pagina Info
+// Immagini Multi-Rapporto per i Caroselli di Google Discover
+const discoverImages = [
+  `${imageUrl}?ar=1:1`,
+  `${imageUrl}?ar=4:3`,
+  `${imageUrl}?ar=16:9`
+];
+
 const infoUrlPath = lang === 'it' ? '/info' : `/${lang}/info`;
 
-// Integrazione Nutrizionale Avanzata
+// Dati Nutrizionali Strutturati
 let nutritionSchema = undefined;
 if (recipe.nutrition) {
   nutritionSchema = {
@@ -43,32 +53,44 @@ if (recipe.nutrition) {
   };
 }
 
+// Cucina Locale
+let cuisine = "International";
+if (recipe.isItalian === true || recipe.isItalian === "true") cuisine = "Italian";
+
+// Generazione Date per il "Freshness Signal"
+const currentDate = new Date().toISOString();
+
 const schema = {
   "@context": "https://schema.org/",
   "@type": "Recipe",
   "name": recipe.title,
-  "image": [ imageUrl ],
+  "image": discoverImages,
   "author": {
     "@type": "Person",
     "name": "Flavio Refrigeri",
     "jobTitle": "Ingegnere Informatico & Creatore di Ricette", 
     "url": `https://www.convertitorefriggitrice.it${infoUrlPath}` 
   },
+  "datePublished": "2024-01-01T08:00:00+08:00", // Data base fittizia (meglio averla che non averla)
+  "dateModified": currentDate, // Aggiornata magicamente ad ogni build!
   "description": recipe.description,
   "prepTime": prepTimeISO,
   "cookTime": cookTimeISO,
+  "totalTime": totalTimeISO,
   "recipeYield": recipe.portions ? `${recipe.portions} servings` : "2 servings",
   "cookMethod": "Air Frying",
+  "recipeCuisine": cuisine,
   "recipeCategory": recipe.keywords && recipe.keywords.length > 0 ? recipe.keywords[0] : "Main Course",
+  "keywords": recipe.keywords ? recipe.keywords.join(", ") : "friggitrice ad aria, air fryer",
   "recipeIngredient": recipe.ingredients,
   "recipeInstructions": recipe.instructions ? recipe.instructions.map((step: string) => ({
     "@type": "HowToStep",
-    "text": step
+    "text": step.replace(/<[^>]*>?/gm, '') // Sanificazione HTML spietata
   })) : [],
   "nutrition": nutritionSchema
 };
 
-// Rimuove eventuali chiavi undefined
+// Rimuove chiavi undefined in modo sicuro
 Object.keys(schema).forEach(key => schema[key as keyof typeof schema] === undefined && delete schema[key as keyof typeof schema]);
 ---
 

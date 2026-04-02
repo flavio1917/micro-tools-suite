@@ -40,7 +40,12 @@ const translations = {
     eeatTested: "Ricetta Testata", eeatReview: "Metodo Validato",
     startTimer: "⏱️ Avvia Timer", stopTimer: "⏹️ Ferma Timer",
     months: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
-    verifiedText: "Ultima verifica:"
+    verifiedText: "Ultima verifica:",
+    print: "Stampa", jump: "Vai alla Ricetta", readMode: "Modalità Lettura", darkMode: "Modalità Scura", share: "Condividi",
+    faqTitle: "Domande Frequenti",
+    faq1Q: `Come conservare ${recipe.title}?`, faq1A: "Lascia raffreddare completamente, poi conserva in un contenitore ermetico in frigorico per 2-3 giorni. Non congelare dopo la cottura per non perdere la croccantezza.",
+    faq2Q: `Posso cuocere da surgelato?`, faq2A: "Sì, se usi ingredienti base surgelati, aggiungi circa il 20-30% di tempo in più rispetto alla ricetta standard e controlla la cottura a metà, separando eventuali pezzi attaccati.",
+    faq3Q: `Come riscaldare gli avanzi?`, faq3A: "Usa la friggitrice ad aria a 160°C per 3-5 minuti. Evita il microonde, che renderebbe il cibo molliccio, mentre l'aria calda restituirà la texture originale."
   },
   en: {
     back: "Back", backLink: "/en/#ricettario", temp: "Temperature", time: "Cook Time", prep: "Prep Time",
@@ -57,7 +62,12 @@ const translations = {
     eeatTested: "Lab Tested", eeatReview: "Verified Method",
     startTimer: "⏱️ Start Timer", stopTimer: "⏹️ Stop Timer",
     months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    verifiedText: "Last check:"
+    verifiedText: "Last check:",
+    print: "Print", jump: "Jump to Recipe", readMode: "Reading Mode", darkMode: "Dark Mode", share: "Share",
+    faqTitle: "Frequently Asked Questions",
+    faq1Q: `How to store ${recipe.title}?`, faq1A: "Let it cool completely, then store in an airtight container in the fridge for 2-3 days.",
+    faq2Q: `Can I cook this from frozen?`, faq2A: "Yes, add about 20-30% more time compared to the standard recipe and check halfway through.",
+    faq3Q: `How to reheat leftovers?`, faq3A: "Use the air fryer at 320°F (160°C) for 3-5 minutes to restore crispiness. Avoid the microwave."
   },
   es: {
     back: "Volver", backLink: "/es/#ricettario", temp: "Temperatura", time: "Cocción", prep: "Preparación",
@@ -74,7 +84,12 @@ const translations = {
     eeatTested: "Receta Probada", eeatReview: "Método Validado",
     startTimer: "⏱️ Iniciar Timer", stopTimer: "⏹️ Parar Timer",
     months: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
-    verifiedText: "Última verificación:"
+    verifiedText: "Última verificación:",
+    print: "Imprimir", jump: "Ir a la Receta", readMode: "Modo Lectura", darkMode: "Modo Oscuro", share: "Compartir",
+    faqTitle: "Preguntas Frecuentes",
+    faq1Q: `¿Cómo conservar ${recipe.title}?`, faq1A: "Deja enfriar por completo, luego guarda en un recipiente hermético en el refrigerador por 2-3 días.",
+    faq2Q: `¿Se puede cocinar congelado?`, faq2A: "Sí, añade aproximadamente un 20% más de tiempo respecto a la receta estándar y comprueba la cocción a la mitad.",
+    faq3Q: `¿Cómo recalentar las sobras?`, faq3A: "Usa la freidora de aire a 160°C durante 3-5 minutos para devolver la textura crujiente."
   },
   fr: {
     back: "Retour", backLink: "/fr/#ricettario", temp: "Température", time: "Cuisson", prep: "Préparation",
@@ -91,7 +106,12 @@ const translations = {
     eeatTested: "Recette Testée", eeatReview: "Méthode Validée",
     startTimer: "⏱️ Démarrer Timer", stopTimer: "⏹️ Arrêter Timer",
     months: ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc"],
-    verifiedText: "Dernière vérif. :"
+    verifiedText: "Dernière vérif. :",
+    print: "Imprimer", jump: "Aller à la Recette", readMode: "Mode Lecture", darkMode: "Mode Sombre", share: "Partager",
+    faqTitle: "Foire Aux Questions",
+    faq1Q: `Comment conserver ${recipe.title}?`, faq1A: "Laissez refroidir complètement, puis conservez dans une boîte hermétique au réfrigérateur pendant 2-3 jours.",
+    faq2Q: `Peut-on le cuire congelé ?`, faq2A: "Oui, ajoutez environ 20% de temps en plus par rapport à la recette standard et vérifiez la cuisson.",
+    faq3Q: `Comment réchauffer les restes ?`, faq3A: "Utilisez la friteuse à air à 160°C pendant 3-5 minutes pour redonner du croustillant."
   }
 };
 
@@ -116,7 +136,6 @@ const getLocalizedUrl = (targetLang: string) => {
 
 function enrichText(text: string) { return text; }
 
-// LOGICA VALORI NUTRIZIONALI & FALLBACK
 let baseNutrition = recipe.nutrition || null;
 
 if (!baseNutrition && lang !== 'it') {
@@ -130,7 +149,6 @@ const hasNutrition = !!baseNutrition;
 const VNR = { kcal: 2000, proteins: 50, carbs: 260, sugars: 50, fats: 70, saturated_fats: 20, salt: 6 };
 const calcPercent = (val: number, target: number) => Math.round((val / target) * 100);
 
-// FRESHNESS E-E-A-T GENERATOR
 const d = new Date();
 const currentMonthStr = t.months[d.getMonth()];
 const currentYear = d.getFullYear();
@@ -148,15 +166,15 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
     <div class="absolute top-4 md:top-6 left-0 right-0 z-[60] px-3 md:px-4 w-full">
       <div class="max-w-5xl mx-auto flex justify-between items-center relative h-10 md:h-11">
         
-        <a href={t.backLink} class="flex items-center justify-center h-full w-10 md:w-auto md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all cursor-pointer">
+        <a href={t.backLink} aria-label={t.back} class="flex items-center justify-center h-full w-10 md:w-auto md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
           <svg class="w-4 h-4 md:mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
           <span class="hidden md:inline font-bold text-xs">{t.back}</span>
         </a>
 
         <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl gap-1.5 md:gap-2">
             {['it', 'en', 'es', 'fr'].map((l) => (
-              <a href={getLocalizedUrl(l)} class={`transition-all flex items-center justify-center cursor-pointer ${lang === l ? 'scale-110 opacity-100 ring-1 ring-blue-500 rounded-[2px]' : 'opacity-40 hover:opacity-100'}`}>
-                <img src={`https://flagcdn.com/${l === 'en' ? 'gb' : l}.svg`} alt={l.toUpperCase()} class="w-4 h-[11px] md:w-[18px] md:h-[13px] rounded-[1px] object-cover" />
+              <a href={getLocalizedUrl(l)} aria-label={l.toUpperCase()} class={`transition-all flex items-center justify-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-[2px] ${lang === l ? 'scale-110 opacity-100 ring-1 ring-blue-500' : 'opacity-40 hover:opacity-100'}`}>
+                <img src={`https://flagcdn.com/${l === 'en' ? 'gb' : l}.svg`} alt={l.toUpperCase()} width="24" height="18" class="w-4 h-[11px] md:w-[18px] md:h-[13px] rounded-[1px] object-cover" />
               </a>
             ))}
         </div>
@@ -188,11 +206,28 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
     </div>
   </div>
 
-  <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-30 pb-28">
+  <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 relative z-30 pb-28 reading-transition rounded-t-3xl pt-2">
     
+    {/* EXTENDED ACTION BAR (Jump, Print, Read Mode, Share) */}
+    <div class="flex flex-wrap justify-center items-center gap-2.5 md:gap-4 mb-8 relative z-30 hide-on-print">
+      <button id="btn-jump" aria-label={t.jump} class="flex items-center gap-1.5 px-3.5 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded-full text-[10px] md:text-xs font-bold text-white transition-all shadow-lg active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
+        ⬇️ <span class="hidden sm:inline">{t.jump}</span>
+      </button>
+      <button id="btn-print" aria-label={t.print} class="flex items-center gap-1.5 px-3.5 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded-full text-[10px] md:text-xs font-bold text-white transition-all shadow-lg active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
+        🖨️ <span class="hidden sm:inline">{t.print}</span>
+      </button>
+      <button id="btn-read-mode" aria-label={t.readMode} class="flex items-center gap-1.5 px-3.5 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded-full text-[10px] md:text-xs font-bold text-white transition-all shadow-lg active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
+        ☀️ <span id="text-read-mode" class="hidden sm:inline">{t.readMode}</span>
+      </button>
+      {/* NEW: VIRAL SHARE BUTTON */}
+      <button id="btn-share" aria-label={t.share} class="flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-500 border border-blue-500 rounded-full text-[10px] md:text-xs font-bold text-white transition-all shadow-lg shadow-blue-500/20 active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400">
+        🔗 {t.share}
+      </button>
+    </div>
+
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
       
-      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center">
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center transition-colors">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.temp}</span>
         <div class="text-3xl md:text-4xl font-mono font-bold text-orange-400 mt-1 flex justify-center items-end gap-1">
             <span id="display-temp-val">{recipe.temp}</span>
@@ -200,38 +235,37 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         </div>
       </div>
       
-      <div class="bg-slate-900/95 backdrop-blur-md border border-blue-500/30 rounded-xl p-4 md:p-6 text-center shadow-[0_0_15px_rgba(59,130,246,0.15)] flex flex-col justify-center relative overflow-hidden">
-        <div id="timer-progress" class="absolute bottom-0 left-0 h-1.5 bg-blue-500 w-0 transition-all duration-1000 ease-linear shadow-[0_0_10px_rgba(59,130,246,0.8)]"></div>
+      <div class="bg-slate-900/95 backdrop-blur-md border border-blue-500/30 rounded-xl p-4 md:p-6 text-center shadow-[0_0_15px_rgba(59,130,246,0.15)] flex flex-col justify-center relative overflow-hidden transition-colors">
+        <div id="timer-progress" class="absolute bottom-0 left-0 h-1.5 bg-blue-500 w-0 transition-all duration-1000 ease-linear shadow-[0_0_15px_rgba(59,130,246,1)]"></div>
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.time}</span>
         
         <div class="text-3xl md:text-4xl font-mono font-black text-blue-400 mt-1 mb-3 flex justify-center items-center gap-2">
             <span id="timer-display">{cleanTime}</span> <span class="text-lg md:text-xl font-sans font-bold text-blue-500" id="timer-unit">{t.unitTime}</span>
         </div>
         
-        <button id="btn-timer" class="mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5">
+        <button id="btn-timer" aria-label={t.startTimer} class="mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 keep-print focus:outline-none focus:ring-2 focus:ring-blue-400">
           {t.startTimer}
         </button>
       </div>
       
-      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center">
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center transition-colors">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.prep}</span>
         <div class="text-3xl md:text-4xl font-mono font-bold text-green-400 mt-1">
             {recipe.prep_time || '--'} <span class="text-lg md:text-xl">{t.unitTime}</span>
         </div>
       </div>
       
-      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center items-center relative group">
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center items-center relative group hide-on-print transition-colors">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-2">{t.portions}</span>
         <div class="flex items-center justify-center gap-3 mt-1">
-          <button id="btn-minus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg select-none">-</button>
+          <button id="btn-minus" aria-label="Decrease portions" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg select-none focus:outline-none focus:ring-2 focus:ring-purple-400">-</button>
           <div class="text-2xl md:text-3xl font-bold text-purple-400 w-8 text-center select-none" id="portions-display">{defaultPortions}</div>
-          <button id="btn-plus" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg select-none">+</button>
+          <button id="btn-plus" aria-label="Increase portions" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg select-none focus:outline-none focus:ring-2 focus:ring-purple-400">+</button>
         </div>
         <span class="text-[10px] text-slate-500 mt-1">{t.pers}</span>
       </div>
     </div>
 
-    {/* VISTA MOBILE: Valori Nutrizionali Fissi per singola porzione */}
     {hasNutrition && (
       <div class="lg:hidden mb-8">
         <div class="flex items-baseline justify-between mb-4">
@@ -240,23 +274,23 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         </div>
         
         <div class="grid grid-cols-4 gap-2">
-          <div class="bg-gradient-to-b from-orange-500/20 to-transparent border border-orange-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
-            <span class="text-lg mb-1">🔥</span>
+          <div class="bg-gradient-to-b from-orange-500/20 to-transparent border border-orange-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center print-clean-bg">
+            <span class="text-lg mb-1 hide-on-print">🔥</span>
             <span class="text-white font-bold text-sm">{baseNutrition.kcal}</span>
             <span class="text-orange-400 text-[9px] font-bold uppercase tracking-wider">{t.lblKcal}</span>
           </div>
-          <div class="bg-gradient-to-b from-red-500/20 to-transparent border border-red-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
-            <span class="text-lg mb-1">🥩</span>
+          <div class="bg-gradient-to-b from-red-500/20 to-transparent border border-red-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center print-clean-bg">
+            <span class="text-lg mb-1 hide-on-print">🥩</span>
             <span class="text-white font-bold text-sm">{baseNutrition.proteins_g}g</span>
             <span class="text-red-400 text-[9px] font-bold uppercase tracking-wider">{t.lblPro}</span>
           </div>
-          <div class="bg-gradient-to-b from-blue-500/20 to-transparent border border-blue-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
-            <span class="text-lg mb-1">🍞</span>
+          <div class="bg-gradient-to-b from-blue-500/20 to-transparent border border-blue-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center print-clean-bg">
+            <span class="text-lg mb-1 hide-on-print">🍞</span>
             <span class="text-white font-bold text-sm">{baseNutrition.carbs_g}g</span>
             <span class="text-blue-400 text-[9px] font-bold uppercase tracking-wider">{t.lblCarbs}</span>
           </div>
-          <div class="bg-gradient-to-b from-yellow-500/20 to-transparent border border-yellow-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center">
-            <span class="text-lg mb-1">🥑</span>
+          <div class="bg-gradient-to-b from-yellow-500/20 to-transparent border border-yellow-500/30 rounded-xl p-2 flex flex-col items-center justify-center text-center print-clean-bg">
+            <span class="text-lg mb-1 hide-on-print">🥑</span>
             <span class="text-white font-bold text-sm">{baseNutrition.fats_g}g</span>
             <span class="text-yellow-400 text-[9px] font-bold uppercase tracking-wider">{t.lblFat}</span>
           </div>
@@ -264,25 +298,27 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
       </div>
     )}
 
+    <div id="recipe-core" class="scroll-mt-24"></div>
+
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10">
       
       <div class="lg:col-span-1 space-y-8">
         
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg">
-          <h3 class="text-xl font-bold text-white mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
-            <div class="flex items-center gap-3"><span class="text-2xl">🛒</span> {t.ingTitle}</div>
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg print-clean-bg transition-colors">
+          <h3 class="text-xl font-bold text-white mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4 transition-colors">
+            <div class="flex items-center gap-3"><span class="text-2xl hide-on-print">🛒</span> {t.ingTitle}</div>
             {lang === 'en' && (
-              <div class="bg-slate-800/80 p-1 rounded-full border border-slate-600 flex items-center shrink-0 shadow-inner">
-                <button id="btn-imperial" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm">Imperial</button>
-                <button id="btn-metric" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white">Metric</button>
+              <div class="bg-slate-800/80 p-1 rounded-full border border-slate-600 flex items-center shrink-0 shadow-inner hide-on-print">
+                <button id="btn-imperial" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm focus:outline-none">Imperial</button>
+                <button id="btn-metric" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white focus:outline-none">Metric</button>
               </div>
             )}
           </h3>
           <ul class="space-y-4">
             {recipe.ingredients && recipe.ingredients.length > 0 ? (
               recipe.ingredients.map((ing: string) => (
-                <li class="flex items-start gap-3 text-slate-300 group">
-                  <input type="checkbox" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500" />
+                <li class="flex items-start gap-3 text-slate-300 group transition-colors">
+                  <input type="checkbox" aria-label="Ingredient checked" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500 hide-on-print" />
                   <span class="leading-relaxed group-hover:text-white transition-colors ingredient-text" data-original={ing} set:html={enrichText(ing)}></span>
                 </li>
               ))
@@ -291,44 +327,44 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         </div>
 
         {hasNutrition && (
-          <div class="hidden lg:block bg-slate-800 rounded-2xl border border-slate-600 overflow-hidden shadow-xl sticky top-8">
-            <div class="bg-slate-700/50 px-6 py-4 border-b border-slate-600 flex justify-between items-center">
+          <div class="hidden lg:block bg-slate-800 rounded-2xl border border-slate-600 overflow-hidden shadow-xl sticky top-8 print-clean-bg transition-colors">
+            <div class="bg-slate-700/50 px-6 py-4 border-b border-slate-600 flex justify-between items-center print-clean-bg transition-colors">
               <span class="text-slate-200 font-bold">{t.nutriTitle}</span>
               <span class="text-xs text-slate-400">{t.nutriVnr}</span>
             </div>
             <div class="p-6">
-              <ul class="space-y-3 text-sm text-slate-300">
-                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+              <ul class="space-y-3 text-sm text-slate-300 transition-colors">
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 print-clean-bg">
                   <span class="font-bold text-white">Energia (Kcal)</span>
                   <span class="font-mono text-white"><span class="text-green-400">{baseNutrition.kcal}</span> <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.kcal, VNR.kcal)}%)</span></span>
                 </li>
-                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 print-clean-bg">
                   <span class="font-bold text-white">Grassi</span>
                   <span class="font-mono text-white">{baseNutrition.fats_g}g <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.fats_g, VNR.fats)}%)</span></span>
                 </li>
-                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 pl-4">
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 pl-4 print-clean-bg">
                   <span class="text-slate-400">di cui saturi</span>
                   <span class="font-mono text-slate-400">{baseNutrition.saturated_fats_g}g <span class="text-slate-600 text-xs ml-1">({calcPercent(baseNutrition.saturated_fats_g, VNR.saturated_fats)}%)</span></span>
                 </li>
-                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 print-clean-bg">
                   <span class="font-bold text-white">Carboidrati</span>
                   <span class="font-mono text-white">{baseNutrition.carbs_g}g <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.carbs_g, VNR.carbs)}%)</span></span>
                 </li>
-                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 pl-4">
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 pl-4 print-clean-bg">
                   <span class="text-slate-400">di cui zuccheri</span>
                   <span class="font-mono text-slate-400">{baseNutrition.sugars_g}g <span class="text-slate-600 text-xs ml-1">({calcPercent(baseNutrition.sugars_g, VNR.sugars)}%)</span></span>
                 </li>
-                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50">
+                <li class="flex justify-between items-center pb-3 border-b border-slate-700/50 print-clean-bg">
                   <span class="font-bold text-white">Proteine</span>
                   <span class="font-mono text-white">{baseNutrition.proteins_g}g <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.proteins_g, VNR.proteins)}%)</span></span>
                 </li>
-                <li class="flex justify-between items-center pb-1">
+                <li class="flex justify-between items-center pb-1 print-clean-bg">
                   <span class="font-bold text-white">Sale</span>
                   <span class="font-mono text-white">{baseNutrition.salt_g}g <span class="text-slate-500 text-xs ml-1">({calcPercent(baseNutrition.salt_g, VNR.salt)}%)</span></span>
                 </li>
               </ul>
             </div>
-            <div class="bg-slate-900/50 px-6 py-3 border-t border-slate-700">
+            <div class="bg-slate-900/50 px-6 py-3 border-t border-slate-700 hide-on-print transition-colors">
               <p class="text-xs text-slate-200 font-bold text-center mb-2 tracking-wide italic">{t.nutriSub}</p>
             </div>
           </div>
@@ -339,17 +375,17 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         
         <AmazonProduct recipe={recipe} lang={lang} />
         
-        <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl">
-          <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"><span class="text-3xl">👨‍🍳</span> {t.stepTitle}</h3>
-          <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700">
+        <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl print-clean-bg transition-colors">
+          <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3 transition-colors"><span class="text-3xl hide-on-print">👨‍🍳</span> {t.stepTitle}</h3>
+          <div class="space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700 transition-colors">
             {recipe.instructions && Array.isArray(recipe.instructions) ? (
               recipe.instructions.map((step: string, index: number) => (
-                <div class="flex gap-6 relative">
-                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
+                <div class="flex gap-6 relative step-container">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10 print-clean-bg">{index + 1}</div>
                   <div class="pt-1 pb-2 w-full">
-                    <p class="text-slate-300 leading-relaxed text-lg instruction-text mb-4" set:html={enrichText(step)}></p>
+                    <p class="text-slate-300 leading-relaxed text-lg instruction-text mb-4 transition-colors" set:html={enrichText(step)}></p>
                     {sharedStepImages && sharedStepImages[index] && sharedStepImages[index] !== "" && (
-                      <div class="mb-4">
+                      <div class="mb-4 hide-on-print">
                         <img src={sharedStepImages[index]} alt={`Step ${index + 1}`} class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover" loading="lazy" onerror="this.parentElement.style.display='none';" />
                       </div>
                     )}
@@ -358,80 +394,173 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
               ))
             ) : (
               <>
-                <div class="flex gap-6 relative">
-                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg z-10">1</div>
-                  <div class="pt-1"><h4 class="text-lg font-bold text-white mb-2">{t.step1}</h4><p class="text-slate-400" set:html={enrichText(t.step1Desc)}></p></div>
+                <div class="flex gap-6 relative step-container">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg z-10 print-clean-bg">1</div>
+                  <div class="pt-1"><h4 class="text-lg font-bold text-white mb-2 transition-colors">{t.step1}</h4><p class="text-slate-400 transition-colors" set:html={enrichText(t.step1Desc)}></p></div>
                 </div>
-                <div class="flex gap-6 relative">
-                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg z-10">2</div>
-                  <div class="pt-1"><h4 class="text-lg font-bold text-white mb-2">{t.step2}</h4><p class="text-slate-400" set:html={t.step2Desc}></p></div>
+                <div class="flex gap-6 relative step-container">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg z-10 print-clean-bg">2</div>
+                  <div class="pt-1"><h4 class="text-lg font-bold text-white mb-2 transition-colors">{t.step2}</h4><p class="text-slate-400 transition-colors" set:html={t.step2Desc}></p></div>
                 </div>
               </>
             )}
             {recipe.tip && (
-              <div class="flex gap-6 relative">
-                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-bold text-black shadow-lg shadow-amber-500/20 z-10">💡</div>
-                <div class="pt-1 w-full"><h4 class="text-amber-400 font-bold mb-2">{t.tipTitle}</h4><div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4"><p class="text-amber-100 italic">"{recipe.tip}"</p></div></div>
+              <div class="flex gap-6 relative step-container">
+                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500 flex items-center justify-center font-bold text-black shadow-lg shadow-amber-500/20 z-10 hide-on-print">💡</div>
+                <div class="pt-1 w-full"><h4 class="text-amber-400 font-bold mb-2 transition-colors">{t.tipTitle}</h4><div class="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4 print-clean-bg transition-colors"><p class="text-amber-100 italic transition-colors">"{recipe.tip}"</p></div></div>
               </div>
             )}
           </div>
         </div>
 
-        <div class="bg-gradient-to-br from-emerald-900/40 to-slate-900 border border-emerald-500/30 rounded-2xl p-5 md:p-6 shadow-xl relative overflow-hidden group mt-12">
+        <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl mt-12 mb-8 hide-on-print transition-colors">
+            <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3 transition-colors"><span class="text-3xl">❓</span> {t.faqTitle}</h3>
+            <div class="space-y-4">
+                <details class="group bg-slate-900 border border-slate-700 rounded-xl overflow-hidden transition-colors">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-slate-200 hover:text-white transition-colors focus:outline-none focus:bg-slate-800">
+                        <span>{t.faq1Q}</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-0 text-slate-400 text-sm leading-relaxed border-t border-slate-800 mt-2 transition-colors">
+                        {t.faq1A}
+                    </div>
+                </details>
+                <details class="group bg-slate-900 border border-slate-700 rounded-xl overflow-hidden transition-colors">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-slate-200 hover:text-white transition-colors focus:outline-none focus:bg-slate-800">
+                        <span>{t.faq2Q}</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-0 text-slate-400 text-sm leading-relaxed border-t border-slate-800 mt-2 transition-colors">
+                        {t.faq2A}
+                    </div>
+                </details>
+                <details class="group bg-slate-900 border border-slate-700 rounded-xl overflow-hidden transition-colors">
+                    <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-slate-200 hover:text-white transition-colors focus:outline-none focus:bg-slate-800">
+                        <span>{t.faq3Q}</span>
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="p-4 pt-0 text-slate-400 text-sm leading-relaxed border-t border-slate-800 mt-2 transition-colors">
+                        {t.faq3A}
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-emerald-900/40 to-slate-900 border border-emerald-500/30 rounded-2xl p-5 md:p-6 shadow-xl relative overflow-hidden group mt-12 hide-on-print eco-widget-container transition-colors">
             <div class="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-            <h4 class="text-emerald-400 font-black text-lg flex items-center gap-2 mb-3 relative z-10">
+            <h4 class="text-emerald-400 font-black text-lg flex items-center gap-2 mb-3 relative z-10 transition-colors">
               <span class="text-2xl">⚡</span> {t.ecoTitle}
             </h4>
-            <p class="text-sm text-slate-300 mb-6 relative z-10">{t.ecoDesc}</p>
+            <p class="text-sm text-slate-300 mb-6 relative z-10 transition-colors">{t.ecoDesc}</p>
 
             <div class="grid grid-cols-2 gap-4 mb-6 relative z-10">
-                <div class="bg-slate-900/80 border border-slate-700 p-3 rounded-xl text-center shadow-inner">
-                    <span class="block text-[9px] md:text-[10px] uppercase text-slate-400 font-bold tracking-wider mb-1">{t.ecoOven}</span>
-                    <span class="text-lg md:text-xl font-mono text-red-400 font-bold" id="eco-cost-oven">--</span>
+                <div class="bg-slate-900/80 border border-slate-700 p-3 rounded-xl text-center shadow-inner transition-colors">
+                    <span class="block text-[9px] md:text-[10px] uppercase text-slate-400 font-bold tracking-wider mb-1 transition-colors">{t.ecoOven}</span>
+                    <span class="text-lg md:text-xl font-mono text-red-400 font-bold transition-colors" id="eco-cost-oven">--</span>
                 </div>
-                <div class="bg-slate-900/80 border border-emerald-500/30 p-3 rounded-xl text-center shadow-inner relative overflow-hidden">
+                <div class="bg-slate-900/80 border border-emerald-500/30 p-3 rounded-xl text-center shadow-inner relative overflow-hidden transition-colors">
                     <div class="absolute inset-0 bg-emerald-500/5 animate-pulse"></div>
-                    <span class="block text-[9px] md:text-[10px] uppercase text-emerald-400 font-bold tracking-wider mb-1 relative z-10">{t.ecoAF}</span>
-                    <span class="text-xl md:text-2xl font-mono text-emerald-400 font-black relative z-10" id="eco-cost-af">--</span>
+                    <span class="block text-[9px] md:text-[10px] uppercase text-emerald-400 font-bold tracking-wider mb-1 relative z-10 transition-colors">{t.ecoAF}</span>
+                    <span class="text-xl md:text-2xl font-mono text-emerald-400 font-black relative z-10 transition-colors" id="eco-cost-af">--</span>
                 </div>
             </div>
 
-            <div class="bg-emerald-500/10 rounded-xl p-4 border border-emerald-500/20 flex justify-between items-center mb-4 relative z-10">
-                <span class="text-sm font-bold text-emerald-100 uppercase tracking-wider">{t.ecoSave}</span>
-                <span class="text-2xl font-black text-white" id="eco-saved-total">--</span>
+            <div class="bg-emerald-500/10 rounded-xl p-4 border border-emerald-500/20 flex justify-between items-center mb-4 relative z-10 transition-colors">
+                <span class="text-sm font-bold text-emerald-100 uppercase tracking-wider transition-colors">{t.ecoSave}</span>
+                <span class="text-2xl font-black text-white transition-colors" id="eco-saved-total">--</span>
             </div>
 
-            <details class="group cursor-pointer [&_summary::-webkit-details-marker]:hidden text-xs relative z-10">
-                <summary class="flex items-center justify-center gap-2 text-slate-400 hover:text-slate-200 transition-colors font-bold uppercase tracking-wider border-t border-slate-700/50 pt-3 mt-2">
+            <details class="group cursor-pointer [&_summary::-webkit-details-marker]:hidden text-xs relative z-10 transition-colors">
+                <summary class="flex items-center justify-center gap-2 text-slate-400 hover:text-slate-200 transition-colors font-bold uppercase tracking-wider border-t border-slate-700/50 pt-3 mt-2 focus:outline-none focus:text-white">
                     {t.ecoCustomize} <span class="transition-transform group-open:rotate-180">▼</span>
                 </summary>
                 <div class="pt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
                     <div>
-                        <label class="block text-[10px] text-slate-500 mb-1">{t.ecoKwh}</label>
+                        <label class="block text-[10px] text-slate-500 mb-1 transition-colors">{t.ecoKwh}</label>
                         <input type="number" id="input-kwh" value="0.28" step="0.01" class="w-full bg-slate-950 border border-slate-700 rounded p-2 text-white font-mono text-sm outline-none focus:border-emerald-500 transition-colors" />
                     </div>
                     <div>
-                        <label class="block text-[10px] text-slate-500 mb-1">{t.ecoWattOven}</label>
+                        <label class="block text-[10px] text-slate-500 mb-1 transition-colors">{t.ecoWattOven}</label>
                         <input type="number" id="input-watt-oven" value="2200" step="100" class="w-full bg-slate-950 border border-slate-700 rounded p-2 text-white font-mono text-sm outline-none focus:border-emerald-500 transition-colors" />
                     </div>
                     <div>
-                        <label class="block text-[10px] text-slate-500 mb-1">{t.ecoWattAF}</label>
+                        <label class="block text-[10px] text-slate-500 mb-1 transition-colors">{t.ecoWattAF}</label>
                         <input type="number" id="input-watt-af" value="1500" step="50" class="w-full bg-slate-950 border border-slate-700 rounded p-2 text-white font-mono text-sm outline-none focus:border-emerald-500 transition-colors" />
                     </div>
                 </div>
             </details>
         </div>
 
-        <div class="text-center pt-8 border-t border-slate-800">
-          <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-all font-medium">{t.searchOther}</a>
+        <div class="text-center pt-8 border-t border-slate-800 hide-on-print transition-colors">
+          <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-all font-medium focus:outline-none focus:ring-2 focus:ring-slate-500">{t.searchOther}</a>
         </div>
       </div>
     </div>
   </div>
 
-  <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang, recipeTime: cleanTime, txtStart: t.startTimer, txtStop: t.stopTimer }}>
+  <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang, recipeTime: cleanTime, txtStart: t.startTimer, txtStop: t.stopTimer, txtReadMode: t.readMode, txtDarkMode: t.darkMode }}>
     document.addEventListener('astro:page-load', () => {
       
+      // Helper per vibrazione tattile (se supportata)
+      const triggerHaptic = () => { if (navigator.vibrate) navigator.vibrate(40); };
+
+      // --- LOGICA BOTTONI UX (Stampa, Jump, Reading Mode, Share) ---
+      const btnPrint = document.getElementById('btn-print');
+      if (btnPrint) btnPrint.addEventListener('click', () => { triggerHaptic(); window.print(); });
+
+      const btnJump = document.getElementById('btn-jump');
+      if (btnJump) {
+        btnJump.addEventListener('click', () => {
+          triggerHaptic();
+          const core = document.getElementById('recipe-core');
+          if (core) core.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+
+      const btnShare = document.getElementById('btn-share');
+      if (btnShare) {
+        btnShare.addEventListener('click', async () => {
+          triggerHaptic();
+          try {
+            if (navigator.share) {
+              await navigator.share({ title: document.title, url: window.location.href });
+            } else {
+              await navigator.clipboard.writeText(window.location.href);
+              const originalHTML = btnShare.innerHTML;
+              btnShare.innerHTML = '✅ Copiato!';
+              setTimeout(() => { btnShare.innerHTML = originalHTML; }, 2000);
+            }
+          } catch (err) { console.log('Share error or canceled', err); }
+        });
+      }
+
+      const btnReadMode = document.getElementById('btn-read-mode');
+      const textReadMode = document.getElementById('text-read-mode');
+      const contentWrapper = document.getElementById('recipe-content-wrapper');
+      let isReadMode = false;
+      
+      if (btnReadMode && contentWrapper) {
+        btnReadMode.addEventListener('click', () => {
+          triggerHaptic();
+          isReadMode = !isReadMode;
+          if (isReadMode) {
+            contentWrapper.classList.add('reading-mode');
+            if (textReadMode) textReadMode.innerText = txtDarkMode;
+            btnReadMode.innerHTML = `🌙 <span id="text-read-mode" class="hidden sm:inline">${txtDarkMode}</span>`;
+          } else {
+            contentWrapper.classList.remove('reading-mode');
+            if (textReadMode) textReadMode.innerText = txtReadMode;
+            btnReadMode.innerHTML = `☀️ <span id="text-read-mode" class="hidden sm:inline">${txtReadMode}</span>`;
+          }
+        });
+      }
+
       // --- LOGICA TIMER DWELL TIME HACK ---
       const btnTimer = document.getElementById('btn-timer');
       const timerDisplay = document.getElementById('timer-display');
@@ -454,11 +583,12 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
 
       if (btnTimer && timerDisplay && parsedTime > 0) {
         btnTimer.addEventListener('click', () => {
+          triggerHaptic();
           if (isTimerRunning) {
             clearInterval(timerInterval);
             isTimerRunning = false;
             btnTimer.innerHTML = txtStart;
-            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5";
+            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 keep-print focus:outline-none focus:ring-2 focus:ring-blue-400";
             timerDisplay.innerText = recipeTime; 
             timerUnit.innerText = lang === 'en' ? 'min' : 'min';
             progressBar.style.width = '0%';
@@ -467,7 +597,7 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
             const fullTime = totalSeconds;
             isTimerRunning = true;
             btnTimer.innerHTML = txtStop;
-            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-red-600/20 border border-red-500/50 hover:bg-red-600/40 text-red-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5";
+            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-red-600/20 border border-red-500/50 hover:bg-red-600/40 text-red-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 keep-print focus:outline-none focus:ring-2 focus:ring-red-400";
             
             timerInterval = setInterval(() => {
               totalSeconds--;
@@ -502,7 +632,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
       const btnPlus = document.getElementById('btn-plus');
       const ingredients = document.querySelectorAll('.ingredient-text');
 
-      // IL FIX È QUI: Se non siamo in inglese, il sistema nasce già in Metrico!
       let isMetric = lang !== 'en'; 
 
       const btnImperial = document.getElementById('btn-imperial');
@@ -614,20 +743,22 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         }
       }
       
-      btnMinus.addEventListener('click', () => { if (currentPortions > 1) { currentPortions--; updateUI(); }});
-      btnPlus.addEventListener('click', () => { if (currentPortions < 20) { currentPortions++; updateUI(); }});
+      btnMinus.addEventListener('click', () => { triggerHaptic(); if (currentPortions > 1) { currentPortions--; updateUI(); }});
+      btnPlus.addEventListener('click', () => { triggerHaptic(); if (currentPortions < 20) { currentPortions++; updateUI(); }});
 
       if (btnImperial && btnMetric) {
           btnImperial.addEventListener('click', () => { 
+            triggerHaptic();
             isMetric = false; 
-            btnImperial.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm"; 
-            btnMetric.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white"; 
+            btnImperial.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm focus:outline-none"; 
+            btnMetric.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white focus:outline-none"; 
             updateUI(); 
           });
           btnMetric.addEventListener('click', () => { 
+            triggerHaptic();
             isMetric = true; 
-            btnMetric.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm"; 
-            btnImperial.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white"; 
+            btnMetric.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm focus:outline-none"; 
+            btnImperial.className = "px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white focus:outline-none"; 
             updateUI(); 
           });
       }
