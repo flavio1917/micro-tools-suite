@@ -165,10 +165,7 @@ const alternateUrls = {
 <MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData} alternateUrls={alternateUrls}>
   
   <style is:global>
-    /* Spegne l'header globale del MainLayout solo su questa pagina per non sdoppiare le bandierine */
-    body > header {
-      display: none !important;
-    }
+    body > header { display: none !important; }
   </style>
 
   <SchemaRecipe recipe={recipe} lang={lang} />
@@ -192,12 +189,10 @@ const alternateUrls = {
               </a>
             ))}
         </div>
-
       </div>
     </div>
     
     <div class="relative max-w-5xl mx-auto px-4 h-full flex flex-col justify-end pb-10 md:pb-14 z-20 text-center pointer-events-none">
-      
       <div class="hidden md:flex justify-center mb-3 opacity-90">
          <span class="px-3 py-1 bg-slate-900/60 backdrop-blur-md border border-slate-500/30 rounded-full text-[10px] text-slate-300 font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-lg"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> {freshnessString}</span>
       </div>
@@ -216,12 +211,12 @@ const alternateUrls = {
     </div>
   </div>
 
-  <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 relative z-30 pb-28 reading-transition rounded-t-3xl pt-2">
+  <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 print:mt-0 print:pt-4 relative z-30 pb-28 reading-transition rounded-t-3xl pt-2">
     
-    <div class="hidden print:block print:mb-10 text-center">
-       <h1 class="text-4xl font-black text-black mb-4">{recipe.title}</h1>
-       <p class="text-lg text-gray-800 max-w-4xl mx-auto">{recipe.description}</p>
-       <hr class="mt-8 border-gray-300" />
+    {/* INTESTAZIONE STAMPA (PULITA) */}
+    <div class="hidden print:block print:mb-8 text-center">
+       <h1 class="text-3xl font-black text-black mb-3">{recipe.title}</h1>
+       <p class="text-sm text-gray-800 max-w-3xl mx-auto">{recipe.description}</p>
     </div>
 
     <div class="flex flex-wrap justify-center items-center gap-2.5 md:gap-4 mb-8 relative z-30 hide-on-print">
@@ -239,37 +234,30 @@ const alternateUrls = {
       </button>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-      
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 hide-on-print">
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center transition-colors">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.temp}</span>
         <div class="text-3xl md:text-4xl font-mono font-bold text-orange-400 mt-1 flex justify-center items-end gap-1">
-            <span id="display-temp-val">{recipe.temp}</span>
-            <span id="display-temp-unit" class="text-xl md:text-2xl pb-1">{t.unitTemp}</span>
+            <span id="display-temp-val">{recipe.temp}</span><span id="display-temp-unit" class="text-xl md:text-2xl pb-1">{t.unitTemp}</span>
         </div>
       </div>
-      
       <div class="bg-slate-900/95 backdrop-blur-md border border-blue-500/30 rounded-xl p-4 md:p-6 text-center shadow-[0_0_15px_rgba(59,130,246,0.15)] flex flex-col justify-center relative overflow-hidden transition-colors">
         <div id="timer-progress" class="absolute bottom-0 left-0 h-1.5 bg-blue-500 w-0 transition-all duration-1000 ease-linear shadow-[0_0_15px_rgba(59,130,246,1)]"></div>
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.time}</span>
-        
         <div class="text-3xl md:text-4xl font-mono font-black text-blue-400 mt-1 mb-3 flex justify-center items-center gap-2">
             <span id="timer-display">{cleanTime}</span> <span class="text-lg md:text-xl font-sans font-bold text-blue-500" id="timer-unit">{t.unitTime}</span>
         </div>
-        
-        <button id="btn-timer" aria-label={t.startTimer} class="mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 keep-print focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <button id="btn-timer" aria-label={t.startTimer} class="mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400">
           {t.startTimer}
         </button>
       </div>
-      
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center transition-colors">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.prep}</span>
         <div class="text-3xl md:text-4xl font-mono font-bold text-green-400 mt-1">
             {recipe.prep_time || '--'} <span class="text-lg md:text-xl">{t.unitTime}</span>
         </div>
       </div>
-      
-      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center items-center relative group hide-on-print transition-colors">
+      <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center items-center relative group transition-colors">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-2">{t.portions}</span>
         <div class="flex items-center justify-center gap-3 mt-1">
           <button id="btn-minus" aria-label="Decrease portions" class="w-8 h-8 rounded-full bg-slate-700 hover:bg-purple-600 text-white flex items-center justify-center font-bold text-lg transition-colors cursor-pointer active:scale-95 z-10 shadow-lg select-none focus:outline-none focus:ring-2 focus:ring-purple-400">-</button>
@@ -284,12 +272,12 @@ const alternateUrls = {
 
     <div class="space-y-8 md:space-y-10">
       
-      {/* INGREDIENTI FULL-WIDTH */}
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-lg print-clean-bg transition-colors">
+      {/* INGREDIENTI WEB */}
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-lg transition-colors print:hidden">
         <h3 class="text-xl font-bold text-white mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4 transition-colors">
-          <div class="flex items-center gap-3"><span class="text-2xl hide-on-print">🛒</span> {t.ingTitle}</div>
+          <div class="flex items-center gap-3"><span class="text-2xl">🛒</span> {t.ingTitle}</div>
           {lang === 'en' && (
-            <div class="bg-slate-800/80 p-1 rounded-full border border-slate-600 flex items-center shrink-0 shadow-inner hide-on-print">
+            <div class="bg-slate-800/80 p-1 rounded-full border border-slate-600 flex items-center shrink-0 shadow-inner">
               <button id="btn-imperial" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm focus:outline-none">Imperial</button>
               <button id="btn-metric" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white focus:outline-none">Metric</button>
             </div>
@@ -299,7 +287,7 @@ const alternateUrls = {
           {recipe.ingredients && recipe.ingredients.length > 0 ? (
             recipe.ingredients.map((ing: string) => (
               <li class="flex items-start gap-3 text-slate-300 group transition-colors">
-                <input type="checkbox" aria-label="Ingredient checked" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500 hide-on-print" />
+                <input type="checkbox" aria-label="Ingredient checked" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500" />
                 <span class="leading-relaxed text-lg md:text-base group-hover:text-white transition-colors ingredient-text" data-original={ing} set:html={enrichText(ing)}></span>
               </li>
             ))
@@ -307,20 +295,32 @@ const alternateUrls = {
         </ul>
       </div>
 
+      {/* INGREDIENTI STAMPA (Lista pulita ed essenziale) */}
+      <div class="hidden print:block mb-10">
+         <h3 class="text-xl font-bold text-black border-b border-gray-300 pb-2 mb-4 uppercase">{t.ingTitle}</h3>
+         <ul class="list-disc pl-5 space-y-2">
+            {recipe.ingredients && recipe.ingredients.length > 0 ? (
+              recipe.ingredients.map((ing: string) => (
+                <li class="text-black text-sm" set:html={enrichText(ing)}></li>
+              ))
+            ) : (<li class="text-gray-500 italic text-sm">{t.noIng}</li>)}
+         </ul>
+      </div>
+
       <div class="hide-on-print">
         <AmazonProduct recipe={recipe} lang={lang} />
       </div>
       
-      {/* PROCEDIMENTO FULL-WIDTH */}
-      <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl print-clean-bg print-page-break transition-colors">
-        <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3 transition-colors"><span class="text-3xl hide-on-print">👨‍🍳</span> {t.stepTitle}</h3>
-        <div class="step-list space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700 transition-colors">
+      {/* PROCEDIMENTO (Usa classi unificate, i colori/sfondi spariscono in stampa) */}
+      <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl print:p-0 print:border-none print:shadow-none print-page-break transition-colors">
+        <h3 class="text-2xl font-bold text-white print:text-black print:border-b print:border-gray-300 print:pb-2 mb-8 print:mb-6 flex items-center gap-3 transition-colors"><span class="text-3xl hide-on-print">👨‍🍳</span> {t.stepTitle}</h3>
+        <div class="step-list space-y-8 print:space-y-6 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700 print:before:hidden transition-colors">
           {recipe.instructions && Array.isArray(recipe.instructions) ? (
             recipe.instructions.map((step: string, index: number) => (
               <div class="flex gap-6 relative step-container">
-                <div class="step-number flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">{index + 1}</div>
+                <div class="step-number">{index + 1}</div>
                 <div class="pt-1 pb-2 w-full">
-                  <p class="text-slate-300 leading-relaxed text-lg instruction-text mb-4 transition-colors" set:html={enrichText(step)}></p>
+                  <p class="text-slate-300 print:text-black leading-relaxed text-lg print:text-[15px] instruction-text mb-4 print:mb-1 transition-colors" set:html={enrichText(step)}></p>
                   {sharedStepImages && sharedStepImages[index] && sharedStepImages[index] !== "" && (
                     <div class="mb-4 hide-on-print">
                       <img src={sharedStepImages[index]} alt={`Step ${index + 1}`} class="w-full md:max-w-md rounded-xl shadow-lg border border-slate-700 object-cover" loading="lazy" onerror="this.parentElement.style.display='none';" />
@@ -332,56 +332,70 @@ const alternateUrls = {
           ) : (
             <>
               <div class="flex gap-6 relative step-container">
-                <div class="step-number flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">1</div>
-                <div class="pt-1"><h4 class="text-lg font-bold text-white mb-2 transition-colors">{t.step1}</h4><p class="text-slate-400 transition-colors" set:html={enrichText(t.step1Desc)}></p></div>
+                <div class="step-number">1</div>
+                <div class="pt-1"><h4 class="text-lg font-bold text-white print:text-black mb-2 transition-colors">{t.step1}</h4><p class="text-slate-400 print:text-black transition-colors" set:html={enrichText(t.step1Desc)}></p></div>
               </div>
               <div class="flex gap-6 relative step-container">
-                <div class="step-number flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-white shadow-lg ring-4 ring-slate-900 z-10">2</div>
-                <div class="pt-1"><h4 class="text-lg font-bold text-white mb-2 transition-colors">{t.step2}</h4><p class="text-slate-400 transition-colors" set:html={t.step2Desc}></p></div>
+                <div class="step-number">2</div>
+                <div class="pt-1"><h4 class="text-lg font-bold text-white print:text-black mb-2 transition-colors">{t.step2}</h4><p class="text-slate-400 print:text-black transition-colors" set:html={t.step2Desc}></p></div>
               </div>
             </>
           )}
         </div>
       </div>
 
-      {/* VALORI NUTRIZIONALI E SEGRETI (Spostati qui) */}
       {hasNutrition && (
-        <div class="mb-8 print-clean-bg print-page-break">
-          <div class="flex items-baseline justify-between mb-4">
-            <h2 class="text-2xl font-bold text-white transition-colors">{t.nutriTitle}</h2>
-            <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold transition-colors">{t.nutriSub}</span>
-          </div>
-          
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="bg-gradient-to-b from-orange-500/20 to-transparent border border-orange-500/30 rounded-xl p-4 flex flex-col items-center justify-center text-center print-clean-bg transition-colors">
-              <span class="text-2xl mb-2 hide-on-print">🔥</span>
-              <span class="text-white font-bold text-xl transition-colors">{baseNutrition.kcal}</span>
-              <span class="text-orange-400 text-[10px] font-bold uppercase tracking-wider transition-colors">{t.lblKcal}</span>
+        <>
+          {/* VALORI NUTRIZIONALI WEB */}
+          <div class="mb-8 print:hidden">
+            <div class="flex items-baseline justify-between mb-4">
+              <h2 class="text-2xl font-bold text-white transition-colors">{t.nutriTitle}</h2>
+              <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold transition-colors">{t.nutriSub}</span>
             </div>
-            <div class="bg-gradient-to-b from-red-500/20 to-transparent border border-red-500/30 rounded-xl p-4 flex flex-col items-center justify-center text-center print-clean-bg transition-colors">
-              <span class="text-2xl mb-2 hide-on-print">🥩</span>
-              <span class="text-white font-bold text-xl transition-colors">{baseNutrition.proteins_g}g</span>
-              <span class="text-red-400 text-[10px] font-bold uppercase tracking-wider transition-colors">{t.lblPro}</span>
-            </div>
-            <div class="bg-gradient-to-b from-blue-500/20 to-transparent border border-blue-500/30 rounded-xl p-4 flex flex-col items-center justify-center text-center print-clean-bg transition-colors">
-              <span class="text-2xl mb-2 hide-on-print">🍞</span>
-              <span class="text-white font-bold text-xl transition-colors">{baseNutrition.carbs_g}g</span>
-              <span class="text-blue-400 text-[10px] font-bold uppercase tracking-wider transition-colors">{t.lblCarbs}</span>
-            </div>
-            <div class="bg-gradient-to-b from-yellow-500/20 to-transparent border border-yellow-500/30 rounded-xl p-4 flex flex-col items-center justify-center text-center print-clean-bg transition-colors">
-              <span class="text-2xl mb-2 hide-on-print">🥑</span>
-              <span class="text-white font-bold text-xl transition-colors">{baseNutrition.fats_g}g</span>
-              <span class="text-yellow-400 text-[10px] font-bold uppercase tracking-wider transition-colors">{t.lblFat}</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div class="bg-gradient-to-b from-orange-500/20 to-transparent border border-orange-500/30 rounded-xl p-4 flex flex-col items-center justify-center text-center transition-colors">
+                <span class="text-2xl mb-2">🔥</span><span class="text-white font-bold text-xl transition-colors">{baseNutrition.kcal}</span><span class="text-orange-400 text-[10px] font-bold uppercase tracking-wider transition-colors">{t.lblKcal}</span>
+              </div>
+              <div class="bg-gradient-to-b from-red-500/20 to-transparent border border-red-500/30 rounded-xl p-4 flex flex-col items-center justify-center text-center transition-colors">
+                <span class="text-2xl mb-2">🥩</span><span class="text-white font-bold text-xl transition-colors">{baseNutrition.proteins_g}g</span><span class="text-red-400 text-[10px] font-bold uppercase tracking-wider transition-colors">{t.lblPro}</span>
+              </div>
+              <div class="bg-gradient-to-b from-blue-500/20 to-transparent border border-blue-500/30 rounded-xl p-4 flex flex-col items-center justify-center text-center transition-colors">
+                <span class="text-2xl mb-2">🍞</span><span class="text-white font-bold text-xl transition-colors">{baseNutrition.carbs_g}g</span><span class="text-blue-400 text-[10px] font-bold uppercase tracking-wider transition-colors">{t.lblCarbs}</span>
+              </div>
+              <div class="bg-gradient-to-b from-yellow-500/20 to-transparent border border-yellow-500/30 rounded-xl p-4 flex flex-col items-center justify-center text-center transition-colors">
+                <span class="text-2xl mb-2">🥑</span><span class="text-white font-bold text-xl transition-colors">{baseNutrition.fats_g}g</span><span class="text-yellow-400 text-[10px] font-bold uppercase tracking-wider transition-colors">{t.lblFat}</span>
+              </div>
             </div>
           </div>
-        </div>
+
+          {/* VALORI NUTRIZIONALI STAMPA (In riga, minimalisti) */}
+          <div class="hidden print:block mb-8 print-page-break">
+            <div class="border-b border-gray-300 pb-2 mb-4 flex justify-between items-end">
+              <h2 class="text-xl font-bold text-black uppercase">{t.nutriTitle}</h2>
+              <span class="text-[10px] text-gray-500 uppercase">{t.nutriSub}</span>
+            </div>
+            <div class="flex justify-around items-center py-2 bg-gray-50 rounded border border-gray-200">
+               <div class="text-center"><span class="block text-xl font-bold text-black">{baseNutrition.kcal}</span><span class="text-[10px] font-bold uppercase text-gray-500">{t.lblKcal}</span></div>
+               <div class="text-center"><span class="block text-xl font-bold text-black">{baseNutrition.proteins_g}g</span><span class="text-[10px] font-bold uppercase text-gray-500">{t.lblPro}</span></div>
+               <div class="text-center"><span class="block text-xl font-bold text-black">{baseNutrition.carbs_g}g</span><span class="text-[10px] font-bold uppercase text-gray-500">{t.lblCarbs}</span></div>
+               <div class="text-center"><span class="block text-xl font-bold text-black">{baseNutrition.fats_g}g</span><span class="text-[10px] font-bold uppercase text-gray-500">{t.lblFat}</span></div>
+            </div>
+          </div>
+        </>
       )}
 
       {recipe.tip && (
-        <div class="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6 md:p-8 mt-8 print-clean-bg transition-colors">
-          <h4 class="text-2xl font-bold text-amber-400 mb-4 transition-colors flex items-center gap-2"><span class="hide-on-print">💡</span> {t.tipTitle}</h4>
-          <p class="text-amber-100 text-lg italic transition-colors">"{recipe.tip}"</p>
-        </div>
+        <>
+          <div class="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6 md:p-8 mt-8 transition-colors hide-on-print">
+            <h4 class="text-2xl font-bold text-amber-400 mb-4 transition-colors flex items-center gap-2">💡 {t.tipTitle}</h4>
+            <p class="text-amber-100 text-lg italic transition-colors">"{recipe.tip}"</p>
+          </div>
+          {/* SEGRETO STAMPA */}
+          <div class="hidden print:block mt-8 p-4 border border-gray-300 bg-gray-50 rounded-lg">
+             <h4 class="text-lg font-bold text-black mb-2 uppercase">{t.tipTitle}</h4>
+             <p class="text-black italic text-sm">"{recipe.tip}"</p>
+          </div>
+        </>
       )}
 
       <div class="border-t border-slate-800 pt-8 mt-12 mb-8 text-center hide-on-print transition-colors">
@@ -398,46 +412,31 @@ const alternateUrls = {
               <details class="group bg-slate-900 border border-slate-700 rounded-xl overflow-hidden transition-colors">
                   <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-slate-200 hover:text-white transition-colors focus:outline-none focus:bg-slate-800">
                       <span>{t.faq1Q}</span>
-                      <span class="transition group-open:rotate-180">
-                          <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                      </span>
+                      <span class="transition group-open:rotate-180"><svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
                   </summary>
-                  <div class="p-4 pt-0 text-slate-400 text-sm leading-relaxed border-t border-slate-800 mt-2 transition-colors">
-                      {t.faq1A}
-                  </div>
+                  <div class="p-4 pt-0 text-slate-400 text-sm leading-relaxed border-t border-slate-800 mt-2 transition-colors">{t.faq1A}</div>
               </details>
               <details class="group bg-slate-900 border border-slate-700 rounded-xl overflow-hidden transition-colors">
                   <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-slate-200 hover:text-white transition-colors focus:outline-none focus:bg-slate-800">
                       <span>{t.faq2Q}</span>
-                      <span class="transition group-open:rotate-180">
-                          <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                      </span>
+                      <span class="transition group-open:rotate-180"><svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
                   </summary>
-                  <div class="p-4 pt-0 text-slate-400 text-sm leading-relaxed border-t border-slate-800 mt-2 transition-colors">
-                      {t.faq2A}
-                  </div>
+                  <div class="p-4 pt-0 text-slate-400 text-sm leading-relaxed border-t border-slate-800 mt-2 transition-colors">{t.faq2A}</div>
               </details>
               <details class="group bg-slate-900 border border-slate-700 rounded-xl overflow-hidden transition-colors">
                   <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-slate-200 hover:text-white transition-colors focus:outline-none focus:bg-slate-800">
                       <span>{t.faq3Q}</span>
-                      <span class="transition group-open:rotate-180">
-                          <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-                      </span>
+                      <span class="transition group-open:rotate-180"><svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg></span>
                   </summary>
-                  <div class="p-4 pt-0 text-slate-400 text-sm leading-relaxed border-t border-slate-800 mt-2 transition-colors">
-                      {t.faq3A}
-                  </div>
+                  <div class="p-4 pt-0 text-slate-400 text-sm leading-relaxed border-t border-slate-800 mt-2 transition-colors">{t.faq3A}</div>
               </details>
           </div>
       </div>
 
       <div class="bg-gradient-to-br from-emerald-900/40 to-slate-900 border border-emerald-500/30 rounded-2xl p-5 md:p-6 shadow-xl relative overflow-hidden group hide-on-print eco-widget-container transition-colors">
           <div class="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-          <h4 class="text-emerald-400 font-black text-lg flex items-center gap-2 mb-3 relative z-10 transition-colors">
-            <span class="text-2xl">⚡</span> {t.ecoTitle}
-          </h4>
+          <h4 class="text-emerald-400 font-black text-lg flex items-center gap-2 mb-3 relative z-10 transition-colors"><span class="text-2xl">⚡</span> {t.ecoTitle}</h4>
           <p class="text-sm text-slate-300 mb-6 relative z-10 transition-colors">{t.ecoDesc}</p>
-
           <div class="grid grid-cols-2 gap-4 mb-6 relative z-10">
               <div class="bg-slate-900/80 border border-slate-700 p-3 rounded-xl text-center shadow-inner transition-colors">
                   <span class="block text-[9px] md:text-[10px] uppercase text-slate-400 font-bold tracking-wider mb-1 transition-colors">{t.ecoOven}</span>
@@ -449,29 +448,18 @@ const alternateUrls = {
                   <span class="text-xl md:text-2xl font-mono text-emerald-400 font-black relative z-10 transition-colors" id="eco-cost-af">--</span>
               </div>
           </div>
-
           <div class="bg-emerald-500/10 rounded-xl p-4 border border-emerald-500/20 flex justify-between items-center mb-4 relative z-10 transition-colors">
               <span class="text-sm font-bold text-emerald-100 uppercase tracking-wider transition-colors">{t.ecoSave}</span>
               <span class="text-2xl font-black text-white transition-colors" id="eco-saved-total">--</span>
           </div>
-
           <details class="group cursor-pointer [&_summary::-webkit-details-marker]:hidden text-xs relative z-10 transition-colors">
               <summary class="flex items-center justify-center gap-2 text-slate-400 hover:text-slate-200 transition-colors font-bold uppercase tracking-wider border-t border-slate-700/50 pt-3 mt-2 focus:outline-none focus:text-white">
                   {t.ecoCustomize} <span class="transition-transform group-open:rotate-180">▼</span>
               </summary>
               <div class="pt-4 grid grid-cols-1 md:grid-cols-3 gap-3">
-                  <div>
-                      <label class="block text-[10px] text-slate-500 mb-1 transition-colors">{t.ecoKwh}</label>
-                      <input type="number" id="input-kwh" value="0.28" step="0.01" class="w-full bg-slate-950 border border-slate-700 rounded p-2 text-white font-mono text-sm outline-none focus:border-emerald-500 transition-colors" />
-                  </div>
-                  <div>
-                      <label class="block text-[10px] text-slate-500 mb-1 transition-colors">{t.ecoWattOven}</label>
-                      <input type="number" id="input-watt-oven" value="2200" step="100" class="w-full bg-slate-950 border border-slate-700 rounded p-2 text-white font-mono text-sm outline-none focus:border-emerald-500 transition-colors" />
-                  </div>
-                  <div>
-                      <label class="block text-[10px] text-slate-500 mb-1 transition-colors">{t.ecoWattAF}</label>
-                      <input type="number" id="input-watt-af" value="1500" step="50" class="w-full bg-slate-950 border border-slate-700 rounded p-2 text-white font-mono text-sm outline-none focus:border-emerald-500 transition-colors" />
-                  </div>
+                  <div><label class="block text-[10px] text-slate-500 mb-1 transition-colors">{t.ecoKwh}</label><input type="number" id="input-kwh" value="0.28" step="0.01" class="w-full bg-slate-950 border border-slate-700 rounded p-2 text-white font-mono text-sm outline-none focus:border-emerald-500 transition-colors" /></div>
+                  <div><label class="block text-[10px] text-slate-500 mb-1 transition-colors">{t.ecoWattOven}</label><input type="number" id="input-watt-oven" value="2200" step="100" class="w-full bg-slate-950 border border-slate-700 rounded p-2 text-white font-mono text-sm outline-none focus:border-emerald-500 transition-colors" /></div>
+                  <div><label class="block text-[10px] text-slate-500 mb-1 transition-colors">{t.ecoWattAF}</label><input type="number" id="input-watt-af" value="1500" step="50" class="w-full bg-slate-950 border border-slate-700 rounded p-2 text-white font-mono text-sm outline-none focus:border-emerald-500 transition-colors" /></div>
               </div>
           </details>
       </div>
@@ -563,7 +551,7 @@ const alternateUrls = {
             clearInterval(timerInterval);
             isTimerRunning = false;
             btnTimer.innerHTML = txtStart;
-            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 keep-print focus:outline-none focus:ring-2 focus:ring-blue-400";
+            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400";
             timerDisplay.innerText = recipeTime; 
             timerUnit.innerText = lang === 'en' ? 'min' : 'min';
             progressBar.style.width = '0%';
@@ -572,7 +560,7 @@ const alternateUrls = {
             const fullTime = totalSeconds;
             isTimerRunning = true;
             btnTimer.innerHTML = txtStop;
-            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-red-600/20 border border-red-500/50 hover:bg-red-600/40 text-red-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 keep-print focus:outline-none focus:ring-2 focus:ring-red-400";
+            btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-red-600/20 border border-red-500/50 hover:bg-red-600/40 text-red-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-red-400";
             
             timerInterval = setInterval(() => {
               totalSeconds--;
