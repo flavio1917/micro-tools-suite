@@ -6147,36 +6147,38 @@
     "is_sanitized": true
   },
   {
-    "slug": "air-fryer-hash-browns",
-    "title": "Golden Hash Brown Patties",
+    "slug": "homemade-hash-browns",
+    "title": "Homemade Crispy Hash Browns",
     "emoji": "🥔",
-    "temp": 355,
-    "time": "20",
-    "prep_time": "N/A",
+    "temp": 190,
+    "time": "15-20",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
-      "21 oz frozen shredded hash brown patties"
+      "600 g starchy potatoes (e.g., Russet)",
+      "1 tbsp olive oil",
+      "1 tbsp cornstarch",
+      "Salt and black pepper to taste"
     ],
-    "description": "Start your morning with a crunch. These classic potato patties are cooked to a beautiful golden-brown finish using rapid air circulation, keeping them light, crispy, and oil-free.",
+    "description": "Crispy on the outside, tender on the inside. Learn how to make authentic diner-style hash browns from scratch using fresh potatoes in your air fryer with just a drizzle of oil.",
     "instructions": [
-      "Arrange the frozen hash brown patties in the cooking basket in a single, non-overlapping layer.",
-      "Do not add oil. The product contains sufficient fat for cooking.",
-      "Set the appliance to 355°F and cook for a total of 20 minutes.",
-      "After 10 minutes, open the basket and flip each patty with tongs or a spatula to ensure even browning."
+      "Peel the potatoes and grate them coarsely using a box grater.",
+      "Crucial step: wrap the grated potatoes in a clean kitchen towel and squeeze firmly to wring out as much excess water as possible.",
+      "Transfer to a mixing bowl and toss well with olive oil, cornstarch, salt, and pepper.",
+      "Shape into flat patties (about 1 cm or 0.5 inch thick) and place them in the air fryer basket in a single layer.",
+      "Cook at 190°C (375°F) for 15-20 minutes, flipping them gently halfway through until golden and super crispy."
     ],
-    "source": "Ninja",
-    "tip": "Arrange patties in a single layer to ensure maximum crispness and prevent breakage.",
+    "source": "Chef",
+    "tip": "Squeezing the water out of the potatoes is the real secret. The drier the potatoes are before cooking, the crispier your hash browns will be!",
     "keywords": [
-      "Vegetables",
-      "Side Dish",
-      "Snack",
+      "Side dish",
       "Breakfast",
       "Vegetarian",
-      "Quick"
-    ],
-    "isItalian": false,
-    "image": "hash-brown",
-    "is_sanitized": true
+      "Potatoes",
+      "hash browns",
+      "brunch",
+      "from scratch"
+    ]
   },
   {
     "slug": "hasselback-potatoes",

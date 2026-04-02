@@ -6307,36 +6307,38 @@
     "image": "patate-arrosto-maionese-piccante"
   },
   {
-    "slug": "galettes-de-pommes-de-terre",
-    "title": "Hash Browns Croustillants (Galettes de PDT)",
+    "slug": "galettes-de-pommes-de-terre-hash-browns",
+    "title": "Galettes de Pommes de Terre (Hash Browns Maison)",
     "emoji": "🥔",
-    "temp": 180,
-    "time": "20",
-    "prep_time": "Non disponible",
+    "temp": 190,
+    "time": "15-20",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
-      "600 g de galettes de pommes de terre râpées, surgelées (Hash Brown)"
+      "600 g pommes de terre (à chair farineuse)",
+      "1 cuillère à soupe huile d'olive",
+      "1 cuillère à soupe fécule de maïs (Maïzena)",
+      "Sel et poivre noir au goût"
     ],
-    "description": "Le secret d'un petit-déjeuner réussi ! Ces galettes de pommes de terre surgelées retrouvent tout leur croustillant sans aucun ajout de gras, pour un réveil gourmand et léger.",
+    "description": "Croustillantes à l'extérieur et moelleuses à l'intérieur. Découvrez comment préparer de véritables hash browns américains à partir de pommes de terre fraîches dans votre friteuse à air, avec très peu d'huile.",
     "instructions": [
-      "Répartir les galettes de pommes de terre surgelées sur le fond du panier de cuisson en une seule couche.",
-      "Ne pas ajouter d'huile. Le produit contient la matière grasse nécessaire à la cuisson.",
-      "Régler la température à 180°C et cuire pendant 20 minutes.",
-      "À mi-cuisson (10 minutes), retourner les galettes à l'aide d'une pince ou d'une spatule pour dorer l'autre côté."
+      "Éplucher les pommes de terre et les râper grossièrement à l'aide d'une râpe.",
+      "Étape cruciale : envelopper les pommes de terre râpées dans un torchon propre et presser fermement pour extraire un maximum d'eau.",
+      "Transférer dans un grand bol et bien mélanger avec l'huile, la fécule de maïs, le sel et le poivre.",
+      "Former des galettes plates (environ 1 cm d'épaisseur) et les placer dans le panier de la friteuse à air en une seule couche.",
+      "Cuire à 190°C pendant 15-20 minutes, en les retournant délicatement à mi-cuisson à l'aide d'une spatule, jusqu'à ce qu'elles soient bien dorées."
     ],
-    "source": "Ninja",
-    "tip": "Disposer les galettes en une seule couche pour garantir une cuisson croustillante et uniforme.",
+    "source": "Chef",
+    "tip": "Essorer l'eau des pommes de terre est le vrai secret. Plus elles sont sèches avant la cuisson, plus vos galettes seront croustillantes !",
     "keywords": [
-      "Légumes",
       "Accompagnement",
-      "Snack",
       "Petit-déjeuner",
       "Végétarien",
-      "hash brown",
-      "brunch"
-    ],
-    "isItalian": false,
-    "image": "hash-brown"
+      "Pommes de terre",
+      "hash browns",
+      "brunch",
+      "galettes"
+    ]
   },
   {
     "slug": "pommes-de-terre-hasselback",

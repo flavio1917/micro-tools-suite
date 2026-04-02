@@ -9379,43 +9379,46 @@
       ]
     },
     {
-      "slug": "hash-brown",
-      "title": "Hash Brown Croccanti (Frittelle di Patate senza Olio)",
+      "slug": "frittelle-di-patate-hash-brown",
+      "title": "Frittelle di Patate (Hash Browns Fatti in Casa)",
       "emoji": "🥔",
-      "temp": 180,
-      "time": "20",
-      "prep_time": "Non presente",
+      "temp": 190,
+      "time": "15-20",
+      "prep_time": "15",
       "portions": "4",
       "nutrition": {
-        "kcal": 180,
+        "kcal": 150,
         "proteins_g": 3,
-        "carbs_g": 28,
+        "carbs_g": 26,
         "sugars_g": 1,
-        "fats_g": 6,
-        "saturated_fats_g": 1,
+        "fats_g": 4,
+        "saturated_fats_g": 0.5,
         "salt_g": 0.8
       },
       "ingredients": [
-        "600 g di frittelle di patate grattugiate surgelate"
+        "600 g patate a pasta gialla",
+        "1 cucchiaio olio extravergine d'oliva",
+        "1 cucchiaio amido di mais (maizena)",
+        "Sale e pepe nero q.b."
       ],
-      "description": "Direttamente dalla tradizione anglosassone, queste frittelle di patate grattugiate sono dorate e croccantissime. Perfette per una colazione salata o un brunch energetico in Friggitrice ad Aria.",
+      "description": "Croccanti fuori e morbide dentro. Scopri come preparare i veri hash browns americani partendo dalle patate fresche, cotti alla perfezione nella tua friggitrice ad aria con pochissimo olio.",
       "instructions": [
-        "Distribuire le frittelle di patate surgelate sul fondo del cestello, formando un unico strato senza sovrapporle.",
-        "Non aggiungere olio: il prodotto surgelato contiene già i grassi necessari alla cottura.",
-        "Impostare la temperatura a 180°C e cuocere per 20 minuti totali.",
-        "Dopo 10 minuti, capovolgere le frittelle con una pinza o una paletta per garantire una doratura uniforme su entrambi i lati."
+        "Sbucciare le patate e grattugiarle grossolanamente utilizzando una grattugia a fori larghi.",
+        "Passaggio fondamentale: avvolgere le patate grattugiate in un canovaccio pulito e strizzare con forza per eliminare tutta l'acqua in eccesso.",
+        "Trasferire in una ciotola capiente e mescolare bene con l'olio, l'amido di mais, sale e pepe.",
+        "Formare delle frittelle piatte (spesse circa 1 cm) e disporle nel cestello della friggitrice ad aria in un solo strato.",
+        "Cuocere a 190°C per 15-20 minuti, girandole delicatamente a metà cottura con una spatola, fino a ottenere una doratura perfetta."
       ],
-      "source": "Ninja",
-      "tip": "Disporre le frittelle in un unico strato è fondamentale per ottenere una consistenza croccante e mantenere l'integrità del prodotto durante la cottura.",
+      "source": "Chef",
+      "tip": "Strizzare l'acqua dalle patate è il vero segreto per il successo. Più le patate saranno asciutte, più le frittelle risulteranno croccanti!",
       "keywords": [
-        "Verdure",
-        "Colazione",
         "Contorno",
+        "Colazione",
         "Vegetariano",
         "Patate",
         "hash browns",
-        "brunch veloce",
-        "frittelle patate"
+        "frittelle patate",
+        "brunch"
       ]
     },
     {

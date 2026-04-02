@@ -193,7 +193,10 @@ const alternateUrls = {
     </div>
     
     <div class="relative max-w-5xl mx-auto px-4 h-full flex flex-col justify-end pb-10 md:pb-14 z-20 text-center pointer-events-none">
-      
+      <div class="hidden md:flex justify-center mb-3 opacity-90">
+         <span class="px-3 py-1 bg-slate-900/60 backdrop-blur-md border border-slate-500/30 rounded-full text-[10px] text-slate-300 font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-lg"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> {freshnessString}</span>
+      </div>
+
       <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
         {recipe.title}
       </h1>
@@ -210,7 +213,8 @@ const alternateUrls = {
 
   <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 print:mt-0 print:pt-4 relative z-30 pb-28 reading-transition rounded-t-3xl pt-2">
     
-    <div class="hidden print:block print:mb-8 text-center">
+    {/* INTESTAZIONE STAMPA (PULITA - Sezione 1 Dinamica) */}
+    <div class="hidden print:block print:mb-8 text-center print-section">
        <h1 class="text-3xl font-black text-black mb-3">{recipe.title}</h1>
        <p class="text-sm text-gray-800 max-w-3xl mx-auto">{recipe.description}</p>
     </div>
@@ -268,47 +272,37 @@ const alternateUrls = {
 
     <div class="space-y-8 md:space-y-10">
       
-      {/* INGREDIENTI WEB */}
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-lg transition-colors print:hidden">
-        <h3 class="text-xl font-bold text-white mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4 transition-colors">
-          <div class="flex items-center gap-3"><span class="text-2xl">🛒</span> {t.ingTitle}</div>
+      {/* INGREDIENTI WEB E STAMPA (Sezione 2 Dinamica) */}
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-lg print-clean-bg print-section transition-colors">
+        <h3 class="text-xl font-bold text-white print:text-black mb-6 print:mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 print:border-gray-300 pb-4 print:pb-2 transition-colors">
+          <div class="flex items-center gap-3 print:uppercase"><span class="text-2xl hide-on-print">🛒</span> {t.ingTitle}</div>
           {lang === 'en' && (
-            <div class="bg-slate-800/80 p-1 rounded-full border border-slate-600 flex items-center shrink-0 shadow-inner">
+            <div class="bg-slate-800/80 p-1 rounded-full border border-slate-600 flex items-center shrink-0 shadow-inner hide-on-print">
               <button id="btn-imperial" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm focus:outline-none">Imperial</button>
               <button id="btn-metric" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-400 hover:text-white focus:outline-none">Metric</button>
             </div>
           )}
         </h3>
-        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        {/* Griglia su web, lista normale su stampa */}
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 print:block print:space-y-2 print:pl-5 print:list-disc">
           {recipe.ingredients && recipe.ingredients.length > 0 ? (
             recipe.ingredients.map((ing: string) => (
-              <li class="flex items-start gap-3 text-slate-300 group transition-colors">
-                <input type="checkbox" aria-label="Ingredient checked" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500" />
-                <span class="leading-relaxed text-lg md:text-base group-hover:text-white transition-colors ingredient-text" data-original={ing} set:html={enrichText(ing)}></span>
+              <li class="flex items-start gap-3 text-slate-300 print:text-black print:text-sm group transition-colors print:block print:list-item">
+                <input type="checkbox" aria-label="Ingredient checked" class="mt-1.5 w-5 h-5 flex-shrink-0 rounded border-slate-600 bg-slate-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-slate-900 cursor-pointer accent-blue-500 hide-on-print" />
+                <span class="leading-relaxed text-lg md:text-base group-hover:text-white print:text-black transition-colors ingredient-text" data-original={ing} set:html={enrichText(ing)}></span>
               </li>
             ))
           ) : (<li class="text-slate-500 italic text-sm">{t.noIng}</li>)}
         </ul>
       </div>
 
-      {/* INGREDIENTI STAMPA (Lista pulita ed essenziale) */}
-      <div class="hidden print:block mb-10">
-         <h3 class="text-xl font-bold text-black border-b border-gray-300 pb-2 mb-4 uppercase">{t.ingTitle}</h3>
-         <ul class="list-disc pl-5 space-y-2">
-            {recipe.ingredients && recipe.ingredients.length > 0 ? (
-              recipe.ingredients.map((ing: string) => (
-                <li class="text-black text-sm" set:html={enrichText(ing)}></li>
-              ))
-            ) : (<li class="text-gray-500 italic text-sm">{t.noIng}</li>)}
-         </ul>
-      </div>
-
       <div class="hide-on-print">
         <AmazonProduct recipe={recipe} lang={lang} />
       </div>
       
-      {/* PROCEDIMENTO (Le classi di grigio spariscono in stampa grazie a [class*="bg-slate"] e background: transparent nel CSS globale) */}
-      <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl print:p-0 print:border-none print:shadow-none print-page-break transition-colors">
+      {/* PROCEDIMENTO (Sezione 3 Dinamica) */}
+      <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl print-clean-bg print-section transition-colors">
         <h3 class="text-2xl font-bold text-white print:text-black print:border-b print:border-gray-300 print:pb-2 mb-8 print:mb-6 flex items-center gap-3 transition-colors"><span class="text-3xl hide-on-print">👨‍🍳</span> {t.stepTitle}</h3>
         <div class="step-list space-y-8 print:space-y-6 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700 print:before:hidden transition-colors">
           {recipe.instructions && Array.isArray(recipe.instructions) ? (
@@ -340,10 +334,11 @@ const alternateUrls = {
         </div>
       </div>
 
+      {/* VALORI NUTRIZIONALI (Sezione 4 Dinamica) */}
       {hasNutrition && (
-        <>
-          {/* VALORI NUTRIZIONALI WEB */}
-          <div class="mb-8 print:hidden">
+        <div class="mb-8 print-clean-bg print-section">
+          {/* Versione Web */}
+          <div class="hide-on-print">
             <div class="flex items-baseline justify-between mb-4">
               <h2 class="text-2xl font-bold text-white transition-colors">{t.nutriTitle}</h2>
               <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold transition-colors">{t.nutriSub}</span>
@@ -364,8 +359,8 @@ const alternateUrls = {
             </div>
           </div>
 
-          {/* VALORI NUTRIZIONALI STAMPA (In riga, minimalisti) */}
-          <div class="hidden print:block mb-8 print-page-break">
+          {/* Versione Stampa */}
+          <div class="hidden print:block">
             <div class="border-b border-gray-300 pb-2 mb-4 flex justify-between items-end">
               <h2 class="text-xl font-bold text-black uppercase">{t.nutriTitle}</h2>
               <span class="text-[10px] text-gray-500 uppercase">{t.nutriSub}</span>
@@ -377,24 +372,25 @@ const alternateUrls = {
                <div class="text-center"><span class="block text-xl font-bold text-black">{baseNutrition.fats_g}g</span><span class="text-[10px] font-bold uppercase text-gray-500">{t.lblFat}</span></div>
             </div>
           </div>
-        </>
+        </div>
       )}
 
+      {/* SEGRETO DELLO CHEF (Sezione 5 Dinamica) */}
       {recipe.tip && (
-        <>
-          <div class="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6 md:p-8 mt-8 transition-colors hide-on-print">
+        <div class="print-section">
+          {/* Versione Web */}
+          <div class="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6 md:p-8 transition-colors hide-on-print">
             <h4 class="text-2xl font-bold text-amber-400 mb-4 transition-colors flex items-center gap-2">💡 {t.tipTitle}</h4>
             <p class="text-amber-100 text-lg italic transition-colors">"{recipe.tip}"</p>
           </div>
-          {/* SEGRETO STAMPA */}
-          <div class="hidden print:block mt-8 p-4 border border-gray-300 bg-gray-50 rounded-lg">
+          {/* Versione Stampa */}
+          <div class="hidden print:block p-4 border border-gray-300 bg-gray-50 rounded-lg">
              <h4 class="text-lg font-bold text-black mb-2 uppercase">{t.tipTitle}</h4>
              <p class="text-black italic text-sm">"{recipe.tip}"</p>
           </div>
-        </>
+        </div>
       )}
 
-      {/* BADGE DI VALIDAZIONE SPOSTATI QUI SOTTO */}
       <div class="border-t border-slate-800 pt-8 mt-12 mb-8 text-center hide-on-print transition-colors">
           <div class="flex flex-wrap justify-center items-center gap-5 text-xs font-bold uppercase tracking-wider text-slate-500 transition-colors">
               <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> {t.eeatTested}</span>

@@ -6282,36 +6282,38 @@
     "is_sanitized": true
   },
   {
-    "slug": "hash-brown-patatas",
-    "title": "Hash Browns: Tortitas de Patata Crujientes",
+    "slug": "tortitas-de-patata-hash-browns",
+    "title": "Tortitas de Patata (Hash Browns Caseros)",
     "emoji": "🥔",
-    "temp": 180,
-    "time": "20",
-    "prep_time": "No disponible",
+    "temp": 190,
+    "time": "15-20",
+    "prep_time": "15",
     "portions": "4",
     "ingredients": [
-      "600 g de tortitas de patata rallada congeladas (Hash Brown)"
+      "600 g patatas (tipo Russet o para freír)",
+      "1 cucharada aceite de oliva virgen extra",
+      "1 cucharada maicena (almidón de maíz)",
+      "Sal y pimienta negra al gusto"
     ],
-    "description": "El icono del desayuno anglosajón. Tortitas de patata rallada, doradas hasta conseguir una costra exterior muy crujiente que esconde un corazón suave.",
+    "description": "Crujientes por fuera y tiernas por dentro. Aprende a preparar los auténticos hash browns americanos desde cero con patatas frescas en tu freidora de aire con muy poco aceite.",
     "instructions": [
-      "Distribuir las tortitas de patata congeladas en el fondo del cesto, formando una sola capa sin superponerlas.",
-      "No añadir aceite. El producto contiene la grasa necesaria para la cocción.",
-      "Programar el aparato a 180°C y cocinar durante 20 minutos.",
-      "Transcurridos 10 minutos de cocción, abrir el cesto y voltear cada tortita con pinzas o una espátula para dorar el lado opuesto."
+      "Pelar las patatas y rallarlas en grueso con un rallador.",
+      "Paso crucial: envolver las patatas ralladas en un paño de cocina limpio y escurrir con fuerza para eliminar toda el agua sobrante.",
+      "Pasar a un bol grande y mezclar bien con el aceite, la maicena, la sal y la pimienta.",
+      "Formar tortitas planas (de aproximadamente 1 cm de grosor) y colocarlas en la cesta de la freidora de aire en una sola capa.",
+      "Cocinar a 190°C durante 15-20 minutos, dándoles la vuelta con cuidado a la mitad de la cocción hasta que estén muy doradas."
     ],
-    "source": "Ninja",
-    "tip": "Disponer las tortitas en una sola capa es fundamental para obtener una textura crujiente y uniforme.",
+    "source": "Chef",
+    "tip": "Escurrir el agua de las patatas es el verdadero secreto. ¡Cuanto más secas estén antes de cocinarlas, más crujientes quedarán tus tortitas!",
     "keywords": [
-      "Verduras",
       "Guarnición",
-      "Snack",
       "Desayuno",
       "Vegetariano",
-      "Rápido"
-    ],
-    "isItalian": false,
-    "image": "hash-brown",
-    "is_sanitized": true
+      "Patatas",
+      "hash browns",
+      "brunch",
+      "tortitas"
+    ]
   },
   {
     "slug": "patatas-hasselback",
