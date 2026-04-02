@@ -2,67 +2,49 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// Configurazione __dirname per ES Modules
+// Configurazione per __dirname negli ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Configurazione file da pulire
-const filesToClean = [
-  { name: 'Inglese', path: path.join(__dirname, '..', 'src', 'data', 'recipes-en.json') },
-  { name: 'Francese', path: path.join(__dirname, '..', 'src', 'data', 'recipes-fr.json') }
-];
+// Percorsi dei file
+const pathIT = path.join(__dirname, '..', 'src', 'data', 'recipes-it.json');
+const pathFR = path.join(__dirname, '..', 'src', 'data', 'recipes-fr.json');
+const outputPath = path.join(__dirname, 'delta-fr-it.json');
 
-console.log('--- Inizio Pulizia Duplicati per Campo "Image" ---');
+try {
+  console.log('--- Inizio Analisi Delta ---');
 
-filesToClean.forEach(fileInfo => {
-  try {
-    console.log(`\n📄 Elaborazione file ${fileInfo.name}...`);
+  // 1. Caricamento dati
+  const recipesIT = JSON.parse(fs.readFileSync(pathIT, 'utf8'));
+  const recipesFR = JSON.parse(fs.readFileSync(pathFR, 'utf8'));
+
+  // 2. Creazione Set degli slug italiani per un confronto veloce (O(1))
+  const slugsIT = new Set(recipesIT.map(r => r.slug));
+  
+  // Nota: se gli slug francesi sono tradotti (es: 'pollo' vs 'poulet'), 
+  // lo script cercherà corrispondenze esatte. Se invece usi ID o slug identici, funzionerà al 100%.
+  
+  // 3. Filtriamo le ricette francesi che non esistono in Italia
+  const deltaRecipes = recipesFR.filter(r => !slugsIT.has(r.slug));
+
+  // 4. Salvataggio del risultato
+  if (deltaRecipes.length > 0) {
+    fs.writeFileSync(outputPath, JSON.stringify(deltaRecipes, null, 2), 'utf8');
     
-    if (!fs.existsSync(fileInfo.path)) {
-      console.error(`❌ File non trovato: ${fileInfo.path}`);
-      return;
-    }
-
-    const recipes = JSON.parse(fs.readFileSync(fileInfo.path, 'utf8'));
-    const seenImages = new Set();
-    const removedList = [];
-
-    const uniqueRecipes = recipes.filter(recipe => {
-      // Usiamo il valore del campo 'image' come chiave unica
-      const imageKey = recipe.image;
-
-      if (!imageKey) {
-        // Se manca l'immagine (non dovrebbe), teniamo la ricetta per sicurezza
-        return true;
-      }
-
-      if (seenImages.has(imageKey)) {
-        // Trovato duplicato (valore image già visto)
-        removedList.push(`[Slug: ${recipe.slug}] - Image: ${imageKey}`);
-        return false;
-      } else {
-        // Prima volta che vediamo questa immagine
-        seenImages.add(imageKey);
-        return true;
-      }
+    console.log('\n✅ ANALISI COMPLETATA!');
+    console.log(`- Ricette Italiane: ${recipesIT.length}`);
+    console.log(`- Ricette Francesi: ${recipesFR.length}`);
+    console.log(`- Ricette in più trovate (FR vs IT): ${deltaRecipes.length}`);
+    console.log(`\n📂 Il file con i JSON mancanti è stato creato: nodeJs/delta-fr-it.json`);
+    
+    console.log('\n🔍 ESEMPIO DELLE PRIME 3 RICETTE MANCANTI:');
+    deltaRecipes.slice(0, 3).forEach((r, i) => {
+      console.log(`  ${i+1}. [${r.slug}] ${r.title}`);
     });
-
-    // Salvataggio file sovrascritto
-    fs.writeFileSync(fileInfo.path, JSON.stringify(uniqueRecipes, null, 2), 'utf8');
-
-    console.log(`✅ ${fileInfo.name} pulito!`);
-    console.log(`   - Originali: ${recipes.length}`);
-    console.log(`   - Rimaste:   ${uniqueRecipes.length}`);
-    console.log(`   - Rimosse:   ${removedList.length}`);
-
-    if (removedList.length > 0) {
-      console.log(`   🗑️ Dettaglio rimosse:`);
-      removedList.forEach(item => console.log(`     - ${item}`));
-    }
-
-  } catch (error) {
-    console.error(`❌ Errore durante l'elaborazione di ${fileInfo.name}:`, error.message);
+  } else {
+    console.log('\n✨ Nessun delta trovato. I file sono già sincronizzati.');
   }
-});
 
-console.log('\n--- Operazione completata ---');
+} catch (error) {
+  console.error("❌ Errore durante l'elaborazione:", error.message);
+}
