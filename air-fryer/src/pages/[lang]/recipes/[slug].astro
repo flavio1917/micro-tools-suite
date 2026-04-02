@@ -164,24 +164,48 @@ const alternateUrls = {
 
 <MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData} alternateUrls={alternateUrls}>
   
+  <style is:global>
+    /* Spegne l'header globale del MainLayout solo su questa pagina per non sdoppiare le bandierine */
+    body > header {
+      display: none !important;
+    }
+  </style>
+
   <SchemaRecipe recipe={recipe} lang={lang} />
 
-  {/* L'immagine e lo sfondo nero vengono soppressi completamente in fase di stampa */}
   <div class="relative h-[45vh] min-h-[380px] md:h-[50vh] w-full overflow-hidden bg-slate-900 hero-bg-print-hide">
     <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40 pointer-events-none"></div>
     
-    <div class="absolute top-4 md:top-6 left-0 z-[60] px-3 md:px-4">
-      <a href={t.backLink} aria-label={t.back} class="flex items-center justify-center h-10 md:h-11 w-10 md:w-auto md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <svg class="w-4 h-4 md:mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-        <span class="hidden md:inline font-bold text-xs">{t.back}</span>
-      </a>
+    <div class="absolute top-4 md:top-6 left-0 right-0 z-[60] px-3 md:px-4 w-full">
+      <div class="max-w-5xl mx-auto flex justify-between items-center relative h-10 md:h-11">
+        
+        <a href={t.backLink} aria-label={t.back} class="flex items-center justify-center h-full w-10 md:w-auto md:px-4 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <svg class="w-4 h-4 md:mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          <span class="hidden md:inline font-bold text-xs">{t.back}</span>
+        </a>
+
+        <div class="flex items-center justify-center h-full px-2.5 md:px-3 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl gap-1.5 md:gap-2">
+            {['it', 'en', 'es', 'fr'].map((l) => (
+              <a href={getLocalizedUrl(l)} aria-label={l.toUpperCase()} class={`transition-all flex items-center justify-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-[2px] ${lang === l ? 'scale-110 opacity-100 ring-1 ring-blue-500' : 'opacity-40 hover:opacity-100'}`}>
+                <img src={`https://flagcdn.com/${l === 'en' ? 'gb' : l}.svg`} alt={l.toUpperCase()} width="24" height="18" class="w-4 h-[11px] md:w-[18px] md:h-[13px] rounded-[1px] object-cover" />
+              </a>
+            ))}
+        </div>
+
+      </div>
     </div>
     
     <div class="relative max-w-5xl mx-auto px-4 h-full flex flex-col justify-end pb-10 md:pb-14 z-20 text-center pointer-events-none">
+      
+      <div class="hidden md:flex justify-center mb-3 opacity-90">
+         <span class="px-3 py-1 bg-slate-900/60 backdrop-blur-md border border-slate-500/30 rounded-full text-[10px] text-slate-300 font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-lg"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> {freshnessString}</span>
+      </div>
+
       <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
         {recipe.title}
       </h1>
+      
       <p class="text-sm md:text-lg text-slate-300 max-w-4xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-2 md:pt-3 mt-1 px-3 leading-relaxed mb-4">
         {recipe.description}
       </p>
@@ -194,7 +218,6 @@ const alternateUrls = {
 
   <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 relative z-30 pb-28 reading-transition rounded-t-3xl pt-2">
     
-    {/* INTESTAZIONE ESCLUSIVA PER LA STAMPA (Nera su bianco pulita) */}
     <div class="hidden print:block print:mb-10 text-center">
        <h1 class="text-4xl font-black text-black mb-4">{recipe.title}</h1>
        <p class="text-lg text-gray-800 max-w-4xl mx-auto">{recipe.description}</p>
@@ -288,7 +311,7 @@ const alternateUrls = {
         <AmazonProduct recipe={recipe} lang={lang} />
       </div>
       
-      {/* PROCEDIMENTO FULL-WIDTH (Pagina 2 in stampa) */}
+      {/* PROCEDIMENTO FULL-WIDTH */}
       <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl print-clean-bg print-page-break transition-colors">
         <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3 transition-colors"><span class="text-3xl hide-on-print">👨‍🍳</span> {t.stepTitle}</h3>
         <div class="step-list space-y-8 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700 transition-colors">
@@ -321,7 +344,7 @@ const alternateUrls = {
         </div>
       </div>
 
-      {/* VALORI NUTRIZIONALI (Pagina 3 in stampa) */}
+      {/* VALORI NUTRIZIONALI E SEGRETI (Spostati qui) */}
       {hasNutrition && (
         <div class="mb-8 print-clean-bg print-page-break">
           <div class="flex items-baseline justify-between mb-4">
@@ -354,7 +377,6 @@ const alternateUrls = {
         </div>
       )}
 
-      {/* SEGRETO DELLO CHEF (Pagina 3 in stampa) */}
       {recipe.tip && (
         <div class="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6 md:p-8 mt-8 print-clean-bg transition-colors">
           <h4 class="text-2xl font-bold text-amber-400 mb-4 transition-colors flex items-center gap-2"><span class="hide-on-print">💡</span> {t.tipTitle}</h4>
