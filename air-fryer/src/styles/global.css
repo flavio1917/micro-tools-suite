@@ -1,45 +1,30 @@
 @import "tailwindcss";
 
-/* 1. VARIABILI E ANIMAZIONI GLOBALI */
 @theme {
   --animate-fade-in: fade-in 0.3s ease-out forwards;
-
   @keyframes fade-in {
-    from { 
-      opacity: 0; 
-      transform: translateY(5px); 
-    }
-    to { 
-      opacity: 1; 
-      transform: translateY(0); 
-    }
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }
 
-/* 2. STILI BASE GLOBALI E TYPOGRAPHY PREMIUM */
 @layer base {
   body {
     background-color: #0B1120;
-    color: #cbd5e1; /* text-slate-300 */
-    /* Ottimizzazione Font (Resa Apple-like) */
+    color: #cbd5e1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
-  
-  /* Filtro caldo applicato alle immagini per rendere il cibo appetitoso */
   img {
     filter: sepia(15%) saturate(110%) contrast(105%) brightness(102%);
     transition: filter 0.3s ease;
   }
-
-  /* Evitiamo che il filtro rovini icone o bandiere */
   .no-filter, img[src*="flagcdn.com"] {
     filter: none !important;
   }
 }
 
-/* 3. UTILITY CLASSES (Lettura e UI) */
 @layer utilities {
   .hide-scrollbar {
     -ms-overflow-style: none;
@@ -49,90 +34,60 @@
     display: none;
   }
 
-  /* --- MODALITÀ LETTURA (UX HACK) --- */
-  /* Transizioni fluide per uno switch "burroso" */
   .reading-transition {
-    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, border-color 0.4s ease-in-out;
   }
 
-  /* Forziamo testo scuro e sfondo chiaro senza usare @apply (previene bug Tailwind v4) */
+  /* FIX LETTURA: Colori molto più scuri per i testi in modalità chiara */
   .reading-mode {
-    background-color: #f8fafc !important; /* bg-slate-50 */
-    color: #0f172a !important; /* text-slate-900 */
+    background-color: #ffffff !important; 
+    color: #0f172a !important; 
     border-color: #e2e8f0 !important;
   }
-  .reading-mode h3, 
-  .reading-mode h4,
-  .reading-mode .text-white {
-    color: #0f172a !important;
+  .reading-mode h3, .reading-mode h4, .reading-mode .text-white {
+    color: #000000 !important;
     text-shadow: none !important;
   }
-  .reading-mode .text-slate-300, 
-  .reading-mode .text-slate-400 {
-    color: #334155 !important;
-  }
-  .reading-mode .bg-slate-900, 
-  .reading-mode .bg-slate-800 {
-    background-color: #ffffff !important;
-    border-color: #e2e8f0 !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+  /* Testi normali (es. step ricetta) */
+  .reading-mode .text-slate-300 { color: #1e293b !important; font-weight: 500 !important; }
+  /* Etichette piccole (es. TEMPERATURA) */
+  .reading-mode .text-slate-400 { color: #475569 !important; font-weight: 700 !important; }
+  .reading-mode .text-slate-500 { color: #64748b !important; }
+  
+  /* Adattamento colori accento */
+  .reading-mode .text-blue-400 { color: #2563eb !important; }
+  .reading-mode .text-orange-400 { color: #ea580c !important; }
+  .reading-mode .text-green-400 { color: #16a34a !important; }
+  .reading-mode .text-purple-400 { color: #7e22ce !important; }
+
+  .reading-mode .bg-slate-900, .reading-mode .bg-slate-800, .reading-mode .bg-slate-800\/90 {
+    background-color: #f8fafc !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: none !important;
   }
   .reading-mode .before\:bg-slate-700::before {
     background-color: #cbd5e1 !important;
   }
 }
 
-/* 4. MODALITÀ STAMPA (INK-SAVER & UX) */
 @media print {
-  @page {
-    margin: 1.5cm;
-  }
-  
-  body {
-    background-color: white !important;
-    color: black !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
+  @page { margin: 1cm; }
+  body { background-color: white !important; color: black !important; }
 
-  /* Nascondiamo tutto ciò che non serve su carta */
-  .hide-on-print, 
-  header, 
-  footer, 
-  .amazon-product,
-  .eco-widget-container,
-  #rating-widget,
-  button:not(.keep-print) {
+  .hide-on-print, header, footer, .amazon-product, .eco-widget-container, #rating-widget, button:not(.keep-print) {
     display: none !important;
   }
 
-  /* Rimuoviamo ombre, gradienti e sfondi scuri per non sprecare toner */
-  * {
-    box-shadow: none !important;
-    text-shadow: none !important;
-    background-image: none !important;
-  }
+  * { box-shadow: none !important; text-shadow: none !important; background-image: none !important; }
 
-  .print-clean-bg {
-    background-color: transparent !important;
-    border: none !important;
-  }
+  .print-clean-bg { background-color: transparent !important; border: none !important; }
 
-  h1, h2, h3, h4 {
-    color: black !important;
-    page-break-after: avoid;
-    break-after: avoid;
-    margin-bottom: 0.5rem !important;
-  }
+  /* FIX GRID DI STAMPA: Uccide le colonne e formatta a blocco intero */
+  .grid { display: block !important; }
+  .lg\:col-span-1, .lg\:col-span-2 { width: 100% !important; margin-bottom: 2rem !important; }
+  .step-container { margin-bottom: 1.5rem !important; page-break-inside: avoid; break-inside: avoid; }
 
-  p, li, span {
-    color: #111 !important;
-  }
-
-  /* Evita che un'immagine o un passaggio vengano spezzati tra due fogli */
-  img, li, .step-container {
-    max-width: 100% !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
+  h1, h2, h3, h4 { color: black !important; page-break-after: avoid; break-after: avoid; margin-bottom: 0.5rem !important; }
+  p, li, span { color: #111 !important; }
+  img { max-width: 100% !important; page-break-inside: avoid; break-inside: avoid; }
 }

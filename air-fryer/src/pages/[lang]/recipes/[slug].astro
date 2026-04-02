@@ -43,7 +43,7 @@ const translations = {
     verifiedText: "Ultima verifica:",
     print: "Stampa", jump: "Vai alla Ricetta", readMode: "Modalità Lettura", darkMode: "Modalità Scura", share: "Condividi",
     faqTitle: "Domande Frequenti",
-    faq1Q: `Come conservare ${recipe.title}?`, faq1A: "Lascia raffreddare completamente, poi conserva in un contenitore ermetico in frigorico per 2-3 giorni. Non congelare dopo la cottura per non perdere la croccantezza.",
+    faq1Q: `Come conservare ${recipe.title}?`, faq1A: "Lascia raffreddare completamente, poi conserva in un contenitore ermetico in frigorifero per 2-3 giorni. Non congelare dopo la cottura per non perdere la croccantezza.",
     faq2Q: `Posso cuocere da surgelato?`, faq2A: "Sì, se usi ingredienti base surgelati, aggiungi circa il 20-30% di tempo in più rispetto alla ricetta standard e controlla la cottura a metà, separando eventuali pezzi attaccati.",
     faq3Q: `Come riscaldare gli avanzi?`, faq3A: "Usa la friggitrice ad aria a 160°C per 3-5 minuti. Evita il microonde, che renderebbe il cibo molliccio, mentre l'aria calda restituirà la texture originale."
   },
@@ -135,7 +135,12 @@ const getLocalizedUrl = (targetLang: string) => {
 };
 
 function enrichText(text: string) { return text; }
-
+const alternateUrls = {
+  it: `https://www.convertitorefriggitrice.it${getLocalizedUrl('it')}`,
+  en: `https://www.convertitorefriggitrice.it${getLocalizedUrl('en')}`,
+  es: `https://www.convertitorefriggitrice.it${getLocalizedUrl('es')}`,
+  fr: `https://www.convertitorefriggitrice.it${getLocalizedUrl('fr')}`
+};
 let baseNutrition = recipe.nutrition || null;
 
 if (!baseNutrition && lang !== 'it') {
@@ -155,8 +160,7 @@ const currentYear = d.getFullYear();
 const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
 ---
 
-<MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData}>
-  
+<MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData} alternateUrls={alternateUrls}>  
   <SchemaRecipe recipe={recipe} lang={lang} />
 
   <div class="relative h-[45vh] min-h-[380px] md:h-[50vh] w-full overflow-hidden bg-slate-900">
@@ -184,10 +188,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
     
     <div class="relative max-w-4xl mx-auto px-4 h-full flex flex-col justify-end pb-10 md:pb-14 z-20 text-center pointer-events-none">
       
-      <div class="hidden md:flex justify-center mb-3 opacity-90">
-         <span class="px-3 py-1 bg-slate-900/60 backdrop-blur-md border border-slate-500/30 rounded-full text-[10px] text-slate-300 font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-lg"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> {freshnessString}</span>
-      </div>
-
       <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
         {recipe.title}
       </h1>
@@ -196,19 +196,13 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
       </p>
       
       <div class="flex justify-center items-center relative z-[9999] pointer-events-auto cursor-pointer hover:scale-105 transition-transform mb-3">
-         <StarRating slug={recipe.slug} title={recipe.title} />
-      </div>
-
-      <div class="flex flex-wrap justify-center gap-3">
-         <span class="px-3 py-1.5 bg-slate-900/80 backdrop-blur-md border border-slate-600 rounded-full text-[10px] md:text-xs text-slate-200 font-medium flex items-center gap-1.5 shadow-lg"><svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> {t.eeatTested}</span>
-         <span class="px-3 py-1.5 bg-slate-900/80 backdrop-blur-md border border-slate-600 rounded-full text-[10px] md:text-xs text-slate-200 font-medium flex items-center gap-1.5 shadow-lg"><svg class="w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> {t.eeatReview}</span>
+         <StarRating slug={baseImageName} title={recipe.title} />
       </div>
     </div>
   </div>
 
   <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 relative z-30 pb-28 reading-transition rounded-t-3xl pt-2">
     
-    {/* EXTENDED ACTION BAR (Jump, Print, Read Mode, Share) */}
     <div class="flex flex-wrap justify-center items-center gap-2.5 md:gap-4 mb-8 relative z-30 hide-on-print">
       <button id="btn-jump" aria-label={t.jump} class="flex items-center gap-1.5 px-3.5 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded-full text-[10px] md:text-xs font-bold text-white transition-all shadow-lg active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
         ⬇️ <span class="hidden sm:inline">{t.jump}</span>
@@ -219,7 +213,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
       <button id="btn-read-mode" aria-label={t.readMode} class="flex items-center gap-1.5 px-3.5 py-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 rounded-full text-[10px] md:text-xs font-bold text-white transition-all shadow-lg active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500">
         ☀️ <span id="text-read-mode" class="hidden sm:inline">{t.readMode}</span>
       </button>
-      {/* NEW: VIRAL SHARE BUTTON */}
       <button id="btn-share" aria-label={t.share} class="flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-500 border border-blue-500 rounded-full text-[10px] md:text-xs font-bold text-white transition-all shadow-lg shadow-blue-500/20 active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400">
         🔗 {t.share}
       </button>
@@ -413,7 +406,16 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
           </div>
         </div>
 
-        <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl mt-12 mb-8 hide-on-print transition-colors">
+        {/* E-E-A-T SPOSTATI IN BASSO (Meno Clutter visivo) */}
+        <div class="border-t border-slate-800 pt-8 mt-12 mb-8 text-center hide-on-print transition-colors">
+            <div class="flex flex-wrap justify-center items-center gap-5 text-xs font-bold uppercase tracking-wider text-slate-500 transition-colors">
+                <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> {t.eeatTested}</span>
+                <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> {t.eeatReview}</span>
+                <span class="flex items-center gap-1.5 opacity-70">⏱️ {freshnessString}</span>
+            </div>
+        </div>
+
+        <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl mt-4 mb-8 hide-on-print transition-colors">
             <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-3 transition-colors"><span class="text-3xl">❓</span> {t.faqTitle}</h3>
             <div class="space-y-4">
                 <details class="group bg-slate-900 border border-slate-700 rounded-xl overflow-hidden transition-colors">
@@ -507,10 +509,8 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
   <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang, recipeTime: cleanTime, txtStart: t.startTimer, txtStop: t.stopTimer, txtReadMode: t.readMode, txtDarkMode: t.darkMode }}>
     document.addEventListener('astro:page-load', () => {
       
-      // Helper per vibrazione tattile (se supportata)
       const triggerHaptic = () => { if (navigator.vibrate) navigator.vibrate(40); };
 
-      // --- LOGICA BOTTONI UX (Stampa, Jump, Reading Mode, Share) ---
       const btnPrint = document.getElementById('btn-print');
       if (btnPrint) btnPrint.addEventListener('click', () => { triggerHaptic(); window.print(); });
 
@@ -561,7 +561,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         });
       }
 
-      // --- LOGICA TIMER DWELL TIME HACK ---
       const btnTimer = document.getElementById('btn-timer');
       const timerDisplay = document.getElementById('timer-display');
       const timerUnit = document.getElementById('timer-unit');
@@ -625,7 +624,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
         });
       }
 
-      // --- LOGICA PORZIONI E INGREDIENTI ---
       let currentPortions = basePortions;
       const display = document.getElementById('portions-display');
       const btnMinus = document.getElementById('btn-minus');
@@ -763,7 +761,6 @@ const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
           });
       }
 
-      // --- LOGICA BLUE OCEAN WIDGET (Risparmio Energetico) ---
       const timeValue = parsedTime || 0; 
       const kwhInput = document.getElementById('input-kwh');
       const wattOvenInput = document.getElementById('input-watt-oven');
