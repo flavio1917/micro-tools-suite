@@ -14,6 +14,28 @@ export function getStaticPaths() {
 const lang = Astro.params.lang || 'it';
 const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
 
+// DIZIONARIO SEO SPECIFICO (Anti-Boilerplate)
+const seoData = {
+  it: {
+    title: "Come Pulire la Resistenza della Friggitrice ad Aria (Senza Rovinarla)",
+    description: "Sgrassare la serpentina è rischioso. Scopri il metodo sicuro in 5 step con bicarbonato e limone per rimuovere il grasso bruciato senza usare chimica o graffiare il Teflon."
+  },
+  en: {
+    title: "How to Safely Clean Air Fryer Heating Element | Step-by-Step",
+    description: "Stop scratching! Discover the safe, eco-friendly 5-step method to degrease your air fryer heating element without ruining the non-stick coating."
+  },
+  es: {
+    title: "Cómo Limpiar la Resistencia de la Freidora de Aire sin Dañarla",
+    description: "¡Deja de raspar! Descubre el método seguro de 5 pasos con bicarbonato para desengrasar la resistencia de tu freidora de aire sin dañar el teflón."
+  },
+  fr: {
+    title: "Comment Nettoyer la Résistance de la Friteuse à Air | Guide Sûr",
+    description: "Arrêtez de gratter ! Découvrez la méthode sûre en 5 étapes pour dégraisser la résistance de votre friteuse sans abîmer le revêtement antiadhésif."
+  }
+};
+
+const currentSeo = seoData[lang as keyof typeof seoData] || seoData.it;
+
 const backBtnLabel = {
   it: "Vai alle ricette",
   en: "Go to Recipes",
@@ -23,9 +45,8 @@ const backBtnLabel = {
 
 const content = {
   it: {
-    title: "Come Pulire la Resistenza della Friggitrice ad Aria (Senza Rovinare il Teflon)",
     h1: "Guida Pulizia Resistenza",
-    desc: "Smettila di grattare! Scopri il metodo sicuro per sgrassare la serpentina superiore della tua friggitrice ad aria senza usare chimica aggressiva o rovinare il Teflon.",
+    desc: currentSeo.description,
     eeatBadge: "✓ Metodo Sicuro Verificato",
     dangerTitle: "🚫 Assolutamente Vietato",
     dangerText: "Mai usare sgrassatori industriali da forno (es. schiume attive), spugne in metallo o lame. I residui chimici brucerebbero alla prima accensione intossicando il cibo.",
@@ -43,9 +64,8 @@ const content = {
     ]
   },
   en: {
-    title: "How to Safely Clean the Air Fryer Heating Element",
     h1: "Heating Element Cleaning Guide",
-    desc: "Stop scratching! Discover the safe method to degrease the upper heating coil of your air fryer without harsh chemicals.",
+    desc: currentSeo.description,
     eeatBadge: "✓ Verified Safe Method",
     dangerTitle: "🚫 Strictly Prohibited",
     dangerText: "Never use heavy-duty oven cleaners, steel wool, or blades. Chemical residues will vaporize into your food.",
@@ -63,9 +83,8 @@ const content = {
     ]
   },
   es: {
-    title: "Cómo Limpiar la Resistencia de la Freidora de Aire",
-    h1: "Guía de Limpieza",
-    desc: "¡Deja de raspar! Descubre el método seguro para desengrasar la resistencia superior de tu freidora sin químicos fuertes.",
+    h1: "Guía de Limpieza de Resistencia",
+    desc: currentSeo.description,
     eeatBadge: "✓ Método Seguro Verificado",
     dangerTitle: "🚫 Totalmente Prohibido",
     dangerText: "Nunca uses desengrasantes para hornos, estropajos metálicos o cuchillas. Los químicos intoxicarán tu comida.",
@@ -77,15 +96,14 @@ const content = {
     steps: [
       { title: "Desenchufa y Protege la Pantalla", desc: "Desenchufa. Pon una toalla gruesa en la mesa y voltea la máquina DELICADAMENTE sobre ella." },
       { title: "Crea la Pasta Natural", desc: "Mezcla 3 cucharadas de bicarbonato con 1 de agua. Debe ser una pasta espesa, similar a la pasta de dientes." },
-      { title: "Aplica con Precisión", desc: "Usa un cepillo de cerdas SUAVES. Frota suavemente la resistencia. No empujes la pasta hacia el ventilador." },
+      { title: "Aplica con Precision", desc: "Usa un cepillo de cerdas SUAVES. Frota suavemente la resistencia. No empujes la pasta hacia el ventilador." },
       { title: "Deja Actuar", desc: "Deja actuar la pasta 15-20 minutos. NUNCA enciendas la máquina en esta fase." },
       { title: "Enjuague Húmedo", desc: "Usa un paño de microfibra húmedo muy escurrido para retirar la pasta. Seca perfectamente con papel absorbente." }
     ]
   },
   fr: {
-    title: "Comment Nettoyer la Résistance de la Friteuse à Air",
-    h1: "Guide de Nettoyage",
-    desc: "Arrêtez de gratter ! Découvrez la méthode sûre pour dégraisser la résistance supérieure sans produits chimiques agressifs.",
+    h1: "Guide de Nettoyage de la Résistance",
+    desc: currentSeo.description,
     eeatBadge: "✓ Méthode Sûre Vérifiée",
     dangerTitle: "🚫 Strictement Interdit",
     dangerText: "N'utilisez jamais de dégraissants pour four, d'éponges métalliques ou de lames. Les résidus intoxiqueront vos aliments.",
@@ -110,8 +128,8 @@ const t = content[lang as keyof typeof content] || content.it;
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": t.title,
-  "description": t.desc,
+  "name": currentSeo.title,
+  "description": currentSeo.description,
   "totalTime": "PT30M",
   "tool": t.tools.map(tool => ({ "@type": "HowToTool", "name": tool })),
   "supply": t.supplies.map(supply => ({ "@type": "HowToSupply", "name": supply })),
@@ -125,7 +143,7 @@ const howToSchema = {
 };
 ---
 
-<MainLayout title={t.title} lang={lang} description={t.desc}>
+<MainLayout title={currentSeo.title} lang={lang} description={currentSeo.description}>
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
     
     <div class="mb-8 flex justify-start">
@@ -187,7 +205,7 @@ const howToSchema = {
             <h3 class="text-lg md:text-xl font-bold text-white mb-3">{step.title}</h3>
             <p class="text-slate-300 leading-relaxed text-sm md:text-base mb-5">{step.desc}</p>
             
-            {/* IMMAGINE DELLO STEP */}
+            {/* IMMAGINE DELLO STEP - Dinamica */}
             <div class="rounded-xl overflow-hidden border border-slate-600/50 shadow-lg bg-slate-900/50">
               <img 
                 src={`/images/pulizia/step_${index + 1}.jpg`} 

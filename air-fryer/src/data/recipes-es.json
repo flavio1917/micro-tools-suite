@@ -1,10 +1,10 @@
 [
   {
     "slug": "anillos-de-calamar-fritos",
-    "title": "Anillas de Calamar a la Romana (Súper Crujientes)",
+    "title": "Anillos de Calamar Fritos (Crujientes Con Poco Aceite)",
     "emoji": "🦑",
     "temp": 200,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "10",
     "portions": "2",
     "ingredients": [
@@ -14,7 +14,7 @@
       "Sal",
       "Gajos de limón para servir"
     ],
-    "description": "El secreto de un rebozado perfecto. Estas anillas se envuelven en sémola de trigo duro para lograr una textura exterior extra crujiente que protege un interior tierno y jugoso. Un clásico del tapeo sin excesos de grasa.",
+    "description": "¡Anillos de calamar dorados y crujientes en solo 8 minutos! Descubre el secreto de la sémola para un rebozado perfecto y tierno por dentro, usando una fracción del aceite en comparación con la fritura tradicional.",
     "instructions": [
       "Seque las anillas de calamar con papel absorbente.",
       "Introduzca las anillas y la sémola en una bolsa de plástico, cierre y agite para rebozar uniformemente.",
@@ -39,10 +39,10 @@
   },
   {
     "slug": "filete-empanado-italiano",
-    "title": "Escalope de Ternera Empanado y Dorado",
+    "title": "Milanesa Perfecta en Freidora de Aire (Corteza Infalible)",
     "emoji": "🥩",
     "temp": 190,
-    "time": "12-15",
+    "time": "12",
     "prep_time": "15",
     "portions": "2",
     "ingredients": [
@@ -53,7 +53,7 @@
       "Pimienta",
       "Aceite en aerosol"
     ],
-    "description": "La sencillez hecha delicia. Disfruta de un filete de carne con un empanado uniforme que se vuelve dorado y crujiente al instante, manteniendo toda la jugosidad de la carne en cada bocado.",
+    "description": "Milanesa empanada crujiente y dorada sin freír. Descubre el truco para un rebozado que no se despega y una carne jugosa en solo 12 minutos. ¡La cena rápida que encanta a los niños!",
     "instructions": [
       "Aplanar los filetes si su grosor es excesivo.",
       "Batir el huevo con sal. Pasar los filetes por el huevo batido y, seguidamente, por el pan rallado, presionando para asegurar una cobertura uniforme.",
@@ -79,10 +79,10 @@
   },
   {
     "slug": "pastel-de-carne-relleno-freidora-aire",
-    "title": "Pastel de Carne Relleno de Jamón y Queso",
+    "title": "Pastel de Carne Relleno (Corazón Fundido en Freidora de Aire)",
     "emoji": "🍖",
     "temp": 180,
-    "time": "35-40",
+    "time": "35",
     "prep_time": "20",
     "portions": "4",
     "isItalian": true,
@@ -98,7 +98,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Una sorpresa deliciosa en el centro. Este pastel de carne picada desarrolla una costra exterior perfectamente sellada que guarda en su interior el irresistible placer del queso fundido y el sabor del jamón.",
+    "description": "Pastel de carne relleno con corazón de queso fundido y costra perfecta en 35 minutos. Sin encender el horno durante una hora: la receta infalible para un plato principal de carne húmedo y jugoso.",
     "instructions": [
       "Mezclar en un recipiente la carne picada con el huevo, el queso Parmesano, el pan rallado, sal y pimienta. Amasar hasta obtener una mezcla homogénea.",
       "Colocar la mezcla sobre una hoja de papel de horno y extenderla hasta formar un rectángulo de aproximadamente 1 cm de grosor.",
@@ -120,10 +120,10 @@
   },
   {
     "slug": "salchicha-patatas-cubos",
-    "title": "Dúo Rústico: Salchichas con Patatas al Punto",
+    "title": "Salchicha y Patatas en Dados (Plato Único Rápido)",
     "emoji": "🥘",
     "temp": 195,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "10",
     "portions": "3",
     "isItalian": true,
@@ -135,7 +135,7 @@
       "Romero fresco al gusto",
       "Sal y pimienta negra molida al gusto"
     ],
-    "description": "La combinación ganadora para una cena sin complicaciones. Al cocinarse juntas, las patatas absorben el aroma de las salchichas, quedando doradas por fuera y suaves como mantequilla por dentro.",
+    "description": "Salchicha y patatas: el plato único salvacenas listo en solo 20 minutos. Patatas doradas extracrujientes y salchicha jugosa perfectamente desgrasada gracias al flujo de aire caliente.",
     "instructions": [
       "Cortar las patatas en cubos de 2-3 cm. Sumergirlas en agua fría durante 10 minutos. Escurrir y secar completamente.",
       "Cortar la salchicha en trozos de aproximadamente 3-4 cm.",
@@ -159,10 +159,10 @@
   },
   {
     "slug": "arrosticini-abruzzesi-freidora-aire",
-    "title": "Arrosticini: Brochetas de Cordero al Estilo Abruzos",
+    "title": "Brochetas de Cordero Abruzzese (Efecto Parrilla en Freidora de Aire)",
     "emoji": "🍢",
     "temp": 200,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "2",
     "portions": "2",
     "isItalian": true,
@@ -170,7 +170,7 @@
       "15-20 brochetas de cordero, frescas o descongeladas",
       "Sal fina"
     ],
-    "description": "Viaja a Italia con estas brochetas tradicionales. La alta temperatura funde la grasa exterior para sellar los jugos naturales del cordero, logrando una carne tierna con ese toque tostado tan característico.",
+    "description": "¡Suculentas brochetas de cordero Abruzzese cocinadas a la perfección en solo 8 minutos! Descubre cómo obtener un fantástico efecto de parrilla de carbón en tu propia casa, sin humo y desgrasando la carne.",
     "instructions": [
       "Si los palos de las brochetas son demasiado largos para la cesta, romper o cortar los extremos de madera.",
       "Disponer las brochetas en la cesta, en un máximo de dos capas cruzadas.",
@@ -194,7 +194,7 @@
   },
   {
     "slug": "alcachofas-estilo-judia-freidora-aire",
-    "title": "Alcachofas a la Judía (Carciofi alla Giudia)",
+    "title": "Alcachofas a la Judía (Extra Crujientes Sin Freír)",
     "emoji": "🥬",
     "temp": 180,
     "time": "15",
@@ -206,7 +206,7 @@
       "40 ml de aceite de oliva virgen extra",
       "Sal fina y pimienta negra"
     ],
-    "description": "Una joya de la cocina romana. Las hojas se abren como una flor y se vuelven tan crujientes como las patatas fritas, mientras el corazón permanece tierno y lleno de sabor. Una experiencia gourmet vegetal.",
+    "description": "Alcachofas a la judía súper crujientes sin inmersión en aceite hirviendo. Hojas que crujen y corazón tierno listas en 15 minutos: la deliciosa guarnición romana sin olor a fritura en casa.",
     "instructions": [
       "Limpie las alcachofas, eliminando las hojas exteriores más duras. Corte la parte leñosa del tallo.",
       "Golpee las alcachofas boca abajo sobre una tabla de cortar para abrir las hojas.",
@@ -230,10 +230,10 @@
   },
   {
     "slug": "verduras-rellenas-arroz-carne",
-    "title": "Verduras Rellenas Tradicionales",
+    "title": "Verduras Rellenas Gratinadas (Arroz y Carne en 20 Min)",
     "emoji": "🍅",
     "temp": 180,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -246,7 +246,7 @@
       "Sal",
       "Albahaca fresca"
     ],
-    "description": "Platos completos y equilibrados. Ya sea con arroz o carne picada, las verduras se asan lentamente hasta ablandarse, permitiendo que el relleno absorba todos los jugos naturales para un sabor intenso.",
+    "description": "¡Verduras rellenas gratinadas en solo 20 minutos! Tomates y pimientos con un relleno fragante y una costra de autor. El plato único súper fácil que vacía la nevera con elegancia.",
     "instructions": [
       "Cortar las tapas de las verduras, vaciar las semillas y la pulpa. Triturar la pulpa extraída de los tomates.",
       "Mezclar el arroz crudo o la carne picada con la pulpa de tomate triturada, aceite, sal, queso parmesano y albahaca.",
@@ -270,7 +270,7 @@
   },
   {
     "slug": "patatas-horno-dados-romero",
-    "title": "Patatas al Romero con Toque de Ajo",
+    "title": "Patatas en Dados al Romero (Doradas Sin Hervir Previamente)",
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
@@ -284,7 +284,7 @@
       "2 dientes de ajo, con piel",
       "Sal marina gruesa al gusto"
     ],
-    "description": "La guarnición definitiva. Cubos de patata asados con romero fresco y ajo que desprenden un aroma irresistible, logrando esos bordes tostados que todo el mundo busca en el plato.",
+    "description": "Patatas en dados doradas y extracrujientes por fuera, tiernas por dentro en 20 minutos. Descubre el truco infalible (sin hervir previamente) para guarniciones perfectas con el mínimo esfuerzo y cero grasas pesadas.",
     "instructions": [
       "Pelar las patatas y cortar en cubos de 2-3 cm. Enjuagar para eliminar el almidón y secar completamente con un paño.",
       "En un recipiente, aderezar las patatas con el aceite, los dientes de ajo machacados con piel y las agujas de romero.",
@@ -307,10 +307,10 @@
   },
   {
     "slug": "tarta-salada-ricotta-espinacas",
-    "title": "Tarta Rústica de Ricotta y Espinacas",
+    "title": "Pastel Salado de Ricota y Espinacas (Hojaldre Ultracrujiente)",
     "emoji": "🥧",
     "temp": 170,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -321,7 +321,7 @@
       "50 g de queso parmesano, rallado",
       "Sal y nuez moscada al gusto"
     ],
-    "description": "Suavidad y sabor en cada porción. Una base de hojaldre crujiente sostiene un relleno cremoso de queso ricotta y espinacas frescas. Perfecta para un picnic, un entrante o una cena ligera.",
+    "description": "Pastel salado de ricota y espinacas con hojaldre ultracrujiente en solo 20 minutos. Evita la base cruda: descubre la técnica en freidora de aire para pasteles bien cocidos y dorados sin encender el horno.",
     "instructions": [
       "Escurrir y picar finamente las espinacas. En un bol, mezclar las espinacas con la ricotta, el huevo, el queso parmesano, la sal y la nuez moscada hasta obtener un relleno homogéneo.",
       "Forrar un molde redondo con la lámina de masa, manteniendo el papel de horno.",
@@ -346,10 +346,10 @@
   },
   {
     "slug": "castanas-asadas-freidora-aire",
-    "title": "Castañas Asadas (Sabor a Otoño)",
+    "title": "Castañas Asadas Perfectas (Fáciles de Pelar en 15 Min)",
     "emoji": "🌰",
     "temp": 200,
-    "time": "15-20",
+    "time": "15",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -357,7 +357,7 @@
       "Agua",
       "Sal gruesa"
     ],
-    "description": "El placer de las castañas recién hechas en casa. Gracias al remojo previo, se pelan con facilidad, ofreciendo un interior dulce y harinoso con ese aroma tostado tan reconfortante.",
+    "description": "¡Castañas asadas perfectas en 15 minutos sin humo en casa! Descubre el truco infalible (remojo) para obtener castañas tiernas por dentro y con la piel que se desprende en un segundo.",
     "instructions": [
       "Realizar una incisión horizontal en cada castaña con un cuchillo afilado.",
       "Sumergir las castañas en un recipiente con agua tibia durante un mínimo de 15 minutos para ablandar la cáscara.",
@@ -382,17 +382,17 @@
   },
   {
     "slug": "arancini-suppli-freidora-aire",
-    "title": "Arancini y Supplì Crujientes",
+    "title": "Arancini y Supplì (Corazón Fundido, Sin Olor a Frito)",
     "emoji": "🍘",
     "temp": 200,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "4 unidades de arancini o supplì, crudos y empanados",
       "Aceite de semillas en aerosol"
     ],
-    "description": "Lo mejor del 'street food' italiano. Estas croquetas de arroz consiguen un empanado dorado y firme que, al morderlo, libera un corazón de mozzarella fundida extremadamente elástica.",
+    "description": "¡El rey de la comida callejera se vuelve ligero! Arancini y supplì dorados con un rebozado extracrujiente y un corazón de mozzarella fundida. Fritos en freidora de aire en 15 minutos sin olor a frito.",
     "instructions": [
       "Refrigerar los arancini o supplì antes de la cocción para mantener su forma.",
       "Rociar la superficie empanada con aceite en aerosol para dorar el pan rallado.",
@@ -417,10 +417,10 @@
   },
   {
     "slug": "croquetas-patatas-panzarotti",
-    "title": "Panzarotti: Croquetas de Patata y Mozzarella",
+    "title": "Croquetas de Patata (Panzarotti Dorados que no se Deshacen)",
     "emoji": "🥔",
     "temp": 200,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -435,7 +435,7 @@
       "Perejil",
       "Aceite en aerosol"
     ],
-    "description": "Pura cremosidad envuelta en crujiente. El puré de patata suave se combina con un relleno de queso que se funde durante la cocción, creando un bocado dorado irresistible para grandes y pequeños.",
+    "description": "Croquetas de patata (panzarotti) ligeras y doradas en su punto. Evita que se deshagan al cocinar: descubre cómo conseguir una costra resistente y un corazón de mozzarella fundida en 12 min.",
     "instructions": [
       "Mezclar el puré de patata frío y seco con el huevo, el queso Parmesano, sal, pimienta y perejil.",
       "Formar cilindros e insertar en el centro un trozo de mozzarella bien escurrida.",
@@ -460,11 +460,11 @@
   },
   {
     "slug": "focaccia-rapida-al-aceite",
-    "title": "Focaccia Crujiente al Aceite y Romero",
+    "title": "Focaccia Plana Rápida (Fina, Salada y Crujiente en 12 Min)",
     "emoji": "🥖",
     "temp": 190,
-    "time": "12-15",
-    "prep_time": "5(usando masa ya preparada)",
+    "time": "12",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "250 g de masa para pizza fermentada",
@@ -472,7 +472,7 @@
       "Agua, cantidad suficiente",
       "Sal gruesa y romero fresco"
     ],
-    "description": "Pan recién hecho en minutos. Una masa fina y dorada, impregnada de aceite de oliva virgen extra y sal gruesa, que se convierte en el compañero ideal para tus tablas de embutidos o quesos.",
+    "description": "¡Focaccia crujiente (schiacciatina) en 12 minutos! Descubre el truco de la salmuera para cocinar una masa comprada, haciéndola fina, dorada y fragante sin encender el horno tradicional.",
     "instructions": [
       "Cortar un círculo de papel de horno del diámetro de la cesta y engrasarlo con aceite.",
       "Extender la masa sobre el papel de horno. Presionar con las yemas de los dedos para crear las hendiduras características.",
@@ -498,10 +498,10 @@
   },
   {
     "slug": "croissants-hojaldre-rellenos",
-    "title": "Mini Croissants de Hojaldre (Dulces o Salados)",
+    "title": "Cruasanes de Hojaldre Rellenos (Desayuno Caliente en 10 Min)",
     "emoji": "🥐",
     "temp": 170,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "10",
     "portions": "4",
     "ingredients": [
@@ -510,7 +510,7 @@
       "1 yema de huevo o leche, para pincelar",
       "Azúcar glas, para decorar"
     ],
-    "description": "Pequeños bocados de felicidad. Estos mini croissants se hornean hasta alcanzar un hojaldrado perfecto y un color dorado, ideales para un desayuno especial o una merienda rápida.",
+    "description": "Desayuno de cafetería en casa en 10 minutos. Cruasanes calientes de hojaldre, rellenos y dorados en la freidora de aire. Súper rápidos de preparar para empezar el día con una sonrisa.",
     "instructions": [
       "Extender la masa de hojaldre circular y cortarla en 8 triángulos isósceles.",
       "Disponer una cucharadita del relleno seleccionado en la base de cada triángulo.",
@@ -534,7 +534,7 @@
     "image": "cornetti-sfoglia-ripieni"
   },
   {
-    "title": "Berenjenas a la Parmesana (Estilo Tradicional)",
+    "title": "Parmesana de Berenjenas Ligera (Gratinado Perfecto en 20 Min)",
     "slug": "parmigiana-de-berenjenas",
     "emoji": "🍆",
     "temp": 180,
@@ -550,7 +550,7 @@
       "Aceite de oliva virgen extra: al gusto",
       "Sal: al gusto"
     ],
-    "description": "Capas de sabor mediterráneo. Berenjenas tiernas se alternan con salsa de tomate casera, mozzarella fundida y un toque generoso de parmesano gratinado para un plato reconfortante.",
+    "description": "¡La auténtica parmesana de berenjenas pero en una versión más ligera! Berenjenas precocidas con aire (cero fritura en sartén) en capas con mozzarella y tomate. Gratinado de chef en 20 min.",
     "instructions": [
       "Corte la berenjena en rodajas de 5 mm de grosor.",
       "Pincele las rodajas con aceite y precocínelas durante 8 minutos a 180°C.",
@@ -572,7 +572,7 @@
     ]
   },
   {
-    "title": "Albóndigas de la Abuela en Salsa de Tomate",
+    "title": "Albóndigas en salsa de tomate (Jugosas Por Dentro)",
     "slug": "albondigas-de-la-abuela-con-salsa",
     "emoji": "🍝",
     "temp": 190,
@@ -588,7 +588,7 @@
       "Sal y pimienta negra molida, al gusto",
       "250 g de salsa de tomate cocinada"
     ],
-    "description": "El sabor de siempre, ahora más ligero. Albóndigas jugosas cocinadas en una salsa de tomate espesa y aromática, listas para mojar pan y disfrutar de un segundo plato clásico.",
+    "description": "Albóndigas en salsa de tomate súper tiernas y sin esfuerzo. Descubre la doble cocción: sella la carne con aire en la freidora para retener los jugos, luego sumérgelas en tomate. Comida reconfortante en 15 min.",
     "instructions": [
       "Escurrir el pan y mezclar en un bol con la carne picada, el huevo, el queso parmesano, el perejil, la sal y la pimienta.",
       "Formar albóndigas del tamaño de una nuez.",
@@ -608,7 +608,7 @@
     ]
   },
   {
-    "title": "Arancini Siciliani al Ragú (Corazón de Carne)",
+    "title": "Arancini Siciliani de Ragú (Costra Dorada Crujiente Sin Freír en Abundante Aceite)",
     "slug": "arancini-sicilianos-ragu",
     "emoji": "🍙",
     "temp": 200,
@@ -626,7 +626,7 @@
       "Pan rallado, cantidad necesaria",
       "Aceite de oliva en aerosol"
     ],
-    "description": "Una explosión de sabor siciliano. Estas esferas de arroz cuentan con un rebozado crujiente hecho con muy poco aceite que esconde un guiso de carne (ragú) jugoso y sabroso.",
+    "description": "El auténtico arancino siciliano en forma de cono, sin sumergirlo en aceite. Una costra gruesa y crujiente de pan rallado con un corazón caliente de arroz al azafrán y ragú de carne denso. ¡Sublime!",
     "instructions": [
       "Mezclar el arroz frío con el azafrán, previamente disuelto en una cucharada de agua caliente.",
       "Tomar una porción de arroz, aplanarla en la palma de la mano e introducir en el centro una cucharada de ragú, guisantes y un dado de queso.",
@@ -647,7 +647,7 @@
     ]
   },
   {
-    "title": "Aceitunas Ascolanas Rellenas de Carne",
+    "title": "Aceitunas Rellenas Estilo Ascolana (Aperitivo Crujiente en 10 Min)",
     "slug": "aceitunas-a-la-ascolana",
     "emoji": "🫒",
     "temp": 200,
@@ -658,7 +658,7 @@
       "20 aceitunas a la ascolana rellenas de carne (frescas o congeladas)",
       "Aceite de semillas en aerosol"
     ],
-    "description": "El aperitivo más sorprendente de Las Marcas. Aceitunas verdes carnosas rellenas de una mezcla de carne sazonada y empanadas hasta lograr un crujiente perfecto. ¡Imposible comer solo una!",
+    "description": "Deliciosas aceitunas Ascolanas rellenas de carne: el aperitivo perfecto listo en 10 minutos. El flujo de aire caliente seca el rebozado, haciéndolo extracrujiente sin la grasa de la sartén.",
     "instructions": [
       "Disponer las aceitunas en la cesta en una sola capa, dejando espacio entre ellas.",
       "Pulverizar uniformemente las aceitunas con aceite en aerosol.",
@@ -676,7 +676,7 @@
     ]
   },
   {
-    "title": "Calabacines Rellenos a la Ligur (Gratinados)",
+    "title": "Calabacines Rellenos a la Ligur (Gratinado Rápido)",
     "slug": "calabacines-rellenos-estilo-liguria",
     "emoji": "🥒",
     "temp": 180,
@@ -693,7 +693,7 @@
       "Pan rallado, cantidad suficiente",
       "Sal, pimienta negra molida, mejorana fresca"
     ],
-    "description": "Frescura y gratín en un solo plato. Calabacines rellenos de una mezcla equilibrada de carne y queso, horneados hasta que la parte superior queda dorada y crujiente.",
+    "description": "Barquitas de calabacín rellenas a la ligur: un plato principal delicioso y rico en proteínas. Carne sabrosa y pan rallado dorado se mezclan en un gratinado perfecto, reduciendo a la mitad el tiempo de horno.",
     "instructions": [
       "Cortar los calabacines por la mitad a lo largo, vaciar la pulpa con una cuchara y picarla finamente.",
       "En un recipiente, mezclar la pulpa de calabacín picada, la carne picada, el huevo, el queso Parmigiano Reggiano, la sal, la pimienta y la mejorana.",
@@ -820,7 +820,7 @@
     ]
   },
   {
-    "title": "Pimientos Rellenos de Carne y Queso",
+    "title": "Pimientos Rellenos de Carne (Cocidos a la Perfección en 25 Min)",
     "slug": "pimientos-rellenos-carne",
     "emoji": "🫑",
     "temp": 180,
@@ -837,7 +837,7 @@
       "30 g de queso rallado",
       "Aceite de oliva virgen extra"
     ],
-    "description": "Un plato completo y lleno de color. Pimientos asados hasta quedar tiernos, rellenos de una jugosa mezcla de carne picada y queso fundido que se deshace en la boca.",
+    "description": "Pimientos dulces rellenos de carne picada: el plato único salvacenas listo en 25 minutos. El flujo de aire caliente garantiza pimientos suaves y un espectacular gratinado del relleno, sin encender el horno.",
     "instructions": [
       "Cortar los pimientos por la mitad longitudinalmente. Retirar las semillas y los filamentos internos.",
       "En un bol, mezclar la carne picada con el pan escurrido, el huevo, el perejil, el ajo en polvo, la sal y la pimienta hasta obtener una mezcla homogénea.",
@@ -855,7 +855,7 @@
     ]
   },
   {
-    "title": "Salchichas Rústicas con Patatas al Romero",
+    "title": "Salchicha y patatas en dados (plato único rápido)",
     "slug": "salchicha-y-patatas-a-la-rustica",
     "emoji": "🥔",
     "temp": 190,
@@ -871,7 +871,7 @@
       "Sal",
       "Pimienta negra"
     ],
-    "description": "La combinación clásica que nunca falla. Salchichas de cerdo doradas acompañadas de patatas crujientes, todo aromatizado con la fragancia del romero fresco y un toque de ajo.",
+    "description": "El dúo reconfortante italiano definitivo. Al asarse juntos, los jugos de la salchicha infunden las patatas, creando un plato con bordes crujientes y un sabor tradicional profundo en 20 minutos.",
     "instructions": [
       "Pele las patatas y córtelas en trozos de aproximadamente 2 cm. Sazone con aceite, sal, pimienta, romero y el diente de ajo pelado.",
       "Corte las salchichas en trozos o déjelas enteras, pinchando la piel.",
@@ -890,7 +890,7 @@
     ]
   },
   {
-    "title": "Tortilla de Pasta (Frittata di Maccheroni)",
+    "title": "Tortilla de Pasta Napolitana (Frittata di Pasta)",
     "slug": "frittata-de-maccheroni-pasta-omelette",
     "emoji": "🍳",
     "temp": 180,
@@ -906,7 +906,7 @@
       "Pimienta negra molida",
       "Aceite de oliva virgen extra"
     ],
-    "description": "La receta perfecta para aprovechar la pasta y disfrutarla de una forma nueva. Con un exterior dorado y un interior jugoso, es ideal tanto para una cena rápida como para llevar de picnic.",
+    "description": "La genialidad de las sobras italianas. Este pastel de pasta dorada tiene una corteza crujiente y un interior suave y con queso. Perfecto para picnics, fiambreras o una cena rápida y satisfactoria en 18 minutos.",
     "instructions": [
       "En un bol, bata los huevos con el queso Parmesano, la sal, la pimienta y el embutido en dados.",
       "Añada la pasta y mezcle hasta integrar.",
@@ -975,7 +975,7 @@
       "Aceite de oliva virgen extra",
       "Sal y pimienta negra molida"
     ],
-    "description": "Descubre la textura sorprendente de la alcachofa asada. Las hojas exteriores quedan tan finas y crujientes como un snack, protegiendo un corazón tierno y lleno de matices.",
+    "description": "Inspirado en las famosas alcachofas al estilo judío de Roma. Las hojas exteriores se vuelven tan crujientes como patatas fritas, mientras que el corazón se mantiene mantecoso y delicado. Un verdadero placer gourmet en 15 minutos.",
     "instructions": [
       "Limpiar las alcachofas: retirar las hojas exteriores duras y cortar las puntas. Sumergir en agua con zumo de limón.",
       "Secar completamente las alcachofas. Golpear boca abajo sobre una superficie para que se abran las hojas.",
@@ -997,7 +997,7 @@
     ]
   },
   {
-    "title": "Flores de Calabacín con Mozzarella y Anchoas",
+    "title": "Flores de Calabacín Rellenas con Anchoas",
     "slug": "flores-de-calabacin-rebozadas",
     "emoji": "🌼",
     "temp": 190,
@@ -1015,7 +1015,7 @@
       "Aceite en aerosol",
       "Sal"
     ],
-    "description": "Un bocado gourmet y delicado. Flores de calabacín rellenas de queso fundido y un toque salino de anchoa, envueltas en un rebozado ligero que estalla de sabor al morderlo.",
+    "description": "Delicadas y elegantes. Estas flores están rellenas de mozzarella fundida y un toque de anchoa salada, luego ligeramente empanadas para un aperitivo sofisticado y crujiente en solo 8 minutos.",
     "instructions": [
       "Limpiar las flores retirando el pistilo interior, procediendo con cuidado para no romperlas.",
       "Introducir en cada flor un trozo de mozzarella bien escurrida y un filete de anchoa. Cerrar la punta de la flor girándola ligeramente.",
@@ -1035,7 +1035,7 @@
     ]
   },
   {
-    "title": "Bruschetta Italiana de Tomate y Albahaca",
+    "title": "Bruschetta Clásica de Tomate y Albahaca",
     "slug": "bruschette-tomate-albahaca",
     "emoji": "🥖",
     "temp": 200,
@@ -1050,7 +1050,7 @@
       "Aceite de oliva virgen extra",
       "Sal"
     ],
-    "description": "La esencia del Mediterráneo sobre una rebanada de pan tostado. El frescor del tomate maduro, el aroma de la albahaca y un buen aceite de oliva crean el aperitivo perfecto.",
+    "description": "El sabor del verano en una tostada. El pan de masa madre se tuesta a la perfección y se cubre con una mezcla vibrante de tomates madurados al sol, albahaca fresca y aceite de oliva virgen extra en 5 minutos.",
     "instructions": [
       "Corte los tomates en cubos pequeños. Aliñe en un recipiente con aceite, sal y albahaca troceada. Deje reposar.",
       "Tueste las rebanadas de pan a 200°C durante 4-5 minutos.",
@@ -1071,7 +1071,7 @@
     ]
   },
   {
-    "title": "Ñoquis Crujientes (El Snack de Patata)",
+    "title": "Bocaditos de Ñoquis Dorados y Crujientes",
     "slug": "gnocchi-fritos-aperitivo",
     "emoji": "🧀",
     "temp": 200,
@@ -1085,7 +1085,7 @@
       "Pimentón dulce, sal y romero seco al gusto",
       "Queso fundido para acompañar (opcional)"
     ],
-    "description": "¿Has probado los ñoquis fritos? Olvida la textura blanda; aquí se vuelven dorados y crujientes por fuera, manteniendo su corazón suave. Un aperitivo original y adictivo.",
+    "description": "Transforma tus ñoquis en el aperitivo perfecto. Estos bocaditos de patata se tuestan hasta que están dorados y crujientes por fuera, permaneciendo suaves y esponjosos por dentro en 12 minutos.",
     "instructions": [
       "En un recipiente, mezcle los ñoquis crudos con el aceite de oliva, la sal, el pimentón y el romero.",
       "Disponga los ñoquis en la cesta de cocción en una sola capa.",
@@ -1104,7 +1104,7 @@
     ]
   },
   {
-    "title": "Castagnole de Ricotta (Bocaditos Cítricos)",
+    "title": "Buñuelos de Carnaval de Ricota y Limón",
     "slug": "castagnole-ricotta",
     "emoji": "🍩",
     "temp": 180,
@@ -1122,7 +1122,7 @@
       "Azúcar granulado para rebozar",
       "Leche (opcional)"
     ],
-    "description": "Pequeños dulces tradicionales que se deshacen en la boca. La ricotta aporta una esponjosidad única, mientras que los cítricos inundan el paladar con un aroma fresco y festivo.",
+    "description": "Una dulce tradición italiana. Estas 'Castagnole' están hechas con ricota cremosa para una textura parecida a una nube, perfumadas con ralladura de cítricos y rebozadas en azúcar mientras aún están calientes. Listas en 10 minutos.",
     "instructions": [
       "Mezclar en un recipiente el queso ricotta con el huevo, el azúcar y la ralladura de limón.",
       "Incorporar la harina y la levadura tamizadas. Amasar hasta obtener una masa homogénea. Si la consistencia es demasiado densa, añadir leche.",
@@ -1156,7 +1156,7 @@
       "Sal y orégano seco, al gusto",
       "Aceite de oliva virgen extra"
     ],
-    "description": "Bolsitas de masa rellenas del dúo más famoso de Italia. Al morder el borde dorado, descubrirás un relleno de tomate y mozzarella fundida que es puro placer.",
+    "description": "El alma de la comida callejera de Apulia. Estas empanadillas saladas presentan una masa crujiente y ligera rellena con una combinación clásica de tomate y queso mozzarella fundido en solo 8 minutos.",
     "instructions": [
       "Extender la masa para pizza y cortar discos con un cortapastas.",
       "Disponer en el centro de cada disco una pequeña cantidad de puré de tomate, previamente sazonado con sal y orégano, y la mozzarella.",
@@ -1178,12 +1178,12 @@
     ]
   },
   {
-    "title": "Focaccia Esponjosa de Romero y Sal Gruesa",
+    "title": "Focaccia Alta y Suave al Romero",
     "slug": "focaccia-esponjosa-romero",
     "emoji": "🍞",
     "temp": 170,
     "time": "18",
-    "prep_time": "2 horas (levado)",
+    "prep_time": "120",
     "portions": "4",
     "isItalian": true,
     "ingredients": [
@@ -1194,7 +1194,7 @@
       "5 g de sal",
       "Romero fresco y sal gruesa para la superficie"
     ],
-    "description": "Pan tierno y aireado con los hoyuelos clásicos que atrapan el aceite de oliva. Su aroma a romero la hace ideal para disfrutar sola o abierta y rellena de tus ingredientes favoritos.",
+    "description": "Experimenta el aroma de una panadería tradicional. Esta focaccia es alta, aireada y suave, cubierta con romero fragante y sal marina. Ideal para sándwiches o para untar en 18 minutos.",
     "instructions": [
       "Disolver la levadura en el agua tibia. Añadir la harina, el aceite y la sal. Amasar hasta obtener una masa elástica y homogénea.",
       "Cubrir la masa y dejar levar durante 2 horas o hasta que duplique su volumen.",
@@ -1214,7 +1214,7 @@
     ]
   },
   {
-    "title": "Fritura Mixta de Calamares y Gambas",
+    "title": "Frito Mixto Crujiente de Calamares y Gambas",
     "slug": "fritura-de-calamares-y-gambas",
     "keywords": [
       "Pescado",
@@ -1239,7 +1239,7 @@
       "Sal, al gusto",
       "Rodajas de limón, para servir"
     ],
-    "description": "El festín del mar en tu mesa. Una combinación de marisco con un rebozado seco, ligero y crujiente que respeta el sabor natural del calamar y la gamba.",
+    "description": "Una versión más ligera del frito mixto italiano. Los calamares y las gambas se cocinan hasta obtener un crujido seco y ligero que permite que brille la dulzura natural del marisco en 12 minutos.",
     "instructions": [
       "Secar meticulosamente los calamares y las gambas con papel de cocina.",
       "Introducir el marisco en una bolsa de plástico con sémola y agitar para enharinar de manera uniforme.",
@@ -1251,7 +1251,7 @@
     "image": "frittura-calamari-e-gamberi"
   },
   {
-    "title": "Fritura de Pescaito Frito (Paranza)",
+    "title": "Frito Mixto Tradicional de Pescado (Paranza)",
     "slug": "fritura-de-pescado-de-paranza",
     "keywords": [
       "Pescado",
@@ -1273,7 +1273,7 @@
       "Sal, cantidad suficiente",
       "Limón, cantidad suficiente"
     ],
-    "description": "El auténtico sabor de la costa. Una selección de pescado pequeño enharinado y cocinado hasta alcanzar ese punto crujiente que invita a compartir.",
+    "description": "Rústico y auténtico. Una selección de pescados pequeños y delicados cocinados hasta quedar perfectamente crujientes en 10 minutos. Se disfruta mejor entero con un generoso chorrito de limón fresco.",
     "instructions": [
       "Enjuagar el pescado. Eviscerar las piezas de mayor tamaño. Secar completamente.",
       "Enharinar el pescado con la sémola, eliminando el exceso.",
@@ -1286,7 +1286,7 @@
     "image": "frittura-di-paranza"
   },
   {
-    "title": "Calamaretes Crujientes (Bocados de Mar)",
+    "title": "Calamaritos Crujientes y Tiernos",
     "slug": "calamaretti-fritos-crujientes",
     "keywords": [
       "Pescado",
@@ -1308,7 +1308,7 @@
       "Aceite en espray, c.s.",
       "Sal, al gusto"
     ],
-    "description": "Pequeños calamares cocinados enteros para preservar toda su jugosidad interior. Un bocado rápido, tierno y con una capa exterior deliciosamente tostada.",
+    "description": "Rápido, fácil y delicioso. Estos calamaritos se cocinan a fuego alto para asegurar una capa crujiente mientras que la carne permanece increíblemente tierna y jugosa en 8 minutos.",
     "instructions": [
       "Verificar la limpieza de los calamaretes. Secar completamente con papel absorbente.",
       "Rebozar los calamaretes en la sémola de trigo duro. Eliminar el exceso de sémola.",
@@ -1322,7 +1322,7 @@
     "is_sanitized": true
   },
   {
-    "title": "Colas de Gamba Empanadas y Crujientes",
+    "title": "Gambas Doradas Crujientes",
     "slug": "gambas-doradas-crujientes",
     "keywords": [
       "Pescado",
@@ -1347,7 +1347,7 @@
       "Aceite en aerosol, cantidad suficiente",
       "Sal y pimienta negra molida, al gusto"
     ],
-    "description": "Colas de gamba seleccionadas con un empanado dorado que potencia su sabor dulce. Perfectas como un elegante entrante o un segundo plato ligero.",
+    "description": "Gambas suculentas con un impresionante recubrimiento dorado. Ya sea que se sirvan como aperitivo para una fiesta o como plato principal, estos bocados están garantizados para desaparecer rápidamente. Listos en 10 minutos.",
     "instructions": [
       "Limpiar las colas de gamba, retirando el caparazón y el intestino. Conservar el segmento final de la cola.",
       "Secar completamente las gambas. En un recipiente, mezclar la harina de maíz con sal y pimentón.",
@@ -1361,16 +1361,16 @@
   },
   {
     "slug": "patatas-rusticas-con-piel-congeladas",
-    "title": "Patatas Rústicas con Piel (Súper Sabrosas)",
+    "title": "Patatas Fritas Rústicas con Piel",
     "emoji": "🍟",
     "temp": 200,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "2",
     "ingredients": [
       "500 g de patatas rústicas con piel, congeladas"
     ],
-    "description": "Disfruta de la potencia de la patata asada con su piel. Logran un dorado uniforme y un sabor rústico inconfundible, siendo el acompañamiento ideal para cualquier carne o pescado.",
+    "description": "Mejor que en el restaurante. Las patatas fritas con piel ofrecen un sabor a patata más profundo y un crujido superior. Nos aseguramos de que queden perfectamente doradas cada vez en 18 minutos.",
     "instructions": [
       "Colocar las patatas congeladas en la cesta, distribuyéndolas en una capa uniforme.",
       "No añadir aceite. El producto está prefrito.",
@@ -1395,7 +1395,7 @@
   },
   {
     "slug": "chips-de-maiz-caseras",
-    "title": "Nachos Caseros de Maíz (Totopos)",
+    "title": "Chips de Tortilla de Maíz Caseros (Totopos)",
     "emoji": "🌮",
     "temp": 150,
     "time": "8",
@@ -1407,7 +1407,7 @@
       "Sal, al gusto",
       "Salsa para acompañar (opcional)"
     ],
-    "description": "Olvida los snacks industriales. Estos triángulos de maíz tostados son mucho más sanos y crujientes, ideales para dipear en guacamole o acompañar tus aperitivos.",
+    "description": "Olvídate de las bolsas de la tienda. Haz tus propios chips de tortilla de maíz ultra crujientes en casa, perfectos para mojar en salsa fresca, guacamole o fundir bajo nachos en 8 minutos.",
     "instructions": [
       "Cortar cada tortilla en 8 triángulos de tamaño uniforme.",
       "En un recipiente, aderezar los triángulos de tortilla con aceite y sal, asegurando una cobertura completa.",
@@ -1434,10 +1434,10 @@
   },
   {
     "slug": "palitos-de-batata-dulce-paprika",
-    "title": "Bastones de Boniato al Pimentón Dulce",
+    "title": "Batatas Fritas Especiadas con Pimentón",
     "emoji": "🍠",
     "temp": 200,
-    "time": "11-15",
+    "time": "11",
     "prep_time": "10",
     "portions": "4",
     "ingredients": [
@@ -1449,7 +1449,7 @@
       "1/2 cucharadita de cebolla en polvo",
       "Pimienta negra recién molida, al gusto"
     ],
-    "description": "El equilibrio perfecto entre dulce y salado. Estos bastones de boniato quedan tiernos por dentro y crujientes por fuera, con un toque ahumado de pimentón que los hace únicos.",
+    "description": "Una alternativa dulce y ahumada a las patatas fritas clásicas. Estos bastones de batata se sazonan con una vibrante mezcla de pimentón y se asan hasta que están tiernos con bordes crujientes en 11 minutos.",
     "instructions": [
       "Pele los boniatos y córtelos en bastones de aproximadamente 1,5 cm de grosor.",
       "En un recipiente grande, vierta el aceite sobre los bastones y mezcle para cubrirlos uniformemente.",
@@ -1477,10 +1477,10 @@
   },
   {
     "slug": "patatas-fritas-cajun",
-    "title": "Patatas Cajun (Especiadas & Crujientes)",
+    "title": "Patatas Fritas Crujientes con Especias Cajún",
     "emoji": "🍟",
     "temp": 195,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -1490,7 +1490,7 @@
       "1 cucharada de mezcla de especias Cajún",
       "Pimienta de cayena, opcional"
     ],
-    "description": "Viaja al corazón de Luisiana con estas patatas cortadas a mano. El secreto está en su mezcla de especias aromáticas que les aporta un toque picante y un color dorado irresistible en cada bocado.",
+    "description": "Lleva los sabores de Luisiana a tu mesa. Estas patatas fritas se mezclan con una audaz mezcla de especias Cajún, proporcionando un crujido picante y satisfactorio con un centro esponjoso y tierno en 20 minutos.",
     "instructions": [
       "Corte las patatas en bastones de grosor uniforme. Sumerja en agua fría durante 15-20 minutos para eliminar el exceso de almidón.",
       "Escurra, enjuague y seque completamente las patatas con un paño de cocina.",
@@ -1517,10 +1517,10 @@
   },
   {
     "slug": "patatas-fritas-caseras",
-    "title": "Patatas Fritas de Verdad (Técnica Tradicional)",
+    "title": "Patatas Fritas Caseras Perfectas",
     "emoji": "🍟",
     "temp": 195,
-    "time": "25-28",
+    "time": "25",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -1531,7 +1531,7 @@
       "2.5 g de pimentón",
       "Sal"
     ],
-    "description": "La patata frita perfecta existe. Al eliminar el exceso de almidón, logramos unos bastones que se mantienen firmes y crujientes por fuera, con un interior tierno que se deshace en la boca.",
+    "description": "Domina el arte de freír. Al remojar las patatas para eliminar el exceso de almidón, logramos un nivel superior de crujiente que rivaliza con tus patatas fritas de bistró favoritas en 25 minutos.",
     "instructions": [
       "Cortar las patatas en bastones de grosor uniforme. Sumergirlas en un recipiente con agua fría durante un mínimo de 20 minutos.",
       "Escurrir, enjuagar y secar completamente las patatas con un paño limpio o papel de cocina.",
@@ -1557,16 +1557,16 @@
   },
   {
     "slug": "patatas-onduladas-congeladas",
-    "title": "Patatas Onduladas (Máxima Crocancia)",
+    "title": "Patatas Fritas Onduladas Crujientes",
     "emoji": "🍟",
     "temp": 200,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "2",
     "ingredients": [
       "500 g de patatas onduladas congeladas"
     ],
-    "description": "Gracias a su forma estriada, estas patatas multiplican la superficie de contacto para un acabado extra crujiente. Ideales para atrapar tus salsas favoritas sin añadir ni una gota de aceite extra.",
+    "description": "La textura definitiva para los amantes de las salsas. El corte ondulado único crea más superficie para un crujido máximo, convirtiéndolas en el recipiente perfecto para tus salsas favoritas en 18 minutos.",
     "instructions": [
       "Colocar las patatas congeladas en la cesta.",
       "No añadir aceite. El producto prefrito contiene la grasa necesaria.",
@@ -1591,11 +1591,11 @@
   },
   {
     "slug": "pollo-frito-suero-leche",
-    "title": "Pollo Frito al Estilo Sureño (Buttermilk)",
+    "title": "Pollo Frito con Suero de Leche al Estilo Sureño",
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
-    "prep_time": "2 horas",
+    "prep_time": "120",
     "portions": "2",
     "ingredients": [
       "Muslos de pollo, 2 unidades",
@@ -1608,7 +1608,7 @@
       "Sal y pimienta negra molida, al gusto",
       "Aceite en aerosol, cantidad necesaria"
     ],
-    "description": "El marinado en suero de leche es la clave para una carne increíblemente tierna. Envuelta en un rebozado especiado y crujiente, esta receta es un homenaje al mejor pollo frito tradicional.",
+    "description": "Un verdadero clásico hecho más ligero. Un adobo de suero de leche picante garantiza un pollo increíblemente jugoso, mientras que la capa de harina sazonada se fríe con aire hasta obtener un crujido dorado y rústico en 25 minutos.",
     "instructions": [
       "Sumergir las piezas de pollo en el suero de leche. Marinar en refrigeración durante un mínimo de 90 minutos.",
       "Mezclar en un recipiente la harina con el ajo en polvo, la cebolla en polvo, el pimentón, la sal y la pimienta.",
@@ -1634,10 +1634,10 @@
   },
   {
     "slug": "bastoncitos-calabacin-parmesano",
-    "title": "Bastones de Calabacín al Parmesano",
+    "title": "Bastones de Calabacín al Parmesano (Crujientes y Rápidos)",
     "emoji": "🥒",
     "temp": 190,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -1651,7 +1651,7 @@
       "Pimienta negra molida",
       "Aceite en aerosol"
     ],
-    "description": "Una forma divertida y deliciosa de comer verdura. Estos bastones se cubren con una costra de queso parmesano que se gratina hasta quedar crujiente, manteniendo el calabacín jugoso por dentro.",
+    "description": "¡Haz que los niños coman verduras! Bastones de calabacín empanados con pan rallado y Parmesano, listos en 10 minutos. Un aperitivo vegetariano dorado, delicioso y sin aceite hirviendo.",
     "instructions": [
       "Corte los calabacines en bastones. Deseche la parte central si contiene exceso de semillas o agua.",
       "Disponga tres recipientes. En el primero, mezcle la harina, la sal y la pimienta. En el segundo, bata los huevos con la leche. En el tercero, mezcle el pan rallado con el queso parmesano.",
@@ -1678,7 +1678,7 @@
   },
   {
     "slug": "alitas-pollo-ajo-parmesano",
-    "title": "Alitas de Pollo al Ajo y Parmesano",
+    "title": "Alitas de Pollo con Ajo y Parmesano (Costra Extrema)",
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
@@ -1692,7 +1692,7 @@
       "Sal y pimienta negra, al gusto",
       "Aceite en aerosol"
     ],
-    "description": "Olvídate de las manos pegajosas. Estas alitas llevan un rebozado seco de queso y ajo que crea una capa sabrosa y crujiente, ideal para un picoteo gourmet con amigos.",
+    "description": "¡Alitas estilo pub americano en casa! El truco de la maicena combinado con la freidora de aire deja la piel bien seca y crujiente, creando una corteza irresistible con sabor a ajo y Parmesano en 25 minutos.",
     "instructions": [
       "Secar las alitas de pollo con papel absorbente.",
       "Mezclar en un recipiente el almidón de maíz, la mitad del queso Parmesano, el ajo en polvo, la sal y la pimienta.",
@@ -1718,7 +1718,7 @@
   },
   {
     "slug": "alitas-pollo-jerk",
-    "title": "Alitas Jerk (Sabor Auténtico de Jamaica)",
+    "title": "Alitas de pollo jerk (Especiadas Y Crujientes)",
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
@@ -1739,7 +1739,7 @@
       "Sal",
       "Zumo de 1 lima"
     ],
-    "description": "Una explosión de sabores caribeños. El marinado Jerk impregna el pollo con notas de pimienta de Jamaica, tomillo y canela, logrando una piel tostada y una carne profundamente aromática.",
+    "description": "¡Viaje a Jamaica en 25 minutos! Alitas aromáticas y agradablemente picantes. La freidora de aire ayuda a fijar la mezcla de especias jerk sobre la piel y a eliminar el exceso de grasa.",
     "instructions": [
       "Seque bien las alitas de pollo con papel absorbente.",
       "En un recipiente, mezcle las especias con el aceite de oliva hasta formar una pasta.",
@@ -1765,11 +1765,11 @@
   },
   {
     "slug": "alitas-pollo-ketchup-mostaza",
-    "title": "Alitas Glaseadas (Ketchup & Mostaza)",
+    "title": "Alitas de Pollo Glaseadas (Kétchup y Mostaza en 18 Min)",
     "emoji": "🍗",
     "temp": 170,
-    "time": "18-20",
-    "prep_time": "2 horas",
+    "time": "18",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "1 kg de alitas de pollo, seccionadas",
@@ -1779,7 +1779,7 @@
       "1 cucharada de aceite de oliva",
       "1 cucharadita de pimentón dulce"
     ],
-    "description": "El equilibrio perfecto entre lo dulce y lo salado. Estas alitas se caramelizan durante la cocción, creando un glaseado brillante que sella todos los jugos de la carne.",
+    "description": "Una delicia agridulce a baja temperatura (170°C). El glaseado de kétchup y mostaza se carameliza suavemente sobre la piel de las alitas, garantizando un resultado para chuparse los dedos.",
     "instructions": [
       "En un bol, mezclar el kétchup, la mostaza, la salsa de soja, el aceite y el pimentón hasta obtener una salsa homogénea.",
       "Sumergir las alitas de pollo en el marinado. Cubrir con film transparente y refrigerar durante un mínimo de 2 horas y un máximo de 12.",
@@ -1803,10 +1803,10 @@
   },
   {
     "slug": "alitas-miel-sriracha",
-    "title": "Alitas Miel & Sriracha (Agridulce Picante)",
+    "title": "Alitas de Pollo con Miel y Sriracha (Agridulces y Picantes)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "25-30",
+    "time": "25",
     "prep_time": "10",
     "portions": "4",
     "ingredients": [
@@ -1818,7 +1818,7 @@
       "1 cucharada de vinagre de arroz",
       "Aceite en aerosol"
     ],
-    "description": "Para los amantes del contraste. El picor de la Sriracha se suaviza con la dulzura de la miel, envolviendo las alitas en una salsa pegajosa y adictiva de inspiración asiática.",
+    "description": "El equilibrio perfecto entre el dulzor de la miel y el fuego de la sriracha. Cocina las alitas en la freidora de aire hasta que crujan (25 min) y luego pásalas por la salsa caliente. Un resultado asiático para verdaderos conocedores.",
     "instructions": [
       "Secar las alitas de pollo. En una bolsa, mezclar el almidón de maíz y las especias en polvo. Introducir las alitas y agitar para rebozar uniformemente.",
       "Precalentar a 195°C. Colocar las alitas en la cesta, rociar con aceite en aerosol y cocinar durante 25-30 minutos. Girar a mitad de cocción.",
@@ -1844,11 +1844,11 @@
   },
   {
     "slug": "muslos-pollo-tikka",
-    "title": "Contramuslos Tikka con Coco",
+    "title": "Muslitos de Pollo Tikka Masala (Tiernos y Especiados)",
     "emoji": "🍗",
     "temp": 180,
-    "time": "20-25",
-    "prep_time": "1 hora",
+    "time": "20",
+    "prep_time": "60",
     "portions": "2",
     "ingredients": [
       "4 muslos de pollo",
@@ -1859,7 +1859,7 @@
       "1 cm de jengibre fresco rallado y 1 diente de ajo picado",
       "Sal"
     ],
-    "description": "Sabor exótico y textura sedosa. El marinado de leche de coco y especias indias suaviza la carne, permitiendo que el pollo se dore por fuera mientras permanece extremadamente tierno por dentro.",
+    "description": "Todo el sabor del Tandoori en 20 minutos. La leche de coco ablanda los muslitos de pollo mientras el aire caliente sella las especias indias en una costra colorida y muy fragante.",
     "instructions": [
       "Realizar 2 o 3 cortes diagonales en cada muslo de pollo para facilitar la penetración del marinado.",
       "En un recipiente, mezclar la leche de coco, el concentrado de tomate, las especias, el ajo, el jengibre y la sal.",
@@ -1884,11 +1884,11 @@
   },
   {
     "slug": "tenders-de-pollo-cajun",
-    "title": "Tiras de Pollo Cajun (Tenders Caseros)",
+    "title": "Tiras de Pollo Cajún (Rebozado Extra Crujiente)",
     "emoji": "🌶",
     "temp": 195,
-    "time": "12-14",
-    "prep_time": "1 hora y 15",
+    "time": "12",
+    "prep_time": "60",
     "portions": "4",
     "isItalian": false,
     "ingredients": [
@@ -1902,7 +1902,7 @@
       "Sal",
       "Aceite en aerosol"
     ],
-    "description": "Tiras de pechuga jugosas con un empanado rústico y potente. Esta mezcla de especias sureñas garantiza un sabor auténtico y un crujido que se oye en cada bocado.",
+    "description": "¡Tiras de pollo empanadas a la perfección! El uso de suero de leche junto con la mezcla Cajún crea tiras súper crujientes sin sumergirlas en aceite. El snack proteico listo en solo 12 minutos.",
     "instructions": [
       "Sumergir las tiras de pollo en el suero de leche mezclado con la salsa picante. Refrigerar durante un mínimo de una hora.",
       "En un recipiente, mezclar la harina, la mezcla de especias Cajún, el ajo en polvo, la cebolla en polvo y la sal. Añadir una cucharada de la marinada a la mezcla de harina y remover con los dedos para formar grumos.",
@@ -1927,10 +1927,10 @@
   },
   {
     "slug": "muslos-pollo-ajo-limon",
-    "title": "Pollo al Ajo y Limón (Piel Crujiente)",
+    "title": "Muslos de Pollo con Ajo y Limón (Piel Extracrujiente)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -1942,7 +1942,7 @@
       "1 cucharadita de orégano seco",
       "Sal y pimienta negra al gusto"
     ],
-    "description": "La receta que nunca falla. Un marinado clásico de hierbas y cítricos que penetra en la carne, logrando que la piel se tueste hasta quedar fina y crujiente como el cristal.",
+    "description": "¡Una cena fresca, alta en proteínas y baja en carbohidratos! La potencia de la freidora desgrasa la piel de los muslos dejándola crujiente como una patata frita (en 20 min), mientras el limón aromatiza la carne.",
     "instructions": [
       "Mezclar en un bol el aceite de oliva, el zumo y la ralladura de limón, el ajo, el pimentón, el orégano, la sal y la pimienta para crear el marinado.",
       "Secar los contramuslos de pollo con papel de cocina. Introducirlos en el bol con el marinado y mezclar. Dejar marinar, cubierto, a temperatura ambiente durante 30 minutos.",
@@ -1967,10 +1967,10 @@
   },
   {
     "slug": "muslos-pollo-mostaza",
-    "title": "Pollo Glaseado con Mostaza y Arce",
+    "title": "Muslos de Pollo a la Mostaza (Glaseado Agridulce Rápido)",
     "emoji": "🍗",
     "temp": 190,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -1982,7 +1982,7 @@
       "0.5 cucharadita de pimentón dulce",
       "Sal y pimienta negra molida al gusto"
     ],
-    "description": "Sofisticación en pocos minutos. La mostaza aporta carácter y el sirope de arce una nota dulce que carameliza la piel, creando un contraste de sabores digno de un restaurante.",
+    "description": "Una verdadera receta gourmet salvacenas en 22 minutos. La mezcla picante de la mostaza y el dulzor del arce glasean la piel del pollo al aire de forma espectacular sin quemarla.",
     "instructions": [
       "Mezclar en un bol la mostaza, el sirope de arce, la cebolla en polvo, el ajo en polvo y el pimentón hasta obtener un glaseado homogéneo.",
       "Secar los muslos de pollo con papel absorbente. Salpimentar. Pincelar uniformemente los muslos con el glaseado, reservando una parte.",
@@ -2006,11 +2006,11 @@
   },
   {
     "slug": "muslos-pollo-yogur-romero",
-    "title": "Pollo al Yogur (Súper Jugoso)",
+    "title": "Muslos de Pollo al Yogur (Suaves y Fragantes)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "30-35",
-    "prep_time": "4 horas",
+    "time": "30",
+    "prep_time": "240",
     "portions": "4",
     "ingredients": [
       "4 muslos o contramuslos de pollo, grandes (con o sin piel)",
@@ -2021,7 +2021,7 @@
       "Sal y pimienta negra, al gusto",
       "1 cucharada de aceite de oliva"
     ],
-    "description": "La ciencia al servicio de la cocina: el ácido láctico del yogur rompe las fibras del pollo, dejándolo increíblemente tierno. El romero fresco remata el plato con un aroma campestre único.",
+    "description": "¿Cómo preparar un pollo que se deshace en la boca? La acidez del yogur rompe las fibras de la carne en 30 min, garantizando muslos súper tiernos, perfumados con romero y con una costra fabulosa.",
     "instructions": [
       "Mezclar en un recipiente el yogur griego, el aceite, la mostaza, el ajo, las hojas de romero picadas, la sal y la pimienta.",
       "Sumergir el pollo en el marinado, cubriendo uniformemente todas las superficies.",
@@ -2045,10 +2045,10 @@
   },
   {
     "slug": "cerdo-katsu",
-    "title": "Tonkatsu de Cerdo (Estilo Japonés)",
+    "title": "Cerdo Katsu (La Milanesa Japonesa Súper Crujiente)",
     "emoji": "🍱",
     "temp": 185,
-    "time": "14-16",
+    "time": "14",
     "prep_time": "15",
     "portions": "2",
     "ingredients": [
@@ -2062,7 +2062,7 @@
       "1-2 huevos, batidos",
       "Aceite en aerosol"
     ],
-    "description": "Chuletas de cerdo con un empanado de panko, mucho más aireado y crujiente que el pan rallado común. Una delicia japonesa rápida de preparar y muy satisfactoria.",
+    "description": "La famosa milanesa japonesa Tonkatsu en versión ligera. Empanada con panko y cocinada en la freidora de aire en solo 14 minutos, queda muy crujiente por fuera y húmeda y tierna por dentro.",
     "instructions": [
       "Realizar incisiones en los bordes de grasa de las chuletas para prevenir que se curven durante la cocción. Aplanar con un mazo si el grosor supera 1-1,5 cm.",
       "Disponer tres recipientes: uno con harina, otro con los huevos batidos y un tercero con el panko mezclado con las especias, sal y pimienta.",
@@ -2087,10 +2087,10 @@
   },
   {
     "slug": "hamburgesas-berenjena-empanados",
-    "title": "Berenjenas Empanadas (Bocados Crujientes)",
+    "title": "Milanesas de Berenjena (Vegetarianas y Crujientes en 10 Min)",
     "emoji": "🍆",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "2",
     "ingredients": [
@@ -2102,7 +2102,7 @@
       "Sal y pimienta negra molida, al gusto",
       "Aceite de oliva en aerosol o para pincelar"
     ],
-    "description": "Rodajas de berenjena con un rebozado de queso que las transforma por completo. Crujientes por fuera y cremosas por dentro, son perfectas como aperitivo o para montar una burger vegetal.",
+    "description": "¿Sin carne esta noche? ¡Las rodajas de berenjena empanadas con queso se convierten en fabulosas milanesas doradas! Listas en 10 minutos, perfectas como guarnición o plato principal vegetariano.",
     "instructions": [
       "Lavar la berenjena, retirar los extremos y cortar en rodajas de 1 cm de grosor.",
       "Preparar tres recipientes: uno con harina, otro con los huevos batidos sazonados con sal y pimienta, y un tercero con el pan rallado mezclado con el queso.",
@@ -2128,10 +2128,10 @@
   },
   {
     "slug": "palitos-de-pescado-dorados-caseros",
-    "title": "Varitas de Pescado Blanco Caseras",
+    "title": "Palitos de Pescado Caseros (Para Niños en 8 Min)",
     "emoji": "🐟",
     "temp": 180,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2144,7 +2144,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "La versión saludable y sabrosa de un favorito infantil. Filetes de pescado blanco de calidad empanados y cocinados hasta que brillan con un tono dorado y un crujido perfecto.",
+    "description": "Los clásicos palitos de pescado de comida rápida, pero sanos y caseros. El bacalao se mantiene súper suave mientras que la corteza se vuelve irresistiblemente dorada en solo 8 minutos.",
     "instructions": [
       "Verificar la ausencia de espinas en el filete de pescado. Secar con papel absorbente y cortar en bastones de aproximadamente 2-3 cm de grosor.",
       "Mezclar en un recipiente la harina, las especias, sal y pimienta. Batir los huevos en un segundo recipiente. Disponer el pan rallado en un tercer recipiente.",
@@ -2169,10 +2169,10 @@
   },
   {
     "slug": "bocaditos-pollo-cereales",
-    "title": "Nuggets de Pollo con Costra de Cereales",
+    "title": "Bocaditos de Pollo con Cereales (Crujido Máximo)",
     "emoji": "🍗",
     "temp": 180,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -2184,7 +2184,7 @@
       "1/2 cucharada de salsa picante o pimentón",
       "Sal, ajo en polvo y cebolla en polvo al gusto"
     ],
-    "description": "¡Diversión en la cocina! Usamos copos de maíz triturados para lograr un rebozado extra irregular y crujiente que hará que los nuggets comprados parezcan aburridos.",
+    "description": "¡Nuggets 2.0! Usa cereales corn flakes para crear una costra extra crujiente en la freidora de aire. Los cubitos de pollo sellados se cocinan en 15 minutos, ideales para mojar en salsas.",
     "instructions": [
       "Batir los huevos en un bol. Añadir la mostaza y la salsa picante o pimentón. Mezclar.",
       "En un recipiente, mezclar la harina con la sal, el ajo y la cebolla en polvo. En otro plato, triturar groseramente los copos de maíz.",
@@ -2209,10 +2209,10 @@
   },
   {
     "slug": "champiñones-rellenos-salchicha",
-    "title": "Champiñones Gratinados con Salchicha",
+    "title": "Champiñones Rellenos de Salchicha (Gratinados en 12 Min)",
     "emoji": "🍄",
     "temp": 160,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2225,7 +2225,7 @@
       "Perejil fresco picado",
       "Aceite de oliva virgen extra"
     ],
-    "description": "Un bocado gourmet y potente. Champiñones frescos rellenos de una farsa de salchicha y queso que se funde y se dora al horno, ideal como entrante para impresionar.",
+    "description": "¡El aperitivo gourmet para vaciar la nevera! Sombreros de champiñón suaves con un relleno explosivo de carne y queso fundido, gratinados perfectamente a 160°C sin quemarse.",
     "instructions": [
       "Limpiar los champiñones con papel húmedo. Retirar los tallos, picarlos finamente y reservar los sombreros.",
       "Sofreír en una sartén los tallos picados con la carne de salchicha desmenuzada y el diente de ajo entero durante 5 minutos. Retirar el ajo.",
@@ -2250,10 +2250,10 @@
   },
   {
     "slug": "rollitos-primavera-pollo",
-    "title": "Rollitos de Primavera (Relleno de Pollo)",
+    "title": "Rollitos de Primavera con Pollo (Crujientes, Sin Freír)",
     "emoji": "🍙",
     "temp": 180,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "35",
     "portions": "4",
     "ingredients": [
@@ -2264,7 +2264,7 @@
       "2 cucharadas de salsa de soja",
       "Aceite de oliva o de semillas"
     ],
-    "description": "Crujientes, dorados y sin exceso de aceite. Estos rollitos esconden un relleno jugoso de pollo y verduras picadas, trayendo el sabor de la cocina asiática a tu casa de forma saludable.",
+    "description": "¡Como en un restaurante chino pero sin la fritura pesada! Rollitos de papel de arroz inflados y hechos crujientes por el aire caliente en 15 minutos, con un corazón tierno de verduras y pollo.",
     "instructions": [
       "En un wok o sartén, saltear el pollo a fuego fuerte con una cucharada de aceite. Cuando la carne esté sellada, añadir las verduras en juliana y la salsa de soja. Cocinar durante 5 minutos. Retirar del fuego, incorporar los fideos y dejar enfriar el relleno.",
       "Sumergir una hoja de papel de arroz en agua caliente para ablandarla. Extenderla sobre un paño de cocina limpio.",
@@ -2288,10 +2288,10 @@
   },
   {
     "slug": "salchichas-en-hojaldre",
-    "title": "Mini Enrollados de Salchicha y Hojaldre",
+    "title": "Cerditos en Manta (Rápidos y Crujientes en 10 Min)",
     "emoji": "🌭",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -2300,7 +2300,7 @@
       "1 huevo batido o 2 cucharadas de leche",
       "Semillas de sésamo o amapola (opcional)"
     ],
-    "description": "El aperitivo que nunca falla en las reuniones. Salchichas envueltas en láminas de hojaldre mantequilloso que se hornean hasta alcanzar un dorado perfecto y un crujido irresistible.",
+    "description": "¡El aperitivo más querido del mundo! Envuelve mini salchichas en hojaldre y fríelas con aire: se inflarán perfectamente en 10 minutos, superando la lentitud del horno.",
     "instructions": [
       "Cortar la masa de hojaldre en tiras de 2 a 3 cm de ancho.",
       "Envolver cada salchicha con una tira de hojaldre, cubriéndola en espiral.",
@@ -2324,10 +2324,10 @@
   },
   {
     "slug": "pechugas-de-pollo-jugosas",
-    "title": "Pechugas de Pollo Asadas (Extra Jugosas)",
+    "title": "Pechugas de Pollo Jugosas (Tiernas en 18 Minutos)",
     "emoji": "🍗",
     "temp": 190,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -2336,7 +2336,7 @@
       "1 cucharadita de pimentón o mezcla de hierbas aromáticas",
       "Sal y pimienta negra al gusto"
     ],
-    "description": "Olvídate del pollo seco. Con esta técnica de sellado rápido, logramos pechugas increíblemente tiernas que retienen todos sus jugos naturales. La base perfecta para una dieta proteica con sabor.",
+    "description": "¿Temes que la pechuga de pollo se vuelva de goma en la freidora? Sigue este método a 190°C para sellar los jugos dentro: obtendrás proteínas magras perfectas en 18 minutos para tu dieta.",
     "instructions": [
       "Secar la superficie de las pechugas con papel de cocina para favorecer la adhesión del aderezo.",
       "Aderezar el pollo con aceite de oliva, sal, pimienta y las especias seleccionadas.",
@@ -2363,7 +2363,7 @@
     "title": "Pollo Glaseado con Salsa Barbacoa",
     "emoji": "🍗",
     "temp": 195,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -2400,11 +2400,11 @@
   },
   {
     "slug": "muslos-pollo-limon-miel",
-    "title": "Muslos de Pollo con Miel y Limón",
+    "title": "Muslitos de Pollo Miel y Limón (Piel Crujiente)",
     "emoji": "🍋",
     "temp": 190,
-    "time": "20-22",
-    "prep_time": "1 hora",
+    "time": "20",
+    "prep_time": "60",
     "portions": "4",
     "ingredients": [
       "8 muslos de pollo medianos, con piel",
@@ -2415,7 +2415,7 @@
       "Sal",
       "Rodajas de limón para decorar"
     ],
-    "description": "Un contraste de sabores vibrante. La acidez del limón corta la dulzura de la miel, creando un glaseado agridulce que dora la piel del pollo hasta dejarla crujiente y deliciosa.",
+    "description": "Muslitos de pollo agridulces para chuparse los dedos en 20 minutos. La combinación miel-limón crea una costra pegajosa y dorada, mientras la carne se desprende del hueso súper tierna.",
     "instructions": [
       "Mezclar en un bol la miel, la salsa de soja, el zumo de limón y el ajo para preparar la marinada.",
       "Sumergir los muslos de pollo en la marinada. Cubrir y refrigerar durante 1 hora.",
@@ -2440,11 +2440,11 @@
   },
   {
     "slug": "muslos-de-pollo-cinco-especias",
-    "title": "Muslos de Pollo a las Cinco Especias Chinas",
+    "title": "Contramuslos Orientales Cinco Especias (Glaseado Perfecto)",
     "emoji": "🍗",
     "temp": 190,
-    "time": "18-20",
-    "prep_time": "2 horas",
+    "time": "18",
+    "prep_time": "120",
     "portions": "4",
     "isItalian": false,
     "ingredients": [
@@ -2457,7 +2457,7 @@
       "2 cucharadas de miel",
       "2 cucharadas de salsa de soja oscura"
     ],
-    "description": "Un viaje aromático a Asia. El toque de la salsa Hoisin y el aroma de las cinco especias le dan al pollo un color caoba espectacular y una piel crujiente llena de matices exóticos.",
+    "description": "¡Viaje a Asia sin salir de casa! Contramuslos perfectamente glaseados en 18 minutos gracias al adobo Hoisin. Piel hipercrujiente y humedad retenida por la cocción ventilada.",
     "instructions": [
       "Mezclar en un bol la salsa Hoisin, la salsa de ostras, el ajo, el jengibre, la mezcla de cinco especias, una cucharada de miel y una de salsa de soja hasta obtener una marinada homogénea.",
       "Marinar los muslos de pollo con la preparación, asegurando que la mezcla penetre bajo la piel. Cubrir y refrigerar durante 2 horas.",
@@ -2480,10 +2480,10 @@
   },
   {
     "slug": "pollo-asado-ajo-hierbas",
-    "title": "Pollo Asado con Ajo y Hierbas del Mediterráneo",
+    "title": "Pollo Asado con Ajo y Hierbas (Piel Súper Crujiente)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -2494,7 +2494,7 @@
       "Sal gruesa",
       "Pimienta negra recién molida"
     ],
-    "description": "Sencillez y elegancia. Un adobo seco de ajo, tomillo y romero que realza el sabor natural del pollo, logrando un asado tradicional con una piel tostada y aromática.",
+    "description": "¿Cómo desgrasar trozos de pollo manteniendo la piel crujiente como una patata frita? Esta receta a 195°C durante 22 min evapora toda la grasa en la cesta inferior.",
     "instructions": [
       "Secar completamente las piezas de pollo con papel absorbente.",
       "Cubrir las piezas de pollo con el aceite de oliva, asegurando una capa uniforme.",
@@ -2519,10 +2519,10 @@
   },
   {
     "slug": "pollo-entero-al-ajo",
-    "title": "Pollo Entero Asado al Estilo Tradicional",
+    "title": "Pollo Entero Asado (Crujiente por Fuera, Tierno por Dentro en 50 Min)",
     "emoji": "🍗",
     "temp": 180,
-    "time": "50-60",
+    "time": "50",
     "prep_time": "10",
     "portions": "4",
     "isItalian": false,
@@ -2536,7 +2536,7 @@
       "Sal",
       "Pimienta negra recién molida"
     ],
-    "description": "El rey de los domingos. Te enseñamos a asar el pollo entero para que la piel quede crujiente y la carne se desprenda del hueso, todo en tiempo récord y con un aroma a ajo irresistible.",
+    "description": "¿Tienes miedo de freír al aire un pollo entero (máx. 1.2kg)? Dándole la vuelta a la mitad (30 min pechuga abajo, 20 min pechuga arriba) obtendrás una pechuga súper jugosa y muslos crujientes como en asador.",
     "instructions": [
       "Verificar que el pollo entre en el cesto de cocción sin tocar la resistencia superior.",
       "Secar el pollo completamente, por dentro y por fuera. Introducir en la cavidad los dientes de ajo y la ramita de romero. Atar los muslos con hilo de cocina.",
@@ -2558,7 +2558,7 @@
   },
   {
     "slug": "pollo-entero-barbacoa",
-    "title": "Pollo Entero Glaseado a la Barbacoa",
+    "title": "Pollo Entero BBQ (Glaseado Americano Gourmet en 50 Min)",
     "emoji": "🍗",
     "temp": 180,
     "time": "50",
@@ -2570,7 +2570,7 @@
       "Sal y pimienta negra molida",
       "Salsa barbacoa, 5-6 cucharadas"
     ],
-    "description": "Consigue el acabado de un asador profesional en casa. Un pollo entero jugoso, recubierto de una capa generosa de salsa barbacoa que se carameliza para un sabor intenso y ahumado.",
+    "description": "¡El pollo asado de otro nivel! Cocínalo entero a 180°C para sellar la carne, luego en los últimos 10 min baja a 160°C y unta abundante salsa BBQ para una costra agridulce sin humo en casa.",
     "instructions": [
       "Atar las patas del pollo y secar la piel. Pincelar con aceite y sazonar con sal y pimienta.",
       "Colocar el pollo en la cesta con la pechuga hacia abajo. Cocinar a 180°C durante 30 minutos.",
@@ -2594,10 +2594,10 @@
   },
   {
     "slug": "albondigas-italianas",
-    "title": "Albóndigas de Ternera al Parmesano",
+    "title": "Albóndigas al Parmesano (Sin Aceite y Súper Suaves en 10 Min)",
     "emoji": "🍝",
     "temp": 195,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2611,7 +2611,7 @@
       "Pimienta negra molida",
       "Aceite de oliva en aerosol"
     ],
-    "description": "Cremosidad y sabor en cada bocado. El queso parmesano se funde dentro de la carne picada, logrando unas albóndigas doradas por fuera y tan tiernas que se deshacen en la boca.",
+    "description": "¡Las clásicas albóndigas de la abuela en versión ligera! Doradas y sabrosas por fuera, se mantienen súper suaves por dentro cocinándolas al aire en 10 minutos, sin la pesadez de la fritura en sartén.",
     "instructions": [
       "Remojar la miga de pan en la leche durante 2 minutos. Escurrir el exceso de líquido y colocarla en un bol.",
       "Añadir la carne picada, el huevo, el queso Parmigiano Reggiano, el perejil, la sal y la pimienta. Mezclar hasta obtener una masa homogénea y compacta. Evitar trabajar en exceso la mezcla.",
@@ -2635,7 +2635,7 @@
   },
   {
     "slug": "quesadillas-mexicanas-pollo",
-    "title": "Quesadillas de Pollo, Pimientos y Queso Fundido",
+    "title": "Quesadillas de Pollo y Pimientos (Crujientes y Fundidas en 15 Min)",
     "emoji": "🌮",
     "temp": 190,
     "time": "15",
@@ -2650,7 +2650,7 @@
       "1 cucharada de sazonador para fajitas",
       "1 cucharada de aceite de oliva"
     ],
-    "description": "El sabor de México en minutos. Tortillas rellenas de pollo sazonado y verduras que se tuestan hasta que el queso se funde por completo, creando un bocado crujiente y reconfortante.",
+    "description": "¡Una cena Tex-Mex explosiva que ahorra tiempo! Tortillas súper crujientes rellenas de pollo, pimientos especiados y un corazón de queso fundido. La freidora sella el relleno en minutos sin engrasar.",
     "instructions": [
       "En un bol, mezclar el pollo, el pimiento, la cebolla, el aceite y el sazonador. Cocinar la mezcla a 190°C durante 10 minutos, removiendo a mitad de cocción.",
       "Retirar el pollo y las verduras del recipiente de cocción.",
@@ -2675,10 +2675,10 @@
   },
   {
     "slug": "paletilla-cordero-griega",
-    "title": "Paletilla de Cordero Asada con Patatas Panadera",
+    "title": "Cordero y Patatas a la Griega (Sabor Auténtico en 45 Min)",
     "emoji": "🍖",
     "temp": 180,
-    "time": "45-50",
+    "time": "45",
     "prep_time": "30",
     "portions": "4",
     "isItalian": false,
@@ -2693,7 +2693,7 @@
       "Sal al gusto",
       "Pimienta negra molida al gusto"
     ],
-    "description": "Un plato de fiesta. La paletilla de cordero se cocina lentamente mientras sus jugos impregnan las patatas, dejándolas melosas y llenas de sabor. Tradición pura en tu mesa.",
+    "description": "¡El clásico almuerzo de domingo sin encender el horno! La carne de cordero se cocina sobre las patatitas liberando sus sabrosos jugos para un plato único súper tierno y dorado en 45 minutos.",
     "instructions": [
       "Mezclar el aceite, el zumo de limón, el ajo, el orégano, la sal y la pimienta. Frotar la carne con la marinada obtenida. Dejar reposar durante 30 minutos a temperatura ambiente.",
       "Disponer las patatas en la base del recipiente de cocción y sazonar. Verter el caldo o el agua.",
@@ -2717,11 +2717,11 @@
   },
   {
     "slug": "brochetas-pollo-yogur",
-    "title": "Brochetas de Pollo al Yogur y Especias",
+    "title": "Brochetas de Pollo al Yogur (Súper Tiernas en 12 Min)",
     "emoji": "🍢",
     "temp": 195,
-    "time": "12-14",
-    "prep_time": "2 horas",
+    "time": "12",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "400 g de pechuga o muslo de pollo, deshuesado y sin piel, en cubos de 3 cm",
@@ -2734,7 +2734,7 @@
       "Pimienta negra recién molida",
       "Palitos para brocheta de madera"
     ],
-    "description": "Ternura máxima garantizada. El marinado con yogur actúa sobre las fibras del pollo, logrando unas brochetas jugosas y ligeras, perfectas para una cena rápida y saludable.",
+    "description": "¡Nunca más brochetas secas! El yogur griego actúa sobre las fibras del pollo haciéndolo increíblemente suave, mientras el aire caliente sella el exterior creando un Shish Taouk de Medio Oriente brutal en 12 min.",
     "instructions": [
       "Mezclar en un bol el yogur con el aceite, el ajo, el pimentón, el comino, la sal y la pimienta hasta obtener una marinada homogénea.",
       "Añadir los cubos de pollo a la marinada y mezclar para cubrir uniformemente. Refrigerar durante un mínimo de 2 horas.",
@@ -2758,7 +2758,7 @@
   },
   {
     "slug": "stromboli-relleno",
-    "title": "Stromboli de Jamón y Queso (Rollo de Pizza)",
+    "title": "Stromboli Relleno (Rollo de Pizza Crujiente y Fundido en 20 Min)",
     "emoji": "🌯",
     "temp": 175,
     "time": "20",
@@ -2776,7 +2776,7 @@
       "Orégano",
       "Ajo en polvo"
     ],
-    "description": "Divertido, crujiente y delicioso. Un rollo de masa de pizza relleno de jamón cocido y queso fundido que se hornea hasta quedar dorado. Ideal para compartir o como cena rápida.",
+    "description": "Un cruce entre una pizza enrollada y un calzone gigante. Rellena la masa con embutidos y quesos, enróllala y deja que la freidora cree una costra dorada y un corazón de provolone fundido espectacular.",
     "instructions": [
       "Atemperar la masa y extenderla sobre una superficie ligeramente enharinada.",
       "Distribuir sobre la masa las lonchas de jamón cocido, queso provolone, mozzarella y el pimiento rojo, dejando un borde libre de 2 cm.",
@@ -2802,11 +2802,11 @@
   },
   {
     "slug": "solomillo-cerdo-dorado",
-    "title": "Solomillo de Cerdo Sellado y Jugoso",
+    "title": "Solomillo de Cerdo Asado (Costra Dorada y Corazón Rosado en 25 Min)",
     "emoji": "🍖",
     "temp": 190,
-    "time": "25-30",
-    "prep_time": "No disponible",
+    "time": "25",
+    "prep_time": "",
     "portions": "4",
     "isItalian": false,
     "ingredients": [
@@ -2815,7 +2815,7 @@
       "Sal gruesa al gusto",
       "Pimienta negra recién molida al gusto"
     ],
-    "description": "El corte más tierno del cerdo preparado para brillar. Un sellado rápido a alta temperatura crea una costra dorada que guarda toda la jugosidad en el interior. Elegante y sencillo.",
+    "description": "¡Basta de asados secos! El solomillo de cerdo cocinado al aire a alta temperatura forma una costra perfecta en solo 25 minutos, manteniendo un corazón rosado, suculento y rico en proteínas.",
     "instructions": [
       "Secar los solomillos de cerdo con papel de cocina.",
       "Pincelar la carne con aceite y sazonar con sal y pimienta.",
@@ -2838,11 +2838,11 @@
   },
   {
     "slug": "filete-mostaza-balsamico",
-    "title": "Ternera a la Mostaza de Dijon y Balsámico",
+    "title": "Bistecc de Ternera y Balsámico (Cocción Gourmet en 7 Min)",
     "emoji": "🥩",
     "temp": 200,
     "time": "7",
-    "prep_time": "2 horas 10",
+    "prep_time": "120",
     "portions": "4",
     "isItalian": false,
     "ingredients": [
@@ -2854,7 +2854,7 @@
       "Pimienta negra recién molida",
       "8 hojas de albahaca fresca"
     ],
-    "description": "Sabor sofisticado en tiempo récord. El vinagre balsámico carameliza la superficie de la ternera mientras la mostaza le da un punto picante y elegante. Un plato gourmet bajo en carbohidratos.",
+    "description": "Un filete gourmet como en el restaurante. El adobo de mostaza y vinagre balsámico se carameliza a 200°C creando una costra muy sabrosa, mientras que el interior de la carne queda poco hecho. Listo en 7 min.",
     "instructions": [
       "En un recipiente, emulsionar el aceite de oliva virgen extra, el vinagre balsámico y la mostaza de Dijon.",
       "Sumergir el filete en el marinado. Cubrir con film transparente y refrigerar durante 2 horas.",
@@ -2878,11 +2878,11 @@
   },
   {
     "slug": "chuletón-a-las-hierbas-aromaticas",
-    "title": "Chuletón con Costra de Hierbas Aromáticas",
+    "title": "Chuletón de Ternera a las Hierbas (Sabor a Brasa en 7 Min)",
     "emoji": "🥩",
     "temp": 200,
     "time": "7",
-    "prep_time": "No presente",
+    "prep_time": "",
     "portions": "2",
     "isItalian": false,
     "ingredients": [
@@ -2895,7 +2895,7 @@
       "Pimienta de Cayena, al gusto",
       "20 ml de aceite de oliva"
     ],
-    "description": "Para los auténticos amantes de la carne. Un chuletón de primera con una costra de especias que potencia su sabor, sellado para mantener el interior rojo y jugoso.",
+    "description": "Obtén el clásico sabor a brasa californiana directamente en casa sin llenar la cocina de humo. El 'Rub' de hierbas secas forma una costra deliciosa en este chuletón súper proteico en apenas 7 minutos.",
     "instructions": [
       "Mezclar en un recipiente el ajo en polvo, la cebolla en polvo, el orégano, el romero, la salvia y la pimienta de Cayena.",
       "Pincelar el chuletón con aceite de oliva y recubrirlo uniformemente con la mezcla de especias, presionando para que se adhiera.",
@@ -2919,10 +2919,10 @@
   },
   {
     "slug": "bistec-new-york-chimichurri",
-    "title": "Bistec New York con Chimichurri de Anchoas",
+    "title": "Entrecot con Chimichurri (Receta Rápida en 7 Min)",
     "emoji": "🥩",
     "temp": 200,
-    "time": "7-9",
+    "time": "7",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2939,7 +2939,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Un clásico renovado. Bistec de ternera de alta calidad servido con una potente salsa verde de hierbas frescas y un toque salino de anchoas que realza cada bocado.",
+    "description": "¡Un entrecot dorado rápidamente a alta temperatura para una costra espectacular! Para servir en rodajas y cubierto con una fresca salsa chimichurri de hierbas. Un plato principal increíble listo en 7 min.",
     "instructions": [
       "Para la salsa, triturar la albahaca, el cilantro, el perejil, las anchoas, las chalotas y el ajo. Emulsionar añadiendo gradualmente el aceite de oliva y el zumo de limón.",
       "Pincelar los bistecs con aceite vegetal. Sazonar con sal y pimienta negra al gusto.",
@@ -2963,18 +2963,18 @@
   },
   {
     "slug": "chuletas-cerdo-hueso",
-    "title": "Chuletas de Cerdo al Punto (Con Hueso)",
+    "title": "Chuletas de Cerdo con Hueso (Jugosas y Doradas en 14 Min)",
     "emoji": "🍖",
     "temp": 190,
-    "time": "14-17",
-    "prep_time": "No presente",
+    "time": "14",
+    "prep_time": "",
     "portions": "2",
     "ingredients": [
       "2 chuletas de cerdo con hueso, 250 g/unidad",
       "20 ml de aceite de oliva",
       "Sal y pimienta negra recién molida, al gusto"
     ],
-    "description": "La carne junto al hueso es siempre la más sabrosa. Estas chuletas se cocinan para lograr una superficie dorada y un interior que se mantiene tierno y lleno de jugos.",
+    "description": "¡Nunca más chuletas de cerdo secas como suelas de zapato! La freidora de aire las cocina a 190°C sellando la superficie en 14 minutos: la grasa se derrite, el hueso da sabor y la carne queda muy húmeda.",
     "instructions": [
       "Seque la superficie de las chuletas con papel de cocina.",
       "Pincele las chuletas por ambos lados con aceite de oliva.",
@@ -2998,7 +2998,7 @@
   },
   {
     "slug": "chuletas-cerdo-estilo-north-carolina",
-    "title": "Chuletas de Cerdo Estilo Carolina (Ahumadas)",
+    "title": "Chuletas de Cerdo BBQ (Caramelizadas Estilo USA en 11 Min)",
     "emoji": "🍖",
     "temp": 200,
     "time": "11",
@@ -3015,7 +3015,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Siente el sabor del sur de Estados Unidos. El azúcar moreno crea una costra caramelizada con notas ahumadas que transforma unas simples chuletas en un festín de sabores.",
+    "description": "El sabor de una barbacoa americana dentro de tu casa. El Rub (mezcla de especias y azúcar moreno) se carameliza brutalmente a 200°C creando una costra sabrosísima en solo 11 minutos.",
     "instructions": [
       "Mezclar en un recipiente el azúcar moreno, el pimentón, la mostaza en polvo, el ajo en polvo, la cebolla en polvo, sal y pimienta para crear el adobo seco.",
       "Untar las chuletas con el aceite vegetal.",
@@ -3041,11 +3041,11 @@
   },
   {
     "slug": "mini-hamburguesas-con-queso",
-    "title": "Slappers: Mini Hamburguesas con Queso Fundido",
+    "title": "Mini Hamburguesas con Queso (Sliders Jugosos en 9 Min)",
     "emoji": "🍔",
     "temp": 200,
     "time": "9",
-    "prep_time": "1 hora 5",
+    "prep_time": "65",
     "portions": "4",
     "ingredients": [
       "450 g de carne de ternera picada",
@@ -3059,7 +3059,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Bocados de pura felicidad. Pequeñas hamburguesas de ternera con queso derretido en panecillos tiernos. El formato ideal para un picoteo divertido o una cena rápida con niños.",
+    "description": "¡Mini hamburguesas perfectas para el aperitivo! Sin sartenes humeantes: las hamburguesas de ternera se cocinan jugosas al aire en 9 minutos y el queso se funde a la perfección en la cesta.",
     "instructions": [
       "En un bol, mezclar la carne de ternera picada, la salsa Worcestershire, la mostaza, la cebolla rallada, el huevo, sal y pimienta.",
       "Dividir la mezcla en 4 porciones iguales y formar las hamburgesas. Refrigerar durante 1 hora.",
@@ -3086,11 +3086,11 @@
   },
   {
     "slug": "costillas-cordero-limon",
-    "title": "Costillitas de Cordero al Limón y Ajo",
+    "title": "Chuletas de Cordero al Limón (Punto Rosado y Crujientes)",
     "emoji": "🍖",
     "temp": 200,
     "time": "10",
-    "prep_time": "4 horas 15",
+    "prep_time": "240",
     "portions": "4",
     "ingredients": [
       "12 costillas de cordero",
@@ -3100,7 +3100,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Pequeños bocados de puro sabor. Estas costillas se marinan en cítricos para ablandar la carne, logrando una superficie dorada y crujiente que contrasta con un interior tierno y rosado.",
+    "description": "¡Un dorado de restaurante con estrella en solo 10 minutos! Las chuletas de cordero marinadas al limón quedan crujientes por fuera manteniendo un corazón rosado y muy tierno al corte.",
     "instructions": [
       "Rallar la piel del limón, evitando la parte blanca. Machacar el ajo.",
       "Mezclar el ajo machacado con el aceite de oliva y la ralladura de limón para preparar la marinada.",
@@ -3124,7 +3124,7 @@
   },
   {
     "slug": "empanadas-de-carne",
-    "title": "Empanadas de Carne (Masa Crujiente)",
+    "title": "Empanadas de Ternera (Hojaldradas y Sin Freír)",
     "emoji": "🥟",
     "temp": 200,
     "time": "20",
@@ -3138,7 +3138,7 @@
       "1 yema de huevo",
       "10 ml de aceite de oliva"
     ],
-    "description": "El clásico bocado argentino en tu mesa. Un relleno jugoso de ternera, cebolleta y pimentón envuelto en una masa que se hornea hasta quedar perfectamente quebradiza y dorada.",
+    "description": "¡Lleva Argentina a tu mesa! Empanadillas de masa quebrada rellenas de ternera especiada, hinchadas y hojaldradas en 20 minutos. La alternativa sin humo para empanadas ligeras que no gotean aceite.",
     "instructions": [
       "Picar finamente las cebolletas. Sofreír en una sartén con aceite durante 3 minutos.",
       "Añadir la carne picada y el pimentón. Cocinar durante 10 minutos. Dejar enfriar el relleno por completo.",
@@ -3163,11 +3163,11 @@
   },
   {
     "slug": "solomillo-cerdo-verduras",
-    "title": "Solomillo de Cerdo con Verduras de Temporada",
+    "title": "Solomillo de Cerdo y Verduras (Plato Único en 35 Min)",
     "emoji": "🥓",
     "temp": 190,
     "time": "35",
-    "prep_time": "2 horas 20",
+    "prep_time": "120",
     "portions": "4",
     "isItalian": false,
     "ingredients": [
@@ -3185,7 +3185,7 @@
       "Sal, al gusto",
       "Pimienta, al gusto"
     ],
-    "description": "Una cena completa en un solo paso. El solomillo se cocina sobre un colchón de vegetales que absorben todos los jugos de la carne, creando una guarnición melosa y llena de sabor.",
+    "description": "La mágica \"One-Pot\" de la freidora de aire. Los jugos del solomillo de cerdo marinado con miel gotean sobre las verduras de abajo, dando sabor a pimientos y calabacines mientras la carne se dora perfectamente en 35 min.",
     "instructions": [
       "Preparar una marinada emulsionando 60 ml de aceite de oliva con el vinagre, la miel, el ajo machacado, sal y pimienta.",
       "Marinar los solomillos con la emulsión. Cubrir y refrigerar durante un mínimo de 2 horas.",
@@ -3208,10 +3208,10 @@
   },
   {
     "slug": "costolette-agnello",
-    "title": "Chuletas de Cordero (Listas en 10 min)",
+    "title": "Chuletas de Cordero (Súper Tiernas en 10 Minutos)",
     "emoji": "🍖",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "10",
     "portions": "2",
     "ingredients": [
@@ -3221,7 +3221,7 @@
       "Romero fresco",
       "Sal y pimienta"
     ],
-    "description": "La solución perfecta para una cena elegante y rápida. Chuletas selladas a alta temperatura para mantener toda la jugosidad, ideales para quienes buscan una opción alta en proteínas y baja en carbohidratos.",
+    "description": "Un manjar listo en solo 10 minutos. El calor a 200°C derrite la grasa y crea una costra perfumada al romero alrededor del hueso, mientras que la carne del cordero se mantiene increíblemente jugosa y rosada.",
     "instructions": [
       "Secar bien las chuletas de cordero con papel de cocina.",
       "Masajear la carne con el aceite en spray, el ajo picado, el romero, sal y pimienta.",
@@ -3244,7 +3244,7 @@
   },
   {
     "slug": "mini-torta-pasqualina",
-    "title": "Mini Tartas Pascualinas de Espinacas y Ricotta",
+    "title": "Mini Tartas de Pascua (Canastitas Saladas Listas en 15 Min)",
     "emoji": "🥧",
     "temp": 180,
     "time": "15",
@@ -3258,7 +3258,7 @@
       "30g de queso parmesano rallado",
       "Sal, pimienta y nuez moscada"
     ],
-    "description": "Un tesoro de la cocina italiana. Estas tartaletas de hojaldre esconden un corazón cremoso de queso y espinacas con la sorpresa de un huevo oculto. El aperitivo vegetariano estrella.",
+    "description": "¡La obra maestra de Pascua en versión individual! Descubre cómo cocinar rápidamente 4 mini cestitas de hojaldre rellenas de ricota y espinacas, con la sorpresa de una yema de huevo entera cocinada al vapor en 15 minutos.",
     "instructions": [
       "Mezclar en un bol la ricotta, las espinacas picadas, el parmesano, sal, pimienta y nuez moscada.",
       "Cortar 4 círculos grandes de hojaldre para forrar 4 moldes individuales o ramequines, y 4 círculos más pequeños para las tapas.",
@@ -3280,7 +3280,7 @@
   },
   {
     "slug": "casatiello-napoletano",
-    "title": "Casatiello Napolitano (Pan Relleno Tradicional)",
+    "title": "Casatiello Napolitano (Suave y Rápido en 35 Minutos)",
     "emoji": "🧀",
     "temp": 160,
     "time": "35",
@@ -3295,7 +3295,7 @@
       "3 huevos crudos (con cáscara, para decorar)",
       "Sal y mucha pimienta negra"
     ],
-    "description": "El emblema de la Pascua en Nápoles. Un pan rústico, tierno y enriquecido con una mezcla generosa de quesos y embutidos italianos. ¡El aroma al hornearlo es simplemente irresistible!",
+    "description": "¡Una bomba de sabor! El pan rústico napolitano rico en fiambres y quesos sube y se cocina súper suave en un molde de corona dentro de la freidora de aire en 35 minutos, decorado con los infaltables huevos.",
     "instructions": [
       "Disolver la levadura en el agua tibia. Amasar la harina, el agua, la manteca, sal y pimienta hasta obtener una masa lisa. Dejar reposar 2 horas.",
       "Estirar la masa en forma de rectángulo (guardando un trozo para las cruces). Repartir los embutidos y quesos, y enrollar formando un cilindro.",
@@ -3317,7 +3317,7 @@
   },
   {
     "slug": "mini-pastiera-napoletana",
-    "title": "Mini Pastieras Napolitanas (Bocados Dulces)",
+    "title": "Mini Pastiera Napolitana (Postre de Pascua en 20 Min)",
     "emoji": "🥧",
     "temp": 170,
     "time": "20",
@@ -3332,7 +3332,7 @@
       "Agua de azahar y ralladura de limón",
       "Fruta confitada (opcional)"
     ],
-    "description": "Tradición en formato individual. Estas mini tartas combinan el aroma del agua de azahar con la cremosidad de la ricotta y el trigo cocido, logrando un postre húmedo y delicado.",
+    "description": "¡Lleva el aroma de la flor de azahar a la mesa! Las mini-pastieras se cocinan perfectamente al aire en 20 minutos: la masa quebrada queda como galleta y no blanda, el relleno denso y aromático. Insuperables.",
     "instructions": [
       "En un bol, mezclar la ricotta con el azúcar hasta que quede cremosa. Añadir el trigo cocido, los huevos, los aromas y la fruta confitada.",
       "Estirar la masa quebrada (guardando recortes para las tiras) y forrar 4 moldes de silicona o aluminio.",
@@ -3355,18 +3355,18 @@
   },
   {
     "slug": "hamburguesa-clasica",
-    "title": "Hamburguesa de Vacuno (Punto Perfecto)",
+    "title": "Hamburguesa Perfecta (Jugosa y Dorada en 8 Minutos)",
     "emoji": "🍔",
     "temp": 190,
-    "time": "8-10",
-    "prep_time": "No presente",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 hamburgesas de vacuno (150 g/unidad)",
       "20 ml de aceite de oliva virgen extra",
       "Sal y pimienta negra recién molida al gusto"
     ],
-    "description": "Aprende el arte de la hamburguesa perfecta. Un sellado uniforme que crea una costra sabrosa mientras el interior permanece jugoso, resaltando el sabor auténtico de la buena carne.",
+    "description": "¡Basta de hamburguesas secas y sartenes que salpican grasa! Cocinadas a 190°C durante solo 8 minutos, estas hamburguesas de ternera se doran por fuera manteniendo un núcleo sabroso y jugoso, perfectas para tus panes.",
     "instructions": [
       "Atemperar la carne sacándola del frigorífico minutos antes de la cocción.",
       "Salpimentar abundantemente las hamburguesas por ambos lados.",
@@ -3393,7 +3393,7 @@
     "title": "Hamburguesa Deluxe con Pan Tostado",
     "emoji": "🍔",
     "temp": 200,
-    "time": "8-12",
+    "time": "8",
     "prep_time": "25",
     "portions": "4",
     "ingredients": [
@@ -3712,8 +3712,8 @@
     "title": "Salchichas Rústicas (Dorado Uniforme)",
     "emoji": "🌭",
     "temp": 200,
-    "time": "8-10",
-    "prep_time": "No presente",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "8 salchichas frescas de cerdo (aprox. 600 g)"
@@ -3909,7 +3909,7 @@
     "emoji": "🍢",
     "temp": 200,
     "time": "7",
-    "prep_time": "1 hora 5",
+    "prep_time": "65",
     "portions": "4",
     "ingredients": [
       "500 g de ternera, en cubos",
@@ -3949,7 +3949,7 @@
     "emoji": "🍢",
     "temp": 180,
     "time": "6",
-    "prep_time": "1 hora 20",
+    "prep_time": "80",
     "portions": "4",
     "ingredients": [
       "12 lonchas finas de carpaccio de ternera",
@@ -3981,7 +3981,7 @@
   },
   {
     "slug": "huevos-a-la-escocesa",
-    "title": "Scotch Eggs: Huevos a la Escocesa",
+    "title": "Huevos Escoceses Ligeros (Súper Crujientes y Ricos en Proteínas)",
     "emoji": "🥚",
     "temp": 175,
     "time": "15",
@@ -3999,7 +3999,7 @@
       "Pimienta negra molida al gusto",
       "Salvia en polvo al gusto"
     ],
-    "description": "Un clásico británico reinventado. Huevos cocidos envueltos en carne de cerdo sazonada y un empanado rústico que queda extra crujiente, protegiendo un interior tierno.",
+    "description": "¡Los famosos huevos escoceses británicos se vuelven digeribles! Huevos envueltos en salchicha y rebozado, cocinados sin freír. Cáscara dura y crujiente con un interior suave en 15 minutos exactos.",
     "instructions": [
       "Sazonar la carne picada con ajo en polvo, cebolla en polvo, salvia, sal y pimienta. Amasar para integrar los ingredientes. Dividir la mezcla en 4 porciones iguales.",
       "Aplanar cada porción de carne y utilizarla para envolver completamente cada huevo cocido. Presionar firmemente para asegurar un sellado uniforme.",
@@ -4024,11 +4024,11 @@
   },
   {
     "slug": "bollitos-suaves-de-coco",
-    "title": "Bocaditos de Coco (Tiernos & Dorados)",
+    "title": "Pastelitos de Coco (Dulces Rápidos en 15 Minutos)",
     "emoji": "🥥",
     "temp": 150,
     "time": "15",
-    "prep_time": "No disponible",
+    "prep_time": "",
     "portions": "4",
     "isItalian": false,
     "ingredients": [
@@ -4038,7 +4038,7 @@
       "Extracto de almendra al gusto",
       "Extracto de vainilla al gusto"
     ],
-    "description": "Pastelitos ligeros con un aroma tropical intenso. Su exterior se dora delicadamente mientras el corazón de coco permanece húmedo y esponjoso.",
+    "description": "Las galletas perfectas para invitados inesperados. Solo 3 ingredientes para crear pepitas de coco súper suaves y húmedas. La freidora de aire las tuesta suavemente a 150°C en un cuarto de hora.",
     "instructions": [
       "Montar las claras de huevo a punto de nieve firme en un recipiente limpio.",
       "Incorporar la leche condensada y los extractos con movimientos envolventes.",
@@ -4061,11 +4061,11 @@
   },
   {
     "slug": "gajos-de-aguacate-dorados",
-    "title": "Aguacate Crujiente (Avocado Fries)",
+    "title": "Gajos de Aguacate (Sticks Crujientes y Cremosos en 11 Min)",
     "emoji": "🥑",
     "temp": 200,
     "time": "11",
-    "prep_time": "No presente",
+    "prep_time": "",
     "portions": "2",
     "ingredients": [
       "2 aguacates, firmes pero maduros",
@@ -4077,7 +4077,7 @@
       "Sal al gusto",
       "Aceite en aerosol"
     ],
-    "description": "El snack de moda. Gajos de aguacate cremoso con un rebozado especiado que ofrece un contraste de texturas sorprendente: crujiente por fuera, fundente por dentro.",
+    "description": "¿Alguna vez has comido aguacate caliente? Cortado en gajos y empanado con pimentón y pan rallado, el aire a 200°C crea en 11 minutos una cáscara súper crujiente que encierra un corazón mantecoso. El aperitivo vegetal del año.",
     "instructions": [
       "Corte los aguacates por la mitad, retire el hueso, pele y segmente en gajos de tamaño uniforme.",
       "Prepare tres recipientes para el rebozado: uno con la harina y la sal, otro con los huevos batidos y un tercero con el pan rallado mezclado con el pimentón y la pimienta de Cayena.",
@@ -4101,7 +4101,7 @@
   },
   {
     "slug": "palitos-de-pan-frances",
-    "title": "French Toast Sticks (Canela y Azúcar)",
+    "title": "Palitos de Torrija (Desayuno Goloso en 10 Minutos)",
     "emoji": "🍞",
     "temp": 175,
     "time": "10",
@@ -4116,7 +4116,7 @@
       "40 g de azúcar granulado",
       "3 g de canela en polvo"
     ],
-    "description": "El desayuno definitivo. Bastones de pan brioche empapados en crema, dorados hasta crujir y rebozados en una mezcla fragante de azúcar y canela.",
+    "description": "¡Olvídate de la sartén con mantequilla! Empapa los palitos de pan en huevo y leche y déjalos tostar en el aire caliente durante 10 minutos. Quedan dorados por fuera y suaves por dentro, perfectos para mojar en sirope de arce.",
     "instructions": [
       "Cortar cada rebanada de pan en 3 bastones de igual tamaño.",
       "En un recipiente hondo, batir los huevos. Incorporar la leche, el sirope de arce y el extracto de vainilla. Mezclar hasta obtener una preparación homogénea.",
@@ -4141,16 +4141,16 @@
   },
   {
     "slug": "palitos-de-pescado-congelados",
-    "title": "Varitas de Pescado (Extra Light)",
+    "title": "Palitos de Pescado Congelados (Súper Crujientes en 8 Min)",
     "emoji": "🐟",
     "temp": 200,
-    "time": "8-10",
-    "prep_time": "No requiere",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "600 g de palitos de pescado empanizados, congelados"
     ],
-    "description": "Consigue el crujido perfecto sin usar aceite. Este método de cocción por aire transforma los palitos congelados en una opción ligera, rápida y deliciosa para toda la familia.",
+    "description": "El horno los seca, la sartén los deshace. La freidora de aire, en cambio, nació para ellos: en 8 minutos a 200°C los palitos congelados (ya prefritos) se vuelven súper crujientes sin añadir aceite.",
     "instructions": [
       "Extraer los palitos empanizados del congelador. No descongelar.",
       "Disponer los palitos en una sola capa en la cesta para optimizar la circulación del aire caliente.",
@@ -4174,11 +4174,11 @@
   },
   {
     "slug": "cebolla-en-flor",
-    "title": "Blooming Onion: Cebolla en Flor Rebozada",
+    "title": "Blooming Onion (Espectacular Flor de Cebolla)",
     "emoji": "🧅",
     "temp": 200,
     "time": "25",
-    "prep_time": "2 horas 15",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "2 cebollas amarillas grandes",
@@ -4191,7 +4191,7 @@
       "300 ml de agua",
       "60 g de pan rallado"
     ],
-    "description": "Un espectáculo visual en tu plato. La cebolla se abre como una flor durante la cocción, creando pétalos individuales ultra crujientes listos para dipear en tu salsa favorita.",
+    "description": "¡Puro espectáculo! La famosa cebolla gigante abierta en flor y empanada, asada en 25 minutos sin los litros de aceite de la original. Pétalos crujientes perfectos para arrancar y mojar en compañía.",
     "instructions": [
       "Pelar las cebollas y cortar la parte superior. Realizar ocho cortes verticales desde el centro hacia la base, sin seccionarla completamente para mantener los gajos unidos.",
       "Sumergir las cebollas en agua con hielo durante un mínimo de 2 horas para facilitar la apertura de los gajos.",
@@ -4214,11 +4214,11 @@
   },
   {
     "slug": "filetes-de-salmon-sencillos",
-    "title": "Salmón Asado (Jugoso & Caramelizado)",
+    "title": "Filetes de Salmón (Piel Crujiente y Corazón Húmedo)",
     "emoji": "🐟",
     "temp": 200,
-    "time": "8-10",
-    "prep_time": "No presente",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 filetes de salmón (130 g/unidad)",
@@ -4226,7 +4226,7 @@
       "Sal en escamas",
       "Pimienta negra recién molida"
     ],
-    "description": "La forma más sana y sabrosa de preparar salmón. El calor circular sella la superficie con un ligero tostado, manteniendo las lascas de pescado hidratadas y tiernas.",
+    "description": "¿Alguna vez has estropeado un salmón resecándolo? Con 8 minutos de aire muy caliente obtendrás una costra perfecta manteniendo la pulpa húmeda y rica en omega-3. El truco infalible de los cocineros modernos.",
     "instructions": [
       "Seque los filetes de salmón con papel absorbente.",
       "Pincele la superficie de los filetes con aceite. Sazone con sal en escamas y pimienta recién molida.",
@@ -4250,7 +4250,7 @@
   },
   {
     "slug": "pescado-con-patatas-estilo-ingles",
-    "title": "Fish & Chips Saludable (Bacalao Crujiente)",
+    "title": "Fish & Chips Ligero (Bacalao Extra Crujiente)",
     "emoji": "🐟",
     "temp": 180,
     "time": "12",
@@ -4266,7 +4266,7 @@
       "Estragón fresco",
       "Zumo de limón"
     ],
-    "description": "Disfruta del clásico londinense sin remordimientos. Bacalao con un rebozado aireado y crujiente, cocinado con una pizca de mantequilla para un sabor auténtico y jugoso.",
+    "description": "La comida callejera más famosa del Reino Unido, ¡desgrasada pero deliciosa! Bacalao con una costra gruesa y crujiente en solo 12 minutos de cocción al aire, perfecto con patatas rústicas.",
     "instructions": [
       "Cortar el bacalao en porciones de 4 cm de grosor. Secar con papel absorbente para eliminar el exceso de humedad. Salpimentar.",
       "Para la salsa, mezclar la mayonesa con el estragón fresco picado y zumo de limón al gusto.",
@@ -4290,7 +4290,7 @@
   },
   {
     "slug": "bollos-de-fresa",
-    "title": "Scones de Fresa Fresca (Estilo British)",
+    "title": "Scones de Fresa (Esponjosos, Fragantes y Rápidos)",
     "emoji": "🍓",
     "temp": 175,
     "time": "12",
@@ -4304,7 +4304,7 @@
       "120 ml de nata para montar (35% M.G.)",
       "2 huevos"
     ],
-    "description": "Bollos tradicionales con una textura hojaldrada y ligera. Las pepitas de fresa fresca se funden durante el horneado, aportando dulzor y frescura en cada bocado.",
+    "description": "¡No hace falta encender el horno gigante para 4 dulces! Estos Scones británicos de fresa explotan de esponjosidad en 12 minutos, ideales para tu desayuno o el té de la tarde.",
     "instructions": [
       "En un bol, mezclar la harina y el azúcar.",
       "Cortar la mantequilla fría en cubos e integrarla con la harina usando las yemas de los dedos hasta obtener una textura de arena gruesa.",
@@ -4329,7 +4329,7 @@
   },
   {
     "slug": "bollos-arandanos-jengibre",
-    "title": "Bollos de Arándanos y Toque de Jengibre",
+    "title": "Scones de Arándanos y Jengibre (Gourmet en 12 Min)",
     "emoji": "🫐",
     "temp": 175,
     "time": "12",
@@ -4347,7 +4347,7 @@
       "2 huevos",
       "4 ml de extracto de vainilla"
     ],
-    "description": "Un contraste vibrante para tu paladar. La dulzura de los arándanos se encuentra con el punto especiado del jengibre en una masa tierna, ideal para una merienda especial.",
+    "description": "¡Sorprende a todos a la hora del té! Estos suavísimos Scones ingleses se preparan en un bol y se hornean en solo 12 minutos. La acidez del arándano y el picante del jengibre crean una combinación divina.",
     "instructions": [
       "Tamizar en un bol la harina, el azúcar, el polvo de hornear y la sal.",
       "Añadir la mantequilla fría en cubos e integrar con las yemas de los dedos hasta obtener una consistencia de migas gruesas. Incorporar los arándanos y el jengibre rallado.",
@@ -4372,7 +4372,7 @@
   },
   {
     "slug": "gambas-envueltas-en-beicon",
-    "title": "Gambones Crujientes con Beicon",
+    "title": "Gambas con Bacon (El Aperitivo Surf & Turf Definitivo)",
     "emoji": "🍤",
     "temp": 160,
     "time": "16",
@@ -4387,7 +4387,7 @@
       "2 g de cebolla en polvo",
       "1 g de pimienta negra molida"
     ],
-    "description": "Mar y montaña en un bocado intenso. La grasa del beicon se funde sobre los gambones, protegiendo su carne y aportando un sabor ahumado e irresistible.",
+    "description": "¡El aperitivo perfecto! Colas de gambas envueltas en panceta: la freidora de aire desgrasa el bacon dejándolo extracrujiente en 16 minutos, mientras la gamba queda húmeda y dulce en su interior.",
     "instructions": [
       "Sazonar los gambones con la mezcla de ajo en polvo, cebolla en polvo, pimentón y pimienta negra.",
       "Cortar cada loncha de beicon por la mitad a lo largo. Envolver cada gambón con media loncha de beicon, enrollando en diagonal.",
@@ -4411,7 +4411,7 @@
   },
   {
     "slug": "gambas-al-coco",
-    "title": "Gambas al Coco con Rebozado Crujiente",
+    "title": "Gambas al Coco (Rebozado Tropical Extra Crujiente)",
     "emoji": "🥥",
     "temp": 175,
     "time": "8",
@@ -4428,7 +4428,7 @@
       "Aceite en aerosol",
       "Especias al gusto"
     ],
-    "description": "Delicadeza tropical. Gambas envueltas en una costra de coco rallado que se tuesta hasta quedar muy crujiente. Perfectas para combinar con una salsa agridulce.",
+    "description": "¡Una costra exótica que cruje en cada bocado! Las gambas empanadas con coco rallado se cocinan en apenas 8 minutos. Un aperitivo elegante, ligero y perfecto para mojar en salsas agridulces.",
     "instructions": [
       "Mezcle en un bol la harina, la sal y las especias al gusto.",
       "Bata los huevos con la leche en un segundo recipiente. En un tercer recipiente, mezcle el pan rallado con las escamas de coco.",
@@ -4453,7 +4453,7 @@
   },
   {
     "slug": "gambas-crujientes-al-curry",
-    "title": "Gambas al Curry (Doble Empanado)",
+    "title": "Gambas al Curry (Doble Rebozado Dorado en 10 Min)",
     "emoji": "🦐",
     "temp": 170,
     "time": "10",
@@ -4467,7 +4467,7 @@
       "3 cucharadas de curry en polvo",
       "1 cucharada de aceite"
     ],
-    "description": "Una explosión de sabor especiado. El doble rebozado con harina de maíz garantiza un crujido extra, mientras que el curry aporta un aroma cálido y exótico.",
+    "description": "¿Buscas un snack especiado e irresistible? El doble rebozado de harina de maíz y curry hace que estas gambas queden doradas y súper crujientes en la freidora de aire, usando poquísimo aceite.",
     "instructions": [
       "Disponer tres recipientes para el empanado. En el primero, batir los huevos. En el segundo, mezclar la harina de trigo con el curry en polvo. En el tercero, verter la harina de maíz.",
       "Pasar cada gamba por el huevo batido.",
@@ -4492,7 +4492,7 @@
   },
   {
     "slug": "merluza-al-curry",
-    "title": "Merluza al Curry y Leche de Coco",
+    "title": "Bacalao al Curry y Coco (Comida Exótica en 10 Minutos)",
     "emoji": "🥘",
     "temp": 200,
     "time": "10",
@@ -4506,7 +4506,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Lomos de merluza suaves cocinados en una salsa cremosa de inspiración oriental. Una forma ligera y aromática de disfrutar del pescado blanco.",
+    "description": "¡Una cena exótica para aplaudir en 10 minutos exactos! Jugosos filetes de bacalao cocinados a alta temperatura en un baño fragante de leche de coco y curry dulce. Fácil, sano e impactante.",
     "instructions": [
       "Untar los filetes de merluza con 2 cucharadas de pasta de curry.",
       "En un cazo, calentar la cucharada restante de pasta de curry con la crema de coco. Sazonar con sal y pimienta al gusto.",
@@ -4530,7 +4530,7 @@
   },
   {
     "slug": "merluza-costra-panko",
-    "title": "Lomos de Merluza con Costra de Panko y Limón",
+    "title": "Bacalao en Costra de Panko (Refinado y Crujiente)",
     "emoji": "🐟",
     "temp": 170,
     "time": "10",
@@ -4545,7 +4545,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Textura gourmet en casa. El panko crea una capa mucho más crujiente que el pan rallado, aromatizada con perejil y ralladura de limón para un acabado fresco.",
+    "description": "¡Olvida el típico filete de pescado soso! Crea una costra dorada, mantecosa y con aroma a limón en 10 minutos usando Panko japonés. Un plato principal ligero y con un crujido increíble.",
     "instructions": [
       "Sazonar los lomos de merluza por ambos lados con sal y pimienta.",
       "En un bol, mezclar el Panko, la mantequilla derretida, el perejil picado, la ralladura y el zumo de limón.",
@@ -4569,7 +4569,7 @@
   },
   {
     "slug": "mini-tartas-manzana",
-    "title": "Mini Apple Pies (Tartaletas de Manzana)",
+    "title": "Mini Tartas de Manzana (Corazón Caliente en 10 Minutos)",
     "emoji": "🥧",
     "temp": 175,
     "time": "10",
@@ -4587,7 +4587,7 @@
       "1 huevo",
       "5 ml de leche"
     ],
-    "description": "Todo el sabor de la tarta de manzana clásica en formato individual. Un relleno de fruta especiada con canela dentro de una masa dorada y quebradiza.",
+    "description": "Mini tartas de manzana en porción individual, doradas y fragantes. Una versión rápida y acogedora lista en la freidora de aire, con relleno suave y masa bien cocida.",
     "instructions": [
       "Derretir la mantequilla en una sartén. Añadir los cubos de manzana, el azúcar y las especias. Cocinar hasta que la manzana esté tierna.",
       "Cortar dos círculos del disco de masa. Colocar el relleno en el centro de cada círculo.",
@@ -4611,7 +4611,7 @@
   },
   {
     "slug": "bocaditos-de-mozzarella-fritos",
-    "title": "Mozzarella Bites (Doble Rebozado)",
+    "title": "Bocaditos de Mozzarella (Cubitos Fundidos al Aire)",
     "emoji": "🧀",
     "temp": 175,
     "time": "8",
@@ -4626,7 +4626,7 @@
       "70 g de pan rallado y perejil seco",
       "Aceite en aerosol"
     ],
-    "description": "El snack de queso definitivo. Cubos de mozzarella con un empanado reforzado para evitar fugas, logrando un exterior crujiente y un corazón de queso hilado infinitamente elástico.",
+    "description": "¿Conoces esos deliciosos bocaditos de queso fritos? ¡Prepara en casa estos sabrosos cubitos de queso doblemente empanados! El paso por el congelador evita que la mozzarella gotee, garantizando cubos dorados en 8 minutos.",
     "instructions": [
       "Cortar los bastones de queso en cubos de tamaño uniforme.",
       "Preparar tres recipientes: uno con la harina, el almidón de maíz, la sal y la pimienta mezclados; otro con los huevos y la leche batidos; y un tercero con el pan rallado y el perejil.",
@@ -4650,7 +4650,7 @@
   },
   {
     "slug": "muffins-cafe-cacao-streusel",
-    "title": "Muffins de Café y Cacao con Streusel",
+    "title": "Muffins de Café y Cacao (Suave Despertar)",
     "emoji": "☕",
     "temp": 150,
     "time": "15",
@@ -4668,7 +4668,7 @@
       "80 ml de aceite vegetal",
       "5 ml de extracto de vainilla"
     ],
-    "description": "El despertar perfecto. Muffins de café y cacao con una textura increíblemente húmeda y un aroma intenso, coronados con un crujiente streusel que se deshace en la boca.",
+    "description": "¡Desayuno caliente sin esfuerzo! Gracias a la freidora de aire, el proceso de levado empuja estos Muffins de Cacao hacia arriba creando una cúpula perfecta en 15 minutos. Súper suaves por dentro.",
     "instructions": [
       "Tamizar y mezclar en un bol los ingredientes secos: harina, cacao, azúcar, levadura química, bicarbonato y café.",
       "En otro recipiente, batir el huevo con la leche, el aceite y el extracto de vainilla.",
@@ -4692,7 +4692,7 @@
   },
   {
     "slug": "muffins-gotas-chocolate",
-    "title": "Muffins Esponjosos con Chispas de Chocolate",
+    "title": "Muffins con Chispas de Chocolate (Cúpula Perfecta)",
     "emoji": "🧁",
     "temp": 170,
     "time": "20",
@@ -4707,7 +4707,7 @@
       "120 ml de leche",
       "8 g de levadura química en polvo"
     ],
-    "description": "La receta definitiva del muffin clásico. Logra una masa alta y aireada con una cúpula pronunciada y generosas gotas de chocolate fundido en cada bocado.",
+    "description": "¿Cómo conseguir la famosa 'cúpula' alta y dorada de los muffins de pastelería? El vórtice de aire de la freidora empuja el levado hacia arriba de forma explosiva en 20 minutos.",
     "instructions": [
       "Precalentar el horno a 170°C.",
       "Derretir la mantequilla y dejar que se temple.",
@@ -4733,7 +4733,7 @@
   },
   {
     "slug": "dorada-parrilla-aceitunas",
-    "title": "Dorada a la Parrilla con Aceitunas y Tomate",
+    "title": "Dorada a la Parrilla (Pescado Ligero y Sin Humo en Casa)",
     "emoji": "🐟",
     "temp": 200,
     "time": "7",
@@ -4750,7 +4750,7 @@
       "Sal",
       "Pimienta"
     ],
-    "description": "Sabor mediterráneo en estado puro. Filetes de dorada perfectamente sellados, acompañados de una salsa cruda de tomate fresco y aceitunas que aporta un toque vibrante.",
+    "description": "¡Parrillada de pescado sin humo en casa! Los filetes de dorada se cocinan a 200° en solo 7 minutos: la piel forma una ligera costra mientras los jugos quedan sellados.",
     "instructions": [
       "Preparar la salsa: mezclar los tomates en dados, las aceitunas en rodajas, el ajo y el perejil picados. Aliñar con zumo de limón y aceite de oliva.",
       "Secar los filetes de dorada. Pincelar con aceite y sazonar con sal y pimienta.",
@@ -4774,7 +4774,7 @@
   },
   {
     "slug": "filetes-bagre-cajun",
-    "title": "Filetes de Pescado al Estilo Cajún",
+    "title": "Pescado Especiado Cajún (Crujiente en 7 Minutos)",
     "emoji": "🐟",
     "temp": 175,
     "time": "7",
@@ -4791,7 +4791,7 @@
       "1 pizca de pimienta de cayena",
       "Aceite en aerosol antiadherente"
     ],
-    "description": "Un viaje a Luisiana. Filetes sazonados con una mezcla de especias potentes y ahumadas que crean una costra deliciosa, manteniendo el pescado tierno y jugoso.",
+    "description": "Una inyección de energía de Luisiana. Los filetes de pescado (idealmente bagre o bacalao grueso) cubiertos de especias Cajún se cocinan en 7 minutos formando una costra intensa, roja y sabrosa sin freír.",
     "instructions": [
       "Seque los filetes de pescado con papel absorbente.",
       "Mezcle las especias en polvo para crear el condimento Cajún.",
@@ -4816,7 +4816,7 @@
   },
   {
     "slug": "pizza-de-desayuno",
-    "title": "Pizza de Desayuno con Huevo y Jamón",
+    "title": "Pizza de Desayuno (Huevo con Yema Líquida en 8 Min)",
     "emoji": "🍕",
     "temp": 175,
     "time": "8",
@@ -4831,7 +4831,7 @@
       "15 ml de aceite de oliva virgen extra",
       "Cilantro fresco al gusto"
     ],
-    "description": "Rompe la rutina. Una base crujiente con mozzarella fundida y jamón ahumado, terminada con un huevo en el centro cocinado justo en su punto.",
+    "description": "¡El desayuno (o brunch) de los campeones! En solo 8 minutos la base de la pizza se vuelve crujiente, la mozzarella se funde y el huevo se cocina pasado por agua, listo para romper. Perfecto con una base lista.",
     "instructions": [
       "Pincelar la superficie de la base de pizza con aceite de oliva virgen extra.",
       "Distribuir la mozzarella rallada y el jamón ahumado troceado.",
@@ -4854,7 +4854,7 @@
   },
   {
     "slug": "salmon-mantequilla-limon",
-    "title": "Salmón con Mantequilla, Limón y Ajo",
+    "title": "Salmón con Mantequilla y Limón (Refinado en 8 Minutos)",
     "emoji": "🐟",
     "temp": 175,
     "time": "8",
@@ -4870,7 +4870,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Elegancia y sencillez. El salmón se baña en una salsa de mantequilla cítrica y ajo que realza su sabor natural, logrando una textura sedosa que se deshace al tenedor.",
+    "description": "¿Cena romántica de última hora? Fríe el salmón al aire en 8 minutos para mantenerlo rosado y súper húmedo, luego cúbrelo con esta salsa francesa de mantequilla derretida, ajo y limón.",
     "instructions": [
       "Sazonar los filetes de salmón con sal y pimienta.",
       "Precalentar el dispositivo de cocción a 175°C.",
@@ -4895,7 +4895,7 @@
   },
   {
     "slug": "salmon-tomate-pepino",
-    "title": "Salmón Grillé con Ensalada Fresca",
+    "title": "Salmón Frescura (Plato Fit en 9 Minutos)",
     "emoji": "🐟",
     "temp": 200,
     "time": "9",
@@ -4913,7 +4913,7 @@
       "Sal",
       "Pimienta negra"
     ],
-    "description": "La cena ligera perfecta. Salmón jugoso acompañado de una ensalada refrescante de tomate, pepino y cebolla roja. Un plato equilibrado, proteico y lleno de color.",
+    "description": "La comida fit perfecta para el verano. Mientras la freidora cocina el salmón creando una ligera costra superficial en 9 minutos, tú preparas una ensalada crujiente y refrescante de guarnición. Cero complicaciones.",
     "instructions": [
       "Pincelar los filetes de salmón con parte del aceite. Sazonar con sal y pimienta.",
       "Colocar los filetes en la cesta precalentada. Cocinar a 200°C durante 7-9 minutos.",
@@ -4937,7 +4937,7 @@
   },
   {
     "slug": "salmon-glaseado-estilo-oriental",
-    "title": "Salmón Glaseado con Soja y Naranja",
+    "title": "Salmón Teriyaki a la Naranja (Glaseado Oriental en 8 Minutos)",
     "emoji": "🍣",
     "temp": 175,
     "time": "8",
@@ -4953,7 +4953,7 @@
       "20 ml de aceite vegetal",
       "Pimienta blanca molida"
     ],
-    "description": "Dulce, cítrico y salado. Filetes de salmón lacados con una reducción de soja, naranja y jengibre que crea una capa brillante y un sabor asiático irresistible.",
+    "description": "Un glaseado brillante, pegajoso y de intenso sabor oriental. ¿El truco? Cocinar el salmón suavemente (175°C) en 8 minutos y aplicar la reducción Teriyaki a la naranja solo al terminar la cocción.",
     "instructions": [
       "Combinar en un cazo la salsa de soja, el azúcar, el ajo, el jengibre y el zumo de naranja. Llevar a ebullición y reducir el líquido a la mitad hasta obtener un glaseado.",
       "Dejar enfriar el glaseado a temperatura ambiente.",
@@ -4977,7 +4977,7 @@
   },
   {
     "slug": "muffin-sandwich-desayuno",
-    "title": "Breakfast Muffin: Sándwich de Huevo y Queso",
+    "title": "Sándwich de Muffin Inglés (Desayuno Americano Rápido)",
     "emoji": "🥪",
     "temp": 160,
     "time": "10",
@@ -4991,7 +4991,7 @@
       "Agua caliente (para el molde)",
       "Sal y pimienta al gusto"
     ],
-    "description": "El clásico desayuno americano ahora en tu casa. Pan tostado, queso fundido, carne sabrosa y un huevo cocinado al vapor para lograr esa textura de comida rápida premium.",
+    "description": "¡Olvídate del auto-servicio! El clásico sándwich de desayuno americano hecho en casa en 10 minutos. El truco del agua caliente en el molde cocina el huevo al vapor mientras el pan se tuesta.",
     "instructions": [
       "Rocía dos moldes pequeños para horno con aceite en spray. Colócalos en la cesta precalentando a 160°C.",
       "Coloca el queso y el bacon sobre una mitad de los muffins e introduce todos los trozos de pan en la cesta caliente para tostarlos.",
@@ -5253,8 +5253,8 @@
     "title": "Pastelitos de Pescado Crujientes",
     "emoji": "🐟",
     "temp": 200,
-    "time": "12-15",
-    "prep_time": "No presente",
+    "time": "12",
+    "prep_time": "",
     "portions": "2",
     "ingredients": [
       "Pasteles de pescado, congelados: 2 unidades (150 g/unidad aprox.)"
@@ -5486,7 +5486,7 @@
   },
   {
     "slug": "muffins-rusticos-maiz-queso",
-    "title": "Muffins Salados de Maíz y Cheddar",
+    "title": "Muffins Salados de Queso y Maíz (Corazón Fundido en 15 Min)",
     "emoji": "🧁",
     "temp": 160,
     "time": "15",
@@ -5506,7 +5506,7 @@
       "120 g de queso cheddar, rallado",
       "3 chalotas"
     ],
-    "description": "Panecillos rústicos con el toque dulce del maíz y la intensidad del queso Cheddar fundido. Ideales para disfrutar tibios como acompañamiento o snack salado.",
+    "description": "El clásico pan de maíz americano transformado en pastelitos salados individuales. El cheddar se funde en la masa mientras el calor los hace subir a la perfección en 15 minutos para un aperitivo excepcional.",
     "instructions": [
       "En un bol, tamizar y mezclar la harina de trigo, la harina de maíz, el azúcar, la levadura en polvo y la sal.",
       "Aparte, batir el huevo con la leche y la mantequilla derretida. Verter la mezcla líquida sobre los ingredientes secos y mezclar lo justo para amalgamar.",
@@ -5530,7 +5530,7 @@
   },
   {
     "slug": "muffins-limon-arandanos",
-    "title": "Muffins Veganos de Limón y Arándanos",
+    "title": "Muffins de Coco y Arándanos (Ligeros y Esponjosos en 15 Min)",
     "emoji": "🧁",
     "temp": 150,
     "time": "15",
@@ -5547,7 +5547,7 @@
       "10 ml de zumo de limón y la ralladura de su piel",
       "80 g de arándanos frescos"
     ],
-    "description": "Deliciosa opción sin lactosa ni huevo. La leche de coco aporta una cremosidad sorprendente que, unida al frescor del limón y los arándanos, crea un bocado ligero y aromático.",
+    "description": "Un dulce accesible para todos: ¡completamente veganos, sin lactosa y súper suaves! La leche de coco liga la masa mientras la freidora los cocina suavemente a 150°C en 15 minutos.",
     "instructions": [
       "En un bol, mezclar la leche de coco, el aceite de coco, el azúcar, la ralladura y el zumo de limón.",
       "Aparte, tamizar y combinar la harina, la levadura química, el bicarbonato sódico y la sal. Incorporar los ingredientes secos a la mezcla líquida y remover hasta obtener una masa homogénea.",
@@ -5572,7 +5572,7 @@
   },
   {
     "slug": "mini-pan-de-platano-y-nueces",
-    "title": "Plumcake de Plátano y Nueces Crujientes",
+    "title": "Mini Pan de Plátano con Nueces (El Bizcocho Rápido)",
     "emoji": "🍞",
     "temp": 150,
     "time": "40",
@@ -5588,7 +5588,7 @@
       "3 g de bicarbonato de sodio",
       "1 pizca de sal fina"
     ],
-    "description": "Un clásico reconfortante. Este pastel de plátano destaca por su interior extremadamente húmedo y el contraste crujiente de las nueces tostadas en cada rebanada.",
+    "description": "¿Tienes dos plátanos muy maduros? ¡Crea un mini bizcocho perfecto! Cocinado a baja temperatura (150°C) durante 40 minutos, el pan de plátano se mantiene increíblemente húmedo por dentro y tostado por fuera.",
     "instructions": [
       "Triturar la pulpa de los plátanos con un tenedor en un bol.",
       "Batir la mantequilla con el azúcar hasta obtener una mezcla cremosa. Incorporar el huevo y continuar batiendo hasta integrar.",
@@ -5613,10 +5613,10 @@
   },
   {
     "slug": "esparragos-asados-sencillos",
-    "title": "Espárragos Asados (Puntas Crujientes)",
+    "title": "Espárragos Asados (Guarnición Perfecta en 6 Minutos)",
     "emoji": "🥗",
     "temp": 200,
-    "time": "6-8",
+    "time": "6",
     "prep_time": "2",
     "portions": "2",
     "ingredients": [
@@ -5624,7 +5624,7 @@
       "3 cucharaditas de aceite de oliva virgen extra",
       "Sal y pimienta al gusto"
     ],
-    "description": "La guarnición más saludable y rápida. Espárragos verdes cocinados al punto exacto para que las puntas queden ligeramente tostadas y el tallo tierno y lleno de sabor.",
+    "description": "¡La mejor manera absoluta de cocinar espárragos! Olvida hervirlos que los deja blandos: en 6 minutos con aire a 200°C las puntas se vuelven súper crujientes mientras los tallos permanecen verdes y firmes.",
     "instructions": [
       "Lavar los espárragos y eliminar la parte inferior leñosa del tallo.",
       "Colocar los espárragos en un recipiente, verter el aceite y mezclar para cubrir uniformemente.",
@@ -5648,7 +5648,7 @@
   },
   {
     "slug": "esparragos-envueltos-en-jamon",
-    "title": "Espárragos con Camisa de Jamón Serrano",
+    "title": "Espárragos con Jamón Serrano (Aperitivo Gourmet en 10 Min)",
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
@@ -5661,7 +5661,7 @@
       "Sal",
       "Pimienta negra"
     ],
-    "description": "Un entrante gourmet listo en minutos. El jamón serrano se vuelve crujiente al calor, protegiendo al espárrago y aportando un toque salino irresistible.",
+    "description": "Un aperitivo bajo en carbohidratos de restaurante. Envuelve los espárragos en jamón: la cocción a 150°C hace que la grasa se funda y el jamón se convierta en un chip crujiente abrazando la verdura.",
     "instructions": [
       "Salpimentar los espárragos.",
       "Enrollar cada espárrago con una loncha de jamón serrano.",
@@ -5686,7 +5686,7 @@
   },
   {
     "slug": "bagels-vegetales",
-    "title": "Bagels de Verduras Asadas y Mostaza",
+    "title": "Bagel Vegetariano (Verduras a la Parrilla Fáciles en 17 Min)",
     "emoji": "🥯",
     "temp": 200,
     "time": "17",
@@ -5702,7 +5702,7 @@
       "2 cucharadas de aceite de oliva",
       "1 pizca de orégano"
     ],
-    "description": "Sándwiches redondos rellenos de hortalizas asadas al punto y una crema suave de queso a la mostaza. Un bocado vegetariano sustancioso y lleno de texturas.",
+    "description": "¡Usa tu freidora de aire como una tostadora potenciada! Asa pimientos y champiñones en minutos, luego tuesta los bagels y rellénalos para un almuerzo vegetariano sano, colorido y sabroso.",
     "instructions": [
       "Limpiar los pimientos, retirando semillas y filamentos blancos, y cortarlos en tiras gruesas.",
       "Limpiar los champiñones y cortarlos en láminas o cuartos.",
@@ -5727,7 +5727,7 @@
   },
   {
     "slug": "bocaditos-coliflor-salsa-ranch",
-    "title": "Bocados de Coliflor con Toque Picante",
+    "title": "Alitas de Coliflor (Bocaditos Picantes de Coliflor)",
     "emoji": "🥦",
     "temp": 170,
     "time": "27",
@@ -5745,7 +5745,7 @@
       "1 cucharadita de pimentón",
       "Sal al gusto"
     ],
-    "description": "La alternativa vegetal perfecta a las alitas de pollo. Ramilletes de coliflor con un empanado crujiente, bañados en salsa picante para un aperitivo sorprendente.",
+    "description": "Las falsas alitas de pollo que volverán locos a todos. Floretes de coliflor rebozados, empanados en panko y glaseados en salsa Buffalo picante. La alternativa vegetariana perfecta en 27 minutos.",
     "instructions": [
       "En un bol, mezclar la harina, la cebolla en polvo, el ajo en polvo, el pimentón y la sal. Añadir la leche gradualmente, batiendo hasta obtener una masa densa y homogénea.",
       "Disponer el panko en un plato hondo.",
@@ -5772,7 +5772,7 @@
   },
   {
     "slug": "brocoli-asados-ajo",
-    "title": "Brócoli Tostado al Ajo y Pimienta",
+    "title": "Brócoli al Ajo (Dorado)",
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
@@ -5785,7 +5785,7 @@
       "4 g de sal fina",
       "1 g de pimienta negra molida"
     ],
-    "description": "Olvídate del brócoli hervido. Estos floretes asados con ajo quedan dorados y firmes, convirtiéndose en una guarnición sabrosa que gusta a todo el mundo.",
+    "description": "Si odias el olor del brócoli hervido, esta receta te salvará. Cocinado con aire a baja temperatura (150°C) durante 10 minutos, el brócoli se tuesta manteniendo su crujido y sabor intenso.",
     "instructions": [
       "Mezclar los floretes de brócoli con el aceite de oliva.",
       "Incorporar el ajo en polvo, la sal y la pimienta. Mezclar hasta cubrir uniformemente los floretes.",
@@ -5809,7 +5809,7 @@
   },
   {
     "slug": "zanahorias-soja-miel",
-    "title": "Zanahorias Glaseadas (Soja y Miel)",
+    "title": "Zanahorias Glaseadas con Soja y Miel (Agridulces)",
     "emoji": "🥕",
     "temp": 200,
     "time": "13",
@@ -5821,7 +5821,7 @@
       "10 ml de miel",
       "10 ml de salsa de soja"
     ],
-    "description": "Un acompañamiento agridulce que sorprende. El glaseado carameliza la superficie de las zanahorias, dándoles un brillo espectacular y una textura tierna.",
+    "description": "¡Las zanahorias baby se transforman! El adobo de soja y miel se carameliza instantáneamente a 200°C en la freidora, creando una guarnición agridulce con una costra irresistible en 13 min.",
     "instructions": [
       "Lavar las zanahorias y secar con papel absorbente.",
       "En un bol, mezclar las zanahorias con el aceite, la miel y la salsa de soja hasta cubrirlas uniformemente.",
@@ -5844,7 +5844,7 @@
   },
   {
     "slug": "zanahorias-asadas-miel",
-    "title": "Zanahorias al Tomillo y Miel",
+    "title": "Zanahorias Asadas con Miel y Tomillo (Caramelizadas)",
     "emoji": "🥕",
     "temp": 200,
     "time": "13",
@@ -5857,7 +5857,7 @@
       "Ramas de tomillo fresco",
       "Sal al gusto"
     ],
-    "description": "Zanahorias asadas lentamente para resaltar su dulzor natural, equilibrado con el aroma fresco del tomillo. Una guarnición elegante y equilibrada.",
+    "description": "El calor envolvente de la freidora realza el dulzor natural de las zanahorias que, glaseadas con miel y perfumadas con tomillo, se convierten en una guarnición otoñal asada súper tierna en 13 minutos.",
     "instructions": [
       "Seque bien las zanahorias con papel de cocina.",
       "En un bol, mezcle las zanahorias con la miel, el aceite de oliva y las ramas de tomillo.",
@@ -5880,7 +5880,7 @@
   },
   {
     "slug": "coliflor-curcuma",
-    "title": "Coliflor Especiada con Cúrcuma",
+    "title": "Coliflor a la Cúrcuma (Especiada, Dorada)",
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
@@ -5895,7 +5895,7 @@
       "4 g de sal",
       "Pimienta negra molida al gusto"
     ],
-    "description": "Un plato vibrante y saludable. Los ramilletes de coliflor se impregnan del color y los beneficios de la cúrcuma, logrando un sabor exótico en tiempo récord.",
+    "description": "Una explosión de color y antioxidantes. La cúrcuma tiñe de oro los floretes de coliflor que se cocinan súper rápido a 150°C (10 min). Sano, antiinflamatorio y locamente crujiente.",
     "instructions": [
       "Poner los ramilletes de coliflor en un bol. Añadir el aceite y mezclar para impregnar uniformemente.",
       "Añadir la cúrcuma, el ajo en polvo, la cebolla en polvo, la sal y la pimienta. Mezclar con cuidado para cubrir los ramilletes.",
@@ -5919,7 +5919,7 @@
   },
   {
     "slug": "coliflor-salsa-tahini",
-    "title": "Coliflor Tostada con Crema de Tahini",
+    "title": "Coliflor Asada y Tahini (Sabor de Oriente Medio)",
     "emoji": "🥦",
     "temp": 180,
     "time": "15",
@@ -5933,7 +5933,7 @@
       "50 ml de zumo de limón",
       "Sal y pimienta negra molida"
     ],
-    "description": "Inspiración de Oriente Medio. Coliflor asada hasta dorar, servida con una salsa sedosa de tahini y un toque cítrico de limón que realza el conjunto.",
+    "description": "¡Transforma la coliflor en un plato de restaurante de Oriente Medio! Los floretes asados al aire se doran y llenan de sabor en 15 minutos, perfectos para cubrir con salsa tahini cremosa y cítrica.",
     "instructions": [
       "Limpiar la coliflor, retirar las hojas exteriores y el tallo. Separar en ramilletes de tamaño uniforme y colocar en un recipiente.",
       "Aderezar los ramilletes con aceite de oliva, sal y pimienta. Mezclar para cubrir uniformemente.",
@@ -5955,10 +5955,10 @@
   },
   {
     "slug": "chips-de-patata-crujientes",
-    "title": "Chips de Patata Caseras (Sin Exceso de Aceite)",
+    "title": "Chips de Patata (Crujientes y Ligeras en 23 Minutos)",
     "emoji": "🥔",
     "temp": 165,
-    "time": "23-26",
+    "time": "23",
     "prep_time": "40",
     "portions": "4",
     "ingredients": [
@@ -5968,7 +5968,7 @@
       "Aceite de oliva virgen extra: 2 cucharadas",
       "Pimienta negra molida: al gusto"
     ],
-    "description": "El snack clásico en su versión más ligera. Láminas finísimas de patata cocinadas hasta alcanzar un crujido perfecto con el mínimo de grasa.",
+    "description": "¡Basta de patatas de bolsa llenas de grasa! Descubre el secreto de la mandolina y el remojo salado para preparar chips doradas y súper crujientes en tu freidora de aire. El snack saludable perfecto.",
     "instructions": [
       "Disolver la sal en el agua fría en un recipiente grande.",
       "Lavar las patatas. Opcionalmente, mantener la piel. Cortar en láminas de 1,5 mm de grosor con una mandolina.",
@@ -5993,10 +5993,10 @@
   },
   {
     "slug": "champiñones-asados",
-    "title": "Champiñones Dorados al Punto",
+    "title": "Champiñones Asados (Firmes y Sabrosos en 10 Minutos)",
     "emoji": "🍄",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -6005,7 +6005,7 @@
       "Sal y pimienta negra al gusto",
       "Perejil fresco picado (opcional)"
     ],
-    "description": "Champiñones asados con un método que evita que suelten agua, concentrando todo su sabor y logrando una textura firme y carnosa por fuera.",
+    "description": "Deja de saltear champiñones hasta que queden blandos y aguados. Con 10 minutos a 200°C al aire, obtendrás champiñones asados firmes y sabrosos, sellados por fuera y jugosos por dentro.",
     "instructions": [
       "Limpiar los champiñones con un paño húmedo o papel de cocina para eliminar restos de tierra.",
       "Cortar los champiñones por la mitad o en cuartos, procurando obtener trozos de tamaño uniforme.",
@@ -6029,7 +6029,7 @@
   },
   {
     "slug": "berenjenas-asadas-sencillas",
-    "title": "Rodajas de Berenjena a las Finas Hierbas",
+    "title": "Berenjenas Asadas (Especiadas y Ligeras en 10 Min)",
     "emoji": "🍆",
     "temp": 200,
     "time": "10",
@@ -6043,7 +6043,7 @@
       "2 g de comino molido",
       "Sal y pimienta negra al gusto"
     ],
-    "description": "Una guarnición versátil y ligera. Rodajas de berenjena sazonadas y asadas hasta que quedan tiernas, ideales para acompañar cualquier plato de proteína.",
+    "description": "¡Basta de berenjenas aceitosas que absorben todo el aceite! Esta técnica a 200°C las deja doradas y especiadas en solo 10 minutos usando un hilo de aceite. La base perfecta para ensaladas o como guarnición keto.",
     "instructions": [
       "Lavar y pelar parcialmente la berenjena. Cortar en rodajas de 1 cm de grosor.",
       "En un bol, mezclar el aceite de oliva con el ajo en polvo, la cebolla en polvo, el comino, la sal y la pimienta.",
@@ -6067,7 +6067,7 @@
   },
   {
     "slug": "berenjenas-parrilla-pesto",
-    "title": "Berenjenas Asadas con Pesto de Albahaca",
+    "title": "Berenjenas al Pesto (Suaves y Aromáticas en 27 Min)",
     "emoji": "🍆",
     "temp": 170,
     "time": "27",
@@ -6080,7 +6080,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "El sabor del verano italiano. Berenjenas tiernas terminadas con un pesto fresco de albahaca que aporta una explosión de aroma y frescura.",
+    "description": "¡Una explosión de sabor mediterráneo! Berenjenas asadas lentamente al aire hasta quedar mantecosas y luego glaseadas con pesto de albahaca fresca. Una guarnición fresca y elegante con aroma a verano.",
     "instructions": [
       "Lavar las berenjenas y cortar en rodajas de 0.5 cm de grosor.",
       "Pincelar las rodajas por ambos lados con aceite de oliva. Sazonar con sal y pimienta.",
@@ -6103,7 +6103,7 @@
   },
   {
     "slug": "berenjenas-rellenas-mozzarella",
-    "title": "Berenjenas Gratinadas a la Parmesana",
+    "title": "Berenjenas Rellenas Parmesana (Fundidas en 30 Min)",
     "emoji": "🍆",
     "temp": 190,
     "time": "30",
@@ -6121,7 +6121,7 @@
       "Sal",
       "Pimienta"
     ],
-    "description": "Berenjenas rellenas de una mezcla clásica de tomate y mozzarella, coronadas con queso Parmesano que se gratina hasta formar una costra dorada.",
+    "description": "¡Olvídate de la clásica y aceitosa parmigiana! Estas berenjenas rellenas y fundidas se cocinan rápidamente al aire, creando una costra crujiente que encierra un irresistible corazón mediterráneo.",
     "instructions": [
       "Realizar cortes superficiales en la pulpa de las berenjenas. Sazonar con aceite de oliva, sal y pimienta.",
       "Colocar las berenjenas con el corte hacia abajo y cocinar a 190°C durante 20 minutos.",
@@ -6143,16 +6143,16 @@
   },
   {
     "slug": "gajos-patata-congelados",
-    "title": "Gajos de Patata Rústicos (Extra Crujientes)",
+    "title": "Gajos de Patata Congelados (Corazón Tierno en 20 Min)",
     "emoji": "🥔",
     "temp": 190,
     "time": "20",
-    "prep_time": "No requiere",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "600 g de gajos de patata rústicos congelados"
     ],
-    "description": "Transforma las patatas congeladas en una guarnición de restaurante. Exterior crujiente y corazón suave como puré, sin complicaciones.",
+    "description": "Los gajos de patata congelados están hechos para la freidora de aire. En 20 minutos obtendrás un crujido de comida rápida sin añadir ni una gota de aceite. Sanos, rápidos y el snack favorito de los niños.",
     "instructions": [
       "Colocar los gajos de patata congelados directamente en la cesta. No añadir aceite.",
       "Cocinar a 190°C durante 20 minutos.",
@@ -6174,7 +6174,7 @@
   },
   {
     "slug": "gajos-de-patata-rusticos",
-    "title": "Gajos de Patata al Queso y Especias",
+    "title": "Gajos de Patata al Parmesano (Rústicos en 20 Minutos)",
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
@@ -6187,7 +6187,7 @@
       "10 g de queso Parmesano rallado",
       "Sal y pimienta negra molida al gusto"
     ],
-    "description": "Patatas cortadas en gajos rústicos, aderezadas con una mezcla de especias y queso para un sabor intenso. El snack perfecto para dipear en salsas.",
+    "description": "¡Gajos de patata rústicos con una costra de Parmesano que cruje! Descubre cómo la freidora de aire realza el sabor del queso y las especias, haciendo que cada gajo quede dorado y sabrosísimo.",
     "instructions": [
       "Lavar las patatas. Sin pelar, cortar en gajos de tamaño uniforme.",
       "Disponer los gajos en un bol, añadir el aceite y mezclar hasta cubrir completamente.",
@@ -6210,11 +6210,11 @@
   },
   {
     "slug": "patatas-enteras-horneadas",
-    "title": "Patatas Asadas Enteras (Piel Crujiente)",
+    "title": "Patatas Asadas Enteras (Suaves y Rústicas en 35 Min)",
     "emoji": "🥔",
     "temp": 200,
-    "time": "35-40",
-    "prep_time": "No presente",
+    "time": "35",
+    "prep_time": "",
     "portions": "4",
     "isItalian": false,
     "ingredients": [
@@ -6222,7 +6222,7 @@
       "Aceite para pincelar (opcional)",
       "Sal gruesa"
     ],
-    "description": "La esencia de lo rústico. Patatas asadas con su piel para proteger un interior extremadamente tierno y harinoso. Un básico infalible que combina con todo.",
+    "description": "La verdadera Jacket Potato en casa en la mitad de tiempo. La freidora de aire deja la piel fina y crujiente mientras que el interior se vuelve suave como el terciopelo. La guarnición rústica y sana por excelencia.",
     "instructions": [
       "Lavar y cepillar la piel de las patatas bajo agua corriente. Secar completamente.",
       "Pinchar cada patata profundamente con un tenedor en varios puntos para permitir la salida del vapor.",
@@ -6243,7 +6243,7 @@
   },
   {
     "slug": "patatas-nuevas-con-mayonesa-picante",
-    "title": "Patatas Baby con Mayonesa de Pesto Rojo",
+    "title": "Patatitas Asadas (Con Mayonesa Picante en 30 Min)",
     "emoji": "🥔",
     "temp": 180,
     "time": "30",
@@ -6260,7 +6260,7 @@
       "2 cucharadas de pesto de tomates secos",
       "1 cucharada de vinagre de vino tinto"
     ],
-    "description": "Bocados de patata asados con especias y servidos con una cremosa mayonesa al pesto rojo. El equilibrio perfecto entre el toque picante y la suavidad del tubérculo.",
+    "description": "Patatitas especiadas y crujientes servidas con una mayonesa gourmet de tomates secos. Una guarnición original y llamativa lista en 30 minutos que transformará tu cena en una experiencia de restaurante.",
     "instructions": [
       "En un bol, mezclar las patatas con el aceite de oliva, la mitad de cada tipo de pimentón, la mitad del ajo en polvo y sal.",
       "Distribuir las patatas en una sola capa sobre una bandeja de horno. Cocinar a 180°C durante 30 minutos.",
@@ -6286,7 +6286,7 @@
     "title": "Tortitas de Patata (Hash Browns Caseros)",
     "emoji": "🥔",
     "temp": 190,
-    "time": "15-20",
+    "time": "15",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -6317,7 +6317,7 @@
   },
   {
     "slug": "patatas-hasselback",
-    "title": "Patatas Hasselback al Ajo y Mantequilla",
+    "title": "Patatas Hasselback (En Acordeón, Espectaculares en 40 Min)",
     "emoji": "🥔",
     "temp": 175,
     "time": "40",
@@ -6333,7 +6333,7 @@
       "Pimienta negra molida",
       "Perejil fresco picado"
     ],
-    "description": "Sofisticación sueca en tu mesa. El corte en láminas finas permite que la mantequilla y las hierbas penetren en cada capa, logrando una patata que es mitad asada, mitad frita.",
+    "description": "¡Sorprende a tus invitados con esta guarnición sueca en acordeón! Las rodajas se ensanchan al freírse con aire, permitiendo que la mantequilla y el ajo se fundan dentro de cada costra.",
     "instructions": [
       "Lavar y secar las patatas, conservando la piel. Colocar cada patata sobre una tabla y realizar cortes transversales paralelos, con una separación de aproximadamente 6 mm, sin llegar a cortar la base.",
       "Pincelar el exterior de las patatas con aceite de oliva. Sazonar con sal y pimienta, asegurando que penetren en los cortes superficiales.",
@@ -6355,7 +6355,7 @@
   },
   {
     "slug": "patatas-nuevas-asadas",
-    "title": "Patatas Nuevas a las Hierbas del Campo",
+    "title": "Patatitas a las Hierbas (Snack Rústico Rápido en 20 Min)",
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
@@ -6370,7 +6370,7 @@
       "4 g de sal",
       "Pimienta negra molida al gusto"
     ],
-    "description": "Pequeñas patatas baby asadas con un ramillete de hierbas aromáticas frescas. Un bocado dorado por fuera y con la textura de la mantequilla por dentro.",
+    "description": "¡La guarnición más querida de siempre, lista en solo 20 minutos! Las patatitas cortadas por la mitad forman una costra perfecta y perfumada a las hierbas, manteniendo la sabrosa piel.",
     "instructions": [
       "Lavar las patatas nuevas y cortarlas por la mitad.",
       "Colocar las patatas en un bol, verter el aceite de oliva y mezclar.",
@@ -6395,17 +6395,17 @@
   },
   {
     "slug": "pimientos-enteros-asados",
-    "title": "Pimientos Asados (Técnica de Pelado Fácil)",
+    "title": "Pimientos Asados (Súper Fáciles de Pelar en 26 Min)",
     "emoji": "🫑",
     "temp": 200,
-    "time": "26-30",
-    "prep_time": "No presente",
+    "time": "26",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 pimientos grandes (aprox. 650 g)",
       "10 ml de aceite de sabor neutro"
     ],
-    "description": "Consigue unos pimientos asados perfectos y dulces. Te enseñamos la técnica del choque térmico para separar la piel sin esfuerzo, dejando la pulpa jugosa y lista para ensaladas.",
+    "description": "Asar y pelar pimientos nunca ha sido tan fácil. El calor concentrado a 200°C chamusca la piel en 26 minutos, permitiéndote pelarlos en un instante para ensaladas dulces y ligeras.",
     "instructions": [
       "Lave y seque los pimientos.",
       "Unte los pimientos con aceite.",
@@ -6429,7 +6429,7 @@
   },
   {
     "slug": "aros-de-cebolla",
-    "title": "Aros de Cebolla con Rebozado Especiado",
+    "title": "Aros de Cebolla (Snack Súper Crujiente en 20 Minutos)",
     "emoji": "🧅",
     "temp": 190,
     "time": "20",
@@ -6444,7 +6444,7 @@
       "2 g de pimentón ahumado",
       "5 g de sal"
     ],
-    "description": "El snack por excelencia. Aros de cebolla dulces envueltos en un rebozado con especias que garantiza una cocción uniforme y un crujido que se oye en cada mordisco.",
+    "description": "¡El rey indiscutible de los snacks fritos se vuelve ligero y casero! El truco del rebozado con suero de leche cocinado en la freidora de aire durante 20 minutos hace que estos aros sean increíblemente crujientes.",
     "instructions": [
       "Cortar la cebolla horizontalmente en discos de 13 mm. Separar las capas para formar los aros.",
       "Disponer tres recipientes: el primero con la harina; el segundo con los huevos batidos con el suero de leche; el tercero con el pan rallado mezclado con sal y pimentón.",
@@ -6467,7 +6467,7 @@
   },
   {
     "slug": "tocino-caramelizado-bbq",
-    "title": "Bacon Caramelizado con Sabor Barbacoa",
+    "title": "Bacon Caramelizado (Crujido BBQ en 8 Minutos)",
     "emoji": "🥓",
     "temp": 160,
     "time": "8",
@@ -6480,7 +6480,7 @@
       "1 g de comino molido",
       "1 g de pimienta de Cayena"
     ],
-    "description": "Un snack dulce-salado adictivo. Tiras de panceta ahumada cubiertas con una mezcla de azúcar que se carameliza al calor, creando una textura crujiente y única.",
+    "description": "¿Has probado el bacon dulce y picante? Las rodajas se encogen al asarse a 160°C, mientras que el azúcar moreno se funde con la grasa creando un \"caramelo de carne\" en 8 minutos. Peligrosamente bueno.",
     "instructions": [
       "Cortar cada loncha de panceta por la mitad.",
       "En un cuenco, mezclar el azúcar moreno con el chile en polvo, el comino y la pimienta de Cayena.",
@@ -6504,7 +6504,7 @@
   },
   {
     "slug": "filetes-costilla-mostaza",
-    "title": "Costillas con Costra Crujiente de Mostaza",
+    "title": "Filete con Costra de Mostaza (Jugoso y Caramelizado en 10 Min)",
     "emoji": "🥩",
     "temp": 200,
     "time": "10",
@@ -6516,7 +6516,7 @@
       "10 g de mostaza inglesa en polvo",
       "Sal gruesa y pimienta negra recién molida"
     ],
-    "description": "Intensidad en cada bocado. La alta temperatura sella la jugosidad de la costilla mientras carameliza la mostaza, formando una capa exterior potente y sabrosa.",
+    "description": "¡Reemplaza tu parrilla habitual por un 'Rub' americano! El azúcar moreno y la mostaza envuelven el chuletón, y a 200°C crean un sello de puro sabor en 10 minutos, manteniendo la ternera súper suave por dentro.",
     "instructions": [
       "Retirar la carne del frigorífico 30 minutos antes de la cocción para atemperarla y asegurar una cocción uniforme.",
       "Mezclar en un recipiente el azúcar, la mostaza en polvo, la sal y la pimienta.",
@@ -6539,7 +6539,7 @@
   },
   {
     "slug": "coles-bruselas-panceta",
-    "title": "Coles de Bruselas Tostadas con Panceta",
+    "title": "Coles de Bruselas y Bacon (Sabrosas y Crujientes en 9 Min)",
     "emoji": "🥬",
     "temp": 200,
     "time": "9",
@@ -6555,7 +6555,7 @@
       "Pimienta negra molida",
       "10 g de queso Parmigiano Reggiano rallado"
     ],
-    "description": "Incluso para quienes no aman las verduras. Las coles se tuestan en la grasa de la panceta, perdiendo su amargor y ganando un sabor ahumado y una textura crujiente.",
+    "description": "Si odias las coles de Bruselas hervidas, pruébalas fritas al aire con bacon picado. En 9 minutos se asan en las puntas exteriores mientras absorben el umami del bacon. Una guarnición brutal.",
     "instructions": [
       "Mezclar en un bol las coles de Bruselas y la panceta en dados.",
       "Añadir el aceite de oliva, el ajo en polvo, la sal y la pimienta. Mezclar para distribuir uniformemente.",
@@ -6578,10 +6578,10 @@
   },
   {
     "slug": "chips-kale-crujientes",
-    "title": "Chips de Kale (El Snack Saludable)",
+    "title": "Chips de Kale (El Snack Ligero y Fit en 8 Minutos)",
     "emoji": "🥬",
     "temp": 150,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -6589,7 +6589,7 @@
       "10 ml de aceite de oliva",
       "Sal marina fina"
     ],
-    "description": "Ligero, verde y muy crujiente. Hojas de kale deshidratadas al punto de sal y especias, convirtiéndose en el sustituto perfecto y nutritivo de las patatas fritas.",
+    "description": "El superalimento definitivo se convierte en el snack favorito de los entusiastas de la salud. A 150°C, las hojas de kale pierden su humedad, volviéndose como patatas fritas de bolsa en 8 minutos, pero con solo 50 Kcal.",
     "instructions": [
       "Separar las hojas de kale de los tallos centrales y desechar los tallos.",
       "Secar completamente las hojas con papel de cocina. Aderezar uniformemente con el aceite.",
@@ -6614,7 +6614,7 @@
   },
   {
     "slug": "chips-de-manzana",
-    "title": "Chips de Manzana (Snack 100% Natural)",
+    "title": "Chips de Manzana (Snack Natural y Crujiente Casero)",
     "emoji": "🍎",
     "temp": 80,
     "time": "240",
@@ -6624,7 +6624,7 @@
       "2 manzanas, tipo crujiente",
       "Zumo de 1/2 limón"
     ],
-    "description": "Pura fruta deshidratada. Rodajas finas de manzana cocinadas a baja temperatura para concentrar su dulzor y lograr una textura crujiente sin azúcares añadidos.",
+    "description": "¡Usa tu freidora como deshidratador! El aire caliente a 80°C deshidrata lentamente rodajas de manzana súper finas. Reemplaza los dulces artificiales de los niños con esta maravilla natural.",
     "isItalian": false,
     "instructions": [
       "Lavar las manzanas, descorazonar y retirar las semillas.",
@@ -6647,11 +6647,11 @@
   },
   {
     "slug": "tarta-rustica-de-peras",
-    "title": "Galette Rústica de Peras y Nueces",
+    "title": "Galette Rústica de Peras (Tarta Rápida en 45 Minutos)",
     "emoji": "🍐",
     "temp": 160,
     "time": "45",
-    "prep_time": "1 hora 10",
+    "prep_time": "70",
     "portions": "4",
     "ingredients": [
       "100 g de harina de trigo (90 g para la masa, 10 g para espolvorear)",
@@ -6665,7 +6665,7 @@
       "Miel, para decorar",
       "Nueces tostadas y troceadas, para decorar"
     ],
-    "description": "Un postre artesanal con masa quebrada crujiente. El relleno de peras dulces con un hilo de miel y nueces tostadas ofrece una experiencia de repostería casera inigualable.",
+    "description": "¡El postre dominical hecho a mano, sin molde! Una masa quebradiza y mantecosa que encierra jugosas peras y nueces. La freidora de aire a 160°C carameliza la fruta, creando una tarta rústica espectacular en 45 min.",
     "instructions": [
       "Mezclar 90 g de harina con la mantequilla fría hasta obtener una consistencia arenosa.",
       "Añadir el agua helada y amasar hasta formar una bola. Envolver en film transparente y refrigerar durante una hora.",
@@ -6690,17 +6690,17 @@
   },
   {
     "slug": "judias-verdes-asadas",
-    "title": "Judías Verdes Asadas al Punto de Sal",
+    "title": "Judías Verdes Asadas (Crujientes y Rápidas en 12 Min)",
     "emoji": "🥗",
     "temp": 200,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "400 g de judías verdes frescas",
       "20 ml de aceite de oliva"
     ],
-    "description": "Dile adiós a las judías hervidas y blandas. Cocinadas a alta temperatura, conservan un color vibrante y una textura firme y ligeramente tostada que te sorprenderá.",
+    "description": "¡Basta de judías verdes hervidas y blandas! La freidora de aire las \"asa\" a una temperatura muy alta (200°C) durante 12 minutos: se mantendrán de un verde brillante, firmes y con puntas deliciosamente crujientes y sabrosas.",
     "instructions": [
       "Lavar y despuntar las judías verdes.",
       "En un recipiente, mezclar las judías con el aceite de oliva, sal y pimienta, asegurando una cobertura uniforme.",
@@ -6721,7 +6721,7 @@
   },
   {
     "slug": "falafel-airfryer",
-    "title": "Falafel de Garbanzos (Receta Tradicional)",
+    "title": "Falafel de Garbanzos (Albóndigas Crujientes y Ligeras en 15 Min)",
     "emoji": "🧆",
     "temp": 170,
     "time": "15",
@@ -6738,7 +6738,7 @@
       "Pimienta negra molida, al gusto",
       "Aceite de oliva virgen extra"
     ],
-    "description": "Viaja a Oriente Medio con estos falafel. Un interior verde y especiado protegido por una costra dorada conseguida con el mínimo de aceite. Saludables y auténticos.",
+    "description": "Las mágicas albóndigas de Oriente Medio, pero en versión fit. Los falafels de garbanzos fritos al aire durante 15 minutos desarrollan una costra dorada y desmenuzable sin ser sumergidos en ríos de aceite de freír. Perfectos dentro de una pita.",
     "instructions": [
       "En un procesador de alimentos, combinar los garbanzos, la cebolla, el ajo, el perejil, el cilantro, el tahini y el comino. Procesar hasta obtener una mezcla granulada y homogénea, sin que llegue a ser un puré.",
       "Sazonar la mezcla con sal y pimienta al gusto y mezclar.",
@@ -6763,10 +6763,10 @@
   },
   {
     "slug": "patatas-griegas",
-    "title": "Patatas al Estilo Griego con Feta y Orégano",
+    "title": "Patatas Fritas a la Griega (Feta y Orégano en 25 Minutos)",
     "emoji": "🍟",
     "temp": 195,
-    "time": "25-28",
+    "time": "25",
     "prep_time": "15",
     "portions": "4",
     "isItalian": false,
@@ -6783,7 +6783,7 @@
       "Pimienta negra",
       "Limón, en gajos"
     ],
-    "description": "Una explosión mediterránea. Patatas doradas que se terminan con queso feta desmenuzado, orégano fragante y perejil fresco. Ideales para compartir.",
+    "description": "Patatas con sabor mediterráneo! Las patatas fritas frescas, sin almidón y cocinadas súper crujientes en 25 min, se aliñan en caliente con feta desmenuzado, orégano y un toque de limón para una guarnición increíble.",
     "instructions": [
       "Cortar las patatas en bastones de tamaño uniforme. Sumergirlas en un recipiente con agua fría durante 15 minutos para eliminar el exceso de almidón.",
       "Escurrir las patatas, enjuagarlas con agua corriente y secarlas completamente con papel de cocina.",
@@ -6806,16 +6806,16 @@
   },
   {
     "slug": "patatas-espiral-congeladas",
-    "title": "Espirales de Patata (Extra Crujientes)",
+    "title": "Patatas en Espiral (Rizos Extra Crujientes en 18 Min)",
     "emoji": "🍟",
     "temp": 200,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "4",
     "ingredients": [
       "700 g de patatas en espiral congeladas"
     ],
-    "description": "Diversión en el plato. Preparamos patatas en espiral para que queden súper doradas y crujientes sin necesidad de añadir ni una gota de aceite extra.",
+    "description": "¡Las patatas fritas más queridas por los niños, listas sin esfuerzo! El corte en espiral atrapa perfectamente el vórtice de aire caliente, creando rizos hiper crujientes en solo 18 minutos desde el congelador, sin aceite extra.",
     "instructions": [
       "Verter las patatas en espiral congeladas en la cesta.",
       "No añadir aceite. El producto es prefrito y liberará la grasa necesaria durante la cocción.",
@@ -6838,7 +6838,7 @@
   },
   {
     "slug": "samosas-de-verduras-crujientes",
-    "title": "Samosas de Verduras y Queso Feta",
+    "title": "Samosas de Verduras y Feta (Bocaditos Crujientes en 15 Min)",
     "emoji": "🥟",
     "temp": 170,
     "time": "15",
@@ -6854,7 +6854,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Triángulos de masa brick crujiente rellenos de una mezcla sabrosa de coliflor, guisantes y el toque salino del queso feta. Un bocado exótico y delicioso.",
+    "description": "Descubre el arte de la pasta brick en versión ligera. Estas clásicas empanadillas orientales rellenas de feta y coliflor se hinchan con el aire volviéndose súper hojaldradas en 15 minutos. Ideales para vaciar la nevera con estilo.",
     "instructions": [
       "Lavar los ramilletes de coliflor. Cocer al vapor o en una sartén la coliflor junto con los guisantes hasta que estén tiernos.",
       "Transferir las verduras cocidas a un bol. Machacar con un tenedor junto con el queso feta desmenuzado, sal y pimienta hasta obtener una mezcla gruesa.",
@@ -6878,7 +6878,7 @@
   },
   {
     "slug": "pastel-platano-mascarpone",
-    "title": "Banana Bread con Crema de Mascarpone",
+    "title": "Tarta de Plátano y Mascarpone (Suave y Húmeda en 35 Min)",
     "emoji": "🍰",
     "temp": 160,
     "time": "35",
@@ -6892,7 +6892,7 @@
       "150 g de mascarpone",
       "50 g de nueces troceadas"
     ],
-    "description": "El pastel de plátano definitivo. Masa densa y húmeda gracias a los plátanos maduros, coronada con una capa suave de mascarpone que eleva este postre a otro nivel.",
+    "description": "¡Una tarta densa, húmeda y facilísima! La freidora hornea esta masa rica en nueces y plátanos en 35 minutos, dando una textura suave y un dorado perfecto para cubrir con crema de mascarpone.",
     "instructions": [
       "Pelar los plátanos y machacar la pulpa con un tenedor hasta obtener un puré grueso.",
       "Incorporar el azúcar moreno y el aceite de girasol. Mezclar con una varilla manual hasta integrar.",
@@ -6916,17 +6916,17 @@
   },
   {
     "slug": "champiñones-empanados",
-    "title": "Champiñones Empanados Crujientes",
+    "title": "Champiñones Empanados Congelados (Aperitivo Dorado en 15 Min)",
     "emoji": "🍄",
     "temp": 190,
-    "time": "15-18",
-    "prep_time": "No presente",
+    "time": "15",
+    "prep_time": "",
     "portions": "4",
     "isItalian": false,
     "ingredients": [
       "300 g de champiñones empanados, congelados"
     ],
-    "description": "Aperitivo infalible. Champiñones con un empanado firme que mantiene toda la jugosidad del hongo en su interior. Listos en minutos para cualquier ocasión.",
+    "description": "Saca los champiñones empanados del congelador, échalos en la cesta y en 15 minutos tendrás un aperitivo caliente y crujiente. El aire caliente derrite el hielo sin ablandar el rebozado.",
     "instructions": [
       "Retirar los champiñones del congelador.",
       "Distribuir los champiñones en una sola capa en la cesta.",
@@ -6948,7 +6948,7 @@
   },
   {
     "slug": "sandwich-de-queso-fundido",
-    "title": "Sándwich de Queso Fundido (Grilled Cheese)",
+    "title": "Sándwich de Queso a la Parrilla (El Clásico Fundido en 8 Min)",
     "emoji": "🥪",
     "temp": 160,
     "time": "8",
@@ -6959,7 +6959,7 @@
       "60 g de queso Cheddar en lonchas",
       "45 g de mantequilla"
     ],
-    "description": "El confort convertido en sándwich. Dos rebanadas de pan perfectamente doradas y crujientes que encierran un corazón de queso fundido elástico y sabroso.",
+    "description": "¡Cero molestias de darle la vuelta a la tostada en la sartén! Unta mantequilla en el exterior del pan y la freidora lo tostará uniformemente por ambos lados, fundiendo el cheddar en el interior. El snack americano en 8 min.",
     "instructions": [
       "Precaliente a 160°C.",
       "Pincele con mantequilla una cara de cada rebanada de pan.",
@@ -6982,7 +6982,7 @@
   },
   {
     "slug": "gambas-estilo-cajun",
-    "title": "Gambas al Estilo Cajún (Picantes y Jugosas)",
+    "title": "Gambas Cajún (Especiadas y Jugosas en 5 Minutos)",
     "emoji": "🦐",
     "temp": 190,
     "time": "5",
@@ -6996,7 +6996,7 @@
       "1 g de ajo en polvo",
       "1 g de tomillo seco"
     ],
-    "description": "Explosión de sabor sureño. Gambas sazonadas con una mezcla de especias potentes y picantes, ideales como plato principal o para elevar tus tacos y bocadillos.",
+    "description": "¡Ricas en proteínas, picantes y rapidísimas! Estas gambas se cocinan en un tiempo récord de 5 minutos. Las especias Cajún crean una costra sabrosa, mientras que el interior de la gamba no se seca en absoluto.",
     "instructions": [
       "Enjuagar las gambas y secarlas completamente con papel absorbente.",
       "En un bol, mezclar las gambas con el aceite de oliva y las especias.",
@@ -7021,7 +7021,7 @@
   },
   {
     "slug": "maiz-tostado-mantequilla",
-    "title": "Mazorca de Maíz Asada con Mantequilla",
+    "title": "Mazorca de Maíz con Mantequilla (Tostado Dulce y Salado en 10 Min)",
     "emoji": "🌽",
     "temp": 200,
     "time": "10",
@@ -7032,7 +7032,7 @@
       "15 g de mantequilla",
       "Sal"
     ],
-    "description": "El acompañamiento estrella de cualquier barbacoa. Maíz dulce asado hasta que los granos se caramelizan, potenciando su sabor natural con un toque de mantequilla.",
+    "description": "¿Alguna vez has visto una mazorca asarse tan rápido? Córtala por la mitad, úntala con mantequilla y en solo 10 minutos a 200°C los granos se volverán regordetes, dulces y con las características marcas oscuras del tostado.",
     "isItalian": false,
     "instructions": [
       "Retirar las hojas y los filamentos de la mazorca. Cortar la mazorca por la mitad.",
@@ -7054,7 +7054,7 @@
   },
   {
     "slug": "mini-pizzas-pepperoni",
-    "title": "Mini Pizzas de Pepperoni Express",
+    "title": "Mini Pizza Pepperoni (Crujido de Pizzería en 10 Min)",
     "emoji": "🍕",
     "temp": 160,
     "time": "10",
@@ -7068,7 +7068,7 @@
       "170 g de queso mozzarella rallado",
       "50 g de queso Parmesano rallado"
     ],
-    "description": "Cenas divertidas en tiempo récord. Pequeñas pizzas de base crujiente con abundante queso fundido y rodajas de pepperoni que aportan un toque ahumado y picante.",
+    "description": "¡Basta de bordes blandos! El truco para una espectacular mini pizza americana es prehornear al aire la base durante 5 min. Luego agrega salsa, queso y pepperoni, hornea otros 5 min y tendrás una base tipo galleta.",
     "instructions": [
       "Pincelar las bases de pizza con aceite de oliva. Precalentar a 160°C.",
       "Introducir las bases y cocinar durante 5 minutos para la precocción.",
@@ -7092,7 +7092,7 @@
   },
   {
     "slug": "pan-de-ajo-parmesano",
-    "title": "Pan de Ajo Crujiente con Parmesano",
+    "title": "Pan de Ajo (Pan Dorado con Parmesano en 8 Minutos)",
     "emoji": "🥖",
     "temp": 160,
     "time": "8",
@@ -7106,7 +7106,7 @@
       "1 cucharada de queso parmesano, rallado",
       "Perejil fresco picado, al gusto"
     ],
-    "description": "El acompañamiento definitivo. Pan tostado con una costra dorada de ajo y queso parmesano, manteniendo un interior tierno. Ideal para dipear en sopas y cremas.",
+    "description": "¿Tienes un trozo de baguette algo duro? Córtalo, rellénalo de mantequilla, ajo y parmesano y cocínalo a 160°C. En 8 minutos la grasa se filtrará en el pan tostándolo. La guarnición definitiva para mojar.",
     "instructions": [
       "Cortar la baguette longitudinalmente y luego en trozos de tamaño uniforme.",
       "En un cuenco, mezclar la mantequilla, el aceite de oliva, el queso parmesano y el ajo picado hasta obtener una pasta homogénea.",
@@ -7129,10 +7129,10 @@
   },
   {
     "slug": "mazorcas-de-maiz",
-    "title": "Mazorcas de Maíz al Punto de Sal",
+    "title": "Mazorcas Asadas (El Sabor de la Barbacoa en 12 Minutos)",
     "emoji": "🌽",
     "temp": 200,
-    "time": "12-15",
+    "time": "12",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -7140,7 +7140,7 @@
       "Aceite de oliva virgen extra: 1 cucharada",
       "Sal gruesa: al gusto"
     ],
-    "description": "Simple y delicioso. Mazorcas de maíz cocinadas para resaltar su dulzor natural, con una superficie ligeramente tostada y granos que estallan de frescura.",
+    "description": "¡Obtén el auténtico sabor del maíz asado a la brasa sin encender la barbacoa! En solo 12 minutos a 200°C, la freidora de aire carameliza los granos haciéndolos muy dulces y crujientes por fuera.",
     "instructions": [
       "Retirar las hojas y los filamentos de las mazorcas. Lavar y secar completamente.",
       "Pincelar cada mazorca con aceite de oliva virgen extra. Sazonar con sal gruesa al gusto.",
@@ -7161,7 +7161,7 @@
   },
   {
     "slug": "coronitas-hojaldre-mexicana",
-    "title": "Coronas de Hojaldre Estilo Mexicano",
+    "title": "Mini Pizzas Mexicanas (Frijoles, Maíz y Queso en 10 Min)",
     "emoji": "🍕",
     "temp": 160,
     "time": "10",
@@ -7174,7 +7174,7 @@
       "170 g de queso rallado para fundir",
       "40 g de maíz dulce en grano, 60 g de frijoles negros cocidos y 15 g de guisantes tiernos"
     ],
-    "description": "Un bocado crujiente y colorido. Discos de hojaldre cubiertos con salsa mexicana, frijoles negros, maíz y queso fundido. Perfecto para compartir.",
+    "description": "¡Lleva un toque Tex-Mex a la mesa con estas mini pizzas crujientes! La combinación de frijoles negros, maíz y queso fundido crea un tentempié abundante y original que se cocina a la perfección en solo 10 minutos.",
     "instructions": [
       "Precalentar a 160 °C.",
       "Pincelar los discos de masa con aceite de oliva e introducirlos para la cocción.",
@@ -7198,7 +7198,7 @@
   },
   {
     "slug": "hamburguesas-garbanzos-espinacas",
-    "title": "Hamburguesas de Garbanzos y Espinacas",
+    "title": "Hamburguesa Vegana de Garbanzos y Espinacas (Dorada en 14 Min)",
     "emoji": "🍔",
     "temp": 180,
     "time": "14",
@@ -7216,7 +7216,7 @@
       "Pimienta negra molida",
       "Aceite en aerosol"
     ],
-    "description": "Nutritivas y llenas de sabor. Hamburguesas vegetales con una costra exterior crujiente y un interior jugoso, perfectas para servir al plato o en panecillos.",
+    "description": "¡Basta de hamburguesas vegetales gomosas! Esta versión casera con garbanzos y espinacas se mantiene tierna por dentro pero desarrolla una costra deliciosa gracias a la cocción ventilada. Sano y proteico.",
     "instructions": [
       "Introducir en un procesador de alimentos los garbanzos, las espinacas, las especias, la sal, la pimienta y el huevo.",
       "Procesar a intervalos hasta obtener una mezcla de textura gruesa y moldeable.",
@@ -7238,7 +7238,7 @@
   },
   {
     "slug": "barquitas-calabacin-ricotta",
-    "title": "Calabacines Rellenos de Crema de Ricotta",
+    "title": "Calabacines Rellenos de Ricota (Gratinado Perfecto en 16 Min)",
     "emoji": "🥒",
     "temp": 175,
     "time": "16",
@@ -7254,7 +7254,7 @@
       "Pimienta negra recién molida",
       "Aceite de oliva virgen extra"
     ],
-    "description": "Ligereza y sabor en cada bocado. Barquitas de calabacín rellenas de suave ricotta y queso, gratinadas hasta lograr una superficie dorada y tentadora.",
+    "description": "¿Buscas un plato vegetariano refinado pero sencillo? Estas barquitas de calabacín con crema de ricota y menta son frescas y ligeras, con un gratinado perfecto logrado en solo 16 minutos al aire.",
     "instructions": [
       "Lavar los calabacines, cortar por la mitad longitudinalmente y vaciar la pulpa central con un sacabocados.",
       "Picar la pulpa extraída y mezclar en un recipiente con la ricotta, el queso Parmigiano Reggiano, el huevo, la menta, la sal y la pimienta.",
@@ -7280,7 +7280,7 @@
   },
   {
     "slug": "pimientos-gratinados-alcaparras",
-    "title": "Tiras de Pimiento Gratinadas con Alcaparras",
+    "title": "Pimientos Gratinados con Alcaparras (Sabrosos en 14 Minutos)",
     "emoji": "🫑",
     "temp": 185,
     "time": "14",
@@ -7297,7 +7297,7 @@
       "Sal",
       "Pimienta negra molida"
     ],
-    "description": "Un toque mediterráneo. Pimientos asados cubiertos con un crujiente de pan rallado, ajo y alcaparras que aporta una explosión de sabor salino y aromático.",
+    "description": "Tiras de pimiento dulces y carnosas que se vuelven irresistibles gracias a un fragante rebozado de ajo y alcaparras. Una guarnición rápida que desata los aromas mediterráneos en menos de 15 minutos.",
     "instructions": [
       "Lave los pimientos, retire el tallo, las semillas y los filamentos internos. Córtelos en tiras anchas.",
       "En un recipiente, prepare el relleno mezclando el pan rallado con las alcaparras, el ajo, el perejil, sal, pimienta y la mitad del aceite.",
@@ -7319,7 +7319,7 @@
   },
   {
     "slug": "esparragos-gratinados-parmesano",
-    "title": "Espárragos Verdes al Parmesano y Almendras",
+    "title": "Espárragos al Parmesano (Crujido Irresistible en 8 Minutos)",
     "emoji": "🥗",
     "temp": 190,
     "time": "8",
@@ -7333,7 +7333,7 @@
       "Sal",
       "Pimienta negra"
     ],
-    "description": "Elegancia en el plato. Espárragos tiernos con una cobertura gratinada de queso y láminas de almendra que añaden un contraste crujiente inigualable.",
+    "description": "¡Eleva tus espárragos con esta versión gourmet! La mezcla de Parmesano y almendras laminadas crea una capa crujiente que contrasta maravillosamente con la ternura de los espárragos cocinados al aire.",
     "instructions": [
       "Lavar los espárragos y retirar la parte final y leñosa del tallo.",
       "Colocar los espárragos en un recipiente, verter el aceite de oliva y mezclar hasta que estén cubiertos uniformemente.",
@@ -7356,7 +7356,7 @@
   },
   {
     "slug": "gajos-hinojo-limon",
-    "title": "Gajos de Hinojo Asados al Limón",
+    "title": "Hinojo Asado al Limón (Delicado y Ligero en 15 Minutos)",
     "emoji": "🥗",
     "temp": 180,
     "time": "15",
@@ -7370,7 +7370,7 @@
       "Sal gruesa, al gusto",
       "Pimienta negra molida, al gusto"
     ],
-    "description": "Descubre el hinojo de una forma nueva. Al asarlo, su sabor anisado se suaviza y se vuelve dulce, complementado perfectamente con el frescor del limón.",
+    "description": "Si crees que el hinojo es aburrido, ¡tienes que probarlo asado! El aire caliente lo hace tierno y caramelizado, mientras que el limón y las semillas realzan su frescura natural. Guarnición perfecta baja en calorías.",
     "instructions": [
       "Limpie los hinojos, retirando los tallos y las capas exteriores más duras.",
       "Corte cada hinojo por la mitad y luego en 6-8 gajos, conservando parte de la base para mantener la estructura.",
@@ -7394,7 +7394,7 @@
   },
   {
     "slug": "cebollas-rojas-agridulces",
-    "title": "Cebollas Rojas Glaseadas (Agridulces)",
+    "title": "Cebollas Rojas Caramelizadas (El Agridulce Perfecto en 16 Min)",
     "emoji": "🧅",
     "temp": 170,
     "time": "16",
@@ -7407,7 +7407,7 @@
       "10 g de azúcar moreno",
       "Sal y pimienta negra molida"
     ],
-    "description": "El condimento perfecto. Cebollas caramelizadas con un brillo espectacular, ideales para elevar tus tablas de quesos o acompañar carnes asadas.",
+    "description": "Transforma unas simples cebollas rojas en una guarnición gourmet o en el topping perfecto para hamburguesas. La freidora carameliza los azúcares y el vinagre balsámico creando un glaseado denso e irresistible.",
     "instructions": [
       "Pele las cebollas rojas y córtelas en gajos o aros gruesos.",
       "Disponga los gajos de cebolla en un recipiente y añada el aceite de oliva, el vinagre balsámico, el azúcar moreno, la sal y la pimienta.",
@@ -7431,7 +7431,7 @@
   },
   {
     "slug": "coles-de-bruselas-glaseadas-al-balsamico",
-    "title": "Coles de Bruselas al Glaseado Balsámico",
+    "title": "Coles de Bruselas al Balsámico (Crujientes y Agridulces en 12 Min)",
     "emoji": "🥬",
     "temp": 190,
     "time": "12",
@@ -7445,7 +7445,7 @@
       "Sal",
       "Pimienta negra recién molida"
     ],
-    "description": "El equilibrio perfecto entre dulce y ácido. Coles de Bruselas con hojas exteriores tostadas y un corazón tierno, bañadas en una reducción de balsámico.",
+    "description": "¡Basta de coles de Bruselas hervidas y desagradables! En solo 12 minutos, el aire caliente las deja crujientes por fuera y tiernas por dentro, mientras que el glaseado balsámico con miel añade un toque agridulce irresistible.",
     "instructions": [
       "En un bol, aderezar las coles de Bruselas con aceite de oliva, sal y pimienta.",
       "Disponer las coles de Bruselas en una sola capa en la cesta del aparato de cocción.",
@@ -7468,7 +7468,7 @@
   },
   {
     "slug": "tomates-cherry-confit-oregano",
-    "title": "Tomates Cherry Confitados al Orégano",
+    "title": "Tomates Cherry Confitados (Caramelos de Sabor en Freidora de Aire)",
     "emoji": "🍅",
     "temp": 140,
     "time": "40",
@@ -7481,7 +7481,7 @@
       "10 g de orégano seco",
       "Sal, pimienta negra y 1 diente de ajo machacado"
     ],
-    "description": "Caramelos de la naturaleza. Tomates cherry cocinados lentamente para concentrar todo su dulzor. Ideales para bruschettas, pastas o como guarnición gourmet.",
+    "description": "Consigue tomates cherry súper dulces y concentrados en la mitad de tiempo que en el horno. La cocción suave a 140°C por 40 minutos los convierte en verdaderos 'caramelos' de sabor, perfectos para bruschettas gourmet.",
     "instructions": [
       "Cortar los tomates por la mitad. Colocarlos en un recipiente junto con el diente de ajo machacado.",
       "Añadir el aceite de oliva, el azúcar, el orégano, la sal y la pimienta. Mezclar con cuidado.",
@@ -7506,7 +7506,7 @@
   },
   {
     "slug": "frittata-verduras-mixtas",
-    "title": "Frittata de Verduras (Esponjosa y Ligera)",
+    "title": "Frittata Esponjosa de Verduras (Ligera y Sin Estrés en 15 Min)",
     "emoji": "🍳",
     "temp": 160,
     "time": "15",
@@ -7521,7 +7521,7 @@
       "Sal",
       "Pimienta"
     ],
-    "description": "Una receta alta y dorada con muy poca grasa. Esta frittata combina la esponjosidad del huevo con una selección de verduras frescas de temporada.",
+    "description": "¡Adiós sartenes grasientas y humo en la cocina! Descubre cómo preparar una frittata alta, esponjosa y perfectamente dorada gracias a la cocción ventilada en 15 minutos. La solución ideal para una cena rápida y proteica.",
     "instructions": [
       "Batir los huevos en un recipiente junto con la leche, el queso parmesano, la sal y la pimienta hasta obtener una mezcla espumosa.",
       "Incorporar las verduras cocidas y escurridas, y mezclar.",
@@ -7546,7 +7546,7 @@
   },
   {
     "slug": "brochetas-halloumi-verduras",
-    "title": "Brochetas de Halloumi Crujiente",
+    "title": "Brochetas de Halloumi (El Queso que no se Derrite)",
     "emoji": "🍢",
     "temp": 190,
     "time": "12",
@@ -7562,7 +7562,7 @@
       "Orégano seco",
       "Pimienta negra molida"
     ],
-    "description": "Descubre el queso que no se funde. El Halloumi crea una deliciosa costra dorada al calor, alternado con verduras frescas en brochetas equilibradas y sabrosas.",
+    "description": "¿Alguna vez has probado el queso a la parrilla que 'cruje'? El Halloumi en la freidora de aire se vuelve dorado y crujiente por fuera sin derretirse, creando una brocheta vegetariana sabrosísima en solo 12 minutos.",
     "instructions": [
       "Mezclar en un recipiente los cubos de queso, el calabacín, los tomates cherry y la cebolla.",
       "Sazonar con aceite de oliva, orégano y pimienta negra. No añadir sal, ya que el queso es salado.",
@@ -7587,7 +7587,7 @@
   },
   {
     "slug": "pastel-patatas-fundente",
-    "title": "Pastel de Patatas con Provola Ahumada",
+    "title": "Pastel de Patata y Provola (Corazón Ahumado y Fundido)",
     "emoji": "🥧",
     "temp": 170,
     "time": "25",
@@ -7605,7 +7605,7 @@
       "Sal, al gusto",
       "Nuez moscada, al gusto"
     ],
-    "description": "Puro placer fundente. Un pastel de patatas con una costra dorada que esconde un interior cremoso de queso provola ahumada derretido.",
+    "description": "El plato reconfortante por excelencia: un suave pastel de patata con una costra de pan rallado y un corazón de provola ahumada que se estira al primer corte. La freidora de aire asegura un gratinado perfecto en 25 minutos.",
     "instructions": [
       "Mezclar el puré de patatas tibio con el huevo, la mantequilla derretida, el queso Parmesano, la sal y la nuez moscada.",
       "Añadir el queso provola en dados y mezclar hasta integrar de manera uniforme.",
@@ -7628,7 +7628,7 @@
   },
   {
     "slug": "edamame-especiados-crujientes",
-    "title": "Edamame Especiado y Crujiente",
+    "title": "Edamame Tostado (Snack Proteico de Sésamo en 10 Min)",
     "emoji": "🫛",
     "temp": 190,
     "time": "10",
@@ -7641,7 +7641,7 @@
       "2 g de ajo en polvo",
       "1 pizca de chile en escamas"
     ],
-    "description": "El snack saludable definitivo. Vainas de edamame tostadas con un toque de especias, perfectas para un picoteo proteico y lleno de sabor.",
+    "description": "¡Olvida el edamame hervido y soso! Al tostarlo al aire con aceite de sésamo y chile obtendrás un snack proteico y crujiente listo en 10 minutos. El aperitivo saludable que crea adicción.",
     "instructions": [
       "Colocar las vainas de edamame congeladas en la cesta. Cocinar a 190°C durante 4 minutos.",
       "Retirar las vainas de la cesta y transferirlas a un bol.",
@@ -7666,7 +7666,7 @@
   },
   {
     "slug": "garbanzos-tostados-paprika",
-    "title": "Garbanzos Tostados al Pimentón (Crunchy Snack)",
+    "title": "Garbanzos Crujientes al Pimentón (El Snack Adictivo)",
     "emoji": "🥣",
     "temp": 200,
     "time": "15",
@@ -7679,7 +7679,7 @@
       "2 g de comino molido",
       "Sal fina al gusto"
     ],
-    "description": "Adiós a los snacks procesados. Garbanzos horneados hasta quedar ultra crujientes, sazonados con pimentón. Deliciosos solos o para dar un toque 'crunchy' a tus cremas.",
+    "description": "¡Sustituye las patatas fritas por estas 'perlas' de sabor! Garbanzos asados al aire con pimentón ahumado: se vuelven súper crujientes por fuera y suaves por dentro en apenas 15 minutos. El snack fit definitivo.",
     "instructions": [
       "Escurrir los garbanzos de su líquido de conservación y enjuagarlos con agua corriente.",
       "Secar los garbanzos con un paño de cocina limpio, frotando para retirar el exceso de humedad y las pieles sueltas.",
@@ -7704,7 +7704,7 @@
   },
   {
     "slug": "chips-calabacin-parmesano",
-    "title": "Chips de Calabacín al Parmesano Crujiente",
+    "title": "Chips de Calabacín y Parmesano (Crujientes en 18 Minutos)",
     "emoji": "🥒",
     "temp": 160,
     "time": "18",
@@ -7717,7 +7717,7 @@
       "Sal",
       "Pimienta blanca"
     ],
-    "description": "Finas láminas de calabacín deshidratadas al punto justo y cubiertas con una costra de queso Parmesano. La alternativa ligera y gourmet para disfrutar de las hortalizas con un toque crujiente.",
+    "description": "¿Antojo de chips pero estás a dieta? Estas rodajas de calabacín al Parmesano son la solución perfecta. El aire caliente las deshidrata haciéndolas finas y crujientes en 18 minutos. Un delicioso snack cetogénico.",
     "instructions": [
       "Cortar el calabacín en láminas de 2 mm de grosor con una mandolina.",
       "Secar las láminas con papel absorbente para eliminar el exceso de agua.",

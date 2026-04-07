@@ -1,10 +1,10 @@
 [
   {
     "slug": "anelli-calamari-fritti",
-    "title": "Anelli di Calamari Fritti in Friggitrice ad Aria (Croccanti e Veloci)",
+    "title": "Anelli di Calamari Fritti (Croccanti Senza Olio Profondo)",
     "emoji": "🦑",
     "temp": 200,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "10",
     "portions": "2",
     "nutrition": {
@@ -23,7 +23,7 @@
       "Sale fino q.b.",
       "Spicchi di limone per servizio"
     ],
-    "description": "Voglia di fritto senza sensi di colpa? Scopri come preparare anelli di calamari croccanti fuori e tenerissimi dentro usando la tua friggitrice ad aria. Solo un filo d'olio!",
+    "description": "Anelli di calamari dorati e croccanti in soli 8 minuti! Scopri il segreto della semola per una panatura perfetta e tenerissima all'interno, usando una frazione dell'olio rispetto alla frittura tradizionale.",
     "instructions": [
       "Asciugare accuratamente gli anelli di calamaro con carta assorbente.",
       "Inserire gli anelli di calamaro e la semola in un sacchetto per alimenti. Chiudere e agitare energicamente per ottenere una panatura uniforme.",
@@ -47,10 +47,10 @@
   },
   {
     "slug": "cotoletta-fettina-panata",
-    "title": "Cotoletta in Friggitrice ad Aria: Segreto per una Panatura Croccante",
+    "title": "Cotoletta Perfetta in Friggitrice ad Aria (Crosta Infallibile)",
     "emoji": "🥩",
     "temp": 190,
-    "time": "12-15",
+    "time": "12",
     "prep_time": "15",
     "portions": "2",
     "nutrition": {
@@ -70,7 +70,7 @@
       "Pepe nero macinato: q.b.",
       "Olio extravergine d'oliva spray: q.b."
     ],
-    "description": "La cotoletta perfetta esiste ed è senza frittura! Ottieni una doratura uniforme e una croccantezza irresistibile in pochi minuti con la nostra ricetta per friggitrice ad aria.",
+    "description": "Cotoletta panata croccante e dorata senza frittura. Scopri il trucco per una panatura che non si stacca e una carne succosa in soli 12 minuti. La cena salva-tempo amata dai bambini!",
     "instructions": [
       "Se necessario, assottigliare le fette di carne con un batticarne.",
       "In una ciotola, sbattere l'uovo con sale e pepe. Passare le fette di carne prima nell'uovo e successivamente nel pangrattato, comprimendo per assicurare una copertura omogenea.",
@@ -94,10 +94,10 @@
   },
   {
     "slug": "polpettone-ripieno-aria",
-    "title": "Polpettone Ripieno in Friggitrice ad Aria (Cuore Filante e Crosticina)",
+    "title": "Polpettone Ripieno (Cuore Filante in Friggitrice ad Aria)",
     "emoji": "🍖",
     "temp": 180,
-    "time": "35-40",
+    "time": "35",
     "prep_time": "20",
     "portions": "4",
     "nutrition": {
@@ -121,7 +121,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Un polpettone succoso con cuore di prosciutto e formaggio fuso, pronto nella metà del tempo! La friggitrice ad aria lo rende dorato fuori e morbidissimo al cuore.",
+    "description": "Polpettone ripieno con cuore di formaggio filante e crosticina perfetta in 35 minuti. Niente forno acceso per un'ora: la ricetta infallibile per un secondo di carne umido e succoso al taglio.",
     "instructions": [
       "In una ciotola, amalgamare la carne macinata con l'uovo, il Parmigiano Reggiano, il pangrattato, sale e pepe fino a ottenere un impasto omogeneo e compatto.",
       "Trasferire l'impasto su un foglio di carta da forno e stenderlo fino a formare un rettangolo con spessore di circa 1 cm.",
@@ -145,10 +145,10 @@
   },
   {
     "slug": "salsiccia-patate-cubetti",
-    "title": "Salsiccia e Patate in Friggitrice ad Aria (Piatto Unico Veloce)",
+    "title": "Salsiccia e Patate a Cubetti (Piatto Unico Rapido)",
     "emoji": "🥘",
     "temp": 195,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "10",
     "portions": "3",
     "nutrition": {
@@ -169,7 +169,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Salsiccia e patate a cubetti croccanti in soli 15 minuti! Scopri come la friggitrice ad aria rende tutto saporito e leggero, ideale per una cena veloce e proteica.",
+    "description": "Salsiccia e patate: il piatto unico salva-cena pronto in soli 20 minuti. Patate dorate croccantissime e salsiccia succosa sgrassata alla perfezione grazie al flusso d'aria calda.",
     "instructions": [
       "Pelare le patate, tagliarle a cubetti di circa 2-3 cm e immergerle in acqua fredda per 10 minuti. Scolare e asciugare con cura.",
       "Tagliare la salsiccia in pezzi di circa 4-5 cm.",
@@ -194,10 +194,10 @@
   },
   {
     "slug": "arrosticini-abruzzesi",
-    "title": "Arrosticini Abruzzesi in Friggitrice ad Aria (Come sulla Brace!)",
+    "title": "Arrosticini Abruzzesi (Effetto Brace in Friggitrice ad Aria)",
     "emoji": "🍢",
     "temp": 200,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "2",
     "portions": "2",
     "nutrition": {
@@ -213,7 +213,7 @@
       "Arrosticini di pecora: 15-20 (circa 400g totali)",
       "Sale fino q.b."
     ],
-    "description": "Ami gli arrosticini? Cuocili in friggitrice ad aria per un risultato succulento, sgrassato e pronto in un lampo. Il gusto autentico dell'Abruzzo direttamente a casa tua.",
+    "description": "Arrosticini abruzzesi succulenti e cotti a puntino in soli 8 minuti! Scopri come ottenere un fantastico effetto brace direttamente in casa tua, senza fumo e sgrassando la carne.",
     "instructions": [
       "Se necessario, accorciare gli stecchi di legno per adattarli alle dimensioni del cestello.",
       "Disporre gli arrosticini nel cestello su un massimo di due strati incrociati per garantire una cottura uniforme.",
@@ -239,7 +239,7 @@
   },
   {
     "slug": "carciofi-alla-giudia-aria",
-    "title": "Carciofi alla Giudia in Friggitrice ad Aria (Super Croccanti)",
+    "title": "Carciofi alla Giudia (Extra Croccanti Senza Fritto)",
     "emoji": "🥬",
     "temp": 180,
     "time": "15",
@@ -260,7 +260,7 @@
       "Sale fino",
       "Pepe nero"
     ],
-    "description": "Foglie dorate che scrocchiano e cuore tenero: ecco i carciofi alla giudia in versione light! Risultato professionale con la tua friggitrice ad aria senza odore di fritto.",
+    "description": "Carciofi alla Giudia super croccanti senza immersione nell'olio bollente. Foglie che scrocchiano e cuore tenero pronti in 15 minuti: il contorno sfizioso romano senza odore di fritto in casa.",
     "instructions": [
       "Pulire i carciofi eliminando le foglie esterne più dure e la parte terminale legnosa del gambo.",
       "Battere i carciofi capovolti su una superficie piana per favorire l'apertura delle foglie.",
@@ -286,10 +286,10 @@
   },
   {
     "slug": "verdure-ripiene-riso-carne",
-    "title": "Verdure Ripiene in Friggitrice ad Aria: Ricetta Semplice e Golosa",
+    "title": "Verdure Ripiene Gratinate (Riso e Carne in 20 Minuti)",
     "emoji": "🍅",
     "temp": 180,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "20",
     "portions": "4",
     "nutrition": {
@@ -311,7 +311,7 @@
       "Sale q.b.",
       "Basilico fresco q.b."
     ],
-    "description": "Peperoni e pomodori ripieni di riso o carne, cotti alla perfezione nella friggitrice ad aria. Sapori concentrati e gratinatura super in pochissimo tempo!",
+    "description": "Verdure ripiene gratinate in soli 20 minuti! Pomodori e peperoni con un ripieno profumato e una crosticina d'autore. Il piatto unico facilissimo che svuota il frigo con eleganza.",
     "instructions": [
       "Tagliare la calotta superiore dei pomodori e dei peperoni. Svuotare i peperoni dai semi e filamenti. Svuotare i pomodori, conservando e frullando la polpa interna.",
       "In una ciotola, condire il riso crudo con la polpa di pomodoro frullata, olio, sale, Parmigiano Reggiano e basilico tritato.",
@@ -337,7 +337,7 @@
   },
   {
     "slug": "patate-forno-cubetti-rosmarino",
-    "title": "Patate a Cubetti Croccanti in Friggitrice ad Aria (Senza Olio)",
+    "title": "Patate a Cubetti al Rosmarino (Dorate Senza Pre-Bollitura)",
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
@@ -359,7 +359,7 @@
       "2 spicchi d'aglio in camicia",
       "Sale grosso marino"
     ],
-    "description": "Le patate più buone di sempre! Cubetti dorati e profumati al rosmarino, croccanti come al forno ma pronti nella metà del tempo grazie alla friggitrice ad aria.",
+    "description": "Patate a cubetti dorate e croccantissime fuori, tenere dentro in 20 minuti. Scopri il trucco infallibile (senza pre-bollitura) per contorni perfetti col minimo sforzo e zero grassi pesanti.",
     "instructions": [
       "Pelare le patate, tagliarle a cubetti di 2-3 cm e sciacquarle per rimuovere l'amido in eccesso. Asciugare accuratamente.",
       "In una ciotola, condire le patate con olio, gli spicchi d'aglio schiacciati e gli aghi di rosmarino.",
@@ -385,10 +385,10 @@
   },
   {
     "slug": "torta-salata-ricotta-spinaci",
-    "title": "Torta Salata Ricotta e Spinaci (Sfoglia Croccante in Friggitrice ad Aria)",
+    "title": "Torta Salata Ricotta e Spinaci (Sfoglia Iper-Croccante)",
     "emoji": "🥧",
     "temp": 170,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "15",
     "portions": "4",
     "nutrition": {
@@ -409,7 +409,7 @@
       "Noce moscata, q.b.",
       "Sale, q.b."
     ],
-    "description": "Basta forno preriscaldato! Prepara una torta salata con sfoglia fragrante e ripieno cremoso in pochi minuti. La friggitrice ad aria garantisce una base perfetta.",
+    "description": "Torta salata ricotta e spinaci con sfoglia iper-croccante in soli 20 minuti. Evita la base cruda: scopri la tecnica ad aria per rustici ben cotti e dorati senza accendere il forno.",
     "instructions": [
       "Tritare finemente gli spinaci cotti e strizzati. In una ciotola, unire gli spinaci, la ricotta, l'uovo, il Parmigiano Reggiano, sale e noce moscata. Amalgamare fino ad ottenere un composto omogeneo.",
       "Srotolare la pasta sfoglia e disporla, con la sua carta da forno, in una teglia rotonda di diametro compatibile con il cestello.",
@@ -436,10 +436,10 @@
   },
   {
     "slug": "caldarroste-friggitrice-aria",
-    "title": "Caldarroste in Friggitrice ad Aria (Facili da Sbucciare e Morbide)",
+    "title": "Caldarroste Perfette (Facili da Sbucciare in 15 Minuti)",
     "emoji": "🌰",
     "temp": 200,
-    "time": "15-20",
+    "time": "15",
     "prep_time": "15",
     "portions": "4",
     "nutrition": {
@@ -456,7 +456,7 @@
       "Acqua q.b. per ammollo",
       "Sale grosso q.b."
     ],
-    "description": "Castagne arrostite perfette in meno di 20 minuti! Scopri il trucco per farle venire morbide dentro e far staccare la buccia in un secondo con l'Friggitrice ad Aria.",
+    "description": "Caldarroste perfette in 15 minuti senza fumo in casa! Scopri il trucco infallibile (dell'ammollo) per ottenere castagne morbide dentro e con la buccia che si stacca in un secondo.",
     "instructions": [
       "Incidere la buccia di ogni castagna con un taglio orizzontale.",
       "Immergere le castagne in acqua tiepida per un minimo di 15 minuti per ammorbidire la buccia.",
@@ -481,10 +481,10 @@
   },
   {
     "slug": "arancini-suppli-aria",
-    "title": "Arancini e Supplì in Friggitrice ad Aria (Cuore Filante, No Fritto)",
+    "title": "Arancini e Supplì (Cuore Filante Senza Odore di Fritto)",
     "emoji": "🍘",
     "temp": 200,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "20",
     "portions": "4",
     "nutrition": {
@@ -500,7 +500,7 @@
       "4 arancini o supplì di riso, crudi e impanati (circa 150g l'uno)",
       "Olio di semi spray"
     ],
-    "description": "Tutto il piacere dello street food romano e siciliano ma senza grassi! Supplì e arancini con crosticina dorata e cuore di mozzarella filante in friggitrice ad aria.",
+    "description": "Il re dello street food diventa leggero! Arancini e supplì dorati con una panatura extra-croccante e un cuore di mozzarella filante. Cotti ad aria in 15 minuti senza odore di fritto.",
     "instructions": [
       "Utilizzare arancini o supplì freddi da frigorifero per mantenere la forma in cottura.",
       "Vaporizzare uniformemente la superficie impanata con olio spray per garantire una doratura omogenea.",
@@ -526,10 +526,10 @@
   },
   {
     "slug": "crocchette-patate-panzarotti",
-    "title": "Crocchette di Patate in Friggitrice ad Aria: Croccantissime!",
+    "title": "Crocchette di Patate (Panzarotti Dorati e Non Spappolati)",
     "emoji": "🥔",
     "temp": 200,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "30",
     "portions": "4",
     "nutrition": {
@@ -553,7 +553,7 @@
       "Pepe nero q.b.",
       "Prezzemolo tritato q.b."
     ],
-    "description": "Basta friggere in litri d'olio! Prepara crocchette di patate e panzarotti dorati e leggeri con la tua friggitrice ad aria. Il cuore di mozzarella filerà come non mai.",
+    "description": "Crocchette di patate (panzarotti) leggere e dorate al punto giusto. Evita lo spappolamento in cottura: scopri come ottenere un guscio resistente e un cuore di mozzarella filante in 12 min.",
     "instructions": [
       "In una ciotola, unire la purea di patate fredda, l'uovo, il Parmigiano Reggiano, sale, pepe e prezzemolo tritato. Amalgamare fino ad ottenere un composto omogeneo.",
       "Prelevare una porzione di impasto e formare dei cilindri. Inserire al centro di ogni cilindro un listello di mozzarella.",
@@ -581,11 +581,11 @@
   },
   {
     "slug": "focaccia-schiacciatina-veloce",
-    "title": "Focaccia Veloce in Friggitrice ad Aria (Bassa, Salata e Croccante)",
+    "title": "Focaccia Schiacciatina (Bassa, Salata e Croccante in 12 Minuti)",
     "emoji": "🥖",
     "temp": 190,
-    "time": "12-15",
-    "prep_time": "5(se usi impasto pronto)",
+    "time": "12",
+    "prep_time": "5",
     "portions": "2",
     "nutrition": {
       "kcal": 460,
@@ -603,7 +603,7 @@
       "Sale grosso q.b.",
       "Rosmarino fresco q.b."
     ],
-    "description": "Una schiacciatina all'olio e rosmarino pronta in un attimo. La friggitrice ad aria la rende incredibilmente croccante fuori, ideale per accompagnare i tuoi pasti.",
+    "description": "Focaccia croccante (schiacciatina) in 12 minuti! Scopri il trucco della salamoia per cuocere un impasto pronto rendendolo basso, dorato e fragrante senza accendere il forno tradizionale.",
     "instructions": [
       "Ritagliare un disco di carta da forno del diametro del cestello e ungerlo con olio.",
       "Stendere l'impasto sul disco di carta da forno, premendo con i polpastrelli per creare delle depressioni sulla superficie.",
@@ -629,10 +629,10 @@
   },
   {
     "slug": "cornetti-sfoglia-ripieni",
-    "title": "Cornetti di Pasta Sfoglia in Friggitrice ad Aria (Colazione in 5 Minuti)",
+    "title": "Cornetti Ripieni di Sfoglia (Colazione Calda in 10 Minuti)",
     "emoji": "🥐",
     "temp": 170,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "10",
     "portions": "4",
     "nutrition": {
@@ -650,7 +650,7 @@
       "Tuorlo d'uovo o latte per doratura",
       "Zucchero a velo per guarnizione"
     ],
-    "description": "Svegliati col profumo di cornetti caldi! Croissant di sfoglia farciti, dorati e fragranti in pochissimi minuti grazie alla potenza della friggitrice ad aria.",
+    "description": "Colazione da bar a casa tua in 10 minuti. Cornetti caldi di pasta sfoglia, farciti e dorati in friggitrice ad aria. Velocissimi da preparare per iniziare la giornata con il sorriso.",
     "instructions": [
       "Stendere la pasta sfoglia e dividerla in 8 triangoli uguali.",
       "Disporre un cucchiaino di farcitura sulla base di ogni triangolo.",
@@ -674,7 +674,7 @@
   },
   {
     "slug": "parmigiana-di-melanzane",
-    "title": "Parmigiana di Melanzane Light in Friggitrice ad Aria (Senza Friggere)",
+    "title": "Parmigiana di Melanzane Light (Gratinatura Perfetta in 20 Min)",
     "emoji": "🍆",
     "temp": 180,
     "time": "20",
@@ -698,7 +698,7 @@
       "Olio extravergine d'oliva",
       "Sale"
     ],
-    "description": "Tutto il gusto della parmigiana tradizionale con pochissime calorie. Melanzane dorate in friggitrice ad aria e cuore filante: una vera goduta per il palato!",
+    "description": "La vera parmigiana di melanzane ma in versione light! Melanzane pre-cotte ad aria (zero frittura in padella) e stratificate con mozzarella e pomodoro. Gratinatura da chef in 20 min.",
     "instructions": [
       "Tagliare le melanzane a fette di circa 5 mm di spessore.",
       "Spennellare le fette con olio e precuocerle a 180°C per 8 minuti.",
@@ -722,7 +722,7 @@
   },
   {
     "slug": "polpette-della-nonna-sugo",
-    "title": "Polpette al Sugo in Friggitrice ad Aria (Morbide e Saporite)",
+    "title": "Polpette al Sugo (Sigillate ad Aria per Massima Morbidezza)",
     "emoji": "🍝",
     "temp": 190,
     "time": "15",
@@ -746,7 +746,7 @@
       "Sale e pepe nero q.b.",
       "250 g sugo di pomodoro"
     ],
-    "description": "Il segreto per polpette al sugo perfette? Sigillale in friggitrice ad aria per renderle croccanti fuori e poi tuffale nel pomodoro. Sapore della nonna, fatica zero!",
+    "description": "Polpette al sugo tenerissime e senza fatica. Scopri la doppia cottura: sigilla la carne ad aria in friggitrice per bloccare i succhi, poi tuffale nel pomodoro. Comfort food in 15 minuti.",
     "instructions": [
       "In una ciotola, unire la carne macinata, l'uovo, il Parmigiano Reggiano, il pane raffermo strizzato, il prezzemolo, il sale e il pepe. Amalgamare fino a ottenere un composto omogeneo.",
       "Formare polpette sferiche di circa 3-4 cm di diametro.",
@@ -767,7 +767,7 @@
   },
   {
     "slug": "arancini-siciliani-ragu",
-    "title": "Arancini al Ragù in Friggitrice ad Aria (Doratura Perfetta)",
+    "title": "Arancini Siciliani al Ragù (Doratura Croccante Senza Olio Profondo)",
     "emoji": "🍙",
     "temp": 200,
     "time": "15",
@@ -791,7 +791,7 @@
       "Pangrattato, q.b.",
       "Olio extra vergine d'oliva, spray"
     ],
-    "description": "Goditi il re dello street food siciliano in versione leggera! Arancini al ragù croccantissimi fuori con cottura in friggitrice ad aria. Impossibile resistere!",
+    "description": "L'autentico arancino siciliano a punta, senza immersione nell'olio. Crosta di pangrattato spessa e croccante con un cuore caldo di riso allo zafferano e ragù di carne denso. Sublime!",
     "instructions": [
       "Amalgamare il riso freddo con lo zafferano, precedentemente sciolto in un cucchiaio di acqua calda.",
       "Prelevare una porzione di riso, appiattirla sul palmo della mano e farcire il centro con ragù, piselli e un cubetto di formaggio.",
@@ -814,7 +814,7 @@
   },
   {
     "slug": "olive-ascolana",
-    "title": "Olive all'Ascolana in Friggitrice ad Aria (Croccanti e Leggere)",
+    "title": "Olive all'Ascolana (Aperitivo Croccante in 10 Minuti)",
     "emoji": "🫒",
     "temp": 200,
     "time": "10",
@@ -833,7 +833,7 @@
       "20 Olive Ascolane ripiene di carne, fresche o surgelate (circa 300g totali)",
       "Olio di semi, spray"
     ],
-    "description": "L'aperitivo perfetto è pronto! Olive all'ascolana panate e croccanti senza l'unto della frittura tradizionale. Provale subito nella tua friggitrice ad aria.",
+    "description": "Sfiziose olive all'ascolana ripiene di carne: l'aperitivo perfetto pronto in 10 minuti. Il flusso d'aria torrida asciuga la panatura rendendola extra croccante senza l'unto della padella.",
     "instructions": [
       "Disporre le olive nel cestello in un unico strato, mantenendole distanziate.",
       "Nebulizzare uniformemente l'olio spray sulla superficie delle olive.",
@@ -853,7 +853,7 @@
   },
   {
     "slug": "zucchine-ripiene-ligure",
-    "title": "Zucchine Ripiene alla Ligure in Friggitrice ad Aria (Gratinate)",
+    "title": "Zucchine Ripiene alla Ligure (Gratinatura Rapida)",
     "emoji": "🥒",
     "temp": 180,
     "time": "18",
@@ -879,7 +879,7 @@
       "Sale fino q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Zucchine farcite con carne e formaggio, gratinate alla perfezione in pochi minuti. La friggitrice ad aria esalta il ripieno rendendolo succulento e saporito.",
+    "description": "Barchette di zucchine farcite alla ligure: un secondo piatto proteico e goloso. Carne saporita e pangrattato dorato si fondono in una gratinatura perfetta, dimezzando i tempi del forno.",
     "instructions": [
       "Dividere le zucchine a metà per il lungo. Svuotarle con un cucchiaio, conservando e tritando finemente la polpa.",
       "In una ciotola, unire la polpa di zucchina, la carne macinata, l'uovo, il Parmigiano Reggiano, sale, pepe e maggiorana. Amalgamare fino ad ottenere un composto omogeneo.",
@@ -902,7 +902,7 @@
   },
   {
     "slug": "peperoni-ripieni",
-    "title": "Peperoni Ripieni in Friggitrice ad Aria (Ricetta Veloce e Saporita)",
+    "title": "Peperoni Ripieni di Carne (Cotti a Puntino in 25 Minuti)",
     "emoji": "🫑",
     "temp": 180,
     "time": "25",
@@ -929,7 +929,7 @@
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Peperoni dolci farciti con carne macinata succosa, cotti alla perfezione nella friggitrice ad aria. Sapori intensi e gratinatura impeccabile senza accendere il forno.",
+    "description": "Peperoni dolci ripieni di carne macinata: il piatto unico salva-cena pronto in 25 minuti. Il flusso d'aria torrida garantisce peperoni morbidi e una gratinatura del ripieno spettacolare, senza accendere il forno.",
     "instructions": [
       "Dividere i peperoni a metà longitudinalmente, quindi rimuovere semi e filamenti interni.",
       "In una ciotola, amalgamare la carne macinata con il pane ammollato, l'uovo, il prezzemolo, l'aglio in polvere, sale e pepe.",
@@ -950,7 +950,7 @@
   },
   {
     "slug": "salsiccia-e-patate",
-    "title": "Salsiccia e Patate in Friggitrice ad Aria (Piatto Unico in 15 Minuti)",
+    "title": "Salsiccia e Patate a Cubetti (Piatto Unico Rapido)",
     "emoji": "🥔",
     "temp": 190,
     "time": "22",
@@ -973,7 +973,7 @@
       "1 cucchiaio di olio extravergine d'oliva",
       "Sale e pepe nero q.b."
     ],
-    "description": "Il classico intramontabile: salsiccia saporita e patate croccanti cotte insieme nella friggitrice ad aria. Meno grassi, tutto il gusto di una cena rustica e veloce.",
+    "description": "Salsiccia e patate: il piatto unico salva-cena pronto in soli 20 minuti. Patate dorate croccantissime e salsiccia succosa sgrassata alla perfezione grazie al flusso d'aria calda.",
     "instructions": [
       "Pelate le patate e tagliatele a cubetti di circa 2 cm. Conditele con olio, sale, pepe, rosmarino e lo spicchio d'aglio pelato.",
       "Tagliate le salsicce a pezzi o, in alternativa, inciderle mantenendole intere.",
@@ -995,7 +995,7 @@
   },
   {
     "slug": "frittata-di-maccheroni",
-    "title": "Frittata di Pasta in Friggitrice ad Aria (Guscio Croccante e Veloce)",
+    "title": "Frittata di Pasta (Guscio Croccante in Friggitrice ad Aria)",
     "emoji": "🍳",
     "temp": 180,
     "time": "18",
@@ -1019,7 +1019,7 @@
       "Pepe nero macinato q.b.",
       "Olio extravergine d'oliva q.b."
     ],
-    "description": "Trasforma la pasta avanzata in un capolavoro! Una frittata di maccheroni alta, dorata e non unta, pronta in metà tempo grazie alla tua friggitrice ad aria.",
+    "description": "Trasforma la pasta avanzata in un guscio croccantissimo! Niente litri d'olio in padella: la frittata di maccheroni ad aria cuoce uniformemente, resta dorata all'esterno e morbida all'interno. Il pranzo al sacco perfetto.",
     "instructions": [
       "In una ciotola, sbattere le uova con il Parmigiano Reggiano, sale, pepe e i salumi.",
       "Incorporare la pasta cotta al composto e amalgamare uniformemente.",
@@ -1040,7 +1040,7 @@
     ]
   },
   {
-    "title": "Carciofi Croccanti in Friggitrice ad Aria (Stile Giudia e Light)",
+    "title": "Carciofi Croccanti (Stile Giudia e Light)",
     "slug": "carciofi-croccanti",
     "emoji": "🥬",
     "temp": 180,
@@ -1066,7 +1066,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Foglie che scrocchiano e cuore tenerissimo: i carciofi alla romana in friggitrice ad aria sono il contorno perfetto. Zero fumo in cucina, 100% sapore!",
+    "description": "Scrocchiarelli fuori e dal cuore morbidissimo: prepara i veri carciofi alla romana senza odore di fritto per casa. Un contorno sfizioso, salutare e veloce grazie alla friggitrice ad aria in 15 minuti.",
     "instructions": [
       "Pulite i carciofi eliminando le foglie esterne dure e le punte. Immergeteli in acqua acidulata con succo di limone.",
       "Asciugate accuratamente i carciofi. Batteteli capovolti su una superficie piana per allargare le foglie.",
@@ -1088,7 +1088,7 @@
     ]
   },
   {
-    "title": "Fiori di Zucca Ripieni in Friggitrice ad Aria (Croccanti e Filanti)",
+    "title": "Fiori di Zucca Ripieni (Croccanti e Filanti)",
     "slug": "fiori-di-zucca-pastella",
     "emoji": "🌼",
     "temp": 190,
@@ -1113,7 +1113,7 @@
       "Olio extravergine d'oliva spray q.b.",
       "Sale fino q.b."
     ],
-    "description": "Fiori di zucca ripieni di mozzarella e alici con una panatura croccante e leggera. Tutto il gusto della tradizione romana ma cucinato in modo sano nell'Friggitrice ad Aria.",
+    "description": "Fiori di zucca ripieni con alici e mozzarella filante. Dimentica la pastella pesante e l'olio bollente: scopri la panatura a secco per un antipasto romano croccantissimo in appena 8 minuti.",
     "instructions": [
       "Pulire i fiori di zucca rimuovendo il pistillo interno, prestando attenzione a non lacerare i petali.",
       "Farcire ogni fiore con un cubetto di mozzarella, precedentemente asciugata, e un filetto di acciuga. Sigillare l'estremità superiore dei petali avvitandola delicatamente.",
@@ -1158,7 +1158,7 @@
       "Olio extravergine d'oliva, q.b.",
       "Sale, q.b."
     ],
-    "description": "Ottieni fette di pane dorate e croccanti in un lampo! Guarnisci con pomodoro fresco e basilico per l'aperitivo perfetto preparato con la tua friggitrice ad aria.",
+    "description": "Bruschette fragranti pronte in soli 5 minuti senza accendere il forno o usare tostapane scomodi. La base perfetta e uniformemente dorata per i tuoi pomodorini aglio e basilico.",
     "instructions": [
       "Tagliare i pomodori a cubetti. Condire in una ciotola con olio, sale e basilico sminuzzato. Lasciare riposare.",
       "Tostare le fette di pane a 200°C per 4-5 minuti fino a doratura.",
@@ -1181,7 +1181,7 @@
     ]
   },
   {
-    "title": "Gnocchi Croccanti in Friggitrice ad Aria (Lo Snack che Crea Dipendenza)",
+    "title": "Gnocchi Croccanti in Friggitrice ad Aria (Snack Veloce)",
     "slug": "gnocchi-fritti-aperitivo",
     "emoji": "🧀",
     "temp": 200,
@@ -1203,7 +1203,7 @@
       "Sale, paprika dolce, rosmarino secco q.b.",
       "Salsa al formaggio per accompagnamento (opzionale)"
     ],
-    "description": "Cerchi un'idea originale? Prova gli gnocchi di patate arrostiti in friggitrice ad aria: croccanti fuori e morbidi dentro, perfetti da tuffare nelle tue salse preferite.",
+    "description": "Hai mai provato ad arrostire gli gnocchi crudi? Diventano pepite dorate croccantissime fuori e soffici dentro in appena 12 minuti. Lo snack sfizioso definitivo da intingere nelle salse.",
     "instructions": [
       "In una ciotola, condire gli gnocchi crudi con olio, sale, paprika e rosmarino.",
       "Disporre gli gnocchi nel cestello in un unico strato.",
@@ -1224,7 +1224,7 @@
     ]
   },
   {
-    "title": "Castagnole alla Ricotta in Friggitrice ad Aria (Soffici e Senza Olio)",
+    "title": "Castagnole alla Ricotta (Soffici e Senza Olio)",
     "slug": "castagnole-ricotta",
     "emoji": "🍩",
     "temp": 180,
@@ -1251,7 +1251,7 @@
       "Zucchero semolato per copertura q.b.",
       "Latte q.b. (opzionale)"
     ],
-    "description": "Dolci di Carnevale leggeri? Ecco le castagnole alla ricotta! Sofficissime e profumate al limone, cotte in friggitrice ad aria per un peccato di gola senza rimorsi.",
+    "description": "Dolci di Carnevale soffici e leggeri! Le castagnole alla ricotta si sciolgono in bocca senza l'untuosità della frittura classica. Un peccato di gola super rapido in 10 minuti, profumato al limone.",
     "instructions": [
       "In una ciotola, lavorare la ricotta con l'uovo, lo zucchero e la scorza di limone fino ad ottenere un composto omogeneo.",
       "Incorporare la farina setacciata con il lievito e impastare fino a formare un panetto liscio e compatto. Se necessario, aggiungere latte per correggere la consistenza.",
@@ -1273,7 +1273,7 @@
     ]
   },
   {
-    "title": "Panzerotti Pugliesi in Friggitrice ad Aria (Dorati e Pronti Subito)",
+    "title": "Panzerotti Pugliesi in Friggitrice ad Aria (Pronti Subito)",
     "slug": "panzerotti-pugliesi-rapidi",
     "emoji": "🥟",
     "temp": 200,
@@ -1297,7 +1297,7 @@
       "Sale q.b.",
       "Olio extravergine d'oliva q.b."
     ],
-    "description": "Tutto il sapore della Puglia con la metà dei grassi. Panzerotti con pomodoro e mozzarella filante, dorati alla perfezione nella tua friggitrice ad aria.",
+    "description": "Evita schizzi d'olio ovunque con i panzerotti cotti ad aria! Guscio dorato e cuore esplosivo di pomodoro e mozzarella filante in appena 8 minuti. Il salva-cena per eccellenza.",
     "instructions": [
       "Stendere la base per pizza e ricavare dei dischi utilizzando un coppapasta.",
       "Condire la passata di pomodoro con sale e origano. Farcire il centro di ogni disco con la passata condita e la mozzarella tagliata a cubetti.",
@@ -1319,12 +1319,12 @@
     ]
   },
   {
-    "title": "Focaccia al Rosmarino in Friggitrice ad Aria (Alta e Soffice)",
+    "title": "Focaccia al Rosmarino (Alta e Soffice)",
     "slug": "focaccia-morbida-rosmarino",
     "emoji": "🍞",
     "temp": 170,
     "time": "18",
-    "prep_time": "2 ore (lievitazione)",
+    "prep_time": "120",
     "portions": "4",
     "nutrition": {
       "kcal": 260,
@@ -1344,7 +1344,7 @@
       "Rosmarino fresco",
       "Sale grosso"
     ],
-    "description": "Sforna una focaccia fragrante in meno di 15 minuti! Crosticina salata al rosmarino e interno sofficissimo, tutto grazie alla cottura ultra-rapida in friggitrice ad aria.",
+    "description": "Focaccia alta, fragrante e con i tipici \"buchi\" dorati, pronta in 18 minuti. Il calore ventilato della friggitrice ad aria crea una crosticina salata al rosmarino e mantiene l'interno soffice come una nuvola.",
     "instructions": [
       "Sciogliere il lievito nell'acqua tiepida. Aggiungere la farina, l'olio e infine il sale. Lavorare l'impasto fino a ottenere un composto liscio ed elastico.",
       "Coprire l'impasto e lasciar lievitare per circa 2 ore, o fino al raddoppio del volume.",
@@ -1365,7 +1365,7 @@
     ]
   },
   {
-    "title": "Frittura di Calamari e Gamberi (Croccantezza Totale in Friggitrice ad Aria)",
+    "title": "Frittura di Calamari e Gamberi (Croccantezza Totale)",
     "slug": "frittura-calamari-e-gamberi",
     "keywords": [
       "Pesce",
@@ -1400,7 +1400,7 @@
       "Sale q.b.",
       "Limone per guarnire"
     ],
-    "description": "Un mix di mare irresistibile in crosta di semola. Scopri come la friggitrice ad aria rende gamberi e calamari croccanti e dorati usando solo un cucchiaio d'olio.",
+    "description": "Dimentica la puzza di fritto e i litri d'olio da smaltire. Questo mix di calamari e gamberi in crosta di semola diventa dorato e iper-croccante in soli 12 minuti usando un solo cucchiaio d'olio.",
     "instructions": [
       "Asciugare accuratamente i calamari e i gamberi con carta assorbente.",
       "Inserire il pesce in un sacchetto per alimenti con la farina di semola e scuotere per ottenere una panatura uniforme.",
@@ -1445,7 +1445,7 @@
       "Sale q.b.",
       "Limone q.b."
     ],
-    "description": "Pesciolini di paranza infarinati e resi croccanti dalla tua friggitrice ad aria. Niente più odore di fritto in casa, solo il piacere del pesce fresco e dorato.",
+    "description": "Pesciolini piccoli da mangiare interi, croccantissimi come in friggitoria ma cotti ad aria in 10 minuti. Il contorno di mare sfizioso ed economico, 100% privo dell'odore di fritto stantio.",
     "instructions": [
       "Sciacquare il pesce ed eviscerare gli esemplari più grandi. Asciugare accuratamente.",
       "Infarinare il pesce con la semola di grano duro, eliminando l'eccesso.",
@@ -1456,7 +1456,7 @@
     "tip": "Maneggiare il pesce con una pinza in silicone per evitare di romperlo durante la rotazione a metà cottura."
   },
   {
-    "title": "Calamaretti Spillo in Friggitrice ad Aria (Croccanti in 5 Minuti)",
+    "title": "Calamaretti Spillo (Croccanti in 5 Minuti)",
     "slug": "calamaretti-fritti-croccanti",
     "keywords": [
       "Pesce",
@@ -1488,7 +1488,7 @@
       "Olio extra vergine d'oliva spray q.b.",
       "Sale fino q.b."
     ],
-    "description": "Piccoli, teneri e super croccanti! Cuoci i calamaretti spillo interi nella friggitrice ad aria per un antipasto di pesce da veri gourmet pronto in un attimo.",
+    "description": "L'antipasto gourmet da ristorante di pesce, a casa tua in 8 minuti. I calamaretti spillo cotti ad aria restano tenerissimi all'interno e sviluppano tentacoli dorati ultra-croccanti.",
     "instructions": [
       "Verificare la pulizia dei calamaretti, mantenendoli interi. Asciugare accuratamente con carta assorbente.",
       "Infarinare i calamaretti con la semola di grano duro, rimuovendo l'eccesso per una panatura uniforme.",
@@ -1523,7 +1523,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Gamberi succosi avvolti in una panatura di semola dorata e croccante. Preparali in friggitrice ad aria per un secondo piatto leggero, elegante e velocissimo.",
+    "description": "Code di gambero croccanti e dorate in soli 10 minuti. La panatura di semola e paprika sigilla i succhi all'interno per un risultato degno di una friggitoria, ma con una frazione delle calorie.",
     "instructions": [
       "Pulire i gamberi rimuovendo carapace e intestino, mantenendo la porzione caudale.",
       "Asciugare accuratamente i gamberi. In un recipiente, miscelare la farina di semola con sale, pepe e paprika.",
@@ -1546,10 +1546,10 @@
   },
   {
     "slug": "patatine-buccia-surgelate",
-    "title": "Patate Fritte Surgelate in Friggitrice ad Aria (Rustiche e Croccanti)",
+    "title": "Patate Fritte Surgelate (Rustiche e Croccanti)",
     "emoji": "🍟",
     "temp": 200,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "2",
     "nutrition": {
@@ -1564,7 +1564,7 @@
     "ingredients": [
       "500 g di patate fritte con buccia, surgelate"
     ],
-    "description": "Il modo migliore per cuocere le patate surgelate! Con la buccia e un tocco rustico, diventano croccanti fuori e soffici dentro come se fossero appena fritte.",
+    "description": "Smetti di scaldare il forno! Le patate surgelate (specialmente quelle rustiche con buccia) sono il prodotto perfetto per la friggitrice ad aria. Croccantissime fuori e soffici dentro in 18 minuti, senza aggiungere olio.",
     "instructions": [
       "Disporre le patate surgelate nel cestello in uno strato uniforme.",
       "Non aggiungere olio. Il prodotto è pre-fritto.",
@@ -1587,7 +1587,7 @@
   },
   {
     "slug": "patatine-tortilla",
-    "title": "Chips di Tortilla in Friggitrice ad Aria (Snack Veloce Senza Grassi)",
+    "title": "Chips di Tortilla (Snack Veloce Senza Grassi)",
     "emoji": "🌮",
     "temp": 150,
     "time": "8",
@@ -1608,7 +1608,7 @@
       "Sale fino q.b.",
       "Salsa di accompagnamento (opzionale)"
     ],
-    "description": "Tortilla di mais tostate e super croccanti in soli 3 minuti. Prepara le tue chips fatte in casa nella friggitrice ad aria: perfette per l'aperitivo con guacamole!",
+    "description": "Hai delle piadine o tortillas avanzate? Trasformale in nachos da aperitivo (chips croccanti) in appena 8 minuti. Un'idea di recupero perfetta da tuffare nel guacamole.",
     "instructions": [
       "Tagliare ogni tortilla in 8 spicchi triangolari.",
       "In una ciotola, condire gli spicchi con olio e sale, distribuendo uniformemente.",
@@ -1637,7 +1637,7 @@
     "title": "Patate Dolci in Friggitrice ad Aria (Stick Croccanti alla Paprika)",
     "emoji": "🍠",
     "temp": 200,
-    "time": "11-15",
+    "time": "11",
     "prep_time": "10",
     "portions": "4",
     "nutrition": {
@@ -1658,7 +1658,7 @@
       "2.5 g cipolla in polvere",
       "Pepe nero macinato q.b."
     ],
-    "description": "Sperimenta il gusto unico delle patate dolci! Tagliate a bastoncino e aromatizzate alla paprika, diventano uno snack croccante e irresistibile nella tua Friggitrice ad Aria.",
+    "description": "Stick di patate dolci (americane) con un mix di spezie alla paprika, cotti in 11 minuti. Scopri il contorno dolce-salato che farà impazzire i tuoi ospiti con una frazione delle calorie delle classiche Patatine.",
     "instructions": [
       "Pelare le patate dolci e tagliarle a bastoncini con spessore uniforme di circa 1,5 cm.",
       "In una ciotola, condire i bastoncini di patata con l'olio, mescolando per ricoprirli uniformemente.",
@@ -1683,10 +1683,10 @@
   },
   {
     "slug": "patatine-fritte-cajun",
-    "title": "Patatine Cajun in Friggitrice ad Aria (Super Croccanti e Speziate)",
+    "title": "Patatine Cajun (Super Croccanti e Speziate)",
     "emoji": "🍟",
     "temp": 195,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "20",
     "portions": "4",
     "nutrition": {
@@ -1705,7 +1705,7 @@
       "1 cucchiaio di mix di spezie Cajun",
       "Pepe di Cayenna q.b. (opzionale)"
     ],
-    "description": "Porta il sapore della Louisiana in tavola! Patate a bastoncino croccantissime fuori e tenere dentro, avvolte da un mix Cajun esplosivo. Senza olio e pronte in un lampo.",
+    "description": "Tutto il sapore piccante del Sud degli Stati Uniti. Patate fresche a bastoncino rese croccantissime dalla cottura ad aria in 20 minuti e tuffate in un mix Cajun esplosivo a cottura ultimata.",
     "instructions": [
       "Tagliare le patate a bastoncini di spessore uniforme. Lasciare in ammollo in acqua fredda per 15-20 minuti per rimuovere l'amido in eccesso.",
       "Scolare, sciacquare e asciugare accuratamente i bastoncini di patate, tamponandoli con un panno pulito.",
@@ -1733,7 +1733,7 @@
     "title": "Patatine Fritte in Friggitrice ad Aria (Il Segreto per Farle Croccanti)",
     "emoji": "🍟",
     "temp": 195,
-    "time": "25-28",
+    "time": "25",
     "prep_time": "30",
     "portions": "4",
     "nutrition": {
@@ -1753,7 +1753,7 @@
       "1/2 cucchiaino di paprika dolce",
       "Sale fino q.b."
     ],
-    "description": "Addio fritto unto! Scopri come preparare patatine fatte in casa perfette con la tua friggitrice ad aria. Seguendo il nostro trucco dell'ammollo saranno irresistibili.",
+    "description": "Hai provato a fare le patate fritte fresche ad aria e sono venute lesse? Scopri il segreto dell'ammollo in acqua fredda per rimuovere l'amido. Avrai bastoncini scrocchiarelli in 25 minuti perfetti per l'hamburger.",
     "instructions": [
       "Tagliare le patate a bastoncini di spessore uniforme. Immergerle in una ciotola con acqua fredda per un minimo di 20 minuti.",
       "Scolare le patate, risciacquarle e asciugarle completamente con un panno pulito o carta da cucina.",
@@ -1778,10 +1778,10 @@
   },
   {
     "slug": "patatine-ondulate-surgelate",
-    "title": "Patate Ondulate Surgelate in Friggitrice ad Aria (Doratura Uniforme)",
+    "title": "Patate Ondulate Surgelate (Doratura Uniforme)",
     "emoji": "🍟",
     "temp": 200,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "2",
     "nutrition": {
@@ -1796,7 +1796,7 @@
     "ingredients": [
       "500 g di patate prefritte surgelate, taglio ondulato"
     ],
-    "description": "Voglia di patatine last-minute? Le ondulate in friggitrice ad aria diventano croccantissime in pochi minuti senza aggiungere un solo grammo di grasso. Provale subito!",
+    "description": "Voglia di comfort food immediato? Le patatine ondulate surgelate, grazie alla loro forma, catturano l'aria calda diventando iper-croccanti in 18 minuti senza aggiungere una sola goccia d'olio.",
     "instructions": [
       "Inserire le patate surgelate nel cestello di cottura.",
       "Non aggiungere olio. Il prodotto è prefritto.",
@@ -1819,11 +1819,11 @@
   },
   {
     "slug": "pollo-fritto-latticello",
-    "title": "Pollo al Latticello in Friggitrice ad Aria (Super Croccante senza Olio!)",
+    "title": "Pollo al Latticello (Super Croccante senza Olio!)",
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
-    "prep_time": "2 ore",
+    "prep_time": "120",
     "portions": "2",
     "nutrition": {
       "kcal": 550,
@@ -1846,7 +1846,7 @@
       "Pepe nero macinato: q.b.",
       "Olio spray: q.b."
     ],
-    "description": "Il vero pollo fritto americano ma in versione light! Grazie alla marinatura nel latticello otterrai una carne succosissima e una crosta speziata che scrocchia sotto i denti.",
+    "description": "Il mitico pollo fritto americano (KFC style) ma cotto ad aria in 25 minuti. L'acido del latticello sfibra la carne rendendola succosissima, mentre la farina speziata crea una crosta spessa e scrocchiarella.",
     "instructions": [
       "Immergere i pezzi di pollo nel latticello. Marinare in frigorifero per almeno 90 minuti.",
       "In un recipiente, miscelare la farina con aglio in polvere, cipolla in polvere, paprika, sale e pepe.",
@@ -1872,10 +1872,10 @@
   },
   {
     "slug": "zucchine-fritte",
-    "title": "Stick di Zucchine al Parmigiano (Snack Croccante in Friggitrice ad Aria)",
+    "title": "Stick di Zucchine al Parmigiano (Croccanti e Veloci)",
     "emoji": "🥒",
     "temp": 190,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "4",
     "nutrition": {
@@ -1898,7 +1898,7 @@
       "Pepe nero q.b.",
       "Olio spray"
     ],
-    "description": "Trasforma le zucchine in uno snack goloso! Bastoncini panati al parmigiano, dorati e croccanti in friggitrice ad aria. Il contorno perfetto che piace anche ai bambini.",
+    "description": "Fai mangiare le verdure anche ai bambini! Bastoncini di zucchine impanati con pangrattato e Parmigiano, cotti in 10 minuti. Uno snack vegetariano dorato, sfizioso e senza olio bollente.",
     "instructions": [
       "Tagliare le zucchine a bastoncini, eliminando la parte centrale se eccessivamente acquosa.",
       "Preparare tre contenitori: uno con farina, sale e pepe; uno con uova e latte sbattuti; uno con pangrattato e Parmigiano Reggiano miscelati.",
@@ -1925,7 +1925,7 @@
   },
   {
     "slug": "ali-pollo-aglio-parmigiano",
-    "title": "Ali di Pollo Aglio e Parmigiano (Crosticina Irresistibile in Friggitrice ad Aria)",
+    "title": "Ali di Pollo Aglio e Parmigiano (Crosticina Estrema)",
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
@@ -1949,7 +1949,7 @@
       "Pepe nero macinato q.b.",
       "Olio vegetale spray"
     ],
-    "description": "Alette di pollo da sballo! Panatura secca al parmigiano e aglio per un risultato croccante e saporitissimo senza friggere. Pronte in meno di 20 minuti!",
+    "description": "Alette da pub americano a casa tua! Il trucco dell'amido di mais abbinato alla cottura ad aria asciuga la pelle creando una panatura irresistibile al gusto di aglio e Parmigiano in 25 minuti.",
     "instructions": [
       "Asciugare le ali di pollo con carta assorbente.",
       "In una ciotola, miscelare l'amido di mais, metà del Parmigiano Reggiano, l'aglio in polvere, sale e pepe.",
@@ -1975,7 +1975,7 @@
   },
   {
     "slug": "ali-pollo-jerk",
-    "title": "Ali di Pollo Jerk in Friggitrice ad Aria (Gusto Giamaicano Veloce)",
+    "title": "Ali di Pollo Jerk (Speziate e Sgrassate ad Aria)",
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
@@ -2005,11 +2005,11 @@
       "Sale q.b.",
       "Succo di 1 lime"
     ],
-    "description": "Porta i tropici in cucina! Ali di pollo piccanti e aromatiche con marinatura Jerk, cotte alla perfezione nella friggitrice ad aria. Succose dentro e speziate fuori.",
+    "description": "Viaggio in Giamaica in 25 minuti! Alette aromatiche e piacevolmente piccanti. La cottura ad aria intrappola il mix di spezie Jerk sulla pelle, sgrassando la carne in eccesso.",
     "instructions": [
       "Tamponare le ali di pollo con carta assorbente per asciugarle.",
       "In una ciotola, miscelare l'olio d'oliva con tutte le spezie in polvere fino a ottenere un composto omogeneo.",
-      "Aggiungere le ali di pollo al composto e massaggiare per ricoprire uniformemente la superficie.",
+      "Aggiungere le ali di pollo al composto e massaggiare per ricoprirle uniformemente la superficie.",
       "Preriscaldare l'apparecchio di cottura a 195°C.",
       "Disporre le ali nel cestello di cottura e cuocere per 25 minuti, girandole a metà del tempo di cottura per una doratura uniforme.",
       "Al termine della cottura, estrarre le ali e irrorare con succo di lime fresco prima di servire."
@@ -2030,11 +2030,11 @@
   },
   {
     "slug": "ali-pollo-ketchup-senape",
-    "title": "Ali di Pollo Glassate (Ketchup e Senape in Friggitrice ad Aria)",
+    "title": "Ali di Pollo Glassate (Ketchup e Senape in 18 Minuti)",
     "emoji": "🍗",
     "temp": 170,
-    "time": "18-20",
-    "prep_time": "2 ore",
+    "time": "18",
+    "prep_time": "120",
     "portions": "4",
     "nutrition": {
       "kcal": 560,
@@ -2053,7 +2053,7 @@
       "1 cucchiaio di olio d'oliva",
       "1 cucchiaino di paprika dolce"
     ],
-    "description": "Alette di pollo caramellate e succose! La glassa agrodolce di ketchup e senape si sposa divinamente con la cottura rapida in Friggitrice ad Aria. Da leccarsi le dita!",
+    "description": "Una goduria agrodolce a bassa temperatura (170°). La glassa di ketchup e senape caramellizza morbidamente sulla pelle delle alette, garantendo un risultato da far leccare le dita ai tuoi ospiti.",
     "instructions": [
       "In una ciotola, emulsionare con una frusta ketchup, senape, salsa di soia, olio e paprika fino ad ottenere un composto omogeneo.",
       "Aggiungere le alette di pollo alla marinatura, assicurandosi che siano completamente ricoperte. Coprire con pellicola alimentare e refrigerare per un minimo di 2 ore, fino a un massimo di 12 ore.",
@@ -2077,10 +2077,10 @@
   },
   {
     "slug": "ali-miele-sriracha",
-    "title": "Ali di Pollo Miele e Sriracha (Agrodolce Piccante in Friggitrice ad Aria)",
+    "title": "Ali di Pollo Miele e Sriracha (Agrodolce Piccante)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "25-30",
+    "time": "25",
     "prep_time": "10",
     "portions": "4",
     "nutrition": {
@@ -2103,7 +2103,7 @@
       "1 cucchiaio di aceto di riso o di mele",
       "Olio spray q.b."
     ],
-    "description": "Voglia di un gusto audace? Ali di pollo croccanti glassate con miele e sriracha. Un mix perfetto di dolce e piccante ottenuto velocemente in friggitrice ad aria.",
+    "description": "L'equilibrio perfetto tra il dolce del miele e il fuoco della sriracha. Cuoci le alette ad aria finché non scrocchiano (25 min) e poi passale in salsa calda. Risultato asiatico da veri intenditori.",
     "instructions": [
       "Asciugare le ali di pollo. Trasferirle in un sacchetto per alimenti con l'amido di mais e le spezie in polvere. Agitare per ricoprirle in modo uniforme.",
       "Preriscaldare il dispositivo di cottura a 195°C. Disporre le ali nel cestello, nebulizzare con olio spray e cuocere per 25-30 minuti, capovolgendole a metà del tempo.",
@@ -2126,11 +2126,11 @@
   },
   {
     "slug": "bacchette-pollo-tikka",
-    "title": "Fusi di Pollo Tikka Masala (Morbidi e Speziati in Friggitrice ad Aria)",
+    "title": "Fusi di Pollo Tikka Masala (Morbidi e Speziati)",
     "emoji": "🍗",
     "temp": 180,
-    "time": "20-25",
-    "prep_time": "1 ora",
+    "time": "20",
+    "prep_time": "60",
     "portions": "2",
     "nutrition": {
       "kcal": 420,
@@ -2152,12 +2152,12 @@
       "1 spicchio d'aglio tritato",
       "Sale q.b."
     ],
-    "description": "Fusi di pollo tenerissimi grazie alla marinatura al latte di cocco e spezie indiane. La friggitrice ad aria crea una crosticina saporita mantenendo l'interno succoso.",
+    "description": "Tutto il sapore del Tandoori in 20 minuti. Il latte di cocco intenerisce i fusi di pollo mentre l'aria rovente sigilla le spezie indiane in una crosticina colorata e profumatissima.",
     "instructions": [
       "Incidere la superficie dei fusi di pollo con 2-3 tagli obliqui per favorire l'assorbimento della marinata.",
       "In una ciotola, miscelare il latte di cocco, il concentrato di pomodoro, le spezie, l'aglio, lo zenzero e il sale fino ad ottenere un composto omogeneo.",
       "Immergere i fusi di pollo nella marinata, coprire il contenitore e lasciare riposare in frigorifero per almeno 1 ora.",
-      "Preriscaldare l'apparecchio di cottura a 180°C. Estrarre i fusi dalla marinata, rimuovendo il composto in eccesso.",
+      "Preriscaldare l'apparecchio di cottura a 180°C. Estrarre i fusi dalla marinata, rimuovendo il composto in excesso.",
       "Disporre i fusi nel cestello. Cuocere per 20-25 minuti, rivoltandoli a metà cottura, fino a doratura completa."
     ],
     "source": "RicetteFriggitriceAria",
@@ -2175,11 +2175,11 @@
   },
   {
     "slug": "cajun-di-pollo",
-    "title": "Filetti di Pollo Cajun (Panatura Croccante in Friggitrice ad Aria)",
+    "title": "Filetti di Pollo Cajun (Panatura Extra Crunch)",
     "emoji": "🌶",
     "temp": 195,
-    "time": "12-14",
-    "prep_time": "1 ora e 15",
+    "time": "12",
+    "prep_time": "60",
     "portions": "4",
     "nutrition": {
       "kcal": 350,
@@ -2201,7 +2201,7 @@
       "Sale q.b.",
       "Olio spray antiaderente q.b."
     ],
-    "description": "Nuggets di pollo fatti in casa con un tocco Cajun! Marinati nel latticello e panati con spezie intense per una croccantezza imbattibile senza l'uso di olio.",
+    "description": "Straccetti di pollo panati alla perfezione! L'uso del latticello abbinato al mix Cajun crea tender croccantissimi senza immergerli in olio. Lo snack proteico pronto in soli 12 minuti.",
     "instructions": [
       "Miscelare il latticello con la salsa piccante. Immergere le strisce di pollo nella marinata e refrigerare per almeno 1 ora.",
       "In un recipiente, miscelare la farina, le spezie Cajun, l'aglio in polvere, la cipolla in polvere e il sale. Aggiungere un cucchiaio della marinata alla miscela di farina e lavorare con le dita per formare piccoli grumi.",
@@ -2225,10 +2225,10 @@
   },
   {
     "slug": "cosce-pollo-aglio-limone",
-    "title": "Cosce di Pollo Aglio e Limone (Pelle Croccante in Friggitrice ad Aria)",
+    "title": "Cosce di Pollo Aglio e Limone (Pelle Croccantissima)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "30",
     "portions": "4",
     "nutrition": {
@@ -2250,7 +2250,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Un classico leggero e saporito. Cosce di pollo marinate al limone con pelle croccantissima grazie alla friggitrice ad aria. Solo ingredienti sani e naturali!",
+    "description": "Una cena fresca, proteica e low carb! La potenza della friggitrice sgrassa la pelle delle cosce rendendola simile a una patatina (in 20 minuti), mentre il limone profuma la carne.",
     "instructions": [
       "In una ciotola, miscelare olio, succo e scorza di limone, aglio in polvere, paprika, origano, sale e pepe per creare la marinata.",
       "Asciugare i fusi di pollo con carta assorbente, trasferirli nella marinata e ricoprirli uniformemente. Lasciare marinare per 30 minuti a temperatura ambiente.",
@@ -2274,10 +2274,10 @@
   },
   {
     "slug": "cosce-pollo-senape",
-    "title": "Cosce di Pollo alla Senape (Glassa Agrodolce in Friggitrice ad Aria)",
+    "title": "Cosce di Pollo alla Senape (Glassa Agrodolce Veloce)",
     "emoji": "🍗",
     "temp": 190,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "5",
     "portions": "4",
     "nutrition": {
@@ -2299,7 +2299,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Prova il contrasto tra senape e sciroppo d'acero su cosce di pollo succose. Una ricetta gourmet pronta in pochi minuti che stupirà i tuoi ospiti per la sua bontà.",
+    "description": "Una vera ricetta gourmet salva-cena in 22 minuti. Il mix pungente della senape e dolce dell'acero glassa la pelle del pollo ad aria in modo spettacolare senza bruciarlo.",
     "instructions": [
       "In una ciotola, miscelare la senape, lo sciroppo d'acero, la cipolla in polvere, l'aglio in polvere e la paprika fino ad ottenere una glassa omogenea.",
       "Asciugare le cosce di pollo con carta assorbente. Salare, pepare e spennellare uniformemente la glassa su tutta la superficie, conservandone una piccola quantità.",
@@ -2322,11 +2322,11 @@
   },
   {
     "slug": "cosce-pollo-yogurt-rosmarino",
-    "title": "Cosce di Pollo allo Yogurt (Tenere e Succose in Friggitrice ad Aria)",
+    "title": "Cosce di Pollo allo Yogurt (Morbide e Profumate)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "30-35",
-    "prep_time": "4 ore",
+    "time": "30",
+    "prep_time": "240",
     "portions": "4",
     "nutrition": {
       "kcal": 390,
@@ -2347,7 +2347,7 @@
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Il segreto per un pollo che si scioglie in bocca? La marinatura allo yogurt! Scoprila abbinata al rosmarino e cotta nella friggitrice ad aria per un risultato perfetto.",
+    "description": "Come preparare un pollo che si scioglie in bocca? L'acidità dello yogurt rompe le fibre della carne in 30 min, garantendo cosce morbidissime, profumate al rosmarino e con una favolosa crosta.",
     "instructions": [
       "In una ciotola, miscelare lo yogurt greco, l'olio, la senape, l'aglio, gli aghi di rosmarino tritati, sale e pepe fino ad ottenere un composto omogeneo.",
       "Immergere il pollo nella marinata, assicurandosi che sia completamente ricoperto.",
@@ -2371,10 +2371,10 @@
   },
   {
     "slug": "maiale-katsu",
-    "title": "Tonkatsu in Friggitrice ad Aria (Maiale in Panko Croccantissimo)",
+    "title": "Maiale Katsu (La Cotoletta Giapponese Croccantissima)",
     "emoji": "🍱",
     "temp": 185,
-    "time": "14-16",
+    "time": "14",
     "prep_time": "15",
     "portions": "2",
     "nutrition": {
@@ -2397,7 +2397,7 @@
       "2 uova",
       "Olio spray"
     ],
-    "description": "La famosa cotoletta di maiale giapponese diventa light! Panatura in Panko dorata e super croccante senza l'olio della frittura profonda. Un successo garantito!",
+    "description": "La famosa cotoletta Tonkatsu giapponese in versione light. Impanata nel Panko, di una croccantezza esagerata in appena 14 minuti ad aria, restando umida e tenera all'interno.",
     "instructions": [
       "Incidere i bordi delle fette di maiale per prevenirne l'arricciamento in cottura. Se necessario, assottigliare la carne con un batticarne fino a uno spessore di 1-1.5 cm.",
       "Allestire tre contenitori: il primo con la farina, il secondo con le uova sbattute, il terzo con il Panko miscelato ad aglio in polvere, cipolla in polvere, sale e pepe.",
@@ -2420,10 +2420,10 @@
   },
   {
     "slug": "cotoletta-melanzane",
-    "title": "Cotolette di Melanzana in Friggitrice ad Aria (Vegetariane e Croccanti)",
+    "title": "Cotolette di Melanzana (Vegetariane e Croccanti in 10 Min)",
     "emoji": "🍆",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "2",
     "nutrition": {
@@ -2445,7 +2445,7 @@
       "Pepe nero q.b.",
       "Olio spray q.b."
     ],
-    "description": "Cerchi un'alternativa alla carne? Queste fette di melanzana impanate al parmigiano sono dorate e croccanti. Ideali come contorno o antipasto sfizioso e leggero.",
+    "description": "Niente carne stasera? Le fette di melanzana impanate con formaggio diventano cotolette dorate favolose! Pronte in 10 minuti, perfette per un contorno o un secondo vegetariano.",
     "instructions": [
       "Lavare la melanzana, rimuovere le estremità e tagliare a fette di circa 1 cm di spessore.",
       "Preparare tre contenitori: uno con la farina, uno con le uova sbattute con sale e pepe, uno con il pangrattato miscelato al formaggio grattugiato.",
@@ -2471,10 +2471,10 @@
   },
   {
     "slug": "crocchette-pesce-fritte",
-    "title": "Bastoncini di Pesce in Friggitrice ad Aria (Croccanti per Bambini)",
+    "title": "Bastoncini di Pesce Fatti in Casa (Per Bambini in 8 Min)",
     "emoji": "🐟",
     "temp": 180,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "15",
     "portions": "4",
     "nutrition": {
@@ -2495,7 +2495,7 @@
       "Olio spray q.b.",
       "Sale e pepe q.b."
     ],
-    "description": "Fai mangiare il pesce ai più piccoli con questi bastoncini fatti in casa! Panatura dorata e uniforme senza grassi aggiunti, cotti in 10 minuti nell'Friggitrice ad Aria.",
+    "description": "I classici bastoncini di pesce dei fast food, ma sani e fatti in casa. Il merluzzo resta morbidissimo mentre la crosta diventa irresistibilmente dorata in appena 8 minuti.",
     "instructions": [
       "Verificare l'assenza di lische nel filetto di pesce e asciugarlo con carta assorbente. Tagliare il filetto in bastoncini rettangolari di circa 2-3 cm di spessore.",
       "Preparare tre contenitori distinti: uno con la farina miscelata a spezie, sale e pepe; uno con le uova sbattute; uno con il pangrattato.",
@@ -2518,10 +2518,10 @@
   },
   {
     "slug": "crocchette-pollo-salsa-senape",
-    "title": "Bocconcini di Pollo ai Cereali (Massima Croccantezza in Friggitrice ad Aria)",
+    "title": "Bocconcini di Pollo ai Cereali (Massima Croccantezza)",
     "emoji": "🍗",
     "temp": 180,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "20",
     "portions": "4",
     "nutrition": {
@@ -2544,7 +2544,7 @@
       "Aglio in polvere q.b.",
       "Cipolla in polvere q.b."
     ],
-    "description": "Panatura extra crunch con i corn flakes! Bocconcini di pollo sfiziosi e veloci da preparare nella friggitrice ad aria, perfetti da intingere nella tua salsa preferita.",
+    "description": "Nuggets 2.0! Usa i cereali corn flakes per creare una crosta \"extra-crunchy\" in friggitrice ad aria. I cubetti di pollo sigillati cuociono in 15 minuti, ideali da tuffare nelle salse.",
     "instructions": [
       "In una ciotola, sbattere le uova con la senape e la salsa piccante o paprika.",
       "In una seconda ciotola, miscelare la farina con sale, aglio e cipolla in polvere. In un piatto, tritare grossolanamente i corn flakes.",
@@ -2567,10 +2567,10 @@
   },
   {
     "slug": "funghi-ripieni-salsiccia",
-    "title": "Funghi Ripieni alla Salsiccia (Gratinati in Friggitrice ad Aria)",
+    "title": "Funghi Ripieni alla Salsiccia (Gratinati in 12 Minuti)",
     "emoji": "🍄",
     "temp": 160,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "15",
     "portions": "4",
     "nutrition": {
@@ -2591,7 +2591,7 @@
       "1 spicchio d'aglio",
       "Prezzemolo tritato e Olio extra vergine d'oliva q.b."
     ],
-    "description": "Un antipasto da chef! Cappelle di champignon farcite con salsiccia e provola filante, gratinate perfettamente nella friggitrice ad aria. Succulenti e veloci.",
+    "description": "L'antipasto gourmet per svuotare il frigo! Cappelle di champignon morbide con un esplosivo ripieno di carne e formaggio fuso, gratinate perfettamente a 160°C senza bruciarsi.",
     "instructions": [
       "Pulire i funghi con carta da cucina inumidita. Rimuovere i gambi, tritarli finemente e mettere da parte le cappelle.",
       "In una padella, rosolare per 5 minuti i gambi tritati con la salsiccia sgranata e lo spicchio d'aglio intero. Rimuovere l'aglio al termine della cottura.",
@@ -2616,10 +2616,10 @@
   },
   {
     "slug": "involtini-primavera-pollo",
-    "title": "Involtini Pollo e Verdure (Sfoglia Croccante in Friggitrice ad Aria)",
+    "title": "Involtini Pollo e Verdure (Sfoglia Croccante Senza Fritto)",
     "emoji": "🍙",
     "temp": 180,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "35",
     "portions": "4",
     "nutrition": {
@@ -2639,7 +2639,7 @@
       "2 cucchiai di salsa di soia",
       "Olio di semi q.b."
     ],
-    "description": "Voglia di cinese? Prepara involtini croccanti con ripieno di pollo e verdure fresche. La friggitrice ad aria li rende fragranti senza l'olio del fritto tradizionale.",
+    "description": "Come al ristorante cinese ma senza la frittura pesante! Gli involtini di carta di riso gonfiati e resi friabili dall'aria calda in 15 minuti, racchiudono un cuore tenero di verdure e pollo.",
     "instructions": [
       "In una padella, saltare il pollo a fuoco vivo con un cucchiaio d'olio. Aggiungere le verdure a julienne, la salsa di soia e cuocere per 5 minuti. Rimuovere dal fuoco, incorporare i vermicelli e lasciare raffreddare il ripieno.",
       "Immergere un foglio di carta di riso in acqua calda per ammorbidirlo, quindi stenderlo su un panno pulito.",
@@ -2663,10 +2663,10 @@
   },
   {
     "slug": "maiali-in-coperta",
-    "title": "Rustici di Sfoglia ai Wurstel in Friggitrice ad Aria (Veloci e Croccanti)",
+    "title": "Rustici ai Wurstel (Pigs in a Blanket in 10 Minuti)",
     "emoji": "🌭",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "5",
     "portions": "4",
     "nutrition": {
@@ -2686,7 +2686,7 @@
       "Semi di sesamo (opzionale)",
       "Semi di papavero (opzionale)"
     ],
-    "description": "I mitici maiali in coperta! Mini wurstel avvolti in pasta sfoglia fragrante, dorati alla perfezione in pochi minuti. Lo snack salva-aperitivo che fa impazzire tutti.",
+    "description": "L'aperitivo più amato in tutto il mondo! Avvolgi i mini wurstel nella sfoglia e cuocili ad aria: si gonfieranno perfettamente in 10 minuti, superando la lentezza del forno.",
     "instructions": [
       "Tagliare la pasta sfoglia in strisce di larghezza pari a 2-3 cm.",
       "Avvolgere ogni wurstel con una striscia di pasta sfoglia, creando una spirale o un cilindro.",
@@ -2711,10 +2711,10 @@
   },
   {
     "slug": "petti-pollo-semplici",
-    "title": "Petti di Pollo in Friggitrice ad Aria (Teneri e Succosi, Non Secchi!)",
+    "title": "Petti di Pollo (Teneri e Succosi in 18 Minuti)",
     "emoji": "🍗",
     "temp": 190,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "5",
     "portions": "4",
     "nutrition": {
@@ -2733,7 +2733,7 @@
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Dimentica il solito petto di pollo gommoso! Scopri il trucco per cuocerlo in friggitrice ad aria: esterno sigillato e interno morbidissimo per un secondo proteico e light.",
+    "description": "Hai paura che il petto di pollo diventi gomma in friggitrice? Segui questo procedimento a 190°C per sigillare i succhi all'interno: otterrai proteine magre perfette in 18 minuti per la tua dieta.",
     "instructions": [
       "Asciugare la superficie della carne tamponando con carta assorbente per favorire l'adesione dei condimenti.",
       "Condire la carne con olio extravergine d'oliva, sale, pepe e le spezie selezionate.",
@@ -2756,10 +2756,10 @@
   },
   {
     "slug": "pollo-barbecue",
-    "title": "Pollo Barbecue in Friggitrice ad Aria (Laccato e Caramellato)",
+    "title": "Pollo Barbecue (Laccato e Caramellato in 22 Minuti)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "30",
     "portions": "4",
     "nutrition": {
@@ -2781,7 +2781,7 @@
       "Pepe nero macinato q.b.",
       "240 ml salsa barbecue"
     ],
-    "description": "Tutto il gusto del BBQ senza accendere la brace! Pollo tenerissimo laccato con salsa barbecue che caramella perfettamente grazie al calore dell'Friggitrice ad Aria. Da leccarsi le dita!",
+    "description": "Tutto il gusto della grigliata senza fumo! Cuoci il pollo speziato ad aria per sigillare i succhi e spennellalo di salsa BBQ solo alla fine: otterrai una laccatura caramellata da vero pitmaster.",
     "instructions": [
       "Miscelare zucchero di canna, paprika, aglio in polvere, sale e pepe.",
       "Asciugare i pezzi di pollo e ricoprirli uniformemente con la miscela di spezie. Lasciare marinare per 30 minuti a temperatura ambiente.",
@@ -2804,11 +2804,11 @@
   },
   {
     "slug": "pollo-limone-miele",
-    "title": "Fusi di Pollo Miele e Limone (Pelle Croccante in Friggitrice ad Aria)",
+    "title": "Fusi di Pollo Miele e Limone (Pelle Croccante)",
     "emoji": "🍋",
     "temp": 190,
-    "time": "20-22",
-    "prep_time": "1 ora",
+    "time": "20",
+    "prep_time": "60",
     "portions": "4",
     "nutrition": {
       "kcal": 390,
@@ -2828,7 +2828,7 @@
       "Sale q.b.",
       "Spicchi di limone per guarnire"
     ],
-    "description": "Un contrasto agrodolce irresistibile! Fusi di pollo marinati al miele e limone, con una pelle croccantissima e una carne che si stacca dall'osso. Facile e veloce!",
+    "description": "Fusi di pollo agrodolci da leccarsi le dita in 20 minuti. La combo miele-limone crea una crosticina appiccicosa e dorata, mentre la carne si stacca dall'osso morbidissima.",
     "instructions": [
       "In una ciotola, preparare la marinata mescolando miele, salsa di soia, succo di limone e aglio grattugiato.",
       "Immergere i fusi di pollo nella marinata. Coprire e lasciare marinare in frigorifero per 1 ora.",
@@ -2851,11 +2851,11 @@
   },
   {
     "slug": "pollo-cinque-spezie",
-    "title": "Sovracosce di Pollo alle Cinque Spezie (Gusto Orientale in Friggitrice ad Aria)",
+    "title": "Sovracosce Orientali alle Cinque Spezie (Laccatura Perfetta)",
     "emoji": "🍗",
     "temp": 190,
-    "time": "18-20",
-    "prep_time": "2 ore",
+    "time": "18",
+    "prep_time": "120",
     "portions": "4",
     "nutrition": {
       "kcal": 420,
@@ -2876,7 +2876,7 @@
       "2 cucchiai di miele",
       "2 cucchiai di salsa di soia scura"
     ],
-    "description": "Viaggia in Asia con queste sovracosce marinate! La salsa Hoisin e le spezie cinesi creano una crosticina scura e aromatica incredibile nella friggitrice ad aria.",
+    "description": "Viaggio in Asia senza uscire di casa! Sovracosce laccate alla perfezione in 18 minuti grazie alla marinatura Hoisin. Pelle iper-croccante e umidità trattenuta dalla cottura ventilata.",
     "instructions": [
       "Creare una marinata omogenea unendo in una ciotola la salsa Hoisin, la salsa di ostriche, l'aglio, lo zenzero, la miscela Cinque Spezie, un cucchiaio di miele e un cucchiaio di salsa di soia.",
       "Distribuire la marinata sulle sovracosce di pollo, anche sotto la pelle. Coprire e lasciare riposare in frigorifero per un minimo di 2 ore.",
@@ -2899,11 +2899,11 @@
   },
   {
     "slug": "cheeseburger-sliders",
-    "title": "Mini Cheeseburger in Friggitrice ad Aria (Snack Goloso e Veloce)",
+    "title": "Mini Cheeseburger (Slider Succosi in 9 Minuti)",
     "emoji": "🍔",
     "temp": 200,
     "time": "9",
-    "prep_time": "1 ora 5",
+    "prep_time": "65",
     "portions": "4",
     "nutrition": {
       "kcal": 520,
@@ -2926,7 +2926,7 @@
       "Sale q.b.",
       "Pepe q.b."
     ],
-    "description": "Piccoli hamburger, grande gusto! Carne rosolata alla perfezione e formaggio fuso filante, tutto preparato nella friggitrice ad aria per un party o una cena flash.",
+    "description": "Mini burger perfetti per l'aperitivo! Niente padelle fumanti: i patty di manzo cuociono succosi ad aria in 9 minuti e il formaggio si fonde a regola d'arte direttamente nel cestello.",
     "instructions": [
       "In una ciotola, miscelare la carne macinata con la salsa Worcestershire, la senape, la cipolla grattugiata, l'uovo, sale e pepe.",
       "Formare hamburger di uguali dimensioni con l'impasto ottenuto. Riporre in frigorifero per 1 ora.",
@@ -2950,11 +2950,11 @@
   },
   {
     "slug": "costolette-agnello-limone",
-    "title": "Costolette di Agnello al Limone (Pelle Croccante in Friggitrice ad Aria)",
+    "title": "Costolette di Agnello al Limone (Cottura Rosata e Croccante)",
     "emoji": "🍖",
     "temp": 200,
     "time": "10",
-    "prep_time": "4 ore 15",
+    "prep_time": "255",
     "portions": "4",
     "nutrition": {
       "kcal": 420,
@@ -2973,7 +2973,7 @@
       "Sale: q.b.",
       "Pepe nero macinato: q.b."
     ],
-    "description": "Costolette di agnello tenere e profumate con una marinatura sprint all'aglio e limone. La friggitrice ad aria garantisce una rosolatura da ristorante in pochi minuti.",
+    "description": "Una rosolatura da ristorante stellato in soli 10 minuti! Le costolette di agnello marinate al limone diventano croccanti fuori mantenendo un cuore rosato e tenerissimo al taglio.",
     "instructions": [
       "Ricavare la scorza del limone escludendo la parte bianca. Pestare l'aglio in un mortaio.",
       "Unire l'aglio pestato, l'olio d'oliva e la scorza di limone per creare la marinata.",
@@ -2997,7 +2997,7 @@
   },
   {
     "slug": "empanadas-di-manzo",
-    "title": "Empanadas di Manzo in Friggitrice ad Aria (Dorate e Croccanti)",
+    "title": "Empanadas di Manzo (Fagottini Friabili Senza Fritto)",
     "emoji": "🥟",
     "temp": 200,
     "time": "20",
@@ -3020,7 +3020,7 @@
       "Tuorlo d'uovo, 1",
       "Olio d'oliva, 10 ml"
     ],
-    "description": "Fagottini argentini dal cuore succoso di carne e paprika. Con la cottura in Friggitrice ad Aria otterrai una pasta brisée friabile e leggera senza dover accendere il forno.",
+    "description": "Porta in tavola l'Argentina! Fagottini di pasta brisée ripieni di manzo speziato, gonfi e friabili in 20 minuti. L'alternativa senza fumo per empanadas leggere che non colano olio.",
     "instructions": [
       "Tritare i cipollotti e cuocerli in padella con olio per 3 minuti.",
       "Unire il manzo macinato, la paprika e cuocere per 10 minuti. Lasciare raffreddare il composto.",
@@ -3044,7 +3044,7 @@
   },
   {
     "slug": "uovo-allo-scotch",
-    "title": "Uova alla Scozzese in Friggitrice ad Aria (Croccanti e Proteiche)",
+    "title": "Scotch Eggs Leggere (Uova alla Scozzese Croccantissime)",
     "emoji": "🥚",
     "temp": 175,
     "time": "15",
@@ -3071,7 +3071,7 @@
       "Pepe nero q.b.",
       "Salvia in polvere q.b."
     ],
-    "description": "Il classico British in versione light! Uova sode avvolte in saporita salsiccia e panatura croccante. Dorate alla perfezione nell'Friggitrice ad Aria senza bisogno di friggere in olio.",
+    "description": "Le famose Scotch Eggs inglesi diventano digeribili! Uova avvolte da salsiccia e panatura, cotte senza friggere. Guscio duro croccante e interno morbido in 15 minuti netti.",
     "instructions": [
       "In una ciotola, mescolare la carne di salsiccia con aglio in polvere, cipolla in polvere, salvia, sale e pepe. Suddividere l'impasto in 4 porzioni uguali.",
       "Appiattire ogni porzione di impasto e utilizzarla per avvolgere completamente ciascun uovo sodo, sigillando con cura la superficie.",
@@ -3096,11 +3096,11 @@
   },
   {
     "slug": "cipolla-fiorita",
-    "title": "Blooming Onion (La Cipolla a Fiore in Friggitrice ad Aria)",
+    "title": "Blooming Onion (La Cipolla a Fiore Spettacolare)",
     "emoji": "🧅",
     "temp": 200,
     "time": "25",
-    "prep_time": "2 ore 15",
+    "prep_time": "135",
     "portions": "4",
     "nutrition": {
       "kcal": 280,
@@ -3123,7 +3123,7 @@
       "60 g pangrattato",
       "olio spray q.b."
     ],
-    "description": "Scenografica e deliziosa! Una cipolla intera che 'sboccia' in petali croccanti e speziati. Un antipasto da condividere, perfetto da intingere in una salsa saporita.",
+    "description": "Spettacolo puro! La famosa cipolla gigante aperta a fiore e impanata, arrostita in 25 minuti senza i litri d'olio previsti dall'originale. Petali croccanti perfetti da staccare e intingere in compagnia.",
     "instructions": [
       "Pelare le cipolle e recidere la parte superiore. Praticare otto incisioni verticali dall'alto verso il basso, fermandosi a circa 1 cm dalla base per mantenere la cipolla intera.",
       "Immergere le cipolle in acqua ghiacciata per almeno 2 ore per favorire l'apertura dei petali.",
@@ -3147,11 +3147,11 @@
   },
   {
     "slug": "filetti-salmone-semplici",
-    "title": "Salmone in Friggitrice ad Aria (Pelle Croccante e Cuore Tenero)",
+    "title": "Filetti di Salmone (Pelle Croccante e Cuore Umido)",
     "emoji": "🐟",
     "temp": 200,
-    "time": "8-10",
-    "prep_time": "Non presente",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "nutrition": {
       "kcal": 310,
@@ -3168,7 +3168,7 @@
       "Sale in fiocchi q.b.",
       "Pepe nero macinato fresco q.b."
     ],
-    "description": "Il segreto per un salmone perfetto? La convezione dell'aria! Ottieni una superficie dorata e caramellata mentre l'interno resta umido, rosa e succulento. Pronto in 8 minuti.",
+    "description": "Hai mai rovinato un salmone seccandolo troppo? Con 8 minuti ad aria rovente otterrai una crosticina perfetta mantenendo la polpa umida e ricca di omega-3. Il trucco infallibile dei cuochi moderni.",
     "instructions": [
       "Asciugare i filetti di salmone tamponando con carta assorbente.",
       "Spennellare la superficie dei filetti con olio e condire con sale in fiocchi e pepe nero macinato fresco.",
@@ -3192,7 +3192,7 @@
   },
   {
     "slug": "fish-and-chips",
-    "title": "Fish & Chips Leggero (Merluzzo Croccante in Friggitrice ad Aria)",
+    "title": "Fish & Chips Leggero (Merluzzo Croccantissimo)",
     "emoji": "🐟",
     "temp": 180,
     "time": "12",
@@ -3217,13 +3217,13 @@
       "1 mazzetto di dragoncello",
       "Succo di limone q.b."
     ],
-    "description": "Il classico pub inglese in versione salutare. Merluzzo con una panatura dorata e fragrante, cotto alla perfezione senza la pesantezza del fritto tradizionale.",
+    "description": "Il piatto di strada più famoso del Regno Unito, sgrassato ma godurioso! Merluzzo in crosta spessa e croccante con soli 12 minuti di cottura ad aria, perfetto abbinato a patatine rustiche.",
     "instructions": [
       "Tagliare i filetti di merluzzo in pezzi regolari di circa 4 cm di spessore. Tamponare con carta assorbente per rimuovere l'umidità in eccesso e condire con pepe.",
       "Preparare la salsa: mescolare la maionese con il dragoncello tritato finemente e succo di limone a piacere.",
       "Disporre tre piatti fondi: uno con la farina, uno con le uova sbattute e uno con il pangrattato.",
       "Passare i pezzi di merluzzo prima nella farina, poi nell'uovo sbattuto e infine nel pangrattato, assicurandosi che la panatura aderisca uniformemente. Disporre i pezzi nel cestello e distribuire sulla superficie piccoli fiocchi di burro.",
-      "Impostare la temperatura a 180°C e cuocere per 12 minuti. Servire il merluzzo accompagnato dalla salsa al dragoncello."
+      "Impostare la temperatura a 180°C e cuocere pour 12 minuti. Servire il merluzzo accompagnato dalla salsa al dragoncello."
     ],
     "source": "Tefal",
     "tip": "Distribuire il burro sulla superficie dei filetti prima della cottura. Il grasso, sciogliendosi, garantirà una doratura uniforme e un sapore più ricco.",
@@ -3240,7 +3240,7 @@
   },
   {
     "slug": "focaccine-alla-fragola",
-    "title": "Scones alle Fragole (Soffici e Fragranti in Friggitrice ad Aria)",
+    "title": "Scones alle Fragole (Soffici, Fragranti e Veloci)",
     "emoji": "🍓",
     "temp": 175,
     "time": "12",
@@ -3263,7 +3263,7 @@
       "120 ml di panna fresca liquida",
       "2 uova"
     ],
-    "description": "Piccole delizie anglosassoni ricche di fragole fresche. La friggitrice ad aria le rende leggermente sfogliate e dorate, ideali per un tè pomeridiano o una colazione speciale.",
+    "description": "Non serve accendere il forno gigante per 4 dolcetti! Questi Scones inglesi alle fragole esplodono di sofficità in 12 minuti, ideali per la tua colazione o il tè pomeridiano.",
     "instructions": [
       "In una ciotola, miscelare la farina e lo zucchero.",
       "Aggiungere il burro freddo a cubetti e lavorare con la punta delle dita fino a ottenere un composto sabbioso.",
@@ -3288,7 +3288,7 @@
   },
   {
     "slug": "focaccine-mirtilli-zenzero",
-    "title": "Scones Mirtilli e Zenzero (Profumati e Veloci in Friggitrice ad Aria)",
+    "title": "Scones Mirtilli e Zenzero (Dolcetti Gourmet in 12 Min)",
     "emoji": "🫐",
     "temp": 175,
     "time": "12",
@@ -3315,7 +3315,7 @@
       "2 uova medie",
       "4 ml di estratto di vaniglia"
     ],
-    "description": "Un abbinamento raffinato: la dolcezza dei mirtilli incontra la nota piccante dello zenzero. Scones soffici pronti in pochi minuti per una merenda gourmet.",
+    "description": "Stupisci tutti all'ora del tè! Questi morbidissimi Scones inglesi si preparano in una ciotola e cuociono in soli 12 minuti. L'acidità del mirtillo e il piccante dello zenzero creano una combo divina.",
     "instructions": [
       "In una ciotola, setacciare farina, sale, zucchero e lievito. Aggiungere il burro freddo a cubetti e lavorare fino a ottenere un composto sabbioso. Incorporare i mirtilli e lo zenzero.",
       "In un recipiente a parte, sbattere la panna, un uovo e l'estratto di vaniglia.",
@@ -3341,7 +3341,7 @@
   },
   {
     "slug": "gamberetti-bacon",
-    "title": "Gamberi al Bacon (Antipasto Croccante in Friggitrice ad Aria)",
+    "title": "Gamberi al Bacon (L'Aperitivo Surf & Turf Definitivo)",
     "emoji": "🍤",
     "temp": 160,
     "time": "16",
@@ -3363,7 +3363,7 @@
       "2 g di paprika, 2 g di cipolla in polvere",
       "1 g di pepe nero macinato"
     ],
-    "description": "Un'esplosione di sapori terra-mare! Gamberi succosi avvolti in pancetta croccante che rilascia tutto il suo aroma durante la cottura veloce. L'aperitivo perfetto.",
+    "description": "L'aperitivo perfetto! Code di gambero avvolte nella pancetta: la friggitrice ad aria sgrassa il bacon rendendolo croccantissimo in 16 minuti, mentre il gambero resta umido e dolce al cuore.",
     "instructions": [
       "Condire i gamberi con aglio in polvere, paprika, cipolla in polvere e pepe nero.",
       "Tagliare ogni fetta di pancetta a metà nel senso della lunghezza.",
@@ -3389,7 +3389,7 @@
   },
   {
     "slug": "gamberi-al-cocco",
-    "title": "Gamberi al Cocco (Croccanti e Tropicali in Friggitrice ad Aria)",
+    "title": "Gamberi al Cocco (Panatura Tropicale Extra Croccante)",
     "emoji": "🥥",
     "temp": 175,
     "time": "8",
@@ -3415,13 +3415,13 @@
       "Olio spray q.b.",
       "Aromi a piacere"
     ],
-    "description": "Viaggia ai tropici con ogni morso! Gamberi con una panatura dorata al cocco per un contrasto dolce-salato unico. Croccantezza imbattibile garantita dalla friggitrice ad aria.",
+    "description": "Una crosta esotica che scrocchia sotto i denti! I gamberi impanati al cocco rapè cuociono in appena 8 minuti. Un finger-food elegante, leggero e perfetto da intingere in salse agrodolci.",
     "instructions": [
       "In una ciotola, mescolare la farina con il sale e gli aromi.",
-      "In una seconda ciotola, sbattere le uova con il latte. In una terza ciotola, unire il pangrattato e il cocco rapè.",
+      "In una seconda ciotola, sbattere les uova con il latte. In une terza ciotola, unire il pangrattato e il cocco rapè.",
       "Passare ogni gambero prima nella farina, poi nell'uovo sbattuto e infine nel mix di pangrattato e cocco, premendo per far aderire la panatura.",
       "Disporre i gamberi panati nel cestello preriscaldato, senza sovrapporli. Nebulizzare con olio spray.",
-      "Cuocere a 175°C per 8 minuti, girando i gamberi a metà cottura."
+      "Cuocere a 175°C pour 8 minuti, girando i gamberi a metà cottura."
     ],
     "source": "Cosori",
     "tip": "Premere con decisione la panatura sui gamberi per assicurare che aderisca durante la cottura. Nebulizzare abbondante olio per ottenere una doratura ottimale.",
@@ -3439,7 +3439,7 @@
   },
   {
     "slug": "gamberi-croccanti-curry",
-    "title": "Gamberi al Curry (Doppia Panatura Extra Crunch)",
+    "title": "Gamberi al Curry (Doppia Panatura Dorata in 10 Min)",
     "emoji": "🦐",
     "temp": 170,
     "time": "10",
@@ -3462,7 +3462,7 @@
       "3 cucchiai di curry in polvere",
       "1 cucchiaio di olio"
     ],
-    "description": "Gamberi speziati e super croccanti grazie alla doppia impanatura con farina di mais. Il profumo del curry si sposa perfettamente con la doratura rapida dell'Friggitrice ad Aria.",
+    "description": "Cerchi uno snack speziato e irresistibile? La doppia panatura alla farina di mais e curry rende questi gamberi dorati e iper-croccanti in friggitrice ad aria, usando pochissimo olio.",
     "instructions": [
       "Preparare tre ciotole: una con le uova sbattute, una con la farina di frumento miscelata al curry, e una con la farina di mais.",
       "Passare ogni gambero prima nell'uovo, poi nella miscela di farina e curry.",
@@ -3486,7 +3486,7 @@
   },
   {
     "slug": "merluzzo-al-curry",
-    "title": "Merluzzo Curry e Cocco (Tenero e Cremoso in Friggitrice ad Aria)",
+    "title": "Merluzzo Curry e Cocco (Pasto Esotico in 10 Minuti)",
     "emoji": "🥘",
     "temp": 200,
     "time": "10",
@@ -3509,7 +3509,7 @@
       "Sale q.b.",
       "Pepe q.b."
     ],
-    "description": "Un modo originale e sano di cucinare il pesce bianco. Filetti di merluzzo che restano morbidissimi in una salsa aromatica al curry e cocco. Leggero e saporito.",
+    "description": "Una cena esotica da applausi in 10 minuti netti! Filetti di merluzzo succosi cotti ad alta temperatura in un bagno profumato di latte di cocco e curry dolce. Facile, sano e d'impatto.",
     "instructions": [
       "Spennellare i filetti di merluzzo con una parte della pasta di curry.",
       "In un pentolino, scaldare la pasta di curry rimanente con la crema di cocco. Regolare di sale e pepe.",
@@ -3533,7 +3533,7 @@
   },
   {
     "slug": "merluzzo-crosta-panko",
-    "title": "Merluzzo in Crosta di Panko (Leggero e Croccante in Friggitrice ad Aria)",
+    "title": "Merluzzo in Crosta di Panko (Raffinato e Croccante)",
     "emoji": "🐟",
     "temp": 170,
     "time": "10",
@@ -3558,7 +3558,7 @@
       "Sale",
       "Pepe nero macinato"
     ],
-    "description": "Filetti di merluzzo nobilitati da una crosticina di Panko, limone e prezzemolo. La friggitrice ad aria li rende croccanti come se fossero fritti, ma con pochissimi grassi.",
+    "description": "Dimentica la solita fettina di pesce scondita! Crea una crosta dorata, burrosa e profumata al limone in 10 minuti usando il Panko giapponese. Un secondo piatto leggero e dal crunch pazzesco.",
     "instructions": [
       "Salare i filetti di merluzzo su entrambi i lati.",
       "In una ciotola, miscelare il Panko, il burro fuso, il prezzemolo tritato, la scorza, il succo di limone e il pepe nero.",
@@ -3582,7 +3582,7 @@
   },
   {
     "slug": "mini-torta-mele",
-    "title": "Tortine di Mele Monoporzione (Cuore Caldo in 15 Minuti)",
+    "title": "Tortine di Mele Monoporzione (Cuore Caldo in 10 Minuti)",
     "emoji": "🥧",
     "temp": 175,
     "time": "10",
@@ -3608,7 +3608,7 @@
       "Uovo: 1",
       "Latte: 5 ml"
     ],
-    "description": "Piccoli scrigni di sfoglia ripieni di mele speziate alla cannella. Profumate e fragranti, queste monoporzioni sono il fine pasto o la merenda perfetta, pronte in un attimo.",
+    "description": "Mini Apple Pie velocissime! Fagottini di sfoglia caramellati che racchiudono mele speziate alla cannella e burro fuso in soli 10 minuti. L'incredibile comodità della friggitrice ad aria per un comfort dessert espresso.",
     "instructions": [
       "Sciogliere il burro in un pentolino. Aggiungere i cubetti di mela, lo zucchero e le spezie. Cuocere fino ad ammorbidire le mele.",
       "Ricavare due dischi dalla pasta e distribuire il ripieno al centro di ciascuno.",
@@ -3632,7 +3632,7 @@
   },
   {
     "slug": "morsi-mozzarella-fritti",
-    "title": "Mozzarella Bites (Cubetti Filanti in Friggitrice ad Aria)",
+    "title": "Mozzarella Bites (Cubetti Filanti ad Aria)",
     "emoji": "🧀",
     "temp": 175,
     "time": "8",
@@ -3659,7 +3659,7 @@
       "Prezzemolo secco: q.b.",
       "Olio spray: q.b."
     ],
-    "description": "Addio mozzarella gommosa! Cubetti con doppia panatura che esplodono di formaggio fuso al primo morso. Croccantissimi fuori, sono lo snack vegetariano più amato da grandi e piccoli.",
+    "description": "Hai presente i golosi cheese bites fritti? Prepara in casa questi sfiziosi cubetti di formaggio doppiamente impanati! Il passaggio in freezer evita che la mozzarella coli, garantendo cubotti dorati in 8 minuti.",
     "instructions": [
       "Tagliare i bastoncini di formaggio a pasta filata in cubetti di dimensioni uniformi.",
       "Preparare tre contenitori: nel primo miscelare farina, amido di mais, sale e pepe; nel secondo sbattere le uova con il latte; nel terzo unire il pangrattato e il prezzemolo.",
@@ -3683,7 +3683,7 @@
   },
   {
     "slug": "muffin-caffe-streusel",
-    "title": "Muffin al Caffè e Cacao (Soffice Risveglio in Friggitrice ad Aria)",
+    "title": "Muffin al Caffè e Cacao (Soffice Risveglio)",
     "emoji": "☕",
     "temp": 150,
     "time": "15",
@@ -3710,7 +3710,7 @@
       "80 ml di olio di semi",
       "5 ml di estratto di vaniglia"
     ],
-    "description": "Muffin dal cuore umido e sapore deciso di caffè e cacao. La cottura in friggitrice ad aria assicura una lievitazione perfetta e una consistenza soffice, ideale per una carica di energia mattutina.",
+    "description": "Colazione calda senza fatica! Grazie alla friggitrice ad aria, la lievitazione spinge questi Muffin al Cacao verso l'alto creando una cupola perfetta in 15 minuti. Morbidissimi all'interno.",
     "instructions": [
       "In una ciotola, unire e setacciare gli ingredienti secchi: farina, cacao, zucchero, lievito, bicarbonato e caffè in polvere.",
       "In un recipiente separato, emulsionare l'uovo con il latte, l'olio e l'estratto di vaniglia.",
@@ -3735,7 +3735,7 @@
   },
   {
     "slug": "muffin-gocce-cioccolato",
-    "title": "Muffin con Gocce di Cioccolato (Cupola Perfetta in Friggitrice ad Aria)",
+    "title": "Muffin con Gocce di Cioccolato (Cupola Perfetta)",
     "emoji": "🧁",
     "temp": 170,
     "time": "20",
@@ -3759,7 +3759,7 @@
       "120 ml di latte",
       "8 g di lievito in polvere per dolci"
     ],
-    "description": "Il classico intramontabile: muffin alti e soffici con tante gocce di cioccolato. Grazie alla ventilazione costante dell'aria, otterrai la tipica cupola dorata da pasticceria in metà tempo.",
+    "description": "Come ottenere la famosa 'cupola' alta e dorata dei muffin da pasticceria? Il vortice d'aria della friggitrice spinge la lievitazione verso l'alto in modo esplosivo in 20 minuti.",
     "instructions": [
       "In un recipiente, miscelare il latte, il burro fuso e le uova.",
       "In un secondo recipiente, unire la farina, lo zucchero, il lievito e le gocce di cioccolato.",
@@ -3783,7 +3783,7 @@
   },
   {
     "slug": "orata-griglia-pomodori",
-    "title": "Orata alla Griglia con Olive (Secondo Light in Friggitrice ad Aria)",
+    "title": "Orata alla Griglia (Pesce Light Senza Fumo in Casa)",
     "emoji": "🐟",
     "temp": 200,
     "time": "7",
@@ -3809,7 +3809,7 @@
       "Sale",
       "Pepe"
     ],
-    "description": "Filetti di orata tenerissimi arricchiti da un'emulsione fresca di olive e pomodori. L'Friggitrice ad Aria simula perfettamente la griglia, mantenendo il pesce succoso e la pelle croccante.",
+    "description": "Una grigliata di pesce senza fumo in casa! I filetti di orata cuociono a 200° in soli 7 minuti: la pelle fa una leggera crosticina mentre i succhi restano sigillati.",
     "instructions": [
       "Preparare la salsa: tagliare i pomodori a dadini, affettare le olive, tritare aglio e prezzemolo. Unire gli ingredienti in una ciotola e condire con succo di limone e olio d'oliva.",
       "Asciugare i filetti di orata con carta assorbente. Ungerli con olio e condire con sale e pepe.",
@@ -3833,7 +3833,7 @@
   },
   {
     "slug": "pesce-gatto-cajun",
-    "title": "Pesce Gatto al Cajun (Croccante e Speziato in Friggitrice ad Aria)",
+    "title": "Pesce Speziato Cajun (Croccante in 7 Minuti)",
     "emoji": "🐟",
     "temp": 175,
     "time": "7",
@@ -3859,7 +3859,7 @@
       "Pepe di Caienna: q.b.",
       "Olio spray: q.b."
     ],
-    "description": "Un tocco di New Orleans in cucina! Filetti di pesce gatto avvolti in una panatura Cajun intensa e aromatica. La cottura ad aria li rende croccantissimi fuori senza l'uso di grassi aggiunti.",
+    "description": "Una sferzata di energia dalla Louisiana. I filetti di pesce (ideale il pesce gatto o il merluzzo spesso) coperti di spezie Cajun cuociono in 7 minuti formando una crosta intensa, rossa e saporita senza friggere.",
     "instructions": [
       "Asciugare i filetti di pesce con carta assorbente.",
       "Miscelare paprika, aglio in polvere, cipolla in polvere, timo, basilico, origano e pepe di Caienna.",
@@ -3884,7 +3884,7 @@
   },
   {
     "slug": "pizza-da-colazione",
-    "title": "Breakfast Pizza (Uovo e Prosciutto in Friggitrice ad Aria)",
+    "title": "Breakfast Pizza (Uovo dal Tuorlo Fondente in 8 Min)",
     "emoji": "🍕",
     "temp": 175,
     "time": "8",
@@ -3907,7 +3907,7 @@
       "15 ml Olio extravergine d'oliva",
       "Coriandolo fresco q.b."
     ],
-    "description": "Inizia la giornata con una marcia in più! Una pizza sottile e croccante guarnita con mozzarella, prosciutto e un uovo dal tuorlo fondente, pronta in pochissimi minuti.",
+    "description": "La colazione (o brunch) dei campioni! In soli 8 minuti la base della pizza diventa friabile, la mozzarella si fonde e l'uovo cuoce alla coque, pronto per essere rotto. Perfetto con una base pronta.",
     "instructions": [
       "Spennellare la surface della base per pizza con olio extravergine d'oliva.",
       "Distribuire uniformemente la mozzarella e il prosciutto affumicato tagliato a pezzi.",
@@ -3933,7 +3933,7 @@
   },
   {
     "slug": "salmone-burro-limone",
-    "title": "Salmone Burro e Limone (Raffinato e Veloce in Friggitrice ad Aria)",
+    "title": "Salmone Burro e Limone (Raffinato in 8 Minuti)",
     "emoji": "🐟",
     "temp": 175,
     "time": "8",
@@ -3957,7 +3957,7 @@
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Salmone gourmet pronto in 10 minuti. Una salsa setosa al burro, limone e aglio che esalta la morbidezza del pesce, cotto alla perfezione grazie al calore circolare dell'aria.",
+    "description": "Una cena romantica last-minute? Cuoci il salmone ad aria in 8 minuti per mantenerlo rosa e umidissimo, poi nappalo con questa salsa francese al burro fuso, aglio e limone.",
     "instructions": [
       "Condire i filetti di salmone con sale e pepe.",
       "Preriscaldare il dispositivo di cottura a 175°C e disporre i filetti all'interno.",
@@ -3982,7 +3982,7 @@
   },
   {
     "slug": "salmone-pomodoro-cetriolo",
-    "title": "Salmone Freschezza (Cottura Rapida e Insalata Cruda)",
+    "title": "Salmone Freschezza (Piatto Fit in 9 Minuti)",
     "emoji": "🐟",
     "temp": 200,
     "time": "9",
@@ -4009,7 +4009,7 @@
       "Sale: q.b.",
       "Pepe nero: q.b."
     ],
-    "description": "L'equilibrio perfetto tra il calore del salmone arrostito in Friggitrice ad Aria e la freschezza di un'insalata di cetrioli e cipolla rossa. Un piatto unico sano, proteico e bilanciato.",
+    "description": "Il pranzo fit perfetto per l'estate. Mentre la friggitrice cuoce il salmone creando una leggera crosta superficiale in 9 minuti, tu prepari un'insalata croccante e dissetante di contorno. Zero sbatti.",
     "instructions": [
       "Condire i filetti di salmone con olio, sale e pepe.",
       "Posizionare i filetti nel cestello preriscaldato e cuocere a 200°C per 7-9 minuti.",
@@ -4035,7 +4035,7 @@
   },
   {
     "slug": "salmone-glassato-teriyaki",
-    "title": "Salmone Teriyaki all'Arancia (Glassatura Pro in Friggitrice ad Aria)",
+    "title": "Salmone Teriyaki all'Arancia (Laccatura Orientale in 8 Minuti)",
     "emoji": "🍣",
     "temp": 175,
     "time": "8",
@@ -4060,7 +4060,7 @@
       "Olio vegetale: 20 ml",
       "Pepe bianco: q.b."
     ],
-    "description": "Filetti di salmone laccati con una riduzione di teriyaki e arancia. La friggitrice ad aria crea una crosticina agrodolce irresistibile, mantenendo la polpa che si scioglie in bocca.",
+    "description": "Una laccatura lucida, appiccicosa e dal sapore orientale intenso. Il trucco? Cuocere il salmone delicatamente (175°) in 8 minuti e applicare la riduzione Teriyaki all'arancia solo a cottura ultimata.",
     "instructions": [
       "In un pentolino, unire salsa di soia, zucchero, aglio, zenzero e succo d'arancia. Portare a ebollizione e ridurre il liquido della metà fino a ottenere una glassa densa.",
       "Raffreddare la salsa teriyaki a temperatura ambiente.",
@@ -4082,7 +4082,7 @@
   },
   {
     "slug": "sandwich-muffin-colazione",
-    "title": "English Muffin Breakfast Sandwich (Come al Fast Food, ma Sano)",
+    "title": "English Muffin Sandwich (Colazione Americana Veloce)",
     "emoji": "🥪",
     "temp": 160,
     "time": "10",
@@ -4107,7 +4107,7 @@
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Muffin inglese tostato con cuore filante di cheddar, uova e pancetta croccante. La friggitrice ad aria scalda e tosta tutto uniformemente per un risveglio da campioni.",
+    "description": "Scordati il drive-thru! Il classico panino da colazione americano fatto in casa in 10 minuti. Il trucco dell'acqua calda nello stampino cuoce l'uovo al vapore mentre il pane si tosta.",
     "instructions": [
       "Ungere due stampini monoporzione con olio spray. Preriscaldare l'apparecchio a 160°C e inserire gli stampini.",
       "Disporre una fetta di formaggio e una di pancetta su due metà dei muffin. Inserire tutte le quattro metà nell'apparecchio.",
@@ -4133,7 +4133,7 @@
   },
   {
     "slug": "muffin-formaggio-mais",
-    "title": "Muffin Rustici Mais e Formaggio (Cuore Filante e Saporito)",
+    "title": "Muffin Salati Formaggio e Mais (Cuore Filante in 15 Min)",
     "emoji": "🧁",
     "temp": 160,
     "time": "15",
@@ -4157,7 +4157,7 @@
       "160 g di chicchi di mais dolce scolato",
       "120 g di formaggio cheddar grattugiato e 3 scalogni"
     ],
-    "description": "Tortine salate irresistibili che uniscono la dolcezza del mais al carattere del formaggio fuso e degli scalogni. Perfetti come antipasto o snack salato pronto in pochi minuti.",
+    "description": "Il classico cornbread americano trasformato in tortini salati monoporzione. Il cheddar fonde nell'impasto mentre il calore li fa lievitare ad arte in 15 minuti, per uno spuntino eccezionale.",
     "instructions": [
       "Setaccia in una boule capiente le due farine con lo zucchero, il lievito e il sale.",
       "In un altro contenitore, batti l'uovo insieme al latte e al burro intiepidito, quindi riversa il liquido sulle farine mescolando leggermente.",
@@ -4182,7 +4182,7 @@
   },
   {
     "slug": "muffin-limone-mirtilli",
-    "title": "Muffin Cocco e Mirtilli (Senza Uova e Lattosio in Friggitrice ad Aria)",
+    "title": "Muffin Cocco e Mirtilli (Leggeri e Soffici in 15 Minuti)",
     "emoji": "🧁",
     "temp": 150,
     "time": "15",
@@ -4206,7 +4206,7 @@
       "10 ml di succo di limone e scorza grattugiata",
       "80 g di mirtilli freschi lavati"
     ],
-    "description": "Una variante leggera e profumata dal tocco esotico. Il latte di cocco e il limone regalano una morbidezza incredibile a questi muffin carichi di mirtilli freschi, ideali per ogni esigenza alimentare.",
+    "description": "Una coccola dolce accessibile a tutti: completamente vegani, senza lattosio e morbidissimi! Il latte di cocco lega l'impasto mentre la friggitrice li cuoce dolcemente a 150° in 15 minuti.",
     "instructions": [
       "Sbatti il latte di cocco, l'olio di cocco, lo zucchero, la scorza e il succo di limone in una scodellina profonda.",
       "Combina a parte la farina chiara, i lieviti e un pizzico di sale e incorpora gli ingredienti secchi ai liquidi in più riprese.",
@@ -4230,7 +4230,7 @@
   },
   {
     "slug": "pane-banana-noci",
-    "title": "Mini Banana Bread alle Noci (Il Classico in Formato Snack)",
+    "title": "Mini Banana Bread alle Noci (Il Plumcake Veloce)",
     "emoji": "🍞",
     "temp": 150,
     "time": "40",
@@ -4253,7 +4253,7 @@
       "30 g di farina bianca",
       "3 g di bicarbonato di sodio e sale"
     ],
-    "description": "Tutto il sapore del banana bread in un formato compatto e fragrante. L'interno rimane dolcissimo e umido, esaltato dallo scrocchio croccante delle noci tostate alla perfezione dall'aria calda.",
+    "description": "Hai due banane nere da smaltire? Crea un mini plumcake perfetto! Cotto a bassa temperatura (150°) per 40 minuti, il banana bread resta incredibilmente umido dentro e tostato fuori.",
     "instructions": [
       "Schiaccia accuratamente la polpa delle banane con i rebbi di una forchetta in un piattino profondo.",
       "Monta a crema morbida il burro insieme allo zucchero semolato e unisci l'uovo e un tocco di vaniglia.",
@@ -4276,10 +4276,10 @@
   },
   {
     "slug": "asparagi-arrostiti-semplici",
-    "title": "Asparagi Arrostiti (Contorno Primaverile in 8 Minuti)",
+    "title": "Asparagi Arrostiti (Contorno Perfetto in 6 Minuti)",
     "emoji": "🥗",
     "temp": 200,
-    "time": "6-8",
+    "time": "6",
     "prep_time": "2",
     "portions": "2",
     "nutrition": {
@@ -4296,7 +4296,7 @@
       "3 cucchiaini di olio extravergine d'oliva",
       "Sale marino e pepe macinato fresco q.b."
     ],
-    "description": "Sani, vibranti e incredibilmente rapidi. Grazie alla friggitrice ad aria, le punte degli asparagi diventano croccanti e saporite, mantenendo intatte tutte le proprietà nutritive e il colore brillante.",
+    "description": "Il modo migliore in assoluto per cuocere gli asparagi! Dimentica la bollitura che li rende molli: in 6 minuti ad aria a 200°C le punte diventano croccantissime mentre i gambi restano verdi e sodi.",
     "instructions": [
       "Lava con cura gli asparagi ed elimina torcendo o recidendo la sezione più bassa, pallida e legnosa del gambo.",
       "Raccogli la verdura in una scodella o direttamente su un piano e cospargila d'olio.",
@@ -4320,7 +4320,7 @@
   },
   {
     "slug": "asparagi-avvolti-prosciutto",
-    "title": "Asparagi e Prosciutto Crudo (Antipasto Gourmet Croccante)",
+    "title": "Asparagi al Crudo (Antipasto Gourmet in 10 Minuti)",
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
@@ -4342,13 +4342,13 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Un abbinamento vincente: la dolcezza dell'asparago incontra la sapidità del prosciutto crudo, che in Friggitrice ad Aria diventa croccante come una chips. Elegante e pronto in un lampo.",
+    "description": "Un antipasto low-carb da ristorante. Avvolgi gli asparagi nel crudo: la cottura a 150° fa sì che il grasso del prosciutto si sciolga e diventi una chips croccante che abbraccia l'ortaggio.",
     "instructions": [
       "Condire gli asparagi mondati con sale e pepe nero.",
       "Avvolgere strettamente ogni asparago con una fetta di prosciutto crudo, partendo dalla punta verso il gambo.",
       "Disporre gli involtini nel cestello di cottura, ben distanziati.",
       "Irrorali con l’olio extravergine d’oliva e mescolali delicatamente per condirli in modo uniforme; se vuoi, puoi usare un dosatore spray,",
-      "Cuocere a 150°C per 10 minuti, fino a quando il prosciutto risulterà dorato e croccante."
+      "Cuocere a 150°C per 10 minuti, jusqu'à quando il prosciutto risulterà dorato e croccante."
     ],
     "source": "Cosori",
     "tip": "Dosare il sale con moderazione. Il prosciutto crudo rilascerà sapidità durante la cottura.",
@@ -4367,7 +4367,7 @@
   },
   {
     "slug": "bagel-vegetariani",
-    "title": "Bagel Veggie (Verdure Grigliate e Crema al Formaggio)",
+    "title": "Bagel Veggie (Verdure Grigliate Facili in 17 Minuti)",
     "emoji": "🥯",
     "temp": 200,
     "time": "17",
@@ -4392,7 +4392,7 @@
       "2 cucchiai di olio extravergine d'oliva",
       "Origano secco q.b."
     ],
-    "description": "Un pranzo veloce o uno snack sostanzioso: bagel perfettamente tostati farciti con peperoni e funghi saporiti, bilanciati dalla freschezza del formaggio spalmabile.",
+    "description": "Usa la tua friggitrice ad aria come un toaster potenziato! Griglia peperoni e funghi in pochi minuti, poi tosta i bagel e farciscili per un pranzo vegetariano sano, colorato e ricco di sapore.",
     "instructions": [
       "Pulire i peperoni eliminando semi e filamenti, quindi tagliarli a falde. Pulire e affettare i funghi.",
       "Condire le verdure con olio extravergine d'oliva e origano.",
@@ -4415,7 +4415,7 @@
   },
   {
     "slug": "bocconcini-cavolfiore-salsa-ranch",
-    "title": "Cauliflower Wings (Cavolfiore Impanato e Piccante)",
+    "title": "Cauliflower Wings (Ali di Cavolfiore Piccanti)",
     "emoji": "🥦",
     "temp": 170,
     "time": "27",
@@ -4443,7 +4443,7 @@
       "Sale q.b.",
       "Olio spray q.b."
     ],
-    "description": "La versione vegetale delle famose alette di pollo! Cimette di cavolfiore con una panatura croccante, rese irresistibili da un tocco di salsa piccante. Lo snack perfetto da tuffare nella salsa Ranch.",
+    "description": "Le ali di pollo finte che faranno impazzire tutti. Cimette di cavolfiore in pastella, impanate nel panko e glassate nella salsa Buffalo piccante. L'alternativa veg perfetta in 27 minuti.",
     "instructions": [
       "In una ciotola, preparare una pastella mescolando farina 00, cipolla in polvere, aglio in polvere, paprika e sale. Incorporare il latte gradualmente, mescolando fino ad ottenere un composto denso e omogeneo.",
       "Versare il pangrattato panko in un piatto.",
@@ -4452,7 +4452,7 @@
       "In una ciotola capiente, emulsionare la salsa piccante con i 30 ml di olio di semi. A cottura ultimata, trasferire i bocconcini di cavolfiore caldi nella ciotola e mescolare per ricoprirli uniformemente con la salsa."
     ],
     "source": "Ninja",
-    "tip": "Per una copertura uniforme, agitare la ciotola con i bocconcini e la salsa fino a quando ogni pezzo non sarà completamente condito. Servire immediatamente.",
+    "tip": "Per une copertura uniforme, agitare la ciotola con i bocconcini et la salsa fino a quando ogni pezzo non sarà completamente condito. Servire immediatamente.",
     "keywords": [
       "Verdure",
       "Antipasto",
@@ -4466,7 +4466,7 @@
   },
   {
     "slug": "broccoli-arrosto-aglio",
-    "title": "Broccoli all'Aglio (Dorati e Saporiti in Friggitrice ad Aria)",
+    "title": "Broccoli all'Aglio (Dorati)",
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
@@ -4488,7 +4488,7 @@
       "Sale fino, 4 g",
       "Pepe nero in polvere, 1 g"
     ],
-    "description": "Dimentica i broccoli bolliti! L'aria calda tosta le cimette rendendole croccanti e concentrando il sapore dell'aglio per un contorno vegano che piacerà a tutti.",
+    "description": "Se odi l'odore dei broccoli bolliti, questa ricetta ti salverà. Cotti ad aria a bassa temperatura (150°C) per 10 minuti, i broccoli si tostano mantenendo croccantezza e sapore intenso.",
     "instructions": [
       "Dividere il broccolo in cimette di dimensioni uniformi.",
       "Condire le cimette con olio, aglio in polvere, sale e pepe, mescolando per ottenere una copertura omogenea.",
@@ -4497,7 +4497,7 @@
       "A metà cottura, scuotere il cestello per garantire una doratura uniforme."
     ],
     "source": "Cosori",
-    "tip": "Tagliare le cimette di broccolo a una dimensione simile per garantire una cottura uniforme ed evitare che le parti più piccole brucino.",
+    "tip": "Tagliare le cimette di broccolo a una dimensione simile per garantire une cottura uniforme ed evitare che le parti più piccole brucino.",
     "keywords": [
       "Verdure",
       "Contorno",
@@ -4512,7 +4512,7 @@
   },
   {
     "slug": "carote-soia-miele",
-    "title": "Carote Laccate Soia e Miele (Contorno Agrodolce)",
+    "title": "Carote Laccate Soia e Miele (Agrodolci e Veloci)",
     "emoji": "🥕",
     "temp": 200,
     "time": "13",
@@ -4533,7 +4533,7 @@
       "10 ml di miele",
       "10 ml di salsa di soia"
     ],
-    "description": "Carote novelle trasformate in una delizia caramellata. La laccatura alla soia e miele crea una crosticina lucida e saporita che avvolge il cuore tenero della carota.",
+    "description": "Le carotine novelle si trasformano! La marinatura di soia e miele caramellizza istantaneamente a 200°C nella friggitrice, creando un contorno agrodolce dalla crosticina irresistibile in 13 min.",
     "instructions": [
       "Lavare e asciugare accuratamente le carote.",
       "In una ciotola, condire le carote con olio d'oliva, miele e salsa di soia, mescolando per ricoprirle uniformemente.",
@@ -4542,7 +4542,7 @@
       "A metà cottura, scuotere il cestello per garantire una doratura uniforme."
     ],
     "source": "Cosori",
-    "tip": "Utilizzare carote di dimensioni simili per garantire una cottura omogenea.",
+    "tip": "Utilizzare carote di dimensioni simili per garantire une cottura omogenea.",
     "keywords": [
       "Verdure",
       "Contorno",
@@ -4579,7 +4579,7 @@
       "Sale q.b.",
       "Pepe q.b."
     ],
-    "description": "La dolcezza naturale delle carote viene esaltata dal miele e dall'aroma del timo fresco. Un contorno raffinato, dorato e tenero, ideale per accompagnare ogni secondo piatto.",
+    "description": "Il calore avvolgente della friggitrice esalta la naturale dolcezza delle carote, che glassate col miele e profumate al timo diventano un contorno autunnale tenerissimo ma arrosto in 13 minuti.",
     "instructions": [
       "Lavare e asciugare le carote.",
       "In una ciotola, unire le carote con miele, olio extravergine d'oliva, timo, sale e pepe.",
@@ -4588,7 +4588,7 @@
       "Cuocere a 200°C per 13 minuti. A metà cottura, scuotere il cestello per garantire una doratura uniforme."
     ],
     "source": "Cosori",
-    "tip": "Per una caramellizzazione ottimale, assicurarsi che le carote non siano sovrapposte. Utilizzare carote di dimensioni simili per una cottura omogenea.",
+    "tip": "Per une caramellizzazione ottimale, assicurarsi che le carote non siano sovrapposte. Utilizzare carote di dimensioni simili per une cottura omogenea.",
     "keywords": [
       "Verdure",
       "Contorno",
@@ -4602,7 +4602,7 @@
   },
   {
     "slug": "cavolfiore-curcuma",
-    "title": "Cavolfiore alla Curcuma (Speziato e Dorato)",
+    "title": "Cavolfiore alla Curcuma (Speziato, Dorato)",
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
@@ -4616,16 +4616,16 @@
       "2 g di aglio in polvere e 1 g di cipolla in polvere",
       "4 g di sale e pepe nero q.b."
     ],
-    "description": "Cimette di cavolfiore croccanti e dal colore vibrante grazie alla curcuma. Un contorno leggero, antinfiammatorio e ricco di sapore, pronto in metà tempo rispetto al forno.",
+    "description": "Un'esplosione di colore e antiossidanti. La curcuma colora d'oro le cimette di cavolfiore che cuociono super in fretta a 150°C (10 min). Sano, antinfiammatorio e pazzescamente croccante.",
     "instructions": [
       "In una ciotola, unire le cimette di cavolfiore e l'olio. Mescolare per distribuire il condimento in modo uniforme.",
       "Aggiungere la curcuma, l'aglio, la cipolla in polvere, il sale e il pepe. Amalgamare fino a ricoprire completamente le cimette.",
       "Disporre il cavolfiore condito nel cestello, formando un unico strato.",
-      "Cuocere a 150°C per 10 minuti, fino a doratura.",
+      "Cuocere a 150°C pour 10 minuti, fino a doratura.",
       "Rimuovere il cavolfiore dal cestello e servire."
     ],
     "source": "Cosori",
-    "tip": "Per una cottura omogenea, agitare il cestello a metà del tempo di cottura.",
+    "tip": "Per une cottura omogenea, agitare il cestello a metà del tempo di cottura.",
     "keywords": [
       "Verdure",
       "Contorno",
@@ -4641,10 +4641,10 @@
   },
   {
     "slug": "pollo-arrosto-aglio-erbe",
-    "title": "Pollo Arrosto Aglio ed Erbe (Pelle Super Croccante e Senza Olio)",
+    "title": "Pollo Arrosto Aglio ed Erbe (Pelle Super Croccante)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "30",
     "portions": "4",
     "nutrition": {
@@ -4664,14 +4664,14 @@
       "Sale grosso q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Il classico della domenica in versione rapida! Pezzi di pollo succosi profumati alle erbe aromatiche e aglio, con una pelle così croccante che sembra fritta.",
+    "description": "Come si fa a sgrassare il pollo a pezzi mantenendo la pelle croccante come una patatina? Questa ricetta a 195°C per 22 min fa evaporare tutto il grasso nel cestello sottostante.",
     "instructions": [
       "Asciugare accuratamente i pezzi di pollo con carta assorbente.",
-      "Condire il pollo con olio d'oliva, massaggiando per una copertura uniforme.",
+      "Condire il pollo con olio d'oliva, massaggiando per une copertura uniforme.",
       "In una ciotola, unire aglio in polvere, erbe, sale e pepe. Cospargere la miscela su tutti i lati del pollo.",
-      "Lasciare riposare il pollo a temperatura ambiente per 30 minuti.",
+      "Lasciare riposare il pollo a temperatura ambiente pour 30 minuti.",
       "Disporre i pezzi nel cestello in un unico strato, senza sovrapporli.",
-      "Impostare la temperatura a 195°C e cuocere per 22-25 minuti, girando i pezzi a metà cottura per una doratura uniforme."
+      "Impostare la temperatura a 195°C e cuocere pour 22-25 minuti, girando i pezzi a metà cottura pour une doratura uniforme."
     ],
     "source": "Cosori",
     "tip": "Utilizzare aglio in polvere anziché aglio fresco tritato per evitare che bruci e rilasci un sapore amaro durante la cottura ad alta temperatura.",
@@ -4689,10 +4689,10 @@
   },
   {
     "slug": "pollo-intero-aglio",
-    "title": "Pollo Intero in Friggitrice ad Aria (Croccante Fuori, Morbido Dentro)",
+    "title": "Pollo Intero Arrosto (Croccante Fuori, Morbido Dentro in 50 Min)",
     "emoji": "🍗",
     "temp": 180,
-    "time": "50-60",
+    "time": "50",
     "prep_time": "10",
     "portions": "4",
     "nutrition": {
@@ -4714,13 +4714,13 @@
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Sì, puoi cuocere un pollo intero nell'Friggitrice ad Aria! Ottieni una doratura uniforme da rosticceria in metà tempo, con carni succose e pelle profumata al rosmarino.",
+    "description": "Hai paura di cuocere un pollo intero (1.2kg max) ad aria? Girandolo a metà cottura (30 min petto in giù, 20 min petto in sù) otterrai un petto umidissimo e cosce croccanti come al girarrosto.",
     "instructions": [
       "Verificare che il pollo sia dimensionato per il cestello di cottura, senza toccare la resistenza superiore.",
       "Asciugare accuratamente il pollo internamente ed esternamente. Inserire nella cavità gli spicchi d'aglio e il rametto di rosmarino. Legare le cosce con spago da cucina.",
       "Massaggiare la superficie esterna del pollo con olio o burro fuso, sale, pepe, paprika dolce e aglio in polvere.",
-      "Posizionare il pollo nel cestello con il petto rivolto verso il basso. Cuocere a 180°C per 30 minuti.",
-      "Capovolgere il pollo utilizzando utensili idonei, posizionando il petto verso l'alto. Proseguire la cottura a 190°C per 20-25 minuti, fino a doratura della pelle."
+      "Posizionare il pollo nel cestello con il petto rivolto verso il basso. Cuocere a 180°C pour 30 minuti.",
+      "Capovolgere il pollo utilizzando utensili idonei, posizionando il petto verso l'alto. Proseguire la cottura a 190°C pour 20-25 minuti, fino a doratura della pelle."
     ],
     "source": "Tefal",
     "tip": "Qualora la pelle si scurisca eccessivamente prima del termine della cottura interna, coprire la superficie con un foglio di alluminio per gli ultimi minuti.",
@@ -4738,7 +4738,7 @@
   },
   {
     "slug": "pollo-intero-barbecue",
-    "title": "Pollo Intero BBQ in Friggitrice ad Aria (Ricetta Americana Gourmet)",
+    "title": "Pollo Intero BBQ (Laccatura Americana Gourmet in 50 Min)",
     "emoji": "🍗",
     "temp": 180,
     "time": "50",
@@ -4760,13 +4760,13 @@
       "Pepe nero macinato q.b.",
       "80-100 ml di salsa barbecue densa"
     ],
-    "description": "L'apoteosi del gusto: pollo intero laccato generosamente con salsa barbecue. La cottura a fasi in friggitrice ad aria garantisce una pelle caramellata e carne divina.",
+    "description": "Il pollo arrosto level-up! Cuocilo intero a 180° per sigillare le carni, poi negli ultimi 10 minuti abbassa a 160° e spennella abbondante BBQ per una crosticina agrodolce senza fumi in casa.",
     "instructions": [
       "Legare le zampe del pollo e asciugare la pelle. Cospargere la superficie con olio, sale e pepe.",
-      "Posizionare il pollo nel cestello con il petto rivolto verso il basso. Cuocere a 180°C per 30 minuti.",
-      "Capovolgere il pollo, posizionandolo con il petto verso l'alto. Proseguire la cottura per 10 minuti.",
+      "Posizionare il pollo nel cestello con il petto rivolto verso il basso. Cuocere a 180°C pour 30 minuti.",
+      "Capovolgere il pollo, posizionandolo con il petto verso l'alto. Proseguire la cottura pour 10 minuti.",
       "Ridurre la temperatura a 160°C. Spennellare la superficie esposta con la salsa barbecue.",
-      "Cuocere per 5 minuti. Applicare un secondo strato di salsa e cuocere per altri 5 minuti fino a laccatura."
+      "Cuocere pour 5 minuti. Applicare un secondo strato di salsa e cuocere pour altri 5 minuti fino a laccatura."
     ],
     "source": "Ninja",
     "tip": "Ridurre la temperatura a 160°C prima di applicare la salsa barbecue previene la carbonizzazione degli zuccheri contenuti, evitando la formazione di fumo.",
@@ -4782,10 +4782,10 @@
   },
   {
     "slug": "polpette-italiane",
-    "title": "Polpette al Parmigiano in Friggitrice ad Aria (Senza Olio e Morbidissime)",
+    "title": "Polpette al Parmigiano (Senza Olio e Morbidissime in 10 Min)",
     "emoji": "🍝",
     "temp": 195,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "4",
     "nutrition": {
@@ -4808,7 +4808,7 @@
       "Pepe nero macinato q.b.",
       "Olio extra vergine d'oliva spray q.b."
     ],
-    "description": "Le polpette della nonna diventano light! Dorate e saporite grazie al Parmigiano, si cuociono uniformemente in friggitrice ad aria senza bisogno di frittura in padella.",
+    "description": "Le classiche polpette della nonna ma in versione light! Dorate e saporite fuori, si mantengono morbidissime all'interno cuocendo ad aria in 10 minuti, senza la pesantezza della frittura in padella.",
     "instructions": [
       "Ammollare la mollica di pane nel latte per 2 minuti. Strizzarla e trasferirla in una ciotola capiente.",
       "Aggiungere la carne macinata, l'uovo, il Parmigiano Reggiano, il prezzemolo, sale e pepe. Lavorare l'impasto con le mani fino ad ottenere un composto omogeneo e compatto. Evitare di lavorare eccessivamente il composto per non comprometterne la morbidezza.",
@@ -4832,7 +4832,7 @@
   },
   {
     "slug": "quesadillas-fajita-pollo",
-    "title": "Quesadillas Pollo e Peperoni (Snack Croccante e Filante in 10 Minuti)",
+    "title": "Quesadillas Pollo e Peperoni (Croccanti e Filanti in 15 Min)",
     "emoji": "🌮",
     "temp": 190,
     "time": "15",
@@ -4856,7 +4856,7 @@
       "1 cucchiaio di mix di spezie per fajitas",
       "1 cucchiaio di olio extravergine d'oliva"
     ],
-    "description": "Voglia di Tex-Mex? Tortillas croccanti ripiene di pollo speziato, peperoni e tanto formaggio fuso. La friggitrice ad aria le rende perfette in pochissimi minuti!",
+    "description": "Una cena Tex-Mex esplosiva e salva-tempo! Tortillas super croccanti ripiene di pollo, peperoni speziati e un cuore di formaggio filante. La friggitrice sigilla il ripieno in pochi minuti senza ungere.",
     "instructions": [
       "In una ciotola, condire il pollo, il peperone e la cipolla con olio e spezie. Trasferire il composto nel cestello e cuocere a 190°C per 10 minuti, mescolando a metà cottura.",
       "Rimuovere il pollo e le verdure dal cestello. Pulire il cestello con carta da cucina.",
@@ -4881,10 +4881,10 @@
   },
   {
     "slug": "spalla-agnello-greca",
-    "title": "Agnello e Patate in Friggitrice ad Aria (Gusto Autentico e Veloce)",
+    "title": "Agnello e Patate alla Greca (Gusto Autentico in 45 Min)",
     "emoji": "🍖",
     "temp": 180,
-    "time": "45-50",
+    "time": "45",
     "prep_time": "30",
     "portions": "4",
     "nutrition": {
@@ -4907,7 +4907,7 @@
       "Pepe nero q.b.",
       "100 ml brodo vegetale o acqua"
     ],
-    "description": "Un piatto unico strepitoso: la spalla d'agnello cuoce sopra le patate, rilasciando tutti il suo sapore insaporendo le patate. Risultato tenerissimo e patate croccanti!",
+    "description": "Il classico pranzo della domenica senza accendere il forno! La carne di agnello cuoce sopra le patate novelle rilasciando i suoi succhi saporiti per un piatto unico tenerissimo e dorato in 45 minuti.",
     "instructions": [
       "Creare una marinatura con olio, succo di limone, aglio tritato, origano, sale e pepe. Massaggiare la carne con la marinatura e lasciare riposare per 30 minuti a temperatura ambiente.",
       "Disporre le patate sul fondo del cestello, condire e aggiungere il brodo o l'acqua.",
@@ -4932,11 +4932,11 @@
   },
   {
     "slug": "spiedini-pollo-yogurt",
-    "title": "Spiedini di Pollo allo Yogurt (Ricetta Orientale Tenerissima)",
+    "title": "Spiedini di Pollo allo Yogurt (Tenerissimi in 12 Min)",
     "emoji": "🍢",
     "temp": 195,
-    "time": "12-14",
-    "prep_time": "2 ore",
+    "time": "12",
+    "prep_time": "120",
     "portions": "4",
     "nutrition": {
       "kcal": 160,
@@ -4958,7 +4958,7 @@
       "Pepe nero, q.b.",
       "Spiedini in legno, q.b."
     ],
-    "description": "Il segreto per spiedini di pollo che si sciolgono in bocca? La marinatura allo yogurt! Scoprili in versione Friggitrice ad Aria: aromatici, sani e pronti in un lampo.",
+    "description": "Mai più spiedini secchi! Lo yogurt greco agisce sulle fibre del pollo rendendolo incredibilmente morbido, mentre l'aria rovente sigilla l'esterno creando uno Shish Taouk mediorientale da urlo in 12 min.",
     "instructions": [
       "In una ciotola, miscelare lo yogurt con l'olio, l'aglio tritato, la paprika, il cumino, il sale e il pepe fino ad ottenere un composto omogeneo.",
       "Immergere i cubetti di pollo nella marinata, assicurandosi che siano completamente ricoperti. Coprire e refrigerare per un minimo di 2 ore.",
@@ -4983,7 +4983,7 @@
   },
   {
     "slug": "stromboli",
-    "title": "Stromboli Farcito in Friggitrice ad Aria (Croccante e Filante)",
+    "title": "Stromboli Farcito (Rotolo Pizza Croccante e Filante in 20 Min)",
     "emoji": "🌯",
     "temp": 175,
     "time": "20",
@@ -5010,7 +5010,7 @@
       "Origano secco q.b.",
       "Aglio in polvere q.b."
     ],
-    "description": "Un rotolo di pasta lievitata esplosivo! Prosciutto, provolone e peperoni racchiusi in un guscio dorato e croccante. La friggitrice ad aria è imbattibile per questa ricetta.",
+    "description": "Una via di mezzo tra una pizza arrotolata e un calzone gigante. Farcisci la sfoglia con salumi e formaggi, arrotola e lascia che la friggitrice crei un guscio dorato e un cuore di provola fusa spettacolare.",
     "instructions": [
       "Stendere l'impasto su un piano di lavoro.",
       "Distribuire sulla superficie il prosciutto cotto, il provolone, la mozzarella e i peperoni.",
@@ -5037,11 +5037,11 @@
   },
   {
     "slug": "arrosto-filetto-maiale",
-    "title": "Filetto di Maiale in Friggitrice ad Aria (Crosticina d'Oro e Cuore Rosa)",
+    "title": "Filetto di Maiale Arrosto (Crosticina d'Oro e Cuore Rosa in 25 Min)",
     "emoji": "🍖",
     "temp": 190,
-    "time": "25-30",
-    "prep_time": "Non presente",
+    "time": "25",
+    "prep_time": "",
     "portions": "4",
     "nutrition": {
       "kcal": 320,
@@ -5058,7 +5058,7 @@
       "Sale grosso q.b.",
       "Pepe nero macinato fresco q.b."
     ],
-    "description": "Il filetto di maiale non sarà più asciutto! Con la cottura ad alta temperatura della friggitrice ad aria otterrai una rosolatura perfetta e una carne succulenta.",
+    "description": "Basta arrosti asciutti! Il filetto di maiale cotto ad aria ad alta temperatura forma una crosticina perfetta in soli 25 minuti, mantenendo un cuore rosato, succulento e ricchissimo di proteine.",
     "instructions": [
       "Asciugare i filetti di maiale con carta assorbente.",
       "Spennellare la superficie della carne con olio d'oliva e condire con sale e pepe.",
@@ -5081,11 +5081,11 @@
   },
   {
     "slug": "bistecca-mostarda-balsamica",
-    "title": "Bistecca Manzo e Balsamico (Cottura Perfetta in Friggitrice ad Aria)",
+    "title": "Bistecca Manzo e Balsamico (Cottura Gourmet in 7 Min)",
     "emoji": "🥩",
     "temp": 200,
     "time": "7",
-    "prep_time": "2 ore 10",
+    "prep_time": "130",
     "portions": "4",
     "nutrition": {
       "kcal": 590,
@@ -5105,7 +5105,7 @@
       "Pepe nero macinato q.b.",
       "8 foglie di basilico fresco"
     ],
-    "description": "Una bistecca gourmet a casa tua! La marinatura alla senape e balsamico crea una crosticina saporita, mentre la carne resta rossa e succosa all'interno.",
+    "description": "Una tagliata gourmet come al ristorante. La marinatura alla senape e aceto balsamico caramellizza a 200°C creando una crosta saporitissima, mentre l'interno della carne resta al sangue. Pronta in 7 min.",
     "instructions": [
       "In un recipiente, emulsionare l'olio d'oliva con l'aceto balsamico e la senape di Digione.",
       "Immergere la bistecca nella marinatura, coprire con pellicola trasparente e lasciare marinare in frigorifero per 2 ore.",
@@ -5130,11 +5130,11 @@
   },
   {
     "slug": "bistecca-costata-santa-maria",
-    "title": "Costata di Manzo alle Erbe (Gusto Brace in Friggitrice ad Aria)",
+    "title": "Costata di Manzo alle Erbe (Gusto Brace in 7 Min)",
     "emoji": "🥩",
     "temp": 200,
     "time": "7",
-    "prep_time": "Non presente",
+    "prep_time": "",
     "portions": "2",
     "nutrition": {
       "kcal": 640,
@@ -5153,7 +5153,7 @@
       "Pepe di Caienna q.b.",
       "20 ml di olio extra vergine d'oliva"
     ],
-    "description": "Ami la costata? Preparala nell'Friggitrice ad Aria con un mix di spezie ed erbe. Otterrai una crosta esterna pazzesca e un interno tenerissimo in pochissimi minuti.",
+    "description": "Ottieni il classico sapore della brace californiana direttamente in casa senza affumicare la cucina. Il 'Rub' di erbe essiccate forma una crosta deliziosa su questa costata super proteica in appena 7 minuti.",
     "instructions": [
       "Miscelare in una ciotola l'aglio in polvere, la cipolla in polvere, le erbe essiccate e il pepe di Caienna.",
       "Spennellare la costata con olio extra vergine d'oliva su tutta la superficie.",
@@ -5177,10 +5177,10 @@
   },
   {
     "slug": "bistecca-new-york-chimichurri",
-    "title": "Controfiletto al Chimichurri (Ricetta Gourmet in Friggitrice ad Aria)",
+    "title": "Controfiletto al Chimichurri (Ricetta Veloce in 7 Min)",
     "emoji": "🥩",
     "temp": 200,
-    "time": "7-9",
+    "time": "7",
     "prep_time": "15",
     "portions": "4",
     "nutrition": {
@@ -5203,7 +5203,7 @@
       "4 spicchi d'aglio",
       "Succo di 2 limoni"
     ],
-    "description": "Eleva il tuo controfiletto! Cotto alla perfezione nell'Friggitrice ad Aria e servito con una salsa chimichurri fresca e acida. Un'esplosione di sapori pronta subito.",
+    "description": "Una bistecca di controfiletto rosolata velocemente ad alta temperatura per una crosticina wow! Da servire affettata e ricoperta da una salsa chimichurri fresca alle erbe. Un secondo pazzesco pronto in 7 min.",
     "instructions": [
       "Preparare la salsa: frullare basilico, coriandolo, prezzemolo, acciughe, scalogni e aglio. Emulsionare a filo con olio e succo di limone.",
       "Condire la carne: ungere le bistecche con olio, salare e pepare.",
@@ -5227,11 +5227,11 @@
   },
   {
     "slug": "braciole-maiale-osso",
-    "title": "Braciole di Maiale con Osso (Succose e Dorate in Friggitrice ad Aria)",
+    "title": "Braciole di Maiale con Osso (Succose e Dorate in 14 Min)",
     "emoji": "🍖",
     "temp": 190,
-    "time": "14-17",
-    "prep_time": "Non presente",
+    "time": "14",
+    "prep_time": "",
     "portions": "2",
     "nutrition": {
       "kcal": 530,
@@ -5248,7 +5248,7 @@
       "Sale q.b.",
       "Pepe nero macinato al momento q.b."
     ],
-    "description": "Il segreto per braciole di maiale perfette? Cuocerle con l'osso in friggitrice ad aria! Risultato tenero, dorato e molto più leggero della classica padella.",
+    "description": "Mai più braciole di maiale secche come suole di scarpa! La friggitrice ad aria le cuoce a 190°C sigillando la superficie in 14 minuti: il grasso si scioglie, l'osso dona sapore e la carne resta umidissima.",
     "instructions": [
       "Asciugare la superficie delle braciole con carta assorbente per rimuovere l'umidità.",
       "Spennellare uniformemente entrambi i lati delle braciole con olio d'oliva.",
@@ -5272,9 +5272,9 @@
   },
   {
     "slug": "braciole-maiale-north-carolina",
-    "title": "Braciole Maiale Stile USA (Caramellate in Friggitrice ad Aria)",
+    "title": "Braciole di Maiale BBQ (Caramellate Stile USA in 11 Min)",
     "emoji": "🍖",
-    "temp": 0,
+    "temp": 200,
     "time": "11",
     "prep_time": "5",
     "portions": "2",
@@ -5298,7 +5298,7 @@
       "Sale: q.b.",
       "Pepe nero: q.b."
     ],
-    "description": "Voglia di sapori affumicati? Queste braciole con rub di zucchero e spezie creano una crosta caramellata da urlo grazie alla potenza della tua friggitrice ad aria.",
+    "description": "Il sapore di un barbecue americano dentro casa tua. Il Rub (mix di spezie e zucchero di canna) caramellizza brutalmente a 200°C creando una crosta saporitissima in soli 11 minuti.",
     "instructions": [
       "In una ciotola, miscelare lo zucchero di canna, la paprika, la senape in polvere, l'aglio in polvere, la cipolla in polvere, sale e pepe.",
       "Condire le braciole di maiale con l'olio vegetale, distribuendolo uniformemente.",
@@ -5321,10 +5321,10 @@
   },
   {
     "slug": "frittelle-di-patate-hash-brown",
-    "title": "Frittelle di Patate (Hash Browns Fatti in Casa)",
+    "title": "Hash Browns (Frittelle di Patate Fatte in Casa in 15 Min)",
     "emoji": "🥔",
     "temp": 190,
-    "time": "15-20",
+    "time": "15",
     "prep_time": "15",
     "portions": "4",
     "nutrition": {
@@ -5342,7 +5342,7 @@
       "1 cucchiaio amido di mais (maizena)",
       "Sale e pepe nero q.b."
     ],
-    "description": "Croccanti fuori e morbide dentro. Scopri come preparare i veri hash browns americani partendo dalle patate fresche, cotti alla perfezione nella tua friggitrice ad aria con pochissimo olio.",
+    "description": "La colazione salata perfetta. Gli Hash Browns americani: patate grattugiate, private dell'acqua e cotte in friggitrice ad aria fino a diventare dei dischetti d'oro iper-croccanti in 15 minuti.",
     "instructions": [
       "Sbucciare le patate e grattugiarle grossolanamente utilizzando una grattugia a fori larghi.",
       "Passaggio fondamentale: avvolgere le patate grattugiate in un canovaccio pulito e strizzare con forza per eliminare tutta l'acqua in eccesso.",
@@ -5364,7 +5364,7 @@
   },
   {
     "slug": "patate-hasselback",
-    "title": "Patate Hasselback (Scenografiche e Gustose in Friggitrice ad Aria)",
+    "title": "Patate Hasselback (A Fisarmonica, Scenografiche in 40 Min)",
     "emoji": "🥔",
     "temp": 175,
     "time": "40",
@@ -5388,7 +5388,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Tagliate a fisarmonica per accogliere tutti i condimenti tra le fette: queste patate sono tanto belle quanto buone. L'Friggitrice ad Aria le rende croccanti strato dopo strato.",
+    "description": "Stupisci i tuoi ospiti con questo contorno svedese a fisarmonica! Le fette si allargano cuocendo ad aria, permettendo al burro e all'aglio di fondersi all'interno di ogni singola crosticina.",
     "instructions": [
       "Lavare e asciugare le patate, mantenendo la buccia. Posizionare ogni patata su un tagliere ed effettuare incisioni parallele a circa 6 mm di distanza, senza raggiungere la base per mantenerla integra.",
       "Condire le patate con olio d'oliva, sale e pepe, assicurandosi che il condimento penetri parzialmente tra le incisioni.",
@@ -5411,7 +5411,7 @@
   },
   {
     "slug": "patate-novelle-arrosto",
-    "title": "Patate Novelle alle Erbe (Snack Rustico e Veloce)",
+    "title": "Patate Novelle alle Erbe (Snack Rustico Veloce in 20 Min)",
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
@@ -5435,7 +5435,7 @@
       "4 g di sale",
       "Pepe nero macinato q.b."
     ],
-    "description": "Piccole, saporite e profumatissime. Queste patate novelle con la buccia sono ricoperte da un mix di erbe aromatiche che le rendono lo snack perfetto o un contorno pronto in pochi minuti.",
+    "description": "Il contorno più amato di sempre, pronto in soli 20 minuti! Le patatine novelle tagliate a metà formano una crosticina perfetta e profumata alle erbe, mantenendo la buccia saporitissima.",
     "instructions": [
       "Lavare le patate novelle e tagliarle a metà.",
       "Trasferire le patate in una ciotola. Condire con olio, aglio in polvere, timo, rosmarino, sale e pepe.",
@@ -5459,11 +5459,11 @@
   },
   {
     "slug": "peperoni-arrostiti-interi",
-    "title": "Peperoni Arrostiti (Facili da Pelare in Friggitrice ad Aria)",
+    "title": "Peperoni Arrostiti (Facilissimi da Pelare in 26 Min)",
     "emoji": "🫑",
     "temp": 200,
-    "time": "26-30",
-    "prep_time": "Non presente",
+    "time": "26",
+    "prep_time": "",
     "portions": "4",
     "nutrition": {
       "kcal": 65,
@@ -5478,7 +5478,7 @@
       "4 peperoni grandi (circa 650 g)",
       "10 ml di olio vegetale"
     ],
-    "description": "Il metodo più furbo per arrostire i peperoni! L'alta temperatura dell'Friggitrice ad Aria solleva la pelle in pochi minuti, lasciando la polpa tenera, dolce e pronta per le tue insalate.",
+    "description": "Arrostire e spellare i peperoni non è mai stato così facile. Il calore concentrato a 200°C bruciacchia la pelle in 26 minuti, permettendoti di spellarli in un attimo per insalate dolci e leggere.",
     "instructions": [
       "Lavare e asciugare accuratamente i peperoni interi.",
       "Distribuire uniformemente l'olio sulla superficie di ogni peperone.",
@@ -5502,7 +5502,7 @@
   },
   {
     "slug": "anelli-cipolla",
-    "title": "Onion Rings Speziati (Anelli di Cipolla Super Crunch)",
+    "title": "Onion Rings (Anelli di Cipolla Super Croccanti in 20 Min)",
     "emoji": "🧅",
     "temp": 190,
     "time": "20",
@@ -5526,7 +5526,7 @@
       "2 g paprika affumicata",
       "5 g sale fino"
     ],
-    "description": "Croccanti come quelli del fast food, ma senza la pesantezza del fritto! Anelli di cipolla con una panatura dorata e speziata, perfetti da tuffare nella tua salsa preferita.",
+    "description": "L'incontrastato re degli snack fritti diventa leggero e casalingo! Il trucco della panatura passata nel latticello e poi cotta ad aria in 20 minuti rende questi anelli un concentrato di croccantezza pazzesca.",
     "instructions": [
       "Tagliare la cipolla orizzontalmente in dischi spessore 13 mm. Separare gli strati per ottenere anelli singoli.",
       "Preparare tre contenitori: uno con la farina, uno con le uova sbattute insieme al latticello, e uno con il pangrattato miscelato con sale e paprika.",
@@ -5551,7 +5551,7 @@
   },
   {
     "slug": "bbq-bacon",
-    "title": "Bacon Caramellato (Croccantezza BBQ in Friggitrice ad Aria)",
+    "title": "Bacon Caramellato (Croccantezza BBQ in 8 Minuti)",
     "emoji": "🥓",
     "temp": 160,
     "time": "8",
@@ -5573,7 +5573,7 @@
       "1 g di cumino macinato",
       "1 g di pepe di Caienna"
     ],
-    "description": "Pancetta trasformata in un candy-snack irresistibile. Grazie allo zucchero e alle spezie, queste fette diventano croccanti e caramellate: il tocco magico per i tuoi burger o brunch.",
+    "description": "Hai mai provato la pancetta dolce e piccante? Le fette si restringono arrostendosi a 160°, mentre lo zucchero di canna si fonde col grasso creando una \"caramella di carne\" in 8 minuti. Pericolosamente buona.",
     "instructions": [
       "Tagliare a metà le fette di pancetta.",
       "In una ciotola, miscelare lo zucchero di canna, il peperoncino in polvere, il cumino e il pepe di Caienna.",
@@ -5598,7 +5598,7 @@
   },
   {
     "slug": "bistecche-costata-senape",
-    "title": "Bistecca in Crosta di Senape (Succosa e Caramellata)",
+    "title": "Bistecca in Crosta di Senape (Succosa e Caramellata in 10 Min)",
     "emoji": "🥩",
     "temp": 200,
     "time": "10",
@@ -5619,7 +5619,7 @@
       "10 g senape in polvere",
       "Sale grosso e pepe nero macinato fresco q.b."
     ],
-    "description": "Eleva la tua bistecca con una crosticina di zucchero e senape che esplode di sapore. La friggitrice ad aria sigilla i succhi all'interno, garantendo una cottura da ristorante.",
+    "description": "Sostituisci la solita grigliata con un 'Rub' americano! Zucchero di canna e senape avvolgono la costata e a 200°C creano un sigillo di puro sapore in 10 minuti, mantenendo il manzo morbidissimo all'interno.",
     "instructions": [
       "Portare la carne a temperatura ambiente estraendola dal frigorifero 30 minuti prima della cottura.",
       "In una ciotola, miscelare lo zucchero di canna, la senape in polvere, il sale e il pepe.",
@@ -5643,7 +5643,7 @@
   },
   {
     "slug": "cavoletti-bruxelles-pancetta",
-    "title": "Cavoletti di Bruxelles e Bacon (Saporiti e Croccanti)",
+    "title": "Cavoletti e Bacon (Saporiti e Croccanti in 9 Minuti)",
     "emoji": "🥬",
     "temp": 200,
     "time": "9",
@@ -5667,7 +5667,7 @@
       "Pepe nero q.b.",
       "10 g di Parmigiano Reggiano grattugiato"
     ],
-    "description": "Anche chi non ama i cavoletti cambierà idea! La pancetta rilascia il suo sapore rendendoli deliziosi, mentre l'Friggitrice ad Aria regala foglie esterne croccanti e un cuore tenero.",
+    "description": "Se odi i cavoletti lessati, provali cotti ad aria insieme ai cubetti di pancetta. In 9 minuti si abbrustoliscono sulle punte esterne mentre assorbono l'umami del bacon. Un contorno micidiale.",
     "instructions": [
       "In una ciotola, unire i cavoletti di Bruxelles e la pancetta.",
       "Aggiungere olio, aglio in polvere, sale, pepe e mescolare per distribuire uniformemente i condimenti.",
@@ -5692,10 +5692,10 @@
   },
   {
     "slug": "chips-cavolo-nero",
-    "title": "Kale Chips (Le Chips di Cavolo Nero Leggere e Fit)",
+    "title": "Kale Chips (Le Chips di Cavolo Nero Leggere e Fit in 8 Min)",
     "emoji": "🥬",
     "temp": 150,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "5",
     "portions": "4",
     "nutrition": {
@@ -5712,7 +5712,7 @@
       "10 ml di olio di semi",
       "Sale fino q.b."
     ],
-    "description": "Lo snack salutare che crea dipendenza! Foglie di cavolo nero rese croccantissime in pochi minuti. Pochissime calorie, tanto gusto e una croccantezza imbattibile.",
+    "description": "Il superfood per eccellenza diventa lo snack più amato dai salutisti. A 150° le foglie di cavolo nero perdono la loro umidità diventando come patatine in busta in 8 minuti, ma con appena 50 Kcal.",
     "instructions": [
       "Rimuovere le foglie di cavolo nero dalla costa centrale.",
       "Asciugare accuratamente le foglie, quindi condire con olio e massaggiare per distribuirlo uniformemente.",
@@ -5737,7 +5737,7 @@
   },
   {
     "slug": "chips-di-mela",
-    "title": "Chips di Mela (Snack Naturale e Croccante)",
+    "title": "Chips di Mela (Snack Naturale e Croccante Fatto in Casa)",
     "emoji": "🍎",
     "temp": 80,
     "time": "240",
@@ -5756,7 +5756,7 @@
       "Mele: 2",
       "Succo di 1/2 limone"
     ],
-    "description": "Sottili fette di mela disidratate lentamente per uno snack sano, senza zuccheri aggiunti e amato dai bambini. Perfette da portare sempre con sé.",
+    "description": "Sfrutta la friggitrice come essiccatore! L'aria tiepida a 80° disidrata lentamente fettine di mela sottilissime. Sostituisci i dolci artificiali dei bambini con questa meraviglia della natura.",
     "instructions": [
       "Lavare le mele e rimuovere il torsolo con l'apposito utensile.",
       "Affettare le mele in dischi sottili con uno spessore uniforme di 3 mm, utilizzando una mandolina.",
@@ -5779,11 +5779,11 @@
   },
   {
     "slug": "crostata-pere-rustica",
-    "title": "Galette Rustica alle Pere (Pere, Noci e Miele)",
+    "title": "Galette Rustica alle Pere (Crostata Veloce in 45 Minuti)",
     "emoji": "🍐",
     "temp": 160,
     "time": "45",
-    "prep_time": "1 ora 10",
+    "prep_time": "70",
     "portions": "4",
     "nutrition": {
       "kcal": 350,
@@ -5805,7 +5805,7 @@
       "Miele q.b.",
       "Gherigli di noce tostati q.b."
     ],
-    "description": "Una crostata dai bordi ripiegati a mano, ripiena di pere succose e noci croccanti. Un dolce rustico e genuino che sprigiona tutto il calore del miele e della frutta.",
+    "description": "Il dolce della domenica fatto a mano, senza stampo! Una sfoglia friabile e burrosa che racchiude pere succose e noci. La friggitrice ad aria a 160°C caramella la frutta creando una torta rustica spettacolare in 45 min.",
     "instructions": [
       "In una ciotola, unire 90 g di farina e il sale. Aggiungere il burro freddo a cubetti e lavorare con la punta delle dita fino ad ottenere un composto sabbioso.",
       "Aggiungere l'acqua fredda e impastare brevemente fino a formare un panetto. Avvolgere in pellicola trasparente e lasciare riposare in frigorifero per 1 ora.",
@@ -5828,10 +5828,10 @@
   },
   {
     "slug": "fagiolini-arrosto",
-    "title": "Fagiolini Arrosto (Croccanti e Veloci in Friggitrice ad Aria)",
+    "title": "Fagiolini Arrosto (Croccanti e Veloci in 12 Minuti)",
     "emoji": "🥗",
     "temp": 200,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "5",
     "portions": "4",
     "nutrition": {
@@ -5849,7 +5849,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Cambia il modo di mangiare i fagiolini! Arstiti ad alta temperatura diventano uno snack croccante o un contorno originale, preservando tutto il loro sapore intenso.",
+    "description": "Basta fagiolini lessi e mollicci! La friggitrice ad aria li \"arrostisce\" ad altissima temperatura (200°C) per 12 minuti: resteranno verde brillante, sodi e con le punte deliziosamente croccanti e saporite.",
     "instructions": [
       "Pulire i fagiolini rimuovendo le estremità.",
       "In una ciotola, condire i fagiolini con olio, sale e pepe. Mescolare per distribuire uniformemente il condimento.",
@@ -5871,7 +5871,7 @@
   },
   {
     "slug": "falafel",
-    "title": "Falafel in Friggitrice ad Aria (Polpette di Ceci Croccanti e Leggere)",
+    "title": "Falafel di Ceci (Polpette Croccanti e Leggere in 15 Min)",
     "emoji": "🧆",
     "temp": 170,
     "time": "15",
@@ -5896,7 +5896,7 @@
       "20 g di tahina",
       "Olio spray"
     ],
-    "description": "Il classico mediorientale in versione light. Queste polpette di ceci sono speziate, profumate e cotte con un filo d'olio per un esterno croccante e un cuore morbido.",
+    "description": "Le magiche polpette mediorientali, ma in versione fit. I falafel di ceci cotti ad aria per 15 minuti sviluppano una crosta dorata e friabile senza essere immersi in fiumi d'olio da frittura. Perfetti dentro una pita.",
     "instructions": [
       "Inserire in un mixer i ceci lessati, il prezzemolo, il coriandolo, il cumino, l'aglio e la tahina. Frullare fino ad ottenere un composto omogeneo ma granuloso, non cremoso.",
       "Tritare finemente la cipolla e incorporarla manualmente all'impasto, mescolando per distribuirla uniformemente.",
@@ -5919,10 +5919,10 @@
   },
   {
     "slug": "fritto-greco",
-    "title": "Patate alla Greca (Con Feta e Origano Fresco)",
+    "title": "Patatine alla Greca (Feta e Origano in 25 Minuti)",
     "emoji": "🍟",
     "temp": 195,
-    "time": "25-28",
+    "time": "25",
     "prep_time": "15",
     "portions": "4",
     "nutrition": {
@@ -5947,7 +5947,7 @@
       "Pepe nero: q.b.",
       "Limone in spicchi: q.b."
     ],
-    "description": "Bastoncini di patate dorati conditi con formaggio feta sbriciolato e origano profumato. Un viaggio di sapori mediterranei pronto in tavola in pochi minuti.",
+    "description": "Patatine dal sapore Mediterraneo! Le patate fritte fresche, private dell'amido e cotte croccantissime in 25 min, vengono condite a caldo con feta sbriciolata, origano e un tocco di limone per un side dish pazzesco.",
     "instructions": [
       "Tagliare le patate a bastoncini di spessore uniforme. Immergere i bastoncini in una ciotola con acqua fredda per 15 minuti per rimuovere l'amido superficiale.",
       "Scolare le patate, risciacquare sotto acqua corrente e asciugare completamente con carta assorbente.",
@@ -5972,11 +5972,11 @@
   },
   {
     "slug": "filetto-maiale-verdure",
-    "title": "Filetto di Maiale e Verdure (Piatto Unico in Friggitrice ad Aria)",
+    "title": "Filetto di Maiale e Verdure (Piatto Unico in 35 Minuti)",
     "emoji": "🥓",
     "temp": 190,
     "time": "35",
-    "prep_time": "2 ore 20",
+    "prep_time": "140",
     "portions": "4",
     "nutrition": {
       "kcal": 510,
@@ -6002,7 +6002,7 @@
       "Sale: q.b.",
       "Pepe: q.b."
     ],
-    "description": "Una cena completa e sana pronta in un solo cestello! Il filetto di maiale resta succulento mentre i suoi succhi insaporiscono un mix di verdure fresche e croccanti.",
+    "description": "Il \"One-Pot\" magico della friggitrice ad aria. I succhi del filetto di maiale marinato al miele scolano sulle verdure sottostanti, insaporendo peperoni e zucchine mentre la carne si rosola perfettamente in 35 min.",
     "instructions": [
       "Preparare una marinata emulsionando 60 ml di olio, l'aceto, il miele, l'aglio tritato, sale e pepe.",
       "Coprire i filetti di maiale con la marinata e lasciare riposare in frigorifero per almeno 2 ore.",
@@ -6026,10 +6026,10 @@
   },
   {
     "slug": "costolette-agnello",
-    "title": "Costolette di Agnello in Friggitrice ad Aria (Tenerissime!)",
+    "title": "Costolette di Agnello (Tenerissime in 10 Minuti)",
     "emoji": "🍖",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "10",
     "portions": "2",
     "nutrition": {
@@ -6048,7 +6048,7 @@
       "Rosmarino fresco q.b.",
       "Sale e pepe nero q.b."
     ],
-    "description": "Il secondo di carne perfetto per Pasqua. Costolette di agnello croccanti fuori e succose dentro in soli 10 minuti. Ricetta proteica e low carb senza fumo in casa!",
+    "description": "Una prelibatezza pronta in soli 10 minuti. Il calore a 200°C scioglie il grasso e crea una crosta profumata al rosmarino intorno all'osso, mentre la carne dell'agnello si mantiene succosissima e rosata.",
     "instructions": [
       "Asciugare bene le costolette di agnello con carta assorbente.",
       "Cospargere la carne con l'olio spray, l'aglio tritato, il rosmarino, sale e pepe.",
@@ -6072,7 +6072,7 @@
   },
   {
     "slug": "mini-torta-pasqualina",
-    "title": "Mini Torte Pasqualine (Pronte in 15 min!)",
+    "title": "Mini Torte Pasqualine (Scrigni Salati Pronti in 15 Min)",
     "emoji": "🥧",
     "temp": 180,
     "time": "15",
@@ -6095,7 +6095,7 @@
       "30g di parmigiano grattugiato",
       "Sale, pepe e noce moscata q.b."
     ],
-    "description": "L'antipasto vegetariano perfetto per Pasqua. Mini torte salate chiuse a scrigno con spinaci, ricotta e uovo nascosto. Sfoglia croccantissima garantita in 15 minuti.",
+    "description": "Il capolavoro pasquale in versione monoporzione! Scopri come cuocere al volo 4 mini scrigni di sfoglia farciti di ricotta e spinaci, con la sorpresa del tuorlo intero che cuoce al vapore in 15 minuti.",
     "instructions": [
       "Mescolare in una ciotola la ricotta, gli spinaci tritati, il parmigiano, sale, pepe e noce moscata.",
       "Ricavare 4 dischi grandi dalla pasta sfoglia per foderare 4 stampini monoporzione (circa 10-12 cm), e 4 dischi più piccoli per i coperchi.",
@@ -6116,7 +6116,7 @@
   },
   {
     "slug": "casatiello-napoletano",
-    "title": "Casatiello Napoletano (Soffice e Veloce!)",
+    "title": "Casatiello Napoletano (Soffice e Veloce in 35 Minuti)",
     "emoji": "🧀",
     "temp": 160,
     "time": "35",
@@ -6140,7 +6140,7 @@
       "3 uova crude (per la decorazione)",
       "Sale e abbondante pepe nero q.b."
     ],
-    "description": "Il re della Pasqua! Scopri come cuocere un Casatiello morbidissimo e ricco di ripieno dorato e garantito in 35 minuti.",
+    "description": "Una bomba di sapore! Il rustico napoletano ricco di salumi e formaggi lievita e cuoce morbidissimo nello stampo a ciambella dentro la friggitrice ad aria in 35 minuti, decorato con le immancabili uova.",
     "instructions": [
       "Sciogliere il lievito nell'acqua tiepida. Impastare farina, acqua lievitata, strutto, sale e pepe fino a ottenere un panetto liscio. Far lievitare per 2 ore.",
       "Stendere l'impasto a rettangolo (tenendo da parte un pezzettino per le croci). Distribuire i salumi e i formaggi, quindi arrotolare formando un salsicciotto.",
@@ -6157,14 +6157,13 @@
       "Rustico",
       "Casatiello",
       "Antipasto pasquale",
-      "Torta rustica",
-      "Pasqua"
+      "Torta rustica"
     ],
     "isItalian": true
   },
   {
     "slug": "mini-pastiera-napoletana",
-    "title": "Mini Pastiere Napoletane (Dolce di Pasqua!)",
+    "title": "Mini Pastiere Napoletane (Dolce di Pasqua in 20 Minuti)",
     "emoji": "🥧",
     "temp": 170,
     "time": "20",
@@ -6188,7 +6187,7 @@
       "Aroma fior d'arancio e scorza di limone q.b.",
       "Canditi a cubetti (opzionali)"
     ],
-    "description": "Tutto il profumo della tradizione, ma in versione monoporzione! Le mini pastiere restano umide al centro con una frolla iper croccante. Pronte in 20 min.",
+    "description": "Porta in tavola il profumo del fior d'arancio! Le mini-pastiere cuociono perfettamente ad aria in 20 minuti: la frolla resta biscottata e non molle, il ripieno denso e aromatico. Imbattibili.",
     "instructions": [
       "In una ciotola, setacciare la ricotta e mescolarla con lo zucchero fino a renderla una crema. Aggiungere il grano cotto, le uova, gli aromi e i canditi.",
       "Srotolare la pasta frolla (tenendo da parte dei ritagli per le strisce) e foderare 4 pirottini in silicone o alluminio imburrati.",
@@ -6211,11 +6210,11 @@
   },
   {
     "slug": "hamburger-classico",
-    "title": "Hamburger Perfetto in Friggitrice ad Aria (Succoso e Dorato)",
+    "title": "Hamburger Perfetto (Succoso e Dorato in 8 Minuti)",
     "emoji": "🍔",
     "temp": 190,
-    "time": "8-10",
-    "prep_time": "Non presente",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "nutrition": {
       "kcal": 350,
@@ -6232,7 +6231,7 @@
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Ottieni un hamburger da steakhouse direttamente a casa tua. La friggitrice ad aria sigilla i succhi all'interno garantendo una rosolatura esterna uniforme e veloce.",
+    "description": "Stop agli hamburger secchi e alle padelle che schizzano grasso! Cotti a 190°C per soli 8 minuti, questi patty bovini diventano bruniti all'esterno mantenendo un cuore saporito e succoso, perfetti per i tuoi panini.",
     "instructions": [
       "Portare la carne a temperatura ambiente prima della cottura.",
       "Condire entrambi i lati degli hamburger con sale e pepe nero macinato.",
@@ -6256,11 +6255,11 @@
   },
   {
     "slug": "amaretti-al-cocco",
-    "title": "Pasticcini al Cocco Veloci (3 Ingredienti in Friggitrice ad Aria)",
+    "title": "Pasticcini al Cocco (Dolcetti Veloci in 15 Minuti)",
     "emoji": "🥥",
     "temp": 150,
     "time": "15",
-    "prep_time": "Non presente",
+    "prep_time": "",
     "portions": "4",
     "nutrition": {
       "kcal": 380,
@@ -6277,7 +6276,7 @@
       "350 g di cocco essiccato in scaglie",
       "q.b. estratti di mandorla e vaniglia"
     ],
-    "description": "Dolcetti irresistibili pronti in soli 10 minuti! Morbidi dentro e dorati fuori, questi pasticcini al cocco sono perfetti per una voglia di dolce improvvisa o una colazione sprint.",
+    "description": "I biscotti perfetti per gli ospiti inattesi. Solo 3 ingredienti per creare delle morbidissime e umide pepite di cocco. La friggitrice ad aria le tosta dolcemente a 150° in un quarto d'ora.",
     "instructions": [
       "Montare a neve ferma gli albumi in una ciotola pulita.",
       "Incorporare il latte condensato e gli estratti con movimenti dal basso verso l'alto per non smontare il composto.",
@@ -6302,11 +6301,11 @@
   },
   {
     "slug": "avocado-fritti",
-    "title": "Avocado Fries (Stick Croccanti e Cremosi in Friggitrice ad Aria)",
+    "title": "Avocado Stick (Stick Croccanti e Cremosi in 11 Min)",
     "emoji": "🥑",
     "temp": 200,
     "time": "11",
-    "prep_time": "Non presente",
+    "prep_time": "",
     "portions": "2",
     "nutrition": {
       "kcal": 420,
@@ -6327,7 +6326,7 @@
       "Sale q.b.",
       "Olio spray q.b."
     ],
-    "description": "L'avocado come non l'hai mai provato! Spicchi impanati e speziati che diventano croccantissimi fuori e burrosi dentro. Lo snack vegetariano definitivo per i tuoi aperitivi.",
+    "description": "Hai mai mangiato l'avocado caldo? Tagliato a spicchi e impanato con paprika e pangrattato, l'aria a 200° crea un guscio croccantissimo in 11 minuti che racchiude un cuore burroso. L'aperitivo veg dell'anno.",
     "instructions": [
       "Tagliate gli avocado a metà, rimuovete il nocciolo, pelateli e affettateli in spicchi di dimensioni uniformi.",
       "Preparate tre contenitori per l'impanatura: uno con la farina e il sale, uno con le uova sbattute e un terzo con il pangrattato miscelato alla paprika e al pepe di Caienna.",
@@ -6353,7 +6352,7 @@
   },
   {
     "slug": "bastoncini-french-toast",
-    "title": "French Toast Sticks (Colazione Golosa in Friggitrice ad Aria)",
+    "title": "French Toast Sticks (Colazione Golosa in 10 Minuti)",
     "emoji": "🍞",
     "temp": 175,
     "time": "10",
@@ -6377,7 +6376,7 @@
       "Cannella in polvere, 3 g",
       "Estratto di vaniglia, q.b."
     ],
-    "description": "Bastoncini di pane dorati, profumati alla cannella e pronti da tuffare nel tuo sciroppo preferito. Croccanti fuori e soffici dentro, senza burro in eccesso.",
+    "description": "Scordati la padella imburrata! Inzuppa i bastoncini di pane nell'uovo e latte e lasciali tostare nell'aria calda per 10 minuti. Diventano dorati fuori e morbidi dentro, perfetti da tuffare nello sciroppo d'acero.",
     "instructions": [
       "Tagliare ogni fetta di pane in 3 bastoncini di dimensioni uniformi.",
       "In una ciotola, sbattere le uova con il latte, lo sciroppo d'acero e l'estratto di vaniglia fino ad ottenere un composto omogeneo.",
@@ -6403,11 +6402,11 @@
   },
   {
     "slug": "bastoncini-pesce-surgelati",
-    "title": "Bastoncini di Pesce Surgelati (Super Crunch in 10 Minuti)",
+    "title": "Bastoncini di Pesce Surgelati (Super Crunch in 8 Minuti)",
     "emoji": "🐟",
     "temp": 200,
-    "time": "8-10",
-    "prep_time": "Non presente",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "nutrition": {
       "kcal": 290,
@@ -6421,7 +6420,7 @@
     "ingredients": [
       "600 g di bastoncini di pesce, impanati, surgelati"
     ],
-    "description": "Dimentica il forno lento o la padella unta! I bastoncini di pesce in friggitrice ad aria diventano incredibilmente croccanti e asciutti in metà tempo. Ideali per i bambini.",
+    "description": "Il forno li secca, la padella li smonta. La friggitrice ad aria invece è nata per loro: in 8 minuti a 200° i bastoncini surgelati (già prefritti) diventano croccantissimi senza aggiungere olio.",
     "instructions": [
       "Prelevare i bastoncini dal congelatore e disporli direttamente nel cestello.",
       "Distribuire i bastoncini in un unico strato, senza sovrapporli, per garantire una cottura uniforme.",
@@ -6444,10 +6443,10 @@
   },
   {
     "slug": "patatine-spirale-surgelate",
-    "title": "Patate a Spirale (Effetto Luna Park in Friggitrice ad Aria)",
+    "title": "Patatine a Spirale (Riccioli Extra Croccanti in 18 Minuti)",
     "emoji": "🍟",
     "temp": 200,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "4",
     "nutrition": {
@@ -6462,7 +6461,7 @@
     "ingredients": [
       "700 g di patate a spirale surgelate"
     ],
-    "description": "Divertenti e croccanti! Le patate a spirale surgelate cuociono perfettamente nell'Friggitrice ad Aria diventando dorate senza bisogno di olio extra. La gioia di grandi e piccoli.",
+    "description": "Le patatine più amate dai bambini, pronte senza sforzo! Il taglio a spirale cattura perfettamente il vortice d'aria calda, creando riccioli iper-croccanti in soli 18 minuti partendo dal prodotto surgelato, senza olio extra.",
     "instructions": [
       "Inserire le patate a spirale surgelate nel cestello.",
       "Non aggiungere olio. Il prodotto è pre-fritto e rilascerà il grasso necessario in cottura.",
@@ -6478,14 +6477,13 @@
       "Vegetariano",
       "Vegano",
       "Patate",
-      "curly fries",
       "patate a spirale",
       "snack bambini"
     ]
   },
   {
     "slug": "samosa-vegetali",
-    "title": "Samosa Verdure e Feta (Scrigni Croccanti di Pasta Brick)",
+    "title": "Samosa Verdure e Feta (Scrigni Croccanti in 15 Minuti)",
     "emoji": "🥟",
     "temp": 170,
     "time": "15",
@@ -6510,7 +6508,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Triangolini di sfoglia croccante con un ripieno saporito di cavolfiore, piselli e formaggio feta. Un antipasto speziato e originale cotto ad aria per la massima leggerezza.",
+    "description": "Scopri l'arte della pasta brick in versione light. Questi classici fagottini orientali farciti di feta e cavolfiore si gonfiano ad aria diventando sfogliatissimi in 15 minuti. Ideali per svuotare il frigo con stile.",
     "instructions": [
       "Cuocere a vapore o in padella le cimette di cavolfiore e i piselli fino a renderli teneri.",
       "Trasferire le verdure in una ciotola, aggiungere la feta sbriciolata, sale, pepe e schiacciare con una forchetta per ottenere un composto grossolano.",
@@ -6535,7 +6533,7 @@
   },
   {
     "slug": "torta-banana-mascarpone",
-    "title": "Torta Banana e Mascarpone (Soffice e Naturalmente Dolce)",
+    "title": "Torta Banana e Mascarpone (Soffice e Umida in 35 Min)",
     "emoji": "🍰",
     "temp": 160,
     "time": "35",
@@ -6558,7 +6556,7 @@
       "Mascarpone: 150 g",
       "Noci sgusciate: 50 g"
     ],
-    "description": "L'unione perfetta tra la dolcezza delle banane mature e la cremosità del mascarpone. Una torta umida e ricca di noci, ideale per una colazione che sa di casa.",
+    "description": "Una torta densa, umida e facilissima! La friggitrice cuocerà questo impasto ricco di noci e banane in 35 minuti, regalando una consistenza soffice e una doratura perfetta da ricoprire con crema al mascarpone.",
     "instructions": [
       "Pelare le banane e ridurre la polpa in purea grossolana utilizzando una forchetta.",
       "Aggiungere lo zucchero di canna e l'olio di semi, mescolando con una frusta fino ad amalgamare.",
@@ -6584,11 +6582,11 @@
   },
   {
     "slug": "funghi-panati",
-    "title": "Funghi Panati Surgelati (Antipasto Dorato e Veloce)",
+    "title": "Funghi Panati Surgelati (Antipasto Dorato in 15 Minuti)",
     "emoji": "🍄",
     "temp": 190,
-    "time": "15-18",
-    "prep_time": "Non presente",
+    "time": "15",
+    "prep_time": "",
     "portions": "4",
     "nutrition": {
       "kcal": 150,
@@ -6602,7 +6600,7 @@
     "ingredients": [
       "300 g di funghi impanati surgelati"
     ],
-    "description": "Funghi interi con una panatura spessa e croccante. La friggitrice ad aria li rende caldi e dorati in pochissimo tempo, pronti da servire come contorno o finger food.",
+    "description": "Tira fuori i funghi impanati dal freezer, buttali nel cestello e in 15 minuti avrai un finger food bollente e croccante. L'aria calda scioglie la glassa gelata senza ammollare la panatura.",
     "instructions": [
       "Prelevare i funghi impanati dal congelatore senza scongelarli.",
       "Distribuire i funghi in un unico strato nel cestello.",
@@ -6625,7 +6623,7 @@
   },
   {
     "slug": "grilled-cheese",
-    "title": "Grilled Cheese Sandwich (Il Classico Filante in Friggitrice ad Aria)",
+    "title": "Grilled Cheese Sandwich (Il Classico Filante in 8 Minuti)",
     "emoji": "🥪",
     "temp": 160,
     "time": "8",
@@ -6645,7 +6643,7 @@
       "60 g di formaggio Cheddar stagionato a fette",
       "45 g di burro ammorbidito"
     ],
-    "description": "Il massimo del comfort food: pane tostato alla perfezione con un cuore di cheddar fuso. La friggitrice ad aria garantisce una doratura uniforme e una croccantezza imbattibile senza dover girare il sandwich continuamente in padella.",
+    "description": "Zero sbatti di girare il toast in padella! Spennella il burro all'esterno del pane e la friggitrice lo tosterà uniformemente su entrambi i lati fondendo il cheddar all'interno. La colazione o lo snack americano in 8 min.",
     "instructions": [
       "Preriscaldare l'apparecchio a 160°C.",
       "Spennellare con il burro un lato esterno di ogni fetta di pane.",
@@ -6693,7 +6691,7 @@
       "5 g di mix di spezie (paprika affumicata, peperoncino, pepe di Caienna)",
       "Aglio in polvere e timo secco q.b."
     ],
-    "description": "Porta i sapori della Louisiana in tavola con questi gamberetti pronti in un lampo. Il mix di spezie Cajun crea una crosticina saporita, mentre l'aria calda mantiene il pesce tenero e succoso.",
+    "description": "Proteici, piccanti e lampo! Questi gamberetti si cuociono nel tempo record di 5 minuti. Le spezie Cajun creano una crosticina saporita, mentre l'interno del gambero non si secca minimamente.",
     "instructions": [
       "Asciugare accuratamente i gamberetti con carta assorbente.",
       "In una ciotola, condire i gamberetti con olio, sale e tutte le spezie.",
@@ -6719,7 +6717,7 @@
   },
   {
     "slug": "mais-tostato-burro",
-    "title": "Pannocchia al Burro (Snack Dolce e Salato)",
+    "title": "Pannocchia al Burro (Tostatura Dolce e Salata in 10 Min)",
     "emoji": "🌽",
     "temp": 200,
     "time": "10",
@@ -6739,7 +6737,7 @@
       "15 g di burro fuso",
       "Sale q.b."
     ],
-    "description": "La dolcezza del mais incontra la cremosità del burro fuso. La tostatura in Friggitrice ad Aria intensifica il sapore dei chicchi, rendendoli leggermente croccanti all'esterno e tenerissimi all'interno.",
+    "description": "Hai mai visto una pannocchia arrostirsi così in fretta? Tagliala a metà, cospargila di burro e in soli 10 minuti a 200°C i chicchi diventeranno gonfi, dolci e con i caratteristici segnetti scuri della tostatura.",
     "instructions": [
       "Rimuovere le foglie e i filamenti dalla pannocchia. Tagliare la pannocchia a metà.",
       "Spennellare la surface delle due metà con il burro fuso e cospargere uniformemente di sale.",
@@ -6762,7 +6760,7 @@
   },
   {
     "slug": "mini-pizza-pepperoni",
-    "title": "Mini Pizza Pepperoni (Croccantezza da Pizzeria)",
+    "title": "Mini Pizza Pepperoni (Croccantezza da Pizzeria in 10 Min)",
     "emoji": "🍕",
     "temp": 160,
     "time": "10",
@@ -6785,7 +6783,7 @@
       "170 g di mozzarella per pizza, grattugiata",
       "50 g di formaggio Grana Padano grattugiato"
     ],
-    "description": "Piccole pizze cariche di gusto con salame piccante e mozzarella filante. Il trucco della precottura della base in Friggitrice ad Aria assicura una consistenza biscottata che regge perfettamente ogni condimento.",
+    "description": "Basta bordi mollicci! Il trucco per una pizzetta americana spettacolare è precuocere la base ad aria per 5 minuti. Poi aggiungi salsa, formaggio e pepperoni, inforna per altri 5 minuti e avrai una base tipo cracker.",
     "instructions": [
       "Spennellare le basi per pizza con olio d'oliva. Preriscaldare il dispositivo a 160°C.",
       "Cuocere le basi senza condimento per 5 minuti.",
@@ -6811,7 +6809,7 @@
   },
   {
     "slug": "pane-aglio",
-    "title": "Garlic Bread (Pane all'Aglio e Parmigiano Dorato)",
+    "title": "Garlic Bread (Pane all'Aglio e Parmigiano Dorato in 8 Min)",
     "emoji": "🥖",
     "temp": 160,
     "time": "8",
@@ -6834,7 +6832,7 @@
       "1 cucchiaio di Parmigiano Reggiano, grattugiato",
       "Prezzemolo fresco tritato q.b."
     ],
-    "description": "L'accompagnamento perfetto per ogni cena. Pane fragrante spennellato con burro all'aglio e una pioggia di Parmigiano, tostato fino a diventare dorato e irresistibilmente profumato.",
+    "description": "Hai un pezzo di baguette mezza vecchia? Tagliala, farciscila di burro, aglio e parmigiano e cuocila a 160°C. In 8 minuti il grasso colerà dentro il pane tostandolo. Il contorno da inzuppo definitivo.",
     "instructions": [
       "Incidere il pane a fette spesse, senza separarle completamente alla base.",
       "In una ciotola, mescolare il burro ammorbidito con l'aglio tritato, l'olio d'oliva e il Parmigiano grattugiato fino ad ottenere un composto omogeneo.",
@@ -6859,10 +6857,10 @@
   },
   {
     "slug": "pannocchie-mais",
-    "title": "Pannocchie Arrostite (Il Gusto dell'Estate tutto l'Anno)",
+    "title": "Pannocchie Arrostite (Il Gusto del Barbecue in 12 Min)",
     "emoji": "🌽",
     "temp": 200,
-    "time": "12-15",
+    "time": "12",
     "prep_time": "5",
     "portions": "4",
     "nutrition": {
@@ -6879,7 +6877,7 @@
       "Olio extra vergine d'oliva q.b.",
       "Sale grosso q.b."
     ],
-    "description": "Semplici e genuine: pannocchie intere arrostite ad alta temperatura. La friggitrice ad aria simula perfettamente il barbecue, caramellando gli zuccheri naturali del mais senza seccarlo.",
+    "description": "Ottieni il sapore autentico del mais arrostito sulla brace senza accendere il barbecue! In soli 12 minuti a 200°C, la friggitrice ad aria caramella i chicchi rendendoli dolcissimi e croccanti all'esterno.",
     "instructions": [
       "Rimuovere le foglie e i filamenti dalle pannocchie, quindi lavarle e asciugarle.",
       "Spennellare uniformemente le pannocchie con olio extra vergine d'oliva e cospargerle di sale grosso.",
@@ -6903,7 +6901,7 @@
   },
   {
     "slug": "pizzette-fiestas",
-    "title": "Pizzette Messicane (Fagioli Neri, Mais e Formaggio)",
+    "title": "Pizzette Messicane (Fagioli, Mais e Formaggio in 10 Min)",
     "emoji": "🍕",
     "temp": 160,
     "time": "10",
@@ -6927,7 +6925,7 @@
       "60 g di fagioli neri precotti, sgocciolati",
       "15 g di piselli"
     ],
-    "description": "Un'esplosione di colori e sapori Tex-Mex su una base croccante. Fagioli neri, mais e un mix di formaggi fusi creano una mini pizza originale e sostanziosa, ideale per i tuoi party.",
+    "description": "Porta un tocco Tex-Mex in tavola con queste pizzette croccanti! La combinazione di fagioli neri, mais e formaggio fuso crea uno snack sostanzioso e originale che cuoce alla perfezione in soli 10 minuti.",
     "instructions": [
       "Preriscaldare il dispositivo di cottura a 160°C.",
       "Spennellare le basi per pizza con olio d'oliva.",
@@ -6952,7 +6950,7 @@
   },
   {
     "slug": "burger-ceci-spinaci",
-    "title": "Veggie Burger Ceci e Spinaci (Fatti in Casa e Leggeri)",
+    "title": "Veggie Burger Ceci e Spinaci (Leggeri e Dorati in 14 Min)",
     "emoji": "🍔",
     "temp": 180,
     "time": "14",
@@ -6975,7 +6973,7 @@
       "2 g di cumino e 2 g di paprika dolce",
       "Sale, pepe e olio spray"
     ],
-    "description": "Dimentica i burger confezionati. Questi hamburger vegetali sono ricchi di nutrienti e hanno una consistenza perfetta: croccanti fuori grazie all'Friggitrice ad Aria e teneri al cuore, senza grassi in eccesso.",
+    "description": "Basta burger vegetali gommosi! Questa versione fatta in casa con ceci e spinaci resta tenera dentro ma sviluppa una crosticina deliziosa grazie alla cottura ventilata. Un secondo sano, proteico e leggero.",
     "instructions": [
       "Nel bicchiere del frullatore, inserisci i ceci, gli spinaci ben strizzati, le spezie, il sale, il pepe e l'uovo.",
       "Frulla a scatti fino a ottenere un composto modellabile ma non eccessivamente liscio (deve mantenere un po' di consistenza rustica).",
@@ -6999,7 +6997,7 @@
   },
   {
     "slug": "barchette-zucchine-ricotta",
-    "title": "Zucchine Ripiene alla Ricotta (Leggere e Gratinate)",
+    "title": "Zucchine Ripiene alla Ricotta (Gratinatura Perfetta in 16 Min)",
     "emoji": "🥒",
     "temp": 175,
     "time": "16",
@@ -7024,7 +7022,7 @@
       "Pepe nero",
       "Olio extra vergine d'oliva"
     ],
-    "description": "Barchette di zucchine tenere farcite con una crema delicata di ricotta e Parmigiano. La cottura ventilata crea una crosticina dorata in superficie per un secondo piatto vegetariano sano ed elegante.",
+    "description": "Cerchi un secondo vegetariano raffinato ma semplice? Queste barchette di zucchine con crema di ricotta e menta sono fresche e leggere, con una gratinatura perfetta ottenuta in soli 16 minuti ad aria.",
     "instructions": [
       "Lavare le zucchine, dividerle a metà longitudinalmente e asportare la polpa centrale.",
       "Tritare la polpa asportata e amalgamarla in una ciotola con ricotta, Parmigiano Reggiano, uovo, menta tritata, sale e pepe.",
@@ -7049,7 +7047,7 @@
   },
   {
     "slug": "peperoni-gratinati-capperi",
-    "title": "Peperoni Gratinati (Saporiti con Capperi e Aglio)",
+    "title": "Peperoni Gratinati ai Capperi (Saporiti in 14 Minuti)",
     "emoji": "🫑",
     "temp": 185,
     "time": "14",
@@ -7074,7 +7072,7 @@
       "Sale q.b.",
       "Pepe q.b."
     ],
-    "description": "Falde di peperone dolci e carnose ricoperte da una panatura croccante e aromatica. Un contorno vegano dal carattere deciso che sprigiona tutto il profumo del Mediterraneo.",
+    "description": "Falde di peperone dolci e carnose rese irresistibili da una panatura profumata all'aglio e capperi. Un contorno saporito e veloce che sprigiona i profumi della cucina mediterranea in meno di 15 minuti.",
     "instructions": [
       "Lavare i peperoni, rimuovere picciolo, semi e filamenti interni. Tagliare a falde.",
       "In una ciotola, preparare la farcitura miscelando il pangrattato con i capperi, l'aglio, il prezzemolo, sale, pepe e 15 ml di olio.",
@@ -7098,7 +7096,7 @@
   },
   {
     "slug": "asparagi-gratinati-parmigiano",
-    "title": "Asparagi al Parmigiano e Mandorle (Crunch Irresistibile)",
+    "title": "Asparagi al Parmigiano (Crunch Irresistibile in 8 Minuti)",
     "emoji": "🥗",
     "temp": 190,
     "time": "8",
@@ -7121,7 +7119,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Eleva i tuoi asparagi con questa panatura croccante al Parmigiano e scaglie di mandorle. La cottura rapida preserva la croccantezza degli asparagi regalandoti una gratinatura da chef.",
+    "description": "Eleva i tuoi asparagi con questa versione gourmet! Il mix di Parmigiano e mandorle a scaglie crea un guscio croccante che contrasta magnificamente con la tenerezza degli asparagi cotti velocemente ad aria.",
     "instructions": [
       "Pulire gli asparagi e rimuovere la porzione terminale legnosa del gambo.",
       "Condire gli asparagi in un recipiente con olio extravergine d'oliva, sale e pepe.",
@@ -7147,7 +7145,7 @@
   },
   {
     "slug": "spicchi-finocchio-limone",
-    "title": "Finocchi Arrostiti al Limone (Delicati e Light)",
+    "title": "Finocchi Arrostiti al Limone (Delicati e Light in 15 Min)",
     "emoji": "🥗",
     "temp": 180,
     "time": "15",
@@ -7170,7 +7168,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Scopri il lato dolce del finocchio. Arrostito in Friggitrice ad Aria perde la nota pungente di anice per diventare tenero e caramellato, con un tocco di limone che rinfresca il palato.",
+    "description": "Se pensi che il finocchio sia noioso, devi provarlo arrostito! L'aria calda lo rende tenero e caramellato, mentre il limone e i semi di finocchio ne esaltano la freschezza naturale. Contorno perfetto e ipocalorico.",
     "instructions": [
       "Pulire i finocchi, eliminando i gambi e le guaine esterne più dure.",
       "Tagliare ogni finocchio a metà e poi in 6-8 spicchi, mantenendo intatta una porzione della base per non separare le foglie.",
@@ -7195,7 +7193,7 @@
   },
   {
     "slug": "cipolle-rosse-agrodolce",
-    "title": "Cipolle Rosse Caramellate (L'Agrodolce Perfetto)",
+    "title": "Cipolle Rosse Caramellate (L'Agrodolce Perfetto in 16 Min)",
     "emoji": "🧅",
     "temp": 170,
     "time": "16",
@@ -7218,7 +7216,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Cipolle rosse trasformate in una glassa densa e deliziosa. Perfette per accompagnare formaggi stagionati o per dare un tocco gourmet ai tuoi hamburger fatti in casa.",
+    "description": "Trasforma delle semplici cipolle rosse in un contorno gourmet o nel topping perfetto per hamburger. La friggitrice ad aria caramella gli zuccheri e l'aceto balsamico creando una glassa densa e irresistibile.",
     "instructions": [
       "Pelare le cipolle rosse e tagliarle a spicchi o anelli spessi.",
       "Riunire le cipolle in un recipiente e condire con olio, aceto balsamico, zucchero di canna, sale e pepe.",
@@ -7241,7 +7239,7 @@
   },
   {
     "slug": "cavoletti-glassati-balsamico",
-    "title": "Cavoletti al Balsamico (Agrodolce e Croccanti)",
+    "title": "Cavoletti al Balsamico (Agrodolce e Croccanti in 12 Min)",
     "emoji": "🥬",
     "temp": 190,
     "time": "12",
@@ -7264,7 +7262,7 @@
       "Sale q.b.",
       "Pepe nero q.b."
     ],
-    "description": "Cavoletti di Bruxelles croccanti fuori e teneri dentro, avvolti in una riduzione di aceto balsamico che ne esalta il sapore rustico. Un contorno saporito e veloce.",
+    "description": "Basta cavoletti lessi e sgradevoli! In soli 12 minuti, l'aria calda li rende croccanti fuori e teneri dentro, mentre la glassatura al balsamico e miele aggiunge una nota agrodolce che conquista anche i più scettici.",
     "instructions": [
       "In una ciotola, condire i cavoletti di Bruxelles con olio d'oliva, sale e pepe.",
       "Disporre i cavoletti conditi nel cestello in un unico strato.",
@@ -7286,7 +7284,7 @@
   },
   {
     "slug": "pomodorini-confit-origano",
-    "title": "Pomodorini Confit Rapidi (Caramelle di Sapore)",
+    "title": "Pomodorini Confit (Caramelle di Sapore in Friggitrice ad Aria)",
     "emoji": "🍅",
     "temp": 140,
     "time": "40",
@@ -7308,7 +7306,7 @@
       "10 g di origano secco",
       "Sale, pepe e 1 spicchio d'aglio intero schiacciato"
     ],
-    "description": "Ottieni pomodorini dolcissimi e concentrati in una frazione del tempo del forno tradizionale. Ideali per bruschette gourmet, per condire la pasta o arricchire insalate.",
+    "description": "Ottieni pomodorini dolcissimi e concentrati in metà tempo rispetto al forno. La cottura dolce a 140°C per 40 minuti li trasforma in vere 'caramelle' di sapore, perfette per bruschette gourmet o per condire la pasta.",
     "instructions": [
       "Taglia tutti i pomodorini esattamente a metà e disponili in una terrina insieme allo spicchio d'aglio intero e schiacciato.",
       "Condiscili con l'olio d'oliva, lo zucchero, l'origano, sale e pepe, mescolando delicatamente.",
@@ -7332,7 +7330,7 @@
   },
   {
     "slug": "frittata-verdure-miste",
-    "title": "Frittata Soffice in Friggitrice ad Aria (Leggera e Senza Stress)",
+    "title": "Frittata Soffice di Verdure (Leggera e Senza Stress in 15 Min)",
     "emoji": "🍳",
     "temp": 160,
     "time": "15",
@@ -7356,7 +7354,7 @@
       "Sale q.b.",
       "Pepe q.b."
     ],
-    "description": "Niente più padelle da girare! Una frittata alta, soffice e cotta in modo uniforme grazie alla ventilazione, perfetta per chi cerca un secondo piatto proteico e povero di grassi.",
+    "description": "Addio padelle unte e fumo in cucina! Scopri come preparare una frittata alta, soffice e perfettamente dorata grazie alla cottura ventilata in 15 minuti. La soluzione ideale per una cena veloce e proteica.",
     "instructions": [
       "Sbattere le uova in una ciotola con il latte, il formaggio, il sale e il pepe, fino ad ottenere un composto omogeneo e areato.",
       "Incorporare le verdure precedentemente cotte e ben asciugate, mescolando.",
@@ -7365,7 +7363,7 @@
       "Cuocere per 15 minuti. Verificare che il centro sia coagulato e la superficie dorata."
     ],
     "source": "Ninja",
-    "tip": "È fondamentale utilizzare verdure già cotte e accuratamente asciugate per evitare che rilascino acqua durante la cottura, compromettendo la consistenza finale del prodotto.",
+    "tip": "È fondamentale utilizzare verdure già cotte e accuratamente asciugate per evitare che rilascino acqua durante la cottura, compromettendo la consitenza finale del prodotto.",
     "keywords": [
       "Uova/Formaggi",
       "Verdure",
@@ -7405,7 +7403,7 @@
       "Origano secco q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Scopri la consistenza unica dell'Halloumi grigliato. Insieme alle zucchine crea uno spiedino saporito con una crosticina dorata deliziosa, perfetto per una cena vegetariana diversa dal solito.",
+    "description": "Hai mai provato il formaggio grigliato che 'scrocchia'? L'Halloumi in friggitrice ad aria diventa dorato e croccante fuori senza sciogliersi, creando uno spiedino vegetariano saporitissimo in soli 12 minuti.",
     "instructions": [
       "Unire in un recipiente i cubetti di Halloumi, le rondelle di zucchina, i pomodorini e gli spicchi di cipolla. Condire con olio, origano e pepe nero. Omettere il sale.",
       "Comporre gli spiedini alternando gli ingredienti su stecchi di legno di dimensione adeguata al cestello di cottura.",
@@ -7455,7 +7453,7 @@
       "Sale q.b.",
       "Noce moscata q.b."
     ],
-    "description": "Un tortino di patate dalla crosta dorata che nasconde un cuore di provola affumicata filante. Un piatto unico o contorno ricco che conquista al primo assaggio.",
+    "description": "Il comfort food per eccellenza: uno sformato di patate soffice con una crosticina di pangrattato e un cuore di provola affumicata che fila al primo taglio. La friggitrice ad aria assicura una gratinatura perfetta in 25 minuti.",
     "instructions": [
       "In una ciotola, unire la purea di patate tiepida con l'uovo, il burro fuso, il Parmigiano Reggiano, sale e noce moscata. Amalgamare.",
       "Incorporare i cubetti di provola affumicata all'impasto, distribuendoli uniformemente.",
@@ -7480,7 +7478,7 @@
   },
   {
     "slug": "edamame-speziati-croccanti",
-    "title": "Edamame Tostati (Snack Proteico al Sesamo e Peperoncino)",
+    "title": "Edamame Tostati (Snack Proteico al Sesamo in 10 Min)",
     "emoji": "🫛",
     "temp": 190,
     "time": "10",
@@ -7502,7 +7500,7 @@
       "2 g aglio in polvere",
       "1 g peperoncino in scaglie"
     ],
-    "description": "Trasforma i baccelli di soia in un antipasto irresistibile. Tostati con olio di sesamo e peperoncino, questi edamame diventano croccanti e saporiti, ideali per un aperitivo healthy.",
+    "description": "Dimentica gli edamame bolliti e insipidi! Tostandoli ad aria con olio di sesamo e peperoncino otterrai uno snack proteico e 'crunchy' pronto in 10 minuti. Il finger food healthy che crea dipendenza.",
     "instructions": [
       "Inserire gli edamame surgelati nel cestello. Cuocere a 190°C per 4 minuti per rimuovere l'umidità superficiale.",
       "Estrarre il cestello e trasferire gli edamame in una ciotola.",
@@ -7548,7 +7546,7 @@
       "4 g paprika affumicata, 2 g cumino in polvere",
       "Sale fino q.b."
     ],
-    "description": "Dimentica le patatine confezionate. Questi ceci tostati alla paprika e cumino sono croccantissimi, sani e ricchi di proteine. Perfetti da sgranocchiare davanti a un film o sopra una vellutata.",
+    "description": "Sostituisci le patatine con queste 'perle' di sapore! Ceci arrostiti ad aria con paprika affumicata: diventano croccantissimi fuori e soffici dentro in appena 15 minuti. Lo snack fit definitivo.",
     "instructions": [
       "Scolare i ceci dal liquido di conservazione e sciacquarli sotto acqua corrente.",
       "Disporre i ceci su un panno e asciugarli accuratamente, rimuovendo eventuali pellicine esterne.",
@@ -7572,7 +7570,7 @@
   },
   {
     "slug": "chips-zucchine-parmigiano",
-    "title": "Chips di Zucchine e Parmigiano (Croccanti e Low Carb)",
+    "title": "Chips di Zucchine e Parmigiano (Croccanti in 18 Minuti)",
     "emoji": "🥒",
     "temp": 160,
     "time": "18",
@@ -7594,7 +7592,7 @@
       "Sale q.b.",
       "Pepe bianco q.b."
     ],
-    "description": "Sottili rondelle di zucchina che si trasformano in uno snack irresistibile grazie alla crosticina di Parmigiano Reggiano. La friggitrice ad aria le rende dorate e croccanti in pochi minuti, perfette per un aperitivo leggero.",
+    "description": "Voglia di chips ma sei a dieta? Queste rondelle di zucchina al Parmigiano sono la soluzione perfetta. L'aria calda le disidrata rendendole sottili e croccanti in 18 minuti. Uno snack keto-friendly golosissimo.",
     "instructions": [
       "Affettare la zucchina a rondelle di 2 mm di spessore utilizzando una mandolina.",
       "Asciugare le rondelle con carta assorbente per rimuovere l'acqua in eccesso.",
@@ -7643,7 +7641,7 @@
       "Sale q.b.",
       "Pepe q.b."
     ],
-    "description": "Il cavolfiore arrostito incontra la cremosità della salsa tahina al limone. Un piatto aromatico e saziante, perfetto come antipasto o contorno originale.",
+    "description": "Trasforma il cavolfiore in un piatto da ristorante mediorientale! Le cimette arrostite ad aria diventano brunate e saporite in 15 minuti, perfette da nappare con la salsa tahina cremosa e agrumata.",
     "instructions": [
       "Pulire il cavolfiore, eliminare le foglie e la base del torsolo. Dividere l'ortaggio in cimette e trasferirle in una ciotola.",
       "Condire le cimette con metà dell'olio d'oliva, sale e pepe. Mescolare per distribuire uniformemente il condimento.",
@@ -7666,10 +7664,10 @@
   },
   {
     "slug": "chips-patate-croccanti",
-    "title": "Chips di Patate (Croccantissime e Leggere)",
+    "title": "Chips di Patate (Croccantissime e Leggere in 23 Min)",
     "emoji": "🥔",
     "temp": 165,
-    "time": "23-26",
+    "time": "23",
     "prep_time": "40",
     "portions": "4",
     "nutrition": {
@@ -7688,7 +7686,7 @@
       "30 ml olio extravergine d'oliva",
       "Pepe nero q.b."
     ],
-    "description": "Sottili fette di patata dorate alla perfezione. Tutto il piacere delle patatine fritte ma con pochissimo olio, ideali come snack o contorno irresistibile per i bambini.",
+    "description": "Basta patatine in busta piene di grassi! Scopri il segreto della mandolina e dell'ammollo salato per preparare chips dorate e scrocchiarelle nella tua friggitrice ad aria. Lo snack sano perfetto.",
     "instructions": [
       "Sciogliere il sale in acqua fredda in una ciotola capiente.",
       "Lavare le patate e affettarle a uno spessore di 1,5 mm con una mandolina.",
@@ -7715,7 +7713,7 @@
     "title": "Funghi Arrostiti (Sodi e Saporiti in 10 Minuti)",
     "emoji": "🍄",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "5",
     "portions": "4",
     "nutrition": {
@@ -7734,7 +7732,7 @@
       "Pepe nero q.b.",
       "Prezzemolo fresco tritato (opzionale)"
     ],
-    "description": "Il segreto per funghi perfetti? L'Friggitrice ad Aria! Cuociono senza perdere i loro succhi, diventando dorati fuori e teneri dentro, esaltando tutto il loro aroma naturale.",
+    "description": "Smetti di spadellare i funghi che diventano molli e acquosi. Con 10 minuti ad aria a 200°C otterrai dei champignon arrostiti sodi e saporiti, sigillati all'esterno e succosi dentro.",
     "instructions": [
       "Pulire i funghi con un panno umido per rimuovere i residui di terra.",
       "Tagliare i funghi a metà o in quarti, ottenendo pezzi di dimensioni uniformi.",
@@ -7757,7 +7755,7 @@
   },
   {
     "slug": "melanzane-arrostite-semplici",
-    "title": "Melanzane Arrostite (Speziate e Leggere)",
+    "title": "Melanzane Arrostite (Speziate e Leggere in 10 Min)",
     "emoji": "🍆",
     "temp": 200,
     "time": "10",
@@ -7781,12 +7779,12 @@
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Fette di melanzana dorate e insaporite con le tue spezie preferite. Ottime come base per altre ricette o come contorno ipocalorico e saporito.",
+    "description": "Basta melanzane unte che assorbono tutto l'olio! Questa tecnica a 200°C le rende dorate e speziate in soli 10 minuti usando un filo d'olio. La base perfetta per insalate o come contorno keto.",
     "instructions": [
       "Lavare e pelare parzialmente la melanzana, quindi tagliarla a fette rotonde di circa 1 cm di spessore.",
       "In una ciotola, miscelare l'olio d'oliva con aglio in polvere, cipolla in polvere, cumino, sale e pepe.",
       "Aggiungere le fette di melanzana e mescolare per condirle in modo uniforme.",
-      "Disporre le fette nel cestello di cottura in un unico strato, senza sovrapporle.",
+      "Disporre le fette nel cestello di cottura in un unico strato, senza sovrapporli.",
       "Cuocere a 200°C per 10 minuti, girando le fette a metà cottura."
     ],
     "source": "Cosori",
@@ -7805,7 +7803,7 @@
   },
   {
     "slug": "melanzane-grigliate-pesto",
-    "title": "Melanzane al Pesto (Morbide e Profumate)",
+    "title": "Melanzane al Pesto (Morbide e Profumate in 27 Min)",
     "emoji": "🍆",
     "temp": 170,
     "time": "27",
@@ -7827,7 +7825,7 @@
       "Sale q.b.",
       "Pepe nero macinato q.b."
     ],
-    "description": "Melanzane cotte in Friggitrice ad Aria fino a diventare tenere e poi condite con un generoso strato di pesto al basilico. Un'esplosione di freschezza e gusto mediterraneo.",
+    "description": "Un'esplosione di gusto mediterraneo! Melanzane arrostite lentamente ad aria fino a diventare burrose e poi laccate con pesto al basilico fresco. Il contorno fresco ed elegante che profuma d'estate.",
     "instructions": [
       "Lavare le melanzane e tagliarle a fette di 0.5 cm di spessore.",
       "Spennellare entrambi i lati delle fette con olio extravergine d'oliva e condire con sale e pepe.",
@@ -7850,7 +7848,7 @@
   },
   {
     "slug": "melanzane-ripiene-mozzarella",
-    "title": "Melanzane alla Parmigiana (Farcite e Filanti)",
+    "title": "Melanzane alla Parmigiana (Farcite e Filanti in 30 Min)",
     "emoji": "🍆",
     "temp": 190,
     "time": "30",
@@ -7876,7 +7874,7 @@
       "Sale q.b.",
       "Pepe q.b."
     ],
-    "description": "Una versione originale e veloce della parmigiana: melanzane farcite con pomodoro, mozzarella e basilico, gratinate in friggitrice ad aria fino a formare una crosticina irresistibile.",
+    "description": "Dimentica la parmigiana classica lunga e unta! Queste melanzane ripiene filanti cuociono velocemente ad aria, creando una crosticina croccante che racchiude un cuore mediterraneo irresistibile.",
     "instructions": [
       "Incidere la polpa delle melanzane tagliate a metà. Condire con olio, sale e pepe.",
       "Disporre le melanzane nel cestello con il taglio rivolto verso il basso. Cuocere a 190°C per 20 minuti.",
@@ -7900,11 +7898,11 @@
   },
   {
     "slug": "patate-spicchi-surgelate",
-    "title": "Patate a Spicchi Surgelate (Crunch Esterno e Cuore Soffice)",
+    "title": "Patate a Spicchi Surgelate (Cuore Soffice in 20 Min)",
     "emoji": "🥔",
     "temp": 190,
     "time": "20",
-    "prep_time": "Non presente",
+    "prep_time": "0",
     "portions": "4",
     "nutrition": {
       "kcal": 210,
@@ -7918,7 +7916,7 @@
     "ingredients": [
       "600 g di patate a spicchi, surgelate"
     ],
-    "description": "Il modo migliore per cucinare le patate surgelate: l'aria calda le rende croccanti come se fossero fritte, mantenendo l'interno morbido e senza eccedere con i grassi.",
+    "description": "Le patate a spicchi surgelate sono fatte per la friggitrice ad aria. In 20 minuti otterrai una croccantezza da fast food senza aggiungere un solo goccio d'olio. Sane, veloci e lo snack preferito dai bambini.",
     "instructions": [
       "Disporre le patate surgelate nel cestello.",
       "Impostare la temperatura a 190°C e cuocere per 20 minuti.",
@@ -7939,7 +7937,7 @@
   },
   {
     "slug": "patate-a-spicchi",
-    "title": "Patate al Parmigiano (Spicchi Rustici e Saporiti)",
+    "title": "Patate al Parmigiano (Spicchi Rustici in 20 Minuti)",
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
@@ -7963,7 +7961,7 @@
       "Sale: q.b.",
       "Pepe nero: q.b."
     ],
-    "description": "Patate con la buccia rese speciali da un mix di spezie e Parmigiano Reggiano grattugiato. Dorate, croccanti e dal gusto deciso: il contorno che mette d'accordo tutti.",
+    "description": "Spicchi di patata rustici con una crosta di Parmigiano che scrocchia! Scopri come la friggitrice ad aria esalta il sapore del formaggio e delle spezie, rendendo ogni spicchio dorato e saporitissimo.",
     "instructions": [
       "Lavare le patate e, mantenendo la buccia, tagliarle a spicchi di dimensioni uniformi.",
       "Trasferire gli spicchi in una ciotola. Condire con olio, aglio in polvere, cipolla in polvere, Parmigiano Reggiano, sale e pepe. Mescolare per distribuire il condimento.",
@@ -7985,11 +7983,11 @@
   },
   {
     "slug": "patate-al-forno-intere",
-    "title": "Patate Intere con Buccia (Morbide e Rustiche in Friggitrice ad Aria)",
+    "title": "Patate Intere con Buccia (Morbide e Rustiche in 35 Min)",
     "emoji": "🥔",
     "temp": 200,
-    "time": "35-40",
-    "prep_time": "Non presente",
+    "time": "35",
+    "prep_time": "2",
     "portions": "4",
     "nutrition": {
       "kcal": 150,
@@ -8005,7 +8003,7 @@
       "Olio extra vergine d'oliva (opzionale)",
       "Sale grosso"
     ],
-    "description": "Il contorno più semplice e amato: patate cotte intere con la loro buccia per preservarne tutto il sapore. L'aria calda le rende croccanti all'esterno e soffici come purè all'interno.",
+    "description": "La vera Jacket Potato a casa tua in metà tempo. La friggitrice ad aria rende la buccia sottile e croccante mentre l'interno diventa soffice come velluto. Il contorno rustico sano per eccellenza.",
     "instructions": [
       "Spazzolare le patate sotto acqua corrente per rimuovere residui di terra, quindi asciugarle completamente.",
       "Forare la superficie di ogni patata in 3-4 punti con una forchetta per favorire la fuoriuscita del vapore.",
@@ -8028,7 +8026,7 @@
   },
   {
     "slug": "patate-arrosto-maionese-piccante",
-    "title": "Patate Novelle Arrosto (Con Maionese ai Pomodori Secchi)",
+    "title": "Patate Novelle Arrosto (Con Maionese Piccante in 30 Min)",
     "emoji": "🥔",
     "temp": 180,
     "time": "30",
@@ -8054,7 +8052,7 @@
       "2 cucchiai di pesto di pomodori secchi",
       "2 cucchiai di aceto di vino"
     ],
-    "description": "Patate novelle croccanti arricchite da un mix di spezie e servite con una maionese gourmet fatta in casa. Un antipasto o contorno originale che stupirà i tuoi ospiti.",
+    "description": "Patate novelle speziate e croccanti servite con una maionese gourmet ai pomodori secchi. Un contorno originale e d'effetto pronto in 30 minuti che trasformerà la tua cena in un'esperienza da ristorante.",
     "instructions": [
       "In una ciotola, condire le patate novelle con l'olio extravergine d'oliva, metà della dose di paprika piccante e affumicata, metà dell'aglio in polvere e sale.",
       "Disporre le patate in un unico strato nel recipiente di cottura.",

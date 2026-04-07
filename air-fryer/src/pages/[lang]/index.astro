@@ -1,7 +1,6 @@
 ---
 import HomePageTemplate from '../../components/HomePageTemplate.astro';
 
-// Comunichiamo ad Astro quali lingue straniere vogliamo attivare
 export async function getStaticPaths() {
   return [
     { params: { lang: 'en' } },
@@ -12,4 +11,4 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params;
 ---
-<HomePageTemplate lang={lang} />
+<HomePageTemplate lang={lang as string} />

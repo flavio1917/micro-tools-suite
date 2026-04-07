@@ -1,10 +1,10 @@
 [
   {
     "slug": "anneaux-calamars-frits",
-    "title": "Calamars Frits à la Semoule (Extra Croustillants)",
+    "title": "Anneaux de Calamars Frits (Croustillants Sans Bain d'Huile)",
     "emoji": "🦑",
     "temp": 200,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "10",
     "portions": "2",
     "ingredients": [
@@ -14,7 +14,7 @@
       "Sel",
       "Quartiers de citron, pour le service"
     ],
-    "description": "Redécouvrez les anneaux de calamars avec une panure à la semoule de blé dur pour un craquant incomparable. Une cuisson rapide en friteuse à air qui préserve la tendreté du poulpe sans l'excès d'huile.",
+    "description": "Anneaux de calamars dorés et croustillants en seulement 8 minutes ! Découvrez le secret de la semoule pour une panure parfaite et tendre à l'intérieur, en utilisant une fraction de l'huile par rapport à la friture traditionnelle.",
     "instructions": [
       "Sécher les anneaux de calamars avec du papier absorbant.",
       "Placer les anneaux de calamars et la semoule dans un sac de congélation. Fermer et secouer pour enrober uniformément.",
@@ -40,10 +40,10 @@
   },
   {
     "slug": "escalope-panee-cotoletta",
-    "title": "Cotoletta Dorée (Escalope Panée Express)",
+    "title": "Escalope Pannée Parfaite à l'Air Fryer (Croûte Infaillible)",
     "emoji": "🥩",
     "temp": 190,
-    "time": "12-15",
+    "time": "12",
     "prep_time": "15",
     "portions": "2",
     "ingredients": [
@@ -54,7 +54,7 @@
       "Poivre noir : q.s.",
       "Huile en spray : q.s."
     ],
-    "description": "L'indémodable escalope panée, version légère. Obtenez une chapelure bien dorée et une viande juteuse grâce à la circulation d'air chaud. Parfait pour un déjeuner familial rapide et savoureux.",
+    "description": "Escalope panée croustillante et dorée sans friture. Découvrez l'astuce pour une panure qui adhère et une viande juteuse en seulement 12 minutes. Le dîner gain de temps adoré des enfants !",
     "instructions": [
       "Aplatir les escalopes avec un maillet à viande, si nécessaire.",
       "Battre l'œuf avec le sel et le poivre. Passer les escalopes d'abord dans l'œuf puis dans la chapelure, en pressant pour faire adhérer la panure.",
@@ -80,10 +80,10 @@
   },
   {
     "slug": "pain-de-viande-farcie-friteuse-air",
-    "title": "Pain de Viande Farci (Jambon et Fromage Fondant)",
+    "title": "Pain de viande farci (cœur fondant à la friteuse à air)",
     "emoji": "🍖",
     "temp": 180,
-    "time": "35-40",
+    "time": "35",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -98,7 +98,7 @@
       "Sel",
       "Poivre noir moulu"
     ],
-    "description": "Un classique revisité avec un cœur surprise. Ce pain de viande hachée cache un mélange de jambon et de fromage coulant, avec une croûte extérieure parfaitement saisie à l'airfryer.",
+    "description": "Pain de viande farci avec un cœur de fromage coulant et une croûte parfaite en 35 minutes. Pas besoin d'allumer le four pendant une heure : la recette infaillible pour un plat de viande moelleux et juteux.",
     "instructions": [
       "Mélanger la viande hachée avec l'œuf, le Parmigiano Reggiano, la chapelure, le sel et le poivre jusqu'à obtenir un mélange ferme et homogène.",
       "Étaler le mélange sur une feuille de papier sulfurisé en formant un rectangle d'environ 1 cm d'épaisseur.",
@@ -122,10 +122,10 @@
   },
   {
     "slug": "saucisse-et-pommes-de-terre-en-cubes",
-    "title": "Duo Saucisse et Pommes de Terre Rôties",
+    "title": "Saucisse et Pommes de Terre en Dés (Plat Unique Rapide)",
     "emoji": "🥘",
     "temp": 195,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "10",
     "portions": "3",
     "isItalian": true,
@@ -138,7 +138,7 @@
       "Sel",
       "Poivre noir"
     ],
-    "description": "Le plat complet par excellence : des dés de pommes de terre qui dorent dans le jus parfumé des saucisses de porc. Une cuisson simultanée pour un gain de temps et un maximum de saveurs.",
+    "description": "Saucisse et pommes de terre : le plat unique gain de temps prêt en seulement 20 minutes. Pommes de terre dorées extra-croustillantes et saucisse juteuse parfaitement dégraissée grâce au flux d'air chaud.",
     "instructions": [
       "Peler les pommes de terre et les tailler en dés de 2-3 cm. Les immerger dans l'eau froide pendant 10 minutes, puis les sécher complètement.",
       "Détailler la saucisse en morceaux de taille égale.",
@@ -162,10 +162,10 @@
   },
   {
     "slug": "arrosticini-abruzzesi-friteuse-air",
-    "title": "Arrosticini des Abruzzes (Brochettes de Mouton)",
+    "title": "Brochettes d'agneau des Abruzzes (effet barbecue à la friteuse à air)",
     "emoji": "🍢",
     "temp": 200,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "2",
     "portions": "2",
     "isItalian": true,
@@ -173,7 +173,7 @@
       "Brochettes de mouton (arrosticini) : 15-20 unités",
       "Sel fin"
     ],
-    "description": "Voyagez en Italie avec ces célèbres brochettes de mouton. La friteuse à air saisit la viande à haute température, la rendant croustillante à l'extérieur tout en restant incroyablement tendre.",
+    "description": "Brochettes d'agneau des Abruzzes succulentes et cuites à la perfection en seulement 8 minutes ! Découvrez comment obtenir un fantastique effet barbecue chez vous, sans fumée et en dégraissant la viande.",
     "instructions": [
       "Adapter la longueur des piques en bois à la taille du panier de cuisson.",
       "Disposer les brochettes dans le panier en une seule couche ou en deux couches croisées au maximum.",
@@ -198,7 +198,7 @@
   },
   {
     "slug": "artichauts-a-la-juive-friteuse-air",
-    "title": "Artichauts à la Juive (Croustillants comme à Rome)",
+    "title": "Artichauts à la Juive (Extra Croustillants Sans Friture)",
     "emoji": "🥬",
     "temp": 180,
     "time": "15",
@@ -209,7 +209,7 @@
       "40 ml d'huile d'olive extra vierge",
       "Sel fin et poivre noir"
     ],
-    "description": "Une merveille de texture : des feuilles aussi croquantes que des chips et un cœur fondant. Cette version à l'airfryer simplifie ce monument de la cuisine romaine en utilisant très peu d'huile.",
+    "description": "Artichauts à la juive super croustillants sans immersion dans l'huile bouillante. Feuilles craquantes et cœur tendre prêts en 15 minutes : le délicieux accompagnement romain sans odeur de friture à la maison.",
     "instructions": [
       "Nettoyer les artichauts : retirer les feuilles extérieures les plus dures et couper la partie fibreuse de la tige.",
       "Battre la tête des artichauts contre un plan de travail pour en écarter les feuilles.",
@@ -236,10 +236,10 @@
   },
   {
     "slug": "legumes-farcis-riz-viande",
-    "title": "Légumes Farcis Tradition (Tomates et Poivrons)",
+    "title": "Légumes Farcis Gratinés (Riz et Viande en 20 Min)",
     "emoji": "🍅",
     "temp": 180,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "20",
     "portions": "4",
     "isItalian": true,
@@ -253,7 +253,7 @@
       "Sel",
       "Basilic frais"
     ],
-    "description": "Tomates et poivrons gorgés de soleil, généreusement garnis de viande hachée ou de riz. La cuisson à l'air chaud concentre les saveurs des légumes tout en cuisant la farce à cœur.",
+    "description": "Légumes farcis gratinés en seulement 20 minutes ! Tomates et poivrons avec une farce parfumée. Le plat unique super facile qui vide le frigo avec élégance.",
     "instructions": [
       "Découper le chapeau des légumes et les évider. Pour les tomates, mixer la pulpe extraite.",
       "Mélanger le riz cru ou la viande hachée avec la pulpe de tomate, l'huile d'olive, le sel, le parmesan et le basilic.",
@@ -278,7 +278,7 @@
   },
   {
     "slug": "pommes-de-terre-en-des-romarin",
-    "title": "Pommes de Terre au Romarin (Le Classique Rôti)",
+    "title": "Pommes de Terre en Dés au Romarin (Dorées Sans Précuisson)",
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
@@ -292,7 +292,7 @@
       "2 gousses d'ail en chemise",
       "Gros sel"
     ],
-    "description": "Des cubes de pommes de terre croustillants parfumés à l'ail frais et au romarin. L'alternative idéale et saine aux frites traditionnelles pour accompagner tous vos plats.",
+    "description": "Pommes de terre en dés dorées et extra-croustillantes à l'extérieur, tendres à l'intérieur en 20 minutes. Découvrez l'astuce infaillible (sans précuisson) pour des accompagnements parfaits avec un minimum d'effort et zéro graisse lourde.",
     "instructions": [
       "Peler les pommes de terre et les tailler en dés de 2-3 cm. Rincer les dés à l'eau froide pour retirer l'excès d'amidon, puis les sécher soigneusement.",
       "Dans un récipient, mélanger les dés de pommes de terre avec l'huile d'olive, les gousses d'ail écrasées en chemise et le romarin.",
@@ -317,10 +317,10 @@
   },
   {
     "slug": "tarte-salee-ricotta-epinards",
-    "title": "Tarte Ricotta et Épinards (Onctueuse et Dorée)",
+    "title": "Tourte Salée Ricotta et Épinards (Pâte Ultra-Croustillante)",
     "emoji": "🥧",
     "temp": 170,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -332,7 +332,7 @@
       "Noix de muscade, q.s.",
       "Sel, q.s."
     ],
-    "description": "Une alliance indémodable entre la douceur de la ricotta et le caractère des épinards. Une tarte salée à la pâte croustillante, parfaite pour un dîner léger ou une entrée végétarienne.",
+    "description": "Tourte salée ricotta et épinards avec pâte feuilletée ultra-croustillante en seulement 20 minutes. Évitez la base détrempée : découvrez la technique à la friteuse à air pour des tourtes bien cuites et dorées sans allumer le four.",
     "instructions": [
       "Essorer et hacher les épinards cuits. Dans un récipient, mélanger les épinards avec la ricotta, l'œuf, le parmesan, le sel et la noix de muscade.",
       "Dérouler la pâte sur son papier cuisson et la disposer dans un moule rond.",
@@ -360,10 +360,10 @@
   },
   {
     "slug": "chataignes-grillees-friteuse-air",
-    "title": "Châtaignes Grillées (Comme au Feu de Bois)",
+    "title": "Châtaignes Grillées Parfaites (Faciles à Éplucher en 15 Min)",
     "emoji": "🌰",
     "temp": 200,
-    "time": "15-20",
+    "time": "15",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -371,7 +371,7 @@
       "Eau",
       "Gros sel"
     ],
-    "description": "Retrouvez le goût des soirées d'automne. Grâce à l'airfryer, vos châtaignes sont parfaitement grillées, faciles à éplucher et tendres à souhait en un temps record.",
+    "description": "Châtaignes grillées parfaites en 15 minutes sans fumée à la maison ! Découvrez l'astuce infaillible (le trempage) pour obtenir des châtaignes tendres à l'intérieur avec la peau qui se détache en une seconde.",
     "instructions": [
       "Pratiquer une incision horizontale sur la partie bombée de chaque châtaigne.",
       "Faire tremper les châtaignes dans un récipient d'eau tiède pendant au moins 15 minutes.",
@@ -399,10 +399,10 @@
   },
   {
     "slug": "arancini-suppli-friteuse-air",
-    "title": "Arancini et Supplì (Cœur de Mozzarella Filant)",
+    "title": "Arancini et Supplì (Cœur Fondant, Sans Odeur de Friture)",
     "emoji": "🍘",
     "temp": 200,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "20",
     "portions": "4",
     "isItalian": true,
@@ -410,7 +410,7 @@
       "4 arancini ou supplì de riz, crus et panés",
       "Huile végétale en aérosol"
     ],
-    "description": "Le secret d'un bon snack italien : une panure ultra-croustillante et un riz savoureux qui cache un fromage fondant. Une cuisson sans friture pour plus de légèreté sans sacrifier le plaisir.",
+    "description": "Le roi de la street food devient léger ! Arancini et supplì dorés avec une panure extra-croustillante et un cœur de mozzarella fondante. Cuits à la friteuse à air en 15 minutes sans odeur de friture.",
     "instructions": [
       "Utiliser des arancini ou supplì froids, directement sortis du réfrigérateur, pour préserver leur forme durant la cuisson.",
       "Vaporiser la surface panée avec de l'huile en aérosol pour obtenir une dorure uniforme.",
@@ -437,10 +437,10 @@
   },
   {
     "slug": "croquettes-de-pommes-de-terre-panzarotti",
-    "title": "Croquettes de Pommes de Terre (Panzarotti Fondants)",
+    "title": "Croquettes de Pommes de Terre (Panzarotti Dorés, Sans Se Désagréger)",
     "emoji": "🥔",
     "temp": 200,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -455,7 +455,7 @@
       "Poivre noir moulu",
       "Persil frais haché"
     ],
-    "description": "Des croquettes de pommes de terre maison, dorées et craquantes. À chaque bouchée, découvrez un cœur de mozzarella filante. Une recette qui ravira petits et grands au moment de l'apéritif.",
+    "description": "Croquettes de pommes de terre (panzarotti) légères et parfaitement dorées. Évitez qu'elles ne se désagrègent à la cuisson : découvrez comment obtenir une coque solide et un cœur de mozzarella fondante en 12 min.",
     "instructions": [
       "Mélanger la purée de pommes de terre froide et sèche avec un œuf, le Parmigiano Reggiano, le sel, le poivre et le persil haché.",
       "Former des cylindres et insérer au centre un bâtonnet de mozzarella.",
@@ -482,11 +482,11 @@
   },
   {
     "slug": "focaccia-rapide-huile-d-olive",
-    "title": "Focaccia Express au Romarin (Fine et Croquante)",
+    "title": "Focaccia Plate Rapide (Fine, Salée et Croustillante en 12 Min)",
     "emoji": "🥖",
     "temp": 190,
-    "time": "12-15",
-    "prep_time": "5(si vous utilisez une pâte prête à l'emploi)",
+    "time": "12",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "250 g de pâte à pizza",
@@ -495,7 +495,7 @@
       "Gros sel",
       "Romarin frais"
     ],
-    "description": "Une focaccia maison prête en un clin d'œil. Fine, parfumée à l'huile d'olive extra vierge et parsemée de gros sel, elle est la compagne idéale de vos planches de charcuterie.",
+    "description": "Focaccia croustillante (schiacciatina) en 12 minutes ! Découvrez l'astuce de la saumure pour cuire une pâte du commerce, en la rendant fine, dorée et parfumée sans allumer le four traditionnel.",
     "instructions": [
       "Découper un cercle de papier cuisson aux dimensions du panier et l'huiler avec 1 cuillère à soupe d'huile.",
       "Étaler la pâte sur le papier cuisson. Former des alvéoles sur la surface avec le bout des doigts.",
@@ -521,10 +521,10 @@
   },
   {
     "slug": "mini-croissants-pate-feuilletee",
-    "title": "Mini-Croissants Feuilletés (Petit-Déjeuner Express)",
+    "title": "Croissants Fourrés en Pâte Feuilletée (Petit-déj Chaud en 10 Min)",
     "emoji": "🥐",
     "temp": 170,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "10",
     "portions": "4",
     "ingredients": [
@@ -533,7 +533,7 @@
       "Jaune d'œuf ou lait (pour la dorure)",
       "Sucre glace (pour la décoration)"
     ],
-    "description": "Réalisez des mini-croissants dorés et croustillants en quelques minutes. Fourrez-les selon vos envies (chocolat, confiture ou pâte à tartiner) pour un goûter gourmand et rapide.",
+    "description": "Petit-déjeuner façon café à la maison en 10 minutes. Croissants chauds en pâte feuilletée, farcis et dorés à la friteuse à air. Super rapides à préparer pour commencer la journée avec le sourire.",
     "instructions": [
       "Dérouler la pâte feuilletée et la diviser en 8 triangles égaux.",
       "Déposer une cuillère à café de garniture sur la base de chaque triangle.",
@@ -557,7 +557,7 @@
     "image": "cornetti-sfoglia-ripieni"
   },
   {
-    "title": "Parmigiana d'Aubergines (Version Légère et Savoureuse)",
+    "title": "Parmigiana d'Aubergines Légère (Gratin Parfait en 20 Min)",
     "slug": "parmigiana-d-aubergines",
     "emoji": "🍆",
     "temp": 180,
@@ -573,7 +573,7 @@
       "Huile d'olive extra vierge : q.s.",
       "Sel : q.s."
     ],
-    "description": "Tout le goût de la célèbre Parmigiana italienne avec beaucoup moins de calories. Les aubergines sont grillées à l'air chaud avant d'être gratinées avec de la tomate et du fromage.",
+    "description": "La vraie parmigiana d'aubergines mais en version allégée ! Aubergines précuites à l'air (zéro friture à la poêle) en couches avec mozzarella et tomate. Gratin digne d'un chef en 20 min.",
     "instructions": [
       "Coupez l'aubergine en tranches de 5 mm d'épaisseur.",
       "Badigeonnez les tranches d'huile d'olive et précuisez-les pendant 8 minutes à 180°C.",
@@ -595,7 +595,7 @@
     ]
   },
   {
-    "title": "Boulettes de Viande à l'Italienne (Sauce Tomate)",
+    "title": "Boulettes de viande sauce tomate (Tendres Et Juteuses",
     "slug": "boulettes-de-grand-mere-a-la-sauce-tomate",
     "emoji": "🍝",
     "temp": 190,
@@ -613,7 +613,7 @@
       "Poivre noir moulu",
       "250 g de sauce tomate"
     ],
-    "description": "Des boulettes de bœuf et porc moelleuses, saisies à l'airfryer puis mijotées dans une sauce tomate onctueuse. Le goût authentique des recettes de grand-mère en version moderne.",
+    "description": "Boulettes de viande en sauce tomate ultra tendres et sans effort. Découvrez la double cuisson : saisissez la viande à l'air dans la friteuse pour conserver les jus, puis plongez-les dans la tomate. Plat réconfortant en 15 min.",
     "instructions": [
       "Dans un récipient, mélanger la viande hachée, l'œuf, le Parmigiano Reggiano, le pain essoré, le persil, le sel et le poivre.",
       "Former des boulettes d'un diamètre de 3-4 cm.",
@@ -633,7 +633,7 @@
     ]
   },
   {
-    "title": "Arancini Siciliens au Ragoût (Le Goût de l'Italie)",
+    "title": "Arancini Siciliens au Ragù (Croûte Dorée Croustillante Sans Friture)",
     "slug": "arancini-siciliens-ragout",
     "emoji": "🍙",
     "temp": 200,
@@ -651,7 +651,7 @@
       "Chapelure",
       "Huile d'olive en spray"
     ],
-    "description": "Véritable institution sicilienne, ces boules de riz sont farcies d'un ragoût de viande savoureux. La cuisson à air pulsé leur donne cette croûte orangée et craquante si caractéristique.",
+    "description": "L'authentique arancino sicilien en forme de cône, sans le plonger dans l'huile. Une croûte épaisse et croustillante de chapelure avec un cœur chaud de riz au safran et un riche ragù de viande. Sublime !",
     "instructions": [
       "Mélanger le riz froid avec le safran préalablement dissous dans une cuillère à soupe d'eau chaude.",
       "Prélever une portion de riz, l'aplatir dans la paume de la main. Garnir le centre avec le ragoût, les petits pois et un dé de fromage.",
@@ -672,7 +672,7 @@
     ]
   },
   {
-    "title": "Olives à l'Ascolana (Olives Farcies à la Viande)",
+    "title": "Olives Farcies à la Viande Façon Ascolana (Apéritif Croustillant en 10 Min)",
     "slug": "olives-ascolana",
     "emoji": "🫒",
     "temp": 200,
@@ -683,7 +683,7 @@
       "20 olives à l'Ascolana farcies à la viande (fraîches ou surgelées)",
       "Huile en spray"
     ],
-    "description": "Des olives vertes charnues, farcies d'une préparation à la viande et panées. Une spécialité croustillante et surprenante, parfaite pour un apéritif dînatoire raffiné.",
+    "description": "Délicieuses olives Ascolana farcies à la viande : l'apéritif parfait prêt en 10 minutes. Le flux d'air chaud sèche la panure, la rendant extra croustillante sans la graisse de la friture à la poêle.",
     "instructions": [
       "Disposez les olives dans le panier de cuisson en une seule couche, en veillant à bien les espacer.",
       "Vaporisez uniformément de l'huile sur les olives.",
@@ -703,7 +703,7 @@
     ]
   },
   {
-    "title": "Courgettes Farcies à la Ligure (Grilles et Tendres)",
+    "title": "Courgettes Farcies à la Ligure (Gratin Rapide)",
     "slug": "courgettes-farcies-ligure",
     "emoji": "🥒",
     "temp": 180,
@@ -723,7 +723,7 @@
       "Poivre",
       "Marjolaine fraîche"
     ],
-    "description": "Des courgettes découpées en barquettes et garnies d'une farce savoureuse. L'airfryer permet une cuisson homogène : la viande est bien saisie et le légume reste fondant.",
+    "description": "Barquettes de courgettes farcies à la ligure : un plat principal délicieux et riche en protéines. Une viande savoureuse et de la chapelure dorée se fondent en un gratin parfait, divisant par deux le temps de cuisson au four.",
     "instructions": [
       "Coupez les courgettes en deux. Évidez la pulpe à l'aide d'une cuillère et hachez-la finement.",
       "Dans un récipient, mélangez la pulpe de courgette hachée, la viande, l'œuf, le parmesan, le sel, le poivre et la marjolaine.",
@@ -817,7 +817,7 @@
     ]
   },
   {
-    "title": "Poivrons Farcis à la Viande (Gourmands et Moelleux)",
+    "title": "Poivrons Farcis à la Viande (Cuits à la Perfection en 25 Min)",
     "slug": "poivrons-farcis",
     "emoji": "🫑",
     "temp": 180,
@@ -833,7 +833,7 @@
       "30 g de fromage râpé",
       "1 filet d'huile d'olive"
     ],
-    "description": "Des poivrons rôtis farcis d'un mélange savoureux de viande hachée, de parmesan et d'herbes. Un plat complet et coloré où le légume devient tendre et la farce reste juteuse.",
+    "description": "Poivrons doux farcis de viande hachée : le plat unique gain de temps prêt en 25 minutes. Le flux d'air chaud garantit des poivrons tendres et un gratin spectaculaire de la farce, sans allumer le four.",
     "isItalian": true,
     "instructions": [
       "Couper les poivrons en deux dans le sens de la longueur. Retirer les graines et les filaments blancs.",
@@ -853,7 +853,7 @@
     ]
   },
   {
-    "title": "Saucisses et Pommes de Terre au Romarin",
+    "title": "Saucisse et pommes de terre en dés (plat unique rapide)",
     "slug": "saucisse-et-pommes-de-terre-rustiques",
     "emoji": "🥔",
     "temp": 190,
@@ -870,7 +870,7 @@
       "Sel",
       "Poivre noir"
     ],
-    "description": "Un plat rustique et efficace : des saucisses de porc grillées accompagnées de pommes de terre fondantes, le tout parfumé à l'ail et au romarin frais. Un régal prêt en un rien de temps.",
+    "description": "Le duo réconfortant italien par excellence. En rôtissant ensemble, les jus savoureux de la saucisse imprègnent les pommes de terre, créant un plat aux bords croustillants et à la saveur traditionnelle profonde en 20 minutes.",
     "instructions": [
       "Pelez les pommes de terre et coupez-les en dés de 2 cm. Assaisonnez avec l'huile, le sel, le poivre, le romarin et la gousse d'ail pelée.",
       "Coupez les saucisses en morceaux ou laissez-les entières après avoir piqué la peau.",
@@ -889,7 +889,7 @@
     ]
   },
   {
-    "title": "Omelette de Pâtes à la Napolitaine (Croustillante)",
+    "title": "Omelette de Pâtes Napolitaine (Frittata di Pasta)",
     "slug": "frittata-di-maccheroni-pates",
     "emoji": "🍳",
     "temp": 180,
@@ -904,7 +904,7 @@
       "Sel, poivre noir",
       "Huile d'olive extra vierge"
     ],
-    "description": "La célèbre 'frittata di maccheroni' : une omelette de pâtes généreuse avec une croûte dorée et un cœur tendre. Parfaite pour recycler vos restes de pâtes ou pour un pique-nique gourmand.",
+    "description": "Le génie des restes italiens. Ce gâteau de pâtes dorées offre une croûte croquante et un intérieur moelleux au fromage. Parfait pour les pique-niques, les boîtes à lunch ou un dîner rapide et satisfaisant en 18 minutes.",
     "instructions": [
       "Dans un saladier, battre les œufs avec le Parmesan, le sel, le poivre et la charcuterie en dés.",
       "Ajouter les pâtes et mélanger.",
@@ -924,7 +924,7 @@
     ]
   },
   {
-    "title": "Artichauts à la Romaine (Cœur Fondant)",
+    "title": "Artichauts Croustillants à la Romaine",
     "slug": "artichauts-croquants-romaine",
     "emoji": "🥬",
     "temp": 180,
@@ -939,7 +939,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "Apprenez à sublimer les artichauts avec cette cuisson qui rend les feuilles extérieures croustillantes comme des chips tout en gardant un cœur fondant et parfumé.",
+    "description": "Inspiré des célèbres artichauts à la juive de Rome. Les feuilles extérieures deviennent aussi croquantes que des chips, tandis que le cœur reste beurré et délicat. Un vrai régal gourmand en 15 minutes.",
     "instructions": [
       "Nettoyer les artichauts : retirer les feuilles extérieures les plus dures et couper les pointes. Les immerger dans une eau citronnée.",
       "Sécher soigneusement les artichauts. Les tapoter, tige vers le haut, sur un plan de travail pour ouvrir les feuilles.",
@@ -962,7 +962,7 @@
     ]
   },
   {
-    "title": "Fleurs de Courgettes Farcies (Mozzarella et Anchois)",
+    "title": "Fleurs de Courgettes Farcies aux Anchois",
     "slug": "fleurs-de-courgettes-frites",
     "emoji": "🌼",
     "temp": 190,
@@ -980,7 +980,7 @@
       "Huile en spray",
       "Sel"
     ],
-    "description": "Une spécialité estivale raffinée : des fleurs de courgettes délicates, farcies d'un cœur fondant de mozzarella et d'une pointe d'anchois, enveloppées dans une panure légère.",
+    "description": "Délicates et élégantes. Ces fleurs sont farcies de mozzarella fondante et d'un soupçon d'anchois salé, puis légèrement panées pour une entrée sophistiquée et croustillante en seulement 8 minutes.",
     "instructions": [
       "Nettoyez les fleurs et retirez le pistil interne sans les abîmer.",
       "Insérez dans chaque fleur un morceau de mozzarella bien égouttée et un filet d'anchois.",
@@ -1003,7 +1003,7 @@
     ]
   },
   {
-    "title": "Bruschetta Classique (Tomate, Basilic et Ail)",
+    "title": "Bruschetta Classique Tomate et Basilic",
     "slug": "bruschetta-tomate-basilic",
     "emoji": "🥖",
     "temp": 200,
@@ -1018,7 +1018,7 @@
       "Huile d'olive extra vierge",
       "Sel"
     ],
-    "description": "Le secret d'une bonne bruschetta réside dans le pain : grillé à la perfection pour rester croquant sous une garniture de tomates fraîches juteuses, d'ail et de basilic parfumé.",
+    "description": "Le goût de l'été sur des toasts. Le pain au levain est grillé à la perfection et garni d'un mélange vibrant de tomates mûries au soleil, de basilic frais et d'huile d'olive extra vierge en 5 minutes.",
     "instructions": [
       "Couper les tomates en petits dés. Assaisonner dans un bol avec de l'huile d'olive, du sel et du basilic ciselé. Laisser reposer.",
       "Griller les tranches de pain à 200°C pendant 4 à 5 minutes.",
@@ -1040,7 +1040,7 @@
     ]
   },
   {
-    "title": "Gnocchis Frits (L'Apéritif Croquant et Ludique)",
+    "title": "Bouchées de Gnocchis Dorées et Croustillantes",
     "slug": "gnocchis-frits-aperitif",
     "emoji": "🧀",
     "temp": 200,
@@ -1053,7 +1053,7 @@
       "Paprika doux, sel, romarin séché",
       "Fromage fondu pour accompagnement (optionnel)"
     ],
-    "description": "Oubliez les gnocchis bouillis ! Frits à l'air chaud, ils deviennent des petites bouchées croustillantes à l'extérieur et moelleuses à l'intérieur. Idéal pour tremper dans une sauce tomate.",
+    "description": "Transformez vos gnocchis en l'en-cas parfait. Ces bouchées de pommes de terre sont grillées jusqu'à être dorées et croquantes à l'extérieur, restant douces et moelleuses à l'intérieur en 12 minutes.",
     "instructions": [
       "Dans un récipient, mélanger les gnocchis crus avec l'huile d'olive, le sel, le paprika et le romarin.",
       "Disposer les gnocchis en une seule couche dans le panier de cuisson.",
@@ -1074,7 +1074,7 @@
     ]
   },
   {
-    "title": "Castagnole à la Ricotta (Douceurs de Carnaval)",
+    "title": "Beignets de Carnaval à la Ricotta et au Citron",
     "slug": "castagnole-ricotta-carnaval",
     "emoji": "🍩",
     "temp": 180,
@@ -1092,7 +1092,7 @@
       "Huile en spray",
       "Lait (facultatif)"
     ],
-    "description": "De petites boules de pâte à la ricotta, tendres et parfumées aux agrumes. Une version allégée grâce à l'airfryer pour célébrer le Carnaval avec gourmandise et légèreté.",
+    "description": "Une douce tradition italienne. Ces 'Castagnole' sont faites avec de la ricotta crémeuse pour une texture en nuage, parfumées au zeste d'agrumes et enrobées de sucre alors qu'elles sont encore chaudes. Prêtes en 10 minutes.",
     "instructions": [
       "Dans un récipient, mélanger la ricotta, l'œuf, le sucre et le zeste d'agrume.",
       "Ajouter la farine et la levure. Pétrir jusqu'à l'obtention d'une pâte homogène. Si nécessaire, ajouter du lait pour ajuster la consistance.",
@@ -1114,7 +1114,7 @@
     ]
   },
   {
-    "title": "Panzerotti des Pouilles (Chaussons Tomate-Mozzarella)",
+    "title": "Panzerotti Tomate et Mozzarella",
     "slug": "panzerotti-des-pouilles-rapides",
     "emoji": "🥟",
     "temp": 200,
@@ -1129,7 +1129,7 @@
       "Sel",
       "Huile d'olive extra vierge"
     ],
-    "description": "Retrouvez le goût authentique des Pouilles avec ces chaussons de pâte levée farcis. La mozzarella fond sur la tomate pour un cœur chaud et filant à chaque bouchée.",
+    "description": "L'âme de la cuisine de rue des Pouilles. Ces chaussons salés présentent une pâte croustillante et légère farcie d'une combinaison classique de tomate et de fromage mozzarella fondant en seulement 8 minutes.",
     "instructions": [
       "Déroulez la pâte à pizza et découpez des disques à l'aide d'un emporte-pièce.",
       "Garnissez le centre de chaque disque avec la purée de tomate assaisonnée de sel et d'origan, et la mozzarella.",
@@ -1152,12 +1152,12 @@
     ]
   },
   {
-    "title": "Focaccia Moelleuse au Romarin (Haute et Aérée)",
+    "title": "Focaccia Haute et Moelleuse au Romarin",
     "slug": "focaccia-moelleuse-romarin",
     "emoji": "🍞",
     "temp": 170,
     "time": "18",
-    "prep_time": "2 heures (levée)",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "250 g de farine de blé type 45 ou 55",
@@ -1168,7 +1168,7 @@
       "Romarin frais",
       "Gros sel"
     ],
-    "description": "Une focaccia épaisse et incroyablement souple, parsemée de gros sel et de romarin. Ses alvéoles gourmandes retiennent l'huile d'olive pour un parfum irrésistible.",
+    "description": "Découvrez l'arôme d'une boulangerie traditionnelle. Cette focaccia est haute, aérée et moelleuse, garnie de romarin parfumé et de sel de mer. Idéale pour les sandwichs ou pour tremper en 18 minutes.",
     "instructions": [
       "Dissolvez la levure dans l'eau tiède. Incorporez la farine, l'huile d'olive et le sel. Pétrissez la pâte jusqu'à ce qu'elle devienne élastique.",
       "Couvrez la pâte et laissez lever pendant 2 heures ou jusqu'à ce qu'elle double de volume.",
@@ -1190,7 +1190,7 @@
     ]
   },
   {
-    "title": "Friture de la Mer (Calamars et Crevettes)",
+    "title": "Fritto Misto Croustillant de Calamars et Crevettes",
     "slug": "friture-de-calamars-et-crevettes",
     "keywords": [
       "Poisson",
@@ -1214,7 +1214,7 @@
       "Sel, quantité suffisante",
       "Tranches de citron, pour le service"
     ],
-    "description": "Le duo gagnant des tables méditerranéennes. Calamars et crevettes sont enrobés d'une fine semoule croustillante pour une friture légère, saine et pleine de saveurs marines.",
+    "description": "Une version plus légère de la friture mixte italienne. Les calamars et les crevettes sont cuits jusqu'à un croquant sec et léger qui laisse transparaître la douceur naturelle des fruits de mer en 12 minutes.",
     "instructions": [
       "Sécher minutieusement les calamars et les crevettes avec du papier absorbant.",
       "Mettre les calamars et les crevettes dans un sac alimentaire avec une quantité suffisante de semoule. Secouer énergiquement pour obtenir un enrobage uniforme.",
@@ -1227,7 +1227,7 @@
     "image": "frittura-calamari-e-gamberi"
   },
   {
-    "title": "Friture de Petits Poissons (Frittura di Paranza)",
+    "title": "Friture Mixte Traditionnelle de Poisson (Paranza)",
     "slug": "friture-de-petits-poissons-paranza",
     "keywords": [
       "Poisson",
@@ -1252,7 +1252,7 @@
       "Sel, quantité suffisante",
       "Citron, pour servir"
     ],
-    "description": "Dégustez ces petits poissons croustillants à manger entiers, comme au bord de la mer. Une cuisson rapide à haute température pour un résultat extra-crunchy.",
+    "description": "Rustique et authentique. Une sélection de petits poissons délicats cuits jusqu'à être parfaitement croustillants en 10 minutes. À déguster de préférence entier avec un généreux trait de citron frais.",
     "instructions": [
       "Rincez les poissons. Videz les plus gros spécimens, en laissant les éperlans entiers. Séchez-les soigneusement.",
       "Enrobez les poissons de semoule. Secouez pour retirer l'excédent.",
@@ -1264,7 +1264,7 @@
     "image": "frittura-di-paranza"
   },
   {
-    "title": "Petits Calmars Frits (Tendres et Croquants)",
+    "title": "Bébés Calamars Tendres et Croustillants",
     "slug": "petits-calmars-frits-croustillants",
     "keywords": [
       "Poisson",
@@ -1287,7 +1287,7 @@
       "Huile en spray",
       "Sel"
     ],
-    "description": "Ces petits calmars entiers sont saisis à l'air chaud pour devenir irrésistiblement croquants tout en restant fondants à l'intérieur. Un délice à arroser d'un filet de citron.",
+    "description": "Rapide, facile et délicieux. Ces bébés calamars sont cuits à feu vif pour assurer un enrobage croquant tandis que la chair reste incroyablement tendre et juteuse en 8 minutes.",
     "instructions": [
       "Nettoyer les calamars en les laissant entiers. Sécher soigneusement avec du papier absorbant.",
       "Enrober les calamars de semoule de blé dur. Éliminer l'excédent de semoule.",
@@ -1300,7 +1300,7 @@
     "image": "calamaretti-fritti-croccanti"
   },
   {
-    "title": "Crevettes Panées Express (Dorées et Savoureuses)",
+    "title": "Crevettes Dorées Croustillantes",
     "slug": "crevettes-dorees-croustillantes",
     "keywords": [
       "Poisson",
@@ -1324,7 +1324,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "Des crevettes charnues enveloppées d'une panure dorée. Une préparation simple et élégante, idéale pour un dîner léger ou pour agrémenter vos salades composées.",
+    "description": "Crevettes succulentes avec un superbe enrobage doré. Qu'elles soient servies comme apéritif de fête ou comme plat principal, ces bouchées sont garanties de disparaître rapidement. Prêtes en 10 minutes.",
     "instructions": [
       "Nettoyer les crevettes : retirer la carapace et l'intestin en conservant la queue.",
       "Sécher soigneusement les crevettes. Dans un récipient plat, mélanger la semoule, le sel et le paprika.",
@@ -1338,16 +1338,16 @@
   },
   {
     "slug": "frites-rustiques-congelees",
-    "title": "Frites Rustiques avec Peau (Le Vrai Goût de la Pomme de Terre)",
+    "title": "Frites Rustiques avec Peau",
     "emoji": "🍟",
     "temp": 200,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "2",
     "ingredients": [
       "500 g de frites surgelées avec peau"
     ],
-    "description": "Donnez une seconde vie à vos frites surgelées ! La cuisson en airfryer avec leur peau préserve les arômes naturels et offre une texture rustique, croquante et peu grasse.",
+    "description": "Mieux qu'au restaurant. Les frites avec peau offrent une saveur de pomme de terre plus profonde et un croquant supérieur. Nous veillons à ce qu'elles ressortent parfaitement dorées à chaque fois en 18 minutes.",
     "instructions": [
       "Disposer les frites surgelées dans le panier en une seule couche.",
       "Ne pas ajouter d'huile. Le produit est pré-huilé.",
@@ -1373,7 +1373,7 @@
   },
   {
     "slug": "chips-de-mais-maison",
-    "title": "Chips de Tortilla Maison (Dorées et Craquantes)",
+    "title": "Chips de Tortilla de Maïs Maison (Totopos)",
     "emoji": "🌮",
     "temp": 150,
     "time": "8",
@@ -1386,7 +1386,7 @@
       "Sel, quantité suffisante",
       "Sauce d'accompagnement"
     ],
-    "description": "Réalisez vos propres nachos ! Des triangles de tortilla de maïs grillés jusqu'à devenir parfaitement craquants. Le compagnon idéal de votre guacamole ou sauce salsa.",
+    "description": "Oubliez les sacs du commerce. Fabriquez vos propres chips de tortilla de maïs ultra-croustillantes à la maison, parfaites pour tremper dans de la salsa fraîche, du guacamole ou pour fondre sous des nachos en 8 minutes.",
     "instructions": [
       "Couper chaque tortilla en 8 triangles.",
       "Dans un récipient, mélanger les triangles avec l'huile et le sel pour les enrober uniformément.",
@@ -1411,10 +1411,10 @@
   },
   {
     "slug": "batonnets-patate-douce-paprika",
-    "title": "Frites de Patate Douce au Paprika (Sucré-Salé)",
+    "title": "Frites de Patate Douce Épicées au Paprika",
     "emoji": "🍠",
     "temp": 200,
-    "time": "11-15",
+    "time": "11",
     "prep_time": "10",
     "portions": "4",
     "ingredients": [
@@ -1426,7 +1426,7 @@
       "1/2 cuillère à café d'oignon en poudre",
       "Poivre noir"
     ],
-    "description": "Une alternative colorée aux frites classiques. Ces bâtonnets de patate douce au paprika fumé sont à la fois doux, épicés et incroyablement savoureux.",
+    "description": "Une alternative douce et fumée aux frites classiques. Ces bâtonnets de patate douce sont assaisonnés avec un mélange de paprika éclatant et rôtis jusqu'à ce qu'ils soient tendres avec des bords croustillants en 11 minutes.",
     "instructions": [
       "Épluchez les patates douces et coupez-les en bâtonnets d'environ 1,5 cm d'épaisseur.",
       "Dans un grand bol, enrobez les bâtonnets de patate douce d'huile et mélangez bien.",
@@ -1452,10 +1452,10 @@
   },
   {
     "slug": "frites-epices-cajun",
-    "title": "Frites Cajun (Épicées et Croustillantes)",
+    "title": "Frites Croustillantes aux Épices Cajun",
     "emoji": "🍟",
     "temp": 195,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -1466,7 +1466,7 @@
       "Piment de Cayenne : 1 pincée (optionnel)",
       "Ketchup ou mayonnaise (pour servir)"
     ],
-    "description": "Relevez vos repas avec ces frites maison aux saveurs de la Louisiane. Le mélange d'épices Cajun apporte une touche de piquant et de caractère, sublimée par une cuisson à l'air chaud qui les rend parfaitement dorées.",
+    "description": "Apportez les saveurs de la Louisiane à votre table. Ces frites sont mélangées dans un mélange d'épices Cajun audacieux, offrant un croquant épicé satisfaisant avec un centre moelleux et tendre en 20 minutes.",
     "instructions": [
       "Coupez les pommes de terre en bâtonnets réguliers. Laissez-les tremper dans l'eau froide pendant 15-20 minutes pour extraire l'amidon.",
       "Égouttez, rincez et séchez soigneusement les pommes de terre avec un torchon propre.",
@@ -1494,10 +1494,10 @@
   },
   {
     "slug": "frites-maison-classiques",
-    "title": "Frites Maison Parfaites (Zéro Gras Superflu)",
+    "title": "Frites Maison Parfaites",
     "emoji": "🍟",
     "temp": 195,
-    "time": "25-28",
+    "time": "25",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -1508,7 +1508,7 @@
       "1/2 cuillère à café de paprika",
       "Sel fin"
     ],
-    "description": "Le secret des frites parfaites à l'airfryer ? Un trempage à l'eau froide pour libérer l'amidon. Résultat : des frites ultra-croustillantes dehors et fondantes dedans, avec seulement une cuillère d'huile.",
+    "description": "Maîtrisez l'art de la friture. En faisant tremper les pommes de terre pour éliminer l'excès d'amidon, nous obtenons un niveau de croustillant supérieur qui rivalise avec vos frites de bistrot préférées en 25 minutes.",
     "instructions": [
       "Tailler les pommes de terre en bâtonnets d'environ 1 cm d'épaisseur. Les immerger dans un grand volume d'eau froide pendant au moins 20 minutes.",
       "Égoutter les pommes de terre, les rincer, puis les sécher méticuleusement avec un linge propre ou du papier absorbant.",
@@ -1534,16 +1534,16 @@
   },
   {
     "slug": "frites-ondulees-congelees",
-    "title": "Frites Ondulées (Le Croustillant Express)",
+    "title": "Frites Ondulées Croustillantes",
     "emoji": "🍟",
     "temp": 200,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "2",
     "ingredients": [
       "500 g de frites ondulées surgelées"
     ],
-    "description": "Gagnez du temps sans sacrifier le plaisir ! Ces frites ondulées surgelées cuisent uniformément grâce à la circulation d'air, offrant une texture croquante sans aucun ajout d'huile.",
+    "description": "La texture ultime pour les amateurs de sauce. La coupe ondulée unique crée plus de surface pour un croquant maximum, ce qui en fait le récipient parfait pour vos trempettes préférées en 18 minutes.",
     "instructions": [
       "Placer les frites surgelées dans le panier de cuisson.",
       "Ne pas ajouter d'huile. Le produit est pré-frit.",
@@ -1567,11 +1567,11 @@
   },
   {
     "slug": "poulet-frit-babeurre",
-    "title": "Poulet Frit au Babeurre (Ultra Tendre)",
+    "title": "Poulet Frit au Babeurre Façon Sud",
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
-    "prep_time": "2 heures",
+    "prep_time": "120",
     "portions": "2",
     "ingredients": [
       "2 pilons de poulet",
@@ -1584,7 +1584,7 @@
       "Sel et poivre noir",
       "Huile de cuisson en spray"
     ],
-    "description": "Inspiré du Sud des États-Unis, ce poulet est mariné dans du babeurre pour une tendreté absolue. La panure épicée saisie à l'air chaud crée une croûte irrésistiblement crunchy.",
+    "description": "Un vrai classique allégé. Une marinade piquante au babeurre garantit un poulet incroyablement juteux, tandis que l'enrobage de farine assaisonnée frit à l'air donne un croquant rustique et doré en 25 minutes.",
     "instructions": [
       "Immerger les morceaux de poulet dans le babeurre et laisser mariner au réfrigérateur pendant au moins 1 heure et 30 minutes.",
       "Dans une assiette creuse, mélanger la farine avec l'ail en poudre, l'oignon en poudre, le paprika, le sel et le poivre.",
@@ -1611,10 +1611,10 @@
   },
   {
     "slug": "batonnets-courgettes-parmesan",
-    "title": "Frites de Courgettes au Parmesan",
+    "title": "Frites de Courgettes au Parmesan (Snack Croustillant et Rapide)",
     "emoji": "🥒",
     "temp": 190,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "4",
     "isItalian": true,
@@ -1628,7 +1628,7 @@
       "Sel, poivre noir",
       "Huile en spray"
     ],
-    "description": "Une alternative saine et gourmande aux frites classiques. Ces bâtonnets de courgettes sont enrobés de parmesan pour une gratinure savoureuse qui plaira même aux enfants.",
+    "description": "Faites manger des légumes aux enfants ! Bâtonnets de courgettes panés à la chapelure et au Parmesan, cuits en 10 minutes. Un en-cas végétarien doré, délicieux et sans huile bouillante.",
     "instructions": [
       "Tailler les courgettes en bâtonnets. Retirer la partie centrale si elle contient trop de graines ou d'eau.",
       "Préparer trois récipients. Dans le premier, mélanger la farine, le sel et le poivre. Dans le deuxième, battre les œufs avec le lait. Dans le troisième, mélanger la chapelure et le parmesan.",
@@ -1653,7 +1653,7 @@
   },
   {
     "slug": "ailes-de-poulet-ail-parmesan",
-    "title": "Ailes de Poulet Ail et Parmesan (Garlic Parm)",
+    "title": "Ailes de Poulet Ail et Parmesan (Croûte Extrême)",
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
@@ -1667,7 +1667,7 @@
       "Sel et poivre noir",
       "Huile en spray"
     ],
-    "description": "Découvrez le duo culte : des ailes de poulet croustillantes enrobées d'une panure sèche au parmesan et à l'ail. Une explosion de saveurs sans aucune friture à l'huile.",
+    "description": "Des ailes de poulet façon pub américain chez vous ! L'astuce de la fécule de maïs associée à la friteuse à air rend la peau bien sèche et croustillante, créant une panure irrésistible à l'ail et au Parmesan en 25 minutes.",
     "instructions": [
       "Sécher les ailes de poulet avec du papier absorbant.",
       "Dans un récipient, mélanger la fécule de maïs, la moitié du parmesan, l'ail en poudre, le sel et le poivre.",
@@ -1694,7 +1694,7 @@
   },
   {
     "slug": "ailes-de-poulet-jerk",
-    "title": "Ailes de Poulet Jerk (Saveurs Jamaïcaines)",
+    "title": "Ailes de poulet jerk (Epicées Et Croustillantes)",
     "emoji": "🍗",
     "temp": 195,
     "time": "25",
@@ -1715,7 +1715,7 @@
       "Sel",
       "Jus d'un citron vert"
     ],
-    "description": "Évadez-vous aux Caraïbes avec ces ailes de poulet relevées. Le mélange d'épices Jerk offre un profil aromatique fumé et piquant, magnifié par la cuisson grillée de l'airfryer.",
+    "description": "Voyage en Jamaïque en 25 minutes ! Des ailes aromatiques et agréablement épicées. La cuisson à la friteuse à air fixe le mélange d’épices jerk sur la peau tout en éliminant l’excès de graisse.",
     "instructions": [
       "Séchez soigneusement les ailes de poulet avec du papier absorbant.",
       "Dans un grand bol, combinez toutes les épices avec l'huile d'olive pour former une pâte.",
@@ -1741,11 +1741,11 @@
   },
   {
     "slug": "ailes-poulet-ketchup-moutarde",
-    "title": "Ailes de Poulet Glacées (Ketchup-Moutarde)",
+    "title": "Ailes de Poulet Glacées (Ketchup et Moutarde en 18 Min)",
     "emoji": "🍗",
     "temp": 170,
-    "time": "18-20",
-    "prep_time": "2 heures",
+    "time": "18",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "1 kg d'ailes de poulet, coupées en deux",
@@ -1755,7 +1755,7 @@
       "1 cuillère à soupe d'huile d'olive",
       "1 cuillère à café de paprika doux"
     ],
-    "description": "Des ailes de poulet caramélisées à souhait ! La marinade ketchup-moutarde crée un glaçage brillant et juteux en fin de cuisson. Le parfait équilibre entre le sucré et le salé.",
+    "description": "Un délice aigre-doux à basse température (170 °C). Le glaçage au ketchup et à la moutarde caramélise doucement sur la peau des ailes, pour un résultat à s’en lécher les doigts.",
     "instructions": [
       "Dans un grand saladier, mélanger au fouet le ketchup, la moutarde, la sauce soja, l'huile et le paprika.",
       "Immerger les ailes de poulet dans la sauce, couvrir d'un film alimentaire et laisser mariner au réfrigérateur pendant 2 heures minimum.",
@@ -1779,10 +1779,10 @@
   },
   {
     "slug": "ailes-miel-sriracha",
-    "title": "Ailes de Poulet Miel-Sriracha (Asiatique-Fusion)",
+    "title": "Ailes de Poulet Miel et Sriracha (Aigre-Douces et Épicées)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "25-30",
+    "time": "25",
     "prep_time": "10",
     "portions": "4",
     "isItalian": false,
@@ -1797,7 +1797,7 @@
       "1 cuillère à soupe de vinaigre de riz",
       "Huile végétale en spray"
     ],
-    "description": "Le mariage parfait du piquant de la Sriracha et de la douceur du miel. Grâce à une pointe de fécule de maïs, ces ailes obtiennent une texture incroyablement croquante.",
+    "description": "L’équilibre parfait entre la douceur du miel et le feu de la sriracha. Faites cuire les ailes à la friteuse à air jusqu’à ce qu’elles soient bien croustillantes pendant 25 minutes, puis enrobez-les de sauce chaude.",
     "instructions": [
       "Sécher les ailes de poulet. Les placer dans un sac avec la fécule de maïs, l'ail en poudre, l'oignon en poudre et le paprika. Secouer pour enrober uniformément.",
       "Préchauffer à 195°C. Disposer les ailes en une seule couche. Vaporiser d'huile.",
@@ -1822,11 +1822,11 @@
   },
   {
     "slug": "pilons-de-poulet-tikka",
-    "title": "Pilons de Poulet Tikka (Marinade Coco-Épices)",
+    "title": "Pilons de Poulet Tikka Masala (Tendres et Épicés)",
     "emoji": "🍗",
     "temp": 180,
-    "time": "20-25",
-    "prep_time": "1 heure",
+    "time": "20",
+    "prep_time": "60",
     "portions": "2",
     "ingredients": [
       "4 pilons de poulet",
@@ -1839,7 +1839,7 @@
       "1 gousse d'ail, hachée",
       "Sel"
     ],
-    "description": "Succombez à la douceur de l'Inde. Ces pilons marinent dans un mélange onctueux de lait de coco et d'épices Tikka pour une chair fondante et une peau parfumée.",
+    "description": "Toute la saveur du Tandoori en 20 minutes. Le lait de coco attendrit les pilons de poulet tandis que l'air chaud scelle les épices indiennes dans une croûte colorée et très parfumée.",
     "instructions": [
       "Pratiquer 2 à 3 incisions sur chaque pilon de poulet.",
       "Dans un récipient, mélanger le lait de coco, le concentré de tomate, les épices, l'ail, le gingembre et le sel.",
@@ -1865,11 +1865,11 @@
   },
   {
     "slug": "tenders-de-poulet-cajun",
-    "title": "Tenders de Poulet Cajun (Croustis-Tendres)",
+    "title": "Aiguillettes de Poulet Cajun (Panure Extra Crunch)",
     "emoji": "🌶",
     "temp": 195,
-    "time": "12-14",
-    "prep_time": "1 heure et 15",
+    "time": "12",
+    "prep_time": "60",
     "portions": "4",
     "ingredients": [
       "500 g de filets de poulet, coupés en lanières",
@@ -1882,7 +1882,7 @@
       "Sel",
       "Huile en spray"
     ],
-    "description": "Oubliez les fast-foods ! Préparez vos propres filets de poulet panés aux épices Cajun. Une croûte bien épicée et un cœur de filet de poulet ultra-juteux.",
+    "description": "Des aiguillettes de poulet panées à la perfection ! L'utilisation de babeurre associé au mélange Cajun crée des tenders super croustillants sans friture. Le snack protéiné prêt en seulement 12 minutes.",
     "instructions": [
       "Mélanger le babeurre et la sauce pimentée. Y immerger les lanières de poulet. Laisser mariner au réfrigérateur pendant au moins une heure.",
       "Dans un plat, mélanger la farine, les épices Cajun, l'ail en poudre, l'oignon en poudre et le sel. Ajouter une cuillère de marinade au mélange de farine et travailler du bout des doigts pour former des grumeaux.",
@@ -1907,10 +1907,10 @@
   },
   {
     "slug": "cuisses-de-poulet-ail-citron",
-    "title": "Poulet Ail et Citron (Peau Croustillante)",
+    "title": "Pilons de Poulet Ail et Citron (Peau Extra Croustillante)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -1922,7 +1922,7 @@
       "1 cuillère à café d'origan séché",
       "Sel et poivre noir"
     ],
-    "description": "Un classique indémodable. La marinade au citron et aux herbes de Provence infuse la chair, tandis que l'air chaud rend la peau des cuisses dorée et craquante à souhait.",
+    "description": "Un dîner frais, riche en protéines et pauvre en glucides ! La puissance de la friteuse dégraisse la peau des pilons la rendant aussi croustillante qu'une chips (en 20 min), tandis que le citron parfume la viande.",
     "instructions": [
       "Dans un grand bol, préparer la marinade en mélangeant l'huile, le jus et le zeste de citron, l'ail, le paprika, l'origan, le sel et le poivre.",
       "Sécher les cuisses de poulet avec du papier absorbant. Les ajouter à la marinade et bien enrober. Laisser mariner 30 minutes à température ambiante.",
@@ -1945,10 +1945,10 @@
   },
   {
     "slug": "cuisses-de-poulet-moutarde",
-    "title": "Cuisses de Poulet au Sirop d'Érable et Moutarde",
+    "title": "Cuisses de Poulet à la Moutarde (Glaçage Aigre-Doux Rapide)",
     "emoji": "🍗",
     "temp": 190,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "5",
     "portions": "4",
     "isItalian": false,
@@ -1961,7 +1961,7 @@
       "0,5 cuillère à café de paprika doux",
       "Sel et poivre noir, au goût"
     ],
-    "description": "Un glaçage gourmet pour vos cuisses de poulet. L'alliance du sirop d'érable et de la moutarde de Dijon crée une surface caramélisée et riche en goût en quelques minutes.",
+    "description": "Une véritable recette gourmande sauve-dîner en 22 minutes. Le mélange piquant de la moutarde et la douceur de l'érable glacent la peau du poulet de façon spectaculaire sans la brûler.",
     "instructions": [
       "Dans un bol, mélangez la moutarde, le sirop d'érable et les épices en poudre pour préparer le glaçage.",
       "Séchez les cuisses de poulet avec du papier absorbant. Salez et poivrez. À l'aide d'un pinceau, badigeonnez les cuisses sur toutes les faces avec le glaçage. Réservez une partie du glaçage pour la fin de la cuisson.",
@@ -1984,11 +1984,11 @@
   },
   {
     "slug": "cuisses-de-poulet-yaourt-romarin",
-    "title": "Poulet Méditerranéen au Yaourt et Romarin",
+    "title": "Cuisses de Poulet au Yaourt (Moelleuses et Parfumées)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "30-35",
-    "prep_time": "4 heures",
+    "time": "30",
+    "prep_time": "240",
     "portions": "4",
     "ingredients": [
       "4 grandes cuisses de poulet (avec ou sans peau)",
@@ -1999,7 +1999,7 @@
       "Sel et poivre noir",
       "1 cuillère à soupe d'huile d'olive"
     ],
-    "description": "Grâce à l'acide lactique du yaourt, ces cuisses de poulet sont d'une tendreté incomparable. Parfumées au romarin, elles apportent un air de vacances dans votre assiette.",
+    "description": "Comment préparer un poulet qui fond en bouche ? L'acidité du yaourt brise les fibres de la viande en 30 min, garantissant des cuisses ultra-tendres, parfumées au romarin et avec une croûte fabuleuse.",
     "instructions": [
       "Dans un grand plat, mélanger le yaourt grec, l'huile d'olive, la moutarde, l'ail, les aiguilles de romarin, le sel et le poivre.",
       "Immerger les cuisses de poulet dans la marinade, en s'assurant de les enrober complètement.",
@@ -2023,10 +2023,10 @@
   },
   {
     "slug": "cotolette-porc-katsu",
-    "title": "Tonkatsu de Porc (Croustillant Japonais)",
+    "title": "Porc Katsu (L'Escalope Japonaise Ultra-Croustillante)",
     "emoji": "🍱",
     "temp": 185,
-    "time": "14-16",
+    "time": "14",
     "prep_time": "15",
     "portions": "2",
     "ingredients": [
@@ -2040,7 +2040,7 @@
       "Poivre blanc",
       "Huile en spray"
     ],
-    "description": "Découvrez le secret de la panure Panko ! Cette côtelette de porc japonaise offre une croûte épaisse et aérienne qui reste incroyablement légère grâce à la friteuse à air.",
+    "description": "La célèbre escalope japonaise Tonkatsu en version légère. Panée au panko et cuite à la friteuse à air en seulement 14 minutes, elle reste très croustillante à l’extérieur et moelleuse à l’intérieur.",
     "instructions": [
       "Inciser les bords gras des côtelettes pour éviter qu'elles ne se rétractent durant la cuisson. Aplatir la viande si son épaisseur dépasse 1,5 cm.",
       "Préparer trois récipients : un pour la farine, un pour les œufs battus, et un pour le panko mélangé avec l'ail, l'oignon en poudre, le sel et le poivre.",
@@ -2065,10 +2065,10 @@
   },
   {
     "slug": "medaillons-aubergine-panes",
-    "title": "Aubergines Panées au Parmesan",
+    "title": "Escalopes d'Aubergine (Végétariennes et Croustillantes en 10 Min)",
     "emoji": "🍆",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "2",
     "ingredients": [
@@ -2081,7 +2081,7 @@
       "Poivre",
       "Huile d'olive en spray"
     ],
-    "description": "De savoureux médaillons d'aubergine avec une croûte de fromage dorée. À déguster tels quels pour l'apéro ou comme base légère pour une Parmigiana express.",
+    "description": "Pas de viande ce soir ? Les tranches d'aubergine panées au fromage deviennent de fabuleuses escalopes dorées ! Prêtes en 10 minutes, parfaites pour un accompagnement ou un plat végétarien.",
     "instructions": [
       "Laver l'aubergine, retirer les extrémités et la trancher en rondelles de 1 cm d'épaisseur.",
       "Préparer trois récipients : le premier avec la farine ; le deuxième avec les œufs battus, salés et poivrés ; le troisième avec la chapelure mélangée au fromage.",
@@ -2106,10 +2106,10 @@
   },
   {
     "slug": "batonnets-de-poisson-maison",
-    "title": "Bâtonnets de Poisson Maison (Fish Fingers)",
+    "title": "Bâtonnets de Poisson Maison (Pour Enfants en 8 Min)",
     "emoji": "🐟",
     "temp": 180,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2122,7 +2122,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "Réconciliez toute la famille avec le poisson ! Ces bâtonnets de filet blanc sont panés maison et cuits sans friture pour un résultat sain, croquant et savoureux.",
+    "description": "Les bâtonnets de poisson classiques des fast-foods, mais sains et faits maison. Le cabillaud reste très moelleux tandis que la croûte devient irrésistiblement dorée en seulement 8 minutes.",
     "instructions": [
       "Vérifier l'absence d'arêtes dans le poisson. Sécher le filet avec du papier absorbant et le détailler en bâtonnets de 2-3 cm d'épaisseur.",
       "Préparer trois assiettes. Dans la première, mélanger la farine, les herbes, le sel et le poivre. Dans la deuxième, battre les œufs. Dans la troisième, verser la chapelure.",
@@ -2145,10 +2145,10 @@
   },
   {
     "slug": "bouchees-poulet-cereales",
-    "title": "Popcorn Chicken aux Corn Flakes",
+    "title": "Bouchées de Poulet aux Céréales (Croustillant Maximum)",
     "emoji": "🍗",
     "temp": 180,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -2160,7 +2160,7 @@
       "1/2 cuillère à soupe de sauce pimentée ou paprika",
       "Sel, ail en poudre, oignon en poudre"
     ],
-    "description": "Le secret du croustillant ultime : une panure aux Corn Flakes ! Ces petites bouchées de poulet sont parfaites pour un apéritif dînatoire ou un plateau télé original.",
+    "description": "Nuggets 2.0 ! Utilisez des corn flakes pour créer une croûte extra-croustillante à la friteuse à air. Les cubes de poulet cuisent en 15 minutes et sont parfaits à tremper dans vos sauces préférées.",
     "instructions": [
       "Dans un bol, battre les œufs avec la moutarde et la sauce pimentée ou le paprika.",
       "Dans une assiette creuse, mélanger la farine avec le sel, l'ail et l'oignon en poudre. Dans une autre assiette, concasser grossièrement les corn flakes.",
@@ -2185,10 +2185,10 @@
   },
   {
     "slug": "chapeaux-de-champignons-farcis-saucisse",
-    "title": "Champignons Farcis à la Saucisse (Gratinés)",
+    "title": "Champignons Farcis à la Saucisse (Gratinés en 12 Min)",
     "emoji": "🍄",
     "temp": 160,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2200,7 +2200,7 @@
       "1 gousse d'ail",
       "Persil haché, huile d'olive"
     ],
-    "description": "Une entrée gourmande où la chair à saucisse et le fromage fondu garnissent des chapeaux de champignons tendres. Idéal pour une touche rustique lors de vos soirées.",
+    "description": "L'apéritif gourmand pour vider le frigo ! Des têtes de champignons moelleuses avec une farce explosive de viande et de fromage fondu, parfaitement gratinées à 160°C sans brûler.",
     "instructions": [
       "Nettoyer les champignons avec du papier absorbant humide. Détacher les pieds et les hacher finement. Réserver les chapeaux.",
       "Dans une poêle, faire revenir les pieds hachés pendant 5 minutes avec la chair à saucisse émiettée et la gousse d'ail entière. Retirer la gousse d'ail en fin de cuisson.",
@@ -2224,10 +2224,10 @@
   },
   {
     "slug": "nems-poulet-croustillants",
-    "title": "Nems au Poulet (Légers et Craquants)",
+    "title": "Rouleaux de Printemps au Poulet (Croustillants, Sans Friture)",
     "emoji": "🍙",
     "temp": 180,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "35",
     "portions": "4",
     "ingredients": [
@@ -2238,7 +2238,7 @@
       "2 cuillères à soupe de sauce soja",
       "Huile d'olive ou neutre"
     ],
-    "description": "Retrouvez tout le plaisir des nems asiatiques sans l'huile de friture. Ces rouleaux farcis au poulet et légumes ressortent de l'airfryer ultra-croustillants et dorés.",
+    "description": "Comme au restaurant chinois mais sans la friture lourde ! Les rouleaux de papier de riz gonflés et rendus friables par l'air chaud en 15 minutes renferment un cœur tendre de légumes et de poulet.",
     "instructions": [
       "Dans un wok, saisir le poulet à feu vif avec une cuillère d'huile. Ajouter la julienne de légumes, la sauce soja et cuire 5 minutes.",
       "Retirer du feu, incorporer les vermicelles et laisser refroidir la farce.",
@@ -2264,10 +2264,10 @@
   },
   {
     "slug": "feuilletés-saucisses",
-    "title": "Feuilletés à la Saucisse (Apéritif Croustillant)",
+    "title": "Cochons en Couverture (Rapides et Croustillants en 10 Min)",
     "emoji": "🌭",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -2276,7 +2276,7 @@
       "1 œuf battu ou 2 cuillères à soupe de lait pour la dorure",
       "Graines de sésame ou de pavot (optionnel)"
     ],
-    "description": "Le grand classique des soirées réussies. Ces mini-feuilletés gonflent à la perfection dans la friteuse à air, offrant une pâte feuilletée ultra-croustillante et une saucisse juteuse en un temps record.",
+    "description": "L'apéritif le plus apprécié au monde ! Enveloppez des mini-saucisses dans de la pâte feuilletée et cuisez-les à l'air : elles gonfleront parfaitement en 10 minutes, battant la lenteur du four.",
     "instructions": [
       "Coupez la pâte feuilletée en bandes de 2 à 3 centimètres de large.",
       "Enroulez chaque saucisse dans une bande de pâte en spirale ou en cylindre.",
@@ -2301,10 +2301,10 @@
   },
   {
     "slug": "blancs-de-poulet-simples",
-    "title": "Blancs de Poulet Rôtis (Tendres et Juteux)",
+    "title": "Blancs de Poulet Juteux (Tendres et Moelleux en 18 Min)",
     "emoji": "🍗",
     "temp": 190,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -2313,7 +2313,7 @@
       "1 cuillère à café de paprika ou d'un mélange d'herbes aromatiques",
       "Sel et poivre noir"
     ],
-    "description": "Fini le poulet sec ! Découvrez la méthode idéale pour obtenir des blancs de poulet parfaitement dorés à l'extérieur et incroyablement tendres à cœur. Une base saine et protéinée pour tous vos repas.",
+    "description": "Peur que le blanc de poulet devienne caoutchouteux ? Suivez cette méthode à 190°C pour sceller les jus à l'intérieur : vous obtiendrez des protéines maigres parfaites en 18 minutes pour votre régime.",
     "instructions": [
       "Séchez la surface des blancs de poulet avec du papier absorbant.",
       "Mélangez les blancs de poulet avec l'huile d'olive, le sel, le poivre et les épices.",
@@ -2337,10 +2337,10 @@
   },
   {
     "slug": "poulet-barbecue",
-    "title": "Poulet Laqué Sauce Barbecue (Style BBQ)",
+    "title": "Poulet Barbecue (Glacé et Caramélisé en 22 Min)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "30",
     "portions": "4",
     "isItalian": false,
@@ -2354,7 +2354,7 @@
       "Poivre noir",
       "240 ml de sauce barbecue épaisse"
     ],
-    "description": "Un voyage direct aux USA. Des morceaux de poulet imprégnés d'épices, puis laqués généreusement à la sauce BBQ pour une finition caramélisée, collante et fumée absolument irrésistible.",
+    "description": "Toute la saveur du barbecue sans fumée ! Cuisez le poulet épicé à l'air pour sceller les jus et badigeonnez-le de sauce BBQ à la fin pour un glaçage de véritable maître rôtisseur.",
     "instructions": [
       "Mélanger la cassonade, le paprika fumé, l'ail en poudre, le sel et le poivre.",
       "Sécher les morceaux de poulet et frotter la peau avec le mélange d'épices. Laisser reposer à température ambiante pendant 30 minutes.",
@@ -2378,11 +2378,11 @@
   },
   {
     "slug": "pilons-poulet-miel-citron",
-    "title": "Pilons de Poulet Miel et Citron (Aigre-Doux)",
+    "title": "Pilons de Poulet Miel et Citron (Peau Croustillante)",
     "emoji": "🍋",
     "temp": 190,
-    "time": "20-22",
-    "prep_time": "1 heure",
+    "time": "20",
+    "prep_time": "60",
     "portions": "4",
     "ingredients": [
       "8 pilons de poulet (avec peau)",
@@ -2393,7 +2393,7 @@
       "Sel",
       "Quartiers de citron (pour le service)"
     ],
-    "description": "L'équilibre parfait entre la douceur du miel et le peps du citron. La chaleur tournante rend la peau des pilons extrêmement craquante tout en emprisonnant les sucs parfumés de la marinade.",
+    "description": "Des pilons de poulet aigre-doux à s'en lécher les doigts en 20 minutes. Le duo miel-citron crée une croûte collante et dorée, tandis que la viande se détache de l'os avec une grande tendreté.",
     "instructions": [
       "Préparer la marinade en mélangeant le miel, la sauce soja, le jus de citron et l'ail dans un saladier.",
       "Ajouter les pilons de poulet, couvrir et laisser mariner au réfrigérateur pendant 1 heure.",
@@ -2418,11 +2418,11 @@
   },
   {
     "slug": "poulet-cinq-epices",
-    "title": "Hauts de Cuisse aux Cinq Épices (Saveurs d'Asie)",
+    "title": "Hauts de Cuisses aux Cinq Épices (Glaçage Parfait)",
     "emoji": "🍗",
     "temp": 190,
-    "time": "18-20",
-    "prep_time": "2 heures",
+    "time": "18",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "6-8 hauts de cuisse de poulet, désossés, avec peau",
@@ -2434,7 +2434,7 @@
       "2 cuillères à soupe de miel",
       "2 cuillères à soupe de sauce soja foncée"
     ],
-    "description": "Plongez dans la gastronomie cantonaise avec ces hauts de cuisse laqués. Le parfum envoûtant des cinq épices chinoises s'associe à une peau croustillante pour un résultat digne d'un grand restaurant.",
+    "description": "Un voyage en Asie sans quitter la maison ! Des hauts de cuisses parfaitement glacés en 18 minutes grâce à la marinade Hoisin. Peau hyper-croustillante et humidité conservée par la chaleur tournante.",
     "instructions": [
       "Pour la marinade, mélanger la sauce Hoisin, la sauce d'huître, l'ail, le gingembre, le mélange cinq-épices, une cuillère à soupe de miel et une cuillère à soupe de sauce soja.",
       "Enrober les hauts de cuisse de poulet avec la marinade, en l'appliquant également sous la peau. Couvrir et laisser mariner au réfrigérateur pendant 2 heures.",
@@ -2459,10 +2459,10 @@
   },
   {
     "slug": "poulet-roti-ail-herbes",
-    "title": "Poulet Rôti à l'Ail et Herbes de Provence",
+    "title": "Poulet Rôti Ail et Herbes (Peau Super Croustillante)",
     "emoji": "🍗",
     "temp": 195,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "30",
     "portions": "4",
     "isItalian": false,
@@ -2473,7 +2473,7 @@
       "1 cuillère à soupe d'herbes de Provence",
       "Gros sel, poivre noir"
     ],
-    "description": "Le goût authentique du dimanche. Des morceaux de poulet généreusement frottés d'ail frais et d'herbes aromatiques, rôtis jusqu'à obtenir une peau dorée et une chair qui se détache toute seule.",
+    "description": "Comment dégraisser des morceaux de poulet tout en gardant la peau aussi croustillante qu'une chips ? Cette recette à 195°C pendant 22 min fait évaporer toute la graisse dans le panier en dessous.",
     "instructions": [
       "Sécher soigneusement les morceaux de poulet.",
       "Enduire les morceaux de poulet d'huile d'olive de manière homogène.",
@@ -2497,10 +2497,10 @@
   },
   {
     "slug": "poulet-entier-a-l-ail",
-    "title": "Poulet Entier Rôti à l'Airfryer (Peau Craquante)",
+    "title": "Poulet Rôti Entier (Croustillant Dehors, Tendre Dedans en 50 Min)",
     "emoji": "🍗",
     "temp": 180,
-    "time": "50-60",
+    "time": "50",
     "prep_time": "10",
     "portions": "4",
     "ingredients": [
@@ -2513,7 +2513,7 @@
       "Sel",
       "Poivre noir"
     ],
-    "description": "Réussissez votre poulet entier à tous les coups ! Cette méthode garantit une cuisson homogène, une peau uniformément dorée et une chair d'une jutosité exceptionnelle, bien plus rapidement qu'au four traditionnel.",
+    "description": "Peur de cuire un poulet entier (1.2kg max) à l'air ? En le retournant à mi-cuisson (30 min blanc en bas, 20 min blanc en haut), vous obtiendrez un blanc ultra-moelleux et des cuisses croustillantes façon rôtisserie.",
     "instructions": [
       "Vérifier que la taille du poulet est adaptée au panier de cuisson, sans qu'il ne touche la résistance supérieure.",
       "Sécher soigneusement le poulet, à l'intérieur et à l'extérieur. Insérer les gousses d'ail et la branche de romarin dans la cavité. Ficeler les cuisses.",
@@ -2537,7 +2537,7 @@
   },
   {
     "slug": "poulet-entier-barbecue",
-    "title": "Poulet Entier Laqué (Style Barbecue)",
+    "title": "Poulet Entier BBQ (Glaçage Américain Gourmet en 50 Min)",
     "emoji": "🍗",
     "temp": 180,
     "time": "50",
@@ -2550,7 +2550,7 @@
       "Sel et poivre noir",
       "Sauce barbecue épaisse : 5-6 cuillères à soupe"
     ],
-    "description": "Un poulet entier rôti puis laqué à plusieurs reprises pour une croûte caramélisée et sombre, typique du barbecue américain. Un plat spectaculaire et généreux à partager.",
+    "description": "Le poulet rôti de niveau supérieur ! Cuisez-le entier à 180°C pour sceller la viande, puis dans les 10 dernières minutes, baissez à 160°C et badigeonnez généreusement de sauce BBQ pour une croûte aigre-douce sans fumée.",
     "instructions": [
       "Ficeler les pattes du poulet et sécher la peau. Huiler et assaisonner de sel et de poivre sur toute la surface.",
       "Placer le poulet dans le panier, poitrine vers le bas. Cuire à 180°C pendant 30 minutes.",
@@ -2574,10 +2574,10 @@
   },
   {
     "slug": "boulettes-italiennes-maison",
-    "title": "Boulettes de Viande au Parmesan (Polpette)",
+    "title": "Boulettes au Parmesan (Sans Huile et Ultra-Moelleuses en 10 Min)",
     "emoji": "🍝",
     "temp": 195,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "4",
     "isItalian": true,
@@ -2592,7 +2592,7 @@
       "Poivre noir fraîchement moulu",
       "Huile en spray"
     ],
-    "description": "Les célèbres boulettes italiennes en version légère. Moelleuses à l'intérieur et saisies à l'extérieur, elles sont parfaites à picorer à l'apéritif ou à plonger dans une sauce tomate onctueuse.",
+    "description": "Les boulettes classiques de grand-mère en version allégée ! Dorées et savoureuses à l'extérieur, elles restent incroyablement moelleuses à l'intérieur en cuisant à l'air en 10 minutes, sans la lourdeur de la friture à la poêle.",
     "instructions": [
       "Faites tremper la mie de pain dans le lait pendant 5 minutes. Essorez-la et placez-la dans un grand saladier.",
       "Ajoutez la viande, l'œuf, le parmesan, le sel, le poivre et le persil. Mélangez à la main jusqu'à obtenir une consistance homogène. Ne pas trop pétrir le mélange pour éviter qu'il ne durcisse.",
@@ -2617,7 +2617,7 @@
   },
   {
     "slug": "quesadillas-fajitas-poulet",
-    "title": "Quesadillas au Poulet et Fromage Fondant",
+    "title": "Quesadillas Poulet et Poivrons (Croustillantes et Fondantes en 15 Min)",
     "emoji": "🌮",
     "isItalian": false,
     "temp": 190,
@@ -2632,7 +2632,7 @@
       "1 cuillère à soupe d'épices pour fajitas",
       "1 cuillère à soupe d'huile d'olive"
     ],
-    "description": "Une fusion gourmande entre fajitas et quesadillas. Des tortillas croustillantes garnies de poulet épicé, de poivrons croquants et d'une montagne de fromage fondu pour un plaisir mexicain immédiat.",
+    "description": "Un dîner Tex-Mex explosif et gain de temps ! Des tortillas hyper croustillantes farcies de poulet, poivrons épicés et un cœur de fromage fondant. La friteuse scelle la farce en quelques minutes sans graisser.",
     "instructions": [
       "Dans un bol, mélangez le poulet, le poivron, l'oignon, l'huile et les épices. Versez le mélange dans le panier. Cuisez à 190°C pendant 10 minutes, en remuant à mi-cuisson.",
       "Retirez le poulet et les légumes du panier. Essuyez le panier avec du papier absorbant.",
@@ -2656,10 +2656,10 @@
   },
   {
     "slug": "epaule-agneau-grecque",
-    "title": "Épaule d'Agneau Rôtie et ses Pommes de Terre",
+    "title": "Agneau et Pommes de Terre à la Grecque (Goût Authentique en 45 Min)",
     "emoji": "🍖",
     "temp": 180,
-    "time": "45-50",
+    "time": "45",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -2673,7 +2673,7 @@
       "Poivre",
       "100 ml de bouillon de légumes ou d'eau"
     ],
-    "description": "L'agneau devient divin lorsqu'il est rôti ainsi : sa chair fondante libère ses jus qui viennent napper et parfumer les pommes de terre placées juste en dessous. Un plat de fête simplifié.",
+    "description": "Le classique repas du dimanche sans allumer le four ! La viande d'agneau cuit sur les pommes de terre nouvelles en libérant ses jus savoureux pour un plat unique ultra-tendre et doré en 45 minutes.",
     "instructions": [
       "Mélangez l'huile, le jus de citron, l'ail, l'origan, le sel et le poivre. Frottez la viande d'agneau avec la marinade obtenue. Laissez reposer 30 minutes à température ambiante.",
       "Disposez les pommes de terre dans le fond du plat de cuisson et assaisonnez. Versez le bouillon ou l'eau.",
@@ -2698,11 +2698,11 @@
   },
   {
     "slug": "brochettes-poulet-yaourt",
-    "title": "Brochettes de Poulet (Marinade Onctueuse)",
+    "title": "Brochettes de Poulet au Yaourt (Ultra-Tendres en 12 Min)",
     "emoji": "🍢",
     "temp": 195,
-    "time": "12-14",
-    "prep_time": "2 heures",
+    "time": "12",
+    "prep_time": "120",
     "portions": "4",
     "isItalian": false,
     "ingredients": [
@@ -2716,7 +2716,7 @@
       "Poivre noir moulu",
       "Brochettes en bois"
     ],
-    "description": "Le secret des brochettes les plus tendres du monde ? Une marinade au yaourt qui attendrit les fibres du poulet. Saisies à haute température, elles restent d'une jutosité incroyable.",
+    "description": "Fini les brochettes sèches ! Le yaourt grec agit sur les fibres du poulet le rendant incroyablement moelleux, tandis que l'air brûlant scelle l'extérieur créant un Shish Taouk oriental mortel en 12 min.",
     "instructions": [
       "Mélanger le yaourt avec l'huile d'olive, l'ail, le paprika, le cumin, le sel et le poivre.",
       "Ajouter les dés de poulet et mélanger pour les enrober. Laisser mariner au réfrigérateur pendant un minimum de 2 heures.",
@@ -2739,7 +2739,7 @@
   },
   {
     "slug": "roule-pizza-farcie",
-    "title": "Roulé Pizza (Jambon et Fromage Coulant)",
+    "title": "Stromboli Farci (Roulé de Pizza Croustillant et Fondant en 20 Min)",
     "emoji": "🌯",
     "temp": 175,
     "time": "20",
@@ -2756,7 +2756,7 @@
       "20 ml de lait",
       "Sel, origan, ail en poudre"
     ],
-    "description": "Une variante ludique de la pizza ! Cette pâte roulée et farcie offre une croûte dorée et un cœur de fromage ultra-fondant. Idéal pour un dîner rapide ou découpé en tranches pour l'apéro.",
+    "description": "Un croisement entre une pizza roulée et un calzone géant. Farcissez la pâte de charcuterie et de fromages, roulez-la et laissez la friteuse créer une croûte dorée et un cœur de provolone fondu spectaculaire.",
     "instructions": [
       "Laisser reposer la pâte à température ambiante. L'étaler sur un plan de travail légèrement fariné.",
       "Disposer le jambon, les tranches de fromage et les poivrons de manière homogène sur la moitié de la surface.",
@@ -2781,18 +2781,18 @@
   },
   {
     "slug": "roti-filet-mignon-de-porc",
-    "title": "Filet Mignon de Porc Rôti (Gourmet)",
+    "title": "Filet Mignon de Porc Rôti (Croûte Dorée et Cœur Rosé en 25 Min)",
     "emoji": "🍖",
     "temp": 190,
-    "time": "25-30",
-    "prep_time": "Non indiqué",
+    "time": "25",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "2 filets mignons de porc (environ 400 g chacun)",
       "20 ml d'huile d'olive",
       "Gros sel et poivre noir du moulin"
     ],
-    "description": "Sublimez cette pièce noble avec une cuisson précise. Obtenez un filet mignon à la surface joliment colorée et à la chair rosée et juteuse. Un classique de la gastronomie française à portée de main.",
+    "description": "Fini les rôtis secs ! Le filet mignon de porc cuit à l'air à haute température forme une croûte parfaite en seulement 25 minutes, gardant un cœur rosé, succulent et riche en protéines.",
     "instructions": [
       "Sécher les filets de porc avec du papier absorbant.",
       "Badigeonner la viande d'huile d'olive, puis assaisonner de gros sel et de poivre.",
@@ -2816,11 +2816,11 @@
   },
   {
     "slug": "bifteck-moutarde-balsamique",
-    "title": "Steak de Bœuf (Moutarde et Balsamique)",
+    "title": "Steak de Bœuf et Balsamique (Cuisson Gourmet en 7 Min)",
     "emoji": "🥩",
     "temp": 200,
     "time": "7",
-    "prep_time": "2 heures 10",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "900 g de bifteck de bœuf (bavette ou flanchet)",
@@ -2831,7 +2831,7 @@
       "Poivre noir moulu",
       "Basilic frais"
     ],
-    "description": "Une marinade sophistiquée pour un bifteck de caractère. Le vinaigre balsamique et la moutarde créent une croûte aromatique intense lors de la saisie à haute température.",
+    "description": "Un steak gourmet comme au restaurant. La marinade moutarde et vinaigre balsamique caramélise à 200°C créant une croûte très savoureuse, tandis que l'intérieur de la viande reste saignant. Prêt en 7 min.",
     "instructions": [
       "Dans un grand récipient, émulsionner l'huile d'olive, le vinaigre balsamique et la moutarde de Dijon.",
       "Mariner le bifteck, couvrir de film alimentaire et réfrigérer pendant 2 heures.",
@@ -2855,11 +2855,11 @@
   },
   {
     "slug": "cote-de-boeuf-aux-herbes-aromatiques",
-    "title": "Côte de Bœuf aux Herbes (Croûte Parfumée)",
+    "title": "Côte de Bœuf aux Herbes (Goût Braise en 7 Min)",
     "emoji": "🥩",
     "temp": 200,
     "time": "7",
-    "prep_time": "Non indiqué",
+    "prep_time": "",
     "portions": "2",
     "isItalian": false,
     "ingredients": [
@@ -2870,7 +2870,7 @@
       "1 pincée de poivre de Cayenne",
       "20 ml d'huile d'olive"
     ],
-    "description": "Pour les amateurs de viande rouge : une côte de bœuf saisie avec un mélange d'herbes qui forme une croûte savoureuse. Une cuisson rapide qui respecte la tendreté exceptionnelle du bœuf.",
+    "description": "Obtenez la saveur classique de la braise californienne chez vous sans enfumer la cuisine. Le 'Rub' d'herbes sèches forme une croûte délicieuse sur cette côte de bœuf super protéinée en seulement 7 minutes.",
     "instructions": [
       "Mélanger dans un bol l'ail en poudre, l'oignon en poudre, l'origan, le romarin, la sauge et le poivre de Cayenne.",
       "Badigeonner la viande d'huile d'olive sur les deux faces.",
@@ -2893,10 +2893,10 @@
   },
   {
     "slug": "faux-filet-de-boeuf-chimichurri",
-    "title": "Faux-Filet de Bœuf et Sauce Chimichurri",
+    "title": "Faux-filet au Chimichurri (Recette Rapide en 7 Min)",
     "emoji": "🥩",
     "temp": 200,
-    "time": "7-9",
+    "time": "7",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2910,7 +2910,7 @@
       "Jus de 2 citrons",
       "Gousses d'ail : 4"
     ],
-    "description": "Le mariage de la viande rôtie et de la fraîcheur des herbes. Ce faux-filet est servi avec une sauce argentine acidulée et pimentée qui réveille les papilles.",
+    "description": "Un faux-filet saisi rapidement à haute température pour une croûte waouh ! À servir tranché et recouvert d'une sauce chimichurri fraîche aux herbes. Un plat principal incroyable prêt en 7 min.",
     "instructions": [
       "Préparer la sauce : mixer le basilic, la coriandre, le persil, les anchois, l'échalote et l'ail pelé. Incorporer l'huile et le jus de citron en filet.",
       "Badigeonner la surface des faux-filets avec de l'huile. Assaisonner avec du sel et du poivre noir.",
@@ -2934,18 +2934,18 @@
   },
   {
     "slug": "cotes-de-porc-a-l-os",
-    "title": "Côtes de Porc à l'Os (Extra Juteuses)",
+    "title": "Côtes de Porc à l'Os (Juteuses et Dorées en 14 Min)",
     "emoji": "🍖",
     "temp": 190,
-    "time": "14-17",
-    "prep_time": "Non présent",
+    "time": "14",
+    "prep_time": "",
     "portions": "2",
     "ingredients": [
       "2 côtes de porc avec os, 250 g chacune",
       "20 ml d'huile d'olive",
       "Sel et poivre noir du moulin"
     ],
-    "description": "Cuire la viande avec son os est le secret d'une saveur décuplée. Ces côtes de porc restent tendres et humides tout en arborant une dorure uniforme et appétissante.",
+    "description": "Fini les côtes de porc sèches comme des semelles de chaussures ! La friteuse à air les cuit à 190°C scellant la surface en 14 minutes : la graisse fond, l'os donne du goût et la viande reste très moelleuse.",
     "instructions": [
       "Éponger la surface des côtes avec du papier absorbant pour éliminer l'excès d'humidité.",
       "Badigeonner uniformément les deux côtés des côtes avec de l'huile d'olive.",
@@ -2969,7 +2969,7 @@
   },
   {
     "slug": "cotes-de-porc-caroline-du-nord",
-    "title": "Côtes de Porc (Style Caroline du Nord)",
+    "title": "Côtes de Porc BBQ (Caramélisées Style US en 11 Min)",
     "emoji": "🍖",
     "temp": 200,
     "time": "11",
@@ -2985,7 +2985,7 @@
       "15 ml d'huile végétale",
       "Sel et poivre, au goût"
     ],
-    "description": "Inspirées du barbecue du Sud des États-Unis, ces côtes de porc sont frottées de cassonade et d'épices pour une croûte caramélisée et un goût fumé inimitable.",
+    "description": "La saveur d'un barbecue américain chez vous. Le Rub (mélange d'épices et cassonade) caramélise brutalement à 200°C créant une croûte très savoureuse en seulement 11 minutes.",
     "instructions": [
       "Mélanger dans un bol la cassonade, le paprika, la moutarde en poudre, la poudre d'ail, la poudre d'oignon, le sel et le poivre.",
       "Enduire les côtes de porc d'huile végétale.",
@@ -3009,11 +3009,11 @@
   },
   {
     "slug": "mini-burgers-au-fromage",
-    "title": "Mini Burgers (Cheeseburgers Apéro)",
+    "title": "Mini Cheeseburgers (Sliders Juteux en 9 Min)",
     "emoji": "🍔",
     "temp": 200,
     "time": "9",
-    "prep_time": "1 heure 5",
+    "prep_time": "65",
     "portions": "4",
     "ingredients": [
       "450 g de viande de bœuf hachée",
@@ -3025,7 +3025,7 @@
       "4 tranches de fromage fondant",
       "4 petits pains à burger"
     ],
-    "description": "L'esprit street food sans les inconvénients ! Ces mini burgers dorent parfaitement sans projections de graisse, pour un apéritif dînatoire propre, rapide et ultra-gourmand.",
+    "description": "Des mini burgers parfaits pour l'apéritif ! Fini les poêles fumantes : les steaks de bœuf cuisent juteux à l'air en 9 minutes et le fromage fond parfaitement directement dans le panier.",
     "instructions": [
       "Dans un bol, mélanger la viande hachée avec la sauce Worcestershire, la moutarde, l'oignon râpé, l'œuf, le sel et le poivre.",
       "Façonner des steaks de taille égale. Réfrigérer pendant une heure pour raffermir.",
@@ -3050,11 +3050,11 @@
   },
   {
     "slug": "cotes-agneau-citron",
-    "title": "Côtes d'Agneau à l'Ail et au Citron",
+    "title": "Côtelettes d'Agneau au Citron (Cuisson Rosée et Croustillante)",
     "emoji": "🍖",
     "temp": 200,
     "time": "10",
-    "prep_time": "4 heures 15",
+    "prep_time": "240",
     "portions": "4",
     "ingredients": [
       "12 côtes d'agneau, parées",
@@ -3063,7 +3063,7 @@
       "35 ml d'huile d'olive",
       "Sel et poivre noir du moulin"
     ],
-    "description": "Succombez à la tendreté de l'agneau magnifiée par une marinade vive au citron et à l'ail. La cuisson flash à l'airfryer saisit la viande pour une croûte dorée tout en gardant un cœur divinement juteux.",
+    "description": "Une saisie digne d'un restaurant étoilé en seulement 10 minutes ! Les côtelettes d'agneau marinées au citron deviennent croustillantes à l'extérieur tout en gardant un cœur rosé et tendre à la découpe.",
     "instructions": [
       "Prélever le zeste du citron en évitant la partie blanche. Piler l'ail au mortier.",
       "Mélanger l'ail pilé, le zeste de citron et l'huile d'olive pour préparer la marinade.",
@@ -3088,7 +3088,7 @@
   },
   {
     "slug": "empanadas-de-boeuf",
-    "title": "Empanadas au Bœuf (Croustillantes et Épicées)",
+    "title": "Empanadas au Bœuf (Chaussons Friables Sans Friture)",
     "emoji": "🥟",
     "temp": 200,
     "time": "20",
@@ -3102,7 +3102,7 @@
       "1 jaune d'œuf",
       "10 ml d'huile d'olive"
     ],
-    "description": "Voyagez en Amérique du Sud avec ces chaussons dorés. Une farce généreuse au bœuf haché et aux épices, enveloppée dans une pâte qui devient incroyablement craquante sous l'effet de la chaleur tournante.",
+    "description": "Apportez l'Argentine à votre table ! Chaussons en pâte brisée farcis de bœuf épicé, gonflés et friables en 20 minutes. L'alternative sans fumée pour des empanadas légères qui ne dégoulinent pas d'huile.",
     "instructions": [
       "Hacher finement les oignons nouveaux et les faire revenir dans une poêle avec l'huile pendant 3 minutes.",
       "Ajouter le bœuf haché et le paprika. Cuire pendant 10 minutes. Laisser refroidir la farce.",
@@ -3126,11 +3126,11 @@
   },
   {
     "slug": "filet-de-porc-et-legumes",
-    "title": "Filet de Porc et Trio de Légumes Rôtis",
+    "title": "Filet Mignon de Porc et Légumes (Plat Unique en 35 Min)",
     "emoji": "🥓",
     "temp": 190,
     "time": "35",
-    "prep_time": "2 heures 20",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "Filets de porc : 2 (environ 800 g)",
@@ -3147,7 +3147,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "Le plat complet 'tout-en-un' par excellence. Le filet de porc rôtit sur un lit de légumes de saison, permettant à ses jus savoureux d'aromatiser l'accompagnement pour un repas sain et équilibré.",
+    "description": "Le magique \"One-Pot\" de la friteuse à air. Les jus du filet mignon de porc mariné au miel s'écoulent sur les légumes en dessous, parfumant les poivrons et les courgettes tandis que la viande dore parfaitement en 35 min.",
     "instructions": [
       "Préparer la marinade : mélanger une partie de l'huile d'olive, le vinaigre, le miel, l'ail haché, le sel et le poivre.",
       "Enduire les filets de porc de marinade. Couvrir et réfrigérer pendant au moins 2 heures.",
@@ -3173,10 +3173,10 @@
   },
   {
     "slug": "costolette-agnello",
-    "title": "Côtelettes d'Agneau Express (Prêtes en 10 min !)",
+    "title": "Côtelettes d'Agneau (Ultra-Tendres en 10 Minutes)",
     "emoji": "🍖",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "10",
     "portions": "2",
     "ingredients": [
@@ -3186,7 +3186,7 @@
       "Romarin frais",
       "Sel et poivre"
     ],
-    "description": "Le secret d'un repas de Pâques réussi et sans stress. Ces côtelettes ressortent croustillantes et rosées à cœur, sans aucune fumée dans votre cuisine. Une option keto et hyperprotéinée irrésistible.",
+    "description": "Une délicatesse prête en seulement 10 minutes. La chaleur à 200°C fait fondre la graisse et crée une croûte parfumée au romarin autour de l'os, tandis que la viande d'agneau reste incroyablement juteuse et rosée.",
     "instructions": [
       "Bien sécher les côtelettes d'agneau avec du papier absorbant.",
       "Masser la viande avec l'huile en spray, l'ail haché, le romarin, le sel et le poivre.",
@@ -3210,7 +3210,7 @@
   },
   {
     "slug": "casatiello-napoletano",
-    "title": "Casatiello Napolitain (Pain Brioché de Pâques)",
+    "title": "Casatiello Napolitain (Moelleux et Rapide en 35 Minutes)",
     "emoji": "🧀",
     "temp": 160,
     "time": "35",
@@ -3225,7 +3225,7 @@
       "3 œufs crus (avec la coquille, pour décorer)",
       "Sel et beaucoup de poivre noir"
     ],
-    "description": "Le roi des tables italiennes ! Un pain brioché rustique et ultra-moelleux, généreusement garni de fromages fondants et de charcuteries fines. Une explosion de saveurs traditionnelles.",
+    "description": "Casatiello napolitano en versión rápida, dorado por fuera y suave por dentro. En la freidora de aire logra una corteza bien cocida y un relleno sabroso sin encender el horno grande. / FR: Casatiello napolitain en version rapide, doré à l’extérieur et moelleux à l’intérieur. La friteuse à air permet d’obtenir une belle croûte et une garniture généreuse sans allumer le grand four.",
     "instructions": [
       "Dissoudre la levure dans l'eau tiède. Pétrir la farine, l'eau, le saindoux, le sel et le poivre pour obtenir une pâte lisse. Laisser lever 2 heures.",
       "Étaler la pâte en rectangle (en gardant un morceau pour les croix). Répartir les charcuteries et fromages, puis rouler en boudin.",
@@ -3248,7 +3248,7 @@
   },
   {
     "slug": "mini-pastiera-napoletana",
-    "title": "Mini Pastieras (Le Dessert Culte de Pâques)",
+    "title": "Mini Pastiera Napolitaine (Dessert de Pâques en 20 Min)",
     "emoji": "🥧",
     "temp": 170,
     "time": "20",
@@ -3263,7 +3263,7 @@
       "Eau de fleur d'oranger et zeste de citron",
       "Fruits confits (facultatif)"
     ],
-    "description": "Retrouvez toute la magie de Naples en format individuel. Une pâte sablée hyper croustillante abritant un cœur fondant à la ricotta, au blé cuit et aux parfums de fleurs d'oranger.",
+    "description": "Apportez le parfum de la fleur d'oranger à table ! Les mini-pastieras cuisent parfaitement à l'air en 20 minutes : la pâte sablée reste biscuitée et non molle, la garniture dense et aromatique. Imbattables.",
     "instructions": [
       "Dans un bol, crémer la ricotta avec le sucre. Ajouter le blé cuit, les œufs, les arômes et les fruits confits.",
       "Dérouler la pâte sablée (en gardant des chutes pour le croisillon) et foncer 4 petits moules en silicone ou aluminium.",
@@ -3286,7 +3286,7 @@
   },
   {
     "slug": "mini-torta-pasqualina",
-    "title": "Mini Tourtes Pascales (Épinards et Ricotta)",
+    "title": "Mini Tourtes de Pâques (Paniers Salés Prêts en 15 Min)",
     "emoji": "🥧",
     "temp": 180,
     "time": "15",
@@ -3300,7 +3300,7 @@
       "30g de parmesan râpé",
       "Sel, poivre et muscade"
     ],
-    "description": "Une entrée végétarienne chic et rapide. Ces mini tourtes feuilletées cachent un cœur onctueux d'épinards, de ricotta et un œuf. Le croustillant de la pâte est garanti en seulement 15 minutes.",
+    "description": "Le chef-d'œuvre de Pâques en version portion individuelle ! Découvrez comment cuire rapidement 4 mini-paniers en pâte feuilletée farcis de ricotta et d'épinards, avec la surprise d'un jaune d'œuf entier cuit à la vapeur en 15 minutes.",
     "instructions": [
       "Mélanger dans un bol la ricotta, les épinards hachés, le parmesan, sel, poivre et muscade.",
       "Découper 4 grands disques de pâte feuilletée pour foncer 4 petits moules individuels (ramequins), et 4 disques plus petits pour les couvercles.",
@@ -3322,18 +3322,18 @@
   },
   {
     "slug": "hamburger-classique",
-    "title": "Le Burger Maison Parfait (Juteux et Doré)",
+    "title": "Hamburger Parfait (Juteux et Doré en 8 Minutes)",
     "emoji": "🍔",
     "temp": 190,
-    "time": "8-10",
-    "prep_time": "Non disponible",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 hamburgers de bœuf (environ 150 g chacun)",
       "20 ml d'huile d'olive extra vierge",
       "Sel et poivre noir du moulin"
     ],
-    "description": "Obtenez un brunissement digne d'un steakhouse ! L'airfryer saisit la viande pour emprisonner les sucs, garantissant un burger hyper moelleux sans les projections de graisse sur votre plaque.",
+    "description": "Fini les hamburgers secs et les poêles qui éclaboussent de graisse ! Cuits à 190°C pendant seulement 8 minutes, ces steaks de bœuf dorent à l'extérieur tout en gardant un cœur savoureux et juteux, parfaits pour vos pains.",
     "instructions": [
       "Sortir la viande du réfrigérateur quelques minutes avant la cuisson pour l'amener à température ambiante.",
       "Assaisonner les deux faces des hamburgers avec du sel et du poivre noir.",
@@ -3361,7 +3361,7 @@
     "title": "Hamburger de Bœuf Deluxe (Pain Grillé)",
     "emoji": "🍔",
     "temp": 200,
-    "time": "8-12",
+    "time": "8",
     "prep_time": "25",
     "portions": "4",
     "ingredients": [
@@ -3671,8 +3671,8 @@
     "title": "Saucisses Rôties (Cuisson Homogène)",
     "emoji": "🌭",
     "temp": 200,
-    "time": "8-10",
-    "prep_time": "Non présent",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "Saucisses de porc fraîches : 8 unités (environ 600 g)"
@@ -3869,7 +3869,7 @@
     "emoji": "🍢",
     "temp": 200,
     "time": "7",
-    "prep_time": "1 heure 5",
+    "prep_time": "65",
     "portions": "4",
     "ingredients": [
       "500 g de bœuf en cubes",
@@ -3909,7 +3909,7 @@
     "emoji": "🍢",
     "temp": 180,
     "time": "6",
-    "prep_time": "1 heure 20",
+    "prep_time": "80",
     "portions": "4",
     "ingredients": [
       "12 tranches fines de carpaccio de bœuf",
@@ -3941,7 +3941,7 @@
   },
   {
     "slug": "oeuf-a-la-scotch",
-    "title": "Œufs Écossais (Scotch Eggs Croustillants)",
+    "title": "Scotch Eggs Légers (Œufs Écossais Ultra-Croustillants)",
     "emoji": "🥚",
     "temp": 175,
     "time": "15",
@@ -3959,7 +3959,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "Une spécialité britannique revisitée sans friture. Un œuf entouré de chair à saucisse savoureuse et d'une panure dorée, pour un contraste de textures parfait en entrée ou en snack.",
+    "description": "Les fameux Scotch Eggs britanniques deviennent digestes ! Des œufs enrobés de saucisse et de panure, cuits sans friture. Une coque dure et croustillante et un intérieur moelleux en 15 minutes chrono.",
     "instructions": [
       "Mélanger la chair à saucisse avec l'ail, l'oignon en poudre, la sauge, le sel et le poivre. Diviser le mélange en 4 portions égales.",
       "Aplatir chaque portion de viande. Envelopper complètement chaque œuf dur, en pressant fermement pour sceller.",
@@ -3985,11 +3985,11 @@
   },
   {
     "slug": "amaretti-au-coco",
-    "title": "Rochers Coco Moelleux (Style Amaretti)",
+    "title": "Macarons à la Noix de Coco (Douceurs Rapides en 15 Min)",
     "emoji": "🥥",
     "temp": 150,
     "time": "15",
-    "prep_time": "Non présent",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "200 g de lait concentré sucré",
@@ -3997,7 +3997,7 @@
       "350 g de noix de coco râpée séchée",
       "Quelques gouttes d'extrait d'amande et de vanille"
     ],
-    "description": "De petites douceurs à la noix de coco avec un cœur ultra-tendre et une croûte délicatement dorée. La cuisson précise préserve toute leur humidité pour une gourmandise irrésistible.",
+    "description": "Les biscuits parfaits pour les invités inattendus. Seulement 3 ingrédients pour créer des pépites de noix de coco ultra-moelleuses et humides. La friteuse à air les grille doucement à 150°C en un quart d'heure.",
     "instructions": [
       "Dans un bol propre, monter les blancs d'œufs en neige ferme.",
       "Incorporer délicatement le lait concentré et les extraits à l'aide d'une spatule, avec un mouvement de bas en haut.",
@@ -4022,11 +4022,11 @@
   },
   {
     "slug": "avocat-frit",
-    "title": "Frites d'Avocat Panées (Avocado Fries)",
+    "title": "Frites d'Avocat (Sticks Croustillants et Crémeux en 11 Min)",
     "emoji": "🥑",
     "temp": 200,
     "time": "11",
-    "prep_time": "Non renseigné",
+    "prep_time": "",
     "portions": "2",
     "ingredients": [
       "Avocats, fermes et mûrs: 2",
@@ -4037,7 +4037,7 @@
       "Sel: q.s.",
       "Huile en spray: q.s."
     ],
-    "description": "Osez l'originalité avec ces quartiers d'avocat panés. L'intérieur reste incroyablement crémeux tandis que l'extérieur devient croustillant et épicé. Le snack 'healthy' par excellence.",
+    "description": "Avez-vous déjà mangé de l'avocat chaud ? Coupé en quartiers et pané avec du paprika et de la chapelure, l'air à 200°C crée en 11 minutes une coquille hyper croustillante renfermant un cœur beurré. L'apéro végé de l'année.",
     "instructions": [
       "Couper les avocats en deux, dénoyauter, peler et tailler en quartiers de taille égale.",
       "Préparer trois récipients pour la panure : un avec la farine et le sel, un avec les œufs battus, et un avec la chapelure mélangée aux épices.",
@@ -4061,7 +4061,7 @@
   },
   {
     "slug": "batonnets-french-toast",
-    "title": "Bâtonnets de Pain Perdu (Petit-Déjeuner Express)",
+    "title": "Bâtonnets de Pain Perdu (Petit-Déjeuner Gourmand en 10 Min)",
     "emoji": "🍞",
     "temp": 175,
     "time": "10",
@@ -4076,7 +4076,7 @@
       "3 g de cannelle en poudre",
       "Extrait de vanille"
     ],
-    "description": "Transformez votre petit-déjeuner en moment gourmet. Ces bâtonnets de pain sucré sont moelleux à souhait et ressortent de l'airfryer avec une texture parfaitement craquante en surface.",
+    "description": "Oubliez la poêle beurrée ! Trempez les bâtonnets de pain dans l'œuf et le lait et laissez-les griller dans l'air chaud pendant 10 minutes. Ils deviennent dorés à l'extérieur et moelleux à l'intérieur, parfaits à tremper dans le sirop d'érable.",
     "instructions": [
       "Détaillez chaque tranche de pain en 3 bâtonnets réguliers.",
       "Dans un récipient, fouettez les œufs avec le lait, le sirop d'érable et l'extrait de vanille.",
@@ -4101,16 +4101,16 @@
   },
   {
     "slug": "bâtonnets-de-poisson-surgelés",
-    "title": "Bâtonnets de Poisson (Croustillant Express)",
+    "title": "Bâtonnets de Poisson Surgelés (Super Crunch en 8 Minutes)",
     "emoji": "🐟",
     "temp": 200,
-    "time": "8-10",
-    "prep_time": "Non présent",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "600 g de bâtonnets de poisson panés surgelés"
     ],
-    "description": "La solution parfaite pour un repas rapide et sain. Obtenez des bâtonnets de poisson surgelés ultra-croustillants sans ajouter une seule goutte d'huile grâce à la convection rapide.",
+    "description": "Le four les assèche, la poêle les défait. La friteuse à air, en revanche, est née pour eux : en 8 minutes à 200°C, les bâtonnets surgelés (déjà préfrits) deviennent ultra-croustillants sans ajouter d'huile.",
     "instructions": [
       "Retirer les bâtonnets panés du congélateur. Ne pas décongeler au préalable.",
       "Disposer les bâtonnets dans le panier en une seule couche.",
@@ -4133,11 +4133,11 @@
   },
   {
     "slug": "fleur-doignon",
-    "title": "Fleur d'Oignon Panée (Blooming Onion)",
+    "title": "Blooming Onion (La Spectaculaire Fleur d'Oignon)",
     "emoji": "🧅",
     "temp": 200,
     "time": "25",
-    "prep_time": "2 heures 15",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "2 gros oignons jaunes",
@@ -4150,7 +4150,7 @@
       "300 ml d'eau",
       "60 g de chapelure"
     ],
-    "description": "Un apéritif spectaculaire à partager ! Cet oignon découpé en fleur s'ouvre à la cuisson, offrant des pétales panés croustillants à détacher et à tremper dans votre sauce préférée.",
+    "description": "Spectacle pur ! Le fameux oignon géant taillé en fleur et pané, rôti en 25 minutes sans les litres d'huile de la recette originale. Des pétales croustillants parfaits à détacher et à tremper entre amis.",
     "instructions": [
       "Peler les oignons et couper la partie supérieure. Pratiquer huit incisions profondes du centre vers le bas, en laissant la base intacte.",
       "Immerger les oignons dans de l'eau glacée pendant au moins 2 heures pour permettre aux pétales de s'ouvrir.",
@@ -4174,18 +4174,18 @@
   },
   {
     "slug": "filets-saumon-simples",
-    "title": "Pavé de Saumon Rôti (Peau Croustillante)",
+    "title": "Filets de Saumon (Peau Croustillante et Cœur Tendre)",
     "emoji": "🐟",
     "temp": 200,
-    "time": "8-10",
-    "prep_time": "Non présent",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 filets de saumon frais (environ 130 g chacun)",
       "Huile neutre",
       "Fleur de sel et poivre noir du moulin"
     ],
-    "description": "Découvrez la cuisson parfaite du saumon : une surface légèrement caramélisée et une chair qui reste nacrée, tendre et juteuse. Rapide, sain et riche en oméga-3.",
+    "description": "Avez-vous déjà gâché un saumon en le desséchant ? Avec 8 minutes d'air brûlant, vous obtiendrez une croûte parfaite tout en gardant la chair humide et riche en oméga-3. L'astuce infaillible des cuisiniers modernes.",
     "instructions": [
       "Sécher les filets de saumon en les tamponnant avec du papier absorbant.",
       "Badigeonner les filets avec une fine couche d'huile neutre. Assaisonner de fleur de sel et de poivre du moulin.",
@@ -4209,7 +4209,7 @@
   },
   {
     "slug": "fish-and-chips",
-    "title": "Filets de Morue Panés (Style Fish & Chips)",
+    "title": "Fish & Chips Léger (Cabillaud Très Croustillant)",
     "emoji": "🐟",
     "temp": 180,
     "time": "12",
@@ -4226,7 +4226,7 @@
       "Jus de citron",
       "Poivre noir moulu"
     ],
-    "description": "Le plaisir du pub anglais à la maison. Une panure dorée et croustillante qui protège une morue fondante, avec une touche de beurre pour une saveur authentique et gourmande.",
+    "description": "La street food la plus célèbre du Royaume-Uni, allégée mais toujours aussi gourmande ! Cabillaud en croûte épaisse et croustillante en seulement 12 minutes de cuisson à l'air, parfait avec des frites rustiques.",
     "instructions": [
       "Couper la morue en morceaux de 4 cm d'épaisseur. Éponger avec du papier absorbant pour retirer l'excès d'humidité. Poivrer.",
       "Préparer la sauce : mélanger la mayonnaise avec l'estragon ciselé et du jus de citron.",
@@ -4250,7 +4250,7 @@
   },
   {
     "slug": "focaccine-a-la-fraise",
-    "title": "Scones Moelleux aux Fraises Fraîches",
+    "title": "Scones aux Fraises (Moelleux, Parfumés et Rapides)",
     "emoji": "🍓",
     "temp": 175,
     "time": "12",
@@ -4264,7 +4264,7 @@
       "120 ml de crème fraîche épaisse",
       "2 œufs"
     ],
-    "description": "Une douceur d'inspiration anglo-saxonne. Ces scones garnis de morceaux de fraises fraîches offrent une texture légère et feuilletée, parfaits pour un brunch ou un goûter fruité.",
+    "description": "Pas besoin d'allumer le grand four pour 4 douceurs ! Ces scones anglais aux fraises explosent de moelleux en 12 minutes, parfaits pour votre petit-déjeuner ou le thé de l'après-midi.",
     "instructions": [
       "Dans un grand bol, mélanger la farine et le sucre. Incorporer le beurre en dés du bout des doigts jusqu'à obtenir une texture sableuse.",
       "Ajouter les dés de fraises et mélanger.",
@@ -4289,7 +4289,7 @@
   },
   {
     "slug": "scones-myrtilles-gingembre",
-    "title": "Scones Myrtilles et Gingembre (Peps Fruités)",
+    "title": "Scones Myrtilles et Gingembre (Gourmands en 12 Min)",
     "emoji": "🫐",
     "temp": 175,
     "time": "12",
@@ -4307,7 +4307,7 @@
       "2 œufs",
       "4 ml d'extrait de vanille"
     ],
-    "description": "L'alliance audacieuse de la douceur des myrtilles et de la chaleur du gingembre. Servez ces scones tièdes pour profiter de leur texture sablée et de leur parfum envoûtant.",
+    "description": "Étonnez tout le monde à l'heure du thé ! Ces Scones anglais ultra-moelleux se préparent dans un bol et cuisent en seulement 12 minutes. L'acidité de la myrtille et le piquant du gingembre créent un duo divin.",
     "instructions": [
       "Dans un saladier, tamiser la farine, le sel, le sucre et la levure chimique.",
       "Incorporer le beurre froid jusqu'à obtenir une consistance sableuse. Ajouter les myrtilles et le gingembre râpé.",
@@ -4331,7 +4331,7 @@
   },
   {
     "slug": "crevettes-bacon",
-    "title": "Crevettes au Bacon (Terre & Mer Croustillant)",
+    "title": "Crevettes au Bacon (L'Apéritif Surf & Turf Ultime)",
     "emoji": "🍤",
     "temp": 160,
     "time": "16",
@@ -4344,7 +4344,7 @@
       "2 g de paprika et 2 g d'oignon en poudre",
       "1 g de poivre noir moulu"
     ],
-    "description": "Le mariage irrésistible du bacon fumé et de la finesse de la crevette. À la cuisson, le bacon devient croustillant et infuse les crevettes de ses saveurs salées.",
+    "description": "L'apéritif parfait ! Queues de crevettes enrobées de lard : la friteuse à air dégraisse le bacon, le rendant super croustillant en 16 minutes, tandis que la crevette reste tendre et douce à cœur.",
     "instructions": [
       "Mélanger l'ail en poudre, le paprika, l'oignon en poudre et le poivre. En assaisonner les crevettes.",
       "Couper chaque tranche de bacon en deux dans le sens de la longueur.",
@@ -4369,7 +4369,7 @@
   },
   {
     "slug": "crevettes-coco",
-    "title": "Crevettes Panées à la Noix de Coco",
+    "title": "Crevettes au Coco (Panure Tropicale Extra Croustillante)",
     "emoji": "🥥",
     "temp": 175,
     "time": "8",
@@ -4386,7 +4386,7 @@
       "Huile en spray",
       "Arômes au choix"
     ],
-    "description": "Une évasion exotique en quelques minutes. Ces crevettes enrobées de noix de coco offrent un contraste sucré-salé unique et une texture incroyablement croquante.",
+    "description": "Une croûte exotique qui croque sous la dent ! Les crevettes panées à la noix de coco râpée cuisent en seulement 8 minutes. Un finger-food élégant, léger et parfait pour tremper dans des sauces aigre-douces.",
     "instructions": [
       "Dans un premier récipient, mélanger la farine, le sel et les arômes choisis.",
       "Dans un deuxième récipient, battre les œufs avec le lait. Dans un troisième, mélanger la chapelure et la noix de coco râpée.",
@@ -4409,7 +4409,7 @@
   },
   {
     "slug": "crevettes-croustillantes-curry",
-    "title": "Crevettes Croustillantes au Curry",
+    "title": "Crevettes au Curry (Double Panure Dorée en 10 Min)",
     "emoji": "🦐",
     "temp": 170,
     "time": "10",
@@ -4423,7 +4423,7 @@
       "3 cuillères à soupe de curry en poudre",
       "1 cuillère à soupe d'huile végétale"
     ],
-    "description": "Double panure à la farine de maïs et au curry pour un maximum de croquant ! Un apéritif relevé et original qui change des classiques, prêt en un clin d'œil.",
+    "description": "Vous cherchez un snack épicé et irrésistible ? La double panure à la farine de maïs et au curry rend ces crevettes dorées et hyper-croustillantes à la friteuse à air, avec très peu d'huile.",
     "instructions": [
       "Préparer trois récipients : un avec les œufs battus, un avec la farine de blé mélangée au curry en poudre, et un avec la farine de maïs.",
       "Passer successivement chaque crevette dans l'œuf battu, puis dans le mélange de farine et curry, et enfin dans la farine de maïs.",
@@ -4447,7 +4447,7 @@
   },
   {
     "slug": "morue-au-curry",
-    "title": "Cabillaud Curry et Crème de Coco",
+    "title": "Cabillaud Curry et Coco (Repas Exotique en 10 Minutes)",
     "emoji": "🥘",
     "temp": 200,
     "time": "10",
@@ -4459,7 +4459,7 @@
       "15 g de noix de coco râpée",
       "200 ml de crème de coco"
     ],
-    "description": "Une recette onctueuse et légère. Les filets de cabillaud sont nappés d'une sauce parfumée au curry et à la coco pour un résultat fondant et riche en saveurs orientales.",
+    "description": "Un dîner exotique à applaudir en 10 minutes chrono ! Filets de cabillaud juteux cuits à haute température dans un bain parfumé de lait de coco et de curry doux. Facile, sain et percutant.",
     "instructions": [
       "Badigeonner les filets de cabillaud avec la pâte de curry.",
       "Dans une casserole, chauffer le reste de la pâte de curry avec la crème de coco. Saler et poivrer.",
@@ -4483,7 +4483,7 @@
   },
   {
     "slug": "morue-croute-panko",
-    "title": "Filets de Cabillaud en Croûte de Panko",
+    "title": "Cabillaud en Croûte de Panko (Raffiné et Croustillant)",
     "emoji": "🐟",
     "temp": 170,
     "time": "10",
@@ -4497,7 +4497,7 @@
       "Zeste et jus d'un citron",
       "Sel, poivre noir fraîchement moulu"
     ],
-    "description": "Le secret du croustillant japonais ! Une croûte légère au panko, citron et persil qui vient protéger la finesse du cabillaud pour un plat digne d'un chef.",
+    "description": "Oubliez le banal filet de poisson sans goût ! Créez une croûte dorée, beurrée et parfumée au citron en 10 minutes avec du Panko japonais. Un plat principal léger et follement croquant.",
     "instructions": [
       "Assaisonner de sel les deux faces de chaque filet de morue.",
       "Dans un bol, mélanger la chapelure panko, le beurre fondu, le persil, le zeste et le jus de citron. Poivrer.",
@@ -4522,7 +4522,7 @@
   },
   {
     "slug": "mini-tarte-pommes",
-    "title": "Chaussons aux Pommes (Cœur Fondant)",
+    "title": "Mini Tartes aux Pommes (Cœur Chaud en 10 Minutes)",
     "emoji": "🥧",
     "temp": 175,
     "time": "10",
@@ -4538,7 +4538,7 @@
       "Pâte brisée ou feuilletée : 1 disque",
       "Dorure : 1 œuf battu avec 5 ml de lait"
     ],
-    "description": "Le goûter réconfortant par excellence. Une pâte dorée et croustillante qui renferme des pommes fondantes parfumées à la cannelle. Idéal pour les petits et les grands.",
+    "description": "Mini tartes aux pommes individuelles, dorées et parfumées. Une version rapide et réconfortante à la friteuse à air, avec une garniture fondante et une pâte bien cuite.",
     "instructions": [
       "Dans une casserole, faites fondre le beurre. Ajoutez les dés de pommes, le sucre et les épices. Faites cuire jusqu'à ce que les pommes ramollissent.",
       "Découpez deux cercles dans la pâte et placez la garniture aux pommes au centre de chacun.",
@@ -4561,7 +4561,7 @@
   },
   {
     "slug": "morsures-mozzarella-frites",
-    "title": "Bouchées de Mozzarella (Mozzarella Sticks)",
+    "title": "Bouchées de Mozzarella (Cubes Fondants à l'Air)",
     "emoji": "🧀",
     "temp": 175,
     "time": "8",
@@ -4576,7 +4576,7 @@
       "Chapelure : 70 g ; Persil séché",
       "Huile en spray"
     ],
-    "description": "Du fromage, du fromage et encore du fromage ! Ces bouchées panées cachent un cœur de mozzarella filant, obtenues sans aucune friture pour plus de légèreté.",
+    "description": "Vous connaissez ces délicieuses bouchées au fromage frites ? Préparez chez vous ces savoureux cubes de fromage doublement panés ! Le passage au congélateur empêche la mozzarella de couler, garantissant des cubes dorés en 8 minutes.",
     "instructions": [
       "Détailler chaque bâtonnet de fromage en morceaux réguliers.",
       "Préparer trois récipients. Le premier : mélanger la farine, la fécule de maïs, le sel et le poivre. Le deuxième : battre les œufs avec le lait. Le troisième : mélanger la chapelure et le persil.",
@@ -4602,7 +4602,7 @@
   },
   {
     "slug": "muffins-cafe-streusel",
-    "title": "Muffins au Café et Cacao (Texture Moelleuse)",
+    "title": "Muffins au Café et Cacao (Doux Réveil)",
     "emoji": "☕",
     "temp": 150,
     "time": "15",
@@ -4620,7 +4620,7 @@
       "80 ml d'huile végétale",
       "5 ml d'extrait de vanille"
     ],
-    "description": "L'alliance parfaite du réveil ! Ces muffins marient l'intensité du café et la gourmandise du cacao sous une texture aérienne. La cuisson à l'airfryer leur confère un dôme parfaitement saisi et un cœur fondant.",
+    "description": "Petit-déjeuner chaud sans effort ! Grâce à la friteuse à air, la levée pousse ces muffins au cacao vers le haut, créant un dôme parfait en 15 minutes. Ultra-moelleux à l'intérieur.",
     "instructions": [
       "Dans un récipient, tamiser et mélanger les ingrédients secs : farine, cacao, sucre, levure chimique, bicarbonate de soude et café en poudre.",
       "Dans un second récipient, fouetter l'œuf avec le lait, l'huile végétale et l'extrait de vanille.",
@@ -4645,7 +4645,7 @@
   },
   {
     "slug": "muffins-aux-pépites-de-chocolat",
-    "title": "Muffins aux Pépites de Chocolat (Extra Moelleux)",
+    "title": "Muffins aux Pépites de Chocolat (Dôme Parfait)",
     "emoji": "🧁",
     "temp": 170,
     "time": "20",
@@ -4660,7 +4660,7 @@
       "120 ml de lait",
       "1/2 sachet de levure chimique"
     ],
-    "description": "Le grand classique indémodable. Découvrez comment obtenir des muffins bombés avec des pépites de chocolat fondantes. La chaleur pulsée garantit une cuisson homogène pour un résultat digne d'une pâtisserie.",
+    "description": "Comment obtenir le fameux 'dôme' haut et doré des muffins de boulangerie ? Le tourbillon d'air de la friteuse pousse la levée vers le haut de façon explosive en 20 minutes.",
     "instructions": [
       "Dans un récipient, mélanger le lait, le beurre fondu et les œufs battus.",
       "Dans un second récipient, mélanger la farine, le sucre, la levure chimique et les pépites de chocolat.",
@@ -4685,7 +4685,7 @@
   },
   {
     "slug": "filet-de-dorade-grillee-tomates",
-    "title": "Filets de Dorade aux Olives et Tomates",
+    "title": "Dorade Grillée (Poisson Léger et Sans Fumée à la Maison)",
     "emoji": "🐟",
     "temp": 200,
     "time": "7",
@@ -4701,7 +4701,7 @@
       "Jus d'un demi-citron",
       "Sel et poivre"
     ],
-    "description": "Une recette méditerranéenne saine et colorée. La dorade est grillée à la perfection, accompagnée d'une sauce vierge aux tomates cerises, olives et herbes fraîches qui sublime la finesse du poisson.",
+    "description": "Une grillade de poisson sans fumée à la maison ! Les filets de dorade cuisent à 200° en seulement 7 minutes : la peau forme une légère croûte tandis que les jus restent scellés.",
     "instructions": [
       "Préparer la sauce : mélanger les dés de tomates, les olives émincées, l'ail haché et le persil ciselé. Assaisonner avec le jus de citron et l'huile d'olive.",
       "Sécher les filets de dorade avec du papier absorbant. Badigeonner d'huile, saler et poivrer.",
@@ -4725,7 +4725,7 @@
   },
   {
     "slug": "poisson-chat-cajun",
-    "title": "Poisson Style Cajun (Saveurs de Louisiane)",
+    "title": "Poisson Épicé Cajun (Croustillant en 7 Minutes)",
     "emoji": "🐟",
     "temp": 175,
     "time": "7",
@@ -4739,7 +4739,7 @@
       "1 pincée de poivre de Cayenne",
       "Huile de cuisson en spray"
     ],
-    "description": "Cap sur la Nouvelle-Orléans ! Ces filets de poisson sont enrobés d'un mélange d'épices cajun relevé, créant une croûte sombre et parfumée tandis que la chair reste tendre et juteuse.",
+    "description": "Un regain d'énergie venu de Louisiane. Les filets de poisson (idéalement du poisson-chat ou du cabillaud épais) recouverts d'épices Cajun cuisent en 7 minutes, formant une croûte intense, rouge et savoureuse sans friture.",
     "instructions": [
       "Sécher les filets de poisson avec du papier absorbant.",
       "Mélanger le paprika, l'ail en poudre, l'oignon en poudre, le thym, le basilic, l'origan et le poivre de Cayenne.",
@@ -4764,7 +4764,7 @@
   },
   {
     "slug": "pizza-matinale-oeuf-jambon",
-    "title": "Pizza Petit-Déjeuner (Œuf et Jambon Fumé)",
+    "title": "Pizza du Petit-Déjeuner (Œuf au Jaune Coulant en 8 Min)",
     "emoji": "🍕",
     "temp": 175,
     "time": "8",
@@ -4778,7 +4778,7 @@
       "15 ml d'huile d'olive",
       "Coriandre fraîche"
     ],
-    "description": "Une façon originale de commencer la journée. Une base croustillante garnie de mozzarella fondante et de jambon fumé, le tout couronné d'un œuf au jaune encore coulant.",
+    "description": "Le petit-déjeuner (ou brunch) des champions ! En seulement 8 minutes, la base de la pizza devient croustillante, la mozzarella fond et l'œuf cuit à la coque, prêt à être rompu. Parfait avec une base prête à l'emploi.",
     "instructions": [
       "Badigeonner la surface de la base à pizza avec l'huile d'olive.",
       "Répartir la mozzarella et le jambon fumé coupé en morceaux.",
@@ -4804,7 +4804,7 @@
   },
   {
     "slug": "saumon-beurre-citron",
-    "title": "Saumon au Beurre Citronné (Nappage Onctueux)",
+    "title": "Saumon Beurre et Citron (Raffiné en 8 Minutes)",
     "emoji": "🐟",
     "temp": 175,
     "time": "8",
@@ -4818,7 +4818,7 @@
       "8 ml de sauce Worcestershire",
       "Sel et poivre"
     ],
-    "description": "La simplicité élégante. Ces filets de saumon sont rôtis jusqu'à obtenir une texture nacrée, puis nappés d'une sauce veloutée au beurre et au citron pour une explosion de fraîcheur en bouche.",
+    "description": "Un dîner romantique de dernière minute ? Cuisez le saumon à l'air en 8 minutes pour le garder rose et très moelleux, puis nappez-le de cette sauce française au beurre fondu, à l'ail et au citron.",
     "instructions": [
       "Assaisonner les filets de saumon avec du sel et du poivre.",
       "Préchauffer l'appareil à 175°C. Vaporiser le panier d'huile et y déposer les filets de saumon.",
@@ -4843,7 +4843,7 @@
   },
   {
     "slug": "saumon-tomate-concombre",
-    "title": "Pavé de Saumon et Salade Fraîcheur",
+    "title": "Fraîcheur de Saumon (Plat Fit en 9 Minutes)",
     "emoji": "🐟",
     "temp": 200,
     "time": "9",
@@ -4861,7 +4861,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "Un repas complet, léger et riche en protéines. Le saumon grillé s'accompagne d'une salade croquante de tomates cerises, concombres et oignons rouges pour un contraste chaud-froid irrésistible.",
+    "description": "Le déjeuner fit parfait pour l'été. Pendant que la friteuse cuit le saumon en créant une légère croûte en surface en 9 minutes, vous préparez une salade croquante et rafraîchissante en accompagnement. Zéro tracas.",
     "instructions": [
       "Badigeonner les filets de saumon avec une partie de l'huile d'olive. Saler et poivrer.",
       "Préchauffer l'appareil. Placer les filets dans le panier et cuire à 200°C pendant 7 à 9 minutes.",
@@ -4886,7 +4886,7 @@
   },
   {
     "slug": "saumon-glace-teriyaki",
-    "title": "Saumon Glacé Teriyaki et Orange",
+    "title": "Saumon Teriyaki à l'Orange (Glaçage Oriental en 8 Minutes)",
     "emoji": "🍣",
     "temp": 175,
     "time": "8",
@@ -4902,7 +4902,7 @@
       "20 ml d'huile végétale",
       "Poivre blanc"
     ],
-    "description": "Un voyage sensoriel asiatisant. Le saumon est laqué avec un mélange de sauce soja et de jus d'orange qui caramélise délicieusement sous la chaleur, offrant un fini brillant et sucré-salé.",
+    "description": "Un glaçage brillant, collant et au goût oriental intense. L'astuce ? Cuire le saumon délicatement (175°C) en 8 minutes et appliquer la réduction Teriyaki à l'orange uniquement une fois la cuisson terminée.",
     "instructions": [
       "Dans une casserole, mélanger la sauce soja, le sucre, l'ail, le gingembre et le jus d'orange. Porter à ébullition et réduire de moitié jusqu'à l'obtention d'un glaçage.",
       "Laisser refroidir le glaçage à température ambiante.",
@@ -4926,7 +4926,7 @@
   },
   {
     "slug": "sandwich-muffin-petit-dejeuner",
-    "title": "Muffin Anglais (Bacon, Œuf et Fromage)",
+    "title": "Sandwich Muffin Anglais (Petit-Déjeuner Américain Rapide)",
     "emoji": "🥪",
     "temp": 160,
     "time": "10",
@@ -4940,7 +4940,7 @@
       "Eau chaude",
       "Sel et poivre noir du moulin"
     ],
-    "description": "Le mythique sandwich matinal version maison ! Un muffin anglais toasté, du bacon croustillant, un œuf poché à la perfection et du fromage fondu pour un réveil gourmand et protéiné.",
+    "description": "Oubliez le drive ! Le classique sandwich du petit-déjeuner américain fait maison en 10 minutes. L'astuce de l'eau chaude dans le ramequin cuit l'œuf à la vapeur pendant que le pain grille.",
     "instructions": [
       "Vaporiser d'huile deux ramequins. Les placer dans le panier préchauffé à 160°C.",
       "Garnir deux moitiés de muffin avec le fromage et le bacon. Placer les quatre moitiés de muffin dans le panier.",
@@ -5218,8 +5218,8 @@
     "title": "Galettes de Poisson (Dorées et Tendres)",
     "emoji": "🐟",
     "temp": 200,
-    "time": "12-15",
-    "prep_time": "Non présent",
+    "time": "12",
+    "prep_time": "",
     "portions": "2",
     "ingredients": [
       "2 galettes de poisson panées surgelées (environ 150 g chacune)"
@@ -5457,7 +5457,7 @@
   },
   {
     "slug": "muffins-fromage-mais",
-    "title": "Muffins Salés Maïs et Cheddar Fondu",
+    "title": "Muffins Salés Fromage et Maïs (Cœur Fondant en 15 Min)",
     "emoji": "🧁",
     "temp": 160,
     "time": "15",
@@ -5476,7 +5476,7 @@
       "Cheddar râpé: 120 g",
       "Échalotes, ciselées: 3"
     ],
-    "description": "Une gourmandise salée à savourer tiède. Ces muffins au maïs cachent un cœur de cheddar fondant et le peps des échalotes, parfaits pour un brunch original ou un en-cas sur le pouce.",
+    "description": "Le classique pain de maïs américain transformé en gâteaux salés individuels. Le cheddar fond dans la pâte pendant que la chaleur les fait lever à la perfection en 15 minutes, pour un en-cas exceptionnel.",
     "instructions": [
       "Dans un grand récipient, tamiser les farines, le sucre, la levure chimique et le sel.",
       "Dans un autre récipient, battre l'œuf avec le lait et le beurre fondu. Verser le mélange liquide sur les ingrédients secs et mélanger brièvement.",
@@ -5501,7 +5501,7 @@
   },
   {
     "slug": "muffins-citron-myrtilles",
-    "title": "Muffins Citron-Myrtilles (Végan & Sans Lactose)",
+    "title": "Muffins Coco et Myrtilles (Légers et Moelleux en 15 Min)",
     "emoji": "🧁",
     "temp": 150,
     "time": "15",
@@ -5519,7 +5519,7 @@
       "Zeste d'un citron",
       "80 g de myrtilles fraîches"
     ],
-    "description": "Légèreté et fraîcheur au rendez-vous. Ces muffins sans œufs ni produits laitiers utilisent l'onctuosité du lait de coco pour sublimer l'alliance classique du citron et des myrtilles juteuses.",
+    "description": "Une douceur accessible à tous : entièrement vegan, sans lactose et hyper moelleux ! Le lait de coco lie la pâte tandis que la friteuse les cuit doucement à 150°C en 15 minutes.",
     "instructions": [
       "Dans un récipient, fouetter le lait de coco, l'huile de coco, le sucre, le zeste et le jus de citron.",
       "Dans un autre récipient, mélanger la farine, la levure chimique, le bicarbonate de soude et le sel.",
@@ -5546,7 +5546,7 @@
   },
   {
     "slug": "pain-banane-noix",
-    "title": "Banana Bread aux Noix (Crousti-Moelleux)",
+    "title": "Mini Banana Bread aux Noix (Le Cake Rapide)",
     "emoji": "🍞",
     "temp": 150,
     "time": "40",
@@ -5562,7 +5562,7 @@
       "3 g de bicarbonate de soude",
       "1 pincée de sel"
     ],
-    "description": "Le réconfort ultime en une tranche. Ce cake à la banane offre une mie dense et tendre, ponctuée par le croquant généreux des noix torréfiées. Idéal pour un petit-déjeuner nutritif.",
+    "description": "Vous avez deux bananes très mûres à écouler ? Créez un mini cake parfait ! Cuit à basse température (150°C) pendant 40 minutes, le banana bread reste incroyablement humide à l'intérieur et doré à l'extérieur.",
     "instructions": [
       "Écrasez la pulpe des bananes à la fourchette.",
       "Crémez le beurre avec le sucre. Incorporez l'œuf préalablement battu.",
@@ -5587,10 +5587,10 @@
   },
   {
     "slug": "asperges-roties-simples",
-    "title": "Asperges Rôties au Naturel (Pointes Croustillantes)",
+    "title": "Asperges Rôties (Accompagnement Parfait en 6 Minutes)",
     "emoji": "🥗",
     "temp": 200,
-    "time": "6-8",
+    "time": "6",
     "prep_time": "2",
     "portions": "2",
     "ingredients": [
@@ -5598,7 +5598,7 @@
       "3 cuillères à café d'huile d'olive extra vierge",
       "Sel de mer et poivre noir fraîchement moulu"
     ],
-    "description": "La quintessence du printemps en quelques minutes. La cuisson rapide à haute température rend les pointes d'asperges délicieusement croquantes tout en préservant la tendreté de la tige.",
+    "description": "La meilleure façon absolue de cuire les asperges ! Oubliez l'ébullition qui les rend molles : en 6 minutes à l'air à 200°C, les pointes deviennent ultra-croustillantes tandis que les tiges restent vertes et fermes.",
     "instructions": [
       "Laver les asperges. Retirer la partie inférieure et dure de la tige.",
       "Placer les asperges dans un récipient et arroser d'huile d'olive.",
@@ -5623,7 +5623,7 @@
   },
   {
     "slug": "asperges-enroulees-jambon",
-    "title": "Fagots d'Asperges au Jambon Cru",
+    "title": "Asperges au Jambon Cru (Entrée Gourmet en 10 Minutes)",
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
@@ -5635,7 +5635,7 @@
       "15 ml d'huile d'olive extra vierge",
       "Sel et poivre noir du moulin"
     ],
-    "description": "Un mariage chic et savoureux. Les asperges sont enveloppées dans des tranches de jambon cru qui deviennent ultra-croustillantes à la cuisson, offrant un contraste parfait avec le cœur tendre des légumes.",
+    "description": "Asperges vertes enroulées de jambon cru, prêtes en quelques minutes à la friteuse à air. La pointe reste tendre tandis que le jambon devient légèrement croustillant, pour une entrée simple et élégante.",
     "instructions": [
       "Assaisonner les asperges, préalablement nettoyées et parées, avec du poivre et une pincée de sel.",
       "Enrouler fermement une tranche de jambon cru autour de chaque asperge, en partant de la pointe vers la base.",
@@ -5661,7 +5661,7 @@
   },
   {
     "slug": "bagel-vegetariens",
-    "title": "Bagel aux Légumes Grillés et Moutarde Douce",
+    "title": "Bagel Végétarien (Légumes Grillés Faciles en 17 Min)",
     "emoji": "🥯",
     "temp": 200,
     "time": "17",
@@ -5677,7 +5677,7 @@
       "2 cuillères à soupe d'huile d'olive",
       "1 pincée d'origan"
     ],
-    "description": "Un sandwich chaud généreux et sain. Ce bagel croustillant est garni de légumes grillés à point et d'une crème de fromage onctueuse relevée d'une pointe de moutarde.",
+    "description": "Utilisez votre friteuse à air comme un super grille-pain ! Grillez poivrons et champignons en quelques minutes, puis toastez les bagels et garnissez-les pour un déjeuner végétarien sain, coloré et savoureux.",
     "instructions": [
       "Épépiner les poivrons, retirer les parties blanches et les couper en lanières. Émincer les champignons.",
       "Mélanger les légumes avec l'huile d'olive et l'origan.",
@@ -5701,7 +5701,7 @@
   },
   {
     "slug": "morceaux-chou-fleur-sauce-ranch",
-    "title": "Chou-Fleur Pané (Façon Buffalo Wings)",
+    "title": "Ailes de Chou-Fleur (Bouchées Épicées au Chou-Fleur)",
     "emoji": "🥦",
     "temp": 170,
     "time": "27",
@@ -5719,7 +5719,7 @@
       "Paprika",
       "Sel"
     ],
-    "description": "L'alternative végétarienne bluffante ! Ces bouchées de chou-fleur sont enrobées d'une panure craquante puis nappées d'une sauce piquante. À tremper sans modération dans une sauce fraîche.",
+    "description": "Les fausses ailes de poulet qui rendront tout le monde fou. Des fleurettes de chou-fleur enrobées de pâte, panées au panko et glacées de sauce Buffalo épicée. L'alternative végé parfaite en 27 minutes.",
     "instructions": [
       "Dans un grand bol, mélanger la farine, la poudre d'oignon, la poudre d'ail, le paprika et le sel. Ajouter progressivement le lait en fouettant pour obtenir une pâte épaisse et homogène.",
       "Verser la chapelure panko dans une assiette creuse.",
@@ -5744,7 +5744,7 @@
   },
   {
     "slug": "brocolis-rôtis-ail",
-    "title": "Brocolis Rôtis à l'Ail et aux Épices",
+    "title": "Brocoli à l'Ail (Doré)",
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
@@ -5757,7 +5757,7 @@
       "4 g de sel fin",
       "1 g de poivre noir en poudre"
     ],
-    "description": "Redécouvrez le brocoli ! Rôti à chaleur sèche, il développe des arômes noisette. L'ail et les épices infusent chaque fleurette pour un accompagnement sain et plein de caractère.",
+    "description": "Si vous détestez l'odeur du brocoli bouilli, cette recette va vous sauver. Cuit à l'air à basse température (150°C) pendant 10 minutes, le brocoli rôtit en gardant son croquant et sa saveur intense.",
     "instructions": [
       "Dans un bol, mélanger les fleurettes de brocoli avec l'huile d'olive, l'ail en poudre, le sel et le poivre.",
       "Disposer les fleurettes de brocoli en une seule couche.",
@@ -5782,7 +5782,7 @@
   },
   {
     "slug": "carottes-soja-miel",
-    "title": "Carottes Nouvelles Glacées Soja-Miel",
+    "title": "Carottes Glacées Soja et Miel (Aigres-Douces)",
     "emoji": "🥕",
     "temp": 200,
     "time": "13",
@@ -5794,7 +5794,7 @@
       "10 ml de miel liquide",
       "10 ml de sauce soja"
     ],
-    "description": "Une gourmandise potagère. Ces carottes sont laquées d'une sauce aigre-douce qui caramélise sous l'air chaud, créant un en-cas ou un accompagnement brillant et fondant.",
+    "description": "Les mini-carottes se transforment ! La marinade soja et miel caramélise instantanément à 200°C dans la friteuse, créant un accompagnement aigre-doux à la croûte irrésistible en 13 min.",
     "instructions": [
       "Laver et sécher soigneusement les carottes.",
       "Dans un bol, mélanger les carottes avec l'huile d'olive, le miel et la sauce soja jusqu'à ce qu'elles soient uniformément enrobées.",
@@ -5818,7 +5818,7 @@
   },
   {
     "slug": "carottes-roties-miel",
-    "title": "Carottes Caramélisées au Miel et Thym",
+    "title": "Carottes Rôties Miel et Thym (Caramélisées et Parfumées)",
     "emoji": "🥕",
     "temp": 200,
     "time": "13",
@@ -5832,7 +5832,7 @@
       "Sel",
       "Poivre noir moulu"
     ],
-    "description": "Tendres à cœur et délicatement dorées. Ces carottes entières rôties exhalent le parfum du thym frais, souligné par la douceur du miel pour un résultat rustique et élégant.",
+    "description": "La chaleur enveloppante de la friteuse sublime la douceur naturelle des carottes qui, glacées au miel et parfumées au thym, deviennent un accompagnement automnal rôti ultra-tendre en 13 minutes.",
     "instructions": [
       "Nettoyer les carottes sans les peler et bien les sécher.",
       "Dans un bol, mélanger les carottes avec le miel, l'huile d'olive et le thym effeuillé.",
@@ -5856,7 +5856,7 @@
   },
   {
     "slug": "chou-fleur-curcuma",
-    "title": "Chou-Fleur Doré au Curcuma",
+    "title": "Chou-fleur au Curcuma (Épicé, Doré)",
     "emoji": "🥦",
     "temp": 150,
     "time": "10",
@@ -5871,7 +5871,7 @@
       "4 g de sel",
       "Poivre noir moulu (au goût)"
     ],
-    "description": "Apportez de la couleur à votre table ! Les fleurettes de chou-fleur se parent d'une robe jaune éclatante et de saveurs orientales, restant tendres tout en offrant une surface joliment grillée.",
+    "description": "Une explosion de couleur et d'antioxydants. Le curcuma colore en or les fleurettes de chou-fleur qui cuisent super vite à 150°C (10 min). Sain, anti-inflammatoire et follement croustillant.",
     "instructions": [
       "Dans un bol, mélanger les fleurettes de chou-fleur avec l'huile d'olive jusqu'à ce qu'elles soient bien enrobées.",
       "Ajouter le curcuma, l'ail en poudre, l'oignon en poudre, le sel et le poivre. Mélanger pour bien répartir les assaisonnements.",
@@ -5896,7 +5896,7 @@
   },
   {
     "slug": "chou-fleur-sauce-tahini",
-    "title": "Chou-Fleur Rôti et Sauce Tahini Onctueuse",
+    "title": "Chou-fleur Rôti et Tahini (Saveur Orientale)",
     "emoji": "🥦",
     "temp": 180,
     "time": "15",
@@ -5910,7 +5910,7 @@
       "Sel",
       "Poivre noir du moulin"
     ],
-    "description": "Un délice d'inspiration levantine. Le chou-fleur rôti est servi avec une sauce veloutée au sésame, citron et huile d'olive. Un contraste de saveurs riche et satisfaisant.",
+    "description": "Transformez le chou-fleur en un plat de restaurant du Moyen-Orient ! Les fleurettes rôties à l'air deviennent dorées et savoureuses en 15 minutes, parfaites à napper de sauce tahini crémeuse et citronnée.",
     "instructions": [
       "Retirer les feuilles et la base dure du chou-fleur. Détailler en fleurettes et les placer dans un grand bol.",
       "Arroser les fleurettes avec l'huile d'olive, saler et poivrer. Mélanger pour enrober uniformément.",
@@ -5937,10 +5937,10 @@
   },
   {
     "slug": "chips-de-pommes-de-terre-croquantes",
-    "title": "Chips Maison Ultra-Croustillantes",
+    "title": "Chips de Pommes de Terre (Légères et Croustillantes en 23 Min)",
     "emoji": "🥔",
     "temp": 165,
-    "time": "23-26",
+    "time": "23",
     "prep_time": "40",
     "portions": "4",
     "ingredients": [
@@ -5950,7 +5950,7 @@
       "2 cuillères à soupe d'huile d'olive extra vierge",
       "Poivre noir"
     ],
-    "description": "Le plaisir de la chips, la légèreté en plus. Obtenez des tranches de pommes de terre dorées et craquantes avec un minimum d'huile. Parfait pour un apéro sain sans culpabilité.",
+    "description": "Fini les chips en sachet pleines de graisse ! Découvrez le secret de la mandoline et du trempage salé pour préparer des chips dorées et ultra-croustillantes dans votre friteuse à air. Le snack sain parfait.",
     "instructions": [
       "Dissolvez le sel dans l'eau froide dans un grand récipient.",
       "Lavez les pommes de terre. Tranchez-les à la mandoline à une épaisseur de 1,5 mm. La peau peut être conservée.",
@@ -5975,10 +5975,10 @@
   },
   {
     "slug": "champignons-rôtis",
-    "title": "Poêlée de Champignons Rôtis (Chaleur Sèche)",
+    "title": "Champignons Rôtis (Fermes et Savoureux en 10 Minutes)",
     "emoji": "🍄",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -5988,7 +5988,7 @@
       "Poivre noir fraîchement moulu",
       "Persil frais haché (facultatif)"
     ],
-    "description": "Découvrez des champignons charnus et dorés, sans l'excès d'eau habituel. La cuisson à chaleur tournante concentre les saveurs boisées pour un accompagnement savoureux.",
+    "description": "Arrêtez de faire sauter les champignons jusqu'à ce qu'ils deviennent mous et aqueux. Avec 10 minutes à 200°C à l'air, vous obtiendrez des champignons rôtis fermes et savoureux, saisis à l'extérieur et juteux à l'intérieur.",
     "instructions": [
       "Nettoyer les champignons avec un chiffon humide ou du papier absorbant pour éliminer tout résidu de terre.",
       "Couper les champignons en deux ou en quatre, en veillant à ce que les morceaux soient de taille uniforme.",
@@ -6013,7 +6013,7 @@
   },
   {
     "slug": "aubergines-roties-simples",
-    "title": "Tranches d'Aubergines Épicées",
+    "title": "Aubergines Rôties (Épicées et Légères en 10 Min)",
     "emoji": "🍆",
     "temp": 200,
     "time": "10",
@@ -6027,7 +6027,7 @@
       "2 g de cumin moulu",
       "Sel et poivre noir, q.s."
     ],
-    "description": "Une recette simple pour transformer l'aubergine. Relevées d'un mélange d'épices, ces tranches deviennent fondantes et parfumées, prêtes à accompagner tous vos plats d'été.",
+    "description": "Fini les aubergines grasses qui absorbent toute l'huile ! Cette technique à 200°C les rend dorées et épicées en seulement 10 minutes avec un filet d'huile. La base parfaite pour des salades ou comme accompagnement keto.",
     "instructions": [
       "Lavez et pelez partiellement l'aubergine. Coupez-la en tranches d'environ 1 cm d'épaisseur.",
       "Dans un bol, mélangez l'huile d'olive, l'ail en poudre, l'oignon en poudre, le cumin, le sel et le poivre.",
@@ -6051,7 +6051,7 @@
   },
   {
     "slug": "aubergines-grillees-pesto",
-    "title": "Aubergines Fondantes au Pesto",
+    "title": "Aubergines Grillées au Pesto (Fondantes en 27 Min)",
     "emoji": "🍆",
     "temp": 170,
     "time": "27",
@@ -6063,7 +6063,7 @@
       "60 ml d'huile d'olive extra vierge",
       "Sel et poivre noir du moulin"
     ],
-    "description": "Le goût de l'Italie dans votre assiette. Ces aubergines cuites lentement sont nappées de pesto de basilic frais en fin de cuisson pour préserver tous les arômes des herbes.",
+    "description": "Une explosion de saveur méditerranéenne ! Des aubergines rôties lentement à l'air jusqu'à devenir fondantes comme du beurre, puis glacées au pesto de basilic frais. Un accompagnement frais et élégant qui fleure bon l'été.",
     "instructions": [
       "Rincer les aubergines et les couper en tranches de 0,5 cm d'épaisseur.",
       "Badigeonner les deux côtés des tranches avec l'huile d'olive. Saler et poivrer.",
@@ -6088,7 +6088,7 @@
   },
   {
     "slug": "aubergines-farcees-mozzarella",
-    "title": "Aubergines Gratinées à la Tomate et Mozzarella",
+    "title": "Aubergines Farcies Parmigiana (Fondantes en 30 Min)",
     "emoji": "🍆",
     "temp": 190,
     "time": "30",
@@ -6105,7 +6105,7 @@
       "Sel",
       "Poivre noir moulu"
     ],
-    "description": "Un plat principal végétarien gourmand. Ces aubergines farcies de sauce tomate parfumée et de mozzarella filante sont gratinées jusqu'à ce que le fromage soit parfaitement doré.",
+    "description": "Oubliez la parmigiana classique longue et grasse ! Ces aubergines farcies et filantes cuisent rapidement à l'air, créant une croûte croustillante qui renferme un cœur méditerranéen irrésistible.",
     "instructions": [
       "Inciser la pulpe des demi-aubergines. Badigeonner d'huile d'olive, saler et poivrer.",
       "Disposer les aubergines dans le panier, côté coupé vers le bas. Cuire à 190°C pendant 20 minutes.",
@@ -6129,16 +6129,16 @@
   },
   {
     "slug": "pommes-de-terre-en-quartiers-congelees",
-    "title": "Potatoes Surgelées (Cœur Moelleux)",
+    "title": "Potatoes Surgelées (Cœur Moelleux en 20 Minutes)",
     "emoji": "🥔",
     "temp": 190,
     "time": "20",
-    "prep_time": "Non renseigné",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "600 g de quartiers de pommes de terre rustiques surgelés"
     ],
-    "description": "La solution express pour un accompagnement réussi. Ces quartiers de pommes de terre surgelés ressortent avec une croûte bien craquante et un intérieur fondant comme au restaurant.",
+    "description": "Les potatoes surgelées sont faites pour la friteuse à air. En 20 minutes, vous obtiendrez un croustillant de fast-food sans ajouter une seule goutte d'huile. Saines, rapides et le snack préféré des enfants.",
     "instructions": [
       "Placer les quartiers de pommes de terre surgelés directement dans le panier, sans ajout d'huile.",
       "Cuire à 190°C pendant 20 minutes.",
@@ -6161,7 +6161,7 @@
   },
   {
     "slug": "pommes-de-terre-en-quartiers",
-    "title": "Quartiers de Pommes de Terre au Parmesan",
+    "title": "Potatoes au Parmesan (Quartiers Rustiques en 20 Min)",
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
@@ -6175,7 +6175,7 @@
       "10 g de parmesan râpé",
       "Sel et poivre noir au goût"
     ],
-    "description": "De délicieuses wedges maison ! Assaisonnées de fromage et d'épices, ces pommes de terre sont idéales à tremper dans une sauce au yaourt ou une mayonnaise épicée.",
+    "description": "Des quartiers de pommes de terre rustiques avec une croûte de Parmesan qui craque ! Découvrez comment la friteuse à air sublime la saveur du fromage et des épices, rendant chaque quartier doré et très savoureux.",
     "instructions": [
       "Lavez les pommes de terre. Conservez la peau et coupez-les en quartiers réguliers.",
       "Placez les quartiers dans un saladier. Ajoutez l'huile et mélangez pour enrober uniformément.",
@@ -6198,18 +6198,18 @@
   },
   {
     "slug": "pommes-de-terre-entiere-au-four",
-    "title": "Pommes de Terre en Robe des Champs",
+    "title": "Pommes de Terre au Four Entières (Moelleuses en 35 Min)",
     "emoji": "🥔",
     "temp": 200,
-    "time": "35-40",
-    "prep_time": "Non présent",
+    "time": "35",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 pommes de terre de taille moyenne (environ 190 g chacune)",
       "Huile (facultatif)",
       "Gros sel"
     ],
-    "description": "Le classique indémodable. Obtenez une peau sèche et craquante qui protège un cœur de chair incroyablement moelleux et fumant. À garnir selon vos envies de crème fraîche ou de ciboulette.",
+    "description": "La vraie Jacket Potato à la maison en deux fois moins de temps. La friteuse à air rend la peau fine et croustillante tandis que l'intérieur devient doux comme du velours. L'accompagnement rustique et sain par excellence.",
     "instructions": [
       "Brosser les pommes de terre sous l'eau courante et les sécher soigneusement.",
       "Piquer chaque pomme de terre profondément en plusieurs points à l'aide d'une fourchette.",
@@ -6232,7 +6232,7 @@
   },
   {
     "slug": "pommes-de-terre-roties-mayonnaise-pimentee",
-    "title": "Pommes de Terre Rôties et Mayo Pimentée",
+    "title": "Grenailles Rôties (Avec Mayonnaise Épicée en 30 Min)",
     "emoji": "🥔",
     "temp": 180,
     "time": "30",
@@ -6249,7 +6249,7 @@
       "2 cuillères à soupe de pesto rosso",
       "2 cuillères à soupe de vinaigre de vin"
     ],
-    "description": "De petites pommes de terre nouvelles rôties aux épices pour un maximum de saveur. Le contraste est total avec la douceur de la mayonnaise relevée d'une pointe de piment.",
+    "description": "Petites pommes de terre épicées et croustillantes servies avec une mayonnaise gourmande aux tomates séchées. Un accompagnement original et impressionnant prêt en 30 minutes pour une expérience façon restaurant.",
     "instructions": [
       "Dans un grand saladier, mélanger les pommes de terre avec l'huile d'olive, la moitié de chaque paprika, la moitié de l'ail en poudre et le sel.",
       "Répartir les pommes de terre sur une plaque de cuisson et cuire à 180°C pendant 30 minutes.",
@@ -6276,7 +6276,7 @@
     "title": "Galettes de Pommes de Terre (Hash Browns Maison)",
     "emoji": "🥔",
     "temp": 190,
-    "time": "15-20",
+    "time": "15",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -6307,7 +6307,7 @@
   },
   {
     "slug": "pommes-de-terre-hasselback",
-    "title": "Pommes de Terre Hasselback au Beurre Aillé",
+    "title": "Pommes de Terre Hasselback (En Accordéon, Spectaculaires en 40 Min)",
     "emoji": "🥔",
     "temp": 175,
     "time": "40",
@@ -6322,7 +6322,7 @@
       "Sel",
       "Poivre noir moulu"
     ],
-    "description": "Une présentation spectaculaire pour une texture unique : des tranches fines qui croustillent sur les bords tout en restant fondantes au centre, imprégnées d'un beurre aromatisé fondant.",
+    "description": "Étonnez vos invités avec cet accompagnement suédois en accordéon ! Les tranches s'écartent en cuisant à l'air, permettant au beurre et à l'ail de fondre à l'intérieur de chaque croûte.",
     "instructions": [
       "Laver et brosser les pommes de terre sans les peler. Placer une pomme de terre sur une planche à découper. Pratiquer des incisions parallèles tous les 6 mm, en s'arrêtant avant de couper complètement la base.",
       "Badigeonner les pommes de terre d'huile d'olive. Saler et poivrer, en répartissant l'assaisonnement entre les tranches supérieures.",
@@ -6345,7 +6345,7 @@
   },
   {
     "slug": "pommes-de-terre-nouvelles-roties",
-    "title": "Pommes de Terre Nouvelles aux Fines Herbes",
+    "title": "Grenailles aux Herbes (Snack Rustique Rapide en 20 Min)",
     "emoji": "🥔",
     "temp": 195,
     "time": "20",
@@ -6360,7 +6360,7 @@
       "4 g de sel",
       "1 pincée de poivre noir moulu"
     ],
-    "description": "La simplicité sublimée. Ces petites pommes de terre développent une croûte aromatique irrésistible sous l'effet de l'air chaud, tout en gardant une chair tendre et sucrée.",
+    "description": "L'accompagnement le plus apprécié de tous les temps, prêt en seulement 20 minutes ! Les pommes de terre grenailles coupées en deux forment une croûte parfaite parfumée aux herbes, en gardant la peau savoureuse.",
     "instructions": [
       "Laver les pommes de terre et les couper en deux.",
       "Placer les pommes de terre dans un récipient, ajouter l'huile d'olive et mélanger.",
@@ -6384,17 +6384,17 @@
   },
   {
     "slug": "poivrons-entiers-rotis",
-    "title": "Poivrons Rôtis (Technique Peau Facile)",
+    "title": "Poivrons Rôtis (Hyper Faciles à Peler en 26 Min)",
     "emoji": "🫑",
     "temp": 200,
-    "time": "26-30",
-    "prep_time": "Non présent",
+    "time": "26",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 gros poivrons (environ 650 g)",
       "10 ml d'huile neutre"
     ],
-    "description": "Obtenez des poivrons fondants et sucrés. La cuisson à haute température permet de décoller la peau sans effort, révélant une pulpe charnue parfaite pour vos salades ou marinades.",
+    "description": "Rôtir et peler les poivrons n'a jamais été aussi facile. La chaleur concentrée à 200°C roussit la peau en 26 minutes, vous permettant de les peler en un clin d'œil pour des salades douces et légères.",
     "instructions": [
       "Laver et sécher soigneusement les poivrons.",
       "Badigeonner les poivrons d'une fine couche d'huile.",
@@ -6417,7 +6417,7 @@
   },
   {
     "slug": "anneaux-d-oignon",
-    "title": "Onion Rings Croustillants (Sans Friture)",
+    "title": "Onion Rings (Anneaux d'Oignon Hyper Croustillants en 20 Min)",
     "emoji": "🧅",
     "temp": 190,
     "time": "20",
@@ -6432,7 +6432,7 @@
       "2 g de paprika fumé",
       "5 g de sel"
     ],
-    "description": "Retrouvez le plaisir des anneaux d'oignon avec une panure ultra-craquante. Cuits à l'air chaud, ils sont bien moins gras qu'une friture classique mais tout aussi gourmands.",
+    "description": "Le roi incontesté des snacks frits devient léger et fait maison ! L'astuce de la panure au babeurre cuite à l'air fryer pendant 20 minutes rend ces anneaux incroyablement croustillants.",
     "instructions": [
       "Couper l'oignon en tranches de 13 mm d'épaisseur. Séparer les couches pour former des anneaux.",
       "Préparer trois récipients. Le premier avec la farine. Le deuxième avec les œufs battus et le babeurre. Le troisième avec la chapelure, le sel et le paprika.",
@@ -6455,7 +6455,7 @@
   },
   {
     "slug": "bbq-bacon",
-    "title": "Candy Bacon Caramélisé au BBQ",
+    "title": "Bacon Caramélisé (Croquant BBQ en 8 Minutes)",
     "emoji": "🥓",
     "temp": 160,
     "time": "8",
@@ -6468,7 +6468,7 @@
       "1 g de cumin moulu",
       "1 g de poivre de Cayenne"
     ],
-    "description": "Attention, addiction garantie ! Ces lanières de bacon sont laquées d'un mélange de sucre et d'épices qui caramélise à la cuisson pour un résultat croquant, sucré et fumé.",
+    "description": "Avez-vous déjà goûté au bacon doux et épicé ? Les tranches rétrécissent en rôtissant à 160°C, tandis que la cassonade fond avec la graisse pour créer un \"bonbon de viande\" en 8 minutes. Dangereusement bon.",
     "instructions": [
       "Coupez chaque tranche de bacon en deux.",
       "Dans un bol, mélangez la cassonade, le paprika, le cumin et le poivre de Cayenne.",
@@ -6494,7 +6494,7 @@
   },
   {
     "slug": "steaks-de-contrefilet-moutarde",
-    "title": "Steaks de Contrefilet en Croûte de Moutarde",
+    "title": "Steak en Croûte de Moutarde (Juteux et Caramélisé en 10 Min)",
     "emoji": "🥩",
     "temp": 200,
     "time": "10",
@@ -6506,7 +6506,7 @@
       "10 g de moutarde anglaise en poudre",
       "Gros sel marin et poivre noir du moulin"
     ],
-    "description": "Une saisie parfaite qui cautérise la viande instantanément. Le mélange d'épices et la moutarde forment une croûte aromatique puissante qui protège le jus et la tendreté du steak.",
+    "description": "Remplacez votre grillade habituelle par un 'Rub' américain ! La cassonade et la moutarde enrobent l'entrecôte, et à 200°C créent un sceau de pure saveur en 10 minutes, gardant le bœuf super tendre à l'intérieur.",
     "instructions": [
       "Sortir la viande du réfrigérateur 30 minutes avant la cuisson pour l'amener à température ambiante.",
       "Dans un bol, mélanger le sucre, la poudre de moutarde, le gros sel et le poivre.",
@@ -6530,7 +6530,7 @@
   },
   {
     "slug": "choux-de-bruxelles-lardons",
-    "title": "Choux de Bruxelles Rôtis aux Lardons",
+    "title": "Choux de Bruxelles et Bacon (Savoureux et Croustillants en 9 Min)",
     "emoji": "🥬",
     "temp": 200,
     "time": "9",
@@ -6544,7 +6544,7 @@
       "Sel et poivre noir",
       "10 g de parmesan, fraîchement râpé"
     ],
-    "description": "Même les plus sceptiques vont adorer ! La graisse des lardons imprègne les choux, rendant les feuilles extérieures incroyablement croustillantes et le cœur délicieusement fondant.",
+    "description": "Si vous détestez les choux de Bruxelles bouillis, essayez-les frits à l'air avec des dés de bacon. En 9 minutes, ils rôtissent sur les pointes extérieures tout en absorbant l'umami du bacon. Un accompagnement mortel.",
     "instructions": [
       "Dans un récipient, mélanger les choux de Bruxelles, les dés de lard, l'huile d'olive, l'ail en poudre, le sel et le poivre.",
       "Préchauffer l'appareil à 200°C.",
@@ -6569,10 +6569,10 @@
   },
   {
     "slug": "chips-chou-noir",
-    "title": "Chips de Kale (Snack Healthy)",
+    "title": "Chips de Chou Frisé (Le Snack Léger et Fit en 8 Minutes)",
     "emoji": "🥬",
     "temp": 150,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -6580,7 +6580,7 @@
       "10 ml d'huile de tournesol",
       "Sel fin"
     ],
-    "description": "Transformez le chou kale en une collation légère et craquante. Assaisonnées d'une pointe de sel, ces chips maison sont l'alternative parfaite et saine pour vos apéritifs.",
+    "description": "Le superaliment par excellence devient le snack préféré des amateurs de santé. À 150°C, les feuilles de chou frisé perdent leur humidité, devenant comme des chips en sachet en 8 minutes, mais avec seulement 50 Kcal.",
     "instructions": [
       "Détacher les feuilles des tiges centrales du chou. Jeter les tiges.",
       "Sécher complètement les feuilles, puis les mélanger avec l'huile.",
@@ -6606,7 +6606,7 @@
   },
   {
     "slug": "chips-de-pomme",
-    "title": "Chips de Pomme (Déshydratation Douce)",
+    "title": "Chips de Pomme (Snack Naturel et Croustillant Maison)",
     "emoji": "🍎",
     "temp": 80,
     "time": "240",
@@ -6616,7 +6616,7 @@
       "2 pommes",
       "Jus d'un demi-citron"
     ],
-    "description": "Une collation 100% naturelle. Les pommes sont déshydratées lentement pour concentrer leurs sucres naturels et offrir un croquant irrésistible, sans aucun sucre ajouté.",
+    "description": "Utilisez votre friteuse comme déshydrateur ! L'air chaud à 80°C déshydrate lentement de très fines tranches de pomme. Remplacez les bonbons artificiels des enfants par cette merveille naturelle.",
     "instructions": [
       "Laver, peler et évider les pommes.",
       "Couper les pommes en fines tranches de 3 mm d'épaisseur, de préférence à l'aide d'une mandoline.",
@@ -6640,11 +6640,11 @@
   },
   {
     "slug": "tarte-poires-rustique",
-    "title": "Tarte Rustique Poires, Miel et Noix",
+    "title": "Galette Rustique aux Poires (Tarte Rapide en 45 Minutes)",
     "emoji": "🍐",
     "temp": 160,
     "time": "45",
-    "prep_time": "1 heure 10",
+    "prep_time": "70",
     "portions": "4",
     "ingredients": [
       "90 g de farine T45",
@@ -6660,7 +6660,7 @@
       "Miel",
       "Noix concassées et grillées"
     ],
-    "description": "Un dessert authentique qui mise sur le goût. Une pâte sablée croustillante garnie de poires fondantes, sublimée par la douceur du miel et le croquant des éclats de noix.",
+    "description": "Le dessert du dimanche fait main, sans moule ! Une pâte friable et beurrée renfermant des poires juteuses et des noix. La friteuse à air à 160°C caramélise les fruits, créant une tarte rustique spectaculaire en 45 min.",
     "instructions": [
       "Dans un récipient, mélanger la farine et le sel. Ajouter le beurre en dés et sabler du bout des doigts jusqu'à obtenir une texture de sable grossier.",
       "Ajouter l'eau glacée et pétrir brièvement pour former une boule. Filmer et réfrigérer pendant au moins une heure.",
@@ -6683,17 +6683,17 @@
   },
   {
     "slug": "haricots-verts-rôtis",
-    "title": "Haricots Verts Rôtis et Croquants",
+    "title": "Haricots Verts Rôtis (Croustillants et Rapides en 12 Min)",
     "emoji": "🥗",
     "temp": 200,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
       "400 g de haricots verts frais",
       "20 ml d'huile d'olive extra vierge"
     ],
-    "description": "Oubliez les haricots à l'eau ! La cuisson à haute température exalte leur saveur naturelle et leur donne une texture croquante incomparable. Un accompagnement sain et rapide.",
+    "description": "Fini les haricots verts bouillis et pâteux ! La friteuse à air les \"rôtit\" à très haute température (200°C) pendant 12 minutes : ils resteront d'un vert vif, fermes, et avec des pointes délicieusement croustillantes et savoureuses.",
     "instructions": [
       "Équeuter les haricots verts.",
       "Mélanger les haricots verts avec l'huile d'olive extra vierge dans un saladier.",
@@ -6715,7 +6715,7 @@
   },
   {
     "slug": "falafel",
-    "title": "Falafels Maison (Cœur Moelleux)",
+    "title": "Falafel de Pois Chiches (Boulettes Croustillantes et Légères en 15 Min)",
     "emoji": "🧆",
     "temp": 170,
     "time": "15",
@@ -6730,7 +6730,7 @@
       "Cumin moulu",
       "20 g de tahini (pâte de sésame)"
     ],
-    "description": "Le secret des falafels parfaits : une croûte bien dorée et un intérieur aux herbes resté bien tendre. Ces boulettes de pois chiches épicées sont le pilier de vos repas végétariens.",
+    "description": "Les magiques boulettes du Moyen-Orient, mais en version fit. Les falafels de pois chiches cuits à l'air pendant 15 minutes développent une croûte dorée et friable sans être plongés dans des fleuves d'huile de friture. Parfaits dans un pain pita.",
     "instructions": [
       "Dans un robot culinaire, mixer grossièrement les pois chiches cuits avec le cumin, la coriandre, le persil et le tahini. La consistance ne doit pas être liquide.",
       "Hacher finement l'oignon et l'ail. Les incorporer au mélange de pois chiches.",
@@ -6754,10 +6754,10 @@
   },
   {
     "slug": "frites-grecques",
-    "title": "Frites Grecques à la Feta et Origan",
+    "title": "Frites à la Grecque (Feta et Origan en 25 Minutes)",
     "emoji": "🍟",
     "temp": 195,
-    "time": "25-28",
+    "time": "25",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -6771,7 +6771,7 @@
       "Sel et poivre noir, q.s.",
       "Quartiers de citron pour le service"
     ],
-    "description": "Voyagez en Méditerranée avec ces frites croustillantes parsemées de feta fondante et d'origan parfumé. Un accompagnement de caractère qui change du quotidien.",
+    "description": "Des frites au goût méditerranéen ! Les frites fraîches, débarrassées de leur amidon et cuites très croustillantes en 25 min, sont assaisonnées chaudes avec de la feta émiettée, de l'origan et une touche de citron pour un accompagnement incroyable.",
     "instructions": [
       "Couper les pommes de terre en bâtonnets. Les faire tremper dans un bol d'eau froide pendant 15 minutes pour retirer l'excès d'amidon.",
       "Égoutter les pommes de terre, les rincer et les sécher soigneusement avec du papier absorbant.",
@@ -6797,16 +6797,16 @@
   },
   {
     "slug": "spirales-de-pommes-de-terre-congelees",
-    "title": "Curly Fries (Spirales Croustillantes)",
+    "title": "Frites Torsadées (Boucles Extra Croustillantes en 18 Min)",
     "emoji": "🍟",
     "temp": 200,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "4",
     "ingredients": [
       "700 g de spirales de pommes de terre surgelées"
     ],
-    "description": "Ludiques et gourmandes, ces spirales de pommes de terre surgelées deviennent parfaitement dorées sans ajout d'huile. Le snack favori des petits comme des grands.",
+    "description": "Les frites préférées des enfants, prêtes sans effort ! La coupe en spirale capte parfaitement le tourbillon d'air chaud, créant des boucles hyper-croustillantes en seulement 18 minutes à partir du produit surgelé, sans huile supplémentaire.",
     "instructions": [
       "Placer les spirales de pommes de terre surgelées dans le panier de cuisson.",
       "Ne pas ajouter d'huile. Le produit est pré-frit.",
@@ -6829,7 +6829,7 @@
   },
   {
     "slug": "samosas-vegetales",
-    "title": "Samosas Chou-Fleur, Petits Pois et Feta",
+    "title": "Samoussas Légumes et Feta (Paniers Croustillants en 15 Min)",
     "emoji": "🥟",
     "temp": 170,
     "time": "15",
@@ -6845,7 +6845,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "De croustillants triangles de pâte brick qui cachent une farce savoureuse et épicée. L'alliance du chou-fleur, des petits pois et de la feta offre un équilibre parfait.",
+    "description": "Découvrez l'art de la feuille de brick en version légère. Ces chaussons orientaux classiques farcis de feta et chou-fleur gonflent à l'air devenant super feuilletés en 15 minutes. Idéal pour vider le frigo avec style.",
     "instructions": [
       "Cuire les bouquets de chou-fleur et les petits pois à la vapeur ou à la poêle jusqu'à ce qu'ils soient tendres.",
       "Transférer les légumes dans un récipient. Ajouter la feta émiettée, le sel, le poivre et écraser grossièrement pour obtenir la farce.",
@@ -6869,7 +6869,7 @@
   },
   {
     "slug": "gateau-banane-mascarpone",
-    "title": "Gâteau Fondant Banane et Mascarpone",
+    "title": "Gâteau Banane Mascarpone (Moelleux et Humide en 35 Min)",
     "emoji": "🍰",
     "temp": 160,
     "time": "35",
@@ -6883,7 +6883,7 @@
       "150 g de mascarpone",
       "50 g de cerneaux de noix concassés"
     ],
-    "description": "L'onctuosité du mascarpone alliée à la douceur des bananes très mûres crée un gâteau d'une densité et d'un fruité exceptionnels. Parfait pour un goûter qui dure plusieurs jours.",
+    "description": "Un gâteau dense, humide et hyper facile ! La friteuse cuit cette pâte riche en noix et bananes en 35 minutes, offrant une texture moelleuse et une dorure parfaite à recouvrir de crème au mascarpone.",
     "instructions": [
       "Peler les bananes et écraser la pulpe à la fourchette pour obtenir une purée.",
       "Incorporer la cassonade et l'huile de tournesol. Mélanger avec un fouet.",
@@ -6906,16 +6906,16 @@
   },
   {
     "slug": "champignons-panes",
-    "title": "Champignons Panés (Ultra-Croustillants)",
+    "title": "Champignons Panés Surgelés (Apéritif Doré en 15 Min)",
     "emoji": "🍄",
     "temp": 190,
-    "time": "15-18",
-    "prep_time": "Non présent",
+    "time": "15",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "300 g de champignons panés surgelés"
     ],
-    "description": "Un apéritif bluffant ! Ces champignons pré-frits retrouvent tout leur craquant à l'air chaud, révélant un cœur fondant et juteux. Prêts en quelques minutes seulement.",
+    "description": "Sortez les champignons panés du congélateur, jetez-les dans le panier et en 15 minutes vous aurez des amuse-bouches brûlants et croustillants. L'air chaud fait fondre le givre sans ramollir la panure.",
     "instructions": [
       "Placer les champignons surgelés directement dans le panier.",
       "Disposer les champignons en une seule couche.",
@@ -6940,7 +6940,7 @@
   },
   {
     "slug": "toast-fromagere-a-la-poele",
-    "title": "Grilled Cheese Sandwich (Extra Croustillant)",
+    "title": "Grilled Cheese Sandwich (Le Classique Fondant en 8 Min)",
     "emoji": "🥪",
     "temp": 160,
     "time": "8",
@@ -6951,7 +6951,7 @@
       "60 g de cheddar affiné, en tranches",
       "45 g de beurre, ramolli ou fondu"
     ],
-    "description": "Le réconfort absolu du sandwich américain classique. Grâce à une cuisson parfaitement maîtrisée, le pain développe une croûte dorée et craquante tandis que le fromage devient irrésistiblement filant.",
+    "description": "Zéro tracas pour retourner le croque-monsieur à la poêle ! Badigeonnez de beurre l'extérieur du pain et la friteuse le grillera uniformément des deux côtés tout en faisant fondre le cheddar à l'intérieur. Le snack américain en 8 min.",
     "instructions": [
       "Préchauffer l'appareil à 160°C.",
       "Badigeonner de beurre une face de chaque tranche de pain.",
@@ -6976,7 +6976,7 @@
   },
   {
     "slug": "crevettes-style-cajun",
-    "title": "Crevettes Cajun Épicées (Tendres & Relevées)",
+    "title": "Crevettes Cajun (Épicées et Juteuses en 5 Minutes)",
     "emoji": "🦐",
     "temp": 190,
     "time": "5",
@@ -6990,7 +6990,7 @@
       "1 pincée d'ail en poudre",
       "1 pincée de thym séché"
     ],
-    "description": "Cap sur la Louisiane avec ces crevettes charnues au mélange d'épices volcanique. Prêtes en un clin d'œil, elles sont parfaites pour pimper vos tacos, vos salades composées ou à picorer à l'apéro.",
+    "description": "Riches en protéines, épicées et ultra-rapides ! Ces crevettes cuisent en un temps record de 5 minutes. Les épices Cajun créent une croûte savoureuse, tandis que l'intérieur de la crevette ne se dessèche pas du tout.",
     "instructions": [
       "Rincer les crevettes sous l'eau froide et les sécher soigneusement avec du papier absorbant.",
       "Dans un bol, assaisonner les crevettes avec l'huile d'olive, le sel, le mélange d'épices Cajun, l'ail en poudre et le thym séché.",
@@ -7018,7 +7018,7 @@
   },
   {
     "slug": "mais-toste-beurre",
-    "title": "Épis de Maïs Rôtis au Beurre Fondant",
+    "title": "Épi de Maïs au Beurre (Rôti Doux et Salé en 10 Min)",
     "emoji": "🌽",
     "temp": 200,
     "time": "10",
@@ -7029,7 +7029,7 @@
       "15 g de beurre",
       "Sel"
     ],
-    "description": "Le goût des vacances ! Ces épis de maïs sont rôtis jusqu'à être légèrement caramélisés, puis nappés de beurre pour une saveur douce et sucrée. L'accompagnement idéal de vos grillades.",
+    "description": "Avez-vous déjà vu un épi de maïs rôtir aussi vite ? Coupez-le en deux, enduisez-le de beurre et en seulement 10 minutes à 200°C, les grains deviendront charnus, sucrés et avec les marques sombres caractéristiques de la torréfaction.",
     "instructions": [
       "Retirer les feuilles et les filaments de l'épi de maïs. Le couper en deux tronçons égaux.",
       "Badigeonner les grains de maïs avec le beurre fondu et saler.",
@@ -7053,7 +7053,7 @@
   },
   {
     "slug": "mini-pizza-pepperoni",
-    "title": "Mini Pizzas au Pepperoni (Spécial Apéro)",
+    "title": "Mini Pizza Pepperoni (Croustillant de Pizzéria en 10 Min)",
     "emoji": "🍕",
     "temp": 160,
     "time": "10",
@@ -7067,7 +7067,7 @@
       "170 g de mozzarella râpée",
       "50 g de parmesan râpé"
     ],
-    "description": "Des bouchées de pizza ultra-croustillantes réalisées en un temps record. Une astuce de pré-cuisson garantit une pâte ferme qui supporte généreusement le fromage et le pepperoni piquant.",
+    "description": "Fini les bords mous ! L'astuce pour une mini pizza américaine spectaculaire est de précuire la pâte à l'air pendant 5 min. Ajoutez ensuite la sauce, le fromage et le pepperoni, cuisez 5 min de plus et vous aurez une base façon cracker.",
     "instructions": [
       "Préchauffer l'appareil à 160°C. Badigeonner les bases à pizza d'huile d'olive.",
       "Cuire les bases à blanc pendant 5 minutes.",
@@ -7092,7 +7092,7 @@
   },
   {
     "slug": "pain-ail",
-    "title": "Garlic Bread au Parmesan et Herbes",
+    "title": "Pain à l'Ail (Pain Doré au Parmesan et Ail en 8 Min)",
     "emoji": "🥖",
     "temp": 160,
     "time": "8",
@@ -7106,7 +7106,7 @@
       "1 c. à s. de parmesan râpé",
       "Persil frais haché"
     ],
-    "description": "Une baguette croustillante infusée d'un beurre à l'ail onctueux et de parmesan gratiné. Ce pain à l'ail est l'allié indispensable de vos soirées pasta ou de vos apéritifs entre amis.",
+    "description": "Vous avez un morceau de baguette un peu rassis ? Tranchez-le, farcissez-le de beurre, d'ail et de parmesan et cuisez à 160°C. En 8 minutes, la graisse coule dans le pain en le grillant. L'accompagnement ultime à tremper.",
     "instructions": [
       "Coupez la baguette en tranches épaisses.",
       "Dans un bol, mélangez le beurre, l'ail, le parmesan et l'huile d'olive jusqu'à obtenir une consistance homogène.",
@@ -7135,7 +7135,7 @@
     "title": "Maïs Rôti Nature (Saveur Caramélisée)",
     "emoji": "🌽",
     "temp": 200,
-    "time": "12-15",
+    "time": "12",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -7166,7 +7166,7 @@
   },
   {
     "slug": "pizzettes-fiesta",
-    "title": "Pizzettes Feuilletées Fiesta (Style Mexicain)",
+    "title": "Mini Pizzas Mexicaines (Haricots, Maïs et Fromage en 10 Min)",
     "emoji": "🍕",
     "temp": 160,
     "time": "10",
@@ -7179,7 +7179,7 @@
       "170 g de fromage râpé type mexicain",
       "40 g de maïs en grains, 60 g de haricots noirs cuits et 15 g de petits pois"
     ],
-    "description": "Une explosion de couleurs sur une pâte feuilletée légère ! Garnies de haricots noirs, maïs et fromage sur une base épicée, ces pizzettes apportent une touche mexicaine à vos snacks.",
+    "description": "Apportez une touche Tex-Mex à table avec ces mini pizzas croustillantes ! L'association de haricots noirs, de maïs et de fromage fondu crée un snack copieux et original qui cuit à la perfection en seulement 10 minutes.",
     "instructions": [
       "Préchauffez l'appareil de cuisson à 160°C.",
       "Badigeonnez les disques de pâte feuilletée d'huile d'olive.",
@@ -7204,7 +7204,7 @@
   },
   {
     "slug": "burger-pois-chiches-epinards",
-    "title": "Burgers Veggie Pois Chiches & Épinards",
+    "title": "Veggie Burger Pois Chiches et Épinards (Léger et Doré en 14 Min)",
     "emoji": "🍔",
     "temp": 180,
     "time": "14",
@@ -7221,7 +7221,7 @@
       "Poivre",
       "Huile en spray"
     ],
-    "description": "Des galettes végétariennes savoureuses et nutritives. Leur croûte bien saisie cache un cœur tendre et riche en fer. À glisser dans un pain brioché ou à déguster avec une salade croquante.",
+    "description": "Fini les burgers végétaux caoutchouteux ! Cette version maison aux pois chiches et épinards reste tendre à l'intérieur mais développe une délicieuse croûte grâce à la cuisson ventilée. Sain et protéiné.",
     "instructions": [
       "Placer dans le bol d'un mixeur les pois chiches, les épinards essorés, les épices, le sel, le poivre et l'œuf.",
       "Mixer par impulsions jusqu'à l'obtention d'une pâte malléable à la texture grossière.",
@@ -7245,7 +7245,7 @@
   },
   {
     "slug": "bateaux-courgettes-ricotta",
-    "title": "Courgettes Farcies à la Ricotta et Menthe",
+    "title": "Courgettes Farcies à la Ricotta (Gratin Parfait en 16 Min)",
     "emoji": "🥒",
     "temp": 175,
     "time": "16",
@@ -7261,7 +7261,7 @@
       "Poivre noir",
       "Huile d'olive"
     ],
-    "description": "Une recette fraîche et légère. Ces courgettes fondantes sont garnies d'un mélange onctueux de ricotta et de parmesan, relevé par une note de menthe fraîche pour un gratiné parfait.",
+    "description": "Envie d'un plat végétarien raffiné mais simple ? Ces barquettes de courgettes à la crème de ricotta et menthe sont fraîches et légères, avec un gratin parfait obtenu en seulement 16 minutes à l'air.",
     "instructions": [
       "Laver et couper les courgettes en deux dans le sens de la longueur. Évider la pulpe centrale.",
       "Hacher la pulpe. Dans un récipient, mélanger la pulpe hachée, la ricotta, le parmesan, l'œuf et la menthe. Saler et poivrer.",
@@ -7286,7 +7286,7 @@
   },
   {
     "slug": "poivrons-gratinés-câpres",
-    "title": "Poivrons Gratinés aux Câpres (Style Italien)",
+    "title": "Poivrons Gratinés aux Câpres (Savoureux en 14 Minutes)",
     "emoji": "🫑",
     "temp": 185,
     "time": "14",
@@ -7302,7 +7302,7 @@
       "Sel",
       "Poivre noir du moulin"
     ],
-    "description": "La douceur des poivrons rôtis rencontre le caractère des câpres. Sous une chapelure dorée et croustillante, les quartiers de poivrons deviennent fondants et parfumés.",
+    "description": "Des lamelles de poivron douces et charnues rendues irrésistibles par une panure parfumée à l'ail et aux câpres. Un accompagnement rapide et savoureux qui libère les arômes méditerranéens en moins de 15 minutes.",
     "instructions": [
       "Laver les poivrons, retirer le pédoncule, les graines et les cloisons blanches. Les couper en larges quartiers.",
       "Dans un bol, préparer la farce en mélangeant la chapelure, les câpres, l'ail, le persil, le sel, le poivre et la moitié de l'huile d'olive.",
@@ -7326,7 +7326,7 @@
   },
   {
     "slug": "asperges-vertes-gratininees-au-parmesan",
-    "title": "Asperges Gratinées au Parmesan et Amandes",
+    "title": "Asperges au Parmesan (Croustillant Irrésistible en 8 Minutes)",
     "emoji": "🥗",
     "temp": 190,
     "time": "8",
@@ -7339,7 +7339,7 @@
       "15 g d'amandes effilées (facultatif)",
       "Sel marin, poivre noir"
     ],
-    "description": "Un accompagnement raffiné et croquant. Les asperges vertes sont sublimées par une croûte de parmesan et d'amandes effilées grillées, offrant un mélange de textures divin.",
+    "description": "Sublimez vos asperges avec cette version gourmet ! Le mélange de Parmesan et d'amandes effilées crée une coque croquante qui contraste magnifiquement avec la tendreté des asperges cuites à l'air.",
     "instructions": [
       "Laver les asperges et retirer la partie dure de la base des tiges.",
       "Placer les asperges dans un récipient, ajouter l'huile d'olive et mélanger pour enrober uniformément.",
@@ -7364,7 +7364,7 @@
   },
   {
     "slug": "quartiers-fenouil-citron",
-    "title": "Fenouil Rôti au Citron (Saveur Douce)",
+    "title": "Quartiers de Fenouil Rôtis au Citron (Délicat et Léger en 15 Min)",
     "emoji": "🥗",
     "temp": 180,
     "time": "15",
@@ -7377,7 +7377,7 @@
       "4 g de graines de fenouil (optionnel)",
       "Gros sel et poivre noir"
     ],
-    "description": "Réconciliez-vous avec le fenouil ! La cuisson transforme son côté anisé en une saveur délicatement sucrée et fondante, parfaitement équilibrée par la fraîcheur du citron.",
+    "description": "Si vous pensez que le fenouil est ennuyeux, vous devez l'essayer rôti ! L'air chaud le rend tendre et caramélisé, tandis que le citron et les graines de fenouil rehaussent sa fraîcheur naturelle. Accompagnement hypocalorique parfait.",
     "instructions": [
       "Nettoyer les fenouils. Retirer les tiges et les feuilles externes les plus dures.",
       "Couper les fenouils en deux, puis en 6 à 8 quartiers. Conserver la base pour maintenir la structure des quartiers.",
@@ -7402,7 +7402,7 @@
   },
   {
     "slug": "oignons-rouges-aigre-doux",
-    "title": "Oignons Rouges Confits (Aigre-Doux)",
+    "title": "Oignons Rouges Caramélisés (L'Aigre-Doux Parfait en 16 Min)",
     "emoji": "🧅",
     "temp": 170,
     "time": "16",
@@ -7416,7 +7416,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "Le condiment ultime pour vos burgers ou vos plateaux de fromages. Ces oignons caramélisent lentement pour créer un glaçage brillant, intense et délicieusement acidulé.",
+    "description": "Transformez de simples oignons rouges en un accompagnement gourmet ou le topping parfait pour hamburgers. La friteuse caramélise les sucres et le vinaigre balsamique créant un glaçage épais et irrésistible.",
     "instructions": [
       "Épluchez les oignons et coupez-les en quartiers ou en anneaux épais.",
       "Dans un récipient, placez les oignons. Ajoutez l'huile d'olive, le vinaigre balsamique, le sucre de canne, le sel et le poivre.",
@@ -7441,7 +7441,7 @@
   },
   {
     "slug": "choux-de-bruxelles-glaces-au-balsamique",
-    "title": "Choux de Bruxelles au Glaçage Balsamique",
+    "title": "Choux de Bruxelles au Balsamique (Aigre-Doux et Croustillants en 12 Min)",
     "emoji": "🥬",
     "temp": 190,
     "time": "12",
@@ -7455,7 +7455,7 @@
       "Sel",
       "Poivre noir fraîchement moulu"
     ],
-    "description": "Une métamorphose gourmande. Rôtis jusqu'à être bien croustillants, ces choux de Bruxelles sont ensuite enrobés d'un velouté de balsamique pour un fini sucré-salé addictif.",
+    "description": "Fini les choux de Bruxelles bouillis et désagréables ! En 12 minutes, l'air chaud les rend croustillants à l'extérieur et tendres à l'intérieur, tandis que le glaçage balsamique et miel ajoute une note aigre-douce irrésistible.",
     "instructions": [
       "Dans un bol, assaisonner les choux de Bruxelles avec l'huile d'olive, le sel et le poivre.",
       "Disposer les choux de Bruxelles en une seule couche dans le panier. Régler la température à 190°C.",
@@ -7479,7 +7479,7 @@
   },
   {
     "slug": "tomates-cerises-confites-origan",
-    "title": "Tomates Cerises Confites (Express)",
+    "title": "Tomates Cerises Confit (Bonbons de Saveur à l'Air Fryer)",
     "emoji": "🍅",
     "temp": 140,
     "time": "40",
@@ -7494,7 +7494,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "Concentrez tout le soleil de l'été dans ces petites tomates. Cuites doucement à l'origan, elles éclatent en bouche et sont idéales pour sublimer vos bruschettas ou vos pâtes.",
+    "description": "Obtenez des tomates cerises très douces et concentrées en deux fois moins de temps qu'au four. La cuisson douce à 140°C pendant 40 minutes les transforme en véritables 'bonbons' de saveur, parfaits pour les bruschettas gourmandes.",
     "instructions": [
       "Couper les tomates cerises en deux et les placer dans un plat avec la gousse d'ail écrasée.",
       "Assaisonner avec l'huile d'olive, le sucre, l'origan, le sel et le poivre. Mélanger.",
@@ -7519,7 +7519,7 @@
   },
   {
     "slug": "frittata-legumes-mixtes",
-    "title": "Frittata aux Légumes (Haute & Aérienne)",
+    "title": "Frittata Moelleuse aux Légumes (Légère et Sans Stress en 15 Min)",
     "emoji": "🍳",
     "temp": 160,
     "time": "15",
@@ -7534,7 +7534,7 @@
       "Sel",
       "Poivre"
     ],
-    "description": "Oubliez la poêle ! Cette frittata cuite par convection gonfle comme un soufflé tout en restant incroyablement moelleuse. Une option saine, protéinée et sans stress pour le dîner.",
+    "description": "Adieu poêles grasses et fumée dans la cuisine ! Découvrez comment préparer une frittata haute, moelleuse et parfaitement dorée grâce à la cuisson ventilée en 15 minutes. La solution idéale pour un dîner rapide et protéiné.",
     "instructions": [
       "Dans un bol, battre les œufs avec le lait, le fromage, le sel et le poivre jusqu'à obtenir un mélange mousseux.",
       "Incorporer les légumes cuits et égouttés, puis mélanger.",
@@ -7560,7 +7560,7 @@
   },
   {
     "slug": "brochettes-halloumi-legumes",
-    "title": "Brochettes de Halloumi Grillé",
+    "title": "Brochettes de Halloumi (Le Fromage qui ne Fond Pas)",
     "emoji": "🍢",
     "temp": 190,
     "time": "12",
@@ -7575,7 +7575,7 @@
       "Origan",
       "Poivre noir"
     ],
-    "description": "Le fromage qui chante sous la dent ! Le Halloumi grillé offre une texture ferme et savoureuse qui ne coule pas, alterné avec des légumes croquants pour un plat végétarien complet.",
+    "description": "Avez-vous déjà goûté au fromage grillé qui 'croque' ? Le Halloumi à la friteuse à air devient doré et croustillant à l'extérieur sans fondre, créant une brochette végétarienne très savoureuse en seulement 12 minutes.",
     "instructions": [
       "Dans un récipient, mélanger les dés de fromage, les rondelles de courgette, les tomates cerises et les quartiers d'oignon. Assaisonner avec l'huile d'olive, l'origan et le poivre noir. Ne pas saler.",
       "Composer les brochettes en alternant les ingrédients sur des piques en bois.",
@@ -7601,7 +7601,7 @@
   },
   {
     "slug": "galette-de-pommes-de-terre-filante",
-    "title": "Galette de PDT au Cœur Fondant",
+    "title": "Gratin de Pommes de Terre et Provola (Cœur Fumé et Fondant)",
     "emoji": "🥧",
     "temp": 170,
     "time": "25",
@@ -7617,7 +7617,7 @@
       "Sel",
       "Noix de muscade"
     ],
-    "description": "Le mariage parfait entre une röstie croustillante et un centre de fromage coulant. Cette galette généreuse se prépare en un clin d'œil pour un plaisir garanti à chaque bouchée.",
+    "description": "Le plat réconfortant par excellence : un gratin de pommes de terre moelleux avec une croûte de chapelure et un cœur de provola fumée qui file à la première découpe. La friteuse à air assure un gratin parfait en 25 minutes.",
     "instructions": [
       "Mélangez les pommes de terre écrasées tièdes avec l'œuf, le beurre fondu, le parmesan, une pincée de sel et de la noix de muscade.",
       "Ajoutez la provola en dés et mélangez jusqu'à obtention d'une répartition homogène.",
@@ -7642,7 +7642,7 @@
   },
   {
     "slug": "edamame-epices-croquants",
-    "title": "Edamame Rôtis (Snack Protéiné)",
+    "title": "Edamame Grillé (Snack Protéiné au Sésame en 10 Min)",
     "emoji": "🫛",
     "temp": 190,
     "time": "10",
@@ -7655,7 +7655,7 @@
       "2 g d'ail en poudre",
       "1 pincée de piment en flocons"
     ],
-    "description": "L'alternative saine et craquante pour l'apéro. Ces gousses d'edamame sont rôties avec un mélange d'épices relevé pour une collation addictive, riche en protéines et faible en glucides.",
+    "description": "Oubliez les edamames bouillis et fades ! En les grillant à l'air avec de l'huile de sésame et du piment, vous obtiendrez un snack protéiné et croustillant prêt en 10 minutes. L'amuse-bouche sain et totalement addictif.",
     "instructions": [
       "Placer les gousses d'edamame surgelées dans le panier. Cuire à 190°C pendant 4 minutes.",
       "Retirer le panier et transférer les gousses dans un récipient.",
@@ -7682,7 +7682,7 @@
   },
   {
     "slug": "pois-chiches-rôtis-paprika",
-    "title": "Pois Chiches au Paprika (Chips Veggie)",
+    "title": "Pois Chiches Croustillants au Paprika (Le Snack Addictif)",
     "emoji": "🥣",
     "temp": 200,
     "time": "15",
@@ -7694,7 +7694,7 @@
       "4 g de paprika fumé, 2 g de cumin en poudre",
       "Sel marin fin : q.s."
     ],
-    "description": "Adieu les chips industrielles ! Ces pois chiches deviennent ultra-croustillants après un passage à 200°C. Parfaits à grignoter tels quels ou pour ajouter du croquant à vos soupes.",
+    "description": "Remplacez les chips par ces 'perles' de saveur ! Pois chiches rôtis à l'air au paprika fumé : ils deviennent ultra-croustillants à l'extérieur et moelleux à l'intérieur en seulement 15 minutes. Le snack fit par excellence.",
     "instructions": [
       "Égouttez les pois chiches et rincez-les abondamment à l'eau courante.",
       "Disposez les pois chiches sur un linge propre et frottez-les pour les sécher complètement. Retirez les peaux qui se détachent.",
@@ -7719,7 +7719,7 @@
   },
   {
     "slug": "chips-courgette-parmesan",
-    "title": "Chips de Courgettes Gratinées au Parmesan",
+    "title": "Chips de Courgettes au Parmesan (Croustillantes en 18 Min)",
     "emoji": "🥒",
     "temp": 160,
     "time": "18",
@@ -7732,7 +7732,7 @@
       "Sel",
       "Poivre blanc"
     ],
-    "description": "L'alternative saine et gourmande pour l'apéritif. Ces fines rondelles de courgettes sont saupoudrées de parmesan qui, sous l'effet de la chaleur, forme une croûte dorée et intensément croustillante.",
+    "description": "Envie de chips mais vous êtes au régime ? Ces rondelles de courgette au Parmesan sont la solution parfaite. L'air chaud les déshydrate, les rendant fines et croustillantes en 18 minutes. Un délicieux snack compatible keto.",
     "instructions": [
       "Tailler la courgette en rondelles de 2 mm d'épaisseur à l'aide d'une mandoline.",
       "Éponger les rondelles avec du papier absorbant pour retirer l'excès d'eau.",

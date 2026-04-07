@@ -14,6 +14,28 @@ export function getStaticPaths() {
 const lang = Astro.params.lang || 'it';
 const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
 
+// DIZIONARIO SEO SPECIFICO (Anti-Boilerplate)
+const seoData = {
+  it: {
+    title: "Come Riscaldare Avanzi in Friggitrice ad Aria | Tempi e Gradi",
+    description: "Addio cibo molliccio al microonde! Scopri i tempi e gradi esatti per far tornare croccanti i tuoi avanzi: pizza, patatine, pollo e fritti come appena fatti."
+  },
+  en: {
+    title: "How to Reheat Leftovers in Air Fryer | Time and Temp Guide",
+    description: "Say goodbye to soggy microwave food! Discover the exact times and temperatures to bring back the crunch to your leftovers: pizza, fries, chicken, and more."
+  },
+  es: {
+    title: "Cómo Recalentar Sobras en Freidora de Aire | Tiempos y Grados",
+    description: "¡Adiós comida blanda del microondas! Descubre los tiempos y grados exactos para devolver el crujiente a tus sobras: pizza, patatas, pollo y fritos."
+  },
+  fr: {
+    title: "Comment Réchauffer les Restes à la Friteuse à Air | Temps",
+    description: "Fini la nourriture molle au micro-ondes ! Découvrez les temps et températures exacts pour redonner du croustillant à vos restes de pizza, frites et poulet."
+  }
+};
+
+const currentSeo = seoData[lang as keyof typeof seoData] || seoData.it;
+
 const backBtnLabel = {
   it: "Vai alle ricette",
   en: "Go to Recipes",
@@ -23,11 +45,9 @@ const backBtnLabel = {
 
 const content = {
   it: {
-    title: "Come Riscaldare gli Avanzi nella Friggitrice ad Aria",
     h1: "Rianimatore di Avanzi",
     desc: "Il microonde li rende gommosi, il forno ci mette troppo. Seleziona la categoria e scopri tempi e gradi perfetti per far tornare croccante il cibo di ieri.",
     quickNav: "Vai a:",
-    // NUOVO CONTENUTO SEO
     editorialH2: "La Scienza del Rianimatore: Perché funziona?",
     editorialText: "Riscaldare il cibo nel microonde agisce sulle molecole d'acqua, bollendo letteralmente il cibo dall'interno (ecco perché la pizza diventa gommosa). La friggitrice ad aria, invece, utilizza la <strong>convezione termica a secco</strong>. Soffiando aria calda ad alta velocità, fa evaporare l'umidità in eccesso accumulata in frigo e <strong>riattiva la reazione di Maillard</strong> (la crosticina) in soli 3 o 4 minuti, ridando croccantezza senza asciugare il cuore del prodotto.",
     fsTitle: "3 Regole d'Oro per Riscaldare:",
@@ -85,7 +105,6 @@ const content = {
     ]
   },
   en: {
-    title: "How to Reheat Leftovers in the Air Fryer",
     h1: "The Leftover Reviver",
     desc: "The microwave makes them chewy. Select a category and discover the perfect times and temperatures to bring back the crispiness.",
     quickNav: "Jump to:",
@@ -146,7 +165,6 @@ const content = {
     ]
   },
   es: {
-    title: "Cómo Recalentar Sobras en la Freidora de Aire",
     h1: "Revividor de Sobras",
     desc: "El microondas las deja blandas. Selecciona una categoría y descubre los tiempos y grados perfectos para devolverle el crujiente.",
     quickNav: "Ir a:",
@@ -207,7 +225,6 @@ const content = {
     ]
   },
   fr: {
-    title: "Comment Réchauffer les Restes à la Friteuse à Air",
     h1: "Le Réanimateur de Restes",
     desc: "Le micro-ondes les rend caoutchouteux. Sélectionnez une catégorie et découvrez les temps parfaits pour redonner du croustillant.",
     quickNav: "Aller à :",
@@ -288,7 +305,7 @@ const faqSchema = {
 };
 ---
 
-<MainLayout title={t.title} lang={lang}>
+<MainLayout title={currentSeo.title} lang={lang} description={currentSeo.description}>
   <section class="max-w-5xl mx-auto py-12 md:py-16 px-4">
     
     <div class="mb-8 flex justify-start">

@@ -14,6 +14,28 @@ export function getStaticPaths() {
 const lang = Astro.params.lang || 'it';
 const homeUrl = `/#ricettario`;
 
+// DIZIONARIO SEO SPECIFICO (Soluzione al problema del Boilerplate)
+const seoData = {
+  it: {
+    title: "Consumi Friggitrice ad Aria: Quanto Costa Usarla? (Calcolo Bolletta)",
+    description: "Conviene davvero rispetto al forno? Scopri quanto consuma una friggitrice ad aria in kWh e il calcolo esatto del risparmio in bolletta per ogni cottura."
+  },
+  en: {
+    title: "Air Fryer Energy Consumption: How Much Does it Cost to Run?",
+    description: "Is it really cheaper than an oven? Discover exactly how much energy an air fryer uses in kWh and calculate your electricity bill savings instantly."
+  },
+  es: {
+    title: "Consumo Freidora de Aire: ¿Cuánto Gasta de Luz? (Calculadora)",
+    description: "¿De verdad ahorras frente al horno tradicional? Descubre cuánto consume tu freidora en kWh y calcula tu ahorro exacto en la factura de la luz."
+  },
+  fr: {
+    title: "Consommation Friteuse à Air : Quel est le Coût Électrique ?",
+    description: "Est-ce vraiment plus économique que le four ? Découvrez la consommation exacte en kWh de votre friteuse à air et calculez vos économies d'énergie."
+  }
+};
+
+const currentSeo = seoData[lang as keyof typeof seoData] || seoData.it;
+
 const backBtnLabel = {
   it: "Vai alle ricette",
   en: "Go to Recipes",
@@ -23,9 +45,8 @@ const backBtnLabel = {
 
 const content = {
   it: {
-    title: "Calcolatore Consumi Friggitrice ad Aria: Quanto costa in bolletta?",
     h1: "Il Simulatore di Bolletta",
-    desc: "Basta bollette a sorpresa! Muovi i cursori per scoprire istantaneamente quanto ti costa accendere la friggitrice rispetto al forno tradizionale.",
+    desc: currentSeo.description,
     liveBadge: "🔴 LIVE",
     wLabel: "Potenza Friggitrice (Watt)",
     mLabel: "Minuti di Cottura",
@@ -34,8 +55,6 @@ const content = {
     resOven: "Costo Forno Elettrico (2500W)*",
     resSave: "Soldi Risparmiati",
     ovenNote: "*Il forno tradizionale richiede circa il 25% di tempo in più per eguagliare la cottura ad aria.",
-    
-    // NUOVI CONTENUTI EDITORIALI E FAQ
     editorialH2: "Perché la Friggitrice ad Aria consuma meno?",
     editorialText: "A differenza del forno tradizionale che impiega 15-20 minuti solo per scaldare un'enorme camera d'aria da 60 litri, la friggitrice ad aria satura la sua camera compatta in pochissimi minuti. Inoltre, il <strong>potente flusso ciclonico</strong> riduce i tempi di cottura complessivi del 20-30%. Questo significa che, sebbene il picco di assorbimento (i Watt) sia simile, la resistenza elettrica resta accesa per molto meno tempo, tagliando drasticamente il calcolo dei kWh totali.",
     faqTitle: "Domande Frequenti sui Consumi",
@@ -46,9 +65,8 @@ const content = {
     ]
   },
   en: {
-    title: "Air Fryer Electricity Cost Calculator vs Conventional Oven",
     h1: "Electricity Bill Simulator",
-    desc: "No more surprise bills! Move the sliders to instantly discover how much it costs to run your air fryer compared to a traditional oven.",
+    desc: currentSeo.description,
     liveBadge: "🔴 LIVE",
     wLabel: "Air Fryer Power (Watts)",
     mLabel: "Cooking Minutes",
@@ -57,7 +75,6 @@ const content = {
     resOven: "Electric Oven Cost (2500W)*",
     resSave: "Money Saved",
     ovenNote: "*A traditional oven requires about 25% more time to match air frying results.",
-    
     editorialH2: "Why does the Air Fryer use less energy?",
     editorialText: "Unlike a traditional oven that takes 15-20 minutes just to heat a massive 60-liter air chamber, an air fryer saturates its compact chamber in minutes. Additionally, the <strong>powerful cyclonic airflow</strong> reduces overall cooking times by 20-30%. This means that although the peak wattage is similar, the heating element stays on for much less time, drastically cutting the total kWh used.",
     faqTitle: "Frequently Asked Questions about Energy",
@@ -68,9 +85,8 @@ const content = {
     ]
   },
   es: {
-    title: "Calculadora de Consumo Eléctrico: Freidora de Aire vs Horno",
     h1: "Simulador de Factura",
-    desc: "¡Se acabaron las sorpresas en la factura! Mueve los controles para descubrir al instante cuánto cuesta usar la freidora frente al horno.",
+    desc: currentSeo.description,
     liveBadge: "🔴 LIVE",
     wLabel: "Potencia Freidora (Vatios)",
     mLabel: "Minutos de Cocción",
@@ -79,7 +95,6 @@ const content = {
     resOven: "Coste Horno Eléctrico (2500W)*",
     resSave: "Dinero Ahorrado",
     ovenNote: "*El horno tradicional requiere un 25% más de tiempo para igualar la cocción por aire.",
-    
     editorialH2: "¿Por qué la freidora de aire consume menos?",
     editorialText: "A diferencia del horno tradicional, que tarda 15-20 minutos solo en calentar una enorme cámara de 60 litros, la freidora satura su cámara compacta en minutos. Además, el <strong>potente flujo ciclónico</strong> reduce los tiempos de cocción un 20-30%. Aunque el pico de vatios es similar, la resistencia eléctrica está encendida mucho menos tiempo, reduciendo los kWh totales.",
     faqTitle: "Preguntas Frecuentes sobre Consumo",
@@ -90,9 +105,8 @@ const content = {
     ]
   },
   fr: {
-    title: "Calculateur de Consommation Électrique : Friteuse à Air vs Four",
     h1: "Simulateur de Facture",
-    desc: "Fini les factures surprises ! Déplacez les curseurs pour découvrir instantanément combien coûte votre friteuse par rapport au four.",
+    desc: currentSeo.description,
     liveBadge: "🔴 LIVE",
     wLabel: "Puissance Friteuse (Watts)",
     mLabel: "Minutes de Cuisson",
@@ -101,7 +115,6 @@ const content = {
     resOven: "Coût Four Électrique (2500W)*",
     resSave: "Argent Économisé",
     ovenNote: "*Un four traditionnel nécessite environ 25 % de temps en plus pour égaler la cuisson à l'air.",
-    
     editorialH2: "Pourquoi la Friteuse à Air consomme-t-elle moins ?",
     editorialText: "Contrairement à un four traditionnel qui met 15 à 20 minutes pour chauffer une grande cavité de 60 litres, la friteuse sature sa petite chambre en quelques minutes. De plus, le <strong>flux d'air cyclonique</strong> réduit le temps de cuisson de 20 à 30 %. Bien que la puissance maximale (Watts) soit similaire, la résistance chauffe moins longtemps, réduisant ainsi les kWh totaux.",
     faqTitle: "Questions Fréquentes sur l'Énergie",
@@ -118,10 +131,10 @@ const t = content[lang as keyof typeof content] || content.it;
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": t.h1,
+  "name": currentSeo.title,
   "operatingSystem": "All",
   "applicationCategory": "UtilitiesApplication",
-  "description": t.desc,
+  "description": currentSeo.description,
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
 };
 
@@ -140,7 +153,7 @@ const faqSchema = {
 };
 ---
 
-<MainLayout title={t.title} lang={lang}>
+<MainLayout title={currentSeo.title} lang={lang} description={currentSeo.description}>
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
     
     <div class="mb-8 flex justify-start">

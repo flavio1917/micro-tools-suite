@@ -6,9 +6,24 @@ import RecipeSearch from '../components/recipes/RecipeSearch.astro';
 export interface Props { lang: string; }
 const { lang } = Astro.props;
 
+// DIZIONARIO SEO PER TITOLI E DESCRIZIONI UNICHE (Anti-Boilerplate)
+const seoTitles = {
+  it: "Convertitore Friggitrice ad Aria: Calcolo Tempi e Gradi Online",
+  en: "Air Fryer Calculator: Convert Oven Time and Temperature",
+  es: "Calculadora Freidora de Aire: Convierte Tiempos y Grados de Horno",
+  fr: "Calculateur Friteuse à Air : Convertir Temps et Température Four"
+};
+
+const seoDescriptions = {
+  it: "Il miglior convertitore friggitrice ad aria online. Trasforma tempi e temperature da forno a Air Fryer in un click. Oltre 220 ricette testate e guide ai consumi.",
+  en: "The best air fryer converter online. Easily transform oven times and temperatures for your Air Fryer. Explore 220+ tested recipes and energy-saving tips.",
+  es: "El mejor conversor para freidora de aire. Transforma tiempos y grados de horno a Air Fryer con un clic. Más de 220 recetas y guías de ahorro energético.",
+  fr: "Le meilleur convertisseur pour friteuse à air. Transformez les temps et températures du four pour l'Air Fryer. Plus de 220 recettes testées et conseils d'économie."
+};
+
 const content = {
   it: {
-    pageTitle: "Converti da Forno a Friggitrice ad Aria: Tempi e Gradi",
+    pageTitle: seoTitles.it,
     explore: "Esplora il Ricettario",
     h2: "Guida alla Conversione: Forno vs Friggitrice ad Aria",
     p1: "Hai trovato una ricetta perfetta per il forno ma vuoi cucinarla nella tua friggitrice ad aria per risparmiare tempo ed energia? Il nostro <strong>convertitore per friggitrice ad aria</strong> applica l'algoritmo standard per adattare qualsiasi pietanza: riducendo la temperatura di circa <strong>20°C</strong> e il tempo di cottura del <strong>20%</strong>.",
@@ -23,12 +38,12 @@ const content = {
     art2Desc: "Per i cibi surgelati (patatine fritte, crocchette, bastoncini), la regola cambia leggermente: spesso puoi mantenere la <strong>stessa temperatura</strong> indicata sulla confezione per il forno ventilato, ma riducendo il tempo del 20-30%. Ricordati di scuotere il cestello a metà cottura!",
     faqTitle: "Domande Frequenti",
     q1: "Devo preriscaldare la friggitrice ad aria?",
-    a1: "A differenza del forno tradizionale, la maggior parte delle air fryer moderne raggiunge la temperatura in 2-3 minuti. Preriscaldare è consigliato solo per carne (come bistecche) o dolci lievitati, per garantire lo shock termico immediato.",
+    a1: "A differenza del forno tradizionale, la maggior parte delle air fryer moderne raggiunge la temperatura in 2-3 minuti. Preriscaldare è consigliato solo per carne (come bistecche) o dolci lievitati.",
     q2: "Posso usare la carta forno o alluminio?",
-    a2: "Sì, ma con attenzione. La carta forno (o teglie in silicone) deve essere forata se vuoi che l'aria circoli sotto il cibo. Non mettere MAI la carta forno durante il preriscaldamento senza cibo sopra: il flusso d'aria potente potrebbe sollevarla contro la resistenza e farla bruciare."
+    a2: "Sì, ma con attenzione. La carta forno deve essere forata per far circolare l'aria. Non metterla MAI durante il preriscaldamento senza cibo sopra: volerebbe contro la resistenza."
   },
   en: {
-    pageTitle: "Oven to Air Fryer Converter: Time and Temperature",
+    pageTitle: seoTitles.en,
     explore: "Explore the Cookbook",
     h2: "Conversion Guide: Oven vs Air Fryer",
     p1: "Found a perfect oven recipe but want to cook it in your air fryer to save time and energy? Our <strong>air fryer calculator</strong> applies the standard algorithm: reducing the temperature by about <strong>25°F (20°C)</strong> and cooking time by <strong>20%</strong>.",
@@ -38,17 +53,17 @@ const content = {
     row2_1: "400°F (200°C)", row2_2: "350°F (180°C)", row2_3: "Perfect for chicken and fries",
     row3_1: "430°F (220°C)", row3_2: "400°F (200°C)", row3_3: "For crispy gratins",
     art1Title: "⚡ Fan or Conventional Oven?",
-    art1Desc: "An air fryer works like a compact <strong>super-convection oven</strong>. If your recipe is for a <em>conventional</em> oven, drop the temp by 25°F. If it's already for a <em>fan/convection</em> oven, you often just reduce the time, but a slight temp drop prevents drying out the food.",
+    art1Desc: "An air fryer works like a compact <strong>super-convection oven</strong>. If your recipe is for a <em>conventional</em> oven, drop the temp by 25°F. If it's already for a <em>fan/convection</em> oven, you often just reduce the time.",
     art2Title: "🍟 Fries and Frozen Foods",
-    art2Desc: "For frozen foods (fries, nuggets), the rule shifts: you can often keep the <strong>same temperature</strong> listed for a fan oven, but reduce the time by 20-30%. Remember to shake the basket halfway!",
+    art2Desc: "For frozen foods (fries, nuggets), you can often keep the <strong>same temperature</strong> listed for a fan oven, but reduce the time by 20-30%. Remember to shake the basket halfway!",
     faqTitle: "Frequently Asked Questions",
     q1: "Do I need to preheat my air fryer?",
-    a1: "Unlike traditional ovens, most modern air fryers reach target temps in 2-3 minutes. Preheating is only recommended for searing meats (like steaks) or baking, to ensure an immediate thermal shock.",
+    a1: "Most modern air fryers reach target temps in 2-3 minutes. Preheating is only recommended for searing meats or baking to ensure an immediate thermal shock.",
     q2: "Can I use parchment paper or foil?",
-    a2: "Yes, but carefully. Parchment paper must be perforated for air circulation. NEVER put parchment paper in during preheating without food on top: the airflow will blow it into the heating element and burn it."
+    a2: "Yes, but carefully. Parchment paper must be perforated for air circulation. NEVER put it in during preheating without food on top to avoid fire hazards."
   },
   es: {
-    pageTitle: "Convertir Horno a Freidora de Aire: Calculadora",
+    pageTitle: seoTitles.es,
     explore: "Explora el Recetario",
     h2: "Guía de Conversión: Horno vs Freidora de Aire",
     p1: "¿Has encontrado una receta para el horno pero quieres usar tu freidora de aire? Nuestro <strong>convertidor</strong> aplica el algoritmo estándar: reduciendo la temperatura unos <strong>20°C</strong> y el tiempo un <strong>20%</strong>.",
@@ -60,15 +75,15 @@ const content = {
     art1Title: "⚡ ¿Horno Estático o con Ventilador?",
     art1Desc: "La freidora de aire es un <strong>horno de convección</strong> compacto. Si la receta es para horno <em>estático</em>, baja la temperatura 20°C. Si es para horno <em>con ventilador</em>, a menudo basta con reducir solo el tiempo.",
     art2Title: "🍟 Patatas Fritas y Congelados",
-    art2Desc: "Para alimentos congelados, a menudo puedes mantener la <strong>misma temperatura</strong> del envase para horno con ventilador, pero reduciendo el tiempo en un 20-30%. ¡Recuerda agitar la cesta!",
+    art2Desc: "Para alimentos congelados, a menudo puedes mantener la <strong>misma temperatura</strong> del envase para horno con ventilador, pero reduciendo el tiempo en un 20-30%.",
     faqTitle: "Preguntas Frecuentes",
     q1: "¿Debo precalentar la freidora de aire?",
-    a1: "La mayoría alcanza la temperatura en 2-3 minutos. Solo se recomienda precalentar para carnes o repostería, para asegurar el choque térmico inmediato.",
+    a1: "La mayoría alcanza la temperatura en 2-3 minuti. Solo se recomienda precalentar para carnes o repostería para asegurar el choque térmico inmediato.",
     q2: "¿Puedo usar papel de horno o aluminio?",
-    a2: "Sí, pero con cuidado. NUNCA pongas papel de horno durante el precalentamiento sin comida encima: el flujo de aire podría empujarlo contra la resistencia y quemarlo."
+    a2: "Sí, ma con cuidado. NUNCA pongas papel de horno durante el precalentamiento sin comida encima: el flujo de aire podría empujarlo contra la resistencia."
   },
   fr: {
-    pageTitle: "Convertisseur Four vers Friteuse à Air",
+    pageTitle: seoTitles.fr,
     explore: "Explorer le Livre de Recettes",
     h2: "Guide de Conversion : Four vs Friteuse à Air",
     p1: "Vous avez trouvé une recette pour le four mais voulez utiliser votre Air Fryer ? Notre <strong>calculateur</strong> applique l'algorithme standard : réduire la température d'environ <strong>20°C</strong> et le temps de <strong>20%</strong>.",
@@ -80,18 +95,18 @@ const content = {
     art1Title: "⚡ Four à Chaleur Tournante ou Traditionnel ?",
     art1Desc: "L'Air Fryer est un <strong>four à super-convection</strong>. Si la recette est pour un four <em>traditionnel</em>, baissez la température de 20°C. Si c'est pour un four <em>à chaleur tournante</em>, réduisez souvent juste le temps.",
     art2Title: "🍟 Frites et Surgelés",
-    art2Desc: "Pour les surgelés, conservez souvent la <strong>même température</strong> indiquée pour un four à chaleur tournante, mais réduisez le temps de 20 à 30 %. N'oubliez pas de secouer le panier !",
+    art2Desc: "Pour les surgelés, conservez souvent la <strong>même température</strong> indiquée pour un four à chaleur tournante, mais réduisez le temps de 20 à 30 %.",
     faqTitle: "Foire Aux Questions",
     q1: "Dois-je préchauffer la friteuse à air ?",
-    a1: "La plupart atteignent la température en 2-3 minutes. Le préchauffage n'est recommandé que pour la viande ou les pâtisseries.",
+    a1: "La plupart atteignent la température en 2-3 minutes. Le préchauffage n'est recommandé que pour la viande o le pâtisseries.",
     q2: "Puis-je utiliser du papier sulfurisé ?",
-    a2: "Oui, mais avec prudence. Ne mettez JAMAIS de papier sulfurisé pendant le préchauffage sans aliments dessus : le flux d'air pourrait le soulever contre la résistance et le brûler."
+    a2: "Oui, mais con prudence. Ne mettez JAMAIS de papier sulfurisé pendant le préchauffage sans aliments dessus : le flux d'air pourrait le brûler."
   }
 };
 
 const t = content[lang as keyof typeof content] || content.it;
 
-// DIZIONARIO SEZIONE STRUMENTI EXTRA (BLUE OCEAN)
+// DIZIONARIO STRUMENTI EXTRA
 const toolsData = {
   it: {
     title: "Gli Strumenti Extra",
@@ -112,12 +127,12 @@ const toolsData = {
     subtitle: "Guides and utilities to master your air fryer.",
     cards: [
       { link: "materiali", emoji: "🛑", title: "Materials Guide", desc: "What you can (and CANNOT) put in the basket." },
-      { link: "riscaldare", emoji: "🍕", title: "Reheating", desc: "Bring back the crispiness to yesterday's pizza." },
+      { link: "riscaldare", emoji: "🍕", title: "Reheating Guide", desc: "Bring back the crispiness to yesterday's pizza." },
       { link: "errori", emoji: "⚠️", title: "Error Codes", desc: "Meaning of E1, E2, E3 errors and how to reset." },
       { link: "calorie", emoji: "⚖️", title: "Calorie Calculator", desc: "Discover how much fat you save vs deep frying." },
       { link: "pulizia", emoji: "🧽", title: "Heating Element", desc: "Safely degrease the top heating coil." },
       { link: "problemi", emoji: "💨", title: "Smoke & Smells", desc: "Solve plastic smells and white smoke issues." },
-      { link: "consumi", emoji: "⚡", title: "Electricity Bill", desc: "Calculate how much you spend vs the electric oven." },
+      { link: "consumi", emoji: "⚡", title: "Energy Bill", desc: "Calculate how much you spend vs the electric oven." },
       { link: "surgelati", emoji: "❄️", title: "Frozen Foods", desc: "Calculate 2-Phase cooking times for frozen items." }
     ]
   },
@@ -160,6 +175,8 @@ const alternateUrls = {
   fr: "https://www.convertitorefriggitrice.it/fr/"
 };
 
+const currentDesc = seoDescriptions[lang as keyof typeof seoDescriptions] || seoDescriptions.it;
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -170,7 +187,7 @@ const jsonLd = {
 };
 ---
 
-<MainLayout title={t.pageTitle} lang={lang} alternateUrls={alternateUrls}>
+<MainLayout title={t.pageTitle} lang={lang} description={currentDesc} alternateUrls={alternateUrls}>
   
   <AirFryer lang={lang} />
 
@@ -195,13 +212,10 @@ const jsonLd = {
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
       {toolsLang.cards.map((card) => (
         <a href={`/${lang}/${card.link}`} class="group bg-slate-800/40 border border-slate-700/60 p-5 md:p-6 rounded-2xl hover:bg-slate-800 transition-all shadow-lg hover:shadow-2xl flex items-start gap-4 overflow-hidden relative">
-          
           <div class="absolute -left-10 top-0 bottom-0 w-2 bg-gradient-to-b from-blue-400 to-orange-500 blur-xl group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
-
           <div class="text-4xl flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 drop-shadow-md">
             {card.emoji}
           </div>
-          
           <div class="flex-1 relative z-10">
             <h3 class="text-white font-bold text-lg mb-1 group-hover:text-blue-400 transition-colors">{card.title}</h3>
             <p class="text-xs md:text-sm text-slate-400 leading-relaxed">{card.desc}</p>
@@ -212,7 +226,6 @@ const jsonLd = {
   </section>
 
   <section class="max-w-3xl mx-auto px-4 pb-12 text-slate-300 space-y-12">
-    
     <article class="space-y-6 pt-12 border-t border-slate-800">
       <h2 class="text-3xl font-bold text-white tracking-tight">{t.h2}</h2>
       <p class="text-lg leading-relaxed text-slate-400" set:html={t.p1}></p>
@@ -250,23 +263,18 @@ const jsonLd = {
 
     <div class="grid md:grid-cols-2 gap-8">
       <article class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
-        <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
-          {t.art1Title}
-        </h3>
+        <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">{t.art1Title}</h3>
         <p class="text-sm text-slate-400 leading-relaxed" set:html={t.art1Desc}></p>
       </article>
 
       <article class="bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
-        <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">
-          {t.art2Title}
-        </h3>
+        <h3 class="text-lg font-bold text-white mb-3 flex items-center gap-2">{t.art2Title}</h3>
         <p class="text-sm text-slate-400 leading-relaxed" set:html={t.art2Desc}></p>
       </article>
     </div>
 
     <article class="space-y-6 pt-8 border-t border-slate-800">
       <h3 class="text-2xl font-bold text-white">{t.faqTitle}</h3>
-      
       <div class="space-y-4">
         <details class="group bg-slate-900 rounded-lg p-4 cursor-pointer [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex justify-between items-center font-medium text-slate-200 group-hover:text-blue-300 transition-colors">
@@ -289,7 +297,6 @@ const jsonLd = {
         </details>
       </div>
     </article>
-
   </section>
 
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

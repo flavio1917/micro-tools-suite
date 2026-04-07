@@ -1,10 +1,10 @@
 [
   {
     "slug": "air-fryer-crispy-calamari-rings",
-    "title": "Semolina-Crusted Calamari Rings",
+    "title": "Crispy Air-Fried Calamari Rings (No Deep Frying)",
     "emoji": "🦑",
     "temp": 390,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "10",
     "portions": "2",
     "ingredients": [
@@ -13,7 +13,7 @@
       "Olive oil spray",
       "Salt and lemon wedges for serving"
     ],
-    "description": "Enjoy the crunch without the deep-fryer. These calamari rings are coated in fine semolina for a golden, shatteringly crisp exterior that locks in the tender, moist interior in just 8 minutes.",
+    "description": "Golden, crispy calamari rings in just 8 minutes! Discover the semolina secret for a perfect crust and tender inside, using a fraction of the oil compared to deep frying.",
     "instructions": [
       "Thoroughly dry the calamari rings with paper towels.",
       "Combine calamari rings and semolina flour in a sealable plastic bag. Shake vigorously to ensure an even coating.",
@@ -38,10 +38,10 @@
   },
   {
     "slug": "classic-italian-breaded-cutlet-air-fryer",
-    "title": "Italian Breaded Cutlet",
+    "title": "Perfect Air Fryer Breaded Cutlet (Fail-Proof Crust)",
     "emoji": "🥩",
     "temp": 375,
-    "time": "12-15",
+    "time": "12",
     "prep_time": "15",
     "portions": "2",
     "ingredients": [
@@ -52,7 +52,7 @@
       "Black pepper, to taste",
       "Cooking spray"
     ],
-    "description": "A classic Italian breaded cutlet. This cooking method yields a light result with a crispy crust comparable to traditional pan-frying.",
+    "description": "Crispy, golden breaded cutlet without deep frying. Discover the trick for breading that sticks and juicy meat in just 12 minutes. The time-saving dinner kids love!",
     "instructions": [
       "Pound the cutlets to an even thickness if necessary.",
       "Season the beaten egg with salt and pepper. Dip each cutlet into the egg, then coat thoroughly with breadcrumbs, pressing firmly to adhere.",
@@ -75,10 +75,10 @@
   },
   {
     "slug": "air-fryer-stuffed-meatloaf",
-    "title": "Ham and Cheese Stuffed Meatloaf",
+    "title": "Stuffed Meatloaf (Melty Cheese Center)",
     "emoji": "🍖",
     "temp": 355,
-    "time": "35-40",
+    "time": "35",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -93,7 +93,7 @@
       "Salt",
       "Freshly ground black pepper"
     ],
-    "description": "A savory centerpiece with a molten surprise. This meatloaf features a seasoned ground meat exterior that crisps beautifully, protecting a heart of melted cheese and savory ham.",
+    "description": "Stuffed meatloaf with a melting cheese heart and perfect crust in 35 minutes. No need to run the oven for an hour: the foolproof recipe for a moist and juicy meat main course.",
     "instructions": [
       "In a large bowl, combine the ground meat, egg, Parmesan cheese, breadcrumbs, salt, and pepper. Mix until a firm, uniform mixture is achieved.",
       "On a sheet of parchment paper, press the meat mixture into a rectangle approximately 1/2-inch thick.",
@@ -115,10 +115,10 @@
   },
   {
     "slug": "air-fryer-sausage-and-potatoes",
-    "title": "Crispy Sausage and Potato Roast",
+    "title": "Diced Sausage and Potatoes (Quick One-Pan Meal)",
     "emoji": "🥘",
     "temp": 385,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "10",
     "portions": "3",
     "ingredients": [
@@ -130,7 +130,7 @@
       "Salt",
       "Black Pepper"
     ],
-    "description": "The ultimate one-pan comfort meal. As they cook together, the sausage juices coat the potatoes, creating a rustic dish with crispy edges and a tender, flavor-packed interior.",
+    "description": "Sausage and potatoes: the time-saving one-pan meal ready in just 20 minutes. Extra-crispy golden potatoes and juicy sausage perfectly degreased thanks to the hot air flow.",
     "instructions": [
       "Cut potatoes into 1-inch (2-3 cm) cubes. Soak in cold water for 10 minutes, then dry thoroughly.",
       "Cut sausage into 2-inch (5 cm) chunks.",
@@ -153,17 +153,17 @@
   },
   {
     "slug": "abruzzese-lamb-skewers",
-    "title": "Abruzzese Lamb Skewers (Arrosticini)",
+    "title": "Abruzzese Lamb Skewers (Charcoal Grill Effect in Air Fryer)",
     "emoji": "🍢",
     "temp": 400,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "2",
     "portions": "2",
     "ingredients": [
       "15-20 fresh or thawed lamb skewers (arrosticini)",
       "Fine salt"
     ],
-    "description": "Bring Italian street food home. High-temperature cooking mimics a charcoal grill, rendering the fat to create tender, slightly charred lamb skewers that are authentically juicy.",
+    "description": "Succulent Abruzzese lamb skewers cooked to perfection in just 8 minutes! Discover how to get a fantastic charcoal grill effect right in your home, smoke-free while rendering the fat.",
     "instructions": [
       "If skewers are too long for the cooking basket, break or cut the wooden ends.",
       "Arrange skewers in the basket in a maximum of two crossed layers.",
@@ -188,7 +188,7 @@
   },
   {
     "slug": "air-fried-giudia-style-artichokes",
-    "title": "Crispy Giudia-Style Artichokes",
+    "title": "Jewish-Style Artichokes (Extra Crispy Without Deep Frying)",
     "emoji": "🥬",
     "temp": 355,
     "time": "15",
@@ -199,7 +199,7 @@
       "3 tablespoons extra virgin olive oil",
       "Fine sea salt and freshly ground black pepper, to taste"
     ],
-    "description": "A tribute to Rome's Jewish Quarter. These artichokes bloom like flowers, with outer leaves that shatter like chips and a heart that stays buttery and soft.",
+    "description": "Super crispy Jewish-style artichokes without plunging into boiling oil. Shatteringly crisp leaves and a tender heart ready in 15 minutes: the delicious Roman side dish without the fried smell at home.",
     "instructions": [
       "Remove the tough outer leaves from the artichokes. Trim the fibrous part of the stem.",
       "Tap the artichokes upside down on a cutting board to open the leaves.",
@@ -225,10 +225,10 @@
   },
   {
     "slug": "stuffed-tomatoes-and-bell-peppers",
-    "title": "Mediterranean Stuffed Vegetables",
+    "title": "Gratinated Stuffed Vegetables (Rice & Meat in 20 Mins)",
     "emoji": "🍅",
     "temp": 355,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -241,7 +241,7 @@
       "Salt",
       "Fresh basil"
     ],
-    "description": "A wholesome family classic. Vibrant bell peppers and tomatoes are hollowed out and filled with seasoned rice or meat, baking until the vegetables are tender and the filling is infused with juice.",
+    "description": "Gratinated stuffed vegetables in just 20 minutes! Tomatoes and peppers with a fragrant filling and  crust. The super easy one-pan meal that elegantly empties the fridge.",
     "instructions": [
       "Cut the tops off the tomatoes and bell peppers. Remove the seeds. Blend the pulp from the tomatoes.",
       "Combine the uncooked rice or ground meat with the blended tomato pulp, olive oil, salt, grated Parmesan cheese, and chopped basil.",
@@ -265,7 +265,7 @@
   },
   {
     "slug": "roasted-diced-rosemary-potatoes",
-    "title": "Rosemary and Garlic Roasted Potatoes",
+    "title": "Rosemary Diced Potatoes (Golden Without Parboiling)",
     "emoji": "🥔",
     "temp": 385,
     "time": "20",
@@ -278,7 +278,7 @@
       "2 garlic cloves, unpeeled",
       "Coarse sea salt"
     ],
-    "description": "The perfect side dish. Diced potatoes are roasted until they reach peak crispness, tossed with fragrant fresh rosemary and toasted garlic for a rustic, aromatic finish.",
+    "description": "Golden, extra-crispy diced potatoes on the outside, tender inside in 20 minutes. Discover the foolproof trick (no parboiling) for perfect sides with minimal effort and zero heavy fats.",
     "instructions": [
       "Peel and cut potatoes into 3/4 to 1-inch cubes. Rinse cubes under cold water to remove excess starch. Dry thoroughly with a kitchen towel.",
       "In a large bowl, combine potato cubes, olive oil, crushed unpeeled garlic cloves, and rosemary needles. Toss to coat evenly.",
@@ -303,10 +303,10 @@
   },
   {
     "slug": "savory-ricotta-spinach-tart",
-    "title": "Creamy Ricotta and Spinach Tart",
+    "title": "Ricotta & Spinach Savory Pie (Ultra-Crispy Pastry)",
     "emoji": "🥧",
     "temp": 340,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -318,7 +318,7 @@
       "Nutmeg, to taste",
       "Salt, to taste"
     ],
-    "description": "Elegant and effortless. A golden, flaky pastry crust holds a silky filling of whipped ricotta and fresh spinach, making it a perfect light lunch or appetizer.",
+    "description": "Ricotta and spinach savory pie with ultra-crispy puff pastry in just 20 minutes. Avoid a soggy bottom: discover the air frying technique for well-cooked, golden pastries without turning on the oven.",
     "instructions": [
       "Thoroughly squeeze excess moisture from the cooked spinach and chop finely. In a mixing bowl, combine the chopped spinach with ricotta, egg, grated Parmesan, salt, and nutmeg.",
       "Unroll the pastry sheet on its parchment paper. Line a round baking dish with the pastry and parchment.",
@@ -344,10 +344,10 @@
   },
   {
     "slug": "roasted-chestnuts-air-fryer",
-    "title": "Perfectly Roasted Chestnuts",
+    "title": "Perfect Roasted Chestnuts (Easy to Peel in 15 Mins)",
     "emoji": "🌰",
     "temp": 390,
-    "time": "15-20",
+    "time": "15",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -355,7 +355,7 @@
       "Water, for soaking",
       "Coarse salt"
     ],
-    "description": "Capture the flavor of autumn. This method ensures chestnuts are easy to peel and have a sweet, tender interior with a nostalgic roasted aroma.",
+    "description": "Perfect roasted chestnuts in 15 minutes with no smoke in the house! Discover the foolproof trick (soaking) to get chestnuts soft inside with skins that peel off in a second.",
     "instructions": [
       "Score each chestnut horizontally on its rounded side with a sharp knife.",
       "Soak the chestnuts in warm water for a minimum of 15 minutes to soften the peel.",
@@ -380,17 +380,17 @@
   },
   {
     "slug": "light-arancini-and-suppli",
-    "title": "Arancini and Supplì (Street Food Duo)",
+    "title": "Arancini & Supplì (Melty Heart, No Fried Smell)",
     "emoji": "🍘",
     "temp": 390,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
       "4 breaded, uncooked arancini or supplì",
       "Vegetable oil cooking spray"
     ],
-    "description": "Sicilian and Roman flavors combined. A uniform, crispy breadcrumb shell hides a core of stringy mozzarella that melts perfectly every time.",
+    "description": "The king of street food gets a light makeover! Golden arancini and supplì with an extra-crispy crust and a melty mozzarella heart. Air-fried in 15 minutes with no fried smell.",
     "instructions": [
       "Cook arancini or supplì directly from the refrigerator to help maintain their shape.",
       "Coat the entire breaded surface with cooking spray to ensure even browning and prevent dryness.",
@@ -414,10 +414,10 @@
   },
   {
     "slug": "potato-croquettes-panzarotti",
-    "title": "Neapolitan Potato Croquettes",
+    "title": "Potato Croquettes (Golden Panzarotti, No Falling Apart)",
     "emoji": "🥔",
     "temp": 400,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -430,7 +430,7 @@
       "Cooking spray",
       "Salt and black pepper to taste"
     ],
-    "description": "Experience the famous 'Panzarotti' of Naples. These croquettes feature a smooth, seasoned potato mash with a melting cheese center, all wrapped in a firm, golden crust.",
+    "description": "Light and perfectly golden potato croquettes (panzarotti). Avoid them falling apart during cooking: discover how to get a sturdy shell and a melty mozzarella heart in 12 mins.",
     "instructions": [
       "In a large bowl, combine cold mashed potatoes, 1 large egg, and Parmesan cheese. Season with salt and pepper. Mix until fully incorporated.",
       "Take a portion of the potato mixture and shape it into a cylinder. Insert a cube of mozzarella into the center and seal completely.",
@@ -458,11 +458,11 @@
   },
   {
     "slug": "quick-focaccia-flatbread",
-    "title": "Rosemary and Sea Salt Focaccia",
+    "title": "Quick Focaccia Flatbread (Thin, Salty & Crispy in 12 Mins)",
     "emoji": "🥖",
     "temp": 375,
-    "time": "12-15",
-    "prep_time": "5(if using pre-made dough)",
+    "time": "12",
+    "prep_time": "5",
     "portions": "2",
     "ingredients": [
       "9 oz (250g) Risen Pizza Dough",
@@ -471,7 +471,7 @@
       "Coarse Sea Salt",
       "Fresh Rosemary"
     ],
-    "description": "A fast and fragrant flatbread. Brushed with extra virgin olive oil and topped with coarse salt, this focaccia is crispy on the bottom and airy on top—the ideal partner for charcuterie.",
+    "description": "Crispy focaccia (schiacciatina) in 12 minutes! Discover the brine trick to cook store-bought dough, making it thin, golden, and fragrant without turning on the traditional oven.",
     "instructions": [
       "Cut a circle of parchment paper to fit the baking surface. Grease with olive oil.",
       "Place the dough on the parchment paper. Use fingertips to spread and create dimples on the surface.",
@@ -495,10 +495,10 @@
   },
   {
     "slug": "nutella-jam-puff-pastry-cornetti",
-    "title": "Mini Filled Croissants (Cornetti)",
+    "title": "Filled Puff Pastry Croissants (Hot Breakfast in 10 Mins)",
     "emoji": "🥐",
     "temp": 340,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "10",
     "portions": "4",
     "ingredients": [
@@ -507,7 +507,7 @@
       "1 egg yolk or milk, for wash",
       "Powdered sugar, for garnish"
     ],
-    "description": "Sweeten your morning in minutes. Flaky, buttery puff pastry triangles are filled with your choice of chocolate or jam and baked until puffed and golden.",
+    "description": "Cafe-style breakfast at home in 10 minutes. Hot puff pastry croissants, filled and golden in the air fryer. Super fast to prepare to start the day with a smile.",
     "instructions": [
       "Unroll the puff pastry sheet and cut it into 8 equal triangular wedges.",
       "Place one teaspoon of filling at the base of each triangle.",
@@ -530,7 +530,7 @@
     "is_sanitized": true
   },
   {
-    "title": "Lighter Eggplant Parmesan",
+    "title": "Lighter Eggplant Parmesan (Perfect Gratin in 20 Mins)",
     "slug": "eggplant-parmesan",
     "emoji": "🍆",
     "temp": 355,
@@ -546,7 +546,7 @@
       "Extra virgin olive oil, as needed",
       "Salt, as needed"
     ],
-    "description": "All the soul of the Italian original with a modern twist. Layers of tender eggplant, rich tomato sauce, and bubbling mozzarella baked to a comforting perfection.",
+    "description": "The real eggplant parmesan but in a lighter version! Air pre-cooked eggplants (zero pan-frying) layered with mozzarella and tomato. Chef-quality gratin in 20 mins.",
     "instructions": [
       "Slice the eggplant into 1/4-inch thick rounds.",
       "Lightly brush the eggplant slices with oil. Pre-cook in the air fryer basket at 355°F for 8 minutes.",
@@ -568,7 +568,7 @@
     "is_sanitized": true
   },
   {
-    "title": "Classic Meatballs in Tomato Sauce",
+    "title": "Meatballs in Tomato Sauce (Juicy Inside, Lightly Crisp Outside)",
     "slug": "grandmas-meatballs-with-sauce",
     "emoji": "🍝",
     "temp": 375,
@@ -584,7 +584,7 @@
       "Salt and black pepper, to taste",
       "1 cup tomato sauce, pre-cooked"
     ],
-    "description": "Just like Nonna used to make. A juicy blend of beef and pork, seasoned to perfection and simmered in a simple, vibrant tomato sauce for a timeless family meal.",
+    "description": "Super tender meatballs in tomato sauce with minimal effort. Discover the double-cooking method: lightly brown the meatballs in the air fryer to lock in juices, then finish them in tomato sauce. Comfort food in 15 mins.",
     "instructions": [
       "In a large bowl, combine the squeezed bread, ground meat, egg, Parmesan cheese, parsley, salt, and pepper. Mix until well incorporated.",
       "Shape the mixture into meatballs, approximately 1.5 inches in diameter.",
@@ -603,7 +603,7 @@
     "is_sanitized": true
   },
   {
-    "title": "Traditional Sicilian Ragù Arancini",
+    "title": "Sicilian Ragù Arancini (Crispy Golden Crust Without Deep Frying)",
     "slug": "sicilian-ragu-arancini",
     "emoji": "🍙",
     "temp": 400,
@@ -621,7 +621,7 @@
       "Breadcrumbs, for coating",
       "Olive oil spray"
     ],
-    "description": "The king of Sicilian snacks. Golden rice balls stuffed with a slow-cooked meat ragù and peas, with a molten cheese center that’s worth every bite.",
+    "description": "The authentic cone-shaped Sicilian arancino, without plunging into oil. A thick, crispy breadcrumb crust with a warm heart of saffron rice and rich meat ragù. Sublime!",
     "instructions": [
       "Dissolve saffron in one tablespoon of hot water. Combine with the cold rice and mix thoroughly.",
       "Portion the rice into handfuls. Flatten one portion in your palm. Place a spoonful of ragù, peas, and a cheese cube in the center.",
@@ -640,7 +640,7 @@
     "is_sanitized": true
   },
   {
-    "title": "Ascolana Meat-Stuffed Olives",
+    "title": "Ascolana Meat-Stuffed Olives (Crispy Appetizer in 10 Mins)",
     "slug": "ascolana-style-olives",
     "emoji": "🫒",
     "temp": 400,
@@ -651,7 +651,7 @@
       "20 meat-stuffed Ascolana-style olives, fresh or frozen",
       "Cooking oil spray"
     ],
-    "description": "A jewel of Italian gastronomy. Large green olives are hand-stuffed with a savory meat filling, breaded, and cooked until they are a crispy, bite-sized delight.",
+    "description": "Delicious meat-stuffed Ascolana olives: the perfect appetizer ready in 10 minutes. The hot air flow dries the breading, making it extra crispy without the grease of pan-frying.",
     "instructions": [
       "Arrange the olives in a single layer in the cooking basket, ensuring they are spaced apart.",
       "Spray the olives lightly and evenly with cooking oil.",
@@ -669,7 +669,7 @@
     "is_sanitized": true
   },
   {
-    "title": "Ligurian-Style Stuffed Zucchini",
+    "title": "Ligurian-Style Stuffed Zucchini (Quick Gratin)",
     "slug": "ligurian-stuffed-zucchini",
     "emoji": "🥒",
     "temp": 355,
@@ -687,7 +687,7 @@
       "Salt, to taste",
       "Freshly ground black pepper, to taste"
     ],
-    "description": "A taste of the Italian Riviera. Tender zucchini boats filled with a savory mixture of meat and herbs, baked until they achieve a beautiful golden-brown finish.",
+    "description": "Ligurian-style stuffed zucchini boats: a delicious, protein-rich main course. Flavorful meat and golden breadcrumbs blend in a perfect gratin, cutting oven cooking times in half.",
     "instructions": [
       "Halve the zucchini lengthwise. Scoop out the pulp, leaving a 1/4-inch shell. Finely chop the removed pulp.",
       "In a mixing bowl, combine the chopped zucchini pulp, ground meat, egg, and grated Parmesan cheese. Season with marjoram, salt, and pepper. Mix until well incorporated.",
@@ -776,7 +776,7 @@
     "is_sanitized": true
   },
   {
-    "title": "Meat-Stuffed Bell Peppers",
+    "title": "Meat-Stuffed Bell Peppers (Perfectly Cooked in 25 Mins)",
     "slug": "stuffed-bell-peppers",
     "emoji": "🫑",
     "temp": 356,
@@ -795,7 +795,7 @@
       "1 oz grated Parmesan cheese",
       "1 tbsp olive oil"
     ],
-    "description": "A hearty Mediterranean staple. Vibrant bell peppers are packed with a savory, herb-seasoned ground meat filling and roasted until the vegetables are sweet and tender.",
+    "description": "Sweet bell peppers stuffed with ground meat: the dinner-saving one-pan meal ready in 25 minutes. The hot air flow ensures soft peppers and a spectacular gratin on the filling, without turning on the oven.",
     "isItalian": true,
     "instructions": [
       "Halve the bell peppers lengthwise. Remove seeds and pith.",
@@ -816,7 +816,7 @@
     "is_sanitized": true
   },
   {
-    "title": "Rustic Sausage and Potato Roast",
+    "title": "Diced Sausage and Potatoes (Quick One-Pan Meal)",
     "slug": "rustic-sausage-and-potatoes",
     "emoji": "🥔",
     "temp": 375,
@@ -831,7 +831,7 @@
       "1 tbsp extra virgin olive oil",
       "Salt and black pepper, to taste"
     ],
-    "description": "The ultimate Italian comfort duo. As they roast together, the savory juices from the sausage infuse the potatoes, creating a dish with crispy edges and deep, traditional flavor.",
+    "description": "The ultimate Italian comfort duo. As they roast together, the savory juices from the sausage infuse the potatoes, creating a dish with crispy edges and deep, traditional flavor in 20 minutes.",
     "instructions": [
       "Peel and cut the potatoes into 1-inch chunks. Season with olive oil, salt, pepper, rosemary, and the whole garlic clove.",
       "Cut the sausages into large pieces or leave whole, pricking the casing.",
@@ -867,7 +867,7 @@
       "Black Pepper, to taste",
       "Extra Virgin Olive Oil, to taste"
     ],
-    "description": "The genius of Italian leftovers. This golden pasta cake features a crunchy crust and a soft, cheesy interior. Perfect for picnics, lunchboxes, or a quick, satisfying dinner.",
+    "description": "The genius of Italian leftovers. This golden pasta cake features a crunchy crust and a soft, cheesy interior. Perfect for picnics, lunchboxes, or a quick, satisfying dinner in 18 minutes.",
     "instructions": [
       "In a large bowl, whisk the eggs with Parmesan cheese, salt, and pepper. Stir in the optional diced cured meat.",
       "Incorporate the cooked pasta, whether plain or previously dressed, into the egg mixture. Mix until well combined.",
@@ -900,7 +900,7 @@
       "Extra virgin olive oil, as needed",
       "Salt and black pepper, to taste"
     ],
-    "description": "Inspired by the famous Jewish-style artichokes of Rome. The outer leaves become as crunchy as chips, while the heart stays buttery and delicate. A true gourmet treat.",
+    "description": "Inspired by the famous Jewish-style artichokes of Rome. The outer leaves become as crunchy as chips, while the heart stays buttery and delicate. A true gourmet treat in 15 minutes.",
     "instructions": [
       "Clean the artichokes by removing the tough outer leaves and trimming the tips. Submerge in acidulated water (water with lemon juice) to prevent oxidation.",
       "Remove from water and dry thoroughly. Gently tap each artichoke, stem-side up, on a work surface to open the leaves.",
@@ -938,7 +938,7 @@
       "Cooking spray",
       "Salt"
     ],
-    "description": "Delicate and elegant. These blossoms are filled with molten mozzarella and a hint of salty anchovy, then lightly breaded for a sophisticated, crispy appetizer.",
+    "description": "Delicate and elegant. These blossoms are filled with molten mozzarella and a hint of salty anchovy, then lightly breaded for a sophisticated, crispy appetizer in just 8 minutes.",
     "instructions": [
       "Clean the zucchini blossoms by carefully removing the internal pistil. Ensure the petals remain intact.",
       "Insert a piece of well-drained mozzarella and one anchovy fillet into each blossom. Twist the petal tips to seal.",
@@ -973,7 +973,7 @@
       "Extra virgin olive oil",
       "Salt, to taste"
     ],
-    "description": "The taste of summer on toast. Sourdough bread is toasted to perfection and topped with a vibrant mixture of sun-ripened tomatoes, fresh basil, and extra virgin olive oil.",
+    "description": "The taste of summer on toast. Sourdough bread is toasted to perfection and topped with a vibrant mixture of sun-ripened tomatoes, fresh basil, and extra virgin olive oil in 5 minutes.",
     "instructions": [
       "Finely dice the tomatoes. In a bowl, combine with olive oil, salt, and torn basil leaves. Set aside to marinate.",
       "Toast the bread slices at 400°F for 4-5 minutes until crisp.",
@@ -1009,7 +1009,7 @@
       "Dried rosemary",
       "Melted cheese, for serving (optional)"
     ],
-    "description": "Transform your gnocchi into the perfect snack. These potato bites are toasted until golden and crunchy on the outside, remaining soft and pillowy on the inside.",
+    "description": "Transform your gnocchi into the perfect snack. These potato bites are toasted until golden and crunchy on the outside, remaining soft and pillowy on the inside in 12 minutes.",
     "instructions": [
       "In a bowl, combine raw gnocchi with olive oil, salt, paprika, and rosemary. Toss to coat evenly.",
       "Arrange the seasoned gnocchi in a single layer in the cooking basket.",
@@ -1045,7 +1045,7 @@
       "Cooking oil spray, as needed",
       "Milk, as needed"
     ],
-    "description": "A sweet Italian tradition. These 'Castagnole' are made with creamy ricotta for a cloud-like texture, scented with citrus zest and tossed in sugar while still warm.",
+    "description": "A sweet Italian tradition. These 'Castagnole' are made with creamy ricotta for a cloud-like texture, scented with citrus zest and tossed in sugar while still warm. Ready in 10 minutes.",
     "isItalian": true,
     "instructions": [
       "In a bowl, combine the ricotta cheese, egg, sugar, and citrus zest. Mix until well incorporated.",
@@ -1079,7 +1079,7 @@
       "Salt, to taste",
       "Extra virgin olive oil, for brushing"
     ],
-    "description": "The soul of Apulian street food. These savory turnovers feature a crispy, light dough filled with a classic combination of tomato and melting mozzarella cheese.",
+    "description": "The soul of Apulian street food. These savory turnovers feature a crispy, light dough filled with a classic combination of tomato and melting mozzarella cheese in just 8 minutes.",
     "instructions": [
       "Unroll the pizza dough and cut out circles using a round cutter.",
       "Season the tomato puree with salt and oregano. Place one teaspoon of the seasoned puree and a portion of mozzarella in the center of each dough circle.",
@@ -1104,7 +1104,7 @@
     "emoji": "🍞",
     "temp": 340,
     "time": "18",
-    "prep_time": "2 hours (rising)",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "8.8 oz Type '00' Flour",
@@ -1115,7 +1115,7 @@
       "Fresh Rosemary, for topping",
       "Coarse Salt, for topping"
     ],
-    "description": "Experience the aroma of a traditional bakery. This focaccia is tall, airy, and soft, topped with fragrant rosemary and sea salt. Ideal for sandwiches or dipping.",
+    "description": "Experience the aroma of a traditional bakery. This focaccia is tall, airy, and soft, topped with fragrant rosemary and sea salt. Ideal for sandwiches or dipping in 18 minutes.",
     "instructions": [
       "Dissolve yeast in lukewarm water. Add flour, oil, and salt. Knead until an elastic dough forms.",
       "Cover the dough and let it rise for 2 hours, or until doubled in volume.",
@@ -1157,7 +1157,7 @@
       "Salt, to taste",
       "Lemon wedges, for serving"
     ],
-    "description": "A lighter take on the Italian mixed fry. Calamari and shrimp are cooked to a dry, light crispness that lets the natural sweetness of the seafood shine through.",
+    "description": "A lighter take on the Italian mixed fry. Calamari and shrimp are cooked to a dry, light crispness that lets the natural sweetness of the seafood shine through in 12 minutes.",
     "instructions": [
       "Pat the calamari and shrimp completely dry with paper towels.",
       "Place the seafood and durum wheat semolina in a plastic bag. Shake vigorously to coat evenly.",
@@ -1192,7 +1192,7 @@
       "Salt, to taste",
       "Lemon wedges, for serving"
     ],
-    "description": "Rustic and authentic. A selection of small, delicate fish cooked until perfectly crisp. Best enjoyed whole with a generous squeeze of fresh lemon.",
+    "description": "Rustic and authentic. A selection of small, delicate fish cooked until perfectly crisp in 10 minutes. Best enjoyed whole with a generous squeeze of fresh lemon.",
     "instructions": [
       "Rinse the fish. Gut the larger specimens; smaller fish like silversides can be left whole. Pat all fish thoroughly dry.",
       "Dredge the fish in semolina flour, ensuring an even coating. Shake off any excess flour.",
@@ -1226,7 +1226,7 @@
       "Cooking Oil Spray, as needed",
       "Salt, to taste"
     ],
-    "description": "Quick, easy, and delicious. These baby squid are cooked at high heat to ensure a crunchy coating while the meat remains incredibly tender and juicy.",
+    "description": "Quick, easy, and delicious. These baby squid are cooked at high heat to ensure a crunchy coating while the meat remains incredibly tender and juicy in 8 minutes.",
     "instructions": [
       "Ensure baby squid are thoroughly cleaned and left whole. Pat dry with paper towels.",
       "Dredge the squid in durum wheat semolina. Shake off excess flour.",
@@ -1262,7 +1262,7 @@
       "Salt, to taste",
       "Black pepper, to taste"
     ],
-    "description": "Succulent shrimp with a stunning golden coating. Whether served as a party appetizer or a main course, these bites are guaranteed to disappear fast.",
+    "description": "Succulent shrimp with a stunning golden coating. Whether served as a party appetizer or a main course, these bites are guaranteed to disappear fast. Ready in 10 minutes.",
     "instructions": [
       "Peel and devein the shrimp, leaving the tails on. Pat thoroughly dry.",
       "In a shallow dish, combine semolina flour, salt, pepper, and paprika.",
@@ -1280,13 +1280,13 @@
     "title": "Rustic Skin-on Fries",
     "emoji": "🍟",
     "temp": 400,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "2",
     "ingredients": [
       "17.6 oz frozen skin-on french fries"
     ],
-    "description": "Better than the restaurant. Skin-on fries offer a deeper potato flavor and a superior crunch. We ensure they come out perfectly golden-brown every time.",
+    "description": "Better than the restaurant. Skin-on fries offer a deeper potato flavor and a superior crunch. We ensure they come out perfectly golden-brown every time in 18 minutes.",
     "instructions": [
       "Place frozen fries in the basket, distributing them in an even layer.",
       "Do not add oil; the product is pre-oiled.",
@@ -1321,7 +1321,7 @@
       "Salt, to taste",
       "Salsa, for serving"
     ],
-    "description": "Forget store-bought bags. Make your own ultra-crunchy corn tortilla chips at home—perfect for dipping into fresh salsa, guacamole, or melting under nachos.",
+    "description": "Forget store-bought bags. Make your own ultra-crunchy corn tortilla chips at home—perfect for dipping into fresh salsa, guacamole, or melting under nachos in 8 minutes.",
     "instructions": [
       "Cut each tortilla into 8 triangular wedges.",
       "In a bowl, toss the tortilla wedges with olive oil and salt until evenly coated.",
@@ -1348,7 +1348,7 @@
     "title": "Paprika-Spiced Sweet Potato Fries",
     "emoji": "🍠",
     "temp": 400,
-    "time": "11-15",
+    "time": "11",
     "prep_time": "10",
     "portions": "4",
     "ingredients": [
@@ -1360,7 +1360,7 @@
       "1/2 teaspoon onion powder",
       "Ground black pepper to taste"
     ],
-    "description": "A sweet and smoky alternative to classic fries. These sweet potato batons are seasoned with a vibrant paprika blend and roasted until tender with crispy edges.",
+    "description": "A sweet and smoky alternative to classic fries. These sweet potato batons are seasoned with a vibrant paprika blend and roasted until tender with crispy edges in 11 minutes.",
     "instructions": [
       "Peel the sweet potatoes. Cut into batons approximately 0.6 inches thick.",
       "In a large bowl, toss the sweet potato batons with oil until evenly coated.",
@@ -1388,7 +1388,7 @@
     "title": "Cajun-Spiced Crispy Fries",
     "emoji": "🍟",
     "temp": 385,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -1399,7 +1399,7 @@
       "1 pinch cayenne pepper (optional)",
       "Ketchup or mayonnaise, for serving"
     ],
-    "description": "Bring the flavors of Louisiana to your table. These fries are tossed in a bold Cajun spice blend, delivering a satisfyingly spicy crunch with a fluffy, tender center.",
+    "description": "Bring the flavors of Louisiana to your table. These fries are tossed in a bold Cajun spice blend, delivering a satisfyingly spicy crunch with a fluffy, tender center in 20 minutes.",
     "instructions": [
       "Cut potatoes into uniform sticks, approximately 1/4-inch thick. Submerge in cold water for at least 15-20 minutes to remove excess starch.",
       "Drain and rinse the potato sticks. Thoroughly dry them with a kitchen towel.",
@@ -1428,7 +1428,7 @@
     "title": "Perfect Homemade Potato Fries",
     "emoji": "🍟",
     "temp": 383,
-    "time": "25-28",
+    "time": "25",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -1439,7 +1439,7 @@
       "2.5 g (1/2 tsp) paprika",
       "Salt, to taste"
     ],
-    "description": "Master the art of the fry. By soaking the potatoes to remove excess starch, we achieve a superior level of crispness that rivals your favorite bistro fries.",
+    "description": "Master the art of the fry. By soaking the potatoes to remove excess starch, we achieve a superior level of crispness that rivals your favorite bistro fries in 25 minutes.",
     "instructions": [
       "Cut potatoes into sticks of uniform size. Submerge in a bowl of cold water for a minimum of 20 minutes.",
       "Drain the potatoes, rinse under cold running water, and dry completely with a clean cloth or paper towels.",
@@ -1467,13 +1467,13 @@
     "title": "Crispy Crinkle Cut Fries",
     "emoji": "🍟",
     "temp": 400,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "2",
     "ingredients": [
       "17.6 oz frozen crinkle cut fries"
     ],
-    "description": "The ultimate texture for sauce lovers. The unique crinkle cut creates more surface area for maximum crunch, making them the perfect vessel for your favorite dips.",
+    "description": "The ultimate texture for sauce lovers. The unique crinkle cut creates more surface area for maximum crunch, making them the perfect vessel for your favorite dips in 18 minutes.",
     "instructions": [
       "Place the frozen fries into the basket.",
       "Do not add oil. The product is pre-fried.",
@@ -1500,7 +1500,7 @@
     "emoji": "🍗",
     "temp": 383,
     "time": "25",
-    "prep_time": "2 hours",
+    "prep_time": "120",
     "portions": "2",
     "ingredients": [
       "2 chicken drumsticks",
@@ -1513,7 +1513,7 @@
       "Salt and black pepper to taste",
       "Non-stick cooking spray"
     ],
-    "description": "A true classic made lighter. A tangy buttermilk marinade ensures incredibly juicy chicken, while the seasoned flour coating air-fries to a golden, rustic crunch.",
+    "description": "A true classic made lighter. A tangy buttermilk marinade ensures incredibly juicy chicken, while the seasoned flour coating air-fries to a golden, rustic crunch in 25 minutes.",
     "instructions": [
       "Submerge chicken pieces in buttermilk. Marinate in the refrigerator for a minimum of 1.5 hours.",
       "In a shallow dish, combine flour, garlic powder, onion powder, paprika, salt, and pepper.",
@@ -1537,10 +1537,10 @@
   },
   {
     "slug": "parmesan-zucchini-fries",
-    "title": "Parmesan-Crusted Zucchini Fries",
+    "title": "Parmesan Zucchini Fries (Crispy & Quick Snack)",
     "emoji": "🥒",
     "temp": 375,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -1553,7 +1553,7 @@
       "Salt and black pepper, to taste",
       "Non-stick cooking spray"
     ],
-    "description": "The perfect veggie alternative. These zucchini batons are coated in a savory Parmesan and breadcrumb crust, offering a light yet crispy bite with a tender heart.",
+    "description": "Get kids to eat their veggies! Zucchini sticks breaded with breadcrumbs and Parmesan, cooked in 10 minutes. A golden, delicious vegetarian snack without boiling oil.",
     "instructions": [
       "Cut zucchini into sticks. Remove the core if it contains excess seeds or moisture.",
       "Set up a three-stage breading station. In the first bowl, combine flour, salt, and pepper. In the second, whisk together eggs and milk. In the third, mix breadcrumbs and Parmesan cheese.",
@@ -1578,7 +1578,7 @@
   },
   {
     "slug": "garlic-parmesan-chicken-wings",
-    "title": "Garlic Parmesan Chicken Wings",
+    "title": "Garlic Parmesan Chicken Wings (Extra-Crispy Crust)",
     "emoji": "🍗",
     "temp": 383,
     "time": "25",
@@ -1592,7 +1592,7 @@
       "Salt and black pepper to taste",
       "Cooking spray"
     ],
-    "description": "A crowd-pleasing favorite. These wings are cooked until the skin is perfectly crisp, then tossed in a rich, aromatic blend of toasted garlic and sharp Parmesan cheese.",
+    "description": "American pub-style wings at home! The cornstarch trick paired with air frying dries the skin, creating an irresistible garlic and Parmesan crust in 25 minutes.",
     "instructions": [
       "Thoroughly pat the chicken wings dry with paper towels.",
       "In a large bowl, combine cornstarch, half of the Parmesan cheese, garlic powder, salt, and pepper.",
@@ -1617,7 +1617,7 @@
   },
   {
     "slug": "jerk-chicken-wings",
-    "title": "Spicy Jamaican Jerk Wings",
+    "title": "Jamaican Jerk Chicken Wings (Spicy and Crispy)",
     "emoji": "🍗",
     "temp": 383,
     "time": "25",
@@ -1638,7 +1638,7 @@
       "Salt, to taste",
       "1 lime, juiced"
     ],
-    "description": "Escape to the Caribbean. These wings are infused with a traditional Jamaican dry rub, featuring a complex and aromatic heat that’s balanced by deep, smoky undertones.",
+    "description": "A trip to Jamaica in 25 minutes. Aromatic and pleasantly spicy wings. Air frying helps the Jerk spice mix cling to the skin while rendering excess fat.",
     "instructions": [
       "Dry the chicken wings thoroughly with paper towels.",
       "In a bowl, combine all dry spices with the olive oil to form a paste.",
@@ -1663,11 +1663,11 @@
   },
   {
     "slug": "ketchup-mustard-glazed-chicken-wings",
-    "title": "Tangy Glazed Chicken Wings",
+    "title": "Ketchup and Mustard Glazed Chicken Wings (18 Mins)",
     "emoji": "🍗",
     "temp": 340,
-    "time": "18-20",
-    "prep_time": "2 hours",
+    "time": "18",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "35 oz chicken wings, jointed",
@@ -1677,7 +1677,7 @@
       "1 tbsp olive oil",
       "1 tsp sweet paprika"
     ],
-    "description": "A pantry-friendly miracle. A simple glaze of ketchup and mustard caramelizes beautifully under the heat, creating sticky, flavorful wings the whole family will love.",
+    "description": "A sweet and tangy favorite cooked low and slow at 340°F. The ketchup and mustard glaze caramelizes gently on the skin, creating a finger-licking finish.",
     "instructions": [
       "In a large bowl, whisk together ketchup, mustard, soy sauce, olive oil, and paprika.",
       "Add the chicken wings to the marinade. Cover and refrigerate for a minimum of 2 hours, up to 12 hours.",
@@ -1700,10 +1700,10 @@
   },
   {
     "slug": "honey-sriracha-chicken-wings",
-    "title": "Sweet & Spicy Honey Sriracha Wings",
+    "title": "Honey Sriracha Chicken Wings (Sweet, Spicy and Sticky)",
     "emoji": "🍗",
     "temp": 383,
-    "time": "25-30",
+    "time": "25",
     "prep_time": "10",
     "portions": "4",
     "ingredients": [
@@ -1717,7 +1717,7 @@
       "1 tablespoon rice vinegar",
       "Cooking spray"
     ],
-    "description": "The perfect balance of heat and sweet. These wings are air-fried to peak crispness before being tossed in a glossy, addictive honey-sriracha glaze.",
+    "description": "The perfect balance between the sweetness of honey and the heat of sriracha. Air-fry the wings until crisp for 25 mins, then toss them in the sauce. A bold, sticky finish for spice lovers.",
     "instructions": [
       "Pat the chicken wings dry. In a large bowl, toss the wings with cornstarch, garlic powder, onion powder, and paprika until evenly coated.",
       "Preheat the cooking appliance to 383°F. Arrange the wings in a single layer. Spray with cooking spray. Cook for 25-30 minutes, turning them over at the halfway point.",
@@ -1742,11 +1742,11 @@
   },
   {
     "slug": "chicken-tikka-drumsticks",
-    "title": "Tender Chicken Tikka Drumsticks",
+    "title": "Tender Chicken Tikka Masala Drumsticks",
     "emoji": "🍗",
     "temp": 355,
-    "time": "20-25",
-    "prep_time": "1 hour",
+    "time": "20",
+    "prep_time": "60",
     "portions": "2",
     "ingredients": [
       "4 chicken drumsticks",
@@ -1759,7 +1759,7 @@
       "1 garlic clove, minced",
       "Salt, to taste"
     ],
-    "description": "Flavorful and aromatic. Marinated in a traditional spice blend and creamy coconut milk, these drumsticks are cooked until the meat is succulent and falls off the bone.",
+    "description": "All the flavor of Tandoori in 20 minutes. The coconut milk tenderizes the chicken drumsticks while the hot air seals the Indian spices into a colorful, incredibly fragrant crust.",
     "instructions": [
       "Score each chicken drumstick with 2-3 diagonal cuts to allow for deeper marinade penetration.",
       "In a mixing bowl, combine the thick coconut milk, tomato paste, Garam Masala, ground cumin, ground turmeric, grated ginger, minced garlic, and salt.",
@@ -1782,11 +1782,11 @@
   },
   {
     "slug": "cajun-chicken-tenders",
-    "title": "Crispy Cajun Chicken Tenders",
+    "title": "Cajun Chicken Tenders (Extra Crunch Breading)",
     "emoji": "🌶",
     "temp": 383,
-    "time": "12-14",
-    "prep_time": "1 hour and 15",
+    "time": "12",
+    "prep_time": "60",
     "portions": "4",
     "ingredients": [
       "17.6 oz chicken breast, cut into strips",
@@ -1799,7 +1799,7 @@
       "Salt, to taste",
       "Non-stick cooking spray"
     ],
-    "description": "Bold flavor in every bite. These juicy chicken strips feature a zesty Cajun-spiced breading that delivers a satisfying crunch and a hint of Louisiana heat.",
+    "description": "Perfectly breaded chicken strips! Using buttermilk paired with a Cajun mix creates super crispy tenders without deep frying. The protein snack ready in just 12 minutes.",
     "instructions": [
       "Combine buttermilk and hot sauce. Submerge chicken strips in the mixture and refrigerate for at least one hour.",
       "In a shallow dish, combine flour, Cajun seasoning, garlic powder, onion powder, and salt. Add one tablespoon of the buttermilk marinade to the flour mixture and mix with fingertips to create small clumps for a textured coating.",
@@ -1824,10 +1824,10 @@
   },
   {
     "slug": "lemon-garlic-chicken-drumsticks",
-    "title": "Lemon Garlic Herb Drumsticks",
+    "title": "Garlic Lemon Chicken Drumsticks (Extra-Crispy Skin)",
     "emoji": "🍗",
     "temp": 383,
-    "time": "20-25",
+    "time": "20",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -1839,7 +1839,7 @@
       "1 teaspoon dried oregano",
       "Salt and freshly ground black pepper, to taste"
     ],
-    "description": "Fresh and zesty. Marinated with bright lemon, pungent garlic, and garden herbs, these drumsticks feature a beautifully rendered, crispy skin and juicy interior.",
+    "description": "A fresh, high-protein dinner. The air fryer renders the fat from the skin, making it extra crispy in 20 mins, while the lemon keeps the flavor bright.",
     "instructions": [
       "In a large bowl, combine the olive oil, lemon juice, lemon zest, garlic, paprika, oregano, salt, and pepper.",
       "Pat the chicken drumsticks dry with paper towels. Add them to the bowl and coat thoroughly. Let marinate, covered, at room temperature for 30 minutes.",
@@ -1861,10 +1861,10 @@
   },
   {
     "slug": "mustard-glazed-chicken-thighs",
-    "title": "Sweet Mustard Glazed Chicken Thighs",
+    "title": "Mustard Chicken Thighs (Quick Sweet & Sour Glaze)",
     "emoji": "🍗",
     "temp": 375,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -1876,7 +1876,7 @@
       "1/2 teaspoon sweet paprika",
       "Salt and pepper to taste"
     ],
-    "description": "Quick, easy, and incredibly flavorful. A sharp mustard and sweet maple syrup glaze creates a caramelized finish on these tender, succulent chicken thighs.",
+    "description": "A true gourmet dinner-saver in 22 minutes. The pungent mix of mustard and sweet maple glazes the chicken skin spectacularly in the air fryer without burning it.",
     "instructions": [
       "In a small bowl, combine the mustard, maple syrup, onion powder, garlic powder, and sweet paprika to create the glaze.",
       "Pat the chicken thighs dry with paper towels. Season with salt and pepper. Using a silicone brush, apply the glaze to all sides of the chicken thighs, reserving a small amount.",
@@ -1898,11 +1898,11 @@
   },
   {
     "slug": "yogurt-rosemary-chicken-thighs",
-    "title": "Creamy Yogurt & Rosemary Chicken",
+    "title": "Yogurt Marinated Chicken Thighs (Tender and Fragrant)",
     "emoji": "🍗",
     "temp": 385,
-    "time": "30-35",
-    "prep_time": "4 hours",
+    "time": "30",
+    "prep_time": "240",
     "portions": "4",
     "ingredients": [
       "4 large Chicken Thighs or Drumsticks, skin optional",
@@ -1913,7 +1913,7 @@
       "Salt and Black Pepper, to taste",
       "1 tbsp Olive Oil"
     ],
-    "description": "The secret to the juiciest chicken. A yogurt-based marinade tenderizes the meat from within, while fresh rosemary adds a sophisticated, piney aroma during roasting.",
+    "description": "How to prepare chicken that literally melts in your mouth? The acidity of the yogurt breaks down the meat fibers in 30 mins, ensuring super soft thighs, scented with rosemary and a fabulous crust.",
     "instructions": [
       "In a large bowl, combine the Greek yogurt, olive oil, mustard, crushed garlic, chopped rosemary, salt, and pepper to create the marinade.",
       "Submerge the chicken pieces in the marinade, ensuring all surfaces are evenly coated.",
@@ -1934,10 +1934,10 @@
   },
   {
     "slug": "pork-katsu",
-    "title": "Crispy Pork Katsu Cutlets",
+    "title": "Crispy Pork Katsu (Japanese Panko Cutlet)",
     "emoji": "🍱",
     "temp": 365,
-    "time": "14-16",
+    "time": "14",
     "prep_time": "15",
     "portions": "2",
     "isItalian": false,
@@ -1952,7 +1952,7 @@
       "2 large eggs, beaten",
       "Cooking oil spray"
     ],
-    "description": "A Japanese restaurant favorite made light. Using Panko breadcrumbs, these pork cutlets achieve a thick, extra-crunchy crust that satisfies with minimal oil.",
+    "description": "The famous Japanese Tonkatsu cutlet in a lighter version. Breaded with panko and cooked in the air fryer in just 14 minutes, it stays moist and tender inside.",
     "instructions": [
       "Score the fat edges of the pork chops to prevent curling. If thicker than 0.4-0.6 inches, flatten with a meat mallet.",
       "Prepare three separate shallow dishes: one with flour; one with beaten eggs; and one with Panko breadcrumbs combined with garlic powder, onion powder, salt, and pepper.",
@@ -1974,10 +1974,10 @@
   },
   {
     "slug": "breaded-eggplant-medallions",
-    "title": "Cheesy Breaded Eggplant Medallions",
+    "title": "Eggplant Cutlets (Vegetarian & Crispy in 10 Mins)",
     "emoji": "🍆",
     "temp": 400,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "2",
     "ingredients": [
@@ -1990,7 +1990,7 @@
       "Black pepper, to taste",
       "Olive oil spray"
     ],
-    "description": "Versatile and delicious. These eggplant slices feature a savory cheese crust that’s perfect as a snack, a side, or the base for a lighter Eggplant Parmesan.",
+    "description": "No meat tonight? Eggplant slices breaded with cheese become fabulous golden cutlets! Ready in 10 minutes, perfect for a side dish or a vegetarian main course everyone will love.",
     "instructions": [
       "Wash the eggplant, trim the ends, and slice into 0.4-inch thick rounds.",
       "Arrange three shallow bowls. Place flour in the first, beaten eggs seasoned with salt and pepper in the second, and breadcrumbs mixed with grated cheese in the third.",
@@ -2013,10 +2013,10 @@
   },
   {
     "slug": "homemade-golden-fish-sticks",
-    "title": "Golden Homemade Fish Sticks",
+    "title": "Homemade Fish Sticks (Kid-Friendly in 8 Mins)",
     "emoji": "🐟",
     "temp": 350,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "15",
     "portions": "4",
     "isItalian": false,
@@ -2029,7 +2029,7 @@
       "Cooking spray",
       "Salt and pepper"
     ],
-    "description": "Skip the freezer aisle. These homemade sticks use fresh white fish and a crisp breading for a wholesome, protein-rich meal that kids and adults will both enjoy.",
+    "description": "The classic fast-food fish sticks, but healthy and homemade. The cod stays incredibly soft while the crust becomes irresistibly golden in just 8 minutes.",
     "instructions": [
       "Ensure fish is boneless. Pat thoroughly dry with paper towels. Cut into rectangular sticks approximately 1 inch thick.",
       "In a shallow dish, combine flour, spice mix, salt, and pepper. In a second dish, beat the eggs. In a third dish, place the breadcrumbs.",
@@ -2051,10 +2051,10 @@
   },
   {
     "slug": "cereal-crusted-chicken-bites-mustard-sauce",
-    "title": "Ultra-Crispy Cereal-Crusted Chicken",
+    "title": "Cereal-Crusted Chicken Bites (Maximum Crunch)",
     "emoji": "🍗",
     "temp": 355,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "20",
     "portions": "4",
     "ingredients": [
@@ -2068,7 +2068,7 @@
       "Garlic powder, to taste",
       "Onion powder, to taste"
     ],
-    "description": "Take crunch to the next level. A clever cornflake coating creates a distinctively loud and satisfying crispness on these tender, bite-sized chicken pieces.",
+    "description": "Nuggets 2.0! Use corn flakes to create an extra-crunchy crust in the air fryer. The sealed chicken cubes cook in 15 minutes, ideal for dipping into sauces.",
     "instructions": [
       "In a bowl, whisk the eggs with the mustard and hot sauce or paprika.",
       "In a second bowl, combine the flour with salt, garlic powder, and onion powder. On a large plate, coarsely crush the corn flakes.",
@@ -2092,10 +2092,10 @@
   },
   {
     "slug": "sausage-stuffed-mushrooms",
-    "title": "Savory Sausage-Stuffed Mushrooms",
+    "title": "Sausage-Stuffed Mushrooms (Gratin in 12 Mins)",
     "emoji": "🍄",
     "temp": 320,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2108,7 +2108,7 @@
       "Chopped parsley",
       "Olive oil"
     ],
-    "description": "Bite-sized flavor bombs. Tender mushroom caps are overflowing with a savory mixture of pork sausage, cheese, and herbs, roasted to a golden-brown finish.",
+    "description": "The gourmet appetizer to empty the fridge! Soft mushroom caps with an explosive filling of meat and melted cheese, perfectly gratinated at 320°F without burning.",
     "instructions": [
       "Clean mushrooms with a damp paper towel. Remove and finely chop the stems. Set the caps aside.",
       "In a skillet, sauté the chopped stems, crumbled sausage, and whole garlic clove in olive oil for 5 minutes. Remove and discard the garlic clove.",
@@ -2132,10 +2132,10 @@
   },
   {
     "slug": "chicken-spring-rolls",
-    "title": "Crispy Golden Chicken Spring Rolls",
+    "title": "Chicken & Vegetable Spring Rolls (Crispy, No Deep Fry)",
     "emoji": "🍙",
     "temp": 355,
-    "time": "15-18",
+    "time": "15",
     "prep_time": "35",
     "portions": "4",
     "ingredients": [
@@ -2146,7 +2146,7 @@
       "2 tablespoons soy sauce",
       "Vegetable oil, for cooking and brushing"
     ],
-    "description": "Better than takeout. These spring rolls are packed with a savory chicken and vegetable filling, wrapped in a paper-thin shell that air-fries to a perfect, glass-like crunch.",
+    "description": "Like a Chinese restaurant but without the heavy frying! Rice paper rolls puffed and crisped by hot air in 15 minutes, enclosing a tender heart of vegetables and chicken.",
     "instructions": [
       "Heat one tablespoon of oil in a wok or skillet over high heat. Stir-fry the chicken until opaque, add the julienned vegetables and soy sauce, and cook for 5 minutes. Remove from heat, incorporate the vermicelli, and allow the filling to cool completely.",
       "Briefly immerse one rice paper sheet in warm water to soften. Place it flat on a clean kitchen towel.",
@@ -2169,11 +2169,11 @@
   },
   {
     "slug": "pigs-in-a-blanket",
-    "title": "Golden Pigs in a Blanket",
+    "title": "Pigs in a Blanket (Quick & Crispy in 10 Mins)",
     "emoji": "🌭",
     "isItalian": false,
     "temp": 400,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -2182,7 +2182,7 @@
       "1 egg, beaten, or 2 tablespoons milk, for brushing",
       "Sesame seeds or poppy seeds (optional)"
     ],
-    "description": "A crowd-pleasing classic. Savory sausages are wrapped in buttery, flaky puff pastry and baked until puffed and golden-brown. Perfect as a quick snack or party appetizer.",
+    "description": "The world's most loved appetizer! Wrap mini sausages in puff pastry and air-fry them: they will puff up perfectly in 10 minutes, beating the slowness of the traditional oven.",
     "instructions": [
       "Cut the puff pastry into 1-inch wide strips.",
       "Wrap each sausage with a puff pastry strip.",
@@ -2204,10 +2204,10 @@
   },
   {
     "slug": "simple-chicken-breasts",
-    "title": "Juicy Roasted Chicken Breasts",
+    "title": "Juicy Chicken Breasts (Tender & Moist in 18 Mins)",
     "emoji": "🍗",
     "temp": 375,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -2216,7 +2216,7 @@
       "1 tsp paprika or mixed herbs",
       "Salt and black pepper, to taste"
     ],
-    "description": "Master the art of the perfect chicken breast. This method ensures a tender, moist texture every time, making it an essential staple for high-protein meal prep and healthy dinners.",
+    "description": "Afraid your chicken breast will turn rubbery in the air fryer? Follow this 375°F method to seal the juices inside: you'll get perfect lean protein in 18 minutes for your meal prep.",
     "instructions": [
       "Pat the chicken breasts dry with paper towels.",
       "Season the chicken with olive oil, salt, pepper, and paprika or mixed herbs.",
@@ -2239,10 +2239,10 @@
   },
   {
     "slug": "cosori-bbq-glazed-chicken-mix",
-    "title": "Sticky Glazed BBQ Chicken",
+    "title": "BBQ Chicken (Sticky & Caramelized in 22 Mins)",
     "emoji": "🍗",
     "temp": 383,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -2255,7 +2255,7 @@
       "Freshly ground black pepper, to taste",
       "1 cup barbecue sauce"
     ],
-    "description": "Get that backyard grill flavor indoors. A blend of chicken pieces is coated in a savory dry rub and finished with a BBQ glaze that caramelizes into a delicious, sticky crust.",
+    "description": "All the grill flavor without the smoke! Air-fry the spiced chicken to seal in juices, brushing with BBQ sauce at the very end for a true pitmaster caramelized glaze.",
     "instructions": [
       "Combine brown sugar, smoked paprika, garlic powder, salt, and pepper to create the dry rub.",
       "Pat the chicken pieces dry with a paper towel. Coat the chicken evenly with the dry rub. Let the chicken rest at room temperature for 30 minutes.",
@@ -2278,11 +2278,11 @@
   },
   {
     "slug": "honey-lemon-chicken-drumsticks",
-    "title": "Honey Lemon Glazed Drumsticks",
+    "title": "Honey Lemon Chicken Legs (Crispy & Sticky)",
     "emoji": "🍋",
     "temp": 375,
-    "time": "20-22",
-    "prep_time": "1 hour",
+    "time": "20",
+    "prep_time": "60",
     "portions": "4",
     "ingredients": [
       "8 medium chicken drumsticks, skin-on (approx. 35 oz)",
@@ -2293,7 +2293,7 @@
       "Salt, to taste",
       "Lemon wedges, for serving"
     ],
-    "description": "A delightful balance of zesty lemon and sweet honey. The high-heat cooking renders the chicken fat to create a thin, crackly glaze that locks in all the flavor.",
+    "description": "Finger-licking sweet and sour chicken legs in 20 minutes. The honey-lemon combo creates a sticky, golden crust, while the meat falls right off the bone.",
     "instructions": [
       "Combine honey, soy sauce, lemon juice, and garlic in a large mixing bowl to create the marinade.",
       "Add chicken drumsticks to the marinade, ensuring they are fully coated. Cover and refrigerate for 1 hour.",
@@ -2315,11 +2315,11 @@
   },
   {
     "slug": "five-spice-chicken-thighs",
-    "title": "Five-Spice Glazed Chicken Thighs",
+    "title": "Five-Spice Asian Chicken Thighs (Perfect Glaze)",
     "emoji": "🍗",
     "temp": 375,
-    "time": "18-20",
-    "prep_time": "2 hours",
+    "time": "18",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "6-8 boneless, skin-on chicken thighs",
@@ -2331,7 +2331,7 @@
       "2 tbsp honey, divided",
       "2 tbsp dark soy sauce, divided"
     ],
-    "description": "Aromatic and deeply flavorful. These succulent chicken thighs are seasoned with a traditional Cantonese five-spice blend and glazed to a beautiful mahogany finish.",
+    "description": "A trip to Asia without leaving home! Perfectly glazed chicken thighs in 18 minutes thanks to the Hoisin marinade. Hyper-crispy skin and moisture locked in by convection cooking.",
     "instructions": [
       "In a bowl, combine Hoisin sauce, oyster sauce, grated garlic, grated ginger, five-spice powder, 1 tablespoon of honey, and 1 tablespoon of dark soy sauce to create the marinade.",
       "Thoroughly coat the chicken thighs with the marinade, applying some under the skin. Cover and refrigerate for at least 2 hours.",
@@ -2354,10 +2354,10 @@
   },
   {
     "slug": "rustic-herb-roasted-chicken",
-    "title": "Garlic and Herb Roasted Chicken",
+    "title": "Garlic & Herb Roasted Chicken (Super Crispy Skin)",
     "emoji": "🍗",
     "temp": 385,
-    "time": "22-25",
+    "time": "22",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -2368,7 +2368,7 @@
       "Coarse salt, to taste",
       "Freshly ground black pepper, to taste"
     ],
-    "description": "Simple, rustic, and aromatic. Chicken pieces are rubbed with fresh garlic and garden herbs, roasting until the skin is perfectly crispy while the meat remains juicy.",
+    "description": "How do you degrease chicken pieces while keeping the skin as crispy as a potato chip? This 385°F recipe for 22 mins evaporates all the fat into the basket below.",
     "instructions": [
       "Pat the chicken pieces thoroughly dry with paper towels.",
       "Coat the chicken pieces evenly with olive oil.",
@@ -2391,10 +2391,10 @@
   },
   {
     "slug": "whole-garlic-chicken",
-    "title": "Whole Roasted Garlic Chicken",
+    "title": "Whole Roasted Chicken (Crispy Outside, Tender Inside in 50 Mins)",
     "emoji": "🍗",
     "temp": 355,
-    "time": "50-60",
+    "time": "50",
     "prep_time": "10",
     "portions": "4",
     "isItalian": false,
@@ -2408,7 +2408,7 @@
       "Salt, to taste",
       "Freshly ground black pepper, to taste"
     ],
-    "description": "The ultimate Sunday roast made easy. This whole chicken is infused with garlic and roasted to achieve a stunningly crispy skin and a tender, moist interior throughout.",
+    "description": "Afraid to air-fry a whole chicken (max 2.6 lbs)? By flipping it halfway (30 mins breast down, 20 mins breast up), you'll get a super moist breast and rotisserie-crisp thighs.",
     "instructions": [
       "Ensure the chicken fits within the cooking appliance, leaving adequate space from the heat source to prevent burning.",
       "Pat the chicken dry, both inside and out. Insert the whole garlic cloves and rosemary sprig into the cavity. Secure the legs with kitchen twine.",
@@ -2428,7 +2428,7 @@
   },
   {
     "slug": "whole-bbq-glazed-chicken",
-    "title": "Whole Rotisserie-Style BBQ Chicken",
+    "title": "Whole BBQ Chicken (American Gourmet Glaze in 50 Mins)",
     "emoji": "🍗",
     "temp": 355,
     "time": "50",
@@ -2440,7 +2440,7 @@
       "Salt and black pepper",
       "5-6 tbsp thick BBQ sauce"
     ],
-    "description": "Succulent whole chicken with a professional finish. First roasted to perfection, then glazed with a rich BBQ sauce for a sweet, smoky, and sticky exterior.",
+    "description": "The leveled-up roast chicken! Cook it whole at 355°F to seal the meat, then in the last 10 mins lower to 320°F and brush generously with BBQ sauce for a sweet-and-sour, smoke-free crust.",
     "instructions": [
       "Truss the chicken legs. Pat the skin dry. Rub the entire surface with olive oil and season with salt and pepper.",
       "Place the chicken in the basket, breast-side down. Cook at 355°F for 30 minutes.",
@@ -2461,11 +2461,11 @@
   },
   {
     "slug": "italian-meatballs",
-    "title": "Golden Parmesan Meatballs",
+    "title": "Parmesan Meatballs (Oil-Free & Super Soft in 10 Mins)",
     "emoji": "🍝",
     "isItalian": true,
     "temp": 385,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2479,7 +2479,7 @@
       "Black pepper, to taste",
       "Cooking oil spray"
     ],
-    "description": "Classic Italian-style meatballs with a lighter touch. Cooked to achieve a perfect sear without excess grease, they are delicious on their own or simmered in tomato sauce.",
+    "description": "Grandma's classic meatballs in a lighter version! Golden and flavorful outside, they stay incredibly soft inside by air-frying for 10 minutes, without the heaviness of pan-frying.",
     "instructions": [
       "Soak the stale bread in milk for several minutes. Squeeze to remove excess liquid and place in a large mixing bowl.",
       "Add the ground meat, egg, grated Parmesan, chopped parsley, salt, and pepper. Mix by hand until the ingredients are just combined. Avoid overmixing to prevent toughness.",
@@ -2500,7 +2500,7 @@
   },
   {
     "slug": "chicken-fajita-quesadillas",
-    "title": "Crispy Chicken Fajita Quesadillas",
+    "title": "Chicken & Pepper Quesadillas (Crispy & Melty in 15 Mins)",
     "emoji": "🌮",
     "temp": 375,
     "time": "15",
@@ -2516,7 +2516,7 @@
       "1 tbsp Fajita Seasoning",
       "1 tbsp Olive Oil"
     ],
-    "description": "A Tex-Mex favorite. Sautéed chicken and peppers meet melted cheese inside a flour tortilla, toasted until the outside is golden and irresistibly crunchy.",
+    "description": "An explosive, time-saving Tex-Mex dinner! Super crispy tortillas stuffed with chicken, spiced peppers, and a melty cheese heart. The air fryer seals the filling in minutes without getting greasy.",
     "instructions": [
       "Combine chicken, bell pepper, onion, oil, and seasoning in a bowl. Transfer the mixture to the cooking basket. Cook at 375°F for 10 minutes, shaking at the halfway point.",
       "Remove the cooked filling from the basket. Wipe the basket clean.",
@@ -2537,10 +2537,10 @@
   },
   {
     "slug": "greek-lamb-shoulder",
-    "title": "Greek Roasted Lamb with Potatoes",
+    "title": "Greek Lamb & Potatoes (Authentic Flavor in 45 Mins)",
     "emoji": "🍖",
     "temp": 355,
-    "time": "45-50",
+    "time": "45",
     "prep_time": "30",
     "portions": "4",
     "ingredients": [
@@ -2553,7 +2553,7 @@
       "4 oz vegetable broth or warm water",
       "Salt and black pepper, to taste"
     ],
-    "description": "A traditional Mediterranean feast. As the lamb shoulder roasts to tender perfection, its savory drippings season the potatoes below for an incredible depth of flavor.",
+    "description": "The classic Sunday lunch without turning on the oven! The lamb meat cooks over the baby potatoes, releasing its savory juices for a super tender and golden one-pan meal in 45 minutes.",
     "instructions": [
       "Combine olive oil, lemon juice, minced garlic, oregano, salt, and pepper. Rub the marinade onto the lamb and let it rest at room temperature for 30 minutes.",
       "Arrange the potatoes in the cooking basket. Season with salt and pepper. Add the vegetable broth or water.",
@@ -2575,11 +2575,11 @@
   },
   {
     "slug": "yogurt-marinated-chicken-skewers",
-    "title": "Middle Eastern Yogurt Chicken Skewers",
+    "title": "Yogurt Chicken Skewers (Incredibly Tender in 12 Mins)",
     "emoji": "🍢",
     "temp": 385,
-    "time": "12-14",
-    "prep_time": "2 hours",
+    "time": "12",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "14 oz chicken breast or thighs, cubed (1.2-inch)",
@@ -2592,7 +2592,7 @@
       "Black pepper, to taste",
       "Wooden skewers"
     ],
-    "description": "The secret to incredibly moist chicken. A tangy yogurt marinade tenderizes each bite, creating flavorful, charred skewers inspired by traditional Lebanese flavors.",
+    "description": "No more dry skewers! Greek yogurt breaks down the chicken fibers making it incredibly soft, while the hot air seals the outside creating a killer Middle Eastern Shish Taouk in 12 mins.",
     "instructions": [
       "Combine yogurt, olive oil, minced garlic, paprika, cumin, salt, and pepper in a bowl.",
       "Add chicken cubes and mix until fully coated. Refrigerate for a minimum of 2 hours, up to 4 hours for optimal results.",
@@ -2614,7 +2614,7 @@
   },
   {
     "slug": "stuffed-pizza-roll",
-    "title": "Ham and Cheese Stuffed Pizza Roll",
+    "title": "Stuffed Stromboli (Crispy & Melty Pizza Roll in 20 Mins)",
     "emoji": "🌯",
     "temp": 350,
     "time": "20",
@@ -2630,7 +2630,7 @@
       "0.7 fl oz milk",
       "Salt, dried oregano, and garlic powder, to taste"
     ],
-    "description": "A savory, rolled delight. Soft pizza dough is packed with cooked ham, provolone, and roasted peppers, baked until the cheese is molten and the crust is golden.",
+    "description": "A golden stuffed roll with a crisp crust and a melty savory center. Perfect for slicing and serving hot in a faster air-fryer version.",
     "instructions": [
       "Allow the dough to reach room temperature. Roll it out on a lightly floured surface.",
       "Arrange the ham, cheese slices, and chopped peppers evenly over one half of the dough.",
@@ -2653,11 +2653,11 @@
   },
   {
     "slug": "golden-pork-tenderloin-roast",
-    "title": "Perfect Roasted Pork Tenderloin",
+    "title": "Roasted Pork Tenderloin (Golden Crust & Pink Heart in 25 Mins)",
     "emoji": "🍖",
     "temp": 375,
-    "time": "25-30",
-    "prep_time": "N/A",
+    "time": "25",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "Pork tenderloin, 2 pieces (approx. 14 oz each)",
@@ -2665,7 +2665,7 @@
       "Coarse salt, to taste",
       "Freshly ground black pepper, to taste"
     ],
-    "description": "Elegant yet effortless. This high-heat method creates a beautiful browned crust on the outside while keeping the tenderloin succulent and pink in the center.",
+    "description": "No more dry roasts! Air-fried pork tenderloin at high temperature forms a perfect crust in just 25 minutes, keeping a pink, succulent, and highly protein-rich heart.",
     "instructions": [
       "Dry the pork tenderloins thoroughly with paper towels.",
       "Brush the tenderloins evenly with olive oil and season with salt and pepper to taste.",
@@ -2688,11 +2688,11 @@
   },
   {
     "slug": "balsamic-mustard-steak",
-    "title": "Balsamic and Mustard Glazed Steak",
+    "title": "Balsamic Beef Steak (Gourmet Cooking in 7 Mins)",
     "emoji": "🥩",
     "temp": 400,
     "time": "7",
-    "prep_time": "2 hours 10",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "32 oz beef steak (flank or skirt)",
@@ -2702,7 +2702,7 @@
       "Salt and pepper, to taste",
       "8 fresh basil leaves, sliced"
     ],
-    "description": "A sophisticated main course. The acidity of balsamic vinegar and the kick of mustard perfectly complement the rich beef, resulting in a tender and savory steak.",
+    "description": "A restaurant-quality gourmet steak. The mustard and balsamic vinegar marinade caramelizes at 400°F creating a very flavorful crust, while the inside of the meat stays rare. Ready in 7 mins.",
     "instructions": [
       "In a large bowl, whisk olive oil, balsamic vinegar, and Dijon mustard until emulsified.",
       "Submerge the steak in the marinade, cover with plastic wrap, and refrigerate for approximately two hours.",
@@ -2725,11 +2725,11 @@
   },
   {
     "slug": "santa-maria-ribeye-steak",
-    "title": "Herb-Crusted Ribeye Steak",
+    "title": "Herb Beef Ribeye (Charcoal Flavor in 7 Mins)",
     "emoji": "🥩",
     "temp": 400,
     "time": "7",
-    "prep_time": "Not specified",
+    "prep_time": "",
     "portions": "2",
     "ingredients": [
       "16 oz boneless ribeye steak",
@@ -2739,7 +2739,7 @@
       "Cayenne pepper, to taste",
       "0.7 fl oz olive oil"
     ],
-    "description": "Experience the steakhouse at home. A robust aromatic herb crust sears into the ribeye at high heat, locking in the juices for a perfectly medium-rare result.",
+    "description": "Get the classic Californian charcoal flavor right at home without smoking up the kitchen. The dried herb 'Rub' forms a delicious crust on this super protein ribeye in just 7 minutes.",
     "instructions": [
       "In a small bowl, combine garlic powder, onion powder, oregano, rosemary, sage, and cayenne pepper.",
       "Brush the steak on all sides with olive oil.",
@@ -2763,10 +2763,10 @@
   },
   {
     "slug": "new-york-strip-steak-chimichurri",
-    "title": "New York Strip Steak with Chimichurri",
+    "title": "New York Strip with Chimichurri (Quick Recipe in 7 Mins)",
     "emoji": "🥩",
     "temp": 400,
-    "time": "7-9",
+    "time": "7",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -2783,7 +2783,7 @@
       "Salt, to taste",
       "Black pepper, to taste"
     ],
-    "description": "Bold and bright flavors. A tender New York strip is seared to perfection and topped with a fresh, zesty herb sauce for a restaurant-quality, protein-rich meal.",
+    "description": "A New York strip steak quickly seared at high temperature for a wow crust! To be served sliced and covered with a fresh herb chimichurri sauce. An amazing main course ready in 7 mins.",
     "instructions": [
       "Prepare the sauce: Combine basil, cilantro, parsley, anchovy fillets, shallots, and garlic in a food processor. Pulse until finely chopped. With the motor running, slowly stream in the olive oil and lemon juice until emulsified. Set aside.",
       "Prepare the steaks: Pat the steaks dry. Coat lightly with neutral oil and season generously with salt and black pepper.",
@@ -2808,18 +2808,18 @@
   },
   {
     "slug": "bone-in-pork-chops",
-    "title": "Golden Bone-in Pork Chops",
+    "title": "Bone-in Pork Chops (Juicy & Golden in 14 Mins)",
     "emoji": "🍖",
     "temp": 375,
-    "time": "14-17",
-    "prep_time": "N/A",
+    "time": "14",
+    "prep_time": "",
     "portions": "2",
     "ingredients": [
       "2 bone-in pork chops, approx. 9 oz (250g) each",
       "20 ml olive oil",
       "Salt and freshly ground black pepper, to taste"
     ],
-    "description": "Juicy and full of flavor. Cooking with the bone-in ensures the meat stays moist, while the high heat creates a beautiful golden-brown crust in just minutes.",
+    "description": "No more pork chops as dry as shoe soles! The air fryer cooks them at 375°F sealing the surface in 14 minutes: the fat melts, the bone adds flavor, and the meat stays super moist.",
     "instructions": [
       "Preheat the appliance to 375°F (190°C).",
       "Thoroughly pat the pork chops dry with paper towels to remove excess moisture.",
@@ -2843,7 +2843,7 @@
   },
   {
     "slug": "sweet-and-spicy-north-carolina-pork-chops",
-    "title": "Southern Sweet & Smoky Pork Chops",
+    "title": "BBQ Pork Chops (Caramelized US Style in 11 Mins)",
     "emoji": "🍖",
     "temp": 400,
     "time": "11",
@@ -2860,7 +2860,7 @@
       "Salt to taste",
       "Black pepper to taste"
     ],
-    "description": "Inspired by North Carolina BBQ. A brown sugar and spice rub caramelizes into a sweet and smoky crust, delivering the soul of the South to your dinner table.",
+    "description": "The flavor of an American barbecue right in your home. The Rub (spice mix and brown sugar) brutally caramelizes at 400°F creating a very flavorful crust in just 11 minutes.",
     "instructions": [
       "In a bowl, combine brown sugar, paprika, mustard powder, garlic powder, onion powder, salt, and pepper. Mix thoroughly.",
       "Coat the boneless pork chops evenly with vegetable oil.",
@@ -2882,11 +2882,11 @@
   },
   {
     "slug": "cheeseburger-sliders",
-    "title": "Perfect Cheeseburger Sliders",
+    "title": "Mini Cheeseburgers (Juicy Sliders in 9 Mins)",
     "emoji": "🍔",
     "temp": 400,
     "time": "9",
-    "prep_time": "1 hour 5",
+    "prep_time": "65",
     "portions": "4",
     "ingredients": [
       "16 oz Ground Beef",
@@ -2900,7 +2900,7 @@
       "Salt, to taste",
       "Black Pepper, to taste"
     ],
-    "description": "Bite-sized and big on flavor. These miniature beef patties are seared to perfection and topped with melting cheese, offering all the burger joy with zero mess.",
+    "description": "Perfect mini burgers for appetizers! No smoking pans: the beef patties air-fry nicely and juicy in 9 minutes, and the cheese melts flawlessly right in the basket.",
     "instructions": [
       "In a bowl, combine ground beef, Worcestershire sauce, mustard, grated onion, and beaten egg. Season with salt and pepper. Mix until just combined.",
       "Form the mixture into equal-sized patties. Refrigerate for approximately one hour to firm.",
@@ -2926,11 +2926,11 @@
   },
   {
     "slug": "citrus-scented-lamb-chops",
-    "title": "Citrus-Infused Lamb Chops",
+    "title": "Lemon Lamb Chops (Pink Center & Crispy Crust)",
     "emoji": "🍖",
     "temp": 400,
     "time": "10",
-    "prep_time": "4 hours 15",
+    "prep_time": "240",
     "portions": "4",
     "ingredients": [
       "12 small, trimmed lamb chops",
@@ -2939,7 +2939,7 @@
       "1.2 oz olive oil",
       "Salt and ground black pepper, to taste"
     ],
-    "description": "Bright, zesty, and elegant. A long marination in citrus and herbs ensures these chops are bursting with flavor, while a quick high-heat sear creates a fragrant, golden crust and a succulent center.",
+    "description": "A Michelin-star sear in just 10 minutes! Lemon-marinated lamb chops become crispy on the outside while keeping a tender, perfectly pink heart when sliced.",
     "instructions": [
       "Zest the lemon, avoiding the white pith. Crush the garlic cloves.",
       "Combine the crushed garlic, olive oil, and lemon zest to create the marinade.",
@@ -2961,7 +2961,7 @@
   },
   {
     "slug": "beef-empanadas",
-    "title": "Crispy Beef Empanadas",
+    "title": "Beef Empanadas (Flaky Turnovers Without Deep Frying)",
     "emoji": "🥟",
     "temp": 400,
     "time": "20",
@@ -2975,7 +2975,7 @@
       "1 egg yolk, for egg wash",
       "2 tsp olive oil"
     ],
-    "description": "A South American street-food favorite. Flaky, golden pastry shells are stuffed with a savory, spiced ground beef filling and air-fried to a perfect crunch without the heavy oil.",
+    "description": "Bring Argentina to your table! Shortcrust pastry turnovers filled with spiced beef, puffed and flaky in 20 minutes. The smoke-free alternative for light empanadas that aren't dripping with oil.",
     "instructions": [
       "Finely chop scallions. Sauté in a pan with olive oil for 3 minutes.",
       "Add ground beef and paprika. Cook for 10 minutes. Let the filling cool completely.",
@@ -2997,11 +2997,11 @@
   },
   {
     "slug": "pork-tenderloin-with-vegetables",
-    "title": "Pork Tenderloin & Harvest Vegetables",
+    "title": "Pork Tenderloin & Vegetables (One-Pan Meal in 35 Mins)",
     "emoji": "🥓",
     "temp": 375,
     "time": "35",
-    "prep_time": "2 hours 20",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "2 whole pork tenderloins (approx. 28 oz total)",
@@ -3017,7 +3017,7 @@
       "Fresh basil, chopped, to taste",
       "Salt and pepper to taste"
     ],
-    "description": "A complete, wholesome meal in one go. Succulent pork tenderloin is roasted atop a bed of seasonal vegetables, allowing the savory pan juices to naturally season the roast below.",
+    "description": "The magical air fryer \"One-Pot\". The juices of the honey-marinated pork tenderloin drip onto the vegetables below, flavoring peppers and zucchini while the meat sears perfectly in 35 mins.",
     "instructions": [
       "Prepare the marinade: in a jar, combine a portion of the olive oil, vinegar, honey, minced garlic, salt, and pepper. Whisk vigorously.",
       "Coat the pork tenderloins with the marinade. Cover and refrigerate for a minimum of two hours.",
@@ -3038,10 +3038,10 @@
   },
   {
     "slug": "costolette-agnello",
-    "title": "10-Minute Juicy Lamb Chops",
+    "title": "Lamb Chops (Super Tender in 10 Minutes)",
     "emoji": "🍖",
     "temp": 200,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "10",
     "portions": "2",
     "ingredients": [
@@ -3051,7 +3051,7 @@
       "Fresh rosemary",
       "Salt and pepper"
     ],
-    "description": "The ultimate centerpiece for a festive Easter dinner. Achieve restaurant-quality results in just 10 minutes—perfectly pink on the inside with a beautifully seared, smoke-free exterior.",
+    "description": "A delicacy ready in just 10 minutes. The heat at 400°F melts the fat and creates a rosemary-scented crust around the bone, while the lamb meat stays incredibly juicy and pink.",
     "instructions": [
       "Pat the lamb chops completely dry with paper towels.",
       "Rub the meat with oil spray, minced garlic, chopped rosemary, salt, and pepper.",
@@ -3073,7 +3073,7 @@
   },
   {
     "slug": "mini-torta-pasqualina",
-    "title": "Mini Easter Spinach & Ricotta Pies",
+    "title": "Mini Easter Pies (Savory Tartlets Ready in 15 Mins)",
     "emoji": "🥧",
     "temp": 180,
     "time": "15",
@@ -3087,7 +3087,7 @@
       "1/4 cup grated parmesan",
       "Salt, pepper, and nutmeg"
     ],
-    "description": "An Italian spring classic made simple. These adorable savory tarts feature a creamy spinach and ricotta heart with a hidden egg, all wrapped in a shatteringly crisp puff pastry.",
+    "description": "The Easter masterpiece in single-serving version! Discover how to quickly cook 4 mini puff pastry pockets stuffed with ricotta and spinach, with the surprise of a whole egg yolk steaming in 15 minutes.",
     "instructions": [
       "In a bowl, mix ricotta, chopped spinach, parmesan, salt, pepper, and nutmeg.",
       "Cut 4 large circles from the puff pastry to line 4 single-serve ramekins or tart pans, and 4 smaller circles for the lids.",
@@ -3107,7 +3107,7 @@
   },
   {
     "slug": "casatiello-napoletano",
-    "title": "Authentic Soft Italian Casatiello",
+    "title": "Neapolitan Casatiello (Soft & Fast in 35 Minutes)",
     "emoji": "🧀",
     "temp": 160,
     "time": "35",
@@ -3122,7 +3122,7 @@
       "3 whole raw eggs (in shell, for decoration)",
       "Salt and lots of black pepper"
     ],
-    "description": "Celebrate like a Neapolitan with the king of Easter breads. This soft, savory loaf is generously stuffed with spicy salami and sharp cheeses, baked to a rich golden brown.",
+    "description": "A flavor bomb! The rustic Neapolitan bread rich in cold cuts and cheeses rises and cooks super soft in a ring mold inside the air fryer in 35 minutes, decorated with the inevitable eggs.",
     "instructions": [
       "Dissolve the yeast in warm water. Knead flour, yeast water, lard, salt, and pepper into a smooth dough. Let it rise for 2 hours.",
       "Roll out the dough into a rectangle (save a small piece for the egg crosses). Scatter the meats and cheeses, then roll it up into a log.",
@@ -3142,7 +3142,7 @@
   },
   {
     "slug": "mini-pastiera-napoletana",
-    "title": "Mini Neapolitan Pastiera Tarts",
+    "title": "Mini Neapolitan Pastiera (Easter Dessert in 20 Mins)",
     "emoji": "🥧",
     "temp": 170,
     "time": "20",
@@ -3157,7 +3157,7 @@
       "Orange blossom water & lemon zest",
       "Candied fruit (optional)"
     ],
-    "description": "All the tradition of Naples in a single serving. These mini tarts feature a fragrant cooked grain and ricotta filling, staying perfectly moist inside a buttery, crisp shortcrust.",
+    "description": "Mini Neapolitan pastieras with a fragrant shortcrust shell and creamy filling. A smaller, faster version that keeps the classic aroma of ricotta, wheat, and orange blossom.",
     "instructions": [
       "In a bowl, cream the ricotta and sugar together. Add the cooked wheat, eggs, flavorings, and candied fruit, mixing well.",
       "Unroll the shortcrust pastry (save some scraps for the lattice) and line 4 greased silicone or foil muffin liners.",
@@ -3177,11 +3177,11 @@
   },
   {
     "slug": "classic-hamburger",
-    "title": "Classic Golden Beef Patties",
+    "title": "Perfect Hamburger (Juicy & Golden in 8 Minutes)",
     "emoji": "🍔",
     "temp": 375,
-    "time": "8-10",
-    "prep_time": "Not specified",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 beef patties (5.3 oz each)",
@@ -3189,7 +3189,7 @@
       "Salt",
       "Freshly ground black pepper"
     ],
-    "description": "Master the art of the everyday burger. This high-heat method creates a beautifully seared, golden-brown crust that locks in all the juices for a tender, flavorful bite.",
+    "description": "Stop dry hamburgers and grease-splattering pans! Cooked at 375°F for just 8 minutes, these beef patties become browned on the outside while keeping a flavorful and juicy core, perfect for your buns.",
     "instructions": [
       "Remove patties from the refrigerator before cooking to bring them to room temperature.",
       "Season both sides of the patties with salt and black pepper.",
@@ -3214,7 +3214,7 @@
     "title": "Deluxe Toasted Beef Burgers",
     "emoji": "🍔",
     "temp": 400,
-    "time": "8-12",
+    "time": "8",
     "prep_time": "25",
     "portions": "4",
     "ingredients": [
@@ -3515,8 +3515,8 @@
     "title": "Perfectly Roasted Whole Sausages",
     "emoji": "🌭",
     "temp": 400,
-    "time": "8-10",
-    "prep_time": "N/A",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "8 fresh pork sausages (approx. 21 oz total)"
@@ -3703,7 +3703,7 @@
     "emoji": "🍢",
     "temp": 400,
     "time": "7",
-    "prep_time": "1 hour 5",
+    "prep_time": "65",
     "portions": "4",
     "ingredients": [
       "17.6 oz beef chunks",
@@ -3741,7 +3741,7 @@
     "emoji": "🍢",
     "temp": 350,
     "time": "6",
-    "prep_time": "1 hour 20",
+    "prep_time": "80",
     "portions": "4",
     "ingredients": [
       "12 thin beef carpaccio slices",
@@ -3772,7 +3772,7 @@
   },
   {
     "slug": "scotch-eggs",
-    "title": "Crispy British Scotch Eggs",
+    "title": "Lighter Scotch Eggs (Extra Crispy & Protein-Packed)",
     "emoji": "🥚",
     "temp": 350,
     "time": "15",
@@ -3789,7 +3789,7 @@
       "1 egg, beaten",
       "1.4 oz breadcrumbs"
     ],
-    "description": "A gastropub classic made lighter. A soft or hard-boiled egg is encased in seasoned sausage meat and golden breadcrumbs, air-fried until perfectly crisp and satisfying.",
+    "description": "The famous British Scotch Eggs become easy to digest! Eggs wrapped in sausage and breading, cooked without deep frying. A hard, crispy shell and a soft interior in exactly 15 minutes.",
     "instructions": [
       "In a bowl, combine the pork sausage meat with garlic powder, onion powder, sage, salt, and pepper. Mix thoroughly and divide into four equal portions.",
       "Flatten one portion of the sausage meat into a patty. Place a hard-boiled egg in the center and mold the meat around it, ensuring a complete and even seal. Repeat for all eggs.",
@@ -3812,11 +3812,11 @@
   },
   {
     "slug": "soft-coconut-macaroons",
-    "title": "Chewy Toasted Coconut Macaroons",
+    "title": "Coconut Macaroons (Quick Treats in 15 Minutes)",
     "emoji": "🥥",
     "temp": 300,
     "time": "15",
-    "prep_time": "Not specified",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "Sweetened Condensed Milk, 7 oz",
@@ -3825,7 +3825,7 @@
       "Almond Extract, to taste",
       "Vanilla Extract, to taste"
     ],
-    "description": "Sweet, tropical, and incredibly easy. These macaroons feature a moist, chewy center and a beautifully toasted golden exterior—a perfect treat for any time of day.",
+    "description": "The perfect cookies for unexpected guests. Only 3 ingredients to create super soft and moist coconut nuggets. The air fryer toasts them gently at 300°F in a quarter of an hour.",
     "instructions": [
       "In a clean bowl, beat the egg whites until stiff peaks form.",
       "Gently fold in the sweetened condensed milk, almond extract, and vanilla extract.",
@@ -3847,11 +3847,11 @@
   },
   {
     "slug": "golden-avocado-wedges",
-    "title": "Crispy Breaded Avocado Wedges",
+    "title": "Avocado Fries (Crispy & Creamy Sticks in 11 Mins)",
     "emoji": "🥑",
     "temp": 400,
     "time": "11",
-    "prep_time": "Not provided",
+    "prep_time": "",
     "portions": "2",
     "isItalian": false,
     "ingredients": [
@@ -3864,7 +3864,7 @@
       "Salt, to taste",
       "Cooking spray"
     ],
-    "description": "A modern appetizer with a textural twist. Creamy avocado wedges are coated in a spiced breading and cooked until crunchy, creating a unique 'fries' experience.",
+    "description": "Have you ever eaten warm avocado? Cut into wedges and breaded with paprika and breadcrumbs, the 400°F air creates a super crispy shell in 11 minutes enclosing a buttery heart. The veg appetizer of the year.",
     "instructions": [
       "Halve, pit, and peel the avocados. Slice into uniform wedges.",
       "Prepare three shallow dishes: one with flour and salt; one with beaten eggs; one with breadcrumbs, paprika, and cayenne pepper.",
@@ -3886,7 +3886,7 @@
   },
   {
     "slug": "french-toast-sticks",
-    "title": "Cinnamon Sugar French Toast Sticks",
+    "title": "French Toast Sticks (Delicious Breakfast in 10 Mins)",
     "emoji": "🍞",
     "temp": 350,
     "time": "10",
@@ -3901,7 +3901,7 @@
       "0.1 oz ground cinnamon",
       "1/2 tsp vanilla extract"
     ],
-    "description": "The breakfast of champions. These dunkable bread sticks are dipped in rich egg batter, cooked to a golden crisp, and rolled in fragrant cinnamon sugar.",
+    "description": "Forget the buttered pan! Soak the bread sticks in egg and milk and let them toast in the hot air for 10 minutes. They turn golden outside and soft inside, perfect for dipping in maple syrup.",
     "instructions": [
       "Cut each bread slice into 3 even strips.",
       "In a bowl, whisk together eggs, milk, maple syrup, and vanilla extract.",
@@ -3925,16 +3925,16 @@
   },
   {
     "slug": "frozen-fish-sticks",
-    "title": "Crispy Frozen Fish Sticks",
+    "title": "Frozen Fish Sticks (Super Crunch in 8 Minutes)",
     "emoji": "🐟",
     "temp": 400,
-    "time": "8-10",
-    "prep_time": "N/A",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "21 oz frozen breaded fish sticks"
     ],
-    "description": "Perfectly crunchy every time. Cook your favorite breaded fish sticks directly from the freezer for a quick, high-protein meal with absolutely no added oil required.",
+    "description": "The oven dries them out, the pan breaks them apart. The air fryer instead was born for them: in 8 minutes at 400°F the frozen sticks (already pre-fried) become super crispy without adding oil.",
     "instructions": [
       "Place frozen breaded fish sticks directly from the freezer into the basket.",
       "Arrange the fish sticks in a single layer to ensure proper air circulation.",
@@ -3957,11 +3957,11 @@
   },
   {
     "slug": "blooming-onion",
-    "title": "Golden 'Blooming' Onion",
+    "title": "Blooming Onion (Spectacular Air-Fried Onion Flower)",
     "emoji": "🧅",
     "temp": 400,
     "time": "25",
-    "prep_time": "2 hours 15",
+    "prep_time": "120",
     "portions": "4",
     "ingredients": [
       "2 large yellow onions",
@@ -3975,7 +3975,7 @@
       "2.1 oz breadcrumbs",
       "Cooking oil spray, as needed"
     ],
-    "description": "An iconic American steakhouse appetizer. This whole onion is carved into petals, lightly battered, and cooked until it 'blooms' into a spectacular, crispy pull-apart snack.",
+    "description": "Pure showstopper! The famous giant onion cut into a flower and breaded, air-roasted in 25 minutes without the liters of oil used in the original. Crispy petals perfect to tear off and dip with friends.",
     "instructions": [
       "Peel the onions and cut off the top. Make eight deep, evenly spaced downward cuts starting from the center, without cutting through the base.",
       "Submerge the onions in ice-cold water for a minimum of 2 hours to allow the petals to separate.",
@@ -3997,11 +3997,11 @@
   },
   {
     "slug": "simple-salmon-fillets",
-    "title": "Perfectly Flaky Salmon Fillets",
+    "title": "Simple Salmon Fillets (Crispy Skin & Moist Heart)",
     "emoji": "🐟",
     "temp": 400,
-    "time": "8-10",
-    "prep_time": "None",
+    "time": "8",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 salmon fillets, approx. 4.6 oz each",
@@ -4009,7 +4009,7 @@
       "Flaky sea salt, to taste",
       "Freshly ground black pepper, to taste"
     ],
-    "description": "Elegant and healthy. Our cooking method ensures a beautifully caramelized exterior while keeping the salmon pink, moist, and tender enough to flake with a fork.",
+    "description": "Have you ever ruined salmon by drying it out? With 8 minutes of hot air, you'll get a perfect crust while keeping the flesh moist and rich in omega-3. The foolproof trick of modern cooks.",
     "instructions": [
       "Pat the salmon fillets dry with paper towels.",
       "Brush the fillets with neutral oil and season with flaky sea salt and freshly ground black pepper.",
@@ -4032,7 +4032,7 @@
   },
   {
     "slug": "air-fryer-breaded-cod",
-    "title": "Golden Breaded Cod Fillets",
+    "title": "Lighter Fish & Chips (Super Crispy Air-Fried Cod)",
     "emoji": "🐟",
     "temp": 355,
     "time": "12",
@@ -4049,7 +4049,7 @@
       "1 tsp lemon juice",
       "Freshly ground black pepper"
     ],
-    "description": "A lighter take on a seafood classic. These cod fillets feature a buttery, golden breadcrumb crust that stays remarkably crisp while protecting the delicate white fish inside.",
+    "description": "The UK's most famous street food, degreased but still indulgent! Thick, crispy-crusted cod ready in just 12 minutes of air frying, perfectly paired with rustic fries.",
     "instructions": [
       "Cut cod fillets into uniform 1.5-inch cubes. Pat dry with a paper towel and season with freshly ground black pepper.",
       "In a small bowl, combine mayonnaise, minced tarragon, and lemon juice. Mix until smooth and set aside.",
@@ -4072,7 +4072,7 @@
   },
   {
     "slug": "strawberry-scones",
-    "title": "Fresh Strawberry British Scones",
+    "title": "Strawberry Scones (Soft, Fragrant & Quick)",
     "emoji": "🍓",
     "temp": 350,
     "time": "12",
@@ -4087,7 +4087,7 @@
       "4 fl oz heavy cream",
       "2 eggs"
     ],
-    "description": "Perfect for afternoon tea. These light and flaky scones are studded with fresh strawberries, offering a sweet, fruity burst in every buttery bite.",
+    "description": "No need to preheat a giant oven for 4 treats! These British strawberry scones burst with fluffiness in 12 minutes, ideal for your breakfast or afternoon tea.",
     "instructions": [
       "In a large bowl, combine flour and granulated sugar.",
       "Cut cold butter into small cubes. Using fingertips, rub the butter into the dry ingredients until the mixture resembles coarse crumbs.",
@@ -4110,7 +4110,7 @@
   },
   {
     "slug": "blueberry-ginger-scones",
-    "title": "Blueberry & Zesty Ginger Scones",
+    "title": "Blueberry & Ginger Scones (Gourmet Treats in 12 Mins)",
     "emoji": "🫐",
     "temp": 350,
     "time": "12",
@@ -4128,7 +4128,7 @@
       "2 Eggs",
       "0.14 fl oz Vanilla Extract"
     ],
-    "description": "A sophisticated twist on a classic. The tartness of fresh blueberries perfectly balances the warm spice of ginger in these tender, golden-baked scones.",
+    "description": "Amaze everyone at tea time! These super soft English Scones are prepped in one bowl and cook in just 12 minutes. The tartness of the blueberry and the spice of the ginger create a divine combo.",
     "instructions": [
       "In a large bowl, sift together flour, salt, sugar, and baking powder. Cut in the cold butter until the mixture resembles coarse crumbs. Gently fold in the blueberries and grated ginger.",
       "In a separate bowl, whisk together heavy cream, one egg, and vanilla extract. Pour the wet mixture into the dry ingredients and mix until just combined.",
@@ -4152,7 +4152,7 @@
   },
   {
     "slug": "bacon-wrapped-shrimp",
-    "title": "Savory Bacon-Wrapped Shrimp",
+    "title": "Bacon-Wrapped Shrimp (The Ultimate Surf & Turf)",
     "emoji": "🍤",
     "temp": 320,
     "time": "16",
@@ -4168,7 +4168,7 @@
       "0.04 oz ground black pepper",
       "16 toothpicks"
     ],
-    "description": "Double the flavor. Large shrimp are wrapped in smoky bacon and cooked until the bacon is crisp, naturally basting the seafood for a decadent, high-protein appetizer.",
+    "description": "The perfect appetizer! Shrimp tails wrapped in bacon: the air fryer renders the bacon fat, making it extra crispy in 16 minutes, while the shrimp stays moist and sweet in the center.",
     "instructions": [
       "Combine garlic powder, onion powder, pepper, and paprika in a small bowl.",
       "Season the shrimp with the spice mixture.",
@@ -4195,7 +4195,7 @@
   },
   {
     "slug": "coconut-crusted-shrimp",
-    "title": "Crispy Coconut-Crusted Shrimp",
+    "title": "Coconut Shrimp (Extra Crispy Tropical Breading)",
     "emoji": "🥥",
     "temp": 350,
     "time": "8",
@@ -4212,7 +4212,7 @@
       "Cooking oil spray",
       "Seasonings, to taste"
     ],
-    "description": "A taste of the tropics. These shrimp feature a thick, crunchy coconut coating that delivers a sweet and savory finish without the need for deep-frying.",
+    "description": "An exotic crust that crunches in every bite! Shredded coconut-breaded shrimp cook in just 8 minutes. An elegant, light finger-food perfect for dipping in sweet and sour sauces.",
     "isItalian": false,
     "instructions": [
       "In a shallow bowl, combine flour, salt, and desired seasonings.",
@@ -4235,7 +4235,7 @@
   },
   {
     "slug": "crispy-curry-shrimp",
-    "title": "Double-Breaded Curry Shrimp",
+    "title": "Curry Shrimp (Golden Double Breading in 10 Mins)",
     "emoji": "🦐",
     "temp": 338,
     "time": "10",
@@ -4249,7 +4249,7 @@
       "3 tablespoons curry powder",
       "1 tablespoon vegetable oil"
     ],
-    "description": "Extra crunch, extra flavor. These shrimp are double-breaded with a spiced flour and coarse cornmeal mixture for a uniquely rugged, curry-infused crispness.",
+    "description": "Looking for a spicy, irresistible snack? The double breading of cornmeal and curry makes these shrimp golden and hyper-crispy in the air fryer, using very little oil.",
     "instructions": [
       "Prepare a three-stage breading station. Place the beaten eggs in the first bowl, the combined flour and curry powder in the second, and the coarse cornmeal in the third.",
       "Coat each shrimp in the beaten eggs.",
@@ -4272,7 +4272,7 @@
   },
   {
     "slug": "spiced-curry-coconut-cod",
-    "title": "Curry & Coconut Cream Cod",
+    "title": "Coconut Curry Cod (Exotic Meal in 10 Minutes)",
     "emoji": "🥘",
     "temp": 400,
     "time": "10",
@@ -4286,7 +4286,7 @@
       "Salt to taste",
       "Black pepper to taste"
     ],
-    "description": "Indulgent and aromatic. Delicate cod fillets are seasoned with vibrant curry paste and served with a silky coconut cream sauce for a restaurant-quality meal.",
+    "description": "An applause-worthy exotic dinner in a flat 10 minutes! Juicy cod fillets cooked at high heat in a fragrant bath of coconut milk and sweet curry. Easy, healthy, and impressive.",
     "instructions": [
       "Coat the cod fillets evenly with 2 tablespoons of curry paste.",
       "In a small saucepan, combine the remaining tablespoon of curry paste with the coconut cream. Heat gently and season with salt and pepper.",
@@ -4308,7 +4308,7 @@
   },
   {
     "slug": "panko-crusted-cod",
-    "title": "Crispy Panko-Crusted Cod",
+    "title": "Panko-Crusted Cod (Refined and Super Crispy)",
     "emoji": "🐟",
     "temp": 340,
     "time": "10",
@@ -4323,7 +4323,7 @@
       "Salt, to taste",
       "Freshly ground black pepper, to taste"
     ],
-    "description": "Elevate your weeknight dinner with these golden cod fillets. A zesty lemon-herb panko crust provides a satisfyingly loud crunch while keeping the delicate white fish beneath perfectly flaky and moist.",
+    "description": "Forget the usual bland fish fillet! Create a golden, buttery, lemon-scented crust in 10 minutes using Japanese Panko. A light main course with a crazy crunch.",
     "instructions": [
       "Season both sides of each cod fillet with salt.",
       "In a bowl, combine the Panko breadcrumbs, melted butter, parsley, lemon zest, lemon juice, and pepper. Mix until well combined.",
@@ -4345,7 +4345,7 @@
   },
   {
     "slug": "mini-apple-pies",
-    "title": "Handheld Mini Apple Pies",
+    "title": "Mini Apple Pies (Warm Heart in 10 Minutes)",
     "emoji": "🥧",
     "temp": 350,
     "time": "10",
@@ -4362,7 +4362,7 @@
       "1 egg, beaten",
       "1 tsp milk"
     ],
-    "description": "All the comfort of a classic apple pie in a convenient, handheld size. These buttery shortcrust pastry pockets are bursting with a warm, spiced apple filling—perfect for a quick dessert or a sweet breakfast treat.",
+    "description": "Super fast Mini Apple Pies! Caramelized puff pastry pockets enclosing cinnamon-spiced apples and melted butter in just 10 minutes. The incredible convenience of the air fryer for an express comfort dessert.",
     "instructions": [
       "In a small saucepan, melt the butter. Sauté the diced apple with sugar, cinnamon, nutmeg, and allspice until softened.",
       "Cut two circles from the pastry sheet. Place the apple filling in the center of each circle.",
@@ -4385,7 +4385,7 @@
   },
   {
     "slug": "fried-mozzarella-bites",
-    "title": "Molten Breaded Mozzarella Bites",
+    "title": "Mozzarella Bites (Air-Fried Melty Cubes)",
     "emoji": "🧀",
     "temp": 350,
     "time": "8",
@@ -4403,7 +4403,7 @@
       "Dried parsley",
       "Non-stick cooking spray"
     ],
-    "description": "The ultimate cheesy indulgence. These double-breaded mozzarella pieces are cooked until the exterior is a deep golden-brown, hiding a gooey, molten cheese center that’s ready for dipping.",
+    "description": "You know those delicious fried cheese bites? Make these tasty, double-breaded cheese cubes at home! The freezer step prevents the mozzarella from oozing, guaranteeing golden cubes in 8 minutes.",
     "instructions": [
       "Cut each mozzarella stick into uniform pieces.",
       "Prepare three shallow dishes. In the first, combine flour, cornstarch, salt, and pepper. In the second, whisk together eggs and milk. In the third, combine breadcrumbs and dried parsley.",
@@ -4426,7 +4426,7 @@
   },
   {
     "slug": "coffee-cocoa-streusel-muffins",
-    "title": "Mocha Streusel Muffins",
+    "title": "Mocha Streusel Muffins (Soft Morning Awakening)",
     "emoji": "☕",
     "temp": 300,
     "time": "15",
@@ -4444,7 +4444,7 @@
       "2.71 fl oz Vegetable Oil",
       "0.17 fl oz Vanilla Extract"
     ],
-    "description": "A sophisticated wake-up call for your taste buds. These moist, tender muffins feature a rich harmony of dark cocoa and aromatic coffee, finished with a sweet, crumbly streusel topping.",
+    "description": "Hot breakfast without the effort! Thanks to the air fryer, the leavening pushes these Cocoa Muffins upwards, creating a perfect dome in 15 minutes. Incredibly soft inside.",
     "instructions": [
       "In a large bowl, sift and combine the flour, cocoa powder, brown sugar, baking powder, baking soda, and espresso powder.",
       "In a separate bowl, whisk the egg, milk, vegetable oil, and vanilla extract.",
@@ -4467,7 +4467,7 @@
   },
   {
     "slug": "chocolate-chip-muffins",
-    "title": "Classic Chocolate Chip Muffins",
+    "title": "Chocolate Chip Muffins (Perfect Dome)",
     "emoji": "🧁",
     "temp": 340,
     "time": "20",
@@ -4482,7 +4482,7 @@
       "Milk, 4 fl oz",
       "Baking Powder, 1/2 tsp"
     ],
-    "description": "A timeless bakery favorite made at home. These fluffy, golden muffins are generously studded with melty chocolate chips, offering a perfect balance of sweetness in every bite.",
+    "description": "How to get the famous tall and golden 'dome' of bakery muffins? The air fryer's vortex pushes the leavening upwards explosively in 20 minutes. Super soft and loaded with chocolate.",
     "instructions": [
       "In a large bowl, combine milk, melted butter, and eggs.",
       "In a separate bowl, combine flour, sugar, baking powder, and chocolate chips.",
@@ -4505,7 +4505,7 @@
   },
   {
     "slug": "grilled-sea-bream-with-olives",
-    "title": "Mediterranean Grilled Sea Bream",
+    "title": "Grilled Sea Bream (Smoke-Free Light Fish at Home)",
     "emoji": "🐟",
     "temp": 400,
     "time": "7",
@@ -4523,7 +4523,7 @@
       "Salt to taste",
       "Black pepper to taste"
     ],
-    "description": "Transport yourself to the coast with this light and fresh dish. Delicate sea bream fillets are seared to perfection and topped with a vibrant, raw Mediterranean-style olive and tomato salsa.",
+    "description": "A smoke-free indoor fish grill! The sea bream fillets cook at 400°F in just 7 minutes: the skin forms a light crust while the juices remain sealed inside.",
     "instructions": [
       "To prepare the salsa, combine diced tomatoes, sliced olives, minced garlic, and chopped parsley in a bowl. Season with lemon juice, olive oil, salt, and pepper.",
       "Pat the sea bream fillets dry with a paper towel. Brush with olive oil and season with salt and pepper.",
@@ -4544,7 +4544,7 @@
   },
   {
     "slug": "cajun-catfish",
-    "title": "Smoky Cajun Catfish Fillets",
+    "title": "Cajun Spiced Fish (Crispy in 7 Minutes)",
     "emoji": "🐟",
     "temp": 350,
     "time": "7",
@@ -4561,7 +4561,7 @@
       "Pinch of cayenne pepper",
       "Non-stick cooking spray"
     ],
-    "description": "Bold, smoky, and full of soul. These catfish fillets are coated in a traditional Louisiana-style spice blend, resulting in a blackened finish that’s big on flavor and low on carbs.",
+    "description": "A burst of energy from Louisiana. Fish fillets (ideally catfish or thick cod) covered in Cajun spices cook in 7 minutes, forming an intense, red, and flavorful crust without deep frying.",
     "instructions": [
       "Pat the fish fillets dry with paper towels.",
       "In a small bowl, combine paprika, garlic powder, onion powder, thyme, basil, oregano, and cayenne pepper to create the spice rub.",
@@ -4584,7 +4584,7 @@
   },
   {
     "slug": "breakfast-pizza-egg-ham",
-    "title": "Savory Brunch Pizza",
+    "title": "Breakfast Pizza (Runny Yolk Egg in 8 Mins)",
     "emoji": "🍕",
     "temp": 350,
     "time": "8",
@@ -4599,7 +4599,7 @@
       "1 tbsp olive oil",
       "Fresh cilantro, for garnish"
     ],
-    "description": "Why choose between pizza and breakfast? This savory delight features a crispy crust topped with melted mozzarella, salty smoked ham, and a perfectly cooked egg right in the center.",
+    "description": "The breakfast (or brunch) of champions! In just 8 minutes the pizza base becomes crispy, the mozzarella melts and the egg soft-boils, ready to be broken. Perfect with a pre-made base.",
     "instructions": [
       "Brush the pizza base surface with olive oil.",
       "Distribute the shredded mozzarella and chopped smoked ham evenly over the base.",
@@ -4622,7 +4622,7 @@
   },
   {
     "slug": "lemon-butter-salmon",
-    "title": "Silk Lemon Butter Salmon",
+    "title": "Lemon Butter Salmon (Refined in 8 Minutes)",
     "emoji": "🐟",
     "temp": 350,
     "time": "8",
@@ -4636,7 +4636,7 @@
       "0.3 fl oz Worcestershire sauce",
       "Salt and freshly ground black pepper, to taste"
     ],
-    "description": "Pure culinary elegance. These tender salmon fillets are finished with a rich, velvety lemon-butter sauce that perfectly complements the natural richness of the fish.",
+    "description": "A last-minute romantic dinner? Air-fry the salmon in 8 minutes to keep it pink and incredibly moist, then coat it with this French sauce of melted butter, garlic, and lemon.",
     "instructions": [
       "Season salmon fillets with salt and pepper.",
       "Preheat to 350°F. Lightly coat the basket with cooking spray and place the salmon fillets inside.",
@@ -4659,7 +4659,7 @@
   },
   {
     "slug": "summer-salmon-crispy-salad",
-    "title": "Fresh Summer Salmon & Salad",
+    "title": "Fresh Summer Salmon (Fit Meal in 9 Minutes)",
     "emoji": "🐟",
     "temp": 400,
     "time": "9",
@@ -4677,7 +4677,7 @@
       "Salt, to taste",
       "Black Pepper, to taste"
     ],
-    "description": "Light, healthy, and incredibly satisfying. Perfectly cooked salmon fillets are paired with a crisp, refreshing tomato and cucumber salad for a high-protein meal that won't weigh you down.",
+    "description": "The perfect fit lunch for summer. While the air fryer cooks the salmon creating a light surface crust in 9 minutes, you prepare a crunchy and refreshing side salad. Zero hassle.",
     "instructions": [
       "Brush salmon fillets with oil. Season with salt and pepper.",
       "Cook at 400°F for 7 to 9 minutes.",
@@ -4699,7 +4699,7 @@
   },
   {
     "slug": "teriyaki-glazed-salmon",
-    "title": "Sticky Teriyaki & Orange Salmon",
+    "title": "Orange Teriyaki Salmon (Oriental Glaze in 8 Minutes)",
     "emoji": "🍣",
     "temp": 350,
     "time": "8",
@@ -4715,7 +4715,7 @@
       "0.7 fl oz vegetable oil",
       "White pepper, to taste"
     ],
-    "description": "A beautiful fusion of sweet and citrus. These tender salmon fillets are coated in a glossy, homemade teriyaki-orange glaze that caramelizes into a mouthwatering finish.",
+    "description": "A shiny, sticky glaze with an intense Oriental flavor. The trick? Cook the salmon gently (350°F) in 8 minutes and apply the orange Teriyaki reduction only after cooking is complete.",
     "instructions": [
       "Combine soy sauce, sugar, garlic, ginger, and orange juice in a small saucepan. Bring to a boil, then reduce heat and simmer until the liquid has reduced by half, forming a thick glaze.",
       "Cool the teriyaki sauce to room temperature.",
@@ -4737,7 +4737,7 @@
   },
   {
     "slug": "breakfast-muffin-sandwich",
-    "title": "Classic English Muffin Breakfast Sandwich",
+    "title": "English Muffin Sandwich (Quick American Breakfast)",
     "emoji": "🥪",
     "temp": 320,
     "time": "10",
@@ -4752,7 +4752,7 @@
       "Non-stick cooking spray",
       "Salt and pepper, to taste"
     ],
-    "description": "Better than the drive-thru. A toasted, pillowy English muffin layers a steamed egg, salty Canadian bacon, and sharp melted cheddar for the ultimate on-the-go breakfast.",
+    "description": "Forget the drive-thru! The classic homemade American breakfast sandwich in 10 minutes. The hot water trick in the ramekin steams the egg while the bread toasts.",
     "instructions": [
       "Preheat the air fryer to 320°F (160°C). Grease two small ramekins with non-stick cooking spray and place them in the basket to heat.",
       "Top two English muffin halves with one slice of cheese and one slice of Canadian bacon each. Place all four muffin halves in the basket.",
@@ -5013,8 +5013,8 @@
     "title": "Crispy Golden Fish Cakes",
     "emoji": "🐟",
     "temp": 400,
-    "time": "12-15",
-    "prep_time": "None",
+    "time": "12",
+    "prep_time": "",
     "portions": "2",
     "ingredients": [
       "2 frozen fish cakes (approx. 5.3 oz / 150g each)"
@@ -5240,7 +5240,7 @@
   },
   {
     "slug": "cheesy-corn-muffins",
-    "title": "Savory Cheddar & Corn Muffins",
+    "title": "Savory Cheese and Corn Muffins (Melty Heart in 15 Mins)",
     "emoji": "🧁",
     "temp": 320,
     "time": "15",
@@ -5259,7 +5259,7 @@
       "4.2 oz Cheddar Cheese, shredded",
       "3 Shallots, finely sliced"
     ],
-    "description": "A savory twist on a classic. Packed with sweet corn, sharp cheddar, and subtle shallots, these golden muffins are best enjoyed warm with a smear of butter.",
+    "description": "The classic American cornbread transformed into single-serving savory cakes. The cheddar melts in the batter while the heat perfectly leavens them in 15 minutes for an exceptional snack.",
     "instructions": [
       "In a large bowl, sift together all-purpose flour, cornmeal, sugar, baking powder, and salt.",
       "In a separate bowl, whisk the egg, milk, and melted butter. Pour the wet ingredients into the dry ingredients and mix until just combined.",
@@ -5284,7 +5284,7 @@
   },
   {
     "slug": "lemon-blueberry-coconut-muffins",
-    "title": "Lemon Blueberry Coconut Muffins",
+    "title": "Coconut and Blueberry Muffins (Light & Fluffy in 15 Mins)",
     "emoji": "🧁",
     "temp": 300,
     "time": "15",
@@ -5302,7 +5302,7 @@
       "Grated lemon zest",
       "2.8 oz fresh blueberries"
     ],
-    "description": "Wonderfully soft and entirely plant-based. Creamy coconut milk and zesty lemon create a tender crumb that highlights the burst of fresh blueberries in every bite.",
+    "description": "A sweet treat accessible to everyone: completely vegan, lactose-free, and super soft! Coconut milk binds the batter while the air fryer gently cooks them at 300°F in 15 minutes.",
     "instructions": [
       "In a large bowl, whisk together coconut milk, coconut oil, sugar, lemon juice, and lemon zest.",
       "In a separate bowl, combine flour, baking powder, baking soda, and salt. Gradually add the dry ingredients to the wet ingredients, mixing until just combined. Do not overmix.",
@@ -5325,7 +5325,7 @@
   },
   {
     "slug": "banana-walnut-mini-loaf",
-    "title": "Mini Banana Walnut Loaf",
+    "title": "Mini Walnut Banana Bread (The Quick Loaf)",
     "emoji": "🍞",
     "temp": 300,
     "time": "40",
@@ -5342,7 +5342,7 @@
       "0.11 oz baking soda",
       "1 pinch salt"
     ],
-    "description": "The perfect personal-sized loaf. This compact treat features a moist, sweet banana interior perfectly complemented by the crunch of toasted walnuts.",
+    "description": "Have two overripe bananas to use? Create a perfect mini loaf! Cooked at a low temperature (300°F) for 40 minutes, the banana bread stays incredibly moist inside and toasted outside.",
     "instructions": [
       "In a bowl, mash the bananas with a fork.",
       "In a separate bowl, cream the softened butter and sugar. Mix in the beaten egg and vanilla extract.",
@@ -5366,10 +5366,10 @@
   },
   {
     "slug": "simple-roasted-asparagus",
-    "title": "Crispy Roasted Asparagus",
+    "title": "Roasted Asparagus (Perfect Side Dish in 6 Minutes)",
     "emoji": "🥗",
     "temp": 400,
-    "time": "6-8",
+    "time": "6",
     "prep_time": "2",
     "portions": "2",
     "ingredients": [
@@ -5378,7 +5378,7 @@
       "Sea salt, to taste",
       "Freshly ground black pepper, to taste"
     ],
-    "description": "Simple, elegant, and vibrant. A high-heat roast transforms tender asparagus spears, making the tips delightfully crisp while locking in their natural sweetness.",
+    "description": "The absolute best way to cook asparagus! Forget boiling that makes them mushy: in 6 minutes at 400°F the tips become super crispy while the stems stay green and firm.",
     "instructions": [
       "Wash the asparagus. Trim or snap off the woody lower ends of the stalks.",
       "Place the asparagus in a bowl, drizzle with olive oil, and toss to coat evenly.",
@@ -5404,7 +5404,7 @@
   },
   {
     "slug": "prosciutto-wrapped-asparagus",
-    "title": "Prosciutto-Wrapped Asparagus Spears",
+    "title": "Prosciutto-Wrapped Asparagus (Gourmet Appetizer in 10 Mins)",
     "emoji": "🥦",
     "temp": 300,
     "time": "10",
@@ -5417,7 +5417,7 @@
       "Salt",
       "Black pepper"
     ],
-    "description": "A sophisticated appetizer that never fails to impress. Tender asparagus stalks are enveloped in a savory prosciutto shell that crisps up beautifully during roasting.",
+    "description": "A restaurant-style low-carb appetizer. Wrap asparagus in prosciutto: cooking at 300°F melts the fat, turning the prosciutto into a crispy chip embracing the sweet vegetable.",
     "instructions": [
       "Season the trimmed asparagus spears with salt and pepper.",
       "Wrap one slice of prosciutto tightly around each asparagus spear.",
@@ -5442,7 +5442,7 @@
   },
   {
     "slug": "vegetarian-bagels",
-    "title": "Grilled Veggie & Cream Cheese Bagels",
+    "title": "Veggie Bagel (Easy Grilled Vegetables in 17 Mins)",
     "emoji": "🥯",
     "temp": 400,
     "time": "17",
@@ -5458,7 +5458,7 @@
       "2 tbsp olive oil",
       "1 pinch dried oregano"
     ],
-    "description": "A hearty vegetarian lunch. These toasted bagels feature a smoky medley of grilled vegetables layered over a tangy cream cheese and mustard spread.",
+    "description": "Use your air fryer as a super-toaster! Grill peppers and mushrooms in minutes, then toast bagels and stuff them for a healthy, colorful, and flavorful vegetarian lunch.",
     "instructions": [
       "Remove seeds and membranes from the bell peppers and slice into strips. Clean and slice the mushrooms.",
       "In a bowl, toss the pepper strips and mushrooms with olive oil and oregano until evenly coated.",
@@ -5483,7 +5483,7 @@
   },
   {
     "slug": "cauliflower-ranch-bites",
-    "title": "Spicy Buffalo Cauliflower Bites",
+    "title": "Cauliflower Wings (Spicy Cauliflower Bites)",
     "emoji": "🥦",
     "temp": 340,
     "time": "27",
@@ -5502,7 +5502,7 @@
       "3.4 fl oz Buffalo sauce",
       "1 fl oz vegetable oil, for the glaze"
     ],
-    "description": "The perfect vegetarian alternative to wings. These breaded cauliflower florets are cooked until crunchy and tossed in a fiery Buffalo-style glaze.",
+    "description": "The fake chicken wings that everyone will go crazy for. Battered cauliflower florets, panko-breaded and glazed in spicy Buffalo sauce. The perfect veg alternative in 27 minutes.",
     "instructions": [
       "In a large bowl, whisk together flour, onion powder, garlic powder, paprika, and salt. Gradually add milk, whisking continuously to form a thick batter.",
       "Place panko breadcrumbs in a separate shallow bowl.",
@@ -5529,7 +5529,7 @@
   },
   {
     "slug": "roasted-garlic-broccoli",
-    "title": "Roasted Garlic Broccoli Florets",
+    "title": "Garlic Broccoli (Golden)",
     "emoji": "🥦",
     "temp": 300,
     "time": "10",
@@ -5542,7 +5542,7 @@
       "0.14 oz fine sea salt",
       "0.04 oz black pepper"
     ],
-    "description": "Elevate your greens. Broccoli florets are seasoned with garlic and roasted until the edges are beautifully browned, bringing out a deep, nutty flavor.",
+    "description": "If you hate the smell of boiled broccoli, this recipe will save you. Air-cooked at a low temperature (300°F) for 10 minutes, the broccoli roasts while maintaining crunchiness and intense flavor.",
     "instructions": [
       "Coat the broccoli florets with oil.",
       "Add garlic powder, salt, and pepper. Toss to coat evenly.",
@@ -5566,7 +5566,7 @@
   },
   {
     "slug": "honey-soy-glazed-carrots",
-    "title": "Sticky Honey-Soy Glazed Carrots",
+    "title": "Honey Soy Glazed Carrots (Sweet & Sour)",
     "emoji": "🥕",
     "temp": 400,
     "time": "13",
@@ -5579,7 +5579,7 @@
       "0.33 fl oz honey",
       "0.33 fl oz soy sauce"
     ],
-    "description": "A balanced blend of sweet and savory. Tender baby carrots are coated in a rich honey-soy glaze that caramelizes into a glossy, addictive finish.",
+    "description": "Baby carrots transformed! The soy and honey marinade caramelizes instantly at 400°F in the air fryer, creating a sweet and sour side dish with an irresistible crust in 13 mins.",
     "instructions": [
       "Scrub the carrots under running water and pat dry.",
       "In a bowl, combine carrots, soy sauce, honey, and olive oil. Toss to coat evenly.",
@@ -5600,7 +5600,7 @@
   },
   {
     "slug": "honey-roasted-carrots",
-    "title": "Honey & Thyme Roasted Carrots",
+    "title": "Honey Thyme Roasted Carrots (Caramelized & Fragrant)",
     "emoji": "🥕",
     "temp": 400,
     "time": "13",
@@ -5614,7 +5614,7 @@
       "Fresh thyme sprigs",
       "Salt to taste"
     ],
-    "description": "Rustic and comforting. These carrots are roasted with sweet honey and aromatic fresh thyme, resulting in a tender-firm texture and a delicate floral glaze.",
+    "description": "The enveloping heat of the air fryer enhances the natural sweetness of carrots, which, glazed with honey and scented with thyme, become a super tender roasted autumn side in 13 minutes.",
     "instructions": [
       "Pat the carrots dry with paper towels.",
       "In a large bowl, combine the carrots, honey, extra virgin olive oil, thyme sprigs, and salt.",
@@ -5635,7 +5635,7 @@
   },
   {
     "slug": "turmeric-cauliflower",
-    "title": "Golden Turmeric Cauliflower",
+    "title": "Turmeric Cauliflower (Spiced, Golden)",
     "emoji": "🥦",
     "temp": 300,
     "time": "10",
@@ -5650,7 +5650,7 @@
       "0.14 oz salt",
       "Freshly ground black pepper to taste"
     ],
-    "description": "Vibrant and aromatic. Seasoned with turmeric, garlic, and onion powder, these roasted cauliflower florets offer a bold color and a warm, earthy flavor profile.",
+    "description": "An explosion of color and antioxidants. Turmeric dyes the cauliflower florets gold as they cook super fast at 300°F (10 mins). Healthy, anti-inflammatory, and insanely crunchy.",
     "instructions": [
       "In a bowl, combine cauliflower florets and olive oil. Toss to coat evenly.",
       "Add ground turmeric, garlic powder, onion powder, salt, and pepper. Mix until the florets are uniformly seasoned.",
@@ -5672,7 +5672,7 @@
   },
   {
     "slug": "roasted-cauliflower-tahini-sauce",
-    "title": "Roasted Cauliflower with Tahini",
+    "title": "Roasted Cauliflower & Tahini (Middle Eastern Flavor)",
     "emoji": "🥦",
     "temp": 356,
     "time": "15",
@@ -5685,7 +5685,7 @@
       "1.69 fl oz lemon juice",
       "Salt and pepper to taste"
     ],
-    "description": "A Mediterranean-inspired delight. Nutty, roasted cauliflower florets are drizzled with a creamy, zesty tahini and lemon sauce for a sophisticated side dish.",
+    "description": "Turn cauliflower into a Middle Eastern restaurant dish! Air-roasted florets become browned and flavorful in 15 minutes, perfect for drizzling with creamy, citrusy tahini sauce.",
     "instructions": [
       "Remove leaves and trim the base of the cauliflower. Break into florets and place in a large bowl.",
       "Add olive oil, salt, and pepper to the cauliflower. Toss to coat evenly.",
@@ -5707,10 +5707,10 @@
   },
   {
     "slug": "crispy-potato-chips",
-    "title": "Hand-Cut Crispy Potato Chips",
+    "title": "Crispy Potato Chips (Light and Crunchy in 23 Mins)",
     "emoji": "🥔",
     "temp": 330,
-    "time": "23-26",
+    "time": "23",
     "prep_time": "40",
     "portions": "4",
     "ingredients": [
@@ -5720,7 +5720,7 @@
       "2 tablespoons extra virgin olive oil",
       "Black pepper to taste"
     ],
-    "description": "Snacking made smarter. These thinly sliced potatoes are air-fried with minimal oil to achieve a light, golden crunch that rivals any store-bought bag.",
+    "description": "No more fat-filled bagged chips! Discover the secret of the mandoline and saltwater soak to make golden, super crunchy chips in your air fryer. The perfect healthy snack.",
     "instructions": [
       "In a large bowl, dissolve salt in cold water.",
       "Wash potatoes thoroughly. Leaving the skin on is optional. Slice potatoes to a uniform thickness of 1.5 mm using a mandoline.",
@@ -5746,10 +5746,10 @@
   },
   {
     "slug": "roasted-mushrooms",
-    "title": "Savory Golden-Brown Mushrooms",
+    "title": "Roasted Mushrooms (Firm and Flavorful in 10 Mins)",
     "emoji": "🍄",
     "temp": 400,
-    "time": "10-12",
+    "time": "10",
     "prep_time": "5",
     "portions": "4",
     "isItalian": false,
@@ -5760,7 +5760,7 @@
       "Freshly Ground Black Pepper, to taste",
       "Fresh Parsley, chopped (for garnish)"
     ],
-    "description": "Concentrated umami in every bite. This high-heat method yields mushrooms that are perfectly tender inside and beautifully browned outside, without any sogginess.",
+    "description": "Stop pan-frying mushrooms until they get mushy and watery. With 10 minutes at 400°F in the air fryer, you'll get firm, savory roasted mushrooms, sealed on the outside and juicy inside.",
     "instructions": [
       "Gently wipe the mushrooms with a damp cloth or paper towel to remove any soil residue.",
       "Cut mushrooms into halves or quarters, ensuring uniform size for even cooking.",
@@ -5784,7 +5784,7 @@
   },
   {
     "slug": "simple-roasted-eggplant",
-    "title": "Spiced Roasted Eggplant Slices",
+    "title": "Roasted Eggplant (Spiced & Light in 10 Minutes)",
     "emoji": "🍆",
     "temp": 400,
     "time": "10",
@@ -5798,7 +5798,7 @@
       "0.07 oz ground cumin",
       "Salt and black pepper to taste"
     ],
-    "description": "A simple yet flavorful vegetable staple. These eggplant slices are seasoned with a custom spice blend and roasted until tender and golden.",
+    "description": "No more greasy eggplant that absorbs all the oil! This 400°F technique makes them golden and spiced in just 10 minutes using a drizzle of oil. The perfect base for salads or a keto side dish.",
     "instructions": [
       "Wash and partially peel the eggplant. Cut into 1/2-inch thick round slices.",
       "In a large bowl, whisk together olive oil, garlic powder, onion powder, ground cumin, salt, and pepper.",
@@ -5821,7 +5821,7 @@
   },
   {
     "slug": "grilled-eggplant-pesto",
-    "title": "Grilled Eggplant with Basil Pesto",
+    "title": "Pesto Grilled Eggplant (Soft & Fragrant in 27 Mins)",
     "emoji": "🍆",
     "temp": 338,
     "time": "27",
@@ -5833,7 +5833,7 @@
       "2 oz extra virgin olive oil",
       "Salt and freshly ground black pepper, to taste"
     ],
-    "description": "The taste of summer. Tender grilled eggplant slices are finished with a vibrant layer of fresh basil pesto for a burst of herb-forward flavor.",
+    "description": "A burst of Mediterranean flavor! Slowly air-roasted eggplant until buttery soft, then glazed with fresh basil pesto. A fresh and elegant side dish that smells like summer.",
     "instructions": [
       "Rinse the eggplants and slice them into 0.2-inch thick rounds.",
       "Coat both sides of the eggplant slices with olive oil and season with salt and pepper.",
@@ -5855,7 +5855,7 @@
   },
   {
     "slug": "stuffed-eggplant-mozzarella",
-    "title": "Parmigiana-Style Stuffed Eggplant",
+    "title": "Parmesan Stuffed Eggplant (Cheesy & Melty in 30 Mins)",
     "emoji": "🍆",
     "temp": 375,
     "time": "30",
@@ -5873,7 +5873,7 @@
       "Salt",
       "Black pepper"
     ],
-    "description": "A clever, hearty twist on a classic. These eggplant shells are packed with a savory mixture of roasted pulp, rich tomato sauce, and gooey mozzarella, then baked until perfectly tender and bubbly.",
+    "description": "Forget the long and greasy classic eggplant parmesan! These stringy stuffed eggplants cook quickly in the air fryer, creating a crispy crust that encloses an irresistible Mediterranean heart.",
     "instructions": [
       "Score the flesh of the eggplant halves in a diamond pattern. Brush with olive oil and season with salt and pepper.",
       "Place the eggplant halves in the cooking basket, cut-side down. Cook at 375°F for 20 minutes until softened.",
@@ -5894,16 +5894,16 @@
   },
   {
     "slug": "frozen-potato-wedges",
-    "title": "Crispy Frozen Potato Wedges",
+    "title": "Frozen Potato Wedges (Soft Heart in 20 Minutes)",
     "emoji": "🥔",
     "temp": 375,
     "time": "20",
-    "prep_time": "None",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "21 oz frozen potato wedges"
     ],
-    "description": "The ultimate effortless side dish. Cooked directly from the freezer, these wedges achieve a fluffy, steaming interior and a satisfyingly golden, crisp exterior without the need for extra oil.",
+    "description": "Frozen potato wedges are made for the air fryer. In 20 minutes you'll get fast-food crunch without adding a single drop of oil. Healthy, fast, and the kids' favorite snack.",
     "instructions": [
       "Place the frozen potato wedges directly into the basket. Do not add oil.",
       "Cook at 375°F for 20 minutes.",
@@ -5926,7 +5926,7 @@
   },
   {
     "slug": "rustic-spiced-potato-wedges",
-    "title": "Parmesan & Garlic Spiced Wedges",
+    "title": "Parmesan Potato Wedges (Rustic Wedges in 20 Mins)",
     "emoji": "🥔",
     "temp": 385,
     "time": "20",
@@ -5941,7 +5941,7 @@
       "0.35 oz grated Parmesan cheese",
       "Salt and pepper to taste"
     ],
-    "description": "Rustic, bold, and full of flavor. These thick-cut wedges are tossed in a savory blend of Parmesan cheese, garlic, and onion powder, then roasted to a perfect golden crunch.",
+    "description": "Rustic potato wedges with a cracking Parmesan crust! Discover how the air fryer enhances the flavor of cheese and spices, making each wedge golden and incredibly tasty.",
     "instructions": [
       "Wash potatoes. With skin on, cut into uniform wedges.",
       "In a large bowl, add olive oil to the wedges and toss to coat evenly.",
@@ -5963,18 +5963,18 @@
   },
   {
     "slug": "whole-baked-potatoes",
-    "title": "Perfect Whole Baked Potatoes",
+    "title": "Whole Baked Potatoes (Soft & Rustic in 35 Minutes)",
     "emoji": "🥔",
     "temp": 400,
-    "time": "35-40",
-    "prep_time": "None",
+    "time": "35",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 medium potatoes (approx. 6.7 oz / 190g each), uniform in size",
       "Vegetable oil, for brushing (optional)",
       "Coarse salt"
     ],
-    "description": "The gold standard of comfort food. Enjoy a classic jacket potato with an incredibly shatter-crisp skin and a soft, pillowy interior that's ready for your favorite toppings.",
+    "description": "The real Jacket Potato at home in half the time. The air fryer makes the skin thin and crispy while the inside becomes as soft as velvet. The ultimate healthy rustic side dish.",
     "instructions": [
       "Scrub the potatoes under running water. Dry thoroughly.",
       "Prick each potato 3-4 times with a fork to allow steam to escape during cooking.",
@@ -5996,7 +5996,7 @@
   },
   {
     "slug": "roasted-potatoes-spicy-mayo",
-    "title": "Roasted Baby Potatoes with Spicy Dip",
+    "title": "Roasted Baby Potatoes (With Spicy Mayo in 30 Mins)",
     "emoji": "🥔",
     "temp": 355,
     "time": "30",
@@ -6013,7 +6013,7 @@
       "2 tbsp sun-dried tomato pesto",
       "2 tbsp wine vinegar"
     ],
-    "description": "Bite-sized perfection. These herb-seasoned baby potatoes are roasted until the skins are snappy and served with a creamy, zesty spicy mayonnaise for the ultimate dipping experience.",
+    "description": "Spiced and crispy baby potatoes served with a gourmet sun-dried tomato mayo. An original and impressive side dish ready in 30 minutes that will transform your dinner into a restaurant experience.",
     "instructions": [
       "In a large bowl, combine the halved potatoes with olive oil, half of the total paprika, half of the garlic powder, and salt. Toss to coat evenly.",
       "Arrange the seasoned potatoes in a single layer in the cooking basket. Cook at 355°F for 30 minutes.",
@@ -6040,7 +6040,7 @@
     "title": "Homemade Crispy Hash Browns",
     "emoji": "🥔",
     "temp": 190,
-    "time": "15-20",
+    "time": "15",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -6071,7 +6071,7 @@
   },
   {
     "slug": "hasselback-potatoes",
-    "title": "Buttery Hasselback Potatoes",
+    "title": "Hasselback Potatoes (Accordion-Style, Spectacular in 40 Mins)",
     "emoji": "🥔",
     "temp": 350,
     "time": "40",
@@ -6086,7 +6086,7 @@
       "Salt",
       "Pepper"
     ],
-    "description": "Elegant and eye-catching. Thinly sliced but held together at the base, these potatoes fan out as they bake, allowing seasoned butter to seep into every layer for a crispy outside and melt-in-your-mouth inside.",
+    "description": "Amaze your guests with this accordion-style Swedish side dish! The slices widen as they air-fry, allowing the butter and garlic to melt inside every single crust.",
     "instructions": [
       "Wash and scrub the potatoes, leaving the skin on. Place each potato on a cutting board and make parallel, 1/4-inch incisions, stopping before cutting completely through the base.",
       "Coat the potatoes with olive oil. Season generously with salt and pepper, ensuring seasoning enters the incisions.",
@@ -6108,7 +6108,7 @@
   },
   {
     "slug": "roasted-baby-potatoes",
-    "title": "Herb-Roasted Baby Potatoes",
+    "title": "Herb Baby Potatoes (Quick Rustic Snack in 20 Mins)",
     "emoji": "🥔",
     "temp": 383,
     "time": "20",
@@ -6123,7 +6123,7 @@
       "0.14 oz salt",
       "Black pepper, to taste"
     ],
-    "description": "A versatile and wholesome side. These tiny potatoes are roasted at high heat with fresh herbs until the exteriors are crispy and the centers are buttery and tender.",
+    "description": "The most loved side dish ever, ready in just 20 minutes! Halved baby potatoes form a perfect herb-scented crust, keeping the very flavorful skin.",
     "instructions": [
       "Wash the baby potatoes and cut them in half.",
       "In a bowl, toss the potatoes with olive oil until evenly coated.",
@@ -6147,17 +6147,17 @@
   },
   {
     "slug": "whole-roasted-bell-peppers",
-    "title": "Charred Whole Roasted Bell Peppers",
+    "title": "Roasted Peppers (Super Easy to Peel in 26 Mins)",
     "emoji": "🫑",
     "temp": 400,
-    "time": "26-30",
-    "prep_time": "None",
+    "time": "26",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "4 large bell peppers (approx. 23 oz total)",
       "0.34 fl oz neutral oil"
     ],
-    "description": "A kitchen essential made easy. High heat blisters and chars the skins to perfection, resulting in a sweet, tender, and smoky pulp that's perfect for salads, sauces, or sides.",
+    "description": "Roasting and peeling peppers has never been easier. The concentrated heat at 400°F chars the skin in 26 minutes, allowing you to peel them in a snap for sweet, light salads.",
     "instructions": [
       "Wash the bell peppers under running water and pat dry with a kitchen towel.",
       "Coat the bell peppers with a thin layer of oil.",
@@ -6181,7 +6181,7 @@
   },
   {
     "slug": "air-fried-onion-rings",
-    "title": "Crispy Onion Rings",
+    "title": "Onion Rings (Super Crispy Air-Fried Snack in 20 Mins)",
     "emoji": "🧅",
     "temp": 375,
     "time": "20",
@@ -6197,7 +6197,7 @@
       "0.07 oz smoked paprika",
       "0.18 oz salt"
     ],
-    "description": "A classic appetizer featuring onion rings with a seasoned, crisp coating, prepared with a reduced-oil cooking method.",
+    "description": "The undisputed king of fried snacks becomes light and homemade! The trick of the buttermilk breading cooked in the air fryer for 20 minutes makes these rings incredibly crunchy.",
     "instructions": [
       "Slice the onion into 0.5-inch thick rounds. Separate the layers to form individual rings.",
       "Prepare three shallow dishes. Place flour in the first. Whisk eggs and buttermilk together in the second. Combine breadcrumbs, salt, and paprika in the third.",
@@ -6220,7 +6220,7 @@
   },
   {
     "slug": "bbq-candied-bacon",
-    "title": "Smoky Candied BBQ Bacon",
+    "title": "Candied Bacon (BBQ Crunch in 8 Minutes)",
     "emoji": "🥓",
     "temp": 320,
     "time": "8",
@@ -6233,7 +6233,7 @@
       "Ground Cumin, 0.04 oz",
       "Cayenne Pepper, 0.04 oz"
     ],
-    "description": "The ultimate sweet and salty snack. Thick-cut bacon is glazed with sugar and spices, then caramelized until it forms a glass-like, smoky-sweet crust that's completely addictive.",
+    "description": "Have you ever tried sweet and spicy bacon? The slices shrink while roasting at 320°F, as the brown sugar melts with the fat creating a \"meat candy\" in 8 minutes. Dangerously good.",
     "instructions": [
       "Cut each bacon slice in half.",
       "In a small bowl, combine brown sugar, chili powder, ground cumin, and cayenne pepper.",
@@ -6256,7 +6256,7 @@
   },
   {
     "slug": "sweet-mustard-crusted-steaks",
-    "title": "Sweet & Mustard Crusted Steaks",
+    "title": "Mustard-Crusted Steak (Juicy & Caramelized in 10 Mins)",
     "emoji": "🥩",
     "temp": 400,
     "time": "10",
@@ -6268,7 +6268,7 @@
       "0.35 oz English mustard powder",
       "Coarse sea salt and freshly cracked black pepper"
     ],
-    "description": "A flavor powerhouse. Intense heat sears the steak while rapidly melting a sweet mustard rub into a robust, aromatic crust that locks in all the succulent juices.",
+    "description": "Replace your usual grill with an American 'Rub'! Brown sugar and mustard coat the ribeye, and at 400°F they create a seal of pure flavor in 10 minutes, keeping the beef super soft inside.",
     "instructions": [
       "Allow meat to reach room temperature by removing it from refrigeration 30 minutes prior to cooking, ensuring even thermal distribution.",
       "Combine sugar, mustard powder, coarse salt, and cracked pepper in a small vessel.",
@@ -6290,7 +6290,7 @@
   },
   {
     "slug": "brussels-sprouts-with-pancetta",
-    "title": "Charred Brussels Sprouts & Pancetta",
+    "title": "Brussels Sprouts & Bacon (Flavorful & Crispy in 9 Mins)",
     "emoji": "🥬",
     "temp": 400,
     "time": "9",
@@ -6305,7 +6305,7 @@
       "Black pepper, to taste",
       "0.35 oz Parmesan cheese, freshly grated"
     ],
-    "description": "Sophisticated and savory. High-heat roasting chars the outer leaves of the sprouts while rendering the salty pancetta fat, coating every bite in a rich, smoky flavor.",
+    "description": "If you hate boiled Brussels sprouts, try them air-fried with diced bacon. In 9 minutes, they roast on the outer tips while absorbing the umami of the bacon. A killer side dish.",
     "instructions": [
       "In a large bowl, combine the halved Brussels sprouts and diced pancetta.",
       "Add olive oil, garlic powder, salt, and pepper. Mix to coat evenly.",
@@ -6330,10 +6330,10 @@
   },
   {
     "slug": "crispy-kale-chips",
-    "title": "Light & Crispy Kale Chips",
+    "title": "Kale Chips (Light & Fit Snack in 8 Minutes)",
     "emoji": "🥬",
     "temp": 300,
-    "time": "8-10",
+    "time": "8",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -6341,7 +6341,7 @@
       "Vegetable oil or olive oil spray, 0.3 fl oz",
       "Fine sea salt, to taste"
     ],
-    "description": "The ultimate guilt-free snack. Transform fresh kale into paper-thin, shatteringly crisp chips in minutes—a healthy, salty alternative to traditional potato chips.",
+    "description": "The ultimate superfood becomes the favorite snack of health enthusiasts. At 300°F, kale leaves lose their moisture, becoming like bagged potato chips in 8 minutes, but with only 50 Kcal.",
     "instructions": [
       "Remove the leafy parts of the kale from the central stems. Discard the stems.",
       "Thoroughly dry the leaves with paper towels. Lightly coat the leaves with oil.",
@@ -6366,7 +6366,7 @@
   },
   {
     "slug": "apple-chips",
-    "title": "Crispy Dehydrated Apple Chips",
+    "title": "Apple Chips (Natural & Crispy Homemade Snack)",
     "emoji": "🍎",
     "temp": 175,
     "time": "240",
@@ -6376,7 +6376,7 @@
       "2 firm apples",
       "Juice of 1/2 lemon"
     ],
-    "description": "Naturally sweet and wholesome. Low-temperature dehydration turns fresh apple slices into crisp, concentrated bites of fruit that are perfect for snacking on the go.",
+    "description": "Use your air fryer as a dehydrator! Warm air at 175°F slowly dehydrates super-thin apple slices. Replace artificial kids' sweets with this natural wonder.",
     "instructions": [
       "Wash, peel, and core the apples.",
       "Slice the apples into uniform 3mm thick rounds using a mandoline or a sharp knife.",
@@ -6399,11 +6399,11 @@
   },
   {
     "slug": "rustic-pear-tart",
-    "title": "Rustic Pear & Walnut Galette",
+    "title": "Rustic Pear Galette (Quick Tart in 45 Minutes)",
     "emoji": "🍐",
     "temp": 320,
     "time": "45",
-    "prep_time": "1 hour 10",
+    "prep_time": "70",
     "portions": "4",
     "ingredients": [
       "3.5 oz all-purpose flour (3.2 oz for dough, 0.35 oz for dusting)",
@@ -6417,7 +6417,7 @@
       "Honey, for garnish",
       "Toasted walnuts, chopped, for garnish"
     ],
-    "description": "Effortlessly elegant. This free-form tart features a flaky, buttery crust folded over sweet sliced pears, finished with a drizzle of honey and a crunch of toasted walnuts.",
+    "description": "The handmade Sunday dessert, without a mold! A crumbly and buttery crust enclosing juicy pears and walnuts. The air fryer at 320°F caramelizes the fruit, creating a spectacular rustic tart in 45 mins.",
     "instructions": [
       "In a bowl, combine 3.2 oz of flour, granulated sugar, and salt. Cut in the cold butter until the mixture resembles coarse crumbs.",
       "Add the cold water and mix briefly until a dough forms. Do not overwork. Wrap the dough in plastic film and refrigerate for one hour.",
@@ -6441,10 +6441,10 @@
   },
   {
     "slug": "roasted-green-beans",
-    "title": "Crisp-Tender Roasted Green Beans",
+    "title": "Roasted Green Beans (Crispy & Quick in 12 Mins)",
     "emoji": "🥗",
     "temp": 400,
-    "time": "12-14",
+    "time": "12",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -6453,7 +6453,7 @@
       "Salt, to taste",
       "Black pepper, to taste"
     ],
-    "description": "A vibrant and simple side. Roasting at high temperatures eliminates excess moisture, leaving you with green beans that are snappy, tender, and beautifully browned.",
+    "description": "No more mushy boiled green beans! The air fryer \"roasts\" them at a very high temperature (400°F) for 12 minutes: they will stay bright green, firm, and with deliciously crispy and flavorful tips.",
     "instructions": [
       "Trim the ends of the green beans.",
       "In a bowl, combine green beans, olive oil, salt, and pepper. Toss to coat evenly.",
@@ -6475,7 +6475,7 @@
   },
   {
     "slug": "air-fryer-falafel",
-    "title": "Golden Spiced Chickpea Falafel",
+    "title": "Chickpea Falafel (Crispy & Light Meatballs in 15 Mins)",
     "emoji": "🧆",
     "isItalian": false,
     "temp": 340,
@@ -6491,7 +6491,7 @@
       "Garlic cloves, crushed",
       "0.7 oz tahini"
     ],
-    "description": "Authentic flavor made light. These falafels feature a moist, herb-spiced interior and a perfectly golden-brown, crisp exterior without the need for deep-frying.",
+    "description": "The magical Middle Eastern meatballs, but in a fit version. Air-fried chickpea falafels for 15 minutes develop a golden, crumbly crust without being deep-fried in rivers of oil. Perfect inside a pita.",
     "instructions": [
       "In a food processor, pulse the cooked chickpeas with parsley, cilantro, ground cumin, and tahini. Maintain a coarse texture; do not process into a fine puree.",
       "Finely dice the onion and crush the garlic. Fold into the chickpea mixture and press firmly to form a compact dough.",
@@ -6514,10 +6514,10 @@
   },
   {
     "slug": "greek-style-fries",
-    "title": "Greek-Style Feta & Oregano Fries",
+    "title": "Greek-Style Fries (Feta & Oregano in 25 Minutes)",
     "emoji": "🍟",
     "temp": 383,
-    "time": "25-28",
+    "time": "25",
     "prep_time": "15",
     "portions": "4",
     "ingredients": [
@@ -6531,7 +6531,7 @@
       "Salt and black pepper, to taste",
       "Lemon wedges, for serving"
     ],
-    "description": "A Mediterranean twist on a favorite. Crispy fries are tossed with salty crumbled feta, fresh parsley, and aromatic oregano for a bold and savory side dish.",
+    "description": "Fries with a Mediterranean flavor! Fresh french fries, drained of starch and cooked super crispy in 25 mins, are tossed hot with crumbled feta, oregano, and a touch of lemon for an amazing side dish.",
     "instructions": [
       "Cut potatoes into uniform sticks. Soak in a bowl of cold water for 15 minutes to remove excess starch.",
       "Drain the potatoes, rinse under running water, and dry thoroughly with paper towels.",
@@ -6556,16 +6556,16 @@
   },
   {
     "slug": "frozen-curly-fries",
-    "title": "Perfectly Golden Curly Fries",
+    "title": "Curly Fries (Extra Crispy Spirals in 18 Mins)",
     "emoji": "🍟",
     "temp": 400,
-    "time": "18-20",
+    "time": "18",
     "prep_time": "0",
     "portions": "4",
     "ingredients": [
       "25 oz frozen curly fries"
     ],
-    "description": "Fun, crunchy, and hassle-free. Get evenly cooked, golden-brown spirals directly from the freezer to your plate without a drop of extra oil.",
+    "description": "The most loved fries by kids, ready with zero effort! The spiral cut perfectly catches the hot air vortex, creating hyper-crispy curls in just 18 minutes straight from the freezer, no extra oil needed.",
     "instructions": [
       "Place the frozen curly fries directly into the cooking basket.",
       "Do not add oil. The product is pre-fried and will release sufficient oil during cooking to achieve a golden-brown color.",
@@ -6589,7 +6589,7 @@
   },
   {
     "slug": "crispy-vegetable-samosas",
-    "title": "Crispy Feta & Vegetable Samosas",
+    "title": "Veggie & Feta Samosas (Crispy Pockets in 15 Mins)",
     "emoji": "🥟",
     "temp": 340,
     "time": "15",
@@ -6603,7 +6603,7 @@
       "1 egg yolk, beaten",
       "Olive oil, for brushing"
     ],
-    "description": "A delightful fusion of textures. These golden, triangular pastries are stuffed with a savory medley of cauliflower and peas, elevated by the salty tang of melted feta cheese.",
+    "description": "Discover the art of brick pastry in a light version. These classic oriental turnovers stuffed with feta and cauliflower puff up in the air fryer, becoming super flaky in 15 minutes. Ideal for stylishly emptying the fridge.",
     "instructions": [
       "Steam or pan-cook the cauliflower florets and peas until tender.",
       "In a bowl, mash the cooked vegetables with crumbled feta cheese. Season with salt and pepper to create a coarse mixture.",
@@ -6627,7 +6627,7 @@
   },
   {
     "slug": "banana-mascarpone-cake",
-    "title": "Velvety Banana Mascarpone Cake",
+    "title": "Banana Mascarpone Cake (Soft & Moist in 35 Mins)",
     "emoji": "🍰",
     "temp": 320,
     "time": "35",
@@ -6642,7 +6642,7 @@
       "5.29 oz mascarpone",
       "1.76 oz chopped walnuts"
     ],
-    "description": "The ultimate upgrade for overripe bananas. This dense, moist cake packs a deep tropical sweetness, perfectly balanced by a rich and silky mascarpone frosting.",
+    "description": "A dense, moist, and super easy cake! The air fryer bakes this walnut and banana-rich batter in 35 minutes, yielding a soft texture and perfect browning ready to be topped with mascarpone cream.",
     "instructions": [
       "Peel and mash the bananas with a fork to a coarse pulp.",
       "Whisk in the dark brown sugar and sunflower oil until well combined.",
@@ -6664,16 +6664,16 @@
   },
   {
     "slug": "breaded-mushrooms",
-    "title": "Crispy Breaded Whole Mushrooms",
+    "title": "Frozen Breaded Mushrooms (Golden Appetizer in 15 Mins)",
     "emoji": "🍄",
     "temp": 375,
-    "time": "15-18",
-    "prep_time": "N/A",
+    "time": "15",
+    "prep_time": "",
     "portions": "4",
     "ingredients": [
       "10.6 oz frozen, pre-breaded whole or quartered mushrooms"
     ],
-    "description": "A quick and earthy indulgence. These whole mushrooms are coated in a seasoned breading that air-fries to a perfect crunch while keeping the inside juicy and tender.",
+    "description": "Take the breaded mushrooms out of the freezer, toss them in the basket, and in 15 minutes you'll have a piping hot, crispy finger food. The hot air melts the frost without making the breading soggy.",
     "instructions": [
       "Place the frozen breaded mushrooms directly into the cooking basket.",
       "Arrange the mushrooms in a single layer.",
@@ -6697,7 +6697,7 @@
   },
   {
     "slug": "air-fryer-grilled-cheese",
-    "title": "Ultimate Air-Fried Grilled Cheese",
+    "title": "Grilled Cheese Sandwich (The Melty Classic in 8 Mins)",
     "emoji": "🥪",
     "temp": 320,
     "time": "8",
@@ -6709,7 +6709,7 @@
       "2.1 oz sharp Cheddar cheese, sliced",
       "1.6 oz butter, softened or melted"
     ],
-    "description": "Rediscover a childhood classic. This method creates an impossibly crisp, edge-to-edge golden crust with a centers of thick, stringy melted cheese in record time.",
+    "description": "No hassle of flipping the toast in a pan! Brush butter on the outside of the bread and the air fryer will toast it evenly on both sides, melting the cheddar inside. The American snack in 8 mins.",
     "instructions": [
       "Preheat the appliance to 320°F.",
       "Brush one side of each bread slice with melted butter.",
@@ -6732,7 +6732,7 @@
   },
   {
     "slug": "cajun-style-shrimp",
-    "title": "Zesty Cajun-Style Shrimp",
+    "title": "Cajun Shrimp (Spicy & Juicy in 5 Minutes)",
     "emoji": "🦐",
     "temp": 375,
     "time": "5",
@@ -6744,7 +6744,7 @@
       "0.2 oz fine sea salt",
       "0.18 oz Cajun seasoning"
     ],
-    "description": "Bold, spicy, and incredibly versatile. These shrimp are tossed in a vibrant Cajun spice blend and seared quickly—perfect for tacos, salads, or a high-protein snack.",
+    "description": "Protein-packed, spicy, and lightning fast! These shrimp cook in a record time of 5 minutes. The Cajun spices create a flavorful crust, while the inside of the shrimp doesn't dry out in the slightest.",
     "instructions": [
       "Rinse shrimp and pat dry with paper towels.",
       "In a bowl, combine shrimp, olive oil, fine sea salt, and Cajun seasoning. Toss to coat evenly.",
@@ -6770,7 +6770,7 @@
   },
   {
     "slug": "roasted-buttered-corn",
-    "title": "Buttery Roasted Corn on the Cob",
+    "title": "Buttered Corn on the Cob (Sweet & Salty Roast in 10 Mins)",
     "emoji": "🌽",
     "temp": 400,
     "time": "10",
@@ -6782,7 +6782,7 @@
       "0.5 oz of softened or melted butter",
       "Pinch of salt"
     ],
-    "description": "The taste of summer in minutes. Sweet corn is roasted until the kernels are plump and charred, then finished with a savory butter glaze for a classic BBQ side.",
+    "description": "Have you ever seen a corn cob roast so quickly? Cut it in half, slather it with butter, and in just 10 minutes at 400°F the kernels become plump, sweet, and perfectly charred.",
     "instructions": [
       "Remove husks and silk from the corn. Cut the ear in half.",
       "Brush corn kernels thoroughly with melted butter and season with salt.",
@@ -6803,7 +6803,7 @@
   },
   {
     "slug": "mini-pepperoni-pizzas",
-    "title": "Crispy Pepperoni Mini Pizzas",
+    "title": "Mini Pepperoni Pizza (Pizzeria Crunch in 10 Mins)",
     "emoji": "🍕",
     "temp": 320,
     "time": "10",
@@ -6817,7 +6817,7 @@
       "6 oz mozzarella, shredded or torn into small pieces",
       "1.8 oz finely grated Grana Padano cheese"
     ],
-    "description": "No more soggy crusts. By toasting the dough before adding the savory pepperoni and cheese, these mini pizzas achieve a perfect crunch every single time.",
+    "description": "No more soggy edges! The trick for a spectacular American mini pizza is air-prebaking the crust for 5 mins. Then add sauce, cheese, and pepperoni, bake for another 5 mins, and you'll have a cracker-like base.",
     "instructions": [
       "Apply a thin layer of oil to the flattened dough rounds. Preheat the air fryer to 320°F (160°C).",
       "Position the unadorned dough within the air fryer basket. Toast for 5 minutes.",
@@ -6840,7 +6840,7 @@
   },
   {
     "slug": "garlic-parmesan-baguette",
-    "title": "Garlic & Parmesan Roasted Baguette",
+    "title": "Garlic Bread (Golden Parmesan & Garlic Bread in 8 Mins)",
     "emoji": "🥖",
     "temp": 320,
     "time": "8",
@@ -6855,7 +6855,7 @@
       "1 tbsp grated Parmesan cheese",
       "Fresh parsley, chopped"
     ],
-    "description": "A must-have for soup night. This baguette features a shatteringly crisp crust and a soft, butter-infused center loaded with roasted garlic and sharp Parmesan.",
+    "description": "Have a piece of stale baguette? Slice it, stuff it with butter, garlic, and parmesan, and cook at 320°F. In 8 minutes the fat melts into the bread, toasting it. The ultimate dipping side.",
     "instructions": [
       "Slice the baguette lengthwise, then crosswise into uniform, thick pieces to maximize surface area for absorption.",
       "In a small bowl, combine butter, olive oil, grated Parmesan, and minced garlic until homogenous.",
@@ -6880,7 +6880,7 @@
     "title": "Golden Air-Fried Corn on the Cob",
     "emoji": "🌽",
     "temp": 400,
-    "time": "12-15",
+    "time": "12",
     "prep_time": "5",
     "portions": "4",
     "ingredients": [
@@ -6909,7 +6909,7 @@
   },
   {
     "slug": "mexican-style-puff-pastry-bites",
-    "title": "Mexican-Style Puff Pastry Wreaths",
+    "title": "Mexican Mini Pizzas (Beans, Corn & Cheese in 10 Mins)",
     "emoji": "🍕",
     "temp": 320,
     "time": "10",
@@ -6923,7 +6923,7 @@
       "6 oz of shredded Mexican cheese blend (e.g., Cheddar, Monterey Jack)",
       "1.4 oz sweet corn kernels (thawed) and 2.1 oz black beans, mixed with a small handful (0.5 oz) of peas"
     ],
-    "description": "A crowd-pleasing fusion snack. Flaky puff pastry circles are topped with black beans, sweet corn, and melted cheese for a savory, Tex-Mex inspired appetizer.",
+    "description": "Bring a Tex-Mex touch to the table with these crispy mini pizzas! The combination of black beans, corn, and melted cheese creates a hearty and original snack that cooks to perfection in just 10 minutes.",
     "instructions": [
       "Preheat the cooking appliance to 320°F.",
       "Lightly brush pastry discs with olive oil. Place discs into the cooking appliance basket.",
@@ -6945,7 +6945,7 @@
   },
   {
     "slug": "chickpea-spinach-burgers",
-    "title": "Chickpea & Spinach Plant-Based Patties",
+    "title": "Chickpea & Spinach Veggie Burger (Light & Golden in 14 Mins)",
     "emoji": "🍔",
     "temp": 355,
     "time": "14",
@@ -6959,7 +6959,7 @@
       "0.07 oz (2g) cumin and 0.07 oz (2g) sweet paprika",
       "Salt, pepper, and non-stick cooking spray"
     ],
-    "description": "Healthy, hearty, and homemade. These nutrient-dense patties feature a tender, spiced interior and a crisp outer shell, making them ideal for a wholesome main course.",
+    "description": "No more rubbery veggie burgers! This homemade version with chickpeas and spinach stays tender inside but develops a delicious crust thanks to convection cooking. A healthy, protein-packed, light main.",
     "instructions": [
       "Combine chickpeas, thoroughly squeezed spinach, spices, salt, pepper, and egg in a blender or food processor.",
       "Process until a moldable, rustic-textured mixture is achieved; avoid over-processing.",
@@ -6983,7 +6983,7 @@
   },
   {
     "slug": "zucchini-ricotta-boats",
-    "title": "Herbed Ricotta Zucchini Boats",
+    "title": "Ricotta Stuffed Zucchini Boats (Perfect Gratin in 16 Mins)",
     "emoji": "🥒",
     "temp": 350,
     "time": "16",
@@ -6997,7 +6997,7 @@
       "Fresh chopped mint leaves",
       "Salt, black pepper, and a drizzle of olive oil"
     ],
-    "description": "Light yet satisfying. Fresh zucchini halves are hollowed and filled with a creamy, mint-infused ricotta and Parmesan blend that browns beautifully in the heat.",
+    "description": "Looking for a refined yet simple vegetarian main? These zucchini boats with ricotta and mint cream are fresh and light, with a perfect gratin achieved in just 16 minutes of air frying.",
     "instructions": [
       "Clean zucchini, bisect longitudinally, and excavate central pulp using a spoon or melon baller to form cavities.",
       "Mince extracted pulp and combine in a vessel with ricotta, Parmesan, egg, mint, sodium chloride, and piper nigrum.",
@@ -7020,7 +7020,7 @@
   },
   {
     "slug": "gratinated-bell-pepper-strips-with-capers",
-    "title": "Gratinated Sweet Peppers with Capers",
+    "title": "Capers Gratinated Peppers (Flavorful in 14 Minutes)",
     "emoji": "🫑",
     "temp": 365,
     "time": "14",
@@ -7035,7 +7035,7 @@
       "2 tbsp olive oil",
       "Fresh parsley, salt, and pepper"
     ],
-    "description": "A rustic Mediterranean treat. Sliced bell peppers are roasted until sweet and topped with a savory, crunchy breadcrumb and caper crust for a burst of flavor.",
+    "description": "Sweet and meaty pepper strips made irresistible by a fragrant garlic and caper breading. A quick, flavorful side dish that unleashes the aromas of Mediterranean cuisine in under 15 minutes.",
     "instructions": [
       "Wash bell peppers, remove stem, seeds, and internal membranes. Cut into wide strips.",
       "Combine breadcrumbs, capers, minced garlic, parsley, salt, pepper, and half of the olive oil in a small bowl to form the breadcrumb mixture.",
@@ -7057,7 +7057,7 @@
   },
   {
     "slug": "parmesan-crusted-asparagus",
-    "title": "Almond & Parmesan Crusted Asparagus",
+    "title": "Parmesan Asparagus (Irresistible Crunch in 8 Minutes)",
     "emoji": "🥗",
     "temp": 375,
     "time": "8",
@@ -7070,7 +7070,7 @@
       "0.5 oz flaked almonds (optional)",
       "Sea salt and black pepper"
     ],
-    "description": "Elegant and crunchy. These tender green asparagus stalks are draped in melted cheese and toasted almond flakes, creating a sophisticated, aromatic side dish.",
+    "description": "Elevate your asparagus with this gourmet version! The mix of Parmesan and flaked almonds creates a crunchy shell that contrasts beautifully with the tenderness of the quick air-fried asparagus.",
     "instructions": [
       "Wash asparagus and remove woody ends by snapping them manually at their natural breaking point.",
       "Place asparagus in a tray or dish, drizzle with olive oil, and toss to ensure even coating.",
@@ -7093,7 +7093,7 @@
   },
   {
     "slug": "roasted-fennel-wedges-lemon",
-    "title": "Lemon-Roasted Fennel Wedges",
+    "title": "Lemon Roasted Fennel Wedges (Delicate & Light in 15 Mins)",
     "emoji": "🥗",
     "temp": 355,
     "time": "15",
@@ -7106,7 +7106,7 @@
       "0.14 oz fennel seeds (optional)",
       "Coarse salt and black pepper to taste"
     ],
-    "description": "A revelation for fennel skeptics. Roasting transforms the sharp anise flavor into a mellow, caramelized sweetness, finished with a bright, zesty lemon lift.",
+    "description": "If you think fennel is boring, you must try it roasted! The hot air makes it tender and caramelized, while the lemon and fennel seeds enhance its natural freshness. Perfect, low-calorie side dish.",
     "instructions": [
       "Prepare fennel by removing tough upper stalks and fibrous outer layers.",
       "Halve each bulb, then cut into 6-8 uniform wedges, ensuring the core remains intact to maintain structural integrity.",
@@ -7130,7 +7130,7 @@
   },
   {
     "slug": "sweet-and-sour-red-onions",
-    "title": "Glazed Sweet & Sour Red Onions",
+    "title": "Caramelized Red Onions (The Perfect Sweet & Sour in 16 Mins)",
     "emoji": "🧅",
     "temp": 340,
     "time": "16",
@@ -7143,7 +7143,7 @@
       "0.35 oz brown sugar",
       "A pinch of salt and pepper"
     ],
-    "description": "The perfect gourmet garnish. These red onions are caramelized into a thick, glossy, balsamic-style glaze—ideal for topping grilled meats or aged cheeses.",
+    "description": "Transform simple red onions into a gourmet side dish or the perfect hamburger topping. The air fryer caramelizes the sugars and balsamic vinegar, creating a thick and irresistible glaze.",
     "instructions": [
       "Peel and cut red onions into thick wedges or large rings.",
       "Combine onion pieces with olive oil, balsamic vinegar, brown sugar, salt, and pepper in a bowl.",
@@ -7166,7 +7166,7 @@
   },
   {
     "slug": "balsamic-glazed-brussels-sprouts",
-    "title": "Tangy Balsamic Glazed Sprouts",
+    "title": "Balsamic Glazed Brussels Sprouts (Sweet, Sour & Crispy in 12 Mins)",
     "emoji": "🥬",
     "temp": 375,
     "time": "12",
@@ -7179,7 +7179,7 @@
       "0.35 oz honey",
       "Salt and black pepper"
     ],
-    "description": "Sweet, sour, and smoky. These Brussels sprouts feature crisp outer leaves and a tender core, all tossed in a refined balsamic reduction for a vibrant side dish.",
+    "description": "No more mushy, unpleasant Brussels sprouts! In just 12 minutes, hot air makes them crispy outside and tender inside, while the honey balsamic glaze adds a sweet-sour note that wins over even the skeptics.",
     "instructions": [
       "Combine halved Brussels sprouts with olive oil, salt, and pepper, ensuring even coating.",
       "Distribute sprouts in a single layer within the cooking basket. Set appliance temperature to 375°F.",
@@ -7203,7 +7203,7 @@
   },
   {
     "slug": "oregano-confit-cherry-tomatoes",
-    "title": "Slow-Roasted Oregano Confit Tomatoes",
+    "title": "Confit Cherry Tomatoes (Flavor Candies in the Air Fryer)",
     "emoji": "🍅",
     "temp": 285,
     "time": "40",
@@ -7217,7 +7217,7 @@
       "0.35 oz dried oregano",
       "Salt, pepper, and 1 whole smashed garlic clove"
     ],
-    "description": "An explosion of concentrated flavor. These cherry tomatoes are gently dehydrated to lock in their natural sugars—perfect for elevated bruschetta or pasta.",
+    "description": "Get super sweet, concentrated cherry tomatoes in half the time of an oven. Gentle cooking at 285°F for 40 minutes turns them into true flavor 'candies', perfect for gourmet bruschetta or pasta.",
     "instructions": [
       "Precisely halve all tomatoes and combine with the whole smashed garlic clove in a mixing vessel.",
       "Dress the tomatoes with extra virgin olive oil, granulated sugar, dried oregano, salt, and pepper, ensuring uniform, gentle coating.",
@@ -7240,7 +7240,7 @@
   },
   {
     "slug": "fluffy-seasonal-frittata",
-    "title": "Voluminous Seasonal Frittata",
+    "title": "Fluffy Veggie Frittata (Light & Stress-Free in 15 Mins)",
     "emoji": "🍳",
     "temp": 320,
     "time": "15",
@@ -7253,7 +7253,7 @@
       "0.7 oz of grated Parmesan cheese",
       "Cooking spray, salt, and pepper"
     ],
-    "description": "Lighter than air. This air-fried egg dish achieves a dramatic rise and a tender, fluffy texture with minimal oil, making it a healthy and quick seasonal staple.",
+    "description": "Goodbye greasy pans and smoke in the kitchen! Discover how to make a tall, fluffy, and perfectly golden frittata thanks to convection cooking in 15 minutes. The ideal solution for a quick, protein-packed dinner.",
     "instructions": [
       "Combine eggs, milk, cheese, salt, and pepper in a bowl. Whisk until thoroughly incorporated and slightly aerated.",
       "Incorporate pre-cooked and well-drained vegetables into the egg mixture.",
@@ -7277,7 +7277,7 @@
   },
   {
     "slug": "halloumi-vegetable-skewers",
-    "title": "Grilled Halloumi & Veggie Skewers",
+    "title": "Halloumi Skewers (The Cheese That Doesn't Melt)",
     "emoji": "🍢",
     "temp": 375,
     "time": "12",
@@ -7290,7 +7290,7 @@
       "Half a red onion, cut into wedges",
       "0.7 fl oz olive oil, oregano, and black pepper"
     ],
-    "description": "The ultimate vegetarian skewer. Salty Cypriot halloumi cheese keeps its shape against the heat, developing a delicious grilled crust alongside vibrant, roasted vegetables.",
+    "description": "Have you ever tried grilled cheese that 'crunches'? Halloumi in the air fryer becomes golden and crispy outside without melting, creating a super tasty vegetarian skewer in just 12 minutes.",
     "instructions": [
       "Combine cheese cubes, zucchini, cherry tomatoes, and onion in a bowl. Dress with olive oil, oregano, and black pepper. Omit salt due to the inherent salinity of halloumi.",
       "Thread ingredients alternately onto long wooden skewers suitable for the cooking appliance.",
@@ -7314,7 +7314,7 @@
   },
   {
     "slug": "cheesy-potato-cake",
-    "title": "Crispy Neapolitan-Style Potato Cake",
+    "title": "Potato and Provola Bake (Smoky Stringy Heart)",
     "emoji": "🥧",
     "temp": 340,
     "time": "25",
@@ -7327,7 +7327,7 @@
       "1 oz grated Parmesan cheese and 0.7 oz melted butter",
       "Breadcrumbs for dusting, salt and nutmeg"
     ],
-    "description": "A clever and quick take on the traditional potato gâteau. This savory cake features a golden, breaded exterior that shatters to reveal a fluffy, melt-in-your-mouth potato and cheese center.",
+    "description": "The ultimate comfort food: a soft potato bake with a breadcrumb crust and a heart of smoked provola that stretches at the first cut. The air fryer ensures a perfect gratin in 25 minutes.",
     "instructions": [
       "Combine the lukewarm mashed potatoes with the egg, melted butter, Parmesan, salt, and nutmeg.",
       "Incorporate the diced provola into the mixture, ensuring even distribution.",
@@ -7350,7 +7350,7 @@
   },
   {
     "slug": "spicy-crispy-edamame",
-    "title": "Zesty Air-Toasted Edamame",
+    "title": "Toasted Edamame (Sesame Protein Snack in 10 Mins)",
     "emoji": "🫛",
     "temp": 375,
     "time": "10",
@@ -7362,7 +7362,7 @@
       "0.18 oz coarse sea salt flakes",
       "0.07 oz garlic powder and a pinch of red pepper flakes"
     ],
-    "description": "The perfect healthy snack in minutes. Frozen edamame pods are air-toasted until they achieve a satisfyingly roasted texture, then tossed in a bold, spicy seasoning for a kick of flavor.",
+    "description": "Forget boiled, bland edamame! By air-toasting them with sesame oil and chili, you'll get a protein-packed, 'crunchy' snack ready in 10 minutes. The healthy finger food that is totally addictive.",
     "instructions": [
       "Place frozen edamame pods directly into the cooking basket. Process at 375°F (190°C) for 4 minutes to eliminate moisture and ice.",
       "Remove the basket and transfer the heated pods to a mixing bowl.",
@@ -7387,7 +7387,7 @@
   },
   {
     "slug": "paprika-roasted-chickpeas",
-    "title": "Smoky Paprika Roasted Chickpeas",
+    "title": "Crispy Paprika Chickpeas (The Addictive Snack)",
     "emoji": "🥣",
     "temp": 400,
     "time": "15",
@@ -7400,7 +7400,7 @@
       "0.14 oz smoked paprika and 0.07 oz ground cumin",
       "Fine sea salt to taste"
     ],
-    "description": "Swap the store-bought chips for this protein-packed crunch. Legumes are roasted at high heat until crisp and smoky, making them a perfect stand-alone snack or a crunchy garnish for creamy soups.",
+    "description": "Swap potato chips for these flavor 'pearls'! Air-roasted chickpeas with smoked paprika: they become super crispy outside and soft inside in just 15 minutes. The ultimate fit snack.",
     "instructions": [
       "Drain the chickpeas from their liquid and rinse them thoroughly under running water.",
       "Transfer chickpeas to a clean kitchen towel and pat dry. Remove any loose skins.",
@@ -7424,7 +7424,7 @@
   },
   {
     "slug": "zucchini-parmesan-chips",
-    "title": "Crispy Zucchini Parmesan Crisps",
+    "title": "Parmesan Zucchini Chips (Crispy in 18 Minutes)",
     "emoji": "🥒",
     "temp": 320,
     "time": "18",
@@ -7437,7 +7437,7 @@
       "Cooking spray oil",
       "Salt and a pinch of white pepper"
     ],
-    "description": "Light, salty, and totally addictive. Thinly sliced zucchini is coated in sharp Parmesan that crystallizes during cooking, creating a delicate, golden chip that’s big on crunch and low on carbs.",
+    "description": "Craving chips but on a diet? These Parmesan zucchini rounds are the perfect solution. Hot air dehydrates them, making them thin and crispy in 18 minutes. A delicious keto-friendly snack.",
     "instructions": [
       "Slice zucchini into 2-millimeter rounds using a mandoline.",
       "Blot slices thoroughly with paper towels to remove surface moisture.",

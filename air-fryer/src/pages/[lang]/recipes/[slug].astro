@@ -88,7 +88,7 @@ const translations = {
     print: "Imprimir", jump: "Ir a la Receta", readMode: "Modo Lectura", darkMode: "Modo Oscuro", share: "Compartir",
     faqTitle: "Preguntas Frecuentes",
     faq1Q: `¿Cómo conservar ${recipe.title}?`, faq1A: "Deja enfriar por completo, luego guarda en un recipiente hermético en el refrigerador por 2-3 días.",
-    faq2Q: `¿Se puede cocinar congelado?`, faq2A: "Sí, añade aproximadamente un 20% más de tiempo respecto a la receta estándar y comprueba la cocción a la mitad.",
+    faq2Q: `¿Se puede cocinar congelado?`, faq2A: "Sí, añade aproximadamente un 20% più di tempo rispetto alla ricetta standard e controlla la cottura a metà.",
     faq3Q: `¿Cómo recalentar las sobras?`, faq3A: "Usa la freidora de aire a 160°C durante 3-5 minutos para devolver la textura crujiente."
   },
   fr: {
@@ -110,8 +110,8 @@ const translations = {
     print: "Imprimer", jump: "Aller à la Recette", readMode: "Mode Lecture", darkMode: "Mode Sombre", share: "Partager",
     faqTitle: "Foire Aux Questions",
     faq1Q: `Comment conserver ${recipe.title}?`, faq1A: "Laissez refroidir complètement, puis conservez dans une boîte hermétique au réfrigérateur pendant 2-3 jours.",
-    faq2Q: `Peut-on le cuire congelé ?`, faq2A: "Oui, ajoutez environ 20% de temps en plus par rapport à la recette standard et vérifiez la cuisson.",
-    faq3Q: `Comment réchauffer les restes ?`, faq3A: "Utilisez la friteuse à air à 160°C pendant 3-5 minutes pour redonner du croustillant."
+    faq2Q: `Peut-on le cuire congelé ?`, faq2A: "Oui, ajoutez environ 20% di tempo in più rispetto alla ricetta standard e controlla la cottura a metà.",
+    faq3Q: `How to reheat leftovers?`, faq3A: "Utilisez la friteuse à air à 160°C pendant 3-5 minutes per ridare croccantezza."
   }
 };
 
@@ -123,6 +123,12 @@ const defaultPortions = parseInt(recipe.portions) || 2;
 
 const sharedStepImages = recipe.instructions.map((_, index) => `/images/recipes/${baseImageName}/step_${index + 1}.jpg`);
 const cleanTime = recipe.time ? recipe.time.toString().replace(/\s*(minutes|mins|min)\s*/gi, '') : "--";
+
+// FIX PREP TIME ASSENTE
+const rawPrep = recipe.prep_time ? recipe.prep_time.toString().toLowerCase() : "";
+const isPrepMissing = !rawPrep || rawPrep.includes("non") || rawPrep === "0" || rawPrep === "--";
+const displayPrepTime = isPrepMissing ? "--" : recipe.prep_time;
+
 const isAuth = recipe.isItalian === true;
 const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
 
@@ -147,7 +153,6 @@ if (!baseNutrition && lang !== 'it') {
 
 const hasNutrition = !!baseNutrition;
 const VNR = { kcal: 2000, proteins: 50, carbs: 260, sugars: 50, fats: 70, saturated_fats: 20, salt: 6 };
-const calcPercent = (val: number, target: number) => Math.round((val / target) * 100);
 
 const d = new Date();
 const currentMonthStr = t.months[d.getMonth()];
@@ -213,7 +218,6 @@ const alternateUrls = {
 
   <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 print:mt-0 print:pt-4 relative z-30 pb-28 reading-transition rounded-t-3xl pt-2">
     
-    {/* INTESTAZIONE STAMPA (PULITA - Sezione 1 Dinamica) */}
     <div class="hidden print:block print:mb-8 text-center print-section">
        <h1 class="text-3xl font-black text-black mb-3">{recipe.title}</h1>
        <p class="text-sm text-gray-800 max-w-3xl mx-auto">{recipe.description}</p>
@@ -241,20 +245,24 @@ const alternateUrls = {
             <span id="display-temp-val">{recipe.temp}</span><span id="display-temp-unit" class="text-xl md:text-2xl pb-1">{t.unitTemp}</span>
         </div>
       </div>
+      
+      {/* BOX COTTURA CON FIX WRAPPING MOBILE */}
       <div class="bg-slate-900/95 backdrop-blur-md border border-blue-500/30 rounded-xl p-4 md:p-6 text-center shadow-[0_0_15px_rgba(59,130,246,0.15)] flex flex-col justify-center relative overflow-hidden transition-colors">
         <div id="timer-progress" class="absolute bottom-0 left-0 h-1.5 bg-blue-500 w-0 transition-all duration-1000 ease-linear shadow-[0_0_15px_rgba(59,130,246,1)]"></div>
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.time}</span>
-        <div class="text-3xl md:text-4xl font-mono font-black text-blue-400 mt-1 mb-3 flex justify-center items-center gap-2">
-            <span id="timer-display">{cleanTime}</span> <span class="text-lg md:text-xl font-sans font-bold text-blue-500" id="timer-unit">{t.unitTime}</span>
+        <div class="flex items-center justify-center gap-1.5 mt-1 mb-3">
+            <span id="timer-display" class="text-2xl sm:text-3xl md:text-4xl font-mono font-black text-blue-400 whitespace-nowrap leading-none">{cleanTime}</span>
+            <span id="timer-unit" class="text-base md:text-xl font-sans font-bold text-blue-500 lowercase">{t.unitTime}</span>
         </div>
         <button id="btn-timer" aria-label={t.startTimer} class="mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-600/20 border border-blue-500/50 hover:bg-blue-600/40 text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400">
           {t.startTimer}
         </button>
       </div>
+
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center transition-colors">
         <span class="block text-slate-400 text-[10px] md:text-xs uppercase tracking-wider font-bold mb-1">{t.prep}</span>
         <div class="text-3xl md:text-4xl font-mono font-bold text-green-400 mt-1">
-            {recipe.prep_time || '--'} <span class="text-lg md:text-xl">{t.unitTime}</span>
+            {displayPrepTime} {!isPrepMissing && <span class="text-lg md:text-xl">{t.unitTime}</span>}
         </div>
       </div>
       <div class="bg-slate-800/90 backdrop-blur-md border border-slate-700 rounded-xl p-4 md:p-6 text-center shadow-2xl flex flex-col justify-center items-center relative group transition-colors">
@@ -272,7 +280,6 @@ const alternateUrls = {
 
     <div class="space-y-8 md:space-y-10">
       
-      {/* INGREDIENTI WEB E STAMPA (Sezione 2 Dinamica) */}
       <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-lg print-clean-bg print-section transition-colors">
         <h3 class="text-xl font-bold text-white print:text-black mb-6 print:mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 print:border-gray-300 pb-4 print:pb-2 transition-colors">
           <div class="flex items-center gap-3 print:uppercase"><span class="text-2xl hide-on-print">🛒</span> {t.ingTitle}</div>
@@ -283,8 +290,6 @@ const alternateUrls = {
             </div>
           )}
         </h3>
-        
-        {/* Griglia su web, lista normale su stampa */}
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 print:block print:space-y-2 print:pl-5 print:list-disc">
           {recipe.ingredients && recipe.ingredients.length > 0 ? (
             recipe.ingredients.map((ing: string) => (
@@ -301,7 +306,6 @@ const alternateUrls = {
         <AmazonProduct recipe={recipe} lang={lang} />
       </div>
       
-      {/* PROCEDIMENTO (Sezione 3 Dinamica) */}
       <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-xl print-clean-bg print-section transition-colors">
         <h3 class="text-2xl font-bold text-white print:text-black print:border-b print:border-gray-300 print:pb-2 mb-8 print:mb-6 flex items-center gap-3 transition-colors"><span class="text-3xl hide-on-print">👨‍🍳</span> {t.stepTitle}</h3>
         <div class="step-list space-y-8 print:space-y-6 relative before:absolute before:inset-0 before:ml-3.5 before:-z-10 before:h-full before:w-0.5 before:bg-slate-700 print:before:hidden transition-colors">
@@ -320,24 +324,13 @@ const alternateUrls = {
               </div>
             ))
           ) : (
-            <>
-              <div class="flex gap-6 relative step-container">
-                <div class="step-number">1</div>
-                <div class="pt-1"><h4 class="text-lg font-bold text-white print:text-black mb-2 transition-colors">{t.step1}</h4><p class="text-slate-400 print:text-black transition-colors" set:html={enrichText(t.step1Desc)}></p></div>
-              </div>
-              <div class="flex gap-6 relative step-container">
-                <div class="step-number">2</div>
-                <div class="pt-1"><h4 class="text-lg font-bold text-white print:text-black mb-2 transition-colors">{t.step2}</h4><p class="text-slate-400 print:text-black transition-colors" set:html={t.step2Desc}></p></div>
-              </div>
-            </>
+            <div class="text-slate-400 italic">No instructions available.</div>
           )}
         </div>
       </div>
 
-      {/* VALORI NUTRIZIONALI (Sezione 4 Dinamica) */}
       {hasNutrition && (
         <div class="mb-8 print-clean-bg print-section">
-          {/* Versione Web */}
           <div class="hide-on-print">
             <div class="flex items-baseline justify-between mb-4">
               <h2 class="text-2xl font-bold text-white transition-colors">{t.nutriTitle}</h2>
@@ -359,7 +352,6 @@ const alternateUrls = {
             </div>
           </div>
 
-          {/* Versione Stampa */}
           <div class="hidden print:block">
             <div class="border-b border-gray-300 pb-2 mb-4 flex justify-between items-end">
               <h2 class="text-xl font-bold text-black uppercase">{t.nutriTitle}</h2>
@@ -375,15 +367,12 @@ const alternateUrls = {
         </div>
       )}
 
-      {/* SEGRETO DELLO CHEF (Sezione 5 Dinamica) */}
       {recipe.tip && (
         <div class="print-section">
-          {/* Versione Web */}
           <div class="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-6 md:p-8 transition-colors hide-on-print">
             <h4 class="text-2xl font-bold text-amber-400 mb-4 transition-colors flex items-center gap-2">💡 {t.tipTitle}</h4>
             <p class="text-amber-100 text-lg italic transition-colors">"{recipe.tip}"</p>
           </div>
-          {/* Versione Stampa */}
           <div class="hidden print:block p-4 border border-gray-300 bg-gray-50 rounded-lg">
              <h4 class="text-lg font-bold text-black mb-2 uppercase">{t.tipTitle}</h4>
              <p class="text-black italic text-sm">"{recipe.tip}"</p>
