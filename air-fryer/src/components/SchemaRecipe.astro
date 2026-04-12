@@ -25,7 +25,7 @@ const cookTimeISO = cookMin > 0 ? `PT${cookMin}M` : undefined;
 const totalTimeISO = totalMin > 0 ? `PT${totalMin}M` : undefined;
 
 const baseImageName = recipe.image || recipe.slug;
-const baseUrl = "https://www.convertitorefriggitrice.it/images/recipes";
+const baseUrl = "https://www.crispissimo.com/images/recipes";
 const imageUrl = `${baseUrl}/${baseImageName}.webp`;
 
 // Immagini Multi-Rapporto per i Caroselli di Google Discover
@@ -69,7 +69,7 @@ const schema = {
     "@type": "Person",
     "name": "Flavio Refrigeri",
     "jobTitle": "Ingegnere Informatico & Creatore di Ricette", 
-    "url": `https://www.convertitorefriggitrice.it${infoUrlPath}` 
+    "url": `https://www.crispissimo.com${infoUrlPath}` 
   },
   "datePublished": "2024-01-01T08:00:00+08:00", // Data base fittizia (meglio averla che non averla)
   "dateModified": currentDate, // Aggiornata magicamente ad ogni build!
