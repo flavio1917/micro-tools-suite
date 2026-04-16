@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
-import Analytics from '@vercel/analytics/astro';
-import { ClientRouter } from 'astro:transitions';
+import Analytics from "@vercel/analytics/astro";
+import { ClientRouter } from "astro:transitions";
 
 export interface Props {
   title?: string;
@@ -9,37 +9,92 @@ export interface Props {
   description?: string;
   ogImage?: string;
   recipeData?: any;
-  alternateUrls?: { 
-    it?: string; 
-    en?: string; 
-    es?: string; 
+  alternateUrls?: {
+    it?: string;
+    en?: string;
+    es?: string;
     fr?: string;
   };
 }
 
-const { 
-  title = "Convertitore Friggitrice ad Aria: Tempi e Gradi Online", 
+const {
+  title,
   lang = "it",
-  description = "Il miglior convertitore friggitrice ad aria online. Trasforma tempi e temperature da forno a Air Fryer in un click. Oltre 220 ricette ottimizzate.",
-  ogImage = "https://www.convertitorefriggitrice.it/og-image.jpg",
+  description,
+  ogImage = "https://www.crispissimo.com/og-image.jpg",
   recipeData,
-  alternateUrls
+  alternateUrls = {},
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || "https://www.convertitorefriggitrice.it").toString();
+const defaultTitles = {
+  it: "Crispissimo | Ricette in Friggitrice ad Aria Facili e Croccanti",
+  en: "Crispissimo | Easy & Crispy Air Fryer Recipes",
+  es: "Crispissimo | Recetas en Freidora de Aire Fáciles y Crujientes",
+  fr: "Crispissimo | Recettes à la Friteuse à Air Faciles et Croustillantes",
+};
 
-// Gestione dinamica dei Locale per i Social Network
+const defaultDescriptions = {
+  it: "Scopri ricette facili, gustose e croccanti per la friggitrice ad aria, con consigli pratici, categorie e strumenti utili firmati Crispissimo.",
+  en: "Discover easy, tasty, crispy air fryer recipes, practical tips, categories, and useful tools from Crispissimo.",
+  es: "Descubre recetas fáciles, sabrosas y crujientes para freidora de aire, con consejos prácticos, categorías y herramientas útiles de Crispissimo.",
+  fr: "Découvrez des recettes faciles, savoureuses et croustillantes pour friteuse à air, avec des conseils pratiques, des catégories et des outils utiles signés Crispissimo.",
+};
+
 const locales = {
   it: "it_IT",
   en: "en_US",
   es: "es_ES",
-  fr: "fr_FR"
+  fr: "fr_FR",
 };
-const currentLocale = locales[lang as keyof typeof locales] || "it_IT";
 
-// --- INIZIO: EXTREME CTR HACKING (SEO Dinamica Semantica) ---
-let finalTitle = title;
-let finalDescription = description;
+const routeMap = {
+  it: { home: "/", categories: "/categorie", converter: "/convertitore" },
+  en: { home: "/en/", categories: "/en/categories", converter: "/en/converter" },
+  es: { home: "/es/", categories: "/es/categorias", converter: "/es/convertidor" },
+  fr: { home: "/fr/", categories: "/fr/categories", converter: "/fr/convertisseur" },
+};
+
+const navLabels = {
+  it: {
+    brandTagline: "Ricette facili e super croccanti per la friggitrice ad aria.",
+    recipes: "Ricette", categories: "Categorie", converter: "Convertitore", themeToggle: "Cambia tema", language: "Lingua",
+    footerNote: "Crispissimo è il nuovo nome di Convertitore Friggitrice.",
+    disclaimer: "Trasparenza: in qualità di Affiliato Amazon, questo sito può ricevere una commissione dagli acquisti idonei. I risultati del convertitore sono indicativi e vanno sempre verificati in cottura.",
+    privacy: "Privacy", cookies: "Cookie",
+  },
+  en: {
+    brandTagline: "Easy and crispy air fryer recipes for everyday cooking.",
+    recipes: "Recipes", categories: "Categories", converter: "Converter", themeToggle: "Toggle theme", language: "Language",
+    footerNote: "Crispissimo is the new name of Convertitore Friggitrice.",
+    disclaimer: "Transparency: as an Amazon Associate, this site may earn from qualifying purchases. Converter results are estimates and should always be checked while cooking.",
+    privacy: "Privacy", cookies: "Cookies",
+  },
+  es: {
+    brandTagline: "Recetas fáciles y crujientes para freidora de aire cada día.",
+    recipes: "Recetas", categories: "Categorías", converter: "Convertidor", themeToggle: "Cambiar tema", language: "Idioma",
+    footerNote: "Crispissimo es el nuevo nombre de Convertitore Friggitrice.",
+    disclaimer: "Transparencia: como Afiliado de Amazon, este sitio puede recibir una comisión por compras válidas. Los resultados del convertidor son estimaciones y deben comprobarse durante la cocción.",
+    privacy: "Privacidad", cookies: "Cookies",
+  },
+  fr: {
+    brandTagline: "Des recettes faciles et croustillantes pour la friteuse à air.",
+    recipes: "Recettes", categories: "Catégories", converter: "Convertisseur", themeToggle: "Changer le thème", language: "Langue",
+    footerNote: "Crispissimo est le nouveau nom de Convertitore Friggitrice.",
+    disclaimer: "Transparence : en tant que Partenaire Amazon, ce site peut percevoir une commission sur les achats éligibles. Les résultats du convertisseur sont indicatifs et doivent toujours être vérifiés pendant la cuisson.",
+    privacy: "Confidentialité", cookies: "Cookies",
+  },
+};
+
+const currentLocale = locales[lang as keyof typeof locales] || locales.it;
+const navRoutes = routeMap[lang as keyof typeof routeMap] || routeMap.it;
+const currentLabels = navLabels[lang as keyof typeof navLabels] || navLabels.it;
+
+const fallbackCanonical = new URL(Astro.url.pathname, Astro.site || "https://www.crispissimo.com").toString();
+const canonicalURL = alternateUrls?.[lang as keyof typeof alternateUrls] || fallbackCanonical;
+
+// --- INIZIO: EXTREME CTR HACKING (Ripristinato e adattato per Crispissimo) ---
+let finalTitle = title || defaultTitles[lang as keyof typeof defaultTitles] || defaultTitles.it;
+let finalDescription = description || defaultDescriptions[lang as keyof typeof defaultDescriptions] || defaultDescriptions.it;
 
 if (recipeData) {
   const seoPhrases = {
@@ -65,164 +120,204 @@ if (recipeData) {
   const isLowCal = kcal > 0 && kcal <= 350;
 
   if (isMeatOrFish && pro >= 15) {
-    finalTitle = `${recipeData.title} - ${pro}g ${p.pro} | Air Fryer`;
+    finalTitle = `${recipeData.title} (${pro}g ${p.pro}) | Crispissimo`;
   } else if (isVegOrSide && isLowCal) {
-    finalTitle = `${recipeData.title} - ${p.light} ${kcal} ${p.kcal} | Air Fryer`;
-  } else if (isFast) {
-    finalTitle = `${recipeData.title} - ${p.fast} ${timeStr} | Air Fryer`;
+    finalTitle = `${recipeData.title} (${p.light} ${kcal} ${p.kcal}) | Crispissimo`;
+  } else if (isFast && cookTimeNum > 0) {
+    finalTitle = `${recipeData.title} (${p.fast} ${timeStr} min) | Crispissimo`;
   } else {
-    finalTitle = `${recipeData.title} | Air Fryer`;
+    finalTitle = `${recipeData.title} | Crispissimo`;
   }
 
   const baseDesc = recipeData.description || "";
   let statsString = "";
-  if (hasNutrition && isFast) statsString = `✓ ${pro}g ${p.pro} · ✓ ${timeStr} · ✓ ${kcal} ${p.kcal} — `;
+  if (hasNutrition && isFast) statsString = `✓ ${pro}g ${p.pro} · ✓ ${timeStr} min · ✓ ${kcal} ${p.kcal} — `;
   else if (hasNutrition) statsString = `✓ ${pro}g ${p.pro} · ✓ ${kcal} ${p.kcal} — `;
-  else if (isFast) statsString = `✓ ${p.fast} ${timeStr} — `;
+  else if (isFast) statsString = `✓ ${p.fast} ${timeStr} min — `;
 
   finalDescription = `${statsString}${baseDesc} ${p.read}`;
 }
 // --- FINE: EXTREME CTR HACKING ---
 
-const disclaimers = {
-  it: "Trasparenza: In qualità di Affiliato Amazon, questo sito riceve un guadagno dagli acquisti idonei. I risultati della conversione sono stime basate su parametri standard (-20°C / -20% tempo). Controlla sempre la cottura.",
-  en: "Transparency: As an Amazon Associate, this site earns from qualifying purchases. Conversion results are estimates based on standard parameters (-40°F / -20% time). Always check your food.",
-  es: "Transparencia: Como Afiliado de Amazon, este sitio recibe una comisión por compras elegibles. Los resultados son estimaciones basadas en parámetros estándar (-20°C / -20% tiempo). Comprueba siempre la cocción.",
-  fr: "Transparence : En tant que Partenaire Amazon, ce site réalise un bénéfice sur les achats remplissant les conditions requises. Les résultats sont des estimations basées sur des paramètres standards (-20°C / -20% temps)."
-};
-
-const footerLabels = {
-  it: { info: "Chi Siamo", mat: "Guida Materiali", ris: "Riscaldare Avanzi", prob: "Risoluzione Problemi", err: "Codici Errore", cal: "Calcolo Calorie", pul: "Pulizia Resistenza", cons: "Costi Bolletta", ice: "Surgelati", privacy: "Privacy", cookie: "Cookie" },
-  en: { info: "About Us", mat: "Materials Guide", ris: "Reheating", prob: "Troubleshooting", err: "Error Codes", cal: "Calories", pul: "Cleaning Guide", cons: "Electricity Costs", ice: "Frozen Foods", privacy: "Privacy", cookie: "Cookies" },
-  es: { info: "Quiénes Somos", mat: "Guía de Materiales", ris: "Recalentar", prob: "Problemas", err: "Códigos de Error", cal: "Calorías", pul: "Guía de Limpieza", cons: "Gasto Eléctrico", ice: "Congelados", privacy: "Privacidad", cookie: "Cookies" },
-  fr: { info: "À Propos", mat: "Guide des Matériaux", ris: "Réchauffer", prob: "Dépannage", err: "Codes d'Erreur", cal: "Calories", pul: "Guide de Nettoyage", cons: "Coût Électrique", ice: "Surgelés", privacy: "Confidentialité", cookie: "Cookies" }
-};
-
-const currentDisclaimer = disclaimers[lang as keyof typeof disclaimers] || disclaimers.it;
-const currentLabels = footerLabels[lang as keyof typeof footerLabels] || footerLabels.it;
+const ogType = recipeData ? "article" : "website";
+const currentYear = new Date().getFullYear();
 ---
 
 <!doctype html>
-<html lang={lang} class="scroll-smooth bg-[#0B1120]">
+<html lang={lang} class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0B1120" />
+    <meta name="theme-color" content="#fff7ed" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
-    
+
     <link rel="preconnect" href="https://flagcdn.com" crossorigin />
-    
-    <ClientRouter /> 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <ClientRouter />
+
     <title>{finalTitle}</title>
     <meta name="description" content={finalDescription} />
     <link rel="canonical" href={canonicalURL} />
-    
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
-    <meta name="p:domain_verify" content="0513c10094fa04708fce47d2922e822b"/>
+    <meta name="p:domain_verify" content="0513c10094fa04708fce47d2922e822b" />
 
-    {/* Architettura Internazionale (Hreflang) */}
-    {alternateUrls?.it && <link rel="alternate" hreflang="it" href={alternateUrls.it} />}
-    {alternateUrls?.en && <link rel="alternate" hreflang="en-US" href={alternateUrls.en} />}
-    {alternateUrls?.es && <link rel="alternate" hreflang="es" href={alternateUrls.es} />}
-    {alternateUrls?.fr && <link rel="alternate" hreflang="fr" href={alternateUrls.fr} />}
-    {alternateUrls?.it && <link rel="alternate" hreflang="x-default" href={alternateUrls.it} />}
+    {Object.keys(alternateUrls).length > 0 && (
+      <>
+        {alternateUrls.it && <link rel="alternate" hreflang="it" href={alternateUrls.it} />}
+        {alternateUrls.en && <link rel="alternate" hreflang="en" href={alternateUrls.en} />}
+        {alternateUrls.es && <link rel="alternate" hreflang="es" href={alternateUrls.es} />}
+        {alternateUrls.fr && <link rel="alternate" hreflang="fr" href={alternateUrls.fr} />}
+        {alternateUrls.it && <link rel="alternate" hreflang="x-default" href={alternateUrls.it} />}
+      </>
+    )}
 
-    {/* Open Graph / Facebook */}
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={finalTitle} />
     <meta property="og:description" content={finalDescription} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:locale" content={currentLocale} />
 
-    {/* Twitter Cards */}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content={canonicalURL} />
     <meta name="twitter:title" content={finalTitle} />
     <meta name="twitter:description" content={finalDescription} />
     <meta name="twitter:image" content={ogImage} />
-  </head>
-  
-  <body class="bg-[#0B1120] text-slate-300 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white transition-colors duration-300">
-    
-    {alternateUrls && (
-      <header class="w-full flex justify-center px-4 pt-3 pb-1 md:pt-4 md:pb-2 relative z-20 hide-on-print">
-        <div class="flex items-center gap-4 bg-slate-900/60 backdrop-blur-md border border-slate-700/50 rounded-full px-5 py-2 shadow-lg">
-          {alternateUrls.it && (
-            <a href={alternateUrls.it} aria-label="Italiano" class="flex items-center justify-center">
-              <img src="https://flagcdn.com/it.svg" alt="IT" width="24" height="18" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'it' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
-            </a>
-          )}
-          {alternateUrls.en && (
-            <a href={alternateUrls.en} aria-label="English" class="flex items-center justify-center">
-              <img src="https://flagcdn.com/gb.svg" alt="EN" width="24" height="18" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'en' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
-            </a>
-          )}
-          {alternateUrls.es && (
-            <a href={alternateUrls.es} aria-label="Español" class="flex items-center justify-center">
-              <img src="https://flagcdn.com/es.svg" alt="ES" width="24" height="18" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'es' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
-            </a>
-          )}
-          {alternateUrls.fr && (
-            <a href={alternateUrls.fr} aria-label="Français" class="flex items-center justify-center">
-              <img src="https://flagcdn.com/fr.svg" alt="FR" width="24" height="18" class={`w-5 md:w-6 h-auto rounded-[2px] transition-all duration-300 ${lang === 'fr' ? 'scale-110 drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]' : 'grayscale opacity-40 hover:grayscale-0 hover:opacity-100 hover:scale-110'}`} />
-            </a>
-          )}
-        </div>
-      </header>
-    )}
 
-    <main class="flex-grow w-full px-4 pb-4 pt-1">
+    <style is:global>
+      :root { color-scheme: light; }
+      html.dark { color-scheme: dark; }
+      body { font-family: "Raleway", system-ui, sans-serif; }
+      h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", system-ui, sans-serif; }
+    </style>
+
+    <script is:inline>
+      (() => {
+        const storageKey = "crispissimo-theme";
+        const root = document.documentElement;
+        let savedTheme = "light";
+        try { savedTheme = localStorage.getItem(storageKey) || "light"; } catch {}
+        if (savedTheme === "dark") {
+          root.classList.add("dark");
+          root.setAttribute("data-theme", "dark");
+        } else {
+          root.classList.remove("dark");
+          root.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-orange-50 text-slate-800 antialiased selection:bg-orange-200 selection:text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-200">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/85">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="flex h-16 items-center justify-between gap-4">
+          <a href={navRoutes.home} class="shrink-0 text-2xl font-black tracking-tight text-orange-600 transition-colors hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300" style="font-family: 'Montserrat', system-ui, sans-serif;">
+            Crispissimo
+          </a>
+
+          <nav class="hidden items-center gap-6 md:flex">
+            <a href={navRoutes.home} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.recipes}</a>
+            <a href={navRoutes.categories} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.categories}</a>
+            <a href={navRoutes.converter} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.converter}</a>
+          </nav>
+
+          <div class="flex items-center gap-2 sm:gap-3">
+            {Object.keys(alternateUrls).length > 0 && (
+              <div class="hidden items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 shadow-sm dark:border-slate-700 dark:bg-slate-900/80 sm:flex" aria-label={currentLabels.language}>
+                {["it", "en", "es", "fr"].map((l) => {
+                  const url = alternateUrls[l as keyof typeof alternateUrls];
+                  if (!url) return null;
+                  return (
+                    <a href={url} aria-label={l.toUpperCase()} class="flex items-center justify-center">
+                      <img src={`https://flagcdn.com/${l === "en" ? "gb" : l}.svg`} alt={l.toUpperCase()} width="24" height="18" class={`h-auto w-5 rounded-[2px] transition-all duration-200 md:w-6 ${lang === l ? "scale-110 opacity-100 ring-2 ring-orange-400/70" : "opacity-50 grayscale hover:scale-110 hover:opacity-100 hover:grayscale-0"}`} />
+                    </a>
+                  );
+                })}
+              </div>
+            )}
+
+            <button type="button" data-theme-toggle class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:border-orange-300 hover:text-orange-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-orange-400 dark:hover:text-orange-400" aria-label={currentLabels.themeToggle}>
+              <span data-theme-icon aria-hidden="true">🌙</span>
+              <span class="sr-only">{currentLabels.themeToggle}</span>
+            </button>
+          </div>
+        </div>
+
+        <nav class="flex items-center justify-center gap-6 pb-3 md:hidden">
+          <a href={navRoutes.home} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.recipes}</a>
+          <a href={navRoutes.categories} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.categories}</a>
+          <a href={navRoutes.converter} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.converter}</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-grow w-full px-4 py-6">
       <slot />
     </main>
 
-    <footer class="bg-[#0F172A] border-t border-slate-800 mt-auto py-8 pb-[100px] text-center font-sans relative z-10 hide-on-print">
-      <div class="max-w-[500px] md:max-w-3xl mx-auto px-4 space-y-6">
-        
-        <div class="p-3 bg-slate-900/50 rounded-xl border border-slate-800 shadow-inner text-justify">
-          <p class="text-[9px] text-slate-500 leading-relaxed italic">
-            <strong>{currentDisclaimer}</strong>
-          </p>
-        </div>
-        
-        <nav class="flex flex-wrap justify-center gap-x-4 gap-y-3 text-[10px] md:text-xs text-slate-400 font-bold tracking-wide">
-          <a href={`/${lang}/info`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.info}</a>
-          <span class="hidden sm:inline text-slate-700">•</span>
-          <a href={`/${lang}/materiali`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.mat}</a>
-          <span class="hidden sm:inline text-slate-700">•</span>
-          <a href={`/${lang}/riscaldare`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.ris}</a>
-          <span class="hidden sm:inline text-slate-700">•</span>
-          <a href={`/${lang}/problemi`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.prob}</a>
-          <span class="hidden sm:inline text-slate-700">•</span>
-          <a href={`/${lang}/errori`} class="text-red-400 hover:text-red-300 transition-colors">{currentLabels.err}</a>
-        </nav>
+    <footer class="mt-auto border-t border-slate-200 bg-white py-10 dark:border-slate-800 dark:bg-slate-950">
+      <div class="mx-auto max-w-7xl px-4">
+        <div class="grid gap-8 md:grid-cols-[1.3fr_auto] md:items-start">
+          <div class="space-y-4">
+            <a href={navRoutes.home} class="inline-block text-2xl font-black tracking-tight text-orange-600 dark:text-orange-400" style="font-family: 'Montserrat', system-ui, sans-serif;">Crispissimo</a>
+            <p class="max-w-xl text-sm leading-relaxed text-slate-600 dark:text-slate-400">{currentLabels.brandTagline}</p>
+            <p class="text-sm font-medium text-slate-500 dark:text-slate-500">{currentLabels.footerNote}</p>
+          </div>
 
-        <nav class="flex flex-wrap justify-center gap-x-4 gap-y-3 text-[10px] md:text-xs text-slate-400 font-bold tracking-wide">
-          <a href={`/${lang}/calorie`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.cal}</a>
-          <span class="hidden sm:inline text-slate-700">•</span>
-          <a href={`/${lang}/pulizia`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.pul}</a>
-          <span class="hidden sm:inline text-slate-700">•</span>
-          <a href={`/${lang}/consumi`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.cons}</a>
-          <span class="hidden sm:inline text-slate-700">•</span>
-          <a href={`/${lang}/surgelati`} class="hover:text-[#F59E0B] transition-colors">{currentLabels.ice}</a>
-        </nav>
-        
-        <nav class="flex justify-center gap-4 text-[10px] text-slate-500 font-medium tracking-wide pt-4 border-t border-slate-800/50 w-2/3 md:w-1/3 mx-auto">
-          <a href="/privacy" class="hover:text-[#F59E0B] transition-colors">{currentLabels.privacy}</a>
-          <span>•</span>
-          <a href="/cookies" class="hover:text-[#F59E0B] transition-colors">{currentLabels.cookie}</a>
-        </nav>
-        
-        <p class="text-[9px] text-slate-600 font-mono italic">
-          © {new Date().getFullYear()} convertitorefriggitrice.it
-        </p>
+          <nav class="flex flex-wrap gap-x-5 gap-y-3 text-sm font-semibold">
+            <a href={navRoutes.home} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.recipes}</a>
+            <a href={navRoutes.categories} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.categories}</a>
+            <a href={navRoutes.converter} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.converter}</a>
+            <a href="/privacy" class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.privacy}</a>
+            <a href="/cookies" class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.cookies}</a>
+          </nav>
+        </div>
+
+        <div class="mt-8 border-t border-slate-200 pt-6 dark:border-slate-800">
+          <p class="max-w-4xl text-xs leading-relaxed text-slate-500 dark:text-slate-500">{currentLabels.disclaimer}</p>
+          <p class="mt-4 text-xs text-slate-400 dark:text-slate-600">© {currentYear} Crispissimo</p>
+        </div>
       </div>
     </footer>
 
+    <script is:inline>
+      (() => {
+        const storageKey = "crispissimo-theme";
+        const applyTheme = (theme) => {
+          const isDark = theme === "dark";
+          const root = document.documentElement;
+          root.classList.toggle("dark", isDark);
+          root.setAttribute("data-theme", theme);
+          const themeMeta = document.querySelector('meta[name="theme-color"]');
+          if (themeMeta) themeMeta.setAttribute("content", isDark ? "#020617" : "#fff7ed");
+          document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+            button.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+            const icon = button.querySelector("[data-theme-icon]");
+            if (icon) icon.textContent = isDark ? "☀️" : "🌙";
+          });
+        };
+        const bindThemeToggle = () => {
+          document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+            button.onclick = () => {
+              const nextTheme = document.documentElement.classList.contains("dark") ? "light" : "dark";
+              try { localStorage.setItem(storageKey, nextTheme); } catch {}
+              applyTheme(nextTheme);
+            };
+          });
+          let savedTheme = "light";
+          try { savedTheme = localStorage.getItem(storageKey) || "light"; } catch {}
+          applyTheme(savedTheme);
+        };
+        document.addEventListener("DOMContentLoaded", bindThemeToggle);
+        document.addEventListener("astro:page-load", bindThemeToggle);
+      })();
+    </script>
     <Analytics />
   </body>
 </html>

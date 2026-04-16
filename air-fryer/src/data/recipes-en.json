@@ -6067,7 +6067,10 @@
       "hash browns",
       "brunch",
       "from scratch"
-    ]
+    ],
+    "isItalian": false,
+    "image": "frittelle-di-patate-hash-brown",
+    "is_sanitized": true
   },
   {
     "slug": "hasselback-potatoes",
@@ -6904,7 +6907,7 @@
       "Quick"
     ],
     "isItalian": false,
-    "image": "pannocchie-mais-ninja",
+    "image": "pannocchie-mais",
     "is_sanitized": true
   },
   {

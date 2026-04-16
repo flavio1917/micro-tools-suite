@@ -711,115 +711,6 @@
     ]
   },
   {
-    "title": "Supplì al Telefono (Estilo Romano)",
-    "slug": "suppli-romanos-telefono",
-    "emoji": "🍅",
-    "temp": 200,
-    "time": "12",
-    "prep_time": "30",
-    "portions": "4",
-    "ingredients": [
-      "250 g de arroz con salsa de tomate o ragú, frío",
-      "1 huevo",
-      "100 g de mozzarella fior di latte, en tiras",
-      "Pan rallado",
-      "Aceite de oliva virgen extra en aerosol"
-    ],
-    "description": "El clásico de Roma. Estas croquetas de arroz con tomate se llaman 'al telefono' porque al abrirlas, la mozzarella fundida forma un hilo que recuerda al cable de un teléfono antiguo.",
-    "instructions": [
-      "Tomar una porción de arroz frío, aplanarla en la palma de la mano e insertar en el centro las tiras de mozzarella.",
-      "Cerrar el arroz alrededor de la mozzarella, dando la forma ovalada y alargada característica del supplì.",
-      "Pasar cada supplì por huevo batido y luego por pan rallado, asegurando una cobertura completa y uniforme.",
-      "Rociar los supplì con aceite en aerosol. Cocinar a 200°C durante 12 minutos, girándolos a mitad de cocción."
-    ],
-    "tip": "Utilizar mozzarella con bajo contenido de humedad para evitar que el relleno humedezca el arroz y provoque la apertura del supplì durante la cocción.",
-    "isItalian": true,
-    "image": "suppli-romani-telefono",
-    "keywords": [
-      "Huevos/Quesos",
-      "Entrante",
-      "Proteico",
-      "Vegetariano",
-      "Roma",
-      "suppli"
-    ]
-  },
-  {
-    "title": "Mozzarella en Carroza (Sándwich Dorado)",
-    "slug": "mozzarella-in-carrozza",
-    "emoji": "🍞",
-    "temp": 190,
-    "time": "10",
-    "prep_time": "10",
-    "portions": "2",
-    "isItalian": true,
-    "ingredients": [
-      "4 rebanadas de pan de molde",
-      "150 g de mozzarella fior di latte",
-      "2 huevos",
-      "Pan rallado, cantidad suficiente",
-      "Leche, cantidad suficiente",
-      "Sal y aceite en aerosol"
-    ],
-    "description": "El bocado más reconfortante de Italia. Dos rebanadas de pan que encierran un corazón de mozzarella fundida, empanadas y cocinadas hasta que el exterior cruje y el queso se vuelve elástico e irresistible.",
-    "instructions": [
-      "Retirar la corteza de las rebanadas de pan. Colocar una loncha de mozzarella entre dos rebanadas y presionar firmemente los bordes para sellar.",
-      "Humedecer rápidamente los bordes del sándwich en leche. Pasar el sándwich por huevo batido y, seguidamente, por pan rallado, cubriendo toda la superficie.",
-      "Rociar ambos lados del sándwich con aceite en aerosol.",
-      "Cocinar a 190°C durante 10 minutos. Voltear a mitad de cocción para asegurar un dorado uniforme."
-    ],
-    "tip": "Para una variación de sabor, añadir una anchoa o una loncha de jamón cocido al relleno de mozzarella.",
-    "image": "mozzarella-in-carrozza",
-    "keywords": [
-      "Huevos/Quesos",
-      "Aperitivo",
-      "Plato principal",
-      "Snack",
-      "Proteico",
-      "Végétarien",
-      "Rapide",
-      "mozzarella",
-      "italiano"
-    ]
-  },
-  {
-    "title": "Anillas de Calamar al Punto de Sal",
-    "slug": "calamares-fritos-crujientes",
-    "emoji": "🦑",
-    "temp": 200,
-    "time": "10",
-    "prep_time": "15",
-    "portions": "2",
-    "isItalian": true,
-    "ingredients": [
-      "400 g de anillas de calamar, frescas o descongeladas",
-      "Sémola de trigo duro",
-      "Aceite de oliva virgen extra en aerosol",
-      "Sal",
-      "Limón"
-    ],
-    "description": "Disfruta de unas anillas de calamar con un rebozado ligero y una textura ultra crujiente. Una opción rápida y deliciosa que mantiene toda la frescura del mar en cada bocado.",
-    "instructions": [
-      "Secar completamente las anillas de calamar con papel de cocina.",
-      "Introducir las anillas en una bolsa de uso alimentario con abundante sémola de trigo y agitar para rebozar uniformemente.",
-      "Colocar las anillas en la cesta en una sola capa, sin superponer. Proceder en varias tandas si es necesario.",
-      "Rociar uniformemente con aceite de oliva en aerosol.",
-      "Cocinar a 200°C durante 10-12 minutos.",
-      "Sazonar con sal al finalizar la cocción. Servir con rodajas de limón."
-    ],
-    "tip": "Para evitar una textura gomosa, es fundamental secar por completo los calamares. La sémola de trigo duro proporciona una textura más crujiente que la harina común.",
-    "image": "calamari-fritti-croccanti",
-    "keywords": [
-      "Pescado",
-      "Aperitivo",
-      "Plato principal",
-      "Proteico",
-      "Rapide",
-      "calamares",
-      "tapas"
-    ]
-  },
-  {
     "title": "Pimientos Rellenos de Carne (Cocidos a la Perfección en 25 Min)",
     "slug": "pimientos-rellenos-carne",
     "emoji": "🫑",
@@ -923,41 +814,6 @@
       "aprovechamiento",
       "frittata",
       "pasta"
-    ]
-  },
-  {
-    "title": "Cotoletta a la Milanesa (Escalope Crujiente)",
-    "slug": "cotoletta-a-la-milanesa",
-    "emoji": "🥩",
-    "temp": 190,
-    "time": "14",
-    "prep_time": "10",
-    "portions": "2",
-    "isItalian": true,
-    "ingredients": [
-      "2 filetes de lomo de cerdo o ternera, aplanados",
-      "1 huevo",
-      "Pan rallado, cantidad necesaria",
-      "Aceite de oliva en aerosol",
-      "Rodajas de limón para guarnición",
-      "Sal, cantidad necesaria"
-    ],
-    "description": "El filete empanado elevado a otro nivel. Una carne tierna con un empanado crujiente y uniforme, convertida en un plato principal versátil que gusta a toda la familia.",
-    "instructions": [
-      "Aplanar la carne si es necesario. Pasar cada filete por huevo batido y seguidamente por pan rallado, presionando para asegurar una cobertura uniforme.",
-      "Precalentar la freidora de aire a 190°C por 3 minutos.",
-      "Colocar los filetes en la cesta. Rociar la superficie de manera uniforme con el aceite en aerosol.",
-      "Cocinar por 7 minutos. Voltear los filetes, rociar el otro lado con aceite y cocinar por 7 minutos adicionales. Sazonar con sal antes de servir."
-    ],
-    "tip": "Para un empanado con más sabor, mezclar el pan rallado con perejil picado y queso parmesano.",
-    "image": "cotoletta-alla-milanese",
-    "keywords": [
-      "Carne",
-      "Plato principal",
-      "Proteico",
-      "milanesa",
-      "escalope",
-      "clásico"
     ]
   },
   {
@@ -2395,7 +2251,7 @@
       "pollo"
     ],
     "isItalian": false,
-    "image": "pollo-barbecue-cosori",
+    "image": "pollo-barbecue",
     "is_sanitized": true
   },
   {
@@ -3386,204 +3242,6 @@
     ],
     "isItalian": false,
     "image": "hamburger-classico",
-    "is_sanitized": true
-  },
-  {
-    "slug": "hamburguesa-deluxe",
-    "title": "Hamburguesa Deluxe con Pan Tostado",
-    "emoji": "🍔",
-    "temp": 200,
-    "time": "8",
-    "prep_time": "25",
-    "portions": "4",
-    "ingredients": [
-      "650 g de carne picada de vacuno",
-      "4 panecillos para hamburguesa con sésamo",
-      "2 tomates grandes",
-      "Hojas de lechuga",
-      "1 diente de ajo",
-      "20 ml de salsa de soja",
-      "Sal",
-      "Aceite de oliva virgen extra"
-    ],
-    "description": "La experiencia completa de una hamburguesería en casa. Carne de vacuno de calidad cocinada a alta temperatura y servida en un pan perfectamente tostado que aguanta cada bocado.",
-    "instructions": [
-      "Sazonar la carne picada con el ajo finamente picado, la salsa de soja, aceite y sal.",
-      "Mezclar los ingredientes con las manos hasta obtener una masa homogénea. Formar cuatro hamburguesas de grosor uniforme.",
-      "Colocar las hamburguesas en la cesta del aparato precalentado. Cocinar a 200°C durante 8-12 minutos, hasta que estén doradas y cocidas al punto deseado.",
-      "Retirar las hamburguesas y mantenerlas calientes. Tostar los panecillos, cortados por la mitad, durante aproximadamente 2 minutos o hasta que estén dorados.",
-      "Cortar los tomates en rodajas. Montar las hamburguesas sobre las bases de pan, alternando hojas de lechuga, rodajas de tomate y la carne. Servir inmediatamente."
-    ],
-    "source": "Tefal",
-    "tip": "Tostar los panecillos mientras la carne reposa para optimizar los tiempos de preparación.",
-    "keywords": [
-      "Carne",
-      "Plato principal",
-      "Proteico",
-      "Rápido",
-      "deluxe",
-      "burger"
-    ],
-    "isItalian": false,
-    "image": "hamburger-deluxe",
-    "is_sanitized": true
-  },
-  {
-    "slug": "hamburguesas-pavo-estilo-asiatico",
-    "title": "Burger de Pavo al Estilo Oriental",
-    "emoji": "🍔",
-    "temp": 200,
-    "time": "11",
-    "prep_time": "35",
-    "portions": "4",
-    "ingredients": [
-      "450 g de carne de pavo picada magra",
-      "20 g de jengibre fresco, rallado",
-      "2 dientes de ajo, picados",
-      "35 g de salsa Hoisin",
-      "15 ml de salsa de soja",
-      "90 g de pan rallado grueso",
-      "Ensalada de col, para servir"
-    ],
-    "description": "Una alternativa ligera y sorprendente. El pavo magro se combina con notas de jengibre y soja, ofreciendo una hamburguesa jugosa con un perfil de sabor fresco y exótico.",
-    "instructions": [
-      "En un bol, mezclar la carne de pavo picada, el jengibre rallado, el ajo picado, la salsa Hoisin y la salsa de soja.",
-      "Incorporar el pan rallado y amasar hasta obtener una mezcla homogénea.",
-      "Dividir la mezcla en 4 porciones iguales y formar las hamburguesas.",
-      "Refrigerar las hamburguesas durante un mínimo de 30 minutos para compactar la mezcla.",
-      "Cocinar a 200°C durante 11 minutos, volteando las hamburguesas a mitad del tiempo de cocción.",
-      "Servir en pan de hamburguesa, acompañadas de ensalada de col."
-    ],
-    "source": "Cosori",
-    "tip": "La refrigeración previa a la cocción es esencial para que las hamburguesas mantengan su forma.",
-    "keywords": [
-      "Carne",
-      "Plato principal",
-      "Proteico",
-      "Rápido",
-      "pavo",
-      "asiático",
-      "saludable"
-    ],
-    "isItalian": false,
-    "image": "hamburger-tacchino-asiatico",
-    "is_sanitized": true
-  },
-  {
-    "slug": "perritos-calientes-estilo-nueva-york",
-    "title": "Hot Dogs NY: Cheddar y Cebolla",
-    "emoji": "🌭",
-    "temp": 170,
-    "time": "5",
-    "prep_time": "25",
-    "portions": "4",
-    "ingredients": [
-      "4 panes para perrito caliente",
-      "4 salchichas de cerdo grandes",
-      "1 cebolla roja pequeña, en juliana",
-      "4 lonchas de queso Cheddar",
-      "60 ml de kétchup",
-      "Pepinillos encurtidos, en dados"
-    ],
-    "description": "Directo desde las calles de Nueva York. Un perrito caliente completo donde el queso Cheddar fundido abraza la salchicha, rematado con el toque crujiente de la cebolla y el pepinillo.",
-    "instructions": [
-      "Escaldar las salchichas en agua hirviendo durante 4 minutos. Escurrir y reservar.",
-      "Sofreír la cebolla en juliana en una sartén con aceite a fuego medio-alto hasta ablandar.",
-      "Abrir los panes por la mitad, sin separar las partes, y untar el interior con kétchup.",
-      "Colocar una salchicha en cada pan. Añadir la cebolla, los pepinillos en dados y una loncha de queso Cheddar.",
-      "Hornear a 170°C durante 5 minutos o hasta que el queso esté completamente fundido y el pan caliente."
-    ],
-    "source": "Tefal",
-    "tip": "El escaldado previo de las salchichas garantiza que estén completamente cocidas y calientes en el interior.",
-    "keywords": [
-      "Carne",
-      "Masas",
-      "Plato principal",
-      "Snack",
-      "Proteico",
-      "Rápido",
-      "hot dog"
-    ],
-    "isItalian": false,
-    "image": "hot-dog-newyorkese",
-    "is_sanitized": true
-  },
-  {
-    "slug": "rollitos-cerdo-jamon",
-    "title": "Rollitos de Solomillo y Jamón Serrano",
-    "emoji": "🥓",
-    "temp": 200,
-    "time": "10",
-    "prep_time": "10",
-    "portions": "4",
-    "ingredients": [
-      "450 g de solomillo de cerdo, fileteado y espalmado",
-      "8 lonchas de jamón serrano",
-      "200 g de espinacas frescas",
-      "4 lonchas de queso mozzarella",
-      "20 g de tomates secos",
-      "15 ml de aceite de oliva"
-    ],
-    "description": "Sofisticación mediterránea. Solomillo relleno de espinacas y tomates secos, envuelto en jamón serrano que se vuelve crujiente al cocinarlo, protegiendo un interior tierno y fundente.",
-    "instructions": [
-      "Espalmar los filetes de solomillo para obtener un grosor uniforme.",
-      "Disponer las lonchas de jamón serrano, solapándolas ligeramente, sobre una superficie de trabajo. Colocar los filetes de solomillo encima.",
-      "Distribuir en el centro de la carne las espinacas, el queso mozzarella en trozos y los tomates secos.",
-      "Enrollar firmemente para formar un cilindro compacto. Atar con hilo de cocina si es necesario.",
-      "Pincelar la superficie con aceite de oliva. Cocinar a 200°C durante 10 minutos, o hasta que el jamón esté dorado y crujiente."
-    ],
-    "source": "Cosori",
-    "tip": "Utilizar hilo de cocina para asegurar que los rollitos mantengan su forma durante la cocción.",
-    "keywords": [
-      "Carne",
-      "Plato principal",
-      "Proteico",
-      "Rápido",
-      "Low Carb",
-      "jamón serrano"
-    ],
-    "isItalian": false,
-    "image": "involtini-maiale-prosciutto",
-    "is_sanitized": true
-  },
-  {
-    "slug": "jalapenos-rellenos-tocino",
-    "title": "Jalapeños Popper Envueltos en Tocino",
-    "emoji": "🌶",
-    "temp": 160,
-    "time": "16",
-    "prep_time": "10",
-    "portions": "4",
-    "ingredients": [
-      "12 chiles jalapeños",
-      "230 g de carne de cerdo picada",
-      "120 g de queso Cheddar rallado",
-      "12 lonchas de tocino",
-      "Sal",
-      "Pimienta negra molida"
-    ],
-    "description": "El snack definitivo para los amantes del picante. Jalapeños rellenos de carne y Cheddar, envueltos en tocino que se dora hasta crujir. Una explosión de sabor en cada bocado.",
-    "instructions": [
-      "Cortar los jalapeños por la mitad a lo largo. Retirar las semillas y las venas internas.",
-      "En un bol, mezclar la carne de cerdo picada con el queso rallado. Sazonar con sal y pimienta al gusto.",
-      "Rellenar cada mitad de jalapeño con la mezcla de carne y queso.",
-      "Envolver cada mitad de jalapeño rellena con una loncha de tocino. Asegurar con un palillo de madera si es necesario.",
-      "Disponer los jalapeños en la cesta. Cocinar a 160°C durante 16 minutos, o hasta que el tocino esté crujiente y la carne completamente cocida."
-    ],
-    "source": "Cosori",
-    "tip": "Para un resultado menos picante, retirar completamente las semillas y las venas de los jalapeños. A mitad de cocción, girar los jalapeños para una cocción uniforme.",
-    "keywords": [
-      "Carne",
-      "Verduras",
-      "Entrante",
-      "Plato principal",
-      "Snack",
-      "Proteico",
-      "Low Carb",
-      "Rápido"
-    ],
-    "isItalian": false,
-    "image": "jalapenos-ripieni-bacon",
     "is_sanitized": true
   },
   {
@@ -6313,7 +5971,10 @@
       "hash browns",
       "brunch",
       "tortitas"
-    ]
+    ],
+    "isItalian": false,
+    "image": "frittelle-di-patate-hash-brown",
+    "is_sanitized": true
   },
   {
     "slug": "patatas-hasselback",
@@ -7738,6 +7399,264 @@
     ],
     "isItalian": true,
     "image": "chips-zucchine-parmigiano",
+    "is_sanitized": true
+  },
+  {
+    "title": "Supplì al Teléfono (Estilo Romano)",
+    "slug": "roman-suppli-al-telefono",
+    "emoji": "🍅",
+    "temp": 200,
+    "time": "12",
+    "prep_time": "30",
+    "portions": "4",
+    "ingredients": [
+      "250g de arroz cocido y frío con salsa de tomate o ragú",
+      "1 huevo grande, batido",
+      "100g de mozzarella de baja humedad, cortada en tiras",
+      "Pan rallado, para rebozar",
+      "Aceite de oliva en spray"
+    ],
+    "description": "Llamados así por el 'cable de teléfono' de mozzarella que se estira al separarlos. Estas croquetas de arroz son un clásico salado y con queso de la Ciudad Eterna.",
+    "instructions": [
+      "Coge unas dos cucharadas de arroz frío. Aplana la porción en la palma de la mano y coloca tiras de mozzarella en el centro.",
+      "Envuelve la mozzarella con el arroz, formando una figura ovalada.",
+      "Pasa cada supplì primero por el huevo batido y luego por el pan rallado, cubriéndolo por completo.",
+      "Rocía los supplì con aceite de oliva en spray. Cocina a 200°C durante 12 minutos, dándoles la vuelta a mitad de tiempo."
+    ],
+    "tip": "Usa mozzarella de baja humedad (tipo bloque para pizza) para evitar que los supplì se abran durante la cocción.",
+    "isItalian": true,
+    "image": "suppli-romani-telefono",
+    "keywords": [
+      "Huevos/Quesos",
+      "Aperitivo",
+      "Snack",
+      "Vegetariano"
+    ],
+    "is_sanitized": true
+  },
+  {
+    "title": "Mozzarella en Carroza (Sándwich Dorado)",
+    "slug": "fried-mozzarella-sandwich",
+    "emoji": "🍞",
+    "temp": 190,
+    "time": "10",
+    "prep_time": "10",
+    "portions": "2",
+    "ingredients": [
+      "4 rebanadas de pan de molde grueso",
+      "150g de mozzarella fresca",
+      "2 huevos grandes",
+      "Pan rallado, el necesario",
+      "Leche, la necesaria",
+      "Sal",
+      "Aceite en spray para cocinar"
+    ],
+    "description": "Un clásico de la comida callejera napolitana. Rebanadas gruesas de pan envuelven un corazón de mozzarella fundida, logrando un exterior crujiente con una fracción del aceite.",
+    "instructions": [
+      "Retira la corteza de las rebanadas de pan. Coloca una rodaja gruesa de mozzarella entre dos panes y presiona firmemente los bordes para sellar.",
+      "Sumerge brevemente los bordes sellados en leche. Baña todo el sándwich en huevo batido y cúbrelo bien con pan rallado.",
+      "Rocía ambos lados del sándwich con aceite en spray.",
+      "Cocina a 190°C durante 10 minutos. Dale la vuelta a los 5 minutos para asegurar un dorado uniforme."
+    ],
+    "tip": "Para un extra de sabor, añade un filete de anchoa o una loncha de jamón cocido junto a la mozzarella.",
+    "isItalian": true,
+    "image": "mozzarella-in-carrozza",
+    "keywords": [
+      "Huevos/Quesos",
+      "Aperitivo",
+      "Snack",
+      "Proteico",
+      "Vegetariano",
+      "Rápido"
+    ],
+    "is_sanitized": true
+  },
+  {
+    "slug": "deluxe-hamburger",
+    "title": "Hamburguesa Deluxe con Pan Tostado",
+    "emoji": "🍔",
+    "temp": 200,
+    "time": "8",
+    "prep_time": "25",
+    "portions": "4",
+    "ingredients": [
+      "650g de carne picada de ternera",
+      "4 panes de hamburguesa con sésamo",
+      "2 tomates grandes, en rodajas",
+      "Hojas de lechuga",
+      "1 diente de ajo, picado",
+      "20ml de salsa de soja",
+      "1 cucharada de aceite vegetal",
+      "Sal al gusto"
+    ],
+    "description": "La experiencia definitiva de hamburguesa casera. La circulación de alta temperatura garantiza una carne perfectamente sellada y un pan tostado con mantequilla.",
+    "instructions": [
+      "En un bol, mezcla la carne picada, el ajo, la salsa de soja, el aceite y la sal.",
+      "Amasa hasta integrar y forma cuatro hamburguesas.",
+      "Precalienta la freidora a 200°C. Coloca la carne en la cesta y cocina de 8 a 12 minutos.",
+      "Retira la carne y déjala reposar. Pon las mitades del pan en la cesta y tuesta durante 2 minutos.",
+      "Monta las hamburguesas con la lechuga, el tomate y la carne. Sirve inmediatamente."
+    ],
+    "source": "Tefal",
+    "tip": "Tuesta los panes mientras la carne reposa para optimizar la temperatura y textura.",
+    "keywords": [
+      "Carne",
+      "Plato Principal",
+      "Proteico",
+      "Rápido"
+    ],
+    "isItalian": false,
+    "image": "hamburger-deluxe",
+    "is_sanitized": true
+  },
+  {
+    "slug": "asian-turkey-burgers",
+    "title": "Burger de Pavo al Estilo Oriental",
+    "emoji": "🍔",
+    "temp": 200,
+    "time": "11",
+    "prep_time": "35",
+    "portions": "4",
+    "ingredients": [
+      "450g de carne picada de pavo",
+      "1 cucharadita de jengibre rallado",
+      "2 dientes de ajo, picados",
+      "35g de salsa Hoisin",
+      "1 cucharada de salsa de soja",
+      "90g de pan rallado panko",
+      "4 panes de hamburguesa",
+      "Ensalada de col y zanahoria (coleslaw), para servir"
+    ],
+    "description": "Un giro ligero y vibrante a un clásico. Estas hamburguesas de pavo están infusionadas con jengibre y soja, selladas a la perfección para un interior jugoso.",
+    "instructions": [
+      "En un bol grande, combina el pavo picado, el jengibre, el ajo, la salsa Hoisin y la salsa de soja.",
+      "Añade el panko y mezcla hasta integrar. Evita amasar en exceso.",
+      "Forma 4 hamburguesas de tamaño uniforme.",
+      "Refrigera la carne al menos 30 minutos para que mantenga su forma al cocinar.",
+      "Cocina a 200°C durante 11 minutos, volteando a mitad de tiempo. Sirve con el coleslaw."
+    ],
+    "source": "Cosori",
+    "tip": "Enfriar la carne antes de cocinar es fundamental para que las hamburguesas no se deshagan.",
+    "keywords": [
+      "Carne",
+      "Plato Principal",
+      "Proteico",
+      "Rápido",
+      "Asiático"
+    ],
+    "isItalian": false,
+    "image": "hamburger-tacchino-asiatico",
+    "is_sanitized": true
+  },
+  {
+    "slug": "new-york-style-hot-dog",
+    "title": "Hot Dogs NY: Cheddar y Cebolla",
+    "emoji": "🌭",
+    "temp": 170,
+    "time": "5",
+    "prep_time": "25",
+    "portions": "4",
+    "ingredients": [
+      "4 panes para hot dog",
+      "4 salchichas grandes de cerdo",
+      "1 cebolla roja pequeña, en rodajas finas",
+      "4 lonchas de queso Cheddar",
+      "Ketchup",
+      "Pepinillos en cubitos"
+    ],
+    "description": "Lleva la Gran Manzana a tu casa. Este método asegura salchichas crujientes, queso fundido y un pan caliente y tierno para la mejor experiencia callejera.",
+    "instructions": [
+      "Hierve las salchichas unos minutos hasta que estén tiernas.",
+      "Saltea la cebolla roja en una sartén a fuego alto.",
+      "Abre los panes a lo largo y unta con ketchup.",
+      "Coloca una salchicha en cada pan. Cubre con la cebolla, los pepinillos y el queso Cheddar.",
+      "Calienta los hot dogs a 170°C durante 5 minutos, o hasta que el queso se derrita."
+    ],
+    "source": "Tefal",
+    "tip": "Precocina las salchichas en agua hirviendo antes de montar los hot dogs para un resultado perfecto.",
+    "keywords": [
+      "Carne",
+      "Plato Principal",
+      "Snack",
+      "Proteico",
+      "Rápido"
+    ],
+    "isItalian": false,
+    "image": "hot-dog-newyorkese",
+    "is_sanitized": true
+  },
+  {
+    "slug": "pork-and-prosciutto-rolls",
+    "title": "Rollitos de Solomillo y Jamón Serrano",
+    "emoji": "🥓",
+    "temp": 200,
+    "time": "10",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "450g de solomillo de cerdo, aplanado",
+      "8 lonchas de jamón serrano o prosciutto",
+      "200g de espinacas frescas",
+      "4 lonchas de mozzarella firme",
+      "20g de tomates secos",
+      "1 cucharada de aceite de oliva"
+    ],
+    "description": "Sofisticado y sabroso. El solomillo de cerdo se enrolla con espinacas y mozzarella, envuelto en un jamón salado que queda deliciosamente crujiente.",
+    "instructions": [
+      "Aplasta los filetes de cerdo hasta tener un grosor uniforme.",
+      "Coloca las lonchas de jamón superpuestas sobre una tabla. Pon el cerdo aplanado encima.",
+      "Añade las espinacas, la mozzarella y los tomates secos en el centro.",
+      "Enrolla firmemente formando un cilindro. Sujeta con hilo de cocina si es necesario.",
+      "Pincela con aceite de oliva. Cocina a 200°C por 10 minutos, o hasta que el jamón esté crujiente."
+    ],
+    "source": "Cosori",
+    "tip": "Ata el rollo con hilo de cocina para que mantenga su forma perfectamente en la freidora.",
+    "keywords": [
+      "Carne",
+      "Plato Principal",
+      "Proteico",
+      "Bajo en Carbohidratos",
+      "Rápido"
+    ],
+    "isItalian": true,
+    "image": "involtini-maiale-prosciutto",
+    "is_sanitized": true
+  },
+  {
+    "slug": "bacon-wrapped-stuffed-jalapenos",
+    "title": "Jalapeños Popper Envueltos en Tocino",
+    "emoji": "🌶",
+    "temp": 160,
+    "time": "16",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "12 chiles jalapeños",
+      "230g de carne picada de cerdo",
+      "120g de queso Cheddar rallado",
+      "12 lonchas de tocino (bacon)",
+      "Sal y pimienta negra al gusto"
+    ],
+    "description": "El toque picante perfecto. Estos jalapeños van rellenos de carne y cheddar, envueltos en tocino ahumado y fritos al aire hasta quedar súper crujientes.",
+    "instructions": [
+      "Corta los chiles por la mitad a lo largo y retira las semillas y las membranas.",
+      "En un bol, mezcla la carne de cerdo, el queso, la sal y la pimienta.",
+      "Rellena cada mitad de jalapeño con la mezcla.",
+      "Envuelve cada mitad rellena con una loncha de tocino. Usa un palillo para fijarlo si es necesario.",
+      "Coloca en la cesta y cocina hasta que el tocino esté crujiente y el relleno bien cocido."
+    ],
+    "source": "Cosori",
+    "tip": "Para que piquen menos, limpia muy bien todas las semillas y nervaduras blancas del interior.",
+    "keywords": [
+      "Carne",
+      "Aperitivo",
+      "Snack",
+      "Proteico",
+      "Bajo en Carbohidratos",
+      "Rápido"
+    ],
+    "isItalian": false,
+    "image": "jalapenos-ripieni-bacon",
     "is_sanitized": true
   }
 ]

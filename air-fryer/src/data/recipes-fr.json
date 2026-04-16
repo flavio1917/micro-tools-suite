@@ -742,81 +742,6 @@
     ]
   },
   {
-    "title": "Supplì Romains au Téléphone (Riz et Tomate)",
-    "slug": "suppli-romains-au-telephone",
-    "emoji": "🍅",
-    "temp": 200,
-    "time": "12",
-    "prep_time": "30",
-    "portions": "4",
-    "ingredients": [
-      "250 g de riz cuit à la sauce tomate ou au ragoût, froid",
-      "1 œuf",
-      "100 g de mozzarella fior di latte, en bâtonnets",
-      "Chapelure",
-      "Huile d'olive en spray"
-    ],
-    "description": "Pourquoi 'au téléphone' ? Parce que la mozzarella fondue s'étire comme un fil entre les deux morceaux ! Des croquettes de riz à la tomate typiques de la street food romaine.",
-    "instructions": [
-      "Prélever deux cuillères à soupe de riz froid. Aplatir le riz dans la paume de la main et insérer deux ou trois bâtonnets de mozzarella au centre.",
-      "Refermer en façonnant une forme ovale et allongée.",
-      "Passer les supplì dans l'œuf battu, puis dans la chapelure. Assurer une adhésion complète de la panure.",
-      "Vaporiser d'huile d'olive. Cuire à 200°C pendant 12 minutes. Retourner à mi-cuisson."
-    ],
-    "tip": "Utiliser une mozzarella bien sèche pour éviter qu'elle ne détrempe le riz et ne fasse éclater le supplì pendant la cuisson.",
-    "isItalian": true,
-    "image": "suppli-romani-telefono",
-    "keywords": [
-      "Œufs/Fromages",
-      "Entrée",
-      "En-cas",
-      "Protéique",
-      "Végétarien",
-      "Rapide",
-      "suppli al telefono",
-      "croquettes riz",
-      "snack romain"
-    ]
-  },
-  {
-    "title": "Mozzarella in Carrozza (Sandwich Doré au Fromage)",
-    "slug": "mozzarella-in-carrozza",
-    "emoji": "🍞",
-    "temp": 190,
-    "time": "10",
-    "prep_time": "10",
-    "portions": "2",
-    "ingredients": [
-      "Pain de mie : 4 tranches",
-      "Mozzarella fior di latte : 150 g",
-      "Œufs : 2",
-      "Chapelure",
-      "Lait",
-      "Sel",
-      "Huile en spray"
-    ],
-    "description": "Le nec plus ultra du réconfort italien : des sandwichs de pain de mie généreusement farcis de mozzarella, panés et dorés à l'airfryer pour un résultat croustillant et un cœur incroyablement filant.",
-    "instructions": [
-      "Retirer les bords du pain. Placer une tranche de mozzarella entre deux tranches de pain et presser fermement les bords pour sceller.",
-      "Tremper rapidement les bords du sandwich dans le lait. Passer ensuite le sandwich dans l'œuf battu, puis dans la chapelure.",
-      "Vaporiser d'huile les deux faces du sandwich.",
-      "Cuire à 190°C pendant 10 minutes. Retourner à mi-cuisson pour un dorage uniforme."
-    ],
-    "tip": "Pour une variante, ajouter un filet d'anchois ou une tranche de jambon blanc avec la mozzarella.",
-    "isItalian": true,
-    "image": "mozzarella-in-carrozza",
-    "keywords": [
-      "Œufs/Fromages",
-      "Antipasto",
-      "Snack",
-      "Protéique",
-      "Végétarien",
-      "mozzarella in carrozza",
-      "beignet de fromage",
-      "street food italienne"
-    ]
-  },
-  {
     "title": "Poivrons Farcis à la Viande (Cuits à la Perfection en 25 Min)",
     "slug": "poivrons-farcis",
     "emoji": "🫑",
@@ -943,7 +868,7 @@
     "instructions": [
       "Nettoyer les artichauts : retirer les feuilles extérieures les plus dures et couper les pointes. Les immerger dans une eau citronnée.",
       "Sécher soigneusement les artichauts. Les tapoter, tige vers le haut, sur un plan de travail pour ouvrir les feuilles.",
-      "Hacher l'ail, le persil et la menthe. Insérer ce hachis au centre des artichauts. Saler, poivrer et arroser d'un filet d'huile d'olive.",
+      "Hacher l'ail, le persil et la menthe. Insérer ce hachis au centre des artichauts. Saler, poivrer et arroser d'un filet d'huile d'olive le centre et les feuilles extérieures.",
       "Placer les artichauts, tige vers le haut, dans le panier de cuisson. Cuire à 180°C pendant 15 minutes."
     ],
     "tip": "Le séchage des artichauts doit être parfait. Toute eau résiduelle empêchera les feuilles de frire et provoquera une cuisson à la vapeur.",
@@ -3355,199 +3280,6 @@
     ],
     "isItalian": true,
     "image": "hamburger-classico"
-  },
-  {
-    "slug": "hamburger-deluxe",
-    "title": "Hamburger de Bœuf Deluxe (Pain Grillé)",
-    "emoji": "🍔",
-    "temp": 200,
-    "time": "8",
-    "prep_time": "25",
-    "portions": "4",
-    "ingredients": [
-      "650 g de viande de bœuf hachée",
-      "4 pains à burger aux graines de sésame",
-      "2 tomates, coupées en tranches",
-      "Feuilles de laitue",
-      "1 gousse d'ail, hachée",
-      "20 ml de sauce soja",
-      "Huile",
-      "Sel"
-    ],
-    "description": "L'expérience burger ultime : une viande parfaitement rôtie surmontée de fromage fondant, le tout dans un pain brioché toasté juste ce qu'il faut par la circulation d'air chaud.",
-    "instructions": [
-      "Assaisonner la viande hachée avec l'ail haché, la sauce soja, un filet d'huile et du sel.",
-      "Mélanger et former quatre hamburgers.",
-      "Cuire les hamburgers à 200°C jusqu'à la coloration désirée.",
-      "Retirer la viande et la maintenir au chaud. Griller les pains coupés en deux.",
-      "Assembler les hamburgers en superposant laitue, tranches de tomate et viande sur les bases de pain. Servir immédiatement."
-    ],
-    "source": "Tefal",
-    "tip": "Griller les pains pendant que la viande repose.",
-    "keywords": [
-      "Viande",
-      "Plat principal",
-      "Snack",
-      "Protéique",
-      "cheeseburger",
-      "burger gourmand"
-    ],
-    "isItalian": true,
-    "image": "hamburger-deluxe"
-  },
-  {
-    "slug": "galettes-de-dinde-asiatiques",
-    "title": "Burgers de Dinde (Saveurs Asiatiques)",
-    "emoji": "🍔",
-    "temp": 200,
-    "time": "11",
-    "prep_time": "35",
-    "portions": "4",
-    "ingredients": [
-      "450 g de dinde hachée maigre",
-      "Gingembre râpé et 2 gousses d'ail hachées",
-      "35 g de sauce Hoisin et sauce soja",
-      "90 g de chapelure grossière",
-      "Coleslaw (chou, carotte, ciboulette) pour servir"
-    ],
-    "description": "Une alternative légère et originale à la viande rouge. Ces galettes de dinde parfumées au gingembre et à la coriandre sont servies avec une salade croquante pour un repas frais et healthy.",
-    "instructions": [
-      "Dans un grand bol, mélanger la dinde hachée, le gingembre, l'ail et les sauces.",
-      "Incorporer la chapelure et pétrir jusqu'à l'obtention d'un mélange homogène.",
-      "Diviser le mélange et former des hamburgers de taille égale.",
-      "Réfrigérer les hamburgers pour les raffermir.",
-      "Cuire à 200°C pendant 11 minutes, en retournant à mi-cuisson. Servir avec le coleslaw."
-    ],
-    "source": "Cosori",
-    "tip": "La réfrigération des hamburgers avant la cuisson aide à maintenir leur forme.",
-    "keywords": [
-      "Viande",
-      "Plat principal",
-      "Protéique",
-      "LowCarb",
-      "burger dinde",
-      "healthy burger",
-      "saveurs d'asie"
-    ],
-    "isItalian": false,
-    "image": "hamburger-tacchino-asiatico"
-  },
-  {
-    "slug": "hot-dog-newyorkais",
-    "title": "Hot-Dog New-Yorkais au Cheddar Fondu",
-    "emoji": "🌭",
-    "temp": 170,
-    "time": "5",
-    "prep_time": "25",
-    "portions": "4",
-    "ingredients": [
-      "4 pains à hot-dog",
-      "4 saucisses de porc",
-      "1 oignon rouge, émincé",
-      "4 tranches de cheddar",
-      "60 ml de ketchup",
-      "Cornichons en dés"
-    ],
-    "description": "Retrouvez l'ambiance des rues de Manhattan ! Une saucisse grillée, des oignons caramélisés et du cheddar coulant dans un pain moelleux, le tout préparé en un clin d'œil.",
-    "instructions": [
-      "Pocher les saucisses dans l'eau bouillante pendant quelques minutes.",
-      "Faire suer l'oignon rouge émincé dans une poêle.",
-      "Ouvrir les pains en deux dans le sens de la longueur et garnir l'intérieur de ketchup.",
-      "Insérer la saucisse dans le pain. Ajouter les oignons et les cornichons. Recouvrir avec une tranche de cheddar.",
-      "Cuire à 170°C pendant 5 minutes, jusqu'à ce que le fromage soit fondu et le pain chaud."
-    ],
-    "source": "Tefal",
-    "tip": "Pocher les saucisses dans l'eau bouillante avant de composer les hot-dogs.",
-    "keywords": [
-      "Viande",
-      "Plat principal",
-      "Snack",
-      "Protéique",
-      "Rapide",
-      "hot-dog",
-      "street food US",
-      "cheddar"
-    ],
-    "isItalian": false,
-    "image": "hot-dog-newyorkese"
-  },
-  {
-    "slug": "rouleaux-porc-jambon",
-    "title": "Roulés de Porc au Jambon Cru et Mozzarella",
-    "emoji": "🥓",
-    "temp": 200,
-    "time": "10",
-    "prep_time": "10",
-    "portions": "4",
-    "ingredients": [
-      "450 g de filet de porc, en escalopes fines",
-      "8 tranches de jambon cru",
-      "200 g d'épinards frais",
-      "4 tranches de mozzarella ferme",
-      "20 g de tomates séchées",
-      "15 ml d'huile d'olive"
-    ],
-    "description": "Une recette raffinée où le filet de porc s'entoure d'épinards et de mozzarella, le tout enveloppé dans une tranche de jambon cru qui devient ultra-croustillante à la cuisson.",
-    "instructions": [
-      "Aplatir les escalopes de filet de porc.",
-      "Superposer les tranches de jambon cru sur un plan de travail et déposer les escalopes de porc par-dessus.",
-      "Garnir le centre avec les feuilles d'épinards, la mozzarella et les tomates séchées.",
-      "Rouler fermement pour former des cylindres compacts. Ficeler si nécessaire.",
-      "Badigeonner d'huile d'olive. Cuire à 200°C pendant 10 minutes, jusqu'à ce que l'extérieur soit croustillant."
-    ],
-    "source": "Cosori",
-    "tip": "Utiliser de la ficelle de cuisine pour maintenir les roulés fermés durant la cuisson.",
-    "keywords": [
-      "Viande",
-      "Plat principal",
-      "Protéique",
-      "LowCarb",
-      "involtini",
-      "roulé de porc",
-      "jambon croustillant"
-    ],
-    "isItalian": true,
-    "image": "involtini-maiale-prosciutto"
-  },
-  {
-    "slug": "jalapenos-farcis-bacon",
-    "title": "Jalapeños au Bacon (L'Apéro qui Pique !)",
-    "emoji": "🌶",
-    "temp": 160,
-    "time": "16",
-    "prep_time": "10",
-    "portions": "4",
-    "ingredients": [
-      "12 piments jalapeño",
-      "230 g de porc haché",
-      "120 g de cheddar râpé",
-      "12 tranches de bacon",
-      "Sel",
-      "Poivre noir du moulin"
-    ],
-    "description": "Le snack ultime des amateurs de sensations fortes. Des piments jalapeños farcis au cheddar et au porc, enrubannés de bacon fumé pour un résultat croquant, fondant et piquant.",
-    "instructions": [
-      "Couper les piments en deux sur la longueur. Retirer les graines et les membranes blanches.",
-      "Dans un bol, mélanger le porc haché avec le cheddar râpé. Saler et poivrer.",
-      "Farcir chaque moitié de piment avec le mélange.",
-      "Enrouler chaque piment farci d'une tranche de bacon. Fixer avec un cure-dent si nécessaire.",
-      "Placer les piments dans le panier de cuisson. Cuire à 160°C pendant 16 minutes, jusqu'à ce que le bacon soit croustillant."
-    ],
-    "source": "Cosori",
-    "tip": "Pour un piquant moins prononcé, retirer soigneusement toutes les graines et les membranes blanches des piments. À mi-cuisson, retourner les piments pour une cuisson uniforme.",
-    "keywords": [
-      "Viande",
-      "Légumes",
-      "Œufs/Fromages",
-      "Apéritif",
-      "Snack",
-      "Protéiné",
-      "LowCarb",
-      "jalapeno poppers",
-      "bacon"
-    ],
-    "isItalian": true,
-    "image": "jalapenos-ripieni-bacon"
   },
   {
     "slug": "kofta-boeuf-coriandre",
@@ -6303,7 +6035,10 @@
       "hash browns",
       "brunch",
       "galettes"
-    ]
+    ],
+    "isItalian": false,
+    "image": "frittelle-di-patate-hash-brown",
+    "is_sanitized": true
   },
   {
     "slug": "pommes-de-terre-hasselback",
@@ -7162,7 +6897,7 @@
       "healthy snack"
     ],
     "isItalian": true,
-    "image": "pannocchie-mais-ninja"
+    "image": "pannocchie-mais"
   },
   {
     "slug": "pizzettes-fiesta",
@@ -7754,5 +7489,263 @@
     ],
     "isItalian": true,
     "image": "chips-zucchine-parmigiano"
+  },
+  {
+    "title": "Supplì Romains au Téléphone",
+    "slug": "roman-suppli-al-telefono",
+    "emoji": "🍅",
+    "temp": 200,
+    "time": "12",
+    "prep_time": "30",
+    "portions": "4",
+    "ingredients": [
+      "250g de riz cuit et froid à la sauce tomate ou ragù",
+      "1 gros œuf, battu",
+      "100g de mozzarella à faible humidité, coupée en lanières",
+      "Chapelure pour paner",
+      "Huile d'olive en spray"
+    ],
+    "description": "Nommés ainsi pour le 'fil de téléphone' de mozzarella qui s'étire quand on les coupe. Ces croquettes de riz romaines sont un grand classique de la Ville Éternelle.",
+    "instructions": [
+      "Prenez environ deux cuillères à soupe de riz froid. Aplatissez-le dans le creux de la main et placez la mozzarella au centre.",
+      "Refermez le riz sur le fromage pour former une croquette ovale.",
+      "Passez chaque supplì dans l'œuf battu puis dans la chapelure pour bien les enrober.",
+      "Vaporisez d'huile d'olive. Faites cuire à 200°C pendant 12 minutes, en les retournant à mi-cuisson."
+    ],
+    "tip": "Utilisez de la mozzarella à faible humidité (type bloc pour pizza) pour éviter que les supplì ne s'ouvrent.",
+    "isItalian": true,
+    "image": "suppli-romani-telefono",
+    "keywords": [
+      "Œufs/Fromages",
+      "Apéritif",
+      "Snack",
+      "Végétarien"
+    ],
+    "is_sanitized": true
+  },
+  {
+    "title": "Mozzarella in Carrozza (Sandwich Doré)",
+    "slug": "fried-mozzarella-sandwich",
+    "emoji": "🍞",
+    "temp": 190,
+    "time": "10",
+    "prep_time": "10",
+    "portions": "2",
+    "ingredients": [
+      "4 tranches de pain de mie épais",
+      "150g de mozzarella fraîche",
+      "2 gros œufs",
+      "Chapelure, au besoin",
+      "Lait, au besoin",
+      "Sel",
+      "Huile en spray"
+    ],
+    "description": "Un grand classique de la street food napolitaine. D'épaisses tranches de pain renferment un cœur de mozzarella fondante, pour un extérieur croustillant sans bain d'huile.",
+    "instructions": [
+      "Retirez la croûte du pain. Placez une tranche épaisse de mozzarella entre deux tranches de pain et pressez fermement les bords.",
+      "Trempez brièvement les bords scellés dans le lait. Plongez le sandwich dans l'œuf battu, puis enrobez-le de chapelure.",
+      "Vaporisez uniformément d'huile les deux faces du sandwich.",
+      "Cuisez à 190°C pendant 10 minutes. Retournez après 5 minutes pour une dorure parfaite."
+    ],
+    "tip": "Pour plus de saveur, ajoutez un filet d'anchois ou une tranche de jambon blanc avec la mozzarella.",
+    "isItalian": true,
+    "image": "mozzarella-in-carrozza",
+    "keywords": [
+      "Œufs/Fromages",
+      "Apéritif",
+      "Snack",
+      "Protéiné",
+      "Végétarien",
+      "Rapide"
+    ],
+    "is_sanitized": true
+  },
+  {
+    "slug": "deluxe-hamburger",
+    "title": "Hamburger de Bœuf Deluxe",
+    "emoji": "🍔",
+    "temp": 200,
+    "time": "8",
+    "prep_time": "25",
+    "portions": "4",
+    "ingredients": [
+      "650g de bœuf haché",
+      "4 pains à hamburger au sésame",
+      "2 grosses tomates, en tranches",
+      "Feuilles de laitue",
+      "1 gousse d'ail, hachée",
+      "20ml de sauce soja",
+      "1 cuillère à soupe d'huile végétale",
+      "Sel au goût"
+    ],
+    "description": "L'expérience ultime du burger maison. La chaleur tournante garantit une viande parfaitement saisie et un pain toasté et beurré authentique.",
+    "instructions": [
+      "Dans un saladier, mélangez la viande hachée, l'ail, la sauce soja, l'huile et le sel.",
+      "Mélangez de façon homogène et façonnez quatre steaks.",
+      "Préchauffez à 200°C. Placez les steaks dans le panier et cuisez 8 à 12 minutes.",
+      "Retirez la viande et laissez reposer. Placez les pains coupés dans le panier et toastez 2 minutes.",
+      "Montez les burgers avec la laitue, la tomate et la viande. Servez immédiatement."
+    ],
+    "source": "Tefal",
+    "tip": "Faites dorer les pains pendant que la viande repose pour une texture optimale.",
+    "keywords": [
+      "Viande",
+      "Plat Principal",
+      "Protéiné",
+      "Rapide"
+    ],
+    "isItalian": false,
+    "image": "hamburger-deluxe",
+    "is_sanitized": true
+  },
+  {
+    "slug": "asian-turkey-burgers",
+    "title": "Burgers de Dinde (Saveurs Asiatiques)",
+    "emoji": "🍔",
+    "temp": 200,
+    "time": "11",
+    "prep_time": "35",
+    "portions": "4",
+    "ingredients": [
+      "450g de dinde hachée maigre",
+      "1 cuillère à café de gingembre râpé",
+      "2 gousses d'ail, hachées",
+      "35g de sauce Hoisin",
+      "1 cuillère à soupe de sauce soja",
+      "90g de chapelure panko",
+      "4 pains à burger",
+      "Salade de chou et carottes (coleslaw), pour garnir"
+    ],
+    "description": "Une touche légère et parfumée sur un classique. Ces steaks de dinde sont parfumés au gingembre et à la sauce soja, avec un cœur moelleux et une croûte savoureuse.",
+    "instructions": [
+      "Dans un grand bol, mélangez la dinde hachée, le gingembre, l'ail, la sauce Hoisin et la sauce soja.",
+      "Ajoutez le panko et mélangez bien. Évitez de trop pétrir.",
+      "Façonnez le mélange en 4 steaks uniformes.",
+      "Laissez reposer au réfrigérateur au moins 30 minutes pour qu'ils tiennent bien à la cuisson.",
+      "Cuisez à 200°C pendant 11 minutes, en retournant à mi-cuisson. Servez avec le coleslaw."
+    ],
+    "source": "Cosori",
+    "tip": "Réfrigérer la viande avant cuisson est essentiel pour éviter que les burgers ne se cassent.",
+    "keywords": [
+      "Viande",
+      "Plat Principal",
+      "Protéiné",
+      "Rapide",
+      "Asiatique"
+    ],
+    "isItalian": false,
+    "image": "hamburger-tacchino-asiatico",
+    "is_sanitized": true
+  },
+  {
+    "slug": "new-york-style-hot-dog",
+    "title": "Hot-Dog New-Yorkais au Cheddar",
+    "emoji": "🌭",
+    "temp": 170,
+    "time": "5",
+    "prep_time": "25",
+    "portions": "4",
+    "ingredients": [
+      "4 pains à hot-dog",
+      "4 grandes saucisses de porc",
+      "1 petit oignon rouge, émincé",
+      "4 tranches de fromage Cheddar",
+      "Ketchup",
+      "Cornichons en dés"
+    ],
+    "description": "Faites venir la Grosse Pomme à la maison. Cette méthode garantit des saucisses croquantes, du fromage fondu et un pain chaud et moelleux.",
+    "instructions": [
+      "Faites bouillir les saucisses quelques minutes jusqu'à ce qu'elles soient tendres.",
+      "Faites revenir l'oignon rouge dans une poêle à feu vif.",
+      "Ouvrez les pains dans la longueur et tartinez de ketchup.",
+      "Placez une saucisse dans chaque pain. Ajoutez l'oignon, les cornichons et une tranche de Cheddar.",
+      "Chauffez les hot-dogs à 170°C pendant 5 minutes, jusqu'à ce que le fromage soit fondu."
+    ],
+    "source": "Tefal",
+    "tip": "Pré-cuisez les saucisses à l'eau bouillante avant de monter les hot-dogs pour un résultat parfait.",
+    "keywords": [
+      "Viande",
+      "Plat Principal",
+      "Snack",
+      "Protéiné",
+      "Rapide"
+    ],
+    "isItalian": false,
+    "image": "hot-dog-newyorkese",
+    "is_sanitized": true
+  },
+  {
+    "slug": "pork-and-prosciutto-rolls",
+    "title": "Roulés de Porc au Jambon Cru",
+    "emoji": "🥓",
+    "temp": 200,
+    "time": "10",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "450g de filet mignon de porc, aplati",
+      "8 tranches de jambon cru (prosciutto)",
+      "200g d'épinards frais",
+      "4 tranches de mozzarella ferme",
+      "20g de tomates séchées",
+      "1 cuillère à soupe d'huile d'olive"
+    ],
+    "description": "Sophistiqué et savoureux. Le filet de porc tendre est roulé avec des épinards et de la mozzarella, puis enveloppé de jambon cru qui devient divinement croustillant.",
+    "instructions": [
+      "Aplatissez les morceaux de porc pour avoir une épaisseur uniforme.",
+      "Disposez les tranches de jambon en les chevauchant sur le plan de travail. Placez le porc par-dessus.",
+      "Disposez les épinards, la mozzarella et les tomates séchées au centre.",
+      "Roulez fermement le tout en forme de cylindre. Ficelez si nécessaire.",
+      "Badigeonnez d'huile d'olive. Cuisez à 200°C pendant 10 minutes, jusqu'à ce que le jambon soit croustillant."
+    ],
+    "source": "Cosori",
+    "tip": "Ficelez le roulé pour qu'il conserve une forme parfaite pendant la cuisson à l'air chaud.",
+    "keywords": [
+      "Viande",
+      "Plat Principal",
+      "Protéiné",
+      "Low Carb",
+      "Rapide"
+    ],
+    "isItalian": true,
+    "image": "involtini-maiale-prosciutto",
+    "is_sanitized": true
+  },
+  {
+    "slug": "bacon-wrapped-stuffed-jalapenos",
+    "title": "Jalapeños au Bacon Piquants",
+    "emoji": "🌶",
+    "temp": 160,
+    "time": "16",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "12 piments jalapeños",
+      "230g de porc haché",
+      "120g de fromage Cheddar râpé",
+      "12 tranches de bacon (poitrine fumée)",
+      "Sel et poivre noir au goût"
+    ],
+    "description": "La touche épicée parfaite. Ces jalapeños sont farcis d'un mélange de porc et de cheddar, puis enroulés de bacon fumé cuit jusqu'à devenir ultra-croustillant.",
+    "instructions": [
+      "Coupez les piments en deux dans la longueur et retirez les graines et les membranes blanches.",
+      "Dans un bol, mélangez le porc haché, le cheddar, le sel et le poivre.",
+      "Remplissez chaque moitié de piment avec la farce.",
+      "Enroulez chaque moitié avec une tranche de bacon. Utilisez un cure-dent pour fixer si besoin.",
+      "Placez-les dans le panier et cuisez jusqu'à ce que le bacon soit croustillant et la farce cuite à cœur."
+    ],
+    "source": "Cosori",
+    "tip": "Pour réduire le piquant, retirez soigneusement toutes les graines et les filaments blancs. Secouez le panier à mi-cuisson.",
+    "keywords": [
+      "Viande",
+      "Apéritif",
+      "Snack",
+      "Protéiné",
+      "Low Carb",
+      "Rapide"
+    ],
+    "isItalian": false,
+    "image": "jalapenos-ripieni-bacon",
+    "is_sanitized": true
   }
 ]

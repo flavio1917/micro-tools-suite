@@ -27,8 +27,7 @@ const translations = {
     noResultsTitle: "Nessuna ricetta trovata",
     noResultsDesc: "Prova a cercare un titolo diverso o rimuovi i filtri applicati.",
     resetBtn: "Mostra tutte le ricette",
-    // Etichette Filtri Rapidi
-    all: "🍽️ Tutte", meat: "🥩 Carne", fish: "🐟 Pesce", veg: "🥦 Veg", sweet: "🥧 Dolci", fast: "⏱️ Veloci (<15m)", light: "🥗 Leggeri (<300)"
+    all: "🍽️ Tutte", meat: "🥩 Carne", fish: "🐟 Pesce", veg: "🥦 Veg", sweet: "🥧 Dolci", fast: "⏱️ Veloci (≤15m)", light: "🥗 Leggeri (≤300)"
   },
   en: {
     title: "What do you want to cook today?",
@@ -38,7 +37,7 @@ const translations = {
     noResultsTitle: "No recipes found",
     noResultsDesc: "Try searching for a different title or clear the filters.",
     resetBtn: "Show all recipes",
-    all: "🍽️ All", meat: "🥩 Meat", fish: "🐟 Fish", veg: "🥦 Veg", sweet: "🥧 Sweets", fast: "⏱️ Fast (<15m)", light: "🥗 Light (<300)"
+    all: "🍽️ All", meat: "🥩 Meat", fish: "🐟 Fish", veg: "🥦 Veg", sweet: "🥧 Sweets", fast: "⏱️ Fast (≤15m)", light: "🥗 Light (≤300)"
   },
   es: {
     title: "¿Qué quieres cocinar hoy?",
@@ -48,7 +47,7 @@ const translations = {
     noResultsTitle: "No se encontraron recetas",
     noResultsDesc: "Prueba a buscar un título diferente o quita los filtros.",
     resetBtn: "Mostrar todas las recetas",
-    all: "🍽️ Todas", meat: "🥩 Carne", fish: "🐟 Pescado", veg: "🥦 Veg", sweet: "🥧 Dulces", fast: "⏱️ Rápidas (<15m)", light: "🥗 Ligeras (<300)"
+    all: "🍽️ Todas", meat: "🥩 Carne", fish: "🐟 Pescado", veg: "🥦 Veg", sweet: "🥧 Dulces", fast: "⏱️ Rápidas (≤15m)", light: "🥗 Ligeras (≤300)"
   },
   fr: {
     title: "Que voulez-vous cuisiner aujourd'hui ?",
@@ -58,15 +57,14 @@ const translations = {
     noResultsTitle: "Aucune recette trouvée",
     noResultsDesc: "Essayez un autre mot-clé ou désactivez les filtres.",
     resetBtn: "Afficher toutes les recettes",
-    all: "🍽️ Toutes", meat: "🥩 Viande", fish: "🐟 Poisson", veg: "🥦 Végé", sweet: "🥧 Desserts", fast: "⏱️ Rapides (<15m)", light: "🥗 Légères (<300)"
+    all: "🍽️ Toutes", meat: "🥩 Viande", fish: "🐟 Poisson", veg: "🥦 Végé", sweet: "🥧 Desserts", fast: "⏱️ Rapides (≤15m)", light: "🥗 Légères (≤300)"
   }
 };
 
 const t = translations[lang as keyof typeof translations] || translations.it;
 
-// HELPER: Categorizzazione automatica in base alle keyword
 const getCategory = (recipe: any) => {
-  const kw = (recipe.keywords || []).map((k: string) => k.toLowerCase());
+  const kw = Array.isArray(recipe.keywords) ? recipe.keywords.map((k: string) => k.toLowerCase()) : [];
   if (kw.some((k: string) => k.includes('carne') || k.includes('pollo') || k.includes('meat') || k.includes('viande'))) return 'meat';
   if (kw.some((k: string) => k.includes('pesce') || k.includes('fish') || k.includes('poisson'))) return 'fish';
   if (kw.some((k: string) => k.includes('veg') || k.includes('verdure') || k.includes('vegetariano') || k.includes('vegan'))) return 'veg';
@@ -74,7 +72,6 @@ const getCategory = (recipe: any) => {
   return 'other';
 };
 
-// HELPER: Rilevamento ricette veloci
 const isFast = (recipe: any) => {
   const timeStr = recipe.time ? recipe.time.toString() : "0";
   const numMatch = timeStr.match(/\d+/);
@@ -82,18 +79,18 @@ const isFast = (recipe: any) => {
 };
 ---
 
-<section id="ricettario" class="py-12 scroll-mt-20 overflow-hidden">
-  <div class="max-w-6xl mx-auto px-4">
+<section id="ricettario-container" class="scroll-mt-20 overflow-hidden w-full">
+  <div class="w-full">
     
-    <div class="text-center w-full max-w-5xl mx-auto mb-12 space-y-6">
-      <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight">
+    <div class="text-center w-full max-w-5xl mx-auto mb-10 space-y-4 md:space-y-6">
+      <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
         {t.title}
       </h2>
-      <p class="text-slate-400">
-        {t.subtitlePre}<span class="text-blue-400 font-bold">{recipes.length}</span>{t.subtitlePost}
+      <p class="text-slate-600 dark:text-slate-400">
+        {t.subtitlePre}<span class="text-orange-600 dark:text-orange-400 font-black">{recipes.length}</span>{t.subtitlePost}
       </p>
 
-      <div class="bg-slate-800/60 backdrop-blur-xl border border-slate-700/60 rounded-3xl p-4 md:p-8 shadow-2xl relative z-30">
+      <div class="bg-white/80 dark:bg-slate-800/60 backdrop-blur-xl border border-slate-200 dark:border-slate-700/60 rounded-3xl p-4 md:p-8 shadow-xl dark:shadow-2xl relative z-30">
         
         <div class="relative mb-6">
           <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -103,18 +100,18 @@ const isFast = (recipe: any) => {
             type="text" 
             id="recipe-search-input" 
             placeholder={t.placeholder}
-            class="block w-full p-4 pl-12 text-lg bg-slate-900 border border-slate-600 rounded-xl text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none shadow-inner transition-all font-medium"
+            class="block w-full p-4 pl-12 text-lg bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-xl text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none shadow-inner transition-all font-medium"
           >
         </div>
 
         <div class="flex overflow-x-auto snap-x hide-scrollbar items-center justify-start md:justify-center gap-2 md:gap-3 pb-2 -mx-2 px-2 md:mx-0 md:px-0 md:overflow-x-visible md:flex-wrap" id="filter-pills">
-          <button data-filter="all" class="filter-btn active whitespace-nowrap flex-shrink-0 snap-start bg-blue-600 text-white border border-blue-500 px-4 py-2 rounded-full text-sm font-bold transition-all shadow-[0_0_15px_rgba(37,99,235,0.4)] hover:scale-105">{t.all}</button>
-          <button data-filter="meat" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.meat}</button>
-          <button data-filter="fish" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.fish}</button>
-          <button data-filter="veg" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.veg}</button>
-          <button data-filter="sweet" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105">{t.sweet}</button>
-          <button data-filter="fast" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-amber-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105 hover:text-amber-400">{t.fast}</button>
-          <button data-filter="light" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-900 text-slate-300 border border-slate-700 hover:border-emerald-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-800 hover:scale-105 hover:text-emerald-400">{t.light}</button>
+          <button data-filter="all" class="filter-btn active whitespace-nowrap flex-shrink-0 snap-start bg-orange-600 text-white border-orange-500 shadow-[0_0_15px_rgba(234,88,12,0.4)] px-4 py-2 rounded-full text-sm font-bold transition-all hover:scale-105">{t.all}</button>
+          <button data-filter="meat" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.meat}</button>
+          <button data-filter="fish" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.fish}</button>
+          <button data-filter="veg" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.veg}</button>
+          <button data-filter="sweet" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.sweet}</button>
+          <button data-filter="fast" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-amber-400 dark:hover:border-amber-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105 hover:text-amber-600 dark:hover:text-amber-400">{t.fast}</button>
+          <button data-filter="light" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105 hover:text-emerald-600 dark:hover:text-emerald-400">{t.light}</button>
         </div>
 
       </div>
@@ -133,7 +130,8 @@ const isFast = (recipe: any) => {
         }
 
         const authKeyword = isAuth ? "italia italiana autentica authentic italian authentique auténtica" : "";
-        const combinedKeywords = `${recipe.keywords || ''} ${authKeyword}`.trim();
+        const keywordsString = Array.isArray(recipe.keywords) ? recipe.keywords.join(' ') : (recipe.keywords || '');
+        const combinedKeywords = `${keywordsString} ${authKeyword}`.trim();
 
         const cat = getCategory(recipe);
         const fast = isFast(recipe);
@@ -153,11 +151,11 @@ const isFast = (recipe: any) => {
       })}
     </div>
 
-    <div id="no-results" class="hidden text-center py-16 bg-slate-800/40 border border-slate-700/60 rounded-3xl mt-6">
+    <div id="no-results" class="hidden text-center py-16 bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 rounded-3xl mt-6 shadow-sm">
       <span class="text-6xl block mb-4 opacity-50">😕</span>
-      <h3 class="text-2xl font-bold text-white">{t.noResultsTitle}</h3>
-      <p class="text-slate-400 mt-2 mb-6">{t.noResultsDesc}</p>
-      <button id="reset-search" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-white font-bold hover:bg-slate-700 hover:text-blue-400 transition-all border border-slate-600 shadow-lg">
+      <h3 class="text-2xl font-bold text-slate-900 dark:text-white">{t.noResultsTitle}</h3>
+      <p class="text-slate-600 dark:text-slate-400 mt-2 mb-6">{t.noResultsDesc}</p>
+      <button id="reset-search" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white dark:bg-slate-800 text-slate-900 dark:text-white font-bold hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-orange-600 dark:hover:text-orange-400 transition-all border border-slate-300 dark:border-slate-600 shadow-sm">
         {t.resetBtn}
       </button>
     </div>
@@ -167,52 +165,62 @@ const isFast = (recipe: any) => {
 
 <style>
   .hide-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   .hide-scrollbar::-webkit-scrollbar {
-    display: none; /* Chrome, Safari and Opera */
+    display: none;
   }
 </style>
 
 <script is:inline>
   document.addEventListener('astro:page-load', () => {
-    const searchInput = document.getElementById('recipe-search-input');
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const grid = document.getElementById('recipes-grid');
-    const noResults = document.getElementById('no-results');
-    const resetBtn = document.getElementById('reset-search');
+    // 1. DOM SCOPING E GUARDIA ANTI-DOPPIA INIZIALIZZAZIONE
+    const container = document.getElementById('ricettario-container');
+    if (!container || container.dataset.initialized === 'true') return;
+    container.dataset.initialized = 'true';
+
+    const searchInput = container.querySelector('#recipe-search-input');
+    const filterBtns = container.querySelectorAll('.filter-btn');
+    const grid = container.querySelector('#recipes-grid');
+    const noResults = container.querySelector('#no-results');
+    const resetBtn = container.querySelector('#reset-search');
     
-    const wrappers = Array.from(document.querySelectorAll('.recipe-wrapper'));
+    const wrappers = Array.from(container.querySelectorAll('.recipe-wrapper'));
     wrappers.forEach((w, index) => w.setAttribute('data-original-index', index));
 
     let currentSearch = "";
     let currentFilter = "all";
 
+    // 2. NORMALIZZAZIONE TESTO (Rimuove accenti e rende minuscolo)
+    const normalizeText = (str) => {
+      if (!str) return "";
+      return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    };
+
     function updateDisplay() {
-      const rawQuery = currentSearch.toLowerCase().trim();
+      const rawQuery = normalizeText(currentSearch).trim();
       const searchTerms = rawQuery.split(/\s+/).filter(t => t.length >= 2);
       let visibleCount = 0;
       let results = [];
 
       wrappers.forEach(wrapper => {
-        const title = (wrapper.getAttribute('data-title') || '').toLowerCase();
-        const slug = (wrapper.getAttribute('data-slug') || '').toLowerCase();
-        const keywords = (wrapper.getAttribute('data-keywords') || '').toLowerCase();
+        const title = normalizeText(wrapper.getAttribute('data-title'));
+        const slug = normalizeText(wrapper.getAttribute('data-slug'));
+        const keywords = normalizeText(wrapper.getAttribute('data-keywords'));
         const category = wrapper.getAttribute('data-category');
         const isFast = wrapper.getAttribute('data-fast') === 'true';
         const kcal = parseInt(wrapper.getAttribute('data-kcal') || "9999", 10);
 
-        // 1. MATCH TESTUALE
+        // MATCH TESTUALE PULITO
         let isTextMatch = true;
         if (searchTerms.length > 0) {
           isTextMatch = searchTerms.every(term => {
-            const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
-            return title.includes(root) || slug.includes(root) || keywords.includes(root);
+            return title.includes(term) || slug.includes(term) || keywords.includes(term);
           });
         }
 
-        // 2. MATCH FILTRO A PILLOLA
+        // MATCH FILTRO (Regola ≤ 300 allineata con l'etichetta)
         let isFilterMatch = false;
         if (currentFilter === 'all') isFilterMatch = true;
         else if (currentFilter === 'fast') isFilterMatch = isFast;
@@ -221,45 +229,31 @@ const isFast = (recipe: any) => {
 
         if (isTextMatch && isFilterMatch) {
           let score = 0;
-          
           if (rawQuery !== "") {
-            try {
-              const exactKeywordRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
-              if (exactKeywordRegex.test(keywords)) score += 200;
-            } catch(e) {}
-            if (keywords.includes(rawQuery)) score += 100;
-            try {
-              const exactTitleRegex = new RegExp('\\b' + rawQuery + '\\b', 'i');
-              if (exactTitleRegex.test(title)) score += 50;
-            } catch(e) {}
-            if (title.includes(rawQuery)) score += 25;
+            if (title.includes(rawQuery)) score += 50;
+            if (keywords.includes(rawQuery)) score += 25;
             searchTerms.forEach(term => {
-              const root = term.length > 4 ? term.substring(0, term.length - 1) : term;
-              if (keywords.includes(root)) score += 10;
-              if (title.includes(root)) score += 5;
+              if (title.includes(term)) score += 10;
             });
           }
-
           results.push({ wrapper: wrapper, score: score, originalIndex: parseInt(wrapper.getAttribute('data-original-index')) });
         } else {
           wrapper.style.display = 'none';
         }
       });
 
-      // ORDINAMENTO
+      // ORDINAMENTO: Solo se c'è una query testuale, altrimenti mantiene l'ordine editoriale
       results.sort((a, b) => {
-        if (b.score !== a.score) return b.score - a.score;
+        if (rawQuery !== "" && b.score !== a.score) return b.score - a.score;
         return a.originalIndex - b.originalIndex;
       });
 
-      // RENDER
       results.forEach(item => {
         grid.appendChild(item.wrapper); 
         item.wrapper.style.display = '';
         visibleCount++;
       });
 
-      // STATO VUOTO
       if (visibleCount === 0) {
         if(grid) grid.style.display = 'none';
         if(noResults) noResults.style.display = 'block';
@@ -279,23 +273,26 @@ const isFast = (recipe: any) => {
       });
     }
 
+    const inactiveClasses = ['bg-slate-100', 'text-slate-700', 'border-slate-200', 'dark:bg-slate-800', 'dark:text-slate-300', 'dark:border-slate-700'];
+    const activeClasses = ['bg-orange-600', 'text-white', 'border-orange-500', 'shadow-[0_0_15px_rgba(234,88,12,0.4)]', 'active'];
+    const activeLightClasses = ['bg-emerald-500', 'text-white', 'border-emerald-400', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]', 'active'];
+
     filterBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
-        // Aggiorna stile bottoni
         filterBtns.forEach(b => {
-          b.classList.remove('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active', 'bg-emerald-600', 'border-emerald-500', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]');
-          b.classList.add('bg-slate-900', 'text-slate-300', 'border-slate-700');
+          b.classList.remove(...activeClasses, ...activeLightClasses);
+          b.classList.add(...inactiveClasses);
         });
+        
         const target = e.currentTarget;
         const isLightFilter = target.getAttribute('data-filter') === 'light';
         
-        target.classList.remove('bg-slate-900', 'text-slate-300', 'border-slate-700');
+        target.classList.remove(...inactiveClasses);
         
-        // Stile differente per il bottone Leggeri
         if (isLightFilter) {
-          target.classList.add('bg-emerald-600', 'text-white', 'border-emerald-500', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]', 'active');
+          target.classList.add(...activeLightClasses);
         } else {
-          target.classList.add('bg-blue-600', 'text-white', 'border-blue-500', 'shadow-[0_0_15px_rgba(37,99,235,0.4)]', 'active');
+          target.classList.add(...activeClasses);
         }
 
         currentFilter = target.getAttribute('data-filter');
@@ -307,8 +304,7 @@ const isFast = (recipe: any) => {
       resetBtn.addEventListener('click', () => {
         if (searchInput) searchInput.value = '';
         currentSearch = "";
-        
-        const btnAll = document.querySelector('[data-filter="all"]');
+        const btnAll = container.querySelector('[data-filter="all"]');
         if(btnAll) btnAll.click();
         else {
           currentFilter = "all";
