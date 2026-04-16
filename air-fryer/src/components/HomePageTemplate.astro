@@ -44,53 +44,6 @@ const heroContent = {
   }
 };
 
-// DIZIONARIO BLOCCHI EDITORIALI (Categorie Statiche)
-const categoriesData = {
-  it: {
-    title: "Esplora per Categoria",
-    items: [
-      { name: "Pollo e Carni", icon: "🍗", link: "#ricettario-container", filterId: "meat" },
-      { name: "Patate e Contorni", icon: "🍟", link: "#ricettario-container", filterId: "veg" },
-      { name: "Pesce", icon: "🐟", link: "#ricettario-container", filterId: "fish" },
-      { name: "Dolci", icon: "🧁", link: "#ricettario-container", filterId: "sweet" }
-    ]
-  },
-  en: {
-    title: "Explore by Category",
-    items: [
-      { name: "Chicken & Meat", icon: "🍗", link: "#ricettario-container", filterId: "meat" },
-      { name: "Potatoes & Sides", icon: "🍟", link: "#ricettario-container", filterId: "veg" },
-      { name: "Seafood", icon: "🐟", link: "#ricettario-container", filterId: "fish" },
-      { name: "Desserts", icon: "🧁", link: "#ricettario-container", filterId: "sweet" }
-    ]
-  },
-  es: {
-    title: "Explorar por Categoría",
-    items: [
-      { name: "Pollo y Carnes", icon: "🍗", link: "#ricettario-container", filterId: "meat" },
-      { name: "Patatas y Guarniciones", icon: "🍟", link: "#ricettario-container", filterId: "veg" },
-      { name: "Pescado", icon: "🐟", link: "#ricettario-container", filterId: "fish" },
-      { name: "Postres", icon: "🧁", link: "#ricettario-container", filterId: "sweet" }
-    ]
-  },
-  fr: {
-    title: "Explorer par Catégorie",
-    items: [
-      { name: "Poulet et Viandes", icon: "🍗", link: "#ricettario-container", filterId: "meat" },
-      { name: "Pommes de terre et Accomp." , icon: "🍟", link: "#ricettario-container", filterId: "veg" },
-      { name: "Poisson", icon: "🐟", link: "#ricettario-container", filterId: "fish" },
-      { name: "Desserts", icon: "🧁", link: "#ricettario-container", filterId: "sweet" }
-    ]
-  }
-};
-
-const featuredData = {
-  it: { title: "Le Più Amate", subtitle: "Le ricette che non deludono mai." },
-  en: { title: "Fan Favorites", subtitle: "Recipes that never disappoint." },
-  es: { title: "Las Más Queridas", subtitle: "Recetas que nunca decepcionan." },
-  fr: { title: "Les Plus Aimées", subtitle: "Des recettes qui ne déçoivent jamais." }
-};
-
 // TEASER CONVERTITORE
 const teaserContent = {
   it: { title: "Cerchi il Convertitore?", desc: "Adatta i tempi del forno per la tua friggitrice ad aria.", cta: "Vai al Convertitore", link: "/convertitore" },
@@ -165,7 +118,6 @@ const hero = heroContent[lang as keyof typeof heroContent] || heroContent.it;
 const teaser = teaserContent[lang as keyof typeof teaserContent] || teaserContent.it;
 const toolsLang = toolsData[lang as keyof typeof toolsData] || toolsData.it;
 const categories = categoriesData[lang as keyof typeof categoriesData] || categoriesData.it;
-const featured = featuredData[lang as keyof typeof featuredData] || featuredData.it;
 
 const alternateUrls = {
   it: "https://www.crispissimo.com/",
@@ -204,25 +156,6 @@ const jsonLd = {
     </div>
   </header>
 
-  <section class="max-w-7xl mx-auto px-4 py-12 relative z-10">
-    <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 pl-2 border-l-4 border-orange-500">{categories.title}</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      {categories.items.map((category) => (
-        <a 
-          href={category.link} 
-          onclick={`document.querySelector('[data-filter=\\'${category.filterId}\\']')?.click()`}
-          class="tuo-codice-classi-tailwind-esistente..."
-        >
-          </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="max-w-7xl mx-auto px-4 py-6 relative z-10 border-t border-slate-200 dark:border-slate-800 pt-12">
-    <div class="mb-8">
-      <h2 class="text-3xl font-black text-slate-900 dark:text-white">{featured.title}</h2>
-      <p class="text-slate-600 dark:text-slate-400 mt-2">{featured.subtitle}</p>
-    </div>
     
     <div id="ricettario" class="w-full">
       <RecipeSearch lang={lang} />

@@ -8,7 +8,6 @@ import RecipeCard from './RecipeCard.astro';
 export interface Props { lang?: string; }
 const { lang = "it" } = Astro.props;
 
-// Selezionatore dinamico del database
 const allRecipes = {
   it: recipesIt,
   en: recipesEn,
@@ -82,7 +81,7 @@ const isFast = (recipe: any) => {
 <section id="ricettario-container" class="scroll-mt-20 overflow-hidden w-full">
   <div class="w-full">
     
-    <div class="text-center w-full max-w-5xl mx-auto mb-10 space-y-4 md:space-y-6">
+    <div class="text-center w-full max-w-5xl mx-auto mb-10 space-y-4">
       <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
         {t.title}
       </h2>
@@ -106,10 +105,10 @@ const isFast = (recipe: any) => {
 
         <div class="flex overflow-x-auto snap-x hide-scrollbar items-center justify-start md:justify-center gap-2 md:gap-3 pb-2 -mx-2 px-2 md:mx-0 md:px-0 md:overflow-x-visible md:flex-wrap" id="filter-pills">
           <button data-filter="all" class="filter-btn active whitespace-nowrap flex-shrink-0 snap-start bg-orange-600 text-white border-orange-500 shadow-[0_0_15px_rgba(234,88,12,0.4)] px-4 py-2 rounded-full text-sm font-bold transition-all hover:scale-105">{t.all}</button>
-          <button data-filter="meat" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.meat}</button>
-          <button data-filter="fish" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.fish}</button>
-          <button data-filter="veg" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.veg}</button>
-          <button data-filter="sweet" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.sweet}</button>
+          <button data-filter="meat" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.meat}</button>
+          <button data-filter="fish" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.fish}</button>
+          <button data-filter="veg" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.veg}</button>
+          <button data-filter="sweet" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105">{t.sweet}</button>
           <button data-filter="fast" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-amber-400 dark:hover:border-amber-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105 hover:text-amber-600 dark:hover:text-amber-400">{t.fast}</button>
           <button data-filter="light" class="filter-btn whitespace-nowrap flex-shrink-0 snap-start bg-slate-100 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700 hover:border-emerald-400 dark:hover:border-emerald-500 px-4 py-2 rounded-full text-sm font-bold transition-all hover:bg-slate-200 dark:hover:bg-slate-700 hover:scale-105 hover:text-emerald-600 dark:hover:text-emerald-400">{t.light}</button>
         </div>
@@ -119,20 +118,6 @@ const isFast = (recipe: any) => {
 
     <div id="recipes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative z-20">
       {recipes.map((recipe) => {
-        const baseImageName = recipe.image || recipe.slug;
-        let isAuth = recipe.isItalian === true || recipe.isItalian === "true";
-        
-        if (recipe.isItalian === undefined) {
-          const enRecipe = recipesEn.find((r: any) => (r.image || r.slug) === baseImageName);
-          if (enRecipe) {
-            isAuth = enRecipe.isItalian === true || enRecipe.isItalian === "true";
-          }
-        }
-
-        const authKeyword = isAuth ? "italia italiana autentica authentic italian authentique auténtica" : "";
-        const keywordsString = Array.isArray(recipe.keywords) ? recipe.keywords.join(' ') : (recipe.keywords || '');
-        const combinedKeywords = `${keywordsString} ${authKeyword}`.trim();
-
         const cat = getCategory(recipe);
         const fast = isFast(recipe);
         const kcalValue = recipe.nutrition ? recipe.nutrition.kcal : 9999;
@@ -141,7 +126,7 @@ const isFast = (recipe: any) => {
           <div class="recipe-wrapper" 
                data-title={recipe.title} 
                data-slug={recipe.slug} 
-               data-keywords={combinedKeywords}
+               data-keywords={Array.isArray(recipe.keywords) ? recipe.keywords.join(' ') : (recipe.keywords || '')}
                data-category={cat}
                data-fast={fast}
                data-kcal={kcalValue}>
@@ -163,19 +148,8 @@ const isFast = (recipe: any) => {
   </div>
 </section>
 
-<style>
-  .hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-</style>
-
 <script is:inline>
   document.addEventListener('astro:page-load', () => {
-    // 1. DOM SCOPING E GUARDIA ANTI-DOPPIA INIZIALIZZAZIONE
     const container = document.getElementById('ricettario-container');
     if (!container || container.dataset.initialized === 'true') return;
     container.dataset.initialized = 'true';
@@ -185,42 +159,27 @@ const isFast = (recipe: any) => {
     const grid = container.querySelector('#recipes-grid');
     const noResults = container.querySelector('#no-results');
     const resetBtn = container.querySelector('#reset-search');
-    
     const wrappers = Array.from(container.querySelectorAll('.recipe-wrapper'));
-    wrappers.forEach((w, index) => w.setAttribute('data-original-index', index));
-
+    
     let currentSearch = "";
     let currentFilter = "all";
 
-    // 2. NORMALIZZAZIONE TESTO (Rimuove accenti e rende minuscolo)
-    const normalizeText = (str) => {
-      if (!str) return "";
-      return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-    };
+    const normalizeText = (str) => str ? str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : "";
 
     function updateDisplay() {
       const rawQuery = normalizeText(currentSearch).trim();
       const searchTerms = rawQuery.split(/\s+/).filter(t => t.length >= 2);
       let visibleCount = 0;
-      let results = [];
 
       wrappers.forEach(wrapper => {
         const title = normalizeText(wrapper.getAttribute('data-title'));
-        const slug = normalizeText(wrapper.getAttribute('data-slug'));
         const keywords = normalizeText(wrapper.getAttribute('data-keywords'));
         const category = wrapper.getAttribute('data-category');
         const isFast = wrapper.getAttribute('data-fast') === 'true';
         const kcal = parseInt(wrapper.getAttribute('data-kcal') || "9999", 10);
 
-        // MATCH TESTUALE PULITO
-        let isTextMatch = true;
-        if (searchTerms.length > 0) {
-          isTextMatch = searchTerms.every(term => {
-            return title.includes(term) || slug.includes(term) || keywords.includes(term);
-          });
-        }
+        let isTextMatch = searchTerms.length === 0 || searchTerms.every(term => title.includes(term) || keywords.includes(term));
 
-        // MATCH FILTRO (Regola ≤ 300 allineata con l'etichetta)
         let isFilterMatch = false;
         if (currentFilter === 'all') isFilterMatch = true;
         else if (currentFilter === 'fast') isFilterMatch = isFast;
@@ -228,49 +187,15 @@ const isFast = (recipe: any) => {
         else isFilterMatch = (category === currentFilter);
 
         if (isTextMatch && isFilterMatch) {
-          let score = 0;
-          if (rawQuery !== "") {
-            if (title.includes(rawQuery)) score += 50;
-            if (keywords.includes(rawQuery)) score += 25;
-            searchTerms.forEach(term => {
-              if (title.includes(term)) score += 10;
-            });
-          }
-          results.push({ wrapper: wrapper, score: score, originalIndex: parseInt(wrapper.getAttribute('data-original-index')) });
+          wrapper.style.display = '';
+          visibleCount++;
         } else {
           wrapper.style.display = 'none';
         }
       });
 
-      // ORDINAMENTO: Solo se c'è una query testuale, altrimenti mantiene l'ordine editoriale
-      results.sort((a, b) => {
-        if (rawQuery !== "" && b.score !== a.score) return b.score - a.score;
-        return a.originalIndex - b.originalIndex;
-      });
-
-      results.forEach(item => {
-        grid.appendChild(item.wrapper); 
-        item.wrapper.style.display = '';
-        visibleCount++;
-      });
-
-      if (visibleCount === 0) {
-        if(grid) grid.style.display = 'none';
-        if(noResults) noResults.style.display = 'block';
-      } else {
-        if(grid) grid.style.display = 'grid'; 
-        if(noResults) noResults.style.display = 'none';
-      }
-    }
-
-    if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        currentSearch = e.target.value;
-        updateDisplay();
-      });
-      searchInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') { e.preventDefault(); searchInput.blur(); }
-      });
+      if (grid) grid.style.display = visibleCount === 0 ? 'none' : 'grid'; 
+      if (noResults) noResults.style.display = visibleCount === 0 ? 'block' : 'none';
     }
 
     const inactiveClasses = ['bg-slate-100', 'text-slate-700', 'border-slate-200', 'dark:bg-slate-800', 'dark:text-slate-300', 'dark:border-slate-700'];
@@ -278,39 +203,45 @@ const isFast = (recipe: any) => {
     const activeLightClasses = ['bg-emerald-500', 'text-white', 'border-emerald-400', 'shadow-[0_0_15px_rgba(16,185,129,0.4)]', 'active'];
 
     filterBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+        
+        // --- LOGICA TOGGLE ---
+        if (btn.classList.contains('active') && filter !== 'all') {
+          const btnAll = container.querySelector('[data-filter="all"]');
+          if (btnAll) btnAll.click();
+          return;
+        }
+
+        // Reset classi
         filterBtns.forEach(b => {
           b.classList.remove(...activeClasses, ...activeLightClasses);
           b.classList.add(...inactiveClasses);
         });
         
-        const target = e.currentTarget;
-        const isLightFilter = target.getAttribute('data-filter') === 'light';
-        
-        target.classList.remove(...inactiveClasses);
-        
-        if (isLightFilter) {
-          target.classList.add(...activeLightClasses);
+        // Attiva con colore corretto
+        btn.classList.remove(...inactiveClasses);
+        if (filter === 'light') {
+          btn.classList.add(...activeLightClasses);
         } else {
-          target.classList.add(...activeClasses);
+          btn.classList.add(...activeClasses);
         }
 
-        currentFilter = target.getAttribute('data-filter');
+        currentFilter = filter;
         updateDisplay();
       });
     });
 
-    if (resetBtn) {
-      resetBtn.addEventListener('click', () => {
-        if (searchInput) searchInput.value = '';
-        currentSearch = "";
-        const btnAll = container.querySelector('[data-filter="all"]');
-        if(btnAll) btnAll.click();
-        else {
-          currentFilter = "all";
-          updateDisplay();
-        }
-      });
-    }
+    searchInput?.addEventListener('input', (e) => {
+      currentSearch = e.target.value;
+      updateDisplay();
+    });
+
+    resetBtn?.addEventListener('click', () => {
+      if (searchInput) searchInput.value = '';
+      currentSearch = "";
+      const btnAll = container.querySelector('[data-filter="all"]');
+      if (btnAll) btnAll.click();
+    });
   });
 </script>
