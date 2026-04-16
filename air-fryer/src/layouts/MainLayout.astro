@@ -48,10 +48,10 @@ const locales = {
 };
 
 const routeMap = {
-  it: { home: "/", categories: "/categorie", converter: "/convertitore" },
-  en: { home: "/en/", categories: "/en/categories", converter: "/en/converter" },
-  es: { home: "/es/", categories: "/es/categorias", converter: "/es/convertidor" },
-  fr: { home: "/fr/", categories: "/fr/categories", converter: "/fr/convertisseur" },
+  it: { home: "/", categories: "/#ricettario-container", converter: "/convertitore" },
+  en: { home: "/en/", categories: "/en/#ricettario-container", converter: "/en/converter" },
+  es: { home: "/es/", categories: "/es/#ricettario-container", converter: "/es/convertidor" },
+  fr: { home: "/fr/", categories: "/fr/#ricettario-container", converter: "/fr/convertisseur" },
 };
 
 const navLabels = {
@@ -93,6 +93,18 @@ const fallbackCanonical = new URL(Astro.url.pathname, Astro.site || "https://www
 const canonicalURL = alternateUrls?.[lang as keyof typeof alternateUrls] || fallbackCanonical;
 
 // --- INIZIO: EXTREME CTR HACKING (Ripristinato e adattato per Crispissimo) ---
+const fallbackCanonical = new URL(Astro.url.pathname, Astro.site || "https://www.crispissimo.com").toString();
+const canonicalURL = alternateUrls?.[lang as keyof typeof alternateUrls] || fallbackCanonical;
+
+// --- FIX BANDIERINE: Fallback sicuro per Home e Convertitore ---
+const finalAlternateUrls = Object.keys(alternateUrls).length > 0 ? alternateUrls : {
+  it: "https://www.crispissimo.com/",
+  en: "https://www.crispissimo.com/en/",
+  es: "https://www.crispissimo.com/es/",
+  fr: "https://www.crispissimo.com/fr/"
+};
+
+// --- INIZIO: EXTREME CTR HACKING ---
 let finalTitle = title || defaultTitles[lang as keyof typeof defaultTitles] || defaultTitles.it;
 let finalDescription = description || defaultDescriptions[lang as keyof typeof defaultDescriptions] || defaultDescriptions.it;
 
@@ -166,13 +178,13 @@ const currentYear = new Date().getFullYear();
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
     <meta name="p:domain_verify" content="0513c10094fa04708fce47d2922e822b" />
 
-    {Object.keys(alternateUrls).length > 0 && (
+    {Object.keys(finalAlternateUrls).length > 0 && (
       <>
-        {alternateUrls.it && <link rel="alternate" hreflang="it" href={alternateUrls.it} />}
-        {alternateUrls.en && <link rel="alternate" hreflang="en" href={alternateUrls.en} />}
-        {alternateUrls.es && <link rel="alternate" hreflang="es" href={alternateUrls.es} />}
-        {alternateUrls.fr && <link rel="alternate" hreflang="fr" href={alternateUrls.fr} />}
-        {alternateUrls.it && <link rel="alternate" hreflang="x-default" href={alternateUrls.it} />}
+        {finalAlternateUrls.it && <link rel="alternate" hreflang="it" href={finalAlternateUrls.it} />}
+        {finalAlternateUrls.en && <link rel="alternate" hreflang="en" href={finalAlternateUrls.en} />}
+        {finalAlternateUrls.es && <link rel="alternate" hreflang="es" href={finalAlternateUrls.es} />}
+        {finalAlternateUrls.fr && <link rel="alternate" hreflang="fr" href={finalAlternateUrls.fr} />}
+        {finalAlternateUrls.it && <link rel="alternate" hreflang="x-default" href={finalAlternateUrls.it} />}
       </>
     )}
 
@@ -228,19 +240,17 @@ const currentYear = new Date().getFullYear();
           </nav>
 
           <div class="flex items-center gap-2 sm:gap-3">
-            {Object.keys(alternateUrls).length > 0 && (
-              <div class="hidden items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-3 py-1.5 shadow-sm dark:border-slate-700 dark:bg-slate-900/80 sm:flex" aria-label={currentLabels.language}>
-                {["it", "en", "es", "fr"].map((l) => {
-                  const url = alternateUrls[l as keyof typeof alternateUrls];
-                  if (!url) return null;
-                  return (
-                    <a href={url} aria-label={l.toUpperCase()} class="flex items-center justify-center">
-                      <img src={`https://flagcdn.com/${l === "en" ? "gb" : l}.svg`} alt={l.toUpperCase()} width="24" height="18" class={`h-auto w-5 rounded-[2px] transition-all duration-200 md:w-6 ${lang === l ? "scale-110 opacity-100 ring-2 ring-orange-400/70" : "opacity-50 grayscale hover:scale-110 hover:opacity-100 hover:grayscale-0"}`} />
-                    </a>
-                  );
-                })}
-              </div>
-            )}
+            <div class="flex items-center gap-1.5 rounded-full border border-slate-200 bg-white/80 px-2 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-900/80 sm:gap-2 sm:px-3 sm:py-1.5" aria-label={currentLabels.language}>
+              {["it", "en", "es", "fr"].map((l) => {
+                const url = finalAlternateUrls[l as keyof typeof finalAlternateUrls];
+                if (!url) return null;
+                return (
+                  <a href={url} aria-label={l.toUpperCase()} class="flex items-center justify-center">
+                    <img src={`https://flagcdn.com/${l === "en" ? "gb" : l}.svg`} alt={l.toUpperCase()} width="24" height="18" class={`h-auto w-5 rounded-[2px] transition-all duration-200 md:w-6 ${lang === l ? "scale-110 opacity-100 ring-2 ring-orange-400/70" : "opacity-50 grayscale hover:scale-110 hover:opacity-100 hover:grayscale-0"}`} />
+                  </a>
+                );
+              })}
+            </div>
 
             <button type="button" data-theme-toggle class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:border-orange-300 hover:text-orange-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-orange-400 dark:hover:text-orange-400" aria-label={currentLabels.themeToggle}>
               <span data-theme-icon aria-hidden="true">🌙</span>
