@@ -92,10 +92,6 @@ const currentLabels = navLabels[lang as keyof typeof navLabels] || navLabels.it;
 const fallbackCanonical = new URL(Astro.url.pathname, Astro.site || "https://www.crispissimo.com").toString();
 const canonicalURL = alternateUrls?.[lang as keyof typeof alternateUrls] || fallbackCanonical;
 
-// --- INIZIO: EXTREME CTR HACKING (Ripristinato e adattato per Crispissimo) ---
-const fallbackCanonical = new URL(Astro.url.pathname, Astro.site || "https://www.crispissimo.com").toString();
-const canonicalURL = alternateUrls?.[lang as keyof typeof alternateUrls] || fallbackCanonical;
-
 // --- FIX BANDIERINE: Fallback sicuro per Home e Convertitore ---
 const finalAlternateUrls = Object.keys(alternateUrls).length > 0 ? alternateUrls : {
   it: "https://www.crispissimo.com/",
