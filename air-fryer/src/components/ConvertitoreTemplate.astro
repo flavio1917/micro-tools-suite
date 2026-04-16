@@ -179,39 +179,45 @@ const jsonLd = [
     </article>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <article class="bg-slate-50 dark:bg-slate-800/30 p-6 rounded-2xl border border-slate-200 dark:border-slate-700/50">
+      <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
         <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">{t.art1Title}</h3>
         <p class="text-sm text-slate-700 dark:text-slate-400 leading-relaxed" set:html={t.art1Desc}></p>
       </article>
 
-      <article class="bg-slate-50 dark:bg-slate-800/30 p-6 rounded-2xl border border-slate-200 dark:border-slate-700/50">
+      <article class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700/50 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
         <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">{t.art2Title}</h3>
         <p class="text-sm text-slate-700 dark:text-slate-400 leading-relaxed" set:html={t.art2Desc}></p>
       </article>
     </div>
 
     <article class="space-y-6 pt-8 border-t border-slate-200 dark:border-slate-800">
-      <h3 class="text-2xl font-black text-slate-900 dark:text-white">{t.faqTitle}</h3>
+      <h3 class="text-2xl font-black text-slate-900 dark:text-white flex items-center gap-2"><span class="text-3xl">❓</span> {t.faqTitle}</h3>
       <div class="space-y-4">
-        <details class="group bg-slate-50 dark:bg-slate-900 rounded-lg p-4 cursor-pointer [&_summary::-webkit-details-marker]:hidden border border-slate-200 dark:border-slate-800">
-          <summary class="flex justify-between items-center font-bold text-slate-800 dark:text-slate-200 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
-            {t.q1}
-            <span class="transition group-open:rotate-180">
-              <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-            </span>
-          </summary>
-          <p class="text-slate-600 dark:text-slate-400 mt-3 text-sm leading-relaxed">{t.a1}</p>
+        
+        <details class="group border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden transition-all bg-white dark:bg-slate-900 shadow-sm hover:shadow-md">
+            <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 md:p-5 text-slate-800 dark:text-slate-200 hover:text-orange-600 dark:hover:text-orange-400 transition-colors focus:outline-none group-open:bg-slate-50 dark:group-open:bg-slate-800/80">
+                <span class="pr-4">{t.q1}</span>
+                <span class="transition-transform duration-300 group-open:rotate-180 text-slate-400 group-hover:text-orange-500">
+                    <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                </span>
+            </summary>
+            <div class="p-4 md:p-5 pt-1 md:pt-2 text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed bg-slate-50 dark:bg-slate-800/80 transition-colors">
+                {t.a1}
+            </div>
         </details>
 
-        <details class="group bg-slate-50 dark:bg-slate-900 rounded-lg p-4 cursor-pointer [&_summary::-webkit-details-marker]:hidden border border-slate-200 dark:border-slate-800">
-          <summary class="flex justify-between items-center font-bold text-slate-800 dark:text-slate-200 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
-            {t.q2}
-            <span class="transition group-open:rotate-180">
-              <svg fill="none" height="24" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
-            </span>
-          </summary>
-          <p class="text-slate-600 dark:text-slate-400 mt-3 text-sm leading-relaxed">{t.a2}</p>
+        <details class="group border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden transition-all bg-white dark:bg-slate-900 shadow-sm hover:shadow-md">
+            <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 md:p-5 text-slate-800 dark:text-slate-200 hover:text-orange-600 dark:hover:text-orange-400 transition-colors focus:outline-none group-open:bg-slate-50 dark:group-open:bg-slate-800/80">
+                <span class="pr-4">{t.q2}</span>
+                <span class="transition-transform duration-300 group-open:rotate-180 text-slate-400 group-hover:text-orange-500">
+                    <svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                </span>
+            </summary>
+            <div class="p-4 md:p-5 pt-1 md:pt-2 text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed bg-slate-50 dark:bg-slate-800/80 transition-colors">
+                {t.a2}
+            </div>
         </details>
+
       </div>
     </article>
   </section>

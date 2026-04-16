@@ -49,37 +49,37 @@ const categoriesData = {
   it: {
     title: "Esplora per Categoria",
     items: [
-      { name: "Pollo e Carni", icon: "🍗", link: "categorie/carne" },
-      { name: "Patate e Contorni", icon: "🍟", link: "categorie/verdure" },
-      { name: "Pesce", icon: "🐟", link: "categorie/pesce" },
-      { name: "Dolci", icon: "🧁", link: "categorie/dolci" }
+      { name: "Pollo e Carni", icon: "🍗", link: "#ricettario-container", filterId: "meat" },
+      { name: "Patate e Contorni", icon: "🍟", link: "#ricettario-container", filterId: "veg" },
+      { name: "Pesce", icon: "🐟", link: "#ricettario-container", filterId: "fish" },
+      { name: "Dolci", icon: "🧁", link: "#ricettario-container", filterId: "sweet" }
     ]
   },
   en: {
     title: "Explore by Category",
     items: [
-      { name: "Chicken & Meat", icon: "🍗", link: "categories/meat" },
-      { name: "Potatoes & Sides", icon: "🍟", link: "categories/vegetables" },
-      { name: "Seafood", icon: "🐟", link: "categories/seafood" },
-      { name: "Desserts", icon: "🧁", link: "categories/desserts" }
+      { name: "Chicken & Meat", icon: "🍗", link: "#ricettario-container", filterId: "meat" },
+      { name: "Potatoes & Sides", icon: "🍟", link: "#ricettario-container", filterId: "veg" },
+      { name: "Seafood", icon: "🐟", link: "#ricettario-container", filterId: "fish" },
+      { name: "Desserts", icon: "🧁", link: "#ricettario-container", filterId: "sweet" }
     ]
   },
   es: {
     title: "Explorar por Categoría",
     items: [
-      { name: "Pollo y Carnes", icon: "🍗", link: "categorias/carne" },
-      { name: "Patatas y Guarniciones", icon: "🍟", link: "categorias/verduras" },
-      { name: "Pescado", icon: "🐟", link: "categorias/pescado" },
-      { name: "Postres", icon: "🧁", link: "categorias/postres" }
+      { name: "Pollo y Carnes", icon: "🍗", link: "#ricettario-container", filterId: "meat" },
+      { name: "Patatas y Guarniciones", icon: "🍟", link: "#ricettario-container", filterId: "veg" },
+      { name: "Pescado", icon: "🐟", link: "#ricettario-container", filterId: "fish" },
+      { name: "Postres", icon: "🧁", link: "#ricettario-container", filterId: "sweet" }
     ]
   },
   fr: {
     title: "Explorer par Catégorie",
     items: [
-      { name: "Poulet et Viandes", icon: "🍗", link: "categories/viande" },
-      { name: "Pommes de terre et Accompagnements", icon: "🍟", link: "categories/legumes" },
-      { name: "Poisson", icon: "🐟", link: "categories/poisson" },
-      { name: "Desserts", icon: "🧁", link: "categories/desserts" }
+      { name: "Poulet et Viandes", icon: "🍗", link: "#ricettario-container", filterId: "meat" },
+      { name: "Pommes de terre et Accomp." , icon: "🍟", link: "#ricettario-container", filterId: "veg" },
+      { name: "Poisson", icon: "🐟", link: "#ricettario-container", filterId: "fish" },
+      { name: "Desserts", icon: "🧁", link: "#ricettario-container", filterId: "sweet" }
     ]
   }
 };
@@ -207,11 +207,13 @@ const jsonLd = {
   <section class="max-w-7xl mx-auto px-4 py-12 relative z-10">
     <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 pl-2 border-l-4 border-orange-500">{categories.title}</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      {categories.items.map((cat) => (
-        <a href={`/${lang === 'it' ? '' : lang + '/'}${cat.link}`} class="bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 p-6 rounded-2xl text-center hover:border-orange-500 dark:hover:border-orange-500 transition-all group shadow-sm hover:shadow-md">
-          <span class="text-4xl block mb-3 group-hover:scale-110 transition-transform">{cat.icon}</span>
-          <span class="font-bold text-slate-800 dark:text-slate-200">{cat.name}</span>
-        </a>
+      {categories.items.map((category) => (
+        <a 
+          href={category.link} 
+          onclick={`document.querySelector('[data-filter=\\'${category.filterId}\\']')?.click()`}
+          class="tuo-codice-classi-tailwind-esistente..."
+        >
+          </a>
       ))}
     </div>
   </section>

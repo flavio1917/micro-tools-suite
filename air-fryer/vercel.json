@@ -1,6 +1,20 @@
 {
   "redirects": [
     {
+      "redirects": [
+        {
+          "source": "/ricette/:slug*",
+          "destination": "/it/recipes/:slug*",
+          "permanent": true
+        },
+        {
+          "source": "/it/recipes/:slug/",
+          "destination": "/it/recipes/:slug",
+          "permanent": true
+        }
+      ]
+    },
+    {
       "source": "/",
       "has": [
         { "type": "host", "value": "www.convertitorefriggitrice.it" }
