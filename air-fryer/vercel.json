@@ -1,13 +1,38 @@
 {
   "redirects": [
     {
-      "source": "/ricette/:slug*",
-      "destination": "/it/recipes/:slug*",
+      "source": "/ricette/:slug",
+      "destination": "https://www.crispissimo.com/it/recipes/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/ricette/:slug/",
+      "destination": "https://www.crispissimo.com/it/recipes/:slug",
       "permanent": true
     },
     {
       "source": "/it/recipes/:slug/",
-      "destination": "/it/recipes/:slug",
+      "destination": "https://www.crispissimo.com/it/recipes/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/categorie",
+      "destination": "https://www.crispissimo.com/",
+      "permanent": true
+    },
+    {
+      "source": "/en/categories",
+      "destination": "https://www.crispissimo.com/en/",
+      "permanent": true
+    },
+    {
+      "source": "/es/categorias",
+      "destination": "https://www.crispissimo.com/es/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/categories",
+      "destination": "https://www.crispissimo.com/fr/",
       "permanent": true
     },
     {
