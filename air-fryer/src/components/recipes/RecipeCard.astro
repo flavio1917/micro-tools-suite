@@ -85,21 +85,29 @@ const bl = badgeLabels[lang as keyof typeof badgeLabels] || badgeLabels.it;
     
     <div class="flex flex-col gap-1.5">
       {hasNutrition && isHighProtein && (
-        <span class="flex items-center gap-1 px-2 py-1 bg-emerald-500/95 backdrop-blur-md border border-emerald-400 text-white text-[9px] font-black uppercase tracking-wide rounded-md shadow-lg">
-          💪 {proValue}g {bl.pro}
-        </span>
+        <div class="inline-flex items-center justify-center gap-1 px-2 py-1 bg-emerald-500/95 backdrop-blur-md border border-emerald-400 rounded-md shadow-lg">
+          <span class="leading-none text-[10px] drop-shadow-sm">💪</span>
+          <span class="text-white text-[9px] font-extrabold font-sans uppercase tracking-wide leading-none pt-[1px] whitespace-nowrap">
+            {proValue}g {bl.pro}
+          </span>
+        </div>
       )}
       {hasNutrition && isLowCal && !isHighProtein && (
-        <span class="flex items-center gap-1 px-2 py-1 bg-amber-500/95 backdrop-blur-md border border-amber-400 text-black text-[9px] font-black uppercase tracking-wide rounded-md shadow-lg">
-          🥗 {bl.light} {kcalValue} {bl.kcal}
-        </span>
+        <div class="inline-flex items-center justify-center gap-1 px-2 py-1 bg-amber-500/95 backdrop-blur-md border border-amber-400 rounded-md shadow-lg">
+          <span class="leading-none text-[10px] drop-shadow-sm">🥗</span>
+          <span class="text-black text-[9px] font-extrabold font-sans uppercase tracking-wide leading-none pt-[1px] whitespace-nowrap">
+            {bl.light} {kcalValue} {bl.kcal}
+          </span>
+        </div>
       )}
     </div>
 
     {isAuth && (
-      <div class="flex items-center gap-1 px-2 py-1 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 border border-yellow-300/80 text-black text-[9px] font-black uppercase tracking-wide rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.6)] ml-2 shrink-0">
-        <img src="https://flagcdn.com/it.svg" alt="Italia" class="w-3.5 h-auto rounded-[1px] shadow-sm border border-black/20" />
-        <span class="drop-shadow-sm">{authLabel}</span>
+      <div class="inline-flex items-center justify-center gap-1.5 px-2 py-1 bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 border border-yellow-300/80 rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.6)] ml-2 shrink-0">
+        <img src="https://flagcdn.com/it.svg" alt="Italia" class="w-3.5 h-auto rounded-[1px] shadow-sm border border-black/20 shrink-0" />
+        <span class="text-black text-[9px] font-extrabold font-sans uppercase tracking-wide leading-none pt-[1px] drop-shadow-sm whitespace-nowrap">
+          {authLabel}
+        </span>
       </div>
     )}
   </div>
@@ -112,12 +120,14 @@ const bl = badgeLabels[lang as keyof typeof badgeLabels] || badgeLabels.it;
     </div>
 
     <div class="flex flex-wrap items-center gap-2 text-sm text-slate-200 mt-1">
-      <span class="flex items-center gap-1.5 bg-black/70 px-2.5 py-1.5 rounded-lg backdrop-blur-md border border-white/10 shadow-lg font-medium pointer-events-auto">
-        🔥 <span class="text-orange-300 font-bold">{recipe.temp}{tempSymbol}</span>
-      </span>
-      <span class="flex items-center gap-1.5 bg-black/70 px-2.5 py-1.5 rounded-lg backdrop-blur-md border border-white/10 shadow-lg font-medium pointer-events-auto">
-        ⏱️ <span class="text-blue-300 font-bold">{recipe.time}{timeSymbol}</span>
-      </span>
+      <div class="inline-flex items-center justify-center gap-1.5 bg-black/70 px-2.5 py-1.5 rounded-lg backdrop-blur-md border border-white/10 shadow-lg pointer-events-auto">
+        <span class="leading-none text-[11px] drop-shadow-sm">🔥</span>
+        <span class="text-orange-300 font-bold font-sans leading-none pt-[1px] whitespace-nowrap">{recipe.temp}{tempSymbol}</span>
+      </div>
+      <div class="inline-flex items-center justify-center gap-1.5 bg-black/70 px-2.5 py-1.5 rounded-lg backdrop-blur-md border border-white/10 shadow-lg pointer-events-auto">
+        <span class="leading-none text-[11px] drop-shadow-sm">⏱️</span>
+        <span class="text-blue-300 font-bold font-sans leading-none pt-[1px] whitespace-nowrap">{recipe.time}{timeSymbol}</span>
+      </div>
     </div>
   </div>
 </a>
