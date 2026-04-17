@@ -92,7 +92,6 @@ const currentLabels = navLabels[lang as keyof typeof navLabels] || navLabels.it;
 const fallbackCanonical = new URL(Astro.url.pathname, Astro.site || "https://www.crispissimo.com").toString();
 const canonicalURL = alternateUrls?.[lang as keyof typeof alternateUrls] || fallbackCanonical;
 
-// --- FIX BANDIERINE: Fallback sicuro per Home e Convertitore ---
 const finalAlternateUrls = Object.keys(alternateUrls).length > 0 ? alternateUrls : {
   it: "https://www.crispissimo.com/",
   en: "https://www.crispissimo.com/en/",
@@ -100,7 +99,6 @@ const finalAlternateUrls = Object.keys(alternateUrls).length > 0 ? alternateUrls
   fr: "https://www.crispissimo.com/fr/"
 };
 
-// --- INIZIO: EXTREME CTR HACKING ---
 let finalTitle = title || defaultTitles[lang as keyof typeof defaultTitles] || defaultTitles.it;
 let finalDescription = description || defaultDescriptions[lang as keyof typeof defaultDescriptions] || defaultDescriptions.it;
 
@@ -145,7 +143,6 @@ if (recipeData) {
 
   finalDescription = `${statsString}${baseDesc} ${p.read}`;
 }
-// --- FINE: EXTREME CTR HACKING ---
 
 const ogType = recipeData ? "article" : "website";
 const currentYear = new Date().getFullYear();
@@ -206,17 +203,12 @@ const currentYear = new Date().getFullYear();
 
     <script is:inline>
       (() => {
-        const storageKey = "crispissimo-theme";
-        const root = document.documentElement;
-        let savedTheme = "light";
-        try { savedTheme = localStorage.getItem(storageKey) || "light"; } catch {}
-        if (savedTheme === "dark") {
-          root.classList.add("dark");
-          root.setAttribute("data-theme", "dark");
-        } else {
-          root.classList.remove("dark");
-          root.setAttribute("data-theme", "light");
-        }
+        try {
+          const theme = localStorage.getItem("crispissimo-theme") || "light";
+          const isDark = theme === "dark";
+          document.documentElement.classList.toggle("dark", isDark);
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {}
       })();
     </script>
   </head>
@@ -294,34 +286,44 @@ const currentYear = new Date().getFullYear();
 
     <script is:inline>
       (() => {
-        const storageKey = "crispissimo-theme";
+        const themeKey = "crispissimo-theme";
+        const root = document.documentElement;
+
         const applyTheme = (theme) => {
           const isDark = theme === "dark";
-          const root = document.documentElement;
           root.classList.toggle("dark", isDark);
           root.setAttribute("data-theme", theme);
-          const themeMeta = document.querySelector('meta[name="theme-color"]');
-          if (themeMeta) themeMeta.setAttribute("content", isDark ? "#020617" : "#fff7ed");
+          
+          const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+          if (metaThemeColor) metaThemeColor.setAttribute("content", isDark ? "#020617" : "#fff7ed");
+          
           document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
             button.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
             const icon = button.querySelector("[data-theme-icon]");
             if (icon) icon.textContent = isDark ? "☀️" : "🌙";
           });
         };
-        const bindThemeToggle = () => {
-          document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
-            button.onclick = () => {
-              const nextTheme = document.documentElement.classList.contains("dark") ? "light" : "dark";
-              try { localStorage.setItem(storageKey, nextTheme); } catch {}
-              applyTheme(nextTheme);
-            };
-          });
-          let savedTheme = "light";
-          try { savedTheme = localStorage.getItem(storageKey) || "light"; } catch {}
-          applyTheme(savedTheme);
+
+        const toggleTheme = () => {
+          const currentTheme = root.classList.contains("dark") ? "dark" : "light";
+          const nextTheme = currentTheme === "dark" ? "light" : "dark";
+          try { localStorage.setItem(themeKey, nextTheme); } catch {}
+          applyTheme(nextTheme);
         };
-        document.addEventListener("DOMContentLoaded", bindThemeToggle);
-        document.addEventListener("astro:page-load", bindThemeToggle);
+
+        const initTheme = () => {
+          let savedTheme = "light";
+          try { savedTheme = localStorage.getItem(themeKey) || "light"; } catch {}
+          applyTheme(savedTheme);
+
+          document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+            button.onclick = null; // Evita doppi click su transizioni Astro
+            button.onclick = toggleTheme;
+          });
+        };
+
+        document.addEventListener("DOMContentLoaded", initTheme);
+        document.addEventListener("astro:page-load", initTheme);
       })();
     </script>
     <Analytics />
