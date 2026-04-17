@@ -217,7 +217,7 @@ const alternateUrls = {
     </div>
   </div>
 
-  <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 print:mt-0 print:pt-4 relative z-30 pb-28 reading-transition rounded-t-3xl pt-2">
+  <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 print:mt-0 print:pt-4 relative z-30 pb-28 rounded-t-3xl pt-2">
     
     <div class="hidden print:block print:mb-8 text-center print-section">
        <h1 class="text-3xl font-black text-black mb-3">{recipe.title}</h1>
@@ -231,9 +231,11 @@ const alternateUrls = {
       <button id="btn-print" aria-label={t.print} class="flex items-center gap-1.5 px-3.5 py-2 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-full text-[10px] md:text-xs font-bold text-slate-700 dark:text-white transition-all shadow-sm active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500">
         🖨️ <span class="hidden sm:inline">{t.print}</span>
       </button>
-      <button id="btn-read-mode" aria-label={t.readMode} class="flex items-center gap-1.5 px-3.5 py-2 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-full text-[10px] md:text-xs font-bold text-slate-700 dark:text-white transition-all shadow-sm active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500">
-        ☀️ <span id="text-read-mode" class="hidden sm:inline">{t.readMode}</span>
+      
+      <button id="btn-read-mode" class="flex items-center gap-1.5 px-3.5 py-2 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-full text-[10px] md:text-xs font-bold text-slate-700 dark:text-white transition-all shadow-sm active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-orange-500">
+        <span id="icon-read-mode">☀️</span> <span id="text-read-mode" class="hidden sm:inline">{t.readMode}</span>
       </button>
+      
       <button id="btn-share" aria-label={t.share} class="flex items-center gap-1.5 px-4 py-2 bg-blue-600 hover:bg-blue-500 border border-blue-500 rounded-full text-[10px] md:text-xs font-bold text-white transition-all shadow-lg shadow-blue-500/20 active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400">
         🔗 {t.share}
       </button>
@@ -448,7 +450,7 @@ const alternateUrls = {
       </div>
 
       <div class="text-center pt-8 border-t border-slate-200 dark:border-slate-800 hide-on-print transition-colors">
-        <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-600 hover:text-orange-600 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-700 transition-all font-medium focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm">{t.searchOther}</a>
+        <a href={t.backLink} class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-all font-medium focus:outline-none focus:ring-2 focus:ring-orange-500 shadow-sm">{t.searchOther}</a>
       </div>
     </div>
   </div>
@@ -487,26 +489,48 @@ const alternateUrls = {
         });
       }
 
+      // --- NUOVA LOGICA: TEMA GLOBALE AL POSTO DI READING MODE ---
       const btnReadMode = document.getElementById('btn-read-mode');
+      const iconReadMode = document.getElementById('icon-read-mode');
       const textReadMode = document.getElementById('text-read-mode');
-      const contentWrapper = document.getElementById('recipe-content-wrapper');
-      let isReadMode = false;
-      
-      if (btnReadMode && contentWrapper) {
+
+      const syncRecipeThemeBtn = () => {
+        const isDark = document.documentElement.classList.contains('dark');
+        if (iconReadMode) iconReadMode.innerText = isDark ? '☀️' : '🌙';
+        if (textReadMode) textReadMode.innerText = isDark ? txtReadMode : txtDarkMode;
+      };
+
+      if (btnReadMode) {
         btnReadMode.addEventListener('click', () => {
           triggerHaptic();
-          isReadMode = !isReadMode;
-          if (isReadMode) {
-            contentWrapper.classList.add('reading-mode');
-            if (textReadMode) textReadMode.innerText = txtDarkMode;
-            btnReadMode.innerHTML = `🌙 <span id="text-read-mode" class="hidden sm:inline">${txtDarkMode}</span>`;
+          
+          // Clicca virtualmente il bottone globale nel MainLayout per evitare logiche duplicate!
+          const globalToggle = document.querySelector('[data-theme-toggle]');
+          if (globalToggle) {
+            globalToggle.click();
           } else {
-            contentWrapper.classList.remove('reading-mode');
-            if (textReadMode) textReadMode.innerText = txtReadMode;
-            btnReadMode.innerHTML = `☀️ <span id="text-read-mode" class="hidden sm:inline">${txtReadMode}</span>`;
+            // Fallback di sicurezza
+            const root = document.documentElement;
+            const isDark = root.classList.contains('dark');
+            const nextTheme = isDark ? 'light' : 'dark';
+            root.classList.toggle('dark', !isDark);
+            root.setAttribute('data-theme', nextTheme);
+            try { localStorage.setItem("crispissimo-theme", nextTheme); } catch {}
           }
+          
+          // Aggiorna le scritte del bottone dopo un istante per dare tempo al DOM
+          setTimeout(syncRecipeThemeBtn, 50);
         });
       }
+
+      // Allinea le scritte appena la pagina si carica
+      syncRecipeThemeBtn();
+
+      // Se l'utente clicca il bottone del tema in alto nell'header, allineiamo anche questo bottone
+      document.querySelectorAll('[data-theme-toggle]').forEach(btn => {
+        btn.addEventListener('click', () => setTimeout(syncRecipeThemeBtn, 50));
+      });
+      // ------------------------------------------------------------
 
       const btnTimer = document.getElementById('btn-timer');
       const timerDisplay = document.getElementById('timer-display');
