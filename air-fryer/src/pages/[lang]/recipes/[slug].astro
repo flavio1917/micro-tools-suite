@@ -39,7 +39,7 @@ const translations = {
     eeatTested: "Ricetta Testata", eeatReview: "Metodo Validato",
     startTimer: "⏱️ Avvia Timer", stopTimer: "⏹️ Ferma Timer",
     months: ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"],
-    verifiedText: "Ultima verifica:",
+    verifiedText: "ULTIMA VERIFICA:",
     print: "Stampa", jump: "Vai alla Ricetta", readMode: "Modalità Lettura", darkMode: "Modalità Scura", share: "Condividi",
     faqTitle: "Domande Frequenti",
     faq1Q: `Come conservare ${recipe.title}?`, faq1A: "Lascia raffreddare completamente, poi conserva in un contenitore ermetico in frigorifero per 2-3 giorni. Non congelare dopo la cottura per non perdere la croccantezza.",
@@ -60,7 +60,7 @@ const translations = {
     eeatTested: "Lab Tested", eeatReview: "Verified Method",
     startTimer: "⏱️ Start Timer", stopTimer: "⏹️ Stop Timer",
     months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    verifiedText: "Last check:",
+    verifiedText: "LAST CHECK:",
     print: "Print", jump: "Jump to Recipe", readMode: "Reading Mode", darkMode: "Dark Mode", share: "Share",
     faqTitle: "Frequently Asked Questions",
     faq1Q: `How to store ${recipe.title}?`, faq1A: "Let it cool completely, then store in an airtight container in the fridge for 2-3 days.",
@@ -81,7 +81,7 @@ const translations = {
     eeatTested: "Receta Probada", eeatReview: "Método Validado",
     startTimer: "⏱️ Iniciar Timer", stopTimer: "⏹️ Parar Timer",
     months: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
-    verifiedText: "Última verificación:",
+    verifiedText: "ÚLTIMA VERIFICACIÓN:",
     print: "Imprimir", jump: "Ir a la Receta", readMode: "Modo Lectura", darkMode: "Modo Oscuro", share: "Compartir",
     faqTitle: "Preguntas Frecuentes",
     faq1Q: `¿Cómo conservar ${recipe.title}?`, faq1A: "Deja enfriar por completo, luego guarda en un recipiente hermético en el refrigerador por 2-3 días.",
@@ -102,7 +102,7 @@ const translations = {
     eeatTested: "Recette Testée", eeatReview: "Méthode Validée",
     startTimer: "⏱️ Démarrer Timer", stopTimer: "⏹️ Arrêter Timer",
     months: ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc"],
-    verifiedText: "Dernière vérif. :",
+    verifiedText: "DERNIÈRE VÉRIF :",
     print: "Imprimer", jump: "Aller à la Recette", readMode: "Mode Lecture", darkMode: "Mode Sombre", share: "Partager",
     faqTitle: "Foire Aux Questions",
     faq1Q: `Comment conserver ${recipe.title}?`, faq1A: "Laissez refroidir complètement, puis conservez dans une boîte hermétique au réfrigérateur pendant 2-3 jours.",
@@ -153,10 +153,10 @@ if (!baseNutrition && lang !== 'it') {
 }
 
 const hasNutrition = !!baseNutrition;
-const VNR = { kcal: 2000, proteins: 50, carbs: 260, sugars: 50, fats: 70, saturated_fats: 20, salt: 6 };
 
+// FIX PILLOLA VERIFICA IN ALTO: Lettere omogenee e pallino perfettamente tondo
 const d = new Date();
-const currentMonthStr = t.months[d.getMonth()];
+const currentMonthStr = t.months[d.getMonth()].toUpperCase();
 const currentYear = d.getFullYear();
 const freshnessString = `${t.verifiedText} ${currentMonthStr} ${currentYear}`;
 
@@ -199,8 +199,11 @@ const alternateUrls = {
     </div>
     
     <div class="relative max-w-5xl mx-auto px-4 h-full flex flex-col justify-end pb-10 md:pb-14 z-20 text-center pointer-events-none">
+      
       <div class="hidden md:flex justify-center mb-3 opacity-90">
-         <span class="px-3 py-1 bg-slate-900/60 backdrop-blur-md border border-slate-500/30 rounded-full text-[10px] text-slate-300 font-bold uppercase tracking-widest flex items-center gap-1.5 shadow-lg"><span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span> {freshnessString}</span>
+         <span class="px-3 py-1.5 bg-slate-900/60 backdrop-blur-md border border-slate-500/30 rounded-full text-[10px] text-slate-300 font-bold tracking-widest flex items-center gap-2 shadow-lg" style="font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0"></span> {freshnessString}
+         </span>
       </div>
 
       <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
@@ -686,10 +689,13 @@ const alternateUrls = {
         ingredients.forEach(el => {
           const original = el.getAttribute('data-original');
           if(original) {
+              
+              // FIX: Usa la variabile isMetric invece di forzare lang !== 'en'
               el.innerHTML = scaleAndConvertIngredient(original, ratio, isMetric, !isMetric);
           }
         });
 
+        // FIX: Evita di ricalcolare i gradi a caso se non siamo in inglese!
         if (lang === 'en' && tempValDisplay && baseTemp) {
             tempValDisplay.textContent = isMetric ? fToC(baseTemp) : baseTemp;
             tempUnitDisplay.textContent = isMetric ? "°C" : "°F";

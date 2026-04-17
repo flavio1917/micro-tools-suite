@@ -3933,7 +3933,7 @@
   },
   {
     "slug": "salmone-burro-limone",
-    "title": "Salmone Burro e Limone (Raffinato in 8 Minuti)",
+    "title": "Salmone Burro e Limone (Pronto in 8 Minuti)",
     "emoji": "🐟",
     "temp": 175,
     "time": "8",
@@ -8073,5 +8073,995 @@
       "patate novelle",
       "salsa piccante"
     ]
+  },
+  {
+    "title": "Supplì al Telefono",
+    "slug": "roman-suppli-al-telefono",
+    "emoji": "🍅",
+    "temp": 200,
+    "time": "12",
+    "prep_time": "30",
+    "portions": "4",
+    "ingredients": [
+      "250g di riso cotto e freddo con salsa di pomodoro o ragù",
+      "1 uovo grande, sbattuto",
+      "100g di mozzarella per pizza (a bassa umidità), tagliata a listarelle",
+      "Pangrattato per la panatura",
+      "Olio d'oliva spray"
+    ],
+    "description": "Chiamati così per il 'filo del telefono' di mozzarella che si forma quando li dividi. Queste crocchette di riso romane sono un classico salato e filante della Città Eterna.",
+    "instructions": [
+      "Prendi circa due cucchiai di riso freddo. Appiattisci la porzione sul palmo della mano e posiziona le listarelle di mozzarella al centro.",
+      "Chiudi la mozzarella con il riso, formando una forma ovale.",
+      "Passa ogni supplì prima nell'uovo sbattuto, poi nel pangrattato, assicurandoti di coprirlo completamente.",
+      "Spruzza i supplì con olio d'oliva. Cuoci a 200°C per 12 minuti, girandoli a metà cottura."
+    ],
+    "nutrition": {
+      "kcal": 285,
+      "proteins_g": 9,
+      "fats_g": 11,
+      "saturated_fats_g": 5,
+      "carbs_g": 38,
+      "sugars_g": 2,
+      "salt_g": 0.8
+    },
+    "tip": "Usa una mozzarella a bassa umidità (quella per pizza in panetto) per evitare che i supplì si aprano durante la cottura.",
+    "isItalian": true,
+    "image": "suppli-romani-telefono",
+    "keywords": ["Uova/Formaggi", "Antipasto", "Snack", "Vegetariano"],
+    "is_sanitized": true
+  },
+  {
+    "title": "Mozzarella in Carrozza",
+    "slug": "fried-mozzarella-sandwich",
+    "emoji": "🍞",
+    "temp": 190,
+    "time": "10",
+    "prep_time": "10",
+    "portions": "2",
+    "ingredients": [
+      "4 fette di pancarrè o pane in cassetta",
+      "150g di mozzarella fresca",
+      "2 uova grandi",
+      "Pangrattato, q.b.",
+      "Latte, q.b.",
+      "Sale",
+      "Olio spray per cottura"
+    ],
+    "description": "Un classico dello street food napoletano. Spesse fette di pane racchiudono un cuore di mozzarella filante, per un esterno dorato e croccante e un centro fuso... con una frazione dell'olio.",
+    "instructions": [
+      "Rimuovi i bordi dalle fette di pane. Metti una spessa fetta di mozzarella tra due fette di pane e premi saldamente i bordi per sigillare.",
+      "Immergi brevemente i bordi sigillati del tramezzino nel latte. Immergi l'intero tramezzino nell'uovo sbattuto, poi passalo accuratamente nel pangrattato.",
+      "Spruzza uniformemente l'olio su entrambi i lati della carrozza.",
+      "Cuoci a 190°C per 10 minuti. Gira la mozzarella a metà cottura (dopo 5 minuti) per garantire una doratura uniforme."
+    ],
+    "nutrition": {
+      "kcal": 440,
+      "proteins_g": 21,
+      "fats_g": 24,
+      "saturated_fats_g": 12,
+      "carbs_g": 35,
+      "sugars_g": 4,
+      "salt_g": 1.2
+    },
+    "tip": "Per un sapore più intenso, aggiungi un filetto di acciuga o una fetta di prosciutto cotto insieme alla mozzarella.",
+    "isItalian": true,
+    "image": "mozzarella-in-carrozza",
+    "keywords": ["Uova/Formaggi", "Antipasto", "Snack", "Proteico", "Vegetariano", "Veloce"],
+    "is_sanitized": true
+  },
+  {
+    "slug": "deluxe-hamburger",
+    "title": "Hamburger Deluxe di Manzo Tostati",
+    "emoji": "🍔",
+    "temp": 200,
+    "time": "8",
+    "prep_time": "25",
+    "portions": "4",
+    "ingredients": [
+      "650g di carne macinata di manzo",
+      "4 panini per hamburger al sesamo",
+      "2 pomodori grandi, affettati",
+      "Foglie di lattuga",
+      "1 spicchio d'aglio, tritato",
+      "20ml di salsa di soia",
+      "1 cucchiaio di olio vegetale",
+      "Sale q.b."
+    ],
+    "description": "L'esperienza definitiva dell'hamburger fatto in casa. La circolazione ad alta temperatura garantisce un tortino perfettamente sigillato e un panino tostato e burroso per un'autentica consistenza gourmet.",
+    "instructions": [
+      "In una ciotola, unisci la carne macinata, l'aglio tritato, la salsa di soia, l'olio e il sale.",
+      "Mescola fino a ottenere un composto omogeneo e forma quattro hamburger.",
+      "Preriscalda la friggitrice ad aria a 200°C. Posiziona i tortini nel cestello e cuoci per 8-12 minuti.",
+      "Rimuovi la carne e lasciala riposare. Metti le metà dei panini nel cestello e tosta per 2 minuti fino a doratura.",
+      "Componi gli hamburger con lattuga, fette di pomodoro e la carne. Servi immediatamente."
+    ],
+    "nutrition": {
+      "kcal": 560,
+      "proteins_g": 34,
+      "fats_g": 28,
+      "saturated_fats_g": 9,
+      "carbs_g": 42,
+      "sugars_g": 6,
+      "salt_g": 1.5
+    },
+    "source": "Tefal",
+    "tip": "Tosta i panini mentre la carne riposa per ottimizzare temperatura e consistenza.",
+    "keywords": ["Carne", "Piatto Principale", "Proteico", "Veloce"],
+    "isItalian": false,
+    "image": "hamburger-deluxe",
+    "is_sanitized": true
+  },
+  {
+    "slug": "asian-turkey-burgers",
+    "title": "Hamburger di Tacchino allo Zenzero (Stile Asiatico)",
+    "emoji": "🍔",
+    "temp": 200,
+    "time": "11",
+    "prep_time": "35",
+    "portions": "4",
+    "ingredients": [
+      "450g di carne macinata magra di tacchino",
+      "1 cucchiaino di zenzero grattugiato",
+      "2 spicchi d'aglio, tritati",
+      "35g di salsa Hoisin",
+      "1 cucchiaio di salsa di soia",
+      "90g di pangrattato panko",
+      "4 panini per hamburger, per servire",
+      "Insalata di cavolo e carote (coleslaw), per servire"
+    ],
+    "description": "Un tocco leggero e frizzante su un classico. Questi hamburger di tacchino magro sono arricchiti con zenzero e soia, rosolati alla perfezione per un interno umido e una crosticina saporita e aromatica.",
+    "instructions": [
+      "In una ciotola capiente, unisci il tacchino macinato, lo zenzero grattugiato, l'aglio tritato, la salsa Hoisin e la salsa di soia.",
+      "Aggiungi il panko e mescola fino a incorporarlo completamente. Evita di mescolare eccessivamente.",
+      "Modella il composto in 4 hamburger uniformi.",
+      "Fai riposare gli hamburger in frigorifero per almeno 30 minuti per aiutarli a mantenere la forma durante la cottura.",
+      "Cuoci a 200°C per 11 minuti, girandoli a metà cottura. Servi subito nei panini con il coleslaw."
+    ],
+    "nutrition": {
+      "kcal": 380,
+      "proteins_g": 31,
+      "fats_g": 12,
+      "saturated_fats_g": 3,
+      "carbs_g": 36,
+      "sugars_g": 5,
+      "salt_g": 1.1
+    },
+    "source": "Cosori",
+    "tip": "Raffreddare la carne prima della cottura è essenziale per evitare che gli hamburger si sfaldino.",
+    "keywords": ["Carne", "Piatto Principale", "Proteico", "Veloce", "Asiatico"],
+    "isItalian": false,
+    "image": "hamburger-tacchino-asiatico",
+    "is_sanitized": true
+  },
+  {
+    "slug": "new-york-style-hot-dog",
+    "title": "Hot Dog Newyorkesi Farciti",
+    "emoji": "🌭",
+    "temp": 170,
+    "time": "5",
+    "prep_time": "25",
+    "portions": "4",
+    "ingredients": [
+      "4 panini da hot dog",
+      "4 wurstel grandi di suino",
+      "1 piccola cipolla rossa, affettata sottilmente",
+      "4 fette di formaggio Cheddar",
+      "Ketchup",
+      "Cetriolini a cubetti"
+    ],
+    "description": "Porta a casa la Grande Mela. Questo metodo assicura wurstel perfettamente croccanti, formaggio fuso filante e un panino caldo e soffice per la massima esperienza di street food.",
+    "instructions": [
+      "Bollisci i wurstel per alcuni minuti finché sono teneri.",
+      "Salta la cipolla rossa affettata in una padella a fuoco alto.",
+      "Taglia i panini per il lungo e spalma il ketchup.",
+      "Metti un wurstel in ogni panino. Aggiungi la cipolla saltata, i cetriolini e una fetta di formaggio Cheddar.",
+      "Scalda gli hot dog farciti a 170°C per 5 minuti, o finché il formaggio non è sciolto e il panino è caldo."
+    ],
+    "nutrition": {
+      "kcal": 415,
+      "proteins_g": 16,
+      "fats_g": 22,
+      "saturated_fats_g": 8,
+      "carbs_g": 39,
+      "sugars_g": 7,
+      "salt_g": 2.1
+    },
+    "source": "Tefal",
+    "tip": "Pre-cuoci i wurstel in acqua bollente prima di assemblare gli hot dog per un risultato ottimale.",
+    "keywords": ["Carne", "Piatto Principale", "Snack", "Proteico", "Veloce"],
+    "isItalian": false,
+    "image": "hot-dog-newyorkese",
+    "is_sanitized": true
+  },
+  {
+    "slug": "pork-and-prosciutto-rolls",
+    "title": "Involtini di Maiale e Prosciutto Crudo",
+    "emoji": "🥓",
+    "temp": 200,
+    "time": "10",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "450g di filetto di maiale, battuto sottile",
+      "8 fette di prosciutto crudo",
+      "200g di spinaci freschi",
+      "4 fette di mozzarella compatta",
+      "20g di pomodori secchi",
+      "1 cucchiaio di olio d'oliva"
+    ],
+    "description": "Sofisticati e saporiti. Il tenero filetto di maiale viene arrotolato con spinaci e mozzarella fusa, poi avvolto in prosciutto crudo che diventa magnificamente croccante in cottura.",
+    "instructions": [
+      "Batti le porzioni di filetto di maiale fino ad ottenere uno spessore uniforme.",
+      "Disponi le fette di prosciutto leggermente sovrapposte su un piano da lavoro. Posiziona il maiale battuto sopra il prosciutto.",
+      "Metti gli spinaci, la mozzarella e i pomodori secchi lungo il centro della carne.",
+      "Arrotola strettamente la carne e il prosciutto formando un cilindro. Fissa con spago da cucina se necessario.",
+      "Spennella il rotolo con olio d'oliva. Cuoci a 200°C per 10 minuti, o finché il prosciutto è croccante e il maiale è cotto."
+    ],
+    "nutrition": {
+      "kcal": 310,
+      "proteins_g": 38,
+      "fats_g": 16,
+      "saturated_fats_g": 6,
+      "carbs_g": 4,
+      "sugars_g": 2,
+      "salt_g": 1.8
+    },
+    "source": "Cosori",
+    "tip": "Fissa il rotolo con spago da cucina per mantenere una forma perfetta durante la cottura ad aria.",
+    "keywords": ["Carne", "Piatto Principale", "Proteico", "Low Carb", "Veloce"],
+    "isItalian": true,
+    "image": "involtini-maiale-prosciutto",
+    "is_sanitized": true
+  },
+  {
+    "slug": "bacon-wrapped-stuffed-jalapenos",
+    "title": "Jalapeños Ripieni Avvolti nel Bacon",
+    "emoji": "🌶",
+    "temp": 160,
+    "time": "16",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "12 peperoncini jalapeño",
+      "230g di maiale macinato",
+      "120g di formaggio Cheddar grattugiato",
+      "12 fette di bacon (pancetta affumicata)",
+      "Sale e pepe nero q.b."
+    ],
+    "description": "Il perfetto tocco piccante. Questi jalapeños sono farciti con un ricco mix di maiale e cheddar, poi avvolti in bacon affumicato che viene fritto ad aria fino a una doratura super croccante.",
+    "instructions": [
+      "Taglia i peperoncini a metà per il lungo e rimuovi i semi e i filamenti interni.",
+      "In una ciotola, unisci il macinato di maiale, il formaggio grattugiato, sale e pepe. Mescola bene.",
+      "Riempi ogni metà di peperoncino con il composto di carne e formaggio.",
+      "Avvolgi ogni metà farcita con una fetta di bacon. Usa uno stuzzicadenti per fissarlo, se necessario.",
+      "Disponi i peperoncini nel cestello. Cuoci finché il bacon è croccante e il ripieno è completamente cotto."
+    ],
+    "nutrition": {
+      "kcal": 245,
+      "proteins_g": 14,
+      "fats_g": 19,
+      "saturated_fats_g": 9,
+      "carbs_g": 5,
+      "sugars_g": 2,
+      "salt_g": 1.4
+    },
+    "source": "Cosori",
+    "tip": "Per ridurre la piccantezza, rimuovi accuratamente tutti i semi e i filamenti bianchi. Scuoti il cestello o gira i peperoncini a metà cottura per un risultato uniforme.",
+    "keywords": ["Carne", "Antipasto", "Snack", "Proteico", "Low Carb", "Veloce"],
+    "isItalian": false,
+    "image": "jalapenos-ripieni-bacon",
+    "is_sanitized": true
+  },
+  {
+    "slug": "beef-coriander-kofta",
+    "title": "Spiedini di Kofta di Manzo Orientali",
+    "emoji": "🍢",
+    "temp": 180,
+    "time": "8",
+    "prep_time": "20",
+    "portions": "4",
+    "isItalian": false,
+    "ingredients": [
+      "360g di carne macinata di manzo",
+      "3 cucchiai di scalogni, tritati finemente",
+      "3 cucchiai di coriandolo fresco, tritato",
+      "20g di miscela di spezie Ras el Hanout",
+      "20ml di olio d'oliva",
+      "2g di cumino in polvere"
+    ],
+    "description": "Profumati e affumicati. Questi spiedini di manzo ricchi di erbe vengono cotti per simulare il calore elevato di una griglia, ottenendo un esterno abbrustolito e aromatico e un centro succoso e speziato.",
+    "instructions": [
+      "Trita finemente gli scalogni. Soffriggi in una padella con olio d'oliva finché diventano traslucidi.",
+      "In una ciotola, unisci la carne macinata, gli scalogni saltati, il coriandolo fresco, il ras el hanout e il cumino.",
+      "Impasta il composto fino a quando tutti gli ingredienti sono uniformemente amalgamati. Condisci con sale e pepe a piacere.",
+      "Dividi il composto in porzioni uguali. Dai a ogni porzione la forma di un cilindro e premilo saldamente su uno spiedino.",
+      "Disponi gli spiedini in un unico strato nel cestello di cottura. Cuoci a 180°C per 8 minuti, girandoli una volta a metà cottura."
+    ],
+    "nutrition": {
+      "kcal": 280,
+      "proteins_g": 24,
+      "fats_g": 18,
+      "saturated_fats_g": 6,
+      "carbs_g": 3,
+      "sugars_g": 1,
+      "salt_g": 1.2
+    },
+    "source": "Tefal",
+    "tip": "Servili accompagnati da una salsa fresca allo yogurt e menta.",
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Antipasto",
+      "Proteico",
+      "Veloce"
+    ],
+    "image": "kofta-manzo-coriandolo",
+    "is_sanitized": true
+  },
+  {
+    "slug": "mediterranean-lamb-meatballs",
+    "title": "Polpette di Agnello Mediterranee alla Menta",
+    "emoji": "🧆",
+    "temp": 200,
+    "time": "11",
+    "prep_time": "35",
+    "portions": "4",
+    "isItalian": false,
+    "ingredients": [
+      "600g di carne macinata di agnello",
+      "4 spicchi d'aglio e 2 piccoli scalogni, tritati finemente",
+      "3g di menta fresca e 10g di prezzemolo fresco, tritati",
+      "3g di cumino in polvere e 5ml di salsa piccante",
+      "20ml di succo di limone e 15ml di olio d'oliva, più dell'altro per spennellare"
+    ],
+    "description": "La menta fresca incontra il sapore intenso dell'agnello. Queste polpette sono insaporite con erbe fresche e aglio, poi fritte ad aria ad alta temperatura per creare uno strato esterno deliziosamente croccante.",
+    "instructions": [
+      "In una ciotola capiente, unisci l'agnello macinato, l'aglio tritato finemente e gli scalogni.",
+      "Aggiungi le erbe tritate, il cumino in polvere, la salsa piccante, il succo di limone e l'olio d'oliva.",
+      "Mescola tutti gli ingredienti a mano fino a quando non sono completamente amalgamati.",
+      "Dai forma al composto creando polpette piccole e uniformi. Metti in frigo per almeno 30 minuti a rassodare.",
+      "Spennella le polpette con olio. Posizionale nel cestello in un unico strato. Cuoci a 200°C per 11 minuti."
+    ],
+    "nutrition": {
+      "kcal": 360,
+      "proteins_g": 26,
+      "fats_g": 26,
+      "saturated_fats_g": 10,
+      "carbs_g": 4,
+      "sugars_g": 1,
+      "salt_g": 0.9
+    },
+    "source": "Cosori",
+    "tip": "Servile con una salsa tzatziki o a base di yogurt greco.",
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Antipasto",
+      "Proteico",
+      "Low Carb",
+      "Veloce"
+    ],
+    "image": "polpette-agnello-mediterraneo",
+    "is_sanitized": true
+  },
+  {
+    "slug": "japanese-glazed-meatballs",
+    "title": "Polpette Giapponesi Glassate Soia e Miso",
+    "emoji": "🍡",
+    "temp": 200,
+    "time": "11",
+    "prep_time": "15",
+    "portions": "4",
+    "ingredients": [
+      "450g di carne macinata di manzo",
+      "20g di pasta di miso scura",
+      "1 cucchiaio di olio di sesamo tostato",
+      "1 cucchiaio di menta tritata finemente",
+      "50ml di salsa di soia",
+      "50ml di mirin (vino di riso giapponese)",
+      "5g di zucchero di canna"
+    ],
+    "description": "Bombe di umami formato boccone. Insaporite con miso e rifinite con una glassa dolce e salata a base di soia e mirin, queste polpette si caramellano magnificamente per una finitura lucida che crea dipendenza.",
+    "isItalian": false,
+    "instructions": [
+      "In una ciotola capiente, unisci la carne macinata, la pasta di miso, l'olio di sesamo e la menta tritata.",
+      "Con le mani oliate, forma delle polpette uniformi con l'impasto. Metti in frigo per 15 minuti a rassodare.",
+      "In una ciotola a parte, mescola lo zucchero di canna, la salsa di soia e il mirin per creare la glassa.",
+      "Disponi le polpette fredde nel cestello di cottura.",
+      "Cuoci a 200°C per 11 minuti, spennellando le polpette con la glassa ogni 2-3 minuti finché non sono completamente cotte e caramellate."
+    ],
+    "nutrition": {
+      "kcal": 310,
+      "proteins_g": 22,
+      "fats_g": 18,
+      "saturated_fats_g": 6,
+      "carbs_g": 11,
+      "sugars_g": 8,
+      "salt_g": 2.1
+    },
+    "source": "Cosori",
+    "tip": "Per una glassa uniforme, spennella le polpette ogni 2 minuti. Scuoti il cestello a metà cottura per garantire una rosolatura su tutti i lati.",
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Antipasto",
+      "Proteico",
+      "Giapponese",
+      "Veloce"
+    ],
+    "image": "polpette-giapponesi",
+    "is_sanitized": true
+  },
+  {
+    "slug": "air-fried-whole-sausages",
+    "title": "Salsicce Intere Arrostite alla Perfezione",
+    "emoji": "🌭",
+    "temp": 200,
+    "time": "8",
+    "prep_time": "0",
+    "portions": "4",
+    "ingredients": [
+      "8 salsicce fresche di suino (circa 600g in totale)"
+    ],
+    "description": "Il modo più semplice per cucinare le salsicce. La circolazione dell'aria calda garantisce sempre un budello croccante, ben dorato e un interno super succoso, senza bisogno di bucarle o schizzi di grasso in cucina.",
+    "instructions": [
+      "Tira fuori le salsicce dal frigorifero qualche minuto prima di cuocerle.",
+      "Disponi le salsicce in un unico strato nel cestello di cottura, assicurandoti che non si sovrappongano per una corretta circolazione dell'aria.",
+      "Cuoci a 200°C per 8-10 minuti, regolando il tempo in base allo spessore della salsiccia.",
+      "A metà cottura, gira le salsicce con delle pinze per garantire una doratura uniforme."
+    ],
+    "nutrition": {
+      "kcal": 450,
+      "proteins_g": 21,
+      "fats_g": 38,
+      "saturated_fats_g": 14,
+      "carbs_g": 2,
+      "sugars_g": 0,
+      "salt_g": 2.5
+    },
+    "source": "Ninja",
+    "tip": "Non bucare il budello della salsiccia prima della cottura: questo trucco manterrà tutti i succhi saporiti all'interno.",
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Proteico",
+      "Low Carb",
+      "Veloce"
+    ],
+    "isItalian": true,
+    "image": "salsicce-intere-arrostite",
+    "is_sanitized": true
+  },
+  {
+    "slug": "mustard-sausage-spiral",
+    "title": "Spirale di Salsiccia con Miele e Senape",
+    "emoji": "🌭",
+    "temp": 200,
+    "time": "10",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "800g di salsiccia di suino a metro (non divisa)",
+      "2 cucchiai di senape di Digione",
+      "2 cucchiai di senape in grani",
+      "3 cucchiai di miele",
+      "Foglie di 2 rametti di timo fresco",
+      "Sale e pepe nero macinato fresco q.b."
+    ],
+    "description": "Un centrotavola sbalorditivo per la tua prossima grigliata indoor. Questa spirale di salsiccia è spennellata con una glassa dolce e piccante al miele e senape che si caramella in una crosta ricca e saporita.",
+    "instructions": [
+      "In una piccola ciotola, unisci il miele, le due senapi, le foglie di timo, il sale e il pepe.",
+      "Arrotola la salsiccia continua formando una spirale stretta. Fissa la forma inserendo due spiedini di legno incrociati a X.",
+      "Spennella l'intera superficie della salsiccia con la glassa alla senape.",
+      "Preriscalda la friggitrice a 200°C. Posiziona la spirale di salsiccia sulla superficie di cottura.",
+      "Cuoci per 10 minuti, girando la spirale a metà cottura (dopo 5 minuti) per garantire una doratura uniforme."
+    ],
+    "nutrition": {
+      "kcal": 590,
+      "proteins_g": 28,
+      "fats_g": 42,
+      "saturated_fats_g": 15,
+      "carbs_g": 18,
+      "sugars_g": 14,
+      "salt_g": 3.1
+    },
+    "source": "Tefal",
+    "tip": "Usa due spiedini incrociati per fissare la forma a spirale. Girare la salsiccia a metà è essenziale per una crosta uniforme e non bruciata.",
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Proteico",
+      "Veloce"
+    ],
+    "isItalian": false,
+    "image": "salsiccia-griglia-spirale",
+    "is_sanitized": true
+  },
+  {
+    "slug": "steak-horseradish-sandwich",
+    "title": "Sandwich con Bistecca e Rafano",
+    "emoji": "🥩",
+    "temp": 200,
+    "time": "7",
+    "prep_time": "5",
+    "portions": "2",
+    "isItalian": false,
+    "ingredients": [
+      "1 bistecca di manzo, taglio ribeye (circa 450g)",
+      "25ml di olio extra vergine di oliva",
+      "6g di sale grosso",
+      "2g di pepe nero macinato",
+      "110g di panna acida",
+      "40g di salsa al rafano bianca (cren)",
+      "2g di erba cipollina fresca, tritata",
+      "1 piccolo scalogno, tritato finemente",
+      "Succo di 1/2 limone",
+      "2 panini per hamburger al sesamo",
+      "Rucola fresca, per servire"
+    ],
+    "description": "Sapori decisi in ogni boccone. Una bistecca rosolata alla perfezione viene abbinata a una salsa al rafano pungente e cremosa per bilanciare la ricchezza, il tutto racchiuso in un panino caldo e tostato.",
+    "instructions": [
+      "Condisci la bistecca su tutti i lati con olio d'oliva, sale e pepe.",
+      "Preriscalda l'apparecchio a 200°C. Cuoci la bistecca per circa 6 minuti per una cottura al sangue o media.",
+      "In una ciotola, unisci la panna acida, il rafano, l'erba cipollina, lo scalogno tritato e il succo di limone per preparare la salsa.",
+      "Rimuovi la bistecca e lasciala riposare su un tagliere per 5-10 minuti. Affettala controfibra.",
+      "Tosta i panini. Spalma la salsa al rafano sui panini. Componi il sandwich con rucola fresca e la bistecca a fette."
+    ],
+    "nutrition": {
+      "kcal": 680,
+      "proteins_g": 52,
+      "fats_g": 40,
+      "saturated_fats_g": 16,
+      "carbs_g": 32,
+      "sugars_g": 6,
+      "salt_g": 2.2
+    },
+    "source": "Cosori",
+    "tip": "Fai riposare la bistecca per 5-10 minuti prima di affettarla: è il segreto per mantenere all'interno tutti i succhi saporiti della carne.",
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Proteico",
+      "Veloce"
+    ],
+    "image": "sandwich-bistecca-rafano",
+    "is_sanitized": true
+  },
+  {
+    "slug": "shawarma-lamb-skewers",
+    "title": "Spiedini di Agnello Speziati allo Shawarma",
+    "emoji": "🍢",
+    "temp": 200,
+    "time": "9",
+    "prep_time": "12",
+    "portions": "2",
+    "ingredients": [
+      "350g di agnello macinato",
+      "3g di paprika dolce",
+      "2g di cumino in polvere",
+      "3g di aglio in polvere",
+      "2g di cipolla in polvere",
+      "1g di cannella in polvere",
+      "1g di curcuma in polvere",
+      "1g di semi di finocchio",
+      "1g di coriandolo in polvere",
+      "4g di sale"
+    ],
+    "description": "Porta a casa i profumi del Medio Oriente. Questi spiedini di agnello macinato sono infusi con spezie aromatiche da shawarma e cotti per ottenere un interno succulento e una crosta salata e ben dorata.",
+    "instructions": [
+      "In una ciotola, unisci l'agnello macinato con paprika, cumino, aglio, cipolla, cannella, curcuma, finocchio, coriandolo e sale.",
+      "Impasta la carne con le mani per distribuire uniformemente le spezie.",
+      "Dividi il composto e modellalo attorno agli spiedini di legno formando delle forme cilindriche.",
+      "Refrigera gli spiedini per 10 minuti in modo che mantengano la forma in cottura.",
+      "Preriscalda l'apparecchio a 200°C. Cuoci per 9 minuti, girando gli spiedini a metà cottura."
+    ],
+    "nutrition": {
+      "kcal": 390,
+      "proteins_g": 32,
+      "fats_g": 28,
+      "saturated_fats_g": 12,
+      "carbs_g": 4,
+      "sugars_g": 1,
+      "salt_g": 1.9
+    },
+    "source": "Cosori",
+    "tip": "Servili caldissimi, perfetti se accompagnati da una salsa allo yogurt e menta.",
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Proteico",
+      "Low Carb",
+      "Veloce"
+    ],
+    "isItalian": false,
+    "image": "spiedini-agnello-shawarma",
+    "is_sanitized": true
+  },
+  {
+    "slug": "teriyaki-pork-skewers",
+    "title": "Spiedini di Maiale Glassati al Teriyaki",
+    "emoji": "🍢",
+    "temp": 200,
+    "time": "9",
+    "prep_time": "35",
+    "portions": "4",
+    "ingredients": [
+      "450g di lonza di maiale, a cubetti",
+      "10g di amido di mais",
+      "120ml di acqua",
+      "60ml di salsa di soia",
+      "60g di zucchero di canna",
+      "1 spicchio d'aglio, tritato",
+      "2g di zenzero fresco, grattugiato",
+      "Olio spray per cottura",
+      "Spiedini di legno"
+    ],
+    "description": "Irresistibilmente lucidi e dolci. I cubetti di lonza di maiale magra sono glassati con una salsa teriyaki fatta in casa che si caramella magnificamente ad alta temperatura per un perfetto equilibrio dolce-salato.",
+    "instructions": [
+      "In un pentolino, sciogli l'amido di mais nell'acqua fredda. Aggiungi la salsa di soia, lo zucchero di canna, l'aglio tritato e lo zenzero grattugiato.",
+      "Cuoci a fuoco medio, mescolando costantemente, per circa 5 minuti o finché la salsa non si addensa. Metti da parte a intiepidire.",
+      "Infilza i cubetti di maiale sugli spiedini di legno. Tieni da parte metà della salsa per spennellare in cottura.",
+      "Ricopri gli spiedini con la salsa rimanente e lasciali marinare per 30 minuti.",
+      "Preriscalda la friggitrice a 200°C. Metti gli spiedini nel cestello e spruzzali con un velo d'olio.",
+      "Cuoci per un totale di 9 minuti. Durante la cottura, spennella gli spiedini con la salsa teriyaki messa da parte ogni 2 minuti per creare una glassa spessa."
+    ],
+    "nutrition": {
+      "kcal": 280,
+      "proteins_g": 26,
+      "fats_g": 8,
+      "saturated_fats_g": 3,
+      "carbs_g": 22,
+      "sugars_g": 16,
+      "salt_g": 1.9
+    },
+    "source": "Cosori",
+    "tip": "Spennellare la salsa teriyaki ogni 2 minuti durante la cottura è il segreto per creare uno strato spesso, appiccicoso e caramellato.",
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Antipasto",
+      "Proteico",
+      "Veloce"
+    ],
+    "isItalian": false,
+    "image": "spiedini-maiale-teriyaki",
+    "is_sanitized": true
+  },
+  {
+    "slug": "korean-beef-skewers",
+    "title": "Spiedini di Manzo Coreani al Gochujang",
+    "emoji": "🍢",
+    "temp": 200,
+    "time": "7",
+    "prep_time": "65",
+    "portions": "4",
+    "ingredients": [
+      "500g di manzo a cubetti",
+      "20g di pasta ssamjang",
+      "20g di pasta gochujang",
+      "15ml di salsa di soia",
+      "15ml di olio di sesamo",
+      "15ml di miele",
+      "5ml di aceto di riso"
+    ],
+    "description": "Un'esplosione di sapore. Questi spiedini di manzo sono marinati in una miscela tradizionale di pasta coreana piccante, salsa di soia e miele, offrendo un profondo tocco umami con una nota di dolcezza.",
+    "instructions": [
+      "In una ciotola capiente, unisci ssamjang, gochujang, salsa di soia, olio di sesamo, miele e aceto di riso per creare la marinatura.",
+      "Aggiungi i cubetti di manzo alla marinata. Assicurati che tutti i pezzi siano ricoperti in modo uniforme. Metti in frigo a marinare per almeno un'ora.",
+      "Infilza la carne marinata sugli spiedini. Se necessario, taglia gli stecchini per farli entrare nel cestello.",
+      "Preriscalda l'apparecchio a 200°C.",
+      "Disponi gli spiedini nella friggitrice. Cuoci per 7 minuti a 200°C, finché l'esterno non è rosolato e l'interno è cotto ma succoso."
+    ],
+    "nutrition": {
+      "kcal": 340,
+      "proteins_g": 31,
+      "fats_g": 18,
+      "saturated_fats_g": 6,
+      "carbs_g": 10,
+      "sugars_g": 7,
+      "salt_g": 1.3
+    },
+    "source": "Cosori",
+    "tip": "Se usi spiedini di legno, immergili in acqua fredda per almeno 10 minuti prima dell'uso per evitare che brucino ad alte temperature.",
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Antipasto",
+      "Proteico",
+      "Veloce"
+    ],
+    "isItalian": false,
+    "image": "spiedini-manzo-coreano",
+    "is_sanitized": true
+  },
+  {
+    "slug": "beef-cheese-skewers",
+    "title": "Involtini di Manzo Ripieni di Formaggio",
+    "emoji": "🍢",
+    "temp": 175,
+    "time": "6",
+    "prep_time": "80",
+    "portions": "4",
+    "ingredients": [
+      "12 fettine sottili di carpaccio di manzo",
+      "200g di formaggio a pasta dura (es. Comté o Groviera)",
+      "5 cucchiai di miele",
+      "6 cucchiai di salsa di soia"
+    ],
+    "description": "Lo snack comfort definitivo. Sottili fette di manzo avvolgono un cuore di formaggio fuso, rifinite con una glassa al miele e soia che crea un esterno appiccicoso e saporito.",
+    "instructions": [
+      "Rimuovi la crosta dal formaggio. Taglia il formaggio in bastoncini, spessi circa 1,5 cm.",
+      "Infilza i bastoncini di formaggio su spiedini di legno.",
+      "Avvolgi completamente ogni bastoncino di formaggio con una fetta di carpaccio di manzo, premendo saldamente per sigillare.",
+      "Sbatti insieme la salsa di soia e il miele. Marina gli spiedini in questo composto per 1 ora in frigorifero.",
+      "Posiziona gli spiedini nel cestello di cottura preriscaldato a 175°C.",
+      "Cuoci per 6 minuti. Gira gli spiedini a metà cottura per garantire una doratura uniforme e lo scioglimento perfetto del formaggio."
+    ],
+    "nutrition": {
+      "kcal": 360,
+      "proteins_g": 26,
+      "fats_g": 16,
+      "saturated_fats_g": 9,
+      "carbs_g": 28,
+      "sugars_g": 25,
+      "salt_g": 2.6
+    },
+    "source": "Tefal",
+    "tip": "Avvolgi la carne molto saldamente attorno al formaggio per evitare che fuoriesca sciogliendosi durante la cottura.",
+    "keywords": [
+      "Carne",
+      "Antipasto",
+      "Snack",
+      "Proteico",
+      "Veloce"
+    ],
+    "isItalian": false,
+    "image": "spiedini-manzo-teriyaki",
+    "is_sanitized": true
+  },
+  {
+    "slug": "apple-puff-pastries",
+    "title": "Sfogliatine Croccanti alle Mele",
+    "emoji": "🥧",
+    "temp": 180,
+    "time": "16",
+    "prep_time": "15",
+    "portions": "8",
+    "ingredients": [
+      "1 rotolo di pasta sfoglia rettangolare (circa 330g)",
+      "3 mele rosse croccanti, senza torsolo",
+      "3 cucchiai di zucchero semolato",
+      "1 cucchiaino di cannella in polvere",
+      "1 uovo grande, sbattuto per spennellare",
+      "Succo di limone, q.b.",
+      "Zucchero a velo, per spolverare"
+    ],
+    "description": "L'eleganza della semplicità a forma di pasticcino. Mele speziate tagliate a fettine sottili riposano su una pasta sfoglia burrosa che si solleva in un bordo dorato e friabile, per un dessert bello da vedere e buonissimo da mangiare.",
+    "instructions": [
+      "Taglia le mele a fettine sottili. Mescolale subito con del succo di limone per evitare che anneriscano.",
+      "Srotola la pasta sfoglia fredda. Tagliala in 8 rettangoli uguali.",
+      "Con la punta di un coltello, incidi un bordo di 1 cm su ogni rettangolo (non tagliare completamente l'impasto).",
+      "Unisci le fettine di mela con lo zucchero semolato e la cannella.",
+      "Disponi le fette di mela, sovrapponendole leggermente, all'interno del bordo inciso di ogni rettangolo di sfoglia.",
+      "Spennella i bordi incisi con l'uovo sbattuto. Cuoci a 180°C per 16 minuti, o finché la sfoglia non è gonfia e ben dorata. Spolvera con zucchero a velo prima di servire."
+    ],
+    "nutrition": {
+      "kcal": 210,
+      "proteins_g": 3,
+      "fats_g": 11,
+      "saturated_fats_g": 3,
+      "carbs_g": 26,
+      "sugars_g": 12,
+      "salt_g": 0.4
+    },
+    "source": "Ninja",
+    "tip": "Incidere un bordo di 1 cm consente ai bordi di gonfiarsi in modo significativo, creando una 'cornice' definita attorno al ripieno di mele.",
+    "keywords": [
+      "Dolci",
+      "Snack",
+      "Colazione",
+      "Vegetariano",
+      "Veloce"
+    ],
+    "isItalian": false,
+    "image": "sfogliatine-mele",
+    "is_sanitized": true
+  },
+  {
+    "slug": "air-fried-pickles",
+    "title": "Cetriolini Fritti Speziati",
+    "emoji": "🥒",
+    "temp": 180,
+    "time": "10",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "4 cetriolini all'aneto grandi, scolati",
+      "65g di farina 00",
+      "30g di pangrattato fine",
+      "2 uova, sbattute",
+      "2g di paprika dolce",
+      "1g di pepe di Caienna (peperoncino in polvere)"
+    ],
+    "description": "Uno snack americano pungente e croccante, ma in versione leggera. Questi cetriolini all'aneto sono ricoperti di una panatura speziata e fritti ad aria fino a doratura, offrendo il perfetto morso acido-salato.",
+    "instructions": [
+      "Asciuga accuratamente i cetriolini con carta assorbente. Tagliali a spicchi nel senso della lunghezza.",
+      "Prepara una stazione di panatura a tre fasi: un piatto con la farina, un secondo con le uova sbattute e un terzo con un mix di pangrattato, paprika e pepe di Caienna.",
+      "Passa ogni spicchio di cetriolino nella farina, poi immergilo nell'uovo sbattuto, facendo scolare l'eccesso.",
+      "Infine, ricoprilo completamente con il mix di pangrattato speziato.",
+      "Disponi gli spicchi impanati in un unico strato nel cestello di cottura. Spruzza uniformemente con olio.",
+      "Cuoci a 180°C per 10 minuti. Gira gli spicchi a metà cottura."
+    ],
+    "nutrition": {
+      "kcal": 140,
+      "proteins_g": 6,
+      "fats_g": 3,
+      "saturated_fats_g": 1,
+      "carbs_g": 22,
+      "sugars_g": 2,
+      "salt_g": 1.1
+    },
+    "source": "Cosori",
+    "tip": "Assicurati che i cetriolini siano asciugati alla perfezione prima della panatura, è fondamentale per garantire che la crosticina aderisca bene e diventi croccante.",
+    "keywords": [
+      "Verdure",
+      "Antipasto",
+      "Snack",
+      "Vegetariano",
+      "Veloce"
+    ],
+    "isItalian": false,
+    "image": "sottaceti-fritti",
+    "is_sanitized": true
+  },
+  {
+    "slug": "dark-chocolate-souffle",
+    "title": "Soufflé al Cioccolato Fondente",
+    "emoji": "🍫",
+    "temp": 165,
+    "time": "13",
+    "prep_time": "20",
+    "portions": "4",
+    "isItalian": false,
+    "ingredients": [
+      "100g di cioccolato fondente, tritato",
+      "45g di zucchero semolato",
+      "1 tuorlo d'uovo grande",
+      "3 albumi d'uovo grandi",
+      "100ml di latte intero",
+      "30g di burro non salato, più dell'altro per imburrare",
+      "1 cucchiaino di amido di mais (maizena)",
+      "Zucchero a velo, per spolverare"
+    ],
+    "description": "Stupisci i tuoi ospiti con facilità. Questi soufflé monoporzione offrono una consistenza leggera e aerata che si scioglie sulla lingua, sprigionando un sapore di cioccolato fondente profondo e sofisticato.",
+    "instructions": [
+      "In una piccola ciotola, sbatti il tuorlo d'uovo con l'amido di mais fino a ottenere un composto liscio.",
+      "In un pentolino, porta a ebollizione il latte e metà dello zucchero. Versa il liquido caldo sul composto di tuorli, sbattendo costantemente.",
+      "Riporta il composto nel pentolino e cuoci a fuoco basso, mescolando, finché non si addensa.",
+      "Togli dal fuoco. Incorpora il cioccolato tritato e 30g di burro finché non sono completamente sciolti e il composto è liscio. Metti da parte a intiepidire.",
+      "In una ciotola pulita a parte, monta a neve ferma gli albumi. Aggiungi gradualmente lo zucchero rimanente durante la fase finale della montatura per stabilizzare la meringa.",
+      "Incorpora delicatamente un terzo degli albumi montati a neve nella base di cioccolato tiepida. Incorpora il resto degli albumi in due aggiunte, usando un movimento dal basso verso l'alto per mantenere il volume.",
+      "Prepara quattro pirottini resistenti al calore (ramekin) ungendoli con burro e rivestendo l'interno con zucchero semolato. Elimina lo zucchero in eccesso battendo i pirottini capovolti.",
+      "Riempi ogni pirottino preparato per due terzi con il composto del soufflé.",
+      "Posiziona i pirottini nell'apparecchio preriscaldato a 165°C. Cuoci per 13 minuti. Servi immediatamente, spolverando con zucchero a velo."
+    ],
+    "nutrition": {
+      "kcal": 280,
+      "proteins_g": 6,
+      "fats_g": 18,
+      "saturated_fats_g": 11,
+      "carbs_g": 24,
+      "sugars_g": 18,
+      "salt_g": 0.1
+    },
+    "source": "Cosori",
+    "tip": "Assolutamente vietato aprire il cestello durante il ciclo di cottura! Un improvviso sbalzo di temperatura farà collassare irreparabilmente i soufflé.",
+    "keywords": [
+      "Dolci",
+      "Uova/Formaggi",
+      "Vegetariano",
+      "Veloce"
+    ],
+    "image": "souffle-cioccolato",
+    "is_sanitized": true
+  },
+  {
+    "slug": "grilled-fish-tacos",
+    "title": "Tacos di Pesce Croccanti al Mais",
+    "emoji": "🌮",
+    "temp": 175,
+    "time": "7",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "450g di filetti di pesce bianco, tagliati a striscioline",
+      "60g di farina di mais gialla",
+      "2g di cumino in polvere",
+      "2g di peperoncino in polvere (chili)",
+      "3g di aglio in polvere",
+      "Sale e pepe q.b.",
+      "Tortillas morbide, per servire",
+      "Salsa tartara, per servire",
+      "Spicchi di lime, per servire"
+    ],
+    "description": "Un viaggio veloce in Messico. I filetti di pesce vengono spolverati in una miscela di farina di mais speziata per una leggera croccantezza, quindi serviti in tortillas calde per una cena fresca e ricca di proteine.",
+    "instructions": [
+      "In un piatto fondo, unisci farina di mais, cumino, peperoncino, aglio in polvere, sale e pepe.",
+      "Impanare uniformemente le striscioline di pesce con la miscela di farina di mais.",
+      "Spruzza leggermente i filetti impanati con olio. Disponili in un unico strato nel cestello preriscaldato a 175°C.",
+      "Cuoci per 7 minuti, girando delicatamente i filetti a metà cottura.",
+      "Servi le strisce di pesce cotte nelle tortillas morbide. Guarnisci con succo di lime fresco e salsa a piacere."
+    ],
+    "nutrition": {
+      "kcal": 320,
+      "proteins_g": 28,
+      "fats_g": 6,
+      "saturated_fats_g": 1,
+      "carbs_g": 38,
+      "sugars_g": 2,
+      "salt_g": 0.8
+    },
+    "source": "Cosori",
+    "tip": "Gira i filetti di pesce con estrema delicatezza durante la cottura per evitare che si rompano.",
+    "keywords": [
+      "Pesce",
+      "Piatto Principale",
+      "Proteico",
+      "Veloce"
+    ],
+    "isItalian": false,
+    "image": "tacos-pesce-griglia",
+    "is_sanitized": true
+  },
+  {
+    "slug": "stuffed-french-toast",
+    "title": "Toast Francese Farcito con Crema al Formaggio",
+    "emoji": "🍞",
+    "temp": 175,
+    "time": "10",
+    "prep_time": "4",
+    "portions": "2",
+    "ingredients": [
+      "2 fette spesse di pan brioche raffermo",
+      "220g di crema di formaggio spalmabile",
+      "4 uova, sbattute",
+      "30ml di latte intero",
+      "60ml di panna liquida",
+      "80g di zucchero semolato",
+      "5g di cannella in polvere",
+      "Pistacchi tritati, per guarnire"
+    ],
+    "description": "La coccola da brunch definitiva. Spesse fette di brioche burrosa vengono farcite con un ricco ripieno di crema al formaggio e cotte fino a quando l'esterno non diventa marrone dorato e leggermente croccante.",
+    "instructions": [
+      "Usando un coltello, crea una tasca profonda al centro di ogni fetta di brioche (senza bucare il fondo). Riempi ogni tasca con la crema al formaggio.",
+      "In un piatto fondo, sbatti insieme le uova, il latte e la panna.",
+      "In una ciotola a parte, unisci lo zucchero e la cannella. Aggiungi metà della miscela di zucchero e cannella alla pastella di uova e sbatti per amalgamare. Tieni da parte l'altra metà.",
+      "Preriscalda l'apparecchio a 175°C.",
+      "Immergi ogni fetta di brioche farcita nella pastella all'uovo, assicurandoti di bagnare bene entrambi i lati. Posiziona le fette nel cestello leggermente oliato.",
+      "Cuoci per 10 minuti, girandole al 5° minuto, finché non sono ben dorate.",
+      "Togli dal cestello. Mentre sono ancora calde, ricoprile con la restante miscela di zucchero e cannella. Guarnisci con pistacchi tritati e servi subito."
+    ],
+    "nutrition": {
+      "kcal": 780,
+      "proteins_g": 22,
+      "fats_g": 48,
+      "saturated_fats_g": 26,
+      "carbs_g": 62,
+      "sugars_g": 45,
+      "salt_g": 1.2
+    },
+    "source": "Cosori",
+    "tip": "Utilizza pane raffermo (di 1 o 2 giorni) per permettere un assorbimento ottimale della pastella all'uovo ed evitare che il pane si spappoli in cottura.",
+    "keywords": [
+      "Dolci",
+      "Colazione",
+      "Vegetariano",
+      "Veloce",
+      "Uova/Formaggi"
+    ],
+    "isItalian": false,
+    "image": "toast-farcito-francese",
+    "is_sanitized": true
   }
 ]
