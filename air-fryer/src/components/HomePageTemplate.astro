@@ -23,23 +23,23 @@ const seoDescriptions = {
 // CONTENUTI HERO
 const heroContent = {
   it: {
-    h1: "La Croccantezza <span class='text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-500'>Perfetta.</span>",
-    sub: "Centinaia di ricette testate per la tua friggitrice ad aria. Zero grassi pesanti, 100% gusto.",
+    h1: "Croccantezza <span class='text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-500'>Perfetta.</span>",
+    sub: "Centinaia di ricette testate per la tua friggitrice ad aria. Ricette più leggere, 100% gusto.",
     cta: "Esplora le Ricette"
   },
   en: {
     h1: "The Perfect <span class='text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-500'>Crunch.</span>",
-    sub: "Hundreds of tested recipes for your air fryer. Zero heavy fats, 100% flavor.",
+    sub: "Hundreds of tested recipes for your air fryer. Lighter recipes, 100% taste.",
     cta: "Explore Recipes"
   },
   es: {
     h1: "El Crujido <span class='text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-500'>Perfecto.</span>",
-    sub: "Cientos de recetas probadas para tu freidora de aire. Cero grasas pesadas, 100% sabor.",
+    sub: "Cientos de recetas probadas para tu freidora de aire. Recetas más ligeras, 100% sabor.",
     cta: "Explora las Recetas"
   },
   fr: {
     h1: "Le Croustillant <span class='text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-500'>Parfait.</span>",
-    sub: "Des centaines de recettes testées pour votre friteuse à air. Zéro graisse lourde, 100% goût.",
+    sub: "Des centaines de recettes testées pour votre friteuse à air. Recettes plus légères, 100% goût.",
     cta: "Explorer les Recettes"
   }
 };
@@ -91,11 +91,13 @@ const jsonLd = {
   <header class="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 text-center overflow-hidden border-b border-slate-200 dark:border-slate-800">
     <div class="absolute inset-0 z-0 bg-gradient-to-b from-orange-50/80 to-transparent dark:from-[#0B1120] dark:to-transparent pointer-events-none"></div>
     
-    <div class="relative z-10 max-w-4xl mx-auto space-y-6">
+    <div class="relative z-10 max-w-6xl mx-auto space-y-6">
       <h1 class="text-5xl md:text-7xl font-black text-slate-900 dark:text-white tracking-tight leading-tight" set:html={hero.h1}></h1>
-      <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+      
+      <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
         {hero.sub}
       </p>
+      
       <div class="pt-6">
         <a href="#ricettario-container" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-orange-600 hover:bg-orange-700 rounded-full shadow-lg hover:shadow-orange-600/30 hover:-translate-y-1">
           {hero.cta}

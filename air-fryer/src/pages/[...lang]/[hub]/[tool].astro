@@ -27,23 +27,24 @@ export function getStaticPaths() {
   for (const lang of ['it', 'en', 'es', 'fr']) {
     for (const t of tools) {
       paths.push({
-        params: { lang, hub: hubs[lang], tool: t[lang] },
-        props: { toolId: t.id }
+        // FIX 404: Passiamo undefined se la lingua è 'it' per evitare l'URL /it/strumenti/
+        params: { lang: lang === 'it' ? undefined : lang, hub: hubs[lang], tool: t[lang] },
+        props: { toolId: t.id, actualLang: lang }
       });
     }
   }
   return paths;
 }
 
-const { lang } = Astro.params;
-const { toolId } = Astro.props;
+// Usiamo actualLang per assicurarci di avere sempre 'it', 'en', 'es' o 'fr'
+const { toolId, actualLang } = Astro.props;
 ---
 
-{toolId === 'materiali' && <Materiali lang={lang} />}
-{toolId === 'calorie' && <Calorie lang={lang} />}
-{toolId === 'riscaldare' && <Riscaldare lang={lang} />}
-{toolId === 'problemi' && <Problemi lang={lang} />}
-{toolId === 'surgelati' && <Surgelati lang={lang} />}
-{toolId === 'pulizia' && <Pulizia lang={lang} />}
-{toolId === 'consumi' && <Consumi lang={lang} />}
-{toolId === 'errori' && <Errori lang={lang} />}
+{toolId === 'materiali' && <Materiali lang={actualLang} />}
+{toolId === 'calorie' && <Calorie lang={actualLang} />}
+{toolId === 'riscaldare' && <Riscaldare lang={actualLang} />}
+{toolId === 'problemi' && <Problemi lang={actualLang} />}
+{toolId === 'surgelati' && <Surgelati lang={actualLang} />}
+{toolId === 'pulizia' && <Pulizia lang={actualLang} />}
+{toolId === 'consumi' && <Consumi lang={actualLang} />}
+{toolId === 'errori' && <Errori lang={actualLang} />}

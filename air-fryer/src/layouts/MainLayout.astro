@@ -57,28 +57,28 @@ const routeMap = {
 const navLabels = {
   it: {
     brandTagline: "Ricette facili e super croccanti per la friggitrice ad aria.",
-    recipes: "Ricette", categories: "Categorie", converter: "Convertitore", themeToggle: "Cambia tema", language: "Lingua",
+    recipes: "Ricette", categories: "Categorie", converter: "Convertitore", tools: "Strumenti", themeToggle: "Cambia tema", language: "Lingua",
     footerNote: "Crispissimo è il nuovo nome di Convertitore Friggitrice.",
     disclaimer: "Trasparenza: in qualità di Affiliato Amazon, questo sito può ricevere una commissione dagli acquisti idonei. I risultati del convertitore sono indicativi e vanno sempre verificati in cottura.",
     privacy: "Privacy", cookies: "Cookie",
   },
   en: {
     brandTagline: "Easy and crispy air fryer recipes for everyday cooking.",
-    recipes: "Recipes", categories: "Categories", converter: "Converter", themeToggle: "Toggle theme", language: "Language",
+    recipes: "Recipes", categories: "Categories", converter: "Converter", tools: "Tools", themeToggle: "Toggle theme", language: "Language",
     footerNote: "Crispissimo is the new name of Convertitore Friggitrice.",
     disclaimer: "Transparency: as an Amazon Associate, this site may earn from qualifying purchases. Converter results are estimates and should always be checked while cooking.",
     privacy: "Privacy", cookies: "Cookies",
   },
   es: {
     brandTagline: "Recetas fáciles y crujientes para freidora de aire cada día.",
-    recipes: "Recetas", categories: "Categorías", converter: "Convertidor", themeToggle: "Cambiar tema", language: "Idioma",
+    recipes: "Recetas", categories: "Categorías", converter: "Convertidor", tools: "Herramientas", themeToggle: "Cambiar tema", language: "Idioma",
     footerNote: "Crispissimo es el nuevo nombre de Convertitore Friggitrice.",
     disclaimer: "Transparencia: como Afiliado de Amazon, este sitio puede recibir una comisión por compras válidas. Los resultados del convertidor son estimaciones y deben comprobarse durante la cocción.",
     privacy: "Privacidad", cookies: "Cookies",
   },
   fr: {
     brandTagline: "Des recettes faciles et croustillantes pour la friteuse à air.",
-    recipes: "Recettes", categories: "Catégories", converter: "Convertisseur", themeToggle: "Changer le thème", language: "Langue",
+    recipes: "Recettes", categories: "Catégories", converter: "Convertisseur", tools: "Outils", themeToggle: "Changer le thème", language: "Langue",
     footerNote: "Crispissimo est le nouveau nom de Convertitore Friggitrice.",
     disclaimer: "Transparence : en tant que Partenaire Amazon, ce site peut percevoir une commission sur les achats éligibles. Les résultats du convertisseur sont indicatifs et doivent toujours être vérifiés pendant la cuisson.",
     privacy: "Confidentialité", cookies: "Cookies",
@@ -102,6 +102,7 @@ const finalAlternateUrls = Object.keys(alternateUrls).length > 0 ? alternateUrls
 let finalTitle = title || defaultTitles[lang as keyof typeof defaultTitles] || defaultTitles.it;
 let finalDescription = description || defaultDescriptions[lang as keyof typeof defaultDescriptions] || defaultDescriptions.it;
 
+// Logica SEO per Ricette (Invariata)
 if (recipeData) {
   const seoPhrases = {
     it: { pro: "Proteine", fast: "Pronto in", light: "Solo", kcal: "Kcal", read: "Ricetta testata. Leggi la guida per la cottura perfetta." },
@@ -146,6 +147,28 @@ if (recipeData) {
 
 const ogType = recipeData ? "article" : "website";
 const currentYear = new Date().getFullYear();
+
+// ==========================================
+// LOGICA MENU ATTIVO
+// ==========================================
+const currentPath = new URL(Astro.request.url).pathname;
+
+// Funzione Helper per controllare se un link è attivo
+const isActive = (path: string) => {
+  // Se è la homepage esatta (o la root con lingua es. /en/)
+  if (path === navRoutes.home) {
+    return currentPath === navRoutes.home || currentPath === navRoutes.home.replace(/\/$/, "");
+  }
+  // Per tutti gli altri link, controlliamo se il path corrente inizia con la stringa (es. /strumenti o /strumenti/materiali)
+  // Rimuoviamo gli anchor link (#) prima del controllo
+  const cleanPath = path.split('#')[0];
+  return cleanPath.length > 1 && currentPath.startsWith(cleanPath);
+};
+
+// Stile Base vs Attivo
+const baseLinkStyle = "text-sm font-semibold transition-all py-1 border-b-2";
+const inactiveStyle = "text-slate-600 border-transparent hover:text-orange-600 dark:text-slate-300 dark:hover:text-orange-400";
+const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark:border-orange-400";
 ---
 
 <!doctype html>
@@ -217,14 +240,24 @@ const currentYear = new Date().getFullYear();
     <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/85">
       <div class="mx-auto max-w-7xl px-4">
         <div class="flex h-16 items-center justify-between gap-4">
+          
           <a href={navRoutes.home} class="shrink-0 text-2xl font-black tracking-tight text-orange-600 transition-colors hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-300" style="font-family: 'Montserrat', system-ui, sans-serif;">
             Crispissimo
           </a>
 
           <nav class="hidden items-center gap-6 md:flex">
-            <a href={navRoutes.home} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.recipes}</a>
-            <a href={navRoutes.categories} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.categories}</a>
-            <a href={navRoutes.converter} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.converter}</a>
+            <a href={navRoutes.home} class={`${baseLinkStyle} ${isActive(navRoutes.home) ? activeStyle : inactiveStyle}`}>
+              {currentLabels.recipes}
+            </a>
+            <a href={navRoutes.categories} class={`${baseLinkStyle} ${isActive(navRoutes.categories) ? activeStyle : inactiveStyle}`}>
+              {currentLabels.categories}
+            </a>
+            <a href={navRoutes.converter} class={`${baseLinkStyle} ${isActive(navRoutes.converter) ? activeStyle : inactiveStyle}`}>
+              {currentLabels.converter}
+            </a>
+            <a href={navRoutes.tools} class={`${baseLinkStyle} ${isActive(navRoutes.tools) ? activeStyle : inactiveStyle}`}>
+              {currentLabels.tools}
+            </a>
           </nav>
 
           <div class="flex items-center gap-2 sm:gap-3">
@@ -247,10 +280,19 @@ const currentYear = new Date().getFullYear();
           </div>
         </div>
 
-        <nav class="flex items-center justify-center gap-6 pb-3 md:hidden">
-          <a href={navRoutes.home} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.recipes}</a>
-          <a href={navRoutes.categories} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.categories}</a>
-          <a href={navRoutes.converter} class="text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.converter}</a>
+        <nav class="flex items-center justify-center gap-5 pb-3 md:hidden overflow-x-auto whitespace-nowrap">
+          <a href={navRoutes.home} class={`${baseLinkStyle} ${isActive(navRoutes.home) ? activeStyle : inactiveStyle}`}>
+            {currentLabels.recipes}
+          </a>
+          <a href={navRoutes.categories} class={`${baseLinkStyle} ${isActive(navRoutes.categories) ? activeStyle : inactiveStyle}`}>
+            {currentLabels.categories}
+          </a>
+          <a href={navRoutes.converter} class={`${baseLinkStyle} ${isActive(navRoutes.converter) ? activeStyle : inactiveStyle}`}>
+            {currentLabels.converter}
+          </a>
+          <a href={navRoutes.tools} class={`${baseLinkStyle} ${isActive(navRoutes.tools) ? activeStyle : inactiveStyle}`}>
+            {currentLabels.tools}
+          </a>
         </nav>
       </div>
     </header>
@@ -272,6 +314,7 @@ const currentYear = new Date().getFullYear();
             <a href={navRoutes.home} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.recipes}</a>
             <a href={navRoutes.categories} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.categories}</a>
             <a href={navRoutes.converter} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.converter}</a>
+            <a href={navRoutes.tools} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.tools}</a>
             <a href="/privacy" class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.privacy}</a>
             <a href="/cookies" class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.cookies}</a>
           </nav>

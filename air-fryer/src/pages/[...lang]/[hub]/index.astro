@@ -3,14 +3,17 @@ import MainLayout from '../../../layouts/MainLayout.astro';
 
 export function getStaticPaths() {
   return [
-    { params: { lang: 'it', hub: 'strumenti' } },
+    // FIX 404: Passiamo undefined al parametro lang per la lingua base
+    { params: { lang: undefined, hub: 'strumenti' } },
     { params: { lang: 'en', hub: 'tools' } },
     { params: { lang: 'es', hub: 'herramientas' } },
     { params: { lang: 'fr', hub: 'outils' } }
   ];
 }
 
-const { lang, hub } = Astro.params;
+// Fallback: se lang è undefined (URL root), forziamo 'it' per i dizionari interni
+const lang = Astro.params.lang || 'it';
+const hub = Astro.params.hub;
 
 const seoTitles = {
   it: "Strumenti e Guide per Friggitrice ad Aria | Crispissimo",
@@ -179,7 +182,7 @@ const jsonLd = [
     <nav class="flex mb-6 text-sm text-slate-500 font-medium" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
-          <a href={`${langPrefix}/`} class="hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+          <a href={`${langPrefix === '' ? '/' : langPrefix + '/'}`} class="hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
             {t.homeLabel}
           </a>
         </li>
