@@ -44,79 +44,30 @@ const heroContent = {
   }
 };
 
-// TEASER CONVERTITORE
-const teaserContent = {
-  it: { title: "Cerchi il Convertitore?", desc: "Adatta i tempi del forno per la tua friggitrice ad aria.", cta: "Vai al Convertitore", link: "/convertitore" },
-  en: { title: "Looking for the Converter?", desc: "Adapt oven times for your air fryer.", cta: "Go to Converter", link: "/en/converter" },
-  es: { title: "¿Buscas el Convertidor?", desc: "Adapta los tiempos del horno para tu freidora de aire.", cta: "Ir al Convertidor", link: "/es/convertidor" },
-  fr: { title: "Vous cherchez le Convertisseur ?", desc: "Adaptez les temps du four pour votre friteuse à air.", cta: "Aller au Convertisseur", link: "/fr/convertisseur" }
-};
-
-// STRUMENTI EXTRA (Slug localizzati per evitare 404 in futuro)
-const toolsData = {
-  it: {
-    title: "Gli Strumenti Extra",
-    subtitle: "Guide e utility per padroneggiare la tua friggitrice ad aria.",
-    cards: [
-      { link: "materiali", emoji: "🛑", title: "Guida Materiali", desc: "Cosa puoi (e NON puoi) mettere nel cestello." },
-      { link: "riscaldare", emoji: "🍕", title: "Riscalda Avanzi", desc: "Fai tornare croccante la pizza di ieri." },
-      { link: "errori", emoji: "⚠️", title: "Codici Errore", desc: "Significato degli errori e come resettare." },
-      { link: "calorie", emoji: "⚖️", title: "Calcolo Calorie", desc: "Scopri quanti grassi risparmi." },
-      { link: "pulizia", emoji: "🧽", title: "Pulizia Resistenza", desc: "Sgrassa la serpentina in sicurezza." },
-      { link: "problemi", emoji: "💨", title: "Fumo & Puzza", desc: "Risolvi la puzza di plastica e il fumo." },
-      { link: "consumi", emoji: "⚡", title: "Costi in Bolletta", desc: "Calcola quanto spendi." },
-      { link: "surgelati", emoji: "❄️", title: "Cottura Surgelati", desc: "Tempi a 2 Fasi per i congelati." }
-    ]
+// TEASER CONVERTITORE E STRUMENTI IN HOME
+const toolsContent = {
+  it: { 
+    convTitle: "Convertitore Automatico", convDesc: "Adatta i tempi del forno in un clic.", convCta: "Apri Convertitore", convLink: "/convertitore",
+    toolsTitle: "Strumenti per Air Fryer", toolsDesc: "Guide materiali, pulizia, consumi e utilità.", toolsCta: "Tutti gli Strumenti", toolsLink: "/strumenti"
   },
-  en: {
-    title: "Extra Tools",
-    subtitle: "Guides and utilities to master your air fryer.",
-    cards: [
-      { link: "materials", emoji: "🛑", title: "Materials Guide", desc: "What you can (and CANNOT) put in the basket." },
-      { link: "reheating", emoji: "🍕", title: "Reheating Guide", desc: "Bring back the crispiness to yesterday's pizza." },
-      { link: "errors", emoji: "⚠️", title: "Error Codes", desc: "Meaning of errors and how to reset." },
-      { link: "calories", emoji: "⚖️", title: "Calorie Calculator", desc: "Discover how much fat you save." },
-      { link: "cleaning", emoji: "🧽", title: "Heating Element", desc: "Safely degrease the top coil." },
-      { link: "problems", emoji: "💨", title: "Smoke & Smells", desc: "Solve plastic smells and smoke." },
-      { link: "energy", emoji: "⚡", title: "Energy Bill", desc: "Calculate how much you spend." },
-      { link: "frozen", emoji: "❄️", title: "Frozen Foods", desc: "Calculate 2-Phase cooking times." }
-    ]
+  en: { 
+    convTitle: "Automatic Converter", convDesc: "Adapt oven times in one click.", convCta: "Open Converter", convLink: "/en/converter",
+    toolsTitle: "Air Fryer Tools", toolsDesc: "Materials guides, cleaning, and calculators.", toolsCta: "All Tools", toolsLink: "/en/tools" 
   },
-  es: {
-    title: "Herramientas Extra",
-    subtitle: "Guías y utilidades para dominar tu freidora de aire.",
-    cards: [
-      { link: "materiales", emoji: "🛑", title: "Guía de Materiales", desc: "Qué puedes (y NO puedes) meter en la cesta." },
-      { link: "recalentar", emoji: "🍕", title: "Recalentar Sobras", desc: "Devuélvele el crujiente a la pizza de ayer." },
-      { link: "errores", emoji: "⚠️", title: "Códigos de Error", desc: "Significado de los errores y cómo resetear." },
-      { link: "calorias", emoji: "⚖️", title: "Cálculo Calorías", desc: "Descubre cuánta grasa ahorras." },
-      { link: "limpieza", emoji: "🧽", title: "Limpieza Resistencia", desc: "Desengrasa la bobina de forma segura." },
-      { link: "problemas", emoji: "💨", title: "Humo y Olores", desc: "Resuelve el olor a plástico y el humo." },
-      { link: "consumo", emoji: "⚡", title: "Gasto Eléctrico", desc: "Calcula cuánto gastas." },
-      { link: "congelados", emoji: "❄️", title: "Comida Congelada", desc: "Calcula los tiempos en 2 Fases." }
-    ]
+  es: { 
+    convTitle: "Convertidor Automático", convDesc: "Adapta los tiempos del horno en un clic.", convCta: "Abrir Convertidor", convLink: "/es/convertidor",
+    toolsTitle: "Herramientas de Air Fryer", toolsDesc: "Guías de materiales, limpieza y consumos.", toolsCta: "Todas las Herramientas", toolsLink: "/es/herramientas"
   },
-  fr: {
-    title: "Outils Supplémentaires",
-    subtitle: "Guides et utilitaires pour maîtriser votre friteuse à air.",
-    cards: [
-      { link: "materiaux", emoji: "🛑", title: "Guide des Matériaux", desc: "Ce que vous pouvez (et NE pouvez PAS) mettre." },
-      { link: "rechauffer", emoji: "🍕", title: "Réchauffer", desc: "Redonnez du croustillant à la pizza d'hier." },
-      { link: "erreurs", emoji: "⚠️", title: "Codes d'Erreur", desc: "Signification des erreurs et comment réinitialiser." },
-      { link: "calories", emoji: "⚖️", title: "Calcul Calories", desc: "Découvrez combien de graisses vous économisez." },
-      { link: "nettoyage", emoji: "🧽", title: "Nettoyage Résistance", desc: "Dégraissez le serpentin en toute sécurité." },
-      { link: "problemes", emoji: "💨", title: "Fumée & Odeurs", desc: "Résolvez les odeurs de plastique et la fumée." },
-      { link: "consommation", emoji: "⚡", title: "Coût Électrique", desc: "Calculez vos dépenses." },
-      { link: "surgeles", emoji: "❄️", title: "Aliments Surgelés", desc: "Calculez les temps en 2 phases pour les surgelés." }
-    ]
+  fr: { 
+    convTitle: "Convertisseur Auto", convDesc: "Adaptez les temps du four en un clic.", convCta: "Ouvrir Convertisseur", convLink: "/fr/convertisseur",
+    toolsTitle: "Outils pour Air Fryer", toolsDesc: "Guides des matériaux, nettoyage et calculs.", toolsCta: "Tous les Outils", toolsLink: "/fr/outils"
   }
 };
 
 const currentTitle = seoTitles[lang as keyof typeof seoTitles] || seoTitles.it;
 const currentDesc = seoDescriptions[lang as keyof typeof seoDescriptions] || seoDescriptions.it;
 const hero = heroContent[lang as keyof typeof heroContent] || heroContent.it;
-const teaser = teaserContent[lang as keyof typeof teaserContent] || teaserContent.it;
-const toolsLang = toolsData[lang as keyof typeof toolsData] || toolsData.it;
+const teaser = toolsContent[lang as keyof typeof toolsContent] || toolsContent.it;
 
 const alternateUrls = {
   it: "https://www.crispissimo.com/",
@@ -127,7 +78,6 @@ const alternateUrls = {
 
 const siteUrl = alternateUrls[lang as keyof typeof alternateUrls] || alternateUrls.it;
 
-// JSON-LD Pulito (Senza SearchAction)
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -147,7 +97,7 @@ const jsonLd = {
         {hero.sub}
       </p>
       <div class="pt-6">
-        <a href="#ricettario" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-orange-600 hover:bg-orange-700 rounded-full shadow-lg hover:shadow-orange-600/30 hover:-translate-y-1">
+        <a href="#ricettario-container" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-orange-600 hover:bg-orange-700 rounded-full shadow-lg hover:shadow-orange-600/30 hover:-translate-y-1">
           {hero.cta}
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
         </a>
@@ -155,45 +105,35 @@ const jsonLd = {
     </div>
   </header>
 
-    
+  <section class="max-w-5xl mx-auto px-4 py-10 mt-2 z-20 relative">
+    <div class="grid md:grid-cols-2 gap-6">
+      <a href={teaser.convLink} class="group block bg-gradient-to-br from-orange-50 to-orange-100/50 dark:from-slate-800/60 dark:to-slate-900/60 border border-orange-200/50 dark:border-slate-700/50 p-6 md:p-8 rounded-3xl text-left shadow-sm transition-all hover:shadow-md hover:border-orange-400 dark:hover:border-orange-500 overflow-hidden relative">
+        <div class="absolute -right-8 -top-8 text-8xl opacity-10 group-hover:rotate-12 transition-transform duration-500">🔄</div>
+        <div class="relative z-10">
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 dark:text-white mb-2 tracking-tight group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">{teaser.convTitle}</h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm md:text-base">{teaser.convDesc}</p>
+          <span class="inline-flex items-center text-sm font-bold text-orange-600 dark:text-orange-400">
+            {teaser.convCta} <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7-7m7 7H3"></path></svg>
+          </span>
+        </div>
+      </a>
+
+      <a href={teaser.toolsLink} class="group block bg-gradient-to-br from-blue-50 to-blue-100/50 dark:from-slate-800/60 dark:to-slate-900/60 border border-blue-200/50 dark:border-slate-700/50 p-6 md:p-8 rounded-3xl text-left shadow-sm transition-all hover:shadow-md hover:border-blue-400 dark:hover:border-blue-500 overflow-hidden relative">
+        <div class="absolute -right-8 -top-8 text-8xl opacity-10 group-hover:scale-110 transition-transform duration-500">🧰</div>
+        <div class="relative z-10">
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 dark:text-white mb-2 tracking-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{teaser.toolsTitle}</h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm md:text-base">{teaser.toolsDesc}</p>
+          <span class="inline-flex items-center text-sm font-bold text-blue-600 dark:text-blue-400">
+            {teaser.toolsCta} <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7-7m7 7H3"></path></svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="w-full py-8">
     <div id="ricettario" class="w-full">
       <RecipeSearch lang={lang} />
-    </div>
-  </section>
-
-  <section class="max-w-5xl mx-auto px-4 py-12 mt-8">
-    <div class="bg-gradient-to-br from-orange-50 to-orange-100/50 dark:from-slate-800/60 dark:to-slate-900/60 border border-orange-200/50 dark:border-slate-700/50 p-8 md:p-10 rounded-3xl text-center shadow-sm relative overflow-hidden group transition-all hover:shadow-md">
-      <div class="relative z-10">
-        <span class="text-4xl block mb-4 drop-shadow-sm">🔄</span>
-        <h2 class="text-2xl md:text-3xl font-black text-slate-900 dark:text-white mb-3 tracking-tight">{teaser.title}</h2>
-        <p class="text-slate-600 dark:text-slate-400 mb-8 max-w-lg mx-auto leading-relaxed">{teaser.desc}</p>
-        <a href={teaser.link} class="inline-flex items-center justify-center px-8 py-3 text-sm font-bold text-orange-700 dark:text-orange-100 bg-white dark:bg-slate-800 border border-orange-200 dark:border-slate-600 hover:border-orange-500 dark:hover:border-orange-400 hover:text-orange-600 dark:hover:text-orange-300 transition-all rounded-full shadow-sm">
-          {teaser.cta}
-          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7-7m7 7H3"></path></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="max-w-5xl mx-auto px-4 py-16 border-t border-slate-200 dark:border-slate-800 relative z-10">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-3 tracking-tight">{toolsLang.title}</h2>
-      <p class="text-slate-600 dark:text-slate-400 text-sm md:text-lg">{toolsLang.subtitle}</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-      {toolsLang.cards.map((card) => (
-        <a href={`/${lang === 'it' ? '' : lang + '/'}${card.link}`} class="group bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 p-5 md:p-6 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-all shadow-sm hover:shadow-lg flex items-start gap-4 overflow-hidden relative">
-          <div class="absolute -left-10 top-0 bottom-0 w-2 bg-gradient-to-b from-orange-400 to-rose-500 blur-xl group-hover:left-0 transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
-          <div class="text-4xl flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 drop-shadow-sm">
-            {card.emoji}
-          </div>
-          <div class="flex-1 relative z-10">
-            <h3 class="text-slate-900 dark:text-white font-bold text-lg mb-1 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">{card.title}</h3>
-            <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">{card.desc}</p>
-          </div>
-        </a>
-      ))}
     </div>
   </section>
 

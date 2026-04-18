@@ -11,7 +11,7 @@ export function getStaticPaths() {
   ];
 }
 
-const lang = Astro.params.lang || 'it';
+const { lang = 'it' } = Astro.props;
 const homeUrl = `/#ricettario`;
 
 const backBtnLabel = {

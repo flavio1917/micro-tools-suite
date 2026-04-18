@@ -79,7 +79,7 @@ const translations = {
     cta_recipes_top: "En panne d'inspiration ?", cta_recipes_bottom: `Explorez ${roundedCount}+ Recettes`,
 
     seo_title: "La Science de la Conversion",
-    seo_text: "La friteuse à air est un <strong>puissant four à convection</strong>. Elle utilise un effet cyclonique : un ventilateur propulse de l'air brûlant à grande vitesse. La transmission de la chaleur est plus agressive qu'un four traditionnel. C'est pourquoi notre algorithme applique la règle d'or : <strong>baisser la température de 20°C (ou 25°F) et réduire le temps de 20 %</strong>.",
+    seo_text: "La friteuse à air est un <strong>puissant four à convection</strong>. Elle utilise un effet cyclonique : un ventilateur propulse de l'air brûlant à grande vitesse. La transmission de la chaleur est plus agressive qu'un four traditionnel. C'est pourquoi notre algorithme applique la règle d'or : <strong>baisser la température de 20°C (o 25°F) et réduire le temps de 20 %</strong>.",
     faq_title: "Foire Aux Questions",
     faqs: [
       { q: "Pourquoi est-il obligatoire de baisser la température ?", a: "L'air cyclonique déshydrate la surface très rapidement. Garder les degrés du four brûlerait l'extérieur avant que l'intérieur ne soit cuit." },
@@ -96,7 +96,7 @@ const tempSymbol = isEn ? '°F' : '°C';
 const currSymbol = isEn ? '$' : '€';
 const initialEco = isEn ? '$0.00' : '0.00€';
 
-// SCHEMA.ORG: SOFTWARE APPLICATION
+// SCHEMA.ORG: SOFTWARE APPLICATION (Manteniamo SOLO questo, rimosso il FAQPage)
 const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
@@ -114,20 +114,6 @@ const softwareSchema = {
     "Calcolo differenziale del tempo e della temperatura",
     "Stima del risparmio energetico"
   ]
-};
-
-// SCHEMA.ORG: FAQ PAGE
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": t.faqs.map(faq => ({
-    "@type": "Question",
-    "name": faq.q,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.a
-    }
-  }))
 };
 ---
 
@@ -251,7 +237,6 @@ const faqSchema = {
 </div>
 
 <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
-<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
 <script>
   function initAirFryer() {

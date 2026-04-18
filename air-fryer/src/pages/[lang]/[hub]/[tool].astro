@@ -1,0 +1,49 @@
+---
+// Importiamo i TUOI file separati
+import Materiali from '../../../components/seo-tools/materiali.astro';
+import Calorie from '../../../components/seo-tools/calorie.astro';
+import Riscaldare from '../../../components/seo-tools/riscaldare.astro';
+import Problemi from '../../../components/seo-tools/problemi.astro';
+import Surgelati from '../../../components/seo-tools/surgelati.astro';
+import Pulizia from '../../../components/seo-tools/pulizia.astro';
+import Consumi from '../../../components/seo-tools/consumi.astro';
+import Errori from '../../../components/seo-tools/errori.astro';
+
+export function getStaticPaths() {
+  const tools = [
+    { id: 'materiali', it: 'materiali-friggitrice-ad-aria', en: 'air-fryer-materials-guide', es: 'materiales-freidora-aire', fr: 'materiaux-friteuse-air' },
+    { id: 'calorie', it: 'calcolo-calorie-friggitrice-ad-aria', en: 'air-fryer-calorie-calculator', es: 'calculo-calorias-freidora-aire', fr: 'calcul-calories-friteuse-air' },
+    { id: 'riscaldare', it: 'riscaldare-cibo-friggitrice-ad-aria', en: 'reheat-food-air-fryer', es: 'recalentar-comida-freidora-aire', fr: 'rechauffer-aliments-friteuse-air' },
+    { id: 'problemi', it: 'fumo-puzza-friggitrice-ad-aria', en: 'air-fryer-smoke-smell', es: 'humo-olor-freidora-aire', fr: 'fumee-odeur-friteuse-air' },
+    { id: 'surgelati', it: 'cottura-surgelati-friggitrice-ad-aria', en: 'cook-frozen-food-air-fryer', es: 'cocinar-congelados-freidora-aire', fr: 'cuisson-surgeles-friteuse-air' },
+    { id: 'pulizia', it: 'pulire-resistenza-friggitrice-ad-aria', en: 'clean-air-fryer-heating-element', es: 'limpiar-resistencia-freidora-aire', fr: 'nettoyer-resistance-friteuse-air' },
+    { id: 'consumi', it: 'consumi-friggitrice-ad-aria', en: 'air-fryer-energy-costs', es: 'consumo-freidora-aire', fr: 'consommation-friteuse-air' },
+    { id: 'errori', it: 'codici-errore-friggitrice-ad-aria', en: 'air-fryer-error-codes', es: 'codigos-error-freidora-aire', fr: 'codes-erreur-friteuse-air' }
+  ];
+
+  const hubs = { it: 'strumenti', en: 'tools', es: 'herramientas', fr: 'outils' };
+  
+  const paths = [];
+  for (const lang of ['it', 'en', 'es', 'fr']) {
+    for (const t of tools) {
+      paths.push({
+        params: { lang, hub: hubs[lang], tool: t[lang] },
+        props: { toolId: t.id }
+      });
+    }
+  }
+  return paths;
+}
+
+const { lang } = Astro.params;
+const { toolId } = Astro.props;
+---
+
+{toolId === 'materiali' && <Materiali lang={lang} />}
+{toolId === 'calorie' && <Calorie lang={lang} />}
+{toolId === 'riscaldare' && <Riscaldare lang={lang} />}
+{toolId === 'problemi' && <Problemi lang={lang} />}
+{toolId === 'surgelati' && <Surgelati lang={lang} />}
+{toolId === 'pulizia' && <Pulizia lang={lang} />}
+{toolId === 'consumi' && <Consumi lang={lang} />}
+{toolId === 'errori' && <Errori lang={lang} />}

@@ -1,0 +1,233 @@
+---
+import MainLayout from '../../../layouts/MainLayout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it', hub: 'strumenti' } },
+    { params: { lang: 'en', hub: 'tools' } },
+    { params: { lang: 'es', hub: 'herramientas' } },
+    { params: { lang: 'fr', hub: 'outils' } }
+  ];
+}
+
+const { lang, hub } = Astro.params;
+
+const seoTitles = {
+  it: "Strumenti e Guide per Friggitrice ad Aria | Crispissimo",
+  en: "Air Fryer Tools and Guides | Crispissimo",
+  es: "Herramientas y Guías para Freidora de Aire | Crispissimo",
+  fr: "Outils et Guides pour Friteuse à Air | Crispissimo"
+};
+
+const seoDescriptions = {
+  it: "L'hub definitivo per la tua friggitrice ad aria. Esplora le guide ai materiali consentiti, la risoluzione degli errori e i calcolatori di consumi e calorie.",
+  en: "The ultimate hub for your air fryer. Explore allowed materials guides, error troubleshooting, and calculators for energy costs and calories.",
+  es: "El hub definitivo para tu freidora de aire. Explora guías de materiales permitidos, solución de errores y calculadoras de consumo y calorías.",
+  fr: "Le hub ultime pour votre friteuse à air. Explorez les guides des matériaux, la résolution des erreurs et les calculateurs de consommation et calories."
+};
+
+const content = {
+  it: {
+    h1: "Strumenti & Utility",
+    sub: "Tutto quello che ti serve per usare la friggitrice ad aria in totale sicurezza, risolvere i problemi comuni e calcolare i tuoi risparmi.",
+    homeLabel: "Home",
+    catGuides: "📚 Guide Pratiche & Risoluzione Problemi",
+    catCalc: "🧮 Calcolatori & Utility",
+    readGuide: "Leggi la guida →"
+  },
+  en: {
+    h1: "Tools & Utilities",
+    sub: "Everything you need to use your air fryer safely, troubleshoot common issues, and calculate your savings.",
+    homeLabel: "Home",
+    catGuides: "📚 Practical Guides & Troubleshooting",
+    catCalc: "🧮 Calculators & Utilities",
+    readGuide: "Read guide →"
+  },
+  es: {
+    h1: "Herramientas y Utilidades",
+    sub: "Todo lo que necesitas para usar tu freidora de aire con seguridad, solucionar problemas comunes y calcular tus ahorros.",
+    homeLabel: "Inicio",
+    catGuides: "📚 Guías Prácticas y Solución de Problemas",
+    catCalc: "🧮 Calculadoras y Utilidades",
+    readGuide: "Leer guía →"
+  },
+  fr: {
+    h1: "Outils et Utilitaires",
+    sub: "Tout ce dont vous avez besoin pour utiliser votre friteuse à air en toute sécurité, résoudre les problèmes et calculer vos économies.",
+    homeLabel: "Accueil",
+    catGuides: "📚 Guides Pratiques & Dépannage",
+    catCalc: "🧮 Calculateurs & Utilitaires",
+    readGuide: "Lire le guide →"
+  }
+};
+
+const t = content[lang as keyof typeof content] || content.it;
+
+// Struttura divisa per Tipologia (Guide vs Calcolatori)
+const toolsData = {
+  it: {
+    guides: [
+      { link: "materiali-friggitrice-ad-aria", emoji: "🛑", title: "Semaforo Materiali", desc: "Scopri cosa puoi (e non puoi) inserire nel cestello in totale sicurezza." },
+      { link: "codici-errore-friggitrice-ad-aria", emoji: "⚠️", title: "Codici Errore (E1, E2)", desc: "Il display lampeggia? Ecco il significato degli errori e come fare il reset." },
+      { link: "pulire-resistenza-friggitrice-ad-aria", emoji: "🧽", title: "Pulizia Resistenza", desc: "La guida passo-passo per sgrassare la serpentina superiore senza fare danni." },
+      { link: "fumo-puzza-friggitrice-ad-aria", emoji: "💨", title: "Fumo & Puzza", desc: "La friggitrice puzza di plastica o fa fumo bianco? Le soluzioni definitive." },
+      { link: "cottura-surgelati-friggitrice-ad-aria", emoji: "❄️", title: "Cottura Surgelati", desc: "Patatine e crocchette: i tempi perfetti e il trucco della doppia cottura." },
+      { link: "riscaldare-cibo-friggitrice-ad-aria", emoji: "🍕", title: "Riscaldare Avanzi", desc: "Come usare l'aria calda al posto del microonde per cibi super croccanti." }
+    ],
+    calculators: [
+      { link: "calcolo-calorie-friggitrice-ad-aria", emoji: "⚖️", title: "Risparmio Calorie", desc: "Calcola le calorie e l'olio risparmiato rispetto alla frittura tradizionale." },
+      { link: "consumi-friggitrice-ad-aria", emoji: "⚡", title: "Costi in Bolletta", desc: "Inserisci la potenza della tua air fryer e scopri l'esatto costo in bolletta." }
+    ]
+  },
+  en: {
+    guides: [
+      { link: "air-fryer-materials-guide", emoji: "🛑", title: "Materials Guide", desc: "What is safe (and unsafe) to put inside your basket." },
+      { link: "air-fryer-error-codes", emoji: "⚠️", title: "Error Codes", desc: "Display flashing? Meaning of common errors and how to fix them." },
+      { link: "clean-air-fryer-heating-element", emoji: "🧽", title: "Cleaning the Element", desc: "Step-by-step guide to safely degrease the top heating coil." },
+      { link: "air-fryer-smoke-smell", emoji: "💨", title: "Smoke & Smells", desc: "White smoke or plastic smell? Here are the definitive solutions." },
+      { link: "cook-frozen-food-air-fryer", emoji: "❄️", title: "Cooking Frozen Food", desc: "Fries and nuggets: exact times and the double-cook trick." },
+      { link: "reheat-food-air-fryer", emoji: "🍕", title: "Reheating Leftovers", desc: "Ditch the microwave. Reheat pizza and fries to perfect crispiness." }
+    ],
+    calculators: [
+      { link: "air-fryer-calorie-calculator", emoji: "⚖️", title: "Calorie Savings", desc: "Calculate the exact oil and fat reduction vs deep frying." },
+      { link: "air-fryer-energy-costs", emoji: "⚡", title: "Energy Costs", desc: "Input your wattage and discover your exact electricity bill cost." }
+    ]
+  },
+  es: {
+    guides: [
+      { link: "materiales-freidora-aire", emoji: "🛑", title: "Guía de Materiales", desc: "Qué envases son seguros (y cuáles no) para meter en la cesta." },
+      { link: "codigos-error-freidora-aire", emoji: "⚠️", title: "Códigos de Error", desc: "¿Pantalla parpadeando? Significado de errores y cómo solucionarlos." },
+      { link: "limpiar-resistencia-freidora-aire", emoji: "🧽", title: "Limpiar Resistencia", desc: "Guía paso a paso para desengrasar la bobina superior sin daños." },
+      { link: "humo-olor-freidora-aire", emoji: "💨", title: "Humo y Olores", desc: "¿Olor a plástico o humo blanco? Soluciones definitivas." },
+      { link: "cocinar-congelados-freidora-aire", emoji: "❄️", title: "Comida Congelada", desc: "Tiempos exactos para patatas y nuggets desde el congelador." },
+      { link: "recalentar-comida-freidora-aire", emoji: "🍕", title: "Recalentar Sobras", desc: "Usa aire caliente en lugar de microondas para devolver el crujiente." }
+    ],
+    calculators: [
+      { link: "calculo-calorias-freidora-aire", emoji: "⚖️", title: "Ahorro de Calorías", desc: "Calcula el aceite y las grasas que ahorras frente a freír." },
+      { link: "consumo-freidora-aire", emoji: "⚡", title: "Gasto en Factura", desc: "Introduce los vatios y descubre tu coste eléctrico real." }
+    ]
+  },
+  fr: {
+    guides: [
+      { link: "materiaux-friteuse-air", emoji: "🛑", title: "Guide des Matériaux", desc: "Ce qui est sûr (et dangereux) à mettre dans votre panier." },
+      { link: "codes-erreur-friteuse-air", emoji: "⚠️", title: "Codes d'Erreur", desc: "Écran clignotant ? Signification et résolution des erreurs." },
+      { link: "nettoyer-resistance-friteuse-air", emoji: "🧽", title: "Nettoyer la Résistance", desc: "Guide étape par étape pour dégraisser le serpentin supérieur." },
+      { link: "fumee-odeur-friteuse-air", emoji: "💨", title: "Fumée et Odeurs", desc: "Fumée blanche ou odeur de plastique ? Les solutions définitives." },
+      { link: "cuisson-surgeles-friteuse-air", emoji: "❄️", title: "Cuisson des Surgelés", desc: "Frites et nuggets : temps exacts sans décongélation préalable." },
+      { link: "rechauffer-aliments-friteuse-air", emoji: "🍕", title: "Réchauffer les Restes", desc: "Oubliez le micro-ondes, redonnez du croustillant à vos restes." }
+    ],
+    calculators: [
+      { link: "calcul-calories-friteuse-air", emoji: "⚖️", title: "Économie de Calories", desc: "Calculez exactement la graisse économisée par rapport à la friture." },
+      { link: "consommation-friteuse-air", emoji: "⚡", title: "Coût Électrique", desc: "Entrez la puissance et découvrez le coût sur votre facture." }
+    ]
+  }
+};
+
+const activeData = toolsData[lang as keyof typeof toolsData] || toolsData.it;
+const currentTitle = seoTitles[lang as keyof typeof seoTitles] || seoTitles.it;
+const currentDesc = seoDescriptions[lang as keyof typeof seoDescriptions] || seoDescriptions.it;
+
+// FIX 1: Separazione chiara tra hubPath (relativo) e URL assoluti
+const langPrefix = lang === 'it' ? '' : `/${lang}`;
+const hubPath = `${langPrefix}/${hub}`;
+const siteUrl = `https://www.crispissimo.com${langPrefix === '' ? '/' : langPrefix}`;
+
+const alternateUrls = {
+  it: "https://www.crispissimo.com/strumenti",
+  en: "https://www.crispissimo.com/en/tools",
+  es: "https://www.crispissimo.com/es/herramientas",
+  fr: "https://www.crispissimo.com/fr/outils"
+};
+const currentUrl = alternateUrls[lang as keyof typeof alternateUrls] || alternateUrls.it;
+
+// FIX 3: JSON-LD Arricchito con inLanguage, isPartOf e name in ItemList
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": t.homeLabel, "item": siteUrl },
+      { "@type": "ListItem", "position": 2, "name": t.h1, "item": currentUrl }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": currentTitle,
+    "description": currentDesc,
+    "url": currentUrl,
+    "inLanguage": lang,
+    "isPartOf": {
+      "@id": siteUrl
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [...activeData.guides, ...activeData.calculators].map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.title,
+        "url": `${currentUrl}/${item.link}`
+      }))
+    }
+  }
+];
+---
+
+<MainLayout title={currentTitle} lang={lang} description={currentDesc} alternateUrls={alternateUrls}>
+  <section class="max-w-5xl mx-auto px-4 py-8 md:py-12 relative z-10">
+    
+    <nav class="flex mb-6 text-sm text-slate-500 font-medium" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1 md:space-x-3">
+        <li class="inline-flex items-center">
+          <a href={`${langPrefix}/`} class="hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+            {t.homeLabel}
+          </a>
+        </li>
+        <li>
+          <div class="flex items-center">
+            <svg class="w-4 h-4 mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="text-slate-800 dark:text-slate-300 font-bold">{t.h1}</span>
+          </div>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="mb-14 pb-8 border-b border-slate-200 dark:border-slate-800">
+      <h1 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">{t.h1}</h1>
+      <p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl leading-relaxed">{t.sub}</p>
+    </div>
+
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-l-4 border-orange-500 pl-3">{t.catGuides}</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {activeData.guides.map((card) => (
+          <a href={`${hubPath}/${card.link}`} class="group bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 p-5 rounded-2xl hover:bg-orange-50 dark:hover:bg-slate-800 transition-all shadow-sm hover:shadow-md flex flex-col items-start gap-4 overflow-hidden relative">
+            <div class="text-3xl flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 drop-shadow-sm">{card.emoji}</div>
+            <div class="flex-1 relative z-10 w-full mt-1">
+              <h3 class="text-slate-900 dark:text-white font-bold text-lg mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">{card.title}</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">{card.desc}</p>
+            </div>
+            <span class="text-orange-600 text-xs font-bold uppercase tracking-wider mt-2 group-hover:translate-x-1 transition-transform">{t.readGuide}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 border-l-4 border-blue-500 pl-3">{t.catCalc}</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        {activeData.calculators.map((card) => (
+          <a href={`${hubPath}/${card.link}`} class="group bg-gradient-to-br from-blue-50/50 to-white dark:from-slate-800/60 dark:to-slate-900/40 border border-blue-200 dark:border-slate-700/60 p-6 rounded-2xl hover:border-blue-400 transition-all shadow-sm hover:shadow-md flex flex-row items-center gap-5 overflow-hidden relative">
+            <div class="text-5xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">{card.emoji}</div>
+            <div class="flex-1 relative z-10 w-full">
+              <h3 class="text-slate-900 dark:text-white font-bold text-xl mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{card.title}</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">{card.desc}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+
+  </section>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</MainLayout>
