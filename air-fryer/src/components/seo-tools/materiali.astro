@@ -29,176 +29,164 @@ const content = {
     eeatBadge: "✓ Standard di Sicurezza Verificati",
     fsTitle: "La Regola d'Oro: Cosa usare?",
     fsText: "In generale, <strong>qualsiasi contenitore adatto al forno tradizionale può essere utilizzato nella friggitrice ad aria</strong> (vetro temperato, ceramica, silicone, metallo). Tuttavia, a causa del violento flusso d'aria ciclonico, non inserire mai materiali leggeri sprovvisti di peso (come la carta forno da sola) o materiali a basso punto di fusione come la plastica.",
-    questionFormat: "Posso mettere {item} nella friggitrice ad aria?",
     safe: "🟢 SICURO (Vai tranquillo)",
     caution: "🟡 ATTENZIONE (Con riserva)",
     danger: "🔴 PERICOLO (Mai inserire)",
     items: [
       { status: "safe", name: "Carta Forno", desc: "Sì, ma usala solo se forata e SEMPRE con il cibo pesante sopra. Mai metterla durante il preriscaldamento o volerà sulla resistenza bruciandosi." },
       { status: "safe", name: "Alluminio (Carta Stagnola)", desc: "Sì, ma non metterlo a contatto con cibi molto acidi (come pomodoro o limone). Assicurati che sia ben fissato e che non ostruisca completamente il flusso d'aria sul fondo." },
-      { status: "safe", name: "Teglie in Silicone", desc: "Perfette. Il silicone resiste alle alte temperature ed è il materiale migliore per torte o per non sporcare il cestello." },
-      { status: "safe", name: "Vetro Pirofilo / Ceramica", desc: "Se c'è scritto esplicitamente 'Adatto per forno', va bene anche nella friggitrice ad aria. Assicurati solo che ci sia spazio ai lati per far circolare l'aria calda." },
-      { status: "caution", name: "Stuzzicadenti di Legno", desc: "Possono bruciare o volare via verso la resistenza. Usali solo se ben incastrati nella carne (es. involtini) o immergili in acqua per 10 minuti prima di usarli." },
-      { status: "danger", name: "Plastica e Tupperware", desc: "Assolutamente no. Si scioglieranno in pochi secondi fondendosi con il cibo e distruggendo irreparabilmente l'elettrodomestico." },
-      { status: "danger", name: "Carta Assorbente (Scottex)", desc: "Mai. Prenderà fuoco istantaneamente a causa del potente flusso d'aria calda." },
-      { status: "danger", name: "Vetro normale non temperato", desc: "Il vetro normale si frantumerà a causa dello shock termico rapido e violento tipico della friggitrice ad aria." }
+      { status: "safe", name: "Stampi in Silicone", desc: "Sì, resistono fino a 230°C. Ottimi per muffin o torte, non si sciolgono e sono antiaderenti." },
+      { status: "safe", name: "Pirofile in Vetro/Ceramica", desc: "Sì, purché abbiano il marchio 'Oven Safe' (resistenti al calore da forno). Ideali per sformati o lasagne." },
+      { status: "safe", name: "Teglie e Griglie in Metallo", desc: "Sì. Acciaio, alluminio e ghisa sono perfetti e garantiscono una croccantezza uniforme." },
+      { status: "caution", name: "Carta Assorbente (Scottex)", desc: "Mai per cuocere. Usala solo per asciugare il cibo PRIMA di inserirlo nel cestello. Nel cestello prende fuoco." },
+      { status: "danger", name: "Plastica e Tupperware", desc: "Assolutamente no. Si scioglieranno in pochi secondi rovinando il cibo e la macchina." },
+      { status: "danger", name: "Pellicola Trasparente", desc: "Assolutamente no. Si fonde immediatamente al contatto col calore." }
     ]
   },
   en: {
-    title: "What can you put in an Air Fryer? | Materials Guide",
-    h1: "The Materials Traffic Light",
+    title: "What to put in an Air Fryer? | Materials Traffic Light",
+    h1: "Materials Traffic Light",
     desc: "The ultimate guide on what you can and CANNOT put in your air fryer basket. Avoid kitchen disasters and protect your appliance.",
     eeatBadge: "✓ Verified Safety Standards",
     fsTitle: "The Golden Rule: What to use?",
-    fsText: "Generally, <strong>any oven-safe container can be used in an air fryer</strong> (tempered glass, ceramic, silicone, metal). However, due to the violent cyclonic airflow, never insert lightweight materials without weight on them (like parchment paper alone) or low-melting-point materials like plastic.",
-    questionFormat: "Can I put {item} in the air fryer?",
-    safe: "🟢 SAFE (Go ahead)",
-    caution: "🟡 CAUTION (Be careful)",
-    danger: "🔴 DANGER (Never use)",
+    fsText: "Generally, <strong>any oven-safe container can be used in an air fryer</strong> (tempered glass, ceramic, silicone, metal). However, due to the violent cyclonic airflow, never insert lightweight materials without weight on them (like parchment paper alone) or low-melting point materials like plastic.",
+    safe: "🟢 SAFE (Good to go)",
+    caution: "🟡 CAUTION (With reservations)",
+    danger: "🔴 DANGER (Never insert)",
     items: [
-      { status: "safe", name: "Parchment Paper", desc: "Yes, but use it perforated and ALWAYS weighted down by food. Never put it in during preheating or it will fly into the heating element and catch fire." },
-      { status: "safe", name: "Aluminum Foil", desc: "Yes, but avoid contact with highly acidic foods (like tomatoes or lemon). Ensure it is secured and does not completely block airflow." },
-      { status: "safe", name: "Silicone Molds", desc: "Perfect. Silicone withstands high temperatures and is the best material for baking or keeping the basket clean." },
-      { status: "safe", name: "Oven-Safe Glass / Ceramic", desc: "If it explicitly says 'Oven Safe', it's air fryer safe. Just make sure there is space around the edges for air to circulate." },
-      { status: "caution", name: "Wooden Toothpicks", desc: "They can burn or fly into the heating element. Use them only if firmly secured in food or soak them in water for 10 minutes before use." },
-      { status: "danger", name: "Plastic and Tupperware", desc: "Absolutely not. They will melt in seconds, fusing with your food and destroying the appliance." },
-      { status: "danger", name: "Paper Towels", desc: "Never. They will catch fire instantly due to the powerful flow of hot air." },
-      { status: "danger", name: "Non-tempered Glass", desc: "Regular glass will shatter due to the rapid and violent thermal shock typical of air fryers." }
+      { status: "safe", name: "Parchment Paper", desc: "Yes, but only use it perforated and ALWAYS with heavy food on top. Never put it in during preheating or it will fly into the heating element and burn." },
+      { status: "safe", name: "Aluminum Foil", desc: "Yes, but do not put it in contact with highly acidic foods (like tomato or lemon). Make sure it's secured and doesn't completely block the bottom airflow." },
+      { status: "safe", name: "Silicone Molds", desc: "Yes, they resist up to 450°F. Great for muffins or cakes, they don't melt and are non-stick." },
+      { status: "safe", name: "Glass/Ceramic Dishes", desc: "Yes, as long as they have the 'Oven Safe' mark. Ideal for casseroles." },
+      { status: "safe", name: "Metal Pans and Racks", desc: "Yes. Steel, aluminum, and cast iron are perfect and guarantee uniform crispiness." },
+      { status: "caution", name: "Paper Towels", desc: "Never for cooking. Only use them to dry food BEFORE putting it in the basket. In the basket, it will catch fire." },
+      { status: "danger", name: "Plastic and Tupperware", desc: "Absolutely not. They will melt in seconds, ruining the food and the machine." },
+      { status: "danger", name: "Cling Film / Saran Wrap", desc: "Absolutely not. It melts instantly on contact with heat." }
     ]
   },
   es: {
-    title: "¿Qué se puede meter en la Freidora de Aire? | Guía de Materiales",
-    h1: "El Semáforo de Materiales",
-    desc: "La guía definitiva sobre lo que puedes y NO puedes poner en la cesta de tu freidora de aire. Evita desastres en la cocina.",
+    title: "¿Qué poner en la Freidora de Aire? | Semáforo de Materiales",
+    h1: "Semáforo de Materiales",
+    desc: "La guía definitiva sobre qué puedes y NO puedes introducir en la cesta de tu freidora de aire. Evita desastres y protege tu electrodoméstico.",
     eeatBadge: "✓ Estándares de Seguridad Verificados",
     fsTitle: "La Regla de Oro: ¿Qué usar?",
-    fsText: "En general, <strong>cualquier recipiente apto para horno se puede usar en la freidora de aire</strong> (vidrio templado, cerámica, silicona, metal). Sin embargo, debido al violento flujo de aire ciclónico, nunca introduzcas materiales ligeros sin peso (como papel de horno solo) ni plásticos que se derritan.",
-    questionFormat: "¿Puedo poner {item} en la freidora de aire?",
+    fsText: "En general, <strong>cualquier recipiente apto para horno tradicional se puede utilizar en la freidora de aire</strong> (vidrio templado, cerámica, silicona, metal). Sin embargo, debido al violento flujo de aire ciclónico, nunca introduzcas materiales ligeros sin peso (como papel de horno solo) ni materiales de bajo punto de fusión como el plástico.",
     safe: "🟢 SEGURO (Adelante)",
     caution: "🟡 PRECAUCIÓN (Con cuidado)",
-    danger: "🔴 PELIGRO (Nunca usar)",
+    danger: "🔴 PELIGRO (Nunca introducir)",
     items: [
-      { status: "safe", name: "Papel de Horno", desc: "Sí, pero úsalo perforado y SIEMPRE con comida pesada encima. Nunca lo pongas durante el precalentamiento." },
-      { status: "safe", name: "Papel de Aluminio", desc: "Sí, pero evita el contacto con alimentos muy ácidos. Asegúrate de que no bloquee totalmente el flujo de aire." },
-      { status: "safe", name: "Moldes de Silicona", desc: "Perfectos. Soportan altas temperaturas y son ideales para hornear y no ensuciar." },
-      { status: "safe", name: "Vidrio para Horno / Cerámica", desc: "Si dice 'Apto para horno', sirve. Deja espacio a los lados para que circule el aire." },
-      { status: "caution", name: "Palillos de Madera", desc: "Pueden quemarse o salir volando. Úsalos solo si están bien clavados o remójalos en agua 10 minutos antes." },
-      { status: "danger", name: "Plástico y Tupperware", desc: "Absolutamente no. Se derretirán en segundos arruinando la comida y la freidora." },
-      { status: "danger", name: "Papel de Cocina", desc: "Nunca. Se incendiará instantáneamente por el potente flujo de aire caliente." },
-      { status: "danger", name: "Vidrio Normal", desc: "Se romperá debido al rápido choque térmico de la freidora." }
+      { status: "safe", name: "Papel de Horno", desc: "Sí, pero úsalo solo perforado y SIEMPRE con comida pesada encima. Nunca lo pongas durante el precalentamiento o volará hacia la resistencia y se quemará." },
+      { status: "safe", name: "Papel de Aluminio", desc: "Sí, pero no lo pongas en contacto con alimentos muy ácidos (como tomate o limón). Asegúrate de que esté bien fijado y no obstruya el flujo de aire." },
+      { status: "safe", name: "Moldes de Silicona", desc: "Sí, resisten hasta 230°C. Geniales para magdalenas o tartas, no se derriten y son antiadherentes." },
+      { status: "safe", name: "Pirex de Vidrio/Cerámica", desc: "Sí, siempre que tengan la marca 'Apto para Horno'. Ideales para pasteles de carne." },
+      { status: "safe", name: "Bandejas de Metal", desc: "Sí. Acero, aluminio y hierro fundido son perfectos y garantizan un crujido uniforme." },
+      { status: "caution", name: "Papel Absorbente (Rollo de cocina)", desc: "Nunca para cocinar. Úsalo solo para secar la comida ANTES de meterla. Dentro se incendiará." },
+      { status: "danger", name: "Plástico y Tupperware", desc: "Absolutamente no. Se derretirán en segundos arruinando la comida y la máquina." },
+      { status: "danger", name: "Film Transparente", desc: "Absolutamente no. Se funde inmediatamente al contacto con el calor." }
     ]
   },
   fr: {
-    title: "Que peut-on mettre dans une Friteuse à Air ? | Guide des Matériaux",
-    h1: "Le Feu Tricolore des Matériaux",
-    desc: "Le guide définitif sur ce que vous pouvez et NE pouvez PAS mettre dans votre friteuse à air. Évitez les catastrophes.",
+    title: "Que mettre dans la Friteuse à Air ? | Guide des Matériaux",
+    h1: "Le Guide des Matériaux",
+    desc: "Le guide définitif sur ce que vous pouvez et NE POUVEZ PAS insérer dans le panier de votre friteuse à air. Évitez les catastrophes.",
     eeatBadge: "✓ Normes de Sécurité Vérifiées",
     fsTitle: "La Règle d'Or : Que peut-on utiliser ?",
-    fsText: "En général, <strong>tout récipient allant au four peut être utilisé dans une friteuse à air</strong> (verre trempé, céramique, silicone, métal). Cependant, en raison du puissant flux d'air cyclonique, n'insérez jamais de matériaux légers sans poids dessus (comme du papier sulfurisé seul) ou des matériaux qui fondent comme le plastique.",
-    questionFormat: "Puis-je mettre {item} dans la friteuse à air ?",
+    fsText: "En général, <strong>tout récipient allant au four traditionnel peut être utilisé dans la friteuse à air</strong> (verre trempé, céramique, silicone, métal). Cependant, en raison du flux d'air cyclonique, n'insérez jamais de matériaux légers non lestés (comme le papier sulfurisé seul) ou des matériaux à bas point de fusion comme le plastique.",
     safe: "🟢 SÛR (Allez-y)",
-    caution: "🟡 ATTENTION (Avec précaution)",
-    danger: "🔴 DANGER (Ne jamais utiliser)",
+    caution: "🟡 ATTENTION (Sous réserve)",
+    danger: "🔴 DANGER (Ne jamais insérer)",
     items: [
-      { status: "safe", name: "Papier Cuisson", desc: "Oui, mais perforé et TOUJOURS avec des aliments lourds dessus. Ne jamais le mettre pendant le préchauffage." },
-      { status: "safe", name: "Papier d'Aluminium", desc: "Oui, mais évitez le contact avec des aliments acides. Assurez-vous qu'il ne bloque pas complètement l'air." },
-      { status: "safe", name: "Moules en Silicone", desc: "Parfaits. Résistent aux hautes températures, idéals pour garder le panier propre." },
-      { status: "safe", name: "Verre allant au four / Céramique", desc: "Si c'est 'Compatible Four', c'est bon. Laissez de l'espace sur les côtés pour l'air." },
-      { status: "caution", name: "Cure-dents en Bois", desc: "Peuvent brûler ou s'envoler. À utiliser bien plantés ou trempés dans l'eau 10 min avant." },
-      { status: "danger", name: "Plastique et Tupperware", desc: "Absolument pas. Vont fondre en quelques secondes." },
-      { status: "danger", name: "Essuie-tout", desc: "Jamais. Prendra feu instantanément à cause du flux d'air chaud." },
-      { status: "danger", name: "Verre non trempé", desc: "Se brisera à cause du choc thermique rapide." }
+      { status: "safe", name: "Papier Cuisson", desc: "Oui, mais utilisez-le perforé et TOUJOURS avec des aliments lourds dessus. Ne le mettez jamais pendant le préchauffage, il s'envolerait sur la résistance." },
+      { status: "safe", name: "Papier d'Aluminium", desc: "Oui, mais évitez le contact avec des aliments très acides (tomate, citron). Fixez-le bien pour ne pas bloquer l'air au fond." },
+      { status: "safe", name: "Moules en Silicone", desc: "Oui, résiste jusqu'à 230°C. Parfait pour muffins ou gâteaux, antiadhésif et ne fond pas." },
+      { status: "safe", name: "Plats en Verre/Céramique", desc: "Oui, à condition d'avoir le logo 'Passe au four'. Idéal pour les gratins." },
+      { status: "safe", name: "Grilles et Plaques en Métal", desc: "Oui. L'acier, l'aluminium et la fonte sont parfaits pour une cuisson uniforme." },
+      { status: "caution", name: "Essuie-tout", desc: "Jamais pour cuire. Utilisez-le uniquement pour sécher les aliments AVANT cuisson. Dans le panier, il prendra feu." },
+      { status: "danger", name: "Plastique et Tupperware", desc: "Absolument pas. Ils fondront en quelques secondes, ruinant l'aliment et l'appareil." },
+      { status: "danger", name: "Film Alimentaire", desc: "Absolument pas. Il fond instantanément au contact de la chaleur." }
     ]
   }
 };
 
 const t = content[lang as keyof typeof content] || content.it;
-
-// Generazione dinamica corretta per il multilingua
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": t.items.map(item => ({
-    "@type": "Question",
-    "name": t.questionFormat.replace('{item}', item.name.toLowerCase()), 
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": item.desc
-    }
-  }))
-};
 ---
 
 <MainLayout title={t.title} lang={lang} description={t.desc}>
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
     
     <div class="mb-8 flex justify-start">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         <span class="font-bold text-sm">{backBtnLabel}</span>
       </a>
     </div>
 
-    <header class="text-center mb-10">
+    <header class="text-center mb-12">
       <div class="inline-flex items-center justify-center mb-6">
-         <span class="px-4 py-1.5 bg-emerald-950/50 backdrop-blur-sm border border-emerald-500/30 rounded-full text-xs text-emerald-400 font-bold shadow-lg">
+         <span class="px-4 py-1.5 bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-500/30 rounded-full text-xs text-emerald-700 dark:text-emerald-400 font-bold shadow-sm transition-colors">
            {t.eeatBadge}
          </span>
       </div>
 
-      <h1 class="text-3xl md:text-5xl font-black text-white mb-6 drop-shadow-md">{t.h1}</h1>
-      <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+      <h1 class="tool-title text-3xl md:text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 pb-1">{t.h1}</h1>
+      <p class="tool-text text-base md:text-xl max-w-2xl mx-auto">{t.desc}</p>
     </header>
 
-    <div class="bg-slate-800/60 border border-slate-700 rounded-3xl p-6 md:p-8 mb-12 shadow-2xl relative overflow-hidden">
-      <div class="absolute top-0 left-0 w-1 bg-blue-500 h-full"></div>
-      <h2 class="text-xl font-bold text-white mb-3">{t.fsTitle}</h2>
-      <p class="text-slate-300 leading-relaxed text-base" set:html={t.fsText}></p>
-    </div>
+    <div class="space-y-8 max-w-3xl mx-auto relative z-10">
+      
+      <div class="tool-card relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-1.5 h-full bg-blue-500"></div>
+        <h2 class="tool-subtitle mb-3">{t.fsTitle}</h2>
+        <p class="tool-text text-sm md:text-base" set:html={t.fsText}></p>
+      </div>
 
-    <div class="grid md:grid-cols-3 gap-4 mb-12">
-      <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4 text-center shadow-inner">
-        <span class="font-bold text-green-400 text-sm tracking-wide">{t.safe}</span>
-      </div>
-      <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-xl p-4 text-center shadow-inner">
-        <span class="font-bold text-yellow-400 text-sm tracking-wide">{t.caution}</span>
-      </div>
-      <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-center shadow-inner">
-        <span class="font-bold text-red-400 text-sm tracking-wide">{t.danger}</span>
-      </div>
-    </div>
-
-    <div class="space-y-5 mb-16">
-      {t.items.map((item) => (
-        <div class={`p-6 md:p-8 rounded-2xl border backdrop-blur-sm flex flex-col md:flex-row gap-5 items-start md:items-center transition-all hover:-translate-y-1 ${
-          item.status === 'safe' ? 'bg-green-950/20 border-green-500/20 hover:border-green-500/50 hover:shadow-[0_0_20px_rgba(34,197,94,0.15)]' : 
-          item.status === 'caution' ? 'bg-yellow-950/20 border-yellow-500/20 hover:border-yellow-500/50 hover:shadow-[0_0_20px_rgba(234,179,8,0.15)]' : 
-          'bg-red-950/20 border-red-500/20 hover:border-red-500/50 hover:shadow-[0_0_20px_rgba(239,68,68,0.15)]'
-        }`}>
-          <div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center text-3xl bg-slate-900/80 shadow-inner border border-white/5 drop-shadow-md">
-            {item.status === 'safe' ? '✅' : item.status === 'caution' ? '⚠️' : '❌'}
-          </div>
-          <div>
-            <h3 class={`text-xl font-bold mb-2 ${
-              item.status === 'safe' ? 'text-green-300' : 
-              item.status === 'caution' ? 'text-yellow-300' : 'text-red-300'
-            }`}>{item.name}</h3>
-            <p class="text-slate-300 leading-relaxed text-base">{item.desc}</p>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-4 rounded-xl text-center shadow-sm transition-colors">
+          <span class="font-bold text-green-800 dark:text-green-400 text-sm">{t.safe}</span>
         </div>
-      ))}
+        <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 p-4 rounded-xl text-center shadow-sm transition-colors">
+          <span class="font-bold text-amber-800 dark:text-amber-400 text-sm">{t.caution}</span>
+        </div>
+        <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 p-4 rounded-xl text-center shadow-sm transition-colors">
+          <span class="font-bold text-red-800 dark:text-red-400 text-sm">{t.danger}</span>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        {t.items.map((item) => (
+          <div class="tool-card flex flex-col md:flex-row gap-6 items-start relative overflow-hidden group hover:border-slate-400 dark:hover:border-slate-500 hover:-translate-y-1 transition-all duration-300 !p-6">
+            
+            <div class={`absolute left-0 top-0 bottom-0 w-1.5 transition-all duration-300 ${
+              item.status === 'safe' ? 'bg-green-500' : 
+              item.status === 'caution' ? 'bg-amber-500' : 'bg-red-500'
+            }`}></div>
+            
+            <div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center text-3xl bg-slate-50 dark:bg-slate-900/80 shadow-inner border border-slate-200 dark:border-white/5 drop-shadow-md transition-colors">
+              {item.status === 'safe' ? '✅' : item.status === 'caution' ? '⚠️' : '❌'}
+            </div>
+            
+            <div class="flex-1">
+              <h3 class={`text-xl font-bold mb-2 transition-colors ${
+                item.status === 'safe' ? 'text-green-700 dark:text-green-400' : 
+                item.status === 'caution' ? 'text-amber-700 dark:text-amber-400' : 'text-red-700 dark:text-red-400'
+              }`}>{item.name}</h3>
+              <p class="tool-text text-base">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
 
-    <Disclaimer type="generale" lang={lang} />
+    <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 transition-colors">
+      <Disclaimer type="generale" lang={lang} />
+    </div>
 
-    <div class="mt-12 text-center pt-8 border-t border-slate-800">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+    <div class="mt-12 text-center pt-8 border-t border-slate-200 dark:border-slate-800 transition-colors">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         <span class="font-bold text-sm">{backBtnLabel}</span>
       </a>
     </div>
+
   </section>
-
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-
 </MainLayout>

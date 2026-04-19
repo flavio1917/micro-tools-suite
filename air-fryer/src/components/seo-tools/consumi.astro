@@ -157,7 +157,7 @@ const faqSchema = {
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
     
     <div class="mb-8 flex justify-start">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         <span class="font-bold text-sm">{backBtnLabel}</span>
       </a>
@@ -168,39 +168,40 @@ const faqSchema = {
         <span class="w-2 h-2 rounded-full bg-red-500"></span>
         <span class="text-[10px] font-black text-red-400 tracking-widest uppercase">{t.liveBadge}</span>
       </div>
-      <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-500">
+      <h1 class="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-amber-500 mb-4 tracking-tight">
         {t.h1}
       </h1>
-      <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+      <p class="tool-text text-base md:text-xl max-w-2xl mx-auto">{t.desc}</p>
     </header>
 
-    <div class="tool-card md:p-10 mb-12 max-w-2xl mx-auto relative overflow-hidden backdrop-blur-sm">      <div class="absolute -top-24 -left-24 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="tool-card md:p-10 mb-12 backdrop-blur-sm max-w-3xl mx-auto relative overflow-hidden flex flex-col lg:flex-row gap-10">
+      <div class="absolute -top-24 -left-24 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="flex-1 space-y-8 relative z-10">
         
-        <div class="bg-slate-900/50 p-5 rounded-2xl border border-slate-700/50">
+        <div class="tool-card-inner">
           <div class="flex justify-between items-end mb-4">
-            <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">{t.wLabel}</label>
+            <label class="tool-label">{t.wLabel}</label>
             <div class="text-2xl font-black font-mono text-yellow-400"><span id="val-watts">1500</span> <span class="text-sm text-yellow-500">W</span></div>
           </div>
-          <input type="range" id="slider-watts" min="800" max="2500" step="50" value="1500" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-yellow-500" />
+          <input type="range" id="slider-watts" min="800" max="2500" step="50" value="1500" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-yellow-500" />
           <div class="flex justify-between text-[10px] text-slate-500 mt-2 font-mono font-bold"><span>800W</span><span>2500W</span></div>
         </div>
 
-        <div class="bg-slate-900/50 p-5 rounded-2xl border border-slate-700/50">
+        <div class="tool-card-inner">
           <div class="flex justify-between items-end mb-4">
-            <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">{t.mLabel}</label>
+            <label class="tool-label">{t.mLabel}</label>
             <div class="text-2xl font-black font-mono text-blue-400"><span id="val-mins">20</span> <span class="text-sm text-blue-500">min</span></div>
           </div>
-          <input type="range" id="slider-mins" min="1" max="120" step="1" value="20" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500" />
+          <input type="range" id="slider-mins" min="1" max="120" step="1" value="20" class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500" />
           <div class="flex justify-between text-[10px] text-slate-500 mt-2 font-mono font-bold"><span>1 min</span><span>120 min</span></div>
         </div>
 
-        <div class="bg-slate-900/50 p-5 rounded-2xl border border-slate-700/50">
+        <div class="tool-card-inner">
           <div class="flex justify-between items-center">
-            <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">{t.cLabel}</label>
+            <label class="tool-label">{t.cLabel}</label>
             <div class="relative w-28">
-              <input type="number" id="input-cost" value="0.25" step="0.01" min="0.05" class="w-full bg-slate-800 border border-slate-600 text-white rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-500 outline-none text-right font-mono font-bold text-lg" />
+              <input type="number" id="input-cost" value="0.25" step="0.01" min="0.05" class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white transition-colors rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-500 outline-none text-right font-mono font-bold text-lg" />
             </div>
           </div>
         </div>
@@ -213,9 +214,9 @@ const faqSchema = {
           <div>
             <div class="flex justify-between items-end mb-2">
               <span class="text-xs font-bold text-green-400 uppercase tracking-wider">{t.resAF}</span>
-              <div class="text-3xl font-black font-mono text-white"><span id="res-af">0.00</span> <span class="text-green-500 text-lg">€</span></div>
+              <div class="text-3xl font-black font-mono text-slate-900 dark:text-white"><span id="res-af">0.00</span> <span class="text-green-500 text-lg">€</span></div>
             </div>
-            <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden border border-slate-700">
+            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 overflow-hidden border border-slate-200 dark:border-slate-700">
               <div id="bar-af" class="bg-gradient-to-r from-green-500 to-emerald-400 h-full rounded-full transition-all duration-300 ease-out" style="width: 40%"></div>
             </div>
           </div>
@@ -223,19 +224,19 @@ const faqSchema = {
           <div>
             <div class="flex justify-between items-end mb-2">
               <span class="text-xs font-bold text-red-400 uppercase tracking-wider">{t.resOven}</span>
-              <div class="text-3xl font-black font-mono text-white opacity-70"><span id="res-oven">0.00</span> <span class="text-red-500 text-lg">€</span></div>
+              <div class="text-3xl font-black font-mono text-slate-900 dark:text-white opacity-70"><span id="res-oven">0.00</span> <span class="text-red-500 text-lg">€</span></div>
             </div>
-            <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden border border-slate-700">
+            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 border border-slate-200 dark:border-slate-700 overflow-hidden">
               <div class="bg-gradient-to-r from-red-600 to-rose-500 h-full rounded-full w-full opacity-70"></div>
             </div>
           </div>
         </div>
         
-        <div class="mt-8 bg-gradient-to-br from-amber-500/20 to-orange-500/10 border border-amber-500/40 rounded-2xl p-6 text-center transform hover:scale-[1.02] transition-transform">
-          <span class="block text-xs uppercase font-bold text-amber-400 tracking-wider mb-2">{t.resSave}</span>
+        <div class="mt-8 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-500/20 dark:to-orange-500/10 border border-amber-200 dark:border-amber-500/40 rounded-2xl p-6 text-center transform hover:scale-[1.02] transition-all shadow-sm">
+          <span class="block text-xs uppercase font-bold text-amber-500 dark:text-amber-400 tracking-wider mb-2">{t.resSave}</span>
           <div class="flex items-baseline justify-center gap-1">
-            <span class="text-amber-400 font-bold text-2xl">-</span>
-            <span id="res-save" class="text-5xl font-black font-mono text-white drop-shadow-md">0.00</span>
+            <span class="text-amber-500 dark:text-amber-400 font-bold text-2xl">-</span>
+            <span id="res-save" class="text-5xl font-black font-mono text-slate-900 dark:text-white drop-shadow-md">0.00</span>
             <span class="text-amber-500 font-bold text-2xl">€</span>
           </div>
         </div>
@@ -245,23 +246,23 @@ const faqSchema = {
     </div>
 
     <div class="max-w-3xl mx-auto mt-16 text-slate-300">
-      <article class="mb-12 bg-slate-800/30 p-8 rounded-3xl border border-slate-700/50">
+      <article class="tool-card mb-12">
         <h2 class="tool-subtitle mb-4">{t.editorialH2}</h2>
-        <p class="tool-text text-lg"set:html={t.editorialText}></p>
+        <p class="tool-text text-lg" set:html={t.editorialText}></p>
       </article>
 
       <div class="space-y-6 mb-12">
-        <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-4">{t.faqTitle}</h2>
+        <h2 class="tool-subtitle mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">{t.faqTitle}</h2>
         <div class="space-y-4">
           {t.faqs.map((faq) => (
-            <details class="group bg-slate-900 rounded-2xl p-5 border border-slate-800 cursor-pointer [&_summary::-webkit-details-marker]:hidden shadow-sm hover:shadow-md transition-shadow">
-              <summary class="flex justify-between items-center font-bold text-slate-200 group-hover:text-amber-400 transition-colors text-lg">
+            <details class="group tool-faq-item [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex justify-between items-center font-bold text-slate-800 dark:text-slate-200 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors text-lg">
                 {faq.q}
-                <span class="transition group-open:rotate-180 bg-slate-800 p-2 rounded-full text-slate-400">
+                <span class="transition group-open:rotate-180 bg-slate-100 dark:bg-slate-800 p-2 rounded-full text-slate-500 dark:text-slate-400 transition-colors">
                   <svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20"><path d="M6 9l6 6 6-6"></path></svg>
                 </span>
               </summary>
-              <p class="text-slate-400 mt-4 leading-relaxed text-base border-t border-slate-800 pt-4">{faq.a}</p>
+              <p class="tool-text mt-4 text-base border-t border-slate-200 dark:border-slate-800 pt-4">{faq.a}</p>
             </details>
           ))}
         </div>

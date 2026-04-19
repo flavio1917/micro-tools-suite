@@ -176,66 +176,66 @@ const faqSchema = {
 };
 ---
 
-<MainLayout title={t.title} lang={lang}>
+<MainLayout title={t.title} lang={lang} description={t.desc}>
   <section class="max-w-5xl mx-auto py-12 md:py-16 px-4">
     
     <div class="mb-8 flex justify-start">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         <span class="font-bold text-sm">{backBtnLabel}</span>
       </a>
     </div>
 
     <header class="text-center mb-12">
-      <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
-        <span class="text-4xl md:text-5xl">❄️</span> {t.h1}
+      <h1 class="text-3xl md:text-5xl font-black mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-500 pb-1">
+        <span class="text-4xl md:text-5xl text-slate-900 dark:text-white">❄️</span> {t.h1}
       </h1>
-      <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+      <p class="tool-text text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
     </header>
 
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-4xl mx-auto">
       
-      <div class="flex-1 bg-slate-800/60 border border-slate-700 rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden h-fit">
+      <div class="flex-1 tool-card relative overflow-hidden h-fit">
         <div class="absolute -top-24 -left-24 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="space-y-8 relative z-10">
           
           <div>
-            <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">{t.sourceLabel}</label>
-            <div class="flex p-1 bg-slate-900 border border-slate-700 rounded-xl shadow-inner gap-1" role="tablist">
+            <label class="tool-label">{t.sourceLabel}</label>
+            <div class="flex p-1 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm dark:shadow-inner gap-1 transition-colors" role="tablist">
               <button id="src-oven" role="tab" aria-selected="true" class="flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold bg-gradient-to-b from-cyan-500 to-blue-600 text-white shadow-md transition-all border border-cyan-400/50">{t.srcOven}</button>
-              <button id="src-af" role="tab" aria-selected="false" class="flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-400 hover:text-white transition-all border border-transparent">{t.srcAF}</button>
+              <button id="src-af" role="tab" aria-selected="false" class="flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all border border-transparent">{t.srcAF}</button>
             </div>
           </div>
 
           <div>
-            <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">{t.catLabel}</label>
-            <select id="cat-select" class="w-full bg-slate-900 border border-slate-600 text-white rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-cyan-500 outline-none transition-all shadow-inner font-medium text-base appearance-none cursor-pointer">
+            <label class="tool-label">{t.catLabel}</label>
+            <select id="cat-select" class="tool-input focus:ring-cyan-500 appearance-none cursor-pointer">
               {t.cats.map((cat) => (
                 <option value={cat.id}>{cat.name}</option>
               ))}
             </select>
           </div>
 
-          <div class="bg-slate-900/50 p-5 rounded-2xl border border-slate-700/50">
+          <div class="tool-card-inner !p-5">
             <div class="flex justify-between items-end mb-4">
-              <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">{t.tLabel}</label>
-              <div class="text-2xl font-black font-mono text-orange-400"><span id="val-temp">{lang === 'en' ? '400' : '200'}</span> <span class="text-sm">{lang === 'en' ? '°F' : '°C'}</span></div>
+              <label class="tool-label !mb-0">{t.tLabel}</label>
+              <div class="text-2xl font-black font-mono text-orange-600 dark:text-orange-400"><span id="val-temp">{lang === 'en' ? '400' : '200'}</span> <span class="text-sm">{lang === 'en' ? '°F' : '°C'}</span></div>
             </div>
-            <input type="range" id="slider-temp" min={lang === 'en' ? '300' : '150'} max={lang === 'en' ? '450' : '230'} step="5" value={lang === 'en' ? '400' : '200'} class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-orange-500" />
-            <div class="flex justify-between text-[10px] text-slate-500 mt-2 font-mono font-bold">
+            <input type="range" id="slider-temp" min={lang === 'en' ? '300' : '150'} max={lang === 'en' ? '450' : '230'} step="5" value={lang === 'en' ? '400' : '200'} class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-orange-500 transition-colors" />
+            <div class="flex justify-between text-[10px] text-slate-500 dark:text-slate-400 mt-2 font-mono font-bold transition-colors">
               <span>{lang === 'en' ? '300°F' : '150°C'}</span>
               <span>{lang === 'en' ? '450°F' : '230°C'}</span>
             </div>
           </div>
 
-          <div class="bg-slate-900/50 p-5 rounded-2xl border border-slate-700/50">
+          <div class="tool-card-inner !p-5">
             <div class="flex justify-between items-end mb-4">
-              <label class="text-xs font-bold text-slate-400 uppercase tracking-wider">{t.mLabel}</label>
-              <div class="text-2xl font-black font-mono text-blue-400"><span id="val-mins">20</span> <span class="text-sm">min</span></div>
+              <label class="tool-label !mb-0">{t.mLabel}</label>
+              <div class="text-2xl font-black font-mono text-blue-600 dark:text-blue-400"><span id="val-mins">20</span> <span class="text-sm">min</span></div>
             </div>
-            <input type="range" id="slider-mins" min="5" max="60" step="1" value="20" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500" />
-            <div class="flex justify-between text-[10px] text-slate-500 mt-2 font-mono font-bold">
+            <input type="range" id="slider-mins" min="5" max="60" step="1" value="20" class="w-full h-2 bg-slate-300 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500 transition-colors" />
+            <div class="flex justify-between text-[10px] text-slate-500 dark:text-slate-400 mt-2 font-mono font-bold transition-colors">
               <span>5 min</span>
               <span>60 min</span>
             </div>
@@ -247,46 +247,46 @@ const faqSchema = {
       <div class="flex-1 space-y-0 flex flex-col justify-center relative">
         
         <div id="af-target-badge" class="mb-5 ml-0 md:ml-4 flex justify-center md:justify-start transition-opacity duration-300 ease-in-out opacity-100">
-          <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-900/40 to-cyan-900/40 border border-cyan-500/40 rounded-xl shadow-lg backdrop-blur-sm">
-            <span class="text-cyan-300 font-bold text-xs md:text-sm uppercase tracking-wide">{t.targetAFLabel}</span>
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-50 dark:bg-gradient-to-r dark:from-blue-900/40 dark:to-cyan-900/40 border border-cyan-200 dark:border-cyan-500/40 rounded-xl shadow-sm dark:shadow-lg backdrop-blur-sm transition-colors">
+            <span class="text-cyan-700 dark:text-cyan-300 font-bold text-xs md:text-sm uppercase tracking-wide transition-colors">{t.targetAFLabel}</span>
           </div>
         </div>
 
-        <div class="relative bg-gradient-to-r from-cyan-900/30 to-slate-900/50 border border-cyan-500/30 p-6 rounded-2xl mb-6 ml-0 md:ml-4 shadow-lg hover:border-cyan-400/60 transition-colors">
-          <div class="absolute -top-4 -left-4 md:-left-8 w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center font-black text-slate-900 shadow-[0_0_15px_rgba(6,182,212,0.5)] text-lg ring-4 ring-[#0B1120]">1</div>
+        <div class="relative bg-white dark:bg-gradient-to-r dark:from-cyan-900/30 dark:to-slate-900/50 border border-slate-200 dark:border-cyan-500/30 p-6 rounded-2xl mb-6 ml-0 md:ml-4 shadow-sm dark:shadow-lg hover:border-cyan-300 dark:hover:border-cyan-400/60 transition-colors">
+          <div class="absolute -top-4 -left-4 md:-left-8 w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center font-black text-white dark:text-slate-900 shadow-md text-lg ring-4 ring-white dark:ring-[#0B1120] transition-colors">1</div>
           
-          <h3 class="text-cyan-400 font-bold uppercase tracking-wider text-xs mb-4">{t.phase1}</h3>
+          <h3 class="text-cyan-600 dark:text-cyan-400 font-bold uppercase tracking-wider text-xs mb-4 transition-colors">{t.phase1}</h3>
           
           <div class="flex gap-4">
-            <div class="bg-slate-950/80 px-4 py-3 rounded-xl border border-slate-700 text-center flex-1 shadow-inner">
-              <span class="block text-[10px] text-slate-500 uppercase font-bold mb-1">Temp</span>
-              <div class="text-2xl font-mono font-black text-orange-300"><span id="res-t1">--</span> <span class="text-sm">{lang === 'en' ? '°F' : '°C'}</span></div>
+            <div class="tool-card-inner !p-3 text-center flex-1">
+              <span class="tool-label !text-[10px] !mb-1">Temp</span>
+              <div class="text-2xl font-mono font-black text-orange-600 dark:text-orange-400 transition-colors"><span id="res-t1">--</span> <span class="text-sm">{lang === 'en' ? '°F' : '°C'}</span></div>
             </div>
-            <div class="bg-slate-950/80 px-4 py-3 rounded-xl border border-slate-700 text-center flex-1 shadow-inner">
-              <span class="block text-[10px] text-slate-500 uppercase font-bold mb-1">Time</span>
-              <div class="text-2xl font-mono font-black text-cyan-300"><span id="res-m1">--</span> <span class="text-sm">min</span></div>
+            <div class="tool-card-inner !p-3 text-center flex-1">
+              <span class="tool-label !text-[10px] !mb-1">Time</span>
+              <div class="text-2xl font-mono font-black text-cyan-600 dark:text-cyan-300 transition-colors"><span id="res-m1">--</span> <span class="text-sm">min</span></div>
             </div>
           </div>
         </div>
 
-        <div class="relative bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 flex items-center gap-3 ml-0 md:ml-8 mb-6 z-10 backdrop-blur-md">
+        <div class="relative bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 rounded-xl p-4 flex items-center gap-3 ml-0 md:ml-8 mb-6 z-10 backdrop-blur-md transition-colors">
           <span class="text-2xl animate-bounce">🔀</span>
-          <p class="text-amber-200 text-xs md:text-sm font-bold tracking-wide uppercase">{t.shakeTip}</p>
+          <p class="text-amber-700 dark:text-amber-200 text-xs md:text-sm font-bold tracking-wide uppercase transition-colors">{t.shakeTip}</p>
         </div>
 
-        <div class="relative bg-gradient-to-r from-orange-900/30 to-slate-900/50 border border-orange-500/30 p-6 rounded-2xl ml-0 md:ml-4 shadow-lg hover:border-orange-400/60 transition-colors">
-          <div class="absolute -top-4 -left-4 md:-left-8 w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center font-black text-slate-900 shadow-[0_0_15px_rgba(249,115,22,0.5)] text-lg ring-4 ring-[#0B1120]">2</div>
+        <div class="relative bg-white dark:bg-gradient-to-r dark:from-orange-900/30 dark:to-slate-900/50 border border-slate-200 dark:border-orange-500/30 p-6 rounded-2xl ml-0 md:ml-4 shadow-sm dark:shadow-lg hover:border-orange-300 dark:hover:border-orange-400/60 transition-colors">
+          <div class="absolute -top-4 -left-4 md:-left-8 w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center font-black text-white dark:text-slate-900 shadow-md text-lg ring-4 ring-white dark:ring-[#0B1120] transition-colors">2</div>
           
-          <h3 class="text-orange-400 font-bold uppercase tracking-wider text-xs mb-4">{t.phase2}</h3>
+          <h3 class="text-orange-600 dark:text-orange-400 font-bold uppercase tracking-wider text-xs mb-4 transition-colors">{t.phase2}</h3>
           
           <div class="flex gap-4">
-            <div class="bg-slate-950/80 px-4 py-3 rounded-xl border border-slate-700 text-center flex-1 shadow-inner">
-              <span class="block text-[10px] text-slate-500 uppercase font-bold mb-1">Temp</span>
-              <div class="text-2xl font-mono font-black text-orange-500"><span id="res-t2">--</span> <span class="text-sm">{lang === 'en' ? '°F' : '°C'}</span></div>
+            <div class="tool-card-inner !p-3 text-center flex-1">
+              <span class="tool-label !text-[10px] !mb-1">Temp</span>
+              <div class="text-2xl font-mono font-black text-orange-600 dark:text-orange-500 transition-colors"><span id="res-t2">--</span> <span class="text-sm">{lang === 'en' ? '°F' : '°C'}</span></div>
             </div>
-            <div class="bg-slate-950/80 px-4 py-3 rounded-xl border border-slate-700 text-center flex-1 shadow-inner">
-              <span class="block text-[10px] text-slate-500 uppercase font-bold mb-1">Time</span>
-              <div class="text-2xl font-mono font-black text-blue-400"><span id="res-m2">--</span> <span class="text-sm">min</span></div>
+            <div class="tool-card-inner !p-3 text-center flex-1">
+              <span class="tool-label !text-[10px] !mb-1">Time</span>
+              <div class="text-2xl font-mono font-black text-blue-600 dark:text-blue-400 transition-colors"><span id="res-m2">--</span> <span class="text-sm">min</span></div>
             </div>
           </div>
         </div>
@@ -296,24 +296,24 @@ const faqSchema = {
 
     <div class="max-w-3xl mx-auto mt-20 text-slate-300">
       
-      <article class="mb-16 bg-slate-800/30 p-8 rounded-3xl border border-slate-700/50">
+      <article class="tool-card mb-16">
         <h2 class="tool-subtitle mb-4">{t.editorialH2}</h2>
         <p class="tool-text text-lg" set:html={t.editorialText}></p>
       </article>
 
       <div class="space-y-6">
-        <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-4">{t.faqTitle}</h2>
+        <h2 class="tool-subtitle mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">{t.faqTitle}</h2>
         
         <div class="space-y-4">
           {t.faqs.map((faq) => (
-            <details class="group bg-slate-900 rounded-2xl p-5 border border-slate-800 cursor-pointer [&_summary::-webkit-details-marker]:hidden shadow-sm hover:shadow-md transition-shadow">
-              <summary class="flex justify-between items-center font-bold text-slate-200 group-hover:text-cyan-400 transition-colors text-lg">
+            <details class="group tool-faq-item [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex justify-between items-center font-bold text-slate-800 dark:text-slate-200 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors text-lg">
                 {faq.q}
-                <span class="transition group-open:rotate-180 bg-slate-800 p-2 rounded-full text-slate-400">
+                <span class="transition group-open:rotate-180 bg-slate-100 dark:bg-slate-800 p-2 rounded-full text-slate-500 dark:text-slate-400 transition-colors">
                   <svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20"><path d="M6 9l6 6 6-6"></path></svg>
                 </span>
               </summary>
-              <p class="text-slate-400 mt-4 leading-relaxed text-base border-t border-slate-800 pt-4">{faq.a}</p>
+              <p class="tool-text mt-4 text-base border-t border-slate-200 dark:border-slate-800 pt-4">{faq.a}</p>
             </details>
           ))}
         </div>
@@ -321,8 +321,15 @@ const faqSchema = {
       
     </div>
 
-    <div class="mt-20 text-center pt-8 border-t border-slate-800">
+    <div class="mt-20 text-center pt-8 border-t border-slate-200 dark:border-slate-800 transition-colors">
       <Disclaimer type="generale" lang={lang} />
+    </div>
+
+    <div class="mt-8 text-center pt-8">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
+        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="font-bold text-sm">{backBtnLabel}</span>
+      </a>
     </div>
 
   </section>
@@ -335,7 +342,7 @@ const faqSchema = {
       const btnOven = document.getElementById('src-oven');
       const btnAF = document.getElementById('src-af');
       const afTargetBadge = document.getElementById('af-target-badge');
-      
+
       if (!selectCat || !btnOven || !btnAF) return;
 
       const valTemp = document.getElementById('val-temp');
@@ -409,7 +416,7 @@ const faqSchema = {
         currentSource = 'oven';
         btnOven.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold bg-gradient-to-b from-cyan-500 to-blue-600 text-white shadow-md transition-all border border-cyan-400/50";
         btnOven.setAttribute('aria-selected', 'true');
-        btnAF.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-400 hover:text-white transition-all border border-transparent";
+        btnAF.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all border border-transparent";
         btnAF.setAttribute('aria-selected', 'false');
         if(afTargetBadge) {
             afTargetBadge.classList.remove('hidden', 'opacity-0');
@@ -422,7 +429,7 @@ const faqSchema = {
         currentSource = 'af';
         btnAF.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold bg-gradient-to-b from-cyan-500 to-blue-600 text-white shadow-md transition-all border border-cyan-400/50";
         btnAF.setAttribute('aria-selected', 'true');
-        btnOven.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-400 hover:text-white transition-all border border-transparent";
+        btnOven.className = "flex-1 py-2.5 rounded-lg text-xs md:text-sm font-bold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all border border-transparent";
         btnOven.setAttribute('aria-selected', 'false');
         if(afTargetBadge) {
             afTargetBadge.classList.add('hidden', 'opacity-0');

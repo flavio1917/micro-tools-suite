@@ -236,7 +236,7 @@ const faqSchema = {
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
     
     <div class="mb-8 flex justify-start">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         <span class="font-bold text-sm">{backBtnLabel}</span>
       </a>
@@ -249,15 +249,16 @@ const faqSchema = {
          </span>
       </div>
 
-      <h1 class="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">{t.h1}</h1>
-      <p class="text-slate-400 text-base md:text-xl max-w-2xl mx-auto leading-relaxed">{t.desc}</p>
+      <h1 class="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 mb-4 tracking-tight">{t.h1}</h1>
+      <p class="tool-text text-base md:text-xl max-w-2xl mx-auto">{t.desc}</p>
     </header>
 
-    <div class="tool-card md:p-10 mb-12 max-w-2xl mx-auto relative overflow-hidden backdrop-blur-sm">      <div class="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="tool-card md:p-10 mb-12 backdrop-blur-sm max-w-2xl mx-auto relative overflow-hidden">  
+      <div class="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="space-y-6 relative z-10">
         <div>
-          <label class="block text-sm font-bold text-slate-300 uppercase tracking-wider mb-2">{t.foodLabel}</label>
+          <label class="tool-label">{t.foodLabel}</label>
           <select id="food-select" class="tool-input focus:ring-emerald-500 focus:border-emerald-500 appearance-none cursor-pointer">
             {t.foods.map((food) => (
               <option value={food.id} data-absorb={food.absorb} data-airoil={food.airOil}>{food.name}</option>
@@ -266,15 +267,15 @@ const faqSchema = {
         </div>
 
         <div>
-          <label class="block text-sm font-bold text-slate-300 uppercase tracking-wider mb-2">{t.weightLabel}</label>
+          <label class="tool-label">{t.weightLabel}</label>
           
-          <div class="flex items-center justify-center bg-slate-900 border border-slate-600 rounded-xl overflow-hidden shadow-inner h-14">
-            <button id="btn-minus-weight" class="w-16 h-full hover:bg-slate-800 text-white font-black text-2xl transition-colors select-none active:bg-slate-700">-</button>
+          <div class="flex items-center justify-center bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-xl overflow-hidden shadow-sm dark:shadow-inner h-14 transition-colors">
+            <button id="btn-minus-weight" class="w-16 h-full hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-white font-black text-2xl transition-colors select-none active:bg-slate-700">-</button>
             <div class="flex-1 flex items-center justify-center border-x border-slate-700/50 h-full">
-              <input type="number" id="weight-input" value="250" class="w-16 bg-transparent text-right text-white font-mono font-bold text-3xl outline-none appearance-none p-0 m-0" style="-moz-appearance: textfield;" />
-              <span class="text-slate-400 font-bold text-xl ml-1 mb-0.5 select-none">g</span>
+              <input type="number" id="weight-input" value="250" class="w-16 bg-transparent text-right text-slate-900 dark:text-white font-mono font-bold text-3xl outline-none appearance-none p-0 m-0" style="-moz-appearance: textfield;" />
+              <span class="text-slate-600 dark:text-slate-400 font-bold text-xl ml-1 mb-0.5 select-none">g</span>
             </div>
-            <button id="btn-plus-weight" class="w-16 h-full hover:bg-slate-800 text-white font-black text-2xl transition-colors select-none active:bg-slate-700">+</button>
+            <button id="btn-plus-weight" class="w-16 h-full hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-white font-black text-2xl transition-colors select-none active:bg-slate-700">+</button>
           </div>
         </div>
 
@@ -283,51 +284,51 @@ const faqSchema = {
         </button>
       </div>
 
-      <div id="results-dash" class="mt-8 pt-8 border-t border-slate-700 hidden opacity-0 transition-opacity duration-500">
+      <div id="results-dash" class="mt-8 pt-8 border-t border-slate-200 dark:border-slate-700 hidden opacity-0 transition-opacity duration-500">
         <div class="grid grid-cols-2 gap-4">
-          <div class="bg-slate-900/80 border border-amber-500/30 rounded-2xl p-4 text-center shadow-inner">
-            <span class="block text-[10px] md:text-xs uppercase font-bold text-amber-400 tracking-wider mb-1">{t.resFat}</span>
+          <div class="tool-card-inner border-amber-200 dark:border-amber-500/30 p-4 text-center">
+            <span class="block text-[10px] md:text-xs uppercase font-bold text-amber-500 dark:text-amber-400 tracking-wider mb-1">{t.resFat}</span>
             <div class="flex items-baseline justify-center gap-1">
-              <span id="res-fat" class="text-3xl md:text-4xl font-black font-mono text-white">0</span>
-              <span class="text-amber-500 font-bold">g</span>
+              <span id="res-fat" class="text-3xl md:text-4xl font-black font-mono text-slate-900 dark:text-white">0</span>
+              <span class="text-amber-600 dark:text-amber-500 font-bold">g</span>
             </div>
           </div>
-          <div class="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-4 text-center shadow-inner">
-            <span class="block text-[10px] md:text-xs uppercase font-bold text-emerald-400 tracking-wider mb-1">{t.resKcal}</span>
+          <div class="tool-card-inner border-emerald-200 dark:border-emerald-500/30 p-4 text-center">
+            <span class="block text-[10px] md:text-xs uppercase font-bold text-emerald-600 dark:text-emerald-400 tracking-wider mb-1">{t.resKcal}</span>
             <div class="flex items-baseline justify-center gap-1">
-              <span id="res-kcal" class="text-3xl md:text-4xl font-black font-mono text-white">0</span>
-              <span class="text-emerald-500 font-bold">kcal</span>
+              <span id="res-kcal" class="text-3xl md:text-4xl font-black font-mono text-slate-900 dark:text-white">0</span>
+              <span class="text-emerald-600 dark:text-emerald-500 font-bold">kcal</span>
             </div>
           </div>
         </div>
         
-        <div class="mt-4 bg-blue-900/20 border border-blue-500/20 rounded-xl p-4 flex items-center justify-center gap-3">
+        <div class="mt-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-500/20 rounded-xl p-4 flex items-center justify-center gap-3 transition-colors">
           <span class="text-2xl animate-bounce">🏃‍♂️</span>
-          <p class="text-blue-200 text-sm md:text-base font-medium">
-            {t.resRun} <strong id="res-run" class="text-white text-lg font-black mx-1">0</strong> <span class="text-blue-300">{t.resRunUnit}</span>
+          <p class="text-blue-800 dark:text-blue-200 text-sm md:text-base font-medium">
+            {t.resRun} <strong id="res-run" class="text-slate-900 dark:text-white text-lg font-black mx-1">0</strong> <span class="text-blue-600 dark:text-blue-300">{t.resRunUnit}</span>
           </p>
         </div>
       </div>
     </div>
 
     <div class="max-w-3xl mx-auto mt-16 text-slate-300">
-      <article class="mb-12 bg-slate-800/30 p-8 rounded-3xl border border-slate-700/50">
+      <article class="tool-card mb-12">
         <h2 class="tool-subtitle mb-4">{t.editorialH2}</h2>
         <p class="tool-text text-lg" set:html={t.editorialText}></p>
       </article>
 
       <div class="space-y-6 mb-12">
-        <h2 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-4">{t.faqTitle}</h2>
+        <h2 class="tool-subtitle mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">{t.faqTitle}</h2>
         <div class="space-y-4">
           {t.faqs.map((faq) => (
-            <details class="group bg-slate-900 rounded-2xl p-5 border border-slate-800 cursor-pointer [&_summary::-webkit-details-marker]:hidden shadow-sm hover:shadow-md transition-shadow">
-              <summary class="flex justify-between items-center font-bold text-slate-200 group-hover:text-emerald-400 transition-colors text-lg">
+            <details class="group tool-faq-item [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex justify-between items-center font-bold text-slate-800 dark:text-slate-200 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors text-lg">
                 {faq.q}
-                <span class="transition group-open:rotate-180 bg-slate-800 p-2 rounded-full text-slate-400">
+                <span class="transition group-open:rotate-180 bg-slate-100 dark:bg-slate-800 p-2 rounded-full text-slate-500 dark:text-slate-400 transition-colors">
                   <svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="20"><path d="M6 9l6 6 6-6"></path></svg>
                 </span>
               </summary>
-              <p class="text-slate-400 mt-4 leading-relaxed text-base border-t border-slate-800 pt-4">{faq.a}</p>
+              <p class="tool-text mt-4 text-base border-t border-slate-200 dark:border-slate-800 pt-4">{faq.a}</p>
             </details>
           ))}
         </div>
@@ -336,8 +337,8 @@ const faqSchema = {
 
     <Disclaimer type="nutrizionale" lang={lang} />
 
-    <div class="mt-12 text-center pt-8 border-t border-slate-800">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-slate-800/90 backdrop-blur-md text-white border border-slate-600/50 shadow-xl rounded-full hover:bg-slate-700 transition-all z-10 group">
+    <div class="mt-12 text-center pt-8 border-t border-slate-200 dark:border-slate-800">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
         <span class="font-bold text-sm">{backBtnLabel}</span>
       </a>
