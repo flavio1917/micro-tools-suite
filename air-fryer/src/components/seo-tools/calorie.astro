@@ -258,7 +258,7 @@ const faqSchema = {
       <div class="space-y-6 relative z-10">
         <div>
           <label class="block text-sm font-bold text-slate-300 uppercase tracking-wider mb-2">{t.foodLabel}</label>
-          <select id="food-select" class="w-full bg-slate-900 border border-slate-600 text-white rounded-xl px-4 py-3.5 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all shadow-inner font-medium text-lg appearance-none cursor-pointer">
+          <select id="food-select" class="tool-input focus:ring-emerald-500 focus:border-emerald-500 appearance-none cursor-pointer">
             {t.foods.map((food) => (
               <option value={food.id} data-absorb={food.absorb} data-airoil={food.airOil}>{food.name}</option>
             ))}
@@ -313,7 +313,7 @@ const faqSchema = {
     <div class="max-w-3xl mx-auto mt-16 text-slate-300">
       <article class="mb-12 bg-slate-800/30 p-8 rounded-3xl border border-slate-700/50">
         <h2 class="tool-subtitle mb-4">{t.editorialH2}</h2>
-        <p class="text-lg leading-relaxed text-slate-400" set:html={t.editorialText}></p>
+        <p class="tool-text text-lg" set:html={t.editorialText}></p>
       </article>
 
       <div class="space-y-6 mb-12">

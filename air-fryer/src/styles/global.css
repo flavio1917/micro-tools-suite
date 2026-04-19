@@ -126,6 +126,6 @@
   
   /* --- FAQ (Dettagli) --- */
   .tool-faq-item {
-    @apply group bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 cursor-pointer shadow-sm hover:shadow-md transition-shadow;
+    @apply  bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 cursor-pointer shadow-sm hover:shadow-md transition-shadow;
   }
 }
