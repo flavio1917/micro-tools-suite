@@ -92,7 +92,6 @@ const currentLabels = navLabels[lang as keyof typeof navLabels] || navLabels.it;
 const fallbackCanonical = new URL(Astro.url.pathname, Astro.site || "https://www.crispissimo.com").toString();
 const canonicalURL = alternateUrls?.[lang as keyof typeof alternateUrls] || fallbackCanonical;
 
-// FIX: Generazione Fallback per il Language Switcher in caso alternateUrls sia vuoto sulla Home.
 const finalAlternateUrls = Object.keys(alternateUrls).length > 0 ? alternateUrls : {
   it: "https://www.crispissimo.com/",
   en: "https://www.crispissimo.com/en/",
@@ -190,6 +189,7 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
     <meta name="p:domain_verify" content="0513c10094fa04708fce47d2922e822b" />
 
+    {/* I link alternate SEO richiedono l'URL Assoluto per indicizzazione */}
     {Object.keys(finalAlternateUrls).length > 0 && (
       <>
         {finalAlternateUrls.it && <link rel="alternate" hreflang="it" href={finalAlternateUrls.it} />}
@@ -259,10 +259,18 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
           <div class="flex items-center gap-2 sm:gap-3">
             <div class="flex items-center gap-1.5 rounded-full border border-slate-200 bg-white/80 px-2 py-1 shadow-sm dark:border-slate-700 dark:bg-slate-900/80 sm:gap-2 sm:px-3 sm:py-1.5" aria-label={currentLabels.language}>
               {["it", "en", "es", "fr"].map((l) => {
-                const url = finalAlternateUrls[l as keyof typeof finalAlternateUrls];
-                if (!url) return null;
+                const absoluteUrl = finalAlternateUrls[l as keyof typeof finalAlternateUrls];
+                if (!absoluteUrl) return null;
+                
+                // Estraiamo il path relativo per non far impazzire localhost o il router
+                let relativePath = absoluteUrl;
+                try {
+                  relativePath = new URL(absoluteUrl).pathname;
+                } catch(e) {}
+
                 return (
-                  <a href={url} aria-label={l.toUpperCase()} class="flex items-center justify-center">
+                  <!-- AGGIUNTO data-astro-reload per bypassare i casini di ClientRouter e resettare lo stato lingua -->
+                  <a href={relativePath} data-astro-reload aria-label={l.toUpperCase()} class="flex items-center justify-center">
                     <img src={`https://flagcdn.com/${l === "en" ? "gb" : l}.svg`} alt={l.toUpperCase()} width="24" height="18" class={`h-auto w-5 rounded-[2px] transition-all duration-200 md:w-6 ${lang === l ? "scale-110 opacity-100 ring-2 ring-orange-400/70" : "opacity-50 grayscale hover:scale-110 hover:opacity-100 hover:grayscale-0"}`} />
                   </a>
                 );
@@ -356,7 +364,7 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
           applyTheme(savedTheme);
 
           document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
-            button.onclick = null; // Evita doppi click su transizioni Astro
+            button.onclick = null; 
             button.onclick = toggleTheme;
           });
         };
