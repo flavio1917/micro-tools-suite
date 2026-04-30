@@ -2,8 +2,21 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import RecipeSearch from '../components/recipes/RecipeSearch.astro';
 
-export interface Props { lang: string; }
-const { lang } = Astro.props;
+export interface Props { lang?: string; }
+
+// ==========================================
+// FIX ASSOLUTO: BLINDATURA LINGUA
+// Se la prop "lang" è vuota, la estraiamo forzatamente dall'URL fisico.
+// ==========================================
+let lang = Astro.props.lang || Astro.params.lang;
+
+if (!lang) {
+  const path = Astro.url.pathname || "";
+  if (path.startsWith('/en')) lang = 'en';
+  else if (path.startsWith('/es')) lang = 'es';
+  else if (path.startsWith('/fr')) lang = 'fr';
+  else lang = 'it';
+}
 
 // DIZIONARIO SEO
 const seoTitles = {
@@ -88,18 +101,18 @@ const jsonLd = {
 
 <MainLayout title={currentTitle} lang={lang} description={currentDesc} alternateUrls={alternateUrls}>
   
-  <header class="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 text-center overflow-hidden border-b border-slate-200 dark:border-slate-800">
-    <div class="absolute inset-0 z-0 bg-gradient-to-b from-orange-50/80 to-transparent dark:from-[#0B1120] dark:to-transparent pointer-events-none"></div>
+  <header class="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 text-center overflow-hidden border-b border-slate-200 dark:border-slate-800 transition-colors">
+    <div class="absolute inset-0 z-0 bg-gradient-to-b from-orange-50/80 to-transparent dark:from-[#0B1120] dark:to-transparent pointer-events-none transition-colors"></div>
     
     <div class="relative z-10 max-w-6xl mx-auto space-y-6">
-      <h1 class="text-5xl md:text-7xl font-black text-slate-900 dark:text-white tracking-tight leading-tight" set:html={hero.h1}></h1>
+      <h1 class="text-5xl md:text-7xl font-black text-slate-900 dark:text-white tracking-tight leading-tight transition-colors" set:html={hero.h1}></h1>
       
-      <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed">
+      <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-4xl mx-auto leading-relaxed transition-colors">
         {hero.sub}
       </p>
       
       <div class="pt-6">
-        <a href="#ricettario-container" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-orange-600 hover:bg-orange-700 rounded-full shadow-lg hover:shadow-orange-600/30 hover:-translate-y-1">
+        <a href={lang === 'it' ? "#ricettario" : `/${lang}/#ricettario`} class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-orange-600 hover:bg-orange-700 rounded-full shadow-lg hover:shadow-orange-600/30 hover:-translate-y-1">
           {hero.cta}
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
         </a>
@@ -107,9 +120,45 @@ const jsonLd = {
     </div>
   </header>
 
+  <!-- MICRO-TOOL TEASERS -->
+  <section class="max-w-6xl mx-auto px-4 py-12 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      
+      <!-- Card Convertitore -->
+      <a href={teaser.convLink} class="group bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-3xl p-8 shadow-sm hover:shadow-xl dark:hover:border-orange-500/50 hover:-translate-y-1 transition-all flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-500/10 flex items-center justify-center text-2xl mb-6 shadow-inner">
+            ⏱️
+          </div>
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 transition-colors">{teaser.convTitle}</h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed transition-colors">{teaser.convDesc}</p>
+        </div>
+        <div class="inline-flex items-center font-bold text-orange-600 dark:text-orange-400 group-hover:text-orange-700 dark:group-hover:text-orange-300 transition-colors">
+          {teaser.convCta} 
+          <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+        </div>
+      </a>
 
-  <section class="w-full py-8">
-    <div id="ricettario" class="w-full">
+      <!-- Card Strumenti -->
+      <a href={teaser.toolsLink} class="group bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-3xl p-8 shadow-sm hover:shadow-xl dark:hover:border-blue-500/50 hover:-translate-y-1 transition-all flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-500/10 flex items-center justify-center text-2xl mb-6 shadow-inner">
+            🛠️
+          </div>
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3 transition-colors">{teaser.toolsTitle}</h2>
+          <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed transition-colors">{teaser.toolsDesc}</p>
+        </div>
+        <div class="inline-flex items-center font-bold text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">
+          {teaser.toolsCta} 
+          <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="w-full py-8 md:py-12 bg-slate-50 dark:bg-slate-900/20 transition-colors">
+    <div id="ricettario" class="w-full scroll-mt-24">
       <RecipeSearch lang={lang} />
     </div>
   </section>
