@@ -102,7 +102,7 @@ const finalAlternateUrls = Object.keys(alternateUrls).length > 0 ? alternateUrls
 let finalTitle = title || defaultTitles[lang as keyof typeof defaultTitles] || defaultTitles.it;
 let finalDescription = description || defaultDescriptions[lang as keyof typeof defaultDescriptions] || defaultDescriptions.it;
 
-// Logica SEO per Ricette (Invariata)
+// Logica SEO per Ricette
 if (recipeData) {
   const seoPhrases = {
     it: { pro: "Proteine", fast: "Pronto in", light: "Solo", kcal: "Kcal", read: "Ricetta testata. Leggi la guida per la cottura perfetta." },
@@ -189,7 +189,6 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
     <meta name="p:domain_verify" content="0513c10094fa04708fce47d2922e822b" />
 
-    {/* I link alternate SEO richiedono l'URL Assoluto per indicizzazione */}
     {Object.keys(finalAlternateUrls).length > 0 && (
       <>
         {finalAlternateUrls.it && <link rel="alternate" hreflang="it" href={finalAlternateUrls.it} />}
@@ -261,16 +260,17 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
               {["it", "en", "es", "fr"].map((l) => {
                 const absoluteUrl = finalAlternateUrls[l as keyof typeof finalAlternateUrls];
                 if (!absoluteUrl) return null;
-                
-                // Estraiamo il path relativo per non far impazzire localhost o il router
-                let relativePath = absoluteUrl;
+
+                // FIX FONDAMENTALE 1: Manteniamo il path relativo per non farti sbattere fuori dal localhost
+                let targetUrl = absoluteUrl;
                 try {
-                  relativePath = new URL(absoluteUrl).pathname;
+                  const parsed = new URL(absoluteUrl);
+                  targetUrl = parsed.pathname + parsed.search + parsed.hash;
                 } catch(e) {}
 
+                // FIX FONDAMENTALE 2: data-astro-reload spegne il cache di ViewTransitions per i18n
                 return (
-                  <!-- AGGIUNTO data-astro-reload per bypassare i casini di ClientRouter e resettare lo stato lingua -->
-                  <a href={relativePath} data-astro-reload aria-label={l.toUpperCase()} class="flex items-center justify-center">
+                  <a href={targetUrl} data-astro-reload aria-label={l.toUpperCase()} class="flex items-center justify-center">
                     <img src={`https://flagcdn.com/${l === "en" ? "gb" : l}.svg`} alt={l.toUpperCase()} width="24" height="18" class={`h-auto w-5 rounded-[2px] transition-all duration-200 md:w-6 ${lang === l ? "scale-110 opacity-100 ring-2 ring-orange-400/70" : "opacity-50 grayscale hover:scale-110 hover:opacity-100 hover:grayscale-0"}`} />
                   </a>
                 );

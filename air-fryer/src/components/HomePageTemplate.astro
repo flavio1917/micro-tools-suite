@@ -1,14 +1,21 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-// Aggiusto il path visto che questo file si trova in src/components/
 import RecipeSearch from './recipes/RecipeSearch.astro';
 
 export interface Props {
   lang?: string;
 }
 
-// Se dalla pagina non gli passi nulla, di default è 'it'
-const { lang = 'it' } = Astro.props;
+let { lang } = Astro.props;
+
+// FIX FONDAMENTALE 3: Auto-rilevamento blindato nel caso la pagina genitore fallisca
+if (!lang) {
+  const path = Astro.url.pathname || "";
+  if (path.startsWith('/en')) lang = 'en';
+  else if (path.startsWith('/es')) lang = 'es';
+  else if (path.startsWith('/fr')) lang = 'fr';
+  else lang = 'it';
+}
 
 // ==========================================
 // 1. DATI E TRADUZIONI (i18n)
@@ -97,7 +104,6 @@ const jsonLd = {
 
 <MainLayout title={currentTitle} lang={lang} description={currentDesc} alternateUrls={alternateUrls}>
   
-  <!-- HERO SECTION -->
   <header class="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 text-center overflow-hidden border-b border-slate-200 dark:border-slate-800 transition-colors">
     <div class="absolute inset-0 z-0 bg-gradient-to-b from-orange-50/80 to-transparent dark:from-[#0B1120] dark:to-transparent pointer-events-none transition-colors"></div>
     
@@ -121,7 +127,6 @@ const jsonLd = {
   <section class="max-w-6xl mx-auto px-4 py-12 md:py-16">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
       
-      <!-- Card Convertitore -->
       <a href={teaser.convLink} class="group bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-3xl p-8 shadow-sm hover:shadow-xl dark:hover:border-orange-500/50 hover:-translate-y-1 transition-all flex flex-col justify-between">
         <div>
           <div class="w-12 h-12 rounded-full bg-orange-100 dark:bg-orange-500/10 flex items-center justify-center text-2xl mb-6 shadow-inner">
@@ -136,7 +141,6 @@ const jsonLd = {
         </div>
       </a>
 
-      <!-- Card Strumenti -->
       <a href={teaser.toolsLink} class="group bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-3xl p-8 shadow-sm hover:shadow-xl dark:hover:border-blue-500/50 hover:-translate-y-1 transition-all flex flex-col justify-between">
         <div>
           <div class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-500/10 flex items-center justify-center text-2xl mb-6 shadow-inner">
