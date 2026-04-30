@@ -92,6 +92,7 @@ const currentLabels = navLabels[lang as keyof typeof navLabels] || navLabels.it;
 const fallbackCanonical = new URL(Astro.url.pathname, Astro.site || "https://www.crispissimo.com").toString();
 const canonicalURL = alternateUrls?.[lang as keyof typeof alternateUrls] || fallbackCanonical;
 
+// FIX: Generazione Fallback per il Language Switcher in caso alternateUrls sia vuoto sulla Home.
 const finalAlternateUrls = Object.keys(alternateUrls).length > 0 ? alternateUrls : {
   it: "https://www.crispissimo.com/",
   en: "https://www.crispissimo.com/en/",
@@ -153,19 +154,14 @@ const currentYear = new Date().getFullYear();
 // ==========================================
 const currentPath = new URL(Astro.request.url).pathname;
 
-// Funzione Helper per controllare se un link è attivo
 const isActive = (path: string) => {
-  // Se è la homepage esatta (o la root con lingua es. /en/)
   if (path === navRoutes.home) {
     return currentPath === navRoutes.home || currentPath === navRoutes.home.replace(/\/$/, "");
   }
-  // Per tutti gli altri link, controlliamo se il path corrente inizia con la stringa (es. /strumenti o /strumenti/materiali)
-  // Rimuoviamo gli anchor link (#) prima del controllo
   const cleanPath = path.split('#')[0];
   return cleanPath.length > 1 && currentPath.startsWith(cleanPath);
 };
 
-// Stile Base vs Attivo
 const baseLinkStyle = "text-sm font-semibold transition-all py-1 border-b-2";
 const inactiveStyle = "text-slate-600 border-transparent hover:text-orange-600 dark:text-slate-300 dark:hover:text-orange-400";
 const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark:border-orange-400";
