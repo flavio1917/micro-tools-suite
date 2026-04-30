@@ -1,24 +1,19 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-import RecipeSearch from '../components/recipes/RecipeSearch.astro';
+// Aggiusto il path visto che questo file si trova in src/components/
+import RecipeSearch from './recipes/RecipeSearch.astro';
 
-export interface Props { lang?: string; }
-
-// ==========================================
-// FIX ASSOLUTO: BLINDATURA LINGUA
-// Se la prop "lang" è vuota, la estraiamo forzatamente dall'URL fisico.
-// ==========================================
-let lang = Astro.props.lang || Astro.params.lang;
-
-if (!lang) {
-  const path = Astro.url.pathname || "";
-  if (path.startsWith('/en')) lang = 'en';
-  else if (path.startsWith('/es')) lang = 'es';
-  else if (path.startsWith('/fr')) lang = 'fr';
-  else lang = 'it';
+export interface Props {
+  lang?: string;
 }
 
-// DIZIONARIO SEO
+// Se dalla pagina non gli passi nulla, di default è 'it'
+const { lang = 'it' } = Astro.props;
+
+// ==========================================
+// 1. DATI E TRADUZIONI (i18n)
+// ==========================================
+
 const seoTitles = {
   it: "Crispissimo | Ricette in Friggitrice ad Aria Facili e Croccanti",
   en: "Crispissimo | Easy & Crispy Air Fryer Recipes",
@@ -33,7 +28,6 @@ const seoDescriptions = {
   fr: "Découvrez les meilleures recettes pour friteuse à air sur Crispissimo. Des plats faciles, rapides et incroyablement croustillants pour tous les jours."
 };
 
-// CONTENUTI HERO
 const heroContent = {
   it: {
     h1: "Croccantezza <span class='text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-500'>Perfetta.</span>",
@@ -57,30 +51,24 @@ const heroContent = {
   }
 };
 
-// TEASER CONVERTITORE E STRUMENTI IN HOME
 const toolsContent = {
   it: { 
-    convTitle: "Convertitore Automatico", convDesc: "Adatta i tempi del forno in un clic.", convCta: "Apri Convertitore", convLink: "/convertitore",
-    toolsTitle: "Strumenti per Air Fryer", toolsDesc: "Guide materiali, pulizia, consumi e utilità.", toolsCta: "Tutti gli Strumenti", toolsLink: "/strumenti"
+    convTitle: "Convertitore Automatico", convDesc: "Adatta i tempi del forno tradizionale alla friggitrice ad aria in un clic.", convCta: "Apri Convertitore", convLink: "/convertitore",
+    toolsTitle: "Strumenti per Air Fryer", toolsDesc: "Guide materiali, pulizia sicura, calcolo consumi e utilità avanzate.", toolsCta: "Tutti gli Strumenti", toolsLink: "/strumenti"
   },
   en: { 
-    convTitle: "Automatic Converter", convDesc: "Adapt oven times in one click.", convCta: "Open Converter", convLink: "/en/converter",
-    toolsTitle: "Air Fryer Tools", toolsDesc: "Materials guides, cleaning, and calculators.", toolsCta: "All Tools", toolsLink: "/en/tools" 
+    convTitle: "Automatic Converter", convDesc: "Adapt traditional oven times to your air fryer in one click.", convCta: "Open Converter", convLink: "/en/converter",
+    toolsTitle: "Air Fryer Tools", toolsDesc: "Materials guides, safe cleaning, energy calculators, and advanced utilities.", toolsCta: "All Tools", toolsLink: "/en/tools" 
   },
   es: { 
-    convTitle: "Convertidor Automático", convDesc: "Adapta los tiempos del horno en un clic.", convCta: "Abrir Convertidor", convLink: "/es/convertidor",
-    toolsTitle: "Herramientas de Air Fryer", toolsDesc: "Guías de materiales, limpieza y consumos.", toolsCta: "Todas las Herramientas", toolsLink: "/es/herramientas"
+    convTitle: "Convertidor Automático", convDesc: "Adapta los tiempos del horno tradicional a la freidora de aire en un clic.", convCta: "Abrir Convertidor", convLink: "/es/convertidor",
+    toolsTitle: "Herramientas de Air Fryer", toolsDesc: "Guías de materiales, limpieza segura, cálculo de consumos y utilidades.", toolsCta: "Todas las Herramientas", toolsLink: "/es/herramientas"
   },
   fr: { 
-    convTitle: "Convertisseur Auto", convDesc: "Adaptez les temps du four en un clic.", convCta: "Ouvrir Convertisseur", convLink: "/fr/convertisseur",
-    toolsTitle: "Outils pour Air Fryer", toolsDesc: "Guides des matériaux, nettoyage et calculs.", toolsCta: "Tous les Outils", toolsLink: "/fr/outils"
+    convTitle: "Convertisseur Auto", convDesc: "Adaptez les temps du four traditionnel à la friteuse à air en un clic.", convCta: "Ouvrir Convertisseur", convLink: "/fr/convertisseur",
+    toolsTitle: "Outils pour Air Fryer", toolsDesc: "Guides des matériaux, nettoyage sûr, calcul des coûts et utilitaires.", toolsCta: "Tous les Outils", toolsLink: "/fr/outils"
   }
 };
-
-const currentTitle = seoTitles[lang as keyof typeof seoTitles] || seoTitles.it;
-const currentDesc = seoDescriptions[lang as keyof typeof seoDescriptions] || seoDescriptions.it;
-const hero = heroContent[lang as keyof typeof heroContent] || heroContent.it;
-const teaser = toolsContent[lang as keyof typeof toolsContent] || toolsContent.it;
 
 const alternateUrls = {
   it: "https://www.crispissimo.com/",
@@ -89,6 +77,14 @@ const alternateUrls = {
   fr: "https://www.crispissimo.com/fr/"
 };
 
+// ==========================================
+// 2. LOGICA DI RISOLUZIONE
+// ==========================================
+
+const currentTitle = seoTitles[lang as keyof typeof seoTitles] || seoTitles.it;
+const currentDesc = seoDescriptions[lang as keyof typeof seoDescriptions] || seoDescriptions.it;
+const hero = heroContent[lang as keyof typeof heroContent] || heroContent.it;
+const teaser = toolsContent[lang as keyof typeof toolsContent] || toolsContent.it;
 const siteUrl = alternateUrls[lang as keyof typeof alternateUrls] || alternateUrls.it;
 
 const jsonLd = {
@@ -101,6 +97,7 @@ const jsonLd = {
 
 <MainLayout title={currentTitle} lang={lang} description={currentDesc} alternateUrls={alternateUrls}>
   
+  <!-- HERO SECTION -->
   <header class="relative pt-16 pb-20 md:pt-24 md:pb-28 px-4 text-center overflow-hidden border-b border-slate-200 dark:border-slate-800 transition-colors">
     <div class="absolute inset-0 z-0 bg-gradient-to-b from-orange-50/80 to-transparent dark:from-[#0B1120] dark:to-transparent pointer-events-none transition-colors"></div>
     
@@ -112,7 +109,7 @@ const jsonLd = {
       </p>
       
       <div class="pt-6">
-        <a href={lang === 'it' ? "#ricettario" : `/${lang}/#ricettario`} class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-orange-600 hover:bg-orange-700 rounded-full shadow-lg hover:shadow-orange-600/30 hover:-translate-y-1">
+        <a href={lang === 'it' ? "#ricettario" : `/${lang}/#ricettario`} class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all bg-orange-600 hover:bg-orange-700 rounded-full shadow-lg hover:shadow-orange-600/30 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900">
           {hero.cta}
           <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
         </a>
@@ -157,6 +154,10 @@ const jsonLd = {
     </div>
   </section>
 
+  <!-- AFFILIATE SLOT -->
+  <div id="affiliate-slot" class="w-full max-w-6xl mx-auto px-4 py-4 hide-on-print" data-market={lang}></div>
+
+  <!-- RICETTARIO -->
   <section class="w-full py-8 md:py-12 bg-slate-50 dark:bg-slate-900/20 transition-colors">
     <div id="ricettario" class="w-full scroll-mt-24">
       <RecipeSearch lang={lang} />
