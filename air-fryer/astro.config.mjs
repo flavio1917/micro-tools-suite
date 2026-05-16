@@ -21,15 +21,7 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
-      i18n: {
-        defaultLocale: 'it',
-        locales: {
-          it: 'it',
-          en: 'en',
-          es: 'es',
-          fr: 'fr',
-        },
-      },
+      
     })
   ],
   vite: {
