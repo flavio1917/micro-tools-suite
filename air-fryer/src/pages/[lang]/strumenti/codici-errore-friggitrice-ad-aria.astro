@@ -1,6 +1,9 @@
 ---
 import MainLayout from '../../../layouts/MainLayout.astro';
 import Errori from '../../../components/seo-tools/errori.astro';
+import MissingModelForm from '../../../components/seo-tools/MissingModelForm.astro';
+import AffiliateSlot from '../../../components/ads/AffiliateSlot.astro';
+import ErrorFaq from '../../../components/seo-tools/ErrorFaq.astro';
 import { pageErrorsSeoTranslations } from '../../../data/i18n/page-errors-seo';
 
 export function getStaticPaths() {
@@ -61,7 +64,8 @@ const faqSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
-  <main class="w-full max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+  <!-- Sostituito <main> con <div> per evitare conflitti con il <main> già presente in MainLayout -->
+  <div class="w-full max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
     <header class="mb-12 text-center">
       <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight">
         {seoData.h1}
@@ -74,6 +78,11 @@ const faqSchema = {
     <section aria-label="Error Diagnostics Tool" class="mb-16">
       <Errori lang={lang as 'it' | 'en' | 'es' | 'fr'} />
     </section>
+
+    <!-- Integrazione dei 3 componenti realizzati negli Sprint 2, 3 e 4 -->
+    <MissingModelForm lang={lang as 'it' | 'en' | 'es' | 'fr'} />
+    <AffiliateSlot lang={lang as 'it' | 'en' | 'es' | 'fr'} context="error-codes" />
+    <ErrorFaq lang={lang as 'it' | 'en' | 'es' | 'fr'} />
 
     <section aria-labelledby="useful-resources" class="mt-20 pt-10 border-t border-gray-200 dark:border-gray-800">
       <h2 id="useful-resources" class="text-2xl font-bold text-gray-900 dark:text-white mb-8">
@@ -100,5 +109,5 @@ const faqSchema = {
         </a>
       </div>
     </section>
-  </main>
+  </div>
 </MainLayout>

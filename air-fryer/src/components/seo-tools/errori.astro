@@ -1,4 +1,10 @@
 ---
+import MainLayout from '../../layouts/MainLayout.astro';
+import MissingModelForm from './MissingModelForm.astro';
+import AffiliateSlot from '../ads/AffiliateSlot.astro';
+import ErrorFaq from './ErrorFaq.astro';
+import { pageErrorsSeoTranslations } from '../../data/i18n/page-errors-seo';
+
 import dbData from '../../data/air-fryer-db.json';
 import { errorsUiTranslations } from '../../data/i18n/errors-ui';
 import type { AirFryerDBItem } from '../../data/i18n/errors-ui';
@@ -8,349 +14,474 @@ export interface Props {
 }
 
 const { lang = 'it' } = Astro.props;
+const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
+
+const backBtnLabel = {
+  it: "Vai alle ricette",
+  en: "Go to Recipes",
+  es: "Ir a las recetas",
+  fr: "Voir les recettes"
+}[lang] || "Vai alle ricette";
+
+const seoData = pageErrorsSeoTranslations[lang as string] || pageErrorsSeoTranslations['it'];
+
 const t = errorsUiTranslations[lang] || errorsUiTranslations['it'];
 
 const db = dbData as AirFryerDBItem[];
 const rawBrands = db.map(item => item.brand).filter(Boolean);
 const brands = [...new Set(rawBrands)].sort();
+
+// JSON-LD BreadcrumbList
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": seoData.breadcrumbHome,
+      "item": `https://crispissimo.com/${lang}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": seoData.breadcrumbTools,
+      "item": `https://crispissimo.com/${lang === 'it' ? 'strumenti' : lang + '/tools'}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": seoData.breadcrumbCurrent,
+      "item": `https://crispissimo.com/${lang === 'it' ? 'strumenti/codici-errore-friggitrice-ad-aria' : lang + '/tools/air-fryer-error-codes'}`
+    }
+  ]
+};
+
+// JSON-LD FAQPage
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": seoData.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
 ---
 
-<div class="w-full max-w-4xl mx-auto p-4 sm:p-6 font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-2xl shadow-xl">
+<MainLayout title={seoData.metaTitle} description={seoData.metaDescription} lang={lang}>
   
-  <div class="mb-8 text-center">
-    <h2 class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{t.heroTitle}</h2>
-    <p class="text-gray-600 dark:text-gray-400">{t.heroSubtitle}</p>
-  </div>
-
-  <div class="bg-gray-50 dark:bg-gray-800 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700 mb-8">
-    <div class="flex flex-col md:flex-row gap-4 mb-4">
-      <div class="flex-grow">
-        <label for="af-search" class="sr-only">{t.searchPlaceholder}</label>
-        <input type="text" id="af-search" placeholder={t.searchPlaceholder} class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 focus:ring-2 focus:ring-blue-500 outline-none transition-shadow" />
-      </div>
-      <div class="w-full md:w-64">
-        <label for="af-brand" class="sr-only">{t.brandAll}</label>
-        <select id="af-brand" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 focus:ring-2 focus:ring-blue-500 outline-none transition-shadow appearance-none">
-          <option value="">{t.brandAll}</option>
-          {brands.map((b) => (
-            <option value={b}>{b}</option>
-          ))}
-        </select>
-      </div>
-    </div>
+  <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
     
-    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-      <label class="flex items-center cursor-pointer">
-        <input type="checkbox" id="af-dual" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
-        <span class="ml-3 text-sm font-medium text-gray-700 dark:text-gray-300">{t.onlyDualBasket}</span>
-      </label>
-      <button type="button" id="af-reset" class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">
-        {t.resetFilters}
-      </button>
+    <!-- Pulsante Back SUPERIORE come in pulizia.astro -->
+    <div class="mb-8 flex justify-start">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
+        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="font-bold text-sm">{backBtnLabel}</span>
+      </a>
     </div>
-  </div>
 
-  <div aria-live="polite" id="af-results-area" class="relative">
-    <div id="af-initial-state" class="text-center py-12">
-      <p class="text-lg text-gray-600 dark:text-gray-400">{t.initialInstruction}</p>
-    </div>
-    
-    <div id="af-empty-state" class="hidden text-center py-10 bg-orange-50 dark:bg-orange-900/20 rounded-xl border border-orange-100 dark:border-orange-800">
-      <p class="text-orange-800 dark:text-orange-400 font-medium px-4">{t.emptyState}</p>
-    </div>
-    
-    <div id="af-quick-response" class="hidden mb-8"></div>
-    <div id="af-models-list" class="space-y-4"></div>
-  </div>
+    <!-- HEADER CENTRALE (SEO) -->
+    <header class="text-center mb-10">
+      <h1 class="tool-title text-3xl md:text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 pb-1">
+        {seoData.h1}
+      </h1>
+      <p class="tool-text text-base md:text-xl max-w-2xl mx-auto">
+        {seoData.introParagraph}
+      </p>
+    </header>
 
-</div>
-
-<script is:inline define:vars={{ rawDb: db, t }}>
-  const db = rawDb || [];
-  
-  const searchInput = document.getElementById('af-search');
-  const brandSelect = document.getElementById('af-brand');
-  const dualToggle = document.getElementById('af-dual');
-  const resetBtn = document.getElementById('af-reset');
-  
-  const initialState = document.getElementById('af-initial-state');
-  const emptyState = document.getElementById('af-empty-state');
-  const quickResponseArea = document.getElementById('af-quick-response');
-  const modelsListArea = document.getElementById('af-models-list');
-
-  const el = (tag, classes, textContent) => {
-    const element = document.createElement(tag);
-    if (classes) element.className = classes;
-    if (textContent) element.textContent = textContent;
-    return element;
-  };
-
-  const getRecommendedAction = (text) => {
-    const lower = (text || '').toLowerCase();
-    if (/(assistenza|supporto|service|guasto|sensore|circuito|sostituire|difettoso|non utilizzare)/.test(lower)) {
-      return { label: t.assistanceRecommended, type: 'assistenza', cls: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300' };
-    }
-    if (/(raffreddare|surriscaldamento|cool|temperatura elevata|stacca la spina|attendere)/.test(lower)) {
-      return { label: t.letItCool, type: 'cool', cls: 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300' };
-    }
-    if (/(cestello|inserire|chiudere|rimuovere|pulire|presa|spina|ventilazione)/.test(lower)) {
-      return { label: t.quickCheck, type: 'check', cls: 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300' };
-    }
-    if (/(wifi|wi-fi|app|vesync|nutriu|pairing|connessione)/.test(lower)) {
-      return { label: t.connectionApp, type: 'app', cls: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300' };
-    }
-    return { label: t.consultManual, type: 'manual', cls: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300' };
-  };
-
-  const getPdfLabel = (type) => {
-    switch(type) {
-      case 'manual': return t.openManual;
-      case 'spec_sheet': return t.openSpecSheet;
-      case 'recipe_book': return t.openRecipeBook;
-      case 'safety_sheet': return t.openSafetySheet;
-      default: return t.openGenericDoc;
-    }
-  };
-
-  const renderBadge = (actionData) => {
-    const badge = el('span', `inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold ${actionData.cls}`, actionData.label);
-    return badge;
-  };
-
-  let debounceTimer;
-
-  const performSearch = () => {
-    const query = searchInput.value.trim();
-    const qLower = query.toLowerCase();
-    const brand = brandSelect.value;
-    const dualOnly = dualToggle.checked;
-
-    quickResponseArea.innerHTML = '';
-    modelsListArea.innerHTML = '';
-    
-    if (!query && !brand && !dualOnly) {
-      initialState.classList.remove('hidden');
-      emptyState.classList.add('hidden');
-      return;
-    }
-    initialState.classList.add('hidden');
-
-    const filtered = db.filter(item => {
-      if (brand && item.brand !== brand) return false;
-      if (dualOnly && !item.dual_zone) return false;
+    <!-- MOTORE DIAGNOSTICA -->
+    <div class="w-full max-w-4xl mx-auto p-4 sm:p-6 font-sans bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 rounded-2xl shadow-xl mb-16">
       
-      if (!qLower) return true;
+      <div class="mb-8 text-center">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mb-2">{t.heroTitle}</h2>
+        <p class="text-gray-600 dark:text-gray-400">{t.heroSubtitle}</p>
+      </div>
 
-      const searchableText = [
-        item.brand,
-        item.actual_model,
-        item.user_label,
-        item.error_note,
-        item.notes,
-        ...(item.notable_features || []),
-        ...(item.generic_suggestions || []),
-        ...(item.error_codes || []).map(ec => `${ec.code} ${ec.description} ${ec.meaning} ${ec.suggestions ? ec.suggestions.join(' ') : ''}`)
-      ].join(' ').toLowerCase();
+      <div class="bg-gray-50 dark:bg-gray-800 p-4 sm:p-6 rounded-xl border border-gray-200 dark:border-gray-700 mb-8">
+        <div class="flex flex-col md:flex-row gap-4 mb-4">
+          <div class="flex-grow">
+            <label for="af-search" class="sr-only">{t.searchPlaceholder}</label>
+            <input type="text" id="af-search" placeholder={t.searchPlaceholder} class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 focus:ring-2 focus:ring-blue-500 outline-none transition-shadow" />
+          </div>
+          <div class="w-full md:w-64">
+            <label for="af-brand" class="sr-only">{t.brandAll}</label>
+            <select id="af-brand" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-900 focus:ring-2 focus:ring-blue-500 outline-none transition-shadow appearance-none">
+              <option value="">{t.brandAll}</option>
+              {brands.map((b) => (
+                <option value={b}>{b}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <label class="flex items-center cursor-pointer">
+            <input type="checkbox" id="af-dual" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+            <span class="ml-3 text-sm font-medium text-gray-700 dark:text-gray-300">{t.onlyDualBasket}</span>
+          </label>
+          <button type="button" id="af-reset" class="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors">
+            {t.resetFilters}
+          </button>
+        </div>
+      </div>
 
-      return searchableText.includes(qLower);
-    });
+      <div aria-live="polite" id="af-results-area" class="relative">
+        <div id="af-initial-state" class="text-center py-12">
+          <p class="text-lg text-gray-600 dark:text-gray-400">{t.initialInstruction}</p>
+        </div>
+        
+        <div id="af-empty-state" class="hidden text-center py-10 bg-orange-50 dark:bg-orange-900/20 rounded-xl border border-orange-100 dark:border-orange-800">
+          <p class="text-orange-800 dark:text-orange-400 font-medium px-4">{t.emptyState}</p>
+        </div>
+        
+        <div id="af-quick-response" class="hidden mb-8"></div>
+        <div id="af-models-list" class="space-y-4"></div>
+      </div>
 
-    if (filtered.length === 0) {
-      emptyState.classList.remove('hidden');
-      return;
-    }
-    emptyState.classList.add('hidden');
+    </div>
 
-    if (qLower.length > 0 && qLower.length <= 15) {
-      const exactMatches = [];
-      filtered.forEach(item => {
-        if (item.error_codes) {
-          const codeMatch = item.error_codes.find(c => c.code.toLowerCase() === qLower);
-          if (codeMatch) {
-            exactMatches.push({ item, codeMatch });
-          }
-        }
+    <!-- SPRINT 2: FORM SEGNALAZIONE -->
+    <MissingModelForm lang={lang as 'it' | 'en' | 'es' | 'fr'} />
+    
+    <!-- SPRINT 3: AFFILIATE -->
+    <AffiliateSlot lang={lang as 'it' | 'en' | 'es' | 'fr'} context="error-codes" />
+
+    <!-- SPRINT 4: FAQ -->
+    <ErrorFaq lang={lang as 'it' | 'en' | 'es' | 'fr'} />
+
+    <!-- RISORSE UTILI -->
+    <section aria-labelledby="useful-resources" class="mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 transition-colors">
+      <h2 id="useful-resources" class="text-2xl font-bold text-slate-900 dark:text-white mb-8">
+        {seoData.usefulResourcesTitle}
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <a href={seoData.linkCleaningUrl} class="group block p-6 bg-slate-50 dark:bg-slate-900/50 rounded-2xl hover:bg-white dark:hover:bg-slate-800 transition-all duration-300 border border-slate-200 dark:border-slate-700/50 shadow-sm hover:shadow-md">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-semibold text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">{seoData.linkCleaning}</h3>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+        <a href={seoData.linkConverterUrl} class="group block p-6 bg-slate-50 dark:bg-slate-900/50 rounded-2xl hover:bg-white dark:hover:bg-slate-800 transition-all duration-300 border border-slate-200 dark:border-slate-700/50 shadow-sm hover:shadow-md">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-semibold text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">{seoData.linkConverter}</h3>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+        <a href={seoData.linkRecipesUrl} class="group block p-6 bg-slate-50 dark:bg-slate-900/50 rounded-2xl hover:bg-white dark:hover:bg-slate-800 transition-all duration-300 border border-slate-200 dark:border-slate-700/50 shadow-sm hover:shadow-md">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-semibold text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">{seoData.linkRecipes}</h3>
+            <svg class="w-5 h-5 text-slate-400 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Pulsante Back INFERIORE come in pulizia.astro -->
+    <div class="mt-12 text-center pt-8 border-t border-slate-200 dark:border-slate-800 transition-colors">
+      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
+        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        <span class="font-bold text-sm">{backBtnLabel}</span>
+      </a>
+    </div>
+
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <script is:inline define:vars={{ rawDb: db, t }}>
+    const db = rawDb || [];
+    
+    const searchInput = document.getElementById('af-search');
+    const brandSelect = document.getElementById('af-brand');
+    const dualToggle = document.getElementById('af-dual');
+    const resetBtn = document.getElementById('af-reset');
+    
+    const initialState = document.getElementById('af-initial-state');
+    const emptyState = document.getElementById('af-empty-state');
+    const quickResponseArea = document.getElementById('af-quick-response');
+    const modelsListArea = document.getElementById('af-models-list');
+
+    const el = (tag, classes, textContent) => {
+      const element = document.createElement(tag);
+      if (classes) element.className = classes;
+      if (textContent) element.textContent = textContent;
+      return element;
+    };
+
+    const getRecommendedAction = (text) => {
+      const lower = (text || '').toLowerCase();
+      if (/(assistenza|supporto|service|guasto|sensore|circuito|sostituire|difettoso|non utilizzare)/.test(lower)) {
+        return { label: t.assistanceRecommended, type: 'assistenza', cls: 'bg-red-100 text-red-800 dark:bg-red-900/40 dark:text-red-300' };
+      }
+      if (/(raffreddare|surriscaldamento|cool|temperatura elevata|stacca la spina|attendere)/.test(lower)) {
+        return { label: t.letItCool, type: 'cool', cls: 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300' };
+      }
+      if (/(cestello|inserire|chiudere|rimuovere|pulire|presa|spina|ventilazione)/.test(lower)) {
+        return { label: t.quickCheck, type: 'check', cls: 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300' };
+      }
+      if (/(wifi|wi-fi|app|vesync|nutriu|pairing|connessione)/.test(lower)) {
+        return { label: t.connectionApp, type: 'app', cls: 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300' };
+      }
+      return { label: t.consultManual, type: 'manual', cls: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300' };
+    };
+
+    const getPdfLabel = (type) => {
+      switch(type) {
+        case 'manual': return t.openManual;
+        case 'spec_sheet': return t.openSpecSheet;
+        case 'recipe_book': return t.openRecipeBook;
+        case 'safety_sheet': return t.openSafetySheet;
+        default: return t.openGenericDoc;
+      }
+    };
+
+    const renderBadge = (actionData) => {
+      const badge = el('span', `inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold ${actionData.cls}`, actionData.label);
+      return badge;
+    };
+
+    let debounceTimer;
+
+    const performSearch = () => {
+      const query = searchInput.value.trim();
+      const qLower = query.toLowerCase();
+      const brand = brandSelect.value;
+      const dualOnly = dualToggle.checked;
+
+      quickResponseArea.innerHTML = '';
+      modelsListArea.innerHTML = '';
+      
+      if (!query && !brand && !dualOnly) {
+        initialState.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+        return;
+      }
+      initialState.classList.add('hidden');
+
+      const filtered = db.filter(item => {
+        if (brand && item.brand !== brand) return false;
+        if (dualOnly && !item.dual_zone) return false;
+        
+        if (!qLower) return true;
+
+        const searchableText = [
+          item.brand,
+          item.actual_model,
+          item.user_label,
+          item.error_note,
+          item.notes,
+          ...(item.notable_features || []),
+          ...(item.generic_suggestions || []),
+          ...(item.error_codes || []).map(ec => `${ec.code} ${ec.description} ${ec.meaning} ${ec.suggestions ? ec.suggestions.join(' ') : ''}`)
+        ].join(' ').toLowerCase();
+
+        return searchableText.includes(qLower);
       });
 
-      if (exactMatches.length > 0) {
-        quickResponseArea.classList.remove('hidden');
-        const qrWrapper = el('div', 'bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-l-4 border-blue-500 p-4 sm:p-6 rounded-r-xl');
-        const qrTitle = el('h3', 'text-lg font-extrabold text-blue-900 dark:text-blue-300 mb-4', `${t.quickResponse}: ${query.toUpperCase()}`);
-        qrWrapper.appendChild(qrTitle);
+      if (filtered.length === 0) {
+        emptyState.classList.remove('hidden');
+        return;
+      }
+      emptyState.classList.add('hidden');
 
-        const groups = {};
-        exactMatches.forEach(match => {
-          const key = (match.codeMatch.meaning || '') + '|' + (match.codeMatch.suggestions ? match.codeMatch.suggestions.join(' ') : '');
-          if (!groups[key]) groups[key] = { codeMatch: match.codeMatch, models: [] };
-          groups[key].models.push(match.item);
+      if (qLower.length > 0 && qLower.length <= 15) {
+        const exactMatches = [];
+        filtered.forEach(item => {
+          if (item.error_codes) {
+            const codeMatch = item.error_codes.find(c => c.code.toLowerCase() === qLower);
+            if (codeMatch) {
+              exactMatches.push({ item, codeMatch });
+            }
+          }
         });
 
-        Object.values(groups).forEach(group => {
-          const groupDiv = el('div', 'mb-4 last:mb-0 bg-white dark:bg-gray-800 p-4 sm:p-5 rounded-lg shadow-sm border border-blue-100 dark:border-blue-800/30');
-          
-          const brandsStr = [...new Set(group.models.map(m => m.brand))].join(', ');
-          const groupHeader = el('div', 'font-bold text-gray-900 dark:text-white mb-2', `${brandsStr} — ${group.codeMatch.code}`);
-          groupDiv.appendChild(groupHeader);
+        if (exactMatches.length > 0) {
+          quickResponseArea.classList.remove('hidden');
+          const qrWrapper = el('div', 'bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border-l-4 border-blue-500 p-4 sm:p-6 rounded-r-xl');
+          const qrTitle = el('h3', 'text-lg font-extrabold text-blue-900 dark:text-blue-300 mb-4', `${t.quickResponse}: ${query.toUpperCase()}`);
+          qrWrapper.appendChild(qrTitle);
 
-          if (group.codeMatch.meaning) {
-            const meaningP = el('p', 'text-sm text-gray-800 dark:text-gray-200 mb-2');
-            meaningP.appendChild(el('strong', 'font-semibold', t.explicitCodeMeaning + ' '));
-            meaningP.appendChild(document.createTextNode(group.codeMatch.meaning));
-            groupDiv.appendChild(meaningP);
-          }
+          const groups = {};
+          exactMatches.forEach(match => {
+            const key = (match.codeMatch.meaning || '') + '|' + (match.codeMatch.suggestions ? match.codeMatch.suggestions.join(' ') : '');
+            if (!groups[key]) groups[key] = { codeMatch: match.codeMatch, models: [] };
+            groups[key].models.push(match.item);
+          });
 
-          if (group.codeMatch.suggestions && group.codeMatch.suggestions.length > 0) {
-            const suggestionsList = el('ul', 'list-disc pl-5 mt-2 space-y-1 mb-4');
-            group.codeMatch.suggestions.forEach(sugg => {
-              const li = el('li', 'text-sm text-gray-700 dark:text-gray-300', sugg);
-              suggestionsList.appendChild(li);
-            });
-            groupDiv.appendChild(suggestionsList);
-          }
+          Object.values(groups).forEach(group => {
+            const groupDiv = el('div', 'mb-4 last:mb-0 bg-white dark:bg-gray-800 p-4 sm:p-5 rounded-lg shadow-sm border border-blue-100 dark:border-blue-800/30');
+            
+            const brandsStr = [...new Set(group.models.map(m => m.brand))].join(', ');
+            const groupHeader = el('div', 'font-bold text-gray-900 dark:text-white mb-2', `${brandsStr} — ${group.codeMatch.code}`);
+            groupDiv.appendChild(groupHeader);
 
-          const allText = (group.codeMatch.description || '') + ' ' + (group.codeMatch.meaning || '') + ' ' + (group.codeMatch.suggestions ? group.codeMatch.suggestions.join(' ') : '');
-          const action = getRecommendedAction(allText);
-          const badgeDiv = el('div', 'mb-2 flex items-center');
-          badgeDiv.appendChild(renderBadge(action));
-          
-          const countMsg = t.quickResponseCount.replace('{count}', group.models.length);
-          const countP = el('span', 'text-xs text-gray-500 ml-3 font-medium', countMsg);
-          badgeDiv.appendChild(countP);
-          
-          groupDiv.appendChild(badgeDiv);
-          qrWrapper.appendChild(groupDiv);
-        });
+            if (group.codeMatch.meaning) {
+              const meaningP = el('p', 'text-sm text-gray-800 dark:text-gray-200 mb-2');
+              meaningP.appendChild(el('strong', 'font-semibold', t.explicitCodeMeaning + ' '));
+              meaningP.appendChild(document.createTextNode(group.codeMatch.meaning));
+              groupDiv.appendChild(meaningP);
+            }
 
-        quickResponseArea.appendChild(qrWrapper);
+            if (group.codeMatch.suggestions && group.codeMatch.suggestions.length > 0) {
+              const suggestionsList = el('ul', 'list-disc pl-5 mt-2 space-y-1 mb-4');
+              group.codeMatch.suggestions.forEach(sugg => {
+                const li = el('li', 'text-sm text-gray-700 dark:text-gray-300', sugg);
+                suggestionsList.appendChild(li);
+              });
+              groupDiv.appendChild(suggestionsList);
+            }
+
+            const allText = (group.codeMatch.description || '') + ' ' + (group.codeMatch.meaning || '') + ' ' + (group.codeMatch.suggestions ? group.codeMatch.suggestions.join(' ') : '');
+            const action = getRecommendedAction(allText);
+            const badgeDiv = el('div', 'mb-2 flex items-center');
+            badgeDiv.appendChild(renderBadge(action));
+            
+            const countMsg = t.quickResponseCount.replace('{count}', group.models.length);
+            const countP = el('span', 'text-xs text-gray-500 ml-3 font-medium', countMsg);
+            badgeDiv.appendChild(countP);
+            
+            groupDiv.appendChild(badgeDiv);
+            qrWrapper.appendChild(groupDiv);
+          });
+
+          quickResponseArea.appendChild(qrWrapper);
+        } else {
+          quickResponseArea.classList.add('hidden');
+        }
       } else {
         quickResponseArea.classList.add('hidden');
       }
-    } else {
-      quickResponseArea.classList.add('hidden');
-    }
 
-    filtered.forEach(item => {
-      const details = el('details', 'bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm open:shadow-md transition-shadow');
-      const summary = el('summary', 'cursor-pointer p-4 sm:p-5 select-none hover:bg-gray-50 dark:hover:bg-gray-700/50 outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500');
-      
-      const headContainer = el('div', 'flex flex-col gap-2');
-      const headTop = el('div', 'flex items-center gap-2 flex-wrap');
-      const brandBadge = el('span', 'px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-bold rounded', item.brand);
-      headTop.appendChild(brandBadge);
-      
-      if (item.dual_zone) {
-        headTop.appendChild(el('span', 'px-2 py-1 bg-indigo-100 text-indigo-800 dark:bg-indigo-900/40 dark:text-indigo-300 text-xs font-bold rounded', t.dualBasket));
-      }
-      if (item.capacity_l) {
-        headTop.appendChild(el('span', 'px-2 py-1 bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-bold rounded', `${item.capacity_l}${t.capacityLiters}`));
-      }
+      filtered.forEach(item => {
+        const details = el('details', 'bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-sm open:shadow-md transition-shadow');
+        const summary = el('summary', 'cursor-pointer p-4 sm:p-5 select-none hover:bg-gray-50 dark:hover:bg-gray-700/50 outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500');
+        
+        const headContainer = el('div', 'flex flex-col gap-2');
+        const headTop = el('div', 'flex items-center gap-2 flex-wrap');
+        const brandBadge = el('span', 'px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-bold rounded', item.brand);
+        headTop.appendChild(brandBadge);
+        
+        if (item.dual_zone) {
+          headTop.appendChild(el('span', 'px-2 py-1 bg-indigo-100 text-indigo-800 dark:bg-indigo-900/40 dark:text-indigo-300 text-xs font-bold rounded', t.dualBasket));
+        }
+        if (item.capacity_l) {
+          headTop.appendChild(el('span', 'px-2 py-1 bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300 text-xs font-bold rounded', `${item.capacity_l}${t.capacityLiters}`));
+        }
 
-      const modelName = item.actual_model || item.user_label;
-      const title = el('h3', 'text-lg font-bold text-gray-900 dark:text-white inline', modelName);
-      if (item.user_label && item.user_label !== item.actual_model) {
-        title.appendChild(document.createTextNode(` (${item.user_label})`));
-      }
+        const modelName = item.actual_model || item.user_label;
+        const title = el('h3', 'text-lg font-bold text-gray-900 dark:text-white inline', modelName);
+        if (item.user_label && item.user_label !== item.actual_model) {
+          title.appendChild(document.createTextNode(` (${item.user_label})`));
+        }
 
-      headContainer.appendChild(headTop);
-      headContainer.appendChild(title);
+        headContainer.appendChild(headTop);
+        headContainer.appendChild(title);
 
-      const codesCount = item.error_codes ? item.error_codes.length : 0;
-      let statusText = '';
-      if (codesCount > 0) {
-        statusText = t.codesFound.replace('{count}', codesCount);
-      } else if (item.generic_suggestions && item.generic_suggestions.length > 0) {
-        statusText = t.noExplicitCodesTitle;
-      } else {
-        statusText = t.noCodesAtAll;
-      }
-      headContainer.appendChild(el('p', 'text-sm text-gray-500 font-medium', statusText));
+        const codesCount = item.error_codes ? item.error_codes.length : 0;
+        let statusText = '';
+        if (codesCount > 0) {
+          statusText = t.codesFound.replace('{count}', codesCount);
+        } else if (item.generic_suggestions && item.generic_suggestions.length > 0) {
+          statusText = t.noExplicitCodesTitle;
+        } else {
+          statusText = t.noCodesAtAll;
+        }
+        headContainer.appendChild(el('p', 'text-sm text-gray-500 font-medium', statusText));
 
-      summary.appendChild(headContainer);
-      details.appendChild(summary);
+        summary.appendChild(headContainer);
+        details.appendChild(summary);
 
-      const content = el('div', 'p-4 sm:p-5 border-t border-gray-100 dark:border-gray-700 space-y-6');
+        const content = el('div', 'p-4 sm:p-5 border-t border-gray-100 dark:border-gray-700 space-y-6');
 
-      if (codesCount > 0) {
-        const grid = el('div', 'grid grid-cols-1 lg:grid-cols-2 gap-4');
-        item.error_codes.forEach(ec => {
-          const codeCard = el('div', 'bg-gray-50 dark:bg-gray-900/50 p-4 rounded-xl border border-gray-200 dark:border-gray-700 flex flex-col h-full');
-          codeCard.appendChild(el('h4', 'text-xl font-extrabold text-blue-600 dark:text-blue-400 mb-3', ec.code));
-          
-          if (ec.meaning) {
-            const meanContainer = el('div', 'mb-3');
-            meanContainer.appendChild(el('span', 'text-sm font-bold text-gray-900 dark:text-gray-200 block mb-1', t.meaningLabel));
-            meanContainer.appendChild(el('span', 'text-sm text-gray-700 dark:text-gray-300 block', ec.meaning));
-            codeCard.appendChild(meanContainer);
-          }
-          
-          if (ec.suggestions && ec.suggestions.length > 0) {
-            const suggContainer = el('div', 'flex-grow');
-            suggContainer.appendChild(el('span', 'text-sm font-bold text-gray-900 dark:text-gray-200 block mb-1 mt-1', t.suggestionsLabel));
-            const ul = el('ul', 'list-disc pl-5 space-y-1 mb-4');
-            ec.suggestions.forEach(s => {
-              ul.appendChild(el('li', 'text-sm text-gray-600 dark:text-gray-400', s));
-            });
-            suggContainer.appendChild(ul);
-            codeCard.appendChild(suggContainer);
-          }
+        if (codesCount > 0) {
+          const grid = el('div', 'grid grid-cols-1 lg:grid-cols-2 gap-4');
+          item.error_codes.forEach(ec => {
+            const codeCard = el('div', 'bg-gray-50 dark:bg-gray-900/50 p-4 rounded-xl border border-gray-200 dark:border-gray-700 flex flex-col h-full');
+            codeCard.appendChild(el('h4', 'text-xl font-extrabold text-blue-600 dark:text-blue-400 mb-3', ec.code));
+            
+            if (ec.meaning) {
+              const meanContainer = el('div', 'mb-3');
+              meanContainer.appendChild(el('span', 'text-sm font-bold text-gray-900 dark:text-gray-200 block mb-1', t.meaningLabel));
+              meanContainer.appendChild(el('span', 'text-sm text-gray-700 dark:text-gray-300 block', ec.meaning));
+              codeCard.appendChild(meanContainer);
+            }
+            
+            if (ec.suggestions && ec.suggestions.length > 0) {
+              const suggContainer = el('div', 'flex-grow');
+              suggContainer.appendChild(el('span', 'text-sm font-bold text-gray-900 dark:text-gray-200 block mb-1 mt-1', t.suggestionsLabel));
+              const ul = el('ul', 'list-disc pl-5 space-y-1 mb-4');
+              ec.suggestions.forEach(s => {
+                ul.appendChild(el('li', 'text-sm text-gray-600 dark:text-gray-400', s));
+              });
+              suggContainer.appendChild(ul);
+              codeCard.appendChild(suggContainer);
+            }
 
-          const allText = (ec.description || '') + ' ' + (ec.meaning || '') + ' ' + (ec.suggestions ? ec.suggestions.join(' ') : '');
-          const badgeDiv = el('div', 'mt-auto pt-2');
-          badgeDiv.appendChild(renderBadge(getRecommendedAction(allText)));
-          codeCard.appendChild(badgeDiv);
+            const allText = (ec.description || '') + ' ' + (ec.meaning || '') + ' ' + (ec.suggestions ? ec.suggestions.join(' ') : '');
+            const badgeDiv = el('div', 'mt-auto pt-2');
+            badgeDiv.appendChild(renderBadge(getRecommendedAction(allText)));
+            codeCard.appendChild(badgeDiv);
 
-          grid.appendChild(codeCard);
-        });
-        content.appendChild(grid);
-      } else if (item.generic_suggestions && item.generic_suggestions.length > 0) {
-        const textDiag = el('div', 'bg-amber-50 dark:bg-amber-900/10 p-4 sm:p-5 rounded-xl border border-amber-200 dark:border-amber-800/30');
-        textDiag.appendChild(el('p', 'text-sm font-bold text-amber-800 dark:text-amber-500 mb-3', t.noExplicitCodesMsg));
-        const ul = el('ul', 'list-disc pl-5 space-y-2');
-        item.generic_suggestions.forEach(gs => {
-          ul.appendChild(el('li', 'text-sm text-gray-700 dark:text-gray-300', gs));
-        });
-        textDiag.appendChild(ul);
-        content.appendChild(textDiag);
-      }
+            grid.appendChild(codeCard);
+          });
+          content.appendChild(grid);
+        } else if (item.generic_suggestions && item.generic_suggestions.length > 0) {
+          const textDiag = el('div', 'bg-amber-50 dark:bg-amber-900/10 p-4 sm:p-5 rounded-xl border border-amber-200 dark:border-amber-800/30');
+          textDiag.appendChild(el('p', 'text-sm font-bold text-amber-800 dark:text-amber-500 mb-3', t.noExplicitCodesMsg));
+          const ul = el('ul', 'list-disc pl-5 space-y-2');
+          item.generic_suggestions.forEach(gs => {
+            ul.appendChild(el('li', 'text-sm text-gray-700 dark:text-gray-300', gs));
+          });
+          textDiag.appendChild(ul);
+          content.appendChild(textDiag);
+        }
 
-      if (item.pdf_matches_label === false || (item.pdf_type && item.pdf_type !== 'manual')) {
-        const note = el('div', 'bg-gray-100 dark:bg-gray-800 p-4 rounded-lg text-sm text-gray-600 dark:text-gray-400 italic', t.documentNote);
-        content.appendChild(note);
-      }
+        if (item.pdf_matches_label === false || (item.pdf_type && item.pdf_type !== 'manual')) {
+          const note = el('div', 'bg-gray-100 dark:bg-gray-800 p-4 rounded-lg text-sm text-gray-600 dark:text-gray-400 italic', t.documentNote);
+          content.appendChild(note);
+        }
 
-      if (item.pdf_url) {
-        const pdfLinkArea = el('div', 'flex justify-end pt-2');
-        const link = el('a', 'inline-flex items-center px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 text-blue-600 dark:text-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors shadow-sm', getPdfLabel(item.pdf_type));
-        link.href = item.pdf_url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        pdfLinkArea.appendChild(link);
-        content.appendChild(pdfLinkArea);
-      }
+        if (item.pdf_url) {
+          const pdfLinkArea = el('div', 'flex justify-end pt-2');
+          const link = el('a', 'inline-flex items-center px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 text-blue-600 dark:text-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors shadow-sm', getPdfLabel(item.pdf_type));
+          link.href = item.pdf_url;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+          pdfLinkArea.appendChild(link);
+          content.appendChild(pdfLinkArea);
+        }
 
-      details.appendChild(content);
-      modelsListArea.appendChild(details);
+        details.appendChild(content);
+        modelsListArea.appendChild(details);
+      });
+    };
+
+    const handleInput = () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(performSearch, 150);
+    };
+
+    searchInput.addEventListener('input', handleInput);
+    brandSelect.addEventListener('change', performSearch);
+    dualToggle.addEventListener('change', performSearch);
+    resetBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      brandSelect.value = '';
+      dualToggle.checked = false;
+      performSearch();
+      searchInput.focus();
     });
-  };
 
-  const handleInput = () => {
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(performSearch, 150);
-  };
-
-  searchInput.addEventListener('input', handleInput);
-  brandSelect.addEventListener('change', performSearch);
-  dualToggle.addEventListener('change', performSearch);
-  resetBtn.addEventListener('click', () => {
-    searchInput.value = '';
-    brandSelect.value = '';
-    dualToggle.checked = false;
     performSearch();
-    searchInput.focus();
-  });
+  </script>
 
-  performSearch();
-</script>
+</MainLayout>
 
 <style>
   details > summary {
