@@ -1,0 +1,104 @@
+---
+import MainLayout from '../../../layouts/MainLayout.astro';
+import Errori from '../../../components/seo-tools/errori.astro';
+import { pageErrorsSeoTranslations } from '../../../data/i18n/page-errors-seo';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'it' } },
+    { params: { lang: 'en' } },
+    { params: { lang: 'es' } },
+    { params: { lang: 'fr' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const seoData = pageErrorsSeoTranslations[lang as string] || pageErrorsSeoTranslations['it'];
+
+// JSON-LD BreadcrumbList
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": seoData.breadcrumbHome,
+      "item": `https://crispissimo.com/${lang}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": seoData.breadcrumbTools,
+      "item": `https://crispissimo.com/${lang}/strumenti`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": seoData.breadcrumbCurrent,
+      "item": `https://crispissimo.com/${lang}/strumenti/codici-errore-friggitrice-ad-aria`
+    }
+  ]
+};
+
+// JSON-LD FAQPage
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": seoData.faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
+---
+
+<MainLayout title={seoData.metaTitle} description={seoData.metaDescription} lang={lang}>
+  
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <main class="w-full max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+    <header class="mb-12 text-center">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight">
+        {seoData.h1}
+      </h1>
+      <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        {seoData.introParagraph}
+      </p>
+    </header>
+
+    <section aria-label="Error Diagnostics Tool" class="mb-16">
+      <Errori lang={lang as 'it' | 'en' | 'es' | 'fr'} />
+    </section>
+
+    <section aria-labelledby="useful-resources" class="mt-20 pt-10 border-t border-gray-200 dark:border-gray-800">
+      <h2 id="useful-resources" class="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+        {seoData.usefulResourcesTitle}
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <a href={seoData.linkCleaningUrl} class="group block p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-semibold text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">{seoData.linkCleaning}</h3>
+            <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+        <a href={seoData.linkConverterUrl} class="group block p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-semibold text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">{seoData.linkConverter}</h3>
+            <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+        <a href={seoData.linkRecipesUrl} class="group block p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl hover:bg-white dark:hover:bg-gray-700 transition-all duration-300 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-md">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-semibold text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors">{seoData.linkRecipes}</h3>
+            <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+</MainLayout>

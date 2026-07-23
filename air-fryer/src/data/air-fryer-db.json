@@ -1,0 +1,1236 @@
+[
+  {
+    "brand": "De'Longhi",
+    "user_label": "MultiCooker FH1396 (Manuale Base)",
+    "actual_model": "FH1396 MultiCooker",
+    "pdf_url": "https://immagini.qualescegliere.it/manuali/B01LY42KGJ.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 5.0,
+    "capacity_kg_fries": 1.7,
+    "dual_zone": false,
+    "notes": "Multicooker MultiFry FH1396 con vasca singola e pala mescolatrice; due vasche intercambiabili (ceramica con perno per pala, teflon senza perno) e griglia per cotture tipo grill.[page:3]",
+    "notable_features": [
+      "Multicooker con pala mescolatrice automatica per cotture tipo risotto, spezzatino, padella, zuppe.[page:3]",
+      "Due vasche: J (ceramica, con perno per pala) e Z (rivestimento in teflon, per torte, pizza, grill).[page:3]",
+      "Programmi automatici: SPEZZATINO/RISOTTO, TORTA, PIZZA, PATATE, GRILL.[page:3]",
+      "Programmi semiautomatici: FORNO, AIRGRILL, PADELLA, con tempo e livello di potenza modificabili.[page:3]",
+      "Regolazione livello di potenza tramite barra luminosa e tasto dedicato; timer con display digitale.[page:3]",
+      "Ampio ricettario integrato con tabelle di cottura per patate, carne, pesce, snack e dessert.[page:3]",
+      "Sistema Surround Heating System con resistenza superiore + ventola e, in alcuni modelli, resistenza inferiore",
+      "Pala mescolatrice automatica rimovibile per mescolare stufati, risotti, patatine senza intervento manuale",
+      "Vasca in ceramica antiaderente adatta a cotture tipo padella elettrica + air fryer",
+      "Uso domestico per fritti a basso contenuto di olio e ricette multi‑cooker"
+    ],
+    "error_codes": [
+      {
+        "code": "EI",
+        "description": "Sul display appare \"EI\" con 3 serie di bip.",
+        "meaning": "Intervento della protezione termica/uso improprio (ad esempio funzionamento senza cibo).",
+        "suggestions": [
+          "Spegnere l’apparecchio, lasciarlo raffreddare.",
+          "Verificare di non aver avviato la cottura a vasca vuota.",
+          "Se l’anomalia persiste, rivolgersi al centro assistenza autorizzato De’Longhi.[page:3]"
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Sul display appare \"E3\" con 5 serie di bip.",
+        "meaning": "Altro tipo di intervento della protezione termica (surriscaldamento).",
+        "suggestions": [
+          "Spegnere e lasciare raffreddare completamente l’apparecchio.",
+          "Verificare uso corretto (no cottura senza cibo).",
+          "Se il problema persiste, contattare l’assistenza.[page:3]"
+        ]
+      },
+      {
+        "code": "E5",
+        "description": "Sul display appare \"E5\" con 7 serie di bip.",
+        "meaning": "Guasto al circuito/sensore interno.",
+        "suggestions": [
+          "Spegnere l’apparecchio e rivolgersi direttamente al centro assistenza.[page:3]"
+        ]
+      },
+      {
+        "code": "E6",
+        "description": "Sul display appare \"E6\" con 7 serie di bip.",
+        "meaning": "Altro guasto di natura elettronica (sensore o circuito).",
+        "suggestions": [
+          "Spegnere l’apparecchio e contattare l’assistenza autorizzata.[page:3]"
+        ]
+      }
+    ],
+    "error_note": "Il manuale FH1396 documenta EI, E3, E5, E6 con numero di bip e istruzioni; non compaiono codici E1/E2.[page:3]",
+    "generic_suggestions": [
+      "Se l’apparecchio non si scalda, può essere intervenuto il dispositivo di sicurezza termica: rivolgersi all’assistenza.[page:3]",
+      "Se la vasca è mal posizionata, l’apparecchio non funziona: reinserire correttamente la vasca.[page:3]",
+      "Se il coperchio non è ben chiuso, l’apparecchio non parte: chiudere fino allo scatto.[page:3]",
+      "Non usare la macchina senza cibo in vasca per evitare allarmi EI/E3 e possibili danni.[page:3]",
+      "Usare sempre la vasca e la pala/griglia indicata per il programma (Patate, Grill, Torta, ecc.) per avere cotture uniformi.[page:3]",
+      "Usare la pala mescolatrice solo per preparazioni adatte (patatine, stufati, risotti) e rimuoverla per alimenti delicati.",
+      "Pulire la vasca in ceramica con spugne non abrasive per preservare il rivestimento.",
+      "Non superare il livello MAX di ingredienti per evitare traboccamenti e cotture non uniformi."
+    ]
+  },
+  {
+    "brand": "Cecotec",
+    "user_label": "Cecofry Dual 9000 (Manuale multilingua)",
+    "actual_model": "Cecofry Dual 9000",
+    "pdf_url": "https://www.mediaexpert.pl/products/files/67/6712846/instrukcja-obslugi-CECOTEC-CECOFRY-DUAL-9000.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 9.0,
+    "capacity_kg_fries": 2.0,
+    "dual_zone": true,
+    "notes": "Friggitrice ad aria dietetica con cestello diviso in due comparti indipendenti (4,5 L ciascuno, 9 L totali) e funzioni di sincronizzazione dei tempi.[page:2]",
+    "notable_features": [
+      "Dual-basket: due comparti separati da una piastra metallica, gestibili con tempi e temperature indipendenti.[page:2]",
+      "Funzione SYNC/HOLD per sincronizzare tempi diversi; il comparto più veloce entra in standby (Hold) finché l’altro completa la cottura.[page:2]",
+      "Funzione L=R per copiare impostazioni da un comparto all’altro (stessa ricetta su entrambi).[page:2]",
+      "Range temperatura circa 80–200 °C, timer 0–60 min, programma DEHYDRATE a 60 °C per 8 ore.[page:2]",
+      "6 programmi preimpostati: patatine surgelate, ali di pollo, pesce, dessert, verdure, disidratazione.[page:2]",
+      "Preheat e funzione di riscaldamento per avanzati; ventola che continua dopo la cottura per raffreddare (stato \"Cool\").[page:2]",
+      "Dual‑basket: due comparti da 4,5 L (totale 9 L) con controlli indipendenti",
+      "Potenza 2850 W",
+      "Air fryer senza olio con tecnologia di convezione forzata",
+      "Sistema di sicurezza: non avvia se il cestello non è inserito correttamente"
+    ],
+    "error_codes": [
+      {
+        "code": "Cool",
+        "description": "Sul display compare \"Cool\" dopo annullamento o fine cottura.",
+        "meaning": "Fase di raffreddamento, ventola ancora in funzione.",
+        "suggestions": [
+          "Lasciare l’apparecchio completare il raffreddamento finché il display passa a \"End\".",
+          "Non spegnere forzatamente durante \"Cool\" se non necessario.[page:2]"
+        ]
+      },
+      {
+        "code": "End",
+        "description": "Sul display compare \"End\".",
+        "meaning": "Fine ciclo di cottura o raffreddamento.",
+        "suggestions": [
+          "Estrarre i cestelli con attenzione al vapore/aria calda.",
+          "Se il cibo non è sufficientemente cotto, reimpostare tempo/temperatura o un nuovo programma.[page:2]"
+        ]
+      },
+      {
+        "code": "Hold",
+        "description": "In modalità sync un comparto mostra \"Hold\".",
+        "meaning": "Il comparto con tempo più breve è in pausa finché l’altro completa la cottura per sincronizzare le fine.",
+        "suggestions": [
+          "Non rimuovere il cestello durante \"Hold\" per mantenere la sincronizzazione.",
+          "Attendere che entrambi i comparti completino, oppure annullare la sync se si vuole sbloccare il comparto.[page:2]"
+        ]
+      },
+      {
+        "code": "Out",
+        "description": "Compare \"Out\" quando il cestello viene estratto.",
+        "meaning": "Segnale che il cestello è fuori sede.",
+        "suggestions": [
+          "Reinserire il cestello correttamente entro il tempo indicato (90 s / pochi minuti) per riprendere la cottura.",
+          "Se il cestello non rientra, verificare che non sia sovraccarico o ostacolato dai cibi.[page:2]"
+        ]
+      }
+    ],
+    "error_note": "Il manuale non riporta codici E1/E2 numerici, ma solo stati/messaggi funzionali (Cool, End, Hold, Out) e indicazioni su fumo nero, cestello fuori sede, ecc.[page:2]",
+    "generic_suggestions": [
+      "Non riempire oltre l’altezza consigliata (circa 4 cm di cibo) per favorire la circolazione dell’aria.[page:2]",
+      "Per patatine e snack piccoli, scuotere/agitarle durante la cottura per un risultato uniforme.[page:2]",
+      "Per maggiore croccantezza, aggiungere una piccola quantità di olio a patate fresche o surgelate.",
+      "Evitare cibi troppo grassi (es. salsicce) che generano molto fumo bianco; in tal caso pulire subito cestello e griglie.",
+      "Se compare fumo nero, scollegare immediatamente l’apparecchio, attendere che il fumo si disperda e verificare se il cibo è bruciato; se non è dovuto al cibo, contattare l’assistenza.[page:2]",
+      "Non riempire i cestelli oltre il livello massimo e mantenere uno strato uniforme per una cottura omogenea.",
+      "Se il cibo è poco cotto: aumentare tempo/temperatura e scuotere/mescolare a metà cottura.",
+      "Assicurarsi che il cestello sia inserito fino allo scatto per permettere il funzionamento del sistema di sicurezza."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "Dual Blaze (Informativa Sicurezza)",
+    "actual_model": "CAF-P583S-KUS Dual Blaze 6.8-Quart Air Fryer",
+    "pdf_url": "https://m.media-amazon.com/images/I/A1MoRSg5CyL.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 6.4,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Manuale utente completo per Cosori Dual Blaze 6.8-Quart (CAF-P583S-KUS) con doppia resistenza sopra/sotto e integrazione VeSync.[page:1]",
+    "notable_features": [
+      "Capacità 6,8 quart / 6,4 L (4–6 persone), singolo cestello con piastra crisp.[page:1]",
+      "Tecnologia 360° Thermo IQ™ con resistenze superiore e inferiore (Dual Blaze) per cotture senza ribaltare.[page:1]",
+      "12 funzioni: Air Fry, Fries, Frozen, Chicken, Steak, Seafood, Veggies, Roast, Bake, Broil, Reheat, Keep Warm, con tempi/temperature di default.[page:1]",
+      "App VeSync per ricette smart, monitoraggio, preset personalizzati e integrazione Alexa/Google.[page:1]",
+      "Funzioni aggiuntive: pausa, ripresa automatica dopo estrazione cestello, cambio unità °F/°C, autospegnimento e protezione surriscaldamento.[page:1]",
+      "Temperatura 80–205 °C, tempo 1–60 minuti",
+      "Crisper plate in alluminio con rivestimento antiaderente, cestello lavabile in lavastoviglie"
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Display mostra \"E1\".",
+        "meaning": "Circuito aperto nel sensore di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’air fryer.",
+          "Contattare il Customer Support Cosori per verifica/sostituzione.[page:1]"
+        ]
+      },
+      {
+        "code": "E2",
+        "description": "Display mostra \"E2\".",
+        "meaning": "Cortocircuito nel sensore di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Non utilizzare finché non è stato verificato dall’assistenza Cosori.[page:1]"
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Display mostra \"E3\".",
+        "meaning": "Protezione surriscaldamento attivata.",
+        "suggestions": [
+          "Spegnere, scollegare e lasciare raffreddare completamente.",
+          "Se \"E3\" persiste, contattare il supporto.[page:1]"
+        ]
+      },
+      {
+        "code": "E4",
+        "description": "Display mostra \"E4\".",
+        "meaning": "L’air fryer è stato collegato a presa 220–240 V anziché 120 V.",
+        "suggestions": [
+          "Spegnere e scollegare immediatamente.",
+          "Usare solo su prese 120 V, 60 Hz come da specifiche.[page:1]"
+        ]
+      }
+    ],
+    "error_note": "La tabella di troubleshooting del manuale Dual Blaze documenta esplicitamente E1–E4 con cause (sensore, overheat, tensione) e indica sempre di contattare il supporto in caso di persistenza.[page:1]",
+    "generic_suggestions": [
+      "Se l’air fryer non si accende: verificare che sia collegato e che il cestello sia inserito correttamente.[page:1]",
+      "Se il cibo non è cotto: ridurre la quantità nel cestello, aumentare tempo e/o temperatura.",
+      "Per maggiore croccantezza: spruzzare o spennellare fino a 2 cucchiai di olio; gli spray sono raccomandati per distribuzione uniforme.[page:1]",
+      "Per patatine da crude: ammollo 15 minuti in acqua per rimuovere l’amido, asciugare bene, tagliare in bastoncini sottili (circa 0,6 × 7,6 cm) e usare poco olio.[page:1]",
+      "Fumo bianco: tipicamente dovuto al grasso che si raccoglie sotto la piastra; è normale, ma si consiglia di svuotare l’oil dopo cotture molto grasse per ridurre fumo.[page:1]",
+      "Fumo nero: scollegare subito, attendere che il fumo si disperda; se la causa non è cibo bruciato, contattare il supporto Cosori.[page:1]",
+      "Non riempire eccessivamente il cestello per evitare contatto diretto con le resistenze e rischio di incendio.",
+      "Pulire regolarmente crisper plate e cestello, evitando utensili metallici e spugne abrasive."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "CAF-LI401S Smart (Manuale)",
+    "actual_model": "CAF-LI401S Lite 3.8L Smart Air Fryer",
+    "pdf_url": "https://files.vesync.com/desc/Cosori_CAF_LI401S_Smart_Air_Fryer_User_Manual.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 3.8,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Smart Air Fryer \"Lite\" da 3,8 L (circa 4 quart), singolo cestello non-stick, con controllo via app VeSync e funzioni simili alla serie Cosori standard.",
+    "notable_features": [
+      "Modello CAF-LI401S Lite Smart Air Fryer con capacità 3,8 L, singolo cestello.",
+      "Tecnologia di circolazione aria 360° per cotture con poco olio.",
+      "Controllo smart tramite app VeSync (monitoraggio, ricette, preset personalizzati, integrazione Alexa/Google).",
+      "Funzioni preimpostate (Air Fry, Bake, Roast, Reheat, ecc.) con tempi/temperature di default simili agli altri modelli Cosori.",
+      "Display LED, timer fino a 60 min e regolazione temperatura fino a circa 200 °C.",
+      "Funzioni smart come preheat e shake reminder"
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Display mostra \"E1\".",
+        "meaning": "Circuito aperto nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’air fryer.",
+          "Contattare il Customer Support Cosori."
+        ]
+      },
+      {
+        "code": "E2",
+        "description": "Display mostra \"E2\".",
+        "meaning": "Cortocircuito nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Contattare il supporto per assistenza."
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Display mostra \"E3\".",
+        "meaning": "Protezione surriscaldamento attivata.",
+        "suggestions": [
+          "Spegnere, staccare la spina e lasciare raffreddare completamente.",
+          "Se \"E3\" persiste, contattare il supporto."
+        ]
+      },
+      {
+        "code": "E4",
+        "description": "Display mostra \"E4\".",
+        "meaning": "L’air fryer è collegato a presa 220–240 V anziché 120 V.",
+        "suggestions": [
+          "Spegnere e scollegare immediatamente.",
+          "Usare solo prese 120 V, 60 Hz."
+        ]
+      }
+    ],
+    "error_note": "Il set di codici E1–E4 e le relative azioni sono condivisi tra i manuali Cosori per Smart Air Fryer (CAF-LI401S e varianti regionali), con indicazioni analoghe a quelle del Dual Blaze.",
+    "generic_suggestions": [
+      "Per mancato avvio: verificare alimentazione e inserimento cestello.",
+      "Per cibi non ben cotti: ridurre quantità, aumentare tempo/temperatura, scuotere durante la cottura.",
+      "Per maggiore croccantezza: aggiungere piccole quantità di olio (spray) e non sovraccaricare il cestello.",
+      "Fumo bianco: pulire bene cestello/piastra e rimuovere grassi accumulati; fumo nero implica scollegare e controllare cibo/circuiti.",
+      "Verificare connessione Wi‑Fi e aggiornamenti firmware in caso di problemi di controllo da app."
+    ]
+  },
+  {
+    "brand": "Ninja",
+    "user_label": "AF500UK FlexDrawer (Manuale Argos)",
+    "actual_model": "AF500UK Foodi FlexDrawer 10.4L Air Fryer",
+    "pdf_url": "https://argos-support.co.uk/instruction-manual/3117488-ninja-foodi-flexdrawer-af500uk-104l-air-fryer-black.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 10.4,
+    "capacity_kg_fries": null,
+    "dual_zone": true,
+    "notes": "Manuale per Ninja Foodi FlexDrawer AF500UK 10,4 L con cassetto unico riconfigurabile in MegaZone o due zone separate.",
+    "notable_features": [
+      "Capacità totale 10,4 L, cassetto FlexDrawer divisibile con separatore per due zone o un’unica MegaZone.",
+      "Funzioni SYNC e MATCH per sincronizzare tempi delle due zone o copiare impostazioni da una zona all’altra (simili alle Dual Zone Ninja classiche).",
+      "Preset multipli (Air Fry, Max Crisp, Roast, Bake, Reheat, Dehydrate, Prove, ecc.) in base al modello; gestione indipendente delle due zone.",
+      "Cestinelli/piastra rivestiti antiaderenti, lavabili in lavastoviglie; ampia superficie per grandi quantità.",
+      "Controllo digitale tempo/temperatura"
+    ],
+    "error_codes": [],
+    "error_note": "Nei materiali disponibili via Argos/Ninja per AF500UK le sezioni sui codici errore non sono visibili; le indicazioni riguardano soprattutto sicurezza, posizionamento, pulizia e uso di SYNC/MATCH.",
+    "generic_suggestions": [
+      "Usare SYNC quando le due zone hanno tempi diversi ma si desidera che finiscano insieme; usare MATCH per copiare impostazioni tra zone identiche.",
+      "Non superare le quantità consigliate in ciascuna zona per evitare contatto con resistenze e cottura non uniforme.",
+      "Pulire cestello, divisore e piastra dopo ogni uso per ridurre fumo e odori.",
+      "Seguire le distanze di sicurezza dai mobili e non ostruire le prese d’aria posteriori/superiori.",
+      "Per risultati uniformi, distribuire gli alimenti su un singolo strato e scuotere/mescolare a metà cottura."
+    ]
+  },
+  {
+    "brand": "Ariete",
+    "user_label": "4618 Airy Fryer XXL (Manuale ufficiale)",
+    "actual_model": "4618 Airy Fryer XXL",
+    "pdf_url": "https://www.ariete.store/media/docs/product/6195102010-Air-Fryer-4618-AR0.cleaned-ac916fedf2cdbc27865ef7cbaba1111c.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 5.5,
+    "capacity_kg_fries": 2.0,
+    "dual_zone": false,
+    "notes": "Manuale generico e ricettario per la 4618 Airy Fryer XXL unificati; comprende indicazioni d'uso, pulizia, programmi preimpostati e ricette.",
+    "notable_features": [
+      "Friggitrice ad aria a singolo contenitore/cestello",
+      "Display con tempo e temperatura regolabili (1–60 min, 80–200 °C a step di 5 °C)",
+      "Programmi preimpostati per patatine surgelate, patatine fresche, crostacei, dolci, pollo, carne rossa, pesce",
+      "Funzione autospegnimento: a fine timer la friggitrice si spegne e può essere riavviata per qualche minuto aggiuntivo",
+      "Cestello e contenitore antiaderenti, lavabili in lavastoviglie",
+      "Possibilità di preriscaldare vuota per 3–5 minuti prima della cottura",
+      "Primo utilizzo: leggero odore/fumo dovuti a lubrificazione iniziale, indicati come fenomeno normale",
+      "Indicazione di consumo in standby (0,4 W)",
+      "Ricette calibrate per 5–7 persone (es. 2 kg di patatine surgelate/fresche, 1,2 kg di crocchette, 600 g gamberi)"
+    ],
+    "error_codes": [],
+    "error_note": "Nel manuale 4618 non sono presenti codici o scritte di errore specifiche (E1, Pot, ecc.); la guida problemi è testuale.",
+    "generic_suggestions": [
+      "Se l’apparecchio non parte: verificare plug, messa a terra, timer impostato e inserimento corretto del contenitore.",
+      "Non riempire il contenitore con olio e non sovraccaricare il cestello per evitare cotture non uniformi e difficoltà di inserimento.",
+      "Per patatine fresche: lavare, asciugare bene, rimuovere l’amido, tagliare in bastoncini omogenei e aggiungere poco olio per croccantezza.",
+      "In caso di fumo bianco: tipicamente dovuto a ingredienti molto grassi o residui di grasso nel contenitore; pulire bene dopo ogni uso.",
+      "Per snack poco croccanti: usare snack adatti alla cottura in forno e spennellarli leggermente con olio prima della cottura.",
+      "Se il contenitore non è inserito correttamente, l’apparecchio non si avvia: reinserire fino allo scatto.",
+      "Per usura del rivestimento antiaderente: segni/opacità sono considerati normali e non influiscono sulla cottura.",
+      "Per patatine surgelate: togliere dal freezer 20 minuti prima, asciugare bene e rimuovere il ghiaccio prima di condire con olio."
+    ]
+  },
+  {
+    "brand": "Ariete",
+    "user_label": "4623 Dual (Manuale)",
+    "actual_model": "4623 Air Fryer Dual",
+    "pdf_url": "https://www.ariete.store/media/docs/product/booklet-4623.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 8.0,
+    "capacity_kg_fries": null,
+    "dual_zone": true,
+    "notes": "Manuale per la friggitrice ad aria 4623 con due cestelli; display touch con programmi preimpostati e funzioni SYNCH FINISH / DUAL COOK.",
+    "notable_features": [
+      "Due cestelli indipendenti (dual basket) con controllo separato per sinistra e destra",
+      "Funzione SYNCH FINISH per sincronizzare cotture con tempi diversi, in modo che finiscano insieme",
+      "Funzione DUAL COOK per applicare le stesse impostazioni da un cestello all’altro e gestire grandi quantità come un’unica zona",
+      "Funzione SHAKE con segnale acustico per ricordare di mescolare/scuotere gli alimenti",
+      "Programmi preimpostati per patatine fresche, patatine surgelate, pesce, pollo, carne, dolci, essiccazione",
+      "Possibilità di cottura singola (un cestello) o doppia (entrambi) con gestione separata del tempo",
+      "Cestelli e piastre antiaderenti, lavabili in lavastoviglie"
+    ],
+    "error_codes": [
+      {
+        "code": "Pot",
+        "description": "Sul display viene visualizzata la scritta \"Pot\".",
+        "meaning": "Uno o entrambi i cestelli non sono inseriti correttamente nella sede, oppure non sono completamente chiusi.",
+        "suggestions": [
+          "Estrarre i cestelli e reinserirli spingendo fino allo scatto, verificando che siano ben allineati.",
+          "Se il messaggio persiste con cestelli vuoti e correttamente inseriti, spegnere l’apparecchio e contattare l’assistenza Ariete."
+        ]
+      }
+    ],
+    "error_note": "Nel manuale 4623 sono presenti messaggi di stato come \"Pot\" (cestelli non inseriti); non sono documentati codici E1/E2 numerici.",
+    "generic_suggestions": [
+      "Usare SYNCH FINISH quando i due cestelli hanno tempi diversi ma si vuole che le pietanze siano pronte contemporaneamente.",
+      "Usare DUAL COOK per copiare tempo/temperatura dal primo cestello al secondo in caso di alimenti uguali.",
+      "Non riempire oltre il livello indicato nel cestello per non impedire il corretto inserimento e la circolazione dell’aria.",
+      "In caso di cottura non uniforme, usare la funzione SHAKE e scuotere/miscelare gli alimenti a circa 2/3 del tempo."
+    ]
+  },
+  {
+    "brand": "Ariete",
+    "user_label": "4626 Friggitrice con grill (Manuale)",
+    "actual_model": "4626 Friggitrice con grill",
+    "pdf_url": "https://www.ariete.store/media/docs/product/Book_6385101400-R1_4626-Friggitrice_con-grill_Light.cleaned-68442a6600128ffda6ee518397af9e1e.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 6.0,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Manuale e ricettario per la 4626 unificati. Friggitrice ad aria con funzione grill e display touch.",
+    "notable_features": [
+      "Friggitrice ad aria con modalità AIR FRY e modalità GRILL integrate",
+      "Touch screen con programmi preimpostati per patatine fresche, pesce, pollo, pizza e dolci",
+      "Funzione grill per grigliare carne, pesce e verdure con piastra dedicata",
+      "Regolazione manuale tempo/temperatura tramite tasti +/-",
+      "Autospegnimento a fine cottura e indicazione luminosa di funzionamento",
+      "Cestello e piastra grill antiaderenti, lavabili",
+      "Consumo in modalità off: 0,0 W (indicazione nel manuale)",
+      "Ricette calibrate per la funzione aria calda e grill (carne, pesce, verdure, dolci)"
+    ],
+    "error_codes": [],
+    "error_note": "Nel testo disponibile non compaiono codici di errore o messaggi tipo \"Pot\"; la guida problemi è basata su cause (presa, timer, quantità, ecc.).",
+    "generic_suggestions": [
+      "Usare la modalità grill solo con la piastra inserita correttamente e con alimenti adatti.",
+      "Se l’apparecchio non si accende: controllare spina, presa, timer e l’inserimento del cestello.",
+      "Per evitare bruciature, non superare tempi/temperature consigliati e controllare a metà cottura.",
+      "Pulire regolarmente la piastra grill e il cestello per evitare fumo da residui bruciati.",
+      "Non superare le grammature indicate nelle ricette per evitare cotture non uniformi."
+    ]
+  },
+  {
+    "brand": "Ariete",
+    "user_label": "4629 Air Fryer Oven",
+    "actual_model": "4629 Airfryer + Oven",
+    "pdf_url": "https://www.ariete.store/media/docs/product/6195105300-Air-Fryer-Oven-4629-AR0-46414bb8163ca612151f37977bcc488c.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 11.0,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Manuale per 4629, Airfryer + Oven: camera unica con sportello, griglia, teglia, cestello rotante e girarrosto.",
+    "notable_features": [
+      "Air fryer + forno con camera unica e sportello frontale",
+      "Accessori: griglia, teglia, drip pan, cestello rotante, girarrosto con forchetta, vassoio raccolta briciole",
+      "Programmi preimpostati: PREHEAT, AIRFRY, BAKE, TOAST, ROAST, ROTIS, CAKE, BAGEL, PIZZA, BROIL, DEFROST, PROOF, DEHYDRATE, SLOW COOK, KEEP WARM",
+      "Funzione SHAKE: promemoria per scuotere/miscelare gli alimenti con messaggio sul display e beep",
+      "Funzione autospegnimento e memorizzazione parametri dei programmi",
+      "Timer fino a molte ore (per DEHYDRATE, fino a 24–36 h in base al tipo di alimento)",
+      "Indicazioni dettagliate di tempi e temperature per patatine, carne, pollo, dolci, essiccazione"
+    ],
+    "error_codes": [
+      {
+        "code": "SHAKE",
+        "description": "Sul display compare la scritta \"SHAKE\" accompagnata da segnale acustico durante la cottura.",
+        "meaning": "Promemoria di scuotere o mescolare gli alimenti per ottenere una cottura uniforme.",
+        "suggestions": [
+          "Aprire lo sportello con attenzione, estrarre il cestello o la teglia usando guanti o manici isolanti.",
+          "Scuotere o mescolare gli alimenti e reinserire il cestello/teglia.",
+          "Chiudere lo sportello e lasciare proseguire il programma; il messaggio e il beep cessano dopo l’interazione."
+        ]
+      }
+    ],
+    "error_note": "Il manuale non presenta codici di errore tipo E1/E2; l’unico messaggio esplicito documentato è \"SHAKE\" come promemoria di interazione.",
+    "generic_suggestions": [
+      "Non sovraccaricare cestello o teglia; distribuire gli alimenti in uno strato per sfruttare al meglio AIRFRY.",
+      "Per patatine croccanti: preriscaldare, usare poco olio, scuotere a metà cottura e rispettare le grammature indicate.",
+      "In caso di fumo bianco: dovuto a grassi/oli nel drip pan o su accessori; svuotare e pulire bene prima di nuove cotture.",
+      "Usare le tabelle DEHYDRATE per erbe, frutta e verdura, rispettando temperature basse e tempi lunghi."
+    ]
+  },
+  {
+    "brand": "Ariete",
+    "user_label": "4635 Air Fryer Grill",
+    "actual_model": "4635 Air Fryer Grill",
+    "pdf_url": "https://www.ariete.store/media/docs/product/6385100600-Air-Fryer-4635-AR0.cleaned-d61513fb90fd4a5b389792f4d0aac09b.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 8.0,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Manuale 4635 Air Fryer Grill; apparecchio con modalità AIR FRY e modalità GRILL.",
+    "notable_features": [
+      "Friggitrice ad aria con funzione grill e accessori dedicati (sportello, griglia, piastra, cestello, ecc.)",
+      "Programmi preimpostati su display touch per AIR FRY e GRILL (patatine, carne, pesce, pizza, dolci, ecc.)",
+      "Avvertenze di sicurezza dettagliate su distanze dai mobili (15 cm sui lati, ecc.)",
+      "Possibilità di regolare tempo (±1 min) e temperatura (±5 °C) con feedback acustico (beep)",
+      "Modalità grill con gestione separata di tempo e potenza, indicata nelle figure",
+      "Consumo energetico in modalità off ~0,3 W"
+    ],
+    "error_codes": [],
+    "error_note": "Nel testo leggibile non è presente una sezione dedicata a codici di errore o messaggi tipo \"Pot\"; sono visibili indicazioni a display (come beep, cambi di temperatura).",
+    "generic_suggestions": [
+      "Seguire le distanze minime dai mobili e non coprire le prese d’aria per evitare surriscaldamenti.",
+      "Usare la modalità AIR FRY per fritti e la modalità GRILL per carne/pesce, rispettando accessori e livelli indicati.",
+      "Agitare o girare gli alimenti secondo i beep/messaggi guida per ottenere cottura uniforme.",
+      "Pulire regolarmente gli accessori e non usare utensili abrasivi sul rivestimento."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "Serie 3000 Dual Basket",
+    "actual_model": "NA350/03 Dual Basket Airfryer",
+    "pdf_url": "https://www.documents.philips.com/assets/20240111/dd265518eef34313afe9b0f4006336b3.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 9.0,
+    "capacity_kg_fries": 1.5,
+    "dual_zone": true,
+    "notes": "Scheda tecnica unificata Philips 3000 Series Dual Basket Airfryer (NA350/00 e NA350/03) con due cassetti e 9 L totali.",
+    "notable_features": [
+      "Dual Basket con 2 cassetti di dimensioni diverse (uno per main, uno per contorni/snack)",
+      "Tecnologia Rapid Air brevettata per cibo croccante, tenero e cotto in modo uniforme",
+      "Time function per sincronizzare i tempi di cottura dei due cassetti",
+      "Copy function per copiare tempo e temperatura da un cassetto all’altro",
+      "Touchscreen digitale con 8 preset (patatine fresche/surgelate, pollo, carne, verdure, pesce, torta, reheat)",
+      "Fino al 90% di grassi in meno rispetto alla frittura tradizionale",
+      "Consumo di energia inferiore al 70% rispetto a un forno convenzionale",
+      "Cottura più veloce del forno, baskets lavabili in lavastoviglie",
+      "Potenza 2750 W, capacità totale 9 L (fino a 1,5 kg di cavoletti di Bruxelles)",
+      "Cool wall exterior, automatic shut-off, non‑stick coating, BPA‑free inner coating"
+    ],
+    "error_codes": [],
+    "error_note": "Scheda tecnica; non contiene tabella di codici errore numerici.",
+    "generic_suggestions": [
+      "Usare il cassetto grande per il piatto principale e quello piccolo per contorni o porzioni singole.",
+      "Utilizzare la funzione Time per far terminare contemporaneamente le cotture nei due cassetti.",
+      "Usare Copy per replicare le impostazioni quando si cucinano gli stessi alimenti in entrambe le vasche.",
+      "Sfruttare la capacità 9 L per traybake completi o fino a 1,5 kg di verdure in una sola vasca."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "Airfryer Combi XXXL Connected",
+    "actual_model": "HD9880/90 Airfryer Combi XXXL Connected",
+    "pdf_url": "https://www.documents.philips.com/assets/20230830/89c9a6f0cbd34993a3bdb06e01046e2e.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 8.3,
+    "capacity_kg_fries": 2.0,
+    "dual_zone": false,
+    "notes": "Manuale d'uso completo in lingua inglese per Philips Airfryer Combi XXXL Connected HD9880/90.",
+    "notable_features": [
+      "Capacità XXXL 8,3 L / 2 kg, ideale per famiglie e batch cooking",
+      "Rapid CombiAir Technology con controllo del flusso d’aria (alto, basso, dinamico)",
+      "Food Thermometer integrato per controllo preciso della temperatura al cuore (precisione ±1 °C)",
+      "Ampia gamma di funzioni: Fry, Grill, Roast, Bake, Braise, Sous‑vide, Slow‑Cook, Toast, Dehydrate, Defrost, Keep Warm, ecc.",
+      "Auto‑Cook programs che guidano l’utente in base a ingrediente e quantità",
+      "Connettività Wi‑Fi con app NutriU per ricette guidate, impostazioni automatiche e apprendimento delle preferenze",
+      "Instant on/no pre‑heat: niente preriscaldamento",
+      "QuickClean con accesso completo all’interno e parti lavabili in lavastoviglie",
+      "Potenza 2200 W, controllo digitale con TFT screen, automatic shut‑off e cool wall exterior"
+    ],
+    "error_codes": [
+      {
+        "code": "E1 / 0x1002",
+        "description": "Sul display appare E1 o 0x1002.",
+        "meaning": "L'apparecchio è troppo freddo (probabilmente è stato riposto in cantina o a bassa temperatura).",
+        "suggestions": [
+          "Scollegare la spina e lasciar acclimatare l'apparecchio a temperatura ambiente per almeno 30 minuti prima di riaccenderlo.",
+          "Se l'errore persiste, contattare il servizio clienti Philips."
+        ]
+      },
+      {
+        "code": "E3 / 0x4001",
+        "description": "Sul display appare E3 o 0x4001.",
+        "meaning": "Il modulo di connettività Wi-Fi è difettoso.",
+        "suggestions": [
+          "È comunque possibile utilizzare l'apparecchio offline senza funzioni smart.",
+          "Contattare il servizio clienti se si desidera ripristinare la connettività."
+        ]
+      },
+      {
+        "code": "E4, E5, E6, E8, E9, E12, 0x1001, 0x3001, 0x3002, 0x3003",
+        "description": "Sul display appare un codice software.",
+        "meaning": "Problema di comunicazione della scheda o errore generico del software.",
+        "suggestions": [
+          "Scollegare la spina di alimentazione, attendere alcuni minuti e ricollegarla.",
+          "Se l'errore non scompare, contattare l'assistenza Philips."
+        ]
+      },
+      {
+        "code": "E10 / 0x9002",
+        "description": "Sul display appare E10 o 0x9002.",
+        "meaning": "La friggitrice ha rilevato un problema durante la cottura con un programma automatico.",
+        "suggestions": [
+          "Scollegare la spina, ricollegarla e assicurarsi che l'apparecchio sia connesso al Wi-Fi per ricevere eventuali aggiornamenti del firmware.",
+          "Riavviare il programma di cottura."
+        ]
+      },
+      {
+        "code": "E11 / 0x9003",
+        "description": "Sul display appare E11 o 0x9003.",
+        "meaning": "La tensione elettrica della presa non è conforme alle specifiche del dispositivo.",
+        "suggestions": [
+          "Scollegare il dispositivo, provare un'altra presa ed evitare di collegare elettrodomestici energivori sulla stessa linea."
+        ]
+      },
+      {
+        "code": "A1",
+        "description": "Sul display appare A1.",
+        "meaning": "La sonda termometrica (food thermometer) non è inserita correttamente nel suo alloggiamento.",
+        "suggestions": [
+          "Inserire correttamente lo spinotto della sonda nel jack situato sul display della friggitrice."
+        ]
+      },
+      {
+        "code": "A2",
+        "description": "Sul display appare A2.",
+        "meaning": "La temperatura misurata dalla sonda è salita troppo velocemente.",
+        "suggestions": [
+          "Verificare che la sonda sia inserita al centro del cibo e non sia esposta direttamente all'aria della camera di cottura.",
+          "Assicurarsi che l'alimento sia spesso almeno 2 cm."
+        ]
+      },
+      {
+        "code": "A3",
+        "description": "Sul display appare A3.",
+        "meaning": "La temperatura del cibo sale troppo lentamente.",
+        "suggestions": [
+          "La sonda è probabilmente rimasta fuori dal cestello durante la cottura. Inserirla nel cibo o cambiare modalità di cottura."
+        ]
+      },
+      {
+        "code": "A4",
+        "description": "Sul display appare A4.",
+        "meaning": "La temperatura rilevata è diminuita improvvisamente.",
+        "suggestions": [
+          "Il cassetto è stato aperto prima del completamento del programma. Chiudere il cassetto per riprendere la cottura."
+        ]
+      },
+      {
+        "code": "A5",
+        "description": "Sul display appare A5.",
+        "meaning": "Surriscaldamento della sonda termometrica.",
+        "suggestions": [
+          "La sonda è stata lasciata nel cestello senza essere inserita in un alimento. Rimuoverla se non utilizzata."
+        ]
+      }
+    ],
+    "error_note": "Include i codici di errore della connettività, della sonda termometrica (A1-A5) e del software, presi dal manuale originale.",
+    "generic_suggestions": [
+      "Usare i programmi Auto‑Cook quando si vuole delegare completamente tempo/temperatura all’apparecchio.",
+      "Usare la sonda food thermometer per bistecche e arrosti scegliendo il grado di cottura direttamente dall’app.",
+      "Pulire con attenzione la sonda e le superfici interne per evitare errori di temperatura e falsi allarmi."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "Viva Collection (Manuale)",
+    "actual_model": "Philips Viva Collection Airfryer",
+    "pdf_url": "https://dam.versuni.com/m/f4816272cef4ca1/original/User-Manual-Philips-Viva-Collection-Airfryer.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": null,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Manuale Viva Collection; struttura simile al manuale Airfryer XXL, con food table e troubleshooting testuale ma senza codici E espliciti nelle parti visibili.",
+    "notable_features": [
+      "Tecnologia Rapid Air per fritti croccanti con poco olio",
+      "Possibilità di friggere, grigliare e cuocere al forno diversi alimenti",
+      "Pan e basket con rivestimento antiaderente, lavabili in lavastoviglie",
+      "Food table con tempi e temperature consigliati per patatine, pollo, carne, pesce, dolci",
+      "Cord storage e indicatori di riscaldamento"
+    ],
+    "error_codes": [],
+    "error_note": "Nella porzione disponibile del manuale non compaiono codici di errore numerici; troubleshooting solo testuale.",
+    "generic_suggestions": [
+      "Per patatine fresche: usare varietà adatte alla frittura, ammollare, asciugare e aggiungere poco olio per la croccantezza.",
+      "Pulire regolarmente pan e basket, eliminando residui di grasso per ridurre fumo e odori.",
+      "Non riempire oltre la linea MAX per evitare cotture non uniformi."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "Modelli XXL (Manuale Generico)",
+    "actual_model": "Philips Airfryer XXL (manuale generico)",
+    "pdf_url": "https://www.documents.philips.com/assets/20210424/314d32fec6ff41f1a2daad14002cc0f3.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 7.3,
+    "capacity_kg_fries": 1.4,
+    "dual_zone": false,
+    "notes": "Manuale generico per Airfryer XXL con Twin TurboStar e fat reducer; food table arriva fino a ~1400 g di patatine.",
+    "notable_features": [
+      "Twin TurboStar technology con flusso d’aria tipo tornado per estrarre il grasso e convogliarlo nel fat reducer",
+      "Pan in ceramica e fat reducer per raccolta del grasso sul fondo",
+      "Basket con fondo di mesh rimovibile, parti lavabili in lavastoviglie",
+      "Controllo manuale della temperatura (fino a 200 °C) e del tempo (fino a 60 minuti)",
+      "Food table dettagliata per patatine, carne, pollo intero, pesce, verdure, dolci",
+      "Cord storage integrato, cool wall exterior e indicatori di riscaldamento"
+    ],
+    "error_codes": [],
+    "error_note": "Il troubleshooting tratta problemi comuni (fumo bianco, patatine non croccanti, mancato avvio) senza usare codici E.",
+    "generic_suggestions": [
+      "Per patatine fatte in casa: taglio 10×10 mm, ammollo in acqua 30 minuti, asciugatura, ¼–1 cucchiaio di olio, scuotere 2–3 volte.",
+      "In caso di fumo bianco: verificare la presenza del fat reducer e svuotare/pulire il grasso accumulato nel fondo della pan.",
+      "Non usare utensili metallici o spugne abrasive per non danneggiare il rivestimento antiaderente."
+    ]
+  },
+  {
+    "brand": "Ninja",
+    "user_label": "AG651UK Health Grill & Air Fryer",
+    "actual_model": "AG651UK Ninja Foodi Health Grill & Air Fryer",
+    "pdf_url": "https://media.flixcar.com/webp/synd-asset/Shark-390047402-ViewProductAttachment-OpenFile-LocaleId--DirectoryPath--FileName-AG651UK_IB_.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 3.8,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Manuale AG651UK Health Grill & Air Fryer; nel testo disponibile non sono visibili sezioni con tabella di codici errore numerici.",
+    "notable_features": [
+      "Funzioni grill + air fry integrate in un unico apparecchio",
+      "Piastra grill e cestello air fryer con rivestimenti antiaderenti",
+      "Programmi multipli per grigliare, friggere ad aria, cuocere, riscaldare",
+      "Controlli digitali, indicazioni di sicurezza e uso indoor su piano di lavoro"
+    ],
+    "error_codes": [],
+    "error_note": "La parte di manuale accessibile non mostra codici tipo E1/E2; per non inventare dati i codici non sono riportati.",
+    "generic_suggestions": [
+      "Non usare l’apparecchio vicino a fonti di calore o sotto pensili bassi.",
+      "Utilizzare le funzioni grill e air fry rispettando le quantità consigliate per evitare fumo e bruciature."
+    ]
+  },
+  {
+    "brand": "Ninja",
+    "user_label": "Crispi Air Fryer (FN101 Series)",
+    "actual_model": "FN101UK Ninja Crispi Air Fryer",
+    "pdf_url": "https://gzhls.at/blob/ldb/6/6/e/7/eed10e80653716d00c02f6d2fc9f4cfcdcbd.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 3.8,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Owner’s Guide FN101 Series Crispi Air Fryer; include due contenitori in vetro Ninja (3,8 L e 1,4 L) ma una sola zona di cottura per volta.",
+    "notable_features": [
+      "Ninja TempWare glass containers: uno da 3,8 L e uno da 1,4 L",
+      "Crispi PowerPod come unità air fryer che si appoggia sui contenitori",
+      "Funzioni Air Fry, Recrisp, Roast, Keep Warm",
+      "Crisper plates per risultati più croccanti (piatti perforati da inserire nei contenitori)",
+      "Lids per conservazione e uso microonde (non per cottura con PowerPod)",
+      "Potenza 1700 W, 220–240 V ~50–60 Hz",
+      "Controllo digitale con TIME ± e MODE, messaggi come “LID” e “END” sul display"
+    ],
+    "error_codes": [
+      {
+        "code": "E",
+        "description": "Un messaggio \"E\" appare sul display.",
+        "meaning": "L’unità non funziona correttamente.",
+        "suggestions": [
+          "Interrompere l’uso dell’apparecchio.",
+          "Contattare il Customer Service Ninja (0800 862 0453) per diagnosi e assistenza."
+        ]
+      }
+    ],
+    "error_note": "Il manuale parla di un generico \"E\" sul display come indicatore di malfunzionamento, senza distinguere E1/E2/etc.",
+    "generic_suggestions": [
+      "Assicurarsi che il Crispi PowerPod sia correttamente posizionato sul contenitore; se non lo è compare l’errore \"LID\".",
+      "Per consistenza nella doratura, disporre gli alimenti in un solo strato e scuotere a metà cottura usando i Safe‑to‑Touch handles.",
+      "Non usare i contenitori in forno o su fornelli; sono destinati a PowerPod + microonde + freezer."
+    ]
+  },
+  {
+    "brand": "De'Longhi",
+    "user_label": "MultiFry FH1394 (Scheda Tecnica)",
+    "actual_model": "FH1394/1 – FH1394/2 MultiFry",
+    "pdf_url": "https://dls.delonghigroup.com/files/docs/4/DSDL-16019-A.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 5.0,
+    "capacity_kg_fries": 1.7,
+    "dual_zone": false,
+    "notes": "Scheda tecnica FH1394/1–FH1394/2; include dati elettrici e una sezione di troubleshooting con codici E1, E3, E5, E6.",
+    "notable_features": [
+      "Pala mescolatrice automatica per mescolare il cibo senza intervento manuale",
+      "Resistenza superiore da 1400 W + ventola per convezione/grill",
+      "Secondo elemento riscaldante inferiore da 1000 W per velocizzare la cottura e migliorare la qualità",
+      "Bowl in ceramica antiaderente, coperchio con finestra e griglia di scarico aria calda",
+      "Program selector con vari programmi di cottura",
+      "Indicatore luminoso livello di potenza e timer digitale"
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Sul display viene mostrata la scritta \"E1\" accompagnata da 3 brevi bip acustici.",
+        "meaning": "La variazione di temperatura (slope) misurata dai sensori NTC (ventola o fondo) supera il valore massimo ammesso.",
+        "suggestions": [
+          "Il sistema arresta tutti i carichi (resistenze e motori) per sicurezza.",
+          "L’allarme acustico viene ripetuto ciclicamente con pause di 1 minuto finché l’utente non preme il tasto START o spegne la macchina.",
+          "Dopo l’intervento dell’utente, verificare eventuali cause di surriscaldamento anomalo prima di riavviare un programma."
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Sul display viene mostrata la scritta \"E3\" accompagnata da 5 brevi bip acustici.",
+        "meaning": "La temperatura ha superato la soglia di sicurezza impostata per l’apparecchio.",
+        "suggestions": [
+          "Tutti i carichi vengono fermati automaticamente per evitare danni.",
+          "Lasciare raffreddare completamente l’apparecchio.",
+          "L’allarme continua a ripetersi a intervalli finché non si spegne o si interviene; se la condizione si ripete, far verificare l’apparecchio."
+        ]
+      },
+      {
+        "code": "E5",
+        "description": "Sul display viene mostrata la scritta \"E5\" accompagnata da 7 brevi bip acustici.",
+        "meaning": "Il sistema non riesce a leggere correttamente la temperatura dal sensore NTC della ventola (resistenza <0,1 kΩ o >640 kΩ).",
+        "suggestions": [
+          "Tutti i carichi vengono fermati automaticamente.",
+          "Premere START o spegnere la macchina per interrompere l’allarme.",
+          "E5 indica un sensore ventola fuori range/guasto; è consigliabile rivolgersi all’assistenza per sostituzione/controllo del NTC."
+        ]
+      },
+      {
+        "code": "E6",
+        "description": "Sul display viene mostrata la scritta \"E6\" accompagnata da 7 brevi bip acustici.",
+        "meaning": "Il sistema non riesce a leggere correttamente la temperatura dal sensore NTC inferiore (resistenza <0,1 kΩ o >640 kΩ).",
+        "suggestions": [
+          "Tutti i carichi vengono fermati automaticamente.",
+          "Premere START o spegnere la macchina per interrompere l’allarme.",
+          "E6 indica un problema sul sensore inferiore NTC; è opportuno far controllare il sensore e il circuito da assistenza tecnica."
+        ]
+      }
+    ],
+    "error_note": "",
+    "generic_suggestions": [
+      "Nel caso di errori E1/E3, non forzare il riavvio continuo del programma; lasciare raffreddare e identificare eventuali cause di surriscaldamento.",
+      "Per errori E5/E6 legati ai sensori NTC, evitare l’uso prolungato con allarme attivo e rivolgersi all’assistenza.",
+      "La pala automatica deve essere usata con alimenti adatti; per cibi delicati è meglio rimuoverla per evitare rotture o blocchi."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "HD9721/13 Twin TurboStar",
+    "actual_model": "HD9721/13 Airfryer Twin TurboStar",
+    "pdf_url": "https://www.documents.philips.com/assets/20220614/2369f4a0c7974b3b8384aeb400ae1592.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 4.1,
+    "capacity_kg_fries": 0.8,
+    "dual_zone": false,
+    "notes": "Scheda tecnica ufficiale: Airfryer low fat fryer 1500 W, capacità cestello 0,8 kg di patatine; non è un manuale utente con sezione codici errore.",
+    "notable_features": [
+      "Tecnologia Twin TurboStar per estrarre e raccogliere il grasso in un fat reducer",
+      "Rapid Air con fino al 90% di grassi in meno rispetto alla frittura tradizionale",
+      "Cestello QuickClean con mesh antiaderente e manico EasyClick",
+      "Funzioni: fry, bake, grill, roast",
+      "Dimensioni compatte: 0,8 kg di patatine, circa 4 porzioni",
+      "Tutte le parti rimovibili lavabili in lavastoviglie"
+    ],
+    "error_codes": [],
+    "error_note": "Scheda marketing/tecnica senza capitolo di troubleshooting né codici E.",
+    "generic_suggestions": [
+      "Usare la tecnologia Twin TurboStar per ottenere cibi croccanti con meno grassi.",
+      "Pulire sempre pan e cestello in lavastoviglie per evitare odori di frittura."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "HD9654/99 XXL TurboStar",
+    "actual_model": "HD9654/99 Airfryer XXL Twin TurboStar",
+    "pdf_url": "https://www.documents.philips.com/assets/20220429/9ce4f502c3d54e3eb09fae8600c68d7e.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 7.3,
+    "capacity_kg_fries": 1.4,
+    "dual_zone": false,
+    "notes": "Scheda tecnica Airfryer XXL: cestello 1,4 kg di patatine, potenza 2225 W; non contiene tabella di codici errore.",
+    "notable_features": [
+      "Tecnologia Twin TurboStar per rimuovere il grasso dagli alimenti",
+      "XXL family size: intero pollo o 1,4 kg di patatine",
+      "Digital display con 5 programmi preimpostati",
+      "Modalità Keep Warm fino a 30 minuti",
+      "Grill pan inclusa per carne, pesce e verdure",
+      "Tutte le parti rimovibili lavabili in lavastoviglie, QuickClean basket"
+    ],
+    "error_codes": [],
+    "error_note": "Documento di specifiche, non manuale utente: nessuna sezione con codici tipo E1/E2.",
+    "generic_suggestions": [
+      "Usare i programmi preimpostati per patatine, pollo, pesce, carne per risultati consistenti.",
+      "Sfruttare la modalità Keep Warm per servire quando si è pronti senza ricuocere."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "HD9270/90 XL",
+    "actual_model": "HD9270/90 Airfryer XL",
+    "pdf_url": "https://www.documents.philips.com/assets/20220303/96ea3755f4764ddaac36ae4d00ce80e2.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 6.2,
+    "capacity_kg_fries": 1.2,
+    "dual_zone": false,
+    "notes": "Scheda tecnica per Airfryer XL 1,2 kg / 6,2 L (HD9270/90 e /70), Rapid Air technology.",
+    "notable_features": [
+      "Rapid Air technology con design a stella marina per cottura uniforme",
+      "Capacità cestello 1,2 kg e pan da 6,2 L (circa 5 porzioni)",
+      "Touch screen con 7 preset (snack surgelati, patatine fresche, carne, pesce, drumsticks, torta, verdure grigliate)",
+      "14-in-1 cooking functions (fry, bake, grill, roast, dehydrate, toast, defrost, reheat, ecc.)",
+      "Funzione Keep Warm fino a 30 minuti",
+      "Fino al 70% di energia in meno e fino al 50% più veloce di un forno tradizionale",
+      "Automatic shut-off, cool wall exterior, QuickClean, parti lavabili in lavastoviglie",
+      "Potenza 2000 W, cord length 1,8 m"
+    ],
+    "error_codes": [],
+    "error_note": "Scheda tecnica, non manuale completo: nessun elenco di codici errore.",
+    "generic_suggestions": [
+      "Usare la capacità XL per cucinare fino a 5 porzioni in un unico batch.",
+      "Sfruttare i preset e la funzione Keep Warm per organizzare i tempi dei pasti.",
+      "Scaricare NutriU per ricette personalizzate e tempi impostati per XL.",
+      "Non riempire oltre 1,2 kg di patatine per mantenere la croccantezza."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "HD9257 (Manuale)",
+    "actual_model": "HD9257 Airfryer (finestra)",
+    "pdf_url": "https://dam.versuni.com/m/1f7fe5514bb4753b/original/User-manual-Airfryer-HD9257.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 5.6,
+    "capacity_kg_fries": 0.8,
+    "dual_zone": false,
+    "notes": "Manuale utente completo con finestra e luce interna; include sezione Troubleshooting con codice errore E1.",
+    "notable_features": [
+      "Tecnologia Rapid Air con design a stella marina (StarPlate)",
+      "Finestra di visualizzazione e lampada interna per controllare la cottura",
+      "Preset per patatine surgelate, fresche, drumsticks, pesce, torta, chops, verdure, modalità Keep Warm",
+      "Funzione Keep Warm 30 minuti a 80 °C",
+      "Automatic shut-off dopo inattività (20–30 minuti)",
+      "Pan, basket e fat reducer con rivestimento antiaderente"
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Lo schermo dell'Airfryer mostra la scritta \"E1\".",
+        "meaning": "Il sistema Airfryer ha rilevato un difetto oppure è stato conservato in un ambiente troppo freddo.",
+        "suggestions": [
+          "Se il dispositivo è stato conservato a bassa temperatura, lasciare che raggiunga la temperatura ambiente per almeno 15 minuti prima di ricollegarlo.",
+          "Se dopo il riscaldamento a temperatura ambiente il display mostra ancora \"E1\": chiamare la hotline di servizio Philips o contattare il Consumer Care Center del proprio Paese."
+        ]
+      }
+    ],
+    "error_note": "Nella parte di troubleshooting visibile il manuale riporta esplicitamente solo il codice E1; eventuali altri codici non sono nel testo disponibile.",
+    "generic_suggestions": [
+      "Per patatine fresche: usare patate farinose, taglio 10x10 mm, ammollo 30 minuti, asciugare bene, condire con poco olio e scuotere 2–3 volte durante la cottura.",
+      "In caso di fumo bianco: eliminare grasso o olio dal fondo della pan, pulire accuratamente dopo ogni uso.",
+      "Non riempire oltre il livello MAX per evitare cottura non uniforme e patatine molli."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "HD9252/70 L",
+    "actual_model": "HD9252/70 Airfryer L",
+    "pdf_url": "https://www.documents.philips.com/assets/20210930/358f3985fa004eddb83badb3008cd07a.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 4.1,
+    "capacity_kg_fries": 0.8,
+    "dual_zone": false,
+    "notes": "Spec sheet Airfryer L: cestello 0,8 kg, pan 4,1 L, potenza 1400 W.",
+    "notable_features": [
+      "Rapid Air technology con starfish design per cottura uniforme",
+      "Capacità 0,8 kg di patatine e pan da 4,1 L (4 porzioni)",
+      "Touch screen con 7 preset e funzione Keep Warm",
+      "13-in-1 cooking functions (fry, bake, grill, roast, reheat, defrost, keep warm, dehydrate, toast, ecc.)",
+      "Automatic shut-off, cool wall exterior, QuickClean, parti lavabili in lavastoviglie"
+    ],
+    "error_codes": [],
+    "error_note": "Scheda tecnica, non manuale completo; non sono presenti codici E.",
+    "generic_suggestions": [
+      "Usare la capacità consigliata (0,8 kg) per mantenere la qualità della frittura.",
+      "Scaricare NutriU per ricette ottimizzate per form factor L."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "NA220/00 (4.2 L)",
+    "actual_model": "NA220/00 Airfryer 4.2 L",
+    "pdf_url": "https://www.documents.philips.com/assets/20240213/2e5589cb0d954122a4acb11500d50591.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 4.2,
+    "capacity_kg_fries": 0.5,
+    "dual_zone": false,
+    "notes": "Scheda tecnica in italiano: Airfryer 13 in 1, tecnologia RapidAir, finestra e luce, cestello da 4,2 L con circa 500 g di patatine.",
+    "notable_features": [
+      "Tecnologia RapidAir con piastra StarPlate per flusso d'aria ottimale",
+      "Capacità 4,2 L (circa 500 g di patatine, 6 cosce di pollo o 500 g di verdure)",
+      "13 metodi di cottura (frittura, arrostire, grigliare, forno, riscaldare, scongelare, essiccare, tostare, mantenere caldo, ecc.)",
+      "Finestra e luce per monitorare la cottura senza aprire il cestello",
+      "Touchscreen con 9 preset (patatine surgelate/fresche, cosce di pollo, carne, pesce, colazione, verdure, torta, keep warm)",
+      "Accensione immediata senza preriscaldamento, lavabile in lavastoviglie, pareti fredde"
+    ],
+    "error_codes": [],
+    "error_note": "Documento marketing/tecnico senza sezione di errori numerici.",
+    "generic_suggestions": [
+      "Usare i preset per patatine fresche/surgelate; se perdono croccantezza, un breve ciclo a 180 °C le ravviva.",
+      "Sfruttare la finestra di controllo per evitare di aprire il cestello e far crollare la temperatura."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "Serie 5000 Connected (HD9255/60)",
+    "actual_model": "HD9255/60 Airfryer Serie 5000 connesso",
+    "pdf_url": "https://www.documents.philips.com/assets/20221020/ac19ade7cfa341e8b03faf3400cf21df.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 4.1,
+    "capacity_kg_fries": 0.8,
+    "dual_zone": false,
+    "notes": "Scheda in italiano (include dati della versione HD9255/90): Serie 5000 connessa, cestello 0,8 kg, pan 4,1 L; 13 funzioni di cottura e Wi‑Fi.",
+    "notable_features": [
+      "Tecnologia Rapid Air con design a stella marina",
+      "Capacità 800 g di patatine, pan 4,1 L (circa 4 porzioni)",
+      "Connettività Wi‑Fi, controllo remoto tramite app NutriU e compatibilità Amazon Alexa",
+      "13 funzioni di cottura (friggere, cuocere al forno, grigliare, arrostire, riscaldare, scongelare, ecc.)",
+      "Touch screen con 7 preimpostazioni (snack surgelati, patatine fresche, pollo, pesce, carne, verdure grigliate, muffin)",
+      "Parti rimovibili lavabili in lavastoviglie, QuickClean basket",
+      "Connected Airfryer con controllo remoto via app NutriU",
+      "Automatic shut-off"
+    ],
+    "error_codes": [],
+    "error_note": "Documento di specifiche; i codici E per la connettività sono riportati solo nei manuali completi.",
+    "generic_suggestions": [
+      "Usare NutriU per avviare programmi da remoto e monitorare la cottura.",
+      "In caso di problemi di connessione, ripetere pairing e verificare credenziali Wi‑Fi.",
+      "Usare la funzione Select, set & relax: selezionare la ricetta da NutriU, impostare il programma e lasciare che l’Airfryer cuocia controllato da remoto.",
+      "Sfruttare l’efficienza energetica (fino al 70% di energia in meno rispetto al forno) per cotture quotidiane."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "HD9875 (Manuale)",
+    "actual_model": "HD9875 Airfryer",
+    "pdf_url": "https://dam.versuni.com/m/60fb0e3f025efa30/original/User-Manual-Airfryer-HD9875.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 8.3,
+    "capacity_kg_fries": 2.0,
+    "dual_zone": false,
+    "notes": "Manuale completo con connettività Wi‑Fi e programmi automatici. Capacità aggiornata tramite specifiche tecniche ufficiali (8.3L/2kg).",
+    "notable_features": [
+      "Airfryer smart con connettività Wi‑Fi",
+      "Programmi di cottura automatica",
+      "Integrazione con app NutriU",
+      "Risoluzione problemi con codici E1, E2, E3, E6, E8, E9, E12, E10, E11"
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Sul display di Airfryer viene visualizzata la scritta \"E1\".",
+        "meaning": "Airfryer potrebbe essere stato conservato in un luogo troppo freddo.",
+        "suggestions": [
+          "Portare l'apparecchio in un ambiente a temperatura ambiente e lasciarlo acclimatare (almeno 30 minuti).",
+          "Se il codice persiste dopo l'acclimatazione: scollegare l'Airfryer e contattare l'assistenza Philips/centro clienti."
+        ]
+      },
+      {
+        "code": "E2",
+        "description": "Sul display di Airfryer viene visualizzata la scritta \"E2\".",
+        "meaning": "Sono state inserite credenziali Wi‑Fi errate.",
+        "suggestions": [
+          "Controllare SSID e password del Wi‑Fi e inserire le credenziali corrette.",
+          "Ripetere la procedura di associazione all'app, seguendo le istruzioni del manuale."
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Sul display di Airfryer viene visualizzata la scritta \"E3\".",
+        "meaning": "La funzione di connettività presenta un problema.",
+        "suggestions": [
+          "Utilizzare l'apparecchio senza funzione di connettività (come Airfryer stand‑alone).",
+          "Se il codice persiste anche senza usare le funzioni smart: scollegare l'Airfryer e contattare l'assistenza Philips/centro clienti."
+        ]
+      },
+      {
+        "code": "E6, E8, E9, E12",
+        "description": "Sul display di Airfryer viene visualizzata la scritta di errore software.",
+        "meaning": "Possibile problema di software/calcolo.",
+        "suggestions": [
+          "Scollegare il sistema Airfryer dalla presa di corrente.",
+          "Attendere qualche minuto e ricollegarlo.",
+          "Se il codice persiste: contattare l'assistenza telefonica Philips o il centro clienti del proprio Paese."
+        ]
+      },
+      {
+        "code": "E10",
+        "description": "Sul display di Airfryer viene visualizzata la scritta \"E10\" durante la cottura con un programma automatico.",
+        "meaning": "Si è verificato un problema durante la cottura con un programma di cottura automatica (errore del sistema/programmi smart).",
+        "suggestions": [
+          "Scollegare il sistema Airfryer e ricollegarlo.",
+          "Assicurarsi che l'Airfryer sia connesso alla rete Wi‑Fi.",
+          "Eseguire un eventuale aggiornamento del firmware, se disponibile.",
+          "Riavviare il programma di cottura automatica.",
+          "Se sullo schermo viene ancora visualizzato il codice di errore: contattare l'assistenza telefonica Philips o il centro clienti del proprio Paese."
+        ]
+      },
+      {
+        "code": "E11",
+        "description": "Sul display di Airfryer viene visualizzata la scritta \"E11\".",
+        "meaning": "Il sistema Airfryer è stato utilizzato a una tensione che non rientra nei limiti specificati.",
+        "suggestions": [
+          "Scollegare il sistema Airfryer e ricollegarlo.",
+          "Provare a utilizzare un'altra presa idonea.",
+          "Scollegare altri apparecchi collegati alla stessa presa.",
+          "Se sullo schermo viene ancora visualizzato il codice di errore: contattare l'assistenza telefonica Philips o il centro clienti del proprio Paese."
+        ]
+      }
+    ],
+    "error_note": "",
+    "generic_suggestions": [
+      "In caso di fumo bianco: eliminare olio o grasso in eccesso, pulire accuratamente recipiente e cestello, assicurarsi che la panatura aderisca bene al cibo.",
+      "Per problemi di Wi‑Fi o associazione app: ripetere la procedura guidata, verificare le credenziali e che nessun altro abbia associato l'Airfryer ad un diverso dispositivo.",
+      "Se dopo reset compare ancora un codice errore: scollegare e rivolgersi sempre all'assistenza Philips."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "HD9200 (Manuale)",
+    "actual_model": "HD920X Airfryer",
+    "pdf_url": "https://dam.versuni.com/m/9ba057f49c7b7a3/original/User-manual-HD9200.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 4.1,
+    "capacity_kg_fries": 0.8,
+    "dual_zone": false,
+    "notes": "Manuale completo HD920X con tabella cibi e troubleshooting; nessuna sezione con codici E espliciti.",
+    "notable_features": [
+      "Tecnologia Rapid Air con design \"starfish\" per cottura uniforme",
+      "Controlli manuali: manopola tempo e temperatura",
+      "Timer con spegnimento automatico",
+      "Pan e cestello con rivestimento antiaderente, lavabili in lavastoviglie",
+      "Uso domestico (domestic use only)"
+    ],
+    "error_codes": [],
+    "error_note": "Il manuale non contiene codici errore numerici (E1, E2, ecc.), solo problemi descritti testualmente.",
+    "generic_suggestions": [
+      "Se l'Airfryer non si accende: verificare che la spina sia inserita correttamente e che non ci siano troppe apparecchiature sulla stessa presa.",
+      "Per patatine poco croccanti: usare patate farinose, non conservarle in frigo, ammollo 30 minuti, asciugare bene e non riempire oltre la linea MAX.",
+      "In caso di fumo bianco: svuotare olio/grasso in eccesso e pulire bene pan e cestello dopo ogni uso.",
+      "Per fumo da residui: eliminare i residui di impanatura e grasso dalle resistenze e dall'interno."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "Daily Collection (HD9250–HD9251)",
+    "actual_model": "HD9250–HD9251 Airfryer Daily Collection",
+    "pdf_url": "https://dam.versuni.com/m/5ee8fd93488e5ca8/original/User-Manual-Philips-Daily-Collection-Airfryer.pdf",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 4.1,
+    "capacity_kg_fries": 0.8,
+    "dual_zone": false,
+    "notes": "Manuale Daily Collection con sezione Troubleshooting ma senza codici E.",
+    "notable_features": [
+      "Airfryer con Rapid Air e grill superiore",
+      "Basket con manico e pan estraibile",
+      "Controllo manuale temperatura 80–200 °C e timer fino a 30 minuti",
+      "Spegnimento automatico con segnale acustico",
+      "Pan e basket lavabili in lavastoviglie"
+    ],
+    "error_codes": [],
+    "error_note": "Nessun codice tipo E1/E2 nel manuale; solo elenco problemi comuni.",
+    "generic_suggestions": [
+      "Se l'Airfryer non lavora: verificare che il timer sia impostato e la spina collegata.",
+      "Se il cibo non è cotto: ridurre la quantità nel cestello, aumentare temperatura o tempo secondo la tabella.",
+      "Per fritti non croccanti: usare snack da forno o spennellare leggermente con olio.",
+      "In caso di fumo bianco: dovuto a ingredienti grassi o residui di grasso nel pan, pulire bene dopo ogni uso.",
+      "Per patatine fresche: ammollare, asciugare bene, usare patate adatte e aggiungere poco olio."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "HD9867/16 XXL Smart Sensing",
+    "actual_model": "HD9867/16 Airfryer XXL Smart Sensing",
+    "pdf_url": "https://www.documents.philips.com/assets/20220420/e55633065a4d46e49656ae7d010f5255.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 7.3,
+    "capacity_kg_fries": 1.4,
+    "dual_zone": false,
+    "notes": "Scheda tecnica prodotto per il mercato US (3 lb / 7 qt ≈ 6,6 L) fusa alla variante EU (7,3L / 1,4kg).",
+    "notable_features": [
+      "Tecnologia Smart Sensing con sensori e algoritmi che regolano tempo e temperatura automaticamente",
+      "Fat Removal Technology per separare e catturare il grasso in eccesso",
+      "Rapid Air con flusso d'aria fino a 7x più veloce e fino al 90% di grassi in meno rispetto alla frittura tradizionale",
+      "Modalità Keep Warm fino a 30 minuti",
+      "Compatibilità HomeID app con ricette guidate",
+      "Cestello XXL 7 qt per circa 3 lb di cibo (1.4kg)"
+    ],
+    "error_codes": [],
+    "error_note": "La scheda tecnica non contiene sezione di troubleshooting o codici E.",
+    "generic_suggestions": [
+      "Usare i programmi Smart Chef per piatti principali (patatine, pollo, pesce) lasciando alla macchina la regolazione automatica di tempo e temperatura.",
+      "Pulire regolarmente il cestello e utilizzare QuickClean per mantenere le prestazioni."
+    ]
+  },
+  {
+    "brand": "Philips",
+    "user_label": "HD9860/94 XXL Smart Sensing",
+    "actual_model": "HD9860/94 Airfryer XXL Smart Sensing",
+    "pdf_url": "https://www.documents.philips.com/assets/20220506/06595080a06d470cb98dae8d00e01710.pdf",
+    "pdf_type": "spec_sheet",
+    "pdf_matches_label": true,
+    "capacity_l": 7.3,
+    "capacity_kg_fries": 1.4,
+    "dual_zone": false,
+    "notes": "Scheda tecnica ufficiale: capacità XXL, cestello grande da 7,3 L e fino a 1,4 kg di patatine.",
+    "notable_features": [
+      "Smart Sensing technology con programmi Smart Chef",
+      "Fat Removal technology per ridurre il grasso saturo fino al 50% su pollo intero",
+      "Rapid Air per ridurre i grassi fino al 90%",
+      "Modalità Keep Warm per 30 minuti",
+      "Programmi preimpostati e funzione \"Salva il tuo preferito\"",
+      "Cestello XXL per pollo intero o 1,4 kg di patatine",
+      "Potenza circa 2200–2225 W"
+    ],
+    "error_codes": [],
+    "error_note": "Documento marketing/tecnico, non manuale con codici errore.",
+    "generic_suggestions": [
+      "Usare i programmi Smart Chef per ottenere cotture automatiche ottimizzate.",
+      "Seguire le raccomandazioni su quantità e tempi per sfruttare la capacità XXL."
+    ]
+  },
+  {
+    "brand": "Ninja",
+    "user_label": "Air Fryer Base Ninja (AF100UK)",
+    "actual_model": "AF100UK Ninja Air Fryer",
+    "pdf_url": "https://argos-support.co.uk/storage/files/1166039_D001.pdf?direct",
+    "pdf_type": "manual",
+    "pdf_matches_label": true,
+    "capacity_l": 3.8,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Manuale AF100UK con sezione uso e sicurezza; nel testo disponibile non sono visibili codici errore numerici.",
+    "notable_features": [
+      "Funzioni Air Fry, Roast, Reheat e Dehydrate",
+      "Pannello digitale con tasti function e regolazione tempo/temperatura",
+      "Crisper plate removibile in pan con rivestimento ceramico",
+      "Potenza circa 1550 W, 220–240 V",
+      "Modalità standby dopo inattività"
+    ],
+    "error_codes": [],
+    "error_note": "Non abbiamo accesso a una sezione con codici E/errore, quindi non vengono riportati codici specifici.",
+    "generic_suggestions": [
+      "Se il cibo non cuoce: assicurarsi che il pan sia completamente inserito e adattare tempo/temperatura.",
+      "Per cibi troppo cotti: ridurre tempo o temperatura e controllare a metà cottura.",
+      "Non usare utensili metallici nel cestello per non danneggiare il rivestimento."
+    ]
+  }
+]

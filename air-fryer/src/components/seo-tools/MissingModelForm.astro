@@ -1,0 +1,204 @@
+---
+export interface Props {
+  lang?: 'it' | 'en' | 'es' | 'fr';
+}
+
+const { lang = 'it' } = Astro.props;
+
+const formTranslations = {
+  it: {
+    title: "Non trovi il tuo modello?",
+    subtitle: "Aiutaci a migliorare il database! Segnala la tua friggitrice ad aria.",
+    brandLabel: "Marca",
+    brandPlaceholder: "Es. Philips",
+    modelLabel: "Modello esatto",
+    modelPlaceholder: "Es. HD9252/90",
+    symptomLabel: "Codice o Sintomo",
+    symptomPlaceholder: "Es. Errore E1, fumo bianco, non scalda...",
+    manualLabel: "Link al manuale (opzionale)",
+    manualPlaceholder: "https://...",
+    consentText: "Acconsento al trattamento dei dati per la gestione della richiesta.",
+    submitBtn: "Invia Segnalazione",
+    sendingBtn: "Invio in corso...",
+    successMsg: "Grazie! Abbiamo ricevuto la tua segnalazione e aggiorneremo presto il database.",
+    errorGeneric: "Si è verificato un errore. Riprova più tardi.",
+    successTitle: "Completato!"
+  },
+  en: {
+    title: "Can't find your model?",
+    subtitle: "Help us improve the database! Report your air fryer.",
+    brandLabel: "Brand",
+    brandPlaceholder: "E.g., Philips",
+    modelLabel: "Exact model",
+    modelPlaceholder: "E.g., HD9252/90",
+    symptomLabel: "Code or Symptom",
+    symptomPlaceholder: "E.g., E1 error, white smoke, won't heat...",
+    manualLabel: "Link to manual (optional)",
+    manualPlaceholder: "https://...",
+    consentText: "I consent to the processing of data to handle the request.",
+    submitBtn: "Send Report",
+    sendingBtn: "Sending...",
+    successMsg: "Thank you! We have received your report and will update the database soon.",
+    errorGeneric: "An error occurred. Please try again later.",
+    successTitle: "Success!"
+  },
+  es: {
+    title: "¿No encuentras tu modelo?",
+    subtitle: "¡Ayúdanos a mejorar la base de datos! Informa sobre tu freidora.",
+    brandLabel: "Marca",
+    brandPlaceholder: "Ej. Philips",
+    modelLabel: "Modelo exacto",
+    modelPlaceholder: "Ej. HD9252/90",
+    symptomLabel: "Código o Síntoma",
+    symptomPlaceholder: "Ej. Error E1, humo blanco, no calienta...",
+    manualLabel: "Enlace al manual (opcional)",
+    manualPlaceholder: "https://...",
+    consentText: "Acepto el tratamiento de datos para la gestión de la solicitud.",
+    submitBtn: "Enviar informe",
+    sendingBtn: "Enviando...",
+    successMsg: "¡Gracias! Hemos recibido tu informe y actualizaremos la base de datos pronto.",
+    errorGeneric: "Se produjo un error. Inténtalo de nuevo más tarde.",
+    successTitle: "¡Completado!"
+  },
+  fr: {
+    title: "Vous ne trouvez pas votre modèle ?",
+    subtitle: "Aidez-nous à améliorer la base de données ! Signalez votre friteuse.",
+    brandLabel: "Marque",
+    brandPlaceholder: "Ex. Philips",
+    modelLabel: "Modèle exact",
+    modelPlaceholder: "Ex. HD9252/90",
+    symptomLabel: "Code ou Symptôme",
+    symptomPlaceholder: "Ex. Erreur E1, fumée blanche, ne chauffe pas...",
+    manualLabel: "Lien vers le manuel (facultatif)",
+    manualPlaceholder: "https://...",
+    consentText: "Je consens au traitement des données pour gérer la demande.",
+    submitBtn: "Envoyer le signalement",
+    sendingBtn: "Envoi en cours...",
+    successMsg: "Merci ! Nous avons reçu votre signalement et mettrons bientôt à jour la base de données.",
+    errorGeneric: "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    successTitle: "Terminé !"
+  }
+};
+
+const t = formTranslations[lang as keyof typeof formTranslations] || formTranslations['it'];
+---
+
+<div class="mt-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 sm:p-8 shadow-sm max-w-2xl mx-auto">
+  <div id="missing-model-form-wrapper">
+    <div class="mb-6">
+      <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{t.title}</h3>
+      <p class="text-sm text-gray-600 dark:text-gray-400">{t.subtitle}</p>
+    </div>
+    
+    <form id="missing-model-form" class="space-y-5" novalidate>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div>
+          <label for="mmf-brand" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t.brandLabel} *</label>
+          <input type="text" id="mmf-brand" name="brand" required placeholder={t.brandPlaceholder} class="w-full px-4 py-2 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900 dark:text-white transition-shadow" />
+        </div>
+        <div>
+          <label for="mmf-model" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t.modelLabel} *</label>
+          <input type="text" id="mmf-model" name="model" required placeholder={t.modelPlaceholder} class="w-full px-4 py-2 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900 dark:text-white transition-shadow" />
+        </div>
+      </div>
+      
+      <div>
+        <label for="mmf-symptom" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t.symptomLabel} *</label>
+        <input type="text" id="mmf-symptom" name="symptom" required placeholder={t.symptomPlaceholder} class="w-full px-4 py-2 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900 dark:text-white transition-shadow" />
+      </div>
+
+      <div>
+        <label for="mmf-manual" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">{t.manualLabel}</label>
+        <input type="url" id="mmf-manual" name="manual_url" placeholder={t.manualPlaceholder} class="w-full px-4 py-2 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none text-gray-900 dark:text-white transition-shadow" />
+      </div>
+
+      <div class="flex items-start">
+        <div class="flex items-center h-5">
+          <input id="mmf-consent" name="consent" type="checkbox" required class="w-4 h-4 text-blue-600 bg-gray-50 border-gray-300 rounded focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600" />
+        </div>
+        <div class="ml-3 text-sm">
+          <label for="mmf-consent" class="font-medium text-gray-700 dark:text-gray-300">{t.consentText}</label>
+        </div>
+      </div>
+
+      <div id="mmf-error-msg" class="hidden text-sm font-medium text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20 p-3 rounded-lg border border-red-100 dark:border-red-800"></div>
+
+      <button type="submit" id="mmf-submit-btn" class="w-full sm:w-auto px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors focus:ring-4 focus:ring-blue-500/50 outline-none disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center">
+        <span id="mmf-btn-text">{t.submitBtn}</span>
+      </button>
+    </form>
+  </div>
+  
+  <div id="missing-model-success" class="hidden text-center py-8">
+    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 mb-4">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+    </div>
+    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{t.successTitle}</h4>
+    <p class="text-gray-600 dark:text-gray-400">{t.successMsg}</p>
+  </div>
+</div>
+
+<script is:inline define:vars={{ t }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('missing-model-form');
+    const wrapper = document.getElementById('missing-model-form-wrapper');
+    const successBox = document.getElementById('missing-model-success');
+    const submitBtn = document.getElementById('mmf-submit-btn');
+    const btnText = document.getElementById('mmf-btn-text');
+    const errorMsg = document.getElementById('mmf-error-msg');
+
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      // Controllo validità HTML5 nativa base
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      errorMsg.classList.add('hidden');
+      submitBtn.disabled = true;
+      btnText.textContent = t.sendingBtn;
+
+      const formData = new FormData(form);
+      const data = {
+        brand: formData.get('brand'),
+        model: formData.get('model'),
+        symptom: formData.get('symptom'),
+        manual_url: formData.get('manual_url') || '',
+        consent: formData.get('consent') === 'on'
+      };
+
+      try {
+        const response = await fetch('/api/segnala-modello', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json().catch(() => ({}));
+
+        if (response.ok && result.success) {
+          wrapper.classList.add('hidden');
+          successBox.classList.remove('hidden');
+        } else {
+          throw new Error(result.message || t.errorGeneric);
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        errorMsg.textContent = error.message || t.errorGeneric;
+        errorMsg.classList.remove('hidden');
+      } finally {
+        // Ripristina il pulsante se c'è stato un errore (in modo da poter riprovare)
+        if (!wrapper.classList.contains('hidden')) {
+          submitBtn.disabled = false;
+          btnText.textContent = t.submitBtn;
+        }
+      }
+    });
+  });
+</script>
