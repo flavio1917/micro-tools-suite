@@ -1072,7 +1072,7 @@
     "dual_zone": false,
     "notes": "Friggitrice ad aria Cosori Dual Blaze Smart Air Fryer a singolo cestello con doppio elemento riscaldante e controllo digitale.",
     "notable_features": [
-      "Air fryer a doppio elemento riscaldante per cotture più uniformi.",
+      "Air fryer a doppio elemento riscaldante per cotture uniformi.",
       "Controllo digitale con programmi preimpostati e timer regolabile.",
       "Cestello con piastra crisper rimovibile."
     ],
@@ -1114,7 +1114,7 @@
         ]
       }
     ],
-    "error_note": "Tabella problematiche Dual Blaze Smart Air Fryer: E1/E2 per circuito aperto/corto del sensore di temperatura, E3 per overheat protection, E4 per tensione di rete errata.",
+    "error_note": "Dual Blaze Smart Air Fryer usa codici E1/E2 per problemi al sensore di temperatura, E3 per overheat e E4 per tensione errata.",
     "generic_suggestions": [
       "Se la friggitrice non si accende: verificare che sia collegata e che il cestello sia inserito completamente.",
       "Se il cibo non è completamente cotto: ridurre la quantità nel cestello, aumentare tempo o temperatura.",
@@ -1138,7 +1138,7 @@
     "dual_zone": false,
     "notes": "Friggitrice ad aria Cosori Iconic Smart Air Fryer con controllo digitale e funzioni smart.",
     "notable_features": [
-      "Air fryer smart con controllo da pannello digitale.",
+      "Air fryer smart con pannello digitale.",
       "Cestello antiaderente per cotture con poco olio.",
       "Programmi preimpostati per diversi tipi di alimenti."
     ],
@@ -1189,7 +1189,7 @@
         ]
       }
     ],
-    "error_note": "Iconic Smart Air Fryer estende la famiglia di codici E01–E04 (sensore temperatura e sovratemperatura) con E12 per guasto del motore DC.",
+    "error_note": "Iconic Smart Air Fryer usa i codici E01–E04 per problemi al sensore di temperatura e sovratemperatura, E12 per guasto del motore DC.",
     "generic_suggestions": [
       "Se l’air fryer non si accende: controllare alimentazione e inserimento del cestello.",
       "Se il cibo non è cotto: ridurre la quantità, aumentare tempo o temperatura.",
@@ -1198,6 +1198,408 @@
       "Per fumo bianco: pulire cestello e interno, rimuovere grasso accumulato.",
       "Per fumo scuro: scollegare subito, attendere che il fumo si disperda e controllare se il cibo è bruciato; se non è cibo, contattare l’assistenza.",
       "Per odore di plastica: effettuare Test Run; se persiste, contattare il Customer Support."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "Dual Basket Air Fryer",
+    "actual_model": "Dual Basket Air Fryer",
+    "pdf_url": null,
+    "pdf_type": "manual",
+    "pdf_matches_label": false,
+    "capacity_l": null,
+    "capacity_kg_fries": null,
+    "dual_zone": true,
+    "notes": "Friggitrice ad aria Cosori Dual Basket Air Fryer con due cestelli indipendenti.",
+    "notable_features": [
+      "Due cestelli separati per cotture indipendenti.",
+      "Display digitale con programmi e timer.",
+      "Piastre crisper rimovibili in ciascun cestello."
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Display mostra \"E1\".",
+        "meaning": "Circuito aperto nel monitor di temperatura del cestello sinistro.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Contattare il Customer Support Cosori per controllo del sensore della zona sinistra."
+        ]
+      },
+      {
+        "code": "E2",
+        "description": "Display mostra \"E2\".",
+        "meaning": "Cortocircuito nel monitor di temperatura del cestello sinistro.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Contattare l’assistenza per la zona sinistra."
+        ]
+      },
+      {
+        "code": "E21",
+        "description": "Display mostra \"E21\".",
+        "meaning": "Circuito aperto nel monitor di temperatura del cestello destro.",
+        "suggestions": [
+          "Spegnere e scollegare.",
+          "Contattare il Customer Support per il sensore della zona destra."
+        ]
+      },
+      {
+        "code": "E22",
+        "description": "Display mostra \"E22\".",
+        "meaning": "Cortocircuito nel monitor di temperatura del cestello destro.",
+        "suggestions": [
+          "Spegnere e scollegare.",
+          "Richiedere assistenza per il sensore della zona destra."
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Display mostra \"E3\".",
+        "meaning": "Protezione da surriscaldamento attivata.",
+        "suggestions": [
+          "Spegnere e scollegare l’air fryer.",
+          "Lasciare raffreddare completamente prima di riutilizzare.",
+          "Se \"E3\" persiste, contattare l’assistenza."
+        ]
+      },
+      {
+        "code": "E4",
+        "description": "Display mostra \"E4\".",
+        "meaning": "L’apparecchio è collegato a una presa 220–240 V.",
+        "suggestions": [
+          "Spegnere e scollegare immediatamente.",
+          "Usare soltanto prese 120 V, 60 Hz."
+        ]
+      }
+    ],
+    "error_note": "Dual Basket Air Fryer distingue errori di temperatura tra cestello sinistro (E1/E2) e destro (E21/E22), oltre a E3 ed E4.",
+    "generic_suggestions": [
+      "Per cibo non cotto o non uniforme: ridurre la quantità in ciascun cestello, distribuire gli alimenti su un solo strato e scuotere/girare a metà cottura.",
+      "Per croccantezza: aggiungere poca quantità di olio e usare la Cooking Guide.",
+      "Per patatine: seguire la sezione French Fries del manuale.",
+      "Se il cestello non entra: verificare che non sia sovraccarico e che la piastra crisper sia correttamente inserita.",
+      "Fumo bianco o steam: pulire bene l’interno e i cestelli, rimuovere l’olio raccolto sotto le piastre.",
+      "Fumo scuro: scollegare subito, attendere che il fumo si disperda e verificare se il cibo è bruciato; altrimenti contattare l’assistenza.",
+      "Odore di plastica: eseguire Test Run; se persiste, contattare il Customer Support.",
+      "Tempi più lunghi con entrambi i cestelli: è normale per grandi quantità di cibo."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "TurboBlaze™ Air Fryer",
+    "actual_model": "TurboBlaze Air Fryer",
+    "pdf_url": null,
+    "pdf_type": "manual",
+    "pdf_matches_label": false,
+    "capacity_l": null,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Friggitrice ad aria Cosori TurboBlaze con elementi riscaldanti e controllo digitale.",
+    "notable_features": [
+      "Air fryer a singolo cestello con controllo digitale.",
+      "Programmi preimpostati per diversi alimenti.",
+      "Piastra crisper rimovibile."
+    ],
+    "error_codes": [
+      {
+        "code": "E01/E21",
+        "description": "Display mostra \"E01\" o \"E21\".",
+        "meaning": "Circuito aperto nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’air fryer.",
+          "Contattare il Customer Support per controllo dei sensori di temperatura."
+        ]
+      },
+      {
+        "code": "E02/E22",
+        "description": "Display mostra \"E02\" o \"E22\".",
+        "meaning": "Cortocircuito nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Non utilizzarlo finché non viene verificato dall’assistenza."
+        ]
+      },
+      {
+        "code": "E04",
+        "description": "Display mostra \"E04\".",
+        "meaning": "L’air fryer è stato collegato a una presa 220–240 V.",
+        "suggestions": [
+          "Spegnere e scollegare subito.",
+          "Usare solo prese 120 V, 60 Hz come raccomandato."
+        ]
+      }
+    ],
+    "error_note": "TurboBlaze usa coppie E01/E21 ed E02/E22 per i diversi sensori di temperatura, E04 per tensione di rete errata.",
+    "generic_suggestions": [
+      "Se la friggitrice non si accende: verificare presa e inserimento del cestello.",
+      "Per cibo non cotto: ridurre la quantità, aumentare tempo/temperatura.",
+      "Per croccantezza: aggiungere poco olio e seguire la sezione Cooking Tips.",
+      "Per patatine: seguire la sezione French Fries.",
+      "Fumo bianco: pulire cestello/interno e rimuovere grassi accumulati.",
+      "Fumo scuro: scollegare subito, attendere che il fumo si disperda e verificare se si tratta di cibo bruciato; se no, contattare l’assistenza.",
+      "Odore di plastica: eseguire Test Run; se persiste, contattare il Customer Support."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "Pro LE Air Fryer",
+    "actual_model": "Pro LE Air Fryer",
+    "pdf_url": null,
+    "pdf_type": "manual",
+    "pdf_matches_label": false,
+    "capacity_l": null,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Friggitrice ad aria Cosori Pro LE Air Fryer a singolo cestello.",
+    "notable_features": [
+      "Air fryer a singolo cestello.",
+      "Display digitale con programmi.",
+      "Piastra crisper rimovibile."
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Display mostra \"E1\".",
+        "meaning": "Circuito aperto nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’air fryer.",
+          "Contattare il Customer Support Cosori."
+        ]
+      },
+      {
+        "code": "E2",
+        "description": "Display mostra \"E2\".",
+        "meaning": "Cortocircuito nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Richiedere assistenza per controllo del sensore."
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Display mostra \"E3\".",
+        "meaning": "La protezione da surriscaldamento è attiva.",
+        "suggestions": [
+          "Spegnere e scollegare.",
+          "Lasciare raffreddare completamente.",
+          "Se \"E3\" persiste, contattare il Customer Support."
+        ]
+      },
+      {
+        "code": "E4",
+        "description": "Display mostra \"E4\".",
+        "meaning": "L’air fryer è collegato a presa 220–240 V.",
+        "suggestions": [
+          "Spegnere e scollegare immediatamente.",
+          "Usare solo prese 120 V, 60 Hz."
+        ]
+      }
+    ],
+    "error_note": "Pro LE Air Fryer usa il set standard di codici E1–E4 per problemi al sensore di temperatura, overheat e tensione errata.",
+    "generic_suggestions": [
+      "Per cibo non cotto o non uniforme: ridurre quantità nel cestello, aumentare tempo/temperatura, scuotere o girare gli alimenti a metà cottura.",
+      "Per cibo non croccante: aggiungere una piccola quantità di olio e seguire la Cooking Guide.",
+      "Per patatine: seguire la sezione French Fries del manuale.",
+      "Per fumo bianco: pulire cestello e interno, rimuovere oli che si raccolgono sotto la piastra crisper.",
+      "Per fumo scuro: scollegare subito e verificare la causa; se non è cibo, contattare l’assistenza.",
+      "Odore di plastica: eseguire Test Run; se persiste, contattare il Customer Support."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "Lite Mini Air Fryer",
+    "actual_model": "Lite Mini Air Fryer",
+    "pdf_url": null,
+    "pdf_type": "manual",
+    "pdf_matches_label": false,
+    "capacity_l": null,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Friggitrice ad aria compatta Cosori Lite Mini Air Fryer.",
+    "notable_features": [
+      "Modello compatto a singolo cestello.",
+      "Programmi base per fritti ad aria.",
+      "Piastra crisper rimovibile."
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Display mostra \"E1\".",
+        "meaning": "Circuito aperto nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’air fryer.",
+          "Contattare l’assistenza Cosori."
+        ]
+      },
+      {
+        "code": "E2",
+        "description": "Display mostra \"E2\".",
+        "meaning": "Cortocircuito nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare.",
+          "Non usare l’apparecchio finché non viene verificato."
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Display mostra \"E3\".",
+        "meaning": "Protezione da surriscaldamento attivata.",
+        "suggestions": [
+          "Spegnere e scollegare.",
+          "Lasciare raffreddare completamente.",
+          "Se \"E3\" persiste, contattare il Customer Support."
+        ]
+      },
+      {
+        "code": "E4",
+        "description": "Display mostra \"E4\".",
+        "meaning": "L’apparecchio è collegato a una presa 220–240 V.",
+        "suggestions": [
+          "Spegnere e scollegare subito.",
+          "Usare solo prese 120 V, 60 Hz."
+        ]
+      }
+    ],
+    "error_note": "Lite Mini segue lo schema di codici E1–E4 delle altre friggitrici Cosori a singolo cestello.",
+    "generic_suggestions": [
+      "Per cibo non cotto o non uniforme: ridurre quantità in cestello, scuotere/girare gli alimenti durante la cottura.",
+      "Per croccantezza: aggiungere una piccola quantità di olio e seguire la Cooking Guide.",
+      "Per patatine: seguire la sezione French Fries.",
+      "Per fumo bianco: pulire cestello e interno, rimuovere grasso sotto la piastra crisper.",
+      "Per fumo scuro: scollegare subito e verificare la causa; se non è cibo, contattare l’assistenza.",
+      "Per odore di plastica: eseguire Test Run; se l’odore non diminuisce, contattare il Customer Support."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "13-Qt Air Fryer Oven",
+    "actual_model": "13-Qt Air Fryer Oven",
+    "pdf_url": null,
+    "pdf_type": "manual",
+    "pdf_matches_label": false,
+    "capacity_l": null,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Forno friggitrice ad aria Cosori 13-Qt Air Fryer Oven.",
+    "notable_features": [
+      "Camera tipo forno con griglie e teglie.",
+      "Funzioni multiple di cottura e preriscaldamento.",
+      "Controllo digitale tempo/temperatura."
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Display mostra \"E1\".",
+        "meaning": "Circuito aperto nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’air fryer oven.",
+          "Contattare il Customer Support Cosori."
+        ]
+      },
+      {
+        "code": "E2",
+        "description": "Display mostra \"E2\".",
+        "meaning": "Cortocircuito nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Contattare l’assistenza."
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Display mostra \"E3\".",
+        "meaning": "La temperatura interna è troppo alta.",
+        "suggestions": [
+          "Spegnere e scollegare.",
+          "Contattare il Customer Support per controllo della protezione termica."
+        ]
+      },
+      {
+        "code": "E4",
+        "description": "Display mostra \"E4\".",
+        "meaning": "L’air fryer è collegato a una fonte di alimentazione errata.",
+        "suggestions": [
+          "Scollegare immediatamente.",
+          "Usare solo prese 120 V, 60 Hz."
+        ]
+      }
+    ],
+    "error_note": "Nel 13-Qt Air Fryer Oven E1/E2 indicano problemi al sensore di temperatura, E3 temperatura eccessiva, E4 alimentazione errata.",
+    "generic_suggestions": [
+      "Per cibo non cotto: aumentare tempo/temperatura.",
+      "Per cibo bruciato: ridurre tempo/temperatura e verificare che gli alimenti non tocchino le resistenze.",
+      "Per cottura non uniforme: pre-riscaldare usando la funzione Preheat e non affollare i vassoi.",
+      "Per fumo bianco: normalmente dovuto a polvere iniziale o a grassi; pulire e seguire il Test Run.",
+      "Per fumo scuro: scollegare subito, attendere la dissipazione del fumo e verificare se il cibo è bruciato.",
+      "Per discrepanza fra termometro esterno e temperatura impostata: considerare la bassa sensibilità dei termometri consumer."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "Pro II Air Fryer",
+    "actual_model": "Pro II Air Fryer",
+    "pdf_url": null,
+    "pdf_type": "manual",
+    "pdf_matches_label": false,
+    "capacity_l": null,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Friggitrice ad aria Cosori Pro II Air Fryer con cestello interno ed esterno.",
+    "notable_features": [
+      "Sistema a cestello interno ed esterno.",
+      "Display digitale e programmi preimpostati.",
+      "Piastre crisper nel cestello interno."
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Display mostra \"E1\".",
+        "meaning": "Circuito aperto nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare la friggitrice.",
+          "Contattare il Customer Support Cosori."
+        ]
+      },
+      {
+        "code": "E2",
+        "description": "Display mostra \"E2\".",
+        "meaning": "Cortocircuito nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Richiedere assistenza per il sensore."
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Display mostra \"E3\".",
+        "meaning": "Protezione da surriscaldamento attivata.",
+        "suggestions": [
+          "Spegnere e scollegare.",
+          "Lasciare raffreddare completamente.",
+          "Se \"E3\" persiste, contattare il Customer Support."
+        ]
+      },
+      {
+        "code": "E4",
+        "description": "Display mostra \"E4\".",
+        "meaning": "L’air fryer è stato collegato a una presa 220–240 V.",
+        "suggestions": [
+          "Scollegare immediatamente.",
+          "Usare solo prese 120 V, 60 Hz."
+        ]
+      }
+    ],
+    "error_note": "Pro II Air Fryer segue la semantica E1–E4 (sensore e overheat + tensione errata) delle altre Cosori.",
+    "generic_suggestions": [
+      "Per cibo non cotto: ridurre quantità nel cestello interno, aumentare tempo/temperatura.",
+      "Per cottura non uniforme: scuotere o girare gli alimenti (vedi Shaking Food).",
+      "Per croccantezza: aggiungere poco olio e seguire la Cooking Guide.",
+      "Per patatine: seguire French Fries.",
+      "Se i cestelli non scorrono: controllare che l’interno non sia sovraccarico e che il cestello interno sia ben inserito in quello esterno.",
+      "Fumo bianco: pulire cestelli e interno, rimuovere olio che si accumula nel cestello esterno.",
+      "Fumo scuro: scollegare subito e verificare la causa; se non è cibo, contattare l’assistenza.",
+      "Odore di plastica: eseguire Test Run; se persiste, contattare il Customer Support."
     ]
   }
 ]
