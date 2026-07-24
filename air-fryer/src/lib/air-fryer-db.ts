@@ -1,5 +1,5 @@
 import type { AirFryerModel } from '../types/air-fryer';
-import rawDbData from '../data/air-fryer-db.updated.json';
+import rawDbData from '../data/air-fryer-db.json';
 
 // Cast and normalize the JSON data
 export const airFryerModels: AirFryerModel[] = (rawDbData as any[]).map((item, index) => {
