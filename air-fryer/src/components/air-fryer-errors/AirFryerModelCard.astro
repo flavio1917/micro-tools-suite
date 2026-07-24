@@ -1,10 +1,10 @@
 ---
-import type { AirFryerModel } from '../../../types/air-fryer';
+import type { AirFryerModel } from '../../types/air-fryer';
 import AirFryerSpecs from './AirFryerSpecs.astro';
 import ErrorCodeCard from './ErrorCodeCard.astro';
 import DocumentReference from './DocumentReference.astro';
 
-import { normalizeString } from '../../../lib/air-fryer-filters';
+import { normalizeString } from '../../lib/air-fryer-filters';
 
 export interface Props {
   model: AirFryerModel;
