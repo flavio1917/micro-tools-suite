@@ -1,0 +1,178 @@
+---
+import type { AirFryerModel } from '../../../types/air-fryer';
+import AirFryerSpecs from './AirFryerSpecs.astro';
+import ErrorCodeCard from './ErrorCodeCard.astro';
+import DocumentReference from './DocumentReference.astro';
+
+import { normalizeString } from '../../../lib/air-fryer-filters';
+
+export interface Props {
+  model: AirFryerModel;
+}
+
+const { model } = Astro.props;
+
+// Closed state logic
+const showUserLabel = model.user_label && model.user_label !== model.actual_model;
+const isDual = model.dual_zone || model.model_type === 'dual_basket';
+const hasCapacity = model.capacity_l !== null;
+const capacityText = hasCapacity ? `${model.capacity_l}L` : '';
+
+// Features logic
+const visibleFeatures = model.notable_features.slice(0, 5);
+const hiddenFeatures = model.notable_features.slice(5);
+
+// Build search text for client-side filtering
+const searchTokens = [
+  model.brand,
+  model.actual_model,
+  model.user_label,
+  ...(model.error_codes?.map(ec => ec.code) || [])
+].filter(Boolean).map(normalizeString).join(' ');
+
+---
+<article id={model.id} class="af-model-card bg-white dark:bg-[#151b2b] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow mb-6 overflow-hidden" data-brand={model.brand} data-dual={isDual ? 'true' : 'false'} data-codes={model.has_explicit_codes ? 'true' : 'false'} data-search-text={searchTokens} data-message-types={(model.error_codes?.map(ec => ec.type).filter(Boolean).join(',') || '')}>
+  
+  <details class="group">
+    <summary class="p-5 sm:p-6 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-blue-500 list-none flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      
+      {/* Left side: Identifiers */}
+      <div class="flex-1">
+        <div class="flex items-center gap-3 mb-1">
+          <span class="text-sm font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">{model.brand}</span>
+          
+          <div class="flex gap-2">
+            {isDual ? (
+              <span class="bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Dual Basket</span>
+            ) : (
+              <span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Cestello Singolo</span>
+            )}
+
+            {capacityText && (
+              <span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">{capacityText}</span>
+            )}
+          </div>
+        </div>
+        
+        <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white mb-1">
+          {model.actual_model}
+        </h2>
+        
+        {showUserLabel && (
+          <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">{model.user_label}</p>
+        )}
+      </div>
+
+      {/* Right side: Indicators and chevron */}
+      <div class="flex items-center gap-4 sm:justify-end">
+        {model.has_explicit_codes ? (
+          <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 px-3 py-1.5 rounded-full">
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            Codici nel documento
+          </span>
+        ) : (
+          <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-800 px-3 py-1.5 rounded-full">
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+            Guida problemi testuale
+          </span>
+        )}
+        
+        <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 group-open:rotate-180 transition-transform duration-300 shrink-0">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </div>
+    </summary>
+
+    {/* Content */}
+    <div class="p-5 sm:p-6 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-[#151b2b]">
+      <AirFryerSpecs model={model} />
+
+      {/* Features */}
+      {model.notable_features && model.notable_features.length > 0 && (
+        <div class="mb-8">
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-4">Caratteristiche principali</h3>
+          <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+            {visibleFeatures.map(f => (
+              <li class="flex items-start gap-2.5">
+                <span class="text-blue-500 dark:text-blue-400 font-black mt-0.5">•</span>
+                <span>{f}</span>
+              </li>
+            ))}
+          </ul>
+          
+          {hiddenFeatures.length > 0 && (
+            <details class="mt-2">
+              <summary class="text-sm font-semibold text-blue-600 dark:text-blue-400 cursor-pointer hover:underline outline-none w-max">
+                Mostra tutte le caratteristiche
+              </summary>
+              <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm sm:text-base mt-2">
+                {hiddenFeatures.map(f => (
+                   <li class="flex items-start gap-2.5">
+                    <span class="text-blue-500 dark:text-blue-400 font-black mt-0.5">•</span>
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )}
+        </div>
+      )}
+
+      {/* Error Codes */}
+      <div class="mb-8">
+        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2">Errori e messaggi documentati</h3>
+        
+        {model.error_note && (
+          <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 italic bg-slate-100 dark:bg-slate-800/50 p-3 rounded-md border-l-2 border-slate-300 dark:border-slate-600">
+            {model.error_note}
+          </p>
+        )}
+
+        {model.has_explicit_codes && model.error_codes.length > 0 ? (
+          <div class="space-y-4">
+            {model.error_codes.map(ec => (
+              <ErrorCodeCard errorCode={ec} />
+            ))}
+          </div>
+        ) : (
+          <div class="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-5">
+            <p class="text-amber-800 dark:text-amber-300 font-medium flex items-start sm:items-center gap-2">
+              <svg class="w-5 h-5 shrink-0 mt-0.5 sm:mt-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Questo documento non riporta codici display espliciti; consulta i problemi comuni e il documento.
+            </p>
+          </div>
+        )}
+      </div>
+
+      {/* Generic Suggestions */}
+      {model.generic_suggestions && model.generic_suggestions.length > 0 && (
+        <div class="mb-8 bg-blue-50/50 dark:bg-blue-900/10 rounded-xl p-5 sm:p-6 border border-blue-100 dark:border-blue-900/30">
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Suggerimenti dal documento e dalle istruzioni del modello</h3>
+          <ul class="space-y-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+             {model.generic_suggestions.map(sugg => (
+               <li class="flex items-start gap-2.5">
+                  <span class="text-blue-500 dark:text-blue-400 font-black mt-0.5">→</span>
+                  <span>{sugg}</span>
+                </li>
+             ))}
+          </ul>
+        </div>
+      )}
+
+      {/* Document Reference */}
+      <DocumentReference model={model} />
+
+    </div>
+  </details>
+</article>
+
+<style>
+  /* Remove default details marker in webkit/safari */
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

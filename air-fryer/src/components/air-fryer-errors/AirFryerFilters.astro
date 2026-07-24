@@ -1,0 +1,91 @@
+---
+export interface Props {
+  brands: string[];
+}
+
+const { brands } = Astro.props;
+---
+<form id="af-filters-form" class="bg-white dark:bg-[#151b2b] p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm mb-8 space-y-5">
+  
+  <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+    {/* Search Input */}
+    <div class="md:col-span-12">
+      <label for="af-search" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-1.5">Cerca marca, modello o codice</label>
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+          <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+        <input 
+          type="text" 
+          id="af-search" 
+          name="q"
+          placeholder="es. Philips HD9880, Cosori E3" 
+          class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-shadow font-medium"
+        />
+      </div>
+    </div>
+
+    {/* Brand Select */}
+    <div class="md:col-span-6">
+      <label for="af-brand" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-1.5">Marca</label>
+      <select 
+        id="af-brand" 
+        name="brand"
+        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-shadow font-medium appearance-none cursor-pointer bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[position:right_1rem_center] bg-[length:12px]"
+      >
+        <option value="">Tutte le marche</option>
+        {brands.map(b => (
+          <option value={b}>{b}</option>
+        ))}
+      </select>
+    </div>
+
+    {/* Message Type Select */}
+    <div class="md:col-span-6">
+      <label for="af-message" class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-1.5">Tipologia Messaggio</label>
+      <select 
+        id="af-message" 
+        name="message"
+        class="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-shadow font-medium appearance-none cursor-pointer bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2394a3b8%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[position:right_1rem_center] bg-[length:12px]"
+      >
+        <option value="all">Tutti</option>
+        <option value="error">Solo errori tecnici</option>
+        <option value="status">Messaggi di stato e promemoria</option>
+      </select>
+    </div>
+  </div>
+
+  {/* Checkboxes and Reset */}
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+    <div class="flex flex-col sm:flex-row gap-4">
+      <label class="inline-flex items-center cursor-pointer group">
+        <div class="relative flex items-center justify-center">
+          <input type="checkbox" id="af-dual" name="dual" class="sr-only peer" />
+          <div class="w-11 h-6 bg-slate-200 dark:bg-slate-700 rounded-full peer peer-focus:ring-2 peer-focus:ring-blue-500 peer-checked:bg-blue-600 transition-colors"></div>
+          <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform peer-checked:translate-x-5 shadow-sm"></div>
+        </div>
+        <span class="ml-3 text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Solo Dual Basket</span>
+      </label>
+
+      <label class="inline-flex items-center cursor-pointer group">
+        <div class="relative flex items-center justify-center">
+          <input type="checkbox" id="af-codes" name="codes" class="sr-only peer" />
+          <div class="w-11 h-6 bg-slate-200 dark:bg-slate-700 rounded-full peer peer-focus:ring-2 peer-focus:ring-blue-500 peer-checked:bg-emerald-600 transition-colors"></div>
+          <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform peer-checked:translate-x-5 shadow-sm"></div>
+        </div>
+        <span class="ml-3 text-sm font-medium text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">Solo codici espliciti</span>
+      </label>
+    </div>
+
+    <button 
+      type="button" 
+      id="af-reset-btn"
+      class="inline-flex items-center justify-center px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-bold transition-colors border border-slate-200 dark:border-slate-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-500"
+    >
+      <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+      Azzera filtri
+    </button>
+  </div>
+</form>

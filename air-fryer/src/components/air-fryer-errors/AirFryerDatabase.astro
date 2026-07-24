@@ -1,0 +1,179 @@
+---
+import type { AirFryerModel } from '../../../types/air-fryer';
+import { getBrands } from '../../../lib/air-fryer-db';
+import AirFryerFilters from './AirFryerFilters.astro';
+import AirFryerModelCard from './AirFryerModelCard.astro';
+import AirFryerEmptyState from './AirFryerEmptyState.astro';
+
+export interface Props {
+  models: AirFryerModel[];
+}
+
+const { models } = Astro.props;
+const brands = getBrands();
+const totalModels = models.length;
+
+---
+<div class="af-database-container" data-total={totalModels}>
+  <AirFryerFilters brands={brands} />
+
+  <div class="mb-6 flex items-center justify-between">
+    <h2 class="text-xl font-bold text-slate-900 dark:text-white">
+      Risultati
+    </h2>
+    <div id="af-results-count" class="text-sm font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">
+      {totalModels} modelli trovati
+    </div>
+  </div>
+
+  <AirFryerEmptyState />
+
+  <div id="af-results-container" class="space-y-6">
+    {models.map(model => (
+      <AirFryerModelCard model={model} />
+    ))}
+  </div>
+</div>
+
+<script>
+  // Import pure logic for normalization and URL handling
+  import { normalizeString, parseFiltersFromUrl, writeFiltersToUrl } from '../../../lib/air-fryer-filters';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('af-filters-form') as HTMLFormElement;
+    const searchInput = document.getElementById('af-search') as HTMLInputElement;
+    const brandSelect = document.getElementById('af-brand') as HTMLSelectElement;
+    const messageSelect = document.getElementById('af-message') as HTMLSelectElement;
+    const dualCheckbox = document.getElementById('af-dual') as HTMLInputElement;
+    const codesCheckbox = document.getElementById('af-codes') as HTMLInputElement;
+    const resetBtn = document.getElementById('af-reset-btn') as HTMLButtonElement;
+    const resetBtnEmpty = document.getElementById('af-reset-btn-empty') as HTMLButtonElement;
+    
+    const resultsContainer = document.getElementById('af-results-container');
+    const emptyState = document.getElementById('af-empty-state');
+    const countDisplay = document.getElementById('af-results-count');
+    
+    if (!form || !resultsContainer) return;
+
+    const cards = Array.from(resultsContainer.querySelectorAll('.af-model-card')) as HTMLElement[];
+
+    // Initialize UI from URL
+    const initialFilters = parseFiltersFromUrl(window.location.href);
+    if (initialFilters.q) searchInput.value = initialFilters.q;
+    if (initialFilters.brand) brandSelect.value = initialFilters.brand;
+    if (initialFilters.messageType) messageSelect.value = initialFilters.messageType;
+    if (initialFilters.dualBasketOnly) dualCheckbox.checked = true;
+    if (initialFilters.explicitCodesOnly) codesCheckbox.checked = true;
+
+    let debounceTimer: ReturnType<typeof setTimeout>;
+
+    function applyFilters() {
+      const filters = {
+        q: searchInput.value,
+        brand: brandSelect.value,
+        messageType: messageSelect.value,
+        dualBasketOnly: dualCheckbox.checked,
+        explicitCodesOnly: codesCheckbox.checked,
+      };
+
+      // Update URL
+      const newUrl = writeFiltersToUrl(filters, window.location.href);
+      window.history.replaceState({}, '', newUrl.toString());
+
+      // Filter DOM Elements
+      let visibleCount = 0;
+      const qNorm = normalizeString(filters.q);
+
+      cards.forEach(card => {
+        let isMatch = true;
+
+        const cardBrand = card.getAttribute('data-brand') || '';
+        const isDual = card.getAttribute('data-dual') === 'true';
+        const hasCodes = card.getAttribute('data-codes') === 'true';
+        const searchText = card.getAttribute('data-search-text') || '';
+        const messageTypes = card.getAttribute('data-message-types') || '';
+
+        // Brand filter
+        if (filters.brand && cardBrand !== filters.brand) {
+          isMatch = false;
+        }
+
+        // Dual filter
+        if (isMatch && filters.dualBasketOnly && !isDual) {
+          isMatch = false;
+        }
+
+        // Explicit codes filter
+        if (isMatch && filters.explicitCodesOnly && !hasCodes) {
+          isMatch = false;
+        }
+
+        // Search text filter
+        if (isMatch && qNorm && !searchText.includes(qNorm)) {
+          isMatch = false;
+        }
+
+        // Message type filter
+        if (isMatch && filters.messageType !== 'all') {
+          if (!messageTypes) {
+             isMatch = false;
+          } else {
+            const types = messageTypes.split(',');
+            if (filters.messageType === 'error' && !types.includes('error') && !types.includes('warning')) {
+              isMatch = false;
+            }
+            if (filters.messageType === 'status' && !types.includes('status') && !types.includes('feature_message')) {
+              isMatch = false;
+            }
+          }
+        }
+
+        if (isMatch) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Update count and empty state
+      if (countDisplay) {
+        countDisplay.textContent = `${visibleCount} modell${visibleCount === 1 ? 'o' : 'i'} trovat${visibleCount === 1 ? 'o' : 'i'}`;
+      }
+
+      if (visibleCount === 0) {
+        emptyState?.classList.remove('hidden');
+        resultsContainer.classList.add('hidden');
+      } else {
+        emptyState?.classList.add('hidden');
+        resultsContainer.classList.remove('hidden');
+      }
+    }
+
+    // Event Listeners
+    searchInput.addEventListener('input', () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(applyFilters, 300);
+    });
+
+    brandSelect.addEventListener('change', applyFilters);
+    messageSelect.addEventListener('change', applyFilters);
+    dualCheckbox.addEventListener('change', applyFilters);
+    codesCheckbox.addEventListener('change', applyFilters);
+
+    const resetFilters = () => {
+      searchInput.value = '';
+      brandSelect.value = '';
+      messageSelect.value = 'all';
+      dualCheckbox.checked = false;
+      codesCheckbox.checked = false;
+      applyFilters();
+    };
+
+    resetBtn?.addEventListener('click', resetFilters);
+    resetBtnEmpty?.addEventListener('click', resetFilters);
+
+    // Initial run
+    applyFilters();
+  });
+</script>

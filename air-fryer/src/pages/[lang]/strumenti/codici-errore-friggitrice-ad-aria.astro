@@ -1,6 +1,7 @@
 ---
 import MainLayout from '../../../layouts/MainLayout.astro';
-import Errori from '../../../components/seo-tools/errori.astro';
+import AirFryerDatabase from '../../../components/air-fryer-errors/AirFryerDatabase.astro';
+import { airFryerModels } from '../../../lib/air-fryer-db';
 import MissingModelForm from '../../../components/seo-tools/MissingModelForm.astro';
 import AffiliateSlot from '../../../components/ads/AffiliateSlot.astro';
 import ErrorFaq from '../../../components/seo-tools/ErrorFaq.astro';
@@ -76,7 +77,7 @@ const faqSchema = {
     </header>
 
     <section aria-label="Error Diagnostics Tool" class="mb-16">
-      <Errori lang={lang as 'it' | 'en' | 'es' | 'fr'} />
+      <AirFryerDatabase models={airFryerModels} />
     </section>
 
     <!-- Integrazione dei 3 componenti realizzati negli Sprint 2, 3 e 4 -->

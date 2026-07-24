@@ -1,8 +1,11 @@
+export type DiagnosticKind = 'error_code' | 'warning' | 'status' | 'feature_message' | 'symptom';
+
 export interface ErrorCode {
   code: string;
   description?: string;
   meaning?: string;
   suggestions?: string[];
+  kind?: DiagnosticKind;
 }
 
 export interface AirFryerDBItem {
@@ -53,10 +56,25 @@ export const errorsUiTranslations = {
     actionGeneric: "VERIFICA MANUALE",
     
     noExplicitCodesTitle: "Diagnostica testuale",
-    noExplicitCodesMsg: "Il documento disponibile non riporta codici display espliciti per questo modello. Puoi però consultare i problemi comuni e le verifiche consigliate.",
+    noExplicitCodesMsg: "Il manuale non documenta codici o messaggi di errore sul display.",
     noCodesAtAll: "Nessun codice documentato",
-    documentNote: "Documento di riferimento: verifica sempre il codice modello sull'etichetta.",
+    documentNote: "Verifica sempre il codice modello sull'etichetta dell'apparecchio: le procedure possono variare.",
     openManual: "Apri manuale PDF",
+    
+    // New section titles
+    sectionDisplayCodes: "Codici e avvisi del display",
+    sectionStatus: "Messaggi di funzionamento",
+    sectionFeatures: "Promemoria durante la cottura",
+    sectionSymptoms: "Problemi comuni per questo modello",
+    
+    initialStateMessage: "Seleziona una marca, cerca un codice o descrivi il problema.",
+    otherModelOption: "Altro modello {brand} / Problemi comuni",
+    
+    // New Actions
+    actionCoolDown: "LASCIA RAFFREDDARE",
+    actionAssistance: "ASSISTENZA CONSIGLIATA",
+    actionQuickCheck: "CONTROLLO RAPIDO",
+    actionManualCheck: "CONSULTA IL MANUALE"
   },
   en: {
     heroTitle: "Error Database & Reset",
@@ -86,10 +104,25 @@ export const errorsUiTranslations = {
     actionGeneric: "MANUAL VERIFICATION",
     
     noExplicitCodesTitle: "Textual diagnostics",
-    noExplicitCodesMsg: "The available document does not report explicit display codes for this model. You can consult common problems and recommended checks.",
+    noExplicitCodesMsg: "The manual does not document display error codes or messages.",
     noCodesAtAll: "No documented codes",
-    documentNote: "Reference document: always check the model code on the label.",
+    documentNote: "Always check the model code on the device label: procedures may vary.",
     openManual: "Open PDF manual",
+
+    // New section titles
+    sectionDisplayCodes: "Display codes and warnings",
+    sectionStatus: "Operating messages",
+    sectionFeatures: "Cooking reminders",
+    sectionSymptoms: "Common problems for this model",
+    
+    initialStateMessage: "Select a brand, search for a code, or describe the problem.",
+    otherModelOption: "Other {brand} model / Common problems",
+
+    // New Actions
+    actionCoolDown: "LET IT COOL DOWN",
+    actionAssistance: "SERVICE RECOMMENDED",
+    actionQuickCheck: "QUICK CHECK",
+    actionManualCheck: "CONSULT MANUAL"
   },
   es: {
     heroTitle: "Base de Datos de Errores y Reinicio",
@@ -119,10 +152,25 @@ export const errorsUiTranslations = {
     actionGeneric: "VERIFICACIÓN MANUAL",
     
     noExplicitCodesTitle: "Diagnóstico textual",
-    noExplicitCodesMsg: "El documento disponible no reporta códigos explícitos. Puede consultar problemas comunes recomendados.",
+    noExplicitCodesMsg: "El manual no documenta códigos o mensajes de error en la pantalla.",
     noCodesAtAll: "Sin códigos documentados",
-    documentNote: "Documento de referencia: revisa la etiqueta.",
+    documentNote: "Comprueba siempre el código del modelo en la etiqueta del aparato: los procedimientos pueden variar.",
     openManual: "Abrir manual PDF",
+
+    // New section titles
+    sectionDisplayCodes: "Códigos y advertencias de la pantalla",
+    sectionStatus: "Mensajes de funcionamiento",
+    sectionFeatures: "Recordatorios durante la cocción",
+    sectionSymptoms: "Problemas comunes de este modelo",
+    
+    initialStateMessage: "Seleccione una marca, busque un código o describa el problema.",
+    otherModelOption: "Otro modelo {brand} / Problemas comunes",
+
+    // New Actions
+    actionCoolDown: "DEJAR ENFRIAR",
+    actionAssistance: "ASISTENCIA RECOMENDADA",
+    actionQuickCheck: "CONTROL RÁPIDO",
+    actionManualCheck: "CONSULTAR MANUAL"
   },
   fr: {
     heroTitle: "Base de Données des Erreurs et Réinitialisation",
@@ -152,9 +200,24 @@ export const errorsUiTranslations = {
     actionGeneric: "VÉRIFICATION MANUELLE",
     
     noExplicitCodesTitle: "Diagnostic textuel",
-    noExplicitCodesMsg: "Le document ne signale pas de codes explicites. Consultez les problèmes courants.",
+    noExplicitCodesMsg: "Le manuel ne documente pas les codes ou les messages d'erreur à l'écran.",
     noCodesAtAll: "Aucun code documenté",
-    documentNote: "Document de référence: vérifiez l'étiquette.",
+    documentNote: "Vérifiez toujours le code du modèle sur l'étiquette de l'appareil : les procédures peuvent varier.",
     openManual: "Ouvrir le manuel PDF",
+
+    // New section titles
+    sectionDisplayCodes: "Codes et avertissements de l'écran",
+    sectionStatus: "Messages de fonctionnement",
+    sectionFeatures: "Rappels de cuisson",
+    sectionSymptoms: "Problèmes courants pour ce modèle",
+    
+    initialStateMessage: "Sélectionnez une marque, recherchez un code ou décrivez le problème.",
+    otherModelOption: "Autre modèle {brand} / Problèmes courants",
+
+    // New Actions
+    actionCoolDown: "LAISSER REFROIDIR",
+    actionAssistance: "ASSISTANCE RECOMMANDÉE",
+    actionQuickCheck: "CONTRÔLE RAPIDE",
+    actionManualCheck: "CONSULTER LE MANUEL"
   }
 };
