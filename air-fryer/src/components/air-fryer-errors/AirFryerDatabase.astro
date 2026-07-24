@@ -1,6 +1,6 @@
 ---
-import type { AirFryerModel } from '../../../types/air-fryer';
-import { getBrands } from '../../../lib/air-fryer-db';
+import type { AirFryerModel } from '../../types/air-fryer';
+import { getBrands } from '../../lib/air-fryer-db';
 import AirFryerFilters from './AirFryerFilters.astro';
 import AirFryerModelCard from './AirFryerModelCard.astro';
 import BrandErrorOverview from './BrandErrorOverview.astro';
@@ -68,7 +68,7 @@ const brands = getBrands();
 </div>
 
 <script>
-  import { normalizeString, parseFiltersFromUrl, writeFiltersToUrl } from '../../../lib/air-fryer-filters';
+  import { normalizeString, parseFiltersFromUrl, writeFiltersToUrl } from '../../lib/air-fryer-filters';
 
   document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('af-filters-form') as HTMLFormElement;
