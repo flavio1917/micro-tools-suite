@@ -1,0 +1,97 @@
+---
+import type { AirFryerModel } from '../../../types/air-fryer';
+import { aggregateBrandMessages, aggregateBrandSuggestions } from '../../../lib/air-fryer-brand-aggregation';
+import ErrorCodeCard from './ErrorCodeCard.astro';
+
+export interface Props {
+  brand: string;
+  brandModels: AirFryerModel[];
+  isUnlisted?: boolean;
+}
+
+const { brand, brandModels, isUnlisted = false } = Astro.props;
+
+const aggregatedMessages = aggregateBrandMessages(brandModels);
+const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
+
+---
+<div class="af-brand-overview bg-white dark:bg-[#151b2b] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 sm:p-8 mb-6">
+  
+  <header class="mb-8 border-b border-slate-100 dark:border-slate-800 pb-6">
+    {isUnlisted ? (
+      <>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4">
+          Il tuo modello <span class="text-blue-600 dark:text-blue-400">{brand}</span> non è ancora nel database
+        </h2>
+        <div class="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-400 p-4 rounded-r-lg mb-4">
+          <p class="text-amber-800 dark:text-amber-300 font-medium">
+            Puoi comunque consultare i messaggi e i problemi comuni documentati per altri modelli {brand}. 
+            <strong>Non assumere che lo stesso codice abbia identico significato sulla tua variante</strong>: verifica sempre il manuale specifico.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold rounded-lg text-sm border border-slate-200 dark:border-slate-700">
+            <svg class="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+            Cerca il codice esatto nel manuale del tuo modello
+          </span>
+          <span class="text-xs text-slate-500 dark:text-slate-400 italic">Cerca la sigla completa riportata sull'etichetta sotto o dietro l'apparecchio.</span>
+        </div>
+      </>
+    ) : (
+      <>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4">
+          Codici e messaggi documentati per friggitrici <span class="text-blue-600 dark:text-blue-400">{brand}</span>
+        </h2>
+        <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg">
+          <p class="text-blue-800 dark:text-blue-300 font-medium">
+            Il significato di un codice può cambiare in base al modello. I messaggi qui sotto sono stati trovati nei documenti dei modelli {brand} presenti nel nostro archivio: <strong>verifica sempre il manuale della tua variante</strong>.
+          </p>
+        </div>
+      </>
+    )}
+  </header>
+
+  <div class="space-y-10">
+    
+    {/* Messaggi Aggregati */}
+    <section>
+      <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+        <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        Codici display rilevati
+      </h3>
+      
+      {aggregatedMessages.length > 0 ? (
+        <div class="space-y-4">
+          {aggregatedMessages.map(msg => (
+            <ErrorCodeCard errorCode={msg} sourceModelName={msg.sourceModelName} sourceModelId={msg.sourceModelId} />
+          ))}
+        </div>
+      ) : (
+        <p class="text-slate-500 dark:text-slate-400 italic">Nessun codice di errore esplicito è documentato per i modelli {brand} attualmente nel nostro database.</p>
+      )}
+    </section>
+
+    {/* Suggerimenti Comuni del Brand */}
+    {aggregatedSuggestions.length > 0 && (
+      <section class="mt-10">
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+          <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+          Problemi comuni nei documenti {brand}
+        </h3>
+        <div class="bg-slate-50 dark:bg-slate-800/30 rounded-xl p-6 border border-slate-200 dark:border-slate-700">
+          <ul class="space-y-3 text-slate-700 dark:text-slate-300">
+            {aggregatedSuggestions.map(sugg => (
+              <li class="flex items-start gap-3">
+                <span class="text-blue-500 dark:text-blue-400 mt-1 flex-shrink-0">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                </span>
+                <span>{sugg}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )}
+
+  </div>
+</div>

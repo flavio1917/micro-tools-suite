@@ -9,14 +9,14 @@
     "capacity_l": 5.0,
     "capacity_kg_fries": 1.7,
     "dual_zone": false,
-    "notes": "Multicooker MultiFry FH1396 con vasca singola e pala mescolatrice; due vasche intercambiabili (ceramica con perno per pala, teflon senza perno) e griglia per cotture tipo grill.[page:3]",
+    "notes": "Multicooker MultiFry FH1396 con vasca singola e pala mescolatrice; due vasche intercambiabili (ceramica con perno per pala, teflon senza perno) e griglia per cotture tipo grill.",
     "notable_features": [
-      "Multicooker con pala mescolatrice automatica per cotture tipo risotto, spezzatino, padella, zuppe.[page:3]",
-      "Due vasche: J (ceramica, con perno per pala) e Z (rivestimento in teflon, per torte, pizza, grill).[page:3]",
-      "Programmi automatici: SPEZZATINO/RISOTTO, TORTA, PIZZA, PATATE, GRILL.[page:3]",
-      "Programmi semiautomatici: FORNO, AIRGRILL, PADELLA, con tempo e livello di potenza modificabili.[page:3]",
-      "Regolazione livello di potenza tramite barra luminosa e tasto dedicato; timer con display digitale.[page:3]",
-      "Ampio ricettario integrato con tabelle di cottura per patate, carne, pesce, snack e dessert.[page:3]",
+      "Multicooker con pala mescolatrice automatica per cotture tipo risotto, spezzatino, padella, zuppe.",
+      "Due vasche: J (ceramica, con perno per pala) e Z (rivestimento in teflon, per torte, pizza, grill).",
+      "Programmi automatici: SPEZZATINO/RISOTTO, TORTA, PIZZA, PATATE, GRILL.",
+      "Programmi semiautomatici: FORNO, AIRGRILL, PADELLA, con tempo e livello di potenza modificabili.",
+      "Regolazione livello di potenza tramite barra luminosa e tasto dedicato; timer con display digitale.",
+      "Ampio ricettario integrato con tabelle di cottura per patate, carne, pesce, snack e dessert.",
       "Sistema Surround Heating System con resistenza superiore + ventola e, in alcuni modelli, resistenza inferiore",
       "Pala mescolatrice automatica rimovibile per mescolare stufati, risotti, patatine senza intervento manuale",
       "Vasca in ceramica antiaderente adatta a cotture tipo padella elettrica + air fryer",
@@ -30,7 +30,7 @@
         "suggestions": [
           "Spegnere l’apparecchio, lasciarlo raffreddare.",
           "Verificare di non aver avviato la cottura a vasca vuota.",
-          "Se l’anomalia persiste, rivolgersi al centro assistenza autorizzato De’Longhi.[page:3]"
+          "Se l’anomalia persiste, rivolgersi al centro assistenza autorizzato De’Longhi."
         ]
       },
       {
@@ -40,7 +40,7 @@
         "suggestions": [
           "Spegnere e lasciare raffreddare completamente l’apparecchio.",
           "Verificare uso corretto (no cottura senza cibo).",
-          "Se il problema persiste, contattare l’assistenza.[page:3]"
+          "Se il problema persiste, contattare l’assistenza."
         ]
       },
       {
@@ -48,7 +48,7 @@
         "description": "Sul display appare \"E5\" con 7 serie di bip.",
         "meaning": "Guasto al circuito/sensore interno.",
         "suggestions": [
-          "Spegnere l’apparecchio e rivolgersi direttamente al centro assistenza.[page:3]"
+          "Spegnere l’apparecchio e rivolgersi direttamente al centro assistenza."
         ]
       },
       {
@@ -56,17 +56,17 @@
         "description": "Sul display appare \"E6\" con 7 serie di bip.",
         "meaning": "Altro guasto di natura elettronica (sensore o circuito).",
         "suggestions": [
-          "Spegnere l’apparecchio e contattare l’assistenza autorizzata.[page:3]"
+          "Spegnere l’apparecchio e contattare l’assistenza autorizzata."
         ]
       }
     ],
-    "error_note": "Il manuale FH1396 documenta EI, E3, E5, E6 con numero di bip e istruzioni; non compaiono codici E1/E2.[page:3]",
+    "error_note": "Il manuale FH1396 documenta EI, E3, E5, E6 con numero di bip e istruzioni; non compaiono codici E1/E2.",
     "generic_suggestions": [
-      "Se l’apparecchio non si scalda, può essere intervenuto il dispositivo di sicurezza termica: rivolgersi all’assistenza.[page:3]",
-      "Se la vasca è mal posizionata, l’apparecchio non funziona: reinserire correttamente la vasca.[page:3]",
-      "Se il coperchio non è ben chiuso, l’apparecchio non parte: chiudere fino allo scatto.[page:3]",
-      "Non usare la macchina senza cibo in vasca per evitare allarmi EI/E3 e possibili danni.[page:3]",
-      "Usare sempre la vasca e la pala/griglia indicata per il programma (Patate, Grill, Torta, ecc.) per avere cotture uniformi.[page:3]",
+      "Se l’apparecchio non si scalda, può essere intervenuto il dispositivo di sicurezza termica: rivolgersi all’assistenza.",
+      "Se la vasca è mal posizionata, l’apparecchio non funziona: reinserire correttamente la vasca.",
+      "Se il coperchio non è ben chiuso, l’apparecchio non parte: chiudere fino allo scatto.",
+      "Non usare la macchina senza cibo in vasca per evitare allarmi EI/E3 e possibili danni.",
+      "Usare sempre la vasca e la pala/griglia indicata per il programma (Patate, Grill, Torta, ecc.) per avere cotture uniformi.",
       "Usare la pala mescolatrice solo per preparazioni adatte (patatine, stufati, risotti) e rimuoverla per alimenti delicati.",
       "Pulire la vasca in ceramica con spugne non abrasive per preservare il rivestimento.",
       "Non superare il livello MAX di ingredienti per evitare traboccamenti e cotture non uniformi."
@@ -82,14 +82,14 @@
     "capacity_l": 9.0,
     "capacity_kg_fries": 2.0,
     "dual_zone": true,
-    "notes": "Friggitrice ad aria dietetica con cestello diviso in due comparti indipendenti (4,5 L ciascuno, 9 L totali) e funzioni di sincronizzazione dei tempi.[page:2]",
+    "notes": "Friggitrice ad aria dietetica con cestello diviso in due comparti indipendenti (4,5 L ciascuno, 9 L totali) e funzioni di sincronizzazione dei tempi.",
     "notable_features": [
-      "Dual-basket: due comparti separati da una piastra metallica, gestibili con tempi e temperature indipendenti.[page:2]",
-      "Funzione SYNC/HOLD per sincronizzare tempi diversi; il comparto più veloce entra in standby (Hold) finché l’altro completa la cottura.[page:2]",
-      "Funzione L=R per copiare impostazioni da un comparto all’altro (stessa ricetta su entrambi).[page:2]",
-      "Range temperatura circa 80–200 °C, timer 0–60 min, programma DEHYDRATE a 60 °C per 8 ore.[page:2]",
-      "6 programmi preimpostati: patatine surgelate, ali di pollo, pesce, dessert, verdure, disidratazione.[page:2]",
-      "Preheat e funzione di riscaldamento per avanzati; ventola che continua dopo la cottura per raffreddare (stato \"Cool\").[page:2]",
+      "Dual-basket: due comparti separati da una piastra metallica, gestibili con tempi e temperature indipendenti.",
+      "Funzione SYNC/HOLD per sincronizzare tempi diversi; il comparto più veloce entra in standby (Hold) finché l’altro completa la cottura.",
+      "Funzione L=R per copiare impostazioni da un comparto all’altro (stessa ricetta su entrambi).",
+      "Range temperatura circa 80–200 °C, timer 0–60 min, programma DEHYDRATE a 60 °C per 8 ore.",
+      "6 programmi preimpostati: patatine surgelate, ali di pollo, pesce, dessert, verdure, disidratazione.",
+      "Preheat e funzione di riscaldamento per avanzati; ventola che continua dopo la cottura per raffreddare (stato \"Cool\").",
       "Dual‑basket: due comparti da 4,5 L (totale 9 L) con controlli indipendenti",
       "Potenza 2850 W",
       "Air fryer senza olio con tecnologia di convezione forzata",
@@ -102,7 +102,7 @@
         "meaning": "Fase di raffreddamento, ventola ancora in funzione.",
         "suggestions": [
           "Lasciare l’apparecchio completare il raffreddamento finché il display passa a \"End\".",
-          "Non spegnere forzatamente durante \"Cool\" se non necessario.[page:2]"
+          "Non spegnere forzatamente durante \"Cool\" se non necessario."
         ]
       },
       {
@@ -111,7 +111,7 @@
         "meaning": "Fine ciclo di cottura o raffreddamento.",
         "suggestions": [
           "Estrarre i cestelli con attenzione al vapore/aria calda.",
-          "Se il cibo non è sufficientemente cotto, reimpostare tempo/temperatura o un nuovo programma.[page:2]"
+          "Se il cibo non è sufficientemente cotto, reimpostare tempo/temperatura o un nuovo programma."
         ]
       },
       {
@@ -120,7 +120,7 @@
         "meaning": "Il comparto con tempo più breve è in pausa finché l’altro completa la cottura per sincronizzare le fine.",
         "suggestions": [
           "Non rimuovere il cestello durante \"Hold\" per mantenere la sincronizzazione.",
-          "Attendere che entrambi i comparti completino, oppure annullare la sync se si vuole sbloccare il comparto.[page:2]"
+          "Attendere che entrambi i comparti completino, oppure annullare la sync se si vuole sbloccare il comparto."
         ]
       },
       {
@@ -129,17 +129,17 @@
         "meaning": "Segnale che il cestello è fuori sede.",
         "suggestions": [
           "Reinserire il cestello correttamente entro il tempo indicato (90 s / pochi minuti) per riprendere la cottura.",
-          "Se il cestello non rientra, verificare che non sia sovraccarico o ostacolato dai cibi.[page:2]"
+          "Se il cestello non rientra, verificare che non sia sovraccarico o ostacolato dai cibi."
         ]
       }
     ],
-    "error_note": "Il manuale non riporta codici E1/E2 numerici, ma solo stati/messaggi funzionali (Cool, End, Hold, Out) e indicazioni su fumo nero, cestello fuori sede, ecc.[page:2]",
+    "error_note": "Il manuale non riporta codici E1/E2 numerici, ma solo stati/messaggi funzionali (Cool, End, Hold, Out) e indicazioni su fumo nero, cestello fuori sede, ecc.",
     "generic_suggestions": [
-      "Non riempire oltre l’altezza consigliata (circa 4 cm di cibo) per favorire la circolazione dell’aria.[page:2]",
-      "Per patatine e snack piccoli, scuotere/agitarle durante la cottura per un risultato uniforme.[page:2]",
+      "Non riempire oltre l’altezza consigliata (circa 4 cm di cibo) per favorire la circolazione dell’aria.",
+      "Per patatine e snack piccoli, scuotere/agitarle durante la cottura per un risultato uniforme.",
       "Per maggiore croccantezza, aggiungere una piccola quantità di olio a patate fresche o surgelate.",
       "Evitare cibi troppo grassi (es. salsicce) che generano molto fumo bianco; in tal caso pulire subito cestello e griglie.",
-      "Se compare fumo nero, scollegare immediatamente l’apparecchio, attendere che il fumo si disperda e verificare se il cibo è bruciato; se non è dovuto al cibo, contattare l’assistenza.[page:2]",
+      "Se compare fumo nero, scollegare immediatamente l’apparecchio, attendere che il fumo si disperda e verificare se il cibo è bruciato; se non è dovuto al cibo, contattare l’assistenza.",
       "Non riempire i cestelli oltre il livello massimo e mantenere uno strato uniforme per una cottura omogenea.",
       "Se il cibo è poco cotto: aumentare tempo/temperatura e scuotere/mescolare a metà cottura.",
       "Assicurarsi che il cestello sia inserito fino allo scatto per permettere il funzionamento del sistema di sicurezza."
@@ -155,13 +155,13 @@
     "capacity_l": 6.4,
     "capacity_kg_fries": null,
     "dual_zone": false,
-    "notes": "Manuale utente completo per Cosori Dual Blaze 6.8-Quart (CAF-P583S-KUS) con doppia resistenza sopra/sotto e integrazione VeSync.[page:1]",
+    "notes": "Manuale utente completo per Cosori Dual Blaze 6.8-Quart (CAF-P583S-KUS) con doppia resistenza sopra/sotto e integrazione VeSync.",
     "notable_features": [
-      "Capacità 6,8 quart / 6,4 L (4–6 persone), singolo cestello con piastra crisp.[page:1]",
-      "Tecnologia 360° Thermo IQ™ con resistenze superiore e inferiore (Dual Blaze) per cotture senza ribaltare.[page:1]",
-      "12 funzioni: Air Fry, Fries, Frozen, Chicken, Steak, Seafood, Veggies, Roast, Bake, Broil, Reheat, Keep Warm, con tempi/temperature di default.[page:1]",
-      "App VeSync per ricette smart, monitoraggio, preset personalizzati e integrazione Alexa/Google.[page:1]",
-      "Funzioni aggiuntive: pausa, ripresa automatica dopo estrazione cestello, cambio unità °F/°C, autospegnimento e protezione surriscaldamento.[page:1]",
+      "Capacità 6,8 quart / 6,4 L (4–6 persone), singolo cestello con piastra crisp.",
+      "Tecnologia 360° Thermo IQ™ con resistenze superiore e inferiore (Dual Blaze) per cotture senza ribaltare.",
+      "12 funzioni: Air Fry, Fries, Frozen, Chicken, Steak, Seafood, Veggies, Roast, Bake, Broil, Reheat, Keep Warm, con tempi/temperature di default.",
+      "App VeSync per ricette smart, monitoraggio, preset personalizzati e integrazione Alexa/Google.",
+      "Funzioni aggiuntive: pausa, ripresa automatica dopo estrazione cestello, cambio unità °F/°C, autospegnimento e protezione surriscaldamento.",
       "Temperatura 80–205 °C, tempo 1–60 minuti",
       "Crisper plate in alluminio con rivestimento antiaderente, cestello lavabile in lavastoviglie"
     ],
@@ -172,7 +172,7 @@
         "meaning": "Circuito aperto nel sensore di temperatura.",
         "suggestions": [
           "Spegnere e scollegare l’air fryer.",
-          "Contattare il Customer Support Cosori per verifica/sostituzione.[page:1]"
+          "Contattare il Customer Support Cosori per verifica/sostituzione."
         ]
       },
       {
@@ -181,7 +181,7 @@
         "meaning": "Cortocircuito nel sensore di temperatura.",
         "suggestions": [
           "Spegnere e scollegare l’apparecchio.",
-          "Non utilizzare finché non è stato verificato dall’assistenza Cosori.[page:1]"
+          "Non utilizzare finché non è stato verificato dall’assistenza Cosori."
         ]
       },
       {
@@ -190,7 +190,7 @@
         "meaning": "Protezione surriscaldamento attivata.",
         "suggestions": [
           "Spegnere, scollegare e lasciare raffreddare completamente.",
-          "Se \"E3\" persiste, contattare il supporto.[page:1]"
+          "Se \"E3\" persiste, contattare il supporto."
         ]
       },
       {
@@ -199,18 +199,18 @@
         "meaning": "L’air fryer è stato collegato a presa 220–240 V anziché 120 V.",
         "suggestions": [
           "Spegnere e scollegare immediatamente.",
-          "Usare solo su prese 120 V, 60 Hz come da specifiche.[page:1]"
+          "Usare solo su prese 120 V, 60 Hz come da specifiche."
         ]
       }
     ],
-    "error_note": "La tabella di troubleshooting del manuale Dual Blaze documenta esplicitamente E1–E4 con cause (sensore, overheat, tensione) e indica sempre di contattare il supporto in caso di persistenza.[page:1]",
+    "error_note": "La tabella di troubleshooting del manuale Dual Blaze documenta esplicitamente E1–E4 con cause (sensore, overheat, tensione) e indica sempre di contattare il supporto in caso di persistenza.",
     "generic_suggestions": [
-      "Se l’air fryer non si accende: verificare che sia collegato e che il cestello sia inserito correttamente.[page:1]",
+      "Se l’air fryer non si accende: verificare che sia collegato e che il cestello sia inserito correttamente.",
       "Se il cibo non è cotto: ridurre la quantità nel cestello, aumentare tempo e/o temperatura.",
-      "Per maggiore croccantezza: spruzzare o spennellare fino a 2 cucchiai di olio; gli spray sono raccomandati per distribuzione uniforme.[page:1]",
-      "Per patatine da crude: ammollo 15 minuti in acqua per rimuovere l’amido, asciugare bene, tagliare in bastoncini sottili (circa 0,6 × 7,6 cm) e usare poco olio.[page:1]",
-      "Fumo bianco: tipicamente dovuto al grasso che si raccoglie sotto la piastra; è normale, ma si consiglia di svuotare l’oil dopo cotture molto grasse per ridurre fumo.[page:1]",
-      "Fumo nero: scollegare subito, attendere che il fumo si disperda; se la causa non è cibo bruciato, contattare il supporto Cosori.[page:1]",
+      "Per maggiore croccantezza: spruzzare o spennellare fino a 2 cucchiai di olio; gli spray sono raccomandati per distribuzione uniforme.",
+      "Per patatine da crude: ammollo 15 minuti in acqua per rimuovere l’amido, asciugare bene, tagliare in bastoncini sottili (circa 0,6 × 7,6 cm) e usare poco olio.",
+      "Fumo bianco: tipicamente dovuto al grasso che si raccoglie sotto la piastra; è normale, ma si consiglia di svuotare l’oil dopo cotture molto grasse per ridurre fumo.",
+      "Fumo nero: scollegare subito, attendere che il fumo si disperda; se la causa non è cibo bruciato, contattare il supporto Cosori.",
       "Non riempire eccessivamente il cestello per evitare contatto diretto con le resistenze e rischio di incendio.",
       "Pulire regolarmente crisper plate e cestello, evitando utensili metallici e spugne abrasive."
     ]
@@ -307,179 +307,6 @@
       "Pulire cestello, divisore e piastra dopo ogni uso per ridurre fumo e odori.",
       "Seguire le distanze di sicurezza dai mobili e non ostruire le prese d’aria posteriori/superiori.",
       "Per risultati uniformi, distribuire gli alimenti su un singolo strato e scuotere/mescolare a metà cottura."
-    ]
-  },
-  {
-    "brand": "Ariete",
-    "user_label": "4618 Airy Fryer XXL (Manuale ufficiale)",
-    "actual_model": "4618 Airy Fryer XXL",
-    "pdf_url": "https://www.ariete.store/media/docs/product/6195102010-Air-Fryer-4618-AR0.cleaned-ac916fedf2cdbc27865ef7cbaba1111c.pdf",
-    "pdf_type": "manual",
-    "pdf_matches_label": true,
-    "capacity_l": 5.5,
-    "capacity_kg_fries": 2.0,
-    "dual_zone": false,
-    "notes": "Manuale generico e ricettario per la 4618 Airy Fryer XXL unificati; comprende indicazioni d'uso, pulizia, programmi preimpostati e ricette.",
-    "notable_features": [
-      "Friggitrice ad aria a singolo contenitore/cestello",
-      "Display con tempo e temperatura regolabili (1–60 min, 80–200 °C a step di 5 °C)",
-      "Programmi preimpostati per patatine surgelate, patatine fresche, crostacei, dolci, pollo, carne rossa, pesce",
-      "Funzione autospegnimento: a fine timer la friggitrice si spegne e può essere riavviata per qualche minuto aggiuntivo",
-      "Cestello e contenitore antiaderenti, lavabili in lavastoviglie",
-      "Possibilità di preriscaldare vuota per 3–5 minuti prima della cottura",
-      "Primo utilizzo: leggero odore/fumo dovuti a lubrificazione iniziale, indicati come fenomeno normale",
-      "Indicazione di consumo in standby (0,4 W)",
-      "Ricette calibrate per 5–7 persone (es. 2 kg di patatine surgelate/fresche, 1,2 kg di crocchette, 600 g gamberi)"
-    ],
-    "error_codes": [],
-    "error_note": "Nel manuale 4618 non sono presenti codici o scritte di errore specifiche (E1, Pot, ecc.); la guida problemi è testuale.",
-    "generic_suggestions": [
-      "Se l’apparecchio non parte: verificare plug, messa a terra, timer impostato e inserimento corretto del contenitore.",
-      "Non riempire il contenitore con olio e non sovraccaricare il cestello per evitare cotture non uniformi e difficoltà di inserimento.",
-      "Per patatine fresche: lavare, asciugare bene, rimuovere l’amido, tagliare in bastoncini omogenei e aggiungere poco olio per croccantezza.",
-      "In caso di fumo bianco: tipicamente dovuto a ingredienti molto grassi o residui di grasso nel contenitore; pulire bene dopo ogni uso.",
-      "Per snack poco croccanti: usare snack adatti alla cottura in forno e spennellarli leggermente con olio prima della cottura.",
-      "Se il contenitore non è inserito correttamente, l’apparecchio non si avvia: reinserire fino allo scatto.",
-      "Per usura del rivestimento antiaderente: segni/opacità sono considerati normali e non influiscono sulla cottura.",
-      "Per patatine surgelate: togliere dal freezer 20 minuti prima, asciugare bene e rimuovere il ghiaccio prima di condire con olio."
-    ]
-  },
-  {
-    "brand": "Ariete",
-    "user_label": "4623 Dual (Manuale)",
-    "actual_model": "4623 Air Fryer Dual",
-    "pdf_url": "https://www.ariete.store/media/docs/product/booklet-4623.pdf",
-    "pdf_type": "manual",
-    "pdf_matches_label": true,
-    "capacity_l": 8.0,
-    "capacity_kg_fries": null,
-    "dual_zone": true,
-    "notes": "Manuale per la friggitrice ad aria 4623 con due cestelli; display touch con programmi preimpostati e funzioni SYNCH FINISH / DUAL COOK.",
-    "notable_features": [
-      "Due cestelli indipendenti (dual basket) con controllo separato per sinistra e destra",
-      "Funzione SYNCH FINISH per sincronizzare cotture con tempi diversi, in modo che finiscano insieme",
-      "Funzione DUAL COOK per applicare le stesse impostazioni da un cestello all’altro e gestire grandi quantità come un’unica zona",
-      "Funzione SHAKE con segnale acustico per ricordare di mescolare/scuotere gli alimenti",
-      "Programmi preimpostati per patatine fresche, patatine surgelate, pesce, pollo, carne, dolci, essiccazione",
-      "Possibilità di cottura singola (un cestello) o doppia (entrambi) con gestione separata del tempo",
-      "Cestelli e piastre antiaderenti, lavabili in lavastoviglie"
-    ],
-    "error_codes": [
-      {
-        "code": "Pot",
-        "description": "Sul display viene visualizzata la scritta \"Pot\".",
-        "meaning": "Uno o entrambi i cestelli non sono inseriti correttamente nella sede, oppure non sono completamente chiusi.",
-        "suggestions": [
-          "Estrarre i cestelli e reinserirli spingendo fino allo scatto, verificando che siano ben allineati.",
-          "Se il messaggio persiste con cestelli vuoti e correttamente inseriti, spegnere l’apparecchio e contattare l’assistenza Ariete."
-        ]
-      }
-    ],
-    "error_note": "Nel manuale 4623 sono presenti messaggi di stato come \"Pot\" (cestelli non inseriti); non sono documentati codici E1/E2 numerici.",
-    "generic_suggestions": [
-      "Usare SYNCH FINISH quando i due cestelli hanno tempi diversi ma si vuole che le pietanze siano pronte contemporaneamente.",
-      "Usare DUAL COOK per copiare tempo/temperatura dal primo cestello al secondo in caso di alimenti uguali.",
-      "Non riempire oltre il livello indicato nel cestello per non impedire il corretto inserimento e la circolazione dell’aria.",
-      "In caso di cottura non uniforme, usare la funzione SHAKE e scuotere/miscelare gli alimenti a circa 2/3 del tempo."
-    ]
-  },
-  {
-    "brand": "Ariete",
-    "user_label": "4626 Friggitrice con grill (Manuale)",
-    "actual_model": "4626 Friggitrice con grill",
-    "pdf_url": "https://www.ariete.store/media/docs/product/Book_6385101400-R1_4626-Friggitrice_con-grill_Light.cleaned-68442a6600128ffda6ee518397af9e1e.pdf",
-    "pdf_type": "manual",
-    "pdf_matches_label": true,
-    "capacity_l": 6.0,
-    "capacity_kg_fries": null,
-    "dual_zone": false,
-    "notes": "Manuale e ricettario per la 4626 unificati. Friggitrice ad aria con funzione grill e display touch.",
-    "notable_features": [
-      "Friggitrice ad aria con modalità AIR FRY e modalità GRILL integrate",
-      "Touch screen con programmi preimpostati per patatine fresche, pesce, pollo, pizza e dolci",
-      "Funzione grill per grigliare carne, pesce e verdure con piastra dedicata",
-      "Regolazione manuale tempo/temperatura tramite tasti +/-",
-      "Autospegnimento a fine cottura e indicazione luminosa di funzionamento",
-      "Cestello e piastra grill antiaderenti, lavabili",
-      "Consumo in modalità off: 0,0 W (indicazione nel manuale)",
-      "Ricette calibrate per la funzione aria calda e grill (carne, pesce, verdure, dolci)"
-    ],
-    "error_codes": [],
-    "error_note": "Nel testo disponibile non compaiono codici di errore o messaggi tipo \"Pot\"; la guida problemi è basata su cause (presa, timer, quantità, ecc.).",
-    "generic_suggestions": [
-      "Usare la modalità grill solo con la piastra inserita correttamente e con alimenti adatti.",
-      "Se l’apparecchio non si accende: controllare spina, presa, timer e l’inserimento del cestello.",
-      "Per evitare bruciature, non superare tempi/temperature consigliati e controllare a metà cottura.",
-      "Pulire regolarmente la piastra grill e il cestello per evitare fumo da residui bruciati.",
-      "Non superare le grammature indicate nelle ricette per evitare cotture non uniformi."
-    ]
-  },
-  {
-    "brand": "Ariete",
-    "user_label": "4629 Air Fryer Oven",
-    "actual_model": "4629 Airfryer + Oven",
-    "pdf_url": "https://www.ariete.store/media/docs/product/6195105300-Air-Fryer-Oven-4629-AR0-46414bb8163ca612151f37977bcc488c.pdf",
-    "pdf_type": "manual",
-    "pdf_matches_label": true,
-    "capacity_l": 11.0,
-    "capacity_kg_fries": null,
-    "dual_zone": false,
-    "notes": "Manuale per 4629, Airfryer + Oven: camera unica con sportello, griglia, teglia, cestello rotante e girarrosto.",
-    "notable_features": [
-      "Air fryer + forno con camera unica e sportello frontale",
-      "Accessori: griglia, teglia, drip pan, cestello rotante, girarrosto con forchetta, vassoio raccolta briciole",
-      "Programmi preimpostati: PREHEAT, AIRFRY, BAKE, TOAST, ROAST, ROTIS, CAKE, BAGEL, PIZZA, BROIL, DEFROST, PROOF, DEHYDRATE, SLOW COOK, KEEP WARM",
-      "Funzione SHAKE: promemoria per scuotere/miscelare gli alimenti con messaggio sul display e beep",
-      "Funzione autospegnimento e memorizzazione parametri dei programmi",
-      "Timer fino a molte ore (per DEHYDRATE, fino a 24–36 h in base al tipo di alimento)",
-      "Indicazioni dettagliate di tempi e temperature per patatine, carne, pollo, dolci, essiccazione"
-    ],
-    "error_codes": [
-      {
-        "code": "SHAKE",
-        "description": "Sul display compare la scritta \"SHAKE\" accompagnata da segnale acustico durante la cottura.",
-        "meaning": "Promemoria di scuotere o mescolare gli alimenti per ottenere una cottura uniforme.",
-        "suggestions": [
-          "Aprire lo sportello con attenzione, estrarre il cestello o la teglia usando guanti o manici isolanti.",
-          "Scuotere o mescolare gli alimenti e reinserire il cestello/teglia.",
-          "Chiudere lo sportello e lasciare proseguire il programma; il messaggio e il beep cessano dopo l’interazione."
-        ]
-      }
-    ],
-    "error_note": "Il manuale non presenta codici di errore tipo E1/E2; l’unico messaggio esplicito documentato è \"SHAKE\" come promemoria di interazione.",
-    "generic_suggestions": [
-      "Non sovraccaricare cestello o teglia; distribuire gli alimenti in uno strato per sfruttare al meglio AIRFRY.",
-      "Per patatine croccanti: preriscaldare, usare poco olio, scuotere a metà cottura e rispettare le grammature indicate.",
-      "In caso di fumo bianco: dovuto a grassi/oli nel drip pan o su accessori; svuotare e pulire bene prima di nuove cotture.",
-      "Usare le tabelle DEHYDRATE per erbe, frutta e verdura, rispettando temperature basse e tempi lunghi."
-    ]
-  },
-  {
-    "brand": "Ariete",
-    "user_label": "4635 Air Fryer Grill",
-    "actual_model": "4635 Air Fryer Grill",
-    "pdf_url": "https://www.ariete.store/media/docs/product/6385100600-Air-Fryer-4635-AR0.cleaned-d61513fb90fd4a5b389792f4d0aac09b.pdf",
-    "pdf_type": "manual",
-    "pdf_matches_label": true,
-    "capacity_l": 8.0,
-    "capacity_kg_fries": null,
-    "dual_zone": false,
-    "notes": "Manuale 4635 Air Fryer Grill; apparecchio con modalità AIR FRY e modalità GRILL.",
-    "notable_features": [
-      "Friggitrice ad aria con funzione grill e accessori dedicati (sportello, griglia, piastra, cestello, ecc.)",
-      "Programmi preimpostati su display touch per AIR FRY e GRILL (patatine, carne, pesce, pizza, dolci, ecc.)",
-      "Avvertenze di sicurezza dettagliate su distanze dai mobili (15 cm sui lati, ecc.)",
-      "Possibilità di regolare tempo (±1 min) e temperatura (±5 °C) con feedback acustico (beep)",
-      "Modalità grill con gestione separata di tempo e potenza, indicata nelle figure",
-      "Consumo energetico in modalità off ~0,3 W"
-    ],
-    "error_codes": [],
-    "error_note": "Nel testo leggibile non è presente una sezione dedicata a codici di errore o messaggi tipo \"Pot\"; sono visibili indicazioni a display (come beep, cambi di temperatura).",
-    "generic_suggestions": [
-      "Seguire le distanze minime dai mobili e non coprire le prese d’aria per evitare surriscaldamenti.",
-      "Usare la modalità AIR FRY per fritti e la modalità GRILL per carne/pesce, rispettando accessori e livelli indicati.",
-      "Agitare o girare gli alimenti secondo i beep/messaggi guida per ottenere cottura uniforme.",
-      "Pulire regolarmente gli accessori e non usare utensili abrasivi sul rivestimento."
     ]
   },
   {
@@ -1231,6 +1058,146 @@
       "Se il cibo non cuoce: assicurarsi che il pan sia completamente inserito e adattare tempo/temperatura.",
       "Per cibi troppo cotti: ridurre tempo o temperatura e controllare a metà cottura.",
       "Non usare utensili metallici nel cestello per non danneggiare il rivestimento."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "Dual Blaze® Smart Air Fryer",
+    "actual_model": "Dual Blaze Smart Air Fryer",
+    "pdf_url": null,
+    "pdf_type": "manual",
+    "pdf_matches_label": false,
+    "capacity_l": null,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Friggitrice ad aria Cosori Dual Blaze Smart Air Fryer a singolo cestello con doppio elemento riscaldante e controllo digitale.",
+    "notable_features": [
+      "Air fryer a doppio elemento riscaldante per cotture più uniformi.",
+      "Controllo digitale con programmi preimpostati e timer regolabile.",
+      "Cestello con piastra crisper rimovibile."
+    ],
+    "error_codes": [
+      {
+        "code": "E1",
+        "description": "Display mostra \"E1\".",
+        "meaning": "Circuito aperto nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare la friggitrice ad aria.",
+          "Contattare il Customer Support Cosori per verifica o riparazione del sensore di temperatura."
+        ]
+      },
+      {
+        "code": "E2",
+        "description": "Display mostra \"E2\".",
+        "meaning": "Cortocircuito nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Non utilizzarlo finché non è stato controllato dal servizio clienti Cosori."
+        ]
+      },
+      {
+        "code": "E3",
+        "description": "Display mostra \"E3\".",
+        "meaning": "La protezione da surriscaldamento si è attivata.",
+        "suggestions": [
+          "Spegnere e scollegare la friggitrice e lasciarla raffreddare completamente.",
+          "Se \"E3\" ricompare dopo il raffreddamento, contattare il Customer Support."
+        ]
+      },
+      {
+        "code": "E4",
+        "description": "Display mostra \"E4\".",
+        "meaning": "L’apparecchio è stato collegato a una presa 220–240 V invece di 120 V.",
+        "suggestions": [
+          "Spegnere e scollegare immediatamente.",
+          "Usare solo prese 120 V, 60 Hz come indicato dal produttore."
+        ]
+      }
+    ],
+    "error_note": "Tabella problematiche Dual Blaze Smart Air Fryer: E1/E2 per circuito aperto/corto del sensore di temperatura, E3 per overheat protection, E4 per tensione di rete errata.",
+    "generic_suggestions": [
+      "Se la friggitrice non si accende: verificare che sia collegata e che il cestello sia inserito completamente.",
+      "Se il cibo non è completamente cotto: ridurre la quantità nel cestello, aumentare tempo o temperatura.",
+      "Per maggiore croccantezza: spruzzare o spennellare una piccola quantità di olio sugli alimenti.",
+      "Per patatine: seguire le indicazioni specifiche del manuale alla voce French Fries.",
+      "Se il cestello non scorre correttamente: assicurarsi che non sia sovraccarico.",
+      "Fumo o vapore bianco: è normale, ma va pulito il cestello e l’interno, soprattutto in presenza di cibi molto grassi.",
+      "Fumo scuro: scollegare subito, verificare se il cibo è bruciato; se non è cibo, contattare l’assistenza.",
+      "Odore di plastica: effettuare un Test Run come da manuale; se persiste, contattare il Customer Support."
+    ]
+  },
+  {
+    "brand": "Cosori",
+    "user_label": "Iconic™ Smart Air Fryer",
+    "actual_model": "Iconic Smart Air Fryer",
+    "pdf_url": null,
+    "pdf_type": "manual",
+    "pdf_matches_label": false,
+    "capacity_l": null,
+    "capacity_kg_fries": null,
+    "dual_zone": false,
+    "notes": "Friggitrice ad aria Cosori Iconic Smart Air Fryer con controllo digitale e funzioni smart.",
+    "notable_features": [
+      "Air fryer smart con controllo da pannello digitale.",
+      "Cestello antiaderente per cotture con poco olio.",
+      "Programmi preimpostati per diversi tipi di alimenti."
+    ],
+    "error_codes": [
+      {
+        "code": "E01",
+        "description": "Display mostra \"E01\".",
+        "meaning": "Circuito aperto nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’air fryer.",
+          "Contattare il Customer Support Cosori."
+        ]
+      },
+      {
+        "code": "E02",
+        "description": "Display mostra \"E02\".",
+        "meaning": "Cortocircuito nel monitor di temperatura.",
+        "suggestions": [
+          "Spegnere e scollegare l’apparecchio.",
+          "Contattare l’assistenza per verifica del sensore."
+        ]
+      },
+      {
+        "code": "E03",
+        "description": "Display mostra \"E03\".",
+        "meaning": "La protezione da surriscaldamento si è attivata.",
+        "suggestions": [
+          "Spegnere, scollegare e lasciare raffreddare completamente.",
+          "Se \"E03\" persiste dopo il raffreddamento, contattare il Customer Support."
+        ]
+      },
+      {
+        "code": "E04",
+        "description": "Display mostra \"E04\".",
+        "meaning": "L’air fryer è stato collegato a una presa 220–240 V.",
+        "suggestions": [
+          "Spegnere e scollegare immediatamente.",
+          "Usare solo prese 120 V, 60 Hz."
+        ]
+      },
+      {
+        "code": "E12",
+        "description": "Display mostra \"E12\".",
+        "meaning": "Guasto al motore in corrente continua.",
+        "suggestions": [
+          "Non utilizzare l’apparecchio.",
+          "Contattare il Customer Support per diagnosi e sostituzione del motore."
+        ]
+      }
+    ],
+    "error_note": "Iconic Smart Air Fryer estende la famiglia di codici E01–E04 (sensore temperatura e sovratemperatura) con E12 per guasto del motore DC.",
+    "generic_suggestions": [
+      "Se l’air fryer non si accende: controllare alimentazione e inserimento del cestello.",
+      "Se il cibo non è cotto: ridurre la quantità, aumentare tempo o temperatura.",
+      "Per croccantezza: aggiungere poco olio e seguire la sezione Cooking Tips.",
+      "Per patatine: seguire le istruzioni dedicate nel manuale.",
+      "Per fumo bianco: pulire cestello e interno, rimuovere grasso accumulato.",
+      "Per fumo scuro: scollegare subito, attendere che il fumo si disperda e controllare se il cibo è bruciato; se non è cibo, contattare l’assistenza.",
+      "Per odore di plastica: effettuare Test Run; se persiste, contattare il Customer Support."
     ]
   }
 ]

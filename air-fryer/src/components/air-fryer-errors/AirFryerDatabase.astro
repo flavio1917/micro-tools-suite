@@ -1,9 +1,10 @@
 ---
-import type { AirFryerModel } from '../../types/air-fryer';
-import { getBrands } from '../../lib/air-fryer-db';
+import type { AirFryerModel } from '../../../types/air-fryer';
+import { getBrands } from '../../../lib/air-fryer-db';
 import AirFryerFilters from './AirFryerFilters.astro';
 import AirFryerModelCard from './AirFryerModelCard.astro';
-import AirFryerEmptyState from './AirFryerEmptyState.astro';
+import BrandErrorOverview from './BrandErrorOverview.astro';
+import GenericAirFryerGuidance from './GenericAirFryerGuidance.astro';
 
 export interface Props {
   models: AirFryerModel[];
@@ -11,169 +12,228 @@ export interface Props {
 
 const { models } = Astro.props;
 const brands = getBrands();
-const totalModels = models.length;
 
 ---
-<div class="af-database-container" data-total={totalModels}>
-  <AirFryerFilters brands={brands} />
+<div class="af-database-container" aria-live="polite">
+  <AirFryerFilters brands={brands} models={models} />
 
-  <div class="mb-6 flex items-center justify-between">
-    <h2 class="text-xl font-bold text-slate-900 dark:text-white">
-      Risultati
-    </h2>
-    <div id="af-results-count" class="text-sm font-medium text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">
-      {totalModels} modelli trovati
-    </div>
+  {/* Dynamic Status Message */}
+  <div id="af-status-message" class="mb-8 text-center p-6 sm:p-8 bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300">
+    <p class="text-lg font-medium text-slate-700 dark:text-slate-300" id="af-status-text">
+      Scegli una marca per vedere i modelli disponibili oppure seleziona 'Altro' per la guida generica.
+    </p>
   </div>
 
-  <AirFryerEmptyState />
+  <div id="af-results-container" class="hidden space-y-6">
+    
+    {/* State A: Specific Models */}
+    <div id="state-a" class="hidden">
+      {models.map(model => (
+        <div class="af-model-view hidden" data-model-id={model.id}>
+          <AirFryerModelCard model={model} />
+        </div>
+      ))}
+    </div>
 
-  <div id="af-results-container" class="space-y-6">
-    {models.map(model => (
-      <AirFryerModelCard model={model} />
-    ))}
+    {/* State B: Brand Overview (Marca selected, No model) */}
+    <div id="state-b" class="hidden">
+      {brands.map(brand => {
+        const brandModels = models.filter(m => m.brand === brand);
+        return (
+          <div class="af-brand-view hidden" data-brand={brand}>
+            <BrandErrorOverview brand={brand} brandModels={brandModels} isUnlisted={false} />
+          </div>
+        );
+      })}
+    </div>
+
+    {/* State C: Brand Overview Unlisted (Marca selected, Model unlisted) */}
+    <div id="state-c" class="hidden">
+      {brands.map(brand => {
+        const brandModels = models.filter(m => m.brand === brand);
+        return (
+          <div class="af-brand-unlisted-view hidden" data-brand={brand}>
+            <BrandErrorOverview brand={brand} brandModels={brandModels} isUnlisted={true} />
+          </div>
+        );
+      })}
+    </div>
+
+    {/* State D: Generic Guidance */}
+    <div id="state-d" class="hidden">
+      <GenericAirFryerGuidance />
+    </div>
+
   </div>
 </div>
 
 <script>
-  // Import pure logic for normalization and URL handling
-  import { normalizeString, parseFiltersFromUrl, writeFiltersToUrl } from '../../lib/air-fryer-filters';
+  import { normalizeString, parseFiltersFromUrl, writeFiltersToUrl } from '../../../lib/air-fryer-filters';
 
   document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('af-filters-form') as HTMLFormElement;
-    const searchInput = document.getElementById('af-search') as HTMLInputElement;
     const brandSelect = document.getElementById('af-brand') as HTMLSelectElement;
-    const messageSelect = document.getElementById('af-message') as HTMLSelectElement;
-    const dualCheckbox = document.getElementById('af-dual') as HTMLInputElement;
-    const codesCheckbox = document.getElementById('af-codes') as HTMLInputElement;
-    const resetBtn = document.getElementById('af-reset-btn') as HTMLButtonElement;
-    const resetBtnEmpty = document.getElementById('af-reset-btn-empty') as HTMLButtonElement;
+    const modelSelect = document.getElementById('af-model') as HTMLSelectElement;
+    const searchInput = document.getElementById('af-search') as HTMLInputElement;
+    const unlistedOpt = document.getElementById('af-unlisted-opt') as HTMLOptionElement;
     
+    const statusMessageContainer = document.getElementById('af-status-message');
+    const statusText = document.getElementById('af-status-text');
     const resultsContainer = document.getElementById('af-results-container');
-    const emptyState = document.getElementById('af-empty-state');
-    const countDisplay = document.getElementById('af-results-count');
     
-    if (!form || !resultsContainer) return;
+    const stateA = document.getElementById('state-a');
+    const stateB = document.getElementById('state-b');
+    const stateC = document.getElementById('state-c');
+    const stateD = document.getElementById('state-d');
 
-    const cards = Array.from(resultsContainer.querySelectorAll('.af-model-card')) as HTMLElement[];
+    if (!form || !brandSelect || !modelSelect) return;
 
-    // Initialize UI from URL
-    const initialFilters = parseFiltersFromUrl(window.location.href);
-    if (initialFilters.q) searchInput.value = initialFilters.q;
-    if (initialFilters.brand) brandSelect.value = initialFilters.brand;
-    if (initialFilters.messageType) messageSelect.value = initialFilters.messageType;
-    if (initialFilters.dualBasketOnly) dualCheckbox.checked = true;
-    if (initialFilters.explicitCodesOnly) codesCheckbox.checked = true;
+    // Helper: Hide all views
+    function hideAllViews() {
+      const allViews = document.querySelectorAll('.af-model-view, .af-brand-view, .af-brand-unlisted-view');
+      allViews.forEach(v => v.classList.add('hidden'));
+      [stateA, stateB, stateC, stateD].forEach(s => s?.classList.add('hidden'));
+    }
 
-    let debounceTimer: ReturnType<typeof setTimeout>;
-
-    function applyFilters() {
-      const filters = {
-        q: searchInput.value,
-        brand: brandSelect.value,
-        messageType: messageSelect.value,
-        dualBasketOnly: dualCheckbox.checked,
-        explicitCodesOnly: codesCheckbox.checked,
-      };
-
-      // Update URL
-      const newUrl = writeFiltersToUrl(filters, window.location.href);
-      window.history.replaceState({}, '', newUrl.toString());
-
-      // Filter DOM Elements
-      let visibleCount = 0;
-      const qNorm = normalizeString(filters.q);
-
-      cards.forEach(card => {
-        let isMatch = true;
-
-        const cardBrand = card.getAttribute('data-brand') || '';
-        const isDual = card.getAttribute('data-dual') === 'true';
-        const hasCodes = card.getAttribute('data-codes') === 'true';
-        const searchText = card.getAttribute('data-search-text') || '';
-        const messageTypes = card.getAttribute('data-message-types') || '';
-
-        // Brand filter
-        if (filters.brand && cardBrand !== filters.brand) {
-          isMatch = false;
+    // Handle Brand Change: Update Model Select options
+    function updateModelSelectOptions() {
+      const selectedBrand = brandSelect.value;
+      const optgroups = modelSelect.querySelectorAll('optgroup');
+      
+      // Hide all optgroups
+      optgroups.forEach(group => group.classList.add('hidden'));
+      
+      if (!selectedBrand || selectedBrand === 'altro') {
+        modelSelect.disabled = true;
+        modelSelect.value = "";
+        unlistedOpt.classList.add('hidden');
+      } else {
+        modelSelect.disabled = false;
+        unlistedOpt.classList.remove('hidden');
+        
+        // Show relevant optgroup
+        const targetGroup = modelSelect.querySelector(`optgroup[data-brand="${selectedBrand}"]`);
+        if (targetGroup) {
+          targetGroup.classList.remove('hidden');
         }
-
-        // Dual filter
-        if (isMatch && filters.dualBasketOnly && !isDual) {
-          isMatch = false;
+        
+        // If current selected model doesn't belong to this brand, reset it
+        const currentModelOpt = modelSelect.options[modelSelect.selectedIndex];
+        if (currentModelOpt.value !== "" && currentModelOpt.value !== "unlisted" && currentModelOpt.parentElement?.getAttribute('data-brand') !== selectedBrand) {
+          modelSelect.value = "";
         }
+      }
+    }
 
-        // Explicit codes filter
-        if (isMatch && filters.explicitCodesOnly && !hasCodes) {
-          isMatch = false;
-        }
+    // Apply the active state and filter
+    function applyState(fromSubmit = false) {
+      const brand = brandSelect.value;
+      const model = modelSelect.value;
+      const query = normalizeString(searchInput.value);
 
-        // Search text filter
-        if (isMatch && qNorm && !searchText.includes(qNorm)) {
-          isMatch = false;
-        }
+      hideAllViews();
+      resultsContainer?.classList.remove('hidden');
 
-        // Message type filter
-        if (isMatch && filters.messageType !== 'all') {
-          if (!messageTypes) {
-             isMatch = false;
-          } else {
-            const types = messageTypes.split(',');
-            if (filters.messageType === 'error' && !types.includes('error') && !types.includes('warning')) {
-              isMatch = false;
-            }
-            if (filters.messageType === 'status' && !types.includes('status') && !types.includes('feature_message')) {
-              isMatch = false;
-            }
-          }
-        }
-
-        if (isMatch) {
-          card.classList.remove('hidden');
-          visibleCount++;
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-
-      // Update count and empty state
-      if (countDisplay) {
-        countDisplay.textContent = `${visibleCount} modell${visibleCount === 1 ? 'o' : 'i'} trovat${visibleCount === 1 ? 'o' : 'i'}`;
+      if (!brand) {
+        // No selection
+        if (statusText) statusText.textContent = "Scegli una marca per vedere i modelli disponibili oppure seleziona 'Altro' per la guida generica.";
+        statusMessageContainer?.classList.remove('hidden');
+        resultsContainer?.classList.add('hidden');
+        
+      } else if (brand === 'altro') {
+        // STATE D
+        if (statusText) statusText.textContent = "Usa questa guida per controlli iniziali sicuri. I codici non hanno significato universale tra marche diverse.";
+        statusMessageContainer?.classList.remove('hidden');
+        stateD?.classList.remove('hidden');
+        
+      } else if (brand && !model) {
+        // STATE B
+        if (statusText) statusText.textContent = `Hai selezionato ${brand}. Puoi scegliere un modello oppure consultare i messaggi documentati per gli altri modelli del brand.`;
+        statusMessageContainer?.classList.remove('hidden');
+        stateB?.classList.remove('hidden');
+        const view = document.querySelector(`.af-brand-view[data-brand="${brand}"]`);
+        if (view) view.classList.remove('hidden');
+        
+      } else if (brand && model === 'unlisted') {
+        // STATE C
+        if (statusText) statusText.textContent = `Il modello non è ancora censito: consulta i messaggi documentati per altri modelli ${brand}, verificando sempre il manuale della tua variante.`;
+        statusMessageContainer?.classList.remove('hidden');
+        stateC?.classList.remove('hidden');
+        const view = document.querySelector(`.af-brand-unlisted-view[data-brand="${brand}"]`);
+        if (view) view.classList.remove('hidden');
+        
+      } else if (brand && model && model !== 'unlisted') {
+        // STATE A
+        statusMessageContainer?.classList.add('hidden'); // Hide instructional message when model is selected
+        stateA?.classList.remove('hidden');
+        const view = document.querySelector(`.af-model-view[data-model-id="${model}"]`);
+        if (view) view.classList.remove('hidden');
       }
 
-      if (visibleCount === 0) {
-        emptyState?.classList.remove('hidden');
-        resultsContainer.classList.add('hidden');
+      // Handle query filtering on the active view
+      if (query && resultsContainer && !resultsContainer.classList.contains('hidden')) {
+        // Find visible code cards in the current active state and filter them
+        const activeContainer = stateA?.classList.contains('hidden') === false ? stateA :
+                                stateB?.classList.contains('hidden') === false ? stateB :
+                                stateC?.classList.contains('hidden') === false ? stateC : null;
+                                
+        if (activeContainer) {
+           // We only filter ErrorCodeCards. We use CSS to hide/show them.
+           // To avoid complex JS, we can just hide cards that don't match the query.
+           // But since ErrorCodeCard doesn't have a data-search-text by default, let's just search its textContent.
+           const codeCards = activeContainer.querySelectorAll('[id^="code-"], .mb-6.rounded-lg.border');
+           codeCards.forEach(card => {
+             // Basic text search on the card's content
+             const text = normalizeString((card.textContent || ''));
+             if (text.includes(query)) {
+               card.classList.remove('hidden');
+             } else {
+               card.classList.add('hidden');
+             }
+           });
+        }
       } else {
-        emptyState?.classList.add('hidden');
-        resultsContainer.classList.remove('hidden');
+        // Reset all hidden cards if query is empty
+        const codeCards = document.querySelectorAll('#af-results-container .mb-6.rounded-lg.border');
+        codeCards.forEach(card => card.classList.remove('hidden'));
+      }
+      
+      // Update URL only if it was a submit or we have a valid state
+      if (fromSubmit) {
+         const url = new URL(window.location.href);
+         if (brand) url.searchParams.set('brand', brand); else url.searchParams.delete('brand');
+         if (model) url.searchParams.set('model', model); else url.searchParams.delete('model');
+         if (searchInput.value) url.searchParams.set('q', searchInput.value); else url.searchParams.delete('q');
+         window.history.replaceState({}, '', url.toString());
       }
     }
 
     // Event Listeners
-    searchInput.addEventListener('input', () => {
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(applyFilters, 300);
+    brandSelect.addEventListener('change', () => {
+      updateModelSelectOptions();
     });
 
-    brandSelect.addEventListener('change', applyFilters);
-    messageSelect.addEventListener('change', applyFilters);
-    dualCheckbox.addEventListener('change', applyFilters);
-    codesCheckbox.addEventListener('change', applyFilters);
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      applyState(true);
+    });
 
-    const resetFilters = () => {
-      searchInput.value = '';
-      brandSelect.value = '';
-      messageSelect.value = 'all';
-      dualCheckbox.checked = false;
-      codesCheckbox.checked = false;
-      applyFilters();
-    };
-
-    resetBtn?.addEventListener('click', resetFilters);
-    resetBtnEmpty?.addEventListener('click', resetFilters);
-
-    // Initial run
-    applyFilters();
+    // Initialize from URL
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('brand')) {
+      brandSelect.value = params.get('brand') || '';
+      updateModelSelectOptions();
+    }
+    if (params.has('model')) {
+      modelSelect.value = params.get('model') || '';
+    }
+    if (params.has('q')) {
+      searchInput.value = params.get('q') || '';
+    }
+    
+    // Apply initial state based on URL, if parameters exist. Otherwise show initial message.
+    if (params.has('brand') || params.has('model') || params.has('q')) {
+      applyState(false);
+    }
   });
 </script>
