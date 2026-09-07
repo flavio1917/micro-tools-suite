@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 
+export const prerender = false;
+
 // ─── Allowed values ──────────────────────────────────────────────────────────
 const ALLOWED_REASONS = new Set([
   'missing_model',

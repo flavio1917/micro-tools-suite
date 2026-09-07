@@ -1,4 +1,4 @@
-﻿# Wave 1 — Release Candidate QA Report
+# Wave 1 — Release Candidate QA Report
 
 **Versione**: RC-1.0
 **Data**: 2026-09-07
@@ -213,16 +213,16 @@ Identico a NA351. PASS su tutti i check IT.
 
 | ID | Descrizione | File |
 |---|---|---|
-| M-1 | 3 eventi analytics non cablati: `error_code_opened`, `symptom_opened`, `manual_opened` | `ErrorCodeCard.astro`, `SymptomCard.astro`, `DocumentReference.astro` |
+| M-1 | [RISOLTO] 3 eventi analytics non cablati: `error_code_opened`, `symptom_opened`, `manual_opened` | `ErrorCodeCard.astro`, `SymptomCard.astro`, `DocumentReference.astro` |
 | M-2 | External link manuale manca sr-only per screen reader | `DocumentReference.astro` |
-| M-3 | WARN build-time no GET handler `/api/segnala-modello` | `src/pages/api/` |
+| M-3 | [RISOLTO] WARN build-time no GET handler `/api/segnala-modello` | `src/pages/api/segnala-modello.ts` |
 
 ### LOW
 
 | ID | Descrizione |
 |---|---|
 | L-1 | hreflang modelli noindex -> root invece di versione linguistica (es `/en/`) |
-| L-2 | OG description NA351 IT ha doppio spazio nel template |
+| L-2 | [RISOLTO] OG description NA351 IT ha doppio spazio nel template | `src/layouts/MainLayout.astro` |
 | L-3 | Mappa route_slug in astro.config.mjs hardcoded — da mantenere in sync manuale |
 
 ---
@@ -251,10 +251,9 @@ Identico a NA351. PASS su tutti i check IT.
 - Pipeline idempotente: due run producono output identico senza interventi manuali.
 - NA351 e NA220-NA221 superano il quality gate completo.
 - Modelli ambigui non generano route, non in sitemap.
-- Analytics rispetta privacy: nessun testo raw o PII inviato.
-- Zero difetti BLOCKER o HIGH residui.
+- Analytics rispetta privacy: nessun testo raw o PII inviato. Tutti gli eventi cablati.
+- Form Segnala Modello testato per comportamento POST e protezione build static.
+- Nessun doppio spazio in metadata OG.
+- Zero difetti BLOCKER, HIGH o M/L critici residui.
 
-**Condizioni pre-deploy raccomandate**:
-1. Risolvere M-3 (handler GET `/api/segnala-modello`) per evitare 404 in produzione al submit form.
-2. Risolvere L-2 (doppio spazio OG description).
-3. Pianificare M-1 (3 eventi analytics) come quick-win post-deploy.
+**Condizioni pre-deploy completate**: Tutte le condizioni bloccanti sono state chiuse e verificate con successo. Procedere al deploy pre-prod.

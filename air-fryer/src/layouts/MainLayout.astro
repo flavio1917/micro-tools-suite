@@ -146,7 +146,8 @@ if (recipeData) {
   else if (hasNutrition) statsString = `✓ ${pro}g ${p.pro} · ✓ ${kcal} ${p.kcal} — `;
   else if (isFast) statsString = `✓ ${p.fast} ${timeStr} min — `;
 
-  finalDescription = `${statsString}${baseDesc} ${p.read}`;
+  const descParts = [statsString.trim(), baseDesc.trim(), p.read.trim()].filter(Boolean);
+  finalDescription = descParts.join(' ').replace(/\s+/g, ' ');
 }
 
 const ogType = recipeData ? "article" : "website";
