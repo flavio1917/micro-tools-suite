@@ -1,0 +1,264 @@
+---
+import MainLayout from '../../../../../layouts/MainLayout.astro';
+import ErrorCodeCard from '../../../../../components/air-fryer-errors/ErrorCodeCard.astro';
+import SymptomCard from '../../../../../components/air-fryer-errors/SymptomCard.astro';
+import DocumentReference from '../../../../../components/air-fryer-errors/DocumentReference.astro';
+import MissingModelForm from '../../../../../components/seo-tools/MissingModelForm.astro';
+import AirFryerSpecs from '../../../../../components/air-fryer-errors/AirFryerSpecs.astro';
+import { pageErrorsSeoTranslations } from '../../../../../data/i18n/page-errors-seo';
+import { errorsUiTranslations } from '../../../../../data/i18n/errors-ui';
+import { getAirFryerErrorAlternateUrls, getAirFryerErrorHubUrl } from '../../../../../lib/air-fryer-error-routes';
+import { hasCompleteTranslations } from '../../../../../data/i18n/error-content';
+import type { AirFryerModelV2 } from '../../../../../types/air-fryer-v2';
+
+export async function getStaticPaths() {
+  const { rawV2Models } = await import('../../../../../lib/air-fryer-db');
+  
+  const routeSlugMap = new Map();
+  for (const model of rawV2Models) {
+    if (model.seo_status === 'fallback_only') continue;
+    if (model.duplicate_group && model.is_ambiguous) continue;
+    if (model.metadata?.parsing_status === 'manual_review') continue;
+
+    if (!model.route_slug) {
+      throw new Error(`route_slug is missing for ${model.canonical_slug}`);
+    }
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(model.route_slug)) {
+      throw new Error(`route_slug format invalid for ${model.canonical_slug}: ${model.route_slug}`);
+    }
+    if (model.route_slug.startsWith(model.brand_slug + '-')) {
+      throw new Error(`route_slug contains redundant brand prefix for ${model.canonical_slug}: ${model.route_slug}`);
+    }
+    const key = `${model.brand_slug}/${model.route_slug}`;
+    if (routeSlugMap.has(key)) {
+      throw new Error(`route_slug conflict detected: ${key} used by ${routeSlugMap.get(key)} and ${model.canonical_slug}`);
+    }
+    routeSlugMap.set(key, model.canonical_slug);
+  }
+  
+  const paths = [];
+  for (const model of rawV2Models) {
+    if (model.is_deduplication_validated === false) continue;
+    if (model.metadata?.parsing_status === 'manual_review') continue;
+    if (model.duplicate_group && model.is_ambiguous) continue;
+    if (model.seo_status === 'fallback_only') continue;
+    if (!model.route_slug) continue;
+    
+    // Controlliamo che abbia contenuti
+    if (model.error_codes.length === 0 && model.symptoms.length === 0) continue;
+    
+    const tools = [
+      { lang: 'it', hub: 'strumenti', tool: 'codici-errore-friggitrice-ad-aria' },
+      { lang: 'en', hub: 'tools', tool: 'air-fryer-error-codes' },
+      { lang: 'es', hub: 'herramientas', tool: 'codigos-error-freidora-aire' },
+      { lang: 'fr', hub: 'outils', tool: 'codes-erreur-friteuse-air' }
+    ];
+    
+    for (const t of tools) {
+       paths.push({
+          params: { 
+             lang: t.lang === 'it' ? undefined : t.lang, 
+             hub: t.hub, 
+             tool: t.tool,
+             brand: model.brand_slug,
+             routeSlug: model.route_slug
+          },
+          props: {
+             model,
+             actualLang: t.lang
+          }
+       });
+    }
+  }
+  
+  return paths;
+}
+
+const { model, actualLang } = Astro.props;
+const lang = actualLang as 'it' | 'en' | 'es' | 'fr';
+
+const seoData = pageErrorsSeoTranslations[lang] || pageErrorsSeoTranslations['it'];
+const uiLabels = errorsUiTranslations[lang].modelCard;
+
+const brandName = model.primary_display_name?.split(' ')[0] || model.brand_slug;
+const displayName = model.primary_display_name || `${model.brand_slug} ${model.model_spec}`;
+const title = (seoData.modelMetaTitle?.replace('{brand}', '').replace('{model}', displayName).trim() || `${displayName} Error Codes`).replace(/  +/g, ' ');
+const description = (seoData.modelMetaDescription?.replace('{brand}', '').replace('{model}', displayName).trim() || '').replace(/  +/g, ' ');
+const h1 = (seoData.modelH1?.replace('{brand}', '').replace('{model}', displayName).trim() || displayName).replace(/  +/g, ' ');
+
+const alternateUrls = getAirFryerErrorAlternateUrls(model.brand_slug, model.route_slug!);
+const hubUrl = getAirFryerErrorHubUrl(lang);
+const isNoindex = model.seo_status === 'noindex';
+
+const legacyModelForSpecs = {
+  capacity_l: model.specs?.capacity_liters ?? null,
+  capacity_kg_fries: null,
+  dual_zone: model.specs?.basket_count === 2,
+  model_type: model.specs?.basket_count === 2 ? 'dual_basket' : 'single_zone',
+} as any;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": seoData.breadcrumbHome,
+      "item": `https://crispissimo.com${lang === 'it' ? '' : '/' + lang}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": seoData.breadcrumbTools,
+      "item": `https://crispissimo.com${lang === 'it' ? '' : '/' + lang}/${lang === 'it' ? 'strumenti' : (lang === 'en' ? 'tools' : (lang === 'es' ? 'herramientas' : 'outils'))}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": seoData.breadcrumbCurrent,
+      "item": `https://crispissimo.com${hubUrl}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": displayName,
+      "item": `https://crispissimo.com${Astro.url.pathname}`
+    }
+  ]
+};
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": title,
+  "description": description,
+  "url": `https://crispissimo.com${Astro.url.pathname}`
+};
+
+
+// Filter codes and symptoms based on V2 translation completeness
+const validCodes = model.error_codes.filter((code: any) => 
+  hasCompleteTranslations(`${model.brand_slug}.${model.model_spec}.error.${code.code}`, code.severity)
+);
+
+const validSymptoms = model.symptoms.filter((sym: any) => 
+  hasCompleteTranslations(`${model.brand_slug}.${model.model_spec}.symptom.${sym.key}`, sym.severity)
+);
+
+---
+
+<MainLayout 
+  title={title}
+  description={description}
+  lang={lang}
+  alternateUrls={isNoindex ? undefined : alternateUrls.reduce((acc: any, cur) => ({...acc, [cur.lang]: "https://www.crispissimo.com" + cur.url}), {})}
+  noindex={isNoindex}
+>
+  {!isNoindex && (
+    <>
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+      <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+    </>
+  )}
+
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <nav class="flex text-sm text-slate-500 mb-8" aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1 md:space-x-3">
+        <li class="inline-flex items-center">
+          <a href={lang === 'it' ? '/' : `/${lang}`} class="hover:text-slate-900 dark:hover:text-white transition-colors">{seoData.breadcrumbHome}</a>
+        </li>
+        <li>
+          <div class="flex items-center">
+            <svg class="w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="ml-1 md:ml-2">{seoData.breadcrumbTools}</span>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center">
+            <svg class="w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <a href={hubUrl} class="ml-1 text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors md:ml-2">{seoData.breadcrumbCurrent}</a>
+          </div>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="mb-10">
+      <h1 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-4" style="font-family: 'Montserrat', system-ui, sans-serif;">
+        {h1}
+      </h1>
+      <p class="text-slate-600 dark:text-slate-400 text-lg mb-6">
+        {uiLabels.specsTitle}
+      </p>
+      
+      <AirFryerSpecs model={legacyModelForSpecs} />
+    </div>
+
+    {validCodes.length > 0 && (
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-6">{uiLabels.knownErrors}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {validCodes.map((code: any) => (
+            <ErrorCodeCard 
+              code={code} 
+              modelId={model.canonical_slug} 
+              brandSlug={model.brand_slug} 
+              modelSpecSlug={model.model_spec!} 
+              lang={lang} 
+            />
+          ))}
+        </div>
+      </div>
+    )}
+
+    {validSymptoms.length > 0 && (
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-6">{uiLabels.commonSymptoms}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {validSymptoms.map((sym: any) => (
+            <SymptomCard 
+              symptom={sym} 
+              modelId={model.canonical_slug} 
+              brandSlug={model.brand_slug} 
+              modelSpecSlug={model.model_spec!} 
+              lang={lang} 
+            />
+          ))}
+        </div>
+      </div>
+    )}
+
+    {model.source?.manual_url && (
+      <div class="mb-12">
+        <DocumentReference 
+          model={{
+            document: {
+              label: model.source.source_name || 'Manuale Utente / Documentazione Ufficiale',
+              matches_model: true,
+              type: 'manual'
+            },
+            manual_url: model.source.manual_url
+          }}
+        />
+      </div>
+    )}
+
+    <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
+      <MissingModelForm lang={lang} />
+    </div>
+    
+    <div class="mt-8 text-center">
+       <a href={hubUrl} class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
+          <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          {lang === 'it' ? 'Torna alla ricerca' : (lang === 'en' ? 'Back to search' : (lang === 'es' ? 'Volver a buscar' : 'Retour à la recherche'))}
+       </a>
+    </div>
+
+  </div>
+</MainLayout>

@@ -1,0 +1,20 @@
+{
+  "incomplete_records": [],
+  "potential_duplicates": [],
+  "variants_to_review": [],
+  "manual_review_needed": [],
+  "counts": {
+    "total_records": 13,
+    "unique_model_specs": 11,
+    "potential_duplicates": 4,
+    "unresolved_variants": 4,
+    "indexable_records": 0,
+    "noindex_records": 13,
+    "fallback_only_records": 0,
+    "missing_severity": 0,
+    "missing_evidence_level": 0,
+    "missing_sources": 0,
+    "missing_translations": 13,
+    "manual_review_records": 4
+  }
+}

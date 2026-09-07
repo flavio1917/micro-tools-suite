@@ -1,0 +1,50 @@
+---
+export interface Props {
+  lang: 'it' | 'fr' | 'es' | 'en';
+}
+
+import { errorsUiTranslations } from '../../data/i18n/errors-ui';
+
+const { lang } = Astro.props;
+const t = errorsUiTranslations[lang] || errorsUiTranslations.it;
+const formLabels = t.formLabels;
+---
+<div class="mt-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-6 shadow-sm hidden" id="missing-model-form-container">
+  <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-2">{formLabels.title}</h4>
+  <p class="text-slate-600 dark:text-slate-400 text-sm mb-4">{formLabels.subtitle}</p>
+  
+  <form id="missing-model-form" class="space-y-4" action="/api/segnala-modello" method="POST">
+    <input type="hidden" name="lang" value={lang} />
+    <input type="hidden" name="reason" id="mmf-reason" value="missing_model" />
+    <input type="hidden" name="original_query" id="mmf-original-query" value="" />
+    <input type="hidden" name="symptom_key" id="mmf-symptom-key" value="" />
+    
+    {/* Honeypot anti-spam: bots fill this, humans don't see it */}
+    <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" tabindex="-1">
+      <label for="mmf-website">Non compilare questo campo</label>
+      <input type="text" id="mmf-website" name="website" value="" autocomplete="off" tabindex="-1" />
+    </div>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div>
+        <label for="mmf-brand" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">{formLabels.brand}</label>
+        <input type="text" id="mmf-brand" name="brand" class="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-800 dark:text-white sm:text-sm" placeholder="es. Philips" maxlength="50" />
+      </div>
+      <div>
+        <label for="mmf-model" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">{formLabels.model}</label>
+        <input type="text" id="mmf-model" name="model_spec" class="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-800 dark:text-white sm:text-sm" placeholder="es. HD9252/90" maxlength="100" />
+      </div>
+      <div>
+        <label for="mmf-code" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">{formLabels.code}</label>
+        <input type="text" id="mmf-code" name="error_code" class="w-full px-3 py-2 border border-slate-300 dark:border-slate-600 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-800 dark:text-white sm:text-sm" placeholder="es. E1" maxlength="10" />
+      </div>
+    </div>
+    
+    <div class="flex justify-end pt-2">
+      <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 font-medium text-sm transition-colors">
+        {formLabels.submit}
+      </button>
+    </div>
+  </form>
+</div>

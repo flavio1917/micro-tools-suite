@@ -1,20 +1,48 @@
 ---
 import type { AirFryerErrorCode } from '../../types/air-fryer';
+import type { Severity, EvidenceLevel, SourceReference, SupportedLanguage } from '../../types/air-fryer-v2';
+import SeverityBadge from './SeverityBadge.astro';
+import EvidenceLabel from './EvidenceLabel.astro';
+import SafetyNotice from './SafetyNotice.astro';
+import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
+import { errorsUiTranslations } from '../../data/i18n/errors-ui';
 
 export interface Props {
-  errorCode: AirFryerErrorCode;
+  errorCode?: AirFryerErrorCode;
   sourceModelName?: string;
   sourceModelId?: string;
+  
+  // V2 props
+  code?: string;
+  severity?: Severity;
+  evidenceLevel?: EvidenceLevel;
+  diyFixable?: boolean;
+  content?: {
+    label: string;
+    cause?: string;
+    solution?: string;
+    steps?: string[];
+  };
+  source?: SourceReference;
+  lang?: SupportedLanguage;
+  brandDisplayName?: string;
 }
 
-const { errorCode, sourceModelName, sourceModelId } = Astro.props;
+const { 
+  errorCode, sourceModelName, sourceModelId,
+  code, severity, evidenceLevel, diyFixable, content, source, lang, brandDisplayName 
+} = Astro.props;
+
+const resolvedLang = lang || 'it';
+const t = errorsUiTranslations[resolvedLang];
+const legacyLabels = t.legacyLabels;
 
 // Type translations
 const getTypeLabel = (type?: string) => {
-  if (type === 'error') return 'Errore tecnico';
-  if (type === 'warning') return 'Controllo richiesto';
-  if (type === 'status' || type === 'feature_message') return 'Stato / promemoria';
-  return 'Messaggio';
+  if (type === 'error') return legacyLabels.typeError;
+  if (type === 'warning') return legacyLabels.typeWarning;
+  if (type === 'status' || type === 'feature_message') return legacyLabels.typeStatus;
+  return legacyLabels.typeMessage;
 };
 
 const getTypeClasses = (type?: string) => {
@@ -26,10 +54,10 @@ const getTypeClasses = (type?: string) => {
 
 // Action level translations
 const getActionLabel = (level?: string) => {
-  if (level === 'assistenza') return 'Contatta assistenza';
-  if (level === 'fermare_e_verificare') return 'Spegni, scollega e verifica';
-  if (level === 'verifica_utente') return 'Verifica e riprendi';
-  return 'Verifica il manuale';
+  if (level === 'assistenza') return legacyLabels.actionAssistance;
+  if (level === 'fermare_e_verificare') return legacyLabels.actionStop;
+  if (level === 'verifica_utente') return legacyLabels.actionCheck;
+  return legacyLabels.actionManual;
 };
 
 const getActionClasses = (level?: string) => {
@@ -39,14 +67,142 @@ const getActionClasses = (level?: string) => {
   return 'text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800';
 };
 
+const validSeverities = new Set(['safe_check', 'caution', 'stop_and_support']);
+const validEvidenceLevels = new Set(['model_specific', 'brand_generic', 'universal_guidance']);
+
+const isV2Renderable = Boolean(
+  code &&
+  content?.label &&
+  lang &&
+  validSeverities.has(severity ?? '') &&
+  validEvidenceLevels.has(evidenceLevel ?? '')
+);
+
+const currentLang = (lang && errorsUiTranslations[lang]) ? lang : 'it';
+const translations = errorsUiTranslations[currentLang];
+const labels = translations.cardLabels;
+const v2Severity = severity as NonNullable<Severity>;
+const v2EvidenceLevel = evidenceLevel as NonNullable<EvidenceLevel>;
+const v2Lang = currentLang as NonNullable<SupportedLanguage>;
+const v2Content = content as NonNullable<Props['content']>;
+
+const v2AnchorId = isV2Renderable ? toSafeAnchorId('error', code!) : undefined;
+const legacyAnchorId = !isV2Renderable && errorCode ? toSafeAnchorId('error', errorCode.code) : undefined;
+const finalAnchorId = v2AnchorId || legacyAnchorId;
+
 ---
-<div class="mb-6 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-hidden shadow-sm" id={sourceModelId ? `code-${sourceModelId}-${errorCode.code}` : undefined}>
+<Fragment>
+{isV2Renderable ? (
+<div class="mb-6 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-hidden shadow-sm" id={finalAnchorId}
+     data-analytics-code={code}
+     data-analytics-severity={v2Severity}
+     data-analytics-evidence={v2EvidenceLevel}
+     data-analytics-brand={brandDisplayName || ''}>
+    <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-start justify-between gap-3 bg-slate-50 dark:bg-slate-800/50">
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-3 flex-wrap">
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight m-0 font-mono">{code}</h3>
+          <SeverityBadge severity={v2Severity} lang={v2Lang} />
+        </div>
+        <EvidenceLabel level={v2EvidenceLevel} lang={v2Lang} brandDisplayName={brandDisplayName} />
+      </div>
+    </div>
+
+    <div class="p-5 space-y-5">
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.meaning}</h4>
+        <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base">
+          {v2Content.label}
+        </p>
+      </div>
+
+      {v2Content.cause ? (
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.possibleCause}</h4>
+          <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base">
+            {v2Content.cause}
+          </p>
+        </div>
+      ) : null}
+
+      {v2Content.solution ? (
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.solution}</h4>
+          <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base">
+            {v2Content.solution}
+          </p>
+        </div>
+      ) : null}
+
+      {v2Content.steps && v2Content.steps.length > 0 && v2Severity !== 'stop_and_support' ? (
+        <div class="bg-slate-50 dark:bg-slate-800/30 rounded p-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5 flex items-center gap-2">
+            <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+            </svg>
+            {labels.checklist}
+          </h4>
+          <ul class="space-y-3 text-sm sm:text-base text-slate-700 dark:text-slate-300 af-checklist" data-lang={v2Lang} data-scope={'code-' + (brandDisplayName || 'univ')} data-record={code}>
+            {v2Content.steps.map((step, idx) => {
+              return (
+                <li class="flex items-start gap-3">
+                  <input type="checkbox" id={'chk-' + code + '-' + idx} data-idx={idx} class="mt-1 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer" />
+                  <label for={'chk-' + code + '-' + idx} class="select-none cursor-pointer">{step}</label>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ) : null}
+      
+      <SafetyNotice severity={v2Severity} lang={v2Lang} />
+      
+      {source?.manual_url && (
+  <div class="mt-4 border-t border-slate-100 pt-4 text-xs dark:border-slate-800">
+    <a
+      href={source.manual_url}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-analytics-manual="true"
+      data-analytics-source-type={source.type || 'manual'}
+      class="inline-flex items-center gap-1 text-blue-600 hover:underline dark:text-blue-400"
+    >
+      <span>
+        {labels.officialManual}
+        {source.source_page ? ` (${labels.page} ${source.source_page})` : ''}
+      </span>
+      <svg
+        class="h-3 w-3"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+        />
+      </svg>
+      <span class="sr-only">({labels.opensInNewTab})</span>
+    </a>
+  </div>
+)}
+      
+
+    </div>
+  </div>
+) : null}
+
+{!isV2Renderable && errorCode ? (
+<div class="mb-6 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-hidden shadow-sm" id={legacyAnchorId}>
   {/* Header: Code and Type Badge */}
   <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-50 dark:bg-slate-800/50">
     <div class="flex flex-col gap-2">
       {sourceModelName && (
         <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
-          Modello sorgente: {sourceModelName}
+          {legacyLabels.sourceModel} {sourceModelName}
         </span>
       )}
       <div class="flex items-center gap-4">
@@ -65,33 +221,34 @@ const getActionClasses = (level?: string) => {
       </span>
     )}
   </div>
+  </div>
 
   <div class="p-5 space-y-5">
     {/* Description */}
-    {errorCode.description && (
+    {errorCode.description ? (
       <p class="text-slate-600 dark:text-slate-300 italic text-sm border-l-2 border-slate-200 dark:border-slate-700 pl-3">
         "{errorCode.description}"
       </p>
-    )}
+    ) : null}
 
     {/* Meaning */}
-    {errorCode.meaning && (
+    {errorCode.meaning ? (
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">Cosa significa</h4>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.meaning}</h4>
         <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base">
           {errorCode.meaning}
         </p>
       </div>
-    )}
+    ) : null}
 
     {/* Suggestions */}
-    {errorCode.suggestions && errorCode.suggestions.length > 0 && (
+    {errorCode.suggestions && errorCode.suggestions.length > 0 ? (
       <div class="bg-slate-50 dark:bg-slate-800/30 rounded p-4">
         <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5 flex items-center gap-2">
           <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
           </svg>
-          Cosa fare
+          {labels.solution}
         </h4>
         <ul class="space-y-2 text-sm sm:text-base text-slate-700 dark:text-slate-300">
           {errorCode.suggestions.map((suggestion) => (
@@ -102,6 +259,8 @@ const getActionClasses = (level?: string) => {
           ))}
         </ul>
       </div>
-    )}
+    ) : null}
   </div>
 </div>
+) : null}
+</Fragment>

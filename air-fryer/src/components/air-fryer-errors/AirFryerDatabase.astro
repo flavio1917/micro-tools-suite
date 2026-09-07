@@ -1,26 +1,41 @@
 ---
 import type { AirFryerModel } from '../../types/air-fryer';
 import { getBrands } from '../../lib/air-fryer-db';
-import AirFryerFilters from './AirFryerFilters.astro';
+import DiagnosticSearch from './DiagnosticSearch.astro';
 import AirFryerModelCard from './AirFryerModelCard.astro';
 import BrandErrorOverview from './BrandErrorOverview.astro';
 import GenericAirFryerGuidance from './GenericAirFryerGuidance.astro';
+import MissingModelForm from './MissingModelForm.astro';
+
+import { errorsUiTranslations } from '../../data/i18n/errors-ui';
+import { getSearchIndex } from '../../lib/air-fryer-search-index';
 
 export interface Props {
   models: AirFryerModel[];
+  lang: 'it' | 'en' | 'es' | 'fr';
 }
 
-const { models } = Astro.props;
+const { models, lang } = Astro.props;
 const brands = getBrands();
+const t = errorsUiTranslations[lang] || errorsUiTranslations.it;
+const searchIndex = getSearchIndex(lang);
 
 ---
-<div class="af-database-container" aria-live="polite">
-  <AirFryerFilters brands={brands} models={models} />
+<div class="af-database-container" aria-live="polite" 
+  data-search-index={JSON.stringify(searchIndex)}
+  data-msg-ambiguous={t.statusMessages?.ambiguous}
+  data-msg-model-not-found={t.statusMessages?.modelNotFound}
+  data-msg-brand-selected={t.statusMessages?.brandSelected}
+  data-msg-brand-not-found={t.statusMessages?.brandNotFound}
+  data-msg-generic-guidance={t.statusMessages?.genericGuidance}
+  data-msg-empty-search={t.statusMessages?.emptySearch}
+>
+  <DiagnosticSearch lang={lang} />
 
   {/* Dynamic Status Message */}
   <div id="af-status-message" class="mb-8 text-center p-6 sm:p-8 bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300">
     <p class="text-lg font-medium text-slate-700 dark:text-slate-300" id="af-status-text">
-      Scegli una marca per vedere i modelli disponibili oppure seleziona 'Altro' per la guida generica.
+      {t.statusMessages?.initial}
     </p>
   </div>
 
@@ -65,18 +80,12 @@ const brands = getBrands();
     </div>
 
   </div>
+  
+  <MissingModelForm lang={lang} />
 </div>
 
 <script>
-  import { normalizeString, parseFiltersFromUrl, writeFiltersToUrl } from '../../lib/air-fryer-filters';
-
   document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('af-filters-form') as HTMLFormElement;
-    const brandSelect = document.getElementById('af-brand') as HTMLSelectElement;
-    const modelSelect = document.getElementById('af-model') as HTMLSelectElement;
-    const searchInput = document.getElementById('af-search') as HTMLInputElement;
-    const unlistedOpt = document.getElementById('af-unlisted-opt') as HTMLOptionElement;
-    
     const statusMessageContainer = document.getElementById('af-status-message');
     const statusText = document.getElementById('af-status-text');
     const resultsContainer = document.getElementById('af-results-container');
@@ -86,8 +95,6 @@ const brands = getBrands();
     const stateC = document.getElementById('state-c');
     const stateD = document.getElementById('state-d');
 
-    if (!form || !brandSelect || !modelSelect) return;
-
     // Helper: Hide all views
     function hideAllViews() {
       const allViews = document.querySelectorAll('.af-model-view, .af-brand-view, .af-brand-unlisted-view');
@@ -95,145 +102,301 @@ const brands = getBrands();
       [stateA, stateB, stateC, stateD].forEach(s => s?.classList.add('hidden'));
     }
 
-    // Handle Brand Change: Update Model Select options
-    function updateModelSelectOptions() {
-      const selectedBrand = brandSelect.value;
-      const optgroups = modelSelect.querySelectorAll('optgroup');
+    // Apply the active state based on URL
+    async function applyState() {
+      const params = new URLSearchParams(window.location.search);
+      const dataEl = document.querySelector('.af-database-container');
+      const searchIndex = dataEl?.getAttribute('data-search-index') ? JSON.parse(dataEl.getAttribute('data-search-index')!) : [];
       
-      // Hide all optgroups
-      optgroups.forEach(group => group.classList.add('hidden'));
+      const { validateDiagnosticParams } = await import('../../lib/air-fryer-query-validation');
+      const { toSafeAnchorId } = await import('../../lib/air-fryer-anchor');
+      const { serializeMissingModelContext, parseMissingModelContext } = await import('../../lib/missing-model-context');
+      const { trackEvent } = await import('../../lib/analytics');
       
-      if (!selectedBrand || selectedBrand === 'altro') {
-        modelSelect.disabled = true;
-        modelSelect.value = "";
-        unlistedOpt.classList.add('hidden');
-      } else {
-        modelSelect.disabled = false;
-        unlistedOpt.classList.remove('hidden');
+      const state = validateDiagnosticParams(params, searchIndex);
+      const { brand, model, code, symptom, reviewModel } = state;
         
-        // Show relevant optgroup
-        const targetGroup = modelSelect.querySelector(`optgroup[data-brand="${selectedBrand}"]`);
-        if (targetGroup) {
-          targetGroup.classList.remove('hidden');
-        }
-        
-        // If current selected model doesn't belong to this brand, reset it
-        const currentModelOpt = modelSelect.options[modelSelect.selectedIndex];
-        if (currentModelOpt.value !== "" && currentModelOpt.value !== "unlisted" && currentModelOpt.parentElement?.getAttribute('data-brand') !== selectedBrand) {
-          modelSelect.value = "";
-        }
-      }
-    }
-
-    // Apply the active state and filter
-    function applyState(fromSubmit = false) {
-      const brand = brandSelect.value;
-      const model = modelSelect.value;
-      const query = normalizeString(searchInput.value);
-
       hideAllViews();
       resultsContainer?.classList.remove('hidden');
 
-      if (!brand) {
-        // No selection
-        if (statusText) statusText.textContent = "Scegli una marca per vedere i modelli disponibili oppure seleziona 'Altro' per la guida generica.";
-        statusMessageContainer?.classList.remove('hidden');
-        resultsContainer?.classList.add('hidden');
-        
-      } else if (brand === 'altro') {
-        // STATE D
-        if (statusText) statusText.textContent = "Usa questa guida per controlli iniziali sicuri. I codici non hanno significato universale tra marche diverse.";
-        statusMessageContainer?.classList.remove('hidden');
-        stateD?.classList.remove('hidden');
-        
-      } else if (brand && !model) {
-        // STATE B
-        if (statusText) statusText.textContent = `Hai selezionato ${brand}. Puoi scegliere un modello oppure consultare i messaggi documentati per gli altri modelli del brand.`;
-        statusMessageContainer?.classList.remove('hidden');
-        stateB?.classList.remove('hidden');
-        const view = document.querySelector(`.af-brand-view[data-brand="${brand}"]`);
-        if (view) view.classList.remove('hidden');
-        
-      } else if (brand && model === 'unlisted') {
-        // STATE C
-        if (statusText) statusText.textContent = `Il modello non è ancora censito: consulta i messaggi documentati per altri modelli ${brand}, verificando sempre il manuale della tua variante.`;
-        statusMessageContainer?.classList.remove('hidden');
-        stateC?.classList.remove('hidden');
-        const view = document.querySelector(`.af-brand-unlisted-view[data-brand="${brand}"]`);
-        if (view) view.classList.remove('hidden');
-        
-      } else if (brand && model && model !== 'unlisted') {
-        // STATE A
-        statusMessageContainer?.classList.add('hidden'); // Hide instructional message when model is selected
-        stateA?.classList.remove('hidden');
-        const view = document.querySelector(`.af-model-view[data-model-id="${model}"]`);
-        if (view) view.classList.remove('hidden');
-      }
+      const msgAmbiguous = dataEl?.getAttribute('data-msg-ambiguous') || '';
+      const msgModelNotFound = dataEl?.getAttribute('data-msg-model-not-found') || '';
+      const msgBrandSelected = dataEl?.getAttribute('data-msg-brand-selected') || '';
+      const msgBrandNotFound = dataEl?.getAttribute('data-msg-brand-not-found') || '';
+      const msgGenericGuidance = dataEl?.getAttribute('data-msg-generic-guidance') || '';
+      const msgEmptySearch = dataEl?.getAttribute('data-msg-empty-search') || '';
 
-      // Handle query filtering on the active view
-      if (query && resultsContainer && !resultsContainer.classList.contains('hidden')) {
-        // Find visible code cards in the current active state and filter them
-        const activeContainer = stateA?.classList.contains('hidden') === false ? stateA :
-                                stateB?.classList.contains('hidden') === false ? stateB :
-                                stateC?.classList.contains('hidden') === false ? stateC : null;
-                                
-        if (activeContainer) {
-           // We only filter ErrorCodeCards. We use CSS to hide/show them.
-           // To avoid complex JS, we can just hide cards that don't match the query.
-           // But since ErrorCodeCard doesn't have a data-search-text by default, let's just search its textContent.
-           const codeCards = activeContainer.querySelectorAll('[id^="code-"], .mb-6.rounded-lg.border');
-           codeCards.forEach(card => {
-             // Basic text search on the card's content
-             const text = normalizeString((card.textContent || ''));
-             if (text.includes(query)) {
-               card.classList.remove('hidden');
-             } else {
-               card.classList.add('hidden');
+        if (reviewModel) {
+          // STATE Ambiguous
+          statusMessageContainer?.classList.remove('hidden');
+          if (statusText) statusText.textContent = msgAmbiguous;
+          if (statusText) statusText.classList.add('text-orange-600', 'dark:text-orange-400');
+          else if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
+
+          if (code || symptom) {
+            stateD?.classList.remove('hidden');
+          } else if (brand) {
+            stateB?.classList.remove('hidden');
+            const view = document.querySelector(`.af-brand-view[data-brand="${brand}"]`);
+            if (view) view.classList.remove('hidden');
+          }
+        } else if (model) {
+          if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
+          // STATE A: Specific Model
+          statusMessageContainer?.classList.add('hidden');
+          stateA?.classList.remove('hidden');
+          const view = document.querySelector(`.af-model-view[data-model-id="${model}"]`);
+          if (view) {
+             view.classList.remove('hidden');
+             
+             // Open details and Scroll to fragment
+             const details = view.querySelector('details');
+             if (details) details.open = true;
+             
+             // Fire analytics for visible cards (with dedup guard in listener)
+             setTimeout(() => {
+               window.dispatchEvent(new CustomEvent('diagnostic-analytics-update', { detail: { container: view } }));
+             }, 150);
+             
+             if (code || symptom) {
+               setTimeout(() => {
+                 const targetId = code ? toSafeAnchorId('error', code) : (symptom ? toSafeAnchorId('symptom', symptom) : null);
+                 if (targetId) {
+                   const targetEl = document.getElementById(targetId);
+                   if (targetEl) {
+                     targetEl.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+                     targetEl.classList.add('ring-4', 'ring-blue-500', 'ring-opacity-50');
+                     setTimeout(() => targetEl.classList.remove('ring-4', 'ring-blue-500', 'ring-opacity-50'), 2000);
+                   }
+                 }
+               }, 100);
              }
-           });
+          } else {
+             statusMessageContainer?.classList.remove('hidden');
+             if (statusText) statusText.textContent = msgModelNotFound;
+             stateD?.classList.remove('hidden');
+          }
+
+          
+        } else if (brand) {
+          if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
+          // STATE B: Brand Overview
+          if (statusText) statusText.textContent = msgBrandSelected.replace('{brand}', brand.toUpperCase());
+          statusMessageContainer?.classList.remove('hidden');
+          stateB?.classList.remove('hidden');
+          const view = document.querySelector(`.af-brand-view[data-brand="${brand}"]`);
+          if (view) {
+             view.classList.remove('hidden');
+          } else {
+             if (statusText) statusText.textContent = msgBrandNotFound;
+             stateD?.classList.remove('hidden');
+          }
+          
+        } else if (code || symptom) {
+          if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
+          // STATE D: Code/Symptom without model (Generic Guidance)
+          if (statusText) statusText.textContent = msgGenericGuidance;
+          statusMessageContainer?.classList.remove('hidden');
+          stateD?.classList.remove('hidden');
+          
+        } else {
+          if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
+          // Default / Empty State
+          if (statusText) statusText.textContent = msgEmptySearch;
+          statusMessageContainer?.classList.remove('hidden');
+          resultsContainer?.classList.add('hidden');
         }
-      } else {
-        // Reset all hidden cards if query is empty
-        const codeCards = document.querySelectorAll('#af-results-container .mb-6.rounded-lg.border');
-        codeCards.forEach(card => card.classList.remove('hidden'));
-      }
-      
-      // Update URL only if it was a submit or we have a valid state
-      if (fromSubmit) {
-         const url = new URL(window.location.href);
-         if (brand) url.searchParams.set('brand', brand); else url.searchParams.delete('brand');
-         if (model) url.searchParams.set('model', model); else url.searchParams.delete('model');
-         if (searchInput.value) url.searchParams.set('q', searchInput.value); else url.searchParams.delete('q');
-         window.history.replaceState({}, '', url.toString());
-      }
+        
+        // Prefill Form logic
+        const formContainer = document.getElementById('missing-model-form-container');
+        if (formContainer) {
+          const rawParams = new URLSearchParams(window.location.search);
+          const rawModel = rawParams.get('model');
+          const rawCode = rawParams.get('code');
+          const rawSymptom = rawParams.get('symptom');
+          const rawReviewModel = rawParams.get('review-model');
+          const originalQuery = rawParams.get('q');
+          
+          let showForm = false;
+          let reason = '';
+          
+          if (rawReviewModel && reviewModel) {
+             showForm = true;
+             reason = 'ambiguous_variant';
+          } else if (rawModel && !model) {
+             showForm = true;
+             reason = 'missing_model';
+          } else if (rawCode && !code) {
+             showForm = true;
+             reason = 'missing_code';
+          } else if (rawSymptom && !symptom) {
+             showForm = true;
+             reason = 'missing_symptom';
+          }
+          
+          if (showForm) {
+            const wasHidden = formContainer.classList.contains('hidden');
+            formContainer.classList.remove('hidden');
+            
+            // Track form opened only when newly shown
+            if (wasHidden) {
+              trackEvent('air_fryer_missing_model_form_opened', {
+                lang: window.location.pathname.split('/')[1] || 'it',
+                reason,
+                brand_present: !!(rawParams.get('brand') || brand),
+                model_present: !!rawModel,
+                code_present: !!rawCode,
+                symptom_present: !!rawSymptom
+              });
+            }
+            
+            const context = {
+              lang: window.location.pathname.split('/')[1] || 'it',
+              reason: reason,
+              original_query: originalQuery?.substring(0, 100) || '',
+              brand: (rawParams.get('brand') || brand)?.substring(0, 50) || '',
+              model: (rawModel || rawReviewModel || model || '')?.substring(0, 100),
+              error_code: (rawCode || code || '')?.substring(0, 10),
+              symptom_key: (rawSymptom || symptom)?.substring(0, 50) || ''
+            };
+            
+            const serialized = serializeMissingModelContext(context);
+            const parsed = parseMissingModelContext(new URLSearchParams(serialized));
+            
+            const reasonInput = document.getElementById('mmf-reason') as HTMLInputElement;
+            const originalQueryInput = document.getElementById('mmf-original-query') as HTMLInputElement;
+            const symptomKeyInput = document.getElementById('mmf-symptom-key') as HTMLInputElement;
+            const brandInput = document.getElementById('mmf-brand') as HTMLInputElement;
+            const modelInput = document.getElementById('mmf-model') as HTMLInputElement;
+            const codeInput = document.getElementById('mmf-code') as HTMLInputElement;
+            
+            if (reasonInput && parsed.reason) reasonInput.value = parsed.reason;
+            if (originalQueryInput && parsed.original_query) originalQueryInput.value = parsed.original_query;
+            if (symptomKeyInput && parsed.symptom_key) symptomKeyInput.value = parsed.symptom_key;
+            if (brandInput && parsed.brand) brandInput.value = parsed.brand;
+            if (modelInput && parsed.model) modelInput.value = parsed.model;
+            if (codeInput && parsed.error_code) codeInput.value = parsed.error_code;
+            
+          } else {
+            formContainer.classList.add('hidden');
+          }
+        }
     }
 
-    // Event Listeners
-    brandSelect.addEventListener('change', () => {
-      updateModelSelectOptions();
+    // Event Listeners for state changes
+    window.addEventListener('popstate', () => {
+      applyState();
     });
 
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      applyState(true);
+    window.addEventListener('diagnostic-search-update', () => {
+      applyState();
     });
 
-    // Initialize from URL
-    const params = new URLSearchParams(window.location.search);
-    if (params.has('brand')) {
-      brandSelect.value = params.get('brand') || '';
-      updateModelSelectOptions();
-    }
-    if (params.has('model')) {
-      modelSelect.value = params.get('model') || '';
-    }
-    if (params.has('q')) {
-      searchInput.value = params.get('q') || '';
-    }
+    // Initial load
+    applyState();
     
-    // Apply initial state based on URL, if parameters exist. Otherwise show initial message.
-    if (params.has('brand') || params.has('model') || params.has('q')) {
-      applyState(false);
-    }
+    // Checklist Logic
+    import('../../lib/air-fryer-local-storage').then(({ getChecklistKey, saveChecklistState, loadChecklistState }) => {
+      const checklists = document.querySelectorAll('.af-checklist');
+      checklists.forEach(list => {
+        const lang = list.getAttribute('data-lang') || 'it';
+        const scope = list.getAttribute('data-scope') || 'univ';
+        const record = list.getAttribute('data-record') || 'unknown';
+        const key = getChecklistKey(lang, scope, record);
+        
+        const checkboxes = list.querySelectorAll<HTMLInputElement>('input[type="checkbox"]');
+        if (checkboxes.length === 0) return;
+        
+        // Load state
+        const saved = loadChecklistState(key);
+        if (saved && saved.length === checkboxes.length) {
+          checkboxes.forEach((cb, i) => {
+            cb.checked = saved[i];
+          });
+        }
+        
+        // Save state on change
+        list.addEventListener('change', () => {
+          const states = Array.from(checkboxes).map(cb => cb.checked);
+          saveChecklistState(key, states);
+        });
+      });
+    });
+    
+    // Form submit analytics
+    import('../../lib/analytics').then(({ trackEvent }) => {
+      const form = document.getElementById('missing-model-form') as HTMLFormElement | null;
+      if (form) {
+        form.addEventListener('submit', () => {
+          const reasonEl = document.getElementById('mmf-reason') as HTMLInputElement | null;
+          const pathLang = window.location.pathname.split('/')[1] || 'it';
+          trackEvent('air_fryer_missing_model_form_submitted', {
+            lang: pathLang,
+            reason: reasonEl?.value || 'unknown',
+            brand_present: !!(document.getElementById('mmf-brand') as HTMLInputElement)?.value,
+            model_present: !!(document.getElementById('mmf-model') as HTMLInputElement)?.value,
+            code_present: !!(document.getElementById('mmf-code') as HTMLInputElement)?.value
+          });
+        });
+      }
+    });
+
+    // M-1 Analytics: error_code_opened, symptom_opened, manual_opened
+    // Guard: track each code/symptom only once per page session to prevent duplicates
+    import('../../lib/analytics').then(({ trackEvent }) => {
+      const firedCodes = new Set<string>();
+      const firedSymptoms = new Set<string>();
+      const pathLang = window.location.pathname.split('/')[1] || 'it';
+
+      // Called by applyState after a model view is made visible
+      function trackVisibleCards(container: Element) {
+        // Error codes
+        container.querySelectorAll<HTMLElement>('[data-analytics-code]').forEach(el => {
+          const code = el.dataset.analyticsCode;
+          if (!code || firedCodes.has(code)) return;
+          firedCodes.add(code);
+          trackEvent('air_fryer_error_code_opened', {
+            lang: pathLang,
+            error_code: code,
+            severity: (el.dataset.analyticsSeverity as any) || undefined,
+            evidence_level: (el.dataset.analyticsEvidence as any) || undefined,
+            brand: el.dataset.analyticsBrand || undefined
+          });
+        });
+
+        // Symptoms
+        container.querySelectorAll<HTMLElement>('[data-analytics-symptom]').forEach(el => {
+          const sym = el.dataset.analyticsSymptom;
+          if (!sym || firedSymptoms.has(sym)) return;
+          firedSymptoms.add(sym);
+          trackEvent('air_fryer_symptom_opened', {
+            lang: pathLang,
+            symptom_key: sym,
+            severity: (el.dataset.analyticsSeverity as any) || undefined,
+            evidence_level: (el.dataset.analyticsEvidence as any) || undefined,
+            brand: el.dataset.analyticsBrand || undefined
+          });
+        });
+      }
+
+      // Listen for state updates to track visible cards
+      window.addEventListener('diagnostic-analytics-update', (e: Event) => {
+        const container = (e as CustomEvent).detail?.container;
+        if (container) trackVisibleCards(container);
+      });
+
+      // Manual click delegation — fires only on explicit click, no URL sent
+      document.addEventListener('click', (e: MouseEvent) => {
+        const link = (e.target as Element).closest('[data-analytics-manual]') as HTMLElement | null;
+        if (!link) return;
+        trackEvent('air_fryer_manual_opened', {
+          lang: pathLang,
+          source_type: (link.dataset.analyticsSourceType as any) || 'manual'
+        });
+      });
+
+      // Expose hook for applyState to call
+      (window as any).__afTrackVisibleCards = trackVisibleCards;
+    });
   });
 </script>

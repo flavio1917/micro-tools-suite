@@ -1,0 +1,204 @@
+[
+  {
+    "model_spec": "NA351",
+    "code": "E1",
+    "severity": "caution",
+    "evidence_level": "model_specific",
+    "source_text": "Airfryer potrebbe essere stato conservato in un luogo troppo freddo. Se il dispositivo è stato conservato in un ambiente a bassa temperatura, lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti prima di ricollegarlo. Se sullo schermo viene ancora visualizzata la scritta E1, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.",
+    "source_language": "it",
+    "source_reference": "Manuale Philips NA351",
+    "manual_url": "...",
+    "content": {
+      "it": {
+        "label": "Errore E1 su Philips Airfryer Serie 3000",
+        "cause": "L'apparecchio potrebbe essere stato conservato in un luogo troppo freddo.",
+        "solution": "Lasciare riscaldare l'apparecchio a temperatura ambiente per almeno 15 minuti prima di ricollegarlo.",
+        "steps": [
+          "Scollegare l'apparecchio dalla presa di corrente se collegato.",
+          "Lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti.",
+          "Ricollegarlo alla presa di corrente."
+        ],
+        "escalation": "Se sullo schermo viene ancora visualizzata la scritta E1, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti.",
+        "editorial_status": "reviewed"
+      }
+    },
+    "audit_result": "pass",
+    "notes": ["Removed diagnostic inference not supported by source"]
+  },
+  {
+    "model_spec": "NA351",
+    "code": "E4",
+    "severity": "caution",
+    "evidence_level": "model_specific",
+    "source_text": "Il dispositivo potrebbe non funzionare correttamente. Provare a scollegare e ricollegare il dispositivo alla presa.",
+    "source_language": "it",
+    "source_reference": "Manuale Philips NA351",
+    "manual_url": "...",
+    "content": {
+      "it": {
+        "label": "Errore E4 su Philips Airfryer Serie 3000",
+        "cause": "Il dispositivo potrebbe non funzionare correttamente.",
+        "solution": "Provare a scollegare e ricollegare il dispositivo alla presa di corrente.",
+        "steps": [
+          "Scollegare il dispositivo dalla presa di corrente.",
+          "Ricollegare il dispositivo alla presa di corrente."
+        ],
+        "escalation": "Se non si riesce a risolvere il problema, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.",
+        "editorial_status": "reviewed"
+      }
+    },
+    "audit_result": "pass",
+    "notes": ["Removed diagnostic inference not supported by source"]
+  },
+  {
+    "model_spec": "NA351",
+    "code": "E12",
+    "severity": "caution",
+    "evidence_level": "model_specific",
+    "source_text": "Il dispositivo potrebbe non funzionare correttamente. Provare a scollegare e ricollegare il dispositivo alla presa.",
+    "source_language": "it",
+    "source_reference": "Manuale Philips NA351",
+    "manual_url": "...",
+    "content": {
+      "it": {
+        "label": "Errore E12 su Philips Airfryer Serie 3000",
+        "cause": "Il dispositivo potrebbe non funzionare correttamente.",
+        "solution": "Provare a scollegare e ricollegare il dispositivo alla presa di corrente.",
+        "steps": [
+          "Scollegare il dispositivo dalla presa di corrente.",
+          "Ricollegare il dispositivo alla presa di corrente."
+        ],
+        "escalation": "Se non si riesce a risolvere il problema, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.",
+        "editorial_status": "reviewed"
+      }
+    },
+    "audit_result": "pass",
+    "notes": ["Removed diagnostic inference not supported by source"]
+  },
+  {
+    "model_spec": "NA220-NA221",
+    "code": "E1",
+    "severity": "caution",
+    "evidence_level": "model_specific",
+    "source_text": "Airfryer potrebbe essere stato conservato in un luogo troppo freddo. Se il dispositivo è stato conservato in un ambiente a bassa temperatura, lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti prima di ricollegarlo. Se il problema persiste, chiamare l'assistenza...",
+    "source_language": "it",
+    "source_reference": "Manuale Philips NA220/NA221",
+    "manual_url": "...",
+    "content": {
+      "it": {
+        "label": "Errore E1 su Philips Airfryer Serie 2000",
+        "cause": "Airfryer potrebbe essere stato conservato in un luogo troppo freddo.",
+        "solution": "Lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti prima di ricollegarlo.",
+        "steps": [
+          "Scollega l'apparecchio dalla presa di corrente se collegato.",
+          "Lascialo riscaldare a temperatura ambiente per almeno 15 minuti.",
+          "Ricollegalo alla presa di corrente."
+        ],
+        "escalation": "Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.",
+        "editorial_status": "reviewed"
+      }
+    },
+    "audit_result": "pass",
+    "notes": ["Removed diagnostic inference not supported by source"]
+  },
+  {
+    "model_spec": "NA220-NA221",
+    "code": "E4",
+    "severity": "caution",
+    "evidence_level": "model_specific",
+    "source_text": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo.",
+    "source_language": "it",
+    "source_reference": "Manuale Philips NA220/NA221",
+    "manual_url": "...",
+    "content": {
+      "it": {
+        "label": "Errore E4 su Philips Airfryer Serie 2000",
+        "cause": "Sull'apparecchio viene visualizzato un errore.",
+        "solution": "Scollegare l'apparecchio e ricollegarlo.",
+        "steps": [
+          "Scollegare l'apparecchio dalla presa di corrente.",
+          "Ricollegare l'apparecchio alla presa di corrente."
+        ],
+        "escalation": "Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.",
+        "editorial_status": "reviewed"
+      }
+    },
+    "audit_result": "pass",
+    "notes": ["Removed diagnostic inference not supported by source"]
+  },
+  {
+    "model_spec": "NA220-NA221",
+    "code": "E6",
+    "severity": "caution",
+    "evidence_level": "model_specific",
+    "source_text": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo.",
+    "source_language": "it",
+    "source_reference": "Manuale Philips NA220/NA221",
+    "manual_url": "...",
+    "content": {
+      "it": {
+        "label": "Errore E6 su Philips Airfryer Serie 2000",
+        "cause": "Sull'apparecchio viene visualizzato un errore.",
+        "solution": "Scollegare l'apparecchio e ricollegarlo.",
+        "steps": [
+          "Scollegare l'apparecchio dalla presa di corrente.",
+          "Ricollegare l'apparecchio alla presa di corrente."
+        ],
+        "escalation": "Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.",
+        "editorial_status": "reviewed"
+      }
+    },
+    "audit_result": "pass",
+    "notes": ["Removed diagnostic inference not supported by source"]
+  },
+  {
+    "model_spec": "NA220-NA221",
+    "code": "E9",
+    "severity": "caution",
+    "evidence_level": "model_specific",
+    "source_text": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo.",
+    "source_language": "it",
+    "source_reference": "Manuale Philips NA220/NA221",
+    "manual_url": "...",
+    "content": {
+      "it": {
+        "label": "Errore E9 su Philips Airfryer Serie 2000",
+        "cause": "Sull'apparecchio viene visualizzato un errore.",
+        "solution": "Scollegare l'apparecchio e ricollegarlo.",
+        "steps": [
+          "Scollegare l'apparecchio dalla presa di corrente.",
+          "Ricollegare l'apparecchio alla presa di corrente."
+        ],
+        "escalation": "Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.",
+        "editorial_status": "reviewed"
+      }
+    },
+    "audit_result": "pass",
+    "notes": ["Removed diagnostic inference not supported by source"]
+  },
+  {
+    "model_spec": "NA220-NA221",
+    "code": "E12",
+    "severity": "caution",
+    "evidence_level": "model_specific",
+    "source_text": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo.",
+    "source_language": "it",
+    "source_reference": "Manuale Philips NA220/NA221",
+    "manual_url": "...",
+    "content": {
+      "it": {
+        "label": "Errore E12 su Philips Airfryer Serie 2000",
+        "cause": "Sull'apparecchio viene visualizzato un errore.",
+        "solution": "Scollegare l'apparecchio e ricollegarlo.",
+        "steps": [
+          "Scollegare l'apparecchio dalla presa di corrente.",
+          "Ricollegare l'apparecchio alla presa di corrente."
+        ],
+        "escalation": "Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.",
+        "editorial_status": "reviewed"
+      }
+    },
+    "audit_result": "pass",
+    "notes": ["Removed diagnostic inference not supported by source"]
+  }
+]

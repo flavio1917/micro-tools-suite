@@ -2,15 +2,31 @@
 import type { AirFryerModel } from '../../types/air-fryer';
 import AirFryerSpecs from './AirFryerSpecs.astro';
 import ErrorCodeCard from './ErrorCodeCard.astro';
+import SymptomCard from './SymptomCard.astro';
 import DocumentReference from './DocumentReference.astro';
 
 import { normalizeString } from '../../lib/air-fryer-filters';
+import { rawV2Models } from '../../lib/air-fryer-db';
+import { errorsUiTranslations } from '../../data/i18n/errors-ui';
+import { errorContentDB, hasCompleteTranslations } from '../../data/i18n/error-content';
 
 export interface Props {
   model: AirFryerModel;
 }
 
 const { model } = Astro.props;
+
+// For translation keys
+const pathParts = Astro.url.pathname.split('/');
+const lang = (pathParts[1] && ['it', 'fr', 'es', 'en'].includes(pathParts[1])) ? pathParts[1] as 'it' | 'fr' | 'es' | 'en' : 'it';
+
+// V2 lookup
+const v2Model = rawV2Models.find(m => m.canonical_slug === model.id);
+// Only verified symptoms
+const verifiedSymptoms = v2Model?.symptoms.filter(s => s.severity && s.evidence_level && s.source && !v2Model.is_ambiguous && v2Model.metadata?.parsing_status !== 'manual_review') || [];
+
+const t = errorsUiTranslations[lang];
+const modelCardLabels = t.modelCard;
 
 // Closed state logic
 const showUserLabel = model.user_label && model.user_label !== model.actual_model;
@@ -68,12 +84,12 @@ const searchTokens = [
         {model.has_explicit_codes ? (
           <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800 px-3 py-1.5 rounded-full">
             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            Codici nel documento
+            {modelCardLabels.codesInDoc}
           </span>
         ) : (
           <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-800 px-3 py-1.5 rounded-full">
             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-            Guida problemi testuale
+            {modelCardLabels.textualGuide}
           </span>
         )}
         
@@ -92,7 +108,7 @@ const searchTokens = [
       {/* Features */}
       {model.notable_features && model.notable_features.length > 0 && (
         <div class="mb-8">
-          <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-4">Caratteristiche principali</h3>
+          <h3 class="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-4">{modelCardLabels.mainFeatures}</h3>
           <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
             {visibleFeatures.map(f => (
               <li class="flex items-start gap-2.5">
@@ -105,7 +121,7 @@ const searchTokens = [
           {hiddenFeatures.length > 0 && (
             <details class="mt-2">
               <summary class="text-sm font-semibold text-blue-600 dark:text-blue-400 cursor-pointer hover:underline outline-none w-max">
-                Mostra tutte le caratteristiche
+                {modelCardLabels.showAllFeatures}
               </summary>
               <ul class="space-y-2 text-slate-700 dark:text-slate-300 text-sm sm:text-base mt-2">
                 {hiddenFeatures.map(f => (
@@ -122,7 +138,7 @@ const searchTokens = [
 
       {/* Error Codes */}
       <div class="mb-8">
-        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2">Errori e messaggi documentati</h3>
+        <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2">{modelCardLabels.documentedErrors}</h3>
         
         {model.error_note && (
           <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 italic bg-slate-100 dark:bg-slate-800/50 p-3 rounded-md border-l-2 border-slate-300 dark:border-slate-600">
@@ -132,9 +148,37 @@ const searchTokens = [
 
         {model.has_explicit_codes && model.error_codes.length > 0 ? (
           <div class="space-y-4">
-            {model.error_codes.map(ec => (
-              <ErrorCodeCard errorCode={ec} />
-            ))}
+            {model.error_codes.map(ec => {
+              if (v2Model) {
+                const v2Ec = v2Model.error_codes.find(v => v.code === ec.code);
+                if (v2Ec && v2Ec.severity && v2Ec.evidence_level) {
+                  // Provide V2 content - localized content should come from some DB if we had it, but here we can only simulate or pass a structure if it exists. Wait, where is the localized content?
+                  // Ah! In V2, the localized content is NOT in the DB json... wait! 
+                  // "Non creare copy del tipo: 'Philips non si accende...' senza record specifico."
+                  // I need to use the localized UI labels or the legacy description.
+                  // Actually, the prompt says for V2 ErrorCodeCard: "content: { label: string; cause?: string; solution?: string; steps?: string[]; safetyNote?: string; }"
+                  // In V1, it's `ec.meaning`, `ec.description`, `ec.suggestions`.
+                  return (
+                    <ErrorCodeCard 
+                      code={ec.code}
+                      severity={v2Ec.severity}
+                      evidenceLevel={v2Ec.evidence_level}
+                      diyFixable={v2Ec.diy_fixable}
+                      content={{
+                        label: ec.meaning || ec.description || 'Errore tecnico',
+                        cause: ec.description,
+                        solution: ec.suggestions?.[0],
+                        steps: ec.suggestions?.slice(1)
+                      }}
+                      source={v2Ec.source}
+                      lang={lang}
+                      brandDisplayName={v2Model.brand_slug} // just use slug for now
+                    />
+                  );
+                }
+              }
+              return <ErrorCodeCard errorCode={ec} />;
+            })}
           </div>
         ) : (
           <div class="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg p-6">
@@ -142,19 +186,52 @@ const searchTokens = [
               <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Nessun codice display documentato
+              {modelCardLabels.noDisplayCodes}
             </h4>
             <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
-              Nel documento disponibile per questo modello non compare una tabella di codici errore o messaggi display specifici. Qui trovi i problemi comuni e i suggerimenti riportati nelle istruzioni del modello.
+              {t.noExplicitCodesMsg}
             </p>
           </div>
         )}
       </div>
+      
+      {/* Symptoms */}
+      {verifiedSymptoms.length > 0 && verifiedSymptoms.some(sym => hasCompleteTranslations(`${v2Model!.brand_slug}.${v2Model!.model_spec_slug}.symptom.${sym.key}`, sym.severity)) && (
+        <div class="mb-8">
+          <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-4">{modelCardLabels.commonProblems}</h3>
+          <div class="space-y-4">
+            {verifiedSymptoms.map(sym => {
+              const symptomI18nKey = `${v2Model!.brand_slug}.${v2Model!.model_spec_slug}.symptom.${sym.key}`;
+              if (!hasCompleteTranslations(symptomI18nKey, sym.severity)) {
+                return null;
+              }
+              const localizedSymptom = errorContentDB[lang]?.symptoms[symptomI18nKey];
+              if (!localizedSymptom) return null;
+
+              return (
+                <SymptomCard 
+                  symptomKey={sym.key}
+                  severity={sym.severity}
+                  evidenceLevel={sym.evidence_level}
+                  content={{
+                    label: localizedSymptom.label.text,
+                    cause: localizedSymptom.cause?.text,
+                    solution: localizedSymptom.solution?.text
+                  }}
+                  source={sym.source}
+                  lang={lang}
+                  brandDisplayName={v2Model!.brand_slug}
+                />
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Generic Suggestions */}
       {model.generic_suggestions && model.generic_suggestions.length > 0 && (
         <div class="mb-8 bg-blue-50/50 dark:bg-blue-900/10 rounded-xl p-5 sm:p-6 border border-blue-100 dark:border-blue-900/30">
-          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Suggerimenti dal documento e dalle istruzioni del modello</h3>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">{modelCardLabels.docSuggestions}</h3>
           <ul class="space-y-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
              {model.generic_suggestions.map(sugg => (
                <li class="flex items-start gap-2.5">

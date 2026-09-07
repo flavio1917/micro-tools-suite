@@ -1,0 +1,326 @@
+---
+import { errorsUiTranslations } from '../../data/i18n/errors-ui';
+import { getSearchIndex } from '../../lib/air-fryer-search-index';
+
+export interface Props {
+  lang: 'it' | 'en' | 'es' | 'fr';
+}
+
+const { lang } = Astro.props;
+const t = errorsUiTranslations[lang];
+const searchIndex = getSearchIndex(lang);
+
+---
+<div class="diagnostic-search-wrapper w-full max-w-2xl mx-auto mb-8 relative" id="diagnostic-search-container">
+  <label for="diagnostic-search-input" class="sr-only">{t.searchPlaceholder}</label>
+  
+  <div class="relative">
+    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+    </div>
+    <input
+      type="text"
+      id="diagnostic-search-input"
+      role="combobox"
+      aria-expanded="false"
+      aria-controls="diagnostic-search-results"
+      aria-autocomplete="list"
+      placeholder={t.searchPlaceholder}
+      class="w-full pl-12 pr-4 py-4 rounded-2xl border-2 border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 outline-none transition-all text-lg shadow-sm"
+      autocomplete="off"
+    />
+    
+    <button
+      id="diagnostic-search-clear"
+      class="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hidden"
+      aria-label="Clear search"
+    >
+      <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+    </button>
+  </div>
+
+  <div 
+    id="diagnostic-search-results" 
+    role="listbox"
+    class="absolute z-50 w-full mt-2 bg-white dark:bg-slate-800 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700 max-h-[60vh] overflow-y-auto hidden"
+  >
+    <!-- Results injected here -->
+  </div>
+  
+  <div id="diagnostic-search-data" data-index={JSON.stringify(searchIndex)} class="hidden"></div>
+  <div id="diagnostic-search-live-region" aria-live="polite" class="sr-only"></div>
+</div>
+
+<script>
+  import { performDiagnosticSearch } from '../../lib/air-fryer-search';
+  import type { SearchIndexItem } from '../../lib/air-fryer-search-index';
+  import { trackEvent } from '../../lib/analytics';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('diagnostic-search-container');
+    const input = document.getElementById('diagnostic-search-input') as HTMLInputElement;
+    const clearBtn = document.getElementById('diagnostic-search-clear');
+    const resultsContainer = document.getElementById('diagnostic-search-results');
+    const liveRegion = document.getElementById('diagnostic-search-live-region');
+    
+    if (!input || !resultsContainer || !liveRegion) return;
+
+    // We can get the localized labels from data attributes or just hardcode some for now if they are simple,
+    // but the prompt asked for translated categories. I'll pass them via global object or parse them from DOM if needed.
+    // Better: We get the current lang from the page URL (since it's dynamic).
+    const pathParts = window.location.pathname.split('/');
+    const lang = pathParts[1] || 'it'; 
+    
+    // Quick translations map
+    const catLabels = {
+      it: { model: 'MODELLI', brand: 'MARCHE', code: 'CODICI ERRORE', symptom: 'PROBLEMI COMUNI', fuzzy: 'FORSE CERCAVI', ambiguous: 'Abbiamo trovato più varianti possibili. Verifica il codice modello sull\'etichetta o nel manuale della friggitrice.', selectModelStr: 'Il significato dipende da marca e modello. Seleziona la tua friggitrice per istruzioni più precise.', noResults: 'Nessun risultato trovato.', resultsFound: '{n} risultati trovati. Usa le frecce per navigare.' },
+      en: { model: 'MODELS', brand: 'BRANDS', code: 'ERROR CODES', symptom: 'COMMON PROBLEMS', fuzzy: 'DID YOU MEAN', ambiguous: 'We found multiple possible variants. Check the model code on the label or in the manual.', selectModelStr: 'The meaning depends on the brand and model. Select your air fryer for more precise instructions.', noResults: 'No results found.', resultsFound: '{n} results found. Use arrows to navigate.' },
+      es: { model: 'MODELOS', brand: 'MARCAS', code: 'CÓDIGOS DE ERROR', symptom: 'PROBLEMAS COMUNES', fuzzy: 'QUIZÁS QUISISTE DECIR', ambiguous: 'Encontramos varias variantes posibles. Verifique el código del modelo en la etiqueta o en el manual.', selectModelStr: 'El significado depende de la marca y el modelo. Selecciona tu freidora para obtener instrucciones más precisas.', noResults: 'No se encontraron resultados.', resultsFound: '{n} resultados encontrados. Usa las flechas para navegar.' },
+      fr: { model: 'MODÈLES', brand: 'MARQUES', code: 'CODES D\'ERREUR', symptom: 'PROBLÈMES COURANTS', fuzzy: 'ESSAYEZ-VOUS DE CHERCHER', ambiguous: 'Nous avons trouvé plusieurs variantes possibles. Vérifiez le code du modèle sur l\'étiquette ou dans le manuel.', selectModelStr: 'La signification dépend de la marque et du modèle. Sélectionnez votre friteuse pour des instructions plus précises.', noResults: 'Aucun résultat trouvé.', resultsFound: '{n} résultats trouvés. Utilisez les flèches pour naviguer.' }
+    };
+    const t = catLabels[lang as keyof typeof catLabels] || catLabels['it'];
+
+    const dataEl = document.getElementById('diagnostic-search-data');
+    const searchIndex: SearchIndexItem[] = dataEl?.dataset.index ? JSON.parse(dataEl.dataset.index) : [];
+
+    let activeIndex = -1;
+    let currentResults: any[] = [];
+    
+    function closeResults() {
+      resultsContainer!.classList.add('hidden');
+      input.setAttribute('aria-expanded', 'false');
+      input.removeAttribute('aria-activedescendant');
+      activeIndex = -1;
+    }
+
+    function renderResults(results: any[], queryLen: number) {
+      currentResults = results;
+      resultsContainer!.innerHTML = '';
+      
+      if (results.length === 0) {
+        liveRegion!.textContent = t.noResults;
+        closeResults();
+        trackEvent('air_fryer_error_no_result', { lang, query_length: queryLen, result_count: 0 });
+        return;
+      }
+      
+      liveRegion!.textContent = t.resultsFound.replace('{n}', results.length.toString());
+      
+      const grouped = results.reduce((acc, curr) => {
+        if (!acc[curr.type]) acc[curr.type] = [];
+        acc[curr.type].push(curr);
+        return acc;
+      }, {} as Record<string, any[]>);
+      
+      const order = ['model', 'brand', 'code', 'symptom', 'fuzzy'];
+      
+      let itemIndex = 0;
+      
+      order.forEach(type => {
+        if (grouped[type] && grouped[type].length > 0) {
+          // Category Header
+          const header = document.createElement('div');
+          header.className = 'px-4 py-2 text-xs font-bold text-slate-500 bg-slate-50 dark:bg-slate-900/50 uppercase tracking-wider sticky top-0';
+          header.textContent = t[type as keyof typeof t];
+          resultsContainer!.appendChild(header);
+          
+          grouped[type].forEach(item => {
+            const li = document.createElement('div');
+            li.role = 'option';
+            li.id = `result-item-${itemIndex}`;
+            li.className = 'px-4 py-3 cursor-pointer hover:bg-blue-50 dark:hover:bg-blue-900/20 border-b border-slate-100 dark:border-slate-700 last:border-0 transition-colors flex flex-col gap-1';
+            li.dataset.index = itemIndex.toString();
+            
+            const title = document.createElement('div');
+            title.className = 'font-bold text-slate-900 dark:text-white';
+            title.textContent = item.label;
+            li.appendChild(title);
+            
+            if (item.subLabel) {
+              const sub = document.createElement('div');
+              sub.className = 'text-sm text-slate-500 dark:text-slate-400';
+              sub.textContent = item.subLabel;
+              li.appendChild(sub);
+            }
+            
+            if (item.ambiguous) {
+              const warn = document.createElement('div');
+              warn.className = 'mt-1 text-xs text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 p-2 rounded';
+              warn.textContent = t.ambiguous;
+              li.appendChild(warn);
+            }
+            
+            if (type === 'code') {
+              const warn = document.createElement('div');
+              warn.className = 'mt-1 text-xs text-blue-600 dark:text-blue-400';
+              warn.textContent = t.selectModelStr;
+              li.appendChild(warn);
+            }
+            
+            resultsContainer!.appendChild(li);
+            itemIndex++;
+          });
+        }
+      });
+      
+      resultsContainer!.classList.remove('hidden');
+      input.setAttribute('aria-expanded', 'true');
+    }
+
+    let searchTimer: ReturnType<typeof setTimeout> | null = null;
+    input.addEventListener('input', (e) => {
+      const q = (e.target as HTMLInputElement).value;
+      if (clearBtn) clearBtn.classList.toggle('hidden', q.length === 0);
+      
+      if (q.length < 2) {
+        closeResults();
+        return;
+      }
+      
+      const results = performDiagnosticSearch(q, searchIndex);
+      renderResults(results, q.length);
+      
+      // Debounced search event — send only query_length, not raw text
+      if (searchTimer) clearTimeout(searchTimer);
+      searchTimer = setTimeout(() => {
+        const hasExact = results.some(r => r.type === 'model' || r.type === 'brand');
+        const category = results[0]?.type || 'none';
+        trackEvent('air_fryer_error_search', {
+          lang,
+          query_length: q.length,
+          result_count: results.length,
+          has_exact_match: hasExact,
+          result_category: category
+        });
+      }, 600);
+    });
+    
+    input.addEventListener('focus', () => {
+      if (input.value.length >= 2 && currentResults.length > 0) {
+        resultsContainer!.classList.remove('hidden');
+        input.setAttribute('aria-expanded', 'true');
+      }
+    });
+    
+    document.addEventListener('click', (e) => {
+      if (!container!.contains(e.target as Node)) {
+        closeResults();
+      }
+    });
+    
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        input.value = '';
+        input.focus();
+        clearBtn.classList.add('hidden');
+        closeResults();
+        
+        // Reset URL state to base
+        const url = new URL(window.location.href);
+        url.search = '';
+        window.history.pushState({}, '', url.toString());
+        window.dispatchEvent(new Event('diagnostic-search-update'));
+      });
+    }
+
+    function selectResult(index: number) {
+      if (index < 0 || index >= currentResults.length) return;
+      const item = currentResults[index];
+      
+      trackEvent('air_fryer_error_result_selected', {
+        lang,
+        result_category: item.type,
+        brand: item.brand || '',
+        is_ambiguous: !!item.ambiguous
+      });
+      
+      const url = new URL(window.location.href);
+      const prevModel = url.searchParams.get('model');
+      const prevBrand = url.searchParams.get('brand');
+      const prevCode = url.searchParams.get('code');
+      const prevSymptom = url.searchParams.get('symptom');
+      
+      url.search = ''; // reset all
+
+      if (item.type === 'model' || item.type === 'fuzzy') {
+        if (item.ambiguous) {
+          if (item.brand) url.searchParams.set('brand', item.brand);
+          url.searchParams.set('review-model', item.value);
+          // Keep code/symptom for generic guidance
+          if (prevCode) url.searchParams.set('code', prevCode);
+          if (prevSymptom) url.searchParams.set('symptom', prevSymptom);
+        } else {
+          url.searchParams.set('model', item.value);
+          if (prevCode) url.searchParams.set('code', prevCode);
+          if (prevSymptom) url.searchParams.set('symptom', prevSymptom);
+        }
+      } else if (item.type === 'brand') {
+        url.searchParams.set('brand', item.value);
+        // Prompt precedence: clicking brand clears model, code, symptom
+      } else if (item.type === 'code') {
+        if (prevModel) url.searchParams.set('model', prevModel);
+        else if (prevBrand) url.searchParams.set('brand', prevBrand);
+        url.searchParams.set('code', item.value);
+      } else if (item.type === 'symptom') {
+        if (prevModel) url.searchParams.set('model', prevModel);
+        else if (prevBrand) url.searchParams.set('brand', prevBrand);
+        url.searchParams.set('symptom', item.value);
+      }
+      
+      window.history.pushState({}, '', url.toString());
+      
+      // Set input text to selection for feedback
+      input.value = item.label;
+      if (clearBtn) clearBtn.classList.remove('hidden');
+      closeResults();
+      
+      // Notify parent component (AirFryerDatabase) to update view
+      window.dispatchEvent(new Event('diagnostic-search-update'));
+    }
+
+    // Keyboard navigation
+    input.addEventListener('keydown', (e) => {
+      if (resultsContainer!.classList.contains('hidden')) return;
+      
+      const items = resultsContainer!.querySelectorAll('[role="option"]');
+      
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        activeIndex = (activeIndex + 1) % items.length;
+        updateActiveDescendant(items);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        activeIndex = (activeIndex - 1 + items.length) % items.length;
+        updateActiveDescendant(items);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        if (activeIndex >= 0) {
+          selectResult(activeIndex);
+        }
+      } else if (e.key === 'Escape') {
+        closeResults();
+        input.focus();
+      }
+    });
+    
+    function updateActiveDescendant(items: NodeListOf<Element>) {
+      items.forEach((item, idx) => {
+        if (idx === activeIndex) {
+          item.classList.add('bg-blue-100', 'dark:bg-blue-900/40');
+          input.setAttribute('aria-activedescendant', item.id);
+          (item as HTMLElement).scrollIntoView({ block: 'nearest' });
+        } else {
+          item.classList.remove('bg-blue-100', 'dark:bg-blue-900/40');
+        }
+      });
+    }
+    
+    resultsContainer.addEventListener('click', (e) => {
+      const option = (e.target as Element).closest('[role="option"]');
+      if (option) {
+        const index = parseInt((option as HTMLElement).dataset.index || '-1', 10);
+        selectResult(index);
+      }
+    });
+  });
+</script>

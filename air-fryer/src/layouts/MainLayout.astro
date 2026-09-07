@@ -14,7 +14,9 @@ export interface Props {
     en?: string;
     es?: string;
     fr?: string;
+    "x-default"?: string;
   };
+  noindex?: boolean;
 }
 
 const {
@@ -23,7 +25,8 @@ const {
   description,
   ogImage = "https://www.crispissimo.com/og-image.jpg",
   recipeData,
-  alternateUrls = {},
+  alternateUrls,
+  noindex = false,
 } = Astro.props;
 
 const defaultTitles = {
@@ -92,11 +95,12 @@ const currentLabels = navLabels[lang as keyof typeof navLabels] || navLabels.it;
 const fallbackCanonical = new URL(Astro.url.pathname, Astro.site || "https://www.crispissimo.com").toString();
 const canonicalURL = alternateUrls?.[lang as keyof typeof alternateUrls] || fallbackCanonical;
 
-const finalAlternateUrls = Object.keys(alternateUrls).length > 0 ? alternateUrls : {
+const finalAlternateUrls = alternateUrls && Object.keys(alternateUrls).length > 0 ? alternateUrls : {
   it: "https://www.crispissimo.com/",
   en: "https://www.crispissimo.com/en/",
   es: "https://www.crispissimo.com/es/",
-  fr: "https://www.crispissimo.com/fr/"
+  fr: "https://www.crispissimo.com/fr/",
+  "x-default": "https://www.crispissimo.com/"
 };
 
 let finalTitle = title || defaultTitles[lang as keyof typeof defaultTitles] || defaultTitles.it;
@@ -185,7 +189,7 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
     <title>{finalTitle}</title>
     <meta name="description" content={finalDescription} />
     <link rel="canonical" href={canonicalURL} />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
     <meta name="google-site-verification" content="Tx2vsoQT33RAsPE5ydGss9ylFckhKM1DCAI59kyDlW8" />
     <meta name="p:domain_verify" content="0513c10094fa04708fce47d2922e822b" />
 
@@ -195,7 +199,11 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
         {finalAlternateUrls.en && <link rel="alternate" hreflang="en" href={finalAlternateUrls.en} />}
         {finalAlternateUrls.es && <link rel="alternate" hreflang="es" href={finalAlternateUrls.es} />}
         {finalAlternateUrls.fr && <link rel="alternate" hreflang="fr" href={finalAlternateUrls.fr} />}
-        {finalAlternateUrls.it && <link rel="alternate" hreflang="x-default" href={finalAlternateUrls.it} />}
+        {finalAlternateUrls["x-default"] ? (
+           <link rel="alternate" hreflang="x-default" href={finalAlternateUrls["x-default"]} />
+        ) : finalAlternateUrls.it ? (
+           <link rel="alternate" hreflang="x-default" href={finalAlternateUrls.it} />
+        ) : null}
       </>
     )}
 

@@ -74,7 +74,79 @@ export const errorsUiTranslations = {
     actionCoolDown: "LASCIA RAFFREDDARE",
     actionAssistance: "ASSISTENZA CONSIGLIATA",
     actionQuickCheck: "CONTROLLO RAPIDO",
-    actionManualCheck: "CONSULTA IL MANUALE"
+    actionManualCheck: "CONSULTA IL MANUALE",
+    
+    // Diagnostic Search
+    searchPlaceholder: "Cerca marca, modello, codice o problema",
+    searchCatModels: "MODELLI",
+    searchCatBrands: "MARCHE",
+    searchCatCodes: "CODICI ERRORE",
+    searchCatSymptoms: "PROBLEMI COMUNI",
+    searchDidYouMean: "FORSE CERCAVI",
+    ambiguousVariantWarning: "Abbiamo trovato più varianti possibili. Verifica il riferimento esatto sull'etichetta del prodotto o nel manuale.",
+    
+    // Symptoms
+    symptomLabels: {
+      "non-si-accende": "non si accende",
+      "fumo-bianco": "fumo bianco"
+    } as Record<string, string>,
+    
+    cardLabels: {
+      meaning: "Significato",
+      possibleCause: "Causa possibile",
+      solution: "Soluzione",
+      checklist: "Checklist",
+      officialManual: "Consulta il manuale ufficiale",
+      page: "Pagina",
+      opensInNewTab: "si apre in una nuova scheda"
+    },
+    
+    formLabels: {
+      title: "Non hai trovato quello che cercavi?",
+      subtitle: "Aiutaci a migliorare! Inviaci i dettagli e aggiungeremo le informazioni mancanti.",
+      brand: "Marca",
+      model: "Modello",
+      code: "Codice Errore (se applicabile)",
+      submit: "Invia segnalazione"
+    },
+    
+    statusMessages: {
+      initial: "Scegli una marca per vedere i modelli disponibili oppure seleziona 'Altro' per la guida generica.",
+      ambiguous: "Abbiamo trovato più varianti possibili. Verifica il riferimento esatto sull'etichetta del prodotto o nel manuale.",
+      modelNotFound: "Modello non trovato. Consulta la guida generica o riprova la ricerca.",
+      brandSelected: "Hai selezionato {brand}. Puoi consultare i messaggi documentati per i modelli del brand.",
+      brandNotFound: "Marca non trovata. Consulta la guida generica.",
+      genericGuidance: "Il significato dipende da marca e modello. Seleziona la tua friggitrice per istruzioni più precise. Ecco la guida generica.",
+      emptySearch: "Cerca marca, modello, codice o problema per ricevere istruzioni precise."
+    },
+    
+    legacyLabels: {
+      typeError: "Errore tecnico",
+      typeWarning: "Controllo richiesto",
+      typeStatus: "Stato / promemoria",
+      typeMessage: "Messaggio",
+      actionAssistance: "Contatta assistenza",
+      actionStop: "Spegni, scollega e verifica",
+      actionCheck: "Verifica e riprendi",
+      actionManual: "Verifica il manuale",
+      sourceModel: "Modello sorgente:"
+    },
+    
+    diagnosticSearch: {
+      noResults: "Nessun risultato trovato.",
+      resultsFound: "{n} risultati trovati. Usa le frecce per navigare."
+    },
+    
+    modelCard: {
+      codesInDoc: "Codici nel documento",
+      textualGuide: "Guida problemi testuale",
+      mainFeatures: "Caratteristiche principali",
+      showAllFeatures: "Mostra tutte le caratteristiche",
+      documentedErrors: "Errori e messaggi documentati",
+      noDisplayCodes: "Nessun codice display documentato",
+      commonProblems: "Problemi comuni e soluzioni",
+      docSuggestions: "Suggerimenti dal documento e dalle istruzioni del modello"
+    }
   },
   en: {
     heroTitle: "Error Database & Reset",
@@ -122,7 +194,79 @@ export const errorsUiTranslations = {
     actionCoolDown: "LET IT COOL DOWN",
     actionAssistance: "SERVICE RECOMMENDED",
     actionQuickCheck: "QUICK CHECK",
-    actionManualCheck: "CONSULT MANUAL"
+    actionManualCheck: "CONSULT MANUAL",
+
+    // Diagnostic Search
+    searchPlaceholder: "Search a brand, model, code, or problem",
+    searchCatModels: "MODELS",
+    searchCatBrands: "BRANDS",
+    searchCatCodes: "ERROR CODES",
+    searchCatSymptoms: "COMMON PROBLEMS",
+    searchDidYouMean: "DID YOU MEAN",
+    ambiguousVariantWarning: "We found multiple possible variants. Check the exact reference on the product label or in the manual.",
+    
+    // Symptoms
+    symptomLabels: {
+      "non-si-accende": "won't turn on",
+      "fumo-bianco": "white smoke"
+    } as Record<string, string>,
+
+    cardLabels: {
+      meaning: "Meaning",
+      possibleCause: "Possible cause",
+      solution: "Solution",
+      checklist: "Checklist",
+      officialManual: "View the official manual",
+      page: "Page",
+      opensInNewTab: "opens in a new tab"
+    },
+
+    formLabels: {
+      title: "Didn't find what you were looking for?",
+      subtitle: "Help us improve! Send us the details and we will add the missing information.",
+      brand: "Brand",
+      model: "Model",
+      code: "Error Code (if applicable)",
+      submit: "Send report"
+    },
+    
+    statusMessages: {
+      initial: "Choose a brand to see available models or select 'Other' for generic guidance.",
+      ambiguous: "We found multiple possible variants. Check the exact reference on the product label or in the manual.",
+      modelNotFound: "Model not found. Consult the generic guide or try your search again.",
+      brandSelected: "You selected {brand}. You can view the documented messages for this brand's models.",
+      brandNotFound: "Brand not found. Consult the generic guide.",
+      genericGuidance: "The meaning depends on the brand and model. Select your air fryer for precise instructions. Here is the generic guide.",
+      emptySearch: "Search for a brand, model, code, or problem to receive precise instructions."
+    },
+
+    legacyLabels: {
+      typeError: "Technical error",
+      typeWarning: "Check required",
+      typeStatus: "Status / reminder",
+      typeMessage: "Message",
+      actionAssistance: "Contact support",
+      actionStop: "Turn off, unplug and check",
+      actionCheck: "Check and resume",
+      actionManual: "Check the manual",
+      sourceModel: "Source model:"
+    },
+
+    diagnosticSearch: {
+      noResults: "No results found.",
+      resultsFound: "{n} results found. Use arrows to navigate."
+    },
+
+    modelCard: {
+      codesInDoc: "Codes in document",
+      textualGuide: "Textual problem guide",
+      mainFeatures: "Main features",
+      showAllFeatures: "Show all features",
+      documentedErrors: "Documented errors and messages",
+      noDisplayCodes: "No documented display codes",
+      commonProblems: "Common problems and solutions",
+      docSuggestions: "Suggestions from document and model instructions"
+    }
   },
   es: {
     heroTitle: "Base de Datos de Errores y Reinicio",
@@ -170,7 +314,79 @@ export const errorsUiTranslations = {
     actionCoolDown: "DEJAR ENFRIAR",
     actionAssistance: "ASISTENCIA RECOMENDADA",
     actionQuickCheck: "CONTROL RÁPIDO",
-    actionManualCheck: "CONSULTAR MANUAL"
+    actionManualCheck: "CONSULTAR MANUAL",
+
+    // Diagnostic Search
+    searchPlaceholder: "Busca una marca, un modelo, un código o un problema",
+    searchCatModels: "MODELOS",
+    searchCatBrands: "MARCAS",
+    searchCatCodes: "CÓDIGOS DE ERROR",
+    searchCatSymptoms: "PROBLEMAS COMUNES",
+    searchDidYouMean: "QUIZÁS QUISISTE DECIR",
+    ambiguousVariantWarning: "Hemos encontrado varias variantes posibles. Comprueba la referencia exacta en la etiqueta del producto o en el manual.",
+    
+    // Symptoms
+    symptomLabels: {
+      "non-si-accende": "no se enciende",
+      "fumo-bianco": "humo blanco"
+    } as Record<string, string>,
+
+    cardLabels: {
+      meaning: "Significado",
+      possibleCause: "Posible causa",
+      solution: "Solución",
+      checklist: "Lista de comprobación",
+      officialManual: "Consultar el manual oficial",
+      page: "Página",
+      opensInNewTab: "se abre en una nueva pestaña"
+    },
+
+    formLabels: {
+      title: "¿No encontraste lo que buscabas?",
+      subtitle: "¡Ayúdanos a mejorar! Envíanos los detalles y añadiremos la información faltante.",
+      brand: "Marca",
+      model: "Modelo",
+      code: "Código de Error (si aplica)",
+      submit: "Enviar reporte"
+    },
+    
+    statusMessages: {
+      initial: "Elige una marca para ver los modelos disponibles o selecciona 'Otra' para la guía genérica.",
+      ambiguous: "Hemos encontrado varias variantes posibles. Comprueba la referencia exacta en la etiqueta del producto o en el manual.",
+      modelNotFound: "Modelo no encontrado. Consulta la guía genérica o inténtalo de nuevo.",
+      brandSelected: "Has seleccionado {brand}. Puedes consultar los mensajes documentados para los modelos de la marca.",
+      brandNotFound: "Marca no encontrada. Consulta la guía genérica.",
+      genericGuidance: "El significado depende de la marca y modelo. Selecciona tu freidora para obtener instrucciones precisas. Aquí tienes la guía genérica.",
+      emptySearch: "Busca una marca, modelo, código o problema para recibir instrucciones precisas."
+    },
+
+    legacyLabels: {
+      typeError: "Error técnico",
+      typeWarning: "Control requerido",
+      typeStatus: "Estado / recordatorio",
+      typeMessage: "Mensaje",
+      actionAssistance: "Contactar soporte",
+      actionStop: "Apagar, desconectar y verificar",
+      actionCheck: "Verificar y reanudar",
+      actionManual: "Verificar el manual",
+      sourceModel: "Modelo de origen:"
+    },
+
+    diagnosticSearch: {
+      noResults: "No se encontraron resultados.",
+      resultsFound: "{n} resultados encontrados. Usa las flechas para navegar."
+    },
+
+    modelCard: {
+      codesInDoc: "Códigos en el documento",
+      textualGuide: "Guía textual de problemas",
+      mainFeatures: "Características principales",
+      showAllFeatures: "Mostrar todas las características",
+      documentedErrors: "Errores y mensajes documentados",
+      noDisplayCodes: "Ningún código de pantalla documentado",
+      commonProblems: "Problemas comunes y soluciones",
+      docSuggestions: "Sugerencias del documento e instrucciones del modelo"
+    }
   },
   fr: {
     heroTitle: "Base de Données des Erreurs et Réinitialisation",
@@ -218,6 +434,78 @@ export const errorsUiTranslations = {
     actionCoolDown: "LAISSER REFROIDIR",
     actionAssistance: "ASSISTANCE RECOMMANDÉE",
     actionQuickCheck: "CONTRÔLE RAPIDE",
-    actionManualCheck: "CONSULTER LE MANUEL"
+    actionManualCheck: "CONSULTER LE MANUEL",
+
+    // Diagnostic Search
+    searchPlaceholder: "Rechercher une marque, un modèle, un code ou un problème",
+    searchCatModels: "MODÈLES",
+    searchCatBrands: "MARQUES",
+    searchCatCodes: "CODES D'ERREUR",
+    searchCatSymptoms: "PROBLÈMES COURANTS",
+    searchDidYouMean: "ESSAYEZ-VOUS DE CHERCHER",
+    ambiguousVariantWarning: "Nous avons trouvé plusieurs variantes possibles. Vérifiez la référence exacte sur l'étiquette du produit ou dans le manuel.",
+    
+    // Symptoms
+    symptomLabels: {
+      "non-si-accende": "ne s'allume pas",
+      "fumo-bianco": "fumée blanche"
+    } as Record<string, string>,
+
+    cardLabels: {
+      meaning: "Signification",
+      possibleCause: "Cause possible",
+      solution: "Solution",
+      checklist: "Liste de contrôle",
+      officialManual: "Consulter le manuel officiel",
+      page: "Page",
+      opensInNewTab: "s’ouvre dans un nouvel onglet"
+    },
+
+    formLabels: {
+      title: "Vous n'avez pas trouvé ce que vous cherchiez ?",
+      subtitle: "Aidez-nous à nous améliorer ! Envoyez-nous les détails et nous ajouterons les informations manquantes.",
+      brand: "Marque",
+      model: "Modèle",
+      code: "Code d'erreur (si applicable)",
+      submit: "Envoyer le signalement"
+    },
+    
+    statusMessages: {
+      initial: "Choisissez une marque pour voir les modèles disponibles ou sélectionnez 'Autre' pour le guide générique.",
+      ambiguous: "Nous avons trouvé plusieurs variantes possibles. Vérifiez la référence exacte sur l'étiquette du produit ou dans le manuel.",
+      modelNotFound: "Modèle introuvable. Consultez le guide générique ou réessayez.",
+      brandSelected: "Vous avez sélectionné {brand}. Vous pouvez consulter les messages documentés pour les modèles de cette marque.",
+      brandNotFound: "Marque introuvable. Consultez le guide générique.",
+      genericGuidance: "La signification dépend de la marque et du modèle. Sélectionnez votre friteuse pour des instructions précises. Voici le guide générique.",
+      emptySearch: "Recherchez une marque, un modèle, un code ou un problème pour recevoir des instructions précises."
+    },
+
+    legacyLabels: {
+      typeError: "Erreur technique",
+      typeWarning: "Contrôle requis",
+      typeStatus: "État / rappel",
+      typeMessage: "Message",
+      actionAssistance: "Contacter l'assistance",
+      actionStop: "Éteindre, débrancher et vérifier",
+      actionCheck: "Vérifier et reprendre",
+      actionManual: "Vérifier le manuel",
+      sourceModel: "Modèle source :"
+    },
+
+    diagnosticSearch: {
+      noResults: "Aucun résultat trouvé.",
+      resultsFound: "{n} résultats trouvés. Utilisez les flèches pour naviguer."
+    },
+
+    modelCard: {
+      codesInDoc: "Codes dans le document",
+      textualGuide: "Guide textuel des problèmes",
+      mainFeatures: "Caractéristiques principales",
+      showAllFeatures: "Afficher toutes les caractéristiques",
+      documentedErrors: "Erreurs et messages documentés",
+      noDisplayCodes: "Aucun code d'affichage documenté",
+      commonProblems: "Problèmes courants et solutions",
+      docSuggestions: "Suggestions du document et des instructions du modèle"
+    }
   }
 };

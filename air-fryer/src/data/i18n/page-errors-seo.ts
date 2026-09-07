@@ -7,6 +7,9 @@ export interface PageErrorsSeoData {
   metaTitle: string;
   metaDescription: string;
   h1: string;
+  modelMetaTitle?: string;
+  modelMetaDescription?: string;
+  modelH1?: string;
   introParagraph: string;
   usefulResourcesTitle: string;
   linkCleaning: string;
@@ -26,6 +29,9 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     metaTitle: "Codici errore friggitrice ad aria: significato, reset e soluzioni | Crispissimo",
     metaDescription: "Scopri il significato dei codici di errore (E1, E2, Pot, ecc.) della tua friggitrice ad aria. Diagnostica i problemi più comuni e trova la soluzione ufficiale.",
     h1: "Diagnostica e Codici Errore Friggitrice ad Aria",
+    modelMetaTitle: "{brand} {model}: Codici Errore e Soluzioni | Crispissimo",
+    modelMetaDescription: "Scopri codici errore, problemi comuni, controlli sicuri e manuale ufficiale di {brand} {model}.",
+    modelH1: "Codici errore e problemi {brand} {model}",
     introParagraph: "La tua friggitrice ad aria mostra un codice sul display, emette fumo bianco o semplicemente non si accende? Usa il nostro motore di ricerca per trovare il significato dell'errore, le cause più comuni e la procedura di reset o soluzione suggerita dal produttore.",
     usefulResourcesTitle: "Risorse Utili",
     linkCleaning: "Come pulire la friggitrice ad aria",
@@ -56,6 +62,9 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     metaTitle: "Air Fryer Error Codes: Meaning, Reset and Solutions | Crispissimo",
     metaDescription: "Discover the meaning of error codes (E1, E2, Pot, etc.) of your air fryer. Diagnose common problems and find the official solution.",
     h1: "Air Fryer Diagnostics and Error Codes",
+    modelMetaTitle: "{brand} {model}: Error Codes and Solutions | Crispissimo",
+    modelMetaDescription: "Discover error codes, common problems, safety checks and official manual for {brand} {model}.",
+    modelH1: "{brand} {model} Error Codes and Problems",
     introParagraph: "Does your air fryer show a code on the display, emit white smoke or simply won't turn on? Use our search engine to find the meaning of the error, the most common causes and the reset or solution procedure suggested by the manufacturer.",
     usefulResourcesTitle: "Useful Resources",
     linkCleaning: "How to clean the air fryer",
@@ -86,6 +95,9 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     metaTitle: "Códigos de error de la freidora de aire: significado y soluciones | Crispissimo",
     metaDescription: "Descubra el significado de los códigos de error (E1, E2, Pot, etc.) de su freidora de aire. Diagnostique problemas comunes y encuentre la solución.",
     h1: "Diagnóstico y Códigos de Error de Freidora de Aire",
+    modelMetaTitle: "{brand} {model}: Códigos de error y soluciones | Crispissimo",
+    modelMetaDescription: "Descubra los códigos de error, problemas comunes, controles de seguridad y manual oficial de {brand} {model}.",
+    modelH1: "Códigos de error y problemas de {brand} {model}",
     introParagraph: "¿Tu freidora de aire muestra un código en la pantalla, emite humo blanco o simplemente no enciende? Usa nuestro buscador para encontrar el significado del error, las causas más comunes y el procedimiento de reinicio o solución sugerido.",
     usefulResourcesTitle: "Recursos Útiles",
     linkCleaning: "Cómo limpiar la freidora de aire",
@@ -116,6 +128,9 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     metaTitle: "Codes d'erreur de la friteuse à air : signification et solutions | Crispissimo",
     metaDescription: "Découvrez la signification des codes d'erreur (E1, E2, Pot, etc.) de votre friteuse à air. Diagnostiquez les problèmes et trouvez la solution officielle.",
     h1: "Diagnostic et Codes d'Erreur Friteuse à Air",
+    modelMetaTitle: "{brand} {model} : Codes d'erreur et Solutions | Crispissimo",
+    modelMetaDescription: "Découvrez les codes d'erreur, problèmes courants, contrôles de sécurité et le manuel officiel de {brand} {model}.",
+    modelH1: "Codes d'erreur et problèmes {brand} {model}",
     introParagraph: "Votre friteuse à air affiche un code sur l'écran, émet de la fumée blanche ou ne s'allume pas ? Utilisez notre moteur de recherche pour trouver la signification de l'erreur, les causes les plus courantes et la procédure de réinitialisation ou la solution.",
     usefulResourcesTitle: "Ressources Utiles",
     linkCleaning: "Comment nettoyer la friteuse à air",

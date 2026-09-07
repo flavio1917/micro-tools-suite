@@ -1,0 +1,50 @@
+---
+export interface Props {
+  severity: 'safe_check' | 'caution' | 'stop_and_support';
+  lang: 'it' | 'fr' | 'es' | 'en';
+}
+
+const { severity, lang } = Astro.props;
+
+const severityLabels = {
+  it: {
+    safe_check: 'Controllo sicuro',
+    caution: 'Attenzione',
+    stop_and_support: 'Rischio — assistenza'
+  },
+  fr: {
+    safe_check: 'Vérification sûre',
+    caution: 'Attention',
+    stop_and_support: 'Risque — assistance'
+  },
+  es: {
+    safe_check: 'Comprobación segura',
+    caution: 'Atención',
+    stop_and_support: 'Riesgo — asistencia'
+  },
+  en: {
+    safe_check: 'Safe check',
+    caution: 'Caution',
+    stop_and_support: 'Risk — support required'
+  }
+};
+
+const labels = severityLabels[lang] || severityLabels.it;
+const label = labels[severity];
+
+const styles = {
+  safe_check: 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 border-green-200 dark:border-green-800',
+  caution: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300 border-yellow-200 dark:border-yellow-800',
+  stop_and_support: 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300 border-red-200 dark:border-red-800'
+};
+
+const icons = {
+  safe_check: '<svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>',
+  caution: '<svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>',
+  stop_and_support: '<svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>'
+};
+---
+<span class={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold border ${styles[severity]}`}>
+  <span set:html={icons[severity]}></span>
+  <span>{label}</span>
+</span>

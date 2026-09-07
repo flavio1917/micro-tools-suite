@@ -1,0 +1,39 @@
+---
+export interface Props {
+  level: 'model_specific' | 'brand_generic' | 'universal_guidance';
+  lang: 'it' | 'fr' | 'es' | 'en';
+  brandDisplayName?: string;
+}
+
+const { level, lang, brandDisplayName = '' } = Astro.props;
+
+const evidenceLabels = {
+  it: {
+    model_specific: 'Indicato nel manuale ufficiale di questo modello',
+    brand_generic: `Indicazione generale per le friggitrici ${brandDisplayName}`,
+    universal_guidance: 'Controllo generale: verifica sempre il manuale'
+  },
+  fr: {
+    model_specific: 'Indiqué dans le manuel officiel de ce modèle',
+    brand_generic: `Indication générale pour les friteuses ${brandDisplayName}`,
+    universal_guidance: 'Vérification générale : consultez toujours le manuel'
+  },
+  es: {
+    model_specific: 'Indicado en el manual oficial de este modelo',
+    brand_generic: `Indicación general para freidoras ${brandDisplayName}`,
+    universal_guidance: 'Comprobación general: consulta siempre el manual'
+  },
+  en: {
+    model_specific: 'Stated in this model’s official manual',
+    brand_generic: `General guidance for ${brandDisplayName} air fryers`,
+    universal_guidance: 'General check: always consult the manual'
+  }
+};
+
+const labels = evidenceLabels[lang] || evidenceLabels.it;
+const text = labels[level];
+---
+<div class="text-xs text-slate-500 dark:text-slate-400 italic flex items-center gap-1.5 mt-2">
+  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <span>{text}</span>
+</div>
