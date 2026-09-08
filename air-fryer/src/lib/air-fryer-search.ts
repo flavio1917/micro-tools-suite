@@ -10,6 +10,8 @@ export interface SearchResult {
   brand?: string;
   score: number;
   ambiguous?: boolean;
+  imagePath?: string;
+  variantSlug?: string;
 }
 
 export function normalizeSearchStr(str: string): string {
@@ -43,10 +45,6 @@ export function performDiagnosticSearch(
   query: string,
   models: SearchIndexItem[]
 ): SearchResult[] {
-  if (!query || query.length < 2) return [];
-
-  const rawQuery = normalizeSearchStr(query);
-  const q = fixTypos(rawQuery);
   const results = new Map<string, SearchResult>();
 
   const addResult = (id: string, result: SearchResult) => {
@@ -55,13 +53,36 @@ export function performDiagnosticSearch(
     }
   };
 
+  // 1. Initial State / Empty Query
+  if (!query || query.trim().length === 0) {
+    const brands = new Set<string>();
+    for (const m of models) {
+      if (!brands.has(m.brand_slug)) {
+        brands.add(m.brand_slug);
+        addResult(`brand_${m.brand_slug}`, {
+          type: 'brand', label: m.brand_display_name, value: m.brand_slug, score: 100
+        });
+      }
+    }
+    addResult(`brand_other`, {
+      type: 'brand', label: 'Altro', value: 'other', score: 0 // Localized label will be injected by UI
+    });
+    return Array.from(results.values()).sort((a, b) => b.score - a.score);
+  }
+
+  // 2. Normal Search
+  const rawQuery = normalizeSearchStr(query);
+  const q = fixTypos(rawQuery);
+
   for (const m of models) {
     const isAmbiguous = m.is_ambiguous;
+    const subL = m.model_spec; // Use model_spec as secondary label
+    const img = m.image_path;
 
     // 1. Model Spec Exact (100)
     if (normalizeSearchStr(m.model_spec) === q) {
       addResult(`model_${m.canonical_slug}`, {
-        type: 'model', label: m.primary_display_name, subLabel: m.model_spec, value: m.canonical_slug, brand: m.brand_slug, score: 100, ambiguous: isAmbiguous
+        type: 'model', label: m.primary_display_name, subLabel: subL, value: m.canonical_slug, brand: m.brand_slug, score: 100, ambiguous: isAmbiguous, imagePath: img, variantSlug: m.variant_slug
       });
     }
 
@@ -69,7 +90,7 @@ export function performDiagnosticSearch(
     for (const alias of m.display_names) {
       if (normalizeSearchStr(alias) === q) {
         addResult(`model_${m.canonical_slug}`, {
-          type: 'model', label: m.primary_display_name, subLabel: alias, value: m.canonical_slug, brand: m.brand_slug, score: 95, ambiguous: isAmbiguous
+          type: 'model', label: m.primary_display_name, subLabel: subL, value: m.canonical_slug, brand: m.brand_slug, score: 95, ambiguous: isAmbiguous, imagePath: img, variantSlug: m.variant_slug
         });
       }
     }
@@ -78,11 +99,11 @@ export function performDiagnosticSearch(
     const normPrimary = normalizeSearchStr(m.primary_display_name);
     if (normPrimary === q) {
       addResult(`model_${m.canonical_slug}`, {
-        type: 'model', label: m.primary_display_name, subLabel: m.brand_display_name, value: m.canonical_slug, brand: m.brand_slug, score: 90, ambiguous: isAmbiguous
+        type: 'model', label: m.primary_display_name, subLabel: subL, value: m.canonical_slug, brand: m.brand_slug, score: 90, ambiguous: isAmbiguous, imagePath: img, variantSlug: m.variant_slug
       });
     } else if (normPrimary.startsWith(q)) {
       addResult(`model_${m.canonical_slug}`, {
-        type: 'model', label: m.primary_display_name, subLabel: m.brand_display_name, value: m.canonical_slug, brand: m.brand_slug, score: 85, ambiguous: isAmbiguous
+        type: 'model', label: m.primary_display_name, subLabel: subL, value: m.canonical_slug, brand: m.brand_slug, score: 85, ambiguous: isAmbiguous, imagePath: img, variantSlug: m.variant_slug
       });
     }
 
@@ -90,11 +111,11 @@ export function performDiagnosticSearch(
     const normBrand = normalizeSearchStr(m.brand_slug);
     if (normBrand === q) {
       addResult(`brand_${m.brand_slug}`, {
-        type: 'brand', label: m.brand_slug.toUpperCase(), value: m.brand_slug, score: 80
+        type: 'brand', label: m.brand_display_name, value: m.brand_slug, score: 80
       });
     } else if (normBrand.startsWith(q)) {
       addResult(`brand_${m.brand_slug}`, {
-        type: 'brand', label: m.brand_slug.toUpperCase(), value: m.brand_slug, score: 75
+        type: 'brand', label: m.brand_display_name, value: m.brand_slug, score: 75
       });
     }
 
@@ -127,7 +148,7 @@ export function performDiagnosticSearch(
       // Don't override higher scores
       if (!results.has(`model_${m.canonical_slug}`)) {
         addResult(`fuzzy_model_${m.canonical_slug}`, {
-          type: 'fuzzy', label: m.primary_display_name, value: m.canonical_slug, brand: m.brand_slug, score: 30, ambiguous: isAmbiguous
+          type: 'fuzzy', label: m.primary_display_name, subLabel: subL, value: m.canonical_slug, brand: m.brand_slug, score: 30, ambiguous: isAmbiguous, imagePath: img, variantSlug: m.variant_slug
         });
       }
     }

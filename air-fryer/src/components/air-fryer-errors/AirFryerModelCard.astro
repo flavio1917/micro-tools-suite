@@ -53,30 +53,37 @@ const searchTokens = [
     <summary class="p-5 sm:p-6 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-blue-500 list-none flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       
       {/* Left side: Identifiers */}
-      <div class="flex-1">
-        <div class="flex items-center gap-3 mb-1">
-          <span class="text-sm font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">{model.brand}</span>
-          
-          <div class="flex gap-2">
-            {isDual ? (
-              <span class="bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Dual Basket</span>
-            ) : (
-              <span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Cestello Singolo</span>
-            )}
-
-            {capacityText && (
-              <span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">{capacityText}</span>
-            )}
+      <div class="flex-1 flex gap-4 sm:gap-5 items-center">
+        {v2Model && (
+          <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-1.5 flex items-center justify-center">
+            <img src={`/images/air-fryers/${v2Model.brand_slug}/${v2Model.canonical_slug}.webp`} alt={model.actual_model} class="w-full h-full object-contain" loading="lazy" onerror="this.parentElement.style.display='none';" />
           </div>
-        </div>
-        
-        <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white mb-1">
-          {model.actual_model}
-        </h2>
-        
-        {showUserLabel && (
-          <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">{model.user_label}</p>
         )}
+        <div>
+          <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-1">
+            <span class="text-sm font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">{model.brand}</span>
+            
+            <div class="flex gap-2">
+              {isDual ? (
+                <span class="bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Dual Basket</span>
+              ) : (
+                <span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Cestello Singolo</span>
+              )}
+
+              {capacityText && (
+                <span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">{capacityText}</span>
+              )}
+            </div>
+          </div>
+          
+          <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white mb-1">
+            {model.actual_model}
+          </h2>
+          
+          {showUserLabel && (
+            <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">{model.user_label}</p>
+          )}
+        </div>
       </div>
 
       {/* Right side: Indicators and chevron */}

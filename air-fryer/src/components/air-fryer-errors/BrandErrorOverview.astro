@@ -11,6 +11,10 @@ export interface Props {
 
 const { brand, brandModels, isUnlisted = false } = Astro.props;
 
+import { getSearchIndex } from '../../lib/air-fryer-search-index';
+const searchIndex = getSearchIndex('it'); // Using IT for metadata purposes
+const allBrandModels = searchIndex.filter(m => m.brand_slug === brand.toLowerCase() && m.type === 'model');
+
 const aggregatedMessages = aggregateBrandMessages(brandModels);
 const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
 
@@ -53,6 +57,58 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
 
   <div class="space-y-10">
     
+    {!isUnlisted && allBrandModels.length > 0 && (
+      <section>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+          <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+          Modelli {brand}
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {allBrandModels.map(item => {
+            const isAmbiguous = item.is_ambiguous;
+            const badgeClass = isAmbiguous 
+              ? "bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 border-orange-200 dark:border-orange-800"
+              : "bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800";
+            const badgeText = isAmbiguous ? "Verifica variante" : "Informazioni verificate";
+            const btnText = isAmbiguous ? "Vedi informazioni" : "Vedi informazioni";
+            
+            // Build the appropriate fallback URL
+            // If ambiguous, we want ?brand=xyz&review-model=slug&variant=variantSlug
+            // If not ambiguous, we want ?model=slug
+            const href = isAmbiguous 
+              ? `?brand=${item.brand_slug}&review-model=${item.canonical_slug}&variant=${item.variant_slug || ''}`
+              : `?model=${item.canonical_slug}`;
+
+            return (
+              <a href={href} class="group block border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:border-blue-300 dark:hover:border-blue-700 transition-colors bg-white dark:bg-slate-800" onclick="window.dispatchEvent(new Event('diagnostic-search-update'))">
+                <div class="flex items-center p-4 gap-4 h-full">
+                  <div class="w-20 h-20 shrink-0 bg-slate-50 dark:bg-slate-900 rounded-lg p-2 flex items-center justify-center border border-slate-100 dark:border-slate-800">
+                    {item.image_path ? (
+                      <img src={item.image_path} alt={item.primary_display_name} class="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal" loading="lazy" />
+                    ) : (
+                      <svg class="w-8 h-8 text-slate-300 dark:text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                    )}
+                  </div>
+                  <div class="flex-1 flex flex-col justify-center h-full">
+                    <span class={`inline-block w-fit text-[10px] font-bold px-2 py-0.5 rounded-full border mb-2 uppercase ${badgeClass}`}>
+                      {badgeText}
+                    </span>
+                    <h4 class="font-bold text-slate-900 dark:text-white line-clamp-2 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      {item.primary_display_name}
+                    </h4>
+                    <span class="text-xs font-mono text-slate-500 dark:text-slate-400 mt-1">{item.model_spec}</span>
+                    <div class="mt-3 text-sm font-semibold text-blue-600 dark:text-blue-400 flex items-center gap-1">
+                      {btnText} <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
     {/* Messaggi Aggregati */}
     <section>
       <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">

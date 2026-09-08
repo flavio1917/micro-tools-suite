@@ -47,7 +47,7 @@ const searchIndex = getSearchIndex(lang);
     <!-- Results injected here -->
   </div>
   
-  <div id="diagnostic-search-data" data-index={JSON.stringify(searchIndex)} class="hidden"></div>
+  <div id="diagnostic-search-data" data-index={JSON.stringify(searchIndex)} data-i18n={JSON.stringify(t.diagnosticSearch)} class="hidden"></div>
   <div id="diagnostic-search-live-region" aria-live="polite" class="sr-only"></div>
 </div>
 
@@ -79,9 +79,10 @@ const searchIndex = getSearchIndex(lang);
       fr: { model: 'MODÈLES', brand: 'MARQUES', code: 'CODES D\'ERREUR', symptom: 'PROBLÈMES COURANTS', fuzzy: 'ESSAYEZ-VOUS DE CHERCHER', ambiguous: 'Nous avons trouvé plusieurs variantes possibles. Vérifiez le code du modèle sur l\'étiquette ou dans le manuel.', selectModelStr: 'La signification dépend de la marque et du modèle. Sélectionnez votre friteuse pour des instructions plus précises.', noResults: 'Aucun résultat trouvé.', resultsFound: '{n} résultats trouvés. Utilisez les flèches pour naviguer.' }
     };
     const t = catLabels[lang as keyof typeof catLabels] || catLabels['it'];
-
+    
     const dataEl = document.getElementById('diagnostic-search-data');
     const searchIndex: SearchIndexItem[] = dataEl?.dataset.index ? JSON.parse(dataEl.dataset.index) : [];
+    const searchI18n = dataEl?.dataset.i18n ? JSON.parse(dataEl.dataset.i18n) : {};
 
     let activeIndex = -1;
     let currentResults: any[] = [];
@@ -93,18 +94,56 @@ const searchIndex = getSearchIndex(lang);
       activeIndex = -1;
     }
 
-    function renderResults(results: any[], queryLen: number) {
+    function renderResults(results: any[], queryLen: number, originalQuery: string) {
       currentResults = results;
       resultsContainer!.innerHTML = '';
       
       if (results.length === 0) {
-        liveRegion!.textContent = t.noResults;
-        closeResults();
+        liveRegion!.textContent = searchI18n.noResults || t.noResults;
         trackEvent('air_fryer_error_no_result', { lang, query_length: queryLen, result_count: 0 });
+        
+        // No match UI
+        const isUnknownBrand = originalQuery.length > 3 && !originalQuery.toLowerCase().includes('philips') && !originalQuery.toLowerCase().includes('cosori');
+        
+        const noMatchDiv = document.createElement('div');
+        noMatchDiv.className = 'p-6 text-center';
+        noMatchDiv.innerHTML = `
+          <p class="text-slate-700 dark:text-slate-300 mb-4 font-medium">${isUnknownBrand ? searchI18n.unknownBrand : searchI18n.noMatch}</p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <button type="button" class="btn-generic-guide px-4 py-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-900 dark:text-white rounded-lg text-sm font-semibold transition-colors w-full sm:w-auto">
+              ${searchI18n.openGuide}
+            </button>
+            <button type="button" class="btn-signal-model px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-semibold transition-colors w-full sm:w-auto">
+              ${searchI18n.signalModel}
+            </button>
+          </div>
+        `;
+        resultsContainer!.appendChild(noMatchDiv);
+        resultsContainer!.classList.remove('hidden');
+        input.setAttribute('aria-expanded', 'true');
+        
+        // Add listeners to new buttons
+        noMatchDiv.querySelector('.btn-generic-guide')?.addEventListener('click', () => {
+          const url = new URL(window.location.href);
+          url.search = '?brand=other';
+          window.history.pushState({}, '', url.toString());
+          window.dispatchEvent(new Event('diagnostic-search-update'));
+          closeResults();
+        });
+        
+        noMatchDiv.querySelector('.btn-signal-model')?.addEventListener('click', () => {
+          // Pre-fill URL param to open form
+          const url = new URL(window.location.href);
+          url.search = `?q=${encodeURIComponent(originalQuery)}&model=missing`;
+          window.history.pushState({}, '', url.toString());
+          window.dispatchEvent(new Event('diagnostic-search-update'));
+          closeResults();
+        });
+        
         return;
       }
       
-      liveRegion!.textContent = t.resultsFound.replace('{n}', results.length.toString());
+      liveRegion!.textContent = (searchI18n.resultsFound || t.resultsFound).replace('{n}', results.length.toString());
       
       const grouped = results.reduce((acc, curr) => {
         if (!acc[curr.type]) acc[curr.type] = [];
@@ -120,7 +159,7 @@ const searchIndex = getSearchIndex(lang);
         if (grouped[type] && grouped[type].length > 0) {
           // Category Header
           const header = document.createElement('div');
-          header.className = 'px-4 py-2 text-xs font-bold text-slate-500 bg-slate-50 dark:bg-slate-900/50 uppercase tracking-wider sticky top-0';
+          header.className = 'px-4 py-2 text-xs font-bold text-slate-500 bg-slate-50 dark:bg-slate-900/50 uppercase tracking-wider sticky top-0 z-10';
           header.textContent = t[type as keyof typeof t];
           resultsContainer!.appendChild(header);
           
@@ -128,35 +167,53 @@ const searchIndex = getSearchIndex(lang);
             const li = document.createElement('div');
             li.role = 'option';
             li.id = `result-item-${itemIndex}`;
-            li.className = 'px-4 py-3 cursor-pointer hover:bg-blue-50 dark:hover:bg-blue-900/20 border-b border-slate-100 dark:border-slate-700 last:border-0 transition-colors flex flex-col gap-1';
+            li.className = 'px-4 py-3 cursor-pointer hover:bg-blue-50 dark:hover:bg-blue-900/20 border-b border-slate-100 dark:border-slate-700 last:border-0 transition-colors flex items-center gap-3';
             li.dataset.index = itemIndex.toString();
+            
+            // Thumbnail container
+            if (item.type === 'model' && item.imagePath) {
+              const imgCont = document.createElement('div');
+              imgCont.className = 'w-12 h-12 shrink-0 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden flex items-center justify-center';
+              const img = document.createElement('img');
+              img.src = item.imagePath;
+              img.alt = `${item.brand || ''} ${item.label}`;
+              img.className = 'w-full h-full object-contain';
+              img.loading = 'lazy';
+              img.onerror = () => { imgCont.style.display = 'none'; };
+              imgCont.appendChild(img);
+              li.appendChild(imgCont);
+            }
+            
+            const textCont = document.createElement('div');
+            textCont.className = 'flex flex-col gap-1 flex-1';
             
             const title = document.createElement('div');
             title.className = 'font-bold text-slate-900 dark:text-white';
             title.textContent = item.label;
-            li.appendChild(title);
+            textCont.appendChild(title);
             
             if (item.subLabel) {
               const sub = document.createElement('div');
               sub.className = 'text-sm text-slate-500 dark:text-slate-400';
               sub.textContent = item.subLabel;
-              li.appendChild(sub);
+              textCont.appendChild(sub);
             }
             
             if (item.ambiguous) {
               const warn = document.createElement('div');
               warn.className = 'mt-1 text-xs text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 p-2 rounded';
               warn.textContent = t.ambiguous;
-              li.appendChild(warn);
+              textCont.appendChild(warn);
             }
             
             if (type === 'code') {
               const warn = document.createElement('div');
               warn.className = 'mt-1 text-xs text-blue-600 dark:text-blue-400';
               warn.textContent = t.selectModelStr;
-              li.appendChild(warn);
+              textCont.appendChild(warn);
             }
             
+            li.appendChild(textCont);
             resultsContainer!.appendChild(li);
             itemIndex++;
           });
@@ -172,13 +229,15 @@ const searchIndex = getSearchIndex(lang);
       const q = (e.target as HTMLInputElement).value;
       if (clearBtn) clearBtn.classList.toggle('hidden', q.length === 0);
       
-      if (q.length < 2) {
-        closeResults();
-        return;
+      const results = performDiagnosticSearch(q, searchIndex);
+      
+      // Update label for 'Altro' if present
+      const otherResult = results.find(r => r.value === 'other');
+      if (otherResult) {
+        otherResult.label = searchI18n.otherBrand || 'Altro';
       }
       
-      const results = performDiagnosticSearch(q, searchIndex);
-      renderResults(results, q.length);
+      renderResults(results, q.length, q);
       
       // Debounced search event — send only query_length, not raw text
       if (searchTimer) clearTimeout(searchTimer);
@@ -196,10 +255,15 @@ const searchIndex = getSearchIndex(lang);
     });
     
     input.addEventListener('focus', () => {
-      if (input.value.length >= 2 && currentResults.length > 0) {
-        resultsContainer!.classList.remove('hidden');
-        input.setAttribute('aria-expanded', 'true');
+      const q = input.value;
+      const results = performDiagnosticSearch(q, searchIndex);
+      
+      const otherResult = results.find(r => r.value === 'other');
+      if (otherResult) {
+        otherResult.label = searchI18n.otherBrand || 'Altro';
       }
+      
+      renderResults(results, q.length, q);
     });
     
     document.addEventListener('click', (e) => {
@@ -246,6 +310,7 @@ const searchIndex = getSearchIndex(lang);
         if (item.ambiguous) {
           if (item.brand) url.searchParams.set('brand', item.brand);
           url.searchParams.set('review-model', item.value);
+          if (item.variantSlug) url.searchParams.set('variant', item.variantSlug);
           // Keep code/symptom for generic guidance
           if (prevCode) url.searchParams.set('code', prevCode);
           if (prevSymptom) url.searchParams.set('symptom', prevSymptom);

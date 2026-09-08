@@ -134,7 +134,19 @@ export const errorsUiTranslations = {
     
     diagnosticSearch: {
       noResults: "Nessun risultato trovato.",
-      resultsFound: "{n} risultati trovati. Usa le frecce per navigare."
+      resultsFound: "{n} risultati trovati. Usa le frecce per navigare.",
+      otherBrand: "Altro",
+      noMatch: "Nessun modello trovato. Puoi consultare la guida generale oppure segnalare la marca/modello.",
+      unknownBrand: "Marca non ancora presente nel database. Mostriamo la guida generica e puoi segnalarci il modello.",
+      openGuide: "Apri guida generale",
+      signalModel: "Segnala marca o modello"
+    },
+    
+    disclaimer: {
+      title: "Avvertenza importante",
+      text1: "Le informazioni presenti in questa pagina hanno finalità informative e orientative. Il significato dei codici errore può variare in base alla marca, al modello, al mercato e alla versione dell’apparecchio.",
+      text2: "Consulta sempre il manuale ufficiale del tuo modello e, in caso di dubbio, contatta il servizio di assistenza autorizzato. Non aprire, modificare o riparare l’apparecchio se non sei qualificato a farlo.",
+      text3: "Crispissimo non è affiliato, approvato o autorizzato dai produttori menzionati, salvo diversa indicazione."
     },
     
     modelCard: {
@@ -254,7 +266,19 @@ export const errorsUiTranslations = {
 
     diagnosticSearch: {
       noResults: "No results found.",
-      resultsFound: "{n} results found. Use arrows to navigate."
+      resultsFound: "{n} results found. Use arrows to navigate.",
+      otherBrand: "Other",
+      noMatch: "No model found. You can consult the general guide or report the brand/model.",
+      unknownBrand: "Brand not yet in our database. We'll show you the generic guide and you can report the model.",
+      openGuide: "Open general guide",
+      signalModel: "Report brand or model"
+    },
+
+    disclaimer: {
+      title: "Important Notice",
+      text1: "The information on this page is for informational and guidance purposes only. The meaning of error codes can vary based on brand, model, market, and device version.",
+      text2: "Always consult your model's official manual and, when in doubt, contact authorized customer service. Do not open, modify, or repair the device unless you are qualified to do so.",
+      text3: "Crispissimo is not affiliated, endorsed, or authorized by the mentioned manufacturers, unless otherwise stated."
     },
 
     modelCard: {
@@ -374,7 +398,19 @@ export const errorsUiTranslations = {
 
     diagnosticSearch: {
       noResults: "No se encontraron resultados.",
-      resultsFound: "{n} resultados encontrados. Usa las flechas para navegar."
+      resultsFound: "{n} resultados encontrados. Usa las flechas para navegar.",
+      otherBrand: "Otra",
+      noMatch: "No se ha encontrado el modelo. Puedes consultar la guía general o informar de la marca/modelo.",
+      unknownBrand: "La marca aún no está en nuestra base de datos. Te mostramos la guía genérica y puedes informar del modelo.",
+      openGuide: "Abrir guía general",
+      signalModel: "Informar de marca o modelo"
+    },
+
+    disclaimer: {
+      title: "Aviso importante",
+      text1: "La información de esta página es únicamente orientativa e informativa. El significado de los códigos de error puede variar según la marca, el modelo, el mercado y la versión del aparato.",
+      text2: "Consulta siempre el manual oficial de tu modelo y, en caso de duda, ponte en contacto con el servicio técnico autorizado. No abras, modifiques ni repares el aparato si no estás cualificado para ello.",
+      text3: "Crispissimo no está afiliado, respaldado ni autorizado por los fabricantes mencionados, salvo que se indique lo contrario."
     },
 
     modelCard: {
@@ -494,7 +530,19 @@ export const errorsUiTranslations = {
 
     diagnosticSearch: {
       noResults: "Aucun résultat trouvé.",
-      resultsFound: "{n} résultats trouvés. Utilisez les flèches pour naviguer."
+      resultsFound: "{n} résultats trouvés. Utilisez les flèches pour naviguer.",
+      otherBrand: "Autre",
+      noMatch: "Aucun modèle trouvé. Vous pouvez consulter le guide général ou signaler la marque/le modèle.",
+      unknownBrand: "Marque pas encore dans notre base de données. Nous affichons le guide générique et vous pouvez signaler le modèle.",
+      openGuide: "Ouvrir le guide général",
+      signalModel: "Signaler la marque ou le modèle"
+    },
+
+    disclaimer: {
+      title: "Avis important",
+      text1: "Les informations sur cette page sont fournies à titre indicatif et informatif. La signification des codes d'erreur peut varier selon la marque, le modèle, le marché et la version de l'appareil.",
+      text2: "Consultez toujours le manuel officiel de votre modèle et, en cas de doute, contactez le service client autorisé. N'ouvrez pas, ne modifiez pas et ne réparez pas l'appareil si vous n'êtes pas qualifié pour le faire.",
+      text3: "Crispissimo n'est pas affilié, soutenu ou autorisé par les fabricants mentionnés, sauf indication contraire."
     },
 
     modelCard: {

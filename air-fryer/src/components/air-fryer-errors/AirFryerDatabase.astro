@@ -2,6 +2,7 @@
 import type { AirFryerModel } from '../../types/air-fryer';
 import { getBrands } from '../../lib/air-fryer-db';
 import DiagnosticSearch from './DiagnosticSearch.astro';
+import DiagnosticDisclaimer from './DiagnosticDisclaimer.astro';
 import AirFryerModelCard from './AirFryerModelCard.astro';
 import BrandErrorOverview from './BrandErrorOverview.astro';
 import GenericAirFryerGuidance from './GenericAirFryerGuidance.astro';
@@ -30,6 +31,7 @@ const searchIndex = getSearchIndex(lang);
   data-msg-generic-guidance={t.statusMessages?.genericGuidance}
   data-msg-empty-search={t.statusMessages?.emptySearch}
 >
+  <DiagnosticDisclaimer lang={lang} />
   <DiagnosticSearch lang={lang} />
 
   {/* Dynamic Status Message */}
@@ -77,6 +79,26 @@ const searchIndex = getSearchIndex(lang);
     {/* State D: Generic Guidance */}
     <div id="state-d" class="hidden">
       <GenericAirFryerGuidance />
+    </div>
+
+    {/* State E: Ambiguous Variant View */}
+    <div id="state-e" class="hidden">
+      <div id="af-ambiguous-variant-view" class="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 sm:p-8 mb-6">
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+           <div id="af-ambiguous-img-container" class="w-24 h-24 sm:w-32 sm:h-32 shrink-0 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center justify-center p-4">
+              <!-- img -->
+           </div>
+           <div class="flex-1 space-y-4">
+              <div class="text-sm font-bold text-blue-600 dark:text-blue-400 tracking-wider uppercase" id="af-ambiguous-brand"></div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white" id="af-ambiguous-title"></h2>
+              <p class="text-slate-500 dark:text-slate-400 font-medium font-mono text-sm" id="af-ambiguous-spec"></p>
+              
+              <div class="bg-orange-50 dark:bg-orange-900/20 text-orange-800 dark:text-orange-200 p-4 rounded-xl text-sm leading-relaxed border border-orange-200 dark:border-orange-800/50 mt-4">
+                 Informazioni disponibili per una o più varianti di questo modello. Verifica il codice completo sull'etichetta del prodotto o nel manuale prima di seguire le istruzioni.
+              </div>
+           </div>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -132,6 +154,35 @@ const searchIndex = getSearchIndex(lang);
           if (statusText) statusText.textContent = msgAmbiguous;
           if (statusText) statusText.classList.add('text-orange-600', 'dark:text-orange-400');
           else if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
+
+          const variantSlug = params.get('variant');
+          const stateE = document.getElementById('state-e');
+          if (stateE && searchIndex.length > 0) {
+            const item = searchIndex.find((i: any) => i.canonical_slug === reviewModel && (!variantSlug || i.variant_slug === variantSlug));
+            if (item) {
+              stateE.classList.remove('hidden');
+              const title = stateE.querySelector('#af-ambiguous-title');
+              const spec = stateE.querySelector('#af-ambiguous-spec');
+              const brandEl = stateE.querySelector('#af-ambiguous-brand');
+              const imgContainer = stateE.querySelector('#af-ambiguous-img-container');
+              
+              if (title) title.textContent = item.primary_display_name;
+              if (spec) spec.textContent = `Codice Tecnico: ${item.model_spec}`;
+              if (brandEl) brandEl.textContent = item.brand_display_name;
+              
+              if (imgContainer) {
+                imgContainer.innerHTML = '';
+                if (item.image_path) {
+                  const img = document.createElement('img');
+                  img.src = item.image_path;
+                  img.className = "w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal";
+                  imgContainer.appendChild(img);
+                } else {
+                  imgContainer.innerHTML = `<svg class="w-12 h-12 text-slate-300 dark:text-slate-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>`;
+                }
+              }
+            }
+          }
 
           if (code || symptom) {
             stateD?.classList.remove('hidden');
