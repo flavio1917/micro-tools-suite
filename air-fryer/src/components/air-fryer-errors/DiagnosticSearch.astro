@@ -56,8 +56,10 @@ const searchIndex = getSearchIndex(lang);
   import type { SearchIndexItem } from '../../lib/air-fryer-search-index';
   import { trackEvent } from '../../lib/analytics';
 
-  document.addEventListener('DOMContentLoaded', () => {
+  function initDiagnosticSearch() {
     const container = document.getElementById('diagnostic-search-container');
+    if (!container || container.dataset.initialized) return;
+    container.dataset.initialized = 'true';
     const input = document.getElementById('diagnostic-search-input') as HTMLInputElement;
     const clearBtn = document.getElementById('diagnostic-search-clear');
     const resultsContainer = document.getElementById('diagnostic-search-results');
@@ -387,5 +389,12 @@ const searchIndex = getSearchIndex(lang);
         selectResult(index);
       }
     });
-  });
+  }
+
+  document.addEventListener('astro:page-load', initDiagnosticSearch);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDiagnosticSearch);
+  } else {
+    initDiagnosticSearch();
+  }
 </script>

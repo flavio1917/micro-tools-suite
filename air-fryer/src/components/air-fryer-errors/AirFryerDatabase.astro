@@ -22,7 +22,7 @@ const t = errorsUiTranslations[lang] || errorsUiTranslations.it;
 const searchIndex = getSearchIndex(lang);
 
 ---
-<div class="af-database-container" aria-live="polite" 
+<div id="af-database-root" class="af-database-container" aria-live="polite" 
   data-search-index={JSON.stringify(searchIndex)}
   data-msg-ambiguous={t.statusMessages?.ambiguous}
   data-msg-model-not-found={t.statusMessages?.modelNotFound}
@@ -107,7 +107,11 @@ const searchIndex = getSearchIndex(lang);
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
+  function initAirFryerDatabase() {
+    const container = document.getElementById('af-database-root');
+    if (!container || container.dataset.initialized) return;
+    container.dataset.initialized = 'true';
+
     const statusMessageContainer = document.getElementById('af-status-message');
     const statusText = document.getElementById('af-status-text');
     const resultsContainer = document.getElementById('af-results-container');
@@ -459,5 +463,12 @@ const searchIndex = getSearchIndex(lang);
       // Expose hook for applyState to call
       (window as any).__afTrackVisibleCards = trackVisibleCards;
     });
-  });
+  }
+
+  document.addEventListener('astro:page-load', initAirFryerDatabase);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAirFryerDatabase);
+  } else {
+    initAirFryerDatabase();
+  }
 </script>

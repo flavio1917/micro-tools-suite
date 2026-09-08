@@ -42,11 +42,39 @@ export function validateDiagnosticParams(
     }
   }
 
+  const rawSpec = sanitize(params.get('spec'));
+  
+  // Helper to normalize strings for comparison
+  const normalize = (s?: string) => s ? s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') : '';
+
   // Validate model: known canonical_slug and not ambiguous
   if (rawModel) {
-    const modelItem = index.find(m => m.canonical_slug === rawModel);
+    let modelItem = undefined;
+
+    // 1. brand + model + spec
+    if (rawBrand && rawSpec) {
+      modelItem = index.find(m => 
+        m.brand_slug === normalize(rawBrand) &&
+        (normalize(m.primary_display_name) === normalize(rawModel) || normalize(m.route_slug) === normalize(rawModel)) &&
+        normalize(m.model_spec) === normalize(rawSpec)
+      );
+    }
+    
+    // 2. brand + model
+    if (!modelItem && rawBrand) {
+      modelItem = index.find(m => 
+        m.brand_slug === normalize(rawBrand) &&
+        (normalize(m.primary_display_name) === normalize(rawModel) || normalize(m.route_slug) === normalize(rawModel) || normalize(m.model_spec) === normalize(rawModel))
+      );
+    }
+
+    // 3. canonical_slug legacy
+    if (!modelItem) {
+      modelItem = index.find(m => m.canonical_slug === rawModel);
+    }
+
     if (modelItem && !modelItem.is_ambiguous) {
-      state.model = rawModel;
+      state.model = modelItem.canonical_slug; // Internally we use canonical_slug
       state.brand = modelItem.brand_slug; // Auto-set valid brand
     }
   }

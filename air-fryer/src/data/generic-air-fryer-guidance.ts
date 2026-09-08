@@ -46,8 +46,28 @@ export const genericAirFryerGuidance: GenericGuidance = {
   ],
   genericCodeGuidance: [
     {
-      code: "E1, E2, E3, E4, ecc.",
-      meaning: "Il significato varia per marca e modello; consulta il manuale specifico. Spesso sono legati a sensori di temperatura, surriscaldamento, software o alimentazione, ma non c'è alcuno standard fisso."
+      code: "E1 / E01",
+      meaning: "Riparazione Hardware (Frequente su: Cosori, Ninja, Philips). Solitamente indica un guasto al termistore NTC o al sensore di temperatura. Soluzione: scollega la friggitrice, esegui un hard reset lasciandola spenta per 15 minuti. Se il problema persiste all'accensione, è necessaria l'assistenza."
+    },
+    {
+      code: "E2 / E02",
+      meaning: "Riparazione Hardware (Frequente su: Cosori, Ariete, Moulinex). Spesso segnala un cortocircuito del sensore o un surriscaldamento grave. Soluzione: scollega immediatamente dalla corrente, verifica visivamente se le griglie di ventilazione sono libere e attendi il raffreddamento. Se ricompare, richiede riparazione."
+    },
+    {
+      code: "E3 / E03",
+      meaning: "Reset Software (Frequente su: Ninja, Generico, Proscenic). Tipicamente indica l'attivazione della protezione da surriscaldamento o un cestello mal posizionato. Soluzione: verifica l'inserimento del cestello, allontana l'apparecchio di almeno 15cm dal muro, lascialo raffreddare e riprova."
+    },
+    {
+      code: "E4 / E04",
+      meaning: "Reset Software (Frequente su: Ninja, Cosori). Spesso associato a problemi di comunicazione della scheda o anomalia della ventola/voltaggio. Soluzione: scollega l'apparecchio, controlla se la ventola gira o è ostruita. Evita prolunghe o adattatori multipli e collegala a una presa a muro."
+    },
+    {
+      code: "Display Spento / Nessun Segnale",
+      meaning: "Riparazione Hardware (Tutte le marche). Può indicare il micro-interruttore del cestello difettoso o un fusibile termico bruciato. Soluzione: assicurati di sentire il 'clic' del cestello quando viene inserito. Se non si accende in altre prese, contattare l'assistenza."
+    },
+    {
+      code: "Altri Codici (E5, E6, ecc.)",
+      meaning: "Il significato varia per marca e modello; consulta il manuale specifico. Spesso sono legati a sensori o alimentazione."
     }
   ]
 };

@@ -16,9 +16,31 @@ export const airFryerModels: LegacyAirFryerModel[] = isV2
         return isVerified;
       })
       .map((item: AirFryerModelV2, index) => {
+      function parseRawErrors(rawText: string | undefined, targetCode: string): string {
+        if (!rawText) return '';
+        const lines = rawText.split('\n');
+        let capturing = false;
+        let text = '';
+        for (const line of lines) {
+          const cleanLine = line.trim();
+          const isHeader = /^"?(E\d+|ERR\d+|E-\d+)"?[:\-]?$/i.test(cleanLine);
+          
+          if (cleanLine === targetCode || cleanLine === `"${targetCode}"` || cleanLine.startsWith(`"${targetCode}"`)) {
+            capturing = true;
+            continue;
+          } else if (capturing && isHeader) {
+            break;
+          }
+          if (capturing) {
+            text += line + '\n';
+          }
+        }
+        return text.trim();
+      }
+
       return {
         id: item.canonical_slug,
-        brand: item.brand_slug, // or something derived
+        brand: item.brand_slug,
         actual_model: item.model_spec,
         user_label: item.primary_display_name,
         model_spec: item.model_spec,
@@ -29,14 +51,17 @@ export const airFryerModels: LegacyAirFryerModel[] = isV2
         dual_zone: item.specs?.basket_count === 2,
         model_type: item.specs?.basket_count === 2 ? 'dual_basket' : 'single_zone',
         notable_features: [],
-        error_codes: item.error_codes.map(ec => ({
-          code: ec.code,
-          description: '', // localized texts are elsewhere now
-          meaning: '',
-          suggestions: [],
-          type: 'error',
-          action_level: ec.severity === 'stop_and_support' ? 'assistenza' : (ec.severity === 'caution' ? 'fermare_e_verificare' : 'verifica_utente')
-        })),
+        error_codes: item.error_codes.map(ec => {
+          const rawDesc = parseRawErrors((item as any)._raw_errors, ec.code);
+          return {
+            code: ec.code,
+            description: rawDesc, // populate description with raw text
+            meaning: rawDesc ? 'Vedi descrizione' : 'Errore tecnico',
+            suggestions: [],
+            type: 'error',
+            action_level: ec.severity === 'stop_and_support' ? 'assistenza' : (ec.severity === 'caution' ? 'fermare_e_verificare' : 'verifica_utente')
+          };
+        }),
         has_explicit_codes: item.error_codes.length > 0,
         error_note: '',
         generic_suggestions: [],
