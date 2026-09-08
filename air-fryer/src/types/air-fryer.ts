@@ -15,6 +15,10 @@ export interface AirFryerErrorCode {
   suggestions: string[];
   type?: ErrorCodeType;
   action_level?: ActionLevel;
+  severity?: string;
+  evidence_level?: string;
+  diy_fixable?: boolean;
+  source_language?: string;
 }
 
 export interface AirFryerModel {

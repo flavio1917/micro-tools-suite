@@ -34,78 +34,89 @@ const {
   code, severity, evidenceLevel, diyFixable, content, source, lang, brandDisplayName 
 } = Astro.props;
 
+const finalCode = code || errorCode?.code || '';
+const finalSeverity = (severity || errorCode?.severity || (errorCode?.type === 'error' ? 'caution' : 'safe_check')) as Severity;
+const finalEvidenceLevel = (evidenceLevel || errorCode?.evidence_level || 'model_specific') as EvidenceLevel;
+const finalDiyFixable = diyFixable ?? errorCode?.diy_fixable ?? false;
+const finalSourceLang = source?.source_language || errorCode?.source_language || 'it';
+
 const resolvedLang = lang || 'it';
-const t = errorsUiTranslations[resolvedLang];
-const legacyLabels = t.legacyLabels;
-
-// Type translations
-const getTypeLabel = (type?: string) => {
-  if (type === 'error') return legacyLabels.typeError;
-  if (type === 'warning') return legacyLabels.typeWarning;
-  if (type === 'status' || type === 'feature_message') return legacyLabels.typeStatus;
-  return legacyLabels.typeMessage;
-};
-
-const getTypeClasses = (type?: string) => {
-  if (type === 'error') return 'bg-red-50 text-red-700 border-red-200 dark:bg-red-900/30 dark:text-red-300 dark:border-red-800';
-  if (type === 'warning') return 'bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-900/30 dark:text-amber-300 dark:border-amber-800';
-  if (type === 'status' || type === 'feature_message') return 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-300 dark:border-emerald-800';
-  return 'bg-slate-50 text-slate-700 border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700';
-};
-
-// Action level translations
-const getActionLabel = (level?: string) => {
-  if (level === 'assistenza') return legacyLabels.actionAssistance;
-  if (level === 'fermare_e_verificare') return legacyLabels.actionStop;
-  if (level === 'verifica_utente') return legacyLabels.actionCheck;
-  return legacyLabels.actionManual;
-};
-
-const getActionClasses = (level?: string) => {
-  if (level === 'assistenza') return 'text-red-600 dark:text-red-400 bg-red-100 dark:bg-red-900/50';
-  if (level === 'fermare_e_verificare') return 'text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-900/50';
-  if (level === 'verifica_utente') return 'text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-900/50';
-  return 'text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800';
-};
-
-const validSeverities = new Set(['safe_check', 'caution', 'stop_and_support']);
-const validEvidenceLevels = new Set(['model_specific', 'brand_generic', 'universal_guidance']);
-
-const isV2Renderable = Boolean(
-  code &&
-  content?.label &&
-  lang &&
-  validSeverities.has(severity ?? '') &&
-  validEvidenceLevels.has(evidenceLevel ?? '')
-);
-
-const currentLang = (lang && errorsUiTranslations[lang]) ? lang : 'it';
+const currentLang = (errorsUiTranslations[resolvedLang]) ? resolvedLang : 'it';
 const translations = errorsUiTranslations[currentLang];
 const labels = translations.cardLabels;
-const v2Severity = severity as NonNullable<Severity>;
-const v2EvidenceLevel = evidenceLevel as NonNullable<EvidenceLevel>;
 const v2Lang = currentLang as NonNullable<SupportedLanguage>;
-const v2Content = content as NonNullable<Props['content']>;
 
-const v2AnchorId = isV2Renderable ? toSafeAnchorId('error', code!) : undefined;
-const legacyAnchorId = !isV2Renderable && errorCode ? toSafeAnchorId('error', errorCode.code) : undefined;
-const finalAnchorId = v2AnchorId || legacyAnchorId;
+// Content mapping
+let finalLabel = content?.label;
+let finalCause = content?.cause;
+let finalSolution = content?.solution;
+let finalSteps = content?.steps || [];
+let isFallback = false;
+
+if (errorCode) {
+  // Check if we have an explicit translation from future pipeline
+  const locTranslations = (errorCode as any).translations;
+  if (locTranslations && locTranslations[currentLang]) {
+    finalLabel = locTranslations[currentLang].label || errorCode.description || '';
+    finalCause = locTranslations[currentLang].diagnosis || '';
+    finalSolution = locTranslations[currentLang].solution || '';
+  } else {
+    // Fallback to source
+    finalLabel = errorCode.description || '';
+    finalSolution = errorCode.suggestions?.join('\n') || '';
+    isFallback = currentLang !== finalSourceLang;
+  }
+}
+
+const finalAnchorId = toSafeAnchorId('error', finalCode);
+
+const getFallbackBadgeText = (lang: string, sourceLang: string) => {
+  if (lang === 'it') {
+    return `Manuale originale in ${sourceLang === 'en' ? 'inglese' : 'italiano'}`;
+  }
+  if (lang === 'en') {
+    return `Original manual in ${sourceLang === 'it' ? 'Italian' : 'English'}`;
+  }
+  if (lang === 'es') {
+    return `Manual original en ${sourceLang === 'it' ? 'italiano' : 'inglés'}`;
+  }
+  return `Manuel original en ${sourceLang === 'it' ? 'italien' : 'anglais'}`;
+};
 
 ---
 <Fragment>
-{isV2Renderable ? (
+{finalCode && finalLabel ? (
 <div class="mb-6 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-hidden shadow-sm" id={finalAnchorId}
-     data-analytics-code={code}
-     data-analytics-severity={v2Severity}
-     data-analytics-evidence={v2EvidenceLevel}
+     data-analytics-code={finalCode}
+     data-analytics-severity={finalSeverity}
+     data-analytics-evidence={finalEvidenceLevel}
      data-analytics-brand={brandDisplayName || ''}>
     <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-start justify-between gap-3 bg-slate-50 dark:bg-slate-800/50">
       <div class="flex flex-col gap-2">
+        {(sourceModelName || sourceModelSpec) && (
+          <div class="flex flex-wrap items-center gap-2 mb-1">
+            {sourceModelName && (
+              <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
+                Modello: {sourceModelName}
+              </span>
+            )}
+            {sourceModelSpec && (
+              <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
+                Model Spec: {sourceModelSpec}
+              </span>
+            )}
+          </div>
+        )}
         <div class="flex items-center gap-3 flex-wrap">
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight m-0 font-mono">{code}</h3>
-          <SeverityBadge severity={v2Severity} lang={v2Lang} />
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight m-0 font-mono">{finalCode}</h3>
+          <SeverityBadge severity={finalSeverity} lang={v2Lang} />
+          {isFallback && (
+            <span class="text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded">
+              {getFallbackBadgeText(v2Lang, finalSourceLang)}
+            </span>
+          )}
         </div>
-        <EvidenceLabel level={v2EvidenceLevel} lang={v2Lang} brandDisplayName={brandDisplayName} />
+        <EvidenceLabel level={finalEvidenceLevel} lang={v2Lang} brandDisplayName={brandDisplayName} />
       </div>
     </div>
 
@@ -113,29 +124,29 @@ const finalAnchorId = v2AnchorId || legacyAnchorId;
       <div>
         <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.meaning}</h4>
         <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base whitespace-pre-line">
-          {v2Content.label}
+          {finalLabel}
         </p>
       </div>
 
-      {v2Content.cause ? (
+      {finalCause ? (
         <div>
           <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.possibleCause}</h4>
           <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base whitespace-pre-line">
-            {v2Content.cause}
+            {finalCause}
           </p>
         </div>
       ) : null}
 
-      {v2Content.solution ? (
+      {finalSolution ? (
         <div>
           <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.solution}</h4>
           <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base whitespace-pre-line">
-            {v2Content.solution}
+            {finalSolution}
           </p>
         </div>
       ) : null}
 
-      {v2Content.steps && v2Content.steps.length > 0 && v2Severity !== 'stop_and_support' ? (
+      {finalSteps && finalSteps.length > 0 && finalSeverity !== 'stop_and_support' ? (
         <div class="bg-slate-50 dark:bg-slate-800/30 rounded p-4">
           <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5 flex items-center gap-2">
             <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -143,12 +154,12 @@ const finalAnchorId = v2AnchorId || legacyAnchorId;
             </svg>
             {labels.checklist}
           </h4>
-          <ul class="space-y-3 text-sm sm:text-base text-slate-700 dark:text-slate-300 af-checklist" data-lang={v2Lang} data-scope={'code-' + (brandDisplayName || 'univ')} data-record={code}>
-            {v2Content.steps.map((step, idx) => {
+          <ul class="space-y-3 text-sm sm:text-base text-slate-700 dark:text-slate-300 af-checklist" data-lang={v2Lang} data-scope={'code-' + (brandDisplayName || 'univ')} data-record={finalCode}>
+            {finalSteps.map((step, idx) => {
               return (
                 <li class="flex items-start gap-3">
-                  <input type="checkbox" id={'chk-' + code + '-' + idx} data-idx={idx} class="mt-1 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer" />
-                  <label for={'chk-' + code + '-' + idx} class="select-none cursor-pointer">{step}</label>
+                  <input type="checkbox" id={'chk-' + finalCode + '-' + idx} data-idx={idx} class="mt-1 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer" />
+                  <label for={'chk-' + finalCode + '-' + idx} class="select-none cursor-pointer">{step}</label>
                 </li>
               );
             })}
@@ -156,21 +167,21 @@ const finalAnchorId = v2AnchorId || legacyAnchorId;
         </div>
       ) : null}
       
-      <SafetyNotice severity={v2Severity} lang={v2Lang} />
+      <SafetyNotice severity={finalSeverity} lang={v2Lang} />
       
-      {source?.manual_url && (
+      {(source?.manual_url || (errorCode as any)?.manual_url) && (
   <div class="mt-4 border-t border-slate-100 pt-4 text-xs dark:border-slate-800">
     <a
-      href={source.manual_url}
+      href={source?.manual_url || (errorCode as any)?.manual_url}
       target="_blank"
       rel="noopener noreferrer"
       data-analytics-manual="true"
-      data-analytics-source-type={source.type || 'manual'}
+      data-analytics-source-type={source?.type || 'manual'}
       class="inline-flex items-center gap-1 text-blue-600 hover:underline dark:text-blue-400"
     >
       <span>
         {labels.officialManual}
-        {source.source_page ? ` (${labels.page} ${source.source_page})` : ''}
+        {source?.source_page ? ` (${labels.page} ${source.source_page})` : ''}
       </span>
       <svg
         class="h-3 w-3"
@@ -191,90 +202,7 @@ const finalAnchorId = v2AnchorId || legacyAnchorId;
   </div>
 )}
       
-
     </div>
   </div>
-) : null}
-
-{!isV2Renderable && errorCode ? (
-<div class="mb-6 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-hidden shadow-sm" id={legacyAnchorId}
-     data-analytics-code={errorCode.code}
-     data-analytics-severity={errorCode.type === 'error' ? 'caution' : 'safe_check'}
-     data-analytics-evidence="model_specific"
-     data-analytics-brand={brandDisplayName || ''}>
-  {/* Header: Code and Type Badge */}
-  <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-50 dark:bg-slate-800/50">
-    <div class="flex flex-col gap-2">
-      {(sourceModelName || sourceModelSpec) && (
-        <div class="flex flex-wrap items-center gap-2">
-          {sourceModelName && (
-            <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
-              Modello: {sourceModelName}
-            </span>
-          )}
-          {sourceModelSpec && (
-            <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
-              Model Spec: {sourceModelSpec}
-            </span>
-          )}
-        </div>
-      )}
-      <div class="flex items-center gap-4">
-      <span class="text-2xl font-bold text-slate-900 dark:text-white font-mono tracking-tight">{errorCode.code}</span>
-      <span class={`text-xs font-semibold px-2.5 py-1 rounded border ${getTypeClasses(errorCode.type)}`}>
-        {getTypeLabel(errorCode.type)}
-      </span>
-    </div>
-    
-    {errorCode.action_level && (
-      <span class={`text-xs font-medium px-2.5 py-1 rounded-full ${getActionClasses(errorCode.action_level)} inline-flex items-center gap-1.5`}>
-        {errorCode.action_level === 'assistenza' && <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
-        {errorCode.action_level === 'fermare_e_verificare' && <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
-        {errorCode.action_level === 'verifica_utente' && <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
-        {getActionLabel(errorCode.action_level)}
-      </span>
-    )}
-  </div>
-  </div>
-
-  <div class="p-5 space-y-5">
-    {/* Description */}
-    {errorCode.description ? (
-      <p class="text-slate-600 dark:text-slate-300 italic text-sm border-l-2 border-slate-200 dark:border-slate-700 pl-3">
-        "{errorCode.description}"
-      </p>
-    ) : null}
-
-    {/* Meaning */}
-    {errorCode.meaning ? (
-      <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.meaning}</h4>
-        <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base">
-          {errorCode.meaning}
-        </p>
-      </div>
-    ) : null}
-
-    {/* Suggestions */}
-    {errorCode.suggestions && errorCode.suggestions.length > 0 ? (
-      <div class="bg-slate-50 dark:bg-slate-800/30 rounded p-4">
-        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5 flex items-center gap-2">
-          <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-          </svg>
-          {labels.solution}
-        </h4>
-        <ul class="space-y-2 text-sm sm:text-base text-slate-700 dark:text-slate-300">
-          {errorCode.suggestions.map((suggestion) => (
-            <li class="flex items-start gap-2.5">
-              <span class="text-blue-500 dark:text-blue-400 font-black mt-0.5">•</span>
-              <span>{suggestion}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    ) : null}
-  </div>
-</div>
 ) : null}
 </Fragment>

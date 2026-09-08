@@ -21,16 +21,45 @@ export const airFryerModels: LegacyAirFryerModel[] = isV2
         const lines = rawText.split('\n');
         let capturing = false;
         let text = '';
+        
+        // Helper to check if a line is a header and if it includes our target
+        const isHeader = (line: string) => /^"?E\d+/i.test(line);
+        const containsTarget = (line: string, code: string) => {
+          // Normalize line: remove quotes, dots, extra spaces
+          const normalized = line.replace(/["'.]/g, '').trim().toUpperCase();
+          const c = code.toUpperCase();
+          if (normalized === c) return true;
+          // Check for aliases like E01/E21
+          if (normalized.includes('/')) {
+            return normalized.split('/').map(s => s.trim()).includes(c);
+          }
+          // Check for ranges like E4-E12 or E4–E12
+          const rangeMatch = normalized.match(/E(\d+)\s*[-–]\s*E(\d+)/);
+          if (rangeMatch) {
+            const start = parseInt(rangeMatch[1], 10);
+            const end = parseInt(rangeMatch[2], 10);
+            const targetNumMatch = c.match(/E(\d+)/);
+            if (targetNumMatch) {
+              const targetNum = parseInt(targetNumMatch[1], 10);
+              return targetNum >= start && targetNum <= end;
+            }
+          }
+          return false;
+        };
+
         for (const line of lines) {
           const cleanLine = line.trim();
-          const isHeader = /^"?(E\d+|ERR\d+|E-\d+)"?[:\-]?$/i.test(cleanLine);
-          
-          if (cleanLine === targetCode || cleanLine === `"${targetCode}"` || cleanLine.startsWith(`"${targetCode}"`)) {
-            capturing = true;
-            continue;
-          } else if (capturing && isHeader) {
-            break;
+          if (!cleanLine) continue;
+
+          if (isHeader(cleanLine)) {
+            if (containsTarget(cleanLine, targetCode)) {
+              capturing = true;
+              continue; // Skip the header line itself
+            } else if (capturing) {
+              break; // We hit the NEXT header, stop capturing
+            }
           }
+
           if (capturing) {
             text += line + '\n';
           }
@@ -59,7 +88,11 @@ export const airFryerModels: LegacyAirFryerModel[] = isV2
             meaning: rawDesc ? 'Vedi descrizione' : 'Errore tecnico',
             suggestions: [],
             type: 'error',
-            action_level: ec.severity === 'stop_and_support' ? 'assistenza' : (ec.severity === 'caution' ? 'fermare_e_verificare' : 'verifica_utente')
+            action_level: ec.severity === 'stop_and_support' ? 'assistenza' : (ec.severity === 'caution' ? 'fermare_e_verificare' : 'verifica_utente'),
+            severity: ec.severity,
+            evidence_level: ec.evidence_level,
+            diy_fixable: ec.diy_fixable,
+            source_language: ec.source?.source_language
           };
         }),
         has_explicit_codes: item.error_codes.length > 0,

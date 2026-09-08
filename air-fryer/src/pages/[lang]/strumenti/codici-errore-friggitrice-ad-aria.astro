@@ -57,9 +57,16 @@ const faqSchema = {
     }
   }))
 };
+const alternateUrls = {
+  it: `https://crispissimo.com/it/strumenti/codici-errore-friggitrice-ad-aria`,
+  en: `https://crispissimo.com/en/strumenti/codici-errore-friggitrice-ad-aria`,
+  es: `https://crispissimo.com/es/strumenti/codici-errore-friggitrice-ad-aria`,
+  fr: `https://crispissimo.com/fr/strumenti/codici-errore-friggitrice-ad-aria`,
+  "x-default": `https://crispissimo.com/it/strumenti/codici-errore-friggitrice-ad-aria`
+};
 ---
 
-<MainLayout title={seoData.metaTitle} description={seoData.metaDescription} lang={lang}>
+<MainLayout title={seoData.metaTitle} description={seoData.metaDescription} lang={lang} alternateUrls={alternateUrls}>
   
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
