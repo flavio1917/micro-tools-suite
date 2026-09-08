@@ -1,13 +1,12 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
-import MissingModelForm from './MissingModelForm.astro';
+import AirFryerDatabase from '../air-fryer-errors/AirFryerDatabase.astro';
+import { airFryerModels } from '../../lib/air-fryer-db';
 import AffiliateSlot from '../ads/AffiliateSlot.astro';
 import ErrorFaq from './ErrorFaq.astro';
 import { pageErrorsSeoTranslations } from '../../data/i18n/page-errors-seo';
 
-import dbData from '../../data/air-fryer-dataset';
 import { errorsUiTranslations } from '../../data/i18n/errors-ui';
-import type { AirFryerDBItem } from '../../data/i18n/errors-ui';
 
 export interface Props {
   lang?: 'it' | 'en' | 'es' | 'fr';
@@ -25,10 +24,6 @@ const backBtnLabel = {
 
 const seoData = pageErrorsSeoTranslations[lang as string] || pageErrorsSeoTranslations['it'];
 const t = errorsUiTranslations[lang] || errorsUiTranslations['it'];
-
-const db = dbData as AirFryerDBItem[];
-const rawBrands = db.map(item => item.brand).filter(Boolean);
-const brands = [...new Set(rawBrands)].sort();
 
 // JSON-LD
 const breadcrumbSchema = {
@@ -113,41 +108,11 @@ const faqSchema = {
 
     </div>
 
-    <!-- MOTORE DIAGNOSTICA (Dropdowns & Cards) -->
+    <!-- NUOVO MOTORE DIAGNOSTICA (DiagnosticSearch via AirFryerDatabase) -->
     <div class="w-full max-w-4xl mx-auto mb-16">
-      
-      <!-- Filtri -->
-      <div class="bg-white dark:bg-[#151b2b] p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl mb-8">
-        <p class="text-slate-600 dark:text-slate-400 mb-4 text-center font-medium">{t.initialInstruction}</p>
-        
-        <div class="flex flex-col md:flex-row gap-4 mb-2">
-          <div class="w-full md:w-1/2">
-            <label for="af-brand" class="sr-only">{t.brandAll}</label>
-            <select id="af-brand" class="w-full px-5 py-4 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-shadow font-bold appearance-none cursor-pointer">
-              <option value="">{t.brandAll}</option>
-              {brands.map((b) => (
-                <option value={b}>{b}</option>
-              ))}
-            </select>
-          </div>
-          
-          <div class="w-full md:w-1/2">
-            <label for="af-model" class="sr-only">{t.modelAll}</label>
-            <select id="af-model" disabled class="w-full px-5 py-4 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-900/50 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-shadow font-bold appearance-none cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
-              <option value="">{t.modelAll}</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <!-- Area Risultati -->
-      <div aria-live="polite" id="af-results-area" class="space-y-6">
-        <!-- Generato via JS -->
-      </div>
-
+      <AirFryerDatabase models={airFryerModels} lang={lang as 'it'|'en'|'es'|'fr'} />
     </div>
 
-    <MissingModelForm lang={lang as 'it' | 'en' | 'es' | 'fr'} />
     <AffiliateSlot lang={lang as 'it' | 'en' | 'es' | 'fr'} context="error-codes" />
     <ErrorFaq lang={lang as 'it' | 'en' | 'es' | 'fr'} />
 
@@ -188,163 +153,5 @@ const faqSchema = {
 
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-
-  <script is:inline define:vars={{ rawDb: db, t }}>
-    const db = rawDb || [];
-    
-    const brandSelect = document.getElementById('af-brand');
-    const modelSelect = document.getElementById('af-model');
-    const resultsArea = document.getElementById('af-results-area');
-
-    const el = (tag, classes, textContent) => {
-      const element = document.createElement(tag);
-      if (classes) element.className = classes;
-      if (textContent) element.textContent = textContent;
-      return element;
-    };
-
-    // Helper: Determine visually the card style based on solution text
-    const getActionTheme = (text) => {
-      const lower = (text || '').toLowerCase();
-      if (/(assistenza|supporto|service|guasto|sensore|circuito|sostituire|difettoso|non utilizzare|hardware|rotto|fuso)/.test(lower)) {
-        return { label: t.actionHardware, border: 'bg-red-600', badge: 'bg-red-600 shadow-[0_0_10px_rgba(220,38,38,0.5)]', dot: 'bg-white/40', iconColor: 'text-red-400' };
-      }
-      if (/(raffreddare|surriscaldamento|cool|stacca la spina|reset|riavvio|cestello|pulire)/.test(lower)) {
-        return { label: t.actionSoftware, border: 'bg-green-500', badge: 'bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.5)]', dot: 'bg-white/40', iconColor: 'text-green-400' };
-      }
-      if (/(wifi|wi-fi|app|pairing|connessione|rete)/.test(lower)) {
-        return { label: t.actionApp, border: 'bg-purple-500', badge: 'bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.5)]', dot: 'bg-white/40', iconColor: 'text-purple-400' };
-      }
-      return { label: t.actionGeneric, border: 'bg-slate-400', badge: 'bg-slate-600 shadow-[0_0_10px_rgba(71,85,105,0.5)]', dot: 'bg-white/40', iconColor: 'text-blue-400' };
-    };
-
-    // Render single card in the style of "image_1.png"
-    const createErrorCard = (code, diagText, solText, modelLabel) => {
-      const allText = diagText + ' ' + solText;
-      const theme = getActionTheme(allText);
-
-      const card = el('div', 'flex flex-col md:flex-row bg-[#0f172a] rounded-xl overflow-hidden border border-slate-800 shadow-xl mb-6 relative');
-      
-      // Left border line
-      const leftBorder = el('div', `absolute left-0 top-0 bottom-0 w-1.5 ${theme.border}`);
-      card.appendChild(leftBorder);
-
-      // Left Column
-      const leftCol = el('div', 'md:w-1/3 p-6 md:p-8 flex flex-col justify-center border-b md:border-b-0 md:border-r border-slate-800 pl-8');
-      
-      const codeTitle = el('div', 'text-4xl md:text-5xl font-black text-white mb-4 tracking-tighter', code);
-      
-      const badge = el('div', `inline-flex items-center gap-2 text-white text-xs font-bold px-3 py-1.5 rounded-full mb-6 max-w-fit ${theme.badge}`);
-      const dot = el('span', `w-2 h-2 rounded-full ${theme.dot}`);
-      badge.appendChild(dot);
-      badge.appendChild(document.createTextNode(theme.label));
-
-      const freqLabel = el('div', 'text-[10px] text-slate-400 uppercase tracking-wider font-bold', t.brandFrequentLabel);
-      const modelVal = el('div', 'text-sm text-white font-bold uppercase mt-1', modelLabel);
-
-      leftCol.appendChild(codeTitle);
-      leftCol.appendChild(badge);
-      leftCol.appendChild(freqLabel);
-      leftCol.appendChild(modelVal);
-      card.appendChild(leftCol);
-
-      // Right Column
-      const rightCol = el('div', 'md:w-2/3 p-6 md:p-8 space-y-4');
-
-      if (diagText) {
-        const diagBox = el('div', 'bg-[#1e293b]/50 border border-slate-700/50 rounded-xl p-5');
-        diagBox.appendChild(el('div', 'text-[10px] text-slate-400 uppercase tracking-wider font-bold mb-2', t.diagnosisLabel));
-        diagBox.appendChild(el('p', 'text-sm md:text-base text-slate-300 leading-relaxed', diagText));
-        rightCol.appendChild(diagBox);
-      }
-
-      if (solText) {
-        const solBox = el('div', 'bg-[#1e293b]/50 border border-slate-700/50 rounded-xl p-5');
-        const solHeader = el('div', 'flex items-center gap-2 mb-2');
-        solHeader.innerHTML = `<svg class="w-4 h-4 ${theme.iconColor}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>`;
-        solHeader.appendChild(el('div', `text-[10px] uppercase tracking-wider font-bold ${theme.iconColor}`, t.solutionLabel));
-        solBox.appendChild(solHeader);
-        solBox.appendChild(el('p', 'text-sm md:text-base text-white leading-relaxed font-medium', solText));
-        rightCol.appendChild(solBox);
-      }
-
-      card.appendChild(rightCol);
-      return card;
-    };
-
-    // Render logic when model is selected
-    const renderModelErrors = (item) => {
-      resultsArea.innerHTML = '';
-      
-      const modelName = item.actual_model || item.user_label || item.brand;
-      const displayLabel = `${item.brand} ${modelName}`;
-
-      if (item.error_codes && item.error_codes.length > 0) {
-        item.error_codes.forEach(ec => {
-          const diagText = ec.meaning || ec.description || '';
-          const solText = ec.suggestions ? ec.suggestions.join(' ') : '';
-          const card = createErrorCard(ec.code, diagText, solText, displayLabel);
-          resultsArea.appendChild(card);
-        });
-      } else if (item.generic_suggestions && item.generic_suggestions.length > 0) {
-        // Fallback to a generic card if no explicit codes
-        const solText = item.generic_suggestions.join(' ');
-        const card = createErrorCard("⚠", t.noExplicitCodesMsg, solText, displayLabel);
-        resultsArea.appendChild(card);
-      } else {
-        const emptyState = el('div', 'text-center py-10 bg-orange-50 dark:bg-orange-900/20 rounded-xl border border-orange-100 dark:border-orange-800');
-        emptyState.appendChild(el('p', 'text-orange-800 dark:text-orange-400 font-medium px-4', t.emptyState));
-        resultsArea.appendChild(emptyState);
-      }
-    };
-
-    // Events
-    brandSelect.addEventListener('change', () => {
-      const selectedBrand = brandSelect.value;
-      
-      // Reset model dropdown and results
-      modelSelect.innerHTML = `<option value="">${t.modelAll}</option>`;
-      modelSelect.disabled = true;
-      resultsArea.innerHTML = '';
-
-      if (selectedBrand) {
-        const brandModels = db.filter(i => i.brand === selectedBrand);
-        // Dedup by model label
-        const uniqueModels = [];
-        const seen = new Set();
-        brandModels.forEach(m => {
-          const label = m.user_label || m.actual_model || 'Generico';
-          if (!seen.has(label)) {
-            seen.add(label);
-            uniqueModels.push({ label, item: m });
-          }
-        });
-
-        uniqueModels.sort((a,b) => a.label.localeCompare(b.label)).forEach(m => {
-          const opt = el('option', '', m.label);
-          opt.value = m.label;
-          modelSelect.appendChild(opt);
-        });
-        
-        modelSelect.disabled = false;
-      }
-    });
-
-    modelSelect.addEventListener('change', () => {
-      const selectedBrand = brandSelect.value;
-      const selectedModelLabel = modelSelect.value;
-      
-      resultsArea.innerHTML = '';
-
-      if (selectedBrand && selectedModelLabel) {
-        // Find item
-        const item = db.find(i => i.brand === selectedBrand && (i.user_label === selectedModelLabel || i.actual_model === selectedModelLabel || (!i.user_label && !i.actual_model && selectedModelLabel === 'Generico')));
-        if (item) {
-          renderModelErrors(item);
-        }
-      }
-    });
-
-  </script>
 
 </MainLayout>
