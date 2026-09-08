@@ -21,7 +21,9 @@ export interface AirFryerModel {
   id: string;
   brand: string;
   actual_model: string;
-  user_label: string;
+  user_label?: string;
+  model_spec?: string;
+  primary_display_name?: string;
   manual_url?: string;
   document?: AirFryerDocument;
   capacity_l: number | null;

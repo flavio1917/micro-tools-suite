@@ -119,7 +119,12 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
       {aggregatedMessages.length > 0 ? (
         <div class="space-y-4">
           {aggregatedMessages.map(msg => (
-            <ErrorCodeCard errorCode={msg} sourceModelName={msg.sourceModelName} sourceModelId={msg.sourceModelId} />
+            <ErrorCodeCard 
+              errorCode={msg} 
+              sourceModelName={msg.primaryDisplayName || msg.sourceModelName} 
+              sourceModelSpec={msg.sourceModelSpec}
+              sourceModelId={msg.sourceModelId} 
+            />
           ))}
         </div>
       ) : (

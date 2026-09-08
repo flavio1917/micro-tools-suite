@@ -8,7 +8,7 @@ import AirFryerSpecs from '../../../../../components/air-fryer-errors/AirFryerSp
 import { pageErrorsSeoTranslations } from '../../../../../data/i18n/page-errors-seo';
 import { errorsUiTranslations } from '../../../../../data/i18n/errors-ui';
 import { getAirFryerErrorAlternateUrls, getAirFryerErrorHubUrl } from '../../../../../lib/air-fryer-error-routes';
-import { hasCompleteTranslations } from '../../../../../data/i18n/error-content';
+import { errorContentDB, hasCompleteTranslations } from '../../../../../data/i18n/error-content';
 import type { AirFryerModelV2 } from '../../../../../types/air-fryer-v2';
 
 export async function getStaticPaths() {
@@ -202,15 +202,26 @@ const validSymptoms = model.symptoms.filter((sym: any) =>
       <div class="mb-12">
         <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-6">{uiLabels.knownErrors}</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {validCodes.map((code: any) => (
-            <ErrorCodeCard 
-              code={code} 
-              modelId={model.canonical_slug} 
-              brandSlug={model.brand_slug} 
-              modelSpecSlug={model.model_spec!} 
-              lang={lang} 
-            />
-          ))}
+          {validCodes.map((code: any) => {
+            const localizedCode = errorContentDB[lang]?.errors[`${model.brand_slug}.${model.model_spec}.error.${code.code}`];
+            return (
+              <ErrorCodeCard 
+                code={code.code} 
+                severity={code.severity}
+                evidenceLevel={code.evidence_level}
+                diyFixable={code.diy_fixable}
+                content={{
+                  label: localizedCode?.label.text || code.code,
+                  cause: localizedCode?.cause?.text,
+                  solution: localizedCode?.solution?.text,
+                  steps: localizedCode?.steps?.map(s => s.text) || []
+                }}
+                source={code.source}
+                lang={lang} 
+                brandDisplayName={model.brand_slug}
+              />
+            );
+          })}
         </div>
       </div>
     )}
@@ -219,15 +230,24 @@ const validSymptoms = model.symptoms.filter((sym: any) =>
       <div class="mb-12">
         <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-6">{uiLabels.commonSymptoms}</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {validSymptoms.map((sym: any) => (
-            <SymptomCard 
-              symptom={sym} 
-              modelId={model.canonical_slug} 
-              brandSlug={model.brand_slug} 
-              modelSpecSlug={model.model_spec!} 
-              lang={lang} 
-            />
-          ))}
+          {validSymptoms.map((sym: any) => {
+            const localizedSym = errorContentDB[lang]?.symptoms[`${model.brand_slug}.${model.model_spec}.symptom.${sym.key}`];
+            return (
+              <SymptomCard 
+                symptomKey={sym.key}
+                severity={sym.severity}
+                evidenceLevel={sym.evidence_level}
+                content={{
+                  label: localizedSym?.label.text || sym.key,
+                  cause: localizedSym?.cause?.text,
+                  solution: localizedSym?.solution?.text
+                }}
+                source={sym.source}
+                lang={lang}
+                brandDisplayName={model.brand_slug}
+              />
+            );
+          })}
         </div>
       </div>
     )}

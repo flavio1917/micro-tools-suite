@@ -13,14 +13,14 @@ export interface Props {
 }
 
 const { lang = 'it' } = Astro.props;
-const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
+const homeUrl = lang === 'it' ? '/strumenti' : `/${lang}/tools`;
 
 const backBtnLabel = {
-  it: "Vai alle ricette",
-  en: "Go to Recipes",
-  es: "Ir a las recetas",
-  fr: "Voir les recettes"
-}[lang] || "Vai alle ricette";
+  it: "Tutti gli strumenti",
+  en: "All tools",
+  es: "Todas las herramientas",
+  fr: "Tous les outils"
+}[lang] || "Tutti gli strumenti";
 
 const seoData = pageErrorsSeoTranslations[lang as string] || pageErrorsSeoTranslations['it'];
 const t = errorsUiTranslations[lang] || errorsUiTranslations['it'];

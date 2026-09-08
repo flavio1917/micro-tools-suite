@@ -76,9 +76,9 @@ const searchTokens = [
             </div>
           </div>
           
-          <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white mb-1">
-            {model.actual_model}
-          </h2>
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white leading-tight mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+            {model.primary_display_name || model.actual_model}
+          </h3>
           
           {showUserLabel && (
             <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">{model.user_label}</p>

@@ -3,6 +3,8 @@ import type { AirFryerModel, AirFryerErrorCode } from '../types/air-fryer';
 export interface AggregatedMessage extends AirFryerErrorCode {
   sourceModelId: string;
   sourceModelName: string;
+  sourceModelSpec?: string;
+  primaryDisplayName?: string;
 }
 
 export function getModelsByBrand(models: AirFryerModel[], brand: string): AirFryerModel[] {
@@ -18,7 +20,9 @@ export function aggregateBrandMessages(brandModels: AirFryerModel[]): Aggregated
         aggregated.push({
           ...ec,
           sourceModelId: model.id,
-          sourceModelName: model.actual_model
+          sourceModelName: model.actual_model,
+          sourceModelSpec: model.model_spec,
+          primaryDisplayName: model.primary_display_name
         });
       }
     }

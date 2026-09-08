@@ -231,16 +231,22 @@ const searchIndex = getSearchIndex(lang);
           
         } else if (brand) {
           if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
-          // STATE B: Brand Overview
-          if (statusText) statusText.textContent = msgBrandSelected.replace('{brand}', brand.toUpperCase());
-          statusMessageContainer?.classList.remove('hidden');
-          stateB?.classList.remove('hidden');
-          const view = document.querySelector(`.af-brand-view[data-brand="${brand}"]`);
-          if (view) {
-             view.classList.remove('hidden');
+          
+          if (brand === 'other') {
+            statusMessageContainer?.classList.add('hidden');
+            stateD?.classList.remove('hidden');
           } else {
-             if (statusText) statusText.textContent = msgBrandNotFound;
-             stateD?.classList.remove('hidden');
+            // STATE B: Brand Overview
+            if (statusText) statusText.textContent = msgBrandSelected.replace('{brand}', brand.toUpperCase());
+            statusMessageContainer?.classList.remove('hidden');
+            stateB?.classList.remove('hidden');
+            const view = document.querySelector(`.af-brand-view[data-brand="${brand}"]`);
+            if (view) {
+               view.classList.remove('hidden');
+            } else {
+               if (statusText) statusText.textContent = msgBrandNotFound;
+               stateD?.classList.remove('hidden');
+            }
           }
           
         } else if (code || symptom) {
@@ -262,6 +268,7 @@ const searchIndex = getSearchIndex(lang);
         const formContainer = document.getElementById('missing-model-form-container');
         if (formContainer) {
           const rawParams = new URLSearchParams(window.location.search);
+          const rawBrand = rawParams.get('brand');
           const rawModel = rawParams.get('model');
           const rawCode = rawParams.get('code');
           const rawSymptom = rawParams.get('symptom');
@@ -277,6 +284,9 @@ const searchIndex = getSearchIndex(lang);
           } else if (rawModel && !model) {
              showForm = true;
              reason = 'missing_model';
+          } else if (rawBrand === 'other') {
+             showForm = true;
+             reason = 'other_brand';
           } else if (rawCode && !code) {
              showForm = true;
              reason = 'missing_code';

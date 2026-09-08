@@ -10,6 +10,7 @@ import { errorsUiTranslations } from '../../data/i18n/errors-ui';
 export interface Props {
   errorCode?: AirFryerErrorCode;
   sourceModelName?: string;
+  sourceModelSpec?: string;
   sourceModelId?: string;
   
   // V2 props
@@ -29,7 +30,7 @@ export interface Props {
 }
 
 const { 
-  errorCode, sourceModelName, sourceModelId,
+  errorCode, sourceModelName, sourceModelSpec, sourceModelId,
   code, severity, evidenceLevel, diyFixable, content, source, lang, brandDisplayName 
 } = Astro.props;
 
@@ -204,10 +205,19 @@ const finalAnchorId = v2AnchorId || legacyAnchorId;
   {/* Header: Code and Type Badge */}
   <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-50 dark:bg-slate-800/50">
     <div class="flex flex-col gap-2">
-      {sourceModelName && (
-        <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
-          {legacyLabels.sourceModel} {sourceModelName}
-        </span>
+      {(sourceModelName || sourceModelSpec) && (
+        <div class="flex flex-wrap items-center gap-2">
+          {sourceModelName && (
+            <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
+              Modello: {sourceModelName}
+            </span>
+          )}
+          {sourceModelSpec && (
+            <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
+              Model Spec: {sourceModelSpec}
+            </span>
+          )}
+        </div>
       )}
       <div class="flex items-center gap-4">
       <span class="text-2xl font-bold text-slate-900 dark:text-white font-mono tracking-tight">{errorCode.code}</span>

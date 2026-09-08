@@ -21,6 +21,8 @@ export const airFryerModels: LegacyAirFryerModel[] = isV2
         brand: item.brand_slug, // or something derived
         actual_model: item.model_spec,
         user_label: item.primary_display_name,
+        model_spec: item.model_spec,
+        primary_display_name: item.primary_display_name,
         manual_url: item.source?.manual_url,
         capacity_l: item.specs?.capacity_liters ?? null,
         capacity_kg_fries: null,

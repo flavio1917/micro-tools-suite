@@ -62,9 +62,13 @@ export function validateDiagnosticParams(
 
   // Validate brand: known brand_slug (if not already set by model)
   if (rawBrand && !state.brand) {
-    const isBrandKnown = index.some(m => m.brand_slug === rawBrand);
-    if (isBrandKnown) {
-      state.brand = rawBrand;
+    if (rawBrand === 'other') {
+      state.brand = 'other';
+    } else {
+      const isBrandKnown = index.some(m => m.brand_slug === rawBrand);
+      if (isBrandKnown) {
+        state.brand = rawBrand;
+      }
     }
   }
 
