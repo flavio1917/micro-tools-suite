@@ -1,208 +1,117 @@
 ---
-import type { AirFryerErrorCode } from '../../types/air-fryer';
-import type { Severity, EvidenceLevel, SourceReference, SupportedLanguage } from '../../types/air-fryer-v2';
+import { getLocalizedErrorContent, getUiTranslation } from '../../lib/air-fryer-error-i18n';
 import SeverityBadge from './SeverityBadge.astro';
-import EvidenceLabel from './EvidenceLabel.astro';
-import SafetyNotice from './SafetyNotice.astro';
 import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
-import { errorsUiTranslations } from '../../data/i18n/errors-ui';
 
 export interface Props {
-  errorCode?: AirFryerErrorCode;
+  error: any;
+  model?: any;
+  lang: string;
   sourceModelName?: string;
   sourceModelSpec?: string;
-  sourceModelId?: string;
-  
-  // V2 props
-  code?: string;
-  severity?: Severity;
-  evidenceLevel?: EvidenceLevel;
-  diyFixable?: boolean;
-  content?: {
-    label: string;
-    cause?: string;
-    solution?: string;
-    steps?: string[];
-  };
-  source?: SourceReference;
-  lang?: SupportedLanguage;
+  modelCanonicalSlug?: string;
   brandDisplayName?: string;
 }
 
-const { 
-  errorCode, sourceModelName, sourceModelSpec, sourceModelId,
-  code, severity, evidenceLevel, diyFixable, content, source, lang, brandDisplayName 
-} = Astro.props;
+const { error, model, lang, brandDisplayName, sourceModelName: overrideModelName, sourceModelSpec: overrideModelSpec, modelCanonicalSlug: overrideSlug } = Astro.props;
 
-const finalCode = code || errorCode?.code || '';
-const finalSeverity = (severity || errorCode?.severity || (errorCode?.type === 'error' ? 'caution' : 'safe_check')) as Severity;
-const finalEvidenceLevel = (evidenceLevel || errorCode?.evidence_level || 'model_specific') as EvidenceLevel;
-const finalDiyFixable = diyFixable ?? errorCode?.diy_fixable ?? false;
-const finalSourceLang = source?.source_language || errorCode?.source_language || 'it';
+const modelCanonicalSlug = overrideSlug || model?.canonical_slug || model?.id || '';
+const loc = getLocalizedErrorContent(lang, modelCanonicalSlug, error);
 
-const resolvedLang = lang || 'it';
-const currentLang = (errorsUiTranslations[resolvedLang]) ? resolvedLang : 'it';
-const translations = errorsUiTranslations[currentLang];
-const labels = translations.cardLabels;
-const v2Lang = currentLang as NonNullable<SupportedLanguage>;
+const finalAnchorId = toSafeAnchorId('error', loc.code);
 
-// Content mapping
-let finalLabel = content?.label;
-let finalCause = content?.cause;
-let finalSolution = content?.solution;
-let finalSteps = content?.steps || [];
-let isFallback = false;
+const sourceModelName = overrideModelName || model?.primary_display_name || model?.user_label;
+const sourceModelSpec = overrideModelSpec || model?.model_spec;
 
-if (errorCode) {
-  // Check if we have an explicit translation from future pipeline
-  const locTranslations = (errorCode as any).translations;
-  if (locTranslations && locTranslations[currentLang]) {
-    finalLabel = locTranslations[currentLang].label || errorCode.description || '';
-    finalCause = locTranslations[currentLang].diagnosis || '';
-    finalSolution = locTranslations[currentLang].solution || '';
-  } else {
-    // Fallback to source
-    finalLabel = errorCode.description || '';
-    finalSolution = errorCode.suggestions?.join('\n') || '';
-    isFallback = currentLang !== finalSourceLang;
-  }
-}
+const hasModelInfo = sourceModelName || sourceModelSpec;
 
-const finalAnchorId = toSafeAnchorId('error', finalCode);
-
-const getFallbackBadgeText = (lang: string, sourceLang: string) => {
-  if (lang === 'it') {
-    return `Manuale originale in ${sourceLang === 'en' ? 'inglese' : 'italiano'}`;
-  }
-  if (lang === 'en') {
-    return `Original manual in ${sourceLang === 'it' ? 'Italian' : 'English'}`;
-  }
-  if (lang === 'es') {
-    return `Manual original en ${sourceLang === 'it' ? 'italiano' : 'inglés'}`;
-  }
-  return `Manuel original en ${sourceLang === 'it' ? 'italien' : 'anglais'}`;
-};
-
+const manualUrl = error.source?.manual_url || error.manual_url;
 ---
-<Fragment>
-{finalCode && finalLabel ? (
-<div class="mb-6 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 overflow-hidden shadow-sm" id={finalAnchorId}
-     data-analytics-code={finalCode}
-     data-analytics-severity={finalSeverity}
-     data-analytics-evidence={finalEvidenceLevel}
-     data-analytics-brand={brandDisplayName || ''}>
-    <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row sm:items-start justify-between gap-3 bg-slate-50 dark:bg-slate-800/50">
-      <div class="flex flex-col gap-2">
-        {(sourceModelName || sourceModelSpec) && (
-          <div class="flex flex-wrap items-center gap-2 mb-1">
-            {sourceModelName && (
-              <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
-                Modello: {sourceModelName}
-              </span>
-            )}
-            {sourceModelSpec && (
-              <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 w-max">
-                Model Spec: {sourceModelSpec}
-              </span>
-            )}
-          </div>
+
+<div class="mb-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col md:flex-row" id={finalAnchorId}
+     data-analytics-code={loc.code}
+     data-analytics-severity={loc.severity}
+     data-analytics-brand={brandDisplayName || model?.brand || ''}>
+     
+  <!-- LEFT COLUMN -->
+  <div class="w-full md:w-1/3 bg-slate-50 dark:bg-slate-800/50 p-5 border-b md:border-b-0 md:border-r border-slate-100 dark:border-slate-800 flex flex-col gap-4">
+    <div class="flex items-center gap-3 flex-wrap">
+      <h3 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight m-0 font-mono">
+        {loc.displayCode}
+      </h3>
+    </div>
+    
+    <div>
+      <SeverityBadge severity={loc.severity} actionLevel={loc.actionLevel} fixable={loc.diyFixable} lang={lang} />
+    </div>
+
+    {hasModelInfo ? (
+      <div class="flex flex-col gap-1 mt-2">
+        {sourceModelName && (
+          <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-1 rounded border border-slate-200 dark:border-slate-700 w-max">
+            {getUiTranslation(lang, 'Modello')}: {sourceModelName}
+          </span>
         )}
-        <div class="flex items-center gap-3 flex-wrap">
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight m-0 font-mono">{finalCode}</h3>
-          <SeverityBadge severity={finalSeverity} lang={v2Lang} />
-          {isFallback && (
-            <span class="text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-2 py-0.5 rounded">
-              {getFallbackBadgeText(v2Lang, finalSourceLang)}
+        {sourceModelSpec && (
+          <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-1 rounded border border-slate-200 dark:border-slate-700 w-max">
+            {getUiTranslation(lang, 'Model Spec')}: {sourceModelSpec}
+          </span>
+        )}
+      </div>
+    ) : brandDisplayName ? (
+      <div class="flex flex-col gap-1 mt-2">
+        <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-1 rounded border border-slate-200 dark:border-slate-700 w-max">
+          {brandDisplayName}
+        </span>
+      </div>
+    ) : null}
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="w-full md:w-2/3 p-5 space-y-5 flex flex-col justify-center">
+    
+    {loc.diagnosis && (
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5 flex items-center gap-2">
+          {getUiTranslation(lang, 'Diagnosi')}
+          {loc.isFallbackSource && (
+            <span class="inline-flex items-center text-[10px] bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300 px-2 py-0.5 rounded-full border border-amber-200 dark:border-amber-800 font-medium normal-case tracking-normal">
+              {loc.originalManualBadge}
             </span>
           )}
-        </div>
-        <EvidenceLabel level={finalEvidenceLevel} lang={v2Lang} brandDisplayName={brandDisplayName} />
-      </div>
-    </div>
-
-    <div class="p-5 space-y-5">
-      <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.meaning}</h4>
-        <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base whitespace-pre-line">
-          {finalLabel}
+        </h4>
+        <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base whitespace-pre-line leading-relaxed">
+          {loc.diagnosis}
         </p>
       </div>
+    )}
 
-      {finalCause ? (
-        <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.possibleCause}</h4>
-          <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base whitespace-pre-line">
-            {finalCause}
-          </p>
+    {loc.solution && (
+      <div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{getUiTranslation(lang, 'Soluzione')}</h4>
+        <div class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base whitespace-pre-line leading-relaxed bg-blue-50/50 dark:bg-blue-900/10 p-4 rounded-lg border border-blue-100 dark:border-blue-900/30">
+          {loc.solution}
         </div>
-      ) : null}
+      </div>
+    )}
 
-      {finalSolution ? (
-        <div>
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{labels.solution}</h4>
-          <p class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base whitespace-pre-line">
-            {finalSolution}
-          </p>
-        </div>
-      ) : null}
-
-      {finalSteps && finalSteps.length > 0 && finalSeverity !== 'stop_and_support' ? (
-        <div class="bg-slate-50 dark:bg-slate-800/30 rounded p-4">
-          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5 flex items-center gap-2">
-            <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-            </svg>
-            {labels.checklist}
-          </h4>
-          <ul class="space-y-3 text-sm sm:text-base text-slate-700 dark:text-slate-300 af-checklist" data-lang={v2Lang} data-scope={'code-' + (brandDisplayName || 'univ')} data-record={finalCode}>
-            {finalSteps.map((step, idx) => {
-              return (
-                <li class="flex items-start gap-3">
-                  <input type="checkbox" id={'chk-' + finalCode + '-' + idx} data-idx={idx} class="mt-1 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer" />
-                  <label for={'chk-' + finalCode + '-' + idx} class="select-none cursor-pointer">{step}</label>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      ) : null}
-      
-      <SafetyNotice severity={finalSeverity} lang={v2Lang} />
-      
-      {(source?.manual_url || (errorCode as any)?.manual_url) && (
-  <div class="mt-4 border-t border-slate-100 pt-4 text-xs dark:border-slate-800">
-    <a
-      href={source?.manual_url || (errorCode as any)?.manual_url}
-      target="_blank"
-      rel="noopener noreferrer"
-      data-analytics-manual="true"
-      data-analytics-source-type={source?.type || 'manual'}
-      class="inline-flex items-center gap-1 text-blue-600 hover:underline dark:text-blue-400"
-    >
-      <span>
-        {labels.officialManual}
-        {source?.source_page ? ` (${labels.page} ${source.source_page})` : ''}
-      </span>
-      <svg
-        class="h-3 w-3"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-        />
-      </svg>
-      <span class="sr-only">({labels.opensInNewTab})</span>
-    </a>
+    {manualUrl && (
+      <div class="pt-2">
+        <a
+          href={manualUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 hover:underline transition-colors"
+        >
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          {getUiTranslation(lang, 'Consulta il manuale ufficiale')}
+          <svg class="h-3.5 w-3.5 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+    )}
   </div>
-)}
-      
-    </div>
-  </div>
-) : null}
-</Fragment>
+</div>

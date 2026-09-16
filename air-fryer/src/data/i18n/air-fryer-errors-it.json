@@ -1,0 +1,409 @@
+{
+  "ui": {
+    "Codici ed errori documentati": "Codici ed errori documentati",
+    "Codici display rilevati": "Codici display rilevati",
+    "Codice": "Codice",
+    "Modello": "Modello",
+    "Model Spec": "Model Spec",
+    "Significato": "Significato",
+    "Possibile causa": "Possibile causa",
+    "Diagnosi": "Diagnosi",
+    "Soluzione": "Soluzione",
+    "Errore tecnico": "Errore tecnico",
+    "Attenzione": "Attenzione",
+    "Reset software": "Reset software",
+    "Riparazione hardware": "Riparazione hardware",
+    "Rischio — assistenza necessaria": "Rischio — assistenza necessaria",
+    "Spegni, scollega e verifica": "Spegni, scollega e verifica",
+    "Indicato nel manuale ufficiale di questo modello": "Indicato nel manuale ufficiale di questo modello",
+    "Consulta il manuale ufficiale": "Consulta il manuale ufficiale",
+    "Si apre in una nuova scheda": "Si apre in una nuova scheda",
+    "Manuale originale in italiano": "Manuale originale in italiano",
+    "Manuale originale in inglese": "Manuale originale in inglese",
+    "Traduzione informativa dal manuale originale": "Traduzione informativa dal manuale originale",
+    "Torna alla ricerca": "Torna alla ricerca",
+    "Tutti gli strumenti": "Tutti gli strumenti",
+    "Vedi descrizione": "Vedi descrizione"
+  },
+  "generic": {
+    "E1": {
+      "label": "Errore Termico / Sensore",
+      "diagnosis": "Possibile guasto al sensore di temperatura (circuito aperto) o surriscaldamento anomalo.",
+      "solution": "Scollegare la friggitrice e lasciarla raffreddare per 15-60 minuti. Se l'errore persiste, contattare l'assistenza clienti."
+    },
+    "E2": {
+      "label": "Cortocircuito Sensore",
+      "diagnosis": "Cortocircuito nel sensore di temperatura, oppure (su alcuni modelli a doppio cestello) divisorio mancante.",
+      "solution": "Scollegare e contattare l'assistenza. Se il modello richiede un divisorio, assicurarsi che sia installato correttamente."
+    },
+    "E3": {
+      "label": "Protezione Surriscaldamento",
+      "diagnosis": "Si è attivata la protezione contro il surriscaldamento.",
+      "solution": "Scollegare immediatamente l'apparecchio e lasciarlo raffreddare completamente prima di riutilizzarlo."
+    },
+    "E4": {
+      "label": "Alimentazione o Malfunzionamento",
+      "diagnosis": "Tensione di alimentazione errata o malfunzionamento generico del dispositivo.",
+      "solution": "Scollegare e ricollegare alla presa di corrente. Verificare il corretto voltaggio. Se persiste, contattare l'assistenza."
+    },
+    "Display Spento": {
+      "label": "Nessuna Alimentazione",
+      "diagnosis": "Il dispositivo non riceve corrente elettrica.",
+      "solution": "Controllare che la spina sia inserita, verificare il fusibile o provare una presa diversa."
+    }
+  },
+  "models": {
+    "philips-na15x": {
+      "E1": {
+        "label": "Errore",
+        "diagnosis": "Il dispositivo è rotto/difettato. Chiamare l'assistenza telefonica\nPhilips o rivolgersi al centro\nassistenza clienti del proprio\npaese.\nAirfryer potrebbe essere stato\nconservato in un luogo troppo\nfreddo.\nIl dispositivo è troppo freddo.\nLasciarlo a temperatura ambiente\nper almeno 60 minuti.\nSe il problema persiste, chiamare\nl'assistenza telefonica Philips o\nrivolgersi al centro assistenza\nclienti del proprio paese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E2": {
+        "label": "Errore",
+        "diagnosis": "Il divisorio non è installato. Installare il divisorio.\nViene visualizzato l'avviso \"E2\" e la\ncottura viene interrotta quando un\nrecipiente piccolo interrompe la\ncottura e nell'altro recipiente\npiccolo inizia subito la cottura.\nEstrarre il recipiente per lasciare\nraffreddare il dispositivo per 2\nminuti, quindi reinserirlo per\npreparare la cottura per l'altro\nrecipiente piccolo",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E4": {
+        "label": "Errore",
+        "diagnosis": "Il dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E12": {
+        "label": "Errore",
+        "diagnosis": "Il dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    },
+    "philips-na220-na221": {
+      "E1": {
+        "label": "Errore",
+        "diagnosis": "Airfryer potrebbe essere stato conservato in un luogo troppo freddo. Se il dispositivo è stato conservato in un ambiente a bassa temperatura, lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti prima di ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. Sullo schermo di Airfryer vengono visualizzati i codici",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E4": {
+        "label": "Errore",
+        "diagnosis": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E6": {
+        "label": "Errore",
+        "diagnosis": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E9": {
+        "label": "Errore",
+        "diagnosis": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E12": {
+        "label": "Errore",
+        "diagnosis": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    },
+    "philips-na351": {
+      "E1": {
+        "label": "Errore",
+        "diagnosis": "Il dispositivo è rotto/difettato. Chiamare l'assistenza telefonica\nPhilips o rivolgersi al centro\nassistenza clienti del proprio\npaese.\nAirfryer potrebbe essere stato\nconservato in un luogo troppo\nfreddo.\nSe il dispositivo è stato conservato\nin un ambiente a bassa\ntemperatura, lasciarlo riscaldare a\ntemperatura ambiente per almeno\n15 minuti prima di ricollegarlo.\nSe sullo schermo viene ancora\nvisualizzata la scritta \"E1\",\nchiamare l'assistenza telefonica\nPhilips o rivolgersi al centro\nassistenza clienti del proprio\npaese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E4": {
+        "label": "Errore",
+        "diagnosis": "Il dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E12": {
+        "label": "Errore",
+        "diagnosis": "Il dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    },
+    "philips-na555": {
+      "E1": {
+        "label": "Errore",
+        "diagnosis": "Il dispositivo è rotto/difettato. Chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. Airfryer potrebbe essere stato conservato in un luogo troppo freddo. Se il dispositivo è stato conservato in un ambiente a bassa temperatura, lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti prima di ricollegarlo. Se sullo schermo viene ancora visualizzata la scritta \"E1\", chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. Sullo schermo di Airfryer viene visualizzata la scritta",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E4": {
+        "label": "Errore",
+        "diagnosis": "Il dispositivo potrebbe non funzionare correttamente. Provare a scollegare e ricollegare il dispositivo alla presa di corrente. Se non si riesce a risolvere il problema, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E12": {
+        "label": "Errore",
+        "diagnosis": "Il dispositivo potrebbe non funzionare correttamente. Provare a scollegare e ricollegare il dispositivo alla presa di corrente. Se non si riesce a risolvere il problema, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    },
+    "cosori-caf-p583s-kus": {
+      "E1": {
+        "label": "Sensore Temperatura",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura.",
+        "solution": "Contatta l'Assistenza Clienti.",
+        "sourceLanguage": "en"
+      },
+      "E2": {
+        "label": "Sensore Temperatura",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura.",
+        "solution": "Contatta l'Assistenza Clienti.",
+        "sourceLanguage": "en"
+      },
+      "E3": {
+        "label": "Protezione Surriscaldamento",
+        "diagnosis": "Si è attivata la protezione contro il surriscaldamento.",
+        "solution": "Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare l'errore, contatta l'Assistenza.",
+        "sourceLanguage": "en"
+      },
+      "E4": {
+        "label": "Voltaggio Errato",
+        "diagnosis": "La friggitrice è stata collegata a una presa da 220–240V.",
+        "solution": "Spegni e scollega la friggitrice. Usala solo con prese da 120V, 60Hz.",
+        "sourceLanguage": "en"
+      }
+    },
+    "cosori-caf-li211": {
+      "E1": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E2": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E3": {
+        "label": "Errore",
+        "diagnosis": "Si è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E4": {
+        "label": "Errore",
+        "diagnosis": "La friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice. Usa la friggitrice ad aria solo con prese da 120V, 60Hz",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    },
+    "cosori-caf-se601s-cus": {
+      "E1": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E2": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E3": {
+        "label": "Errore",
+        "diagnosis": "Si è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E4": {
+        "label": "Errore",
+        "diagnosis": "La friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice. Usa la friggitrice ad aria solo con prese da 120V, 60Hz",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E12": {
+        "label": "Errore",
+        "diagnosis": "Il motore a corrente continua (DC) è guasto. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    },
+    "cosori-caf-dc601-kus": {
+      "E01": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E02": {
+        "label": "Errore",
+        "diagnosis": "2\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E04": {
+        "label": "Errore",
+        "diagnosis": "La friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice dalla corrente. Usa la friggitrice ad aria solo con prese da 120V, 60Hz",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    },
+    "cosori-caf-tf901-kus": {
+      "E1": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E2": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E3": {
+        "label": "Errore",
+        "diagnosis": "Si è attivata la protezione contro il surriscaldamento della ZONA 1 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E21": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E22": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E24": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E25": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E26": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E27": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E28": {
+        "label": "Errore",
+        "diagnosis": "Si è attivata la protezione contro il surriscaldamento della ZONA 2 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E28\", contatta l'Assistenza Clienti",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    },
+    "cosori-caf-r901-aus": {
+      "E1": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E2": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E3": {
+        "label": "Errore",
+        "diagnosis": "Si è attivata la protezione contro il surriscaldamento della ZONA 1 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E21": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E22": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E24": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E25": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E26": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E27": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E28": {
+        "label": "Errore",
+        "diagnosis": "Si è attivata la protezione contro il surriscaldamento della ZONA 2 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E28\", contatta l'Assistenza Clienti (vedi pagina 25)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    },
+    "cosori-caf-l501-kus": {
+      "E1": {
+        "label": "Errore",
+        "diagnosis": "C'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti (vedi pagina 17)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E2": {
+        "label": "Errore",
+        "diagnosis": "C'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti (vedi pagina 17)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E3": {
+        "label": "Errore",
+        "diagnosis": "Si è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti (vedi pagina 17)",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      },
+      "E4": {
+        "label": "Errore",
+        "diagnosis": "La friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice dalla corrente. Usa la friggitrice ad aria solo con prese da 120V, 60Hz",
+        "solution": "Vedi descrizione",
+        "sourceLanguage": "it"
+      }
+    }
+  }
+}

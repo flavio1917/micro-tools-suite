@@ -7,9 +7,10 @@ export interface Props {
   brand: string;
   brandModels: AirFryerModel[];
   isUnlisted?: boolean;
+  lang?: string;
 }
 
-const { brand, brandModels, isUnlisted = false } = Astro.props;
+const { brand, brandModels, isUnlisted = false, lang = 'it' } = Astro.props;
 
 import { getSearchIndex } from '../../lib/air-fryer-search-index';
 const searchIndex = getSearchIndex('it'); // Using IT for metadata purposes
@@ -73,8 +74,6 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
             const btnText = isAmbiguous ? "Vedi informazioni" : "Vedi informazioni";
             
             // Build the appropriate fallback URL
-            // If ambiguous, we want ?brand=xyz&review-model=slug&variant=variantSlug
-            // If not ambiguous, we want ?model=slug
             const href = isAmbiguous 
               ? `?brand=${item.brand_slug}&review-model=${item.canonical_slug}&variant=${item.variant_slug || ''}`
               : `?model=${item.canonical_slug}`;
@@ -120,10 +119,11 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
         <div class="space-y-4">
           {aggregatedMessages.map(msg => (
             <ErrorCodeCard 
-              errorCode={msg} 
+              error={msg} 
               sourceModelName={msg.primaryDisplayName || msg.sourceModelName} 
               sourceModelSpec={msg.sourceModelSpec}
-              sourceModelId={msg.sourceModelId} 
+              modelCanonicalSlug={msg.sourceModelId}
+              lang={lang}
             />
           ))}
         </div>

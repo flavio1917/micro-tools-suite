@@ -46,8 +46,13 @@ export interface SourceReference {
 
 export interface ErrorCodeTechnicalRecord {
   code: string;
-  severity: Severity;
-  evidence_level: EvidenceLevel;
+  display_code: string;
+  aliases: string[];
+  source_text: string;
+  source_language: SourceLanguage;
+  severity: string;
+  action_level: string;
+  evidence_level: EvidenceLevel | string;
   diy_fixable: boolean;
   source: SourceReference;
 }

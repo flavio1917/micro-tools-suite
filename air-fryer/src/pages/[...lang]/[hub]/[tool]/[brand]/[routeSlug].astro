@@ -3,7 +3,6 @@ import MainLayout from '../../../../../layouts/MainLayout.astro';
 import ErrorCodeCard from '../../../../../components/air-fryer-errors/ErrorCodeCard.astro';
 import SymptomCard from '../../../../../components/air-fryer-errors/SymptomCard.astro';
 import DocumentReference from '../../../../../components/air-fryer-errors/DocumentReference.astro';
-import MissingModelForm from '../../../../../components/seo-tools/MissingModelForm.astro';
 import AirFryerSpecs from '../../../../../components/air-fryer-errors/AirFryerSpecs.astro';
 import { pageErrorsSeoTranslations } from '../../../../../data/i18n/page-errors-seo';
 import { errorsUiTranslations } from '../../../../../data/i18n/errors-ui';
@@ -206,19 +205,9 @@ const validSymptoms = model.symptoms.filter((sym: any) =>
             const localizedCode = errorContentDB[lang]?.errors[`${model.brand_slug}.${model.model_spec}.error.${code.code}`];
             return (
               <ErrorCodeCard 
-                code={code.code} 
-                severity={code.severity}
-                evidenceLevel={code.evidence_level}
-                diyFixable={code.diy_fixable}
-                content={{
-                  label: localizedCode?.label.text || code.code,
-                  cause: localizedCode?.cause?.text,
-                  solution: localizedCode?.solution?.text,
-                  steps: localizedCode?.steps?.map(s => s.text) || []
-                }}
-                source={code.source}
-                lang={lang} 
-                brandDisplayName={model.brand_slug}
+                error={code}
+                model={model}
+                lang={lang}
               />
             );
           })}
@@ -267,10 +256,7 @@ const validSymptoms = model.symptoms.filter((sym: any) =>
       </div>
     )}
 
-    <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
-      <MissingModelForm lang={lang} />
     </div>
-    
     <div class="mt-8 text-center">
        <a href={hubUrl} class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
           <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

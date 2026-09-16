@@ -6,7 +6,6 @@ import DiagnosticDisclaimer from './DiagnosticDisclaimer.astro';
 import AirFryerModelCard from './AirFryerModelCard.astro';
 import BrandErrorOverview from './BrandErrorOverview.astro';
 import GenericAirFryerGuidance from './GenericAirFryerGuidance.astro';
-import MissingModelForm from './MissingModelForm.astro';
 
 import { errorsUiTranslations } from '../../data/i18n/errors-ui';
 import { getSearchIndex } from '../../lib/air-fryer-search-index';
@@ -47,7 +46,7 @@ const searchIndex = getSearchIndex(lang);
     <div id="state-a" class="hidden">
       {models.map(model => (
         <div class="af-model-view hidden" data-model-id={model.id}>
-          <AirFryerModelCard model={model} />
+          <AirFryerModelCard model={model} lang={lang} />
         </div>
       ))}
     </div>
@@ -78,7 +77,7 @@ const searchIndex = getSearchIndex(lang);
 
     {/* State D: Generic Guidance */}
     <div id="state-d" class="hidden">
-      <GenericAirFryerGuidance />
+      <GenericAirFryerGuidance lang={lang} />
     </div>
 
     {/* State E: Ambiguous Variant View */}
@@ -102,8 +101,6 @@ const searchIndex = getSearchIndex(lang);
     </div>
 
   </div>
-  
-  <MissingModelForm lang={lang} />
 </div>
 
 <script>
@@ -267,87 +264,7 @@ const searchIndex = getSearchIndex(lang);
           statusMessageContainer?.classList.remove('hidden');
           resultsContainer?.classList.add('hidden');
         }
-        
-        // Prefill Form logic
-        const formContainer = document.getElementById('missing-model-form-container');
-        if (formContainer) {
-          const rawParams = new URLSearchParams(window.location.search);
-          const rawBrand = rawParams.get('brand');
-          const rawModel = rawParams.get('model');
-          const rawCode = rawParams.get('code');
-          const rawSymptom = rawParams.get('symptom');
-          const rawReviewModel = rawParams.get('review-model');
-          const originalQuery = rawParams.get('q');
-          
-          let showForm = false;
-          let reason = '';
-          
-          if (rawReviewModel && reviewModel) {
-             showForm = true;
-             reason = 'ambiguous_variant';
-          } else if (rawModel && !model) {
-             showForm = true;
-             reason = 'missing_model';
-          } else if (rawBrand === 'other') {
-             showForm = true;
-             reason = 'other_brand';
-          } else if (rawCode && !code) {
-             showForm = true;
-             reason = 'missing_code';
-          } else if (rawSymptom && !symptom) {
-             showForm = true;
-             reason = 'missing_symptom';
-          }
-          
-          if (showForm) {
-            const wasHidden = formContainer.classList.contains('hidden');
-            formContainer.classList.remove('hidden');
-            
-            // Track form opened only when newly shown
-            if (wasHidden) {
-              trackEvent('air_fryer_missing_model_form_opened', {
-                lang: window.location.pathname.split('/')[1] || 'it',
-                reason,
-                brand_present: !!(rawParams.get('brand') || brand),
-                model_present: !!rawModel,
-                code_present: !!rawCode,
-                symptom_present: !!rawSymptom
-              });
-            }
-            
-            const context = {
-              lang: window.location.pathname.split('/')[1] || 'it',
-              reason: reason,
-              original_query: originalQuery?.substring(0, 100) || '',
-              brand: (rawParams.get('brand') || brand)?.substring(0, 50) || '',
-              model: (rawModel || rawReviewModel || model || '')?.substring(0, 100),
-              error_code: (rawCode || code || '')?.substring(0, 10),
-              symptom_key: (rawSymptom || symptom)?.substring(0, 50) || ''
-            };
-            
-            const serialized = serializeMissingModelContext(context);
-            const parsed = parseMissingModelContext(new URLSearchParams(serialized));
-            
-            const reasonInput = document.getElementById('mmf-reason') as HTMLInputElement;
-            const originalQueryInput = document.getElementById('mmf-original-query') as HTMLInputElement;
-            const symptomKeyInput = document.getElementById('mmf-symptom-key') as HTMLInputElement;
-            const brandInput = document.getElementById('mmf-brand') as HTMLInputElement;
-            const modelInput = document.getElementById('mmf-model') as HTMLInputElement;
-            const codeInput = document.getElementById('mmf-code') as HTMLInputElement;
-            
-            if (reasonInput && parsed.reason) reasonInput.value = parsed.reason;
-            if (originalQueryInput && parsed.original_query) originalQueryInput.value = parsed.original_query;
-            if (symptomKeyInput && parsed.symptom_key) symptomKeyInput.value = parsed.symptom_key;
-            if (brandInput && parsed.brand) brandInput.value = parsed.brand;
-            if (modelInput && parsed.model) modelInput.value = parsed.model;
-            if (codeInput && parsed.error_code) codeInput.value = parsed.error_code;
-            
-          } else {
-            formContainer.classList.add('hidden');
-          }
-        }
     }
-
     // Event Listeners for state changes
     window.addEventListener('popstate', () => {
       applyState();
@@ -388,23 +305,7 @@ const searchIndex = getSearchIndex(lang);
       });
     });
     
-    // Form submit analytics
-    import('../../lib/analytics').then(({ trackEvent }) => {
-      const form = document.getElementById('missing-model-form') as HTMLFormElement | null;
-      if (form) {
-        form.addEventListener('submit', () => {
-          const reasonEl = document.getElementById('mmf-reason') as HTMLInputElement | null;
-          const pathLang = window.location.pathname.split('/')[1] || 'it';
-          trackEvent('air_fryer_missing_model_form_submitted', {
-            lang: pathLang,
-            reason: reasonEl?.value || 'unknown',
-            brand_present: !!(document.getElementById('mmf-brand') as HTMLInputElement)?.value,
-            model_present: !!(document.getElementById('mmf-model') as HTMLInputElement)?.value,
-            code_present: !!(document.getElementById('mmf-code') as HTMLInputElement)?.value
-          });
-        });
-      }
-    });
+
 
     // M-1 Analytics: error_code_opened, symptom_opened, manual_opened
     // Guard: track each code/symptom only once per page session to prevent duplicates

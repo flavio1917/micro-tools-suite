@@ -10,6 +10,9 @@ export interface AirFryerDocument {
 
 export interface AirFryerErrorCode {
   code: string;
+  display_code?: string;
+  aliases?: string[];
+  source_text?: string;
   description: string;
   meaning: string;
   suggestions: string[];

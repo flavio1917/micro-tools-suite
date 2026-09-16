@@ -1,5 +1,21 @@
 ---
 import { genericAirFryerGuidance } from '../../data/generic-air-fryer-guidance';
+import ErrorCodeCard from './ErrorCodeCard.astro';
+import { getUiTranslation } from '../../lib/air-fryer-error-i18n';
+
+export interface Props {
+  lang?: string;
+}
+
+const { lang = 'it' } = Astro.props;
+
+const genericCodes = [
+  { code: 'E1', severity: 'caution', diy_fixable: false },
+  { code: 'E2', severity: 'caution', diy_fixable: false },
+  { code: 'E3', severity: 'caution', diy_fixable: true },
+  { code: 'E4', severity: 'caution', diy_fixable: true },
+  { code: 'Display Spento', severity: 'caution', diy_fixable: true }
+];
 ---
 <div class="af-generic-guidance bg-white dark:bg-[#151b2b] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 sm:p-8 mb-6">
   
@@ -38,11 +54,8 @@ import { genericAirFryerGuidance } from '../../data/generic-air-fryer-guidance';
         Significato dei codici (E1, E2, ecc.)
       </h3>
       <div class="space-y-4">
-        {genericAirFryerGuidance.genericCodeGuidance.map(item => (
-          <div class="bg-slate-50 dark:bg-slate-800/50 p-5 rounded-lg border border-slate-200 dark:border-slate-700 flex flex-col sm:flex-row gap-4 sm:items-center">
-             <span class="text-xl font-bold text-slate-900 dark:text-white font-mono shrink-0">{item.code}</span>
-             <p class="text-slate-700 dark:text-slate-300 flex-1">{item.meaning}</p>
-          </div>
+        {genericCodes.map(err => (
+          <ErrorCodeCard error={err} lang={lang} brandDisplayName={getUiTranslation(lang, 'Guida Generica')} />
         ))}
       </div>
     </section>
