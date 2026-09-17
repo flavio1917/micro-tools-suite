@@ -1,0 +1,1311 @@
+[
+  {
+    "canonical_slug": "philips-na15x",
+    "route_slug": "airfryer-serie-1000",
+    "brand_slug": "philips",
+    "brand": "Philips",
+    "primary_display_name": "Airfryer Serie 1000",
+    "display_names": [
+      "Airfryer Serie 1000"
+    ],
+    "model_spec": "NA15X",
+    "specs": {
+      "capacity_liters": 7.1,
+      "wattage": 2450.0
+    },
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "Il dispositivo è rotto/difettato. Chiamare l'assistenza telefonica\nPhilips o rivolgersi al centro\nassistenza clienti del proprio\npaese.\nAirfryer potrebbe essere stato\nconservato in un luogo troppo\nfreddo.\nIl dispositivo è troppo freddo.\nLasciarlo a temperatura ambiente\nper almeno 60 minuti.\nSe il problema persiste, chiamare\nl'assistenza telefonica Philips o\nrivolgersi al centro assistenza\nclienti del proprio paese",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA156",
+          "specs_url": "https://www.home.id/it-IT/NA156"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "source_text": "Il divisorio non è installato. Installare il divisorio.\nViene visualizzato l'avviso \"E2\" e la\ncottura viene interrotta quando un\nrecipiente piccolo interrompe la\ncottura e nell'altro recipiente\npiccolo inizia subito la cottura.\nEstrarre il recipiente per lasciare\nraffreddare il dispositivo per 2\nminuti, quindi reinserirlo per\npreparare la cottura per l'altro\nrecipiente piccolo",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "caution",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA156",
+          "specs_url": "https://www.home.id/it-IT/NA156"
+        }
+      },
+      {
+        "code": "E4",
+        "display_code": "E4",
+        "aliases": [],
+        "source_text": "Il dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA156",
+          "specs_url": "https://www.home.id/it-IT/NA156"
+        }
+      },
+      {
+        "code": "E12",
+        "display_code": "E12",
+        "aliases": [],
+        "source_text": "Il dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA156",
+          "specs_url": "https://www.home.id/it-IT/NA156"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://www.home.id/it-IT/NA156",
+      "specs_url": "https://www.home.id/it-IT/NA156"
+    },
+    "_raw_errors": "\"E1\"\nIl dispositivo è rotto/difettato. Chiamare l'assistenza telefonica\nPhilips o rivolgersi al centro\nassistenza clienti del proprio\npaese.\nAirfryer potrebbe essere stato\nconservato in un luogo troppo\nfreddo.\nIl dispositivo è troppo freddo.\nLasciarlo a temperatura ambiente\nper almeno 60 minuti.\nSe il problema persiste, chiamare\nl'assistenza telefonica Philips o\nrivolgersi al centro assistenza\nclienti del proprio paese.\n\"E2\"\nIl divisorio non è installato. Installare il divisorio.\nViene visualizzato l'avviso \"E2\" e la\ncottura viene interrotta quando un\nrecipiente piccolo interrompe la\ncottura e nell'altro recipiente\npiccolo inizia subito la cottura.\nEstrarre il recipiente per lasciare\nraffreddare il dispositivo per 2\nminuti, quindi reinserirlo per\npreparare la cottura per l'altro\nrecipiente piccolo.\n\"E4\".\nIl dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese.\n\"E12\".\nIl dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese.",
+    "updated_at": "2026-09-16T16:09:07.520257+00:00"
+  },
+  {
+    "canonical_slug": "philips-na220-na221",
+    "route_slug": "airfryer-serie-2000",
+    "brand_slug": "philips",
+    "brand": "Philips",
+    "primary_display_name": "Airfryer Serie 2000",
+    "display_names": [
+      "Airfryer Serie 2000"
+    ],
+    "model_spec": "NA220 - NA221",
+    "specs": {
+      "capacity_liters": 4.2,
+      "wattage": 1500.0,
+      "basket_count": 1
+    },
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "Airfryer potrebbe essere stato conservato in un luogo troppo freddo. Se il dispositivo è stato conservato in un ambiente a bassa temperatura, lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti prima di ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. Sullo schermo di Airfryer vengono visualizzati i codici",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA221",
+          "specs_url": "https://www.home.id/it-IT/NA221"
+        }
+      },
+      {
+        "code": "E4",
+        "display_code": "E4",
+        "aliases": [],
+        "source_text": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA221",
+          "specs_url": "https://www.home.id/it-IT/NA221"
+        }
+      },
+      {
+        "code": "E6",
+        "display_code": "E6",
+        "aliases": [],
+        "source_text": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA221",
+          "specs_url": "https://www.home.id/it-IT/NA221"
+        }
+      },
+      {
+        "code": "E9",
+        "display_code": "E9",
+        "aliases": [],
+        "source_text": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA221",
+          "specs_url": "https://www.home.id/it-IT/NA221"
+        }
+      },
+      {
+        "code": "E12",
+        "display_code": "E12",
+        "aliases": [],
+        "source_text": "Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA221",
+          "specs_url": "https://www.home.id/it-IT/NA221"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://www.home.id/it-IT/NA221",
+      "specs_url": "https://www.home.id/it-IT/NA221"
+    },
+    "_raw_errors": "\"E1\"\nAirfryer potrebbe essere stato conservato in un luogo troppo freddo. Se il dispositivo è stato conservato in un ambiente a bassa temperatura, lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti prima di ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. Sullo schermo di Airfryer vengono visualizzati i codici \n\"E4\"\n Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. \n\"E6\"\n Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.\n \"E9\"\n Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.\n\"E12\"\n Sull'apparecchio viene visualizzato un errore. Scollegare l'apparecchio e ricollegarlo. Se il problema persiste, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese.",
+    "updated_at": "2026-09-16T16:09:07.520257+00:00"
+  },
+  {
+    "canonical_slug": "philips-na351",
+    "route_slug": "airfryer-serie-3000",
+    "brand_slug": "philips",
+    "brand": "Philips",
+    "primary_display_name": "Airfryer Serie 3000",
+    "display_names": [
+      "Airfryer Serie 3000"
+    ],
+    "model_spec": "NA351",
+    "specs": {
+      "capacity_liters": 9.0,
+      "basket_count": 2
+    },
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "Il dispositivo è rotto/difettato. Chiamare l'assistenza telefonica\nPhilips o rivolgersi al centro\nassistenza clienti del proprio\npaese.\nAirfryer potrebbe essere stato\nconservato in un luogo troppo\nfreddo.\nSe il dispositivo è stato conservato\nin un ambiente a bassa\ntemperatura, lasciarlo riscaldare a\ntemperatura ambiente per almeno\n15 minuti prima di ricollegarlo.\nSe sullo schermo viene ancora\nvisualizzata la scritta \"E1\",\nchiamare l'assistenza telefonica\nPhilips o rivolgersi al centro\nassistenza clienti del proprio\npaese",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA351",
+          "specs_url": "https://www.home.id/it-IT/NA351"
+        }
+      },
+      {
+        "code": "E4",
+        "display_code": "E4",
+        "aliases": [],
+        "source_text": "Il dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA351",
+          "specs_url": "https://www.home.id/it-IT/NA351"
+        }
+      },
+      {
+        "code": "E12",
+        "display_code": "E12",
+        "aliases": [],
+        "source_text": "Il dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/it-IT/NA351",
+          "specs_url": "https://www.home.id/it-IT/NA351"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://www.home.id/it-IT/NA351",
+      "specs_url": "https://www.home.id/it-IT/NA351"
+    },
+    "_raw_errors": "\"E1\"\nIl dispositivo è rotto/difettato. Chiamare l'assistenza telefonica\nPhilips o rivolgersi al centro\nassistenza clienti del proprio\npaese.\nAirfryer potrebbe essere stato\nconservato in un luogo troppo\nfreddo.\nSe il dispositivo è stato conservato\nin un ambiente a bassa\ntemperatura, lasciarlo riscaldare a\ntemperatura ambiente per almeno\n15 minuti prima di ricollegarlo.\nSe sullo schermo viene ancora\nvisualizzata la scritta \"E1\",\nchiamare l'assistenza telefonica\nPhilips o rivolgersi al centro\nassistenza clienti del proprio\npaese.\n\"E4\"\nIl dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese.\n \"E12\"\nIl dispositivo potrebbe non\nfunzionare correttamente.\nProvare a scollegare e ricollegare il\ndispositivo alla presa di corrente.\nSe non si riesce a risolvere il\nproblema, chiamare l'assistenza\ntelefonica Philips o rivolgersi al\ncentro assistenza clienti del\nproprio paese.",
+    "updated_at": "2026-09-16T16:09:07.520257+00:00"
+  },
+  {
+    "canonical_slug": "philips-na555",
+    "route_slug": "airfryer-serie-5000",
+    "brand_slug": "philips",
+    "brand": "Philips",
+    "primary_display_name": "Airfryer Serie 5000",
+    "display_names": [
+      "Airfryer Serie 5000"
+    ],
+    "model_spec": "NA555",
+    "specs": {
+      "capacity_liters": 9.0,
+      "wattage": 2750.0,
+      "basket_count": 2
+    },
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "Il dispositivo è rotto/difettato. Chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. Airfryer potrebbe essere stato conservato in un luogo troppo freddo. Se il dispositivo è stato conservato in un ambiente a bassa temperatura, lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti prima di ricollegarlo. Se sullo schermo viene ancora visualizzata la scritta \"E1\", chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. Sullo schermo di Airfryer viene visualizzata la scritta",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/NA555",
+          "specs_url": "https://www.home.id/NA555"
+        }
+      },
+      {
+        "code": "E4",
+        "display_code": "E4",
+        "aliases": [],
+        "source_text": "Il dispositivo potrebbe non funzionare correttamente. Provare a scollegare e ricollegare il dispositivo alla presa di corrente. Se non si riesce a risolvere il problema, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/NA555",
+          "specs_url": "https://www.home.id/NA555"
+        }
+      },
+      {
+        "code": "E12",
+        "display_code": "E12",
+        "aliases": [],
+        "source_text": "Il dispositivo potrebbe non funzionare correttamente. Provare a scollegare e ricollegare il dispositivo alla presa di corrente. Se non si riesce a risolvere il problema, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://www.home.id/NA555",
+          "specs_url": "https://www.home.id/NA555"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://www.home.id/NA555",
+      "specs_url": "https://www.home.id/NA555"
+    },
+    "_raw_errors": "\"E1\"\n Il dispositivo è rotto/difettato. Chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. Airfryer potrebbe essere stato conservato in un luogo troppo freddo. Se il dispositivo è stato conservato in un ambiente a bassa temperatura, lasciarlo riscaldare a temperatura ambiente per almeno 15 minuti prima di ricollegarlo. Se sullo schermo viene ancora visualizzata la scritta \"E1\", chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza clienti del proprio paese. Sullo schermo di Airfryer viene visualizzata la scritta\n \"E4\"\n Il dispositivo potrebbe non funzionare correttamente. Provare a scollegare e ricollegare il dispositivo alla presa di corrente. Se non si riesce a risolvere il problema, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza\n \"E12\"\nIl dispositivo potrebbe non funzionare correttamente. Provare a scollegare e ricollegare il dispositivo alla presa di corrente. Se non si riesce a risolvere il problema, chiamare l'assistenza telefonica Philips o rivolgersi al centro assistenza",
+    "updated_at": "2026-09-16T16:09:07.520257+00:00"
+  },
+  {
+    "canonical_slug": "cosori-caf-p583s-kus",
+    "route_slug": "dual-blaze-6-8-quart",
+    "brand_slug": "cosori",
+    "brand": "Cosori",
+    "primary_display_name": "Dual Blaze 6.8-Quart",
+    "display_names": [
+      "Dual Blaze 6.8-Quart"
+    ],
+    "model_spec": "CAF-P583S-KUS",
+    "specs": {
+      "wattage": 1750.0
+    },
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "There is an open circuit in the temperature monitor. Contact Customer Support",
+        "source_language": "en",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4",
+          "specs_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "source_text": "There is a short circuit in the temperature monitor. Contact Customer Support",
+        "source_language": "en",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4",
+          "specs_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4"
+        }
+      },
+      {
+        "code": "E3",
+        "display_code": "E3",
+        "aliases": [],
+        "source_text": "The air fryer's overheat protection has activated. Turn off and unplug the air fryer and allow it to cool completely. If the display continues to show \"E3\", contact Customer Support",
+        "source_language": "en",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4",
+          "specs_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4"
+        }
+      },
+      {
+        "code": "E4",
+        "display_code": "E4",
+        "aliases": [],
+        "source_text": "The air fryer has been plugged into a 220–240V outlet. Turn off and unplug the air fryer. Only use the air fryer with 120V, 60Hz outlets",
+        "source_language": "en",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4",
+          "specs_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4",
+      "specs_url": "https://manuals.plus/m/f811e249b205f6bf493c39f9ce59def12bbd3af829cc8631c094b0d2365fbea4"
+    },
+    "_raw_errors": "\"E1\"\nThere is an open circuit in the temperature monitor. Contact Customer Support.\n \"E2\"\nThere is a short circuit in the temperature monitor. Contact Customer Support.\n\"E3\"\nThe air fryer's overheat protection has activated. Turn off and unplug the air fryer and allow it to cool completely. If the display continues to show \"E3\", contact Customer Support.\n\"E4\"\nThe air fryer has been plugged into a 220–240V outlet. Turn off and unplug the air fryer. Only use the air fryer with 120V, 60Hz outlets.",
+    "updated_at": "2026-09-16T16:09:07.521265+00:00"
+  },
+  {
+    "canonical_slug": "cosori-caf-li211",
+    "route_slug": "quart-mini-air-fryer",
+    "brand_slug": "cosori",
+    "brand": "Cosori",
+    "primary_display_name": "Quart Mini Air Fryer",
+    "display_names": [
+      "Quart Mini Air Fryer"
+    ],
+    "model_spec": "CAF-LI211",
+    "specs": {},
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212",
+          "specs_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212",
+          "specs_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212"
+        }
+      },
+      {
+        "code": "E3",
+        "display_code": "E3",
+        "aliases": [],
+        "source_text": "Si è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212",
+          "specs_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212"
+        }
+      },
+      {
+        "code": "E4",
+        "display_code": "E4",
+        "aliases": [],
+        "source_text": "La friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice. Usa la friggitrice ad aria solo con prese da 120V, 60Hz",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212",
+          "specs_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212",
+      "specs_url": "https://cosori.com/cdn/shop/files/D2_01.00_M1_CAF-LI211_2022-11-29_US_en.pdf?v=12602099581590368212"
+    },
+    "_raw_errors": "\"E1\"\nC'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E2\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E3\"\nSi è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti.\n\n\"E4\"\nLa friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice. Usa la friggitrice ad aria solo con prese da 120V, 60Hz.",
+    "updated_at": "2026-09-16T16:09:07.521265+00:00"
+  },
+  {
+    "canonical_slug": "cosori-caf-se601s-cus",
+    "route_slug": "iconic-6-5-quart-smart-air-fryer",
+    "brand_slug": "cosori",
+    "brand": "Cosori",
+    "primary_display_name": "Iconic 6.5-Quart Smart Air Fryer",
+    "display_names": [
+      "Iconic 6.5-Quart Smart Air Fryer"
+    ],
+    "model_spec": "CAF-SE601S-CUS",
+    "specs": {},
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899"
+        }
+      },
+      {
+        "code": "E3",
+        "display_code": "E3",
+        "aliases": [],
+        "source_text": "Si è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899"
+        }
+      },
+      {
+        "code": "E4",
+        "display_code": "E4",
+        "aliases": [],
+        "source_text": "La friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice. Usa la friggitrice ad aria solo con prese da 120V, 60Hz",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899"
+        }
+      },
+      {
+        "code": "E12",
+        "display_code": "E12",
+        "aliases": [],
+        "source_text": "Il motore a corrente continua (DC) è guasto. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899",
+      "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2412_CAF-SE601S-CUS_M1__Shake_Reminder__us_Preview_v7.pdf?v=13131671475985602899"
+    },
+    "_raw_errors": "\"E1\"\nC'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E2\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E3\"\nSi è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti.\n\n\"E4\"\nLa friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice. Usa la friggitrice ad aria solo con prese da 120V, 60Hz.\n\n\"E12\"\nIl motore a corrente continua (DC) è guasto. Contatta l'Assistenza Clienti.",
+    "updated_at": "2026-09-16T16:09:07.521265+00:00"
+  },
+  {
+    "canonical_slug": "cosori-caf-dc601-kus",
+    "route_slug": "turboblaze-6-0-quart-air-fryer",
+    "brand_slug": "cosori",
+    "brand": "Cosori",
+    "primary_display_name": "TurboBlaze 6.0-Quart Air Fryer",
+    "display_names": [
+      "TurboBlaze 6.0-Quart Air Fryer"
+    ],
+    "model_spec": "CAF-DC601-KUS",
+    "specs": {},
+    "error_codes": [
+      {
+        "code": "E01",
+        "display_code": "E01",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      },
+      {
+        "code": "E02",
+        "display_code": "E02",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      },
+      {
+        "code": "E04",
+        "display_code": "E04",
+        "aliases": [],
+        "source_text": "La friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice dalla corrente. Usa la friggitrice ad aria solo con prese da 120V, 60Hz",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      },
+      {
+        "code": "E02",
+        "display_code": "E02",
+        "aliases": [],
+        "source_text": "1\"\nC'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      },
+      {
+        "code": "E02",
+        "display_code": "E02",
+        "aliases": [],
+        "source_text": "2\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+      "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+    },
+    "_raw_errors": "\"E01\"\nC'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E02\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E04\"\nLa friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice dalla corrente. Usa la friggitrice ad aria solo con prese da 120V, 60Hz.\n\n\"E021\"\nC'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E022\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti.",
+    "updated_at": "2026-09-16T16:09:07.522265+00:00"
+  },
+  {
+    "canonical_slug": "cosori-caf-dc601-kus",
+    "route_slug": "turboblaze-6-0-quart-smart-air-fryer",
+    "brand_slug": "cosori",
+    "brand": "Cosori",
+    "primary_display_name": "TurboBlaze 6.0-Quart Smart Air Fryer",
+    "display_names": [
+      "TurboBlaze 6.0-Quart Smart Air Fryer"
+    ],
+    "model_spec": "CAF-DC601-KUS",
+    "specs": {},
+    "error_codes": [
+      {
+        "code": "E01",
+        "display_code": "E01",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      },
+      {
+        "code": "E02",
+        "display_code": "E02",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      },
+      {
+        "code": "E04",
+        "display_code": "E04",
+        "aliases": [],
+        "source_text": "La friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice dalla corrente. Usa la friggitrice ad aria solo con prese da 120V, 60Hz",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      },
+      {
+        "code": "E02",
+        "display_code": "E02",
+        "aliases": [],
+        "source_text": "1\"\nC'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      },
+      {
+        "code": "E02",
+        "display_code": "E02",
+        "aliases": [],
+        "source_text": "2\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+          "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237",
+      "specs_url": "https://cosori.com/cdn/shop/files/TurboBlaze_Manual_US.pdf?v=13785879204698167237"
+    },
+    "_raw_errors": "\"E01\"\nC'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E02\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E04\"\nLa friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice dalla corrente. Usa la friggitrice ad aria solo con prese da 120V, 60Hz.\n\n\"E021\"\nC'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti.\n\n\"E022\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti.",
+    "updated_at": "2026-09-16T16:09:07.522265+00:00"
+  },
+  {
+    "canonical_slug": "cosori-caf-tf901-kus",
+    "route_slug": "twinfry-9-quart-double-air-fryer",
+    "brand_slug": "cosori",
+    "brand": "Cosori",
+    "primary_display_name": "Twinfry 9-Quart Double Air Fryer",
+    "display_names": [
+      "Twinfry 9-Quart Double Air Fryer"
+    ],
+    "model_spec": "CAF-TF901-KUS",
+    "specs": {},
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E3",
+        "display_code": "E3",
+        "aliases": [],
+        "source_text": "Si è attivata la protezione contro il surriscaldamento della ZONA 1 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E21",
+        "display_code": "E21",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E22",
+        "display_code": "E22",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E24",
+        "display_code": "E24",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E25",
+        "display_code": "E25",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E26",
+        "display_code": "E26",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E27",
+        "display_code": "E27",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E28",
+        "display_code": "E28",
+        "aliases": [],
+        "source_text": "Si è attivata la protezione contro il surriscaldamento della ZONA 2 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E28\", contatta l'Assistenza Clienti",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+      "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+    },
+    "_raw_errors": "\"E1\"\nC'è un circuito aperto nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti.\n\n\"E2\"\nC'è un cortocircuito nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti.\n\n\"E3\"\nSi è attivata la protezione contro il surriscaldamento della ZONA 1 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti.\n\n\"E21\"\nC'è un circuito aperto nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti.\n\n\"E22\"\nC'è un cortocircuito nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti.\n\n\"E24\"\nC'è un circuito aperto nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti.\n\n\"E25\"\nC'è un cortocircuito nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti.\n\n\"E26\"\nC'è un circuito aperto nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti.\n\n\"E27\"\nC'è un cortocircuito nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti.\n\n\"E28\"\nSi è attivata la protezione contro il surriscaldamento della ZONA 2 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E28\", contatta l'Assistenza Clienti.",
+    "updated_at": "2026-09-16T16:09:07.522265+00:00"
+  },
+  {
+    "canonical_slug": "cosori-caf-r901-aus",
+    "route_slug": "9-quart-double-air-fryer",
+    "brand_slug": "cosori",
+    "brand": "Cosori",
+    "primary_display_name": "9-Quart Double Air Fryer",
+    "display_names": [
+      "9-Quart Double Air Fryer"
+    ],
+    "model_spec": "CAF-R901-AUS",
+    "specs": {},
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura del cestello sinistro. Contatta l'Assistenza Clienti (vedi pagina 24)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura del cestello sinistro. Contatta l'Assistenza Clienti (vedi pagina 24)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E21",
+        "display_code": "E21",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura del cestello destro. Contatta l'Assistenza Clienti (vedi pagina 24)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E22",
+        "display_code": "E22",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura del cestello destro. Contatta l'Assistenza Clienti (vedi pagina 24)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E3",
+        "display_code": "E3",
+        "aliases": [],
+        "source_text": "Si è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti (vedi pagina 24)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      },
+      {
+        "code": "E4",
+        "display_code": "E4",
+        "aliases": [],
+        "source_text": "La friggitrice ad aria è stata collegata a una presa da 220–240V",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+          "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221",
+      "specs_url": "https://cosori.com/cdn/shop/files/6100000107_Air_Fryer_Manual_US_A1-260528.pdf?v=17089850104239326221"
+    },
+    "_raw_errors": "\"E1\"\nC'è un circuito aperto nel sensore di temperatura del cestello sinistro. Contatta l'Assistenza Clienti (vedi pagina 24).\n\n\"E2\"\nC'è un cortocircuito nel sensore di temperatura del cestello sinistro. Contatta l'Assistenza Clienti (vedi pagina 24).\n\n\"E21\"\nC'è un circuito aperto nel sensore di temperatura del cestello destro. Contatta l'Assistenza Clienti (vedi pagina 24).\n\n\"E22\"\nC'è un cortocircuito nel sensore di temperatura del cestello destro. Contatta l'Assistenza Clienti (vedi pagina 24).\n\n\"E3\"\nSi è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti (vedi pagina 24).\n\n\"E4\"\nLa friggitrice ad aria è stata collegata a una presa da 220–240V.",
+    "updated_at": "2026-09-16T16:09:07.522265+00:00"
+  },
+  {
+    "canonical_slug": "cosori-caf-r901-aus",
+    "route_slug": "9-0-quart-dual-basket-air-fryer",
+    "brand_slug": "cosori",
+    "brand": "Cosori",
+    "primary_display_name": "9.0-Quart Dual Basket Air Fryer",
+    "display_names": [
+      "9.0-Quart Dual Basket Air Fryer"
+    ],
+    "model_spec": "CAF-R901-AUS",
+    "specs": {},
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      },
+      {
+        "code": "E3",
+        "display_code": "E3",
+        "aliases": [],
+        "source_text": "Si è attivata la protezione contro il surriscaldamento della ZONA 1 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      },
+      {
+        "code": "E21",
+        "display_code": "E21",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      },
+      {
+        "code": "E22",
+        "display_code": "E22",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      },
+      {
+        "code": "E24",
+        "display_code": "E24",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      },
+      {
+        "code": "E25",
+        "display_code": "E25",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      },
+      {
+        "code": "E26",
+        "display_code": "E26",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      },
+      {
+        "code": "E27",
+        "display_code": "E27",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      },
+      {
+        "code": "E28",
+        "display_code": "E28",
+        "aliases": [],
+        "source_text": "Si è attivata la protezione contro il surriscaldamento della ZONA 2 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E28\", contatta l'Assistenza Clienti (vedi pagina 25)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+          "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907",
+      "specs_url": "https://cosori.com/cdn/shop/files/CPDV_2308_CAF-R901-AUS_M1_print_en_V7.pdf?v=13695526012688564907"
+    },
+    "_raw_errors": "\"E1\"\nC'è un circuito aperto nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25).\n\n \"E2\"\nC'è un cortocircuito nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25).\n\n\"E3\"\nSi è attivata la protezione contro il surriscaldamento della ZONA 1 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti (vedi pagina 25).\n\n\"E21\"\nC'è un circuito aperto nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25).\n\n\"E22\"\nC'è un cortocircuito nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti (vedi pagina 25).\n\n\"E24\"\nC'è un circuito aperto nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25).\n\n \"E25\"\nC'è un cortocircuito nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25).\n\n\"E26\"\nC'è un circuito aperto nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25).\n\n\"E27\"\nC'è un cortocircuito nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti (vedi pagina 25).\n\n\"E28\"\nSi è attivata la protezione contro il surriscaldamento della ZONA 2 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E28\", contatta l'Assistenza Clienti (vedi pagina 25).",
+    "updated_at": "2026-09-16T16:09:07.522265+00:00"
+  },
+  {
+    "canonical_slug": "cosori-caf-l501-kus",
+    "route_slug": "pro-le-5-0-quart-air-fryer",
+    "brand_slug": "cosori",
+    "brand": "Cosori",
+    "primary_display_name": "Pro LE 5.0-Quart Air Fryer",
+    "display_names": [
+      "Pro LE 5.0-Quart Air Fryer"
+    ],
+    "model_spec": "CAF-L501-KUS",
+    "specs": {},
+    "error_codes": [
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "source_text": "C'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti (vedi pagina 17)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692",
+          "specs_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "source_text": "C'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti (vedi pagina 17)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692",
+          "specs_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692"
+        }
+      },
+      {
+        "code": "E3",
+        "display_code": "E3",
+        "aliases": [],
+        "source_text": "Si è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti (vedi pagina 17)",
+        "source_language": "it",
+        "severity": "hardware",
+        "diy_fixable": false,
+        "action_level": "assistenza",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692",
+          "specs_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692"
+        }
+      },
+      {
+        "code": "E4",
+        "display_code": "E4",
+        "aliases": [],
+        "source_text": "La friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice dalla corrente. Usa la friggitrice ad aria solo con prese da 120V, 60Hz",
+        "source_language": "it",
+        "severity": "caution",
+        "diy_fixable": true,
+        "action_level": "fermare_e_verificare",
+        "evidence_level": "model_specific",
+        "source": {
+          "manual_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692",
+          "specs_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692"
+        }
+      }
+    ],
+    "symptoms": [],
+    "source": {
+      "manual_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692",
+      "specs_url": "https://cosori.com/cdn/shop/files/Pro_LE_manual.pdf?v=11877078624978026692"
+    },
+    "_raw_errors": "\"E1\"\nC'è un circuito aperto nel sensore di temperatura. Contatta l'Assistenza Clienti (vedi pagina 17).\n\n\"E2\"\nC'è un cortocircuito nel sensore di temperatura. Contatta l'Assistenza Clienti (vedi pagina 17).\n\n\"E3\"\nSi è attivata la protezione contro il surriscaldamento della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti (vedi pagina 17).\n\n\"E4\"\nLa friggitrice ad aria è stata collegata a una presa da 220–240V. Spegni e scollega la friggitrice dalla corrente. Usa la friggitrice ad aria solo con prese da 120V, 60Hz.",
+    "updated_at": "2026-09-16T16:09:07.522265+00:00"
+  }
+]
