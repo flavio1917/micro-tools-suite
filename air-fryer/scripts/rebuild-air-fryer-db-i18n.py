@@ -434,7 +434,15 @@ def build_database():
         model_names = {}
         for lang in LANGUAGES:
             if lang in lang_rows:
-                model_names[lang] = lang_rows[lang]["model"]
+                raw_name = lang_rows[lang]["model"]
+                if brand.lower() == "philips":
+                    raw_name = re.sub(
+                        r'^(?:La\s+friggitrice\s+ad\s+aria|La\s+friteuse\s+[àa]\s+air|La\s+freidora\s+de\s+aire)\b', 
+                        'Airfryer', 
+                        raw_name, 
+                        flags=re.IGNORECASE
+                    )
+                model_names[lang] = raw_name
 
         # Route slug from IT name, fallback to first available
         route_slug_name = model_names.get("it", next(iter(model_names.values())))

@@ -1,14 +1,14 @@
 [
   {
     "canonical_slug": "philips-na15x",
-    "route_slug": "la-friggitrice-ad-aria-serie-1000",
+    "route_slug": "airfryer-serie-1000",
     "brand_slug": "philips",
     "brand": "Philips",
     "model_names": {
-      "it": "La friggitrice ad aria Serie 1000",
+      "it": "Airfryer Serie 1000",
       "en": "The Serie 1000 Air Fryer",
-      "fr": "La friteuse à air Série 1000",
-      "es": "La freidora de aire Serie 1000"
+      "fr": "Airfryer Série 1000",
+      "es": "Airfryer Serie 1000"
     },
     "model_spec": "NA15X",
     "specs": {
@@ -174,18 +174,18 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.619428+00:00"
+    "updated_at": "2026-09-17T15:36:20.968202+00:00"
   },
   {
     "canonical_slug": "philips-na220-na221",
-    "route_slug": "la-friggitrice-ad-aria-serie-2000",
+    "route_slug": "airfryer-serie-2000",
     "brand_slug": "philips",
     "brand": "Philips",
     "model_names": {
-      "it": "La friggitrice ad aria Serie 2000",
+      "it": "Airfryer Serie 2000",
       "en": "The Serie 2000 Air Fryer",
-      "fr": "La friteuse à air Série 2000",
-      "es": "La freidora de aire Serie 2000"
+      "fr": "Airfryer Série 2000",
+      "es": "Airfryer Serie 2000"
     },
     "model_spec": "NA220 - NA221",
     "specs": {
@@ -390,18 +390,18 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.620429+00:00"
+    "updated_at": "2026-09-17T15:36:20.969203+00:00"
   },
   {
     "canonical_slug": "philips-na351",
-    "route_slug": "la-friggitrice-ad-aria-serie-3000",
+    "route_slug": "airfryer-serie-3000",
     "brand_slug": "philips",
     "brand": "Philips",
     "model_names": {
-      "it": "La friggitrice ad aria Serie 3000",
+      "it": "Airfryer Serie 3000",
       "en": "The Serie 3000 Air Fryer",
-      "fr": "La friteuse à air Série 3000",
-      "es": "La freidora de aire Serie 3000"
+      "fr": "Airfryer Série 3000",
+      "es": "Airfryer Serie 3000"
     },
     "model_spec": "NA351",
     "specs": {
@@ -529,18 +529,18 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.620429+00:00"
+    "updated_at": "2026-09-17T15:36:20.970203+00:00"
   },
   {
     "canonical_slug": "philips-na555",
-    "route_slug": "la-friggitrice-ad-aria-serie-5000",
+    "route_slug": "airfryer-serie-5000",
     "brand_slug": "philips",
     "brand": "Philips",
     "model_names": {
-      "it": "La friggitrice ad aria Serie 5000",
+      "it": "Airfryer Serie 5000",
       "en": "The Serie 5000 Air Fryer",
-      "fr": "La friteuse à air Série 5000",
-      "es": "La freidora de aire Serie 5000"
+      "fr": "Airfryer Série 5000",
+      "es": "Airfryer Serie 5000"
     },
     "model_spec": "NA555",
     "specs": {
@@ -669,7 +669,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.622427+00:00"
+    "updated_at": "2026-09-17T15:36:20.972207+00:00"
   },
   {
     "canonical_slug": "cosori-caf-p583s-kus",
@@ -846,7 +846,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.622427+00:00"
+    "updated_at": "2026-09-17T15:36:20.972207+00:00"
   },
   {
     "canonical_slug": "cosori-caf-li211",
@@ -1020,7 +1020,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.623427+00:00"
+    "updated_at": "2026-09-17T15:36:20.973208+00:00"
   },
   {
     "canonical_slug": "cosori-caf-se601s-cus",
@@ -1232,7 +1232,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.623427+00:00"
+    "updated_at": "2026-09-17T15:36:20.973208+00:00"
   },
   {
     "canonical_slug": "cosori-caf-dc601-kus-turboblaze-6-0-quart-air-fryer",
@@ -1444,7 +1444,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.623427+00:00"
+    "updated_at": "2026-09-17T15:36:20.974209+00:00"
   },
   {
     "canonical_slug": "cosori-caf-dc601-kus-turboblaze-6-0-quart-smart-air-fryer",
@@ -1656,7 +1656,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.624428+00:00"
+    "updated_at": "2026-09-17T15:36:20.974209+00:00"
   },
   {
     "canonical_slug": "cosori-caf-tf901-kus",
@@ -2058,7 +2058,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.625428+00:00"
+    "updated_at": "2026-09-17T15:36:20.975208+00:00"
   },
   {
     "canonical_slug": "cosori-caf-r901-aus-9-quart-double-air-fryer",
@@ -2308,7 +2308,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.625428+00:00"
+    "updated_at": "2026-09-17T15:36:20.976208+00:00"
   },
   {
     "canonical_slug": "cosori-caf-r901-aus-9-0-quart-dual-basket-air-fryer",
@@ -2710,7 +2710,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.626429+00:00"
+    "updated_at": "2026-09-17T15:36:20.976208+00:00"
   },
   {
     "canonical_slug": "cosori-caf-l501-kus",
@@ -2884,6 +2884,6 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T14:00:41.626429+00:00"
+    "updated_at": "2026-09-17T15:36:20.977209+00:00"
   }
 ]
