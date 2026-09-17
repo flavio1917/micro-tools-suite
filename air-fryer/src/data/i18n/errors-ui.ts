@@ -158,6 +158,21 @@ export const errorsUiTranslations = {
       noDisplayCodes: "Nessun codice display documentato",
       commonProblems: "Problemi comuni e soluzioni",
       docSuggestions: "Suggerimenti dal documento e dalle istruzioni del modello"
+    },
+    brandOverview: {
+      unlistedTitle: "Il tuo modello {brand} non è ancora nel database",
+      unlistedWarning: "Puoi comunque consultare i messaggi e i problemi comuni documentati per altri modelli {brand}. Non assumere che lo stesso codice abbia identico significato sulla tua variante: verifica sempre il manuale specifico.",
+      searchManual: "Cerca il codice esatto nel manuale del tuo modello",
+      searchManualHint: "Cerca la sigla completa riportata sull'etichetta sotto o dietro l'apparecchio.",
+      documentedTitle: "Codici e messaggi documentati per friggitrici {brand}",
+      documentedWarning: "Il significato di un codice può cambiare in base al modello. I messaggi qui sotto sono stati trovati nei documenti dei modelli {brand} presenti nel nostro archivio: verifica sempre il manuale della tua variante.",
+      modelsTitle: "Modelli {brand}",
+      badgeAmbiguous: "Verifica variante",
+      badgeVerified: "Informazioni verificate",
+      btnSeeInfo: "Vedi informazioni",
+      codesTitle: "Codici display rilevati",
+      noCodesDesc: "Nessun codice di errore esplicito è documentato per i modelli {brand} attualmente nel nostro database.",
+      symptomsTitle: "Problemi comuni nei documenti {brand}"
     }
   },
   en: {
@@ -290,6 +305,21 @@ export const errorsUiTranslations = {
       noDisplayCodes: "No documented display codes",
       commonProblems: "Common problems and solutions",
       docSuggestions: "Suggestions from document and model instructions"
+    },
+    brandOverview: {
+      unlistedTitle: "Your {brand} model is not in our database yet",
+      unlistedWarning: "You can still view messages and common problems documented for other {brand} models. Do not assume the same code has the exact same meaning on your variant: always check your specific manual.",
+      searchManual: "Search for the exact code in your model's manual",
+      searchManualHint: "Look for the full model number on the label under or behind the appliance.",
+      documentedTitle: "Documented codes and messages for {brand} air fryers",
+      documentedWarning: "The meaning of a code can change depending on the model. The messages below were found in the documents for {brand} models in our archive: always check the manual for your variant.",
+      modelsTitle: "{brand} models",
+      badgeAmbiguous: "Verify variant",
+      badgeVerified: "Verified information",
+      btnSeeInfo: "See information",
+      codesTitle: "Display codes detected",
+      noCodesDesc: "No explicit error codes are documented for {brand} models currently in our database.",
+      symptomsTitle: "Common problems in {brand} documents"
     }
   },
   es: {
@@ -422,6 +452,21 @@ export const errorsUiTranslations = {
       noDisplayCodes: "Ningún código de pantalla documentado",
       commonProblems: "Problemas comunes y soluciones",
       docSuggestions: "Sugerencias del documento e instrucciones del modelo"
+    },
+    brandOverview: {
+      unlistedTitle: "Tu modelo {brand} aún no está en la base de datos",
+      unlistedWarning: "Aún puedes consultar los mensajes y problemas comunes documentados para otros modelos {brand}. No asumas que el mismo código tiene exactamente el mismo significado en tu variante: verifica siempre tu manual específico.",
+      searchManual: "Busca el código exacto en el manual de tu modelo",
+      searchManualHint: "Busca el número de modelo completo en la etiqueta debajo o detrás del aparato.",
+      documentedTitle: "Códigos y mensajes documentados para freidoras {brand}",
+      documentedWarning: "El significado de un código puede cambiar según el modelo. Los mensajes a continuación se encontraron en los documentos de los modelos {brand} de nuestro archivo: verifica siempre el manual de tu variante.",
+      modelsTitle: "Modelos {brand}",
+      badgeAmbiguous: "Verificar variante",
+      badgeVerified: "Información verificada",
+      btnSeeInfo: "Ver información",
+      codesTitle: "Códigos de pantalla detectados",
+      noCodesDesc: "No hay códigos de error explícitos documentados para los modelos {brand} actualmente en nuestra base de datos.",
+      symptomsTitle: "Problemas comunes en los documentos {brand}"
     }
   },
   fr: {
@@ -554,6 +599,21 @@ export const errorsUiTranslations = {
       noDisplayCodes: "Aucun code d'affichage documenté",
       commonProblems: "Problèmes courants et solutions",
       docSuggestions: "Suggestions du document et des instructions du modèle"
+    },
+    brandOverview: {
+      unlistedTitle: "Votre modèle {brand} n'est pas encore dans la base de données",
+      unlistedWarning: "Vous pouvez toujours consulter les messages et problèmes courants documentés pour d'autres modèles {brand}. Ne supposez pas que le même code a exactement la même signification sur votre variante : vérifiez toujours votre manuel spécifique.",
+      searchManual: "Recherchez le code exact dans le manuel de votre modèle",
+      searchManualHint: "Recherchez le numéro de modèle complet sur l'étiquette sous ou derrière l'appareil.",
+      documentedTitle: "Codes et messages documentés pour friteuses {brand}",
+      documentedWarning: "La signification d'un code peut changer selon le modèle. Les messages ci-dessous ont été trouvés dans les documents des modèles {brand} de notre archive : vérifiez toujours le manuel de votre variante.",
+      modelsTitle: "Modèles {brand}",
+      badgeAmbiguous: "Vérifier la variante",
+      badgeVerified: "Informations vérifiées",
+      btnSeeInfo: "Voir les informations",
+      codesTitle: "Codes d'affichage détectés",
+      noCodesDesc: "Aucun code d'erreur explicite n'est documenté pour les modèles {brand} actuellement dans notre base de données.",
+      symptomsTitle: "Problèmes courants dans les documents {brand}"
     }
   }
 };

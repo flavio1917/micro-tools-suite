@@ -12,6 +12,9 @@ export interface Props {
 
 const { brand, brandModels, isUnlisted = false, lang = 'it' } = Astro.props;
 
+import { errorsUiTranslations } from '../../data/i18n/errors-ui';
+const t = (errorsUiTranslations as any)[lang]?.brandOverview || (errorsUiTranslations as any)['it'].brandOverview;
+
 import { getSearchIndex } from '../../lib/air-fryer-search-index';
 const searchIndex = getSearchIndex('it'); // Using IT for metadata purposes
 const allBrandModels = searchIndex.filter(m => m.brand_slug === brand.toLowerCase() && m.type === 'model');
@@ -26,31 +29,25 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
     {isUnlisted ? (
       <>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4">
-          Il tuo modello <span class="text-blue-600 dark:text-blue-400">{brand}</span> non è ancora nel database
+          {t.unlistedTitle.replace('{brand}', `<span class="text-blue-600 dark:text-blue-400">${brand}</span>`)}
         </h2>
         <div class="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-400 p-4 rounded-r-lg mb-4">
-          <p class="text-amber-800 dark:text-amber-300 font-medium">
-            Puoi comunque consultare i messaggi e i problemi comuni documentati per altri modelli {brand}. 
-            <strong>Non assumere che lo stesso codice abbia identico significato sulla tua variante</strong>: verifica sempre il manuale specifico.
-          </p>
+          <p class="text-amber-800 dark:text-amber-300 font-medium" set:html={t.unlistedWarning.replace('{brand}', brand)}></p>
         </div>
         <div class="flex items-center gap-3">
           <span class="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold rounded-lg text-sm border border-slate-200 dark:border-slate-700">
             <svg class="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-            Cerca il codice esatto nel manuale del tuo modello
+            {t.searchManual}
           </span>
-          <span class="text-xs text-slate-500 dark:text-slate-400 italic">Cerca la sigla completa riportata sull'etichetta sotto o dietro l'apparecchio.</span>
+          <span class="text-xs text-slate-500 dark:text-slate-400 italic">{t.searchManualHint}</span>
         </div>
       </>
     ) : (
       <>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4">
-          Codici e messaggi documentati per friggitrici <span class="text-blue-600 dark:text-blue-400">{brand}</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4" set:html={t.documentedTitle.replace('{brand}', `<span class="text-blue-600 dark:text-blue-400">${brand}</span>`)}>
         </h2>
         <div class="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-400 p-4 rounded-r-lg">
-          <p class="text-blue-800 dark:text-blue-300 font-medium">
-            Il significato di un codice può cambiare in base al modello. I messaggi qui sotto sono stati trovati nei documenti dei modelli {brand} presenti nel nostro archivio: <strong>verifica sempre il manuale della tua variante</strong>.
-          </p>
+          <p class="text-blue-800 dark:text-blue-300 font-medium" set:html={t.documentedWarning.replace('{brand}', brand)}></p>
         </div>
       </>
     )}
@@ -62,7 +59,7 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
       <section>
         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
           <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
-          Modelli {brand}
+          {t.modelsTitle.replace('{brand}', brand)}
         </h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {allBrandModels.map(item => {
@@ -70,8 +67,8 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
             const badgeClass = isAmbiguous 
               ? "bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 border-orange-200 dark:border-orange-800"
               : "bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 border-emerald-200 dark:border-emerald-800";
-            const badgeText = isAmbiguous ? "Verifica variante" : "Informazioni verificate";
-            const btnText = isAmbiguous ? "Vedi informazioni" : "Vedi informazioni";
+            const badgeText = isAmbiguous ? t.badgeAmbiguous : t.badgeVerified;
+            const btnText = t.btnSeeInfo;
             
             // Build the appropriate fallback URL
             const href = isAmbiguous 
@@ -112,7 +109,7 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
     <section>
       <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
         <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-        Codici display rilevati
+        {t.codesTitle}
       </h3>
       
       {aggregatedMessages.length > 0 ? (
@@ -128,7 +125,7 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
           ))}
         </div>
       ) : (
-        <p class="text-slate-500 dark:text-slate-400 italic">Nessun codice di errore esplicito è documentato per i modelli {brand} attualmente nel nostro database.</p>
+        <p class="text-slate-500 dark:text-slate-400 italic">{t.noCodesDesc.replace('{brand}', brand)}</p>
       )}
     </section>
 
@@ -137,7 +134,7 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
       <section class="mt-10">
         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
           <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-          Problemi comuni nei documenti {brand}
+          {t.symptomsTitle.replace('{brand}', brand)}
         </h3>
         <div class="bg-slate-50 dark:bg-slate-800/30 rounded-xl p-6 border border-slate-200 dark:border-slate-700">
           <ul class="space-y-3 text-slate-700 dark:text-slate-300">

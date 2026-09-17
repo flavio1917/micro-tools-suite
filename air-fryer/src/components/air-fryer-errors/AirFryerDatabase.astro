@@ -57,7 +57,7 @@ const searchIndex = getSearchIndex(lang);
         const brandModels = models.filter(m => m.brand === brand);
         return (
           <div class="af-brand-view hidden" data-brand={brand}>
-            <BrandErrorOverview brand={brand} brandModels={brandModels} isUnlisted={false} />
+            <BrandErrorOverview brand={brand} brandModels={brandModels} isUnlisted={false} lang={lang} />
           </div>
         );
       })}
@@ -69,7 +69,7 @@ const searchIndex = getSearchIndex(lang);
         const brandModels = models.filter(m => m.brand === brand);
         return (
           <div class="af-brand-unlisted-view hidden" data-brand={brand}>
-            <BrandErrorOverview brand={brand} brandModels={brandModels} isUnlisted={true} />
+            <BrandErrorOverview brand={brand} brandModels={brandModels} isUnlisted={true} lang={lang} />
           </div>
         );
       })}
