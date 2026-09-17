@@ -29,7 +29,7 @@ const hasModelInfo = sourceModelName || sourceModelSpec;
 const manualUrl = error.source?.manual_url || error.manual_url;
 ---
 
-<div class="mb-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col md:flex-row" id={finalAnchorId}
+<div class="mb-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col md:flex-row scroll-mt-24" id={finalAnchorId}
      data-analytics-code={loc.code}
      data-analytics-severity={loc.severity}
      data-analytics-brand={brandDisplayName || model?.brand || ''}>
