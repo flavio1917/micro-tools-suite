@@ -118,7 +118,7 @@ import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
         <>
           <div class="flex flex-wrap gap-2 mb-6">
             {aggregatedMessages.map(msg => {
-              const anchorId = toSafeAnchorId('error', msg.code);
+              const anchorId = toSafeAnchorId(`brand-${brand}-error`, msg.code);
               return (
                 <a href={`#${anchorId}`} 
                    onclick={`event.preventDefault(); document.getElementById('${anchorId}')?.scrollIntoView({behavior: 'smooth', block: 'start'}); history.pushState(null, '', window.location.pathname + window.location.search + '#${anchorId}');`}
@@ -136,6 +136,7 @@ import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
                 sourceModelSpec={msg.sourceModelSpec}
                 modelCanonicalSlug={msg.sourceModelId}
                 lang={lang}
+                contextPrefix={`brand-${brand}`}
               />
             ))}
           </div>

@@ -197,7 +197,7 @@ const validSymptoms = model.symptoms || [];
         <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4">{uiLabels.knownErrors}</h2>
         <div class="flex flex-wrap gap-2 mb-6">
           {validCodes.map((code: any) => {
-            const anchorId = toSafeAnchorId('error', code.code);
+            const anchorId = toSafeAnchorId(`model-${model.id}-error`, code.code);
               return (
                 <a href={`#${anchorId}`} 
                    onclick={`event.preventDefault(); document.getElementById('${anchorId}')?.scrollIntoView({behavior: 'smooth', block: 'start'}); history.pushState(null, '', window.location.pathname + window.location.search + '#${anchorId}');`}
@@ -215,6 +215,7 @@ const validSymptoms = model.symptoms || [];
                 model={model}
                 lang={lang}
                 hideModelInfo={true}
+                contextPrefix={`model-${model.id}`}
               />
             );
           })}

@@ -8,6 +8,7 @@ import DocumentReference from './DocumentReference.astro';
 import { normalizeString } from '../../lib/air-fryer-filters';
 import { rawV2Models } from '../../lib/air-fryer-db';
 import { errorsUiTranslations } from '../../data/i18n/errors-ui';
+import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
 
 export interface Props {
   model: AirFryerModel;
@@ -157,11 +158,24 @@ const searchTokens = [
 
         {model.has_explicit_codes && model.error_codes.length > 0 ? (
           <div class="space-y-4">
+            <div class="flex flex-wrap gap-2 mb-6">
+              {model.error_codes.map(ec => {
+                const anchorId = toSafeAnchorId(`model-${model.id}-error`, ec.code);
+                return (
+                  <a href={`#${anchorId}`} 
+                     onclick={`event.preventDefault(); document.getElementById('${anchorId}')?.scrollIntoView({behavior: 'smooth', block: 'start'}); history.pushState(null, '', window.location.pathname + window.location.search + '#${anchorId}');`}
+                     class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-bold border border-slate-200 dark:border-slate-700 transition-colors">
+                    {ec.display_code || ec.code}
+                  </a>
+                );
+              })}
+            </div>
             {model.error_codes.map(ec => (
               <ErrorCodeCard 
                 error={ec}
                 model={model}
                 lang={lang}
+                contextPrefix={`model-${model.id}`}
               />
             ))}
           </div>

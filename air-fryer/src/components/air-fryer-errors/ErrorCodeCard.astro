@@ -12,14 +12,15 @@ export interface Props {
   modelCanonicalSlug?: string;
   brandDisplayName?: string;
   hideModelInfo?: boolean;
+  contextPrefix?: string;
 }
 
-const { error, model, lang, brandDisplayName, hideModelInfo = false, sourceModelName: overrideModelName, sourceModelSpec: overrideModelSpec, modelCanonicalSlug: overrideSlug } = Astro.props;
+const { error, model, lang, brandDisplayName, hideModelInfo = false, sourceModelName: overrideModelName, sourceModelSpec: overrideModelSpec, modelCanonicalSlug: overrideSlug, contextPrefix } = Astro.props;
 
 const modelCanonicalSlug = overrideSlug || model?.canonical_slug || model?.id || '';
 const loc = getLocalizedErrorContent(lang, modelCanonicalSlug, error);
 
-const finalAnchorId = toSafeAnchorId('error', loc.code);
+const finalAnchorId = toSafeAnchorId(contextPrefix ? `${contextPrefix}-error` : 'error', loc.code);
 
 const sourceModelName = overrideModelName || model?.primary_display_name || model?.user_label;
 const sourceModelSpec = overrideModelSpec || model?.model_spec;
