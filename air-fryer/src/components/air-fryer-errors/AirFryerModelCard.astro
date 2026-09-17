@@ -8,7 +8,6 @@ import DocumentReference from './DocumentReference.astro';
 import { normalizeString } from '../../lib/air-fryer-filters';
 import { rawV2Models } from '../../lib/air-fryer-db';
 import { errorsUiTranslations } from '../../data/i18n/errors-ui';
-import { errorContentDB, hasCompleteTranslations } from '../../data/i18n/error-content';
 
 export interface Props {
   model: AirFryerModel;
@@ -23,8 +22,9 @@ const lang = (propLang || (pathParts[1] && ['it', 'en', 'fr', 'es'].includes(pat
 
 // V2 lookup
 const v2Model = rawV2Models.find(m => m.canonical_slug === model.id);
-// Only verified symptoms
-const verifiedSymptoms = v2Model?.symptoms.filter(s => s.severity && s.evidence_level && s.source && !v2Model.is_ambiguous && v2Model.metadata?.parsing_status !== 'manual_review') || [];
+
+// Get the localized model name from the new database
+const localizedModelName = v2Model?.model_names?.[lang] || v2Model?.model_names?.it || model.primary_display_name || model.actual_model;
 
 const t = errorsUiTranslations[lang];
 const modelCardLabels = t.modelCard;
@@ -36,8 +36,9 @@ const hasCapacity = model.capacity_l !== null;
 const capacityText = hasCapacity ? `${model.capacity_l}L` : '';
 
 // Features logic
-const visibleFeatures = model.notable_features.slice(0, 5);
-const hiddenFeatures = model.notable_features.slice(5);
+const notableFeatures = model.notable_features || [];
+const visibleFeatures = notableFeatures.slice(0, 5);
+const hiddenFeatures = notableFeatures.slice(5);
 
 // Build search text for client-side filtering
 const searchTokens = [
@@ -48,7 +49,7 @@ const searchTokens = [
 ].filter(Boolean).map(normalizeString).join(' ');
 
 ---
-<article id={model.id} class="af-model-card bg-white dark:bg-[#151b2b] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow mb-6 overflow-hidden" data-brand={model.brand} data-dual={isDual ? 'true' : 'false'} data-codes={model.has_explicit_codes ? 'true' : 'false'} data-search-text={searchTokens} data-message-types={(model.error_codes?.map(ec => ec.type).filter(Boolean).join(',') || '')}>
+<article id={model.id} class="af-model-card bg-white dark:bg-[#151b2b] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow mb-6 overflow-hidden" data-brand={model.brand} data-dual={isDual ? 'true' : 'false'} data-codes={model.has_explicit_codes ? 'true' : 'false'} data-search-text={searchTokens} data-message-types={((model.error_codes || []).map(ec => ec.type).filter(Boolean).join(','))}>
   
   <details class="group">
     <summary class="p-5 sm:p-6 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-blue-500 list-none flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -57,7 +58,7 @@ const searchTokens = [
       <div class="flex-1 flex gap-4 sm:gap-5 items-center">
         {v2Model && (
           <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-1.5 flex items-center justify-center">
-            <img src={`/images/air-fryers/${v2Model.brand_slug}/${v2Model.canonical_slug}.webp`} alt={model.actual_model} class="w-full h-full object-contain" loading="lazy" onerror="this.parentElement.style.display='none';" />
+            <img src={v2Model.image_path || `/images/air-fryers/${v2Model.brand_slug}/${v2Model.canonical_slug}.webp`} alt={localizedModelName} class="w-full h-full object-contain" loading="lazy" onerror="this.parentElement.style.display='none';" />
           </div>
         )}
         <div>
@@ -78,11 +79,11 @@ const searchTokens = [
           </div>
           
           <h3 class="text-xl sm:text-2xl font-black text-slate-900 dark:text-white leading-tight mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-            {model.primary_display_name || model.actual_model}
+            {localizedModelName}
           </h3>
           
-          {showUserLabel && (
-            <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">{model.user_label}</p>
+          {model.model_spec && (
+            <p class="text-sm text-slate-500 dark:text-slate-400 font-medium font-mono">{model.model_spec}</p>
           )}
         </div>
       </div>
@@ -178,39 +179,6 @@ const searchTokens = [
           </div>
         )}
       </div>
-      
-      {/* Symptoms */}
-      {verifiedSymptoms.length > 0 && verifiedSymptoms.some(sym => hasCompleteTranslations(`${v2Model!.brand_slug}.${v2Model!.model_spec_slug}.symptom.${sym.key}`, sym.severity)) && (
-        <div class="mb-8">
-          <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-4">{modelCardLabels.commonProblems}</h3>
-          <div class="space-y-4">
-            {verifiedSymptoms.map(sym => {
-              const symptomI18nKey = `${v2Model!.brand_slug}.${v2Model!.model_spec_slug}.symptom.${sym.key}`;
-              if (!hasCompleteTranslations(symptomI18nKey, sym.severity)) {
-                return null;
-              }
-              const localizedSymptom = errorContentDB[lang]?.symptoms[symptomI18nKey];
-              if (!localizedSymptom) return null;
-
-              return (
-                <SymptomCard 
-                  symptomKey={sym.key}
-                  severity={sym.severity}
-                  evidenceLevel={sym.evidence_level}
-                  content={{
-                    label: localizedSymptom.label.text,
-                    cause: localizedSymptom.cause?.text,
-                    solution: localizedSymptom.solution?.text
-                  }}
-                  source={sym.source}
-                  lang={lang}
-                  brandDisplayName={v2Model!.brand_slug}
-                />
-              );
-            })}
-          </div>
-        </div>
-      )}
 
       {/* Generic Suggestions */}
       {model.generic_suggestions && model.generic_suggestions.length > 0 && (

@@ -41,8 +41,18 @@ const manualUrl = error.source?.manual_url || error.manual_url;
       </h3>
     </div>
     
+    {/* Classification badge */}
+    {loc.classification && (
+      <div>
+        <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold border bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border-slate-200 dark:border-slate-700">
+          {loc.classification}
+        </span>
+      </div>
+    )}
+    
+    {/* Severity/Semaphore badge */}
     <div>
-      <SeverityBadge severity={loc.severity} actionLevel={loc.actionLevel} fixable={loc.diyFixable} lang={lang} />
+      <SeverityBadge severityLevel={loc.severity} color={loc.color} severityLabel={loc.severityLabel} lang={lang} />
     </div>
 
     {hasModelInfo ? (
@@ -70,6 +80,7 @@ const manualUrl = error.source?.manual_url || error.manual_url;
   <!-- RIGHT COLUMN -->
   <div class="w-full md:w-2/3 p-5 space-y-5 flex flex-col justify-center">
     
+    {/* Diagnosis — from Errori column */}
     {loc.diagnosis && (
       <div>
         <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5 flex items-center gap-2">
@@ -86,15 +97,19 @@ const manualUrl = error.source?.manual_url || error.manual_url;
       </div>
     )}
 
-    {loc.solution && (
+    {/* User Symptom — only if non-empty */}
+    {loc.userSymptom && (
       <div>
-        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">{getUiTranslation(lang, 'Soluzione')}</h4>
-        <div class="text-slate-800 dark:text-slate-200 font-medium text-sm sm:text-base whitespace-pre-line leading-relaxed bg-blue-50/50 dark:bg-blue-900/10 p-4 rounded-lg border border-blue-100 dark:border-blue-900/30">
-          {loc.solution}
-        </div>
+        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
+          {getUiTranslation(lang, 'Sintomo utente')}
+        </h4>
+        <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base whitespace-pre-line leading-relaxed bg-blue-50/50 dark:bg-blue-900/10 p-4 rounded-lg border border-blue-100 dark:border-blue-900/30">
+          {loc.userSymptom}
+        </p>
       </div>
     )}
 
+    {/* Manual link */}
     {manualUrl && (
       <div class="pt-2">
         <a

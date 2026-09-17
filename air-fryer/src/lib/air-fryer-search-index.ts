@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import { rawV2Models } from './air-fryer-db';
 import { errorsUiTranslations } from '../data/i18n/errors-ui';
-import type { SupportedLanguage } from '../types/air-fryer-v2';
 
 export interface SearchIndexItem {
   type?: 'model' | 'brand' | 'code' | 'symptom';
@@ -36,21 +35,14 @@ function slugify(text: string): string {
     .replace(/-+$/, '');
 }
 
-export function getSearchIndex(lang: SupportedLanguage): SearchIndexItem[] {
-  const t = errorsUiTranslations[lang] || errorsUiTranslations.it;
-  // Use type assertion here safely, since we just added it to the translation file
-  const symptomLabels = (t as any).symptomLabels || {};
-
+export function getSearchIndex(lang: string): SearchIndexItem[] {
   return rawV2Models
-    .map(model => {
-      const isAmbiguous = !model.is_deduplication_validated || model.metadata?.parsing_status === 'manual_review' || !!model.metadata?.duplicate_group;
-      const variantSlug = isAmbiguous ? slugify(model.primary_display_name) : undefined;
+    .map((model: any) => {
+      const isAmbiguous = model.is_deduplication_validated === false;
+      const variantSlug = isAmbiguous ? slugify(model.model_names?.[lang] || model.model_names?.it || '') : undefined;
       
-      const imgFileName = isAmbiguous 
-        ? `${model.canonical_slug}-${variantSlug}.webp` 
-        : `${model.canonical_slug}.webp`;
-        
-      const imgPath = `/images/air-fryers/${model.brand_slug}/${imgFileName}`;
+      // Use image_path from the database if available
+      const imgPath = model.image_path || `/images/air-fryers/${model.brand_slug}/${model.canonical_slug}.webp`;
       
       let hasImage = false;
       try {
@@ -62,22 +54,23 @@ export function getSearchIndex(lang: SupportedLanguage): SearchIndexItem[] {
       
       const imageReferenceStatus = isAmbiguous ? 'variant_reference' : 'verified_model';
       
+      // Get display name from localized model_names
+      const displayName = model.model_names?.[lang] || model.model_names?.it || model.model_spec;
+      const allDisplayNames = Object.values(model.model_names || {}).filter(Boolean) as string[];
+
       return {
         type: 'model',
         canonical_slug: model.canonical_slug,
         brand_slug: model.brand_slug,
-        brand_display_name: model.brand_slug.toUpperCase(),
+        brand_display_name: (model.brand || model.brand_slug).toUpperCase(),
         model_spec: model.model_spec,
-        primary_display_name: model.primary_display_name,
-        display_names: model.display_names,
-        seo_status: model.seo_status,
+        primary_display_name: displayName,
+        display_names: allDisplayNames.length > 0 ? allDisplayNames : [model.model_spec],
+        seo_status: model.seo_status || 'indexable',
         is_ambiguous: isAmbiguous,
-        searchable_codes: model.error_codes.map(ec => ec.code),
-        searchable_symptoms: model.symptoms.map(sym => ({
-          key: sym.key,
-          label: symptomLabels[sym.key] || sym.key.replace(/-/g, ' ')
-        })),
-        has_market_variants: Array.isArray(model.market_variants) && model.market_variants.length > 0,
+        searchable_codes: (model.error_codes || []).map((ec: any) => ec.code),
+        searchable_symptoms: [],
+        has_market_variants: false,
         image_path: hasImage ? imgPath : undefined,
         image_reference_status: imageReferenceStatus,
         variant_slug: variantSlug

@@ -1,83 +1,82 @@
-import it from '../data/i18n/air-fryer-errors-it.json';
-import en from '../data/i18n/air-fryer-errors-en.json';
-import fr from '../data/i18n/air-fryer-errors-fr.json';
-import es from '../data/i18n/air-fryer-errors-es.json';
+import uiTranslations from '../data/i18n/air-fryer-ui-translations.json';
 
-const translations: Record<string, any> = { it, en, fr, es };
+const translations: Record<string, Record<string, string>> = uiTranslations;
 
+const LANG_BADGE_KEY: Record<string, string> = {
+  it: 'Manuale originale in italiano',
+  en: 'Manuale originale in inglese',
+  fr: 'Manuale originale in francese',
+  es: 'Manuale originale in spagnolo',
+};
+
+/**
+ * Get localized error content directly from the error's `localized` field.
+ * No more separate JSON files — all content comes from air-fryer-db.json.
+ */
 export function getLocalizedErrorContent(
   lang: string,
-  modelCanonicalSlug: string,
+  _modelCanonicalSlug: string,
   error: any
 ) {
-  const t = translations[lang] || translations['it'];
-  
-  const normalizedGenericCode = error.code.replace(/^E0/, 'E');
-  
-  const modelMatch = t.models[modelCanonicalSlug]?.[error.code];
-  const genericMatch = t.generic[error.code] || t.generic[normalizedGenericCode];
-  
-  let label = '';
+  const localized = error.localized?.[lang];
+  const sourceLang = error.source_language || 'it';
+
   let diagnosis = '';
-  let solution = '';
-  let sourceLanguage = error.source_language || 'it';
+  let userSymptom = '';
+  let classification = '';
+  let severityLabel = '';
   let isFallbackSource = false;
   let originalManualBadge = '';
 
-  if (modelMatch && modelMatch.diagnosis) {
-    label = modelMatch.label || genericMatch?.label || '';
-    diagnosis = modelMatch.diagnosis;
-    solution = modelMatch.solution || '';
-    
-    if (diagnosis === error.source_text && lang !== error.source_language) {
-      isFallbackSource = true;
-      sourceLanguage = error.source_language;
-    } else {
-      sourceLanguage = lang;
-    }
-  } else if (genericMatch) {
-    label = genericMatch.label;
-    diagnosis = genericMatch.diagnosis;
-    solution = genericMatch.solution;
-    sourceLanguage = lang;
+  if (localized && localized.diagnosis) {
+    // We have localized content for this language
+    diagnosis = localized.diagnosis;
+    userSymptom = localized.user_symptom || '';
+    classification = localized.classification || '';
+    severityLabel = localized.severity_label || '';
+  } else if (error.localized?.[sourceLang]?.diagnosis) {
+    // Fallback to source language
+    const fallback = error.localized[sourceLang];
+    diagnosis = fallback.diagnosis;
+    userSymptom = fallback.user_symptom || '';
+    classification = fallback.classification || '';
+    severityLabel = fallback.severity_label || '';
+    isFallbackSource = true;
   } else {
-    label = t.ui['Errore tecnico'] || 'Technical error';
-    diagnosis = error.source_text || '';
-    solution = ''; 
-    isFallbackSource = lang !== error.source_language;
-    sourceLanguage = error.source_language || 'it';
-  }
-  
-  if (!label) {
-    label = t.ui['Errore tecnico'] || 'Technical error';
+    // Try any available language
+    for (const tryLang of ['it', 'en', 'fr', 'es']) {
+      const tryLoc = error.localized?.[tryLang];
+      if (tryLoc?.diagnosis) {
+        diagnosis = tryLoc.diagnosis;
+        userSymptom = tryLoc.user_symptom || '';
+        classification = tryLoc.classification || '';
+        severityLabel = tryLoc.severity_label || '';
+        isFallbackSource = lang !== tryLang;
+        break;
+      }
+    }
   }
 
   if (isFallbackSource) {
-    if (sourceLanguage === 'en') {
-      originalManualBadge = t.ui['Manuale originale in inglese'];
-    } else if (sourceLanguage === 'it') {
-      originalManualBadge = t.ui['Manuale originale in italiano'];
-    } else {
-      originalManualBadge = t.ui['Traduzione informativa dal manuale originale'];
-    }
+    const badgeKey = LANG_BADGE_KEY[sourceLang] || LANG_BADGE_KEY['it'];
+    originalManualBadge = getUiTranslation(lang, badgeKey);
   }
-  
+
   return {
     code: error.code,
     displayCode: error.display_code || error.code,
-    severity: error.severity || 'caution',
-    diyFixable: error.diy_fixable || false,
-    actionLevel: error.action_level || 'fermare_e_verificare',
-    label,
+    severity: error.severity_level || 'unknown',
+    color: error.color || 'unknown',
+    classification,
+    severityLabel,
     diagnosis,
-    solution,
-    sourceLanguage,
+    userSymptom,
     isFallbackSource,
-    originalManualBadge
+    originalManualBadge,
   };
 }
 
 export function getUiTranslation(lang: string, key: string): string {
   const t = translations[lang] || translations['it'];
-  return t.ui[key] || translations['it'].ui[key] || key;
+  return t?.[key] || translations['it']?.[key] || key;
 }

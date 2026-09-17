@@ -2,43 +2,65 @@
 import { getUiTranslation } from '../../lib/air-fryer-error-i18n';
 
 export interface Props {
-  severity: string;
+  severityLevel: string;  // "low" | "medium" | "high" | "unknown"
+  color: string;          // "green" | "yellow" | "red" | "unknown"
+  severityLabel?: string; // Localized label like "Media", "High", etc.
+  lang: string;
+  // Legacy props (for GenericAirFryerGuidance compatibility)
+  severity?: string;
   actionLevel?: string;
   fixable?: boolean;
-  lang: string;
 }
 
-const { severity, actionLevel, fixable, lang } = Astro.props;
+const { severityLevel, color, severityLabel, lang, severity, actionLevel, fixable } = Astro.props;
 
-let badgeType = 'caution'; // default yellow
+// Determine badge type from the database color field
+// Priority: use color from database. Fallback: legacy severity mapping.
+let badgeColor = color || 'unknown';
 
-if (severity === 'hardware' || actionLevel === 'assistenza' || severity === 'stop_and_support') {
-  badgeType = 'hardware';
-} else if (severity === 'software_reset' || fixable) {
-  badgeType = 'software_reset';
+// Legacy fallback (for generic guidance cards that don't have the new format)
+if (badgeColor === 'unknown' && severity) {
+  if (severity === 'hardware' || actionLevel === 'assistenza' || severity === 'stop_and_support' || severity === 'high') {
+    badgeColor = 'red';
+  } else if (severity === 'software_reset' || fixable || severity === 'low') {
+    badgeColor = 'green';
+  } else {
+    badgeColor = 'yellow';
+  }
 }
 
-const uiKeys = {
-  hardware: 'Riparazione hardware',
-  software_reset: 'Reset software',
-  caution: 'Attenzione'
+// Use severityLabel from the database as the display text
+// Fallback to generic labels for legacy/generic guidance usage
+let label = severityLabel || '';
+if (!label) {
+  const defaultLabels: Record<string, string> = {
+    green: getUiTranslation(lang, 'Gravità') + ': ' + 'Low',
+    yellow: getUiTranslation(lang, 'Gravità') + ': ' + 'Medium',
+    red: getUiTranslation(lang, 'Gravità') + ': ' + 'High',
+  };
+  label = defaultLabels[badgeColor] || '';
+}
+
+const styles: Record<string, string> = {
+  green: 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 border-green-200 dark:border-green-800',
+  yellow: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300 border-yellow-200 dark:border-yellow-800',
+  red: 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300 border-red-200 dark:border-red-800',
+  unknown: 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400 border-slate-200 dark:border-slate-700',
 };
 
-const label = getUiTranslation(lang, uiKeys[badgeType as keyof typeof uiKeys]);
-
-const styles = {
-  software_reset: 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 border-green-200 dark:border-green-800',
-  caution: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300 border-yellow-200 dark:border-yellow-800',
-  hardware: 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300 border-red-200 dark:border-red-800'
+const dotStyles: Record<string, string> = {
+  green: 'bg-green-500',
+  yellow: 'bg-yellow-500',
+  red: 'bg-red-500',
+  unknown: 'bg-slate-400',
 };
 
-const icons = {
-  software_reset: '<svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>',
-  caution: '<svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>',
-  hardware: '<svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>'
-};
+const styleClass = styles[badgeColor] || styles.unknown;
+const dotClass = dotStyles[badgeColor] || dotStyles.unknown;
 ---
-<span class={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold border ${styles[badgeType as keyof typeof styles]}`}>
-  <span set:html={icons[badgeType as keyof typeof icons]}></span>
-  <span>{label}</span>
-</span>
+{label && (
+  <span class={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold border ${styleClass}`}>
+    <span class={`w-2.5 h-2.5 rounded-full mr-1.5 ${dotClass}`}></span>
+    <span>{getUiTranslation(lang, 'Gravità')}: {label}</span>
+  </span>
+)}
