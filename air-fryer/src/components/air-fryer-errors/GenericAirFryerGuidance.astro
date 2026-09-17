@@ -7,7 +7,41 @@ export interface Props {
   lang?: string;
 }
 
-const { lang = 'it' } = Astro.props;
+const { lang = 'it' } = Astro.props as { lang: 'it' | 'en' | 'fr' | 'es' };
+const activeGuidance = genericAirFryerGuidance[lang] || genericAirFryerGuidance['it'];
+
+// Translations for UI headings
+const uiHeadings: Record<'it'|'en'|'fr'|'es', Record<string, string>> = {
+  it: {
+    title: "Friggitrice ad aria non in elenco: guida ai codici e problemi comuni",
+    initialChecks: "Controlli iniziali sicuri",
+    codeMeanings: "Significato dei codici (E1, E2, ecc.)",
+    commonProblems: "Problemi comuni",
+    stopUsage: "Quando interrompere l'uso e chiamare l'assistenza"
+  },
+  en: {
+    title: "Air fryer not listed: code guide and common problems",
+    initialChecks: "Initial safe checks",
+    codeMeanings: "Meaning of codes (E1, E2, etc.)",
+    commonProblems: "Common problems",
+    stopUsage: "When to stop using and call support"
+  },
+  fr: {
+    title: "Friteuse à air non répertoriée : guide des codes et problèmes",
+    initialChecks: "Contrôles initiaux de sécurité",
+    codeMeanings: "Signification des codes (E1, E2, etc.)",
+    commonProblems: "Problèmes courants",
+    stopUsage: "Quand arrêter l'utilisation et appeler l'assistance"
+  },
+  es: {
+    title: "Freidora de aire no listada: guía de códigos y problemas comunes",
+    initialChecks: "Controles iniciales seguros",
+    codeMeanings: "Significado de los códigos (E1, E2, etc.)",
+    commonProblems: "Problemas comunes",
+    stopUsage: "Cuándo interrumpir el uso y llamar al servicio técnico"
+  }
+};
+const headings = uiHeadings[lang] || uiHeadings['it'];
 
 // Generic codes with explicit severity from the generic guidance.
 // These use the new localized format so ErrorCodeCard can render them.
@@ -15,10 +49,10 @@ const genericCodes = [
   { 
     code: 'E1', display_code: 'E1', aliases: [],
     localized: {
-      it: { diagnosis: 'Possibile guasto al sensore di temperatura (circuito aperto) o surriscaldamento anomalo. Scollegare la friggitrice e lasciarla raffreddare per 15-60 minuti. Se l\'errore persiste, contattare l\'assistenza clienti.', user_symptom: '', classification: 'Errore Termico / Sensore', severity_label: '' },
-      en: { diagnosis: 'Possible temperature sensor malfunction (open circuit) or abnormal overheating. Unplug the fryer and let it cool down for 15-60 minutes. If the error persists, contact customer support.', user_symptom: '', classification: 'Thermal / Sensor Error', severity_label: '' },
-      fr: { diagnosis: 'Dysfonctionnement possible du capteur de température (circuit ouvert) ou surchauffe anormale. Débranchez la friteuse et laissez-la refroidir pendant 15 à 60 minutes. Si l\'erreur persiste, contactez le service client.', user_symptom: '', classification: 'Erreur Thermique / Capteur', severity_label: '' },
-      es: { diagnosis: 'Posible avería del sensor de temperatura (circuito abierto) o sobrecalentamiento anormal. Desconecte la freidora y déjela enfriar durante 15-60 minutos. Si el error persiste, contacte al servicio de atención al cliente.', user_symptom: '', classification: 'Error Térmico / Sensor', severity_label: '' }
+      it: { diagnosis: activeGuidance.genericCodeGuidance[0].meaning, classification: 'Errore Termico / Sensore' },
+      en: { diagnosis: activeGuidance.genericCodeGuidance[0].meaning, classification: 'Thermal / Sensor Error' },
+      fr: { diagnosis: activeGuidance.genericCodeGuidance[0].meaning, classification: 'Erreur Thermique / Capteur' },
+      es: { diagnosis: activeGuidance.genericCodeGuidance[0].meaning, classification: 'Error Térmico / Sensor' }
     },
     severity_level: 'unknown', color: 'yellow', source_language: 'it',
     source: {}
@@ -26,10 +60,10 @@ const genericCodes = [
   { 
     code: 'E2', display_code: 'E2', aliases: [],
     localized: {
-      it: { diagnosis: 'Cortocircuito nel sensore di temperatura, oppure (su alcuni modelli a doppio cestello) divisorio mancante. Scollegare e contattare l\'assistenza. Se il modello richiede un divisorio, assicurarsi che sia installato correttamente.', user_symptom: '', classification: 'Cortocircuito Sensore', severity_label: '' },
-      en: { diagnosis: 'Short circuit in the temperature sensor, or (on some dual basket models) missing divider. Unplug and contact support. If the model requires a divider, make sure it is properly installed.', user_symptom: '', classification: 'Sensor Short Circuit', severity_label: '' },
-      fr: { diagnosis: 'Court-circuit dans le capteur de température, ou (sur certains modèles à double panier) séparateur manquant. Débranchez et contactez le service client. Si le modèle nécessite un séparateur, assurez-vous qu\'il est correctement installé.', user_symptom: '', classification: 'Court-circuit Capteur', severity_label: '' },
-      es: { diagnosis: 'Cortocircuito en el sensor de temperatura, o (en algunos modelos de doble cesta) separador faltante. Desconecte y contacte al soporte. Si el modelo requiere un separador, asegúrese de que esté correctamente instalado.', user_symptom: '', classification: 'Cortocircuito Sensor', severity_label: '' }
+      it: { diagnosis: activeGuidance.genericCodeGuidance[1].meaning, classification: 'Cortocircuito Sensore' },
+      en: { diagnosis: activeGuidance.genericCodeGuidance[1].meaning, classification: 'Sensor Short Circuit' },
+      fr: { diagnosis: activeGuidance.genericCodeGuidance[1].meaning, classification: 'Court-circuit Capteur' },
+      es: { diagnosis: activeGuidance.genericCodeGuidance[1].meaning, classification: 'Cortocircuito Sensor' }
     },
     severity_level: 'unknown', color: 'yellow', source_language: 'it',
     source: {}
@@ -37,10 +71,10 @@ const genericCodes = [
   { 
     code: 'E3', display_code: 'E3', aliases: [],
     localized: {
-      it: { diagnosis: 'Si è attivata la protezione contro il surriscaldamento. Scollegare immediatamente l\'apparecchio e lasciarlo raffreddare completamente prima di riutilizzarlo.', user_symptom: '', classification: 'Protezione Surriscaldamento', severity_label: '' },
-      en: { diagnosis: 'The overheating protection has been activated. Immediately unplug the appliance and let it cool down completely before reusing.', user_symptom: '', classification: 'Overheating Protection', severity_label: '' },
-      fr: { diagnosis: 'La protection contre la surchauffe s\'est activée. Débranchez immédiatement l\'appareil et laissez-le refroidir complètement avant de le réutiliser.', user_symptom: '', classification: 'Protection Surchauffe', severity_label: '' },
-      es: { diagnosis: 'Se ha activado la protección contra sobrecalentamiento. Desconecte inmediatamente el aparato y déjelo enfriar completamente antes de volver a usarlo.', user_symptom: '', classification: 'Protección Sobrecalentamiento', severity_label: '' }
+      it: { diagnosis: activeGuidance.genericCodeGuidance[2].meaning, classification: 'Protezione Surriscaldamento' },
+      en: { diagnosis: activeGuidance.genericCodeGuidance[2].meaning, classification: 'Overheating Protection' },
+      fr: { diagnosis: activeGuidance.genericCodeGuidance[2].meaning, classification: 'Protection Surchauffe' },
+      es: { diagnosis: activeGuidance.genericCodeGuidance[2].meaning, classification: 'Protección Sobrecalentamiento' }
     },
     severity_level: 'unknown', color: 'yellow', source_language: 'it',
     source: {}
@@ -48,10 +82,10 @@ const genericCodes = [
   { 
     code: 'E4', display_code: 'E4', aliases: [],
     localized: {
-      it: { diagnosis: 'Tensione di alimentazione errata o malfunzionamento generico del dispositivo. Scollegare e ricollegare alla presa di corrente. Verificare il corretto voltaggio. Se persiste, contattare l\'assistenza.', user_symptom: '', classification: 'Alimentazione o Malfunzionamento', severity_label: '' },
-      en: { diagnosis: 'Incorrect power supply voltage or generic device malfunction. Unplug and replug into the outlet. Check the correct voltage. If the problem persists, contact support.', user_symptom: '', classification: 'Power or Malfunction', severity_label: '' },
-      fr: { diagnosis: 'Tension d\'alimentation incorrecte ou dysfonctionnement générique de l\'appareil. Débranchez et rebranchez. Vérifiez la tension correcte. Si le problème persiste, contactez le service client.', user_symptom: '', classification: 'Alimentation ou Dysfonctionnement', severity_label: '' },
-      es: { diagnosis: 'Voltaje de alimentación incorrecto o mal funcionamiento genérico del dispositivo. Desconecte y vuelva a conectar. Verifique el voltaje correcto. Si persiste, contacte al soporte.', user_symptom: '', classification: 'Alimentación o Mal Funcionamiento', severity_label: '' }
+      it: { diagnosis: activeGuidance.genericCodeGuidance[3].meaning, classification: 'Alimentazione o Malfunzionamento' },
+      en: { diagnosis: activeGuidance.genericCodeGuidance[3].meaning, classification: 'Power or Malfunction' },
+      fr: { diagnosis: activeGuidance.genericCodeGuidance[3].meaning, classification: 'Alimentation ou Dysfonctionnement' },
+      es: { diagnosis: activeGuidance.genericCodeGuidance[3].meaning, classification: 'Alimentación o Mal Funcionamiento' }
     },
     severity_level: 'unknown', color: 'yellow', source_language: 'it',
     source: {}
@@ -59,10 +93,10 @@ const genericCodes = [
   { 
     code: 'Display Spento', display_code: 'Display Spento', aliases: [],
     localized: {
-      it: { diagnosis: 'Il dispositivo non riceve corrente elettrica. Controllare che la spina sia inserita, verificare il fusibile o provare una presa diversa.', user_symptom: '', classification: 'Nessuna Alimentazione', severity_label: '' },
-      en: { diagnosis: 'The device is not receiving electrical power. Check that the plug is inserted, check the fuse, or try a different outlet.', user_symptom: '', classification: 'No Power', severity_label: '' },
-      fr: { diagnosis: 'L\'appareil ne reçoit pas de courant électrique. Vérifiez que la prise est branchée, vérifiez le fusible ou essayez une autre prise.', user_symptom: '', classification: 'Pas d\'Alimentation', severity_label: '' },
-      es: { diagnosis: 'El dispositivo no recibe corriente eléctrica. Compruebe que el enchufe esté insertado, verifique el fusible o pruebe con una toma diferente.', user_symptom: '', classification: 'Sin Alimentación', severity_label: '' }
+      it: { diagnosis: activeGuidance.genericCodeGuidance[4].meaning, classification: 'Nessuna Alimentazione' },
+      en: { diagnosis: activeGuidance.genericCodeGuidance[4].meaning, classification: 'No Power' },
+      fr: { diagnosis: activeGuidance.genericCodeGuidance[4].meaning, classification: 'Pas d\'Alimentation' },
+      es: { diagnosis: activeGuidance.genericCodeGuidance[4].meaning, classification: 'Sin Alimentación' }
     },
     severity_level: 'unknown', color: 'yellow', source_language: 'it',
     source: {}
@@ -73,11 +107,11 @@ const genericCodes = [
   
   <header class="mb-10 border-b border-slate-100 dark:border-slate-800 pb-6">
     <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4">
-      Friggitrice ad aria non in elenco: guida ai codici e problemi comuni
+      {headings.title}
     </h2>
     <div class="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-400 p-4 rounded-r-lg">
       <p class="text-amber-800 dark:text-amber-300 font-medium">
-        {genericAirFryerGuidance.disclaimer}
+        {activeGuidance.disclaimer}
       </p>
     </div>
   </header>
@@ -88,11 +122,11 @@ const genericCodes = [
     <section>
       <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-5 flex items-center gap-2">
         <svg class="w-6 h-6 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-        Controlli iniziali sicuri
+        {headings.initialChecks}
       </h3>
       <div class="bg-emerald-50 dark:bg-emerald-900/10 rounded-xl p-6 border border-emerald-100 dark:border-emerald-800/30">
         <ol class="space-y-3 text-slate-700 dark:text-slate-300 list-decimal list-inside">
-          {genericAirFryerGuidance.generalSafetySteps.map(step => (
+          {activeGuidance.generalSafetySteps.map(step => (
             <li class="pl-2 marker:text-emerald-600 marker:font-bold">{step}</li>
           ))}
         </ol>
@@ -103,7 +137,7 @@ const genericCodes = [
     <section>
       <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-5 flex items-center gap-2">
         <svg class="w-6 h-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
-        Significato dei codici (E1, E2, ecc.)
+        {headings.codeMeanings}
       </h3>
       <div class="space-y-4">
         {genericCodes.map(err => (
@@ -116,10 +150,10 @@ const genericCodes = [
     <section>
       <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-5 flex items-center gap-2">
         <svg class="w-6 h-6 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-        Problemi comuni
+        {headings.commonProblems}
       </h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {genericAirFryerGuidance.commonSymptoms.map(item => (
+        {activeGuidance.commonSymptoms.map(item => (
           <article class="bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
             <h4 class="font-bold text-slate-900 dark:text-white mb-2 text-lg">{item.symptom}</h4>
             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">{item.advice}</p>
@@ -133,15 +167,12 @@ const genericCodes = [
       <div class="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 rounded-r-xl">
         <h3 class="text-lg font-bold text-red-800 dark:text-red-400 mb-3 flex items-center gap-2">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
-          Quando interrompere l'uso e chiamare l'assistenza
+          {headings.stopUsage}
         </h3>
         <ul class="space-y-2 text-red-700 dark:text-red-300 font-medium">
-          <li class="flex items-start gap-2"><span class="mt-1 text-red-500">•</span> Fumo nero non causato da cibo bruciato.</li>
-          <li class="flex items-start gap-2"><span class="mt-1 text-red-500">•</span> Odore intenso di bruciato elettrico.</li>
-          <li class="flex items-start gap-2"><span class="mt-1 text-red-500">•</span> Cavo o spina danneggiati.</li>
-          <li class="flex items-start gap-2"><span class="mt-1 text-red-500">•</span> Cestello, resistenza o plastica deformati.</li>
-          <li class="flex items-start gap-2"><span class="mt-1 text-red-500">•</span> Codice persistente dopo il raffreddamento e un riavvio.</li>
-          <li class="flex items-start gap-2"><span class="mt-1 text-red-500">•</span> Scintille, rumori insoliti o intervento ripetuto della protezione (salvavita).</li>
+          {activeGuidance.commonSymptoms[3]?.advice && (
+             <li class="flex items-start gap-2"><span class="mt-1 text-red-500">•</span> {activeGuidance.commonSymptoms[3].advice}</li>
+          )}
         </ul>
       </div>
     </section>

@@ -16,7 +16,9 @@
     "Manuale originale in francese": "Manuale originale in francese",
     "Manuale originale in spagnolo": "Manuale originale in spagnolo",
     "Guida Generica": "Guida Generica",
-    "Lingua originale": "Lingua originale"
+    "Lingua originale": "Lingua originale",
+    "viewSymptomsLink": "Consulta sintomi e soluzioni comuni per questo modello →",
+    "backToErrors": "← Torna agli errori"
   },
   "en": {
     "Diagnosi": "Diagnosis",
@@ -35,7 +37,9 @@
     "Manuale originale in francese": "Original manual in French",
     "Manuale originale in spagnolo": "Original manual in Spanish",
     "Guida Generica": "Generic Guide",
-    "Lingua originale": "Original language"
+    "Lingua originale": "Original language",
+    "viewSymptomsLink": "View common symptoms and solutions for this model →",
+    "backToErrors": "← Back to errors"
   },
   "fr": {
     "Diagnosi": "Diagnostic",
@@ -54,7 +58,9 @@
     "Manuale originale in francese": "Manuel original en français",
     "Manuale originale in spagnolo": "Manuel original en espagnol",
     "Guida Generica": "Guide Générique",
-    "Lingua originale": "Langue originale"
+    "Lingua originale": "Langue originale",
+    "viewSymptomsLink": "Consulter les symptômes et solutions courants pour ce modèle →",
+    "backToErrors": "← Retour aux erreurs"
   },
   "es": {
     "Diagnosi": "Diagnóstico",
@@ -73,6 +79,8 @@
     "Manuale originale in francese": "Manual original en francés",
     "Manuale originale in spagnolo": "Manual original en español",
     "Guida Generica": "Guía Genérica",
-    "Lingua originale": "Idioma original"
+    "Lingua originale": "Idioma original",
+    "viewSymptomsLink": "Consulta los síntomas y soluciones comunes de este modelo →",
+    "backToErrors": "← Volver a los errores"
   }
 }

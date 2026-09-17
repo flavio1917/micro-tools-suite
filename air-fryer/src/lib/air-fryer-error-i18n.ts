@@ -28,39 +28,19 @@ export function getLocalizedErrorContent(
   let isFallbackSource = false;
   let originalManualBadge = '';
 
-  if (localized && localized.diagnosis) {
-    // We have localized content for this language
-    diagnosis = localized.diagnosis;
-    userSymptom = localized.user_symptom || '';
-    classification = localized.classification || '';
-    severityLabel = localized.severity_label || '';
-  } else if (error.localized?.[sourceLang]?.diagnosis) {
-    // Fallback to source language
-    const fallback = error.localized[sourceLang];
-    diagnosis = fallback.diagnosis;
-    userSymptom = fallback.user_symptom || '';
-    classification = fallback.classification || '';
-    severityLabel = fallback.severity_label || '';
-    isFallbackSource = true;
-  } else {
-    // Try any available language
-    for (const tryLang of ['it', 'en', 'fr', 'es']) {
-      const tryLoc = error.localized?.[tryLang];
-      if (tryLoc?.diagnosis) {
-        diagnosis = tryLoc.diagnosis;
-        userSymptom = tryLoc.user_symptom || '';
-        classification = tryLoc.classification || '';
-        severityLabel = tryLoc.severity_label || '';
-        isFallbackSource = lang !== tryLang;
-        break;
-      }
+  if (!localized || !localized.diagnosis) {
+    if (import.meta.env.DEV) {
+      throw new Error(`Traduzione mancante: ${modelCanonicalSlug}:${error.code}:${lang}`);
     }
+    // Strict requirement: don't serve italian on EN/FR/ES pages.
+    // If not in dev, we will still throw or return empty.
+    throw new Error(`Traduzione mancante: ${modelCanonicalSlug}:${error.code}:${lang}`);
   }
 
-  if (isFallbackSource) {
-    const badgeKey = LANG_BADGE_KEY[sourceLang] || LANG_BADGE_KEY['it'];
-    originalManualBadge = getUiTranslation(lang, badgeKey);
-  }
+  diagnosis = localized.diagnosis;
+  userSymptom = localized.user_symptom || '';
+  classification = localized.classification || '';
+  severityLabel = localized.severity_label || '';
 
   return {
     code: error.code,
@@ -77,6 +57,9 @@ export function getLocalizedErrorContent(
 }
 
 export function getUiTranslation(lang: string, key: string): string {
-  const t = translations[lang] || translations['it'];
-  return t?.[key] || translations['it']?.[key] || key;
+  const t = translations[lang];
+  if (t && t[key]) {
+    return t[key];
+  }
+  return key; // return the key rather than a silent fallback to Italian
 }
