@@ -174,7 +174,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.968202+00:00"
+    "updated_at": "2026-09-17T16:30:45.019880+00:00"
   },
   {
     "canonical_slug": "philips-na220-na221",
@@ -390,7 +390,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.969203+00:00"
+    "updated_at": "2026-09-17T16:30:45.020882+00:00"
   },
   {
     "canonical_slug": "philips-na351",
@@ -529,7 +529,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.970203+00:00"
+    "updated_at": "2026-09-17T16:30:45.021881+00:00"
   },
   {
     "canonical_slug": "philips-na555",
@@ -669,7 +669,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.972207+00:00"
+    "updated_at": "2026-09-17T16:30:45.023879+00:00"
   },
   {
     "canonical_slug": "cosori-caf-p583s-kus",
@@ -846,7 +846,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.972207+00:00"
+    "updated_at": "2026-09-17T16:30:45.023879+00:00"
   },
   {
     "canonical_slug": "cosori-caf-li211",
@@ -1020,7 +1020,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.973208+00:00"
+    "updated_at": "2026-09-17T16:30:45.023879+00:00"
   },
   {
     "canonical_slug": "cosori-caf-se601s-cus",
@@ -1232,7 +1232,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.973208+00:00"
+    "updated_at": "2026-09-17T16:30:45.024881+00:00"
   },
   {
     "canonical_slug": "cosori-caf-dc601-kus-turboblaze-6-0-quart-air-fryer",
@@ -1444,7 +1444,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.974209+00:00"
+    "updated_at": "2026-09-17T16:30:45.024881+00:00"
   },
   {
     "canonical_slug": "cosori-caf-dc601-kus-turboblaze-6-0-quart-smart-air-fryer",
@@ -1656,7 +1656,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.974209+00:00"
+    "updated_at": "2026-09-17T16:30:45.025882+00:00"
   },
   {
     "canonical_slug": "cosori-caf-tf901-kus",
@@ -1683,25 +1683,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore del cestello sinistro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is an open circuit in the upper temperature sensor of ZONE 1. Contact Customer Service",
+            "diagnosis": "There is an open circuit in the upper temperature sensor of left basket. Contact Customer Service",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un circuit ouvert dans le capteur de température supérieur de la ZONE 1. Contactez le Service Après-Vente",
+            "diagnosis": "Il y a un circuit ouvert dans le capteur de température supérieur de la panier gauche. Contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un circuito abierto en el sensor de temperatura superior de la ZONA 1. Contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Hay un circuito abierto en el sensor de temperatura superior de la cesta izquierda. Contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -1721,25 +1721,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore del cestello sinistro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is a short circuit in the upper temperature sensor of ZONE 1. Contact Customer Service",
+            "diagnosis": "There is a short circuit in the upper temperature sensor of left basket. Contact Customer Service",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un court-circuit dans le capteur de température supérieur de la ZONE 1. Contactez le Service Après-Vente",
+            "diagnosis": "Il y a un court-circuit dans le capteur de température supérieur de la panier gauche. Contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un cortocircuito en el sensor de temperatura superior de la ZONA 1. Contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Hay un cortocircuito en el sensor de temperatura superior de la cesta izquierda. Contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -1759,25 +1759,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "Si è attivata la protezione contro il surriscaldamento della ZONA 1 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
+            "diagnosis": "Si è attivata la protezione contro il surriscaldamento del cestello sinistro della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Ripristino Termico di Sicurezza",
             "severity_label": "Media"
           },
           "en": {
-            "diagnosis": "The air fryer's overheat protection in ZONE 1 has been activated.\nTurn off and unplug the air fryer and let it cool down completely.\nIf the display still shows \"E3\", contact Customer Service",
+            "diagnosis": "The air fryer's overheat protection in  left basket has been activated.\nTurn off and unplug the air fryer and let it cool down completely.\nIf the display still shows \"E3\", contact Customer Service",
             "user_symptom": "",
             "classification": "Safety Thermal Restoration",
             "severity_label": "Medium"
           },
           "fr": {
-            "diagnosis": "La protection contre la surchauffe de la ZONE 1 de la friteuse à air s'est activée.\nÉteignez et débranchez la friteuse et laissez-la refroidir complètement.\nSi l'écran continue d'afficher \"E3\", contactez le Service Après-Vente",
+            "diagnosis": "La protection contre la surchauffe de la panier gauche de la friteuse à air s'est activée.\nÉteignez et débranchez la friteuse et laissez-la refroidir complètement.\nSi l'écran continue d'afficher \"E3\", contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "Restauration Thermique de Sécurité",
             "severity_label": "Moyenne"
           },
           "es": {
-            "diagnosis": "Se ha activado la protección contra el sobrecalentamiento de la ZONA 1 de la freidora de aire.\nApaga y desconecta la freidora de la corriente y déjala enfriar completamente.\nSi el display sigue mostrando \"E3\", contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Se ha activado la protección contra el sobrecalentamiento de la cesta izquierda de la freidora de aire.\nApaga y desconecta la freidora de la corriente y déjala enfriar completamente.\nSi el display sigue mostrando \"E3\", contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "Restablecimiento Térmico de Seguridad",
             "severity_label": "Media"
@@ -1797,25 +1797,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore del cestello sinistro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is an open circuit in the lower temperature sensor of ZONE 1. Contact Customer Service",
+            "diagnosis": "There is an open circuit in the lower temperature sensor of left basket. Contact Customer Service",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un circuit ouvert dans le capteur de température inférieur de la ZONE 1. Contactez le Service Après-Vente",
+            "diagnosis": "Il y a un circuit ouvert dans le capteur de température inférieur de la panier gauche. Contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un circuito abierto en el sensor de temperatura inferior de la ZONA 1. Contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Hay un circuito abierto en el sensor de temperatura inferior de la cesta izquierda. Contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -1835,25 +1835,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore del cestello sinistro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "",
             "severity_label": ""
           },
           "en": {
-            "diagnosis": "There is a short circuit in the lower temperature sensor of ZONE 1. Contact Customer Service",
+            "diagnosis": "There is a short circuit in the lower temperature sensor of left basket. Contact Customer Service",
             "user_symptom": "",
             "classification": "",
             "severity_label": ""
           },
           "fr": {
-            "diagnosis": "Il y a un court-circuit dans le capteur de température inférieur de la ZONE 1. Contactez le Service Après-Vente",
+            "diagnosis": "Il y a un court-circuit dans le capteur de température inférieur de la panier gauche. Contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "",
             "severity_label": ""
           },
           "es": {
-            "diagnosis": "Hay un cortocircuito en el sensor de temperatura inferior de la ZONA 1. Contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Hay un cortocircuito en el sensor de temperatura inferior de la cesta izquierda. Contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "",
             "severity_label": ""
@@ -1873,25 +1873,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore del cestello destro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is an open circuit in the upper temperature sensor of ZONE 2. Contact Customer Service",
+            "diagnosis": "There is an open circuit in the upper temperature sensor of right basket. Contact Customer Service",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un circuit ouvert dans le capteur de température supérieur de la ZONE 2. Contactez le Service Après-Vente",
+            "diagnosis": "Il y a un circuit ouvert dans le capteur de température supérieur de la panier droit. Contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un circuito abierto en el sensor de temperatura superior de la ZONA 2. Contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Hay un circuito abierto en el sensor de temperatura superior de la cesta derecha. Contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -1911,25 +1911,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore del cestello destro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is a short circuit in the upper temperature sensor of ZONE 2. Contact Customer Service",
+            "diagnosis": "There is a short circuit in the upper temperature sensor of right basket. Contact Customer Service",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un court-circuit dans le capteur de température supérieur de la ZONE 2. Contactez le Service Après-Vente",
+            "diagnosis": "Il y a un court-circuit dans le capteur de température supérieur de la panier droit. Contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un cortocircuito en el sensor de temperatura superior de la ZONA 2. Contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Hay un cortocircuito en el sensor de temperatura superior de la cesta derecha. Contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -1949,25 +1949,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore del cestello destro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is an open circuit in the lower temperature sensor of ZONE 2. Contact Customer Service",
+            "diagnosis": "There is an open circuit in the lower temperature sensor of right basket. Contact Customer Service",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un circuit ouvert dans le capteur de température inférieur de la ZONE 2. Contactez le Service Après-Vente",
+            "diagnosis": "Il y a un circuit ouvert dans le capteur de température inférieur de la panier droit. Contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un circuito abierto en el sensor de temperatura inferior de la ZONA 2. Contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Hay un circuito abierto en el sensor de temperatura inferior de la cesta derecha. Contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -1987,25 +1987,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore del cestello destro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is a short circuit in the lower temperature sensor of ZONE 2. Contact Customer Service",
+            "diagnosis": "There is a short circuit in the lower temperature sensor of right basket. Contact Customer Service",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un court-circuit dans le capteur de température inférieur de la ZONE 2. Contactez le Service Après-Vente",
+            "diagnosis": "Il y a un court-circuit dans le capteur de température inférieur de la panier droit. Contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un cortocircuito en el sensor de temperatura inferior de la ZONA 2. Contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Hay un cortocircuito en el sensor de temperatura inferior de la cesta derecha. Contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -2031,19 +2031,19 @@
             "severity_label": ""
           },
           "en": {
-            "diagnosis": "The air fryer's overheat protection in ZONE 2 has been activated.\nTurn off and unplug the air fryer and let it cool down completely.\nIf the display still shows \"E28\", contact Customer Service",
+            "diagnosis": "The air fryer's overheat protection in right basket has been activated.\nTurn off and unplug the air fryer and let it cool down completely.\nIf the display still shows \"E28\", contact Customer Service",
             "user_symptom": "",
             "classification": "",
             "severity_label": ""
           },
           "fr": {
-            "diagnosis": "La protection contre la surchauffe de la ZONE 2 de la friteuse à air s'est activée.\nÉteignez et débranchez la friteuse et laissez-la refroidir complètement.\nSi l'écran continue d'afficher \"E28\", contactez le Service Après-Vente",
+            "diagnosis": "La protection contre la surchauffe de la panier droit de la friteuse à air s'est activée.\nÉteignez et débranchez la friteuse et laissez-la refroidir complètement.\nSi l'écran continue d'afficher \"E28\", contactez le Service Après-Vente",
             "user_symptom": "",
             "classification": "",
             "severity_label": ""
           },
           "es": {
-            "diagnosis": "Se ha activado la protección contra el sobrecalentamiento de la ZONA 2 de la freidora de aire.\nApaga y desconecta la freidora de la corriente y déjala enfriar completamente.\nSi el display sigue mostrando \"E28\", contacta al Servicio de Atención al Cliente",
+            "diagnosis": "Se ha activado la protección contra el sobrecalentamiento de la cesta derecha de la freidora de aire.\nApaga y desconecta la freidora de la corriente y déjala enfriar completamente.\nSi el display sigue mostrando \"E28\", contacta al Servicio de Atención al Cliente",
             "user_symptom": "",
             "classification": "",
             "severity_label": ""
@@ -2058,7 +2058,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.975208+00:00"
+    "updated_at": "2026-09-17T16:30:45.026882+00:00"
   },
   {
     "canonical_slug": "cosori-caf-r901-aus-9-quart-double-air-fryer",
@@ -2308,7 +2308,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.976208+00:00"
+    "updated_at": "2026-09-17T16:30:45.027879+00:00"
   },
   {
     "canonical_slug": "cosori-caf-r901-aus-9-0-quart-dual-basket-air-fryer",
@@ -2335,25 +2335,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore del cestello sinistro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is an open circuit in the upper temperature sensor of ZONE 1. Contact Customer Service (see page 25)",
+            "diagnosis": "There is an open circuit in the upper temperature sensor of left baskt. Contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un circuit ouvert dans le capteur de température supérieur de la ZONE 1. Contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "Il y a un circuit ouvert dans le capteur de température supérieur de la panier gauche. Contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un circuito abierto en el sensor de temperatura superior de la ZONA 1. Contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Hay un circuito abierto en el sensor de temperatura superior de la cesta izquierda. Contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -2373,25 +2373,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 1. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore del cestello sinistro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is a short circuit in the upper temperature sensor of ZONE 1. Contact Customer Service (see page 25)",
+            "diagnosis": "There is a short circuit in the upper temperature sensor of left basket. Contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un court-circuit dans le capteur de température supérieur de la ZONE 1. Contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "Il y a un court-circuit dans le capteur de température supérieur de la panier gauche. Contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un cortocircuito en el sensor de temperatura superior de la ZONA 1. Contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Hay un cortocircuito en el sensor de temperatura superior de la cesta izquierda. Contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -2411,25 +2411,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "Si è attivata la protezione contro il surriscaldamento della ZONA 1 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
+            "diagnosis": "Si è attivata la protezione contro il surriscaldamento del cestello sinistro della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E3\", contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Ripristino Termico di Sicurezza",
             "severity_label": "Media"
           },
           "en": {
-            "diagnosis": "The air fryer's overheat protection in ZONE 1 has been activated.\nTurn off and unplug the air fryer and let it cool down completely.\nIf the display still shows \"E3\", contact Customer Service (see page 25)",
+            "diagnosis": "The air fryer's overheat protection in the left basket has been activated.\nTurn off and unplug the air fryer and let it cool down completely.\nIf the display still shows \"E3\", contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Safety Thermal Restoration",
             "severity_label": "Medium"
           },
           "fr": {
-            "diagnosis": "La protection contre la surchauffe de la ZONE 1 de la friteuse à air s'est activée.\nÉteignez et débranchez la friteuse et laissez-la refroidir complètement.\nSi l'écran continue d'afficher \"E3\", contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "La protection contre la surchauffe de la panier gauche de la friteuse à air s'est activée.\nÉteignez et débranchez la friteuse et laissez-la refroidir complètement.\nSi l'écran continue d'afficher \"E3\", contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Restauration Thermique de Sécurité",
             "severity_label": "Moyenne"
           },
           "es": {
-            "diagnosis": "Se ha activado la protección contra el sobrecalentamiento de la ZONA 1 de la freidora de aire.\nApaga y desconecta la freidora de la corriente y déjala enfriar completamente.\nSi el display sigue mostrando \"E3\", contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Se ha activado la protección contra el sobrecalentamiento de la cesta izquierda de la freidora de aire.\nApaga y desconecta la freidora de la corriente y déjala enfriar completamente.\nSi el display sigue mostrando \"E3\", contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Restablecimiento Térmico de Seguridad",
             "severity_label": "Media"
@@ -2449,25 +2449,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore del cestello sinistro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is an open circuit in the lower temperature sensor of ZONE 1. Contact Customer Service (see page 25)",
+            "diagnosis": "There is an open circuit in the lower temperature sensor of left basket. Contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un circuit ouvert dans le capteur de température inférieur de la ZONE 1. Contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "Il y a un circuit ouvert dans le capteur de température inférieur de la panier gauche. Contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un circuito abierto en el sensor de temperatura inferior de la ZONA 1. Contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Hay un circuito abierto en el sensor de temperatura inferior de la cesta izquierda. Contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -2487,25 +2487,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 1. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore del cestello sinistro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is a short circuit in the lower temperature sensor of ZONE 1. Contact Customer Service (see page 25)",
+            "diagnosis": "There is a short circuit in the lower temperature sensor of left basket. Contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un court-circuit dans le capteur de température inférieur de la ZONE 1. Contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "Il y a un court-circuit dans le capteur de température inférieur de la panier gauche. Contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un cortocircuito en el sensor de temperatura inferior de la ZONA 1. Contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Hay un cortocircuito en el sensor de temperatura inferior de la cesta izquierda. Contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -2525,25 +2525,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un circuito aperto nel sensore di temperatura superiore del cestello destro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is an open circuit in the upper temperature sensor of ZONE 2. Contact Customer Service (see page 25)",
+            "diagnosis": "There is an open circuit in the upper temperature sensor of right basket. Contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un circuit ouvert dans le capteur de température supérieur de la ZONE 2. Contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "Il y a un circuit ouvert dans le capteur de température supérieur de la panier droit. Contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un circuito abierto en el sensor de temperatura superior de la ZONA 2. Contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Hay un circuito abierto en el sensor de temperatura superior de la cesta derecha. Contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -2563,25 +2563,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore della ZONA 2. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un cortocircuito nel sensore di temperatura superiore del cestello destro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is a short circuit in the upper temperature sensor of ZONE 2. Contact Customer Service (see page 25)",
+            "diagnosis": "There is a short circuit in the upper temperature sensor of right basket. Contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un court-circuit dans le capteur de température supérieur de la ZONE 2. Contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "Il y a un court-circuit dans le capteur de température supérieur de la panier droit. Contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un cortocircuito en el sensor de temperatura superior de la ZONA 2. Contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Hay un cortocircuito en el sensor de temperatura superior de la cesta derecha. Contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -2601,25 +2601,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un circuito aperto nel sensore di temperatura inferiore del cestello destro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is an open circuit in the lower temperature sensor of ZONE 2. Contact Customer Service (see page 25)",
+            "diagnosis": "There is an open circuit in the lower temperature sensor of right basket. Contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un circuit ouvert dans le capteur de température inférieur de la ZONE 2. Contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "Il y a un circuit ouvert dans le capteur de température inférieur de la panier droit. Contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un circuito abierto en el sensor de temperatura inferior de la ZONA 2. Contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Hay un circuito abierto en el sensor de temperatura inferior de la cesta derecha. Contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -2639,25 +2639,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore della ZONA 2. Contatta l'Assistenza Clienti",
+            "diagnosis": "C'è un cortocircuito nel sensore di temperatura inferiore della del cestello destro. Contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Riparazione Hardware",
             "severity_label": "Alta"
           },
           "en": {
-            "diagnosis": "There is a short circuit in the lower temperature sensor of ZONE 2. Contact Customer Service (see page 25)",
+            "diagnosis": "There is a short circuit in the lower temperature sensor of right basket. Contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Hardware Repair",
             "severity_label": "High"
           },
           "fr": {
-            "diagnosis": "Il y a un court-circuit dans le capteur de température inférieur de la ZONE 2. Contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "Il y a un court-circuit dans le capteur de température inférieur de la panier droit. Contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Réparation Matérielle",
             "severity_label": "Haute"
           },
           "es": {
-            "diagnosis": "Hay un cortocircuito en el sensor de temperatura inferior de la ZONA 2. Contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Hay un cortocircuito en el sensor de temperatura inferior de la cesta derecha. Contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Reparación de Hardware",
             "severity_label": "Alta"
@@ -2677,25 +2677,25 @@
         "aliases": [],
         "localized": {
           "it": {
-            "diagnosis": "Si è attivata la protezione contro il surriscaldamento della ZONA 2 della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E28\", contatta l'Assistenza Clienti",
+            "diagnosis": "Si è attivata la protezione contro il surriscaldamento della del cestello destro della friggitrice ad aria. Spegni e scollega la friggitrice dalla corrente e lasciala raffreddare completamente. Se il display continua a mostrare \"E28\", contatta l'Assistenza Clienti",
             "user_symptom": "",
             "classification": "Ripristino Termico di Sicurezza",
             "severity_label": "Media"
           },
           "en": {
-            "diagnosis": "The air fryer's overheat protection in ZONE 2 has been activated.\nTurn off and unplug the air fryer and let it cool down completely.\nIf the display still shows \"E28\", contact Customer Service (see page 25)",
+            "diagnosis": "The air fryer's overheat protection in right basket has been activated.\nTurn off and unplug the air fryer and let it cool down completely.\nIf the display still shows \"E28\", contact Customer Service (see page 25)",
             "user_symptom": "",
             "classification": "Safety Thermal Restoration",
             "severity_label": "Medium"
           },
           "fr": {
-            "diagnosis": "La protection contre la surchauffe de la ZONE 2 de la friteuse à air s'est activée.\nÉteignez et débranchez la friteuse et laissez-la refroidir complètement.\nSi l'écran continue d'afficher \"E28\", contactez le Service Après-Vente (voir page 25)",
+            "diagnosis": "La protection contre la surchauffe de la panier droit de la friteuse à air s'est activée.\nÉteignez et débranchez la friteuse et laissez-la refroidir complètement.\nSi l'écran continue d'afficher \"E28\", contactez le Service Après-Vente (voir page 25)",
             "user_symptom": "",
             "classification": "Restauration Thermique de Sécurité",
             "severity_label": "Moyenne"
           },
           "es": {
-            "diagnosis": "Se ha activado la protección contra el sobrecalentamiento de la ZONA 2 de la freidora de aire.\nApaga y desconecta la freidora de la corriente y déjala enfriar completamente.\nSi el display sigue mostrando \"E28\", contacta al Servicio de Atención al Cliente (véase página 25)",
+            "diagnosis": "Se ha activado la protección contra el sobrecalentamiento de la cesta derecha de la freidora de aire.\nApaga y desconecta la freidora de la corriente y déjala enfriar completamente.\nSi el display sigue mostrando \"E28\", contacta al Servicio de Atención al Cliente (véase página 25)",
             "user_symptom": "",
             "classification": "Restablecimiento Térmico de Seguridad",
             "severity_label": "Media"
@@ -2710,7 +2710,7 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.976208+00:00"
+    "updated_at": "2026-09-17T16:30:45.028969+00:00"
   },
   {
     "canonical_slug": "cosori-caf-l501-kus",
@@ -2884,6 +2884,6 @@
         }
       }
     ],
-    "updated_at": "2026-09-17T15:36:20.977209+00:00"
+    "updated_at": "2026-09-17T16:30:45.029884+00:00"
   }
 ]

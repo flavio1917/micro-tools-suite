@@ -22,6 +22,8 @@ const allBrandModels = searchIndex.filter(m => m.brand_slug === brand.toLowerCas
 const aggregatedMessages = aggregateBrandMessages(brandModels);
 const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
 
+import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
+
 ---
 <div class="af-brand-overview bg-white dark:bg-[#151b2b] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 sm:p-8 mb-6">
   
@@ -113,17 +115,29 @@ const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
       </h3>
       
       {aggregatedMessages.length > 0 ? (
-        <div class="space-y-4">
-          {aggregatedMessages.map(msg => (
-            <ErrorCodeCard 
-              error={msg} 
-              sourceModelName={msg.primaryDisplayName || msg.sourceModelName} 
-              sourceModelSpec={msg.sourceModelSpec}
-              modelCanonicalSlug={msg.sourceModelId}
-              lang={lang}
-            />
-          ))}
-        </div>
+        <>
+          <div class="flex flex-wrap gap-2 mb-6">
+            {aggregatedMessages.map(msg => {
+              const anchorId = toSafeAnchorId('error', msg.code);
+              return (
+                <a href={`#${anchorId}`} class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-bold border border-slate-200 dark:border-slate-700 transition-colors">
+                  {msg.display_code || msg.code}
+                </a>
+              );
+            })}
+          </div>
+          <div class="space-y-4">
+            {aggregatedMessages.map(msg => (
+              <ErrorCodeCard 
+                error={msg} 
+                sourceModelName={msg.primaryDisplayName || msg.sourceModelName} 
+                sourceModelSpec={msg.sourceModelSpec}
+                modelCanonicalSlug={msg.sourceModelId}
+                lang={lang}
+              />
+            ))}
+          </div>
+        </>
       ) : (
         <p class="text-slate-500 dark:text-slate-400 italic">{t.noCodesDesc.replace('{brand}', brand)}</p>
       )}

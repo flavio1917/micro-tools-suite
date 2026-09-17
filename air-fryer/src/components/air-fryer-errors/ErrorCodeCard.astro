@@ -11,9 +11,10 @@ export interface Props {
   sourceModelSpec?: string;
   modelCanonicalSlug?: string;
   brandDisplayName?: string;
+  hideModelInfo?: boolean;
 }
 
-const { error, model, lang, brandDisplayName, sourceModelName: overrideModelName, sourceModelSpec: overrideModelSpec, modelCanonicalSlug: overrideSlug } = Astro.props;
+const { error, model, lang, brandDisplayName, hideModelInfo = false, sourceModelName: overrideModelName, sourceModelSpec: overrideModelSpec, modelCanonicalSlug: overrideSlug } = Astro.props;
 
 const modelCanonicalSlug = overrideSlug || model?.canonical_slug || model?.id || '';
 const loc = getLocalizedErrorContent(lang, modelCanonicalSlug, error);
@@ -55,21 +56,29 @@ const manualUrl = error.source?.manual_url || error.manual_url;
       <SeverityBadge severityLevel={loc.severity} color={loc.color} severityLabel={loc.severityLabel} lang={lang} />
     </div>
 
-    {hasModelInfo ? (
-      <div class="flex flex-col gap-1 mt-2">
+    {hasModelInfo && !hideModelInfo ? (
+      <div class="flex flex-col gap-3 mt-4">
         {sourceModelName && (
-          <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-1 rounded border border-slate-200 dark:border-slate-700 w-max">
-            {getUiTranslation(lang, 'Modello')}: {sourceModelName}
-          </span>
+          <div>
+            <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{getUiTranslation(lang, 'Modello')}</span>
+            <ul class="list-disc list-inside text-sm font-medium text-slate-700 dark:text-slate-300 mt-1">
+              <li>{sourceModelName}</li>
+            </ul>
+          </div>
         )}
         {sourceModelSpec && (
-          <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-1 rounded border border-slate-200 dark:border-slate-700 w-max">
-            {getUiTranslation(lang, 'Model Spec')}: {sourceModelSpec}
-          </span>
+          <div>
+            <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">{getUiTranslation(lang, 'Model Spec')}</span>
+            <ul class="list-disc list-inside text-sm font-medium text-slate-700 dark:text-slate-300 mt-1">
+              {sourceModelSpec.split(/\s*\/\s*/).map(spec => (
+                <li>{spec.trim()}</li>
+              ))}
+            </ul>
+          </div>
         )}
       </div>
-    ) : brandDisplayName ? (
-      <div class="flex flex-col gap-1 mt-2">
+    ) : brandDisplayName && !hideModelInfo ? (
+      <div class="flex flex-col gap-1 mt-4">
         <span class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider bg-white dark:bg-slate-800 px-2 py-1 rounded border border-slate-200 dark:border-slate-700 w-max">
           {brandDisplayName}
         </span>
