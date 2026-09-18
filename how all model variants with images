@@ -1,0 +1,23 @@
+ ...af-dc601-kus-turboblaze-60-quart-air-fryer.webp | Bin [31m0[m -> [32m65185[m bytes
+ ...01-kus-turboblaze-60-quart-smart-air-fryer.webp | Bin [31m0[m -> [32m72472[m bytes
+ .../air-fryers/cosori/cosori-caf-l501-kus.webp     | Bin [31m0[m -> [32m67147[m bytes
+ .../images/air-fryers/cosori/cosori-caf-li211.webp | Bin [31m0[m -> [32m57309[m bytes
+ .../air-fryers/cosori/cosori-caf-p583s-kus.webp    | Bin [31m0[m -> [32m59335[m bytes
+ ...sori-caf-r901-aus-9-quart-double-air-fryer.webp | Bin [31m0[m -> [32m83193[m bytes
+ .../air-fryers/cosori/cosori-caf-se601s-cus.webp   | Bin [31m0[m -> [32m71176[m bytes
+ .../air-fryers/cosori/cosori-caf-tf901-kus.webp    | Bin [31m0[m -> [32m83193[m bytes
+ .../images/air-fryers/philips/philips-na15x.webp   | Bin [31m0[m -> [32m118472[m bytes
+ .../air-fryers/philips/philips-na220-na221.webp    | Bin [31m0[m -> [32m118472[m bytes
+ .../images/air-fryers/philips/philips-na351.webp   | Bin [31m0[m -> [32m65313[m bytes
+ .../images/air-fryers/philips/philips-na555.webp   | Bin [31m0[m -> [32m128045[m bytes
+ air-fryer/scripts/audit-images.js                  | 162 [32m++++++++++++++++++[m
+ air-fryer/scripts/image-mapping-report.json        | 188 [32m+++++++++++++++++++++[m
+ .../air-fryer-errors/AirFryerDatabase.astro        |  51 [32m++++++[m
+ .../air-fryer-errors/AirFryerModelCard.astro       |  49 [32m+++[m[31m---[m
+ .../air-fryer-errors/BrandErrorOverview.astro      |  56 [32m++++++[m
+ .../air-fryer-errors/DiagnosticDisclaimer.astro    |  32 [32m++++[m
+ .../air-fryer-errors/DiagnosticSearch.astro        | 105 [32m+++++++++[m[31m---[m
+ air-fryer/src/data/i18n/errors-ui.ts               |  56 [32m+++++[m[31m-[m
+ air-fryer/src/lib/air-fryer-search-index.ts        |  75 [32m++++++[m[31m--[m
+ air-fryer/src/lib/air-fryer-search.ts              |  43 [32m+++[m[31m--[m
+ 22 files changed, 745 insertions(+), 72 deletions(-)

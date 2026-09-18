@@ -29,3 +29,8 @@ credenziali-google.json
 
 # Script e utility locali (NON caricare su Git)
 air-fryer/nodeJS/
+
+# Office temporary files
+~$*.xlsx
+~$*.doc*
+~$*.ppt*
