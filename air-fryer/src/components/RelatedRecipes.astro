@@ -1,0 +1,72 @@
+---
+import RecipeCard from './recipes/RecipeCard.astro';
+import recipesIt from '../data/recipes-it.json';
+import recipesEn from '../data/recipes-en.json';
+import recipesEs from '../data/recipes-es.json';
+import recipesFr from '../data/recipes-fr.json';
+
+export interface Props {
+  currentRecipe: any;
+  lang: string;
+}
+
+const { currentRecipe, lang } = Astro.props;
+
+const datasets = {
+  it: recipesIt,
+  en: recipesEn,
+  es: recipesEs,
+  fr: recipesFr
+};
+
+const allRecipes = datasets[lang as keyof typeof datasets] || recipesIt;
+
+const currentKeywords = currentRecipe.keywords || [];
+let related: any[] = [];
+
+// Escludere la ricetta corrente
+const others = allRecipes.filter((r: any) => r.slug !== currentRecipe.slug);
+
+// Priority 1: match di almeno 1 keyword
+const withCommon = others.map((r: any) => {
+  const rKeywords = r.keywords || [];
+  const commonCount = rKeywords.filter((k: string) => currentKeywords.includes(k)).length;
+  return { recipe: r, commonCount };
+}).filter((x: any) => x.commonCount > 0)
+  .sort((a: any, b: any) => {
+    if (b.commonCount !== a.commonCount) return b.commonCount - a.commonCount;
+    return a.recipe.slug.localeCompare(b.recipe.slug);
+  });
+
+related = withCommon.map((x: any) => x.recipe);
+
+// Fill with remaining sorted deterministically if < 4
+if (related.length < 4) {
+  const remaining = others
+    .filter((r: any) => !related.some(rel => rel.slug === r.slug))
+    .sort((a: any, b: any) => a.slug.localeCompare(b.slug));
+  
+  related = [...related, ...remaining].slice(0, 4);
+} else {
+  related = related.slice(0, 4);
+}
+
+const titles = {
+  it: "Ricette correlate",
+  en: "Related recipes",
+  fr: "Recettes similaires",
+  es: "Recetas relacionadas"
+};
+const title = titles[lang as keyof typeof titles] || titles.it;
+---
+
+{related.length > 0 && (
+  <section class="max-w-5xl mx-auto pt-8 border-t border-slate-200 dark:border-slate-800 hide-on-print transition-colors" aria-labelledby="related-title">
+    <h3 id="related-title" class="text-2xl font-bold text-slate-900 dark:text-white mb-6 text-center md:text-left transition-colors">{title}</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      {related.map((r) => (
+        <RecipeCard recipe={r} lang={lang} />
+      ))}
+    </div>
+  </section>
+)}
