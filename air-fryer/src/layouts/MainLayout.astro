@@ -229,14 +229,16 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
     </style>
 
     <script is:inline>
-      (() => {
+      function applyStoredTheme() {
         try {
           const theme = localStorage.getItem("crispissimo-theme") || "light";
           const isDark = theme === "dark";
           document.documentElement.classList.toggle("dark", isDark);
           document.documentElement.setAttribute("data-theme", theme);
         } catch (e) {}
-      })();
+      }
+      applyStoredTheme();
+      document.addEventListener('astro:after-swap', applyStoredTheme);
     </script>
   </head>
 
@@ -252,9 +254,6 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
           <nav class="hidden items-center gap-6 md:flex">
             <a href={navRoutes.home} class={`${baseLinkStyle} ${isActive(navRoutes.home) ? activeStyle : inactiveStyle}`}>
               {currentLabels.recipes}
-            </a>
-            <a href={navRoutes.categories} class={`${baseLinkStyle} ${isActive(navRoutes.categories) ? activeStyle : inactiveStyle}`}>
-              {currentLabels.categories}
             </a>
             <a href={navRoutes.converter} class={`${baseLinkStyle} ${isActive(navRoutes.converter) ? activeStyle : inactiveStyle}`}>
               {currentLabels.converter}
@@ -298,9 +297,6 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
           <a href={navRoutes.home} class={`${baseLinkStyle} ${isActive(navRoutes.home) ? activeStyle : inactiveStyle}`}>
             {currentLabels.recipes}
           </a>
-          <a href={navRoutes.categories} class={`${baseLinkStyle} ${isActive(navRoutes.categories) ? activeStyle : inactiveStyle}`}>
-            {currentLabels.categories}
-          </a>
           <a href={navRoutes.converter} class={`${baseLinkStyle} ${isActive(navRoutes.converter) ? activeStyle : inactiveStyle}`}>
             {currentLabels.converter}
           </a>
@@ -326,7 +322,6 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
 
           <nav class="flex flex-wrap gap-x-5 gap-y-3 text-sm font-semibold">
             <a href={navRoutes.home} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.recipes}</a>
-            <a href={navRoutes.categories} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.categories}</a>
             <a href={navRoutes.converter} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.converter}</a>
             <a href={navRoutes.tools} class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.tools}</a>
             <a href="/privacy" class="text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200 dark:hover:text-orange-400">{currentLabels.privacy}</a>
