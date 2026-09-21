@@ -17,20 +17,20 @@ const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
 // DIZIONARIO SEO SPECIFICO (Anti-Boilerplate)
 const seoData = {
   it: {
-    title: "Come Riscaldare Avanzi in Friggitrice ad Aria | Tempi e Gradi",
-    description: "Addio cibo molliccio al microonde! Scopri i tempi e gradi esatti per far tornare croccanti i tuoi avanzi: pizza, patatine, pollo e fritti come appena fatti."
+    title: "Come Riscaldare Cibo in Friggitrice ad Aria: Tempi e Gradi",
+    description: "Tempi e temperature per riscaldare pizza, pasta, pollo, fritti e altri avanzi in friggitrice ad aria e recuperarne la croccantezza."
   },
   en: {
-    title: "How to Reheat Leftovers in Air Fryer | Time and Temp Guide",
-    description: "Say goodbye to soggy microwave food! Discover the exact times and temperatures to bring back the crunch to your leftovers: pizza, fries, chicken, and more."
+    title: "How to Reheat Food in an Air Fryer: Time and Temperature",
+    description: "Reheat pizza, pasta, chicken, fried food and more in an air fryer with recommended times and temperatures for crispy leftovers."
   },
   es: {
-    title: "Cómo Recalentar Sobras en Freidora de Aire | Tiempos y Grados",
-    description: "¡Adiós comida blanda del microondas! Descubre los tiempos y grados exactos para devolver el crujiente a tus sobras: pizza, patatas, pollo y fritos."
+    title: "Cómo Recalentar Comida en Freidora de Aire: Tiempos y Temperaturas",
+    description: "Recalienta pizza, pasta, pollo, fritos y más en freidora de aire con tiempos y temperaturas orientativos para recuperar el crujiente."
   },
   fr: {
-    title: "Comment Réchauffer les Restes à la Friteuse à Air | Temps",
-    description: "Fini la nourriture molle au micro-ondes ! Découvrez les temps et températures exacts pour redonner du croustillant à vos restes de pizza, frites et poulet."
+    title: "Réchauffer des Aliments à l’Air Fryer : Temps et Températures",
+    description: "Réchauffez pizza, pâtes, poulet, fritures et plus encore à l’air fryer avec des temps et températures indicatifs pour retrouver du croustillant."
   }
 };
 
@@ -45,86 +45,94 @@ const backBtnLabel = {
 
 const content = {
   it: {
-    h1: "Rianimatore di Avanzi",
-    desc: "Il microonde li rende gommosi, il forno ci mette troppo. Seleziona la categoria e scopri tempi e gradi perfetti per far tornare croccante il cibo di ieri.",
+    h1: "Come riscaldare il cibo in friggitrice ad aria",
+    desc: "Il tuo rianimatore di avanzi. Seleziona il cibo e trova tempi e temperature indicativi per recuperare croccantezza e calore.",
     quickNav: "Vai a:",
-    editorialH2: "La Scienza del Rianimatore: Perché funziona?",
-    editorialText: "Riscaldare il cibo nel microonde agisce sulle molecole d'acqua, bollendo letteralmente il cibo dall'interno (ecco perché la pizza diventa gommosa). La friggitrice ad aria, invece, utilizza la <strong>convezione termica a secco</strong>. Soffiando aria calda ad alta velocità, fa evaporare l'umidità in eccesso accumulata in frigo e <strong>riattiva la reazione di Maillard</strong> (la crosticina) in soli 3 o 4 minuti, ridando croccantezza senza asciugare il cuore del prodotto.",
-    fsTitle: "3 Regole d'Oro per Riscaldare:",
+    editorialH2: "La scienza del riscaldamento: perché funziona?",
+    editorialText: "L’aria calda circolante aiuta a ridurre l’umidità superficiale accumulata in frigorifero e a recuperare parte della croccantezza in pochi minuti, soprattutto su pizza, fritti, pane e impanati.",
+    safetyNoteTitle: "⚠️ Nota di sicurezza",
+    safetyNoteText: "Tempi e temperature sono indicativi. Per avanzi di carne, pollo, pesce e piatti composti, verifica che siano caldi in modo uniforme all’interno; per la massima sicurezza usa un termometro da cucina e controlla che la temperatura interna raggiunga 74°C.",
+    fsTitle: "3 regole d’oro per riscaldare:",
     fsList: [
-      "<strong>Abbassa sempre la temperatura:</strong> Usa 20-30°C in meno rispetto alla cottura originale per non bruciare l'esterno.",
-      "<strong>Niente carta forno:</strong> Blocca il flusso d'aria inferiore, lasciando il fondo del cibo umido e molliccio.",
-      "<strong>Aggiungi umidità ai lievitati:</strong> Spruzza un velo d'acqua su pane e pizza prima di infornare per ridare elasticità alla mollica."
+      "<strong>Regola la temperatura in base al cibo:</strong> per molti avanzi è utile iniziare con una temperatura moderata e aumentarla solo se serve più croccantezza. Controlla sempre che l’interno sia caldo e adatta il tempo alla quantità e allo spessore.",
+      "<strong>Non bloccare il flusso d’aria:</strong> evita fogli interi di carta forno o alluminio che coprono tutta la base. Se usi l’alluminio per coprire un alimento, fissalo bene e non lasciarlo libero durante il preriscaldamento.",
+      "<strong>Aggiungi un po’ di umidità:</strong> se pane o pizza sono asciutti, spruzza poca acqua sulla superficie prima di riscaldarli."
     ],
+    ui: { temp: "Temp.", time: "Tempo", tip: "💡 Consiglio:" },
     categories: [
       {
-        id: "lievitati", icon: "🍕", title: "Pizza, Pane & Rustici",
+        id: "lievitati", icon: "🍕", title: "Pizza, pane e rustici",
         items: [
-          { emoji: "🍕", name: "Pizza (Fette)", temp: "170°C", time: "3-4 min", tip: "Aggiungi qualche goccia d'acqua sulla crosta prima di infornare per evitare che si secchi troppo." },
-          { emoji: "🥖", name: "Pane Raffermo", temp: "180°C", time: "3-4 min", tip: "Passalo sotto il rubinetto dell'acqua per 1 secondo prima di infornarlo: tornerà fragrante come appena sfornato." },
-          { emoji: "🥐", name: "Cornetti e Brioche", temp: "150°C", time: "2-3 min", tip: "Attenzione ai ripieni (crema/cioccolato) che diventano incandescenti in fretta!" },
-          { emoji: "🥧", name: "Torta Salata / Quiche", temp: "160°C", time: "5-7 min", tip: "La bassa temperatura assicura che il cuore si scaldi prima che la crosta bruci." },
-          { emoji: "🥟", name: "Rustici di Sfoglia", temp: "170°C", time: "4-5 min", tip: "La pasta sfoglia rinasce letteralmente, non serve aggiungere olio." },
+          { emoji: "🍕", name: "Pizza (Fette)", temp: "170°C", time: "3-4 min", tip: "Aggiungi qualche goccia d’acqua sulla crosta prima di inserirla nella friggitrice per evitare che si secchi troppo." },
+          { emoji: "🥖", name: "Pane, panini e focaccia", temp: "160-170°C", time: "2-4 min", tip: "Se il pane o la focaccia sono asciutti, inumidiscili leggermente; attenzione ai panini farciti che richiedono più tempo." },
+          { emoji: "🥐", name: "Cornetti e brioche", temp: "150°C", time: "2-3 min", tip: "Attenzione ai ripieni (crema/cioccolato) che diventano incandescenti in fretta!" },
+          { emoji: "🥧", name: "Torta salata / quiche", temp: "160°C", time: "5-7 min", tip: "La bassa temperatura assicura che l’interno si scaldi prima che la crosta bruci." },
+          { emoji: "🥟", name: "Rustici di Sfoglia", temp: "170°C", time: "4-5 min", tip: "La pasta sfoglia può recuperare croccantezza senza aggiungere olio." },
           { emoji: "🥞", name: "Pancake e Muffin", temp: "150°C", time: "2-3 min", tip: "Se non vuoi far scurire la superficie, coprili leggermente con carta stagnola." }
         ]
       },
       {
-        id: "carne", icon: "🥩", title: "Carne & Pollo",
+        id: "carne", icon: "🥩", title: "Carne e pollo",
         items: [
-          { emoji: "🥩", name: "Carne / Bistecca", temp: "150°C", time: "3-4 min", tip: "Temperatura più bassa per non stracuocere l'interno. Se era al sangue, fermati a 3 minuti." },
-          { emoji: "🍗", name: "Pollo Arrosto (Pezzi)", temp: "170°C", time: "5-6 min", tip: "Se la pelle è diventata molliccia in frigo, tornerà super croccante." },
-          { emoji: "🍔", name: "Hamburger (Solo carne)", temp: "160°C", time: "4-5 min", tip: "Se ha il formaggio sopra, mettilo solo nell'ultimo minuto per farlo fondere senza bruciarlo." },
-          { emoji: "🧆", name: "Polpette al Sugo", temp: "160°C", time: "5-7 min", tip: "Tagliale a metà se sono molto grandi, per farle scaldare bene al cuore." },
-          { emoji: "🥩", name: "Cotoletta Milanese", temp: "170°C", time: "3-4 min", tip: "Spruzza un velo d'olio se la panatura sembra troppo secca dal giorno prima." },
-          { emoji: "🍢", name: "Arrosticini / Spiedini", temp: "180°C", time: "3-4 min", tip: "Tieni d'occhio il tempo per evitare di prosciugare i preziosi succhi della carne." },
+          { emoji: "🥩", name: "Carne / Bistecca", temp: "150°C", time: "3-4 min", tip: "Temperatura più bassa per non stracuocere l’interno. Se era al sangue, fermati a 3 minuti." },
+          { emoji: "🍗", name: "Pollo arrosto, cosce e pollo allo spiedo", temp: "170°C", time: "5-6 min", tip: "Disponi i pezzi in un solo strato, girali a metà cottura e verifica che siano ben caldi anche all’interno, soprattutto vicino all’osso. I tempi sono indicativi." },
+          { emoji: "🍔", name: "Hamburger (Solo carne)", temp: "160°C", time: "4-5 min", tip: "Se ha il formaggio sopra, mettilo solo nell’ultimo minuto per farlo fondere senza bruciarlo." },
+          { emoji: "🧆", name: "Polpette al Sugo", temp: "160°C", time: "5-7 min", tip: "Tagliale a metà se sono molto grandi, per farle scaldare bene all’interno." },
+          { emoji: "🥩", name: "Cotoletta Milanese", temp: "170°C", time: "3-4 min", tip: "Spruzza un velo d’olio se la panatura sembra troppo secca dal giorno prima." },
+          { emoji: "🍢", name: "Arrosticini / Spiedini", temp: "180°C", time: "3-4 min", tip: "Tieni d’occhio il tempo per evitare di asciugare la carne. I tempi possono variare in base allo spessore e alla temperatura iniziale." },
           { emoji: "🌭", name: "Salsiccia Cotta", temp: "160°C", time: "3-4 min", tip: "Essendo già cotta, NON bucarla, altrimenti perderà tutti i succhi interni diventando stopposa." }
         ]
       },
       {
-        id: "pesce", icon: "🐟", title: "Pesce & Fritti",
+        id: "pesce", icon: "🐟", title: "Pesce e fritti",
         items: [
-          { emoji: "🍤", name: "Frittura Mista (Calamari)", temp: "190°C", time: "3-5 min", tip: "Usa una temperatura alta per ridare lo shock termico alla panatura senza asciugare l'interno." },
-          { emoji: "🐟", name: "Pesce (Forno o Fritto)", temp: "160°C", time: "4-5 min", tip: "Metti un foglio di alluminio forato sotto se c'è della salsa per non sporcare il cestello." }
+          { emoji: "🍤", name: "Pesce fritto e frittura di pesce", temp: "180°C", time: "3-5 min", tip: "Disponi il pesce in un solo strato e controlla dopo circa 3 minuti per evitare di asciugarlo troppo." },
+          { emoji: "🐟", name: "Pesce al forno", temp: "160°C", time: "4-5 min", tip: "Riscaldalo in un contenitore adatto e controlla che sia ben caldo all’interno senza asciugarlo." }
         ]
       },
       {
-        id: "primi", icon: "🍝", title: "Primi & Piatti Unici",
+        id: "primi", icon: "🍝", title: "Primi e piatti unici",
         items: [
-          { emoji: "🍝", name: "Pasta al Forno / Lasagne", temp: "160°C", time: "6-8 min", tip: "Mettila in una teglietta di silicone o alluminio per non far scivolare il condimento sul fondo." },
-          { emoji: "🍳", name: "Frittata / Omelette", temp: "150°C", time: "4-5 min", tip: "Scalda delicatamente a bassa temperatura per non far diventare l'uovo gommoso." },
+          { emoji: "🍝", name: "Pasta al forno / lasagne", temp: "160°C", time: "6-8 min", tip: "Mettila in un contenitore adatto alla friggitrice per mantenere il condimento e favorire un riscaldamento uniforme." },
+          { emoji: "🍝", name: "Pasta già cotta / Pasta condita", temp: "160°C", time: "4-6 min", tip: "Trasferiscila in una teglietta adatta alla friggitrice e aggiungi poco sugo o un cucchiaio d’acqua se tende ad asciugarsi. Mescola a metà tempo." },
+          { emoji: "🍳", name: "Frittata / Omelette", temp: "150°C", time: "4-5 min", tip: "Scalda delicatamente a bassa temperatura per non far diventare l’uovo gommoso." },
           { emoji: "🌯", name: "Kebab / Piadina", temp: "170°C", time: "4-5 min", tip: "Avvolgilo in carta stagnola se lo vuoi morbido, lascialo libero se lo vuoi croccante." }
         ]
       },
       {
-        id: "contorni", icon: "🍟", title: "Contorni & Snack",
+        id: "contorni", icon: "🍟", title: "Contorni e snack",
         items: [
-          { emoji: "🍟", name: "Patatine Fritte", temp: "180°C", time: "4-5 min", tip: "Scuoti il cestello a metà cottura e aggiungi un piccolo puff di olio spray." },
-          { emoji: "🥦", name: "Verdure Grigliate", temp: "160°C", time: "4-5 min", tip: "Aggiungi un cucchiaino d'acqua sul fondo del cestello per creare vapore e non seccarle." }
+          { emoji: "🍟", name: "Patatine fritte", temp: "180°C", time: "4-5 min", tip: "Scuoti il cestello a metà cottura e aggiungi una leggera spruzzata d’olio, se necessario." },
+          { emoji: "🍘", name: "Arancini, supplì e crocchette", temp: "180°C", time: "5-7 min", tip: "Disponili in un solo strato e controlla che siano ben caldi all’interno prima di servirli." },
+          { emoji: "🥦", name: "Verdure grigliate", temp: "160°C", time: "4-5 min", tip: "Aggiungi un cucchiaino d’acqua sul fondo del cestello per creare vapore e non seccarle." }
         ]
       }
     ]
   },
   en: {
-    h1: "The Leftover Reviver",
-    desc: "The microwave makes them chewy. Select a category and discover the perfect times and temperatures to bring back the crispiness.",
+    h1: "How to Reheat Food in an Air Fryer",
+    desc: "Your leftover reviver. Choose your food and find recommended times and temperatures to bring back heat and crispiness.",
     quickNav: "Jump to:",
-    editorialH2: "The Science of Reviving: Why it works?",
-    editorialText: "Reheating food in the microwave affects water molecules, literally boiling the food from the inside (which is why pizza gets rubbery). The air fryer, on the other hand, uses <strong>dry thermal convection</strong>. By blowing hot air at high speeds, it evaporates the excess moisture accumulated in the fridge and <strong>reactivates the Maillard reaction</strong> (the crust) in just 3 or 4 minutes, restoring crispiness without drying out the core.",
+    editorialH2: "Why Air Fryers Help Reheat Food",
+    editorialText: "Circulating hot air helps reduce the surface moisture that builds up in the fridge and restores some crispiness in just a few minutes, especially for pizza, fried food, bread and breaded dishes.",
+    safetyNoteTitle: "⚠️ Food safety note",
+    safetyNoteText: "Times and temperatures are indicative. For leftover meat, poultry, fish and mixed dishes, make sure they are heated evenly and are hot all the way through; for maximum food safety, use a food thermometer and check that the internal temperature reaches 74°C / 165°F.",
     fsTitle: "3 Golden Rules for Reheating:",
     fsList: [
-      "<strong>Always lower the temperature:</strong> Use 20-30°C (35-50°F) less than the original cooking temp to avoid burning the outside.",
-      "<strong>No parchment paper:</strong> It blocks the bottom airflow, leaving the underside of your food wet and soggy.",
-      "<strong>Add moisture to doughs:</strong> Spray a little water on bread and pizza before cooking to restore elasticity to the crumb."
+      "<strong>Adjust the temperature to the food:</strong> for many leftovers, start at a moderate temperature and increase it only if you need more crispiness. Check that the food is hot all the way through and adjust the time to the amount and thickness.",
+      "<strong>Do not block the airflow:</strong> avoid full sheets of parchment paper or foil covering the entire base. If you use foil to cover food, secure it properly and never leave it loose during preheating.",
+      "<strong>Add a little moisture:</strong> if bread or pizza is dry, spray a small amount of water on the surface before reheating."
     ],
+    ui: { temp: "Temp.", time: "Time", tip: "💡 Tip:" },
     categories: [
       {
         id: "lievitati", icon: "🍕", title: "Pizza, Bread & Pastries",
         items: [
           { emoji: "🍕", name: "Pizza Slices", temp: "340°F", time: "3-4 min", tip: "Add a few drops of water to the crust before air frying to prevent it from drying out." },
-          { emoji: "🥖", name: "Stale Bread", temp: "360°F", time: "3-4 min", tip: "Run it under the tap for 1 second before cooking: it will steam and revive perfectly." },
+          { emoji: "🥖", name: "Bread, Rolls & Focaccia", temp: "320-340°F", time: "2-4 min", tip: "If the bread or focaccia is dry, moisten it slightly; be careful with filled rolls which require more time." },
           { emoji: "🥐", name: "Croissants & Pastries", temp: "300°F", time: "2-3 min", tip: "Be careful with fillings (cream/chocolate) as they get molten hot very quickly!" },
-          { emoji: "🥧", name: "Quiche / Savory Pie", temp: "320°F", time: "5-7 min", tip: "Low temp ensures the center warms up before the crust burns." },
-          { emoji: "🥟", name: "Puff Pastry Snacks", temp: "340°F", time: "4-5 min", tip: "Puff pastry revives beautifully, no extra oil needed." },
+          { emoji: "🥧", name: "Quiche / Savory Pie", temp: "320°F", time: "5-7 min", tip: "Use a lower temperature so the inside warms up before the crust burns." },
+          { emoji: "🥟", name: "Puff Pastry Snacks", temp: "340°F", time: "4-5 min", tip: "Puff pastry can regain some crispiness without adding oil." },
           { emoji: "🥞", name: "Pancakes & Muffins", temp: "300°F", time: "2-3 min", tip: "If you don't want the top to brown, cover lightly with foil." }
         ]
       },
@@ -132,25 +140,26 @@ const content = {
         id: "carne", icon: "🥩", title: "Meat & Poultry",
         items: [
           { emoji: "🥩", name: "Steak / Meat", temp: "300°F", time: "3-4 min", tip: "Keep the temp lower to avoid overcooking. If it was rare, stop at 3 minutes." },
-          { emoji: "🍗", name: "Roast Chicken", temp: "340°F", time: "5-6 min", tip: "If the skin got soggy in the fridge, this will make it super crispy again." },
+          { emoji: "🍗", name: "Roast Chicken, Chicken Legs & Rotisserie Chicken", temp: "340°F", time: "5-6 min", tip: "Arrange the pieces in a single layer, turn halfway through and check they are piping hot near the bone. Times are indicative." },
           { emoji: "🍔", name: "Hamburger Patties", temp: "320°F", time: "4-5 min", tip: "If it has cheese on top, add it only in the last minute to melt without burning." },
-          { emoji: "🧆", name: "Meatballs", temp: "320°F", time: "5-7 min", tip: "Cut them in half if they are very large to ensure they heat through to the center." },
+          { emoji: "🧆", name: "Meatballs", temp: "320°F", time: "5-7 min", tip: "Cut them in half if they are very large to ensure they heat all the way through." },
           { emoji: "🥩", name: "Breaded Cutlet", temp: "340°F", time: "3-4 min", tip: "Lightly spray with oil if the breading looks too dry from yesterday." },
-          { emoji: "🍢", name: "Meat Skewers", temp: "360°F", time: "3-4 min", tip: "Keep a close eye on them to avoid drying out the meat juices." },
+          { emoji: "🍢", name: "Meat Skewers", temp: "360°F", time: "3-4 min", tip: "Keep a close eye on the time to avoid drying out the meat. Times may vary depending on its thickness and starting temperature." },
           { emoji: "🌭", name: "Cooked Sausages", temp: "320°F", time: "3-4 min", tip: "Since they are cooked, DO NOT pierce them, or they will dry out completely." }
         ]
       },
       {
         id: "pesce", icon: "🐟", title: "Seafood & Fried Food",
         items: [
-          { emoji: "🍤", name: "Mixed Fried Seafood", temp: "375°F", time: "3-5 min", tip: "Use a high temp to shock the breading back to crispy without drying the inside." },
-          { emoji: "🐟", name: "Fish (Baked/Fried)", temp: "320°F", time: "4-5 min", tip: "Use perforated foil underneath if it has a sauce, to prevent sticking." }
+          { emoji: "🍤", name: "Fried Fish & Fried Seafood", temp: "360°F", time: "3-5 min", tip: "Arrange the fish in a single layer and check after about 3 minutes to avoid drying it out." },
+          { emoji: "🐟", name: "Baked Fish", temp: "320°F", time: "4-5 min", tip: "Reheat it in an air-fryer-safe dish and check that it is hot all the way through without drying it out." }
         ]
       },
       {
         id: "primi", icon: "🍝", title: "Mains & Wraps",
         items: [
-          { emoji: "🍝", name: "Baked Pasta / Lasagna", temp: "320°F", time: "6-8 min", tip: "Place it in a silicone or aluminum pan to keep the sauce from dripping." },
+          { emoji: "🍝", name: "Baked Pasta / Lasagna", temp: "320°F", time: "6-8 min", tip: "Place it in an air-fryer-safe dish to contain the sauce and help it heat evenly." },
+          { emoji: "🍝", name: "Cooked Pasta / Pasta with Sauce", temp: "320°F", time: "4-6 min", tip: "Place it in an air-fryer-safe dish and add a little sauce or a tablespoon of water if it seems dry. Stir halfway through." },
           { emoji: "🍳", name: "Omelette / Frittata", temp: "300°F", time: "4-5 min", tip: "Reheat gently so the egg doesn't turn rubbery." },
           { emoji: "🌯", name: "Kebab / Wraps", temp: "340°F", time: "4-5 min", tip: "Wrap in foil for a soft wrap, leave exposed for a crunchy wrap." }
         ]
@@ -159,32 +168,36 @@ const content = {
         id: "contorni", icon: "🍟", title: "Sides & Veggies",
         items: [
           { emoji: "🍟", name: "French Fries", temp: "360°F", time: "4-5 min", tip: "Shake the basket halfway through and add a quick spray of oil." },
+          { emoji: "🍘", name: "Arancini, Supplì & Croquettes", temp: "360°F", time: "5-7 min", tip: "Arrange them in a single layer and make sure they are hot all the way through before serving." },
           { emoji: "🥦", name: "Roasted Vegetables", temp: "320°F", time: "4-5 min", tip: "Add a teaspoon of water to the bottom of the basket to create steam and prevent drying." }
         ]
       }
     ]
   },
   es: {
-    h1: "Revividor de Sobras",
-    desc: "El microondas las deja blandas. Selecciona una categoría y descubre los tiempos y grados perfectos para devolverle el crujiente.",
+    h1: "Cómo recalentar comida en freidora de aire",
+    desc: "Tu revividor de sobras. Elige el alimento y encuentra tiempos y temperaturas orientativos para recuperar el calor y el crujiente.",
     quickNav: "Ir a:",
-    editorialH2: "La Ciencia de Revivir: ¿Por qué funciona?",
-    editorialText: "Calentar en el microondas afecta a las moléculas de agua, hirviendo la comida desde dentro (por eso la pizza se vuelve gomosa). La freidora de aire usa <strong>convección térmica seca</strong>. Al soplar aire caliente a alta velocidad, evapora la humedad sobrante y <strong>reactiva la reacción de Maillard</strong> (la corteza) en solo 3 o 4 minutos, devolviendo el crujiente sin secar el interior.",
+    editorialH2: "Por qué la freidora de aire ayuda a recalentar",
+    editorialText: "El aire caliente en circulación ayuda a reducir la humedad superficial acumulada en el frigorífico y a recuperar parte del crujiente en pocos minutos, especialmente en pizza, fritos, pan y alimentos empanados.",
+    safetyNoteTitle: "⚠️ Nota de seguridad",
+    safetyNoteText: "Los tiempos y las temperaturas son orientativos. En sobras de carne, pollo, pescado y platos preparados, comprueba que estén calientes de manera uniforme y bien calientes por dentro; para una mayor seguridad alimentaria, utiliza un termómetro y verifica que la temperatura interna alcance los 74°C.",
     fsTitle: "3 Reglas de Oro para Recalentar:",
     fsList: [
-      "<strong>Baja siempre la temperatura:</strong> Usa 20-30°C menos que la cocción original para no quemar el exterior.",
-      "<strong>Nada de papel de horno:</strong> Bloquea el flujo de aire inferior, dejando la base de la comida blanda y húmeda.",
-      "<strong>Añade humedad a las masas:</strong> Rocía un poco de agua sobre el pan y la pizza antes de cocinar para devolver elasticidad a la miga."
+      "<strong>Adapta la temperatura al alimento:</strong> para muchas sobras, empieza con una temperatura moderada y súbela solo si necesitas más crujiente. Comprueba que el alimento esté caliente por dentro y ajusta el tiempo según la cantidad y el grosor.",
+      "<strong>No bloquees el flujo de aire:</strong> evita cubrir toda la base con hojas enteras de papel de horno o aluminio. Si usas aluminio para cubrir un alimento, fíjalo bien y nunca lo dejes suelto durante el precalentamiento.",
+      "<strong>Añade un poco de humedad:</strong> si el pan o la pizza están secos, rocía un poco de agua sobre la superficie antes de recalentarlos."
     ],
+    ui: { temp: "Temp.", time: "Tiempo", tip: "💡 Consejo:" },
     categories: [
       {
         id: "lievitati", icon: "🍕", title: "Pizza, Pan y Masas",
         items: [
           { emoji: "🍕", name: "Pizza (Porciones)", temp: "170°C", time: "3-4 min", tip: "Pon unas gotas de agua en la corteza antes de calentar para que no se seque." },
-          { emoji: "🥖", name: "Pan Duro", temp: "180°C", time: "3-4 min", tip: "Pásalo por el grifo de agua 1 segundo antes de meterlo: volverá a estar crujiente." },
+          { emoji: "🥖", name: "Pan, panecillos y focaccia", temp: "160-170°C", time: "2-4 min", tip: "Si el pan o la focaccia están secos, humedécelos ligeramente; ten cuidado con los bocadillos rellenos que requieren más tiempo." },
           { emoji: "🥐", name: "Cruasanes y Bollería", temp: "150°C", time: "2-3 min", tip: "¡Cuidado con los rellenos (crema/chocolate) que se calientan muchísimo!" },
-          { emoji: "🥧", name: "Quiche / Tarta Salada", temp: "160°C", time: "5-7 min", tip: "Baja temperatura para que el centro se caliente antes de que la masa se queme." },
-          { emoji: "🥟", name: "Hojaldres", temp: "170°C", time: "4-5 min", tip: "El hojaldre revive perfectamente, no hace falta aceite extra." },
+          { emoji: "🥧", name: "Quiche / Tarta Salada", temp: "160°C", time: "5-7 min", tip: "Baja temperatura para que el interior se caliente antes de que la masa se queme." },
+          { emoji: "🥟", name: "Hojaldres", temp: "170°C", time: "4-5 min", tip: "El hojaldre puede recuperar parte de su crujiente sin añadir aceite." },
           { emoji: "🥞", name: "Tortitas y Muffins", temp: "150°C", time: "2-3 min", tip: "Si no quieres que se doren más, cúbrelos ligeramente con aluminio." }
         ]
       },
@@ -192,25 +205,26 @@ const content = {
         id: "carne", icon: "🥩", title: "Carne y Pollo",
         items: [
           { emoji: "🥩", name: "Carne / Filete", temp: "150°C", time: "3-4 min", tip: "Baja temperatura para no cocinarla de más por dentro. Si estaba poco hecha, no pases de 3 min." },
-          { emoji: "🍗", name: "Pollo Asado (Piezas)", temp: "170°C", time: "5-6 min", tip: "Si la piel se ablandó en la nevera, volverá a estar súper crujiente." },
+          { emoji: "🍗", name: "Pollo asado, muslos y pollo asado al espetón", temp: "170°C", time: "5-6 min", tip: "Coloca las piezas en una sola capa, dales la vuelta a la mitad y comprueba que estén bien calientes cerca del hueso. Los tiempos son orientativos." },
           { emoji: "🍔", name: "Hamburguesas", temp: "160°C", time: "4-5 min", tip: "Si lleva queso, ponlo solo en el último minuto para que se funda sin quemarse." },
           { emoji: "🧆", name: "Albóndigas", temp: "160°C", time: "5-7 min", tip: "Córtalas por la mitad si son muy grandes para que se calienten bien por dentro." },
           { emoji: "🥩", name: "Milanesa / Empanado", temp: "170°C", time: "3-4 min", tip: "Rocía un poco de aceite si el rebozado parece muy seco del día anterior." },
-          { emoji: "🍢", name: "Pinchos Morunos", temp: "180°C", time: "3-4 min", tip: "Vigila el tiempo para evitar resecar la carne." },
+          { emoji: "🍢", name: "Pinchos Morunos", temp: "180°C", time: "3-4 min", tip: "Vigila el tiempo para evitar que la carne se reseque. Los tiempos pueden variar según el grosor y la temperatura inicial." },
           { emoji: "🌭", name: "Salchichas (Ya cocidas)", temp: "160°C", time: "3-4 min", tip: "Como ya están cocidas, NO las pinches o perderán sus jugos." }
         ]
       },
       {
         id: "pesce", icon: "🐟", title: "Pescado y Frituras",
         items: [
-          { emoji: "🍤", name: "Fritura Mixta", temp: "190°C", time: "3-5 min", tip: "Usa temperatura alta para reactivar el rebozado sin secar el interior." },
-          { emoji: "🐟", name: "Pescado (Asado/Frito)", temp: "160°C", time: "4-5 min", tip: "Pon papel de aluminio perforado debajo si tiene salsa para no manchar." }
+          { emoji: "🍤", name: "Pescado frito y fritura de pescado", temp: "180°C", time: "3-5 min", tip: "Coloca el pescado en una sola capa y compruébalo después de unos 3 minutos para evitar que se reseque." },
+          { emoji: "🐟", name: "Pescado al horno", temp: "160°C", time: "4-5 min", tip: "Caliéntalo en un recipiente apto y comprueba que esté bien caliente por dentro sin resecarlo." }
         ]
       },
       {
         id: "primi", icon: "🍝", title: "Platos Principales",
         items: [
-          { emoji: "🍝", name: "Lasaña / Pasta", temp: "160°C", time: "6-8 min", tip: "Usa un molde de silicona para que la salsa no se caiga al fondo." },
+          { emoji: "🍝", name: "Lasaña / Pasta al horno", temp: "160°C", time: "6-8 min", tip: "Colócala en un recipiente apto para la freidora para contener la salsa y favorecer un calentamiento uniforme." },
+          { emoji: "🍝", name: "Pasta ya cocida / Pasta con salsa", temp: "160°C", time: "4-6 min", tip: "Colócala en un recipiente apto para la freidora y añade un poco de salsa o una cucharada de agua si está seca. Remueve a mitad del tiempo." },
           { emoji: "🍳", name: "Tortilla / Omelette", temp: "150°C", time: "4-5 min", tip: "Calienta suavemente para que el huevo no se vuelva gomoso." },
           { emoji: "🌯", name: "Kebab / Wraps", temp: "170°C", time: "4-5 min", tip: "Envuélvelo en aluminio para que quede suave, o déjalo libre para que cruja." }
         ]
@@ -219,32 +233,36 @@ const content = {
         id: "contorni", icon: "🍟", title: "Guarniciones y Snacks",
         items: [
           { emoji: "🍟", name: "Patatas Fritas", temp: "180°C", time: "4-5 min", tip: "Agita la cesta a la mitad y añade un toque de aceite en spray." },
+          { emoji: "🍘", name: "Arancini, supplì y croquetas", temp: "180°C", time: "5-7 min", tip: "Colócalos en una sola capa y comprueba que estén bien calientes por dentro antes de servir." },
           { emoji: "🥦", name: "Verduras Asadas", temp: "160°C", time: "4-5 min", tip: "Añade una cucharadita de agua en el fondo para crear vapor y no resecarlas." }
         ]
       }
     ]
   },
   fr: {
-    h1: "Le Réanimateur de Restes",
-    desc: "Le micro-ondes les rend caoutchouteux. Sélectionnez une catégorie et découvrez les temps parfaits pour redonner du croustillant.",
+    h1: "Comment réchauffer des aliments à l’air fryer",
+    desc: "Votre allié pour réchauffer les restes. Choisissez l’aliment et trouvez des temps et températures indicatifs pour retrouver chaleur et croustillant.",
     quickNav: "Aller à :",
-    editorialH2: "La Science du Réanimateur : Pourquoi ça marche ?",
-    editorialText: "Chauffer au micro-ondes affecte les molécules d'eau, faisant littéralement bouillir la nourriture de l'intérieur (c'est pourquoi la pizza devient caoutchouteuse). La friteuse à air utilise la <strong>convection thermique sèche</strong>. L'air très chaud évapore l'excès d'humidité et <strong>réactive la réaction de Maillard</strong> (la croûte) en 3 ou 4 minutes, redonnant du croustillant sans assécher le cœur.",
+    editorialH2: "Pourquoi l’air fryer aide à réchauffer les aliments",
+    editorialText: "L’air chaud en circulation aide à réduire l’humidité de surface accumulée au réfrigérateur et à retrouver une partie du croustillant en quelques minutes, notamment pour la pizza, les aliments frits, le pain et les aliments panés.",
+    safetyNoteTitle: "⚠️ Note de sécurité",
+    safetyNoteText: "Les temps et les températures sont indicatifs. Pour les restes de viande, de volaille, de poisson et les plats composés, vérifiez qu’ils sont chauffés uniformément et bien chauds à l’intérieur ; pour une sécurité alimentaire maximale, utilisez un thermomètre et contrôlez que la température interne atteint 74°C.",
     fsTitle: "3 Règles d'Or pour Réchauffer :",
     fsList: [
-      "<strong>Baissez toujours la température :</strong> Utilisez 20-30°C de moins que la cuisson d'origine pour ne pas brûler l'extérieur.",
-      "<strong>Pas de papier cuisson :</strong> Il bloque le flux d'air inférieur, laissant le fond humide et mou.",
-      "<strong>Humidifiez les pâtes :</strong> Vaporisez un peu d'eau sur le pain et la pizza avant cuisson pour redonner de l'élasticité à la mie."
+      "<strong>Adaptez la température à l’aliment :</strong> pour de nombreux restes, commencez à température modérée et augmentez-la seulement si vous souhaitez plus de croustillant. Vérifiez que l’aliment est chaud à l’intérieur et adaptez le temps à la quantité et à l’épaisseur.",
+      "<strong>Ne bloquez pas la circulation de l’air :</strong> évitez les feuilles entières de papier cuisson ou d’aluminium qui couvrent toute la base. Si vous utilisez de l’aluminium pour couvrir un aliment, fixez-le correctement et ne le laissez jamais libre pendant le préchauffage.",
+      "<strong>Ajoutez un peu d’humidité :</strong> si le pain ou la pizza sont secs, vaporisez un peu d’eau sur la surface avant de les réchauffer."
     ],
+    ui: { temp: "Temp.", time: "Temps", tip: "💡 Conseil:" },
     categories: [
       {
         id: "lievitati", icon: "🍕", title: "Pizza, Pain et Pâtisseries",
         items: [
           { emoji: "🍕", name: "Pizza (Parts)", temp: "170°C", time: "3-4 min", tip: "Ajoutez quelques gouttes d'eau sur la croûte avant de chauffer." },
-          { emoji: "🥖", name: "Pain Rassis", temp: "180°C", time: "3-4 min", tip: "Passez-le sous le robinet 1 seconde avant de le cuire : il redeviendra croustillant." },
+          { emoji: "🥖", name: "Pain, sandwichs et focaccia", temp: "160-170°C", time: "2-4 min", tip: "Si le pain ou la focaccia sont secs, humidifiez-les légèrement ; attention aux sandwichs garnis, qui peuvent nécessiter un peu plus de temps." },
           { emoji: "🥐", name: "Croissants", temp: "150°C", time: "2-3 min", tip: "Attention aux fourrages (crème/chocolat) qui deviennent brûlants très vite !" },
-          { emoji: "🥧", name: "Quiche / Tarte", temp: "160°C", time: "5-7 min", tip: "La basse température assure que le cœur chauffe avant que la croûte ne brûle." },
-          { emoji: "🥟", name: "Feuilletés", temp: "170°C", time: "4-5 min", tip: "La pâte feuilletée renaît littéralement, pas besoin d'huile supplémentaire." },
+          { emoji: "🥧", name: "Quiche / Tarte", temp: "160°C", time: "5-7 min", tip: "La basse température assure que l'intérieur chauffe avant que la croûte ne brûle." },
+          { emoji: "🥟", name: "Feuilletés", temp: "170°C", time: "4-5 min", tip: "La pâte feuilletée peut retrouver une partie de son croustillant sans ajouter d’huile." },
           { emoji: "🥞", name: "Pancakes & Muffins", temp: "150°C", time: "2-3 min", tip: "Pour ne pas faire brunir le dessus, couvrez légèrement d'aluminium." }
         ]
       },
@@ -252,25 +270,26 @@ const content = {
         id: "carne", icon: "🥩", title: "Viande et Volaille",
         items: [
           { emoji: "🥩", name: "Viande / Steak", temp: "150°C", time: "3-4 min", tip: "Baissez la température. S'il était saignant, ne dépassez pas 3 minutes." },
-          { emoji: "🍗", name: "Poulet Rôti", temp: "170°C", time: "5-6 min", tip: "Si la peau a ramolli au frigo, elle redeviendra super croustillante." },
+          { emoji: "🍗", name: "Poulet rôti, cuisses et poulet rôti à la broche", temp: "170°C", time: "5-6 min", tip: "Disposez les morceaux en une seule couche, retournez-les à mi-cuisson et vérifiez qu'ils sont bien chauds près de l'os. Les temps sont indicatifs." },
           { emoji: "🍔", name: "Steak Haché", temp: "160°C", time: "4-5 min", tip: "Si vous ajoutez du fromage, mettez-le à la dernière minute pour le faire fondre." },
-          { emoji: "🧆", name: "Boulettes de viande", temp: "160°C", time: "5-7 min", tip: "Coupez-les en deux si elles sont grosses pour bien les chauffer à cœur." },
+          { emoji: "🧆", name: "Boulettes de viande", temp: "160°C", time: "5-7 min", tip: "Coupez-les en deux si elles sont grosses pour bien les réchauffer à l’intérieur." },
           { emoji: "🥩", name: "Escalope Pannée", temp: "170°C", time: "3-4 min", tip: "Vaporisez un peu d'huile si la panure semble trop sèche." },
-          { emoji: "🍢", name: "Brochettes", temp: "180°C", time: "3-4 min", tip: "Surveillez le temps pour éviter de dessécher la viande." },
+          { emoji: "🍢", name: "Brochettes", temp: "180°C", time: "3-4 min", tip: "Surveillez le temps pour éviter de dessécher la viande. Les temps peuvent varier selon l’épaisseur et la température initiale." },
           { emoji: "🌭", name: "Saucisses", temp: "160°C", time: "3-4 min", tip: "Ne les piquez SURTOUT PAS, sinon elles perdront tout leur jus." }
         ]
       },
       {
         id: "pesce", icon: "🐟", title: "Poissons et Fritures",
         items: [
-          { emoji: "🍤", name: "Friture Mixte", temp: "190°C", time: "3-5 min", tip: "Température élevée pour redonner un choc thermique à la panure sans assécher." },
-          { emoji: "🐟", name: "Poisson", temp: "160°C", time: "4-5 min", tip: "Mettez du papier d'aluminium en dessous s'il y a de la sauce." }
+          { emoji: "🍤", name: "Poisson frit et friture de poisson", temp: "180°C", time: "3-5 min", tip: "Disposez le poisson en une seule couche et vérifiez après environ 3 minutes pour éviter de le dessécher." },
+          { emoji: "🐟", name: "Poisson au four", temp: "160°C", time: "4-5 min", tip: "Réchauffez-le dans un récipient compatible et vérifiez qu’il est bien chaud à l’intérieur sans le dessécher." }
         ]
       },
       {
         id: "primi", icon: "🍝", title: "Plats Principaux",
         items: [
-          { emoji: "🍝", name: "Pâtes / Lasagnes", temp: "160°C", time: "6-8 min", tip: "Mettez-les dans un moule en silicone pour retenir la sauce." },
+          { emoji: "🍝", name: "Pâtes au four / Lasagnes", temp: "160°C", time: "6-8 min", tip: "Placez-les dans un récipient compatible avec l’air fryer pour retenir la sauce et favoriser un réchauffage uniforme." },
+          { emoji: "🍝", name: "Pâtes déjà cuites / Pâtes en sauce", temp: "160°C", time: "4-6 min", tip: "Placez-les dans un récipient compatible avec l’air fryer et ajoutez un peu de sauce ou une cuillère à soupe d’eau si elles semblent sèches. Mélangez à mi-cuisson." },
           { emoji: "🍳", name: "Omelette", temp: "150°C", time: "4-5 min", tip: "Chauffez doucement pour que l'œuf ne devienne pas caoutchouteux." },
           { emoji: "🌯", name: "Kebab / Wraps", temp: "170°C", time: "4-5 min", tip: "Enveloppez d'aluminium pour le rendre moelleux, laissez libre pour le croustillant." }
         ]
@@ -279,6 +298,7 @@ const content = {
         id: "contorni", icon: "🍟", title: "Accompagnements",
         items: [
           { emoji: "🍟", name: "Frites", temp: "180°C", time: "4-5 min", tip: "Secouez le panier à mi-cuisson et ajoutez un pschitt d'huile." },
+          { emoji: "🍘", name: "Arancini, supplì et croquettes", temp: "180°C", time: "5-7 min", tip: "Disposez-les en une seule couche et vérifiez qu’ils sont bien chauds à l’intérieur avant de les servir." },
           { emoji: "🥦", name: "Légumes Rôtis", temp: "160°C", time: "4-5 min", tip: "Ajoutez une cuillère à café d'eau au fond du panier pour créer de la vapeur." }
         ]
       }
@@ -288,21 +308,6 @@ const content = {
 
 const t = content[lang as keyof typeof content] || content.it;
 
-// Appiattisco tutte le categorie per generare lo Schema.org FAQ unico
-const allItems = t.categories.flatMap(cat => cat.items);
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": allItems.map(item => ({
-    "@type": "Question",
-    "name": `Come riscaldare ${item.name.toLowerCase()} nella friggitrice ad aria?`, 
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": `Imposta a ${item.temp} per ${item.time}. Consiglio: ${item.tip}`
-    }
-  }))
-};
 ---
 
 <MainLayout title={currentSeo.title} lang={lang} description={currentSeo.description}>
@@ -329,10 +334,16 @@ const faqSchema = {
         <p class="tool-text text-base" set:html={t.editorialText}></p>
       </article>
 
+      <aside class="tool-card-inner bg-red-50 dark:bg-red-500/10 border-red-200 dark:border-red-500/30 shadow-sm dark:shadow-inner">
+        <p class="tool-text text-sm leading-relaxed text-red-800 dark:text-red-200">
+          <strong>{t.safetyNoteTitle}:</strong> {t.safetyNoteText}
+        </p>
+      </aside>
+
       <div class="tool-card-inner bg-amber-50 dark:bg-amber-500/10 border-amber-200 dark:border-amber-500/30 shadow-sm dark:shadow-inner">
         <h3 class="tool-subtitle !text-amber-600 dark:!text-amber-400 mb-4">{t.fsTitle}</h3>
         <ul class="space-y-3 tool-text">
-          {t.fsList.map(rule => (
+          {t.fsList.map((rule: string) => (
             <li class="flex items-start gap-3">
               <span class="text-amber-500 font-bold mt-1">✔</span>
               <span class="leading-relaxed" set:html={rule}></span>
@@ -344,7 +355,7 @@ const faqSchema = {
 
     <nav class="flex flex-wrap justify-center gap-2 md:gap-3 mb-16 bg-slate-50 dark:bg-slate-900/50 p-4 rounded-2xl border border-slate-200 dark:border-slate-800/50 max-w-4xl mx-auto shadow-sm dark:shadow-inner transition-colors">
       <span class="tool-label !mb-2 w-full text-center">{t.quickNav}</span>
-      {t.categories.map(cat => (
+      {t.categories.map((cat: any) => (
         <a href={`#${cat.id}`} class="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full text-xs md:text-sm font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-orange-600 dark:hover:text-white transition-colors shadow-sm focus:ring-2 focus:ring-orange-500 outline-none">
           <span class="text-base">{cat.icon}</span> {cat.title}
         </a>
@@ -352,14 +363,14 @@ const faqSchema = {
     </nav>
 
     <div class="space-y-16 mb-12">
-      {t.categories.map((cat) => (
+      {t.categories.map((cat: any) => (
         <div id={cat.id} class="scroll-mt-24">
           <h2 class="tool-subtitle !text-2xl md:!text-3xl mb-6 flex items-center gap-3 border-b border-slate-200 dark:border-slate-800 pb-3">
             <span class="text-3xl md:text-4xl drop-shadow-md">{cat.icon}</span> {cat.title}
           </h2>
           
           <div class="grid md:grid-cols-2 gap-6">
-            {cat.items.map((item) => (
+            {cat.items.map((item: any) => (
               <article class="tool-card hover:border-orange-400 dark:hover:border-orange-500/50 hover:-translate-y-1 transition-all duration-300 !p-6">
                 <h3 class="tool-subtitle !text-xl mb-4 border-b border-slate-200 dark:border-slate-700/60 pb-3 flex items-center gap-3">
                   <span class="text-2xl bg-slate-50 dark:bg-slate-900/80 p-2 rounded-xl shadow-sm dark:shadow-inner border border-slate-200 dark:border-white/5 transition-colors">{item.emoji}</span> 
@@ -368,17 +379,17 @@ const faqSchema = {
                 
                 <div class="flex gap-4 mb-4">
                   <div class="tool-card-inner !px-4 !py-2 text-center flex-1">
-                    <span class="tool-label !mb-1 !text-[10px]">Temp</span>
+                    <span class="tool-label !mb-1 !text-[10px]">{t.ui.temp}</span>
                     <span class="text-lg md:text-xl font-mono font-bold text-orange-600 dark:text-orange-400">{item.temp}</span>
                   </div>
                   <div class="tool-card-inner !px-4 !py-2 text-center flex-1">
-                    <span class="tool-label !mb-1 !text-[10px]">Time</span>
+                    <span class="tool-label !mb-1 !text-[10px]">{t.ui.time}</span>
                     <span class="text-lg md:text-xl font-mono font-bold text-blue-600 dark:text-blue-400">{item.time}</span>
                   </div>
                 </div>
                 
                 <p class="tool-text text-sm bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 p-3 rounded-xl leading-relaxed">
-                  <span class="text-amber-600 dark:text-amber-400 font-bold block mb-1">💡 Tip:</span> 
+                  <span class="text-amber-600 dark:text-amber-400 font-bold block mb-1">{t.ui.tip}</span> 
                   {item.tip}
                 </p>
               </article>
@@ -398,6 +409,4 @@ const faqSchema = {
     </div>
 
   </section>
-
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </MainLayout>
