@@ -8108,7 +8108,12 @@
     "tip": "Usa una mozzarella a bassa umidità (quella per pizza in panetto) per evitare che i supplì si aprano durante la cottura.",
     "isItalian": true,
     "image": "suppli-romani-telefono",
-    "keywords": ["Uova/Formaggi", "Antipasto", "Snack", "Vegetariano"],
+    "keywords": [
+      "Uova/Formaggi",
+      "Antipasto",
+      "Snack",
+      "Vegetariano"
+    ],
     "is_sanitized": true
   },
   {
@@ -8147,7 +8152,14 @@
     "tip": "Per un sapore più intenso, aggiungi un filetto di acciuga o una fetta di prosciutto cotto insieme alla mozzarella.",
     "isItalian": true,
     "image": "mozzarella-in-carrozza",
-    "keywords": ["Uova/Formaggi", "Antipasto", "Snack", "Proteico", "Vegetariano", "Veloce"],
+    "keywords": [
+      "Uova/Formaggi",
+      "Antipasto",
+      "Snack",
+      "Proteico",
+      "Vegetariano",
+      "Veloce"
+    ],
     "is_sanitized": true
   },
   {
@@ -8187,7 +8199,12 @@
     },
     "source": "Tefal",
     "tip": "Tosta i panini mentre la carne riposa per ottimizzare temperatura e consistenza.",
-    "keywords": ["Carne", "Piatto Principale", "Proteico", "Veloce"],
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Proteico",
+      "Veloce"
+    ],
     "isItalian": false,
     "image": "hamburger-deluxe",
     "is_sanitized": true
@@ -8229,7 +8246,13 @@
     },
     "source": "Cosori",
     "tip": "Raffreddare la carne prima della cottura è essenziale per evitare che gli hamburger si sfaldino.",
-    "keywords": ["Carne", "Piatto Principale", "Proteico", "Veloce", "Asiatico"],
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Proteico",
+      "Veloce",
+      "Asiatico"
+    ],
     "isItalian": false,
     "image": "hamburger-tacchino-asiatico",
     "is_sanitized": true
@@ -8269,7 +8292,13 @@
     },
     "source": "Tefal",
     "tip": "Pre-cuoci i wurstel in acqua bollente prima di assemblare gli hot dog per un risultato ottimale.",
-    "keywords": ["Carne", "Piatto Principale", "Snack", "Proteico", "Veloce"],
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Snack",
+      "Proteico",
+      "Veloce"
+    ],
     "isItalian": false,
     "image": "hot-dog-newyorkese",
     "is_sanitized": true
@@ -8309,7 +8338,13 @@
     },
     "source": "Cosori",
     "tip": "Fissa il rotolo con spago da cucina per mantenere una forma perfetta durante la cottura ad aria.",
-    "keywords": ["Carne", "Piatto Principale", "Proteico", "Low Carb", "Veloce"],
+    "keywords": [
+      "Carne",
+      "Piatto Principale",
+      "Proteico",
+      "Low Carb",
+      "Veloce"
+    ],
     "isItalian": true,
     "image": "involtini-maiale-prosciutto",
     "is_sanitized": true
@@ -8348,7 +8383,14 @@
     },
     "source": "Cosori",
     "tip": "Per ridurre la piccantezza, rimuovi accuratamente tutti i semi e i filamenti bianchi. Scuoti il cestello o gira i peperoncini a metà cottura per un risultato uniforme.",
-    "keywords": ["Carne", "Antipasto", "Snack", "Proteico", "Low Carb", "Veloce"],
+    "keywords": [
+      "Carne",
+      "Antipasto",
+      "Snack",
+      "Proteico",
+      "Low Carb",
+      "Veloce"
+    ],
     "isItalian": false,
     "image": "jalapenos-ripieni-bacon",
     "is_sanitized": true
