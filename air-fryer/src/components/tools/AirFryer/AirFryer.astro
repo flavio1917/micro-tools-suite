@@ -165,15 +165,17 @@ const softwareSchema = {
     <div id="view-presets" class="space-y-3 animate-fade-in py-2" role="tabpanel">
       <div class="flex gap-3 md:gap-4">
         <div class="flex-1">
-          <label for="manual-temp" class="text-[9px] md:text-[10px] uppercase font-bold text-slate-600 dark:text-slate-400 tracking-wider block mb-1.5">{t.manual_temp}</label>          <div class="relative">
-            <input type="number" id="manual-temp" min="1" max="600" aria-label={t.manual_temp} value={defaultTemp} class="w-full p-2.5 pl-8 bg-slate-50 dark:bg-black/40 border border-slate-300 dark:border-slate-700 rounded-xl font-bold text-lg text-slate-900 dark:text-white outline-none focus:border-orange-400 focus:ring-1 focus:ring-orange-400/50 transition-all placeholder:text-slate-500 dark:placeholder:text-slate-600 shadow-inner" placeholder="0">            <span class="absolute left-2.5 top-3 text-slate-500" aria-hidden="true">🌡️</span>
-            <span class="absolute right-2.5 top-3.5 text-[9px] md:text-[10px] text-slate-500 font-bold" aria-hidden="true">{tempSymbol}</span>
+          <label for="manual-temp" class="text-[9px] md:text-[10px] uppercase font-bold text-slate-600 dark:text-slate-400 tracking-wider block mb-1.5">{t.manual_temp}</label>          <div class="flex items-center bg-slate-50 dark:bg-black/40 border border-slate-300 dark:border-slate-700 rounded-xl shadow-inner focus-within:border-orange-400 focus-within:ring-1 focus-within:ring-orange-400/50 transition-all overflow-hidden">
+            <span class="pl-3 text-slate-500" aria-hidden="true">🌡️</span>
+            <input type="number" id="manual-temp" min="1" max="600" step={isEn ? 10 : 5} aria-label={t.manual_temp} value={defaultTemp} class="w-full min-w-0 p-2.5 bg-transparent font-bold text-lg text-slate-900 dark:text-white outline-none placeholder:text-slate-500 dark:placeholder:text-slate-600 custom-spin" placeholder="0">
+            <span class="pr-3 text-[9px] md:text-[10px] text-slate-500 font-bold shrink-0" aria-hidden="true">{tempSymbol}</span>
           </div>
         </div>
         <div class="flex-1">
-          <label for="manual-time" class="text-[9px] md:text-[10px] uppercase font-bold text-slate-600 dark:text-slate-400 tracking-wider block mb-1.5">{t.manual_time}</label>          <div class="relative">
-            <input type="number" id="manual-time" min="1" max="300" aria-label={t.manual_time} value={defaultTime} class="w-full p-2.5 pl-8 bg-slate-50 dark:bg-black/40 border border-slate-300 dark:border-slate-700 rounded-xl font-bold text-lg text-slate-900 dark:text-white outline-none focus:border-orange-400 focus:ring-1 focus:ring-orange-400/50 transition-all placeholder:text-slate-500 dark:placeholder:text-slate-600 shadow-inner" placeholder="0">            <span class="absolute left-2.5 top-3 text-slate-500" aria-hidden="true">⏱️</span>
-            <span class="absolute right-2.5 top-3.5 text-[9px] md:text-[10px] text-slate-500 font-bold tracking-wider" aria-hidden="true">MIN</span>
+          <label for="manual-time" class="text-[9px] md:text-[10px] uppercase font-bold text-slate-600 dark:text-slate-400 tracking-wider block mb-1.5">{t.manual_time}</label>          <div class="flex items-center bg-slate-50 dark:bg-black/40 border border-slate-300 dark:border-slate-700 rounded-xl shadow-inner focus-within:border-orange-400 focus-within:ring-1 focus-within:ring-orange-400/50 transition-all overflow-hidden">
+            <span class="pl-3 text-slate-500" aria-hidden="true">⏱️</span>
+            <input type="number" id="manual-time" min="1" max="300" step="1" aria-label={t.manual_time} value={defaultTime} class="w-full min-w-0 p-2.5 bg-transparent font-bold text-lg text-slate-900 dark:text-white outline-none placeholder:text-slate-500 dark:placeholder:text-slate-600 custom-spin" placeholder="0">
+            <span class="pr-3 text-[9px] md:text-[10px] text-slate-500 font-bold tracking-wider shrink-0" aria-hidden="true">MIN</span>
           </div>
         </div>
       </div>
@@ -240,6 +242,18 @@ const softwareSchema = {
 </div>
 
 <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
+
+<style>
+  @media (min-width: 768px) {
+    .custom-spin::-webkit-inner-spin-button,
+    .custom-spin::-webkit-outer-spin-button {
+      opacity: 1;
+      height: 36px;
+      width: 24px;
+      cursor: pointer;
+    }
+  }
+</style>
 
 <script>
   function initAirFryer() {
