@@ -7,10 +7,10 @@ const { lang } = Astro.props;
 
 // DIZIONARIO SEO DEDICATO AL TOOL
 const seoTitles = {
-  it: "Convertitore Tempi e Gradi Forno → Friggitrice ad Aria | Crispissimo",
-  en: "Oven to Air Fryer Time & Temp Converter | Crispissimo",
-  es: "Convertidor de Tiempos y Grados Horno → Freidora de Aire | Crispissimo",
-  fr: "Convertisseur Temps et Température Four → Friteuse à Air | Crispissimo"
+  it: "Conversione Forno a Friggitrice ad Aria: Tempi e Temperature",
+  en: "Oven to Air Fryer Conversion: Time and Temperature",
+  es: "Conversión de Horno a Freidora de Aire: Tiempo y Temperatura",
+  fr: "Conversion Four à Friteuse à Air : Temps et Températures"
 };
 
 const seoDescriptions = {
@@ -23,6 +23,7 @@ const seoDescriptions = {
 const content = {
   it: {
     pageTitle: seoTitles.it,
+    h1: "Conversione da forno a friggitrice ad aria",
     h2: "Guida alla Conversione: Forno vs Friggitrice ad Aria",
     p1: "Hai trovato una ricetta perfetta per il forno ma vuoi cucinarla nella tua friggitrice ad aria per risparmiare tempo ed energia? Il nostro <strong>convertitore per friggitrice ad aria</strong> applica l'algoritmo standard per adattare qualsiasi pietanza: riducendo la temperatura di circa <strong>20°C</strong> e il tempo di cottura del <strong>20%</strong>.",
     tableTitle: "Tabella Rapida Temperature (Forno Statico → Air Fryer)",
@@ -42,6 +43,7 @@ const content = {
   },
   en: {
     pageTitle: seoTitles.en,
+    h1: "Convert oven settings to air fryer settings",
     h2: "Conversion Guide: Oven vs Air Fryer",
     p1: "Found a perfect oven recipe but want to cook it in your air fryer to save time and energy? Our <strong>air fryer calculator</strong> applies the standard algorithm: reducing the temperature by about <strong>25°F (20°C)</strong> and cooking time by <strong>20%</strong>.",
     tableTitle: "Quick Temp Table (Conventional Oven → Air Fryer)",
@@ -61,6 +63,7 @@ const content = {
   },
   es: {
     pageTitle: seoTitles.es,
+    h1: "Conversión de horno a freidora de aire",
     h2: "Guía de Conversión: Horno vs Freidora de Aire",
     p1: "¿Has encontrado una receta para el horno pero quieres usar tu freidora de aire? Nuestro <strong>convertidor</strong> aplica el algoritmo estándar: reduciendo la temperatura unos <strong>20°C</strong> y el tiempo un <strong>20%</strong>.",
     tableTitle: "Tabla Rápida (Horno Tradicional → Air Fryer)",
@@ -80,6 +83,7 @@ const content = {
   },
   fr: {
     pageTitle: seoTitles.fr,
+    h1: "Convertir une cuisson au four pour la friteuse à air",
     h2: "Guide de Conversion : Four vs Friteuse à Air",
     p1: "Vous avez trouvé une recette pour le four mais voulez utiliser votre Air Fryer ? Notre <strong>calculateur</strong> applique l'algorithme standard : réduire la température d'environ <strong>20°C</strong> et le temps de <strong>20%</strong>.",
     tableTitle: "Tableau Rapide (Four Traditionnel → Air Fryer)",
@@ -138,6 +142,11 @@ const jsonLd = [
   
     <div class="pt-8 pb-4 text-slate-900 dark:text-white">
       <div class="max-w-6xl mx-auto px-4">
+        {t.h1 && (
+          <h1 class="text-3xl font-black text-slate-900 dark:text-white mb-6 text-center">
+            {t.h1}
+          </h1>
+        )}
         <AirFryer lang={lang} />
       </div>
     </div>

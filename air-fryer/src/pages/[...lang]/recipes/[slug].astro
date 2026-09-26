@@ -125,7 +125,8 @@ const isPrepMissing = !rawPrep || rawPrep.includes("non") || rawPrep === "0" || 
 const displayPrepTime = isPrepMissing ? "--" : recipe.prep_time;
 
 const isAuth = recipe.isItalian === true;
-const pageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
+const defaultPageTitle = `${recipe.title}${isAuth ? t.seoAuth : ''} - Air Fryer`;
+const pageTitle = recipe.seoTitle || defaultPageTitle;
 
 const seoRecipeData = { ...recipe, image: imagePath, isItalian: isAuth };
 
@@ -177,7 +178,7 @@ const alternateUrls = {
   <SchemaRecipe recipe={recipe} lang={lang} />
 
   <div class="relative h-[45vh] min-h-[380px] md:h-[50vh] w-full overflow-hidden bg-slate-900 hero-bg-print-hide">
-    <img src={imagePath} alt={recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
+    <img src={imagePath} alt={recipe.alt || recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40 pointer-events-none"></div>
     
     <div class="absolute top-4 md:top-6 left-0 right-0 z-[60] px-3 md:px-4 w-full">
@@ -223,7 +224,7 @@ const alternateUrls = {
   <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 print:mt-0 print:pt-4 relative z-30 pb-28 rounded-t-3xl pt-2">
     
     <div class="hidden print:block print:mb-8 text-center print-section">
-       <h1 class="text-3xl font-black text-black mb-3">{recipe.title}</h1>
+       <div class="text-3xl font-black text-black mb-3">{recipe.title}</div>
        <p class="text-sm text-gray-800 max-w-3xl mx-auto">{recipe.description}</p>
     </div>
 
