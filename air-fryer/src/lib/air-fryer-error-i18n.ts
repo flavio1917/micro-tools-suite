@@ -15,7 +15,7 @@ const LANG_BADGE_KEY: Record<string, string> = {
  */
 export function getLocalizedErrorContent(
   lang: string,
-  _modelCanonicalSlug: string,
+  modelCanonicalSlug: string,
   error: any
 ) {
   const localized = error.localized?.[lang];
@@ -42,9 +42,11 @@ export function getLocalizedErrorContent(
   classification = localized.classification || '';
   severityLabel = localized.severity_label || '';
 
+  const isXiaomiSymptom = modelCanonicalSlug.startsWith('xiaomi-') && error.code.startsWith('SYMPTOM-') && userSymptom;
+
   return {
     code: error.code,
-    displayCode: error.display_code || error.code,
+    displayCode: isXiaomiSymptom ? userSymptom : (error.display_code || error.code),
     severity: error.severity_level || 'unknown',
     color: error.color || 'unknown',
     classification,
@@ -53,6 +55,8 @@ export function getLocalizedErrorContent(
     userSymptom,
     isFallbackSource,
     originalManualBadge,
+    isLongTitle: !!isXiaomiSymptom,
+    suppressUserSymptomDetail: !!isXiaomiSymptom,
   };
 }
 

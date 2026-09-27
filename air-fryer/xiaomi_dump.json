@@ -1,0 +1,639 @@
+[
+  {
+    "canonical_slug": "xiaomi-maf-d1001",
+    "route_slug": "maf-d1001",
+    "brand_slug": "xiaomi",
+    "brand": "Xiaomi",
+    "model_names": {
+      "it": "Xiaomi Dual Zone Air Fryer 10L",
+      "en": "Xiaomi Dual Zone Air Fryer 10L",
+      "fr": "Xiaomi Dual Zone Air Fryer 10L",
+      "es": "Xiaomi Dual Zone Air Fryer 10L"
+    },
+    "model_spec": "MAF-D1001",
+    "specs": {
+      "capacity_liters": 10.0,
+      "wattage": 2700.0,
+      "basket_count": 2
+    },
+    "source": {
+      "manual_url": "Xiaomi MAF-D1001 Smart Double Stack Air Fryer User Manual - Manuals+",
+      "specs_url": null,
+      "source_name": "Manuals+"
+    },
+    "image_path": "/images/air-fryers/xiaomi/xiaomi-maf-d1001.webp",
+    "error_codes": [
+      {
+        "code": "SYMPTOM-POWER",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "La friggitrice ad aria non \u00e8 collegata all'alimentazione; collega il cavo di alimentazione a una presa elettrica con messa a terra. Il cestello non \u00e8 spinto in posizione; estrai il cestello e spingilo di nuovo in posizione.",
+            "user_symptom": "La friggitrice ad aria non funziona.",
+            "classification": "Controllo Alimentazione / Assemblaggio",
+            "severity_label": "Bassa"
+          },
+          "en": {
+            "diagnosis": "The air fryer is not connected to a power supply; plug the power cord into a grounded electrical outlet. The basket is not pushed into place; pull out the basket and push it back into place.",
+            "user_symptom": "The air fryer doesn't function.",
+            "classification": "Power / Assembly Check",
+            "severity_label": "Low"
+          },
+          "fr": {
+            "diagnosis": "La friteuse \u00e0 air n'est pas connect\u00e9e \u00e0 une alimentation \u00e9lectrique ; branchez le cordon d'alimentation sur une prise \u00e9lectrique mise \u00e0 la terre. Le panier n'est pas pouss\u00e9 en place ; retirez le panier et repoussez-le en place.",
+            "user_symptom": "La friteuse \u00e0 air ne fonctionne pas.",
+            "classification": "V\u00e9rification de l'Alimentation / Assemblage",
+            "severity_label": "Basse"
+          },
+          "es": {
+            "diagnosis": "La freidora de aire no est\u00e1 conectada a una fuente de alimentaci\u00f3n; conecta el cable de alimentaci\u00f3n a una toma de corriente con conexi\u00f3n a tierra. La cesta no est\u00e1 empujada en su lugar; saca la cesta y vuelve a empujarla en su lugar.",
+            "user_symptom": "La freidora de aire no funciona.",
+            "classification": "Comprobaci\u00f3n de Alimentaci\u00f3n / Montaje",
+            "severity_label": "Baja"
+          }
+        },
+        "severity_level": "low",
+        "color": "green",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Xiaomi MAF-D1001 Smart Double Stack Air Fryer User Manual - Manuals+",
+          "specs_url": null,
+          "source_name": "Manuals+"
+        }
+      },
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Il sensore ha un circuito aperto; contatta il team di assistenza post-vendita.",
+            "user_symptom": "",
+            "classification": "Riparazione Hardware",
+            "severity_label": "Alta"
+          },
+          "en": {
+            "diagnosis": "The sensor has a broken circuit; contact the after-sales service team.",
+            "user_symptom": "",
+            "classification": "Hardware Repair",
+            "severity_label": "High"
+          },
+          "fr": {
+            "diagnosis": "Le capteur pr\u00e9sente un circuit ouvert ; contactez l'\u00e9quipe du service apr\u00e8s-vente.",
+            "user_symptom": "",
+            "classification": "R\u00e9paration Mat\u00e9rielle",
+            "severity_label": "Haute"
+          },
+          "es": {
+            "diagnosis": "El sensor tiene un circuito abierto; contacta al equipo de servicio posventa.",
+            "user_symptom": "",
+            "classification": "Reparaci\u00f3n de Hardware",
+            "severity_label": "Alta"
+          }
+        },
+        "severity_level": "high",
+        "color": "red",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Xiaomi MAF-D1001 Smart Double Stack Air Fryer User Manual - Manuals+",
+          "specs_url": null,
+          "source_name": "Manuals+"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Il sensore ha un cortocircuito; contatta il team di assistenza post-vendita.",
+            "user_symptom": "",
+            "classification": "Riparazione Hardware",
+            "severity_label": "Alta"
+          },
+          "en": {
+            "diagnosis": "The sensor has a short circuit; contact the after-sales service team.",
+            "user_symptom": "",
+            "classification": "Hardware Repair",
+            "severity_label": "High"
+          },
+          "fr": {
+            "diagnosis": "Le capteur pr\u00e9sente un court-circuit ; contactez l'\u00e9quipe du service apr\u00e8s-vente.",
+            "user_symptom": "",
+            "classification": "R\u00e9paration Mat\u00e9rielle",
+            "severity_label": "Haute"
+          },
+          "es": {
+            "diagnosis": "El sensor tiene un cortocircuito; contacta al equipo de servicio posventa.",
+            "user_symptom": "",
+            "classification": "Reparaci\u00f3n de Hardware",
+            "severity_label": "Alta"
+          }
+        },
+        "severity_level": "high",
+        "color": "red",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Xiaomi MAF-D1001 Smart Double Stack Air Fryer User Manual - Manuals+",
+          "specs_url": null,
+          "source_name": "Manuals+"
+        }
+      },
+      {
+        "code": "SYMPTOM-FAN",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "La pala della ventola \u00e8 bloccata; contatta il team di assistenza post-vendita. Il motore \u00e8 danneggiato o altri componenti hanno un circuito interrotto; contatta il team di assistenza post-vendita.",
+            "user_symptom": "La ventola non gira.",
+            "classification": "Riparazione Hardware",
+            "severity_label": "Alta"
+          },
+          "en": {
+            "diagnosis": "The fan blade is stuck; contact the after-sales service team. The motor is damaged or other components have a broken circuit; contact the after-sales service team.",
+            "user_symptom": "The fan doesn't rotate.",
+            "classification": "Hardware Repair",
+            "severity_label": "High"
+          },
+          "fr": {
+            "diagnosis": "La pale du ventilateur est coinc\u00e9e ; contactez l'\u00e9quipe du service apr\u00e8s-vente. Le moteur est endommag\u00e9 ou d'autres composants pr\u00e9sentent un circuit rompu ; contactez l'\u00e9quipe du service apr\u00e8s-vente.",
+            "user_symptom": "Le ventilateur ne tourne pas.",
+            "classification": "R\u00e9paration Mat\u00e9rielle",
+            "severity_label": "Haute"
+          },
+          "es": {
+            "diagnosis": "El aspa del ventilador est\u00e1 atascada; contacta al equipo de servicio posventa. El motor est\u00e1 da\u00f1ado u otros componentes tienen un circuito roto; contacta al equipo de servicio posventa.",
+            "user_symptom": "El ventilador no gira.",
+            "classification": "Reparaci\u00f3n de Hardware",
+            "severity_label": "Alta"
+          }
+        },
+        "severity_level": "high",
+        "color": "red",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Xiaomi MAF-D1001 Smart Double Stack Air Fryer User Manual - Manuals+",
+          "specs_url": null,
+          "source_name": "Manuals+"
+        }
+      },
+      {
+        "code": "SYMPTOM-SMOKE",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Cottura di ingredienti grassi: quando si friggono ingredienti che contengono pi\u00f9 grasso, ci sar\u00e0 molto fumo, il che \u00e8 normale. La friggitrice ad aria contiene ancora residui di grasso del programma di cottura precedente; assicurati di pulire la friggitrice ad aria dopo ogni programma di cottura.",
+            "user_symptom": "Esce fumo bianco.",
+            "classification": "Pulizia / Funzionamento Normale",
+            "severity_label": "Bassa"
+          },
+          "en": {
+            "diagnosis": "Cooking oily ingredients: when you fry ingredients containing more fat, there will be a lot of smoke, which is normal. The air fryer still contains grease residue from the previous cooking program; ensure that you clean the air fryer after each cooking program.",
+            "user_symptom": "White smoke is coming out.",
+            "classification": "Cleaning / Normal Operation",
+            "severity_label": "Low"
+          },
+          "fr": {
+            "diagnosis": "Cuisson d'ingr\u00e9dients gras : lorsque vous faites frire des ingr\u00e9dients contenant plus de graisse, il y aura beaucoup de fum\u00e9e, ce qui est normal. La friteuse \u00e0 air contient encore des r\u00e9sidus de graisse du programme de cuisson pr\u00e9c\u00e9dent ; assurez-vous de nettoyer la friteuse \u00e0 air apr\u00e8s chaque programme de cuisson.",
+            "user_symptom": "De la fum\u00e9e blanche sort.",
+            "classification": "Nettoyage / Fonctionnement Normal",
+            "severity_label": "Basse"
+          },
+          "es": {
+            "diagnosis": "Cocinar ingredientes grasientos: cuando fr\u00edes ingredientes que contienen m\u00e1s grasa, habr\u00e1 mucho humo, lo cual es normal. La freidora de aire a\u00fan contiene residuos de grasa del programa de cocci\u00f3n anterior; aseg\u00farate de limpiar la freidora de aire despu\u00e9s de cada programa de cocci\u00f3n.",
+            "user_symptom": "Sale humo blanco.",
+            "classification": "Limpieza / Funcionamiento Normal",
+            "severity_label": "Baja"
+          }
+        },
+        "severity_level": "low",
+        "color": "green",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Xiaomi MAF-D1001 Smart Double Stack Air Fryer User Manual - Manuals+",
+          "specs_url": null,
+          "source_name": "Manuals+"
+        }
+      },
+      {
+        "code": "SYMPTOM-BASKET",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Troppi ingredienti nel cestello; gli ingredienti nel cestello non possono superare il segno massimo. Il cestello non \u00e8 inserito correttamente; inserisci correttamente il cestello.",
+            "user_symptom": "Non \u00e8 possibile inserire agevolmente il cestello nella friggitrice ad aria.",
+            "classification": "Errore di Utilizzo / Capacit\u00e0",
+            "severity_label": "Bassa"
+          },
+          "en": {
+            "diagnosis": "Too many ingredients in the basket; the ingredients in the basket can't exceed the maximum mark. The basket is not properly inserted; properly insert the basket.",
+            "user_symptom": "Can't insert the basket into the air fryer smoothly.",
+            "classification": "Usage / Capacity Error",
+            "severity_label": "Low"
+          },
+          "fr": {
+            "diagnosis": "Trop d'ingr\u00e9dients dans le panier ; les ingr\u00e9dients dans le panier ne peuvent pas d\u00e9passer la marque maximale. Le panier n'est pas correctement ins\u00e9r\u00e9 ; ins\u00e9rez correctement le panier.",
+            "user_symptom": "Impossible d'ins\u00e9rer le panier dans la friteuse \u00e0 air en douceur.",
+            "classification": "Erreur d'Utilisation / Capacit\u00e9",
+            "severity_label": "Basse"
+          },
+          "es": {
+            "diagnosis": "Demasiados ingredientes en la cesta; los ingredientes en la cesta no pueden exceder la marca m\u00e1xima. La cesta no est\u00e1 insertada correctamente; inserta la cesta correctamente.",
+            "user_symptom": "No se puede insertar la cesta en la freidora de aire sin problemas.",
+            "classification": "Error de Uso / Capacidad",
+            "severity_label": "Baja"
+          }
+        },
+        "severity_level": "low",
+        "color": "green",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Xiaomi MAF-D1001 Smart Double Stack Air Fryer User Manual - Manuals+",
+          "specs_url": null,
+          "source_name": "Manuals+"
+        }
+      }
+    ]
+  },
+  {
+    "canonical_slug": "xiaomi-maf-w6051",
+    "route_slug": "maf-w6051",
+    "brand_slug": "xiaomi",
+    "brand": "Xiaomi",
+    "model_names": {
+      "it": "Xiaomi Air Fryer 6,5L",
+      "en": "Xiaomi Air Fryer 6,5L",
+      "fr": "Xiaomi Air Fryer 6,5L",
+      "es": "Xiaomi Air Fryer 6,5L"
+    },
+    "model_spec": "MAF-W6051",
+    "specs": {
+      "capacity_liters": 6.5,
+      "wattage": 1700.0,
+      "basket_count": 1
+    },
+    "source": {
+      "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+      "specs_url": null,
+      "source_name": "ManualsLib"
+    },
+    "image_path": "/images/air-fryers/xiaomi/xiaomi-maf-w6051.webp",
+    "error_codes": [
+      {
+        "code": "SYMPTOM-POWER",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "La friggitrice ad aria non \u00e8 collegata all'alimentazione; collega il cavo di alimentazione a una presa elettrica con messa a terra. Il cestello non \u00e8 spinto in posizione; estrai il cestello e spingilo di nuovo in posizione.",
+            "user_symptom": "La friggitrice ad aria non funziona.",
+            "classification": "Controllo Alimentazione / Assemblaggio",
+            "severity_label": "Bassa"
+          },
+          "en": {
+            "diagnosis": "The air fryer is not connected to a power supply; plug the power cord into a grounded electrical outlet. The basket is not pushed into place; pull out the basket and push it back into place.",
+            "user_symptom": "The air fryer doesn't function.",
+            "classification": "Power / Assembly Check",
+            "severity_label": "Low"
+          },
+          "fr": {
+            "diagnosis": "La friteuse \u00e0 air n'est pas connect\u00e9e \u00e0 une alimentation \u00e9lectrique ; branchez le cordon d'alimentation sur une prise \u00e9lectrique mise \u00e0 la terre. Le panier n'est pas pouss\u00e9 en place ; retirez le panier et repoussez-le en place.",
+            "user_symptom": "La friteuse \u00e0 air ne fonctionne pas.",
+            "classification": "V\u00e9rification de l'Alimentation / Assemblage",
+            "severity_label": "Basse"
+          },
+          "es": {
+            "diagnosis": "La freidora de aire no est\u00e1 conectada a una fuente de alimentaci\u00f3n; conecta el cable de alimentaci\u00f3n a una toma de corriente con conexi\u00f3n a tierra. La cesta no est\u00e1 empujada en su lugar; saca la cesta y vuelve a empujarla en su lugar.",
+            "user_symptom": "La freidora de aire no funciona.",
+            "classification": "Comprobaci\u00f3n de Alimentaci\u00f3n / Montaje",
+            "severity_label": "Baja"
+          }
+        },
+        "severity_level": "low",
+        "color": "green",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+          "specs_url": null,
+          "source_name": "ManualsLib"
+        }
+      },
+      {
+        "code": "E1",
+        "display_code": "E1",
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Il sensore ha un circuito aperto; contatta il team di assistenza post-vendita.",
+            "user_symptom": "",
+            "classification": "Riparazione Hardware",
+            "severity_label": "Alta"
+          },
+          "en": {
+            "diagnosis": "The sensor has a broken circuit; contact the after-sales service team.",
+            "user_symptom": "",
+            "classification": "Hardware Repair",
+            "severity_label": "High"
+          },
+          "fr": {
+            "diagnosis": "Le capteur pr\u00e9sente un circuit ouvert ; contactez l'\u00e9quipe du service apr\u00e8s-vente.",
+            "user_symptom": "",
+            "classification": "R\u00e9paration Mat\u00e9rielle",
+            "severity_label": "Haute"
+          },
+          "es": {
+            "diagnosis": "El sensor tiene un circuito abierto; contacta al equipo de servicio posventa.",
+            "user_symptom": "",
+            "classification": "Reparaci\u00f3n de Hardware",
+            "severity_label": "Alta"
+          }
+        },
+        "severity_level": "high",
+        "color": "red",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+          "specs_url": null,
+          "source_name": "ManualsLib"
+        }
+      },
+      {
+        "code": "E2",
+        "display_code": "E2",
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Il sensore ha un cortocircuito; contatta il team di assistenza post-vendita.",
+            "user_symptom": "",
+            "classification": "Riparazione Hardware",
+            "severity_label": "Alta"
+          },
+          "en": {
+            "diagnosis": "The sensor has a short circuit; contact the after-sales service team.",
+            "user_symptom": "",
+            "classification": "Hardware Repair",
+            "severity_label": "High"
+          },
+          "fr": {
+            "diagnosis": "Le capteur pr\u00e9sente un court-circuit ; contactez l'\u00e9quipe du service apr\u00e8s-vente.",
+            "user_symptom": "",
+            "classification": "R\u00e9paration Mat\u00e9rielle",
+            "severity_label": "Haute"
+          },
+          "es": {
+            "diagnosis": "El sensor tiene un cortocircuito; contacta al equipo de servicio posventa.",
+            "user_symptom": "",
+            "classification": "Reparaci\u00f3n de Hardware",
+            "severity_label": "Alta"
+          }
+        },
+        "severity_level": "high",
+        "color": "red",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+          "specs_url": null,
+          "source_name": "ManualsLib"
+        }
+      },
+      {
+        "code": "SYMPTOM-FAN",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "La pala della ventola \u00e8 bloccata; contatta il team di assistenza post-vendita. Il motore \u00e8 danneggiato o altri componenti hanno un circuito interrotto; contatta il team di assistenza post-vendita.",
+            "user_symptom": "La ventola non gira.",
+            "classification": "Riparazione Hardware",
+            "severity_label": "Alta"
+          },
+          "en": {
+            "diagnosis": "The fan blade is stuck; contact the after-sales service team. The motor is damaged or other components have a broken circuit; contact the after-sales service team.",
+            "user_symptom": "The fan doesn't rotate.",
+            "classification": "Hardware Repair",
+            "severity_label": "High"
+          },
+          "fr": {
+            "diagnosis": "La pale du ventilateur est coinc\u00e9e ; contactez l'\u00e9quipe du service apr\u00e8s-vente. Le moteur est endommag\u00e9 ou d'autres composants pr\u00e9sentent un circuit rompu ; contactez l'\u00e9quipe du service apr\u00e8s-vente.",
+            "user_symptom": "Le ventilateur ne tourne pas.",
+            "classification": "R\u00e9paration Mat\u00e9rielle",
+            "severity_label": "Haute"
+          },
+          "es": {
+            "diagnosis": "El aspa del ventilador est\u00e1 atascada; contacta al equipo de servicio posventa. El motor est\u00e1 da\u00f1ado u otros componentes tienen un circuito roto; contacta al equipo de servicio posventa.",
+            "user_symptom": "El ventilador no gira.",
+            "classification": "Reparaci\u00f3n de Hardware",
+            "severity_label": "Alta"
+          }
+        },
+        "severity_level": "high",
+        "color": "red",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+          "specs_url": null,
+          "source_name": "ManualsLib"
+        }
+      },
+      {
+        "code": "SYMPTOM-SMOKE",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Cottura di ingredienti grassi: quando si friggono ingredienti che contengono pi\u00f9 grasso, ci sar\u00e0 molto fumo, il che \u00e8 normale. La friggitrice ad aria contiene ancora residui di grasso del programma di cottura precedente; assicurati di pulire la friggitrice ad aria dopo ogni programma di cottura.",
+            "user_symptom": "Esce fumo bianco.",
+            "classification": "Pulizia / Funzionamento Normale",
+            "severity_label": "Bassa"
+          },
+          "en": {
+            "diagnosis": "Cooking oily ingredients: when you fry ingredients containing more fat, there will be a lot of smoke, which is normal. The air fryer still contains grease residue from the previous cooking program; ensure that you clean the air fryer after each cooking program.",
+            "user_symptom": "White smoke is coming out.",
+            "classification": "Cleaning / Normal Operation",
+            "severity_label": "Low"
+          },
+          "fr": {
+            "diagnosis": "Cuisson d'ingr\u00e9dients gras : lorsque vous faites frire des ingr\u00e9dients contenant plus de graisse, il y aura beaucoup de fum\u00e9e, ce qui est normal. La friteuse \u00e0 air contient encore des r\u00e9sidus de graisse du programme de cuisson pr\u00e9c\u00e9dent ; assurez-vous de nettoyer la friteuse \u00e0 air apr\u00e8s chaque programme de cuisson.",
+            "user_symptom": "De la fum\u00e9e blanche sort.",
+            "classification": "Nettoyage / Fonctionnement Normal",
+            "severity_label": "Basse"
+          },
+          "es": {
+            "diagnosis": "Cocinar ingredientes grasientos: cuando fr\u00edes ingredientes que contienen m\u00e1s grasa, habr\u00e1 mucho humo, lo cual es normal. La freidora de aire a\u00fan contiene residuos de grasa del programa de cocci\u00f3n anterior; aseg\u00farate de limpiar la freidora de aire despu\u00e9s de cada programa de cocci\u00f3n.",
+            "user_symptom": "Sale humo blanco.",
+            "classification": "Limpieza / Funcionamiento Normal",
+            "severity_label": "Baja"
+          }
+        },
+        "severity_level": "low",
+        "color": "green",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+          "specs_url": null,
+          "source_name": "ManualsLib"
+        }
+      },
+      {
+        "code": "SYMPTOM-BASKET",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Troppi ingredienti nel cestello; gli ingredienti nel cestello non possono superare il segno massimo. Il cestello non \u00e8 inserito correttamente; inserisci correttamente il cestello.",
+            "user_symptom": "Non \u00e8 possibile inserire agevolmente il cestello nella friggitrice ad aria.",
+            "classification": "Errore di Utilizzo / Capacit\u00e0",
+            "severity_label": "Bassa"
+          },
+          "en": {
+            "diagnosis": "Too many ingredients in the basket; the ingredients in the basket can't exceed the maximum mark. The basket is not properly inserted; properly insert the basket.",
+            "user_symptom": "Can't insert the basket into the air fryer smoothly.",
+            "classification": "Usage / Capacity Error",
+            "severity_label": "Low"
+          },
+          "fr": {
+            "diagnosis": "Trop d'ingr\u00e9dients dans le panier ; les ingr\u00e9dients dans le panier ne peuvent pas d\u00e9passer la marque maximale. Le panier n'est pas correctement ins\u00e9r\u00e9 ; ins\u00e9rez correctement le panier.",
+            "user_symptom": "Impossible d'ins\u00e9rer le panier dans la friteuse \u00e0 air en douceur.",
+            "classification": "Erreur d'Utilisation / Capacit\u00e9",
+            "severity_label": "Basse"
+          },
+          "es": {
+            "diagnosis": "Demasiados ingredientes en la cesta; los ingredientes en la cesta no pueden exceder la marca m\u00e1xima. La cesta no est\u00e1 insertada correctamente; inserta la cesta correctamente.",
+            "user_symptom": "No se puede insertar la cesta en la freidora de aire sin problemas.",
+            "classification": "Error de Uso / Capacidad",
+            "severity_label": "Baja"
+          }
+        },
+        "severity_level": "low",
+        "color": "green",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+          "specs_url": null,
+          "source_name": "ManualsLib"
+        }
+      },
+      {
+        "code": "SYMPTOM-POWER",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Il tempo programmato \u00e8 troppo breve; il tempo programmato dovrebbe essere pi\u00f9 lungo del tempo di cottura. Il tempo programmato non \u00e8 stato salvato; il tempo programmato deve essere salvato ed eseguito premendo la manopola di controllo.",
+            "user_symptom": "La funzione di programmazione non funziona come richiesto.",
+            "classification": "Errore Software / Impostazione",
+            "severity_label": "Bassa"
+          },
+          "en": {
+            "diagnosis": "The scheduled time is too short; the scheduled time should be longer than the cooking time. The scheduled time is not saved; the scheduled time should be saved and carried out by pressing the control knob.",
+            "user_symptom": "The schedule function doesn't function as requested.",
+            "classification": "Software / Setup Error",
+            "severity_label": "Low"
+          },
+          "fr": {
+            "diagnosis": "Le temps programm\u00e9 est trop court ; le temps programm\u00e9 doit \u00eatre plus long que le temps de cuisson. Le temps programm\u00e9 n'est pas enregistr\u00e9 ; le temps programm\u00e9 doit \u00eatre enregistr\u00e9 et ex\u00e9cut\u00e9 en appuyant sur le bouton de commande.",
+            "user_symptom": "La fonction de programmation ne fonctionne pas comme demand\u00e9.",
+            "classification": "Erreur Logicielle / Configuration",
+            "severity_label": "Basse"
+          },
+          "es": {
+            "diagnosis": "El tiempo programado es demasiado corto; el tiempo programado debe ser mayor que el tiempo de cocci\u00f3n. El tiempo programado no se guarda; el tiempo programado debe guardarse y ejecutarse presionando la perilla de control.",
+            "user_symptom": "La funci\u00f3n de programaci\u00f3n no funciona como se solicita.",
+            "classification": "Error de Software / Configuraci\u00f3n",
+            "severity_label": "Baja"
+          }
+        },
+        "severity_level": "low",
+        "color": "green",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+          "specs_url": null,
+          "source_name": "ManualsLib"
+        }
+      },
+      {
+        "code": "SYMPTOM-WIFI",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "L'app Mi Home/Xiaomi Home non \u00e8 all'ultima versione; aggiorna l'app Mi Home/Xiaomi Home all'ultima versione. Il segnale Wi-Fi \u00e8 debole; spostati in una posizione in cui il segnale sia abbastanza forte.",
+            "user_symptom": "Impossibile connettere il Wi-Fi.",
+            "classification": "Errore di Rete / App",
+            "severity_label": "Bassa"
+          },
+          "en": {
+            "diagnosis": "The Mi Home/Xiaomi Home app is not the latest version; update the Mi Home/Xiaomi Home app to the latest version. The Wi-Fi signal is weak; move to a location where the signal is strong enough.",
+            "user_symptom": "Wi-Fi can't be connected.",
+            "classification": "Network / App Error",
+            "severity_label": "Low"
+          },
+          "fr": {
+            "diagnosis": "L'application Mi Home/Xiaomi Home n'est pas \u00e0 la derni\u00e8re version ; mettez \u00e0 jour l'application Mi Home/Xiaomi Home vers la derni\u00e8re version. Le signal Wi-Fi est faible ; d\u00e9placez-vous vers un endroit o\u00f9 le signal est suffisamment fort.",
+            "user_symptom": "Impossible de se connecter au Wi-Fi.",
+            "classification": "Erreur de R\u00e9seau / Application",
+            "severity_label": "Basse"
+          },
+          "es": {
+            "diagnosis": "La aplicaci\u00f3n Mi Home/Xiaomi Home no es la \u00faltima versi\u00f3n; actualiza la aplicaci\u00f3n Mi Home/Xiaomi Home a la \u00faltima versi\u00f3n. La se\u00f1al Wi-Fi es d\u00e9bil; mu\u00e9vete a un lugar donde la se\u00f1al sea lo suficientemente fuerte.",
+            "user_symptom": "No se puede conectar el Wi-Fi.",
+            "classification": "Error de Red / App",
+            "severity_label": "Baja"
+          }
+        },
+        "severity_level": "low",
+        "color": "green",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+          "specs_url": null,
+          "source_name": "ManualsLib"
+        }
+      },
+      {
+        "code": "SYMPTOM-CONNECT",
+        "display_code": null,
+        "aliases": [],
+        "localized": {
+          "it": {
+            "diagnosis": "Impossibile connettere il Wi-Fi; controlla se il Wi-Fi \u00e8 connesso normalmente o ripristina il Wi-Fi per riconnetterti.",
+            "user_symptom": "Impossibile connettere la friggitrice ad aria.",
+            "classification": "Errore di Rete / App",
+            "severity_label": "Bassa"
+          },
+          "en": {
+            "diagnosis": "Wi-Fi cannot be connected; check whether the Wi-Fi is connected normally or reset the Wi-Fi to reconnect.",
+            "user_symptom": "Unable to connect the air fryer.",
+            "classification": "Network / App Error",
+            "severity_label": "Low"
+          },
+          "fr": {
+            "diagnosis": "Impossible de se connecter au Wi-Fi ; v\u00e9rifiez si le Wi-Fi est connect\u00e9 normalement ou r\u00e9initialisez le Wi-Fi pour vous reconnecter.",
+            "user_symptom": "Impossible de connecter la friteuse \u00e0 air.",
+            "classification": "Erreur de R\u00e9seau / Application",
+            "severity_label": "Basse"
+          },
+          "es": {
+            "diagnosis": "No se puede conectar el Wi-Fi; comprueba si el Wi-Fi est\u00e1 conectado normalmente o restablece el Wi-Fi para volver a conectarlo.",
+            "user_symptom": "No se puede conectar la freidora de aire.",
+            "classification": "Error de Red / App",
+            "severity_label": "Baja"
+          }
+        },
+        "severity_level": "low",
+        "color": "green",
+        "source_language": "it",
+        "source": {
+          "manual_url": "Troubleshooting - Xiaomi Smart Air Fryer 6,5 User Manual [Page 10] | ManualsLib",
+          "specs_url": null,
+          "source_name": "ManualsLib"
+        }
+      }
+    ]
+  }
+]
