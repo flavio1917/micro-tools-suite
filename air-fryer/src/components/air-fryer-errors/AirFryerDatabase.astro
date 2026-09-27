@@ -33,8 +33,45 @@ const searchIndex = getSearchIndex(lang);
   <DiagnosticDisclaimer lang={lang} />
   <DiagnosticSearch lang={lang} />
 
-  {/* Dynamic Status Message */}
-  <div id="af-status-message" class="mb-8 text-center p-6 sm:p-8 bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300">
+  {/* ── BRAND SELECTOR (visible by default, hidden when URL params are active) ── */}
+  <div id="af-brand-selector" class="mb-8">
+    <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-4">
+      {(t as any).brandSelector?.heading}
+    </p>
+    <div class="flex flex-wrap gap-3" role="group" aria-label={(t as any).brandSelector?.heading}>
+      {brands.map(brand => (
+        <button
+          type="button"
+          class="af-brand-chip inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold text-sm hover:border-orange-400 hover:text-orange-600 dark:hover:border-orange-400 dark:hover:text-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-400/30 transition-all"
+          data-brand={brand}
+          aria-pressed="false"
+        >
+          {brand.charAt(0).toUpperCase() + brand.slice(1)}
+        </button>
+      ))}
+      <button
+        type="button"
+        id="af-chip-other"
+        class="af-brand-chip inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-semibold text-sm hover:border-slate-400 hover:text-slate-700 dark:hover:border-slate-400 dark:hover:text-slate-200 focus:outline-none focus:ring-4 focus:ring-slate-400/30 transition-all"
+        data-brand="other"
+        aria-pressed="false"
+      >
+        <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        {(t as any).brandSelector?.other}
+      </button>
+    </div>
+  </div>
+
+  {/* ── DEFAULT VIEW: Generic Guidance (visible on load) ── */}
+  <div id="af-default-generic" class="mb-6">
+    <p class="text-sm italic text-slate-500 dark:text-slate-400 mb-6 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/40 rounded-xl px-4 py-3">
+      {(t as any).brandSelector?.genericNote}
+    </p>
+    <GenericAirFryerGuidance lang={lang} />
+  </div>
+
+  {/* Dynamic Status Message (hidden by default, shown by JS when URL params are active) */}
+  <div id="af-status-message" class="mb-8 text-center p-6 sm:p-8 bg-slate-50 dark:bg-slate-800/30 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-all duration-300 hidden">
     <p class="text-lg font-medium text-slate-700 dark:text-slate-300" id="af-status-text">
       {t.statusMessages?.initial}
     </p>
@@ -75,10 +112,8 @@ const searchIndex = getSearchIndex(lang);
       })}
     </div>
 
-    {/* State D: Generic Guidance */}
-    <div id="state-d" class="hidden">
-      <GenericAirFryerGuidance lang={lang} />
-    </div>
+    {/* State D: Generic Guidance — content is in af-default-generic (single DOM instance) */}
+    <div id="state-d" class="hidden"></div>
 
     {/* State E: Ambiguous Variant View */}
     <div id="state-e" class="hidden">
@@ -116,13 +151,13 @@ const searchIndex = getSearchIndex(lang);
     const stateA = document.getElementById('state-a');
     const stateB = document.getElementById('state-b');
     const stateC = document.getElementById('state-c');
-    const stateD = document.getElementById('state-d');
+    // stateD is intentionally empty: generic guidance lives in af-default-generic (single DOM instance)
 
     // Helper: Hide all views
     function hideAllViews() {
       const allViews = document.querySelectorAll('.af-model-view, .af-brand-view, .af-brand-unlisted-view');
       allViews.forEach(v => v.classList.add('hidden'));
-      [stateA, stateB, stateC, stateD].forEach(s => s?.classList.add('hidden'));
+      [stateA, stateB, stateC].forEach(s => s?.classList.add('hidden'));
     }
 
     // Apply the active state based on URL
@@ -186,7 +221,7 @@ const searchIndex = getSearchIndex(lang);
           }
 
           if (code || symptom) {
-            stateD?.classList.remove('hidden');
+            defaultGenericEl?.classList.remove('hidden');
           } else if (brand) {
             stateB?.classList.remove('hidden');
             const view = document.querySelector(`.af-brand-view[data-brand="${brand}"]`);
@@ -234,8 +269,9 @@ const searchIndex = getSearchIndex(lang);
           if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
           
           if (brand === 'other') {
+            // Reuse the single af-default-generic instance already in DOM
             statusMessageContainer?.classList.add('hidden');
-            stateD?.classList.remove('hidden');
+            defaultGenericEl?.classList.remove('hidden');
           } else {
             // STATE B: Brand Overview
             if (statusText) statusText.textContent = msgBrandSelected.replace('{brand}', brand.toUpperCase());
@@ -246,16 +282,16 @@ const searchIndex = getSearchIndex(lang);
                view.classList.remove('hidden');
             } else {
                if (statusText) statusText.textContent = msgBrandNotFound;
-               stateD?.classList.remove('hidden');
+               defaultGenericEl?.classList.remove('hidden');
             }
           }
           
         } else if (code || symptom) {
           if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
-          // STATE D: Code/Symptom without model (Generic Guidance)
+          // Generic Guidance for code/symptom without model — reuse single DOM instance
           if (statusText) statusText.textContent = msgGenericGuidance;
           statusMessageContainer?.classList.remove('hidden');
-          stateD?.classList.remove('hidden');
+          defaultGenericEl?.classList.remove('hidden');
           
         } else {
           if (statusText) statusText.classList.remove('text-orange-600', 'dark:text-orange-400');
@@ -265,17 +301,74 @@ const searchIndex = getSearchIndex(lang);
           resultsContainer?.classList.add('hidden');
         }
     }
+    // ── Brand Chip logic ──────────────────────────────────────────────────────
+    const brandSelectorEl = document.getElementById('af-brand-selector');
+    const defaultGenericEl = document.getElementById('af-default-generic');
+    const chips = document.querySelectorAll<HTMLButtonElement>('.af-brand-chip');
+
+    function syncChipState() {
+      const params = new URLSearchParams(window.location.search);
+      const activeBrand = params.get('brand');
+      chips.forEach(chip => {
+        const isActive = chip.dataset.brand === activeBrand;
+        chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        if (isActive) {
+          chip.classList.add('border-orange-400', 'text-orange-600', 'dark:border-orange-400', 'dark:text-orange-400', 'bg-orange-50', 'dark:bg-orange-900/20');
+        } else {
+          chip.classList.remove('border-orange-400', 'text-orange-600', 'dark:border-orange-400', 'dark:text-orange-400', 'bg-orange-50', 'dark:bg-orange-900/20');
+        }
+      });
+    }
+
+    function showDefaultGeneric() {
+      brandSelectorEl?.classList.remove('hidden');
+      defaultGenericEl?.classList.remove('hidden');
+      resultsContainer?.classList.add('hidden');
+      statusMessageContainer?.classList.add('hidden');
+    }
+
+    function hideDefaultGeneric() {
+      defaultGenericEl?.classList.add('hidden');
+    }
+
+    chips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        const brand = chip.dataset.brand;
+        const url = new URL(window.location.href);
+        url.search = brand ? `?brand=${brand}` : '';
+        window.history.pushState({}, '', url.toString());
+        window.dispatchEvent(new Event('diagnostic-search-update'));
+      });
+    });
+
+    // ── Wrap applyState to also manage selector/generic visibility ────────────
+    const _originalApplyState = applyState;
+    async function applyStateWithUI() {
+      const params = new URLSearchParams(window.location.search);
+      const hasParams = params.toString().length > 0;
+      syncChipState();
+      if (hasParams) {
+        hideDefaultGeneric();
+        brandSelectorEl?.classList.remove('hidden');
+      } else {
+        showDefaultGeneric();
+        syncChipState();
+        return; // no URL params → stay on default view
+      }
+      await _originalApplyState();
+    }
+
     // Event Listeners for state changes
     window.addEventListener('popstate', () => {
-      applyState();
+      applyStateWithUI();
     });
 
     window.addEventListener('diagnostic-search-update', () => {
-      applyState();
+      applyStateWithUI();
     });
 
     // Initial load
-    applyState();
+    applyStateWithUI();
     
     // Checklist Logic
     import('../../lib/air-fryer-local-storage').then(({ getChecklistKey, saveChecklistState, loadChecklistState }) => {

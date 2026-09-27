@@ -119,6 +119,12 @@ export const errorsUiTranslations = {
       genericGuidance: "Il significato dipende da marca e modello. Seleziona la tua friggitrice per istruzioni più precise. Ecco la guida generica.",
       emptySearch: "Cerca marca, modello, codice o problema per ricevere istruzioni precise."
     },
+
+    brandSelector: {
+      heading: "Seleziona la tua marca",
+      other: "Altro / Codici generici",
+      genericNote: "Le indicazioni seguenti sono valide per qualsiasi friggitrice ad aria. I codici possono avere significati diversi a seconda di marca e modello."
+    },
     
     legacyLabels: {
       typeError: "Errore tecnico",
@@ -265,6 +271,12 @@ export const errorsUiTranslations = {
       brandNotFound: "Brand not found. Consult the generic guide.",
       genericGuidance: "The meaning depends on the brand and model. Select your air fryer for precise instructions. Here is the generic guide.",
       emptySearch: "Search for a brand, model, code, or problem to receive precise instructions."
+    },
+
+    brandSelector: {
+      heading: "Select your brand",
+      other: "Other / Generic codes",
+      genericNote: "The following guidance applies to any air fryer. Error codes may have different meanings depending on the brand and model."
     },
 
     legacyLabels: {
@@ -414,6 +426,12 @@ export const errorsUiTranslations = {
       emptySearch: "Busca una marca, modelo, código o problema para recibir instrucciones precisas."
     },
 
+    brandSelector: {
+      heading: "Selecciona tu marca",
+      other: "Otra / Códigos genéricos",
+      genericNote: "Las siguientes indicaciones son válidas para cualquier freidora de aire. Los códigos pueden tener significados diferentes según la marca y el modelo."
+    },
+
     legacyLabels: {
       typeError: "Error técnico",
       typeWarning: "Control requerido",
@@ -559,6 +577,12 @@ export const errorsUiTranslations = {
       brandNotFound: "Marque introuvable. Consultez le guide générique.",
       genericGuidance: "La signification dépend de la marque et du modèle. Sélectionnez votre friteuse pour des instructions précises. Voici le guide générique.",
       emptySearch: "Recherchez une marque, un modèle, un code ou un problème pour recevoir des instructions précises."
+    },
+
+    brandSelector: {
+      heading: "Sélectionnez votre marque",
+      other: "Autre / Codes génériques",
+      genericNote: "Les indications suivantes s'appliquent à toute friteuse à air. Les codes peuvent avoir des significations différentes selon la marque et le modèle."
     },
 
     legacyLabels: {
