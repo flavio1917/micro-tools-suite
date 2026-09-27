@@ -2,6 +2,7 @@
 import { genericAirFryerGuidance } from '../../data/generic-air-fryer-guidance';
 import ErrorCodeCard from './ErrorCodeCard.astro';
 import { getUiTranslation } from '../../lib/air-fryer-error-i18n';
+import { errorsUiTranslations } from '../../data/i18n/errors-ui';
 
 export interface Props {
   lang?: string;
@@ -9,6 +10,7 @@ export interface Props {
 
 const { lang = 'it' } = Astro.props as { lang: 'it' | 'en' | 'fr' | 'es' };
 const activeGuidance = genericAirFryerGuidance[lang] || genericAirFryerGuidance['it'];
+const t = errorsUiTranslations[lang] || errorsUiTranslations['it'];
 
 // Translations for UI headings
 const uiHeadings: Record<'it'|'en'|'fr'|'es', Record<string, string>> = {
@@ -43,9 +45,27 @@ const uiHeadings: Record<'it'|'en'|'fr'|'es', Record<string, string>> = {
 };
 const headings = uiHeadings[lang] || uiHeadings['it'];
 
+const buildResetDiagnosis = (l: 'it' | 'en' | 'fr' | 'es') => {
+  const trans = (errorsUiTranslations[l] || errorsUiTranslations['it']) as any;
+  const gr = trans.genericReset;
+  if (!gr) return '';
+  return `1. ${gr.step1}\n2. ${gr.step2}\n3. ${gr.step3}\n4. ${gr.step4}\n5. ${gr.step5}\n6. ${gr.step6}\n\n${gr.disclaimer}`;
+};
+
 // Generic codes with explicit severity from the generic guidance.
 // These use the new localized format so ErrorCodeCard can render them.
 const genericCodes = [
+  { 
+    code: 'RESET-GENERIC', display_code: (t as any).genericReset?.title || 'Riavvio dell\'alimentazione', aliases: [],
+    localized: {
+      it: { diagnosis: buildResetDiagnosis('it'), classification: (errorsUiTranslations.it as any).genericReset?.classification },
+      en: { diagnosis: buildResetDiagnosis('en'), classification: (errorsUiTranslations.en as any).genericReset?.classification },
+      fr: { diagnosis: buildResetDiagnosis('fr'), classification: (errorsUiTranslations.fr as any).genericReset?.classification },
+      es: { diagnosis: buildResetDiagnosis('es'), classification: (errorsUiTranslations.es as any).genericReset?.classification }
+    },
+    severity_level: 'low', color: 'blue', source_language: 'it',
+    source: {}
+  },
   { 
     code: 'E1', display_code: 'E1', aliases: [],
     localized: {
@@ -174,6 +194,19 @@ const genericCodes = [
              <li class="flex items-start gap-2"><span class="mt-1 text-red-500">•</span> {activeGuidance.commonSymptoms[3].advice}</li>
           )}
         </ul>
+      </div>
+    </section>
+
+    {/* Perché compare l'errore? */}
+    <section>
+      <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 md:p-8 relative overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm mt-6">
+        <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-orange-500 to-red-500"></div>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-3">
+          {(t as any).whyErrorTitle}
+        </h2>
+        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-sm md:text-base">
+          {(t as any).whyErrorText}
+        </p>
       </div>
     </section>
 

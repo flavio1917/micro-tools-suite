@@ -18,7 +18,7 @@ export const faqErrorsTranslations: Record<string, FaqErrorsTranslation> = {
       },
       {
         question: "Cosa significano i codici di errore E1 o E2?",
-        answer: "Nella maggior parte dei modelli (es. Cosori, Innsky, Princess), i codici E1 ed E2 indicano un problema al sensore di temperatura (circuito aperto o cortocircuito). Non tentare di ripararlo da solo: scollega l'apparecchio e contatta l'assistenza clienti."
+        answer: "Nella maggior parte dei modelli (es. Cosori, Xiaomi, Princess), i codici E1 ed E2 indicano un problema al sensore di temperatura (circuito aperto o cortocircuito). Non tentare di ripararlo da solo: scollega l'apparecchio e contatta l'assistenza clienti."
       },
       {
         question: "Come faccio a resettare la friggitrice ad aria?",
@@ -43,7 +43,7 @@ export const faqErrorsTranslations: Record<string, FaqErrorsTranslation> = {
       },
       {
         question: "What do the E1 or E2 error codes mean?",
-        answer: "In most models (e.g., Cosori, Innsky, Princess), the E1 and E2 codes indicate a problem with the temperature sensor (open circuit or short circuit). Do not try to repair it yourself: unplug the appliance and contact customer support."
+        answer: "In most models (e.g., Cosori, Xiaomi, Princess), the E1 and E2 codes indicate a problem with the temperature sensor (open circuit or short circuit). Do not try to repair it yourself: unplug the appliance and contact customer support."
       },
       {
         question: "How do I reset my air fryer?",
@@ -68,7 +68,7 @@ export const faqErrorsTranslations: Record<string, FaqErrorsTranslation> = {
       },
       {
         question: "¿Qué significan los códigos de error E1 o E2?",
-        answer: "En la mayoría de los modelos (ej. Cosori, Innsky, Princess), los códigos E1 y E2 indican un problema con el sensor de temperatura (circuito abierto o cortocircuito). No intente repararlo usted mismo: desenchufe el aparato y contacte con atención al cliente."
+        answer: "En la mayoría de los modelos (ej. Cosori, Xiaomi, Princess), los códigos E1 y E2 indican un problema con el sensor de temperatura (circuito abierto o cortocircuito). No intente repararlo usted mismo: desenchufe el aparato y contacte con atención al cliente."
       },
       {
         question: "¿Cómo reinicio mi freidora de aire?",
@@ -93,7 +93,7 @@ export const faqErrorsTranslations: Record<string, FaqErrorsTranslation> = {
       },
       {
         question: "Que signifient les codes d'erreur E1 ou E2 ?",
-        answer: "Dans la plupart des modèles (ex. Cosori, Innsky, Princess), les codes E1 et E2 indiquent un problème au niveau du capteur de température (circuit ouvert ou court-circuit). N'essayez pas de le réparer vous-même : débranchez l'appareil et contactez le service client."
+        answer: "Dans la plupart des modèles (ex. Cosori, Xiaomi, Princess), les codes E1 et E2 indiquent un problème au niveau du capteur de température (circuit ouvert ou court-circuit). N'essayez pas de le réparer vous-même : débranchez l'appareil et contactez le service client."
       },
       {
         question: "Comment réinitialiser ma friteuse à air ?",

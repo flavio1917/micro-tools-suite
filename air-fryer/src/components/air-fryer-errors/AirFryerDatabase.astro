@@ -1,7 +1,6 @@
 ---
 import type { AirFryerModel } from '../../types/air-fryer';
 import { getBrands } from '../../lib/air-fryer-db';
-import DiagnosticSearch from './DiagnosticSearch.astro';
 import DiagnosticDisclaimer from './DiagnosticDisclaimer.astro';
 import AirFryerModelCard from './AirFryerModelCard.astro';
 import BrandErrorOverview from './BrandErrorOverview.astro';
@@ -31,7 +30,6 @@ const searchIndex = getSearchIndex(lang);
   data-msg-empty-search={t.statusMessages?.emptySearch}
 >
   <DiagnosticDisclaimer lang={lang} />
-  <DiagnosticSearch lang={lang} />
 
   {/* ── BRAND SELECTOR (visible by default, hidden when URL params are active) ── */}
   <div id="af-brand-selector" class="mb-8">
@@ -345,16 +343,26 @@ const searchIndex = getSearchIndex(lang);
     const _originalApplyState = applyState;
     async function applyStateWithUI() {
       const params = new URLSearchParams(window.location.search);
-      const hasParams = params.toString().length > 0;
-      syncChipState();
-      if (hasParams) {
-        hideDefaultGeneric();
-        brandSelectorEl?.classList.remove('hidden');
-      } else {
-        showDefaultGeneric();
-        syncChipState();
-        return; // no URL params → stay on default view
+      let hasParams = params.toString().length > 0;
+      
+      if (!hasParams) {
+         const url = new URL(window.location.href);
+         url.search = '?brand=other';
+         window.history.replaceState({}, '', url.toString());
+         hasParams = true;
       }
+      
+      syncChipState();
+      
+      const currentBrand = new URLSearchParams(window.location.search).get('brand');
+      if (currentBrand === 'other') {
+        showDefaultGeneric();
+      } else {
+        hideDefaultGeneric();
+      }
+      
+      brandSelectorEl?.classList.remove('hidden');
+      
       await _originalApplyState();
     }
 

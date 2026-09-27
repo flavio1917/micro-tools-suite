@@ -125,6 +125,19 @@ export const errorsUiTranslations = {
       other: "Altro / Codici generici",
       genericNote: "Le indicazioni seguenti sono valide per qualsiasi friggitrice ad aria. I codici possono avere significati diversi a seconda di marca e modello."
     },
+
+    genericReset: {
+      title: "Riavvio dell’alimentazione",
+      classification: "Ripristino / Riavvio dell’alimentazione",
+      severity: "Bassa",
+      step1: "Spegni l’apparecchio e scollegalo dalla presa.",
+      step2: "Se è caldo, lascialo raffreddare completamente prima di riavviarlo.",
+      step3: "Attendi almeno 10–15 minuti prima di ricollegarlo.",
+      step4: "Ricollega l’apparecchio e verifica se il problema persiste.",
+      step5: "Se il modello ha una procedura specifica nel manuale, segui quella.",
+      step6: "Se compaiono scintille, odore di bruciato, fumo anomalo o problemi elettrici, scollega l’apparecchio e contatta l’assistenza.",
+      disclaimer: "Nota bene: questa è una procedura di riavvio generale, non una diagnosi specifica."
+    },
     
     legacyLabels: {
       typeError: "Errore tecnico",
@@ -277,6 +290,19 @@ export const errorsUiTranslations = {
       heading: "Select your brand",
       other: "Other / Generic codes",
       genericNote: "The following guidance applies to any air fryer. Error codes may have different meanings depending on the brand and model."
+    },
+
+    genericReset: {
+      title: "Power-cycle reset",
+      classification: "Reset / Power cycle",
+      severity: "Low",
+      step1: "Turn off the appliance and unplug it from the socket.",
+      step2: "If it is hot, let it cool down completely before restarting.",
+      step3: "Wait at least 10–15 minutes before plugging it back in.",
+      step4: "Reconnect the appliance and check if the problem persists.",
+      step5: "If the model has a specific procedure in the manual, follow it.",
+      step6: "If sparks, a burning smell, abnormal smoke, or electrical issues appear, unplug the appliance and contact support.",
+      disclaimer: "Please note: this is a general restart procedure, not a specific diagnosis."
     },
 
     legacyLabels: {
@@ -432,6 +458,19 @@ export const errorsUiTranslations = {
       genericNote: "Las siguientes indicaciones son válidas para cualquier freidora de aire. Los códigos pueden tener significados diferentes según la marca y el modelo."
     },
 
+    genericReset: {
+      title: "Reinicio de alimentación",
+      classification: "Restablecimiento / Reinicio eléctrico",
+      severity: "Baja",
+      step1: "Apaga el aparato y desconéctalo del enchufe.",
+      step2: "Si está caliente, déjalo enfriar completamente antes de reiniciarlo.",
+      step3: "Espera al menos 10–15 minutos antes de volver a conectarlo.",
+      step4: "Vuelve a conectar el aparato y comprueba si el problema persiste.",
+      step5: "Si tu modelo tiene un procedimiento específico en el manual, síguelo.",
+      step6: "Si aparecen chispas, olor a quemado, humo anormal o problemas eléctricos, desenchufa el aparato y ponte en contacto con el soporte.",
+      disclaimer: "Nota: este es un procedimiento de reinicio general, no un diagnóstico específico."
+    },
+
     legacyLabels: {
       typeError: "Error técnico",
       typeWarning: "Control requerido",
@@ -583,6 +622,19 @@ export const errorsUiTranslations = {
       heading: "Sélectionnez votre marque",
       other: "Autre / Codes génériques",
       genericNote: "Les indications suivantes s'appliquent à toute friteuse à air. Les codes peuvent avoir des significations différentes selon la marque et le modèle."
+    },
+
+    genericReset: {
+      title: "Redémarrage électrique",
+      classification: "Réinitialisation / Redémarrage électrique",
+      severity: "Faible",
+      step1: "Éteignez l'appareil et débranchez-le de la prise.",
+      step2: "S'il est chaud, laissez-le refroidir complètement avant de le redémarrer.",
+      step3: "Attendez au moins 10 à 15 minutes avant de le rebrancher.",
+      step4: "Rebranchez l'appareil et vérifiez si le problème persiste.",
+      step5: "Si votre modèle a une procédure spécifique dans le manuel, suivez-la.",
+      step6: "Si des étincelles, une odeur de brûlé, de la fumée anormale ou des problèmes électriques apparaissent, débranchez l'appareil et contactez l'assistance.",
+      disclaimer: "Remarque : il s'agit d'une procédure de redémarrage générale, pas d'un diagnostic spécifique."
     },
 
     legacyLabels: {
