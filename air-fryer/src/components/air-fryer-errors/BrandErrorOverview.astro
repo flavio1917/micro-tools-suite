@@ -1,6 +1,7 @@
 ---
 import type { AirFryerModel } from '../../types/air-fryer';
 import { aggregateBrandMessages, aggregateBrandSuggestions } from '../../lib/air-fryer-brand-aggregation';
+import { getLocalizedErrorContent } from '../../lib/air-fryer-error-i18n';
 import ErrorCodeCard from './ErrorCodeCard.astro';
 
 export interface Props {
@@ -119,11 +120,19 @@ import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
           <div class="flex flex-wrap gap-2 mb-6">
             {aggregatedMessages.map(msg => {
               const anchorId = toSafeAnchorId(`brand-${brand}-error`, msg.code);
+              let label = msg.display_code || msg.code;
+              if (msg.sourceModelId) {
+                const loc = getLocalizedErrorContent(lang, msg.sourceModelId, msg);
+                label = loc.displayCode;
+              }
+              if (label && typeof label === 'string') {
+                label = label.replace(/[.。]\s*$/, '');
+              }
               return (
                 <a href={`#${anchorId}`} 
                    onclick={`event.preventDefault(); document.getElementById('${anchorId}')?.scrollIntoView({behavior: 'smooth', block: 'start'}); history.pushState(null, '', window.location.pathname + window.location.search + '#${anchorId}');`}
                    class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-bold border border-slate-200 dark:border-slate-700 transition-colors">
-                  {msg.display_code || msg.code}
+                  {label}
                 </a>
               );
             })}
