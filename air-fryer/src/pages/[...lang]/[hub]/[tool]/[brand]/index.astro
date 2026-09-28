@@ -104,7 +104,7 @@ const breadcrumbSchema = {
 
     <div class="space-y-6 mt-12">
       {models.map((model: any) => {
-        const modelUrl = `${hubUrl}${brand}/${model.route_slug}/`;
+        const modelUrl = `${hubUrl}/${brand}/${model.route_slug}/`;
         const v1Model = airFryerModels.find(m => m.id === model.canonical_slug);
         
         if (!v1Model) return null;
