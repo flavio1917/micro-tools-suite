@@ -29,7 +29,6 @@ const searchIndex = getSearchIndex(lang);
   data-msg-generic-guidance={t.statusMessages?.genericGuidance}
   data-msg-empty-search={t.statusMessages?.emptySearch}
 >
-  <DiagnosticDisclaimer lang={lang} />
 
   {/* ── BRAND SELECTOR (visible by default, hidden when URL params are active) ── */}
   <div id="af-brand-selector" class="mb-8">
@@ -59,6 +58,8 @@ const searchIndex = getSearchIndex(lang);
       </button>
     </div>
   </div>
+
+  <DiagnosticDisclaimer lang={lang} />
 
   {/* ── DEFAULT VIEW: Generic Guidance (visible on load) ── */}
   <div id="af-default-generic" class="mb-6">
