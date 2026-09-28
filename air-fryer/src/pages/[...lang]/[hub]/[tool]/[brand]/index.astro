@@ -2,6 +2,8 @@
 import MainLayout from '../../../../../layouts/MainLayout.astro';
 import { pageErrorsSeoTranslations } from '../../../../../data/i18n/page-errors-seo';
 import { getAirFryerErrorHubUrl } from '../../../../../lib/air-fryer-error-routes';
+import AirFryerModelCard from '../../../../../components/air-fryer-errors/AirFryerModelCard.astro';
+import { airFryerModels } from '../../../../../lib/air-fryer-db';
 
 export async function getStaticPaths() {
   const { rawV2Models } = await import('../../../../../lib/air-fryer-db');
@@ -100,18 +102,19 @@ const breadcrumbSchema = {
       </p>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+    <div class="space-y-6 mt-12">
       {models.map((model: any) => {
         const modelUrl = `${hubUrl}${brand}/${model.route_slug}/`;
+        const v1Model = airFryerModels.find(m => m.id === model.canonical_slug);
+        
+        if (!v1Model) return null;
+
         return (
-          <a href={modelUrl} class="block bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow group">
-            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-orange-500 transition-colors mb-2">
-              {model.brand} {model.model}
-            </h3>
-            <p class="text-slate-500 dark:text-slate-400 text-sm">
-              {model.error_codes ? model.error_codes.length : 0} codici errore documentati
-            </p>
-          </a>
+          <AirFryerModelCard 
+            model={v1Model} 
+            lang={lang} 
+            linkUrl={modelUrl}
+          />
         );
       })}
     </div>

@@ -14,9 +14,11 @@ import { getLocalizedErrorContent } from '../../lib/air-fryer-error-i18n';
 export interface Props {
   model: AirFryerModel;
   lang?: string;
+  linkUrl?: string;
+  forceOpen?: boolean;
 }
 
-const { model, lang: propLang } = Astro.props;
+const { model, lang: propLang, linkUrl, forceOpen } = Astro.props;
 
 // For translation keys
 const pathParts = Astro.url.pathname.split('/');
@@ -50,11 +52,13 @@ const searchTokens = [
   ...(model.error_codes?.map(ec => ec.code) || [])
 ].filter(Boolean).map(normalizeString).join(' ');
 
+const Wrapper = linkUrl ? 'a' : 'details';
+const HeaderWrapper = linkUrl ? 'div' : 'summary';
 ---
 <article id={model.id} class="af-model-card bg-white dark:bg-[#151b2b] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition-shadow mb-6 overflow-hidden" data-brand={model.brand} data-dual={isDual ? 'true' : 'false'} data-codes={model.has_explicit_codes ? 'true' : 'false'} data-search-text={searchTokens} data-message-types={((model.error_codes || []).map(ec => ec.type).filter(Boolean).join(','))}>
   
-  <details class="group">
-    <summary class="p-5 sm:p-6 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-blue-500 list-none flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+  <Wrapper href={linkUrl} class={linkUrl ? "group block" : "group"} open={!linkUrl && forceOpen ? true : undefined}>
+    <HeaderWrapper class="p-5 sm:p-6 cursor-pointer outline-none focus-visible:ring-2 focus-visible:ring-blue-500 list-none flex flex-col sm:flex-row sm:items-center justify-between gap-4">
       
       {/* Left side: Identifiers */}
       <div class="flex-1 flex gap-4 sm:gap-5 items-center">
@@ -104,17 +108,22 @@ const searchTokens = [
           </span>
         )}
         
-        <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 group-open:rotate-180 transition-transform duration-300 shrink-0">
+        <div class={`w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 transition-transform duration-300 shrink-0 ${linkUrl ? 'group-hover:translate-x-1' : 'group-open:rotate-180'}`}>
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            {linkUrl ? (
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            ) : (
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            )}
           </svg>
         </div>
       </div>
-    </summary>
+    </HeaderWrapper>
 
     {/* Content */}
-    <div class="p-4 sm:p-6 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-[#151b2b]">
-      <AirFryerSpecs model={model} />
+    {!linkUrl && (
+      <div class="p-4 sm:p-6 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-[#151b2b]">
+        <AirFryerSpecs model={model} />
 
       {/* Features */}
       {model.notable_features && model.notable_features.length > 0 && (
@@ -218,9 +227,9 @@ const searchTokens = [
 
       {/* Document Reference */}
       <DocumentReference model={model} lang={lang} />
-
     </div>
-  </details>
+    )}
+  </Wrapper>
 </article>
 
 <style>

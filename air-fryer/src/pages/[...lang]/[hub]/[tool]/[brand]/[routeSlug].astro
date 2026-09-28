@@ -1,9 +1,7 @@
 ---
 import MainLayout from '../../../../../layouts/MainLayout.astro';
-import ErrorCodeCard from '../../../../../components/air-fryer-errors/ErrorCodeCard.astro';
-import SymptomCard from '../../../../../components/air-fryer-errors/SymptomCard.astro';
-import DocumentReference from '../../../../../components/air-fryer-errors/DocumentReference.astro';
-import AirFryerSpecs from '../../../../../components/air-fryer-errors/AirFryerSpecs.astro';
+import AirFryerModelCard from '../../../../../components/air-fryer-errors/AirFryerModelCard.astro';
+import { airFryerModels } from '../../../../../lib/air-fryer-db';
 import { pageErrorsSeoTranslations } from '../../../../../data/i18n/page-errors-seo';
 import { errorsUiTranslations } from '../../../../../data/i18n/errors-ui';
 import { getAirFryerErrorAlternateUrls, getAirFryerErrorHubUrl } from '../../../../../lib/air-fryer-error-routes';
@@ -200,84 +198,10 @@ const validSymptoms = model.symptoms || [];
       <h1 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-4" style="font-family: 'Montserrat', system-ui, sans-serif;">
         {h1}
       </h1>
-      <p class="text-slate-600 dark:text-slate-400 text-lg mb-6">
-        {uiLabels.specsTitle}
-      </p>
-      
-      <AirFryerSpecs model={legacyModelForSpecs} />
-    </div>
-
-    <!-- MAIN VIEW: ERRORS -->
-    {validCodes.length > 0 && (
-      <div class="mb-12">
-        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-4">{uiLabels.knownErrors}</h2>
-        <div class="flex flex-wrap gap-2 mb-6">
-          {validCodes.map((code: any) => {
-            const anchorId = toSafeAnchorId(`model-${model.id}-error`, code.code);
-              return (
-                <a href={`#${anchorId}`} 
-                   onclick={`event.preventDefault(); document.getElementById('${anchorId}')?.scrollIntoView({behavior: 'smooth', block: 'start'}); history.pushState(null, '', window.location.pathname + window.location.search + '#${anchorId}');`}
-                   class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-bold border border-slate-200 dark:border-slate-700 transition-colors">
-                  {code.display_code || code.code}
-                </a>
-              );
-          })}
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {validCodes.map((code: any) => {
-            return (
-              <ErrorCodeCard 
-                error={code}
-                model={model}
-                lang={lang}
-                hideModelInfo={true}
-                contextPrefix={`model-${model.id}`}
-              />
-            );
-          })}
-        </div>
-      </div>
-    )}
-
-    {validSymptoms.length > 0 && (
-      <div class="mb-12">
-        <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-200 mb-6">{uiLabels.commonSymptoms}</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {validSymptoms.map((sym: any) => {
-            return (
-              <SymptomCard 
-                symptomKey={sym.key}
-                severity={sym.severity}
-                evidenceLevel={sym.evidence_level}
-                content={{
-                  label: sym.key,
-                  cause: undefined,
-                  solution: undefined
-                }}
-                source={sym.source}
-                lang={lang}
-                brandDisplayName={model.brand_slug}
-              />
-            );
-          })}
-        </div>
-      </div>
-    )}
-
-    {model.source?.manual_url && (
-      <div class="mb-12">
-        <DocumentReference 
-          model={{
-            document: {
-              label: model.source.source_name || 'Manuale Utente / Documentazione Ufficiale',
-              matches_model: true,
-              type: 'manual'
-            },
-            manual_url: model.source.manual_url
-          }}
-        />
-      </div>
-    )}
+      {(() => {
+        const v1Model = airFryerModels.find(m => m.id === model.canonical_slug);
+        return v1Model ? <AirFryerModelCard model={v1Model} lang={lang} forceOpen={true} /> : null;
+      })()}
 
     
     <div class="mt-8 text-center">
