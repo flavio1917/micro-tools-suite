@@ -2,7 +2,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
   "it": {
     "reset": {
       "h1": "Come resettare la friggitrice ad aria in sicurezza",
-      "title": "Reset friggitrice ad aria: procedura sicura e quando contattare l'assistenza | Crispissimo",
+      "title": "Reset friggitrice ad aria: procedura sicura e soluzioni",
       "meta": "Scopri come eseguire un riavvio sicuro della friggitrice ad aria, quando serve e cosa fare se il problema persiste.",
       "intro": "Questa guida offre un orientamento generale per il riavvio o il reset della friggitrice ad aria. Non rappresenta una guida alla riparazione: consulta sempre il manuale del tuo modello per indicazioni specifiche.",
       "stepsTitle": "Passaggi di diagnostica sicura",
@@ -25,7 +25,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ]
     },
     "smoke-smell": {
-      "title": "Risoluzione Problemi Friggitrice ad Aria | Fumo e Cattivi Odori",
+      "title": "Fumo e puzza friggitrice ad aria: cause e soluzioni",
       "h1": "Pronto Soccorso Air Fryer",
       "meta": "Fumo bianco? Puzza di plastica? Niente panico. Ecco la guida rapida per risolvere i problemi più comuni e salvare la tua cena.",
       "intro": "Fumo bianco? Puzza di plastica? Niente panico. Ecco la guida rapida per risolvere i problemi più comuni e salvare la tua cena.",
@@ -49,7 +49,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "wont-turn-on": {
       "h1": "La friggitrice ad aria non si accende: cosa controllare e quando contattare l'assistenza",
-      "title": "Friggitrice ad aria non si accende: cause possibili e passaggi sicuri | Crispissimo",
+      "title": "Friggitrice ad aria non si accende: cause e cosa fare",
       "meta": "Controlla cosa fare se la tua friggitrice ad aria non si accende, come verificare l'alimentazione in sicurezza e quando chiamare il tecnico.",
       "intro": "Una friggitrice che non si avvia può avere un semplice problema di alimentazione o un guasto hardware. Questa guida ti orienta nelle verifiche esterne sicure, senza suggerire procedure di smontaggio.",
       "stepsTitle": "Passaggi di diagnostica sicura",
@@ -71,7 +71,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "not-heating": {
       "h1": "La friggitrice ad aria non scalda: cause e verifiche di base",
-      "title": "Friggitrice ad aria non scalda: cosa verificare e quando contattare l'assistenza | Crispissimo",
+      "title": "Friggitrice ad aria non scalda: controlli e soluzioni",
       "meta": "Scopri perché la friggitrice ad aria si accende ma non riscalda, i controlli da fare in sicurezza e quando chiedere riparazione.",
       "intro": "Se l'apparecchio si accende ma l'aria rimane fredda, il problema riguarda quasi sempre la resistenza o il termostato. Questa guida elenca controlli sicuri e spiega quando fermarsi.",
       "stepsTitle": "Passaggi di diagnostica sicura",
@@ -91,7 +91,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "fan-not-working": {
       "h1": "La ventola della friggitrice ad aria non gira: cause e verifiche",
-      "title": "Ventola friggitrice ad aria non gira: cosa controllare e quando chiamare assistenza | Crispissimo",
+      "title": "Ventola friggitrice ad aria non gira: cause e soluzioni",
       "meta": "Scopri perché la ventola della friggitrice ad aria può bloccarsi, le verifiche sicure che puoi fare e quando affidarti a un tecnico.",
       "intro": "La ventola è cruciale per la circolazione del calore. Se non gira, l'apparecchio si surriscalda rapidamente. Questa pagina ti guida nel riconoscere il problema in sicurezza.",
       "stepsTitle": "Passaggi di diagnostica sicura",
@@ -113,7 +113,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
   "en": {
     "reset": {
       "h1": "How to Reset Your Air Fryer Safely",
-      "title": "Air Fryer Reset: Safe Procedure and When to Contact Support | Crispissimo",
+      "title": "Air Fryer Reset: Safe Procedure and Solutions",
       "meta": "Learn how to safely perform a hard reset on your air fryer, when it is necessary, and what to do if the problem persists.",
       "intro": "This guide provides general guidance on safely restarting or resetting your air fryer. It is not a repair manual: always consult your model's manual for specific instructions.",
       "stepsTitle": "Safe Troubleshooting Steps",
@@ -136,7 +136,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ]
     },
     "smoke-smell": {
-      "title": "Air Fryer Troubleshooting | Smoke and Bad Smells",
+      "title": "Air Fryer Smoke and Smell: Causes and Solutions",
       "h1": "Air Fryer First Aid",
       "meta": "White smoke? Plastic smell? Don't panic. Here is the quick guide to solving the most common problems and saving your dinner.",
       "intro": "White smoke? Plastic smell? Don't panic. Here is the quick guide to solving the most common problems and saving your dinner.",
@@ -160,7 +160,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "wont-turn-on": {
       "h1": "Air Fryer Won't Turn On: What to Check and When to Contact Support",
-      "title": "Air Fryer Won't Turn On: Possible Causes and Safe Steps | Crispissimo",
+      "title": "Air Fryer Won't Turn On: Causes and Safe Steps",
       "meta": "Check what to do if your air fryer won't turn on, how to safely test the power supply, and when to call a technician.",
       "intro": "An air fryer that won't start might have a simple power issue or a hardware failure. This guide orients you through safe external checks without suggesting disassembly.",
       "stepsTitle": "Safe Troubleshooting Steps",
@@ -182,7 +182,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "not-heating": {
       "h1": "Air Fryer Not Heating: Causes and Basic Checks",
-      "title": "Air Fryer Not Heating: What to Check and When to Contact Support | Crispissimo",
+      "title": "Air Fryer Not Heating: What to Check and Solutions",
       "meta": "Find out why your air fryer turns on but doesn't heat up, safe checks to perform, and when to request a repair.",
       "intro": "If the appliance turns on but the air remains cold, the problem almost always involves the heating element or thermostat. This guide lists safe checks and explains when to stop.",
       "stepsTitle": "Safe Troubleshooting Steps",
@@ -202,7 +202,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "fan-not-working": {
       "h1": "Air Fryer Fan Not Working: Causes and Checks",
-      "title": "Air Fryer Fan Not Working: What to Check and When to Call Support | Crispissimo",
+      "title": "Air Fryer Fan Not Working: Causes and Solutions",
       "meta": "Discover why the air fryer fan might get stuck, the safe checks you can do, and when to rely on a technician.",
       "intro": "The fan is crucial for heat circulation. If it doesn't spin, the appliance overheats rapidly. This page guides you in recognizing the problem safely.",
       "stepsTitle": "Safe Troubleshooting Steps",
@@ -224,7 +224,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
   "es": {
     "reset": {
       "h1": "Cómo reiniciar la freidora de aire de forma segura",
-      "title": "Reinicio de freidora de aire: procedimiento seguro y cuándo contactar al servicio | Crispissimo",
+      "title": "Reinicio freidora de aire: procedimiento seguro y guía",
       "meta": "Descubre cómo realizar un reinicio seguro de la freidora de aire, cuándo es necesario y qué hacer si el problema persiste.",
       "intro": "Esta guía ofrece orientación general sobre cómo reiniciar tu freidora de aire de forma segura. No es un manual de reparación: consulta siempre el manual de tu modelo para instrucciones específicas.",
       "stepsTitle": "Pasos de diagnóstico seguro",
@@ -247,7 +247,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ]
     },
     "smoke-smell": {
-      "title": "Solución de Problemas Freidora de Aire | Humo y Olores",
+      "title": "Freidora de aire humo y olor: causas y soluciones",
       "h1": "Primeros Auxilios Air Fryer",
       "meta": "¿Humo blanco? ¿Olor a plástico? Que no cunda el pánico. Aquí tienes la guía rápida para solucionar los problemas más comunes.",
       "intro": "¿Humo blanco? ¿Olor a plástico? Que no cunda el pánico. Aquí tienes la guía rápida para solucionar los problemas más comunes.",
@@ -271,7 +271,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "wont-turn-on": {
       "h1": "Freidora de aire no enciende: qué comprobar y cuándo contactar al servicio",
-      "title": "Freidora de aire no enciende: causas posibles y pasos seguros | Crispissimo",
+      "title": "Freidora de aire no enciende: causas y pasos seguros",
       "meta": "Consulta qué puede ocurrir si tu freidora de aire no enciende, cómo comprobar la alimentación de forma segura y cuándo contactar al servicio técnico.",
       "intro": "Una freidora que no arranca puede tener un simple problema de energía o un fallo de hardware. Esta guía te orienta en comprobaciones externas seguras sin sugerir desmontajes.",
       "stepsTitle": "Pasos de diagnóstico seguro",
@@ -293,7 +293,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "not-heating": {
       "h1": "Freidora de aire no calienta: causas y comprobaciones básicas",
-      "title": "Freidora de aire no calienta: qué comprobar y cuándo contactar al servicio | Crispissimo",
+      "title": "Freidora de aire no calienta: controles y soluciones",
       "meta": "Descubre por qué la freidora de aire se enciende pero no calienta, los controles seguros que debes hacer y cuándo pedir reparación.",
       "intro": "Si el aparato se enciende pero el aire sigue frío, el problema casi siempre involucra la resistencia o el termostato. Esta guía enumera comprobaciones seguras y explica cuándo detenerse.",
       "stepsTitle": "Pasos de diagnóstico seguro",
@@ -313,7 +313,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "fan-not-working": {
       "h1": "Ventilador de freidora de aire no funciona: causas y comprobaciones",
-      "title": "Ventilador freidora de aire no funciona: qué revisar y cuándo llamar al servicio | Crispissimo",
+      "title": "Ventilador freidora de aire no funciona: qué hacer",
       "meta": "Descubre por qué el ventilador de la freidora de aire puede bloquearse, las comprobaciones seguras que puedes hacer y cuándo acudir a un técnico.",
       "intro": "El ventilador es crucial para la circulación del calor. Si no gira, el aparato se sobrecalienta rápidamente. Esta página te guía para reconocer el problema de forma segura.",
       "stepsTitle": "Pasos de diagnóstico seguro",
@@ -335,7 +335,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
   "fr": {
     "reset": {
       "h1": "Comment réinitialiser la friteuse à air en toute sécurité",
-      "title": "Réinitialisation friteuse à air : procédure sûre et quand contacter l'assistance | Crispissimo",
+      "title": "Réinitialisation friteuse à air : procédure sûre",
       "meta": "Découvrez comment effectuer un redémarrage sûr de la friteuse à air, quand c'est nécessaire et que faire si le problème persiste.",
       "intro": "Ce guide fournit des orientations générales pour redémarrer ou réinitialiser votre friteuse à air en toute sécurité. Ce n'est pas un manuel de réparation : consultez toujours le manuel de votre modèle.",
       "stepsTitle": "Étapes de diagnostic en sécurité",
@@ -358,7 +358,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ]
     },
     "smoke-smell": {
-      "title": "Dépannage Friteuse à Air | Fumée et Mauvaises Odeurs",
+      "title": "Friteuse à air fumée et odeur : causes et solutions",
       "h1": "Premiers Secours Air Fryer",
       "meta": "Fumée blanche ? Odeur de plastique ? Pas de panique. Voici le guide rapide pour résoudre les problèmes courants.",
       "intro": "Fumée blanche ? Odeur de plastique ? Pas de panique. Voici le guide rapide pour résoudre les problèmes courants.",
@@ -382,7 +382,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "wont-turn-on": {
       "h1": "Friteuse à air ne s'allume pas : que vérifier et quand appeler l'assistance",
-      "title": "Friteuse à air ne s'allume pas : causes possibles et étapes sûres | Crispissimo",
+      "title": "Friteuse à air ne s'allume pas : causes et étapes sûres",
       "meta": "Vérifiez ce qu'il faut faire si votre friteuse à air ne s'allume pas, comment tester l'alimentation en toute sécurité et quand appeler un technicien.",
       "intro": "Une friteuse qui ne démarre pas peut avoir un simple problème d'alimentation ou une panne matérielle. Ce guide vous oriente dans des vérifications externes sûres sans suggérer de démontage.",
       "stepsTitle": "Étapes de diagnostic en sécurité",
@@ -404,7 +404,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "not-heating": {
       "h1": "La friteuse à air ne chauffe pas : causes et vérifications de base",
-      "title": "Friteuse à air ne chauffe pas : quoi vérifier et quand contacter l'assistance | Crispissimo",
+      "title": "Friteuse à air ne chauffe pas : causes et solutions",
       "meta": "Découvrez pourquoi la friteuse à air s'allume mais ne chauffe pas, les contrôles sûrs à effectuer et quand demander une réparation.",
       "intro": "Si l'appareil s'allume mais que l'air reste froid, le problème concerne presque toujours la résistance ou le thermostat. Ce guide énumère des vérifications sûres et explique quand s'arrêter.",
       "stepsTitle": "Étapes de diagnostic en sécurité",
@@ -424,7 +424,7 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
     },
     "fan-not-working": {
       "h1": "Ventilateur de friteuse à air ne tourne pas : causes et vérifications",
-      "title": "Ventilateur friteuse à air ne tourne pas : que vérifier et quand contacter l'assistance | Crispissimo",
+      "title": "Ventilateur friteuse à air ne tourne pas : que faire",
       "meta": "Découvrez les causes possibles d'un ventilateur qui ne tourne pas, comment vérifier l'appareil en sécurité et quand contacter l'assistance.",
       "intro": "Le ventilateur est crucial pour la circulation de la chaleur. S'il ne tourne pas, l'appareil surchauffe rapidement. Cette page vous guide pour reconnaître le problème en toute sécurité.",
       "stepsTitle": "Étapes de diagnostic en sécurité",
