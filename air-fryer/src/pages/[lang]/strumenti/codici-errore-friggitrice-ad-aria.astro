@@ -19,6 +19,13 @@ const { lang } = Astro.params;
 const seoData = pageErrorsSeoTranslations[lang as string] || pageErrorsSeoTranslations['it'];
 
 // JSON-LD BreadcrumbList
+const alternateUrls = {
+  it: "https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/",
+  en: "https://www.crispissimo.com/en/tools/air-fryer-error-codes/",
+  es: "https://www.crispissimo.com/es/herramientas/codigos-error-freidora-aire/",
+  fr: "https://www.crispissimo.com/fr/outils/codes-erreur-friteuse-air/",
+  "x-default": "https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/"
+};
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -39,7 +46,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 3,
       "name": seoData.breadcrumbCurrent,
-      "item": `https://crispissimo.com/${lang}/strumenti/codici-errore-friggitrice-ad-aria`
+      "item": alternateUrls[lang as keyof typeof alternateUrls] || alternateUrls.it
     }
   ]
 };
@@ -56,13 +63,6 @@ const faqSchema = {
       "text": faq.answer
     }
   }))
-};
-const alternateUrls = {
-  it: `https://crispissimo.com/it/strumenti/codici-errore-friggitrice-ad-aria`,
-  en: `https://crispissimo.com/en/strumenti/codici-errore-friggitrice-ad-aria`,
-  es: `https://crispissimo.com/es/strumenti/codici-errore-friggitrice-ad-aria`,
-  fr: `https://crispissimo.com/fr/strumenti/codici-errore-friggitrice-ad-aria`,
-  "x-default": `https://crispissimo.com/it/strumenti/codici-errore-friggitrice-ad-aria`
 };
 ---
 

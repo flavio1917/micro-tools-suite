@@ -26,13 +26,13 @@ export interface PageErrorsSeoData {
 
 export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
   it: {
-    metaTitle: "Codici errore friggitrice ad aria: significato, reset e soluzioni | Crispissimo",
-    metaDescription: "Scopri il significato dei codici di errore (E1, E2, Pot, ecc.) della tua friggitrice ad aria. Diagnostica i problemi più comuni e trova la soluzione ufficiale.",
-    h1: "Diagnostica e Codici Errore Friggitrice ad Aria",
+    metaTitle: "Codici errore friggitrice ad aria: E1, E2, E3, E4 e reset | Crispissimo",
+    metaDescription: "Scopri il significato dei codici di errore della friggitrice ad aria, come fare un riavvio sicuro e dove trovare errori documentati per Philips, Cosori e Xiaomi.",
+    h1: "Codici errore friggitrice ad aria: significato e soluzioni",
     modelMetaTitle: "{brand} {model}: Codici Errore e Soluzioni | Crispissimo",
     modelMetaDescription: "Scopri codici errore, problemi comuni, controlli sicuri e manuale ufficiale di {brand} {model}.",
     modelH1: "Codici errore e problemi {brand} {model}",
-    introParagraph: "La tua friggitrice ad aria mostra un codice sul display, emette fumo bianco o semplicemente non si accende? Usa il nostro motore di ricerca per trovare il significato dell'errore, le cause più comuni e la procedura di reset o soluzione suggerita dal produttore.",
+    introParagraph: "Questa pagina ti aiuta a interpretare i codici e messaggi di errore della tua friggitrice ad aria. Selezionando marca e modello potrai consultare informazioni documentate; la guida generica serve per orientamento se il modello non è presente. Ricorda che lo stesso codice può cambiare fra marche e modelli.",
     usefulResourcesTitle: "Risorse Utili",
     linkCleaning: "Come pulire la friggitrice ad aria",
     linkCleaningUrl: "/strumenti/pulire-resistenza-friggitrice-ad-aria",
@@ -45,27 +45,31 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     breadcrumbCurrent: "Codici Errore",
     faqs: [
       {
-        question: "Cosa fare se compare l'errore E1 o E2?",
-        answer: "I codici E1 ed E2 indicano generalmente un'anomalia nel circuito del sensore termico (circuito aperto o cortocircuito). È sconsigliato l'uso e si raccomanda di scollegare la presa e contattare il centro assistenza."
+        question: "Cosa può significare un codice E1, E2, E3 o E4?",
+        answer: "Questi codici indicano spesso anomalie nei sensori termici (circuito aperto o in corto) o malfunzionamenti. È sconsigliato l'uso finché non viene risolto il problema."
       },
       {
-        question: "Perché esce fumo bianco dalla friggitrice ad aria?",
-        answer: "Il fumo bianco è tipicamente causato da grasso o olio in eccesso che cola sul fondo del cestello e brucia. Si consiglia di spegnere l'apparecchio, pulire il cestello e riprendere la cottura senza cibi eccessivamente grassi."
+        question: "Perché lo stesso codice può cambiare da una marca all’altra?",
+        answer: "Perché ogni produttore usa schede e software differenti. Ad esempio, E1 potrebbe essere il sensore per una marca e un errore ventola per un'altra."
       },
       {
-        question: "Cosa indica il messaggio 'Pot' sul display?",
-        answer: "In molti modelli il messaggio 'Pot' segnala che il cestello non è inserito correttamente o non è chiuso fino in fondo. Controlla e reinserisci il cestello con decisione fino allo scatto."
+        question: "Come fare un riavvio sicuro?",
+        answer: "Scollega la friggitrice dalla presa elettrica, aspetta che si raffreddi per almeno 15-20 minuti, poi ricollegala e verifica se l'errore scompare."
+      },
+      {
+        question: "Quando contattare l’assistenza?",
+        answer: "Se l'errore persiste dopo il riavvio, se si verificano fumo anomalo o se si avvertono odori persistenti di componenti bruciati."
       }
     ]
   },
   en: {
-    metaTitle: "Air Fryer Error Codes: Meaning, Reset and Solutions | Crispissimo",
-    metaDescription: "Discover the meaning of error codes (E1, E2, Pot, etc.) of your air fryer. Diagnose common problems and find the official solution.",
-    h1: "Air Fryer Diagnostics and Error Codes",
+    metaTitle: "Air Fryer Error Codes: E1, E2, E3, E4 Meanings and Reset | Crispissimo",
+    metaDescription: "Understand air fryer error codes, learn how to perform a safe restart, and check documented errors for Philips, Cosori and Xiaomi models.",
+    h1: "Air Fryer Error Codes: Meanings and Solutions",
     modelMetaTitle: "{brand} {model}: Error Codes and Solutions | Crispissimo",
     modelMetaDescription: "Discover error codes, common problems, safety checks and official manual for {brand} {model}.",
     modelH1: "{brand} {model} Error Codes and Problems",
-    introParagraph: "Does your air fryer show a code on the display, emit white smoke or simply won't turn on? Use our search engine to find the meaning of the error, the most common causes and the reset or solution procedure suggested by the manufacturer.",
+    introParagraph: "This page helps you interpret error codes and messages on your air fryer. By selecting the brand and model, you can check documented information; our generic guide can help you navigate if your model is not listed. Remember that the same code can have different meanings depending on the manufacturer.",
     usefulResourcesTitle: "Useful Resources",
     linkCleaning: "How to clean the air fryer",
     linkCleaningUrl: "/en/tools/clean-air-fryer-heating-element",
@@ -78,27 +82,31 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     breadcrumbCurrent: "Error Codes",
     faqs: [
       {
-        question: "What to do if E1 or E2 error appears?",
-        answer: "Codes E1 and E2 generally indicate an anomaly in the thermal sensor circuit (open or short circuit). It is not recommended to use the appliance; you should unplug it and contact customer service."
+        question: "What can an E1, E2, E3 or E4 code mean?",
+        answer: "These codes often indicate anomalies in the thermal sensors (open or short circuit) or malfunctions. It is not recommended to use the appliance until the issue is resolved."
       },
       {
-        question: "Why is white smoke coming out of the air fryer?",
-        answer: "White smoke is typically caused by excess fat or oil dripping to the bottom of the basket and burning. It is advisable to turn off the appliance, clean the basket and resume cooking without excessively greasy foods."
+        question: "Why can the same code vary from one brand to another?",
+        answer: "Because each manufacturer uses different boards and software. For example, E1 could mean a sensor issue for one brand and a fan error for another."
       },
       {
-        question: "What does the 'Pot' message on the display indicate?",
-        answer: "In many models, the 'Pot' message indicates that the basket is not inserted correctly or is not completely closed. Check and firmly reinsert the basket until it clicks."
+        question: "How to perform a safe restart?",
+        answer: "Unplug the air fryer from the electrical outlet, wait for it to cool down for at least 15-20 minutes, then plug it back in and see if the error disappears."
+      },
+      {
+        question: "When to contact customer support?",
+        answer: "If the error persists after a restart, if there is abnormal smoke, or if you notice persistent smells of burnt components."
       }
     ]
   },
   es: {
-    metaTitle: "Códigos de error de la freidora de aire: significado y soluciones | Crispissimo",
-    metaDescription: "Descubra el significado de los códigos de error (E1, E2, Pot, etc.) de su freidora de aire. Diagnostique problemas comunes y encuentre la solución.",
-    h1: "Diagnóstico y Códigos de Error de Freidora de Aire",
+    metaTitle: "Códigos de error freidora de aire: E1, E2, E3, E4 y reinicio | Crispissimo",
+    metaDescription: "Consulta qué significan los códigos de error de la freidora de aire, cómo reiniciarla de forma segura y errores documentados de Philips, Cosori y Xiaomi.",
+    h1: "Códigos de error de freidora de aire: significado y soluciones",
     modelMetaTitle: "{brand} {model}: Códigos de error y soluciones | Crispissimo",
     modelMetaDescription: "Descubra los códigos de error, problemas comunes, controles de seguridad y manual oficial de {brand} {model}.",
     modelH1: "Códigos de error y problemas de {brand} {model}",
-    introParagraph: "¿Tu freidora de aire muestra un código en la pantalla, emite humo blanco o simplemente no enciende? Usa nuestro buscador para encontrar el significado del error, las causas más comunes y el procedimiento de reinicio o solución sugerido.",
+    introParagraph: "Esta página te ayuda a interpretar los códigos y mensajes de error de tu freidora de aire. Seleccionando la marca y el modelo podrás consultar información documentada; la guía genérica sirve de orientación si tu modelo no está presente. Recuerda que el mismo código puede cambiar entre marcas y modelos.",
     usefulResourcesTitle: "Recursos Útiles",
     linkCleaning: "Cómo limpiar la freidora de aire",
     linkCleaningUrl: "/es/herramientas/limpiar-resistencia-freidora-aire",
@@ -111,27 +119,31 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     breadcrumbCurrent: "Códigos de Error",
     faqs: [
       {
-        question: "¿Qué hacer si aparece el error E1 o E2?",
-        answer: "Los códigos E1 y E2 indican generalmente una anomalía en el circuito del sensor térmico. Se recomienda no usar el aparato, desenchufarlo y contactar al centro de asistencia."
+        question: "¿Qué puede significar un código E1, E2, E3 o E4?",
+        answer: "Estos códigos indican a menudo anomalías en los sensores térmicos o fallos de funcionamiento. Se desaconseja el uso hasta que se resuelva el problema."
       },
       {
-        question: "¿Por qué sale humo blanco de la freidora?",
-        answer: "El humo blanco suele ser causado por el exceso de grasa o aceite que gotea en el fondo y se quema. Se recomienda apagar, limpiar la cesta y evitar alimentos demasiado grasos."
+        question: "¿Por qué el mismo código puede cambiar de una marca a otra?",
+        answer: "Porque cada fabricante utiliza componentes y software diferentes. Por ejemplo, E1 podría referirse a un sensor para una marca y a un ventilador para otra."
       },
       {
-        question: "¿Qué indica el mensaje 'Pot' en la pantalla?",
-        answer: "En muchos modelos el mensaje 'Pot' señala que la cesta no está bien insertada o cerrada. Revise y vuelva a insertar la cesta firmemente hasta que encaje."
+        question: "¿Cómo hacer un reinicio seguro?",
+        answer: "Desenchufa la freidora de la toma eléctrica, espera a que se enfríe durante al menos 15-20 minutos, luego vuelve a conectarla y verifica si el error desaparece."
+      },
+      {
+        question: "¿Cuándo contactar al servicio de asistencia?",
+        answer: "Si el error persiste después del reinicio, si hay humo anormal, o si notas olores persistentes a componentes quemados."
       }
     ]
   },
   fr: {
-    metaTitle: "Codes d'erreur de la friteuse à air : signification et solutions | Crispissimo",
-    metaDescription: "Découvrez la signification des codes d'erreur (E1, E2, Pot, etc.) de votre friteuse à air. Diagnostiquez les problèmes et trouvez la solution officielle.",
-    h1: "Diagnostic et Codes d'Erreur Friteuse à Air",
+    metaTitle: "Codes d’erreur friteuse à air : E1, E2, E3, E4 et réinitialisation | Crispissimo",
+    metaDescription: "Découvrez la signification des codes d’erreur de votre friteuse à air, comment la réinitialiser en sécurité et les erreurs documentées Philips, Cosori et Xiaomi.",
+    h1: "Codes d’erreur friteuse à air : signification et solutions",
     modelMetaTitle: "{brand} {model} : Codes d'erreur et Solutions | Crispissimo",
     modelMetaDescription: "Découvrez les codes d'erreur, problèmes courants, contrôles de sécurité et le manuel officiel de {brand} {model}.",
     modelH1: "Codes d'erreur et problèmes {brand} {model}",
-    introParagraph: "Votre friteuse à air affiche un code sur l'écran, émet de la fumée blanche ou ne s'allume pas ? Utilisez notre moteur de recherche pour trouver la signification de l'erreur, les causes les plus courantes et la procédure de réinitialisation ou la solution.",
+    introParagraph: "Cette page vous aide à interpréter les codes et messages d'erreur de votre friteuse à air. En sélectionnant la marque et le modèle, vous pourrez consulter des informations documentées ; le guide générique sert d'orientation si le modèle n'est pas présent. Rappelez-vous que le même code peut changer entre les marques et les modèles.",
     usefulResourcesTitle: "Ressources Utiles",
     linkCleaning: "Comment nettoyer la friteuse à air",
     linkCleaningUrl: "/fr/outils/nettoyer-resistance-friteuse-air",
@@ -144,16 +156,20 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     breadcrumbCurrent: "Codes d'Erreur",
     faqs: [
       {
-        question: "Que faire si l'erreur E1 ou E2 apparaît ?",
-        answer: "Les codes E1 et E2 indiquent généralement une anomalie dans le circuit du capteur thermique. Il n'est pas recommandé d'utiliser l'appareil ; débranchez-le et contactez le service client."
+        question: "Que peut signifier un code E1, E2, E3 ou E4 ?",
+        answer: "Ces codes indiquent souvent des anomalies des capteurs thermiques ou des courts-circuits. L'utilisation est déconseillée jusqu'à ce que le problème soit résolu."
       },
       {
-        question: "Pourquoi de la fumée blanche sort-elle de la friteuse à air ?",
-        answer: "La fumée blanche est généralement causée par un excès de graisse ou d'huile qui coule au fond et brûle. Il est conseillé d'éteindre l'appareil, de nettoyer le panier et de reprendre la cuisson avec des aliments moins gras."
+        question: "Pourquoi le même code peut-il changer d'une marque à l'autre ?",
+        answer: "Parce que chaque fabricant utilise des composants et des logiciels différents. Par exemple, E1 pourrait indiquer un capteur pour une marque et un problème de ventilateur pour une autre."
       },
       {
-        question: "Que signifie le message 'Pot' sur l'écran ?",
-        answer: "Dans de nombreux modèles, le message 'Pot' indique que le panier n'est pas inséré correctement ou n'est pas complètement fermé. Vérifiez et réinsérez fermement le panier jusqu'au clic."
+        question: "Comment effectuer un redémarrage en toute sécurité ?",
+        answer: "Débranchez la friteuse de la prise électrique, attendez au moins 15 à 20 minutes qu'elle refroidisse, puis rebranchez-la pour voir si l'erreur disparaît."
+      },
+      {
+        question: "Quand contacter le service client ?",
+        answer: "Si l'erreur persiste après un redémarrage, s'il y a de la fumée anormale, ou si vous remarquez des odeurs persistantes de composants brûlés."
       }
     ]
   }
