@@ -1,0 +1,122 @@
+---
+import MainLayout from '../../../../../layouts/MainLayout.astro';
+import { pageErrorsSeoTranslations } from '../../../../../data/i18n/page-errors-seo';
+import { getAirFryerErrorHubUrl } from '../../../../../lib/air-fryer-error-routes';
+
+export async function getStaticPaths() {
+  const { rawV2Models } = await import('../../../../../lib/air-fryer-db');
+  
+  const tools = [
+    { id: 'errori', it: 'codici-errore-friggitrice-ad-aria', en: 'air-fryer-error-codes', es: 'codigos-error-freidora-aire', fr: 'codes-erreur-friteuse-air' }
+  ];
+  
+  const hubs = { it: 'strumenti', en: 'tools', es: 'herramientas', fr: 'outils' };
+  
+  // Find all unique brands
+  const brands = [...new Set(rawV2Models.map(m => m.brand_slug))].filter(b => b === 'philips' || b === 'cosori' || b === 'xiaomi');
+  
+  const paths = [];
+  for (const lang of ['it', 'en', 'es', 'fr']) {
+    for (const t of tools) {
+      for (const brand of brands) {
+        // Collect models for this brand that have errors
+        const brandModels = rawV2Models.filter(m => 
+          m.brand_slug === brand && 
+          m.is_deduplication_validated !== false &&
+          m.metadata?.parsing_status !== 'manual_review' &&
+          !(m.duplicate_group && m.is_ambiguous) &&
+          m.seo_status !== 'fallback_only' &&
+          m.route_slug && 
+          m.errors && m.errors.length > 0
+        );
+
+        if (brandModels.length > 0) {
+          paths.push({
+            params: { lang: lang === 'it' ? undefined : lang, hub: hubs[lang as keyof typeof hubs], tool: t[lang as keyof typeof t], brand },
+            props: { toolId: t.id, actualLang: lang, brand, models: brandModels }
+          });
+        }
+      }
+    }
+  }
+  return paths;
+}
+
+const { actualLang, brand, models } = Astro.props;
+const lang = actualLang as 'it' | 'en' | 'es' | 'fr';
+
+const seoData = pageErrorsSeoTranslations[lang] || pageErrorsSeoTranslations['it'];
+
+// Helper to capitalize brand
+const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const brandName = capitalize(brand);
+
+const metaTitle = (seoData.brandMetaTitle || "").replace('{brand}', brandName);
+const metaDescription = (seoData.brandMetaDescription || "").replace('{brand}', brandName);
+const h1 = (seoData.brandH1 || "").replace('{brand}', brandName);
+const intro = (seoData.brandIntro || "").replace('{brand}', brandName);
+
+const hubUrl = getAirFryerErrorHubUrl(lang);
+
+// Generate alternate URLs
+const tools = { id: 'errori', it: 'codici-errore-friggitrice-ad-aria', en: 'air-fryer-error-codes', es: 'codigos-error-freidora-aire', fr: 'codes-erreur-friteuse-air' };
+const alternateUrls = {
+  it: `https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/${brand}/`,
+  en: `https://www.crispissimo.com/en/tools/air-fryer-error-codes/${brand}/`,
+  es: `https://www.crispissimo.com/es/herramientas/codigos-error-freidora-aire/${brand}/`,
+  fr: `https://www.crispissimo.com/fr/outils/codes-erreur-friteuse-air/${brand}/`,
+  "x-default": `https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/${brand}/`
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": seoData.breadcrumbHome, "item": `https://crispissimo.com/${lang === 'it' ? '' : lang}` },
+    { "@type": "ListItem", "position": 2, "name": seoData.breadcrumbTools, "item": `https://crispissimo.com/${lang === 'it' ? 'strumenti' : lang + '/tools'}` },
+    { "@type": "ListItem", "position": 3, "name": seoData.breadcrumbCurrent, "item": `https://www.crispissimo.com${hubUrl}` },
+    { "@type": "ListItem", "position": 4, "name": brandName, "item": alternateUrls[lang] }
+  ]
+};
+---
+
+<MainLayout title={metaTitle} description={metaDescription} lang={lang} alternateUrls={alternateUrls}>
+  <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
+    <div class="mb-8 flex justify-start">
+      <a href={hubUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-slate-400 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        <span class="font-medium text-sm">{seoData.breadcrumbCurrent}</span>
+      </a>
+    </div>
+
+    <header class="mb-12">
+      <h1 class="text-3xl md:text-5xl font-black mb-6 text-slate-900 dark:text-white tracking-tight">
+        {h1}
+      </h1>
+      <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">
+        {intro}
+      </p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+      {models.map((model: any) => {
+        const modelUrl = `${hubUrl}${brand}/${model.route_slug}/`;
+        return (
+          <a href={modelUrl} class="block bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow group">
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-orange-500 transition-colors mb-2">
+              {model.brand} {model.model}
+            </h3>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">
+              {model.errors ? model.errors.length : 0} codici errore documentati
+            </p>
+          </a>
+        );
+      })}
+    </div>
+
+  </section>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+</MainLayout>

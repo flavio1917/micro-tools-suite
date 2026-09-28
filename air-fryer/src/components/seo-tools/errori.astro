@@ -5,8 +5,13 @@ import { airFryerModels } from '../../lib/air-fryer-db';
 import AffiliateSlot from '../ads/AffiliateSlot.astro';
 import ErrorFaq from './ErrorFaq.astro';
 import { pageErrorsSeoTranslations } from '../../data/i18n/page-errors-seo';
+import { getAirFryerErrorHubUrl } from '../../lib/air-fryer-error-routes';
 
 import { errorsUiTranslations } from '../../data/i18n/errors-ui';
+
+// Trova marchi disponibili nel db per SEO pages
+const availableBrands = [...new Set(airFryerModels.map(m => m.brand_slug))].filter(b => b === 'philips' || b === 'cosori' || b === 'xiaomi');
+const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 export interface Props {
   lang?: 'it' | 'en' | 'es' | 'fr';
@@ -24,6 +29,7 @@ const backBtnLabel = {
 
 const seoData = pageErrorsSeoTranslations[lang as string] || pageErrorsSeoTranslations['it'];
 const t = errorsUiTranslations[lang] || errorsUiTranslations['it'];
+const hubUrl = getAirFryerErrorHubUrl(lang);
 
 // JSON-LD
 const alternateUrls = {
@@ -85,6 +91,22 @@ const faqSchema = {
 
     <AffiliateSlot lang={lang as 'it' | 'en' | 'es' | 'fr'} context="error-codes" />
     <ErrorFaq lang={lang as 'it' | 'en' | 'es' | 'fr'} />
+
+    <section aria-labelledby="documented-brands" class="mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 transition-colors">
+      <h2 id="documented-brands" class="text-2xl font-bold text-slate-900 dark:text-white mb-8">
+        {seoData.brandsTitle}
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        {availableBrands.map(b => (
+          <a href={`${hubUrl}${b}/`} class="group block p-6 bg-slate-50 dark:bg-slate-900/50 rounded-2xl hover:bg-white dark:hover:bg-slate-800 transition-all duration-300 border border-slate-200 dark:border-slate-700/50 shadow-sm hover:shadow-md">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-lg font-semibold text-orange-600 dark:text-orange-400 group-hover:text-orange-700 dark:group-hover:text-orange-300 transition-colors">{capitalize(b)}</h3>
+              <svg class="w-5 h-5 text-slate-400 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
 
     <section aria-labelledby="useful-resources" class="mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 transition-colors">
       <h2 id="useful-resources" class="text-2xl font-bold text-slate-900 dark:text-white mb-8">

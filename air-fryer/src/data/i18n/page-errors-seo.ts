@@ -10,6 +10,11 @@ export interface PageErrorsSeoData {
   modelMetaTitle?: string;
   modelMetaDescription?: string;
   modelH1?: string;
+  brandMetaTitle?: string;
+  brandMetaDescription?: string;
+  brandH1?: string;
+  brandIntro?: string;
+  brandsTitle?: string;
   introParagraph: string;
   usefulResourcesTitle: string;
   linkCleaning: string;
@@ -32,6 +37,11 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     modelMetaTitle: "{brand} {model}: Codici Errore e Soluzioni | Crispissimo",
     modelMetaDescription: "Scopri codici errore, problemi comuni, controlli sicuri e manuale ufficiale di {brand} {model}.",
     modelH1: "Codici errore e problemi {brand} {model}",
+    brandMetaTitle: "Codici errore friggitrice ad aria {brand} e soluzioni | Crispissimo",
+    brandMetaDescription: "Scopri cosa significano i codici di errore delle friggitrici {brand}, come eseguire un riavvio sicuro e quali modelli sono documentati.",
+    brandH1: "Soluzioni per codici errore e problemi delle friggitrici {brand}",
+    brandIntro: "Questa guida raccoglie i principali codici di errore documentati per le friggitrici ad aria {brand}. I dati derivano da fonti neutrali e manuali: seleziona il tuo modello per diagnosticare problemi e scoprire come forzare un riavvio sicuro, senza finte promesse di riparazioni fai-da-te.",
+    brandsTitle: "Marche Documentate",
     introParagraph: "Questa pagina ti aiuta a interpretare i codici e messaggi di errore della tua friggitrice ad aria. Selezionando marca e modello potrai consultare informazioni documentate; la guida generica serve per orientamento se il modello non è presente. Ricorda che lo stesso codice può cambiare fra marche e modelli.",
     usefulResourcesTitle: "Risorse Utili",
     linkCleaning: "Come pulire la friggitrice ad aria",
@@ -69,6 +79,11 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     modelMetaTitle: "{brand} {model}: Error Codes and Solutions | Crispissimo",
     modelMetaDescription: "Discover error codes, common problems, safety checks and official manual for {brand} {model}.",
     modelH1: "{brand} {model} Error Codes and Problems",
+    brandMetaTitle: "{brand} Air Fryer Error Codes and Solutions | Crispissimo",
+    brandMetaDescription: "Find out what the error codes mean for {brand} air fryers, how to safely reset your appliance, and the list of documented models.",
+    brandH1: "{brand} Air Fryers Error Codes and Troubleshooting",
+    brandIntro: "This guide collects the main documented error codes for {brand} air fryers. The data comes from neutral sources and manuals: select your model to diagnose problems and find out how to safely restart the unit.",
+    brandsTitle: "Documented Brands",
     introParagraph: "This page helps you interpret error codes and messages on your air fryer. By selecting the brand and model, you can check documented information; our generic guide can help you navigate if your model is not listed. Remember that the same code can have different meanings depending on the manufacturer.",
     usefulResourcesTitle: "Useful Resources",
     linkCleaning: "How to clean the air fryer",
@@ -106,6 +121,11 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     modelMetaTitle: "{brand} {model}: Códigos de error y soluciones | Crispissimo",
     modelMetaDescription: "Descubra los códigos de error, problemas comunes, controles de seguridad y manual oficial de {brand} {model}.",
     modelH1: "Códigos de error y problemas de {brand} {model}",
+    brandMetaTitle: "Códigos de error freidora de aire {brand} y soluciones | Crispissimo",
+    brandMetaDescription: "Descubre qué significan los errores y códigos de las freidoras {brand}, cómo realizar un reinicio seguro y qué modelos están documentados.",
+    brandH1: "Soluciones a códigos de error y problemas en freidoras {brand}",
+    brandIntro: "Esta guía recopila los principales códigos de error documentados para freidoras de aire {brand}. Los datos provienen de fuentes neutrales: selecciona tu modelo para diagnosticar problemas y descubrir cómo forzar un reinicio seguro.",
+    brandsTitle: "Marcas Documentadas",
     introParagraph: "Esta página te ayuda a interpretar los códigos y mensajes de error de tu freidora de aire. Seleccionando la marca y el modelo podrás consultar información documentada; la guía genérica sirve de orientación si tu modelo no está presente. Recuerda que el mismo código puede cambiar entre marcas y modelos.",
     usefulResourcesTitle: "Recursos Útiles",
     linkCleaning: "Cómo limpiar la freidora de aire",
@@ -143,6 +163,11 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     modelMetaTitle: "{brand} {model} : Codes d'erreur et Solutions | Crispissimo",
     modelMetaDescription: "Découvrez les codes d'erreur, problèmes courants, contrôles de sécurité et le manuel officiel de {brand} {model}.",
     modelH1: "Codes d'erreur et problèmes {brand} {model}",
+    brandMetaTitle: "Codes d'erreur friteuse à air {brand} et solutions | Crispissimo",
+    brandMetaDescription: "Découvrez la signification des codes d'erreur des friteuses {brand}, comment effectuer un redémarrage sécurisé et quels modèles sont documentés.",
+    brandH1: "Solutions aux codes d'erreur et problèmes des friteuses {brand}",
+    brandIntro: "Ce guide rassemble les principaux codes d'erreur documentés pour les friteuses à air {brand}. Les données proviennent de sources neutres : sélectionnez votre modèle pour diagnostiquer les problèmes et découvrir comment forcer un redémarrage en toute sécurité.",
+    brandsTitle: "Marques Documentées",
     introParagraph: "Cette page vous aide à interpréter les codes et messages d'erreur de votre friteuse à air. En sélectionnant la marque et le modèle, vous pourrez consulter des informations documentées ; le guide générique sert d'orientation si le modèle n'est pas présent. Rappelez-vous que le même code peut changer entre les marques et les modèles.",
     usefulResourcesTitle: "Ressources Utiles",
     linkCleaning: "Comment nettoyer la friteuse à air",
