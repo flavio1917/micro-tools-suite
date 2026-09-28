@@ -25,25 +25,26 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ]
     },
     "smoke-smell": {
-      "h1": "Fumo e puzza dalla friggitrice ad aria: cause e verifiche sicure",
-      "title": "Fumo e puzza friggitrice ad aria: cosa controllare e quando contattare l'assistenza | Crispissimo",
-      "meta": "Scopri perché la friggitrice ad aria fa fumo o puzza, le verifiche sicure da fare e quando smettere di usarla.",
-      "intro": "Questa guida illustra le cause comuni di fumo e odori anomali. Offre suggerimenti sicuri per la diagnostica esterna ma non incoraggia alcuna riparazione o smontaggio.",
-      "stepsTitle": "Passaggi di diagnostica sicura",
-      "steps": [
-        "Verifiche esterne: Assicurati che non ci siano residui di cibo bruciato sulla resistenza o nel cestello.",
-        "Raffreddamento: Se il fumo è eccessivo, spegni l'apparecchio, stacca la spina e attendi che si raffreddi completamente.",
-        "Cosa NON fare: Non gettare acqua nell'apparecchio, non smontare la serpentina e non ostruire le ventole di scarico."
+      "title": "Risoluzione Problemi Friggitrice ad Aria | Fumo e Cattivi Odori",
+      "h1": "Pronto Soccorso Air Fryer",
+      "meta": "Fumo bianco? Puzza di plastica? Niente panico. Ecco la guida rapida per risolvere i problemi più comuni e salvare la tua cena.",
+      "intro": "Fumo bianco? Puzza di plastica? Niente panico. Ecco la guida rapida per risolvere i problemi più comuni e salvare la tua cena.",
+      "quickNav": "Vai subito a:",
+      "emergencyTitle": "🚨 Regola di Sicurezza Base",
+      "emergency": "Se vedi FUMO NERO o senti odore di cavi elettrici bruciati, STACCA SUBITO LA SPINA. Non è grasso che brucia, è un guasto elettrico.",
+      "causeLabel": "Causa",
+      "solutionLabel": "Soluzione Rapida",
+      "fsTitle": "3 Regole per evitare fumo e puzze:",
+      "fsList": [
+        "Pulisci sempre il grasso residuo sotto il cestello dopo ogni cottura.",
+        "Aggiungi un cucchiaio d'acqua sul fondo quando cuoci cibi molto grassi (come pancetta o salsicce).",
+        "Esegui un ciclo a vuoto con limone o aceto se la friggitrice è nuova per eliminare l'odore di plastica."
       ],
-      "supportTitle": "Quando contattare l'assistenza",
-      "supportItems": [
-        "Se il fumo è di colore scuro, nero o denso (potrebbe essere un guasto elettrico).",
-        "Se l'odore è chiaramente di plastica bruciata o materiale elettrico fuso.",
-        "Se il problema persiste anche dopo un'accurata pulizia a freddo.",
-        "Se il dispositivo è sotto garanzia legale."
-      ],
-      "faqs": [
-        {"q": "Cosa fare se sento odore di bruciato?", "a": "Stacca immediatamente la spina. Se l'odore è di cibo, potrebbe essersi incastrato del grasso sulla resistenza. Se odora di plastica o cavi, non riutilizzare l'apparecchio."}
+      "items": [
+        { "id": "fumo-bianco", "emoji": "💨", "name": "Fumo Bianco dal retro", "cause": "Cibo troppo grasso (es. salsicce, pancetta) o residui di unto sul fondo del cestello.", "solution": "Aggiungi 2 cucchiai d'acqua sul fondo del cestello (sotto la griglia) prima di cuocere cibi grassi. L'acqua impedisce al grasso colato di bruciare e fumare." },
+        { "id": "puzza-plastica", "emoji": "👃", "name": "Puzza di Plastica", "cause": "Residui di fabbricazione sui rivestimenti interni. È normale al primo avvio.", "solution": "Fai un ciclo a vuoto a 200°C per 15-20 minuti mettendo nel cestello mezzo limone o una ciotolina con acqua e aceto. Pulisci tutto a freddo." },
+        { "id": "cibo-bruciato", "emoji": "🔥", "name": "Bruciato fuori, crudo dentro", "cause": "Temperatura troppo alta o cestello troppo pieno. L'aria non circola.", "solution": "Abbassa la temperatura di 20°C rispetto alla ricetta del forno e cuoci più a lungo. Non riempire mai il cestello oltre i 3/4." },
+        { "id": "cibo-vola", "emoji": "🌪️", "name": "Cibo o carta che vola", "cause": "Alimenti troppo leggeri (es. formaggio, spinaci, carta forno vuota) aspirati dalla ventola.", "solution": "Usa degli stuzzicadenti (ben incastrati) per fissare i cibi. NON mettere mai la carta forno senza cibo pesante sopra, o finirà sulla resistenza." }
       ]
     },
     "wont-turn-on": {
@@ -135,25 +136,26 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ]
     },
     "smoke-smell": {
-      "h1": "Air Fryer Smell and Smoke: Causes and Safe Troubleshooting",
-      "title": "Air Fryer Smell and Smoke: What to Check and When to Contact Support | Crispissimo",
-      "meta": "Find out why your air fryer may produce smoke or odours, what to check safely, and when to stop using it and contact support.",
-      "intro": "This guide illustrates common causes of unusual smoke and odors. It offers safe suggestions for external diagnostics but does not encourage any repair or disassembly.",
-      "stepsTitle": "Safe Troubleshooting Steps",
-      "steps": [
-        "External Checks: Make sure there is no burnt food residue on the heating element or inside the basket.",
-        "Cooling Down: If there is excessive smoke, turn off the appliance, unplug it, and wait for it to cool down completely.",
-        "What NOT to do: Do not throw water into the appliance, do not disassemble the heating element, and do not block the exhaust vents."
+      "title": "Air Fryer Troubleshooting | Smoke and Bad Smells",
+      "h1": "Air Fryer First Aid",
+      "meta": "White smoke? Plastic smell? Don't panic. Here is the quick guide to solving the most common problems and saving your dinner.",
+      "intro": "White smoke? Plastic smell? Don't panic. Here is the quick guide to solving the most common problems and saving your dinner.",
+      "quickNav": "Jump to:",
+      "emergencyTitle": "🚨 Basic Safety Rule",
+      "emergency": "If you see BLACK SMOKE or smell burning wires, UNPLUG IT IMMEDIATELY. That's not burning grease; it's an electrical fault.",
+      "causeLabel": "Cause",
+      "solutionLabel": "Quick Fix",
+      "fsTitle": "3 Rules to avoid smoke and smells:",
+      "fsList": [
+        "Always clean residual grease from under the basket after every use.",
+        "Add a tablespoon of water to the bottom when cooking very fatty foods (like bacon or sausages).",
+        "Run an empty cycle with lemon or vinegar if the air fryer is new to eliminate the plastic smell."
       ],
-      "supportTitle": "When to Contact Support",
-      "supportItems": [
-        "If the smoke is dark, black, or thick (this could indicate an electrical failure).",
-        "If the smell is clearly of burnt plastic or melted wiring.",
-        "If the problem persists even after a thorough cold cleaning.",
-        "If the device is under warranty."
-      ],
-      "faqs": [
-        {"q": "What should I do if I smell something burning?", "a": "Unplug it immediately. If it smells like food, grease might be stuck on the heating element. If it smells like plastic or wires, do not use the appliance."}
+      "items": [
+        { "id": "white-smoke", "emoji": "💨", "name": "White Smoke", "cause": "Food is too greasy (e.g., sausages, bacon) or there is grease residue at the bottom.", "solution": "Add 2 tablespoons of water to the bottom of the basket (under the grate) before cooking fatty foods. The water prevents dripped fat from smoking." },
+        { "id": "plastic-smell", "emoji": "👃", "name": "Plastic Smell", "cause": "Manufacturing residues on the internal coatings. Completely normal on the first run.", "solution": "Run an empty cycle at 400°F (200°C) for 15-20 minutes with half a lemon or a small bowl of water and vinegar. Wipe down when cool." },
+        { "id": "burnt-food", "emoji": "🔥", "name": "Burnt outside, raw inside", "cause": "Temperature too high or basket overcrowded. Air cannot circulate.", "solution": "Lower the temperature by 25°F compared to the oven recipe and cook longer. Never fill the basket more than 3/4 full." },
+        { "id": "flying-food", "emoji": "🌪️", "name": "Food or paper flying", "cause": "Lightweight items (e.g., cheese slices, empty parchment paper) sucked up by the fan.", "solution": "Use toothpicks (firmly secured) to weigh down light foods. NEVER put parchment paper in without heavy food on top." }
       ]
     },
     "wont-turn-on": {
@@ -245,25 +247,26 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ]
     },
     "smoke-smell": {
-      "h1": "Humo y olor en la freidora de aire: causas y comprobaciones seguras",
-      "title": "Humo y olor en freidora de aire: qué revisar y cuándo contactar al servicio | Crispissimo",
-      "meta": "Descubre por qué tu freidora de aire puede echar humo u olores extraños, qué revisar de forma segura y cuándo dejar de usarla.",
-      "intro": "Esta guía ilustra las causas comunes de humo y olores inusuales. Ofrece sugerencias seguras para diagnósticos externos, pero no fomenta ninguna reparación ni desmontaje.",
-      "stepsTitle": "Pasos de diagnóstico seguro",
-      "steps": [
-        "Comprobaciones externas: Asegúrate de que no haya restos de comida quemada en la resistencia o dentro de la cesta.",
-        "Enfriamiento: Si el humo es excesivo, apaga el aparato, desenchúfalo y espera a que se enfríe por completo.",
-        "Qué NO hacer: No eches agua en el aparato, no desmontes la resistencia y no bloquees las rejillas de ventilación."
+      "title": "Solución de Problemas Freidora de Aire | Humo y Olores",
+      "h1": "Primeros Auxilios Air Fryer",
+      "meta": "¿Humo blanco? ¿Olor a plástico? Que no cunda el pánico. Aquí tienes la guía rápida para solucionar los problemas más comunes.",
+      "intro": "¿Humo blanco? ¿Olor a plástico? Que no cunda el pánico. Aquí tienes la guía rápida para solucionar los problemas más comunes.",
+      "quickNav": "Ir a:",
+      "emergencyTitle": "🚨 Regla Básica de Seguridad",
+      "emergency": "Si ves HUMO NEGRO o hueles a cables quemados, DESENCHÚFALA INMEDIATAMENTE. No es grasa quemada, es un fallo eléctrico.",
+      "causeLabel": "Causa",
+      "solutionLabel": "Solución Rápida",
+      "fsTitle": "3 Reglas para evitar humo y olores:",
+      "fsList": [
+        "Limpia siempre la grasa residual debajo de la cesta después de cada uso.",
+        "Añade una cucharada de agua en el fondo al cocinar alimentos muy grasos (como tocino o salchichas).",
+        "Realiza un ciclo en vacío con limón o vinagre si la freidora es nueva para eliminar el olor a plástico."
       ],
-      "supportTitle": "Cuándo contactar al servicio",
-      "supportItems": [
-        "Si el humo es oscuro, negro o muy denso (podría indicar un fallo eléctrico).",
-        "Si el olor es claramente a plástico quemado o cables derretidos.",
-        "Si el problema persiste incluso después de una limpieza a fondo en frío.",
-        "Si el dispositivo está bajo garantía legal."
-      ],
-      "faqs": [
-        {"q": "¿Qué hacer si huelo a quemado?", "a": "Desenchúfala inmediatamente. Si huele a comida, puede haber grasa atascada en la resistencia. Si huele a plástico o cables, no utilices el aparato."}
+      "items": [
+        { "id": "humo-blanco", "emoji": "💨", "name": "Humo Blanco", "cause": "Comida muy grasa (ej. salchichas, bacon) o restos de aceite en el fondo.", "solution": "Añade 2 cucharadas de agua en el fondo de la cesta (bajo la rejilla) antes de cocinar. El agua evita que la grasa goteada humee." },
+        { "id": "olor-plastico", "emoji": "👃", "name": "Olor a Plástico", "cause": "Residuos de fabricación en los revestimientos. Es normal al principio.", "solution": "Haz un ciclo en vacío a 200°C durante 15-20 min con medio limón o un bol con agua y vinagre. Limpia cuando se enfríe." },
+        { "id": "comida-quemada", "emoji": "🔥", "name": "Quemado fuera, crudo dentro", "cause": "Temperatura muy alta o cesta demasiado llena. El aire no circula.", "solution": "Baja la temperatura 20°C respecto a la receta de horno y cocina más tiempo. No llenes la cesta más de 3/4." },
+        { "id": "comida-vuela", "emoji": "🌪️", "name": "Comida o papel volando", "cause": "Alimentos ligeros (ej. queso, espinacas, papel vacío) absorbidos por el ventilador.", "solution": "Usa palillos (bien clavados) para fijar alimentos. NUNCA pongas papel de horno sin comida pesada encima." }
       ]
     },
     "wont-turn-on": {
@@ -355,25 +358,26 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ]
     },
     "smoke-smell": {
-      "h1": "Odeur et fumée de la friteuse à air : causes et vérifications",
-      "title": "Friteuse à air fumée et odeur : quoi vérifier et quand appeler l'assistance | Crispissimo",
-      "meta": "Découvrez pourquoi votre friteuse à air peut produire de la fumée ou une mauvaise odeur, ce qu'il faut vérifier en toute sécurité.",
-      "intro": "Ce guide illustre les causes courantes de fumée et d'odeurs inhabituelles. Il offre des suggestions sûres pour les diagnostics externes, mais n'encourage aucune réparation ou démontage.",
-      "stepsTitle": "Étapes de diagnostic en sécurité",
-      "steps": [
-        "Vérifications externes : Assurez-vous qu'il n'y a pas de résidus de nourriture brûlée sur la résistance ou dans le panier.",
-        "Refroidissement : Si la fumée est excessive, éteignez l'appareil, débranchez-le et attendez qu'il refroidisse complètement.",
-        "Ce qu'il NE faut PAS faire : Ne jetez pas d'eau dans l'appareil, ne démontez pas la résistance et ne bloquez pas les grilles d'aération."
+      "title": "Dépannage Friteuse à Air | Fumée et Mauvaises Odeurs",
+      "h1": "Premiers Secours Air Fryer",
+      "meta": "Fumée blanche ? Odeur de plastique ? Pas de panique. Voici le guide rapide pour résoudre les problèmes courants.",
+      "intro": "Fumée blanche ? Odeur de plastique ? Pas de panique. Voici le guide rapide pour résoudre les problèmes courants.",
+      "quickNav": "Aller à :",
+      "emergencyTitle": "🚨 Règle de Sécurité de Base",
+      "emergency": "Si vous voyez de la FUMÉE NOIRE ou sentez une odeur de fils brûlés, DÉBRANCHEZ IMMÉDIATEMENT. C'est un défaut électrique.",
+      "causeLabel": "Cause",
+      "solutionLabel": "Solution Rapide",
+      "fsTitle": "3 Règles pour éviter la fumée et les odeurs :",
+      "fsList": [
+        "Nettoyez toujours la graisse résiduelle sous le panier après chaque utilisation.",
+        "Ajoutez une cuillère à soupe d'eau au fond lorsque vous cuisinez des aliments très gras.",
+        "Faites un cycle à vide avec du citron ou du vinaigre si la friteuse est neuve pour éliminer l'odeur de plastique."
       ],
-      "supportTitle": "Quand contacter l'assistance",
-      "supportItems": [
-        "Si la fumée est foncée, noire ou épaisse (cela pourrait indiquer une panne électrique).",
-        "Si l'odeur est clairement celle de plastique brûlé ou de fils fondus.",
-        "Si le problème persiste même après un nettoyage à froid minutieux.",
-        "Si l'appareil est sous garantie."
-      ],
-      "faqs": [
-        {"q": "Que faire si je sens une odeur de brûlé ?", "a": "Débranchez immédiatement. Si l'odeur est celle de la nourriture, de la graisse pourrait être collée à la résistance. Si l'odeur est du plastique, n'utilisez plus l'appareil."}
+      "items": [
+        { "id": "fumee-blanche", "emoji": "💨", "name": "Fumée Blanche", "cause": "Aliments trop gras (ex. saucisses, bacon) ou résidus de graisse au fond.", "solution": "Ajoutez 2 cuillères à soupe d'eau au fond du panier (sous la grille) avant de cuire des aliments gras. L'eau empêche la graisse de fumer." },
+        { "id": "odeur-plastique", "emoji": "👃", "name": "Odeur de Plastique", "cause": "Résidus de fabrication sur les revêtements. C'est normal au début.", "solution": "Faites un cycle à vide à 200°C pendant 15-20 min avec un demi-citron ou un bol d'eau et de vinaigre. Nettoyez à froid." },
+        { "id": "nourriture-brulee", "emoji": "🔥", "name": "Brûlé dehors, cru dedans", "cause": "Température trop élevée ou panier trop plein. L'air ne circule pas.", "solution": "Baissez la température de 20°C par rapport au four et cuisez plus longtemps. Ne remplissez jamais à plus des 3/4." },
+        { "id": "nourriture-vole", "emoji": "🌪️", "name": "Nourriture qui vole", "cause": "Aliments légers (ex. fromage, papier cuisson vide) aspirés par le ventilateur.", "solution": "Utilisez des cure-dents pour fixer les aliments légers. Ne mettez JAMAIS de papier cuisson sans aliments lourds dessus." }
       ]
     },
     "wont-turn-on": {
