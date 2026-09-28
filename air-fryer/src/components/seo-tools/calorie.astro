@@ -12,14 +12,7 @@ export function getStaticPaths() {
 }
 
 const { lang = 'it' } = Astro.props;
-const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
 
-const backBtnLabel = {
-  it: "Vai alle ricette",
-  en: "Go to Recipes",
-  es: "Ir a las recetas",
-  fr: "Voir les recettes"
-}[lang] || "Vai alle ricette";
 
 const content = {
   it: {
@@ -274,12 +267,15 @@ const faqSchema = currentFaqs.length > 0 ? {
 <MainLayout alternateUrls={alternateUrls} title={t.title} lang={lang} description={t.desc}>
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
 
-    <div class="mb-8 flex justify-start">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
-        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-        <span class="font-bold text-sm">{backBtnLabel}</span>
-      </a>
-    </div>
+    <nav aria-label="Breadcrumb" class="mb-8 flex justify-start w-full overflow-x-auto pb-2">
+      <ol class="flex items-center space-x-2 text-xs md:text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap">
+        <li><a href={lang === 'it' ? '/' : `/${lang}/`} class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Home</a></li>
+        <li><span class="mx-1.5 md:mx-2 text-slate-300 dark:text-slate-600">/</span></li>
+        <li><a href={{"it": "/strumenti/", "en": "/en/tools/", "es": "/es/herramientas/", "fr": "/fr/outils/"}[lang] || "/strumenti/"} class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">{{"it": "Strumenti", "en": "Tools", "es": "Herramientas", "fr": "Outils"}[lang] || "Strumenti"}</a></li>
+        <li><span class="mx-1.5 md:mx-2 text-slate-300 dark:text-slate-600">/</span></li>
+        <li aria-current="page" class="text-slate-800 dark:text-slate-200 font-medium truncate">{{"it": "Calcolo Calorie", "en": "Calorie Calculator", "es": "Calculadora de Calor\u00edas", "fr": "Calcul Calories"}[lang] || ""}</li>
+      </ol>
+    </nav>
 
     <header class="text-center mb-10">
       <div class="inline-flex items-center justify-center mb-6">
@@ -387,12 +383,7 @@ const faqSchema = currentFaqs.length > 0 ? {
 
     <Disclaimer type="nutrizionale" lang={lang} />
 
-    <div class="mt-12 text-center pt-8 border-t border-slate-200 dark:border-slate-800">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
-        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-        <span class="font-bold text-sm">{backBtnLabel}</span>
-      </a>
-    </div>
+
 
   </section>
 
