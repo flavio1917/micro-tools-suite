@@ -13,14 +13,16 @@ export interface Props {
   brandDisplayName?: string;
   hideModelInfo?: boolean;
   contextPrefix?: string;
+  errorIndex?: number;
 }
 
-const { error, model, lang, brandDisplayName, hideModelInfo = false, sourceModelName: overrideModelName, sourceModelSpec: overrideModelSpec, modelCanonicalSlug: overrideSlug, contextPrefix } = Astro.props;
+const { error, model, lang, brandDisplayName, hideModelInfo = false, sourceModelName: overrideModelName, sourceModelSpec: overrideModelSpec, modelCanonicalSlug: overrideSlug, contextPrefix, errorIndex } = Astro.props;
 
 const modelCanonicalSlug = overrideSlug || model?.canonical_slug || model?.id || '';
 const loc = getLocalizedErrorContent(lang, modelCanonicalSlug, error);
 
-const finalAnchorId = toSafeAnchorId(contextPrefix ? `${contextPrefix}-error` : 'error', loc.code);
+const safeCode = (loc.code === 'SYMPTOM-POWER' && errorIndex !== undefined && errorIndex > 0) ? 'SYMPTOM-SCHEDULE' : loc.code;
+const finalAnchorId = toSafeAnchorId(contextPrefix ? `${contextPrefix}-error` : 'error', safeCode);
 
 const sourceModelName = overrideModelName || model?.primary_display_name || model?.user_label;
 const sourceModelSpec = overrideModelSpec || model?.model_spec;
@@ -28,6 +30,9 @@ const sourceModelSpec = overrideModelSpec || model?.model_spec;
 const hasModelInfo = sourceModelName || sourceModelSpec;
 
 const manualUrl = error.source?.manual_url || error.manual_url;
+
+let displayCodeUI = loc.displayCode;
+if (displayCodeUI && displayCodeUI.endsWith('.')) displayCodeUI = displayCodeUI.slice(0, -1);
 ---
 
 <div class="mb-6 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 shadow-sm overflow-hidden flex flex-col md:flex-row scroll-mt-24" id={finalAnchorId}
@@ -36,13 +41,13 @@ const manualUrl = error.source?.manual_url || error.manual_url;
      data-analytics-brand={brandDisplayName || model?.brand || ''}>
      
   <!-- LEFT COLUMN -->
-  <div class="w-full md:w-1/3 bg-slate-50 dark:bg-slate-800/50 p-5 border-b md:border-b-0 md:border-r border-slate-100 dark:border-slate-800 flex flex-col gap-4">
-    <div class="flex items-center gap-3 flex-wrap">
+  <div class="w-full md:w-1/3 bg-slate-50 dark:bg-slate-800/50 p-4 sm:p-5 border-b md:border-b-0 md:border-r border-slate-100 dark:border-slate-800 flex flex-col gap-4">
+    <div class="flex items-center gap-3 flex-wrap min-w-0">
       <h3 class:list={[
-        "font-black text-slate-900 dark:text-white m-0",
+        "font-black text-slate-900 dark:text-white m-0 break-words max-w-full",
         loc.isLongTitle ? "text-lg sm:text-xl md:text-2xl tracking-normal font-sans leading-snug" : "text-3xl tracking-tight font-mono"
       ]}>
-        {loc.displayCode}
+        {displayCodeUI}
       </h3>
     </div>
     
@@ -91,7 +96,7 @@ const manualUrl = error.source?.manual_url || error.manual_url;
   </div>
 
   <!-- RIGHT COLUMN -->
-  <div class="w-full md:w-2/3 p-5 space-y-5 flex flex-col justify-center">
+  <div class="w-full md:w-2/3 p-4 sm:p-5 space-y-5 flex flex-col justify-center min-w-0">
     
     {/* Diagnosis — from Errori column */}
     {loc.diagnosis && (

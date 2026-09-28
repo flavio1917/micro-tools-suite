@@ -55,7 +55,7 @@ export function getLocalizedErrorContent(
     userSymptom,
     isFallbackSource,
     originalManualBadge,
-    isLongTitle: !!isXiaomiSymptom,
+    isLongTitle: !!isXiaomiSymptom || error.code === 'RESET-GENERIC',
     suppressUserSymptomDetail: !!isXiaomiSymptom,
   };
 }

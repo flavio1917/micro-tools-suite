@@ -127,7 +127,7 @@ export const errorsUiTranslations = {
     },
 
     genericReset: {
-      title: "Riavvio dell’alimentazione",
+      title: "Reset e riavvio",
       classification: "Ripristino / Riavvio dell’alimentazione",
       severity: "Bassa",
       step1: "Spegni l’apparecchio e scollegalo dalla presa.",
@@ -293,7 +293,7 @@ export const errorsUiTranslations = {
     },
 
     genericReset: {
-      title: "Power-cycle reset",
+      title: "Reset and restart",
       classification: "Reset / Power cycle",
       severity: "Low",
       step1: "Turn off the appliance and unplug it from the socket.",
@@ -459,7 +459,7 @@ export const errorsUiTranslations = {
     },
 
     genericReset: {
-      title: "Reinicio de alimentación",
+      title: "Restablecimiento y reinicio",
       classification: "Restablecimiento / Reinicio eléctrico",
       severity: "Baja",
       step1: "Apaga el aparato y desconéctalo del enchufe.",
@@ -625,7 +625,7 @@ export const errorsUiTranslations = {
     },
 
     genericReset: {
-      title: "Redémarrage électrique",
+      title: "Réinitialisation et redémarrage",
       classification: "Réinitialisation / Redémarrage électrique",
       severity: "Faible",
       step1: "Éteignez l'appareil et débranchez-le de la prise.",
