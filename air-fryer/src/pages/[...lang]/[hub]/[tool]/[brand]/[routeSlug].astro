@@ -2,7 +2,7 @@
 import MainLayout from '../../../../../layouts/MainLayout.astro';
 import AirFryerModelCard from '../../../../../components/air-fryer-errors/AirFryerModelCard.astro';
 import { airFryerModels } from '../../../../../lib/air-fryer-db';
-import { pageErrorsSeoTranslations } from '../../../../../data/i18n/page-errors-seo';
+import { pageErrorsSeoTranslations, modelMetaTemplate } from '../../../../../data/i18n/page-errors-seo';
 import { errorsUiTranslations } from '../../../../../data/i18n/errors-ui';
 import { getAirFryerErrorAlternateUrls, getAirFryerErrorHubUrl } from '../../../../../lib/air-fryer-error-routes';
 import { toSafeAnchorId } from '../../../../../lib/air-fryer-anchor';
@@ -82,7 +82,7 @@ const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 const brandName = model.primary_display_name?.split(' ')[0] || model.brand_slug;
 const displayName = model.primary_display_name || `${model.brand_slug} ${model.model_spec}`;
 const title = (seoData.modelMetaTitle?.replace('{brand}', '').replace('{model}', displayName).trim() || `${displayName} Error Codes`).replace(/  +/g, ' ');
-const description = (seoData.modelMetaDescription?.replace('{brand}', '').replace('{model}', displayName).trim() || '').replace(/  +/g, ' ');
+const description = (modelMetaTemplate[lang]?.replace(/{brand}/g, capitalize(model.brand_slug)).replace(/{model}/g, displayName).trim() || '').replace(/  +/g, ' ');
 const h1 = (seoData.modelH1?.replace('{brand}', '').replace('{model}', displayName).trim() || displayName).replace(/  +/g, ' ');
 
 const alternateUrls = getAirFryerErrorAlternateUrls(model.brand_slug, model.route_slug!);

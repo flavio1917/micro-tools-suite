@@ -273,3 +273,10 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     ]
   }
 };
+
+export const modelMetaTemplate: Record<string, string> = {
+  it: "Consulta i codici errore documentati per {model}: scopri come eseguire un riavvio sicuro e le soluzioni definitive ai guasti E1, E2, E3, E4 e altri.",
+  en: "Check the documented error codes for {model}: discover how to perform a safe restart and find definitive solutions for E1, E2, E3, E4 and other faults.",
+  es: "Consulta los códigos de error documentados para {model}: descubre cómo reiniciar de forma segura y las soluciones definitivas a los fallos E1, E2, E3, E4.",
+  fr: "Consultez les codes d'erreur documentés pour {model} : découvrez comment redémarrer en sécurité et les solutions définitives aux pannes E1, E2, E3, E4."
+};
