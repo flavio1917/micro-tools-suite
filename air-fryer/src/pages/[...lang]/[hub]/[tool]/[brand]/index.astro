@@ -27,7 +27,7 @@ export async function getStaticPaths() {
           !(m.duplicate_group && m.is_ambiguous) &&
           m.seo_status !== 'fallback_only' &&
           m.route_slug && 
-          m.errors && m.errors.length > 0
+          ((m.error_codes && m.error_codes.length > 0) || (m.symptoms && m.symptoms.length > 0))
         );
 
         if (brandModels.length > 0) {
@@ -109,7 +109,7 @@ const breadcrumbSchema = {
               {model.brand} {model.model}
             </h3>
             <p class="text-slate-500 dark:text-slate-400 text-sm">
-              {model.errors ? model.errors.length : 0} codici errore documentati
+              {model.error_codes ? model.error_codes.length : 0} codici errore documentati
             </p>
           </a>
         );
