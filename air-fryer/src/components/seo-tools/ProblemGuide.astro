@@ -13,14 +13,7 @@ const { id, lang } = Astro.props;
 // Fallback to Italian if translation is missing
 const t = problemGuidesI18n[lang]?.[id] || problemGuidesI18n['it'][id];
 
-const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
 
-const backBtnLabel = {
-  it: "Vai all'hub strumenti",
-  en: "Go to tools hub",
-  es: "Ir al hub de herramientas",
-  fr: "Aller au hub des outils"
-}[lang] || "Vai all'hub strumenti";
 
 const hubBaseUrls = {
   it: '/strumenti',
@@ -46,9 +39,39 @@ const routeMap = {
   'fan-not-working': { it: '/strumenti/ventola-friggitrice-ad-aria-non-gira/', en: '/en/tools/air-fryer-fan-not-working/', es: '/es/herramientas/freidora-aire-ventilador-no-funciona/', fr: '/fr/outils/friteuse-air-ventilateur-ne-marche-pas/' }
 };
 
-const routes = routeMap[id];
-const canonicalUrl = `https://www.crispissimo.com${routes[lang]}`;
+const breadcrumbNames = {
+  'it': { 'reset': 'Reset', 'smoke-smell': 'Fumo e Puzza', 'wont-turn-on': 'Non si accende', 'not-heating': 'Non scalda', 'fan-not-working': 'Ventola non gira' },
+  'en': { 'reset': 'Reset', 'smoke-smell': 'Smoke and Smell', 'wont-turn-on': 'Won\'t Turn On', 'not-heating': 'Not Heating', 'fan-not-working': 'Fan Not Working' },
+  'es': { 'reset': 'Reset', 'smoke-smell': 'Humo y Olor', 'wont-turn-on': 'No enciende', 'not-heating': 'No calienta', 'fan-not-working': 'Ventilador no funciona' },
+  'fr': { 'reset': 'Reset', 'smoke-smell': 'Fumée et Odeur', 'wont-turn-on': 'Ne s\'allume pas', 'not-heating': 'Ne chauffe pas', 'fan-not-working': 'Ventilateur ne marche pas' }
+};
+
+const currentGuideName = breadcrumbNames[lang as keyof typeof breadcrumbNames]?.[id as keyof typeof breadcrumbNames['it']] || breadcrumbNames['it'][id as keyof typeof breadcrumbNames['it']] || id;
+const toolsNames = { it: 'Strumenti', en: 'Tools', es: 'Herramientas', fr: 'Outils' };
+
+const routes = routeMap[id as keyof typeof routeMap];
+const canonicalUrl = `https://www.crispissimo.com${routes[lang as keyof typeof routes]}`;
 const languages = ['it', 'en', 'es', 'fr'];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `https://www.crispissimo.com${lang === 'it' ? '/' : '/' + lang + '/'}` },
+    { "@type": "ListItem", "position": 2, "name": toolsNames[lang as keyof typeof toolsNames], "item": `https://www.crispissimo.com${hubUrl}/` },
+    { "@type": "ListItem", "position": 3, "name": currentGuideName, "item": canonicalUrl }
+  ]
+};
+
+const faqSchema = t.faqs && t.faqs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": t.faqs.map((faq: any) => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+  }))
+} : null;
 ---
 
 <MainLayout
@@ -67,26 +90,13 @@ const languages = ['it', 'en', 'es', 'fr'];
 
   <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <!-- Breadcrumb -->
-    <nav class="flex text-sm text-gray-500 mb-8" aria-label="Breadcrumb">
-      <ol class="inline-flex items-center space-x-1 md:space-x-3">
-        <li class="inline-flex items-center">
-          <a href={homeUrl} class="inline-flex items-center hover:text-orange-600 transition-colors">
-            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-            </svg>
-            Home
-          </a>
-        </li>
-        <li>
-          <div class="flex items-center">
-            <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-            </svg>
-            <a href={hubUrl} class="ml-1 hover:text-orange-600 transition-colors capitalize">
-              {lang === 'it' ? 'Strumenti' : lang === 'es' ? 'Herramientas' : lang === 'fr' ? 'Outils' : 'Tools'}
-            </a>
-          </div>
-        </li>
+    <nav aria-label="Breadcrumb" class="mb-8 flex justify-start w-full overflow-x-auto pb-2">
+      <ol class="flex items-center space-x-2 text-xs md:text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap">
+        <li><a href={lang === 'it' ? '/' : `/${lang}/`} class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Home</a></li>
+        <li><span class="mx-1.5 md:mx-2 text-slate-300 dark:text-slate-600">/</span></li>
+        <li><a href={lang === 'it' ? '/strumenti/' : lang === 'en' ? '/en/tools/' : lang === 'es' ? '/es/herramientas/' : '/fr/outils/'} class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">{toolsNames[lang as keyof typeof toolsNames] || toolsNames.it}</a></li>
+        <li><span class="mx-1.5 md:mx-2 text-slate-300 dark:text-slate-600">/</span></li>
+        <li aria-current="page" class="text-slate-800 dark:text-slate-200 font-medium truncate max-w-[200px] sm:max-w-none">{currentGuideName}</li>
       </ol>
     </nav>
 
@@ -243,4 +253,7 @@ const languages = ['it', 'en', 'es', 'fr'];
       </div>
     </section>
   </main>
+
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </MainLayout>

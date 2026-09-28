@@ -18,14 +18,7 @@ export interface Props {
 }
 
 const { lang = 'it' } = Astro.props;
-const homeUrl = lang === 'it' ? '/strumenti' : `/${lang}/tools`;
 
-const backBtnLabel = {
-  it: "Tutti gli strumenti",
-  en: "All tools",
-  es: "Todas las herramientas",
-  fr: "Tous les outils"
-}[lang] || "Tutti gli strumenti";
 
 const seoData = pageErrorsSeoTranslations[lang as string] || pageErrorsSeoTranslations['it'];
 const t = errorsUiTranslations[lang] || errorsUiTranslations['it'];
@@ -65,12 +58,15 @@ const faqSchema = {
   
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
     
-    <div class="mb-8 flex justify-start">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
-        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-        <span class="font-bold text-sm">{backBtnLabel}</span>
-      </a>
-    </div>
+    <nav aria-label="Breadcrumb" class="mb-8 flex justify-start w-full overflow-x-auto pb-2">
+      <ol class="flex items-center space-x-2 text-xs md:text-sm text-slate-500 dark:text-slate-400 whitespace-nowrap">
+        <li><a href={lang === 'it' ? '/' : `/${lang}/`} class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Home</a></li>
+        <li><span class="mx-1.5 md:mx-2 text-slate-300 dark:text-slate-600">/</span></li>
+        <li><a href={lang === 'it' ? '/strumenti/' : lang === 'en' ? '/en/tools/' : lang === 'es' ? '/es/herramientas/' : '/fr/outils/'} class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">{seoData.breadcrumbTools}</a></li>
+        <li><span class="mx-1.5 md:mx-2 text-slate-300 dark:text-slate-600">/</span></li>
+        <li aria-current="page" class="text-slate-800 dark:text-slate-200 font-medium truncate max-w-[200px] sm:max-w-none">{seoData.breadcrumbCurrent}</li>
+      </ol>
+    </nav>
 
     <header class="text-center mb-12">
       <h1 class="tool-title text-4xl md:text-6xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500 pb-1 tracking-tight">
@@ -134,12 +130,7 @@ const faqSchema = {
       </div>
     </section>
 
-    <div class="mt-12 text-center pt-8 border-t border-slate-200 dark:border-slate-800 transition-colors">
-      <a href={homeUrl} class="inline-flex items-center justify-center px-6 py-3 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
-        <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-        <span class="font-bold text-sm">{backBtnLabel}</span>
-      </a>
-    </div>
+
 
   </section>
 
