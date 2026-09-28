@@ -1,0 +1,16 @@
+---
+import ProblemGuide from '../../../components/seo-tools/ProblemGuide.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: undefined, slug: 'reset-friggitrice-ad-aria' }, props: { id: 'reset', lang: 'it' } },
+    { params: { lang: undefined, slug: 'fumo-puzza-friggitrice-ad-aria' }, props: { id: 'smoke-smell', lang: 'it' } },
+    { params: { lang: undefined, slug: 'friggitrice-ad-aria-non-si-accende' }, props: { id: 'wont-turn-on', lang: 'it' } },
+    { params: { lang: undefined, slug: 'friggitrice-ad-aria-non-scalda' }, props: { id: 'not-heating', lang: 'it' } },
+    { params: { lang: undefined, slug: 'ventola-friggitrice-ad-aria-non-gira' }, props: { id: 'fan-not-working', lang: 'it' } }
+  ];
+}
+
+const { id, lang } = Astro.props;
+---
+<ProblemGuide id={id} lang={lang} />

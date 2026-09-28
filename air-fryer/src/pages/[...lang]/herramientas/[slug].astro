@@ -1,0 +1,16 @@
+---
+import ProblemGuide from '../../../components/seo-tools/ProblemGuide.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'es', slug: 'reset-freidora-aire' }, props: { id: 'reset', lang: 'es' } },
+    { params: { lang: 'es', slug: 'freidora-aire-humo-olor' }, props: { id: 'smoke-smell', lang: 'es' } },
+    { params: { lang: 'es', slug: 'freidora-aire-no-enciende' }, props: { id: 'wont-turn-on', lang: 'es' } },
+    { params: { lang: 'es', slug: 'freidora-aire-no-calienta' }, props: { id: 'not-heating', lang: 'es' } },
+    { params: { lang: 'es', slug: 'freidora-aire-ventilador-no-funciona' }, props: { id: 'fan-not-working', lang: 'es' } }
+  ];
+}
+
+const { id, lang } = Astro.props;
+---
+<ProblemGuide id={id} lang={lang} />

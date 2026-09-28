@@ -1,0 +1,16 @@
+---
+import ProblemGuide from '../../../components/seo-tools/ProblemGuide.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en', slug: 'air-fryer-reset' }, props: { id: 'reset', lang: 'en' } },
+    { params: { lang: 'en', slug: 'air-fryer-smell-smoke' }, props: { id: 'smoke-smell', lang: 'en' } },
+    { params: { lang: 'en', slug: 'air-fryer-wont-turn-on' }, props: { id: 'wont-turn-on', lang: 'en' } },
+    { params: { lang: 'en', slug: 'air-fryer-not-heating' }, props: { id: 'not-heating', lang: 'en' } },
+    { params: { lang: 'en', slug: 'air-fryer-fan-not-working' }, props: { id: 'fan-not-working', lang: 'en' } }
+  ];
+}
+
+const { id, lang } = Astro.props;
+---
+<ProblemGuide id={id} lang={lang} />
