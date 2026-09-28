@@ -17,20 +17,20 @@ const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
 // DIZIONARIO SEO SPECIFICO (Anti-Boilerplate)
 const seoData = {
   it: {
-    title: "Come Riscaldare Cibo in Friggitrice ad Aria: Tempi e Gradi",
-    description: "Tempi e temperature per riscaldare pizza, pasta, pollo, fritti e altri avanzi in friggitrice ad aria e recuperarne la croccantezza."
+    title: "Riscaldare il Cibo in Friggitrice ad Aria: Guida a Tempi e Gradi",
+    description: "Abbandona il microonde: scopri i tempi e le temperature esatte per riscaldare pizza, carne, patatine e pasta in friggitrice ad aria senza seccarli."
   },
   en: {
-    title: "How to Reheat Food in an Air Fryer: Time and Temperature",
-    description: "Reheat pizza, pasta, chicken, fried food and more in an air fryer with recommended times and temperatures for crispy leftovers."
+    title: "Reheating Food in Air Fryer: Times and Temperatures Guide",
+    description: "Skip the microwave: discover the exact times and temperatures to reheat pizza, fries, meat, and pasta in your air fryer, keeping them perfectly crispy."
   },
   es: {
-    title: "Cómo Recalentar Comida en Freidora de Aire: Tiempos y Temperaturas",
-    description: "Recalienta pizza, pasta, pollo, fritos y más en freidora de aire con tiempos y temperaturas orientativos para recuperar el crujiente."
+    title: "Recalentar Comida en Freidora de Aire: Guía de Tiempos y Grados",
+    description: "Olvida el microondas: descubre los tiempos y temperaturas exactas para recalentar pizza, patatas, carne y pasta en freidora de aire y recuperar el crujiente."
   },
   fr: {
-    title: "Réchauffer des Aliments à l’Air Fryer : Temps et Températures",
-    description: "Réchauffez pizza, pâtes, poulet, fritures et plus encore à l’air fryer avec des temps et températures indicatifs pour retrouver du croustillant."
+    title: "Réchauffer des Aliments à l'Air Fryer : Guide Temps et Températures",
+    description: "Oubliez le micro-ondes : découvrez les temps et températures exacts pour réchauffer pizzas, frites, viandes et pâtes à la friteuse à air sans les assécher."
   }
 };
 
@@ -45,7 +45,8 @@ const backBtnLabel = {
 
 const content = {
   it: {
-    h1: "Come riscaldare il cibo in friggitrice ad aria",
+    h1: "Come Riscaldare il Cibo in Friggitrice ad Aria: Tempi e Gradi",
+    intro: "Riscaldare il cibo in friggitrice ad aria è meglio del microonde? Scopri tempi e temperature esatte per riscaldare pizza, pasta, carne e fritti mantenendoli croccanti come appena cucinati.",
     desc: "Il tuo rianimatore di avanzi. Seleziona il cibo e trova tempi e temperature indicativi per recuperare croccantezza e calore.",
     quickNav: "Vai a:",
     editorialH2: "La scienza del riscaldamento: perché funziona?",
@@ -175,7 +176,8 @@ const content = {
     ]
   },
   es: {
-    h1: "Cómo recalentar comida en freidora de aire",
+    h1: "Cómo Recalentar Comida en Freidora de Aire: Tiempos y Grados",
+    intro: "¿Recalentar la comida en la freidora de aire es mejor que el microondas? Descubre tiempos y temperaturas para recalentar pizza, carne y fritos y mantenerlos crujientes.",
     desc: "Tu revividor de sobras. Elige el alimento y encuentra tiempos y temperaturas orientativos para recuperar el calor y el crujiente.",
     quickNav: "Ir a:",
     editorialH2: "Por qué la freidora de aire ayuda a recalentar",
@@ -308,11 +310,59 @@ const content = {
 
 const t = content[lang as keyof typeof content] || content.it;
 
+
+// === INJECTED SEO DATA ===
+const alternateUrls = {
+  it: `https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/`,
+  en: `https://www.crispissimo.com/en/tools/reheat-food-air-fryer/`,
+  es: `https://www.crispissimo.com/es/herramientas/recalentar-comida-freidora-aire/`,
+  fr: `https://www.crispissimo.com/fr/outils/rechauffer-aliments-friteuse-air/`,
+  "x-default": `https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/`
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.crispissimo.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {"it": "Strumenti", "en": "Tools", "es": "Herramientas", "fr": "Outils"}[lang] || "Strumenti",
+      "item": `https://www.crispissimo.com${{"it": "/strumenti/", "en": "/en/tools/", "es": "/es/herramientas/", "fr": "/fr/outils/"}[lang] || "/strumenti/"}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {"it": "Riscaldare Cibo", "en": "Reheating Food", "es": "Recalentar Comida", "fr": "R\u00e9chauffer Aliments"}[lang] || "",
+      "item": alternateUrls[lang] || alternateUrls.it
+    }
+  ]
+};
+
+const currentFaqs = t.faqs || [];
+const faqSchema = currentFaqs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": currentFaqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q || faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a || faq.answer
+    }
+  }))
+} : null;
 ---
 
-<MainLayout title={currentSeo.title} lang={lang} description={currentSeo.description}>
+<MainLayout alternateUrls={alternateUrls} title={currentSeo.title} lang={lang} description={currentSeo.description}>
   <section class="max-w-5xl mx-auto py-12 md:py-16 px-4">
-    
+
     <div class="mb-8 flex justify-start">
       <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -322,6 +372,7 @@ const t = content[lang as keyof typeof content] || content.it;
 
     <header class="text-center mb-10">
       <h1 class="tool-title text-3xl md:text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-amber-600 dark:from-orange-400 dark:to-amber-400 pb-1">{t.h1}</h1>
+      <p class="tool-text text-base md:text-xl max-w-2xl mx-auto font-medium mb-6 text-slate-600 dark:text-slate-300">{t.intro}</p>
       <p class="tool-text text-base md:text-xl max-w-2xl mx-auto">{t.desc}</p>
     </header>
 
@@ -368,15 +419,15 @@ const t = content[lang as keyof typeof content] || content.it;
           <h2 class="tool-subtitle !text-2xl md:!text-3xl mb-6 flex items-center gap-3 border-b border-slate-200 dark:border-slate-800 pb-3">
             <span class="text-3xl md:text-4xl drop-shadow-md">{cat.icon}</span> {cat.title}
           </h2>
-          
+
           <div class="grid md:grid-cols-2 gap-6">
             {cat.items.map((item: any) => (
               <article class="tool-card hover:border-orange-400 dark:hover:border-orange-500/50 hover:-translate-y-1 transition-all duration-300 !p-6">
                 <h3 class="tool-subtitle !text-xl mb-4 border-b border-slate-200 dark:border-slate-700/60 pb-3 flex items-center gap-3">
-                  <span class="text-2xl bg-slate-50 dark:bg-slate-900/80 p-2 rounded-xl shadow-sm dark:shadow-inner border border-slate-200 dark:border-white/5 transition-colors">{item.emoji}</span> 
+                  <span class="text-2xl bg-slate-50 dark:bg-slate-900/80 p-2 rounded-xl shadow-sm dark:shadow-inner border border-slate-200 dark:border-white/5 transition-colors">{item.emoji}</span>
                   {item.name}
                 </h3>
-                
+
                 <div class="flex gap-4 mb-4">
                   <div class="tool-card-inner !px-4 !py-2 text-center flex-1">
                     <span class="tool-label !mb-1 !text-[10px]">{t.ui.temp}</span>
@@ -387,9 +438,9 @@ const t = content[lang as keyof typeof content] || content.it;
                     <span class="text-lg md:text-xl font-mono font-bold text-blue-600 dark:text-blue-400">{item.time}</span>
                   </div>
                 </div>
-                
+
                 <p class="tool-text text-sm bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 p-3 rounded-xl leading-relaxed">
-                  <span class="text-amber-600 dark:text-amber-400 font-bold block mb-1">{t.ui.tip}</span> 
+                  <span class="text-amber-600 dark:text-amber-400 font-bold block mb-1">{t.ui.tip}</span>
                   {item.tip}
                 </p>
               </article>
@@ -398,6 +449,36 @@ const t = content[lang as keyof typeof content] || content.it;
         </div>
       ))}
     </div>
+
+
+    <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
+      <h3 class="text-xl font-bold mb-4 text-slate-800 dark:text-white">Strumenti Correlati</h3>
+      <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+        <li><a href={lang === 'it' ? '/strumenti/codici-errore-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-error-codes/' : lang === 'es' ? '/es/herramientas/codigos-error-freidora-aire/' : '/fr/outils/codes-erreur-friteuse-air/'} class="hover:text-orange-500 underline">Codici Errore Friggitrice ad Aria</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/fumo-puzza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-smell-smoke/' : lang === 'es' ? '/es/herramientas/freidora-aire-humo-olor/' : '/fr/outils/friteuse-air-fumee-odeur/'} class="hover:text-orange-500 underline">Fumo e Puzza</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/pulire-resistenza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/clean-air-fryer-heating-element/' : lang === 'es' ? '/es/herramientas/limpiar-resistencia-freidora-aire/' : '/fr/outils/nettoyer-resistance-friteuse-air/'} class="hover:text-orange-500 underline">Pulizia Resistenza</a></li>
+      </ul>
+    </div>
+
+
+    {t.faqs && t.faqs.length > 0 && (
+      <div class="mt-12 max-w-3xl mx-auto">
+        <h2 class="tool-subtitle mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">{t.faqTitle || "FAQ"}</h2>
+        <div class="space-y-4">
+          {t.faqs.map((faq) => (
+            <details class="group tool-faq-item [&_summary::-webkit-details-marker]:hidden bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-xl p-4 sm:p-5 shadow-sm">
+              <summary class="flex justify-between items-center font-bold cursor-pointer list-none text-slate-800 dark:text-slate-100 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+                {faq.q || faq.question}
+                <span class="transition group-open:rotate-180">
+                  <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                </span>
+              </summary>
+              <p class="tool-text mt-4 text-base border-t border-slate-200 dark:border-slate-800 pt-4">{faq.a || faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    )}
 
     <Disclaimer type="generale" lang={lang} />
 
@@ -409,4 +490,9 @@ const t = content[lang as keyof typeof content] || content.it;
     </div>
 
   </section>
+
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </MainLayout>

@@ -23,9 +23,10 @@ const backBtnLabel = {
 
 const content = {
   it: {
-    title: "Calcolatore Calorie: Frittura Tradizionale vs Friggitrice ad Aria",
-    h1: "Calcolatore di Risparmio Calorico",
-    desc: "Scopri esattamente quanti grassi e calorie risparmi cucinando ad aria invece che per immersione nell'olio. Dati scientifici, non slogan.",
+    title: "Calcolatore Calorie: Friggitrice ad Aria vs Frittura Tradizionale",
+    h1: "Calcolo Calorie: Friggitrice ad Aria vs Frittura ad Immersione",
+    desc: "Calcola le calorie e i grassi risparmiati cucinando con la friggitrice ad aria rispetto alla classica frittura ad immersione. Simula il tuo risparmio.",
+    intro: "Quante calorie risparmi usando la friggitrice ad aria invece della frittura tradizionale? Questo calcolatore ti mostra esattamente quanti grassi e calorie risparmi in base al cibo che prepari.",
     eeatBadge: "✓ Algoritmo basato su tassi di assorbimento lipidico",
     foodLabel: "Seleziona l'alimento:",
     weightLabel: "Peso della porzione:",
@@ -34,7 +35,7 @@ const content = {
     resKcal: "Calorie Risparmiate",
     resRun: "Equivale a circa",
     resRunUnit: "min. di corsa",
-    
+
     // NUOVI CONTENUTI EDITORIALI E FAQ
     editorialH2: "La Scienza del Risparmio Calorico",
     editorialText: "Nella frittura tradizionale per immersione, un alimento assorbe in media <strong>dal 10% al 20% del suo peso in olio</strong> (1 grammo di olio = 9 kcal). La friggitrice ad aria elimina la necessità del bagno d'olio: sfrutta la <strong>convezione termica ad alta velocità</strong> per scatenare la reazione di Maillard. Il risultato è una doratura croccante con un abbattimento fino all'80% dei grassi saturi aggiunti.",
@@ -44,7 +45,7 @@ const content = {
       { q: "Devo usare per forza l'olio spray?", a: "Sui cibi freschi (come patate tagliate a mano o pollo crudo) basta un solo 'puff' di olio spray (circa 1-2 grammi) per favorire la doratura. Sui cibi surgelati pre-fritti, l'olio è già presente e NON devi aggiungerne altro." },
       { q: "Riduce l'acrilammide rispetto alla frittura normale?", a: "Sì. Studi dimostrano che la frittura ad aria riduce la formazione di acrilammide (una sostanza potenzialmente nociva che si crea negli amidi ad alte temperature) fino al 90% rispetto alla frittura a immersione." }
     ],
-    
+
     foods: [
       { id: "patate", name: "Patatine Fritte (Fresche)", absorb: 0.12, airOil: 10 },
       { id: "cotoletta", name: "Cotoletta di Pollo Impanata", absorb: 0.15, airOil: 5 },
@@ -69,9 +70,10 @@ const content = {
     ]
   },
   en: {
-    title: "Calorie Calculator: Deep Frying vs Air Frying",
-    h1: "Calorie Savings Calculator",
-    desc: "Discover exactly how much fat and calories you save by air frying instead of deep frying. Real math, not marketing slogans.",
+    title: "Air Fryer Calorie Calculator: Deep Frying vs Air Frying Savings",
+    h1: "Calorie Calculator: Air Fryer vs Deep Frying Savings",
+    desc: "Calculate the calories and fat saved by cooking with an air fryer compared to traditional deep frying. Simulate your exact caloric savings instantly.",
+    intro: "How many calories do you save using an air fryer instead of deep frying? This calculator shows you exactly how much fat and calories you save based on the food you cook.",
     eeatBadge: "✓ Algorithm based on lipid absorption rates",
     foodLabel: "Select food:",
     weightLabel: "Portion weight:",
@@ -80,7 +82,7 @@ const content = {
     resKcal: "Calories Saved",
     resRun: "Equivalent to approx",
     resRunUnit: "min of running",
-    
+
     editorialH2: "The Science of Calorie Savings",
     editorialText: "In traditional deep frying, food absorbs on average <strong>10% to 20% of its weight in oil</strong> (1 gram of oil = 9 kcal). The air fryer eliminates the need for an oil bath: it uses <strong>high-speed thermal convection</strong> to trigger the Maillard reaction. The result is a crispy golden finish with up to an 80% reduction in added saturated fats.",
     faqTitle: "Frequently Asked Questions",
@@ -125,7 +127,7 @@ const content = {
     resKcal: "Calorías Ahorradas",
     resRun: "Equivale a unos",
     resRunUnit: "min de correr",
-    
+
     editorialH2: "La Ciencia del Ahorro Calórico",
     editorialText: "En la fritura tradicional, un alimento absorbe en media <strong>del 10% al 20% de su peso en aceite</strong> (1 gramo de aceite = 9 kcal). La freidora de aire elimina el baño de aceite: usa <strong>convección térmica a alta velocidad</strong> para crear la reacción de Maillard. El resultado es un dorado crujiente reduciendo hasta un 80% las grasas añadidas.",
     faqTitle: "Preguntas Frecuentes",
@@ -170,7 +172,7 @@ const content = {
     resKcal: "Calories Économisées",
     resRun: "Équivaut à env.",
     resRunUnit: "min de course",
-    
+
     editorialH2: "La Science de l'Économie de Calories",
     editorialText: "Dans la friture traditionnelle, un aliment absorbe en moyenne <strong>10% à 20% de son poids en huile</strong> (1 gramme d'huile = 9 kcal). La friteuse à air élimine le bain d'huile : elle utilise la <strong>convection thermique à grande vitesse</strong> pour créer la réaction de Maillard. Le résultat est une dorure croustillante avec jusqu'à 80% de graisses ajoutées en moins.",
     faqTitle: "Foire Aux Questions",
@@ -218,23 +220,60 @@ const softwareSchema = {
 };
 
 // GENERAZIONE DINAMICA DELLO SCHEMA FAQPage
-const faqSchema = {
+
+
+// === INJECTED SEO DATA ===
+const alternateUrls = {
+  it: `https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/`,
+  en: `https://www.crispissimo.com/en/tools/air-fryer-calorie-calculator/`,
+  es: `https://www.crispissimo.com/es/herramientas/calculo-calorias-freidora-aire/`,
+  fr: `https://www.crispissimo.com/fr/outils/calcul-calories-friteuse-air/`,
+  "x-default": `https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/`
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.crispissimo.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {"it": "Strumenti", "en": "Tools", "es": "Herramientas", "fr": "Outils"}[lang] || "Strumenti",
+      "item": `https://www.crispissimo.com${{"it": "/strumenti/", "en": "/en/tools/", "es": "/es/herramientas/", "fr": "/fr/outils/"}[lang] || "/strumenti/"}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {"it": "Calcolo Calorie", "en": "Calorie Calculator", "es": "Calculadora de Calor\u00edas", "fr": "Calcul Calories"}[lang] || "",
+      "item": alternateUrls[lang] || alternateUrls.it
+    }
+  ]
+};
+
+const currentFaqs = t.faqs || [];
+const faqSchema = currentFaqs.length > 0 ? {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": t.faqs.map(faq => ({
+  "mainEntity": currentFaqs.map(faq => ({
     "@type": "Question",
-    "name": faq.q,
+    "name": faq.q || faq.question,
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": faq.a
+      "text": faq.a || faq.answer
     }
   }))
-};
+} : null;
 ---
 
-<MainLayout title={t.title} lang={lang} description={t.desc}>
+<MainLayout alternateUrls={alternateUrls} title={t.title} lang={lang} description={t.desc}>
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
-    
+
     <div class="mb-8 flex justify-start">
       <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -250,10 +289,11 @@ const faqSchema = {
       </div>
 
       <h1 class="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 mb-4 tracking-tight">{t.h1}</h1>
+      <p class="tool-text text-base md:text-xl max-w-2xl mx-auto font-medium mb-6 text-slate-600 dark:text-slate-300">{t.intro}</p>
       <p class="tool-text text-base md:text-xl max-w-2xl mx-auto">{t.desc}</p>
     </header>
 
-    <div class="tool-card md:p-10 mb-12 backdrop-blur-sm max-w-2xl mx-auto relative overflow-hidden">  
+    <div class="tool-card md:p-10 mb-12 backdrop-blur-sm max-w-2xl mx-auto relative overflow-hidden">
       <div class="absolute -top-24 -right-24 w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="space-y-6 relative z-10">
@@ -268,7 +308,7 @@ const faqSchema = {
 
         <div>
           <label class="tool-label">{t.weightLabel}</label>
-          
+
           <div class="flex items-center justify-center bg-slate-50 dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-xl overflow-hidden shadow-sm dark:shadow-inner h-14 transition-colors">
             <button id="btn-minus-weight" class="w-16 h-full hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-700 dark:text-white font-black text-2xl transition-colors select-none active:bg-slate-700">-</button>
             <div class="flex-1 flex items-center justify-center border-x border-slate-700/50 h-full">
@@ -301,7 +341,7 @@ const faqSchema = {
             </div>
           </div>
         </div>
-        
+
         <div class="mt-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-500/20 rounded-xl p-4 flex items-center justify-center gap-3 transition-colors">
           <span class="text-2xl animate-bounce">🏃‍♂️</span>
           <p class="text-blue-800 dark:text-blue-200 text-sm md:text-base font-medium">
@@ -333,6 +373,16 @@ const faqSchema = {
           ))}
         </div>
       </div>
+    </div>
+
+
+    <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
+      <h3 class="text-xl font-bold mb-4 text-slate-800 dark:text-white">Strumenti Correlati</h3>
+      <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+        <li><a href={lang === 'it' ? '/strumenti/codici-errore-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-error-codes/' : lang === 'es' ? '/es/herramientas/codigos-error-freidora-aire/' : '/fr/outils/codes-erreur-friteuse-air/'} class="hover:text-orange-500 underline">Codici Errore Friggitrice ad Aria</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/fumo-puzza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-smell-smoke/' : lang === 'es' ? '/es/herramientas/freidora-aire-humo-olor/' : '/fr/outils/friteuse-air-fumee-odeur/'} class="hover:text-orange-500 underline">Fumo e Puzza</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/pulire-resistenza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/clean-air-fryer-heating-element/' : lang === 'es' ? '/es/herramientas/limpiar-resistencia-freidora-aire/' : '/fr/outils/nettoyer-resistance-friteuse-air/'} class="hover:text-orange-500 underline">Pulizia Resistenza</a></li>
+      </ul>
     </div>
 
     <Disclaimer type="nutrizionale" lang={lang} />
@@ -417,7 +467,12 @@ const faqSchema = {
       });
     });
   </script>
-  
+
   <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </MainLayout>

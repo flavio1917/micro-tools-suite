@@ -17,20 +17,20 @@ const homeUrl = `/#ricettario`;
 // DIZIONARIO SEO SPECIFICO (Soluzione al problema del Boilerplate)
 const seoData = {
   it: {
-    title: "Consumi Friggitrice ad Aria: Quanto Costa Usarla? (Calcolo Bolletta)",
-    description: "Conviene davvero rispetto al forno? Scopri quanto consuma una friggitrice ad aria in kWh e il calcolo esatto del risparmio in bolletta per ogni cottura."
+    title: "Consumo Friggitrice ad Aria in kWh: Calcolo Costo in Bolletta",
+    description: "Scopri quanti Watt consuma una friggitrice ad aria e calcola il costo esatto in kWh sulla bolletta elettrica. Confronto consumi con il forno tradizionale."
   },
   en: {
-    title: "Air Fryer Energy Consumption: How Much Does it Cost to Run?",
-    description: "Is it really cheaper than an oven? Discover exactly how much energy an air fryer uses in kWh and calculate your electricity bill savings instantly."
+    title: "Air Fryer Power Consumption in kWh: Calculate Electricity Cost",
+    description: "Discover how many Watts your air fryer uses and calculate the exact kWh cost on your electricity bill. Compare energy consumption with a traditional oven."
   },
   es: {
-    title: "Consumo Freidora de Aire: ¿Cuánto Gasta de Luz? (Calculadora)",
-    description: "¿De verdad ahorras frente al horno tradicional? Descubre cuánto consume tu freidora en kWh y calcula tu ahorro exacto en la factura de la luz."
+    title: "Consumo Freidora de Aire en kWh: Calculadora de Gasto de Luz",
+    description: "Descubre cuántos vatios consume una freidora de aire y calcula el costo exacto en kWh de tu factura de luz. Compara el gasto con un horno tradicional."
   },
   fr: {
-    title: "Consommation Friteuse à Air : Quel est le Coût Électrique ?",
-    description: "Est-ce vraiment plus économique que le four ? Découvrez la consommation exacte en kWh de votre friteuse à air et calculez vos économies d'énergie."
+    title: "Consommation Friteuse à Air en kWh : Calcul du Coût Électrique",
+    description: "Découvrez combien de Watts consomme une friteuse à air et calculez le coût exact en kWh sur votre facture d'électricité. Comparaison avec le four."
   }
 };
 
@@ -45,7 +45,8 @@ const backBtnLabel = {
 
 const content = {
   it: {
-    h1: "Il Simulatore di Bolletta",
+    h1: "Consumi Friggitrice ad Aria: Calcola il Costo in Bolletta in kWh",
+    intro: "Quanto costa usare la friggitrice ad aria in termini di bolletta elettrica? Scopri il consumo in kWh e confrontalo con il forno tradizionale per capire se conviene davvero.",
     desc: currentSeo.description,
     liveBadge: "🔴 LIVE",
     wLabel: "Potenza Friggitrice (Watt)",
@@ -65,7 +66,8 @@ const content = {
     ]
   },
   en: {
-    h1: "Electricity Bill Simulator",
+    h1: "Air Fryer Energy Consumption: Calculate Your Electricity Cost",
+    intro: "How much does it cost to use an air fryer on your electricity bill? Discover the kWh consumption and compare it with a traditional oven to see if it's really worth it.",
     desc: currentSeo.description,
     liveBadge: "🔴 LIVE",
     wLabel: "Air Fryer Power (Watts)",
@@ -85,7 +87,8 @@ const content = {
     ]
   },
   es: {
-    h1: "Simulador de Factura",
+    h1: "Consumo Freidora de Aire: Calcula el Costo en la Factura de Luz",
+    intro: "¿Cuánto cuesta usar la freidora de aire en la factura de la luz? Descubre el consumo en kWh y compáralo con el horno tradicional para saber si vale la pena.",
     desc: currentSeo.description,
     liveBadge: "🔴 LIVE",
     wLabel: "Potencia Freidora (Vatios)",
@@ -139,23 +142,60 @@ const softwareSchema = {
 };
 
 // GENERAZIONE DINAMICA DELLO SCHEMA FAQPage
-const faqSchema = {
+
+
+// === INJECTED SEO DATA ===
+const alternateUrls = {
+  it: `https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/`,
+  en: `https://www.crispissimo.com/en/tools/air-fryer-energy-costs/`,
+  es: `https://www.crispissimo.com/es/herramientas/consumo-freidora-aire/`,
+  fr: `https://www.crispissimo.com/fr/outils/consommation-friteuse-air/`,
+  "x-default": `https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/`
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.crispissimo.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {"it": "Strumenti", "en": "Tools", "es": "Herramientas", "fr": "Outils"}[lang] || "Strumenti",
+      "item": `https://www.crispissimo.com${{"it": "/strumenti/", "en": "/en/tools/", "es": "/es/herramientas/", "fr": "/fr/outils/"}[lang] || "/strumenti/"}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {"it": "Consumi", "en": "Energy Consumption", "es": "Consumo", "fr": "Consommation"}[lang] || "",
+      "item": alternateUrls[lang] || alternateUrls.it
+    }
+  ]
+};
+
+const currentFaqs = t.faqs || [];
+const faqSchema = currentFaqs.length > 0 ? {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": t.faqs.map(faq => ({
+  "mainEntity": currentFaqs.map(faq => ({
     "@type": "Question",
-    "name": faq.q,
+    "name": faq.q || faq.question,
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": faq.a
+      "text": faq.a || faq.answer
     }
   }))
-};
+} : null;
 ---
 
-<MainLayout title={currentSeo.title} lang={lang} description={currentSeo.description}>
+<MainLayout alternateUrls={alternateUrls} title={currentSeo.title} lang={lang} description={currentSeo.description}>
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
-    
+
     <div class="mb-8 flex justify-start">
       <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -178,7 +218,7 @@ const faqSchema = {
       <div class="absolute -top-24 -left-24 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="flex-1 space-y-8 relative z-10">
-        
+
         <div class="tool-card-inner">
           <div class="flex justify-between items-end mb-4">
             <label class="tool-label">{t.wLabel}</label>
@@ -209,7 +249,7 @@ const faqSchema = {
       </div>
 
       <div class="flex-1 relative z-10 flex flex-col justify-center">
-        
+
         <div class="space-y-6">
           <div>
             <div class="flex justify-between items-end mb-2">
@@ -231,7 +271,7 @@ const faqSchema = {
             </div>
           </div>
         </div>
-        
+
         <div class="mt-8 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-500/20 dark:to-orange-500/10 border border-amber-200 dark:border-amber-500/40 rounded-2xl p-6 text-center transform hover:scale-[1.02] transition-all shadow-sm">
           <span class="block text-xs uppercase font-bold text-amber-500 dark:text-amber-400 tracking-wider mb-2">{t.resSave}</span>
           <div class="flex items-baseline justify-center gap-1">
@@ -240,7 +280,7 @@ const faqSchema = {
             <span class="text-amber-500 font-bold text-2xl">€</span>
           </div>
         </div>
-        
+
         <p class="text-[10px] text-slate-500 mt-6 text-center italic leading-relaxed">{t.ovenNote}</p>
       </div>
     </div>
@@ -269,6 +309,16 @@ const faqSchema = {
       </div>
     </div>
 
+
+    <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
+      <h3 class="text-xl font-bold mb-4 text-slate-800 dark:text-white">Strumenti Correlati</h3>
+      <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+        <li><a href={lang === 'it' ? '/strumenti/codici-errore-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-error-codes/' : lang === 'es' ? '/es/herramientas/codigos-error-freidora-aire/' : '/fr/outils/codes-erreur-friteuse-air/'} class="hover:text-orange-500 underline">Codici Errore Friggitrice ad Aria</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/fumo-puzza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-smell-smoke/' : lang === 'es' ? '/es/herramientas/freidora-aire-humo-olor/' : '/fr/outils/friteuse-air-fumee-odeur/'} class="hover:text-orange-500 underline">Fumo e Puzza</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/pulire-resistenza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/clean-air-fryer-heating-element/' : lang === 'es' ? '/es/herramientas/limpiar-resistencia-freidora-aire/' : '/fr/outils/nettoyer-resistance-friteuse-air/'} class="hover:text-orange-500 underline">Pulizia Resistenza</a></li>
+      </ul>
+    </div>
+
     <Disclaimer type="generale" lang={lang} />
 
   </section>
@@ -280,13 +330,13 @@ const faqSchema = {
       const sliderMins = document.getElementById('slider-mins');
       const valMins = document.getElementById('val-mins');
       const inCost = document.getElementById('input-cost');
-      
+
       const elAF = document.getElementById('res-af');
       const elOven = document.getElementById('res-oven');
       const elSave = document.getElementById('res-save');
       const barAF = document.getElementById('bar-af');
 
-      if (!sliderWatts) return; 
+      if (!sliderWatts) return;
 
       function calculateLive() {
         const watts = parseFloat(sliderWatts.value);
@@ -319,5 +369,10 @@ const faqSchema = {
   </script>
 
   <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </MainLayout>

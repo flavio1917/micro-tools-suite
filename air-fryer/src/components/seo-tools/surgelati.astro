@@ -23,9 +23,10 @@ const backBtnLabel = {
 
 const content = {
   it: {
-    title: "Convertitore Friggitrice ad Aria per Surgelati: Tempi a 2 Fasi",
-    h1: "Cottura Surgelati",
-    desc: "Basta cibi surgelati che vengono bruciati fuori e ghiacciati dentro. Inserisci i dati della scatola e ottieni la cottura termodinamica perfetta in 2 Fasi.",
+    title: "Convertitore Cottura Surgelati in Friggitrice ad Aria | Tempi",
+    h1: "Cottura Surgelati in Friggitrice ad Aria: Convertitore Tempi",
+    desc: "Calcola automaticamente i tempi di cottura per i cibi surgelati in friggitrice ad aria. Converti i minuti del forno per patatine, pollo e pesce.",
+    intro: "Cucinare surgelati in friggitrice ad aria può essere complicato: spesso vengono bruciati fuori e ghiacciati dentro. Questo strumento calcola automaticamente i tempi di cottura per ottenere risultati perfetti.",
     sourceLabel: "Cosa c'è scritto sulla confezione?",
     srcOven: "🌡️ Forno",
     srcAF: "🌪️ Friggitrice ad Aria",
@@ -42,7 +43,7 @@ const content = {
       { id: "lievitati", name: "🥐 Lievitati (Cornetti, Rustici)" }
     ],
     shakeTip: "🔔 Ricorda di scuotere il cestello a metà cottura!",
-    
+
     // NUOVI CONTENUTI EDITORIALI E FAQ
     editorialH2: "Perché il Metodo a 2 Fasi è Fondamentale?",
     editorialText: "La cottura dei cibi surgelati in friggitrice ad aria presenta una sfida termodinamica precisa: l'esterno scongela e brucia molto prima che il calore raggiunga il cuore del prodotto. Il nostro algoritmo a due fasi risolve questo problema. La <strong>Fase 1</strong> utilizza una temperatura moderata per scongelare delicatamente ed evaporare l'umidità superficiale senza attivare la reazione di Maillard. La <strong>Fase 2</strong> applica uno shock termico ad alta temperatura (Crisping) solo quando il cibo è già caldo all'interno, garantendo una crosticina perfetta e un cuore tenero, replicando i risultati di una vera frittura ad immersione ma senza olio.",
@@ -55,9 +56,10 @@ const content = {
     ]
   },
   en: {
-    title: "Air Fryer Frozen Food Converter: 2-Phase Cooking",
-    h1: "Frozen Food Calibrator",
-    desc: "Stop burning the frozen food outside while the inside is frozen. Enter the box instructions to get the perfect 2-Phase thermodynamic cooking method.",
+    title: "Air Fryer Frozen Food Converter | Calculate Cooking Times",
+    h1: "Cooking Frozen Food in Air Fryer: Time Converter",
+    desc: "Automatically calculate cooking times for frozen foods in your air fryer. Convert oven minutes for french fries, chicken nuggets, and fish.",
+    intro: "Cooking frozen food in an air fryer can be tricky: it often burns on the outside while staying frozen inside. This tool automatically calculates the perfect cooking times.",
     sourceLabel: "Box instructions are for:",
     srcOven: "🌡️ Oven",
     srcAF: "🌪️ Air Fryer",
@@ -74,7 +76,7 @@ const content = {
       { id: "lievitati", name: "🥐 Pastries & Doughs" }
     ],
     shakeTip: "🔔 Remember to shake the basket halfway through!",
-    
+
     editorialH2: "Why is the 2-Phase Method Essential?",
     editorialText: "Cooking frozen foods in an air fryer presents a specific thermodynamic challenge: the exterior thaws and burns long before heat reaches the core. Our two-phase algorithm solves this. <strong>Phase 1</strong> uses moderate temperature to gently thaw and evaporate surface moisture without triggering the Maillard reaction. <strong>Phase 2</strong> applies a high-heat thermal shock (Crisping) only when the food is already warm inside, guaranteeing a perfect crust and tender core, replicating deep-frying results without the oil.",
     faqTitle: "Frequently Asked Questions",
@@ -86,9 +88,10 @@ const content = {
     ]
   },
   es: {
-    title: "Calculadora Freidora de Aire para Congelados: 2 Fases",
-    h1: "Calibrador de Congelados",
-    desc: "Evita que la comida congelada se queme por fuera y sea congelada por dentro. Introduce los datos del envase y obtén la cocción termodinámica en 2 Fases.",
+    title: "Calculadora de Tiempos para Congelados en Freidora de Aire",
+    h1: "Cocinar Congelados en Freidora de Aire: Calculadora de Tiempos",
+    desc: "Calcula automáticamente los tiempos de cocción para alimentos congelados en freidora de aire. Convierte los minutos del horno para patatas y pollo.",
+    intro: "Cocinar congelados en freidora de aire puede ser complicado: a menudo se queman por fuera y quedan helados por dentro. Esta herramienta calcula automáticamente los tiempos perfectos.",
     sourceLabel: "¿Las instrucciones del envase son para?",
     srcOven: "🌡️ Horno",
     srcAF: "🌪️ Freidora de Aire",
@@ -136,7 +139,7 @@ const content = {
       { id: "lievitati", name: "🥐 Pâtisseries et Pâtes" }
     ],
     shakeTip: "🔔 N'oubliez pas de secouer le panier à mi-cuisson !",
-    
+
     editorialH2: "Pourquoi la méthode à 2 phases est-elle essentielle ?",
     editorialText: "La cuisson des surgelés dans une Air Fryer présente un défi thermodynamique : l'extérieur décongèle et brûle bien avant que la chaleur n'atteigne le cœur. L'algorithme résout ce problème. La <strong>Phase 1</strong> utilise une température modérée pour décongeler en douceur et évaporer l'humidité sans activer la réaction de Maillard. La <strong>Phase 2</strong> applique un choc thermique à haute température uniquement lorsque l'aliment est déjà chaud à l'intérieur, garantissant une croûte parfaite.",
     faqTitle: "Foire Aux Questions",
@@ -162,23 +165,60 @@ const softwareSchema = {
 };
 
 // GENERAZIONE DINAMICA DELLO SCHEMA FAQPage
-const faqSchema = {
+
+
+// === INJECTED SEO DATA ===
+const alternateUrls = {
+  it: `https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/`,
+  en: `https://www.crispissimo.com/en/tools/cook-frozen-food-air-fryer/`,
+  es: `https://www.crispissimo.com/es/herramientas/cocinar-congelados-freidora-aire/`,
+  fr: `https://www.crispissimo.com/fr/outils/cuisson-surgeles-friteuse-air/`,
+  "x-default": `https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/`
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.crispissimo.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {"it": "Strumenti", "en": "Tools", "es": "Herramientas", "fr": "Outils"}[lang] || "Strumenti",
+      "item": `https://www.crispissimo.com${{"it": "/strumenti/", "en": "/en/tools/", "es": "/es/herramientas/", "fr": "/fr/outils/"}[lang] || "/strumenti/"}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {"it": "Cottura Surgelati", "en": "Cook Frozen Food", "es": "Cocinar Congelados", "fr": "Cuisson Surgel\u00e9s"}[lang] || "",
+      "item": alternateUrls[lang] || alternateUrls.it
+    }
+  ]
+};
+
+const currentFaqs = t.faqs || [];
+const faqSchema = currentFaqs.length > 0 ? {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": t.faqs.map(faq => ({
+  "mainEntity": currentFaqs.map(faq => ({
     "@type": "Question",
-    "name": faq.q,
+    "name": faq.q || faq.question,
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": faq.a
+      "text": faq.a || faq.answer
     }
   }))
-};
+} : null;
 ---
 
-<MainLayout title={t.title} lang={lang} description={t.desc}>
+<MainLayout alternateUrls={alternateUrls} title={t.title} lang={lang} description={t.desc}>
   <section class="max-w-5xl mx-auto py-12 md:py-16 px-4">
-    
+
     <div class="mb-8 flex justify-start">
       <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -194,12 +234,12 @@ const faqSchema = {
     </header>
 
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-4xl mx-auto">
-      
+
       <div class="flex-1 tool-card relative overflow-hidden h-fit">
         <div class="absolute -top-24 -left-24 w-48 h-48 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="space-y-8 relative z-10">
-          
+
           <div>
             <label class="tool-label">{t.sourceLabel}</label>
             <div class="flex p-1 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl shadow-sm dark:shadow-inner gap-1 transition-colors" role="tablist">
@@ -245,7 +285,7 @@ const faqSchema = {
       </div>
 
       <div class="flex-1 space-y-0 flex flex-col justify-center relative">
-        
+
         <div id="af-target-badge" class="mb-5 ml-0 md:ml-4 flex justify-center md:justify-start transition-opacity duration-300 ease-in-out opacity-100">
           <div class="inline-flex items-center gap-2 px-4 py-2 bg-cyan-50 dark:bg-gradient-to-r dark:from-blue-900/40 dark:to-cyan-900/40 border border-cyan-200 dark:border-cyan-500/40 rounded-xl shadow-sm dark:shadow-lg backdrop-blur-sm transition-colors">
             <span class="text-cyan-700 dark:text-cyan-300 font-bold text-xs md:text-sm uppercase tracking-wide transition-colors">{t.targetAFLabel}</span>
@@ -254,9 +294,9 @@ const faqSchema = {
 
         <div class="relative bg-white dark:bg-gradient-to-r dark:from-cyan-900/30 dark:to-slate-900/50 border border-slate-200 dark:border-cyan-500/30 p-6 rounded-2xl mb-6 ml-0 md:ml-4 shadow-sm dark:shadow-lg hover:border-cyan-300 dark:hover:border-cyan-400/60 transition-colors">
           <div class="absolute -top-4 -left-4 md:-left-8 w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center font-black text-white dark:text-slate-900 shadow-md text-lg ring-4 ring-white dark:ring-[#0B1120] transition-colors">1</div>
-          
+
           <h3 class="text-cyan-600 dark:text-cyan-400 font-bold uppercase tracking-wider text-xs mb-4 transition-colors">{t.phase1}</h3>
-          
+
           <div class="flex gap-4">
             <div class="tool-card-inner !p-3 text-center flex-1">
               <span class="tool-label !text-[10px] !mb-1">Temp</span>
@@ -276,9 +316,9 @@ const faqSchema = {
 
         <div class="relative bg-white dark:bg-gradient-to-r dark:from-orange-900/30 dark:to-slate-900/50 border border-slate-200 dark:border-orange-500/30 p-6 rounded-2xl ml-0 md:ml-4 shadow-sm dark:shadow-lg hover:border-orange-300 dark:hover:border-orange-400/60 transition-colors">
           <div class="absolute -top-4 -left-4 md:-left-8 w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center font-black text-white dark:text-slate-900 shadow-md text-lg ring-4 ring-white dark:ring-[#0B1120] transition-colors">2</div>
-          
+
           <h3 class="text-orange-600 dark:text-orange-400 font-bold uppercase tracking-wider text-xs mb-4 transition-colors">{t.phase2}</h3>
-          
+
           <div class="flex gap-4">
             <div class="tool-card-inner !p-3 text-center flex-1">
               <span class="tool-label !text-[10px] !mb-1">Temp</span>
@@ -295,7 +335,7 @@ const faqSchema = {
     </div>
 
     <div class="max-w-3xl mx-auto mt-20 text-slate-300">
-      
+
       <article class="tool-card mb-16">
         <h2 class="tool-subtitle mb-4">{t.editorialH2}</h2>
         <p class="tool-text text-lg" set:html={t.editorialText}></p>
@@ -303,7 +343,7 @@ const faqSchema = {
 
       <div class="space-y-6">
         <h2 class="tool-subtitle mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">{t.faqTitle}</h2>
-        
+
         <div class="space-y-4">
           {t.faqs.map((faq) => (
             <details class="group tool-faq-item [&_summary::-webkit-details-marker]:hidden">
@@ -318,11 +358,21 @@ const faqSchema = {
           ))}
         </div>
       </div>
-      
+
     </div>
 
     <div class="mt-20 text-center pt-8 border-t border-slate-200 dark:border-slate-800 transition-colors">
-      <Disclaimer type="generale" lang={lang} />
+
+    <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
+      <h3 class="text-xl font-bold mb-4 text-slate-800 dark:text-white">Strumenti Correlati</h3>
+      <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+        <li><a href={lang === 'it' ? '/strumenti/codici-errore-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-error-codes/' : lang === 'es' ? '/es/herramientas/codigos-error-freidora-aire/' : '/fr/outils/codes-erreur-friteuse-air/'} class="hover:text-orange-500 underline">Codici Errore Friggitrice ad Aria</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/fumo-puzza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-smell-smoke/' : lang === 'es' ? '/es/herramientas/freidora-aire-humo-olor/' : '/fr/outils/friteuse-air-fumee-odeur/'} class="hover:text-orange-500 underline">Fumo e Puzza</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/pulire-resistenza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/clean-air-fryer-heating-element/' : lang === 'es' ? '/es/herramientas/limpiar-resistencia-freidora-aire/' : '/fr/outils/nettoyer-resistance-friteuse-air/'} class="hover:text-orange-500 underline">Pulizia Resistenza</a></li>
+      </ul>
+    </div>
+
+    <Disclaimer type="generale" lang={lang} />
     </div>
 
     <div class="mt-8 text-center pt-8">
@@ -380,14 +430,14 @@ const faqSchema = {
         let dropT1, dropT2, percM1, percM2;
 
         if (currentSource === 'oven') {
-          if (cat === 'patate') { dropT1 = 40; dropT2 = 0; percM1 = 0.45; percM2 = 0.35; } 
-          else if (cat === 'carne') { dropT1 = 30; dropT2 = 10; percM1 = 0.50; percM2 = 0.30; } 
-          else if (cat === 'pesce') { dropT1 = 40; dropT2 = 15; percM1 = 0.50; percM2 = 0.25; } 
+          if (cat === 'patate') { dropT1 = 40; dropT2 = 0; percM1 = 0.45; percM2 = 0.35; }
+          else if (cat === 'carne') { dropT1 = 30; dropT2 = 10; percM1 = 0.50; percM2 = 0.30; }
+          else if (cat === 'pesce') { dropT1 = 40; dropT2 = 15; percM1 = 0.50; percM2 = 0.25; }
           else if (cat === 'lievitati') { dropT1 = 50; dropT2 = 20; percM1 = 0.60; percM2 = 0.20; }
         } else {
-          if (cat === 'patate') { dropT1 = 20; dropT2 = -10; percM1 = 0.60; percM2 = 0.40; } 
-          else if (cat === 'carne') { dropT1 = 15; dropT2 = 0; percM1 = 0.60; percM2 = 0.40; } 
-          else if (cat === 'pesce') { dropT1 = 20; dropT2 = 0; percM1 = 0.65; percM2 = 0.35; } 
+          if (cat === 'patate') { dropT1 = 20; dropT2 = -10; percM1 = 0.60; percM2 = 0.40; }
+          else if (cat === 'carne') { dropT1 = 15; dropT2 = 0; percM1 = 0.60; percM2 = 0.40; }
+          else if (cat === 'pesce') { dropT1 = 20; dropT2 = 0; percM1 = 0.65; percM2 = 0.35; }
           else if (cat === 'lievitati') { dropT1 = 30; dropT2 = 0; percM1 = 0.70; percM2 = 0.30; }
         }
 
@@ -447,6 +497,11 @@ const faqSchema = {
   </script>
 
   <script type="application/ld+json" set:html={JSON.stringify(softwareSchema)} />
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
+
+
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </MainLayout>

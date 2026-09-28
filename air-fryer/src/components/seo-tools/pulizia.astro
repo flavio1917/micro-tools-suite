@@ -17,20 +17,20 @@ const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
 // DIZIONARIO SEO SPECIFICO (Anti-Boilerplate)
 const seoData = {
   it: {
-    title: "Come Pulire la Resistenza della Friggitrice ad Aria (Senza Rovinarla)",
-    description: "Sgrassare la serpentina è rischioso. Scopri il metodo sicuro in 5 step con bicarbonato e limone per rimuovere il grasso bruciato senza usare chimica o graffiare il Teflon."
+    title: "Come Pulire la Resistenza della Friggitrice ad Aria: Metodo Sicuro",
+    description: "Scopri come pulire e sgrassare la serpentina della tua friggitrice ad aria senza graffiare il rivestimento. Metodo sicuro ed ecologico in 5 step."
   },
   en: {
-    title: "How to Safely Clean Air Fryer Heating Element | Step-by-Step",
-    description: "Stop scratching! Discover the safe, eco-friendly 5-step method to degrease your air fryer heating element without ruining the non-stick coating."
+    title: "How to Clean Air Fryer Heating Element: Safe Step-by-Step Method",
+    description: "Discover how to clean and degrease the heating coil of your air fryer without scratching the non-stick coating. Safe 5-step eco-friendly method."
   },
   es: {
-    title: "Cómo Limpiar la Resistencia de la Freidora de Aire sin Dañarla",
-    description: "¡Deja de raspar! Descubre el método seguro de 5 pasos con bicarbonato para desengrasar la resistencia de tu freidora de aire sin dañar el teflón."
+    title: "Cómo Limpiar la Resistencia de la Freidora de Aire: Método Seguro",
+    description: "Descubre cómo limpiar y desengrasar la resistencia de tu freidora de aire sin rayar el revestimiento. Método ecológico y seguro en 5 pasos."
   },
   fr: {
-    title: "Comment Nettoyer la Résistance de la Friteuse à Air | Guide Sûr",
-    description: "Arrêtez de gratter ! Découvrez la méthode sûre en 5 étapes pour dégraisser la résistance de votre friteuse sans abîmer le revêtement antiadhésif."
+    title: "Comment Nettoyer la Résistance de la Friteuse à Air : Méthode Sûre",
+    description: "Découvrez comment nettoyer et dégraisser la résistance de votre friteuse à air sans rayer le revêtement. Méthode écologique sûre en 5 étapes."
   }
 };
 
@@ -45,7 +45,14 @@ const backBtnLabel = {
 
 const content = {
   it: {
-    h1: "Guida Pulizia Resistenza",
+    h1: "Come Pulire la Resistenza della Friggitrice ad Aria in Sicurezza",
+    intro: "La resistenza della friggitrice ad aria si sporca e fa fumo? Scopri come pulire e sgrassare la serpentina in sicurezza, senza graffiare il rivestimento antiaderente e senza prodotti aggressivi.",
+    faqTitle: "FAQ",
+    faqs: [
+      { q: "Posso usare lo sgrassatore per il forno?", a: "Assolutamente no. I residui chimici verrebbero vaporizzati sul cibo alla prima accensione. Usa solo prodotti naturali come il bicarbonato." },
+      { q: "Come evito che la resistenza si sporchi?", a: "Non riempire mai troppo il cestello e usa un paraschizzi se disponibile. Cuoci cibi molto grassi (come la pancetta) a temperature leggermente inferiori." },
+      { q: "Ogni quanto devo pulire la serpentina?", a: "Controllala visivamente una volta al mese. Puliscila solo se noti accumuli evidenti di grasso o se l'apparecchio fa fumo." }
+    ],
     desc: currentSeo.description,
     eeatBadge: "✓ Metodo Sicuro Verificato",
     dangerTitle: "🚫 Assolutamente Vietato",
@@ -64,7 +71,14 @@ const content = {
     ]
   },
   en: {
-    h1: "Heating Element Cleaning Guide",
+    h1: "How to Clean the Air Fryer Heating Element Safely",
+    intro: "Is your air fryer heating element dirty and smoking? Discover how to clean and degrease the coil safely without scratching the non-stick coating and without harsh chemicals.",
+    faqTitle: "FAQ",
+    faqs: [
+      { q: "Can I use oven cleaner?", a: "Absolutely not. Chemical residues will vaporize into your food the next time you cook. Only use natural products like baking soda." },
+      { q: "How do I prevent the element from getting dirty?", a: "Never overfill the basket and use a splatter shield if available. Cook very fatty foods (like bacon) at slightly lower temperatures." },
+      { q: "How often should I clean the heating element?", a: "Check it visually once a month. Only clean it if you see obvious grease buildup or if the appliance is smoking." }
+    ],
     desc: currentSeo.description,
     eeatBadge: "✓ Verified Safe Method",
     dangerTitle: "🚫 Strictly Prohibited",
@@ -83,7 +97,14 @@ const content = {
     ]
   },
   es: {
-    h1: "Guía de Limpieza de Resistencia",
+    h1: "Cómo Limpiar la Resistencia de la Freidora de Aire de Forma Segura",
+    intro: "¿La resistencia de la freidora de aire se ensucia y hace humo? Descubre cómo limpiar y desengrasar la resistencia de forma segura, sin rayar el teflón y sin productos agresivos.",
+    faqTitle: "FAQ",
+    faqs: [
+      { q: "¿Puedo usar desengrasante para hornos?", a: "Absolutamente no. Los residuos químicos se vaporizarán en tu comida. Usa solo productos naturales como el bicarbonato." },
+      { q: "¿Cómo evito que la resistencia se ensucie?", a: "Nunca llenes demasiado la cesta y usa una tapa antisalpicaduras si la tienes. Cocina alimentos muy grasos a temperaturas más bajas." },
+      { q: "¿Con qué frecuencia debo limpiar la resistencia?", a: "Revísala visualmente una vez al mes. Límpiala solo si notas acumulaciones de grasa evidentes o si el aparato hace humo." }
+    ],
     desc: currentSeo.description,
     eeatBadge: "✓ Método Seguro Verificado",
     dangerTitle: "🚫 Totalmente Prohibido",
@@ -141,11 +162,59 @@ const howToSchema = {
     "image": `https://www.convertitorefriggitrice.it/images/pulizia/step_${index + 1}.jpg`
   }))
 };
+
+// === INJECTED SEO DATA ===
+const alternateUrls = {
+  it: `https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/`,
+  en: `https://www.crispissimo.com/en/tools/clean-air-fryer-heating-element/`,
+  es: `https://www.crispissimo.com/es/herramientas/limpiar-resistencia-freidora-aire/`,
+  fr: `https://www.crispissimo.com/fr/outils/nettoyer-resistance-friteuse-air/`,
+  "x-default": `https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/`
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.crispissimo.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {"it": "Strumenti", "en": "Tools", "es": "Herramientas", "fr": "Outils"}[lang] || "Strumenti",
+      "item": `https://www.crispissimo.com${{"it": "/strumenti/", "en": "/en/tools/", "es": "/es/herramientas/", "fr": "/fr/outils/"}[lang] || "/strumenti/"}`
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {"it": "Pulizia Resistenza", "en": "Cleaning Heating Element", "es": "Limpiar Resistencia", "fr": "Nettoyer R\u00e9sistance"}[lang] || "",
+      "item": alternateUrls[lang] || alternateUrls.it
+    }
+  ]
+};
+
+const currentFaqs = t.faqs || [];
+const faqSchema = currentFaqs.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": currentFaqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q || faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a || faq.answer
+    }
+  }))
+} : null;
 ---
 
-<MainLayout title={currentSeo.title} lang={lang} description={currentSeo.description}>
+<MainLayout alternateUrls={alternateUrls} title={currentSeo.title} lang={lang} description={currentSeo.description}>
   <section class="max-w-4xl mx-auto py-12 md:py-16 px-4">
-    
+
     <div class="mb-8 flex justify-start">
       <a href={homeUrl} class="inline-flex items-center justify-center px-5 py-2.5 bg-white dark:bg-slate-800/90 backdrop-blur-md text-slate-700 dark:text-white border border-slate-200 dark:border-slate-600/50 shadow-xl rounded-full hover:bg-slate-50 dark:hover:bg-slate-700 transition-all z-10 group">
         <svg class="w-4 h-4 mr-2 flex-shrink-0 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
@@ -161,6 +230,7 @@ const howToSchema = {
       </div>
 
       <h1 class="tool-title text-3xl md:text-5xl mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 pb-1">{t.h1}</h1>
+      <p class="tool-text text-base md:text-xl max-w-2xl mx-auto font-medium mb-6 text-slate-600 dark:text-slate-300">{t.intro}</p>
       <p class="tool-text text-base md:text-xl max-w-2xl mx-auto">{t.desc}</p>
     </header>
 
@@ -205,25 +275,55 @@ const howToSchema = {
           <div class="pt-1.5 md:pt-2 w-full tool-card !p-5 md:!p-6 hover:border-blue-300 dark:hover:border-blue-500/30">
             <h3 class="tool-subtitle !text-lg md:!text-xl mb-3">{step.title}</h3>
             <p class="tool-text text-sm md:text-base mb-5">{step.desc}</p>
-            
+
             {/* IMMAGINE DELLO STEP - Dinamica */}
             <div class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-600/50 shadow-sm dark:shadow-lg bg-slate-100 dark:bg-slate-900/50 transition-colors">
-              <img 
-                src={`/images/pulizia/step_${index + 1}.jpg`} 
-                alt={step.title} 
-                class="w-full h-auto object-cover max-h-80" 
-                loading="lazy" 
-                onerror="this.parentElement.style.display='none';" 
+              <img
+                src={`/images/pulizia/step_${index + 1}.jpg`}
+                alt={step.title}
+                class="w-full h-auto object-cover max-h-80"
+                loading="lazy"
+                onerror="this.parentElement.style.display='none';"
               />
             </div>
-            
+
           </div>
         </article>
       ))}
     </div>
 
     <div class="mt-8 border-t border-slate-200 dark:border-slate-800 pt-8 transition-colors">
-      <Disclaimer type="elettrico" lang={lang} />
+
+    <div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800">
+      <h3 class="text-xl font-bold mb-4 text-slate-800 dark:text-white">Strumenti Correlati</h3>
+      <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+        <li><a href={lang === 'it' ? '/strumenti/codici-errore-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-error-codes/' : lang === 'es' ? '/es/herramientas/codigos-error-freidora-aire/' : '/fr/outils/codes-erreur-friteuse-air/'} class="hover:text-orange-500 underline">Codici Errore Friggitrice ad Aria</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/fumo-puzza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/air-fryer-smell-smoke/' : lang === 'es' ? '/es/herramientas/freidora-aire-humo-olor/' : '/fr/outils/friteuse-air-fumee-odeur/'} class="hover:text-orange-500 underline">Fumo e Puzza</a></li>
+        <li><a href={lang === 'it' ? '/strumenti/pulire-resistenza-friggitrice-ad-aria/' : lang === 'en' ? '/en/tools/clean-air-fryer-heating-element/' : lang === 'es' ? '/es/herramientas/limpiar-resistencia-freidora-aire/' : '/fr/outils/nettoyer-resistance-friteuse-air/'} class="hover:text-orange-500 underline">Pulizia Resistenza</a></li>
+      </ul>
+    </div>
+
+
+    {t.faqs && t.faqs.length > 0 && (
+      <div class="mt-12 max-w-3xl mx-auto">
+        <h2 class="tool-subtitle mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">{t.faqTitle || "FAQ"}</h2>
+        <div class="space-y-4">
+          {t.faqs.map((faq) => (
+            <details class="group tool-faq-item [&_summary::-webkit-details-marker]:hidden bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-xl p-4 sm:p-5 shadow-sm">
+              <summary class="flex justify-between items-center font-bold cursor-pointer list-none text-slate-800 dark:text-slate-100 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
+                {faq.q || faq.question}
+                <span class="transition group-open:rotate-180">
+                  <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                </span>
+              </summary>
+              <p class="tool-text mt-4 text-base border-t border-slate-200 dark:border-slate-800 pt-4">{faq.a || faq.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <Disclaimer type="elettrico" lang={lang} />
     </div>
 
     <div class="mt-12 text-center pt-8 border-t border-slate-200 dark:border-slate-800 transition-colors">
@@ -236,4 +336,9 @@ const howToSchema = {
   </section>
 
   <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </MainLayout>
