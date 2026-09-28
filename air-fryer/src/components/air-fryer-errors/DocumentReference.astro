@@ -1,11 +1,13 @@
 ---
 import type { AirFryerModel } from '../../types/air-fryer';
+import { getManualLabel } from '../../lib/air-fryer-manuals';
 
 export interface Props {
   model: AirFryerModel;
+  lang?: string;
 }
 
-const { model } = Astro.props;
+const { model, lang = 'it' } = Astro.props;
 const hasDoc = !!model.document;
 
 ---
@@ -48,7 +50,7 @@ const hasDoc = !!model.document;
             data-analytics-source-type="manual"
             class="inline-flex justify-center items-center gap-2 whitespace-nowrap bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-medium px-4 py-2 rounded-md shadow-sm transition-colors text-sm"
           >
-            Apri il documento
+            {getManualLabel(model.manual_url, lang as 'it'|'en'|'fr'|'es')}
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
           </a>
         )}

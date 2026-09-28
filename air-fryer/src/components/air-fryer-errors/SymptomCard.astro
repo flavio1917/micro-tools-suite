@@ -4,6 +4,7 @@ import EvidenceLabel from './EvidenceLabel.astro';
 import SafetyNotice from './SafetyNotice.astro';
 import type { Severity, EvidenceLevel, SourceReference, SupportedLanguage } from '../../types/air-fryer-v2';
 import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
+import { getManualLabel } from '../../lib/air-fryer-manuals';
 import { errorsUiTranslations } from '../../data/i18n/errors-ui';
 
 export interface Props {
@@ -110,7 +111,7 @@ const symptomAnchorId = toSafeAnchorId('symptom', symptomKey);
       class="inline-flex items-center gap-1 text-blue-600 hover:underline dark:text-blue-400"
     >
       <span>
-        {labels.officialManual}
+        {getManualLabel(source.manual_url, lang as 'it'|'en'|'fr'|'es')}
         {source.source_page ? ` (${labels.page} ${source.source_page})` : ''}
       </span>
       <svg
