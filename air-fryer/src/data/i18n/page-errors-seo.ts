@@ -27,6 +27,8 @@ export interface PageErrorsSeoData {
   breadcrumbTools: string;
   breadcrumbCurrent: string;
   faqs: FAQItem[];
+  brandFaqsTemplate?: FAQItem[];
+  modelFaqsTemplate?: FAQItem[];
 }
 
 export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
@@ -69,6 +71,42 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
       {
         question: "Quando contattare l’assistenza?",
         answer: "Se l'errore persiste dopo il riavvio, se si verificano fumo anomalo o se si avvertono odori persistenti di componenti bruciati."
+      }
+    ],
+    brandFaqsTemplate: [
+      {
+        question: "Cosa significa il codice E1 su una friggitrice {brand}?",
+        answer: "Il codice E1 su {brand} indica solitamente un problema al sensore di temperatura (circuito interrotto o in corto). Verifica il manuale specifico e contatta l'assistenza se l'errore persiste."
+      },
+      {
+        question: "Come posso resettare la mia friggitrice ad aria {brand}?",
+        answer: "Per resettare la tua friggitrice {brand}, scollega la spina dalla presa elettrica per almeno 15-20 minuti, poi ricollegala. Questo hard reset risolve molti errori temporanei."
+      },
+      {
+        question: "Perché la friggitrice {brand} fa fumo bianco?",
+        answer: "Il fumo bianco è spesso causato da cibi troppo grassi. Aggiungi un paio di cucchiai d'acqua sul fondo del cestello della tua {brand} prima della cottura per evitare che il grasso bruci."
+      },
+      {
+        question: "Quanto dura la garanzia per le friggitrici {brand}?",
+        answer: "Generalmente {brand} offre 2 anni di garanzia sui propri elettrodomestici, ma ti consigliamo di verificare lo scontrino o il sito ufficiale per i termini esatti."
+      }
+    ],
+    modelFaqsTemplate: [
+      {
+        question: "Cosa significa E1 o E2 su {brand} {model}?",
+        answer: "I codici E1 e E2 su {brand} {model} segnalano solitamente un'anomalia o un guasto al sensore termico. Evita l'uso e scollega il dispositivo prima di richiedere assistenza."
+      },
+      {
+        question: "Come pulire la resistenza di {brand} {model}?",
+        answer: "Capovolgi la friggitrice {brand} {model} a freddo e scollegata. Usa una spugna morbida con acqua calda e pochissimo detersivo per piatti per pulire delicatamente la resistenza."
+      },
+      {
+        question: "Posso usare la carta forno in {brand} {model}?",
+        answer: "Sì, puoi usare la carta forno in {brand} {model}, ma non inserirla mai vuota durante il preriscaldamento. Metti sempre del cibo pesante sopra per evitare che voli contro la resistenza."
+      },
+      {
+        question: "Dove trovare il manuale di {brand} {model}?",
+        answer: "Puoi trovare il manuale originale di {brand} {model} sul sito ufficiale del produttore o controllare le guide specifiche per il tuo modello in questa pagina per risolvere problemi comuni."
       }
     ]
   },
@@ -153,6 +191,42 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
       {
         question: "¿Cuándo contactar al servicio de asistencia?",
         answer: "Si el error persiste después del reinicio, si hay humo anormal, o si notas olores persistentes a componentes quemados."
+      }
+    ],
+    brandFaqsTemplate: [
+      {
+        question: "¿Qué significa el código E1 en una freidora {brand}?",
+        answer: "El código E1 en {brand} suele indicar un problema con el sensor de temperatura. Revisa tu manual específico y contacta al servicio técnico si persiste."
+      },
+      {
+        question: "¿Cómo puedo reiniciar mi freidora de aire {brand}?",
+        answer: "Para reiniciar tu freidora {brand}, desenchúfala de la toma de corriente durante al menos 15-20 minutos y vuelve a conectarla. Este reinicio soluciona muchos errores temporales."
+      },
+      {
+        question: "¿Por qué mi freidora {brand} echa humo blanco?",
+        answer: "El humo blanco suele deberse a alimentos muy grasos. Añade un par de cucharadas de agua en el fondo de la cesta de tu {brand} antes de cocinar para evitar que la grasa se queme."
+      },
+      {
+        question: "¿Cuánto dura la garantía de las freidoras {brand}?",
+        answer: "{brand} generalmente ofrece 2 años de garantía en sus electrodomésticos, pero te recomendamos comprobar tu recibo o el sitio web oficial para conocer las condiciones exactas."
+      }
+    ],
+    modelFaqsTemplate: [
+      {
+        question: "¿Qué significan E1 o E2 en {brand} {model}?",
+        answer: "Los códigos E1 y E2 en {brand} {model} suelen señalar una anomalía o fallo en el sensor térmico. Deja de usarla y desenchufa el dispositivo antes de solicitar asistencia."
+      },
+      {
+        question: "¿Cómo limpiar la resistencia de {brand} {model}?",
+        answer: "Pon tu {brand} {model} boca abajo cuando esté fría y desenchufada. Usa una esponja suave con agua tibia y un poco de jabón para limpiar suavemente la resistencia."
+      },
+      {
+        question: "¿Puedo usar papel de horno en {brand} {model}?",
+        answer: "Sí, puedes usar papel de horno en {brand} {model}, pero nunca lo pongas vacío durante el precalentamiento. Pon siempre comida pesada encima para evitar que vuele hacia la resistencia."
+      },
+      {
+        question: "¿Dónde encontrar el manual de {brand} {model}?",
+        answer: "Puedes encontrar el manual original de {brand} {model} en el sitio web oficial del fabricante, o consultar las guías específicas en esta página para resolver problemas comunes."
       }
     ]
   },
