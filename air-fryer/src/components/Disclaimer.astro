@@ -6,7 +6,7 @@ export interface Props {
 
 const { type, lang = 'it' } = Astro.props;
 
-import { content } from '../../i18n/components/disclaimer';
+import { content } from '../i18n/components/disclaimer';
 
 const t = content[type][lang as keyof typeof content[typeof type]] || content[type].it;
 ---
