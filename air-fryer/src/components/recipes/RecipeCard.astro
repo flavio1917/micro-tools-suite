@@ -1,6 +1,7 @@
 ---
 import recipesIt from '../../data/recipes-it.json';
 import recipesEn from '../../data/recipes-en.json';
+import { authLabels, badgeLabels } from '../../i18n/components/recipe-card';
 
 export interface Props {
   recipe: any;
@@ -28,12 +29,6 @@ if (recipe.isItalian === undefined) {
   }
 }
 
-const authLabels = {
-  it: "Autentica",
-  en: "Authentic",
-  es: "Auténtica",
-  fr: "Authentique"
-};
 const authLabel = authLabels[lang as keyof typeof authLabels] || authLabels.it;
 
 // LOGICA CTR HACKING E FALLBACK MULTILINGUA
@@ -54,12 +49,6 @@ const proValue = hasNutrition ? baseNutrition.proteins_g : 0;
 const isHighProtein = proValue >= 15;
 const isLowCal = kcalValue > 0 && kcalValue <= 350;
 
-const badgeLabels = {
-  it: { pro: "Pro", light: "Solo", kcal: "Kcal" },
-  en: { pro: "Pro", light: "Only", kcal: "Kcal" },
-  es: { pro: "Pro", light: "Solo", kcal: "Kcal" },
-  fr: { pro: "Pro", light: "Max", kcal: "Kcal" }
-};
 const bl = badgeLabels[lang as keyof typeof badgeLabels] || badgeLabels.it;
 ---
 

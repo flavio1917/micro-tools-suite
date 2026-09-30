@@ -1,0 +1,317 @@
+MATERIALI:
+- IT:
+  H1: OK (Contenitori e Materiali per Friggitrice ad Aria: Cosa Si Può Mettere?)
+  Title: NO (lunghezza: 61 caratteri) -> Cosa Mettere (e Non) in Friggitrice ad Aria | Guida Materiali
+  Meta: OK (lunghezza: 153 caratteri) -> Carta forno, alluminio, silicone o vetro? Scopri quali contenitori usare in friggitrice ad aria e quali materiali evitare per non rovinare l'apparecchio.
+  Canonical: OK (https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-materials-guide/, es -> https://www.crispissimo.com/es/herramientas/materiales-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/materiaux-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Strumenti > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (4 questions)
+  FAQ schema: OK (PRESENT (4 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=it)
+
+- EN:
+  H1: OK (Air Fryer Materials Guide: What Can You Put Inside?)
+  Title: NO (lunghezza: 63 caratteri) -> What to Put in an Air Fryer (and What Not To) | Materials Guide
+  Meta: OK (lunghezza: 143 caratteri) -> Parchment paper, foil, silicone, or glass? Discover which containers are safe to use in your air fryer and which materials to avoid completely.
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-materials-guide/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-materials-guide/, es -> https://www.crispissimo.com/es/herramientas/materiales-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/materiaux-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Tools > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (4 questions)
+  FAQ schema: OK (PRESENT (4 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=en)
+
+- ES:
+  H1: OK (Materiales y Recipientes para Freidora de Aire: ¿Qué se puede meter?)
+  Title: NO (lunghezza: 64 caratteri) -> Qué Meter (y Qué No) en la Freidora de Aire | Guía de Materiales
+  Meta: NO (lunghezza: 139 caratteri) -> ¿Papel de horno, aluminio, silicona o cristal? Descubre qué recipientes son seguros para usar en la freidora de aire y cuáles debes evitar.
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/materiales-freidora-aire/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-materials-guide/, es -> https://www.crispissimo.com/es/herramientas/materiales-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/materiaux-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Herramientas > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (4 questions)
+  FAQ schema: OK (PRESENT (4 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=es)
+
+- FR:
+  H1: OK (Récipients et Matériaux pour Friteuse à Air : Que peut-on mettre ?)
+  Title: NO (lunghezza: 65 caratteri) -> Que Mettre (et Ne Pas Mettre) dans une Friteuse à Air | Matériaux
+  Meta: NO (lunghezza: 138 caratteri) -> Papier cuisson, aluminium, silicone ou verre ? Découvrez quels récipients utiliser sans danger dans votre friteuse à air et ceux à éviter.
+  Canonical: OK (https://www.crispissimo.com/fr/outils/materiaux-friteuse-air/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-materials-guide/, es -> https://www.crispissimo.com/es/herramientas/materiales-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/materiaux-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Outils > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (4 questions)
+  FAQ schema: OK (PRESENT (4 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=fr)
+
+PULIZIA RESISTENZA:
+- IT:
+  H1: OK (Come Pulire la Resistenza della Friggitrice ad Aria in Sicurezza)
+  Title: NO (lunghezza: 66 caratteri) -> Come Pulire la Resistenza della Friggitrice ad Aria: Metodo Sicuro
+  Meta: OK (lunghezza: 145 caratteri) -> Scopri come pulire e sgrassare la serpentina della tua friggitrice ad aria senza graffiare il rivestimento. Metodo sicuro ed ecologico in 5 step.
+  Canonical: OK (https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/clean-air-fryer-heating-element/, es -> https://www.crispissimo.com/es/herramientas/limpiar-resistencia-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/nettoyer-resistance-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Strumenti > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=it)
+
+- EN:
+  H1: OK (How to Clean the Air Fryer Heating Element Safely)
+  Title: NO (lunghezza: 64 caratteri) -> How to Clean Air Fryer Heating Element: Safe Step-by-Step Method
+  Meta: OK (lunghezza: 144 caratteri) -> Discover how to clean and degrease the heating coil of your air fryer without scratching the non-stick coating. Safe 5-step eco-friendly method.
+  Canonical: OK (https://www.crispissimo.com/en/tools/clean-air-fryer-heating-element/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/clean-air-fryer-heating-element/, es -> https://www.crispissimo.com/es/herramientas/limpiar-resistencia-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/nettoyer-resistance-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Tools > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=en)
+
+- ES:
+  H1: OK (Cómo Limpiar la Resistencia de la Freidora de Aire de Forma Segura)
+  Title: NO (lunghezza: 65 caratteri) -> Cómo Limpiar la Resistencia de la Freidora de Aire: Método Seguro
+  Meta: NO (lunghezza: 139 caratteri) -> Descubre cómo limpiar y desengrasar la resistencia de tu freidora de aire sin rayar el revestimiento. Método ecológico y seguro en 5 pasos.
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/limpiar-resistencia-freidora-aire/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/clean-air-fryer-heating-element/, es -> https://www.crispissimo.com/es/herramientas/limpiar-resistencia-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/nettoyer-resistance-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Herramientas > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=es)
+
+- FR:
+  H1: OK (Guide de Nettoyage de la Résistance)
+  Title: NO (lunghezza: 66 caratteri) -> Comment Nettoyer la Résistance de la Friteuse à Air : Méthode Sûre
+  Meta: OK (lunghezza: 141 caratteri) -> Découvrez comment nettoyer et dégraisser la résistance de votre friteuse à air sans rayer le revêtement. Méthode écologique sûre en 5 étapes.
+  Canonical: OK (https://www.crispissimo.com/fr/outils/nettoyer-resistance-friteuse-air/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/clean-air-fryer-heating-element/, es -> https://www.crispissimo.com/es/herramientas/limpiar-resistencia-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/nettoyer-resistance-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Outils > /)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0 questions)
+  FAQ schema: NO (MISSING)
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=fr)
+
+COTTURA SURGELATI:
+- IT:
+  H1: OK (❄️Cottura Surgelati in Friggitrice ad Aria: Convertitore Tempi)
+  Title: NO (lunghezza: 61 caratteri) -> Convertitore Cottura Surgelati in Friggitrice ad Aria | Tempi
+  Meta: OK (lunghezza: 144 caratteri) -> Calcola automaticamente i tempi di cottura per i cibi surgelati in friggitrice ad aria. Converti i minuti del forno per patatine, pollo e pesce.
+  Canonical: OK (https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/cook-frozen-food-air-fryer/, es -> https://www.crispissimo.com/es/herramientas/cocinar-congelados-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/cuisson-surgeles-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Strumenti > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (4 questions)
+  FAQ schema: OK (PRESENT (4 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=it)
+
+- EN:
+  H1: OK (❄️Cooking Frozen Food in Air Fryer: Time Converter)
+  Title: OK (lunghezza: 57 caratteri) -> Air Fryer Frozen Food Converter | Calculate Cooking Times
+  Meta: NO (lunghezza: 139 caratteri) -> Automatically calculate cooking times for frozen foods in your air fryer. Convert oven minutes for french fries, chicken nuggets, and fish.
+  Canonical: OK (https://www.crispissimo.com/en/tools/cook-frozen-food-air-fryer/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/cook-frozen-food-air-fryer/, es -> https://www.crispissimo.com/es/herramientas/cocinar-congelados-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/cuisson-surgeles-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Tools > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (4 questions)
+  FAQ schema: OK (PRESENT (4 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=en)
+
+- ES:
+  H1: OK (❄️Cocinar Congelados en Freidora de Aire: Calculadora de Tiempos)
+  Title: OK (lunghezza: 58 caratteri) -> Calculadora de Tiempos para Congelados en Freidora de Aire
+  Meta: OK (lunghezza: 147 caratteri) -> Calcula automáticamente los tiempos de cocción para alimentos congelados en freidora de aire. Convierte los minutos del horno para patatas y pollo.
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/cocinar-congelados-freidora-aire/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/cook-frozen-food-air-fryer/, es -> https://www.crispissimo.com/es/herramientas/cocinar-congelados-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/cuisson-surgeles-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Herramientas > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (4 questions)
+  FAQ schema: OK (PRESENT (4 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=es)
+
+- FR:
+  H1: OK (❄️Calculateur pour Surgelés)
+  Title: NO (lunghezza: 64 caratteri) -> Convertisseur Friteuse à Air pour Surgelés : Cuisson en 2 Phases
+  Meta: NO (lunghezza: 134 caratteri) -> Évitez les aliments brûlés dehors et congelés dedans. Entrez les données de la boîte pour obtenir la cuisson thermodynamique parfaite.
+  Canonical: OK (https://www.crispissimo.com/fr/outils/cuisson-surgeles-friteuse-air/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/cook-frozen-food-air-fryer/, es -> https://www.crispissimo.com/es/herramientas/cocinar-congelados-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/cuisson-surgeles-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Outils > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (4 questions)
+  FAQ schema: OK (PRESENT (4 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=fr)
+
+RISCALDARE CIBO:
+- IT:
+  H1: OK (Come Riscaldare il Cibo in Friggitrice ad Aria: Tempi e Gradi)
+  Title: NO (lunghezza: 64 caratteri) -> Riscaldare il Cibo in Friggitrice ad Aria: Guida a Tempi e Gradi
+  Meta: OK (lunghezza: 147 caratteri) -> Abbandona il microonde: scopri i tempi e le temperature esatte per riscaldare pizza, carne, patatine e pasta in friggitrice ad aria senza seccarli.
+  Canonical: OK (https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/reheat-food-air-fryer/, es -> https://www.crispissimo.com/es/herramientas/recalentar-comida-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/rechauffer-aliments-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Strumenti > /)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0 questions)
+  FAQ schema: NO (MISSING)
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=it)
+
+- EN:
+  H1: OK (How to Reheat Food in an Air Fryer)
+  Title: OK (lunghezza: 57 caratteri) -> Reheating Food in Air Fryer: Times and Temperatures Guide
+  Meta: OK (lunghezza: 151 caratteri) -> Skip the microwave: discover the exact times and temperatures to reheat pizza, fries, meat, and pasta in your air fryer, keeping them perfectly crispy.
+  Canonical: OK (https://www.crispissimo.com/en/tools/reheat-food-air-fryer/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/reheat-food-air-fryer/, es -> https://www.crispissimo.com/es/herramientas/recalentar-comida-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/rechauffer-aliments-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Tools > /)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0 questions)
+  FAQ schema: NO (MISSING)
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=en)
+
+- ES:
+  H1: OK (Cómo Recalentar Comida en Freidora de Aire: Tiempos y Grados)
+  Title: NO (lunghezza: 63 caratteri) -> Recalentar Comida en Freidora de Aire: Guía de Tiempos y Grados
+  Meta: OK (lunghezza: 157 caratteri) -> Olvida el microondas: descubre los tiempos y temperaturas exactas para recalentar pizza, patatas, carne y pasta en freidora de aire y recuperar el crujiente.
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/recalentar-comida-freidora-aire/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/reheat-food-air-fryer/, es -> https://www.crispissimo.com/es/herramientas/recalentar-comida-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/rechauffer-aliments-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Herramientas > /)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0 questions)
+  FAQ schema: NO (MISSING)
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=es)
+
+- FR:
+  H1: OK (Comment réchauffer des aliments à l’air fryer)
+  Title: NO (lunghezza: 67 caratteri) -> Réchauffer des Aliments à l'Air Fryer : Guide Temps et Températures
+  Meta: OK (lunghezza: 155 caratteri) -> Oubliez le micro-ondes : découvrez les temps et températures exacts pour réchauffer pizzas, frites, viandes et pâtes à la friteuse à air sans les assécher.
+  Canonical: OK (https://www.crispissimo.com/fr/outils/rechauffer-aliments-friteuse-air/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/reheat-food-air-fryer/, es -> https://www.crispissimo.com/es/herramientas/recalentar-comida-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/rechauffer-aliments-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Outils > /)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0 questions)
+  FAQ schema: NO (MISSING)
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=fr)
+
+CALCOLO CALORIE:
+- IT:
+  H1: OK (Calcolo Calorie: Friggitrice ad Aria vs Frittura ad Immersione)
+  Title: NO (lunghezza: 65 caratteri) -> Calcolatore Calorie: Friggitrice ad Aria vs Frittura Tradizionale
+  Meta: OK (lunghezza: 150 caratteri) -> Calcola le calorie e i grassi risparmiati cucinando con la friggitrice ad aria rispetto alla classica frittura ad immersione. Simula il tuo risparmio.
+  Canonical: OK (https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-calorie-calculator/, es -> https://www.crispissimo.com/es/herramientas/calculo-calorias-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/calcul-calories-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Strumenti > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=it)
+
+- EN:
+  H1: OK (Calorie Calculator: Air Fryer vs Deep Frying Savings)
+  Title: NO (lunghezza: 63 caratteri) -> Air Fryer Calorie Calculator: Deep Frying vs Air Frying Savings
+  Meta: OK (lunghezza: 149 caratteri) -> Calculate the calories and fat saved by cooking with an air fryer compared to traditional deep frying. Simulate your exact caloric savings instantly.
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-calorie-calculator/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-calorie-calculator/, es -> https://www.crispissimo.com/es/herramientas/calculo-calorias-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/calcul-calories-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Tools > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=en)
+
+- ES:
+  H1: OK (Calculadora de Ahorro Calórico)
+  Title: OK (lunghezza: 52 caratteri) -> Calculadora de Calorías: Fritura vs Freidora de Aire
+  Meta: NO (lunghezza: 107 caratteri) -> Descubre exactamente cuánta grasa y calorías ahorras al cocinar con aire. Matemáticas reales, no eslóganes.
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/calculo-calorias-freidora-aire/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-calorie-calculator/, es -> https://www.crispissimo.com/es/herramientas/calculo-calorias-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/calcul-calories-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Herramientas > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=es)
+
+- FR:
+  H1: OK (Calculateur d'Économie de Calories)
+  Title: OK (lunghezza: 51 caratteri) -> Calculateur de Calories : Friture vs Friteuse à Air
+  Meta: NO (lunghezza: 109 caratteri) -> Découvrez exactement combien de graisses et de calories vous économisez. Des vrais chiffres, pas des slogans.
+  Canonical: OK (https://www.crispissimo.com/fr/outils/calcul-calories-friteuse-air/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-calorie-calculator/, es -> https://www.crispissimo.com/es/herramientas/calculo-calorias-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/calcul-calories-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Outils > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=fr)
+
+CONSUMI:
+- IT:
+  H1: OK (Consumi Friggitrice ad Aria: Calcola il Costo in Bolletta in kWh)
+  Title: NO (lunghezza: 61 caratteri) -> Consumo Friggitrice ad Aria in kWh: Calcolo Costo in Bolletta
+  Meta: OK (lunghezza: 154 caratteri) -> Scopri quanti Watt consuma una friggitrice ad aria e calcola il costo esatto in kWh sulla bolletta elettrica. Confronto consumi con il forno tradizionale.
+  Canonical: OK (https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-energy-costs/, es -> https://www.crispissimo.com/es/herramientas/consumo-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/consommation-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Strumenti > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=it)
+
+- EN:
+  H1: OK (Air Fryer Energy Consumption: Calculate Your Electricity Cost)
+  Title: NO (lunghezza: 62 caratteri) -> Air Fryer Power Consumption in kWh: Calculate Electricity Cost
+  Meta: OK (lunghezza: 154 caratteri) -> Discover how many Watts your air fryer uses and calculate the exact kWh cost on your electricity bill. Compare energy consumption with a traditional oven.
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-energy-costs/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-energy-costs/, es -> https://www.crispissimo.com/es/herramientas/consumo-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/consommation-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Tools > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=en)
+
+- ES:
+  H1: OK (Consumo Freidora de Aire: Calcula el Costo en la Factura de Luz)
+  Title: OK (lunghezza: 60 caratteri) -> Consumo Freidora de Aire en kWh: Calculadora de Gasto de Luz
+  Meta: OK (lunghezza: 150 caratteri) -> Descubre cuántos vatios consume una freidora de aire y calcula el costo exacto en kWh de tu factura de luz. Compara el gasto con un horno tradicional.
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/consumo-freidora-aire/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-energy-costs/, es -> https://www.crispissimo.com/es/herramientas/consumo-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/consommation-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Herramientas > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=es)
+
+- FR:
+  H1: OK (Simulateur de Facture)
+  Title: NO (lunghezza: 62 caratteri) -> Consommation Friteuse à Air en kWh : Calcul du Coût Électrique
+  Meta: OK (lunghezza: 146 caratteri) -> Découvrez combien de Watts consomme une friteuse à air et calculez le coût exact en kWh sur votre facture d'électricité. Comparaison avec le four.
+  Canonical: OK (https://www.crispissimo.com/fr/outils/consommation-friteuse-air/)
+  Hreflang: OK (it -> https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/, en -> https://www.crispissimo.com/en/tools/air-fryer-energy-costs/, es -> https://www.crispissimo.com/es/herramientas/consumo-freidora-aire/, fr -> https://www.crispissimo.com/fr/outils/consommation-friteuse-air/, x-default -> https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/)
+  Breadcrumb UI: OK (Home > / > Outils > /)
+  Breadcrumb schema: OK
+  FAQ UI: OK (3 questions)
+  FAQ schema: OK (PRESENT (3 q))
+  Link interni: OK (22 internal links found)
+  Lingua: OK (doc_lang=fr)

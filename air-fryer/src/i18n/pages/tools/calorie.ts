@@ -1,0 +1,187 @@
+export const content = {
+  it: {
+    title: "Calcolatore Calorie: Friggitrice ad Aria vs Frittura",
+    h1: "Calcolo Calorie: Friggitrice ad Aria vs Frittura ad Immersione",
+    desc: "Calcola le calorie e i grassi risparmiati cucinando con la friggitrice ad aria rispetto alla classica frittura ad immersione. Simula il tuo risparmio.",
+    intro: "Quante calorie risparmi usando la friggitrice ad aria invece della frittura tradizionale? Questo calcolatore ti mostra esattamente quanti grassi e calorie risparmi in base al cibo che prepari.",
+    eeatBadge: "✓ Algoritmo basato su tassi di assorbimento lipidico",
+    foodLabel: "Seleziona l'alimento:",
+    weightLabel: "Peso della porzione:",
+    btnCalc: "Calcola Risparmio",
+    resFat: "Grassi Risparmiati",
+    resKcal: "Calorie Risparmiate",
+    resRun: "Equivale a circa",
+    resRunUnit: "min. di corsa",
+
+    // NUOVI CONTENUTI EDITORIALI E FAQ
+    editorialH2: "La Scienza del Risparmio Calorico",
+    editorialText: "Nella frittura tradizionale per immersione, un alimento assorbe in media <strong>dal 10% al 20% del suo peso in olio</strong> (1 grammo di olio = 9 kcal). La friggitrice ad aria elimina la necessità del bagno d'olio: sfrutta la <strong>convezione termica ad alta velocità</strong> per scatenare la reazione di Maillard. Il risultato è una doratura croccante con un abbattimento fino all'80% dei grassi saturi aggiunti.",
+    faqTitle: "Domande Frequenti su Dieta e Air Fryer",
+    faqs: [
+      { q: "La friggitrice ad aria distrugge le vitamine?", a: "Al contrario. Cuocendo in tempi ridotti e senza dispersione in acqua (bollitura) o bagni d'olio, l'air fryer preserva meglio le vitamine termolabili e i nutrienti del cibo fresco." },
+      { q: "Devo usare per forza l'olio spray?", a: "Sui cibi freschi (come patate tagliate a mano o pollo crudo) basta un solo 'puff' di olio spray (circa 1-2 grammi) per favorire la doratura. Sui cibi surgelati pre-fritti, l'olio è già presente e NON devi aggiungerne altro." },
+      { q: "Riduce l'acrilammide rispetto alla frittura normale?", a: "Sì. Studi dimostrano che la frittura ad aria riduce la formazione di acrilammide (una sostanza potenzialmente nociva che si crea negli amidi ad alte temperature) fino al 90% rispetto alla frittura a immersione." }
+    ],
+
+    foods: [
+      { id: "patate", name: "Patatine Fritte (Fresche)", absorb: 0.12, airOil: 10 },
+      { id: "cotoletta", name: "Cotoletta di Pollo Impanata", absorb: 0.15, airOil: 5 },
+      { id: "calamari", name: "Anelli di Calamari", absorb: 0.11, airOil: 8 },
+      { id: "verdure", name: "Verdure Miste Pastellate", absorb: 0.18, airOil: 5 },
+      { id: "mozzarella", name: "Bastoncini di Mozzarella", absorb: 0.15, airOil: 5 },
+      { id: "nuggets", name: "Nuggets di Pollo", absorb: 0.14, airOil: 5 },
+      { id: "alette", name: "Alette di Pollo", absorb: 0.12, airOil: 5 },
+      { id: "pesce", name: "Filetto di Pesce Pastellato", absorb: 0.16, airOil: 8 },
+      { id: "involtini", name: "Involtini Primavera", absorb: 0.14, airOil: 6 },
+      { id: "frittelle", name: "Frittelle Dolci / Ciambelle", absorb: 0.20, airOil: 8 },
+      { id: "arancini", name: "Arancini / Supplì", absorb: 0.15, airOil: 8 },
+      { id: "cordonbleu", name: "Cordon Bleu", absorb: 0.14, airOil: 5 },
+      { id: "crocchette", name: "Crocchette di Patate", absorb: 0.16, airOil: 6 },
+      { id: "olive", name: "Olive Ascolane", absorb: 0.18, airOil: 5 },
+      { id: "pollofritto", name: "Pollo Fritto (Pezzi con osso)", absorb: 0.14, airOil: 8 },
+      { id: "gamberi", name: "Gamberi Fritti", absorb: 0.12, airOil: 5 },
+      { id: "falafel", name: "Falafel di Ceci", absorb: 0.15, airOil: 6 },
+      { id: "fiorizucca", name: "Fiori di Zucca in Pastella", absorb: 0.20, airOil: 5 },
+      { id: "sofficini", name: "Fagottini Ripieni Impanati", absorb: 0.13, airOil: 4 },
+      { id: "polpette", name: "Polpette di Carne Fritte", absorb: 0.15, airOil: 6 }
+    ]
+  },
+  en: {
+    title: "Air Fryer Calorie Calculator: Savings vs Deep Frying",
+    h1: "Calorie Calculator: Air Fryer vs Deep Frying Savings",
+    desc: "Calculate the calories and fat saved by cooking with an air fryer compared to traditional deep frying. Simulate your exact caloric savings instantly.",
+    intro: "How many calories do you save using an air fryer instead of deep frying? This calculator shows you exactly how much fat and calories you save based on the food you cook.",
+    eeatBadge: "✓ Algorithm based on lipid absorption rates",
+    foodLabel: "Select food:",
+    weightLabel: "Portion weight:",
+    btnCalc: "Calculate Savings",
+    resFat: "Fat Saved",
+    resKcal: "Calories Saved",
+    resRun: "Equivalent to approx",
+    resRunUnit: "min of running",
+
+    editorialH2: "The Science of Calorie Savings",
+    editorialText: "In traditional deep frying, food absorbs on average <strong>10% to 20% of its weight in oil</strong> (1 gram of oil = 9 kcal). The air fryer eliminates the need for an oil bath: it uses <strong>high-speed thermal convection</strong> to trigger the Maillard reaction. The result is a crispy golden finish with up to an 80% reduction in added saturated fats.",
+    faqTitle: "Frequently Asked Questions",
+    faqs: [
+      { q: "Does the air fryer destroy vitamins?", a: "On the contrary. By cooking in less time and without water (boiling) or deep oil baths, the air fryer preserves heat-sensitive vitamins and nutrients better." },
+      { q: "Do I have to use cooking spray?", a: "On fresh foods (like hand-cut potatoes) just one 'puff' of spray oil (about 1-2 grams) helps browning. On pre-fried frozen foods, oil is already present and you DO NOT need to add more." },
+      { q: "Does it reduce acrylamide compared to normal frying?", a: "Yes. Studies show that air frying reduces the formation of acrylamide (a potentially harmful substance created in starches at high temperatures) by up to 90% compared to deep frying." }
+    ],
+
+    foods: [
+      { id: "patate", name: "French Fries (Fresh)", absorb: 0.12, airOil: 10 },
+      { id: "cotoletta", name: "Breaded Chicken Cutlet", absorb: 0.15, airOil: 5 },
+      { id: "calamari", name: "Calamari Rings", absorb: 0.11, airOil: 8 },
+      { id: "verdure", name: "Battered Vegetables", absorb: 0.18, airOil: 5 },
+      { id: "mozzarella", name: "Mozzarella Sticks", absorb: 0.15, airOil: 5 },
+      { id: "nuggets", name: "Chicken Nuggets", absorb: 0.14, airOil: 5 },
+      { id: "alette", name: "Chicken Wings", absorb: 0.12, airOil: 5 },
+      { id: "pesce", name: "Battered Fish Fillet", absorb: 0.16, airOil: 8 },
+      { id: "involtini", name: "Spring Rolls", absorb: 0.14, airOil: 6 },
+      { id: "frittelle", name: "Donuts / Fritters", absorb: 0.20, airOil: 8 },
+      { id: "arancini", name: "Arancini (Rice Balls)", absorb: 0.15, airOil: 8 },
+      { id: "cordonbleu", name: "Cordon Bleu", absorb: 0.14, airOil: 5 },
+      { id: "crocchette", name: "Potato Croquettes", absorb: 0.16, airOil: 6 },
+      { id: "olive", name: "Stuffed Fried Olives", absorb: 0.18, airOil: 5 },
+      { id: "pollofritto", name: "Fried Chicken (Bone-in)", absorb: 0.14, airOil: 8 },
+      { id: "gamberi", name: "Fried Shrimp", absorb: 0.12, airOil: 5 },
+      { id: "falafel", name: "Falafel", absorb: 0.15, airOil: 6 },
+      { id: "fiorizucca", name: "Fried Zucchini Flowers", absorb: 0.20, airOil: 5 },
+      { id: "sofficini", name: "Cheese-filled Breaded Patties", absorb: 0.13, airOil: 4 },
+      { id: "polpette", name: "Fried Meatballs", absorb: 0.15, airOil: 6 }
+    ]
+  },
+  es: {
+    title: "Calculadora de Calorías: Fritura vs Freidora de Aire",
+    h1: "Calculadora de Ahorro Calórico",
+    desc: "Descubre exactamente cuánta grasa y calorías ahorras al cocinar con la freidora de aire en lugar de freír. Matemáticas reales, pruébalo ahora mismo.",
+    intro: "¿Cuántas calorías ahorras usando la freidora de aire en lugar de freír? Esta calculadora te muestra exactamente cuánta grasa y calorías ahorras dependiendo de la comida que prepares.",
+    eeatBadge: "✓ Algoritmo basado en tasas de absorción lipídica",
+    foodLabel: "Selecciona el alimento:",
+    weightLabel: "Peso de la porción:",
+    btnCalc: "Calcular Ahorro",
+    resFat: "Grasa Ahorrada",
+    resKcal: "Calorías Ahorradas",
+    resRun: "Equivale a unos",
+    resRunUnit: "min de correr",
+
+    editorialH2: "La Ciencia del Ahorro Calórico",
+    editorialText: "En la fritura tradicional, un alimento absorbe en media <strong>del 10% al 20% de su peso en aceite</strong> (1 gramo de aceite = 9 kcal). La freidora de aire elimina el baño de aceite: usa <strong>convección térmica a alta velocidad</strong> para crear la reacción de Maillard. El resultado es un dorado crujiente reduciendo hasta un 80% las grasas añadidas.",
+    faqTitle: "Preguntas Frecuentes",
+    faqs: [
+      { q: "¿La freidora de aire destruye las vitaminas?", a: "Al contrario. Al cocinar en menos tiempo y sin sumergir en agua o aceite, conserva mejor las vitaminas y nutrientes." },
+      { q: "¿Tengo que usar aceite en spray obligatoriamente?", a: "En alimentos frescos (como patatas naturales) basta un toque de spray (1-2 gramos) para dorar. En alimentos congelados prefritos NO necesitas añadir aceite." },
+      { q: "¿Reduce la acrilamida frente a la fritura normal?", a: "Sí. Los estudios demuestran que la fritura por aire reduce la formación de acrilamida (sustancia nociva creada en almidones a altas temperaturas) hasta en un 90%." }
+    ],
+
+    foods: [
+      { id: "patate", name: "Patatas Fritas (Frescas)", absorb: 0.12, airOil: 10 },
+      { id: "cotoletta", name: "Pollo Empanado", absorb: 0.15, airOil: 5 },
+      { id: "calamari", name: "Anillos de Calamar", absorb: 0.11, airOil: 8 },
+      { id: "verdure", name: "Verduras Rebozadas", absorb: 0.18, airOil: 5 },
+      { id: "mozzarella", name: "Palitos de Mozzarella", absorb: 0.15, airOil: 5 },
+      { id: "nuggets", name: "Nuggets de Pollo", absorb: 0.14, airOil: 5 },
+      { id: "alette", name: "Alitas de Pollo", absorb: 0.12, airOil: 5 },
+      { id: "pesce", name: "Filete de Pescado Rebozado", absorb: 0.16, airOil: 8 },
+      { id: "involtini", name: "Rollitos de Primavera", absorb: 0.14, airOil: 6 },
+      { id: "frittelle", name: "Donuts / Rosquillas", absorb: 0.20, airOil: 8 },
+      { id: "arancini", name: "Arancini (Bolas de Arroz)", absorb: 0.15, airOil: 8 },
+      { id: "cordonbleu", name: "Cordon Bleu", absorb: 0.14, airOil: 5 },
+      { id: "crocchette", name: "Croquetas de Patata", absorb: 0.16, airOil: 6 },
+      { id: "olive", name: "Aceitunas Rellenas Fritas", absorb: 0.18, airOil: 5 },
+      { id: "pollofritto", name: "Pollo Frito (Con hueso)", absorb: 0.14, airOil: 8 },
+      { id: "gamberi", name: "Gambas Fritas", absorb: 0.12, airOil: 5 },
+      { id: "falafel", name: "Falafel", absorb: 0.15, airOil: 6 },
+      { id: "fiorizucca", name: "Flores de Calabacín Fritas", absorb: 0.20, airOil: 5 },
+      { id: "sofficini", name: "Empanadillas Panadas", absorb: 0.13, airOil: 4 },
+      { id: "polpette", name: "Albóndigas Fritas", absorb: 0.15, airOil: 6 }
+    ]
+  },
+  fr: {
+    title: "Calculateur de Calories : Friture vs Friteuse à Air",
+    h1: "Calculateur d'Économie de Calories",
+    desc: "Découvrez exactement combien de graisses et de calories vous économisez en cuisinant avec la friteuse à air. Des vrais chiffres, essayez-le maintenant.",
+    intro: "Combien de calories économisez-vous en utilisant la friteuse à air au lieu de la friture ? Ce calculateur vous montre exactement combien de graisse et de calories vous économisez.",
+    eeatBadge: "✓ Algorithme basé sur l'absorption lipidique",
+    foodLabel: "Sélectionnez l'aliment :",
+    weightLabel: "Poids de la portion :",
+    btnCalc: "Calculer l'Économie",
+    resFat: "Graisse Économisée",
+    resKcal: "Calories Économisées",
+    resRun: "Équivaut à env.",
+    resRunUnit: "min de course",
+
+    editorialH2: "La Science de l'Économie de Calories",
+    editorialText: "Dans la friture traditionnelle, un aliment absorbe en moyenne <strong>10% à 20% de son poids en huile</strong> (1 gramme d'huile = 9 kcal). La friteuse à air élimine le bain d'huile : elle utilise la <strong>convection thermique à grande vitesse</strong> pour créer la réaction de Maillard. Le résultat est une dorure croustillante avec jusqu'à 80% de graisses ajoutées en moins.",
+    faqTitle: "Foire Aux Questions",
+    faqs: [
+      { q: "La friteuse à air détruit-elle les vitamines ?", a: "Au contraire. En cuisant plus rapidement et sans immersion dans l'eau ou l'huile, elle préserve mieux les vitamines et nutriments." },
+      { q: "Dois-je obligatoirement utiliser de l'huile en spray ?", a: "Sur des aliments frais (comme des frites maison), une seule pulvérisation (1-2 grammes) suffit pour dorer. Sur les surgelés préfrits, N'AJOUTEZ PAS d'huile." },
+      { q: "Réduit-elle l'acrylamide par rapport à la friture normale ?", a: "Oui. Des études montrent que la friture à air réduit la formation d'acrylamide (substance nocive créée à haute température) jusqu'à 90%." }
+    ],
+
+    foods: [
+      { id: "patate", name: "Frites (Fraîches)", absorb: 0.12, airOil: 10 },
+      { id: "cotoletta", name: "Poulet Pané", absorb: 0.15, airOil: 5 },
+      { id: "calamari", name: "Calamars", absorb: 0.11, airOil: 8 },
+      { id: "verdure", name: "Légumes en Beignets", absorb: 0.18, airOil: 5 },
+      { id: "mozzarella", name: "Bâtonnets de Mozzarella", absorb: 0.15, airOil: 5 },
+      { id: "nuggets", name: "Nuggets de Poulet", absorb: 0.14, airOil: 5 },
+      { id: "alette", name: "Ailes de Poulet", absorb: 0.12, airOil: 5 },
+      { id: "pesce", name: "Filet de Poisson Pané", absorb: 0.16, airOil: 8 },
+      { id: "involtini", name: "Rouleaux de Printemps", absorb: 0.14, airOil: 6 },
+      { id: "frittelle", name: "Beignets / Donuts", absorb: 0.20, airOil: 8 },
+      { id: "arancini", name: "Arancini (Boulettes de riz)", absorb: 0.15, airOil: 8 },
+      { id: "cordonbleu", name: "Cordon Bleu", absorb: 0.14, airOil: 5 },
+      { id: "crocchette", name: "Croquettes de Pomme de Terre", absorb: 0.16, airOil: 6 },
+      { id: "olive", name: "Olives Farcies Frites", absorb: 0.18, airOil: 5 },
+      { id: "pollofritto", name: "Poulet Frit (Avec os)", absorb: 0.14, airOil: 8 },
+      { id: "gamberi", name: "Crevettes Frites", absorb: 0.12, airOil: 5 },
+      { id: "falafel", name: "Falafel", absorb: 0.15, airOil: 6 },
+      { id: "fiorizucca", name: "Fleurs de Courgette Frites", absorb: 0.20, airOil: 5 },
+      { id: "sofficini", name: "Chaussons Panés au Fromage", absorb: 0.13, airOil: 4 },
+      { id: "polpette", name: "Boulettes de Viande Frites", absorb: 0.15, airOil: 6 }
+    ]
+  }
+} as const;

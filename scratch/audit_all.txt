@@ -1,0 +1,964 @@
+HUB GENERICO:
+- IT:
+  H1: OK (Strumenti &amp; Utility)
+  Title: OK (lunghezza: 55) - Strumenti e Guide per Friggitrice ad Aria | Crispissimo
+  Meta: OK (lunghezza: 156)
+  Canonical: OK (https://www.crispissimo.com/strumenti)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti &amp; Utility)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Tools &amp; Utilities)
+  Title: OK (lunghezza: 40) - Air Fryer Tools and Guides | Crispissimo
+  Meta: OK (lunghezza: 140)
+  Canonical: OK (https://www.crispissimo.com/en/tools)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools &amp; Utilities)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Herramientas y Utilidades)
+  Title: OK (lunghezza: 56) - Herramientas y Guías para Freidora de Aire | Crispissimo
+  Meta: OK (lunghezza: 141)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Inicio > Herramientas y Utilidades)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: **NO**
+  Lingua: OK
+
+- FR:
+  H1: OK (Outils et Utilitaires)
+  Title: OK (lunghezza: 50) - Outils et Guides pour Friteuse à Air | Crispissimo
+  Meta: OK (lunghezza: 150)
+  Canonical: OK (https://www.crispissimo.com/fr/outils)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Accueil > Outils et Utilitaires)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: **NO**
+  Lingua: OK
+
+HUB ERRORI:
+- IT:
+  H1: OK (Codici errore friggitrice ad aria: significato e soluzioni)
+  Title: OK (lunghezza: 71) - Codici errore friggitrice ad aria: E1, E2, E3, E4 e reset | Crispissimo
+  Meta: OK (lunghezza: 161)
+  Canonical: OK (https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Codici Errore)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Air Fryer Error Codes: Meanings and Solutions)
+  Title: OK (lunghezza: 70) - Air Fryer Error Codes: E1, E2, E3, E4 Meanings and Reset | Crispissimo
+  Meta: OK (lunghezza: 137)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-error-codes/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Error Codes)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Códigos de error de freidora de aire: significado y soluciones)
+  Title: OK (lunghezza: 74) - Códigos de error freidora de aire: E1, E2, E3, E4 y reinicio | Crispissimo
+  Meta: OK (lunghezza: 153)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/codigos-error-freidora-aire/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Códigos de Error)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Codes d’erreur friteuse à air : signification et solutions)
+  Title: **NO** (lunghezza: 80) - Codes d’erreur friteuse à air : E1, E2, E3, E4 et réinitialisation | Crispissimo
+  Meta: OK (lunghezza: 161)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/codes-erreur-friteuse-air/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Codes d&#39;Erreur)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+BRAND PHILIPS:
+- IT:
+  H1: OK (Soluzioni per codici errore e problemi delle friggitrici Philips)
+  Title: OK (lunghezza: 67) - Codici errore friggitrice ad aria Philips e soluzioni | Crispissimo
+  Meta: OK (lunghezza: 135)
+  Canonical: OK (https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/philips/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Philips Air Fryers Error Codes and Troubleshooting)
+  Title: OK (lunghezza: 57) - Philips Air Fryer Error Codes and Solutions | Crispissimo
+  Meta: OK (lunghezza: 129)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-error-codes/philips/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Soluciones a códigos de error y problemas en freidoras Philips)
+  Title: OK (lunghezza: 68) - Códigos de error freidora de aire Philips y soluciones | Crispissimo
+  Meta: OK (lunghezza: 138)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/codigos-error-freidora-aire/philips/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Solutions aux codes d&#39;erreur et problèmes des friteuses Philips)
+  Title: OK (lunghezza: 68) - Codes d&#39;erreur friteuse à air Philips et solutions | Crispissimo
+  Meta: OK (lunghezza: 144)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/codes-erreur-friteuse-air/philips/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+BRAND COSORI:
+- IT:
+  H1: OK (Soluzioni per codici errore e problemi delle friggitrici Cosori)
+  Title: OK (lunghezza: 66) - Codici errore friggitrice ad aria Cosori e soluzioni | Crispissimo
+  Meta: OK (lunghezza: 134)
+  Canonical: OK (https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/cosori/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Cosori Air Fryers Error Codes and Troubleshooting)
+  Title: OK (lunghezza: 56) - Cosori Air Fryer Error Codes and Solutions | Crispissimo
+  Meta: OK (lunghezza: 128)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-error-codes/cosori/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Soluciones a códigos de error y problemas en freidoras Cosori)
+  Title: OK (lunghezza: 67) - Códigos de error freidora de aire Cosori y soluciones | Crispissimo
+  Meta: OK (lunghezza: 137)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/codigos-error-freidora-aire/cosori/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Solutions aux codes d&#39;erreur et problèmes des friteuses Cosori)
+  Title: OK (lunghezza: 67) - Codes d&#39;erreur friteuse à air Cosori et solutions | Crispissimo
+  Meta: OK (lunghezza: 143)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/codes-erreur-friteuse-air/cosori/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+BRAND XIAOMI:
+- IT:
+  H1: OK (Soluzioni per codici errore e problemi delle friggitrici Xiaomi)
+  Title: OK (lunghezza: 66) - Codici errore friggitrice ad aria Xiaomi e soluzioni | Crispissimo
+  Meta: OK (lunghezza: 134)
+  Canonical: OK (https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/xiaomi/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Xiaomi Air Fryers Error Codes and Troubleshooting)
+  Title: OK (lunghezza: 56) - Xiaomi Air Fryer Error Codes and Solutions | Crispissimo
+  Meta: OK (lunghezza: 128)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-error-codes/xiaomi/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Soluciones a códigos de error y problemas en freidoras Xiaomi)
+  Title: OK (lunghezza: 67) - Códigos de error freidora de aire Xiaomi y soluciones | Crispissimo
+  Meta: OK (lunghezza: 137)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/codigos-error-freidora-aire/xiaomi/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Solutions aux codes d&#39;erreur et problèmes des friteuses Xiaomi)
+  Title: OK (lunghezza: 67) - Codes d&#39;erreur friteuse à air Xiaomi et solutions | Crispissimo
+  Meta: OK (lunghezza: 143)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/codes-erreur-friteuse-air/xiaomi/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: **NO** (NOT FOUND)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+MODEL PHILIPS XXL:
+- IT: FILE NON TROVATO (dist/client\strumenti/codici-errore-friggitrice-ad-aria/philips/premium-airfryer-xxl/index.html)
+- EN: FILE NON TROVATO (dist/client\en/tools/air-fryer-error-codes/philips/premium-airfryer-xxl/index.html)
+- ES: FILE NON TROVATO (dist/client\es/herramientas/codigos-error-freidora-aire/philips/premium-airfryer-xxl/index.html)
+- FR: FILE NON TROVATO (dist/client\fr/outils/codes-erreur-friteuse-air/philips/premium-airfryer-xxl/index.html)
+MODEL PHILIPS ESSENTIAL:
+- IT: FILE NON TROVATO (dist/client\strumenti/codici-errore-friggitrice-ad-aria/philips/essential-airfryer/index.html)
+- EN: FILE NON TROVATO (dist/client\en/tools/air-fryer-error-codes/philips/essential-airfryer/index.html)
+- ES: FILE NON TROVATO (dist/client\es/herramientas/codigos-error-freidora-aire/philips/essential-airfryer/index.html)
+- FR: FILE NON TROVATO (dist/client\fr/outils/codes-erreur-friteuse-air/philips/essential-airfryer/index.html)
+MODEL COSORI LE 5.0:
+- IT:
+  H1: OK (Codici errore e problemi cosori CAF-L501-KUS)
+  Title: OK (lunghezza: 60) - cosori CAF-L501-KUS: Codici Errore e Soluzioni | Crispissimo
+  Meta: **NO** (lunghezza: 99)
+  Canonical: OK (https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/cosori/pro-le-5-0-quart-air-fryer/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Codici Errore > Cosori)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (cosori CAF-L501-KUS Error Codes and Problems)
+  Title: OK (lunghezza: 60) - cosori CAF-L501-KUS: Error Codes and Solutions | Crispissimo
+  Meta: **NO** (lunghezza: 97)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-error-codes/cosori/pro-le-5-0-quart-air-fryer/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Error Codes > Cosori)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Códigos de error y problemas de cosori CAF-L501-KUS)
+  Title: OK (lunghezza: 64) - cosori CAF-L501-KUS: Códigos de error y soluciones | Crispissimo
+  Meta: OK (lunghezza: 113)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/codigos-error-freidora-aire/cosori/pro-le-5-0-quart-air-fryer/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Inicio > Herramientas > Códigos de Error > Cosori)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Codes d&#39;erreur et problèmes cosori CAF-L501-KUS)
+  Title: OK (lunghezza: 67) - cosori CAF-L501-KUS : Codes d&#39;erreur et Solutions | Crispissimo
+  Meta: OK (lunghezza: 117)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/codes-erreur-friteuse-air/cosori/pro-le-5-0-quart-air-fryer/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Accueil > Outils > Codes d&#39;Erreur > Cosori)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+MODEL XIAOMI D1001:
+- IT:
+  H1: OK (Codici errore e problemi xiaomi MAF-D1001)
+  Title: OK (lunghezza: 57) - xiaomi MAF-D1001: Codici Errore e Soluzioni | Crispissimo
+  Meta: **NO** (lunghezza: 96)
+  Canonical: OK (https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/xiaomi/maf-d1001/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Codici Errore > Xiaomi)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (xiaomi MAF-D1001 Error Codes and Problems)
+  Title: OK (lunghezza: 57) - xiaomi MAF-D1001: Error Codes and Solutions | Crispissimo
+  Meta: **NO** (lunghezza: 94)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-error-codes/xiaomi/maf-d1001/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Error Codes > Xiaomi)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Códigos de error y problemas de xiaomi MAF-D1001)
+  Title: OK (lunghezza: 61) - xiaomi MAF-D1001: Códigos de error y soluciones | Crispissimo
+  Meta: OK (lunghezza: 110)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/codigos-error-freidora-aire/xiaomi/maf-d1001/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Inicio > Herramientas > Códigos de Error > Xiaomi)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Codes d&#39;erreur et problèmes xiaomi MAF-D1001)
+  Title: OK (lunghezza: 64) - xiaomi MAF-D1001 : Codes d&#39;erreur et Solutions | Crispissimo
+  Meta: OK (lunghezza: 114)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/codes-erreur-friteuse-air/xiaomi/maf-d1001/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Accueil > Outils > Codes d&#39;Erreur > Xiaomi)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+GUIDA RESET:
+- IT:
+  H1: OK (Come resettare la friggitrice ad aria in sicurezza)
+  Title: OK (lunghezza: 55) - Reset friggitrice ad aria: procedura sicura e soluzioni
+  Meta: OK (lunghezza: 115)
+  Canonical: OK (https://www.crispissimo.com/strumenti/reset-friggitrice-ad-aria/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Reset)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (How to Reset Your Air Fryer Safely)
+  Title: OK (lunghezza: 45) - Air Fryer Reset: Safe Procedure and Solutions
+  Meta: OK (lunghezza: 121)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-reset/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Reset)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Cómo reiniciar la freidora de aire de forma segura)
+  Title: OK (lunghezza: 54) - Reinicio freidora de aire: procedimiento seguro y guía
+  Meta: OK (lunghezza: 122)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/reset-freidora-aire/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Reset)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: **NO**
+  Lingua: OK
+
+- FR:
+  H1: OK (Comment réinitialiser la friteuse à air en toute sécurité)
+  Title: OK (lunghezza: 48) - Réinitialisation friteuse à air : procédure sûre
+  Meta: OK (lunghezza: 129)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/reset-friteuse-air/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Reset)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: **NO**
+  Lingua: OK
+
+GUIDA FUMO PUZZA:
+- IT:
+  H1: OK (Pronto Soccorso Air Fryer)
+  Title: OK (lunghezza: 51) - Fumo e puzza friggitrice ad aria: cause e soluzioni
+  Meta: OK (lunghezza: 126)
+  Canonical: OK (https://www.crispissimo.com/strumenti/fumo-puzza-friggitrice-ad-aria/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Fumo e Puzza)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Air Fryer First Aid)
+  Title: OK (lunghezza: 47) - Air Fryer Smoke and Smell: Causes and Solutions
+  Meta: OK (lunghezza: 124)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-smoke-smell/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Smoke and Smell)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Primeros Auxilios Air Fryer)
+  Title: OK (lunghezza: 49) - Freidora de aire humo y olor: causas y soluciones
+  Meta: OK (lunghezza: 125)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/humo-olor-freidora-aire/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Humo y Olor)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: **NO**
+  Lingua: OK
+
+- FR:
+  H1: OK (Premiers Secours Air Fryer)
+  Title: OK (lunghezza: 51) - Friteuse à air fumée et odeur : causes et solutions
+  Meta: OK (lunghezza: 112)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/fumee-odeur-friteuse-air/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Fumée et Odeur)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: **NO**
+  Lingua: OK
+
+GUIDA NON SI ACCENDE:
+- IT:
+  H1: OK (La friggitrice ad aria non si accende: cosa controllare e quando contattare l&#39;assistenza)
+  Title: OK (lunghezza: 53) - Friggitrice ad aria non si accende: cause e cosa fare
+  Meta: OK (lunghezza: 140)
+  Canonical: OK (https://www.crispissimo.com/strumenti/friggitrice-ad-aria-non-si-accende/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Non si accende)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Air Fryer Won&#39;t Turn On: What to Check and When to Contact Support)
+  Title: OK (lunghezza: 50) - Air Fryer Won&#39;t Turn On: Causes and Safe Steps
+  Meta: OK (lunghezza: 117)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-wont-turn-on/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Won&#39;t Turn On)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Freidora de aire no enciende: qué comprobar y cuándo contactar al servicio)
+  Title: OK (lunghezza: 52) - Freidora de aire no enciende: causas y pasos seguros
+  Meta: OK (lunghezza: 149)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/freidora-aire-no-enciende/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > No enciende)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: **NO**
+  Lingua: OK
+
+- FR:
+  H1: OK (Friteuse à air ne s&#39;allume pas : que vérifier et quand appeler l&#39;assistance)
+  Title: OK (lunghezza: 59) - Friteuse à air ne s&#39;allume pas : causes et étapes sûres
+  Meta: OK (lunghezza: 149)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/friteuse-air-ne-sallume-pas/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Ne s&#39;allume pas)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: OK
+  Link interni: **NO**
+  Lingua: OK
+
+GUIDA NON SCALDA:
+- IT:
+  H1: OK (La friggitrice ad aria non scalda: cause e verifiche di base)
+  Title: OK (lunghezza: 53) - Friggitrice ad aria non scalda: controlli e soluzioni
+  Meta: OK (lunghezza: 128)
+  Canonical: OK (https://www.crispissimo.com/strumenti/friggitrice-ad-aria-non-scalda/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Non scalda)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Air Fryer Not Heating: Causes and Basic Checks)
+  Title: OK (lunghezza: 50) - Air Fryer Not Heating: What to Check and Solutions
+  Meta: OK (lunghezza: 111)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-not-heating/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Not Heating)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Freidora de aire no calienta: causas y comprobaciones básicas)
+  Title: OK (lunghezza: 52) - Freidora de aire no calienta: controles y soluciones
+  Meta: OK (lunghezza: 131)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/freidora-aire-no-calienta/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > No calienta)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: **NO**
+  Lingua: OK
+
+- FR:
+  H1: OK (La friteuse à air ne chauffe pas : causes et vérifications de base)
+  Title: OK (lunghezza: 51) - Friteuse à air ne chauffe pas : causes et solutions
+  Meta: OK (lunghezza: 131)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/friteuse-air-ne-chauffe-pas/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Ne chauffe pas)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: **NO**
+  Lingua: OK
+
+GUIDA VENTOLA:
+- IT:
+  H1: OK (La ventola della friggitrice ad aria non gira: cause e verifiche)
+  Title: OK (lunghezza: 55) - Ventola friggitrice ad aria non gira: cause e soluzioni
+  Meta: OK (lunghezza: 132)
+  Canonical: OK (https://www.crispissimo.com/strumenti/ventola-friggitrice-ad-aria-non-gira/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Ventola non gira)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Air Fryer Fan Not Working: Causes and Checks)
+  Title: OK (lunghezza: 47) - Air Fryer Fan Not Working: Causes and Solutions
+  Meta: OK (lunghezza: 109)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-fan-not-working/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Fan Not Working)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Ventilador de freidora de aire no funciona: causas y comprobaciones)
+  Title: OK (lunghezza: 50) - Ventilador freidora de aire no funciona: qué hacer
+  Meta: OK (lunghezza: 145)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/freidora-aire-ventilador-no-funciona/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Ventilador no funciona)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: **NO**
+  Lingua: OK
+
+- FR:
+  H1: OK (Ventilateur de friteuse à air ne tourne pas : causes et vérifications)
+  Title: OK (lunghezza: 52) - Ventilateur friteuse à air ne tourne pas : que faire
+  Meta: OK (lunghezza: 139)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/friteuse-air-ventilateur-ne-marche-pas/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Ventilateur ne marche pas)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: **NO**
+  Lingua: OK
+
+STRUMENTO MATERIALI:
+- IT:
+  H1: OK (Contenitori e Materiali per Friggitrice ad Aria: Cosa Si Può Mettere?)
+  Title: OK (lunghezza: 61) - Cosa Mettere (e Non) in Friggitrice ad Aria | Guida Materiali
+  Meta: OK (lunghezza: 153)
+  Canonical: OK (https://www.crispissimo.com/strumenti/materiali-friggitrice-ad-aria/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Materiali Friggitrice ad Aria)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Air Fryer Materials Guide: What Can You Put Inside?)
+  Title: OK (lunghezza: 63) - What to Put in an Air Fryer (and What Not To) | Materials Guide
+  Meta: OK (lunghezza: 143)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-materials-guide/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Air Fryer Materials)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Materiales y Recipientes para Freidora de Aire: ¿Qué se puede meter?)
+  Title: OK (lunghezza: 64) - Qué Meter (y Qué No) en la Freidora de Aire | Guía de Materiales
+  Meta: OK (lunghezza: 139)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/materiales-freidora-aire/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Materiales Freidora de Aire)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Récipients et Matériaux pour Friteuse à Air : Que peut-on mettre ?)
+  Title: OK (lunghezza: 65) - Que Mettre (et Ne Pas Mettre) dans une Friteuse à Air | Matériaux
+  Meta: OK (lunghezza: 138)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/materiaux-friteuse-air/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Matériaux Friteuse à Air)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+STRUMENTO PULIZIA:
+- IT:
+  H1: OK (Come Pulire la Resistenza della Friggitrice ad Aria in Sicurezza)
+  Title: OK (lunghezza: 66) - Come Pulire la Resistenza della Friggitrice ad Aria: Metodo Sicuro
+  Meta: OK (lunghezza: 145)
+  Canonical: OK (https://www.crispissimo.com/strumenti/pulire-resistenza-friggitrice-ad-aria/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Pulizia Resistenza)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (How to Clean the Air Fryer Heating Element Safely)
+  Title: OK (lunghezza: 64) - How to Clean Air Fryer Heating Element: Safe Step-by-Step Method
+  Meta: OK (lunghezza: 144)
+  Canonical: OK (https://www.crispissimo.com/en/tools/clean-air-fryer-heating-element/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Cleaning Heating Element)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Cómo Limpiar la Resistencia de la Freidora de Aire de Forma Segura)
+  Title: OK (lunghezza: 65) - Cómo Limpiar la Resistencia de la Freidora de Aire: Método Seguro
+  Meta: OK (lunghezza: 139)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/limpiar-resistencia-freidora-aire/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Limpiar Resistencia)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Guide de Nettoyage de la Résistance)
+  Title: OK (lunghezza: 66) - Comment Nettoyer la Résistance de la Friteuse à Air : Méthode Sûre
+  Meta: OK (lunghezza: 141)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/nettoyer-resistance-friteuse-air/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Nettoyer Résistance)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+STRUMENTO SURGELATI:
+- IT:
+  H1: OK (❄️ Cottura Surgelati in Friggitrice ad Aria: Convertitore Tempi)
+  Title: OK (lunghezza: 61) - Convertitore Cottura Surgelati in Friggitrice ad Aria | Tempi
+  Meta: OK (lunghezza: 144)
+  Canonical: OK (https://www.crispissimo.com/strumenti/cottura-surgelati-friggitrice-ad-aria/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Cottura Surgelati)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (❄️ Cooking Frozen Food in Air Fryer: Time Converter)
+  Title: OK (lunghezza: 57) - Air Fryer Frozen Food Converter | Calculate Cooking Times
+  Meta: OK (lunghezza: 139)
+  Canonical: OK (https://www.crispissimo.com/en/tools/cook-frozen-food-air-fryer/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Cook Frozen Food)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (❄️ Cocinar Congelados en Freidora de Aire: Calculadora de Tiempos)
+  Title: OK (lunghezza: 58) - Calculadora de Tiempos para Congelados en Freidora de Aire
+  Meta: OK (lunghezza: 147)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/cocinar-congelados-freidora-aire/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Cocinar Congelados)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (❄️ Calculateur pour Surgelés)
+  Title: OK (lunghezza: 64) - Convertisseur Friteuse à Air pour Surgelés : Cuisson en 2 Phases
+  Meta: OK (lunghezza: 134)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/cuisson-surgeles-friteuse-air/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Cuisson Surgelés)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+STRUMENTO RISCALDARE:
+- IT:
+  H1: OK (Come Riscaldare il Cibo in Friggitrice ad Aria: Tempi e Gradi)
+  Title: OK (lunghezza: 64) - Riscaldare il Cibo in Friggitrice ad Aria: Guida a Tempi e Gradi
+  Meta: OK (lunghezza: 147)
+  Canonical: OK (https://www.crispissimo.com/strumenti/riscaldare-cibo-friggitrice-ad-aria/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Riscaldare Cibo)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (How to Reheat Food in an Air Fryer)
+  Title: OK (lunghezza: 57) - Reheating Food in Air Fryer: Times and Temperatures Guide
+  Meta: OK (lunghezza: 151)
+  Canonical: OK (https://www.crispissimo.com/en/tools/reheat-food-air-fryer/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Reheating Food)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Cómo Recalentar Comida en Freidora de Aire: Tiempos y Grados)
+  Title: OK (lunghezza: 63) - Recalentar Comida en Freidora de Aire: Guía de Tiempos y Grados
+  Meta: OK (lunghezza: 157)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/recalentar-comida-freidora-aire/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Recalentar Comida)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Comment réchauffer des aliments à l’air fryer)
+  Title: OK (lunghezza: 71) - Réchauffer des Aliments à l&#39;Air Fryer : Guide Temps et Températures
+  Meta: OK (lunghezza: 155)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/rechauffer-aliments-friteuse-air/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Réchauffer Aliments)
+  Breadcrumb schema: OK
+  FAQ UI: NO (0)
+  FAQ schema: NO
+  Link interni: OK
+  Lingua: OK
+
+STRUMENTO CALORIE:
+- IT:
+  H1: OK (Calcolo Calorie: Friggitrice ad Aria vs Frittura ad Immersione)
+  Title: OK (lunghezza: 65) - Calcolatore Calorie: Friggitrice ad Aria vs Frittura Tradizionale
+  Meta: OK (lunghezza: 150)
+  Canonical: OK (https://www.crispissimo.com/strumenti/calcolo-calorie-friggitrice-ad-aria/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Calcolo Calorie)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Calorie Calculator: Air Fryer vs Deep Frying Savings)
+  Title: OK (lunghezza: 63) - Air Fryer Calorie Calculator: Deep Frying vs Air Frying Savings
+  Meta: OK (lunghezza: 149)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-calorie-calculator/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Calorie Calculator)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Calculadora de Ahorro Calórico)
+  Title: OK (lunghezza: 52) - Calculadora de Calorías: Fritura vs Freidora de Aire
+  Meta: OK (lunghezza: 107)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/calculo-calorias-freidora-aire/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Calculadora de Calorías)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Calculateur d&#39;Économie de Calories)
+  Title: OK (lunghezza: 51) - Calculateur de Calories : Friture vs Friteuse à Air
+  Meta: OK (lunghezza: 109)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/calcul-calories-friteuse-air/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Calcul Calories)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+STRUMENTO CONSUMI:
+- IT:
+  H1: OK (Consumi Friggitrice ad Aria: Calcola il Costo in Bolletta in kWh)
+  Title: OK (lunghezza: 61) - Consumo Friggitrice ad Aria in kWh: Calcolo Costo in Bolletta
+  Meta: OK (lunghezza: 154)
+  Canonical: OK (https://www.crispissimo.com/strumenti/consumi-friggitrice-ad-aria/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Strumenti > Consumi)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- EN:
+  H1: OK (Air Fryer Energy Consumption: Calculate Your Electricity Cost)
+  Title: OK (lunghezza: 62) - Air Fryer Power Consumption in kWh: Calculate Electricity Cost
+  Meta: OK (lunghezza: 154)
+  Canonical: OK (https://www.crispissimo.com/en/tools/air-fryer-energy-costs/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Tools > Energy Consumption)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- ES:
+  H1: OK (Consumo Freidora de Aire: Calcula el Costo en la Factura de Luz)
+  Title: OK (lunghezza: 60) - Consumo Freidora de Aire en kWh: Calculadora de Gasto de Luz
+  Meta: OK (lunghezza: 150)
+  Canonical: OK (https://www.crispissimo.com/es/herramientas/consumo-freidora-aire/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Herramientas > Consumo)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+
+- FR:
+  H1: OK (Simulateur de Facture)
+  Title: OK (lunghezza: 62) - Consommation Friteuse à Air en kWh : Calcul du Coût Électrique
+  Meta: OK (lunghezza: 146)
+  Canonical: OK (https://www.crispissimo.com/fr/outils/consommation-friteuse-air/)
+  Hreflang: OK (it, en, es, fr, x-default)
+  Breadcrumb UI: OK (Home > Outils > Consommation)
+  Breadcrumb schema: OK
+  FAQ UI: OK
+  FAQ schema: OK
+  Link interni: OK
+  Lingua: OK
+

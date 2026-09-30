@@ -72,22 +72,21 @@ const faqSchema = t.faqs && t.faqs.length > 0 ? {
     "acceptedAnswer": { "@type": "Answer", "text": faq.a }
   }))
 } : null;
+const alternateUrls = {
+  it: `https://www.crispissimo.com${routes['it']}`,
+  en: `https://www.crispissimo.com${routes['en']}`,
+  es: `https://www.crispissimo.com${routes['es']}`,
+  fr: `https://www.crispissimo.com${routes['fr']}`,
+  'x-default': `https://www.crispissimo.com${routes['en']}`
+};
 ---
 
 <MainLayout
   title={t.title}
   description={t.meta}
   lang={lang}
-  canonicalUrl={canonicalUrl}
-  currentPath={routes[lang]}
+  alternateUrls={alternateUrls}
 >
-  <Fragment slot="head">
-    {languages.map((l) => (
-      <link rel="alternate" hreflang={l} href={`https://www.crispissimo.com${routes[l]}`} />
-    ))}
-    <link rel="alternate" hreflang="x-default" href={`https://www.crispissimo.com${routes['en']}`} />
-  </Fragment>
-
   <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" class="mb-8 flex justify-start w-full overflow-x-auto pb-2">
