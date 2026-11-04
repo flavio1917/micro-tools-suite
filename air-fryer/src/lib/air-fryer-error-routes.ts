@@ -30,8 +30,14 @@ function normalizeUrl(url: string): string {
   return normalized;
 }
 
+// Restituisce l'URL canonico dell'hub, sempre con lo slash finale
+// (i chiamanti concatenano direttamente `${hubUrl}${brand}/`).
 export function getAirFryerErrorHubUrl(lang: SupportedLanguage): string {
-  return errorToolRoutes[lang].hub;
+  return normalizeUrl(errorToolRoutes[lang].hub);
+}
+
+export function getAirFryerErrorBrandUrl(lang: SupportedLanguage, brandSlug: string): string {
+  return normalizeUrl(`${errorToolRoutes[lang].hub}/${brandSlug}`);
 }
 
 export function getAirFryerErrorModelUrl(lang: SupportedLanguage, brandSlug: string, routeSlug: string): string {

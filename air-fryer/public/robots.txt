@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+# Endpoint interni (voti, segnalazioni): non sono pagine da scansionare
+Disallow: /api/
+
+Sitemap: https://www.crispissimo.com/sitemap-index.xml

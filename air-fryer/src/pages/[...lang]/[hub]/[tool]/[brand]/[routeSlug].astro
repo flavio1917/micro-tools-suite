@@ -6,6 +6,7 @@ import { pageErrorsSeoTranslations, modelMetaTemplate } from '../../../../../dat
 import { errorsUiTranslations } from '../../../../../data/i18n/errors-ui';
 import { getAirFryerErrorAlternateUrls, getAirFryerErrorHubUrl } from '../../../../../lib/air-fryer-error-routes';
 import { toSafeAnchorId } from '../../../../../lib/air-fryer-anchor';
+import { getEffectiveSeoStatus } from '../../../../../data/air-fryer-overrides';
 import type { AirFryerModelV2 } from '../../../../../types/air-fryer-v2';
 
 export async function getStaticPaths() {
@@ -87,7 +88,7 @@ const h1 = (seoData.modelH1?.replace('{brand}', '').replace('{model}', displayNa
 
 const alternateUrls = getAirFryerErrorAlternateUrls(model.brand_slug, model.route_slug!);
 const hubUrl = getAirFryerErrorHubUrl(lang);
-const isNoindex = model.seo_status === 'noindex';
+const isNoindex = getEffectiveSeoStatus(model.canonical_slug) !== 'indexable';
 
 const legacyModelForSpecs = {
   capacity_l: model.specs?.capacity_liters ?? null,
@@ -116,13 +117,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 3,
       "name": seoData.breadcrumbCurrent,
-      "item": `https://crispissimo.com${hubUrl}`
+      "item": `https://www.crispissimo.com${hubUrl}`
     },
     {
       "@type": "ListItem",
       "position": 4,
       "name": capitalize(model.brand_slug),
-      "item": `https://crispissimo.com${hubUrl}${model.brand_slug}/`
+      "item": `https://www.crispissimo.com${hubUrl}${model.brand_slug}/`
     },
     {
       "@type": "ListItem",
@@ -185,7 +186,7 @@ const faqSchema = modelFaqs.length > 0 ? {
     <nav class="flex text-sm text-slate-500 mb-8" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-3">
         <li class="inline-flex items-center">
-          <a href={lang === 'it' ? '/' : `/${lang}`} class="hover:text-slate-900 dark:hover:text-white transition-colors">{seoData.breadcrumbHome}</a>
+          <a href={lang === 'it' ? '/' : `/${lang}/`} class="hover:text-slate-900 dark:hover:text-white transition-colors">{seoData.breadcrumbHome}</a>
         </li>
         <li>
           <div class="flex items-center">

@@ -3,48 +3,36 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
 
-import fs from 'node:fs';
+// Pagine modello dei codici errore: sono indicizzabili (e quindi in sitemap) SOLO
+// quelle validate a mano con seo_status_override: 'indexable' in
+// src/data/air-fryer-overrides.ts. Tutte le altre sono noindex.
+// Questo file non può importare TypeScript: tenere la lista allineata a mano.
+// scripts/seo-check.mjs blocca la build se sitemap e meta robots non coincidono.
+const INDEXABLE_MODEL_PATHS = ['philips/na351', 'philips/na220-na221'];
+const ERROR_HUB_PATHS = [
+  'strumenti/codici-errore-friggitrice-ad-aria',
+  'en/tools/air-fryer-error-codes',
+  'es/herramientas/codigos-error-freidora-aire',
+  'fr/outils/codes-erreur-friteuse-air',
+];
 
-const dbPath = new URL('./src/data/air-fryer-db.json', import.meta.url);
-const rawDb = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
-// Read overrides from JSON-compatible source
-// air-fryer-overrides.ts is TS-only, so we inline the canonical list here
-// and keep it in sync manually. This is a build-time-only file.
-const INDEXABLE_OVERRIDES = ['philips-na351', 'philips-na220-na221'];
-const ROUTE_SLUG_OVERRIDES = {
-  'philips-na351': 'na351',
-  'philips-na220-na221': 'na220-na221',
-  'philips-na15x': 'na15x',
-  'philips-na555': 'na555',
-  'cosori-caf-p583s-kus': 'caf-p583s-kus',
-  'cosori-caf-li211': 'caf-li211',
-  'cosori-caf-se601s-cus': 'caf-se601s-cus',
-  'cosori-caf-dc601-kus': 'caf-dc601-kus',
-  'cosori-caf-tf901-kus': 'caf-tf901-kus',
-  'cosori-caf-r901-aus': 'caf-r901-aus',
-  'cosori-caf-l501-kus': 'caf-l501-kus',
-};
-
-const noindexUrls = [];
-const seenSlugs = new Set();
-for (const model of rawDb) {
-  const slug = model.canonical_slug;
-  if (seenSlugs.has(slug)) continue; // skip duplicates (manual_review dupes)
-  seenSlugs.add(slug);
-  
-  const effectiveStatus = INDEXABLE_OVERRIDES.includes(slug) ? 'indexable' : 'noindex';
-  const routeSlug = ROUTE_SLUG_OVERRIDES[slug] || model.route_slug;
-  
-  if (effectiveStatus === 'noindex' && model.brand_slug && routeSlug) {
-    const brand = model.brand_slug;
-    const spec = routeSlug;
-    noindexUrls.push(`https://www.crispissimo.com/strumenti/codici-errore-friggitrice-ad-aria/${brand}/${spec}/`);
-    noindexUrls.push(`https://www.crispissimo.com/en/tools/air-fryer-error-codes/${brand}/${spec}/`);
-    noindexUrls.push(`https://www.crispissimo.com/es/herramientas/codigos-error-freidora-aire/${brand}/${spec}/`);
-    noindexUrls.push(`https://www.crispissimo.com/fr/outils/codes-erreur-friteuse-air/${brand}/${spec}/`);
+function isNoindexModelPage(pageUrl) {
+  const p = decodeURI(new URL(pageUrl).pathname).replace(/^\/|\/$/g, '');
+  for (const hub of ERROR_HUB_PATHS) {
+    if (!p.startsWith(hub + '/')) continue;
+    const rest = p.slice(hub.length + 1); // "<brand>" oppure "<brand>/<modello>"
+    return rest.split('/').length >= 2 && !INDEXABLE_MODEL_PATHS.includes(rest);
   }
+  return false;
 }
 
+// Pagine il cui canonical è SENZA slash finale (ricette, hub degli strumenti,
+// convertitori). Tutte le altre pagine hanno il canonical con lo slash finale.
+const CANONICAL_WITHOUT_TRAILING_SLASH = new RegExp(
+  '^/(?:(?:en|es|fr)/)?recipes/[^/]+/$' +
+  '|^/(?:strumenti|en/tools|es/herramientas|fr/outils)/$' +
+  '|^/(?:convertitore|en/converter|es/convertidor|fr/convertisseur)/$'
+);
 
 export default defineConfig({
   site: 'https://www.crispissimo.com',
@@ -60,12 +48,19 @@ export default defineConfig({
     }
   },
   integrations: [
+    // La sitemap deve contenere SOLO gli URL canonici, scritti esattamente come nel
+    // <link rel="canonical"> (verificato da scripts/seo-check.mjs dopo la build).
+    // Niente lastmod/changefreq/priority: lastmod = data della build per tutte le
+    // pagine è un segnale falso, changefreq e priority sono ignorati da Google.
     sitemap({
-      changefreq: 'weekly',
-      priority: 0.7,
-      lastmod: new Date(),
-      filter: (page) => {
-        return !noindexUrls.some(url => page === url || page === url.slice(0, -1));
+      filter: (page) => !isNoindexModelPage(page),
+      serialize: (item) => {
+        const url = new URL(item.url);
+        if (CANONICAL_WITHOUT_TRAILING_SLASH.test(decodeURI(url.pathname))) {
+          url.pathname = url.pathname.replace(/\/$/, '');
+          item.url = url.href;
+        }
+        return item;
       }
     })
   ],

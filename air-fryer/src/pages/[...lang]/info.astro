@@ -19,8 +19,8 @@ const backBtnLabel = infoBackBtnLabel[currentLang as keyof typeof infoBackBtnLab
 const t = infoContent[currentLang as keyof typeof infoContent] || infoContent.it;
 
 // Generazione URL corretta e link al ricettario
-const homeUrl = lang === 'it' ? '/#ricettario' : `/${lang}/#ricettario`;
-const pageUrl = lang === 'it' ? 'https://www.convertitorefriggitrice.it/info' : `https://www.convertitorefriggitrice.it/${lang}/info`;
+const homeUrl = currentLang === 'it' ? '/#ricettario' : `/${currentLang}/#ricettario`;
+const pageUrl = currentLang === 'it' ? 'https://www.crispissimo.com/info/' : `https://www.crispissimo.com/${currentLang}/info/`;
 
 const personSchema = {
   "@context": "https://schema.org",

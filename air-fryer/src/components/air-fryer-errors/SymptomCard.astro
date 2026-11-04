@@ -100,7 +100,7 @@ const symptomAnchorId = toSafeAnchorId('symptom', symptomKey);
     
     <SafetyNotice severity={severity} lang={lang} />
     
-    {source?.manual_url && (
+    {source?.manual_url && /^https?:\/\//i.test(source.manual_url) && (
   <div class="mt-4 border-t border-slate-100 pt-4 text-xs dark:border-slate-800">
     <a
       href={source.manual_url}

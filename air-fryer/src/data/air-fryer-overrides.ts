@@ -17,6 +17,7 @@ export interface ModelOverrides {
 export const overrides: Record<string, ModelOverrides> = {
   'philips-na351': {
     route_slug: 'na351',
+    seo_status_override: 'indexable',
     is_deduplication_validated: true,
     errors: {
       'E1': { severity: 'caution' },
@@ -26,6 +27,7 @@ export const overrides: Record<string, ModelOverrides> = {
   },
   'philips-na220-na221': {
     route_slug: 'na220-na221',
+    seo_status_override: 'indexable',
     is_deduplication_validated: true,
     errors: {
       'E1': { severity: 'caution' },
@@ -36,3 +38,12 @@ export const overrides: Record<string, ModelOverrides> = {
     }
   }
 };
+
+// Stato SEO effettivo di una pagina modello. Regola: indicizzabile SOLO se
+// esplicitamente validata qui con seo_status_override: 'indexable'; tutto il resto
+// è noindex (pagine generate dal database, non ancora verificate a mano).
+// Deve restare allineato con INDEXABLE_OVERRIDES in astro.config.mjs (sitemap):
+// scripts/seo-check.mjs segnala ogni pagina indicizzabile assente dalla sitemap.
+export function getEffectiveSeoStatus(canonicalSlug: string): SeoStatus {
+  return overrides[canonicalSlug]?.seo_status_override === 'indexable' ? 'indexable' : 'noindex';
+}

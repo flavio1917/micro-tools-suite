@@ -61,10 +61,14 @@ const pageTitle = recipe.seoTitle || defaultPageTitle;
 
 const seoRecipeData = { ...recipe, image: imagePath, isItalian: isAuth };
 
-const getLocalizedUrl = (targetLang: string) => {
+const findTranslation = (targetLang: string) => {
   const datasets: Record<string, any[]> = { it: recipesIt, en: recipesEn, es: recipesEs, fr: recipesFr };
-  const targetRecipe = datasets[targetLang]?.find(r => (r.image || r.slug) === baseImageName);
-  
+  return datasets[targetLang]?.find(r => (r.image || r.slug) === baseImageName);
+};
+
+const getLocalizedUrl = (targetLang: string) => {
+  const targetRecipe = findTranslation(targetLang);
+
   if (targetRecipe) {
     return targetLang === "it" 
       ? `/recipes/${targetRecipe.slug}` 
@@ -86,12 +90,13 @@ if (!baseNutrition && lang !== 'it') {
 
 const hasNutrition = !!baseNutrition;
 
-const alternateUrls = {
-  it: `https://www.crispissimo.com${getLocalizedUrl('it')}`,
-  en: `https://www.crispissimo.com${getLocalizedUrl('en')}`,
-  es: `https://www.crispissimo.com${getLocalizedUrl('es')}`,
-  fr: `https://www.crispissimo.com${getLocalizedUrl('fr')}`
-};
+// hreflang solo per le lingue in cui la ricetta esiste davvero: se manca una
+// traduzione, getLocalizedUrl() porterebbe alla homepage, che non è un'alternativa.
+const alternateUrls = Object.fromEntries(
+  ['it', 'en', 'es', 'fr']
+    .filter((l) => findTranslation(l))
+    .map((l) => [l, `https://www.crispissimo.com${getLocalizedUrl(l)}`])
+);
 ---
 
 <MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData} alternateUrls={alternateUrls}>

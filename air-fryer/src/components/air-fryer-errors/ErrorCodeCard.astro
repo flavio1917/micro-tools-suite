@@ -30,7 +30,9 @@ const sourceModelSpec = overrideModelSpec || model?.model_spec;
 
 const hasModelInfo = sourceModelName || sourceModelSpec;
 
-const manualUrl = error.source?.manual_url || error.manual_url;
+const rawManualUrl = error.source?.manual_url || error.manual_url;
+// Il database può contenere testo al posto dell'URL (es. titoli copiati da ManualsLib): lo ignoriamo.
+const manualUrl = rawManualUrl && /^https?:\/\//i.test(rawManualUrl) ? rawManualUrl : undefined;
 
 let displayCodeUI = loc.displayCode;
 if (displayCodeUI && displayCodeUI.endsWith('.')) displayCodeUI = displayCodeUI.slice(0, -1);

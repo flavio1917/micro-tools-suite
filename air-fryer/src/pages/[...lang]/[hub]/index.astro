@@ -62,7 +62,7 @@ const jsonLd = [
         "@type": "ListItem",
         "position": index + 1,
         "name": item.title,
-        "url": `${currentUrl}/${item.link}`
+        "url": `${currentUrl}/${item.link}/`
       }))
     }
   }
@@ -97,7 +97,7 @@ const jsonLd = [
       <h2 class="tool-subtitle mb-6 border-l-4 border-orange-500 pl-3">{t.catGuides}</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {activeData.guides.map((card) => (
-          <a href={`${hubPath}/${card.link}`} class="group tool-card hover:border-orange-400 dark:hover:border-orange-500/50 hover:-translate-y-1 transition-all flex flex-col items-start gap-4 overflow-hidden relative !p-5">
+          <a href={`${hubPath}/${card.link}/`} class="group tool-card hover:border-orange-400 dark:hover:border-orange-500/50 hover:-translate-y-1 transition-all flex flex-col items-start gap-4 overflow-hidden relative !p-5">
             <div class="text-3xl flex-shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 drop-shadow-sm">{card.emoji}</div>
             <div class="flex-1 relative z-10 w-full mt-1">
               <h3 class="text-slate-900 dark:text-white font-bold text-lg mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">{card.title}</h3>
@@ -113,7 +113,7 @@ const jsonLd = [
       <h2 class="tool-subtitle mb-6 border-l-4 border-blue-500 pl-3">{t.catCalc}</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {activeData.calculators.map((card) => (
-          <a href={`${hubPath}/${card.link}`} class="group tool-card hover:border-blue-400 dark:hover:border-blue-500/50 hover:-translate-y-1 transition-all flex flex-row items-center gap-5 overflow-hidden relative !p-6">
+          <a href={`${hubPath}/${card.link}/`} class="group tool-card hover:border-blue-400 dark:hover:border-blue-500/50 hover:-translate-y-1 transition-all flex flex-row items-center gap-5 overflow-hidden relative !p-6">
             <div class="text-5xl flex-shrink-0 group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">{card.emoji}</div>
             <div class="flex-1 relative z-10 w-full">
               <h3 class="text-slate-900 dark:text-white font-bold text-xl mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{card.title}</h3>
