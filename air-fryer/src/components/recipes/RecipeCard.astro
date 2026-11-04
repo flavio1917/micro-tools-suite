@@ -17,7 +17,8 @@ const ingredientsString = recipe.ingredients && Array.isArray(recipe.ingredients
   ? recipe.ingredients.join(' ').toLowerCase() 
   : '';
 
-const recipeUrl = `/${lang}/recipes/${recipe.slug}`;
+// L'italiano è la lingua predefinita senza prefisso: le ricette IT stanno su /recipes/<slug>
+const recipeUrl = lang === "it" ? `/recipes/${recipe.slug}` : `/${lang}/recipes/${recipe.slug}`;
 const tempSymbol = lang === "en" ? "°F" : "°C";
 const timeSymbol = lang === "en" ? " min" : "'";
 

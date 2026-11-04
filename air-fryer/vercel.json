@@ -37,17 +37,27 @@
     { "source": "/fr/erreurs", "destination": "/fr/outils/codes-erreur-friteuse-air", "permanent": true },
     {
       "source": "/ricette/:slug",
-      "destination": "https://www.crispissimo.com/it/recipes/:slug",
+      "destination": "/recipes/:slug",
       "permanent": true
     },
     {
       "source": "/ricette/:slug/",
-      "destination": "https://www.crispissimo.com/it/recipes/:slug",
+      "destination": "/recipes/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/it/recipes/:slug",
+      "destination": "/recipes/:slug",
       "permanent": true
     },
     {
       "source": "/it/recipes/:slug/",
-      "destination": "https://www.crispissimo.com/it/recipes/:slug",
+      "destination": "/recipes/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/recipes/:slug/",
+      "destination": "/recipes/:slug",
       "permanent": true
     },
     {
