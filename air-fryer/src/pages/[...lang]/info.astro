@@ -2,6 +2,10 @@
 import MainLayout from '../../layouts/MainLayout.astro'; 
 import { infoContent, infoBackBtnLabel } from '../../i18n/pages/info';
 import { infoAlternateUrls, infoUrl } from '../../lib/site-urls';
+import recipesIt from '../../data/recipes-it.json';
+import recipesEn from '../../data/recipes-en.json';
+import recipesEs from '../../data/recipes-es.json';
+import recipesFr from '../../data/recipes-fr.json';
 
 export function getStaticPaths() {
   return [
@@ -18,6 +22,16 @@ const { lang } = Astro.params;
 const currentLang = lang || 'it';
 const backBtnLabel = infoBackBtnLabel[currentLang as keyof typeof infoBackBtnLabel] || infoBackBtnLabel.it;
 const t = infoContent[currentLang as keyof typeof infoContent] || infoContent.it;
+
+// Numero di ricette calcolato dai dati della lingua, arrotondato alle decine:
+// multiplo esatto di 10 -> numero preciso ("200 ricette"),
+// altrimenti decina inferiore con "oltre" (192 -> "oltre 190 ricette").
+const recipeDatasets: Record<string, any[]> = { it: recipesIt, en: recipesEn, es: recipesEs, fr: recipesFr };
+const recipeCount = (recipeDatasets[currentLang] || recipesIt).filter((r: any) => r && r.slug).length;
+const recipesLabel = recipeCount % 10 === 0
+  ? t.recipesExact.replace('{n}', String(recipeCount))
+  : t.recipesOver.replace('{n}', String(Math.floor(recipeCount / 10) * 10));
+const p2Html = t.p2.replace('{recipes}', recipesLabel);
 
 // Generazione URL corretta e link al ricettario
 const homeUrl = currentLang === 'it' ? '/#ricettario' : `/${currentLang}/#ricettario`;
@@ -50,7 +64,7 @@ const personSchema = {
       
       <div class="space-y-4">
         <p set:html={t.p1}></p>
-        <p set:html={t.p2}></p>
+        <p set:html={p2Html}></p>
       </div>
 
       <div class="bg-slate-800/40 border border-blue-500/30 p-6 md:p-8 rounded-2xl flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start shadow-lg">

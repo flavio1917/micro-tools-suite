@@ -33,9 +33,9 @@ export const recipeTranslations = {
     startTimer: "⏱️ Start Timer", stopTimer: "⏹️ Stop Timer",
     print: "Print", jump: "Jump to Recipe", readMode: "Reading Mode", darkMode: "Dark Mode", share: "Share",
     faqTitle: "Frequently Asked Questions",
-    faq1A: "Let it cool completely, then store in an airtight container in the fridge for 2-3 days.",
-    faq2A: "Yes, add about 20-30% more time compared to the standard recipe and check halfway through.",
-    faq3A: "Use the air fryer at 320°F (160°C) for 3-5 minutes to restore crispiness. Avoid the microwave."
+    faq1A: "Let it cool completely, then store it in an airtight container in the fridge for 2-3 days. Do not freeze it after cooking, or it will lose its crispiness.",
+    faq2A: "Yes, if you use frozen base ingredients: add about 20-30% more time than the standard recipe and check halfway through, separating any pieces that are stuck together.",
+    faq3A: "Use the air fryer at 320°F (160°C) for 3-5 minutes. Avoid the microwave, which makes food soggy: hot air restores the original texture."
   },
   es: {
     back: "Volver", backLink: "/es/#ricettario", temp: "Temperatura", time: "Cocción", prep: "Preparación",
@@ -52,9 +52,9 @@ export const recipeTranslations = {
     startTimer: "⏱️ Iniciar Timer", stopTimer: "⏹️ Parar Timer",
     print: "Imprimir", jump: "Ir a la Receta", readMode: "Modo Lectura", darkMode: "Modo Oscuro", share: "Compartir",
     faqTitle: "Preguntas Frecuentes",
-    faq1A: "Deja enfriar por completo, luego guarda en un recipiente hermético en el refrigerador por 2-3 días.",
-    faq2A: "Sí, añade aproximadamente un 20% de tiempo extra respecto a la receta estándar y comprueba la cocción a la mitad.",
-    faq3A: "Usa la freidora de aire a 160°C durante 3-5 minutos para devolver la textura crujiente."
+    faq1A: "Deja enfriar por completo y guarda en un recipiente hermético en el frigorífico durante 2-3 días. No lo congeles después de cocinarlo para no perder el crujiente.",
+    faq2A: "Sí, si usas ingredientes base congelados: añade aproximadamente un 20-30% de tiempo extra respecto a la receta estándar y comprueba la cocción a la mitad, separando las piezas que se hayan pegado.",
+    faq3A: "Usa la freidora de aire a 160°C durante 3-5 minutos. Evita el microondas, que deja la comida blanda: el aire caliente devuelve la textura original."
   },
   fr: {
     back: "Retour", backLink: "/fr/#ricettario", temp: "Température", time: "Cuisson", prep: "Préparation",
@@ -71,9 +71,9 @@ export const recipeTranslations = {
     startTimer: "⏱️ Démarrer Timer", stopTimer: "⏹️ Arrêter Timer",
     print: "Imprimer", jump: "Aller à la Recette", readMode: "Mode Lecture", darkMode: "Mode Sombre", share: "Partager",
     faqTitle: "Foire Aux Questions",
-    faq1A: "Laissez refroidir complètement, puis conservez dans une boîte hermétique au réfrigérateur pendant 2-3 jours.",
-    faq2A: "Oui, ajoutez environ 20% de temps en plus par rapport à la recette standard et vérifiez la cuisson à mi-chemin.",
-    faq3A: "Utilisez la friteuse à air à 160°C pendant 3-5 minutes pour redonner du croustillant."
+    faq1A: "Laissez refroidir complètement, puis conservez dans une boîte hermétique au réfrigérateur pendant 2-3 jours. Ne congelez pas après cuisson pour ne pas perdre le croustillant.",
+    faq2A: "Oui, si vous utilisez des ingrédients de base surgelés : ajoutez environ 20-30 % de temps en plus par rapport à la recette standard et vérifiez la cuisson à mi-parcours, en séparant les morceaux collés.",
+    faq3A: "Utilisez la friteuse à air à 160°C pendant 3-5 minutes. Évitez le micro-ondes, qui ramollit les aliments : l'air chaud leur rend leur texture d'origine."
   }
 };
 
