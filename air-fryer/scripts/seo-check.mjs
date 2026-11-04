@@ -27,6 +27,11 @@ const addError = (category, message) => {
   if (!errors.has(category)) errors.set(category, new Set());
   errors.get(category).add(message);
 };
+const warnings = new Map(); // avvisi: segnalati ma non bloccano la build
+const addWarning = (category, message) => {
+  if (!warnings.has(category)) warnings.set(category, new Set());
+  warnings.get(category).add(message);
+};
 
 // ---- Raccolta pagine HTML ---------------------------------------------------
 const htmlFiles = [];
@@ -135,8 +140,49 @@ for (const file of htmlFiles) {
         addError('dati strutturati', `Recipe con date dichiarate (da ${from})`);
       }
     }
+    // URL del sito citati nel JSON-LD: dominio www, pagina/file esistente, forma canonica.
+    for (const u of new Set(m[1].match(/https?:\/\/(?:www\.)?(?:crispissimo\.com|convertitorefriggitrice\.it)[^"\s\\]*/g) || [])) {
+      if (u !== SITE && !u.startsWith(SITE + '/')) { addError('dati strutturati', `dominio non canonico: ${u} (da ${from})`); continue; }
+      const p = new URL(u).pathname;
+      const targetFile = fileForPath(p);
+      if (!targetFile) { addError('dati strutturati', `URL inesistente: ${u} (da ${from})`); continue; }
+      if (!/\.html$/.test(targetFile)) continue;
+      const t = pageInfo(targetFile);
+      if (t.canonical && t.canonical !== decode(u.split('#')[0].split('?')[0])) {
+        addError('dati strutturati', `URL non canonico: ${p} -> ${toPath(t.canonical)}`);
+      }
+    }
   }
 }
+
+// ---- 7. hreflang reciproci, title e description unici (pagine indicizzabili) ----
+const indexable = htmlFiles.filter((f) => {
+  const i = pageInfo(f);
+  if (i.noindex || !i.canonical || path.basename(f) === '404.html') return false;
+  const own = decode(SITE + '/' + path.relative(root, f).replace(/index\.html$/, ''));
+  return i.canonical.replace(/\/$/, '') === own.replace(/\/$/, '');
+});
+const hreflangOf = (f) => new Map([...pageInfo(f).html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map((m) => [m[1], decode(m[2])]));
+const titles = new Map();
+const descriptions = new Map();
+for (const f of indexable) {
+  const i = pageInfo(f);
+  for (const [lang, url] of hreflangOf(f)) {
+    if (lang === 'x-default') continue;
+    const tf = fileForPath(new URL(url).pathname);
+    if (!tf || tf === f) continue;
+    const back = [...hreflangOf(tf).values()];
+    if (!back.includes(i.canonical)) addError('hreflang', `non reciproco: ${toPath(i.canonical)} -> ${toPath(url)}`);
+  }
+  const title = (i.html.match(/<title>([\s\S]*?)<\/title>/) || [])[1]?.trim() || '';
+  const desc = (i.html.match(/<meta name="description" content="([^"]*)"/) || [])[1]?.trim() || '';
+  if (!title) addError('title/description', `title mancante: ${toPath(i.canonical)}`);
+  if (!desc) addError('title/description', `description mancante: ${toPath(i.canonical)}`);
+  titles.set(title, [...(titles.get(title) || []), toPath(i.canonical)]);
+  if (desc) descriptions.set(desc, [...(descriptions.get(desc) || []), toPath(i.canonical)]);
+}
+for (const [t, pages] of titles) if (t && pages.length > 1) addWarning('title duplicati', `${pages.length}x "${t.slice(0, 70)}": ${pages.slice(0, 3).join(', ')}`);
+for (const [d, pages] of descriptions) if (pages.length > 1) addWarning('description duplicate', `${pages.length}x "${d.slice(0, 60)}…": ${pages.slice(0, 3).join(', ')}`);
 
 // ---- 6. Ogni pagina indicizzabile con canonical verso se stessa deve stare in sitemap ----
 const sitemapSet = new Set(sitemapUrls.map((u) => decode(u)));
@@ -151,6 +197,10 @@ for (const file of htmlFiles) {
 
 // ---- Report -------------------------------------------------------------------------
 console.log(`seo-check: ${htmlFiles.length} pagine HTML, ${sitemapUrls.length} URL in sitemap`);
+for (const [category, messages] of warnings) {
+  console.log(`\n⚠ avviso – ${category}: ${messages.size}`);
+  [...messages].slice(0, 10).forEach((msg) => console.log(`   - ${msg}`));
+}
 if (errors.size === 0) {
   console.log('seo-check: OK, nessun problema trovato.');
   process.exit(0);

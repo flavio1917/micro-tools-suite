@@ -87,7 +87,10 @@ async function validateAll() {
         }
       }
     } catch (err) {
+      // Un file che non si carica NON è stato verificato: deve far fallire il controllo.
+      // (Eseguire lo script con tsx: `npx tsx scripts/i18n-check.ts`.)
       console.error(`[ERRORE] Impossibile caricare il file ${file}:`, err);
+      allValid = false;
     }
   }
 

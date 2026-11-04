@@ -32,28 +32,28 @@ export const navLabels = {
     recipes: "Ricette", categories: "Categorie", converter: "Convertitore", tools: "Strumenti", themeToggle: "Cambia tema", language: "Lingua",
     footerNote: "Crispissimo è il nuovo nome di Convertitore Friggitrice.",
     disclaimer: "Trasparenza: in qualità di Affiliato Amazon, questo sito può ricevere una commissione dagli acquisti idonei. I risultati del convertitore sono indicativi e vanno sempre verificati in cottura.",
-    privacy: "Privacy", cookies: "Cookie",
+    privacy: "Privacy", cookies: "Cookie", about: "Chi siamo",
   },
   en: {
     brandTagline: "Easy and crispy air fryer recipes for everyday cooking.",
     recipes: "Recipes", categories: "Categories", converter: "Converter", tools: "Tools", themeToggle: "Toggle theme", language: "Language",
     footerNote: "Crispissimo is the new name of Convertitore Friggitrice.",
     disclaimer: "Transparency: as an Amazon Associate, this site may earn from qualifying purchases. Converter results are estimates and should always be checked while cooking.",
-    privacy: "Privacy", cookies: "Cookies",
+    privacy: "Privacy", cookies: "Cookies", about: "About",
   },
   es: {
     brandTagline: "Recetas fáciles y crujientes para freidora de aire cada día.",
     recipes: "Recetas", categories: "Categorías", converter: "Convertidor", tools: "Herramientas", themeToggle: "Cambiar tema", language: "Idioma",
     footerNote: "Crispissimo es el nuevo nombre de Convertitore Friggitrice.",
     disclaimer: "Transparencia: como Afiliado de Amazon, este sitio puede recibir una comisión por compras válidas. Los resultados del convertidor son estimaciones y deben comprobarse durante la cocción.",
-    privacy: "Privacidad", cookies: "Cookies",
+    privacy: "Privacidad", cookies: "Cookies", about: "Quiénes somos",
   },
   fr: {
     brandTagline: "Des recettes faciles et croustillantes pour la friteuse à air.",
     recipes: "Recettes", categories: "Catégories", converter: "Convertisseur", tools: "Outils", themeToggle: "Changer le thème", language: "Langue",
     footerNote: "Crispissimo est le nouveau nom de Convertitore Friggitrice.",
     disclaimer: "Transparence : en tant que Partenaire Amazon, ce site peut percevoir une commission sur les achats éligibles. Les résultats du convertisseur sont indicatifs et doivent toujours être vérifiés pendant la cuisson.",
-    privacy: "Confidentialité", cookies: "Cookies",
+    privacy: "Confidentialité", cookies: "Cookies", about: "À propos",
   },
 };
 

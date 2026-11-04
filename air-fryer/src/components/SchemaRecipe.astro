@@ -1,4 +1,5 @@
 ---
+import { infoUrl } from '../lib/site-urls';
 export interface Props {
   recipe: any;
   lang?: string;
@@ -28,7 +29,7 @@ const baseImageName = recipe.image || recipe.slug;
 const baseUrl = "https://www.crispissimo.com/images/recipes";
 const imageUrl = `${baseUrl}/${baseImageName}.webp`;
 
-const infoUrlPath = lang === 'it' ? '/info' : `/${lang}/info`;
+const authorUrl = infoUrl(lang);
 
 // Dati Nutrizionali Strutturati
 let nutritionSchema = undefined;
@@ -62,7 +63,7 @@ const schema = {
     "@type": "Person",
     "name": "Flavio Refrigeri",
     "jobTitle": "Ingegnere Informatico & Creatore di Ricette", 
-    "url": `https://www.crispissimo.com${infoUrlPath}` 
+    "url": authorUrl 
   },
   "description": recipe.description,
   "prepTime": prepTimeISO,

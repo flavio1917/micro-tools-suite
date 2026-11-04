@@ -6,6 +6,7 @@ import AffiliateSlot from '../ads/AffiliateSlot.astro';
 import ErrorFaq from './ErrorFaq.astro';
 import { pageErrorsSeoTranslations } from '../../data/i18n/page-errors-seo';
 import { getAirFryerErrorHubUrl } from '../../lib/air-fryer-error-routes';
+import { homeUrl, toolsHubUrl } from '../../lib/site-urls';
 
 import { errorsUiTranslations } from '../../data/i18n/errors-ui';
 
@@ -37,8 +38,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": seoData.breadcrumbHome, "item": `https://crispissimo.com/${lang === 'it' ? '' : lang}` },
-    { "@type": "ListItem", "position": 2, "name": seoData.breadcrumbTools, "item": `https://crispissimo.com/${lang === 'it' ? 'strumenti' : lang + '/tools'}` },
+    { "@type": "ListItem", "position": 1, "name": seoData.breadcrumbHome, "item": homeUrl(lang) },
+    { "@type": "ListItem", "position": 2, "name": seoData.breadcrumbTools, "item": toolsHubUrl(lang) },
     { "@type": "ListItem", "position": 3, "name": seoData.breadcrumbCurrent, "item": alternateUrls[lang as keyof typeof alternateUrls] || alternateUrls.it }
   ]
 };

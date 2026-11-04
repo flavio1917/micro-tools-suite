@@ -1,5 +1,6 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
+import { homeUrl } from '../../lib/site-urls';
 import Disclaimer from '../../components/Disclaimer.astro';
 import { puliziaContent, puliziaSeoData } from '../../i18n/pages/tools/pulizia';
 
@@ -52,7 +53,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://www.crispissimo.com/"
+      "item": homeUrl(lang)
     },
     {
       "@type": "ListItem",

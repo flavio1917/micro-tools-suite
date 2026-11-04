@@ -7,7 +7,8 @@ export const infoBackBtnLabel = {
 
 export const infoContent = {
   it: {
-    pageTitle: "Chi Siamo e Contatti | Convertitore Friggitrice ad Aria",
+    pageTitle: "Chi Siamo e Contatti | Crispissimo",
+    metaDescription: "Chi c'è dietro Crispissimo: Flavio Refrigeri, ingegnere informatico appassionato di cucina in friggitrice ad aria. Come nascono ricette e strumenti, e come contattarci.",
     h1: "Informazioni sul Progetto",
     backBtn: "Vai alle ricette",
     p1: "<strong>Convertitore Friggitrice</strong> nasce dall'esigenza di rendere la cucina con la friggitrice ad aria semplice, veloce e accessibile a tutti.",
@@ -22,7 +23,8 @@ export const infoContent = {
     contactText: "Hai suggerimenti o vuoi collaborare? Puoi scriverci a:"
   },
   en: {
-    pageTitle: "About Us & Contact | Air Fryer Converter",
+    pageTitle: "About Us & Contact | Crispissimo",
+    metaDescription: "Who is behind Crispissimo: Flavio Refrigeri, a software engineer passionate about air fryer cooking. How our recipes and tools are made, and how to contact us.",
     h1: "About the Project",
     backBtn: "Go to Recipes",
     p1: "<strong>Air Fryer Converter</strong> was born from the need to make air frying simple, fast, and accessible.",
@@ -37,7 +39,8 @@ export const infoContent = {
     contactText: "Have suggestions or want to collaborate? Write to us at:"
   },
   es: {
-    pageTitle: "Quiénes Somos y Contacto | Convertidor Freidora",
+    pageTitle: "Quiénes Somos y Contacto | Crispissimo",
+    metaDescription: "Quién está detrás de Crispissimo: Flavio Refrigeri, ingeniero informático apasionado por la cocina con freidora de aire. Cómo nacen nuestras recetas y herramientas, y cómo contactarnos.",
     h1: "Sobre el Proyecto",
     backBtn: "Ir a las recetas",
     p1: "<strong>Convertidor Freidora</strong> nace de la necesidad de hacer que cocinar con freidora de aire sea simple.",
@@ -52,7 +55,8 @@ export const infoContent = {
     contactText: "¿Tienes sugerencias? Escríbenos a:"
   },
   fr: {
-    pageTitle: "À Propos et Contact | Convertisseur Friteuse",
+    pageTitle: "À Propos et Contact | Crispissimo",
+    metaDescription: "Qui se cache derrière Crispissimo : Flavio Refrigeri, ingénieur informaticien passionné de cuisine à la friteuse à air. Comment naissent nos recettes et outils, et comment nous contacter.",
     h1: "À Propos du Projet",
     backBtn: "Voir les recettes",
     p1: "<strong>Convertisseur Friteuse</strong> est né du besoin de rendre la cuisine simple et rapide.",

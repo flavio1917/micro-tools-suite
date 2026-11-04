@@ -2,6 +2,7 @@
 import MainLayout from '../../../../../layouts/MainLayout.astro';
 import { pageErrorsSeoTranslations } from '../../../../../data/i18n/page-errors-seo';
 import { getAirFryerErrorHubUrl } from '../../../../../lib/air-fryer-error-routes';
+import { homeUrl, toolsHubUrl } from '../../../../../lib/site-urls';
 import AirFryerModelCard from '../../../../../components/air-fryer-errors/AirFryerModelCard.astro';
 import { airFryerModels } from '../../../../../lib/air-fryer-db';
 
@@ -74,8 +75,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": seoData.breadcrumbHome, "item": `https://crispissimo.com/${lang === 'it' ? '' : lang}` },
-    { "@type": "ListItem", "position": 2, "name": seoData.breadcrumbTools, "item": `https://crispissimo.com/${lang === 'it' ? 'strumenti' : lang + '/tools'}` },
+    { "@type": "ListItem", "position": 1, "name": seoData.breadcrumbHome, "item": homeUrl(lang) },
+    { "@type": "ListItem", "position": 2, "name": seoData.breadcrumbTools, "item": toolsHubUrl(lang) },
     { "@type": "ListItem", "position": 3, "name": seoData.breadcrumbCurrent, "item": `https://www.crispissimo.com${hubUrl}` },
     { "@type": "ListItem", "position": 4, "name": brandName, "item": alternateUrls[lang] }
   ]
