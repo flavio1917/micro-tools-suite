@@ -28,13 +28,6 @@ const baseImageName = recipe.image || recipe.slug;
 const baseUrl = "https://www.crispissimo.com/images/recipes";
 const imageUrl = `${baseUrl}/${baseImageName}.webp`;
 
-// Immagini Multi-Rapporto per i Caroselli di Google Discover
-const discoverImages = [
-  `${imageUrl}?ar=1:1`,
-  `${imageUrl}?ar=4:3`,
-  `${imageUrl}?ar=16:9`
-];
-
 const infoUrlPath = lang === 'it' ? '/info' : `/${lang}/info`;
 
 // Dati Nutrizionali Strutturati
@@ -57,22 +50,20 @@ if (recipe.nutrition) {
 let cuisine = "International";
 if (recipe.isItalian === true || recipe.isItalian === "true") cuisine = "Italian";
 
-// Generazione Date per il "Freshness Signal"
-const currentDate = new Date().toISOString();
-
+// Nessuna data nel markup: le ricette non hanno una data di pubblicazione o di
+// revisione reale, e date inventate o rigenerate a ogni build sono dati
+// strutturati fuorvianti. datePublished/dateModified sono campi facoltativi.
 const schema = {
   "@context": "https://schema.org/",
   "@type": "Recipe",
   "name": recipe.title,
-  "image": discoverImages,
+  "image": [imageUrl],
   "author": {
     "@type": "Person",
     "name": "Flavio Refrigeri",
     "jobTitle": "Ingegnere Informatico & Creatore di Ricette", 
     "url": `https://www.crispissimo.com${infoUrlPath}` 
   },
-  "datePublished": "2024-01-01T08:00:00+08:00", // Data base fittizia (meglio averla che non averla)
-  "dateModified": currentDate, // Aggiornata magicamente ad ogni build!
   "description": recipe.description,
   "prepTime": prepTimeISO,
   "cookTime": cookTimeISO,
