@@ -9,6 +9,7 @@ import recipesEn from '../../../data/recipes-en.json';
 import recipesEs from '../../../data/recipes-es.json';
 import recipesFr from '../../../data/recipes-fr.json';
 import fs from 'node:fs';
+import { homeUrl } from '../../../lib/site-urls';
 import path from 'node:path';
 
 export async function getStaticPaths() {
@@ -92,6 +93,16 @@ const hasNutrition = !!baseNutrition;
 
 // hreflang solo per le lingue in cui la ricetta esiste davvero: se manca una
 // traduzione, getLocalizedUrl() porterebbe alla homepage, che non è un'alternativa.
+const canonicalRecipeUrl = `https://www.crispissimo.com${getLocalizedUrl(lang)}`;
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Crispissimo", "item": homeUrl(lang) },
+    { "@type": "ListItem", "position": 2, "name": recipe.title, "item": canonicalRecipeUrl }
+  ]
+};
+
 const alternateUrls = Object.fromEntries(
   ['it', 'en', 'es', 'fr']
     .filter((l) => findTranslation(l))
@@ -99,13 +110,14 @@ const alternateUrls = Object.fromEntries(
 );
 ---
 
-<MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData} alternateUrls={alternateUrls}>
+<MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData} alternateUrls={alternateUrls} ogImage={`https://www.crispissimo.com${encodeURI(imagePath)}`}>
   
   <style is:global>
     body > header { display: none !important; }
   </style>
 
   <SchemaRecipe recipe={recipe} lang={lang} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <div class="relative h-[38vh] min-h-[300px] md:h-[45vh] w-full overflow-hidden bg-slate-900 hero-bg-print-hide">
     <img src={imagePath} alt={recipe.alt || recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
@@ -146,6 +158,14 @@ const alternateUrls = Object.fromEntries(
   </div>
 
   <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 print:mt-0 print:pt-4 relative z-30 pb-28 rounded-t-3xl pt-2">
+
+    <nav aria-label="Breadcrumb" class="hide-on-print mt-12 mb-4 text-xs md:text-sm text-slate-500 dark:text-slate-400">
+      <ol class="flex flex-wrap items-center gap-1.5">
+        <li><a href={homeUrl(lang).replace('https://www.crispissimo.com', '')} class="hover:text-orange-600 dark:hover:text-orange-400 transition-colors">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page" class="text-slate-700 dark:text-slate-300 font-medium">{recipe.title}</li>
+      </ol>
+    </nav>
     
     <div class="hidden print:block print:mb-8 text-center print-section">
        <div class="text-3xl font-black text-black mb-3">{recipe.title}</div>
@@ -213,7 +233,7 @@ const alternateUrls = Object.fromEntries(
     <div class="space-y-8 md:space-y-10">
       
       <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 md:p-8 shadow-sm dark:shadow-lg print-clean-bg print-section transition-colors">
-        <h3 class="text-xl font-bold text-slate-900 dark:text-white print:text-black mb-6 print:mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 print:border-gray-300 pb-4 print:pb-2 transition-colors">
+        <h2 class="text-xl font-bold text-slate-900 dark:text-white print:text-black mb-6 print:mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 print:border-gray-300 pb-4 print:pb-2 transition-colors">
           <div class="flex items-center gap-3 print:uppercase"><span class="text-2xl hide-on-print">🛒</span> {t.ingTitle}</div>
           {lang === 'en' && (
             <div class="bg-slate-50 dark:bg-slate-800/80 p-1 rounded-full border border-slate-200 dark:border-slate-600 flex items-center shrink-0 shadow-inner hide-on-print transition-colors">
@@ -221,7 +241,7 @@ const alternateUrls = Object.fromEntries(
               <button id="btn-metric" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white focus:outline-none">Metric</button>
             </div>
           )}
-        </h3>
+        </h2>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 print:block print:space-y-2 print:pl-5 print:list-disc">
           {recipe.ingredients && recipe.ingredients.length > 0 ? (
             recipe.ingredients.map((ing: string) => (
@@ -238,7 +258,7 @@ const alternateUrls = Object.fromEntries(
       </div>
       
       <div class="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-sm dark:shadow-xl print-clean-bg print-section transition-colors relative z-0">
-        <h3 class="text-2xl font-bold text-slate-900 dark:text-white print:text-black print:border-b print:border-gray-300 print:pb-2 mb-8 print:mb-6 flex items-center gap-3 transition-colors"><span class="text-3xl hide-on-print">👨‍🍳</span> {t.stepTitle}</h3>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white print:text-black print:border-b print:border-gray-300 print:pb-2 mb-8 print:mb-6 flex items-center gap-3 transition-colors"><span class="text-3xl hide-on-print">👨‍🍳</span> {t.stepTitle}</h2>
         
         <div class="step-list space-y-8 print:space-y-8 relative before:absolute before:left-[19px] before:top-2 before:bottom-2 before:w-[2px] before:bg-slate-200 dark:before:bg-slate-700 print:before:bg-slate-300 print:before:block transition-colors">
           {recipe.instructions && Array.isArray(recipe.instructions) ? (
@@ -288,7 +308,7 @@ const alternateUrls = Object.fromEntries(
 
           <div class="hidden print:block">
             <div class="border-b border-gray-300 pb-2 mb-4 flex justify-between items-end">
-              <h2 class="text-xl font-bold text-black uppercase">{t.nutriTitle}</h2>
+              <p class="text-xl font-bold text-black uppercase">{t.nutriTitle}</p>
               <span class="text-[10px] text-gray-500 uppercase">{t.nutriSub}</span>
             </div>
             <div class="flex justify-around items-center py-2 bg-gray-50 rounded border border-gray-200">
@@ -315,7 +335,7 @@ const alternateUrls = Object.fromEntries(
       )}
 
       <div class="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/50 rounded-2xl p-6 md:p-8 shadow-sm dark:shadow-xl mt-4 mb-8 hide-on-print transition-colors">
-          <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3 transition-colors"><span class="text-3xl">❓</span> {t.faqTitle}</h3>
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-3 transition-colors"><span class="text-3xl">❓</span> {t.faqTitle}</h2>
           <div class="space-y-4">
               <details class="group bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden transition-colors">
                   <summary class="flex justify-between items-center font-bold cursor-pointer list-none p-4 text-slate-800 dark:text-slate-200 hover:text-orange-600 dark:hover:text-white transition-colors focus:outline-none focus:bg-slate-100 dark:focus:bg-slate-800">

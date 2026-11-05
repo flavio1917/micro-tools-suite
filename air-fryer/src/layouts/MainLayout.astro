@@ -57,6 +57,17 @@ const languageSwitcherUrls: Record<string, string | undefined> = hasOwnAlternate
 let finalTitle = title || t.title;
 let finalDescription = description || t.description;
 
+// Google mostra circa 155 caratteri: tagliamo a fine frase se possibile,
+// altrimenti all'ultima parola intera, con "…".
+function clampDescription(text: string, max = 155): string {
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const sentenceEnd = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '));
+  if (sentenceEnd >= 90) return cut.slice(0, sentenceEnd + 1);
+  const lastSpace = cut.lastIndexOf(' ', max - 1);
+  return cut.slice(0, lastSpace).replace(/[\s,;:.—–-]+$/, '') + '…';
+}
+
 // Logica SEO per Ricette
 if (recipeData) {
   const p = t.seo;
@@ -91,8 +102,8 @@ if (recipeData) {
   else if (hasNutrition) statsString = `✓ ${pro}g ${p.pro} · ✓ ${kcal} ${p.kcal} — `;
   else if (isFast) statsString = `✓ ${p.fast} ${timeStr} min — `;
 
-  const descParts = [statsString.trim(), baseDesc.trim(), p.read.trim()].filter(Boolean);
-  finalDescription = descParts.join(' ').replace(/\s+/g, ' ');
+  const descParts = [statsString.trim(), baseDesc.trim()].filter(Boolean);
+  finalDescription = clampDescription(descParts.join(' ').replace(/\s+/g, ' '));
 }
 
 const ogType = recipeData ? "article" : "website";

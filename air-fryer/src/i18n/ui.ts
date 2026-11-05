@@ -58,10 +58,10 @@ export const navLabels = {
 };
 
 export const seoPhrases = {
-  it: { pro: "Proteine", fast: "Pronto in", light: "Solo", kcal: "Kcal", read: "Ricetta testata. Leggi la guida per la cottura perfetta.", searchBack: 'Torna alla ricerca' },
-  en: { pro: "Protein", fast: "Ready in", light: "Only", kcal: "Kcal", read: "Tested recipe. Read the guide for perfect cooking.", searchBack: 'Back to search' },
-  es: { pro: "Proteínas", fast: "Listo en", light: "Solo", kcal: "Kcal", read: "Receta probada. Lee la guía para una cocción perfecta.", searchBack: 'Volver a buscar' },
-  fr: { pro: "Protéines", fast: "Prêt en", light: "Seulement", kcal: "Kcal", read: "Recette testée. Lisez le guide pour une cuisson parfaite.", searchBack: 'Retour à la recherche' }
+  it: { pro: "Proteine", fast: "Pronto in", light: "Solo", kcal: "Kcal", searchBack: 'Torna alla ricerca' },
+  en: { pro: "Protein", fast: "Ready in", light: "Only", kcal: "Kcal", searchBack: 'Back to search' },
+  es: { pro: "Proteínas", fast: "Listo en", light: "Solo", kcal: "Kcal", searchBack: 'Volver a buscar' },
+  fr: { pro: "Protéines", fast: "Prêt en", light: "Seulement", kcal: "Kcal", searchBack: 'Retour à la recherche' }
 };
 
 export type ValidLocale = "it" | "en" | "es" | "fr";
