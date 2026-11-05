@@ -98,7 +98,7 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Crispissimo", "item": homeUrl(lang) },
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": homeUrl(lang) },
     { "@type": "ListItem", "position": 2, "name": recipe.title, "item": canonicalRecipeUrl }
   ]
 };
@@ -120,7 +120,7 @@ const alternateUrls = Object.fromEntries(
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <div class="relative h-[38vh] min-h-[300px] md:h-[45vh] w-full overflow-hidden bg-slate-900 hero-bg-print-hide">
-    <img src={imagePath} alt={recipe.alt || recipe.title} class="absolute inset-0 h-full w-full object-cover opacity-80" />
+    <img src={imagePath} alt={recipe.alt || recipe.title} fetchpriority="high" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-80" />
     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40 pointer-events-none"></div>
     
     <div class="absolute top-4 md:top-6 left-0 right-0 z-[60] px-3 md:px-4 w-full">
@@ -152,7 +152,7 @@ const alternateUrls = Object.fromEntries(
       </p>
       
       <div class="flex justify-center items-center relative z-[9999] pointer-events-auto cursor-pointer hover:scale-105 transition-transform mb-3">
-         <StarRating slug={baseImageName} title={recipe.title} />
+         <StarRating slug={baseImageName} title={recipe.title} lang={lang} />
       </div>
     </div>
   </div>
@@ -233,15 +233,15 @@ const alternateUrls = Object.fromEntries(
     <div class="space-y-8 md:space-y-10">
       
       <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 md:p-8 shadow-sm dark:shadow-lg print-clean-bg print-section transition-colors">
-        <h2 class="text-xl font-bold text-slate-900 dark:text-white print:text-black mb-6 print:mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 print:border-gray-300 pb-4 print:pb-2 transition-colors">
-          <div class="flex items-center gap-3 print:uppercase"><span class="text-2xl hide-on-print">🛒</span> {t.ingTitle}</div>
+        <div class="text-xl font-bold text-slate-900 dark:text-white print:text-black mb-6 print:mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 dark:border-slate-800 print:border-gray-300 pb-4 print:pb-2 transition-colors">
+          <h2 class="flex items-center gap-3 print:uppercase"><span class="text-2xl hide-on-print" aria-hidden="true">🛒</span> {t.ingTitle}</h2>
           {lang === 'en' && (
             <div class="bg-slate-50 dark:bg-slate-800/80 p-1 rounded-full border border-slate-200 dark:border-slate-600 flex items-center shrink-0 shadow-inner hide-on-print transition-colors">
               <button id="btn-imperial" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors bg-blue-600 text-white shadow-sm focus:outline-none">Imperial</button>
               <button id="btn-metric" class="px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-full transition-colors text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white focus:outline-none">Metric</button>
             </div>
           )}
-        </h2>
+        </div>
         <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 print:block print:space-y-2 print:pl-5 print:list-disc">
           {recipe.ingredients && recipe.ingredients.length > 0 ? (
             recipe.ingredients.map((ing: string) => (
@@ -271,7 +271,7 @@ const alternateUrls = Object.fromEntries(
                   <p class="text-slate-700 dark:text-slate-300 print:text-black leading-relaxed text-lg print:text-[15px] instruction-text mb-4 print:mb-1 transition-colors" set:html={enrichText(step)}></p>
                   {sharedStepImages && sharedStepImages[index] && sharedStepImages[index] !== "" && (
                     <div class="mb-4 hide-on-print">
-                      <img src={sharedStepImages[index]} alt={`Step ${index + 1}`} class="w-full md:max-w-md rounded-xl shadow-md border border-slate-200 dark:border-slate-700 object-cover transition-colors" loading="lazy" onerror="this.parentElement.style.display='none';" />
+                      <img src={sharedStepImages[index]} alt={`${recipe.title} – ${t.stepLabel} ${index + 1}`} class="w-full md:max-w-md rounded-xl shadow-md border border-slate-200 dark:border-slate-700 object-cover transition-colors" loading="lazy" onerror="this.parentElement.style.display='none';" />
                     </div>
                   )}
                 </div>

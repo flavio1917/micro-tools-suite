@@ -2,7 +2,7 @@ export const recipeTranslations = {
   it: {
     back: "Indietro", backLink: "/#ricettario", temp: "Temperatura", time: "Cottura", prep: "Preparazione",
     portions: "Porzioni", pers: "pers.", ingTitle: "Ingredienti", noIng: "Vedi descrizione per i dettagli.",
-    stepTitle: "Procedimento", step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro.",
+    stepTitle: "Procedimento", stepLabel: "passaggio", step1: "Preparazione", step1Desc: "Prepara tutti gli ingredienti sul piano di lavoro.",
     step2: "Cottura",
     tipTitle: "Il Segreto dello Chef", searchOther: "← Cerca un'altra ricetta", authBadge: "Autentica", seoAuth: " | Ricetta Originale",
     unitTemp: "°C", unitTime: "min",
@@ -20,8 +20,8 @@ export const recipeTranslations = {
   },
   en: {
     back: "Back", backLink: "/en/#ricettario", temp: "Temperature", time: "Cook Time", prep: "Prep Time",
-    portions: "Servings", pers: "pers.", ingTitle: "Ingredients", noIng: "See description for details.",
-    stepTitle: "Instructions", step1: "Preparation", step1Desc: "Prepare all ingredients on the counter.",
+    portions: "Servings", pers: "people", ingTitle: "Ingredients", noIng: "See description for details.",
+    stepTitle: "Instructions", stepLabel: "step", step1: "Preparation", step1Desc: "Prepare all ingredients on the counter.",
     step2: "Cooking",
     tipTitle: "Chef's Tip", searchOther: "← Search another recipe", authBadge: "Authentic", seoAuth: " | Authentic Recipe",
     unitTemp: "°F", unitTime: "min",
@@ -40,7 +40,7 @@ export const recipeTranslations = {
   es: {
     back: "Volver", backLink: "/es/#ricettario", temp: "Temperatura", time: "Cocción", prep: "Preparación",
     portions: "Porciones", pers: "pers.", ingTitle: "Ingredientes", noIng: "Ver descripción.",
-    stepTitle: "Instrucciones", step1: "Preparación", step1Desc: "Prepara todos los ingredientes.",
+    stepTitle: "Instrucciones", stepLabel: "paso", step1: "Preparación", step1Desc: "Prepara todos los ingredientes.",
     step2: "Cocción",
     tipTitle: "Consejo del Chef", searchOther: "← Buscar otra receta", authBadge: "Auténtica", seoAuth: " | Auténtica",
     unitTemp: "°C", unitTime: "min",
@@ -59,7 +59,7 @@ export const recipeTranslations = {
   fr: {
     back: "Retour", backLink: "/fr/#ricettario", temp: "Température", time: "Cuisson", prep: "Préparation",
     portions: "Portions", pers: "pers.", ingTitle: "Ingrédients", noIng: "Voir la description.",
-    stepTitle: "Instructions", step1: "Préparation", step1Desc: "Préparez tous les ingrédients.",
+    stepTitle: "Instructions", stepLabel: "étape", step1: "Préparation", step1Desc: "Préparez tous les ingrédients.",
     step2: "Cuisson",
     tipTitle: "Astuce du Chef", searchOther: "← Chercher autre", authBadge: "Authentique", seoAuth: " | Authentique",
     unitTemp: "°C", unitTime: "min",

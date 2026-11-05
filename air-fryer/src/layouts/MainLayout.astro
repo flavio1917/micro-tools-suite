@@ -68,6 +68,26 @@ function clampDescription(text: string, max = 155): string {
   return cut.slice(0, lastSpace).replace(/[\s,;:.—–-]+$/, '') + '…';
 }
 
+// Description ricetta: statistiche + quante più FRASI INTERE della descrizione
+// stanno in 155 caratteri. Solo se nemmeno la prima frase ci sta, si taglia
+// all'ultima parola intera (clampDescription).
+function composeDescription(stats: string, desc: string, max = 155): string {
+  const prefix = stats ? stats + ' ' : '';
+  const sentences = desc.match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g)?.map((x) => x.trim()).filter(Boolean) || [];
+  let out = '';
+  for (const sentence of sentences) {
+    const next = out ? `${out} ${sentence}` : sentence;
+    if ((prefix + next).length > max) break;
+    out = next;
+  }
+  if (!out) return clampDescription(prefix + desc, max);
+  // Se avanza molto spazio, aggiungiamo l'inizio della frase successiva
+  // (tagliata a parola intera) per sfruttare lo spazio visibile su Google.
+  const rest = desc.slice(desc.indexOf(out) + out.length).trim();
+  if (rest && (prefix + out).length < 110) return clampDescription(`${prefix}${out} ${rest}`, max);
+  return prefix + out;
+}
+
 // Logica SEO per Ricette
 if (recipeData) {
   const p = t.seo;
@@ -102,8 +122,7 @@ if (recipeData) {
   else if (hasNutrition) statsString = `✓ ${pro}g ${p.pro} · ✓ ${kcal} ${p.kcal} — `;
   else if (isFast) statsString = `✓ ${p.fast} ${timeStr} min — `;
 
-  const descParts = [statsString.trim(), baseDesc.trim()].filter(Boolean);
-  finalDescription = clampDescription(descParts.join(' ').replace(/\s+/g, ' '));
+  finalDescription = composeDescription(statsString.trim(), baseDesc.replace(/\s+/g, ' ').trim());
 }
 
 const ogType = recipeData ? "article" : "website";
@@ -169,6 +188,7 @@ const activeStyle = "text-orange-600 border-orange-600 dark:text-orange-400 dark
     <meta property="og:title" content={finalTitle} />
     <meta property="og:description" content={finalDescription} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={finalTitle} />
     <meta property="og:locale" content={currentLocale} />
 
     <meta name="twitter:card" content="summary_large_image" />

@@ -1,5 +1,6 @@
 ---
-const { slug, title } = Astro.props;
+const { slug, title, lang = 'it' } = Astro.props;
+const rateLabel = ({ it: 'Vota', en: 'Rate', es: 'Votar', fr: 'Noter' } as Record<string, string>)[lang] || 'Vota';
 ---
 
 <div id="rating-widget" data-state="closed" class="relative flex items-center justify-center h-7 md:h-8 bg-slate-800/90 backdrop-blur-md rounded-full border border-slate-600/50 shadow-xl transition-all duration-300 cursor-pointer">
@@ -10,7 +11,7 @@ const { slug, title } = Astro.props;
       <span id="avg-display" class="font-bold text-xs md:text-sm text-white leading-none mt-[1px]">--</span>
     </div>
     <div id="btn-text-vota" class="text-orange-400 font-bold text-[9px] md:text-[10px] uppercase tracking-wider leading-none mt-[1px]">
-      Vota
+      {rateLabel}
     </div>
   </div>
 
