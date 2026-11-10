@@ -43,7 +43,10 @@
       "frittura senza olio",
       "calamari Friggitrice ad Aria",
       "secondo veloce di pesce"
-    ]
+    ],
+    "seoTitle": "Anelli di Calamari in Friggitrice ad Aria: 8 Minuti",
+    "seoH1": "Anelli di calamari fritti in friggitrice ad aria",
+    "seoDescription": "Anelli di calamari in friggitrice ad aria: panatura alla semola, 8 minuti a 200°C, croccanti fuori e teneri dentro. 32 g di proteine a porzione."
   },
   {
     "slug": "cotoletta-fettina-panata",
@@ -190,11 +193,14 @@
       "cena in 15 minuti",
       "contorno saporito",
       "piatto unico Friggitrice ad Aria"
-    ]
+    ],
+    "seoTitle": "Salsiccia e Patate in Friggitrice ad Aria (20 Min)",
+    "seoH1": "Salsiccia e patate a cubetti in friggitrice ad aria",
+    "seoDescription": "Salsiccia e patate a cubetti in friggitrice ad aria: piatto unico in 20 minuti a 195°C, patate dorate e salsiccia succosa senza grasso in eccesso."
   },
   {
     "slug": "arrosticini-abruzzesi",
-    "seoTitle": "Arrosticini in Friggitrice ad Aria: Temperatura e Tempo",
+    "seoTitle": "Arrosticini in Friggitrice ad Aria: 8 Minuti a 200°C",
     "title": "Arrosticini in friggitrice ad aria",
     "alt": "Arrosticini abruzzesi cotti in friggitrice ad aria",
     "emoji": "🍢",
@@ -237,7 +243,9 @@
       "arrosticini Friggitrice ad Aria",
       "secondo proteico veloce",
       "zero fumo"
-    ]
+    ],
+    "seoH1": "Arrosticini in friggitrice ad aria (effetto brace)",
+    "seoDescription": "Arrosticini abruzzesi in friggitrice ad aria: 8 minuti a 200°C, succosi dentro e dorati fuori, senza fumo. Tempi, temperatura e trucco per l'effetto brace."
   },
   {
     "slug": "carciofi-alla-giudia-aria",
@@ -900,7 +908,10 @@
       "zucchine farcite",
       "secondo veloce",
       "piatto ligure"
-    ]
+    ],
+    "seoTitle": "Zucchine Ripiene alla Ligure in Friggitrice ad Aria",
+    "seoH1": "Zucchine ripiene alla ligure in friggitrice ad aria",
+    "seoDescription": "Zucchine ripiene alla ligure in friggitrice ad aria: ripieno di carne e gratinatura dorata in 18 minuti a 180°C. 24 g di proteine a porzione."
   },
   {
     "slug": "peperoni-ripieni",
@@ -1455,7 +1466,10 @@
       "Nebulizzare uniformemente l'olio spray sulla superficie del pesce.",
       "Cuocere a 200°C per 10 minuti. A metà cottura, girare il pesce con una pinza. Salare al termine della cottura."
     ],
-    "tip": "Maneggiare il pesce con una pinza in silicone per evitare di romperlo durante la rotazione a metà cottura."
+    "tip": "Maneggiare il pesce con una pinza in silicone per evitare di romperlo durante la rotazione a metà cottura.",
+    "seoTitle": "Frittura di Paranza in Friggitrice ad Aria: 10 Minuti",
+    "seoH1": "Frittura di paranza in friggitrice ad aria",
+    "seoDescription": "Frittura di paranza in friggitrice ad aria: pesciolini croccanti da mangiare interi, 10 minuti a 200°C senza olio di frittura. 38 g di proteine."
   },
   {
     "title": "Calamaretti Spillo (Croccanti in 5 Minuti)",
@@ -1498,7 +1512,10 @@
       "Cuocere a 200°C per 8-10 minuti. Estrarre quando i tentacoli risultano dorati e croccanti.",
       "Salare e servire immediatamente."
     ],
-    "tip": "Rispettare i tempi di cottura indicati. Una cottura prolungata oltre i 10 minuti compromette la consistenza del prodotto, rendendolo gommoso."
+    "tip": "Rispettare i tempi di cottura indicati. Una cottura prolungata oltre i 10 minuti compromette la consistenza del prodotto, rendendolo gommoso.",
+    "seoTitle": "Calamaretti Spillo in Friggitrice ad Aria: 8 Minuti",
+    "seoH1": "Calamaretti spillo in friggitrice ad aria",
+    "seoDescription": "Calamaretti spillo in friggitrice ad aria: 8 minuti a 200°C, teneri dentro e croccanti fuori, anche surgelati. 24 g di proteine e 190 kcal a porzione."
   },
   {
     "slug": "gamberi-dorati-fritti",
@@ -1585,7 +1602,10 @@
       "patatine surgelate Friggitrice ad Aria",
       "contorno veloce patate",
       "patate rustiche"
-    ]
+    ],
+    "seoTitle": "Patate Surgelate con Buccia in Friggitrice ad Aria",
+    "seoH1": "Patate fritte surgelate con buccia in friggitrice ad aria",
+    "seoDescription": "Patate surgelate con buccia in friggitrice ad aria: 18 minuti a 200°C, senza preriscaldare il forno. Come renderle croccanti fuori e morbide dentro."
   },
   {
     "slug": "patatine-tortilla",
@@ -1681,7 +1701,10 @@
       "patate dolci Friggitrice ad Aria",
       "contorno sfizioso",
       "sweet potato fries light"
-    ]
+    ],
+    "seoTitle": "Patate Dolci in Friggitrice ad Aria: Stick alla Paprika",
+    "seoH1": "Patate dolci in friggitrice ad aria (stick alla paprika)",
+    "seoDescription": "Patate dolci in friggitrice ad aria: stick croccanti alla paprika in 11 minuti a 200°C. Contorno dolce e salato da 180 kcal a porzione."
   },
   {
     "slug": "patatine-fritte-cajun",
@@ -1728,7 +1751,10 @@
       "patate speziate",
       "contorno veloce",
       "cajun fries Friggitrice ad Aria"
-    ]
+    ],
+    "seoTitle": "Patatine Cajun in Friggitrice ad Aria: Croccanti e Speziate",
+    "seoH1": "Patatine cajun in friggitrice ad aria",
+    "seoDescription": "Patatine cajun in friggitrice ad aria: patate fresche a bastoncino, 20 minuti a 195°C e mix di spezie cajun. Croccanti, piccanti, 190 kcal a porzione."
   },
   {
     "slug": "patatine-fritte-fatte-in-casa",
@@ -2223,7 +2249,10 @@
       "filetti di pollo croccanti",
       "pollo speziato",
       "snack proteico veloce"
-    ]
+    ],
+    "seoTitle": "Pollo Cajun in Friggitrice ad Aria: Croccante in 12 Min",
+    "seoH1": "Pollo cajun in friggitrice ad aria (filetti croccanti)",
+    "seoDescription": "Filetti di pollo cajun croccanti in friggitrice ad aria: marinatura al latticello, 195°C per 12 minuti, 38 g di proteine. Senza olio di frittura."
   },
   {
     "slug": "cosce-pollo-aglio-limone",
@@ -3145,7 +3174,10 @@
       "blooming onion Friggitrice ad Aria",
       "antipasto scenografico",
       "cipolla fritta light"
-    ]
+    ],
+    "seoTitle": "Blooming Onion in Friggitrice ad Aria (Cipolla a Fiore)",
+    "seoH1": "Blooming onion in friggitrice ad aria (cipolla a fiore)",
+    "seoDescription": "Blooming onion in friggitrice ad aria: cipolla a fiore impanata e croccante in 25 minuti a 200°C, senza frittura nell'olio. Con salsa e passaggi spiegati."
   },
   {
     "slug": "filetti-salmone-semplici",
@@ -3831,7 +3863,10 @@
       "orata Friggitrice ad Aria",
       "pesce alla griglia",
       "cena leggera"
-    ]
+    ],
+    "seoTitle": "Orata in Friggitrice ad Aria: Filetti in 7 Minuti",
+    "seoH1": "Orata alla griglia in friggitrice ad aria",
+    "seoDescription": "Filetti di orata in friggitrice ad aria: 7 minuti a 200°C, pelle croccante e carne morbida, senza fumo in cucina. 38 g di proteine a porzione."
   },
   {
     "slug": "pesce-gatto-cajun",
@@ -3980,7 +4015,10 @@
       "salmone al limone",
       "secondo raffinato",
       "salmone veloce"
-    ]
+    ],
+    "seoTitle": "Salmone in Friggitrice ad Aria con Burro e Limone",
+    "seoH1": "Salmone burro e limone in friggitrice ad aria",
+    "seoDescription": "Salmone in friggitrice ad aria in 8 minuti a 175°C: rosa e morbido dentro, con salsa al burro e limone. 34 g di proteine a porzione."
   },
   {
     "slug": "salmone-pomodoro-cetriolo",
@@ -4131,7 +4169,10 @@
       "english muffin",
       "colazione americana",
       "sandwich uova"
-    ]
+    ],
+    "seoTitle": "Muffin Sandwich in Friggitrice ad Aria (Colazione)",
+    "seoH1": "English muffin sandwich in friggitrice ad aria",
+    "seoDescription": "English muffin sandwich in friggitrice ad aria: uovo, formaggio e bacon in 10 minuti a 160°C. La colazione americana fatta in casa, 22 g di proteine."
   },
   {
     "slug": "muffin-formaggio-mais",
@@ -4879,7 +4920,10 @@
       "quesadilla Friggitrice ad Aria",
       "cena messicana",
       "tortilla farcita"
-    ]
+    ],
+    "seoTitle": "Quesadillas di Pollo in Friggitrice ad Aria (15 Min)",
+    "seoH1": "Quesadillas di pollo e peperoni in friggitrice ad aria",
+    "seoDescription": "Quesadillas di pollo e peperoni in friggitrice ad aria: tortillas croccanti e formaggio filante in 15 minuti a 190°C. 24 g di proteine a porzione."
   },
   {
     "slug": "spalla-agnello-greca",
@@ -5596,7 +5640,10 @@
       "bacon caramellato",
       "pancetta croccante",
       "bacon bbq"
-    ]
+    ],
+    "seoTitle": "Bacon Caramellato in Friggitrice ad Aria: 8 Minuti",
+    "seoH1": "Bacon caramellato BBQ in friggitrice ad aria",
+    "seoDescription": "Bacon caramellato in friggitrice ad aria: zucchero di canna e spezie BBQ, 8 minuti a 160°C. Dolce, piccante e croccante, senza schizzi in padella."
   },
   {
     "slug": "bistecche-costata-senape",
@@ -6208,7 +6255,10 @@
       "Monoporzione",
       "Dolci veloci"
     ],
-    "isItalian": true
+    "isItalian": true,
+    "seoTitle": "Mini Pastiere Napoletane in Friggitrice ad Aria",
+    "seoH1": "Mini pastiere napoletane in friggitrice ad aria",
+    "seoDescription": "Mini pastiere napoletane in friggitrice ad aria: 20 minuti a 170°C, frolla friabile e ripieno cremoso al fior d'arancio. Dolce di Pasqua in monoporzione."
   },
   {
     "slug": "hamburger-classico",
@@ -6621,7 +6671,10 @@
       "funghi impanati",
       "antipasto veloce",
       "funghi Friggitrice ad Aria"
-    ]
+    ],
+    "seoTitle": "Funghi Impanati Surgelati in Friggitrice ad Aria",
+    "seoH1": "Funghi impanati surgelati in friggitrice ad aria",
+    "seoDescription": "Funghi impanati surgelati in friggitrice ad aria: dal freezer al cestello, 15 minuti a 190°C. Croccanti fuori e bollenti dentro, senza olio aggiunto."
   },
   {
     "slug": "grilled-cheese",
@@ -6667,7 +6720,10 @@
       "Pane",
       "Formaggio grigliato",
       "toast filante"
-    ]
+    ],
+    "seoTitle": "Grilled Cheese in Friggitrice ad Aria: Toast Filante",
+    "seoH1": "Grilled cheese sandwich in friggitrice ad aria",
+    "seoDescription": "Grilled cheese in friggitrice ad aria: toast dorato su entrambi i lati e formaggio filante in 8 minuti a 160°C, senza girarlo in padella."
   },
   {
     "slug": "gamberetti-stile-cajun",
@@ -6807,7 +6863,10 @@
       "mini pizza",
       "pizzette salame",
       "merenda salata"
-    ]
+    ],
+    "seoTitle": "Mini Pizza Pepperoni in Friggitrice ad Aria (10 Min)",
+    "seoH1": "Mini pizza pepperoni in friggitrice ad aria",
+    "seoDescription": "Mini pizza pepperoni in friggitrice ad aria: base precotta 5 minuti e farcitura, 10 minuti in tutto a 160°C. Bordo croccante come in pizzeria."
   },
   {
     "slug": "pane-aglio",
@@ -6899,7 +6958,10 @@
       "mais arrostito",
       "contorno vegano",
       "barbecue indoor"
-    ]
+    ],
+    "seoTitle": "Pannocchie in Friggitrice ad Aria: Arrostite in 12 Min",
+    "seoH1": "Pannocchie arrostite in friggitrice ad aria",
+    "seoDescription": "Pannocchie in friggitrice ad aria: mais arrostito come sul barbecue in 12 minuti a 200°C, chicchi caramellati e succosi. 110 kcal a porzione."
   },
   {
     "slug": "pizzette-fiestas",
@@ -7045,7 +7107,10 @@
       "Zucchina",
       "Ricotta",
       "zucchine ripiene"
-    ]
+    ],
+    "seoTitle": "Zucchine Ripiene di Ricotta in Friggitrice ad Aria",
+    "seoH1": "Zucchine ripiene di ricotta in friggitrice ad aria",
+    "seoDescription": "Zucchine ripiene di ricotta e menta in friggitrice ad aria: secondo vegetariano gratinato in 16 minuti a 175°C, leggero da 190 kcal a porzione."
   },
   {
     "slug": "peperoni-gratinati-capperi",
@@ -7328,7 +7393,10 @@
       "Origano",
       "pomodori confit",
       "bruschette gourmet"
-    ]
+    ],
+    "seoTitle": "Pomodorini Confit in Friggitrice ad Aria all'Origano",
+    "seoH1": "Pomodorini confit all'origano in friggitrice ad aria",
+    "seoDescription": "Pomodorini confit in friggitrice ad aria: 40 minuti a 140°C, metà del tempo del forno, per pomodorini dolci e concentrati. 65 kcal a porzione."
   },
   {
     "slug": "frittata-verdure-miste",
@@ -7753,7 +7821,10 @@
       "Veloce",
       "Funghi",
       "funghi Friggitrice ad Aria"
-    ]
+    ],
+    "seoTitle": "Funghi Arrostiti in Friggitrice ad Aria: 10 Minuti",
+    "seoH1": "Funghi arrostiti in friggitrice ad aria",
+    "seoDescription": "Funghi arrostiti in friggitrice ad aria: champignon sodi e saporiti in 10 minuti a 200°C, senza diventare acquosi. Contorno leggero da 65 kcal."
   },
   {
     "slug": "melanzane-arrostite-semplici",
@@ -7935,7 +8006,10 @@
       "Vegano",
       "Patate",
       "patate spicchi Friggitrice ad Aria"
-    ]
+    ],
+    "seoTitle": "Patate a Spicchi Surgelate in Friggitrice ad Aria",
+    "seoH1": "Patate a spicchi surgelate in friggitrice ad aria",
+    "seoDescription": "Patate a spicchi surgelate in friggitrice ad aria: 20 minuti a 190°C, croccanti fuori e morbide dentro senza aggiungere olio. Tempi e consigli."
   },
   {
     "slug": "patate-a-spicchi",
@@ -8116,7 +8190,10 @@
       "Snack",
       "Vegetariano"
     ],
-    "is_sanitized": true
+    "is_sanitized": true,
+    "seoTitle": "Supplì al Telefono in Friggitrice ad Aria (Romani)",
+    "seoH1": "Supplì al telefono in friggitrice ad aria",
+    "seoDescription": "Supplì al telefono in friggitrice ad aria: crocchette di riso romane con cuore filante di mozzarella, 12 minuti a 200°C invece della frittura in olio."
   },
   {
     "title": "Mozzarella in Carrozza",
@@ -8395,7 +8472,10 @@
     ],
     "isItalian": false,
     "image": "jalapenos-ripieni-bacon",
-    "is_sanitized": true
+    "is_sanitized": true,
+    "seoTitle": "Jalapeños Ripieni in Friggitrice ad Aria con Bacon",
+    "seoH1": "Jalapeños ripieni avvolti nel bacon in friggitrice ad aria",
+    "seoDescription": "Jalapeños ripieni in friggitrice ad aria: farciti con maiale e cheddar, avvolti nel bacon e cotti 16 minuti a 160°C. Antipasto piccante e croccante."
   },
   {
     "slug": "beef-coriander-kofta",
@@ -8620,7 +8700,10 @@
     ],
     "isItalian": false,
     "image": "salsiccia-griglia-spirale",
-    "is_sanitized": true
+    "is_sanitized": true,
+    "seoTitle": "Spirale di Salsiccia in Friggitrice ad Aria (Miele e Senape)",
+    "seoH1": "Spirale di salsiccia in friggitrice ad aria con miele e senape",
+    "seoDescription": "Spirale di salsiccia in friggitrice ad aria: glassa al miele e senape, 10 minuti a 200°C. Un secondo scenografico da tagliare a fette in tavola."
   },
   {
     "slug": "steak-horseradish-sandwich",
@@ -8817,7 +8900,10 @@
     ],
     "isItalian": false,
     "image": "spiedini-manzo-coreano",
-    "is_sanitized": true
+    "is_sanitized": true,
+    "seoTitle": "Spiedini di Manzo Coreani in Friggitrice ad Aria",
+    "seoH1": "Spiedini di manzo coreani al gochujang in friggitrice ad aria",
+    "seoDescription": "Spiedini di manzo coreani in friggitrice ad aria: marinatura al gochujang, soia e miele, poi 7 minuti a 200°C. 31 g di proteine a porzione."
   },
   {
     "slug": "beef-cheese-skewers",
@@ -9008,7 +9094,10 @@
       "Veloce"
     ],
     "image": "souffle-cioccolato",
-    "is_sanitized": true
+    "is_sanitized": true,
+    "seoTitle": "Soufflé al Cioccolato in Friggitrice ad Aria",
+    "seoH1": "Soufflé al cioccolato fondente in friggitrice ad aria",
+    "seoDescription": "Soufflé al cioccolato fondente in friggitrice ad aria: monoporzioni soffici in 13 minuti a 165°C. Dosi, temperatura e come evitare che si sgonfino."
   },
   {
     "slug": "grilled-fish-tacos",

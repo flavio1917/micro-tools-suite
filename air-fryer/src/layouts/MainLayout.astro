@@ -123,6 +123,15 @@ if (recipeData) {
   else if (isFast) statsString = `✓ ${p.fast} ${timeStr} min — `;
 
   finalDescription = composeDescription(statsString.trim(), baseDesc.replace(/\s+/g, ' ').trim());
+
+  // Testi SEO scritti a mano (seoTitle / seoDescription nei dati): hanno la
+  // precedenza sulle versioni generate. Il marchio si aggiunge solo se il
+  // titolo resta entro i 60 caratteri visibili su Google.
+  if (recipeData.seoTitle) {
+    const branded = `${recipeData.seoTitle} | Crispissimo`;
+    finalTitle = branded.length <= 60 ? branded : recipeData.seoTitle;
+  }
+  if (recipeData.seoDescription) finalDescription = recipeData.seoDescription;
 }
 
 const ogType = recipeData ? "article" : "website";
