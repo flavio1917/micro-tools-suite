@@ -31,6 +31,10 @@ const v2Model = rawV2Models.find(m => m.canonical_slug === model.id);
 const localizedModelName = v2Model?.model_names?.[lang] || v2Model?.model_names?.it || model.primary_display_name || model.actual_model;
 
 const t = errorsUiTranslations[lang];
+const basketLabels = {
+  dual: { it: 'Doppio cestello', en: 'Dual basket', es: 'Doble cesta', fr: 'Double panier' },
+  single: { it: 'Cestello singolo', en: 'Single basket', es: 'Cesta única', fr: 'Panier unique' },
+};
 const modelCardLabels = t.modelCard;
 
 // Closed state logic
@@ -73,9 +77,9 @@ const HeaderWrapper = linkUrl ? 'div' : 'summary';
             
             <div class="flex gap-2">
               {isDual ? (
-                <span class="bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Dual Basket</span>
+                <span class="bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded uppercase">{basketLabels.dual[lang]}</span>
               ) : (
-                <span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Cestello Singolo</span>
+                <span class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase">{basketLabels.single[lang]}</span>
               )}
 
               {capacityText && (

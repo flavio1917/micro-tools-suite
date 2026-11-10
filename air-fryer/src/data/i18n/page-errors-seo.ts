@@ -126,6 +126,42 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     usefulResourcesTitle: "Useful Resources",
     linkCleaning: "How to clean the air fryer",
     linkCleaningUrl: "/en/tools/clean-air-fryer-heating-element/",
+    brandFaqsTemplate: [
+      {
+        question: "What does error code E1 mean on a {brand} air fryer?",
+        answer: "On {brand} air fryers, E1 usually points to a temperature sensor problem (open or short circuit). Check the manual for your model and contact support if the error persists."
+      },
+      {
+        question: "How do I reset my {brand} air fryer?",
+        answer: "To reset your {brand} air fryer, unplug it from the wall socket for at least 15-20 minutes, then plug it back in. This hard reset clears many temporary errors."
+      },
+      {
+        question: "Why is my {brand} air fryer producing white smoke?",
+        answer: "White smoke is often caused by very fatty food. Add a couple of tablespoons of water to the bottom of your {brand} basket before cooking so the fat does not burn."
+      },
+      {
+        question: "How long is the warranty on {brand} air fryers?",
+        answer: "{brand} generally offers a 2-year warranty on its appliances, but check your receipt or the official website for the exact terms in your country."
+      }
+    ],
+    modelFaqsTemplate: [
+      {
+        question: "What do E1 or E2 mean on the {brand} {model}?",
+        answer: "E1 and E2 on the {brand} {model} usually signal a fault or anomaly in the temperature sensor. Stop using it and unplug the appliance before contacting support."
+      },
+      {
+        question: "How do I clean the heating element of the {brand} {model}?",
+        answer: "Turn the {brand} {model} upside down when it is cold and unplugged. Gently clean the heating element with a soft sponge, warm water and a tiny amount of dish soap."
+      },
+      {
+        question: "Can I use parchment paper in the {brand} {model}?",
+        answer: "Yes, you can use parchment paper in the {brand} {model}, but never put it in empty while preheating. Always place heavy food on top so it cannot fly into the heating element."
+      },
+      {
+        question: "Where can I find the {brand} {model} manual?",
+        answer: "You can find the original {brand} {model} manual on the manufacturer's official website, or check the model-specific guidance on this page to solve common problems."
+      }
+    ],
     linkConverter: "Oven time and temperature converter",
     linkConverterUrl: "/en/converter",
     linkRecipes: "Basic recipes to get started",
@@ -246,6 +282,42 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     usefulResourcesTitle: "Ressources Utiles",
     linkCleaning: "Comment nettoyer la friteuse à air",
     linkCleaningUrl: "/fr/outils/nettoyer-resistance-friteuse-air/",
+    brandFaqsTemplate: [
+      {
+        question: "Que signifie le code E1 sur une friteuse à air {brand} ?",
+        answer: "Sur les friteuses {brand}, le code E1 indique généralement un problème de sonde de température (circuit ouvert ou court-circuit). Consultez le manuel de votre modèle et contactez le SAV si l'erreur persiste."
+      },
+      {
+        question: "Comment réinitialiser ma friteuse à air {brand} ?",
+        answer: "Pour réinitialiser votre friteuse {brand}, débranchez-la de la prise pendant au moins 15 à 20 minutes, puis rebranchez-la. Cette réinitialisation corrige de nombreuses erreurs temporaires."
+      },
+      {
+        question: "Pourquoi ma friteuse {brand} fait-elle de la fumée blanche ?",
+        answer: "La fumée blanche vient souvent d'aliments très gras. Ajoutez deux cuillères à soupe d'eau au fond du panier de votre {brand} avant la cuisson pour éviter que la graisse ne brûle."
+      },
+      {
+        question: "Quelle est la durée de la garantie des friteuses {brand} ?",
+        answer: "{brand} offre généralement une garantie de 2 ans sur ses appareils, mais vérifiez votre ticket de caisse ou le site officiel pour les conditions exactes."
+      }
+    ],
+    modelFaqsTemplate: [
+      {
+        question: "Que signifient E1 ou E2 sur la {brand} {model} ?",
+        answer: "Les codes E1 et E2 sur la {brand} {model} signalent généralement une anomalie ou une panne de la sonde de température. Cessez de l'utiliser et débranchez l'appareil avant de contacter le SAV."
+      },
+      {
+        question: "Comment nettoyer la résistance de la {brand} {model} ?",
+        answer: "Retournez la {brand} {model} froide et débranchée. Nettoyez délicatement la résistance avec une éponge douce, de l'eau chaude et très peu de liquide vaisselle."
+      },
+      {
+        question: "Puis-je utiliser du papier cuisson dans la {brand} {model} ?",
+        answer: "Oui, vous pouvez utiliser du papier cuisson dans la {brand} {model}, mais ne le mettez jamais vide pendant le préchauffage. Placez toujours des aliments lourds dessus pour qu'il ne touche pas la résistance."
+      },
+      {
+        question: "Où trouver le manuel de la {brand} {model} ?",
+        answer: "Vous trouverez le manuel original de la {brand} {model} sur le site officiel du fabricant, ou consultez les indications propres à votre modèle sur cette page pour résoudre les problèmes courants."
+      }
+    ],
     linkConverter: "Convertisseur de temps et température",
     linkConverterUrl: "/fr/convertisseur",
     linkRecipes: "Recettes de base pour commencer",
