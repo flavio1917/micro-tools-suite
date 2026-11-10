@@ -79,6 +79,14 @@ const faqSchema = currentFaqs.length > 0 ? {
     }
   }))
 } : null;
+
+// Tabella di riferimento dei consumi (calcolata, non dati inventati):
+// kWh = W × minuti / 60000; costo con un prezzo d'esempio di 0,25 €/kWh.
+const ENERGY_PRICE = 0.25;
+const energyWatts = [1000, 1500, 1800, 2000];
+const energyMinutes = [10, 20, 30];
+const formatNumber = (n: number, digits: number) =>
+  n.toLocaleString(lang === 'en' ? 'en-GB' : `${lang}-${lang.toUpperCase()}`, { minimumFractionDigits: digits, maximumFractionDigits: digits });
 ---
 
 <MainLayout alternateUrls={alternateUrls} title={currentSeo.title} lang={lang} description={currentSeo.description}>
@@ -177,6 +185,33 @@ const faqSchema = currentFaqs.length > 0 ? {
     </div>
 
     <div class="max-w-3xl mx-auto mt-16 text-slate-300">
+      <article class="tool-card mb-12">
+        <h2 class="tool-subtitle mb-4">{t.tableH2}</h2>
+        <p class="tool-text mb-6">{t.tableIntro}</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left border-collapse">
+            <thead>
+              <tr class="border-b border-slate-200 dark:border-slate-700">
+                <th scope="col" class="py-2 pr-4 font-bold">{t.tableColPower}</th>
+                {energyMinutes.map((m) => <th scope="col" class="py-2 pr-4 font-bold">{m} {t.tableMinUnit}</th>)}
+              </tr>
+            </thead>
+            <tbody>
+              {energyWatts.map((w) => (
+                <tr class="border-b border-slate-100 dark:border-slate-800">
+                  <th scope="row" class="py-2 pr-4 font-semibold">{w} W</th>
+                  {energyMinutes.map((m) => {
+                    const kwh = (w * m) / 60000;
+                    return <td class="py-2 pr-4">{formatNumber(kwh, 2)} {t.tableKwh} · {formatNumber(kwh * ENERGY_PRICE, 2)} €</td>;
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="tool-text text-xs mt-4 opacity-80">{t.tableNote}</p>
+      </article>
+
       <article class="tool-card mb-12">
         <h2 class="tool-subtitle mb-4">{t.editorialH2}</h2>
         <p class="tool-text text-lg" set:html={t.editorialText}></p>

@@ -120,6 +120,32 @@
       ],
       "destination": "https://www.crispissimo.com/:path*",
       "permanent": true
-    }
+    },
+    {"source": "/:lang(en|es|fr)/recipes/:slug/", "destination": "/:lang/recipes/:slug", "permanent": true},
+    {"source": "/strumenti/", "destination": "/strumenti", "permanent": true},
+    {"source": "/en/tools/", "destination": "/en/tools", "permanent": true},
+    {"source": "/es/herramientas/", "destination": "/es/herramientas", "permanent": true},
+    {"source": "/fr/outils/", "destination": "/fr/outils", "permanent": true},
+    {"source": "/convertitore/", "destination": "/convertitore", "permanent": true},
+    {"source": "/en/converter/", "destination": "/en/converter", "permanent": true},
+    {"source": "/es/convertidor/", "destination": "/es/convertidor", "permanent": true},
+    {"source": "/fr/convertisseur/", "destination": "/fr/convertisseur", "permanent": true},
+    {"source": "/strumenti/:a", "destination": "/strumenti/:a/", "permanent": true},
+    {"source": "/strumenti/:a/:b", "destination": "/strumenti/:a/:b/", "permanent": true},
+    {"source": "/strumenti/:a/:b/:c", "destination": "/strumenti/:a/:b/:c/", "permanent": true},
+    {"source": "/en/tools/:a", "destination": "/en/tools/:a/", "permanent": true},
+    {"source": "/en/tools/:a/:b", "destination": "/en/tools/:a/:b/", "permanent": true},
+    {"source": "/en/tools/:a/:b/:c", "destination": "/en/tools/:a/:b/:c/", "permanent": true},
+    {"source": "/es/herramientas/:a", "destination": "/es/herramientas/:a/", "permanent": true},
+    {"source": "/es/herramientas/:a/:b", "destination": "/es/herramientas/:a/:b/", "permanent": true},
+    {"source": "/es/herramientas/:a/:b/:c", "destination": "/es/herramientas/:a/:b/:c/", "permanent": true},
+    {"source": "/fr/outils/:a", "destination": "/fr/outils/:a/", "permanent": true},
+    {"source": "/fr/outils/:a/:b", "destination": "/fr/outils/:a/:b/", "permanent": true},
+    {"source": "/fr/outils/:a/:b/:c", "destination": "/fr/outils/:a/:b/:c/", "permanent": true},
+    {"source": "/:lang(en|es|fr)", "destination": "/:lang/", "permanent": true},
+    {"source": "/:lang(en|es|fr)/info", "destination": "/:lang/info/", "permanent": true},
+    {"source": "/info", "destination": "/info/", "permanent": true},
+    {"source": "/privacy", "destination": "/privacy/", "permanent": true},
+    {"source": "/cookies", "destination": "/cookies/", "permanent": true}
   ]
 }
