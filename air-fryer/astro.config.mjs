@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel';
+import fs from 'node:fs';
 
 // Pagine modello dei codici errore: sono indicizzabili (e quindi in sitemap) SOLO
 // quelle validate a mano con seo_status_override: 'indexable' in
@@ -15,6 +16,15 @@ const ERROR_HUB_PATHS = [
   'es/herramientas/codigos-error-freidora-aire',
   'fr/outils/codes-erreur-friteuse-air',
 ];
+
+// Ricette marcate "noindex": true nei dati (pagine troppo povere): fuori dalla sitemap.
+const NOINDEX_RECIPE_PATHS = new Set(
+  ['it', 'en', 'es', 'fr'].flatMap((lang) =>
+    JSON.parse(fs.readFileSync(new URL(`./src/data/recipes-${lang}.json`, import.meta.url), 'utf8'))
+      .filter((r) => r && r.noindex === true)
+      .map((r) => (lang === 'it' ? `/recipes/${r.slug}` : `/${lang}/recipes/${r.slug}`))
+  )
+);
 
 function isNoindexModelPage(pageUrl) {
   const p = decodeURI(new URL(pageUrl).pathname).replace(/^\/|\/$/g, '');
@@ -53,7 +63,7 @@ export default defineConfig({
     // Niente lastmod/changefreq/priority: lastmod = data della build per tutte le
     // pagine è un segnale falso, changefreq e priority sono ignorati da Google.
     sitemap({
-      filter: (page) => !isNoindexModelPage(page),
+      filter: (page) => !isNoindexModelPage(page) && !NOINDEX_RECIPE_PATHS.has(decodeURI(new URL(page).pathname).replace(/\/$/, '')),
       serialize: (item) => {
         const url = new URL(item.url);
         if (CANONICAL_WITHOUT_TRAILING_SLASH.test(decodeURI(url.pathname))) {

@@ -110,7 +110,7 @@ const alternateUrls = Object.fromEntries(
 );
 ---
 
-<MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData} alternateUrls={alternateUrls} ogImage={`https://www.crispissimo.com${encodeURI(imagePath)}`}>
+<MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData} alternateUrls={alternateUrls} noindex={recipe.noindex === true} ogImage={`https://www.crispissimo.com${encodeURI(imagePath)}`}>
   
   <style is:global>
     body > header { display: none !important; }

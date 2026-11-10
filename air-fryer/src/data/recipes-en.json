@@ -5037,7 +5037,8 @@
     ],
     "isItalian": false,
     "image": "tortini-pesce-surgelati",
-    "is_sanitized": true
+    "is_sanitized": true,
+    "noindex": true
   },
   {
     "slug": "eggs-in-cocotte-with-bacon",
@@ -5194,49 +5195,6 @@
       "Quick"
     ],
     "image": "muffin-mirtilli-rossi",
-    "is_sanitized": true
-  },
-  {
-    "slug": "dark-chocolate-espresso-muffins",
-    "title": "Dark Chocolate Espresso Muffins",
-    "emoji": "☕",
-    "temp": 300,
-    "time": "15",
-    "prep_time": "10",
-    "portions": "8",
-    "ingredients": [
-      "4.2 oz all-purpose flour",
-      "2.1 oz unsweetened cocoa powder",
-      "5.3 oz brown sugar",
-      "0.1 oz baking powder",
-      "0.1 oz baking soda",
-      "0.1 oz instant espresso powder",
-      "1 pinch of salt",
-      "5.7 fl oz milk",
-      "1 large egg",
-      "2.7 fl oz vegetable oil",
-      "0.2 fl oz apple cider vinegar",
-      "1 tsp vanilla extract"
-    ],
-    "description": "Indulgent and energizing. These rich muffins combine deep cocoa flavors with a bold espresso kick, creating a sophisticated treat for breakfast or an afternoon pick-me-up.",
-    "instructions": [
-      "In a large bowl, whisk together the sifted flour, cocoa powder, brown sugar, baking powder, baking soda, instant espresso powder, and salt.",
-      "In a separate container, combine the egg, milk, oil, apple cider vinegar, and vanilla extract.",
-      "Pour the wet ingredients into the dry ingredients. Mix with a spatula until just combined. Do not overmix.",
-      "Portion the batter into muffin liners, filling each two-thirds full.",
-      "Cook at 300°F for 15 minutes, or until a skewer inserted into the center comes out clean."
-    ],
-    "source": "Cosori",
-    "tip": "Use sturdy paper or silicone muffin liners to ensure the muffins hold their shape during cooking.",
-    "keywords": [
-      "Dessert",
-      "Breakfast",
-      "Snack",
-      "Vegetarian",
-      "Quick"
-    ],
-    "isItalian": false,
-    "image": "muffin-cioccolato-espresso",
     "is_sanitized": true
   },
   {

@@ -4976,7 +4976,8 @@
       "repas express"
     ],
     "isItalian": true,
-    "image": "tortini-pesce-surgelati"
+    "image": "tortini-pesce-surgelati",
+    "noindex": true
   },
   {
     "slug": "oeuf-en-cocotte-avec-lardons",
@@ -5142,51 +5143,6 @@
     ],
     "isItalian": true,
     "image": "muffin-mirtilli-rossi"
-  },
-  {
-    "slug": "muffins-chocolat-espresso",
-    "title": "Muffins Intenses Chocolat et Espresso",
-    "emoji": "☕",
-    "temp": 150,
-    "time": "15",
-    "prep_time": "10",
-    "portions": "8",
-    "ingredients": [
-      "120 g de farine type 00",
-      "60 g de cacao amer en poudre",
-      "150 g de sucre de canne",
-      "3 g de levure chimique",
-      "3 g de bicarbonate de soude",
-      "3 g de café instantané type espresso",
-      "1 pincée de sel",
-      "170 ml de lait",
-      "1 œuf",
-      "80 ml d'huile végétale",
-      "5 ml de vinaigre de cidre",
-      "Quelques gouttes d'extrait de vanille"
-    ],
-    "description": "L'accord parfait pour un réveil énergisant. Ces muffins combinent la profondeur du cacao et la force de l'espresso dans une texture incroyablement moelleuse, idéale pour accompagner votre café du matin.",
-    "instructions": [
-      "Dans un saladier, mélanger les ingrédients secs : farine tamisée, cacao, sucre, levure chimique, bicarbonate, café et sel.",
-      "Dans un autre récipient, mélanger l'œuf, le lait, l'huile, le vinaigre de cidre et l'extrait de vanille.",
-      "Incorporer les ingrédients liquides aux ingrédients secs. Mélanger brièvement avec une spatule, juste assez pour humidifier les poudres.",
-      "Répartir la pâte dans des moules à muffins, en les remplissant aux deux tiers.",
-      "Cuire à 150°C pendant 15 minutes."
-    ],
-    "source": "Cosori",
-    "tip": "Utiliser des caissettes en papier rigide ou en silicone pour maintenir la forme des muffins pendant la cuisson.",
-    "keywords": [
-      "Dessert",
-      "Goûter",
-      "Petit-déjeuner",
-      "Végétarien",
-      "Rapide",
-      "Facile",
-      "muffin café",
-      "chocolat noir"
-    ],
-    "isItalian": true,
-    "image": "muffin-cioccolato-espresso"
   },
   {
     "slug": "muffins-fromage-mais",

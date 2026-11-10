@@ -9107,5 +9107,210 @@
     "isItalian": false,
     "image": "toast-farcito-francese",
     "is_sanitized": true
+  },
+  {
+    "slug": "torta-al-limone",
+    "title": "Plumcake al Limone (Soffice e Dorato in 20 Minuti)",
+    "emoji": "🍋",
+    "temp": 160,
+    "time": "30",
+    "prep_time": "10",
+    "portions": "6",
+    "ingredients": [
+      "120 g di farina 00",
+      "85 g di burro non salato ammorbidito",
+      "130 g di zucchero semolato",
+      "60 g di latticello",
+      "1 uovo grande",
+      "1 limone (succo e scorza)",
+      "4 g di lievito in polvere per dolci",
+      "1 pizzico di sale fino"
+    ],
+    "description": "Un plumcake soffice e profumato, perfetto per la colazione di tutta la famiglia. La friggitrice ad aria garantisce una cottura uniforme senza seccare l'impasto.",
+    "instructions": [
+      "Montare con fruste elettriche il burro ammorbidito per almeno 3 minuti fino a ottenere un composto chiaro e spumoso. Incorporare lo zucchero gradualmente.",
+      "Aggiungere l'uovo, il succo e la scorza di limone, continuando a montare.",
+      "Setacciare la farina con il lievito e il sale. Aggiungere le polveri al composto, alternandole con il latticello, e mescolare fino a ottenere un impasto omogeneo.",
+      "Versare l'impasto in uno stampo da plumcake imburrato, riempiendolo per circa tre quarti.",
+      "Preriscaldare l'apparecchio. Inserire lo stampo e cuocere a 160°C per 30 minuti."
+    ],
+    "source": "Cosori",
+    "tip": "Una montatura prolungata di burro e zucchero è fondamentale per incorporare aria e garantire la leggerezza strutturale del dolce.",
+    "keywords": [
+      "Dolce",
+      "Lievitati",
+      "Colazione",
+      "Snack",
+      "Proteico",
+      "Vegetariano",
+      "Limone",
+      "Burro",
+      "plumcake limone",
+      "torta Friggitrice ad Aria",
+      "dolci soffici"
+    ]
+  },
+  {
+    "slug": "uovo-in-vaso-cotto",
+    "title": "Uova in Cocotte (Pancetta e Spinaci in Friggitrice ad Aria)",
+    "emoji": "🍳",
+    "temp": 175,
+    "time": "14",
+    "prep_time": "3",
+    "portions": "4",
+    "ingredients": [
+      "4 uova",
+      "80 g pancetta affumicata a cubetti",
+      "80 g spinaci freschi",
+      "160 ml panna fresca liquida",
+      "20 g Parmigiano Reggiano grattugiato",
+      "Olio spray",
+      "Sale q.b.",
+      "Pepe nero q.b."
+    ],
+    "description": "Un antipasto raffinato o una colazione proteica. Uova cotte delicatamente in cocotte con crema di panna, parmigiano e la nota sapida della pancetta croccante.",
+    "instructions": [
+      "Rosolare la pancetta in padella per 5 minuti. Aggiungere gli spinaci e cuocere per 2 minuti fino ad appassimento.",
+      "In una ciotola, miscelare la panna con il Parmigiano Reggiano grattugiato.",
+      "Ungere 4 stampi monoporzione (diametro 8 cm circa) con olio spray e distribuire sul fondo il composto di pancetta e spinaci.",
+      "Sgusciare un uovo in ogni stampo e ricoprire con la miscela di panna e formaggio. Condire con sale e pepe.",
+      "Inserire gli stampi nel dispositivo di cottura e cuocere a 175°C per 4-6 minuti, fino a coagulazione dell'albume."
+    ],
+    "source": "Cosori",
+    "tip": "Interrompere la cottura quando l'albume è coagulato e il tuorlo ancora liquido al centro.",
+    "keywords": [
+      "Uova/Formaggi",
+      "Carne",
+      "Colazione",
+      "Antipasto",
+      "Proteico",
+      "LowCarb",
+      "Uova",
+      "Pancetta",
+      "uova in cocotte",
+      "uova pancetta",
+      "antipasto raffinato"
+    ]
+  },
+  {
+    "slug": "biscotti-al-cheddar",
+    "title": "Cheddar Biscuits (Friabili e Salati in Friggitrice ad Aria)",
+    "emoji": "🧀",
+    "temp": 175,
+    "time": "12",
+    "prep_time": "10",
+    "portions": "4",
+    "ingredients": [
+      "Farina 00: 200 g",
+      "Lievito istantaneo per preparazioni salate: 5 g",
+      "Sale: 5 g",
+      "Bicarbonato di sodio: 1 g",
+      "Zucchero: 5 g",
+      "Burro freddo: 110 g",
+      "Formaggio Cheddar grattugiato: 60 g",
+      "Latticello: 110 ml",
+      "Burro fuso: q.b."
+    ],
+    "description": "Biscotti salati al cheddar, croccanti fuori e friabili dentro. Perfetti per accompagnare stufati o come snack sfizioso per un aperitivo diverso dal solito.",
+    "instructions": [
+      "Setacciare farina, lievito, bicarbonato, sale e zucchero in una ciotola.",
+      "Aggiungere il burro freddo a cubetti e lavorare con la punta delle dita fino ad ottenere un composto sabbioso.",
+      "Incorporare il formaggio Cheddar, quindi versare il latticello. Impastare rapidamente per non surriscaldare il burro.",
+      "Stendere l'impasto ad uno spessore di circa 1.5 cm e ricavare 4 dischi utilizzando un coppapasta.",
+      "Spennellare la superficie con burro fuso. Disporre i dischi su carta da forno all'interno del cestello e cuocere a 175°C per 12 minuti."
+    ],
+    "source": "Cosori",
+    "tip": "Lavorare l'impasto brevemente per garantire una consistenza stratificata e leggera del prodotto finale.",
+    "keywords": [
+      "Lievitati",
+      "Uova/Formaggi",
+      "Antipasto",
+      "Snack",
+      "Vegetariano",
+      "Cheddar",
+      "biscotti salati",
+      "snack al formaggio",
+      "aperitivo Friggitrice ad Aria"
+    ]
+  },
+  {
+    "slug": "mini-pizze",
+    "title": "Muffin Pizza (Pizzette Veloci su Base Muffin Inglese)",
+    "emoji": "🍕",
+    "temp": 170,
+    "time": "8",
+    "prep_time": "15",
+    "portions": "4",
+    "ingredients": [
+      "2 muffin inglesi",
+      "10 cucchiai di salsa di pomodoro",
+      "4 fette di mozzarella",
+      "6 olive nere denocciolate"
+    ],
+    "description": "L'idea geniale per una merenda last-minute o un aperitivo: basi di muffin inglese condite come mini pizze. Croccantissime in soli 5 minuti in Friggitrice ad Aria.",
+    "instructions": [
+      "Dividere a metà i muffin inglesi per ottenere quattro basi.",
+      "Tostare le basi a 170°C per 3 minuti.",
+      "Estrarre le basi e distribuire su ciascuna la salsa di pomodoro, la mozzarella tagliata a listarelle e le olive a rondelle.",
+      "Cuocere a 170°C per 5 minuti, fino a fusione e doratura della mozzarella."
+    ],
+    "source": "Tefal",
+    "tip": "Per una base più croccante, aumentare il tempo di tostatura iniziale di 1-2 minuti.",
+    "keywords": [
+      "Lievitati",
+      "Uova/Formaggi",
+      "Antipasto",
+      "Snack",
+      "Vegetariano",
+      "Veloce",
+      "Muffin",
+      "Mozzarella",
+      "pizzette veloci",
+      "merenda salata",
+      "mini pizza"
+    ]
+  },
+  {
+    "slug": "muffin-mirtilli-rossi",
+    "title": "Muffin Arancia e Mirtilli Rossi (Profumo d'Agrume in Friggitrice ad Aria)",
+    "emoji": "🍒",
+    "temp": 150,
+    "time": "15",
+    "prep_time": "10",
+    "portions": "8",
+    "ingredients": [
+      "120 g farina 00",
+      "70 g zucchero semolato",
+      "4 g lievito in polvere per dolci",
+      "2 g bicarbonato di sodio",
+      "1 pizzico sale",
+      "100 g mirtilli rossi",
+      "1 uovo",
+      "80 ml succo d'arancia",
+      "Scorza di 1 arancia",
+      "60 ml olio di semi"
+    ],
+    "description": "Muffin fragranti con succo d'arancia e mirtilli rossi aspro-dolci. La cottura ad aria esalta gli aromi agrumati, regalando muffin leggeri e perfetti da inzuppare.",
+    "instructions": [
+      "In una ciotola, miscelare farina, zucchero, lievito, bicarbonato, sale e mirtilli rossi.",
+      "In un recipiente separato, emulsionare l'uovo con il succo d'arancia, la scorza e l'olio.",
+      "Incorporare il composto liquido a quello secco, mescolando brevemente fino ad ottenere un impasto omogeneo.",
+      "Distribuire l'impasto in 8 pirottini per muffin e inserirli nel cestello.",
+      "Cuocere a 150°C per 15 minuti. Verificare la cottura con uno stecchino, che deve risultare asciutto."
+    ],
+    "source": "Cosori",
+    "tip": "Riempire i pirottini per 3/4 della loro capacità per prevenire fuoriuscite durante la cottura.",
+    "keywords": [
+      "Dolce",
+      "Colazione",
+      "Snack",
+      "Proteico",
+      "Vegetariano",
+      "Mirtilli",
+      "Arancia",
+      "muffin mirtilli",
+      "dolci agrumi",
+      "muffin veloci"
+    ]
   }
 ]

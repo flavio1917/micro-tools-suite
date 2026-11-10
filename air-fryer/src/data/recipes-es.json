@@ -4936,7 +4936,8 @@
     ],
     "isItalian": false,
     "image": "tortini-pesce-surgelati",
-    "is_sanitized": true
+    "is_sanitized": true,
+    "noindex": true
   },
   {
     "slug": "huevos-en-cocotte-con-panceta",
@@ -5097,50 +5098,6 @@
     ],
     "isItalian": false,
     "image": "muffin-mirtilli-rossi",
-    "is_sanitized": true
-  },
-  {
-    "slug": "muffins-chocolate-espresso",
-    "title": "Muffins de Chocolate y Espresso Intenso",
-    "emoji": "☕",
-    "temp": 150,
-    "time": "15",
-    "prep_time": "10",
-    "portions": "8",
-    "ingredients": [
-      "120 g de harina de repostería",
-      "60 g de cacao amargo en polvo",
-      "150 g de azúcar moreno",
-      "3 g de levadura química",
-      "3 g de bicarbonato sódico",
-      "3 g de café soluble en polvo",
-      "170 ml de leche",
-      "1 huevo",
-      "80 ml de aceite vegetal",
-      "5 ml de vinagre de manzana",
-      "5 ml de extracto de vainilla",
-      "1 pizca de sal"
-    ],
-    "description": "El capricho perfecto para los amantes del café. Muffins con un equilibrio magistral entre el amargor del espresso y la dulzura del cacao, logrando una miga esponjosa y oscura.",
-    "instructions": [
-      "En un bol, mezclar los ingredientes secos: harina tamizada, cacao, azúcar moreno, levadura química, bicarbonato, café soluble y sal.",
-      "En otro recipiente, batir el huevo junto con la leche, el aceite, el vinagre de manzana y el extracto de vainilla.",
-      "Verter los ingredientes líquidos sobre los secos. Integrar con una espátula hasta obtener una masa homogénea.",
-      "Distribuir la masa en moldes para muffins, llenándolos hasta 2/3 de su capacidad.",
-      "Cocinar a 150°C durante 15 minutos."
-    ],
-    "source": "Cosori",
-    "tip": "Utilizar moldes de papel rígido o de silicona para mantener la forma durante la cocción.",
-    "keywords": [
-      "Dulce",
-      "Snack",
-      "Desayuno",
-      "Rápido",
-      "chocolate",
-      "café"
-    ],
-    "isItalian": false,
-    "image": "muffin-cioccolato-espresso",
     "is_sanitized": true
   },
   {
