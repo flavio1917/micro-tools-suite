@@ -4,6 +4,7 @@ import AirFryerDatabase from '../air-fryer-errors/AirFryerDatabase.astro';
 import { airFryerModels } from '../../lib/air-fryer-db';
 import AffiliateSlot from '../ads/AffiliateSlot.astro';
 import ErrorFaq from './ErrorFaq.astro';
+import { faqErrorsTranslations } from '../../data/i18n/faq-errors';
 import { pageErrorsSeoTranslations } from '../../data/i18n/page-errors-seo';
 import { getAirFryerErrorHubUrl } from '../../lib/air-fryer-error-routes';
 import { homeUrl, toolsHubUrl } from '../../lib/site-urls';
@@ -47,7 +48,9 @@ const breadcrumbSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": seoData.faqs.map(faq => ({
+  // Stesse FAQ mostrate nella pagina dal componente ErrorFaq (i dati strutturati
+  // devono descrivere contenuti visibili).
+  "mainEntity": (faqErrorsTranslations[lang as keyof typeof faqErrorsTranslations] || faqErrorsTranslations.it).faqs.map((faq: any) => ({
     "@type": "Question",
     "name": faq.question,
     "acceptedAnswer": { "@type": "Answer", "text": faq.answer }

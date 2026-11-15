@@ -139,6 +139,13 @@ for (const file of htmlFiles) {
       if (node && node['@type'] === 'Recipe' && (node.datePublished || node.dateModified)) {
         addError('dati strutturati', `Recipe con date dichiarate (da ${from})`);
       }
+      // FAQPage: ogni domanda deve essere visibile nella pagina (regola Google sui dati strutturati)
+      if (node && node['@type'] === 'FAQPage' && Array.isArray(node.mainEntity)) {
+        const visible = info.html.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&');
+        for (const q of node.mainEntity) {
+          if (q && q.name && !visible.includes(q.name)) addError('dati strutturati', `FAQ nei dati strutturati ma non visibile: "${String(q.name).slice(0, 60)}" (da ${from})`);
+        }
+      }
     }
     // URL del sito citati nel JSON-LD: dominio www, pagina/file esistente, forma canonica.
     for (const u of new Set(m[1].match(/https?:\/\/(?:www\.)?(?:crispissimo\.com|convertitorefriggitrice\.it)[^"\s\\]*/g) || [])) {

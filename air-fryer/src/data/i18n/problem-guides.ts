@@ -21,10 +21,18 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ],
       "faqs": [
         {"q": "Posso resettare la friggitrice staccando la spina?", "a": "Sì, rimuovere fisicamente la spina dalla presa (hard reset) è il metodo più sicuro ed efficace per ripristinare la scheda madre."},
-        {"q": "Quanto tempo devo aspettare prima di riaccenderla?", "a": "È consigliabile attendere almeno 15 minuti per scaricare i condensatori interni e far resettare i sensori."}
+        {"q": "Quanto tempo devo aspettare prima di riaccenderla?", "a": "È consigliabile attendere almeno 15 minuti per scaricare i condensatori interni e far resettare i sensori."},
+        {"q": "Il reset fa sparire i codici di errore?", "a": "Spesso sì, se l'errore era temporaneo (per esempio surriscaldamento o un sensore momentaneamente fuori scala). Se il codice ricompare dopo il reset, consulta la pagina dei codici errore del tuo modello o l'assistenza."},
+        {"q": "Esiste un tasto di reset sulla friggitrice?", "a": "La maggior parte dei modelli non ha un tasto dedicato: il reset si fa staccando la spina. Alcuni modelli digitali permettono di tornare alle impostazioni predefinite con una combinazione di tasti indicata nel manuale."}
       ]
     },
     "smoke-smell": {
+      "faqs": [
+        {"q": "Perché la friggitrice ad aria fa fumo bianco?", "a": "Quasi sempre è grasso che cola sul fondo e brucia, per esempio con pancetta, salsicce o ali di pollo. Versa uno o due cucchiai d'acqua nel cassetto e togli i residui di unto dopo ogni cottura."},
+        {"q": "La puzza di plastica al primo utilizzo è pericolosa?", "a": "Al primo avvio è normale: sono residui di produzione. Fai uno o due cicli a vuoto a 200°C per 10-15 minuti con cestello e cassetto puliti. Se l'odore resta dopo alcuni utilizzi, contatta l'assistenza."},
+        {"q": "Cosa devo fare se esce fumo nero?", "a": "Stacca subito la spina e non riaccendere la friggitrice. Fumo nero o odore di cavi bruciati indicano un possibile guasto elettrico, non cibo bruciato: fai controllare l'apparecchio all'assistenza."},
+        {"q": "Come evito che la carta forno voli contro la resistenza?", "a": "Non inserirla mai vuota durante il preriscaldamento: appoggiaci sempre sopra il cibo, oppure usa carta forata ritagliata della misura del cestello."}
+      ],
       "title": "Fumo e puzza friggitrice ad aria: cause e soluzioni",
       "h1": "Pronto Soccorso Air Fryer",
       "meta": "Fumo bianco? Puzza di plastica? Niente panico. Ecco la guida rapida per risolvere i problemi più comuni e salvare la tua cena.",
@@ -66,7 +74,9 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "Se l'apparecchio è coperto da garanzia."
       ],
       "faqs": [
-        {"q": "Devo contattare l'assistenza se il problema persiste?", "a": "Assolutamente sì. Se i controlli base (presa e cestello) non risolvono il problema, si tratta probabilmente di un guasto alla scheda o al fusibile termico che richiede un intervento tecnico."}
+        {"q": "Devo contattare l'assistenza se il problema persiste?", "a": "Assolutamente sì. Se i controlli base (presa e cestello) non risolvono il problema, si tratta probabilmente di un guasto alla scheda o al fusibile termico che richiede un intervento tecnico."},
+        {"q": "La friggitrice può non accendersi se il cassetto non è inserito bene?", "a": "Sì: molti modelli hanno un micro-interruttore di sicurezza e non partono se il cassetto non è inserito fino in fondo. Estrailo e reinseriscilo finché senti lo scatto."},
+        {"q": "Può essere scattata la protezione termica?", "a": "Sì, dopo un uso prolungato o con le prese d'aria ostruite la protezione può bloccare l'apparecchio. Stacca la spina, lasciala raffreddare per circa 30 minuti e libera le aperture di ventilazione."}
       ]
     },
     "not-heating": {
@@ -87,7 +97,11 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "Se sul display compare un codice di errore fisso.",
         "Se la macchina è in garanzia."
       ],
-      "faqs": []
+      "faqs": [
+        {"q": "Perché la ventola gira ma la friggitrice non scalda?", "a": "Può essere intervenuta una protezione termica oppure essersi guastati la resistenza o il termostato. Stacca la spina per 15 minuti e riprova; se continua a non scaldare, non smontarla e rivolgiti all'assistenza."},
+        {"q": "Il cibo cuoce lentamente: è un guasto?", "a": "Non sempre. Cestello troppo pieno, cibo surgelato in blocchi o mancato preriscaldamento allungano molto i tempi. Cuoci in un solo strato e scuoti a metà cottura prima di pensare a un guasto."},
+        {"q": "Ogni quanto devo pulire la resistenza?", "a": "Controllala ogni poche settimane e puliscila quando vedi depositi di grasso: lo sporco sulla resistenza riduce il calore e può causare fumo. Fallo sempre a friggitrice fredda e scollegata."}
+      ]
     },
     "fan-not-working": {
       "h1": "La ventola della friggitrice ad aria non gira: cause e verifiche",
@@ -107,7 +121,11 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "Se noti scintille vicino al motore della ventola.",
         "Se hai acquistato l'apparecchio da meno di due anni (garanzia)."
       ],
-      "faqs": []
+      "faqs": [
+        {"q": "È normale che la ventola giri ancora dopo lo spegnimento?", "a": "Sì, in molti modelli la ventola resta accesa per qualche secondo o minuto per raffreddare la resistenza. Lascia che si fermi da sola prima di staccare la spina."},
+        {"q": "La ventola fa un rumore strano: cosa controllo?", "a": "A friggitrice fredda e scollegata, verifica che nessun pezzo di carta forno o di cibo sia finito vicino alla ventola o alla resistenza. Se il rumore continua, smetti di usarla e contatta l'assistenza."},
+        {"q": "Posso usare la friggitrice se la ventola non gira?", "a": "No. Senza ventola il calore non circola e la resistenza può surriscaldarsi: stacca la spina e fai controllare l'apparecchio."}
+      ]
     }
   },
   "en": {
@@ -132,10 +150,18 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ],
       "faqs": [
         {"q": "Can I reset the air fryer just by unplugging it?", "a": "Yes, physically removing the plug from the outlet (hard reset) is the safest and most effective way to reset the internal board."},
-        {"q": "How long should I wait before turning it back on?", "a": "It is recommended to wait at least 15 minutes to allow the motherboard to discharge residual voltage."}
+        {"q": "How long should I wait before turning it back on?", "a": "It is recommended to wait at least 15 minutes to allow the motherboard to discharge residual voltage."},
+        {"q": "Does a reset clear error codes?", "a": "Often yes, if the error was temporary (for example overheating or a sensor briefly out of range). If the code comes back after the reset, check the error code page for your model or contact support."},
+        {"q": "Is there a reset button on the air fryer?", "a": "Most models have no dedicated button: you reset them by unplugging. Some digital models can restore default settings with a key combination described in the manual."}
       ]
     },
     "smoke-smell": {
+      "faqs": [
+        {"q": "Why is my air fryer producing white smoke?", "a": "Almost always it is fat dripping to the bottom and burning, for example with bacon, sausages or chicken wings. Pour one or two tablespoons of water into the drawer and remove grease after every use."},
+        {"q": "Is the plastic smell on first use dangerous?", "a": "It is normal on first use: it comes from manufacturing residues. Run one or two empty cycles at 400°F for 10-15 minutes with a clean basket and drawer. If the smell persists after several uses, contact support."},
+        {"q": "What should I do if black smoke comes out?", "a": "Unplug it immediately and do not switch it back on. Black smoke or a smell of burning wires points to a possible electrical fault, not burnt food: have the appliance checked by support."},
+        {"q": "How do I stop parchment paper flying into the heating element?", "a": "Never put it in empty while preheating: always place food on top of it, or use perforated paper cut to the size of the basket."}
+      ],
       "title": "Air Fryer Smoke and Smell: Causes and Solutions",
       "h1": "Air Fryer First Aid",
       "meta": "White smoke? Plastic smell? Don't panic. Here is the quick guide to solving the most common problems and saving your dinner.",
@@ -177,7 +203,9 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "If the appliance is covered by warranty."
       ],
       "faqs": [
-        {"q": "Should I contact support if the problem persists?", "a": "Absolutely yes. If basic checks (outlet and basket) don't solve the issue, it is likely a board or thermal fuse failure requiring technical service."}
+        {"q": "Should I contact support if the problem persists?", "a": "Absolutely yes. If basic checks (outlet and basket) don't solve the issue, it is likely a board or thermal fuse failure requiring technical service."},
+        {"q": "Can the air fryer fail to start if the drawer is not inserted properly?", "a": "Yes: many models have a safety micro-switch and will not start unless the drawer is pushed all the way in. Take it out and reinsert it until it clicks."},
+        {"q": "Could the thermal protection have tripped?", "a": "Yes, after long use or with blocked air vents the protection can shut the appliance down. Unplug it, let it cool for about 30 minutes and clear the ventilation openings."}
       ]
     },
     "not-heating": {
@@ -198,7 +226,11 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "If a fixed error code appears on the display.",
         "If the machine is under warranty."
       ],
-      "faqs": []
+      "faqs": [
+        {"q": "Why does the fan spin but the air fryer does not heat?", "a": "A thermal cut-out may have tripped, or the heating element or thermostat may be faulty. Unplug it for 15 minutes and try again; if it still does not heat, do not open it and contact support."},
+        {"q": "Food cooks slowly: is it a fault?", "a": "Not always. An overfilled basket, frozen food stuck together or skipping preheating can make cooking much slower. Cook in a single layer and shake halfway before suspecting a fault."},
+        {"q": "How often should I clean the heating element?", "a": "Check it every few weeks and clean it when you see grease deposits: dirt on the element reduces heat and can cause smoke. Always do it with the air fryer cold and unplugged."}
+      ]
     },
     "fan-not-working": {
       "h1": "Air Fryer Fan Not Working: Causes and Checks",
@@ -218,7 +250,11 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "If you notice sparks near the fan motor.",
         "If you purchased the appliance less than two years ago (warranty)."
       ],
-      "faqs": []
+      "faqs": [
+        {"q": "Is it normal for the fan to keep running after switching off?", "a": "Yes, on many models the fan keeps running for a few seconds or minutes to cool the heating element. Let it stop on its own before unplugging."},
+        {"q": "The fan makes a strange noise: what should I check?", "a": "With the air fryer cold and unplugged, check that no parchment paper or food has ended up near the fan or heating element. If the noise continues, stop using it and contact support."},
+        {"q": "Can I use the air fryer if the fan does not spin?", "a": "No. Without the fan the heat does not circulate and the heating element can overheat: unplug it and have the appliance checked."}
+      ]
     }
   },
   "es": {
@@ -243,10 +279,18 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ],
       "faqs": [
         {"q": "¿Puedo reiniciar la freidora simplemente desenchufándola?", "a": "Sí, quitar físicamente el enchufe (hard reset) es la forma más segura y efectiva de reiniciar la placa interna."},
-        {"q": "¿Cuánto tiempo debo esperar antes de volver a encenderla?", "a": "Se recomienda esperar al menos 15 minutos para permitir que la placa base descargue la tensión residual."}
+        {"q": "¿Cuánto tiempo debo esperar antes de volver a encenderla?", "a": "Se recomienda esperar al menos 15 minutos para permitir que la placa base descargue la tensión residual."},
+        {"q": "¿El reinicio borra los códigos de error?", "a": "A menudo sí, si el error era temporal (por ejemplo sobrecalentamiento o un sensor momentáneamente fuera de rango). Si el código vuelve a aparecer, consulta la página de códigos de error de tu modelo o el servicio técnico."},
+        {"q": "¿Hay un botón de reinicio en la freidora?", "a": "La mayoría de modelos no tiene un botón específico: se reinician desenchufándolos. Algunos modelos digitales permiten volver a los ajustes de fábrica con una combinación de teclas indicada en el manual."}
       ]
     },
     "smoke-smell": {
+      "faqs": [
+        {"q": "¿Por qué la freidora de aire echa humo blanco?", "a": "Casi siempre es grasa que gotea al fondo y se quema, por ejemplo con beicon, salchichas o alitas de pollo. Echa una o dos cucharadas de agua en el cajón y retira la grasa después de cada uso."},
+        {"q": "¿Es peligroso el olor a plástico del primer uso?", "a": "En el primer uso es normal: son restos de fabricación. Haz uno o dos ciclos en vacío a 200 °C durante 10-15 minutos con la cesta y el cajón limpios. Si el olor sigue tras varios usos, contacta con el servicio técnico."},
+        {"q": "¿Qué hago si sale humo negro?", "a": "Desenchúfala de inmediato y no vuelvas a encenderla. El humo negro o el olor a cables quemados indican una posible avería eléctrica, no comida quemada: haz revisar el aparato por el servicio técnico."},
+        {"q": "¿Cómo evito que el papel de horno vuele hacia la resistencia?", "a": "No lo pongas nunca vacío durante el precalentamiento: coloca siempre la comida encima, o usa papel perforado recortado a la medida de la cesta."}
+      ],
       "title": "Freidora de aire humo y olor: causas y soluciones",
       "h1": "Primeros Auxilios Air Fryer",
       "meta": "¿Humo blanco? ¿Olor a plástico? Que no cunda el pánico. Aquí tienes la guía rápida para solucionar los problemas más comunes.",
@@ -288,7 +332,9 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "Si el aparato está cubierto por la garantía."
       ],
       "faqs": [
-        {"q": "¿Debo contactar al servicio técnico si el problema persiste?", "a": "Absolutamente sí. Si las comprobaciones básicas (enchufe y cesta) no resuelven el problema, es probable que se trate de un fallo en la placa o el fusible térmico."}
+        {"q": "¿Debo contactar al servicio técnico si el problema persiste?", "a": "Absolutamente sí. Si las comprobaciones básicas (enchufe y cesta) no resuelven el problema, es probable que se trate de un fallo en la placa o el fusible térmico."},
+        {"q": "¿Puede no encenderse si el cajón no está bien colocado?", "a": "Sí: muchos modelos tienen un microinterruptor de seguridad y no arrancan si el cajón no está metido hasta el fondo. Sácalo y vuelve a colocarlo hasta oír el clic."},
+        {"q": "¿Puede haber saltado la protección térmica?", "a": "Sí, tras un uso prolongado o con las rejillas de ventilación tapadas la protección puede bloquear el aparato. Desenchúfala, déjala enfriar unos 30 minutos y despeja las aberturas de ventilación."}
       ]
     },
     "not-heating": {
@@ -309,7 +355,11 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "Si aparece un código de error fijo en la pantalla.",
         "Si la máquina está en garantía."
       ],
-      "faqs": []
+      "faqs": [
+        {"q": "¿Por qué el ventilador gira pero la freidora no calienta?", "a": "Puede haber saltado una protección térmica o haberse averiado la resistencia o el termostato. Desenchúfala 15 minutos y vuelve a probar; si sigue sin calentar, no la desmontes y contacta con el servicio técnico."},
+        {"q": "La comida se cocina despacio: ¿es una avería?", "a": "No siempre. Una cesta demasiado llena, congelados pegados en bloque o no precalentar alargan mucho los tiempos. Cocina en una sola capa y agita a mitad de cocción antes de pensar en una avería."},
+        {"q": "¿Cada cuánto debo limpiar la resistencia?", "a": "Revísala cada pocas semanas y límpiala cuando veas grasa acumulada: la suciedad en la resistencia reduce el calor y puede provocar humo. Hazlo siempre con la freidora fría y desenchufada."}
+      ]
     },
     "fan-not-working": {
       "h1": "Ventilador de freidora de aire no funciona: causas y comprobaciones",
@@ -329,7 +379,11 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "Si notas chispas cerca del motor del ventilador.",
         "Si compraste el aparato hace menos de dos años (garantía)."
       ],
-      "faqs": []
+      "faqs": [
+        {"q": "¿Es normal que el ventilador siga girando después de apagarla?", "a": "Sí, en muchos modelos el ventilador sigue unos segundos o minutos para enfriar la resistencia. Deja que se detenga solo antes de desenchufarla."},
+        {"q": "El ventilador hace un ruido extraño: ¿qué reviso?", "a": "Con la freidora fría y desenchufada, comprueba que ningún trozo de papel de horno o de comida haya quedado cerca del ventilador o de la resistencia. Si el ruido continúa, deja de usarla y contacta con el servicio técnico."},
+        {"q": "¿Puedo usar la freidora si el ventilador no gira?", "a": "No. Sin ventilador el calor no circula y la resistencia puede sobrecalentarse: desenchúfala y haz revisar el aparato."}
+      ]
     }
   },
   "fr": {
@@ -354,10 +408,18 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
       ],
       "faqs": [
         {"q": "Puis-je réinitialiser la friteuse simplement en la débranchant ?", "a": "Oui, retirer physiquement la fiche de la prise (hard reset) est le moyen le plus sûr de réinitialiser la carte interne."},
-        {"q": "Combien de temps dois-je attendre avant de la rallumer ?", "a": "Il est recommandé d'attendre au moins 15 minutes pour permettre à la carte mère de décharger la tension résiduelle."}
+        {"q": "Combien de temps dois-je attendre avant de la rallumer ?", "a": "Il est recommandé d'attendre au moins 15 minutes pour permettre à la carte mère de décharger la tension résiduelle."},
+        {"q": "La réinitialisation efface-t-elle les codes d'erreur ?", "a": "Souvent oui, si l'erreur était temporaire (par exemple une surchauffe ou un capteur momentanément hors plage). Si le code revient après la réinitialisation, consultez la page des codes d'erreur de votre modèle ou le SAV."},
+        {"q": "Y a-t-il un bouton de réinitialisation sur la friteuse ?", "a": "La plupart des modèles n'ont pas de bouton dédié : on les réinitialise en les débranchant. Certains modèles numériques permettent de revenir aux réglages d'usine avec une combinaison de touches indiquée dans le manuel."}
       ]
     },
     "smoke-smell": {
+      "faqs": [
+        {"q": "Pourquoi ma friteuse à air fait-elle de la fumée blanche ?", "a": "Presque toujours, c'est de la graisse qui coule au fond et brûle, par exemple avec du lard, des saucisses ou des ailes de poulet. Versez une ou deux cuillères à soupe d'eau dans le tiroir et retirez la graisse après chaque cuisson."},
+        {"q": "L'odeur de plastique à la première utilisation est-elle dangereuse ?", "a": "C'est normal à la première utilisation : ce sont des résidus de fabrication. Faites un ou deux cycles à vide à 200 °C pendant 10 à 15 minutes avec le panier et le tiroir propres. Si l'odeur persiste après plusieurs utilisations, contactez le SAV."},
+        {"q": "Que faire si de la fumée noire sort ?", "a": "Débranchez immédiatement et ne rallumez pas. Une fumée noire ou une odeur de câbles brûlés indique une possible panne électrique, pas des aliments brûlés : faites vérifier l'appareil par le SAV."},
+        {"q": "Comment éviter que le papier cuisson s'envole vers la résistance ?", "a": "Ne le mettez jamais vide pendant le préchauffage : posez toujours les aliments dessus, ou utilisez du papier perforé découpé à la taille du panier."}
+      ],
       "title": "Friteuse à air fumée et odeur : causes et solutions",
       "h1": "Premiers Secours Air Fryer",
       "meta": "Fumée blanche ? Odeur de plastique ? Pas de panique. Voici le guide rapide pour résoudre les problèmes courants.",
@@ -399,7 +461,9 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "Si l'appareil est couvert par la garantie."
       ],
       "faqs": [
-        {"q": "Dois-je contacter l'assistance si le problème persiste ?", "a": "Absolument oui. Si les vérifications de base (prise et panier) ne résolvent pas le problème, il s'agit probablement d'une panne de carte ou de fusible thermique."}
+        {"q": "Dois-je contacter l'assistance si le problème persiste ?", "a": "Absolument oui. Si les vérifications de base (prise et panier) ne résolvent pas le problème, il s'agit probablement d'une panne de carte ou de fusible thermique."},
+        {"q": "La friteuse peut-elle ne pas démarrer si le tiroir est mal inséré ?", "a": "Oui : de nombreux modèles ont un micro-interrupteur de sécurité et ne démarrent pas si le tiroir n'est pas enfoncé jusqu'au bout. Retirez-le et remettez-le jusqu'au clic."},
+        {"q": "La protection thermique a-t-elle pu se déclencher ?", "a": "Oui, après une utilisation prolongée ou avec des grilles d'aération obstruées, la protection peut bloquer l'appareil. Débranchez-la, laissez-la refroidir environ 30 minutes et dégagez les ouvertures d'aération."}
       ]
     },
     "not-heating": {
@@ -420,7 +484,11 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "Si un code d'erreur fixe apparaît à l'écran.",
         "Si la machine est sous garantie."
       ],
-      "faqs": []
+      "faqs": [
+        {"q": "Pourquoi le ventilateur tourne mais la friteuse ne chauffe pas ?", "a": "Une sécurité thermique a pu se déclencher, ou la résistance ou le thermostat sont peut-être défectueux. Débranchez-la 15 minutes et réessayez ; si elle ne chauffe toujours pas, ne la démontez pas et contactez le SAV."},
+        {"q": "Les aliments cuisent lentement : est-ce une panne ?", "a": "Pas toujours. Un panier trop rempli, des surgelés collés en bloc ou l'absence de préchauffage allongent beaucoup la cuisson. Cuisez en une seule couche et secouez à mi-cuisson avant de penser à une panne."},
+        {"q": "À quelle fréquence nettoyer la résistance ?", "a": "Contrôlez-la toutes les quelques semaines et nettoyez-la dès que vous voyez des dépôts de graisse : la saleté réduit la chaleur et peut provoquer de la fumée. Faites-le toujours friteuse froide et débranchée."}
+      ]
     },
     "fan-not-working": {
       "h1": "Ventilateur de friteuse à air ne tourne pas : causes et vérifications",
@@ -440,7 +508,11 @@ export const problemGuidesI18n: Record<string, Record<string, any>> = {
         "Si vous remarquez des étincelles près du moteur du ventilateur.",
         "Si vous avez acheté l'appareil il y a moins de deux ans (garantie)."
       ],
-      "faqs": []
+      "faqs": [
+        {"q": "Est-il normal que le ventilateur tourne encore après l'arrêt ?", "a": "Oui, sur beaucoup de modèles le ventilateur continue quelques secondes ou minutes pour refroidir la résistance. Laissez-le s'arrêter seul avant de débrancher."},
+        {"q": "Le ventilateur fait un bruit étrange : que vérifier ?", "a": "Friteuse froide et débranchée, vérifiez qu'aucun morceau de papier cuisson ou d'aliment ne se trouve près du ventilateur ou de la résistance. Si le bruit continue, cessez de l'utiliser et contactez le SAV."},
+        {"q": "Puis-je utiliser la friteuse si le ventilateur ne tourne pas ?", "a": "Non. Sans ventilateur la chaleur ne circule pas et la résistance peut surchauffer : débranchez-la et faites vérifier l'appareil."}
+      ]
     }
   }
 };

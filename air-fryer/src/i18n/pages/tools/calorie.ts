@@ -15,6 +15,14 @@ export const content = {
 
     // NUOVI CONTENUTI EDITORIALI E FAQ
     editorialH2: "La Scienza del Risparmio Calorico",
+    refH2: "Tabella: grassi e calorie risparmiati per porzione da 250 g",
+    refIntro: "Valori calcolati con la stessa formula del calcolatore: olio assorbito in frittura (peso × tasso di assorbimento dell'alimento) meno l'olio usato in friggitrice ad aria. Ogni grammo di grasso vale 9 kcal.",
+    refFood: "Alimento",
+    refDeep: "Olio assorbito in frittura",
+    refAir: "Olio in friggitrice",
+    refSaved: "Grassi risparmiati",
+    refKcal: "Kcal risparmiate",
+    refNote: "Stime medie: l'assorbimento reale dipende da temperatura dell'olio, panatura e dimensione dei pezzi.",
     editorialText: "Nella frittura tradizionale per immersione, un alimento assorbe in media <strong>dal 10% al 20% del suo peso in olio</strong> (1 grammo di olio = 9 kcal). La friggitrice ad aria elimina la necessità del bagno d'olio: sfrutta la <strong>convezione termica ad alta velocità</strong> per scatenare la reazione di Maillard. Il risultato è una doratura croccante con un abbattimento fino all'80% dei grassi saturi aggiunti.",
     faqTitle: "Domande Frequenti su Dieta e Air Fryer",
     faqs: [
@@ -61,6 +69,14 @@ export const content = {
     resRunUnit: "min of running",
 
     editorialH2: "The Science of Calorie Savings",
+    refH2: "Table: fat and calories saved per 250 g serving",
+    refIntro: "Values use the same formula as the calculator: oil absorbed when deep frying (weight × the food's absorption rate) minus the oil used in the air fryer. Each gram of fat is 9 kcal.",
+    refFood: "Food",
+    refDeep: "Oil absorbed deep frying",
+    refAir: "Oil in the air fryer",
+    refSaved: "Fat saved",
+    refKcal: "Kcal saved",
+    refNote: "Average estimates: real absorption depends on oil temperature, breading and piece size.",
     editorialText: "In traditional deep frying, food absorbs on average <strong>10% to 20% of its weight in oil</strong> (1 gram of oil = 9 kcal). The air fryer eliminates the need for an oil bath: it uses <strong>high-speed thermal convection</strong> to trigger the Maillard reaction. The result is a crispy golden finish with up to an 80% reduction in added saturated fats.",
     faqTitle: "Frequently Asked Questions",
     faqs: [
@@ -107,6 +123,14 @@ export const content = {
     resRunUnit: "min de correr",
 
     editorialH2: "La Ciencia del Ahorro Calórico",
+    refH2: "Tabla: grasas y calorías ahorradas por ración de 250 g",
+    refIntro: "Valores calculados con la misma fórmula de la calculadora: aceite absorbido al freír (peso × tasa de absorción del alimento) menos el aceite usado en la freidora de aire. Cada gramo de grasa equivale a 9 kcal.",
+    refFood: "Alimento",
+    refDeep: "Aceite absorbido al freír",
+    refAir: "Aceite en freidora de aire",
+    refSaved: "Grasas ahorradas",
+    refKcal: "Kcal ahorradas",
+    refNote: "Estimaciones medias: la absorción real depende de la temperatura del aceite, el rebozado y el tamaño de las piezas.",
     editorialText: "En la fritura tradicional, un alimento absorbe en media <strong>del 10% al 20% de su peso en aceite</strong> (1 gramo de aceite = 9 kcal). La freidora de aire elimina el baño de aceite: usa <strong>convección térmica a alta velocidad</strong> para crear la reacción de Maillard. El resultado es un dorado crujiente reduciendo hasta un 80% las grasas añadidas.",
     faqTitle: "Preguntas Frecuentes",
     faqs: [
@@ -153,6 +177,14 @@ export const content = {
     resRunUnit: "min de course",
 
     editorialH2: "La Science de l'Économie de Calories",
+    refH2: "Tableau : graisses et calories économisées par portion de 250 g",
+    refIntro: "Valeurs calculées avec la même formule que le calculateur : huile absorbée en friture (poids × taux d'absorption de l'aliment) moins l'huile utilisée dans la friteuse à air. Chaque gramme de graisse vaut 9 kcal.",
+    refFood: "Aliment",
+    refDeep: "Huile absorbée en friture",
+    refAir: "Huile en friteuse à air",
+    refSaved: "Graisses économisées",
+    refKcal: "Kcal économisées",
+    refNote: "Estimations moyennes : l'absorption réelle dépend de la température de l'huile, de la panure et de la taille des morceaux.",
     editorialText: "Dans la friture traditionnelle, un aliment absorbe en moyenne <strong>10% à 20% de son poids en huile</strong> (1 gramme d'huile = 9 kcal). La friteuse à air élimine le bain d'huile : elle utilise la <strong>convection thermique à grande vitesse</strong> pour créer la réaction de Maillard. Le résultat est une dorure croustillante avec jusqu'à 80% de graisses ajoutées en moins.",
     faqTitle: "Foire Aux Questions",
     faqs: [

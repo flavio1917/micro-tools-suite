@@ -79,6 +79,16 @@ const faqSchema = currentFaqs.length > 0 ? {
     }
   }))
 } : null;
+
+// Tabella di riferimento calcolata con la stessa formula del calcolatore (porzione 250 g):
+// grasso in frittura = peso × assorbimento; olio in friggitrice = peso/250 × airOil; kcal = grasso × 9.
+const PORTION_G = 250;
+const calorieRows = t.foods.map((food: any) => {
+  const deep = PORTION_G * food.absorb;
+  const air = (PORTION_G / 250) * food.airOil;
+  const saved = Math.max(0, deep - air);
+  return { name: food.name, deep: Math.round(deep), air: Math.round(air), saved: Math.round(saved), kcal: Math.round(saved * 9) };
+});
 ---
 
 <MainLayout alternateUrls={alternateUrls} title={t.title} lang={lang} description={t.desc}>
@@ -165,6 +175,26 @@ const faqSchema = currentFaqs.length > 0 ? {
     </div>
 
     <div class="max-w-3xl mx-auto mt-16 text-slate-300">
+      <article class="tool-card mb-12">
+        <h2 class="tool-subtitle mb-4">{t.refH2}</h2>
+        <p class="tool-text mb-6">{t.refIntro}</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left border-collapse">
+            <thead><tr class="border-b border-slate-200 dark:border-slate-700">
+              <th scope="col" class="py-2 pr-3 font-bold">{t.refFood}</th><th scope="col" class="py-2 pr-3 font-bold">{t.refDeep}</th><th scope="col" class="py-2 pr-3 font-bold">{t.refAir}</th><th scope="col" class="py-2 pr-3 font-bold">{t.refSaved}</th><th scope="col" class="py-2 font-bold">{t.refKcal}</th>
+            </tr></thead>
+            <tbody>
+              {calorieRows.map((r) => (
+                <tr class="border-b border-slate-100 dark:border-slate-800">
+                  <th scope="row" class="py-2 pr-3 font-semibold">{r.name}</th><td class="py-2 pr-3">{r.deep} g</td><td class="py-2 pr-3">{r.air} g</td><td class="py-2 pr-3">{r.saved} g</td><td class="py-2">{r.kcal} kcal</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="tool-text text-xs mt-4 opacity-80">{t.refNote}</p>
+      </article>
+
       <article class="tool-card mb-12">
         <h2 class="tool-subtitle mb-4">{t.editorialH2}</h2>
         <p class="tool-text text-lg" set:html={t.editorialText}></p>

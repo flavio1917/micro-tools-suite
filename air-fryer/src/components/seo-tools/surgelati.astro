@@ -77,6 +77,21 @@ const faqSchema = currentFaqs.length > 0 ? {
     }
   }))
 } : null;
+
+// Esempio calcolato con le stesse regole del calcolatore (sorgente: forno).
+const FROZEN_RULES: Record<string, [number, number, number, number]> = {
+  patate: [40, 0, 0.45, 0.35], carne: [30, 10, 0.50, 0.30], pesce: [40, 15, 0.50, 0.25], lievitati: [50, 20, 0.60, 0.20],
+};
+const round5 = (v: number) => Math.round(v / 5) * 5;
+const frozenRows = t.cats.map((cat: any) => {
+  const [d1, d2, p1, p2] = FROZEN_RULES[cat.id] || FROZEN_RULES.patate;
+  const k = lang === 'en' ? 1.8 : 1;
+  return {
+    name: cat.name,
+    t1: round5(t.frzOvenT - Math.round(d1 * k)), t2: round5(t.frzOvenT - Math.round(d2 * k)),
+    m1: Math.max(1, Math.round(t.frzOvenM * p1)), m2: Math.max(1, Math.round(t.frzOvenM * p2)),
+  };
+});
 ---
 
 <MainLayout alternateUrls={alternateUrls} title={t.title} lang={lang} description={t.desc}>
@@ -201,6 +216,26 @@ const faqSchema = currentFaqs.length > 0 ? {
     </div>
 
     <div class="max-w-3xl mx-auto mt-20 text-slate-300">
+
+      <article class="tool-card mb-16">
+        <h2 class="tool-subtitle mb-4">{t.frzH2}</h2>
+        <p class="tool-text mb-6">{t.frzIntro}</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm text-left border-collapse">
+            <thead><tr class="border-b border-slate-200 dark:border-slate-700">
+              <th scope="col" class="py-2 pr-3 font-bold">{t.frzCat}</th><th scope="col" class="py-2 pr-3 font-bold">{t.frzP1}</th><th scope="col" class="py-2 pr-3 font-bold">{t.frzP2}</th><th scope="col" class="py-2 font-bold">{t.frzTot}</th>
+            </tr></thead>
+            <tbody>
+              {frozenRows.map((r) => (
+                <tr class="border-b border-slate-100 dark:border-slate-800">
+                  <th scope="row" class="py-2 pr-3 font-semibold">{r.name}</th><td class="py-2 pr-3">{r.t1}{t.frzUnit} · {r.m1} min</td><td class="py-2 pr-3">{r.t2}{t.frzUnit} · {r.m2} min</td><td class="py-2">{r.m1 + r.m2} min</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="tool-text text-xs mt-4 opacity-80">{t.frzNote}</p>
+      </article>
 
       <article class="tool-card mb-16">
         <h2 class="tool-subtitle mb-4">{t.editorialH2}</h2>
