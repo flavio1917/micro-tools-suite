@@ -31,6 +31,7 @@ const {
 
 import { useTranslations } from "../i18n/ui";
 import { infoPath } from "../lib/site-urls";
+import { buildRecipeSeoTitle } from "../lib/recipe-seo";
 
 const t = useTranslations(lang);
 const currentLocale = t.locale;
@@ -92,9 +93,6 @@ function composeDescription(stats: string, desc: string, max = 155): string {
 if (recipeData) {
   const p = t.seo;
 
-  const kw = Array.isArray(recipeData.keywords) ? recipeData.keywords.map((k:string) => k.toLowerCase()) : [];
-  const isMeatOrFish = kw.some((k:string) => k.includes('carne') || k.includes('pollo') || k.includes('pesce') || k.includes('salmone') || k.includes('meat') || k.includes('fish'));
-  const isVegOrSide = kw.some((k:string) => k.includes('veg') || k.includes('verdure') || k.includes('patate') || k.includes('contorno') || k.includes('side'));
   
   const timeStr = recipeData.time ? recipeData.time.toString() : "";
   const numMatch = timeStr.match(/\d+/);
@@ -104,17 +102,9 @@ if (recipeData) {
   const hasNutrition = recipeData.nutrition && recipeData.nutrition.kcal;
   const kcal = hasNutrition ? recipeData.nutrition.kcal : 0;
   const pro = hasNutrition ? recipeData.nutrition.proteins_g : 0;
-  const isLowCal = kcal > 0 && kcal <= 350;
 
-  if (isMeatOrFish && pro >= 15) {
-    finalTitle = `${recipeData.title} (${pro}g ${p.pro}) | Crispissimo`;
-  } else if (isVegOrSide && isLowCal) {
-    finalTitle = `${recipeData.title} (${p.light} ${kcal} ${p.kcal}) | Crispissimo`;
-  } else if (isFast && cookTimeNum > 0) {
-    finalTitle = `${recipeData.title} (${p.fast} ${timeStr} min) | Crispissimo`;
-  } else {
-    finalTitle = `${recipeData.title} | Crispissimo`;
-  }
+  // Titolo: parola chiave + gancio, entro 60 caratteri (vedi src/lib/recipe-seo.ts).
+  finalTitle = buildRecipeSeoTitle(recipeData, lang);
 
   const baseDesc = recipeData.description || "";
   let statsString = "";
@@ -127,10 +117,8 @@ if (recipeData) {
   // Testi SEO scritti a mano (seoTitle / seoDescription nei dati): hanno la
   // precedenza sulle versioni generate. Il marchio si aggiunge solo se il
   // titolo resta entro i 60 caratteri visibili su Google.
-  if (recipeData.seoTitle) {
-    const branded = `${recipeData.seoTitle} | Crispissimo`;
-    finalTitle = branded.length <= 60 ? branded : recipeData.seoTitle;
-  }
+  const brandedTitle = `${finalTitle} | Crispissimo`;
+  if (brandedTitle.length <= 60) finalTitle = brandedTitle;
   if (recipeData.seoDescription) finalDescription = recipeData.seoDescription;
 }
 
