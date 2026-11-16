@@ -213,6 +213,27 @@ for (const file of htmlFiles) {
   if (!sitemapSet.has(info.canonical)) addError('sitemap', `pagina indicizzabile assente dalla sitemap: ${info.canonical}`);
 }
 
+// ---- 8. Le immagini devono essere davvero del formato indicato dall'estensione ----
+// Vercel dichiara il tipo dal nome del file: un JPEG chiamato .webp viene servito
+// come image/webp, cioè con un tipo sbagliato.
+const MAGIC = {
+  webp: (b) => b.subarray(0, 4).toString('latin1') === 'RIFF' && b.subarray(8, 12).toString('latin1') === 'WEBP',
+  jpg: (b) => b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff,
+  jpeg: (b) => b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff,
+  png: (b) => b.subarray(0, 8).equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a])),
+};
+const walkImages = (dir) => {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) { walkImages(full); continue; }
+    const ext = entry.name.split('.').pop().toLowerCase();
+    if (!MAGIC[ext]) continue;
+    const fd = fs.openSync(full, 'r'); const head = Buffer.alloc(16); fs.readSync(fd, head, 0, 16, 0); fs.closeSync(fd);
+    if (!MAGIC[ext](head)) addError('immagini con formato diverso dall\'estensione', path.relative(root, full));
+  }
+};
+walkImages(path.join(root, 'images'));
+
 // ---- Report -------------------------------------------------------------------------
 console.log(`seo-check: ${htmlFiles.length} pagine HTML, ${sitemapUrls.length} URL in sitemap`);
 for (const [category, messages] of warnings) {
