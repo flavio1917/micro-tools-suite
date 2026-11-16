@@ -1,8 +1,8 @@
 export const defaultTitles = {
-  it: "Crispissimo | Ricette in Friggitrice ad Aria Facili e Croccanti",
-  en: "Crispissimo | Easy & Crispy Air Fryer Recipes",
-  es: "Crispissimo | Recetas en Freidora de Aire Fáciles y Crujientes",
-  fr: "Crispissimo | Recettes à la Friteuse à Air Faciles et Croustillantes",
+  it: "Ricette Friggitrice ad Aria Facili e Croccanti | Crispissimo",
+  en: "Easy & Crispy Air Fryer Recipes | Crispissimo",
+  es: "Recetas Freidora de Aire Fáciles y Crujientes | Crispissimo",
+  fr: "Recettes Air Fryer Faciles et Croustillantes | Crispissimo",
 };
 
 export const defaultDescriptions = {

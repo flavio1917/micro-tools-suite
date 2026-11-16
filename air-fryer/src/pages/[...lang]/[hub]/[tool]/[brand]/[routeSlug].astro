@@ -82,7 +82,7 @@ const uiLabels = errorsUiTranslations[lang].modelCard;
 const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 const brandName = model.primary_display_name?.split(' ')[0] || model.brand_slug;
-const displayName = model.primary_display_name || `${model.brand_slug} ${model.model_spec}`;
+const displayName = capitalize(model.primary_display_name || `${model.brand_slug} ${model.model_spec}`);
 const title = (seoData.modelMetaTitle?.replace('{brand}', '').replace('{model}', displayName).trim() || `${displayName} Error Codes`).replace(/  +/g, ' ');
 const description = (modelMetaTemplate[lang]?.replace(/{brand}/g, capitalize(model.brand_slug)).replace(/{model}/g, displayName).trim() || '').replace(/  +/g, ' ');
 const h1 = (seoData.modelH1?.replace('{brand}', '').replace('{model}', displayName).trim() || displayName).replace(/  +/g, ' ');

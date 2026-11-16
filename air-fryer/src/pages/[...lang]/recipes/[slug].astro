@@ -111,13 +111,13 @@ const alternateUrls = Object.fromEntries(
 );
 ---
 
-<MainLayout title={pageTitle} lang={lang} recipeData={seoRecipeData} alternateUrls={alternateUrls} noindex={recipe.noindex === true} ogImage={`https://www.crispissimo.com${encodeURI(imagePath)}`}>
+<MainLayout title={pageTitle} lang={lang} recipeData={{ ...seoRecipeData, nutrition: baseNutrition }} alternateUrls={alternateUrls} noindex={recipe.noindex === true} ogImage={`https://www.crispissimo.com${encodeURI(imagePath)}`}>
   
   <style is:global>
     body > header { display: none !important; }
   </style>
 
-  <SchemaRecipe recipe={recipe} lang={lang} />
+  <SchemaRecipe recipe={{ ...recipe, nutrition: baseNutrition }} lang={lang} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <div class="relative h-[38vh] min-h-[300px] md:h-[45vh] w-full overflow-hidden bg-slate-900 hero-bg-print-hide">

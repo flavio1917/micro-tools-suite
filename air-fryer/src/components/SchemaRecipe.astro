@@ -31,12 +31,22 @@ const imageUrl = `${baseUrl}/${baseImageName}.webp`;
 
 const authorUrl = infoUrl(lang);
 
+// Testi del markup nella lingua della pagina
+const L = ({
+  it: { serving: '1 porzione', yield: (n: number) => `${n} porzioni`, job: 'Ingegnere Informatico & Creatore di Ricette' },
+  en: { serving: '1 serving', yield: (n: number) => `${n} servings`, job: 'Software Engineer & Recipe Creator' },
+  es: { serving: '1 ración', yield: (n: number) => `${n} raciones`, job: 'Ingeniero informático y creador de recetas' },
+  fr: { serving: '1 portion', yield: (n: number) => `${n} portions`, job: 'Ingénieur informaticien et créateur de recettes' },
+} as Record<string, { serving: string; yield: (n: number) => string; job: string }>)[lang] || {
+  serving: '1 porzione', yield: (n: number) => `${n} porzioni`, job: 'Ingegnere Informatico & Creatore di Ricette',
+};
+
 // Dati Nutrizionali Strutturati
 let nutritionSchema = undefined;
 if (recipe.nutrition) {
   nutritionSchema = {
     "@type": "NutritionInformation",
-    "servingSize": "1 porzione",
+    "servingSize": L.serving,
     "calories": `${recipe.nutrition.kcal} calories`,
     "proteinContent": `${recipe.nutrition.proteins_g} grams`,
     "fatContent": `${recipe.nutrition.fats_g} grams`,
@@ -62,14 +72,14 @@ const schema = {
   "author": {
     "@type": "Person",
     "name": "Flavio Refrigeri",
-    "jobTitle": "Ingegnere Informatico & Creatore di Ricette", 
+    "jobTitle": L.job,
     "url": authorUrl 
   },
   "description": recipe.description,
   "prepTime": prepTimeISO,
   "cookTime": cookTimeISO,
   "totalTime": totalTimeISO,
-  "recipeYield": recipe.portions ? `${recipe.portions} servings` : "2 servings",
+  "recipeYield": L.yield(parseInt(recipe.portions, 10) || 2),
   "cookMethod": "Air Frying",
   "recipeCuisine": cuisine,
   "recipeCategory": recipe.keywords && recipe.keywords.length > 0 ? recipe.keywords[0] : "Main Course",

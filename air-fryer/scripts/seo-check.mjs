@@ -190,6 +190,12 @@ for (const f of indexable) {
   const desc = (i.html.match(/<meta name="description" content="([^"]*)"/) || [])[1]?.trim() || '';
   if (!title) addError('title/description', `title mancante: ${toPath(i.canonical)}`);
   if (!desc) addError('title/description', `description mancante: ${toPath(i.canonical)}`);
+  // Lunghezze visibili su Google: title entro 60 caratteri, description
+  // senza troncamenti con "…" ed entro 160 caratteri.
+  const plain = (x) => x.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  if ([...plain(title)].length > 60) addError('title troppo lunghi', `${[...plain(title)].length} caratteri: "${plain(title)}" (${toPath(i.canonical)})`);
+  if (/(…|\.\.\.)$/.test(desc)) addError('description troncate', `"${plain(desc).slice(-60)}" (${toPath(i.canonical)})`);
+  if ([...plain(desc)].length > 160) addWarning('description lunghe', `${[...plain(desc)].length} caratteri: ${toPath(i.canonical)}`);
   titles.set(title, [...(titles.get(title) || []), toPath(i.canonical)]);
   if (desc) descriptions.set(desc, [...(descriptions.get(desc) || []), toPath(i.canonical)]);
 }

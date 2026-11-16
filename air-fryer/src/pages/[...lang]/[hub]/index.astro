@@ -125,6 +125,15 @@ const jsonLd = [
       </div>
     </div>
 
+    {t.aboutTitle && (
+      <div class="mt-14 pt-8 border-t border-slate-200 dark:border-slate-800">
+        <h2 class="tool-subtitle mb-4">{t.aboutTitle}</h2>
+        {t.aboutText.map((para: string) => (
+          <p class="tool-text leading-relaxed mb-4 max-w-3xl">{para}</p>
+        ))}
+      </div>
+    )}
+
   </section>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 </MainLayout>

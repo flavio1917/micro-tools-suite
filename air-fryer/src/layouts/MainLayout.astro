@@ -31,7 +31,7 @@ const {
 
 import { useTranslations } from "../i18n/ui";
 import { infoPath } from "../lib/site-urls";
-import { buildRecipeSeoTitle } from "../lib/recipe-seo";
+import { buildRecipeSeoTitle, buildRecipeSeoDescription } from "../lib/recipe-seo";
 
 const t = useTranslations(lang);
 const currentLocale = t.locale;
@@ -58,68 +58,25 @@ const languageSwitcherUrls: Record<string, string | undefined> = hasOwnAlternate
 let finalTitle = title || t.title;
 let finalDescription = description || t.description;
 
-// Google mostra circa 155 caratteri: tagliamo a fine frase se possibile,
-// altrimenti all'ultima parola intera, con "…".
-function clampDescription(text: string, max = 155): string {
-  if (text.length <= max) return text;
-  const cut = text.slice(0, max);
-  const sentenceEnd = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '));
-  if (sentenceEnd >= 90) return cut.slice(0, sentenceEnd + 1);
-  const lastSpace = cut.lastIndexOf(' ', max - 1);
-  return cut.slice(0, lastSpace).replace(/[\s,;:.—–-]+$/, '') + '…';
-}
-
-// Description ricetta: statistiche + quante più FRASI INTERE della descrizione
-// stanno in 155 caratteri. Solo se nemmeno la prima frase ci sta, si taglia
-// all'ultima parola intera (clampDescription).
-function composeDescription(stats: string, desc: string, max = 155): string {
-  const prefix = stats ? stats + ' ' : '';
-  const sentences = desc.match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g)?.map((x) => x.trim()).filter(Boolean) || [];
-  let out = '';
-  for (const sentence of sentences) {
-    const next = out ? `${out} ${sentence}` : sentence;
-    if ((prefix + next).length > max) break;
-    out = next;
-  }
-  if (!out) return clampDescription(prefix + desc, max);
-  // Se avanza molto spazio, aggiungiamo l'inizio della frase successiva
-  // (tagliata a parola intera) per sfruttare lo spazio visibile su Google.
-  const rest = desc.slice(desc.indexOf(out) + out.length).trim();
-  if (rest && (prefix + out).length < 110) return clampDescription(`${prefix}${out} ${rest}`, max);
-  return prefix + out;
-}
-
 // Logica SEO per Ricette
 if (recipeData) {
-  const p = t.seo;
-
-  
-  const timeStr = recipeData.time ? recipeData.time.toString() : "";
-  const numMatch = timeStr.match(/\d+/);
-  const cookTimeNum = numMatch ? parseInt(numMatch[0]) : 999;
-  const isFast = cookTimeNum <= 15;
-
-  const hasNutrition = recipeData.nutrition && recipeData.nutrition.kcal;
-  const kcal = hasNutrition ? recipeData.nutrition.kcal : 0;
-  const pro = hasNutrition ? recipeData.nutrition.proteins_g : 0;
-
   // Titolo: parola chiave + gancio, entro 60 caratteri (vedi src/lib/recipe-seo.ts).
   finalTitle = buildRecipeSeoTitle(recipeData, lang);
 
-  const baseDesc = recipeData.description || "";
-  let statsString = "";
-  if (hasNutrition && isFast) statsString = `✓ ${pro}g ${p.pro} · ✓ ${timeStr} min · ✓ ${kcal} ${p.kcal} — `;
-  else if (hasNutrition) statsString = `✓ ${pro}g ${p.pro} · ✓ ${kcal} ${p.kcal} — `;
-  else if (isFast) statsString = `✓ ${p.fast} ${timeStr} min — `;
-
-  finalDescription = composeDescription(statsString.trim(), baseDesc.replace(/\s+/g, ' ').trim());
+  // Description: frasi intere con parola chiave e dati reali (vedi src/lib/recipe-seo.ts).
+  finalDescription = buildRecipeSeoDescription(recipeData, lang);
 
   // Testi SEO scritti a mano (seoTitle / seoDescription nei dati): hanno la
   // precedenza sulle versioni generate. Il marchio si aggiunge solo se il
   // titolo resta entro i 60 caratteri visibili su Google.
   const brandedTitle = `${finalTitle} | Crispissimo`;
   if (brandedTitle.length <= 60) finalTitle = brandedTitle;
-  if (recipeData.seoDescription) finalDescription = recipeData.seoDescription;
+}
+
+// Il marchio in coda al titolo si toglie se il titolo supera i 60 caratteri
+// visibili su Google: la parte utile non deve essere tagliata.
+if (finalTitle.length > 60 && finalTitle.endsWith(' | Crispissimo')) {
+  finalTitle = finalTitle.slice(0, -' | Crispissimo'.length);
 }
 
 const ogType = recipeData ? "article" : "website";

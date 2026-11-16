@@ -34,7 +34,7 @@ export interface PageErrorsSeoData {
 export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
   it: {
     metaTitle: "Codici errore friggitrice ad aria: E1, E2, E3, E4 e reset | Crispissimo",
-    metaDescription: "Scopri il significato dei codici di errore della friggitrice ad aria, come fare un riavvio sicuro e dove trovare errori documentati per Philips, Cosori e Xiaomi.",
+    metaDescription: "Cosa significano i codici errore della friggitrice ad aria, come fare un riavvio sicuro e gli errori documentati per Philips, Cosori e Xiaomi.",
     h1: "Codici errore friggitrice ad aria: significato e soluzioni",
     modelMetaTitle: "{brand} {model}: Codici Errore e Soluzioni | Crispissimo",
     modelMetaDescription: "Scopri codici errore, problemi comuni, controlli sicuri e manuale ufficiale di {brand} {model}.",
@@ -267,8 +267,8 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
     ]
   },
   fr: {
-    metaTitle: "Codes d’erreur friteuse à air : E1, E2, E3, E4 et réinitialisation | Crispissimo",
-    metaDescription: "Découvrez la signification des codes d’erreur de votre friteuse à air, comment la réinitialiser en sécurité et les erreurs documentées Philips, Cosori et Xiaomi.",
+    metaTitle: "Codes d’erreur friteuse à air : E1 à E4 et réinitialisation | Crispissimo",
+    metaDescription: "La signification des codes d’erreur de votre friteuse à air, comment la réinitialiser en sécurité et les erreurs documentées Philips, Cosori et Xiaomi.",
     h1: "Codes d’erreur friteuse à air : signification et solutions",
     modelMetaTitle: "{brand} {model} : Codes d'erreur et Solutions | Crispissimo",
     modelMetaDescription: "Découvrez les codes d'erreur, problèmes courants, contrôles de sécurité et le manuel officiel de {brand} {model}.",
@@ -347,8 +347,8 @@ export const pageErrorsSeoTranslations: Record<string, PageErrorsSeoData> = {
 };
 
 export const modelMetaTemplate: Record<string, string> = {
-  it: "Consulta i codici errore documentati per {model}: scopri come eseguire un riavvio sicuro e le soluzioni definitive ai guasti E1, E2, E3, E4 e altri.",
-  en: "Check the documented error codes for {model}: discover how to perform a safe restart and find definitive solutions for E1, E2, E3, E4 and other faults.",
-  es: "Consulta los códigos de error documentados para {model}: descubre cómo reiniciar de forma segura y las soluciones definitivas a los fallos E1, E2, E3, E4.",
-  fr: "Consultez les codes d'erreur documentés pour {model} : découvrez comment redémarrer en sécurité et les solutions définitives aux pannes E1, E2, E3, E4."
+  it: "Codici errore documentati per {model}: cosa significano, come fare un riavvio sicuro e quando rivolgersi all'assistenza.",
+  en: "Documented error codes for {model}: what they mean, how to restart your air fryer safely and when to contact support.",
+  es: "Códigos de error documentados para {model}: qué significan, cómo reiniciar con seguridad y cuándo llamar al servicio técnico.",
+  fr: "Codes d'erreur documentés pour {model} : leur signification, comment redémarrer en sécurité et quand contacter le SAV."
 };
