@@ -242,13 +242,17 @@ const calorieRows = t.foods.map((food: any) => {
     }
   </style>
 
-<script is:inline data-astro-rerun>
+<script is:inline>
+    // Eseguito una sola volta (testo identico su tutte le pagine): il controllo
+    // data-bound evita di collegare due volte i pulsanti dopo una navigazione.
     document.addEventListener('astro:page-load', () => {
       const btnMinus = document.getElementById('btn-minus-weight');
       const btnPlus = document.getElementById('btn-plus-weight');
       const wInput = document.getElementById('weight-input');
 
       if (!btnMinus || !btnPlus || !wInput) return; // Salvaguardia per cambi pagina
+      if (wInput.dataset.bound === 'true') return;
+      wInput.dataset.bound = 'true';
 
       btnMinus.addEventListener('click', () => {
         let val = parseInt(wInput.value) || 0;

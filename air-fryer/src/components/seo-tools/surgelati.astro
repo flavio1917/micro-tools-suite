@@ -280,8 +280,11 @@ const frozenRows = t.cats.map((cat: any) => {
 
   </section>
 
-  <script is:inline define:vars={{ isEn: lang === 'en' }}>
+  <script is:inline>
+    // Lingua letta dalla pagina (non da define:vars): lo script ha lo stesso testo
+    // in tutte le lingue, Astro lo esegue una volta e non accumula gestori.
     document.addEventListener('astro:page-load', () => {
+      const isEn = document.documentElement.lang === 'en';
       const selectCat = document.getElementById('cat-select');
       const sliderTemp = document.getElementById('slider-temp');
       const sliderMins = document.getElementById('slider-mins');
@@ -290,6 +293,8 @@ const frozenRows = t.cats.map((cat: any) => {
       const afTargetBadge = document.getElementById('af-target-badge');
 
       if (!selectCat || !btnOven || !btnAF) return;
+      if (selectCat.dataset.bound === 'true') return;
+      selectCat.dataset.bound = 'true';
 
       const valTemp = document.getElementById('val-temp');
       const valMins = document.getElementById('val-mins');

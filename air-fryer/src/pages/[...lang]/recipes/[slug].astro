@@ -120,9 +120,16 @@ const alternateUrls = Object.fromEntries(
   <SchemaRecipe recipe={{ ...recipe, nutrition: baseNutrition }} lang={lang} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-  <div class="relative h-[38vh] min-h-[300px] md:h-[45vh] w-full overflow-hidden bg-slate-900 hero-bg-print-hide">
-    <img src={imagePath} alt={recipe.alt || recipe.title} fetchpriority="high" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-80" />
-    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40 pointer-events-none"></div>
+  <!-- Testata: in modalità scura foto scurita con testo sovrapposto (invariata);
+       in modalità chiara foto luminosa che sfuma nella pagina, con titolo,
+       descrizione e voto sotto la foto su fondo chiaro. -->
+  <div class="relative w-full overflow-hidden hero-bg-print-hide bg-orange-50 dark:bg-slate-900 dark:h-[38vh] dark:min-h-[300px] md:dark:h-[45vh]">
+    <div class="relative h-[30vh] min-h-[220px] md:h-[40vh] dark:absolute dark:inset-0 dark:h-auto dark:min-h-0 md:dark:h-auto">
+      <img src={imagePath} alt={recipe.alt || recipe.title} fetchpriority="high" decoding="async" class="absolute inset-0 h-full w-full object-cover dark:opacity-80" />
+      <div class="absolute inset-0 hidden dark:block bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/40 pointer-events-none"></div>
+      <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/35 to-transparent pointer-events-none dark:hidden"></div>
+      <div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-orange-50 via-orange-50/60 to-transparent pointer-events-none dark:hidden"></div>
+    </div>
     
     <div class="absolute top-4 md:top-6 left-0 right-0 z-[60] px-3 md:px-4 w-full">
       <div class="max-w-5xl mx-auto flex justify-between items-center relative h-10 md:h-11">
@@ -142,13 +149,13 @@ const alternateUrls = Object.fromEntries(
       </div>
     </div>
     
-    <div class="relative max-w-5xl mx-auto px-4 h-full flex flex-col justify-end pb-10 md:pb-14 z-20 text-center pointer-events-none">
+    <div class="relative max-w-5xl mx-auto px-4 -mt-6 pb-2 dark:mt-0 dark:h-full flex flex-col justify-end dark:pb-10 md:dark:pb-14 z-20 text-center pointer-events-none">
 
-      <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white mb-2 leading-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
+      <h1 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white mb-2 leading-tight dark:drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] px-2">
         {buildRecipeH1(recipe, lang)}
       </h1>
       
-      <p class="text-sm md:text-lg text-slate-300 max-w-4xl mx-auto font-medium drop-shadow-md border-t border-white/20 pt-2 md:pt-3 mt-1 px-3 leading-relaxed mb-4">
+      <p class="text-sm md:text-lg text-slate-600 dark:text-slate-300 max-w-4xl mx-auto font-medium dark:drop-shadow-md border-t border-orange-200 dark:border-white/20 pt-2 md:pt-3 mt-1 px-3 leading-relaxed mb-4">
         {recipe.description}
       </p>
       
@@ -158,9 +165,9 @@ const alternateUrls = Object.fromEntries(
     </div>
   </div>
 
-  <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 -mt-8 print:mt-0 print:pt-4 relative z-30 pb-28 rounded-t-3xl pt-2">
+  <div id="recipe-content-wrapper" class="max-w-5xl mx-auto px-4 dark:-mt-8 print:mt-0 print:pt-4 relative z-30 pb-28 rounded-t-3xl pt-2">
 
-    <nav aria-label="Breadcrumb" class="hide-on-print mt-12 mb-4 text-xs md:text-sm text-slate-500 dark:text-slate-400">
+    <nav aria-label="Breadcrumb" class="hide-on-print mt-4 dark:mt-12 mb-4 text-xs md:text-sm text-slate-500 dark:text-slate-400">
       <ol class="flex flex-wrap items-center gap-1.5">
         <li><a href={homeUrl(lang).replace('https://www.crispissimo.com', '')} class="hover:text-orange-600 dark:hover:text-orange-400 transition-colors">Home</a></li>
         <li aria-hidden="true">/</li>
@@ -401,8 +408,20 @@ const alternateUrls = Object.fromEntries(
 
   <RelatedRecipes currentRecipe={recipe} lang={lang as string} />
 
-  <script is:inline define:vars={{ basePortions: defaultPortions, baseTemp: recipe.temp, lang: lang, recipeTime: cleanTime, txtStart: t.startTimer, txtStop: t.stopTimer, txtReadMode: t.readMode, txtDarkMode: t.darkMode }}>
+  <!-- Dati della ricetta per lo script qui sotto. Lo script ha lo stesso testo su
+       tutte le ricette: Astro (ClientRouter) lo esegue una sola volta e lui legge
+       i dati della pagina corrente. Con define:vars ogni ricetta aggiungeva un
+       gestore in più e, passando da una ricetta all'altra, i pulsanti scattavano
+       due volte (tema che non cambia) o usavano i dati della ricetta precedente. -->
+  <script type="application/json" id="recipe-runtime" set:html={JSON.stringify({ basePortions: defaultPortions, baseTemp: recipe.temp, lang, recipeTime: cleanTime, txtStart: t.startTimer, txtStop: t.stopTimer, txtReadMode: t.readMode, txtDarkMode: t.darkMode }).replace(/</g, '\\u003c')} />
+  <script is:inline>
+    document.addEventListener('astro:before-swap', () => { if (window.recipeTimerInterval) clearInterval(window.recipeTimerInterval); window.recipeTimerInterval = null; });
     document.addEventListener('astro:page-load', () => {
+      const runtimeEl = document.getElementById('recipe-runtime');
+      const core = document.getElementById('recipe-core');
+      if (!runtimeEl || !core || core.dataset.bound === 'true') return;
+      core.dataset.bound = 'true';
+      const { basePortions, baseTemp, lang, recipeTime, txtStart, txtStop, txtReadMode, txtDarkMode } = JSON.parse(runtimeEl.textContent);
       
       const triggerHaptic = () => { if (navigator.vibrate) navigator.vibrate(40); };
 
@@ -476,7 +495,6 @@ const alternateUrls = Object.fromEntries(
       const timerUnit = document.getElementById('timer-unit');
       const progressBar = document.getElementById('timer-progress');
       
-      let timerInterval = null;
       let totalSeconds = 0;
       
       let parsedTime = 0;
@@ -494,7 +512,7 @@ const alternateUrls = Object.fromEntries(
         btnTimer.addEventListener('click', () => {
           triggerHaptic();
           if (isTimerRunning) {
-            clearInterval(timerInterval);
+            clearInterval(window.recipeTimerInterval);
             isTimerRunning = false;
             btnTimer.innerHTML = txtStart;
             btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-blue-100 dark:bg-blue-600/20 border border-blue-300 dark:border-blue-500/50 hover:bg-blue-200 dark:hover:bg-blue-600/40 text-blue-700 dark:text-blue-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-blue-400";
@@ -508,10 +526,10 @@ const alternateUrls = Object.fromEntries(
             btnTimer.innerHTML = txtStop;
             btnTimer.className = "mx-auto w-full max-w-[140px] px-3 py-2 bg-red-100 dark:bg-red-600/20 border border-red-300 dark:border-red-500/50 hover:bg-red-200 dark:hover:bg-red-600/40 text-red-700 dark:text-red-300 rounded-full text-[10px] md:text-xs uppercase font-bold tracking-wider transition-all active:scale-95 flex justify-center items-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-red-400";
             
-            timerInterval = setInterval(() => {
+            window.recipeTimerInterval = setInterval(() => {
               totalSeconds--;
               if (totalSeconds < 0) {
-                clearInterval(timerInterval);
+                clearInterval(window.recipeTimerInterval);
                 timerDisplay.innerText = "00:00";
                 btnTimer.innerHTML = txtStart;
                 isTimerRunning = false;
