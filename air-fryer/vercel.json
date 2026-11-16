@@ -389,5 +389,17 @@
     {"source": "/info", "destination": "/info/", "permanent": true},
     {"source": "/privacy", "destination": "/privacy/", "permanent": true},
     {"source": "/cookies", "destination": "/cookies/", "permanent": true}
+  ],
+  "headers": [
+    {"source": "/(.*)", "has": [{"type": "query", "key": "model"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]},
+    {"source": "/(.*)", "has": [{"type": "query", "key": "brand"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]},
+    {"source": "/(.*)", "has": [{"type": "query", "key": "review-model"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]},
+    {"source": "/(.*)", "has": [{"type": "query", "key": "variant"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]},
+    {"source": "/(.*)", "has": [{"type": "query", "key": "code"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]},
+    {"source": "/(.*)", "has": [{"type": "query", "key": "symptom"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]},
+    {"source": "/(.*)", "has": [{"type": "query", "key": "q"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]},
+    {"source": "/(.*)", "has": [{"type": "query", "key": "message"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]},
+    {"source": "/(.*)", "has": [{"type": "query", "key": "dual"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]},
+    {"source": "/(.*)", "has": [{"type": "query", "key": "codes"}], "headers": [{"key": "X-Robots-Tag", "value": "noindex, follow"}]}
   ]
 }
