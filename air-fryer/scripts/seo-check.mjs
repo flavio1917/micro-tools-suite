@@ -101,6 +101,11 @@ for (const file of htmlFiles) {
     if (href && !/^(\/|#|\?|https?:|mailto:|tel:|javascript:)/i.test(href)) {
       addError('link relativi non validi', `"${href.slice(0, 80)}"  (da ${from})`);
     }
+    // Link interni con parametri (?model=, ?brand=…): Google li tratta come
+    // duplicati della pagina ("Pagina alternativa con tag canonical").
+    if (/^\?/.test(href) || /^(\/(?!\/)|https:\/\/www\.crispissimo\.com)[^#]*\?/.test(href)) {
+      addError('link interni con parametri', `"${href.slice(0, 80)}"  (da ${from})`);
+    }
   }
 
   for (const m of info.html.matchAll(/<a\b[^>]*?\bhref="(\/[^"]*)"/g)) {

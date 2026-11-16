@@ -24,6 +24,14 @@ const aggregatedMessages = aggregateBrandMessages(brandModels);
 const aggregatedSuggestions = aggregateBrandSuggestions(brandModels);
 
 import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
+import { rawV2Models } from '../../lib/air-fryer-db';
+import { getAirFryerErrorModelUrl, getAirFryerErrorBrandUrl } from '../../lib/air-fryer-error-routes';
+const modelPageUrl = (canonicalSlug: string, brandSlug: string) => {
+  const m = rawV2Models.find((x: any) => x.canonical_slug === canonicalSlug && x.route_slug);
+  return m
+    ? getAirFryerErrorModelUrl(lang as any, m.brand_slug, m.route_slug)
+    : getAirFryerErrorBrandUrl(lang as any, brandSlug);
+};
 
 ---
 <div class="af-brand-overview bg-white dark:bg-[#151b2b] rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 sm:p-8 mb-6">
@@ -74,9 +82,10 @@ import { toSafeAnchorId } from '../../lib/air-fryer-anchor';
             const btnText = t.btnSeeInfo;
             
             // Build the appropriate fallback URL
-            const href = isAmbiguous 
-              ? `?brand=${item.brand_slug}&review-model=${item.canonical_slug}&variant=${item.variant_slug || ''}`
-              : `?model=${item.canonical_slug}`;
+            // Link alla pagina statica del modello (mai URL con parametri: Google le
+            // tratta come duplicati dell'hub). Se il modello non ha una pagina, si
+            // resta sulla pagina del brand.
+            const href = modelPageUrl(item.canonical_slug, item.brand_slug);
 
             return (
               <a href={href} class="group block border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:border-blue-300 dark:hover:border-blue-700 transition-colors bg-white dark:bg-slate-800" onclick="window.dispatchEvent(new Event('diagnostic-search-update'))">
